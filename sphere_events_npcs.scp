@@ -41,7 +41,6 @@ endif
 return 0
 
 [FUNCTION f_isCursed]
-LOCAL.CurseResult=0
 FORCHARLAYER 32
    IF (<BASEID>==i_rune_curse)
       RETURN 1
