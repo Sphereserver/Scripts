@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2007
+// SPHERE by : Menasoft ï¿½1997-2007
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -123,7 +123,7 @@ ON=@EnvironChange
    if (<tag0.lightstr>)
       return 0
    endif
-   if ( <flags>&statf_conjured   ) 
+   if ( <flags>&statf_conjured   )
       remove
       return 1
    endif
@@ -136,6 +136,46 @@ ON=@EnvironChange
    tag.lightfame=<fame>
    fame=10
    return 0
+
+[EVENTS e_polymorphed_lich]
+ON=@SPELLEFFECT
+// Dispell spells will return a polymorphed lich into lich.
+IF ((<ARGN1> == 41) || (<ARGN1> == 54))
+   TRYSRC <I.UID> SRC.EFFECT 2,i_fx_smoke,16,10,0
+   I.BODY = c_lich
+   I.EVENTS -e_polymorphed_lich
+ENDIF
+RETURN 0
+
+[EVENTS e_lich_death]
+// Check for summoned skeletons to remove him.
+ON=@DEATH
+FOR x 0 <EVAL <SRC.DTAG.MAXSLOTS> - 1>
+   LOCAL.UID = <SRC.TAG0.SLOT<DLOCAL.x>>
+   IF (<LOCAL.UID>)
+       TRYSRC <DLOCAL.UID> SRC.EFFECT 2,i_fx_smoke,16,10,0
+       UID.<DLOCAL.UID>.REMOVE
+   ENDIF
+ENDFOR
+RETURN 0
+
+[EVENTS e_skeleton_summoned_by_lich]
+ON=@SPELLEFFECT
+// Dispell spells will remove summoned skeletons.
+IF ((<ARGN1> == 41) || (<ARGN1> == 54))
+   TRYSRC <I.UID> SRC.EFFECT 2,i_fx_smoke,16,10,0
+   UID.<DTAG.REFERENCE>.TAG.SLOT<DTAG.SLOT> =
+   UID.<DTAG.REFERENCE>.TAG.SLOTSUSED --
+   I.REMOVE
+ENDIF
+RETURN 0
+
+ON=@DEATH
+TRYSRC <I.UID> SRC.EFFECT 2,i_fx_smoke,16,10,0
+UID.<DTAG.REFERENCE>.TAG.SLOT<DTAG.SLOT> =
+UID.<DTAG.REFERENCE>.TAG.SLOTSUSED --
+I.REMOVE
+RETURN 1
 
 [EVENTS e_Carnivores]
 // weak carnivores.
