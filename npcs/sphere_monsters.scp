@@ -1096,9 +1096,7 @@ ON=@Create
 // First check if lich is polymorphed. If not it polymorph.
 // Then check if need to summon a skeleton. If not, it summon.
 // c_lich used Tags:
-// TAG.SLOTSUSED: Count of summoned skeletons alive.
-// TAG.MAXSLOTS: Max count of summonable skeletons.
-// TAG.SLOTx: Slot number x. Stores the UID from the x summoned skeleton.
+// TAG.SLOT_x: Stores the UID from a summoned skeleton.
 // TAG.BEHAVIOURDELAY: Timer delay.
 [FUNCTION f_lich_behaviour_control]
 // Stop when lich die.
@@ -1114,34 +1112,27 @@ IF (<REF1.BODY> == c_lich)
    TIMERF <REF1.DTAG.BEHAVIOURDELAY>,f_lich_behaviour_control <ARGN1>
    RETURN
 // If polymorphed, then try to summon a skeleton.
-ELIF (<REF1.DTAG0.SLOTSUSED> < <REF1.DTAG0.MAXSLOTS>)
-   // Check for empty slot.
-   FOR x 0 <EVAL <DTAG.MAXSLOTS> - 1>>
-       IF (!<TAG0.SLOT<DLOCAL.X>>)
-           // Create new npc and set the same home that summoner.
-           SERV.NEWNPC = c_skeleton
-           NEW.P = <REF1.HOME>
-           NEW.HOME = <REF1.HOME>
-           NEW.HOMEDIST = <REF1.HOMEDIST>
-           // Setup information to link with slot and setup events.
-           NEW.TAG.SLOT = <DLOCAL.X>
-           NEW.TAG.REFERENCE = <ARGN1>
-           NEW.EVENTS +e_skeleton_summoned_by_lich
-           REF1.TAG.SLOTSUSED ++
-           REF1.TAG.SLOT<DLOCAL.X> = <NEW.UID>
-           // Update players around the new npc.
-           FORCHARS 10
-               IF (<IsPlayer>)
-                   UPDATE
-               ENDIF
-           ENDFOR
-           TIMERF <REF1.DTAG.BEHAVIOURDELAY>,f_lich_behaviour_control <ARGN1>
-           RETURN
-       ENDIF
-   ENDFOR
 ENDIF
-SERV.LOG <REF1.NAME> <REF1.DTAG0.SLOTSUSED> <REF1.DTAG0.MAXSLOTS>
+// We add 1, but really we have to add <SERV.CHARDEF.c_skeleton.FOLLOWERSLOTS>,
+// but is not setted and by default FOLLOWERSLOTS is 0. So if we use it, c_lich
+// will summon infinite skeletons.
+LOCAL.NEWFOLLOWERSLOTS = <EVAL <REF1.CURFOLLOWER> + 1>
+IF (<DLOCAL.NEWFOLLOWERSLOTS> <= <REF1.MAXFOLLOWER>)
+   // Create new npc and set the same home that summoner.
+   SERV.NEWNPC = c_skeleton
+   NEW.MOVENEAR = <REF1>
+   NEW.HOME = <REF1.HOME>
+   NEW.HOMEDIST = <REF1.HOMEDIST>
+   // Update events and status from follower.
+   NEW.EVENTS +e_skeleton_summoned_by_lich
+   NEW.FLAGS |= statf_conjured
+   // Link follower and master.
+   NEW.TAG.MASTER = <ARGN1>
+   REF1.CURFOLLOWER = <DLOCAL.NEWFOLLOWERSLOTS>
+   REF1.TAG.SLOT_<NEW.UID> = <NEW.UID>
+ENDIF
 TIMERF <REF1.DTAG.BEHAVIOURDELAY>,f_lich_behaviour_control <ARGN1>
+RETURN
 
 [CHARDEF 018]
 //FIXME: Can be redeemed using the sacrifice virtue.
@@ -1194,6 +1185,15 @@ ON=@Create
    RESENERGY={40 50}
    RESFIRE={20 30}
    RESPOISON={55 65}
+   // Current number of skeletons summoned.
+   CURFOLLOWER = 0
+   // Max number of skeletons to summon. Between 4 and 6 is a nice number?
+   MAXFOLLOWER = <R4,6>
+   // Just to not use "magic numbers". And can be modified per monster.
+   TAG.BEHAVIOURDELAY = 10
+   // We add the death trigger.
+   EVENTS +e_lich_death
+   TIMERF <DTAG.BEHAVIOURDELAY>, f_lich_behaviour_control <UID>
    ITEMNEWBIE=i_spellbook
    ADDSPELL=s_clumsy
    ADDSPELL=s_weaken
@@ -1208,16 +1208,6 @@ ON=@Create
    ADDSPELL=s_summon_undead
    ADDSPELL=s_animate_dead
    ADDSPELL=s_fire_bolt
-   BREAK
-   // Current number of skeletons summoned.
-   TAG.SLOTSUSED = 0
-   // Max number of skeletons to summon. Between 4 and 6 is a nice number?
-   TAG.MAXSLOTS = <R4,6>
-   // Just to not use "magic numbers". And can be modified per monster.
-   TAG.BEHAVIOURDELAY = 10
-   // We add the death trigger.
-   EVENTS +e_lich_death
-   TIMERF <DTAG.BEHAVIOURDELAY>, f_lich_behaviour_control <UID>
 ON=@NPCRestock
    ITEM=loot_lich
    ITEM=loot_ai_hard

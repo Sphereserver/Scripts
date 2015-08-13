@@ -140,7 +140,7 @@ ON=@EnvironChange
 [EVENTS e_polymorphed_lich]
 ON=@SPELLEFFECT
 // Dispell spells will return a polymorphed lich into lich.
-IF ((<ARGN1> == 41) || (<ARGN1> == 54))
+IF ((<SERV.SPELL.<ARGN1>.DEFNAME> == s_dispel) || (<SERV.SPELL.<ARGN1>.DEFNAME> == s_mass_dispel))
    TRYSRC <I.UID> SRC.EFFECT 2,i_fx_smoke,16,10,0
    I.BODY = c_lich
    I.EVENTS -e_polymorphed_lich
@@ -150,32 +150,33 @@ RETURN 0
 [EVENTS e_lich_death]
 // Check for summoned skeletons to remove him.
 ON=@DEATH
-FOR x 0 <EVAL <SRC.DTAG.MAXSLOTS> - 1>
-   LOCAL.UID = <SRC.TAG0.SLOT<DLOCAL.x>>
-   IF (<LOCAL.UID>)
-       TRYSRC <DLOCAL.UID> SRC.EFFECT 2,i_fx_smoke,16,10,0
-       UID.<DLOCAL.UID>.REMOVE
-   ENDIF
+FOR 0 <EVAL <TAGCOUNT> - 1>
+    // Loop hover tags. If the value is the UID of a c_skeleton, dispel it.
+    LOCAL.UID = <TAGAT.<LOCAL._FOR>.VALUE>
+    IF (<UID.<LOCAL.UID>>)
+        IF (<UID.<LOCAL.UID>.DEFNAME> == c_skeleton)
+            TRYSRC <DLOCAL.UID> SRC.EFFECT 2,i_fx_smoke,16,10,0
+            UID.<DLOCAL.UID>.REMOVE
+        ENDIF
+    ENDIF
 ENDFOR
 RETURN 0
 
 [EVENTS e_skeleton_summoned_by_lich]
 ON=@SPELLEFFECT
 // Dispell spells will remove summoned skeletons.
-IF ((<ARGN1> == 41) || (<ARGN1> == 54))
+IF ((<SERV.SPELL.<ARGN1>.DEFNAME> == s_dispel) || (<SERV.SPELL.<ARGN1>.DEFNAME> == s_mass_dispel))
    TRYSRC <I.UID> SRC.EFFECT 2,i_fx_smoke,16,10,0
-   UID.<DTAG.REFERENCE>.TAG.SLOT<DTAG.SLOT> =
-   UID.<DTAG.REFERENCE>.TAG.SLOTSUSED --
+   UID.<DTAG.MASTER>.TAG.SLOT_<I.UID> =
+   UID.<DTAG.MASTER>.CURFOLLOWER --
    I.REMOVE
 ENDIF
 RETURN 0
 
 ON=@DEATH
-TRYSRC <I.UID> SRC.EFFECT 2,i_fx_smoke,16,10,0
-UID.<DTAG.REFERENCE>.TAG.SLOT<DTAG.SLOT> =
-UID.<DTAG.REFERENCE>.TAG.SLOTSUSED --
-I.REMOVE
-RETURN 1
+UID.<DTAG.MASTER>.TAG.SLOT_<I.UID> =
+UID.<DTAG.MASTER>.CURFOLLOWER --
+RETURN 0
 
 [EVENTS e_Carnivores]
 // weak carnivores.
