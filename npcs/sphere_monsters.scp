@@ -1113,11 +1113,13 @@ IF (<REF1.BODY> == c_lich)
    RETURN
 // If polymorphed, then try to summon a skeleton.
 ENDIF
-// We add 1, but really we have to add <SERV.CHARDEF.c_skeleton.FOLLOWERSLOTS>,
-// but is not setted and by default FOLLOWERSLOTS is 0. So if we use it, c_lich
-// will summon infinite skeletons.
-LOCAL.NEWFOLLOWERSLOTS = <EVAL <REF1.CURFOLLOWER> + 1>
-IF (<DLOCAL.NEWFOLLOWERSLOTS> <= <REF1.MAXFOLLOWER>)
+// The correct line is:
+// LOCAL.NEWCURFOLLOWER = <EVAL <REF1.CURFOLLOWER> + <SERV.CHARDEF.c_skeleton.FOLLOWERSLOTS>>
+// But <SERV.CHARDEF.c_skeleton.FOLLOWERSLOTS> is not setted and by default
+// FOLLOWERSLOTS is 0. So if we use it, c_lich will summon infinite skeletons.
+// So we simply add 1.
+LOCAL.NEWCURFOLLOWER = <EVAL <REF1.CURFOLLOWER> + 1>
+IF (<DLOCAL.NEWCURFOLLOWER> <= <REF1.MAXFOLLOWER>)
    // Create new npc and set the same home that summoner.
    SERV.NEWNPC = c_skeleton
    NEW.MOVENEAR = <REF1>
@@ -1128,7 +1130,7 @@ IF (<DLOCAL.NEWFOLLOWERSLOTS> <= <REF1.MAXFOLLOWER>)
    NEW.FLAGS |= statf_conjured
    // Link follower and master.
    NEW.TAG.MASTER = <ARGN1>
-   REF1.CURFOLLOWER = <DLOCAL.NEWFOLLOWERSLOTS>
+   REF1.CURFOLLOWER = <DLOCAL.NEWCURFOLLOWER>
    REF1.TAG.SLOT_<NEW.UID> = <NEW.UID>
 ENDIF
 TIMERF <REF1.DTAG.BEHAVIOURDELAY>,f_lich_behaviour_control <ARGN1>

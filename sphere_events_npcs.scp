@@ -141,7 +141,7 @@ ON=@EnvironChange
 ON=@SPELLEFFECT
 // Dispell spells will return a polymorphed lich into lich.
 IF ((<SERV.SPELL.<ARGN1>.DEFNAME> == s_dispel) || (<SERV.SPELL.<ARGN1>.DEFNAME> == s_mass_dispel))
-   TRYSRC <I.UID> SRC.EFFECT 2,i_fx_smoke,16,10,0
+   TRYSRC <I.UID> SRC.EFFECT 2,i_fx_smoke_small,16,10,0
    I.BODY = c_lich
    I.EVENTS -e_polymorphed_lich
 ENDIF
@@ -155,8 +155,7 @@ FOR 0 <EVAL <TAGCOUNT> - 1>
     LOCAL.UID = <TAGAT.<LOCAL._FOR>.VALUE>
     IF (<UID.<LOCAL.UID>>)
         IF (<UID.<LOCAL.UID>.DEFNAME> == c_skeleton)
-            TRYSRC <DLOCAL.UID> SRC.EFFECT 2,i_fx_smoke,16,10,0
-            UID.<DLOCAL.UID>.REMOVE
+            UID.<DLOCAL.UID>.HITS = 0
         ENDIF
     ENDIF
 ENDFOR
@@ -166,10 +165,7 @@ RETURN 0
 ON=@SPELLEFFECT
 // Dispell spells will remove summoned skeletons.
 IF ((<SERV.SPELL.<ARGN1>.DEFNAME> == s_dispel) || (<SERV.SPELL.<ARGN1>.DEFNAME> == s_mass_dispel))
-   TRYSRC <I.UID> SRC.EFFECT 2,i_fx_smoke,16,10,0
-   UID.<DTAG.MASTER>.TAG.SLOT_<I.UID> =
-   UID.<DTAG.MASTER>.CURFOLLOWER --
-   I.REMOVE
+   I.HITS = 0
 ENDIF
 RETURN 0
 
