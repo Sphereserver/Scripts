@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2007
+// SPHERE by : Menasoft ï¿½1997-2007
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -123,7 +123,7 @@ ON=@EnvironChange
    if (<tag0.lightstr>)
       return 0
    endif
-   if ( <flags>&statf_conjured   ) 
+   if ( <flags>&statf_conjured   )
       remove
       return 1
    endif
@@ -136,6 +136,43 @@ ON=@EnvironChange
    tag.lightfame=<fame>
    fame=10
    return 0
+
+[EVENTS e_polymorphed_lich]
+ON=@SPELLEFFECT
+// Dispell spells will return a polymorphed lich into lich.
+IF ((<SERV.SPELL.<ARGN1>.DEFNAME> == s_dispel) || (<SERV.SPELL.<ARGN1>.DEFNAME> == s_mass_dispel))
+   TRYSRC <I.UID> SRC.EFFECT 2,i_fx_smoke_small,16,10,0
+   I.BODY = c_lich
+   I.EVENTS -e_polymorphed_lich
+ENDIF
+RETURN 0
+
+[EVENTS e_lich_death]
+// Check for summoned skeletons to remove him.
+ON=@DEATH
+FOR 0 <EVAL <TAGCOUNT> - 1>
+    // Loop hover tags. If the value is the UID of a c_skeleton, dispel it.
+    LOCAL.UID = <TAGAT.<LOCAL._FOR>.VALUE>
+    IF (<UID.<LOCAL.UID>>)
+        IF (<UID.<LOCAL.UID>.DEFNAME> == c_skeleton)
+            UID.<DLOCAL.UID>.HITS = 0
+        ENDIF
+    ENDIF
+ENDFOR
+RETURN 0
+
+[EVENTS e_skeleton_summoned_by_lich]
+ON=@SPELLEFFECT
+// Dispell spells will remove summoned skeletons.
+IF ((<SERV.SPELL.<ARGN1>.DEFNAME> == s_dispel) || (<SERV.SPELL.<ARGN1>.DEFNAME> == s_mass_dispel))
+   I.HITS = 0
+ENDIF
+RETURN 0
+
+ON=@DEATH
+UID.<DTAG.MASTER>.TAG.SLOT_<I.UID> =
+UID.<DTAG.MASTER>.CURFOLLOWER --
+RETURN 0
 
 [EVENTS e_Carnivores]
 // weak carnivores.

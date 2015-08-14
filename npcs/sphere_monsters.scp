@@ -1090,8 +1090,50 @@ ON=@Create
    RESFIRE={10 20}
    RESPOISON={5 10}
 
+// Function f_lich_behaviour_control controls that lich polymorphs and summon
+// skeletons.
+// Receive only one argument: The UID of the lich.
+// First check if lich is polymorphed. If not it polymorph.
+// Then check if need to summon a skeleton. If not, it summon.
+// c_lich used Tags:
+// TAG.SLOT_x: Stores the UID from a summoned skeleton.
+// TAG.BEHAVIOURDELAY: Timer delay.
+[FUNCTION f_lich_behaviour_control]
+// Stop when lich die.
+IF (! <ARGN1>)
+   RETURN
+ENDIF
+REF1 = <ARGN1>
+// If lich is not polymorphed, polymorph and wait.
+IF (<REF1.BODY> == c_lich)
+   SOUND snd_spell_animate_dead
+   REF1.BODY = c_skeleton
+   TOPOBJ.EVENTS +e_polymorphed_lich
+   TIMERF <REF1.DTAG.BEHAVIOURDELAY>,f_lich_behaviour_control <ARGN1>
+   RETURN
+// If polymorphed, then try to summon a skeleton.
+ENDIF
+// <SERV.CHARDEF.c_skeleton.FOLLOWERSLOTS> is not setted so we fix to 1 until
+// is setted.
+LOCAL.NEWCURFOLLOWER = <EVAL <REF1.CURFOLLOWER> + <max 1,<SERV.CHARDEF.c_skeleton.FollowerSlots>>>
+IF (<DLOCAL.NEWCURFOLLOWER> <= <REF1.MAXFOLLOWER>)
+   // Create new npc and set the same home that summoner.
+   SERV.NEWNPC = c_skeleton
+   NEW.MOVENEAR = <REF1>
+   NEW.HOME = <REF1.HOME>
+   NEW.HOMEDIST = <REF1.HOMEDIST>
+   // Update events and status from follower.
+   NEW.EVENTS +e_skeleton_summoned_by_lich
+   NEW.FLAGS |= statf_conjured
+   // Link follower and master.
+   NEW.TAG.MASTER = <ARGN1>
+   REF1.CURFOLLOWER = <DLOCAL.NEWCURFOLLOWER>
+   REF1.TAG.SLOT_<NEW.UID> = <NEW.UID>
+ENDIF
+TIMERF <REF1.DTAG.BEHAVIOURDELAY>,f_lich_behaviour_control <ARGN1>
+RETURN
+
 [CHARDEF 018]
-//FIXME: Summons skeletons and polymorphs into a skeleton.
 //FIXME: Can be redeemed using the sacrifice virtue.
 DEFNAME=c_lich
 NAME=lich
@@ -1142,6 +1184,15 @@ ON=@Create
    RESENERGY={40 50}
    RESFIRE={20 30}
    RESPOISON={55 65}
+   // Current number of skeletons summoned.
+   CURFOLLOWER = 0
+   // Max number of skeletons to summon. Between 4 and 6 is a nice number?
+   MAXFOLLOWER = <R4,6>
+   // Just to not use "magic numbers". And can be modified per monster.
+   TAG.BEHAVIOURDELAY = 10
+   // We add the death trigger.
+   EVENTS +e_lich_death
+   TIMERF <DTAG.BEHAVIOURDELAY>, f_lich_behaviour_control <UID>
    ITEMNEWBIE=i_spellbook
    ADDSPELL=s_clumsy
    ADDSPELL=s_weaken
@@ -5865,7 +5916,7 @@ ON=@NpcRestock
    ITEM=loot_ai_healer
 
 [CHARDEF 07c]
-//Master Theophilus is a named necromancer that can be found in Bedlam. 
+//Master Theophilus is a named necromancer that can be found in Bedlam.
 DEFNAME=c_theophilus
 NAME=Master Theophilus
 ICON=i_pet_evil_mage
@@ -10626,7 +10677,7 @@ ON=@Create
    RESPOISON={5 10}
 
 [CHARDEF 0de]
-////Partial animation - lizardman with spear - no corpse - dont use 
+////Partial animation - lizardman with spear - no corpse - dont use
 NAME=0de
 CAN=MT_NONMOVER|MT_NONHUM
 
@@ -11396,7 +11447,7 @@ ON=@Create
 ON=@NpcRestock
    ITEM=loot_hiryu
    //1500 - 1900 Gold. Magic Items, 4 Gems
-   //Special: Bonsai Seed, Fragrant Seed, Peculiar Seed. 
+   //Special: Bonsai Seed, Fragrant Seed, Peculiar Seed.
 ON=@Hit
    //Dismount Attack
    IF (<MANA> >= 20) && (<SRC.FLAGS> & statf_onhorse)
@@ -12641,7 +12692,7 @@ ON=@Create
 ON=@NpcRestock
    ITEM=loot_minotaur
    //423 - 445 Gold. magic items
-   //Special: Level 3 Treasure Map 
+   //Special: Level 3 Treasure Map
 
 [CHARDEF 0108]
 //FIXME: "These creatures assumme the skills and shape of whomever they see first."
@@ -13793,7 +13844,7 @@ ON=@Create
 [CHARDEF 0125]
 //FIXME: No Stratics data
 //Looks like it should fly, but there is no animation
-//After tinkering it will take 25 white dragon scales and 50 leather to create it. 
+//After tinkering it will take 25 white dragon scales and 50 leather to create it.
 DEFNAME=c_vollem
 NAME=vollem
 ICON=i_pet_vollem
@@ -17762,7 +17813,7 @@ ON=@Create
 ON=@NPCRestock
    ITEM=i_slith_tongue,{1 3},R5
    ITEM=i_gold,{100 200}
-   //FIXME: slith eye, pottery fragments 
+   //FIXME: slith eye, pottery fragments
 
 [CHARDEF 02df]
 //FIXME: Incomplete Stratics data
@@ -17879,7 +17930,7 @@ ON=@Create
    RESPOISON=100
 ON=@NpcRestock
    ITEM=loot_spider_wolf
-   //Special: Bottle of Ichor, spider carapace 
+   //Special: Bottle of Ichor, spider carapace
 
 [CHARDEF 02e1]
 DEFNAME=c_spider_trapdoor
@@ -17929,7 +17980,7 @@ ON=@Create
 ON=@NpcRestock
    ITEM=loot_spider_trapdoor
    //250 - 350 Gold. 8spider silk, 1 - 4magic items
-   //Special: bottle of ichor, spider carapace, tattered scroll. level 2 Treasure Map 
+   //Special: bottle of ichor, spider carapace, tattered scroll. level 2 Treasure Map
 ON=@NPCSeeNewPlayer
    RETURN 0 // This needs fixing
    //Summon pack
@@ -18006,7 +18057,7 @@ ON=@Create
 ON=@NpcRestock
    ITEM=loot_fire_ant
    //299 - 299 Gold.
-   //Special: Seared Fire Ant Goo, level 3 Treasure Map 
+   //Special: Seared Fire Ant Goo, level 3 Treasure Map
 ON=@Death
    REF11=<UID>
    FORCHARS 4
@@ -18718,7 +18769,7 @@ ON=@NpcRestock
 
 [CHARDEF 02f3]
 DEFNAME=c_gargoyle_destroyer
-NAME=gargoyle destroyer 
+NAME=gargoyle destroyer
 ICON=i_pet_gargoyle_fire
 SOUND=snd_monster_gargyl1
 DAM=31,64
@@ -18829,7 +18880,7 @@ ON=@GetHit
          SRC.DAMAGE <R20,30> <DEF.dam_energy> <UID>
       ENDIF
    ENDIF
- 
+
 [CHARDEF 02f5]
 //FIXME: Pets dont attack machinery
 DEFNAME=c_exodus_minion
@@ -19973,7 +20024,7 @@ ON=@Create
    RESPOISON={20 35}
 ON=@NpcRestock
    ITEM=loot_solen_warrior
- 
+
 [CHARDEF 030f]
 //FIXME: Lay eggs which spawn more solen creatures
 DEFNAME=c_solen_queen
@@ -21223,9 +21274,9 @@ ON=@Create
 // FIXME: Howl of the Lich: A howl so powerful it creates a cold blast radius causing cold damage to all players and their pets.
 // FIXME: Creeping Death: Occasionally, the Primeval Lich will call creatures of the darkness to his aid.
 //        - Up to six lightning strikes will randomly assault players and pets within a 15 tile radius of the Lich
-//        - A shadow dweller will spawn at each point near the impact of those lightning strikes and attack players and pets within range 
+//        - A shadow dweller will spawn at each point near the impact of those lightning strikes and attack players and pets within range
 // FIXME: Unholy Touch: The Lich touch will occasionally corrupt the players soul, temporarily draining some of his skills and attributes
-// FIXME: Teleport Taunt: The Lich should taunt players out of attack range when they attack the lich with ranged weapons or magic. 
+// FIXME: Teleport Taunt: The Lich should taunt players out of attack range when they attack the lich with ranged weapons or magic.
 DEFNAME=c_lich_primeval
 NAME=primeval lich
 ICON=i_pet_lich_primeval
