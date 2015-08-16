@@ -1100,37 +1100,36 @@ ON=@Create
 // TAG.BEHAVIOURDELAY: Timer delay.
 [FUNCTION f_lich_behaviour_control]
 // Stop when lich die.
-IF (! <ARGN1>)
+IF (! <SRC>)
    RETURN
 ENDIF
-REF1 = <ARGN1>
 // If lich is not polymorphed, polymorph and wait.
-IF (<REF1.BODY> == c_lich)
+IF (<SRC.BODY> == c_lich)
    SOUND snd_spell_animate_dead
-   REF1.BODY = c_skeleton
-   TOPOBJ.EVENTS +e_polymorphed_lich
-   TIMERF <REF1.DTAG.BEHAVIOURDELAY>,f_lich_behaviour_control <ARGN1>
+   SRC.BODY = c_skeleton
+   SRC.EVENTS +e_polymorphed_lich
+   TIMERF <SRC.DTAG.BEHAVIOURDELAY>,SRC.f_lich_behaviour_control
    RETURN
 // If polymorphed, then try to summon a skeleton.
 ENDIF
 // <SERV.CHARDEF.c_skeleton.FOLLOWERSLOTS> is not setted so we fix to 1 until
 // is setted.
-LOCAL.NEWCURFOLLOWER = <EVAL <REF1.CURFOLLOWER> + <max 1,<SERV.CHARDEF.c_skeleton.FollowerSlots>>>
-IF (<DLOCAL.NEWCURFOLLOWER> <= <REF1.MAXFOLLOWER>)
+LOCAL.NEWCURFOLLOWER = <EVAL <SRC.CURFOLLOWER> + <QVAL(<SERV.CHARDEF.c_skeleton.FollowerSlots> > 0 ? <SERV.CHARDEF.c_skeleton.FollowerSlots> : 1)>>
+IF (<DLOCAL.NEWCURFOLLOWER> <= <SRC.MAXFOLLOWER>)
    // Create new npc and set the same home that summoner.
    SERV.NEWNPC = c_skeleton
-   NEW.MOVENEAR = <REF1>
-   NEW.HOME = <REF1.HOME>
-   NEW.HOMEDIST = <REF1.HOMEDIST>
+   NEW.MOVENEAR = <SRC>
+   NEW.HOME = <SRC.HOME>
+   NEW.HOMEDIST = <SRC.HOMEDIST>
    // Update events and status from follower.
    NEW.EVENTS +e_skeleton_summoned_by_lich
    NEW.FLAGS |= statf_conjured
    // Link follower and master.
-   NEW.TAG.MASTER = <ARGN1>
-   REF1.CURFOLLOWER = <DLOCAL.NEWCURFOLLOWER>
-   REF1.TAG.SLOT_<NEW.UID> = <NEW.UID>
+   NEW.TAG.MASTER = <SRC>
+   SRC.CURFOLLOWER = <DLOCAL.NEWCURFOLLOWER>
+   SRC.TAG.SLOT_<NEW.UID> = <NEW.UID>
 ENDIF
-TIMERF <REF1.DTAG.BEHAVIOURDELAY>,f_lich_behaviour_control <ARGN1>
+TIMERF <SRC.DTAG.BEHAVIOURDELAY>,SRC.f_lich_behaviour_control
 RETURN
 
 [CHARDEF 018]
@@ -1192,7 +1191,7 @@ ON=@Create
    TAG.BEHAVIOURDELAY = 10
    // We add the death trigger.
    EVENTS +e_lich_death
-   TIMERF <DTAG.BEHAVIOURDELAY>, f_lich_behaviour_control <UID>
+   TIMERF <DTAG.BEHAVIOURDELAY>, SRC.f_lich_behaviour_control
    ITEMNEWBIE=i_spellbook
    ADDSPELL=s_clumsy
    ADDSPELL=s_weaken
