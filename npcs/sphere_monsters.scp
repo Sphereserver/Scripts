@@ -1090,47 +1090,43 @@ ON=@Create
    RESFIRE={10 20}
    RESPOISON={5 10}
 
-// Function f_lich_behaviour_control controls that lich polymorphs and summon
-// skeletons.
-// Receive only one argument: The UID of the lich.
-// First check if lich is polymorphed. If not it polymorph.
-// Then check if need to summon a skeleton. If not, it summon.
+// Function that polymorphs a lich into a skeleton.
+[FUNCTION f_lich_polymorph]
+IF (<BODY> == c_lich)
+   SOUND snd_spell_animate_dead
+   BODY = c_skeleton
+   EVENTS +e_polymorphed_lich
+ENDIF
+RETURN
+
+// Function that summon skeletons. Check for follower limits.
 // c_lich used Tags:
 // TAG.SLOT_x: Stores the UID from a summoned skeleton.
 // TAG.BEHAVIOURDELAY: Timer delay.
-[FUNCTION f_lich_behaviour_control]
-// Stop when lich die.
-IF (! <ARGN1>)
-   RETURN
+[FUNCTION f_lich_summon_skeletons]
+LOCAL.FOLLOWERSLOTS = <SERV.CHARDEF.c_skeleton.FOLLOWERSLOTS>
+// If c_skeleton.FOLLOWERSLOTS is not setted, it will be 0. Then we set an
+// arbitrary value (1).
+IF (!<LOCAL.FOLLOWERSLOTS>)
+        LOCAL.FOLLOWERSLOTS = 1
 ENDIF
-REF1 = <ARGN1>
-// If lich is not polymorphed, polymorph and wait.
-IF (<REF1.BODY> == c_lich)
-   SOUND snd_spell_animate_dead
-   REF1.BODY = c_skeleton
-   TOPOBJ.EVENTS +e_polymorphed_lich
-   TIMERF <REF1.DTAG.BEHAVIOURDELAY>,f_lich_behaviour_control <ARGN1>
-   RETURN
-// If polymorphed, then try to summon a skeleton.
-ENDIF
-// <SERV.CHARDEF.c_skeleton.FOLLOWERSLOTS> is not setted so we fix to 1 until
-// is setted.
-LOCAL.NEWCURFOLLOWER = <EVAL <REF1.CURFOLLOWER> + <max 1,<SERV.CHARDEF.c_skeleton.FollowerSlots>>>
-IF (<DLOCAL.NEWCURFOLLOWER> <= <REF1.MAXFOLLOWER>)
+LOCAL.NEWCURFOLLOWER = <CURFOLLOWER> + <LOCAL.FOLLOWERSLOTS>
+IF (<DLOCAL.NEWCURFOLLOWER> <= <MAXFOLLOWER>)
    // Create new npc and set the same home that summoner.
    SERV.NEWNPC = c_skeleton
-   NEW.MOVENEAR = <REF1>
-   NEW.HOME = <REF1.HOME>
-   NEW.HOMEDIST = <REF1.HOMEDIST>
+   NEW.MOVENEAR = <UID>
+   NEW.HOME = <HOME>
+   NEW.HOMEDIST = <HOMEDIST>
    // Update events and status from follower.
+   NEW.FOLLOWERSLOTS = <LOCAL.FOLLOWERSLOTS>
    NEW.EVENTS +e_skeleton_summoned_by_lich
    NEW.FLAGS |= statf_conjured
    // Link follower and master.
-   NEW.TAG.MASTER = <ARGN1>
-   REF1.CURFOLLOWER = <DLOCAL.NEWCURFOLLOWER>
-   REF1.TAG.SLOT_<NEW.UID> = <NEW.UID>
+   NEW.TAG.MASTER = <UID>
+   CURFOLLOWER = <DLOCAL.NEWCURFOLLOWER>
+   TAG.SLOT_<NEW.UID> = <NEW.UID>
+   TIMERF <DTAG.BEHAVIOURDELAY>,f_lich_summon_skeletons
 ENDIF
-TIMERF <REF1.DTAG.BEHAVIOURDELAY>,f_lich_behaviour_control <ARGN1>
 RETURN
 
 [CHARDEF 018]
@@ -1192,7 +1188,8 @@ ON=@Create
    TAG.BEHAVIOURDELAY = 10
    // We add the death trigger.
    EVENTS +e_lich_death
-   TIMERF <DTAG.BEHAVIOURDELAY>, f_lich_behaviour_control <UID>
+   TIMERF <DTAG.BEHAVIOURDELAY>, f_lich_polymorph
+   TIMERF <DTAG.BEHAVIOURDELAY>, f_lich_summon_skeletons
    ITEMNEWBIE=i_spellbook
    ADDSPELL=s_clumsy
    ADDSPELL=s_weaken

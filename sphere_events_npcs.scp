@@ -144,6 +144,7 @@ IF ((<SERV.SPELL.<ARGN1>.DEFNAME> == s_dispel) || (<SERV.SPELL.<ARGN1>.DEFNAME> 
    TRYSRC <I.UID> SRC.EFFECT 2,i_fx_smoke_small,16,10,0
    I.BODY = c_lich
    I.EVENTS -e_polymorphed_lich
+   TIMERF <I.TAG.BEHAVIOURDELAY>,I.f_lich_polymorph
 ENDIF
 RETURN 0
 
@@ -155,7 +156,7 @@ FOR 0 <EVAL <TAGCOUNT> - 1>
     LOCAL.UID = <TAGAT.<LOCAL._FOR>.VALUE>
     IF (<UID.<LOCAL.UID>>)
         IF (<UID.<LOCAL.UID>.DEFNAME> == c_skeleton)
-            UID.<DLOCAL.UID>.HITS = 0
+            UID.<LOCAL.UID>.HITS = 0
         ENDIF
     ENDIF
 ENDFOR
@@ -170,8 +171,18 @@ ENDIF
 RETURN 0
 
 ON=@DEATH
-UID.<DTAG.MASTER>.TAG.SLOT_<I.UID> =
-UID.<DTAG.MASTER>.CURFOLLOWER --
+REF1 = <TAG.MASTER>
+// First check if c_lich exists.
+IF (!<REF1>)
+    RETURN 0
+ENDIF
+// We must check if the f_lich_summon_skeletons needs to be invoked.
+LOCAL.LIMIT = <REF1.CURFOLLOWER> + <I.FOLLOWERSLOTS>
+IF (<LOCAL.LIMIT> > <REF1.MAXFOLLOWER>)
+    REF1.TIMERF <REF1.TAG.BEHAVIOURDELAY>,f_lich_summon_skeletons
+ENDIF
+REF1.TAG.SLOT_<I.UID> =
+REF1.CURFOLLOWER = <EVAL <REF1.CURFOLLOWER> - <I.FOLLOWERSLOTS>>
 RETURN 0
 
 [EVENTS e_Carnivores]
