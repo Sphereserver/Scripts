@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, Jun 29, 2015
+// FILE LAST UPDATED: Friday, Aug 21, 2015
 //
 VERSION=0.56c
 
@@ -1247,6 +1247,7 @@ dam_acidic              00100   // acidic damage (will destroy armor)
 dam_cold                00200   // cold-based damage
 dam_slash               00400   // damage done by slashing (swords, etc)
 dam_pierce              00800   // damage done with spear and such.
+dam_nodisturb           02000   // victim won't be disturbed
 dam_noreveal            04000   // damage that does not reveal the attacker.
 dam_nounparalyze        08000   // victim won't be unparalyzed
 dam_fixed               010000	// damage will not be recalculated with default checks, lowering it because of armor, resistances ...
