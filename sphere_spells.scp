@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Wednesday, Jun 10, 2015
+// FILE LAST UPDATED: Tuesday, Aug 25, 2015
 //
 VERSION=0.56c
 
@@ -415,9 +415,10 @@ SKILLREQ=MAGERY 30.0
 INTERRUPT=100.0,100.0
 
 [SPELL 22]
+// NOTE: Teleport sound/effect_id is handled by Sphere.ini settings
 DEFNAME=s_teleport
 NAME=Teleport
-SOUND=snd_spell_teleport
+SOUND=0
 RUNES=RP
 CAST_TIME=1.0
 RESOURCES=i_reag_blood_moss,i_reag_mandrake_root
