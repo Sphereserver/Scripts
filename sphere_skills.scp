@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Jul 28, 2015
+// FILE LAST UPDATED: Thursday, Aug 27, 2015
 //
 VERSION=0.56c
 
@@ -1167,11 +1167,88 @@ BONUS_INT=20
 BONUS_STATS=25
 ADV_RATE=10.0,200.0,800.0
 
+ON=@PreStart
+	IF !(<FLAGS> & statf_invisible|statf_hidden)
+		SYSMESSAGE You must hide first
+		return 1
+	ELIF (<HIDING> < 80.0)
+		SYSMESSAGE You are not hidden well enough.  Become better at hiding.
+		REVEAL
+		return 1
+	ELIF (<GetCharArmorRating> >= 42)
+		SYSMESSAGE You could not hope to move quietly wearing this much armor.
+		REVEAL
+		return 1
+	ENDIF
+
+ON=@Success
+	STEPSTEALTH = <eval <STEALTH>/50>
+	SYSMESSAGE You begin to move quietly.
+
 ON=@Fail
-	SRC.SYSMESSAGE You can't seem to hide here.
+	SYSMESSAGE You fail in your attempt to move unnoticed.
+	REVEAL
 
 ON=@Abort
-	SRC.SYSMESSAGE You give up trying to hide here.
+	SYSMESSAGE You give up trying to hide here.
+
+[FUNCTION GetCharArmorRating]
+ARGS=4,6,7,10,13,19
+WHILE (<dARGS>)
+ IF !(<FINDLAYER.<ARGV0>.MageArmor>)
+  LOCAL.AR += <DEF0.ArmorRating.<FINDLAYER.<ARGV0>.GetArmorMaterial>.Layer<ARGV0>>
+ ENDIF
+ ARGS=<STREAT <ARGS>>
+ENDWHILE
+return <LOCAL.AR>
+
+[FUNCTION GetArmorMaterial]
+IF (<DISPIDDEC> >= 5061) && (<DISPIDDEC> <= 5075)
+ return Leather
+ELIF (<DISPIDDEC> >= 5076) && (<DISPIDDEC> <= 5090)
+ return Studded
+ELIF (<DISPIDDEC> >= 5198) && (<DISPIDDEC> <= 5207)
+ return Bone
+ELIF (<DISPIDDEC> >= 5093) && (<DISPIDDEC> <= 5106)
+ return Ring
+ELIF (<DISPIDDEC> >= 5051) && (<DISPIDDEC> <= 5060)
+ return Chain
+ELIF (<DISPIDDEC> >= 5128) && (<DISPIDDEC> <= 5146)
+ return Plate
+ELIF (<DISPIDDEC> >= 9793) && (<DISPIDDEC> <= 9800)
+ return Dragon
+ENDIF
+
+[DEFNAME ArmorRating]
+ArmorRating.Studded.Layer4	6
+ArmorRating.Studded.Layer7	2
+ArmorRating.Studded.Layer10	2
+ArmorRating.Studded.Layer13	10
+ArmorRating.Studded.Layer19	4
+ArmorRating.Bone.Layer4		15
+ArmorRating.Bone.Layer6		10
+ArmorRating.Bone.Layer7		5
+ArmorRating.Bone.Layer13	25
+ArmorRating.Bone.Layer19	10
+ArmorRating.Ring.Layer4		15
+ArmorRating.Ring.Layer7		5
+ArmorRating.Ring.Layer13	25
+ArmorRating.Ring.Layer19	10
+ArmorRating.Chain.Layer4	15
+ArmorRating.Chain.Layer6	10
+ArmorRating.Chain.Layer13	25
+ArmorRating.Plate.Layer4	15
+ArmorRating.Plate.Layer6	10
+ArmorRating.Plate.Layer7	5
+ArmorRating.Plate.Layer10	5
+ArmorRating.Plate.Layer13	25
+ArmorRating.Plate.Layer19	10
+ArmorRaring.Dragon.Layer4	15
+ArmorRaring.Dragon.Layer6	10
+ArmorRaring.Dragon.Layer7	5
+ArmorRaring.Dragon.Layer13	25
+ArmorRaring.Dragon.Layer19	10
+
 
 [SKILL 48]
 DEFNAME=SKILL_REMOVE_TRAP
