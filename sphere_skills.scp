@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Thursday, Aug 27, 2015
+// FILE LAST UPDATED: Thursday, Sept 17, 2015
 //
 VERSION=0.56c
 
@@ -169,7 +169,9 @@ BONUS_INT=0
 BONUS_STATS=10
 
 ON=@UseQuick
-	SRC.Effect 3, I_FX_GLOW, 10, 16
+	IF (<ARGN3>)
+		SRC.EFFECT 3,i_fx_glow,10,16
+	ENDIF
 
 [SKILL 6]
 DEFNAME=SKILL_Begging
