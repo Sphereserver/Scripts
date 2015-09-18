@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, May 10, 2015
+// FILE LAST UPDATED: Friday, Sept 18, 2015
 //
 VERSION=0.56c
 
@@ -22107,11 +22107,12 @@ CAN=MT_WALK|MT_RUN|MT_USEHANDS|MT_EQUIP
 [CHARDEF 04e6]
 DEFNAME=c_tiger
 NAME=tiger
+ICON=i_pet_tiger
 CAN=MT_WALK|MT_RUN
 DAM=2,12
 ARMOR=8
 SOUND=snd_animals_panther1 //No tiger sound? snd_animals_lion1 ?
-FollowerSlots=1
+FollowerSlots=2
 CATEGORY=Animals
 SUBSECTION=Wild
 DESCRIPTION=Tiger
@@ -22133,15 +22134,16 @@ ON=@Create
    RESPOISON=0
 
 [CHARDEF 04e7]
-DEFNAME=c_tigress
-NAME=tigress
+DEFNAME=c_tiger_ethereal
+NAME=ethereal tiger
+ICON=i_pet_tiger
 CAN=MT_WALK|MT_RUN
 DAM=2,12
 ARMOR=8
 SOUND=snd_animals_panther1 //No tiger sound? snd_animals_lion1 ?
 FollowerSlots=1
-CATEGORY=Animals
-SUBSECTION=Wild
+CATEGORY=Mounts
+SUBSECTION=Ethereal
 DESCRIPTION=Tiger
 ON=@Create
    NPC=brain_animal
@@ -22160,6 +22162,93 @@ ON=@Create
    RESFIRE=0
    RESPOISON=0
 
+[CHARDEF 0505]		//incomplete
+DEFNAME=c_dino_dimetrosaur
+NAME=Dimetrosaur
+CAN=MT_WALK|MT_RUN
+CATEGORY=Animals
+SUBSECTION=Dinosaurs
+DESCRIPTION=Dimetrosaur
+
+ON=@Create
+   NPC=brain_animal
+
+[CHARDEF 0508]		//incomplete
+DEFNAME=c_dino_dragon_turtle
+NAME=Dragon Turtle
+CAN=MT_WALK|MT_RUN
+CATEGORY=Animals
+SUBSECTION=Dinosaurs
+DESCRIPTION=Dragon Turtle
+
+ON=@Create
+   NPC=brain_animal
+
+[CHARDEF 0509]		//incomplete
+DEFNAME=c_dino_najasaurus
+NAME=Najasaurus
+CAN=MT_WALK|MT_RUN
+CATEGORY=Animals
+SUBSECTION=Dinosaurs
+DESCRIPTION=Najasaurus
+
+ON=@Create
+   NPC=brain_animal
+
+[CHARDEF 050a]		//incomplete
+DEFNAME=c_dino_allosaurus
+NAME=Allosaurus
+CAN=MT_WALK|MT_RUN
+CATEGORY=Animals
+SUBSECTION=Dinosaurs
+DESCRIPTION=Allosaurus
+
+ON=@Create
+   NPC=brain_animal
+
+[CHARDEF 050b]		//incomplete
+DEFNAME=c_dino_saurosaurus
+NAME=Saurosaurus
+CAN=MT_WALK|MT_RUN
+CATEGORY=Animals
+SUBSECTION=Dinosaurs
+DESCRIPTION=Saurosaurus
+
+ON=@Create
+   NPC=brain_animal
+
+[CHARDEF 050c]		//incomplete
+DEFNAME=c_dino_anchisaurus
+NAME=Anchisaurus
+CAN=MT_WALK|MT_RUN
+CATEGORY=Animals
+SUBSECTION=Dinosaurs
+DESCRIPTION=Anchisaurus
+
+ON=@Create
+   NPC=brain_animal
+
+[CHARDEF 050d]		//incomplete
+DEFNAME=c_dino_myrmidex
+NAME=Myrmidex
+CAN=MT_WALK|MT_RUN
+CATEGORY=Animals
+SUBSECTION=Dinosaurs
+DESCRIPTION=Myrmidex
+
+ON=@Create
+   NPC=brain_animal
+
+[CHARDEF 050e]		//incomplete
+DEFNAME=c_dino_dragon_turtle_baby
+NAME=Dragon Turtle Baby
+CAN=MT_WALK|MT_RUN
+CATEGORY=Animals
+SUBSECTION=Dinosaurs
+DESCRIPTION=Dragon Turtle Baby
+
+ON=@Create
+   NPC=brain_animal
 
 ///////////////////////////////////////////////
 // These are here for backward compatibility //
