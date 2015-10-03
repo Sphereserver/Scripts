@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2014
+// SPHERE by : Menasoft ©1997-2015
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Friday, Sept 19, 2014
+// FILE LAST UPDATED: Saturday, Oct 3, 2015
 //
 VERSION=0.56c
 
@@ -231,6 +231,22 @@ EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
 NAME=Waterfall Point
 P=661,2894,39,5
 RECT=635,2862,731,2926,5
+EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
+
+// Time of Legends
+
+[AREADEF a_valley_of_eodon]
+NAME=Valley of Eodon
+P=590,1855,45,5
+RECT=63,1343,896,1984,5
+RECT=574,1855,960,2240,5
+EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
+
+[AREADEF a_shadowguard]
+NAME=Shadowguard
+P=525,2190,25,5
+RECT=32,1984,574,2272,5
+RECT=0,2271,224,2496,5
 EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
 
 [EOF]
