@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Jul 18, 2015
+// FILE LAST UPDATED: Friday, Oct 9, 2015
 //
 VERSION=0.56c
 
@@ -117,11 +117,12 @@ EMOTE_DEF_UNICODE	0
 //armslore_rep					"This item is %s."
 //armslore_rep_0				" It looks quite fragile."
 //armslore_unable				"That does not appear to be a weapon or armor."
-//axis_denied					"Access to Axis' database has been denied!")
+//axis_denied					"Access to Axis' database has been denied!"
 //axis_file_error				"ERROR: Unable to open Axis' database file"
 //axis_info_error				"ERROR: Unable to retrieve Axis' database info"
 //axis_not_priv					"This account does not exist or is not privileged to access Axis' database."
 //begging_start					"You grovel at %s's feet"
+//bvbox_deposited				"%d gold was deposited in your account."
 //bvbox_full_items				"Your bankbox can't hold more items."
 //bvbox_full_weight				"Your bankbox can't hold more weight."
 //bvbox_open_other				"%s has %d stones in %s %s"
@@ -624,6 +625,12 @@ EMOTE_DEF_UNICODE	0
 //msg_targ_gone					"Targetted item is gone?"
 //msg_toofar_vendor				"Too far away from the Vendor"
 //msg_trade_cantmove			"You cannot move items that are in trade windows."
+//msg_trade_sent_gold			"You traded %lu gold to %s."
+//msg_trade_sent_plat			"You traded %lu platinum to %s."
+//msg_trade_sent_plat_gold		"You traded %lu platinum and %lu gold to %s."
+//msg_trade_received_gold		"You received %lu gold from %s."
+//msg_trade_received_plat		"You received %lu platinum from %s."
+//msg_trade_received_plat_gold	"You received %lu platinum and %lu gold from %s."
 //msg_trade_refuse				"%s is refusing all trades."
 //msg_trade_toofar				"You are too far away to trade items"
 //msg_trade_wait				"You should wait %i seconds more before accepting."

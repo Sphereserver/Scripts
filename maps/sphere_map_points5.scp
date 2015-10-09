@@ -7,13 +7,14 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Friday, Jan 16, 2015
+// FILE LAST UPDATED: Friday, Oct 9, 2015
 //
 VERSION=0.56c
 
 [MoonGates]
-852,3526,-43,5=mg_royal_city
+851,3526,-38,5=mg_royal_city
 926,3989,-36,5=mg_holy_city
+719,1863,40,5=mg_valley_of_eodon
 
 [Teleporters]
 1125,1076,-117,5=520,921,39,5=tp_stygian_abyss_entrance1
