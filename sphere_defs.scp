@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Friday, Aug 21, 2015
+// FILE LAST UPDATED: Saturday, Oct 24, 2015
 //
 VERSION=0.56c
 
@@ -659,7 +659,7 @@ memory_irritatedby   00020   // i saw them snoop from me or someone.
 memory_speak         00040   // we spoke about something at some point. (or was tamed) (npc_mem_act_type)
 memory_aggreived     00080   // i was attacked and was the inocent party here !
 memory_guard         00100   // guard this item (never time out)
-memory_ispawned      00200   // i am spawned from this item. (never time out)
+memory_ispawned      00200   // UNUSED!!!! i am spawned from this item. (never time out)
 memory_guild         00400   // this is my guild stone. (never time out)
 memory_town          00800   // this is my town stone. (never time out)
 memory_follow        01000   // UNUSED!!!! i am following this object (never time out)
@@ -1020,7 +1020,7 @@ t_reagent_raw            89   // = freshly grown reagents...not processed yet.
 t_eq_client_linger       90   // = change player to npc for a while.
 t_snow                   91   // = snow
 t_it_stone               92   // = double click for items
-t_unused_93              93
+//t_unused_93            93
 t_explosion              94   // = async explosion.
 t_eq_npc_script          95   // = script npc actions in the form of a book. (get rid of this in favor of waiting on m_events)
 t_web                    96   // = walk on this and transform into some other object.
@@ -1086,7 +1086,7 @@ t_kindling              155
 t_train_dummy           156
 t_train_pickpocket      157
 t_bedroll               158
-t_bellows               159
+//t_unused_159          159
 t_hide                  160   // made into leather.
 t_cloth_bolt            161
 t_board                 162   // = logs are plained into decent lumber

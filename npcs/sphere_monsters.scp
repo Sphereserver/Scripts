@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Friday, Sept 18, 2015
+// FILE LAST UPDATED: Saturday, Oct 24, 2015
 //
 VERSION=0.56c
 
@@ -22128,7 +22128,7 @@ ON=@Create
    WRESTLING={89.6 95.1}
    TACTICS={100.2 102.5}
    MAGICRESISTANCE={88.4 98.0}
-   TAMING=55.0
+   TAMING=101.1
    RESPHYSICAL={55 75}
    RESFIRE={20 40}
    RESCOLD={55 65}
@@ -22149,7 +22149,7 @@ ON=@Create
    NPC=brain_animal
 
 [CHARDEF 0505]		//incomplete
-DEFNAME=c_dino_dimetrosaur
+DEFNAME=c_dimetrosaur
 NAME=Dimetrosaur
 CAN=MT_WALK|MT_RUN
 CATEGORY=Animals
@@ -22158,18 +22158,28 @@ DESCRIPTION=Dimetrosaur
 ON=@Create
    NPC=brain_animal
 
-[CHARDEF 0506]		//not working
-DEFNAME=c_dino_gallusaurus
+[CHARDEF 0506]		//incomplete
+DEFNAME=c_gallusaurus
 NAME=Gallusaurus
 CAN=MT_WALK|MT_RUN
+CATEGORY=Animals
+SUBSECTION=Dinosaurs
+DESCRIPTION=Gallusaurus
+ON=@Create
+   NPC=brain_animal
 
-[CHARDEF 0507]		//not working
-DEFNAME=c_dino_archaeosaurus
+[CHARDEF 0507]		//incomplete
+DEFNAME=c_archaeosaurus
 NAME=Archaeosaurus
 CAN=MT_WALK|MT_RUN
+CATEGORY=Animals
+SUBSECTION=Dinosaurs
+DESCRIPTION=Archaeosaurus
+ON=@Create
+   NPC=brain_animal
 
 [CHARDEF 0508]		//incomplete
-DEFNAME=c_dino_dragon_turtle
+DEFNAME=c_dragon_turtle
 NAME=Dragon Turtle
 CAN=MT_WALK|MT_RUN
 CATEGORY=Animals
@@ -22179,7 +22189,7 @@ ON=@Create
    NPC=brain_dragon
 
 [CHARDEF 0509]		//incomplete
-DEFNAME=c_dino_najasaurus
+DEFNAME=c_najasaurus
 NAME=Najasaurus
 CAN=MT_WALK|MT_RUN
 CATEGORY=Animals
@@ -22189,7 +22199,7 @@ ON=@Create
    NPC=brain_animal
 
 [CHARDEF 050a]		//incomplete
-DEFNAME=c_dino_allosaurus
+DEFNAME=c_allosaurus
 NAME=Allosaurus
 CAN=MT_WALK|MT_RUN
 CATEGORY=Animals
@@ -22199,7 +22209,7 @@ ON=@Create
    NPC=brain_animal
 
 [CHARDEF 050b]		//incomplete
-DEFNAME=c_dino_saurosaurus
+DEFNAME=c_saurosaurus
 NAME=Saurosaurus
 CAN=MT_WALK|MT_RUN
 CATEGORY=Animals
@@ -22209,7 +22219,7 @@ ON=@Create
    NPC=brain_animal
 
 [CHARDEF 050c]		//incomplete
-DEFNAME=c_dino_anchisaurus
+DEFNAME=c_anchisaurus
 NAME=Anchisaurus
 CAN=MT_WALK|MT_RUN
 CATEGORY=Animals
@@ -22219,7 +22229,7 @@ ON=@Create
    NPC=brain_animal
 
 [CHARDEF 050d]		//incomplete
-DEFNAME=c_dino_myrmidex
+DEFNAME=c_myrmidex
 NAME=Myrmidex
 CAN=MT_WALK|MT_RUN
 CATEGORY=Animals
@@ -22229,7 +22239,7 @@ ON=@Create
    NPC=brain_animal
 
 [CHARDEF 050e]		//incomplete
-DEFNAME=c_dino_dragon_turtle_hatchling
+DEFNAME=c_dragon_turtle_hatchling
 NAME=Dragon Turtle Hatchling
 CAN=MT_WALK|MT_RUN
 FollowerSlots=5
