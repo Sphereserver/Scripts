@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Oct 24, 2015
+// FILE LAST UPDATED: Friday, Nov 13, 2015
 //
 VERSION=0.56c
 
@@ -22112,15 +22112,17 @@ CAN=MT_WALK|MT_RUN
 DAM=18,24
 ARMOR=65
 SOUND=snd_animals_panther1	//No tiger sound? snd_animals_lion1 ?
+FOODTYPE=t_meat_raw
+RESOURCES=2 i_ribs_raw
 TAG.Barding.Diff=90.8
 FollowerSlots=2
 CATEGORY=Animals
 SUBSECTION=Wild
 DESCRIPTION=Wild Tiger
 ON=@Create
-   NPC=brain_animal
-   FAME={500 999}
-   KARMA={-800 -999}
+   NPC=brain_monster
+   FAME=16000
+   KARMA=-16000
    STR={500 555}
    DEX={85 125}
    INT={85 165}
@@ -22146,97 +22148,186 @@ CATEGORY=Mounts
 SUBSECTION=Ethereal
 DESCRIPTION=Tiger
 ON=@Create
-   NPC=brain_animal
+   NPC=brain_monster
 
-[CHARDEF 0505]		//incomplete
+[CHARDEF 0505]
 DEFNAME=c_dimetrosaur
 NAME=Dimetrosaur
+ICON=i_pet_dimetrosaur
 CAN=MT_WALK|MT_RUN
+DAM=18,21
+DAMPOISON=10
+ARMOR=85
+SOUND=
+FOODTYPE=t_fruit
+RESOURCES=1 i_ribs_raw, 11 i_hide
+TAG.Barding.Diff=160.0
 CATEGORY=Animals
 SUBSECTION=Dinosaurs
 DESCRIPTION=Dimetrosaur
 ON=@Create
-   NPC=brain_animal
+   NPC=brain_monster
+   FAME=
+   KARMA=
+   STR={271 299}
+   DEX={166 183}
+   INT={390 435}
+   MAXHITS={363 376}
+   WRESTLING={92.3 101.2}
+   TACTICS={108.2 119.2}
+   MAGICRESISTANCE={127.5 140.0}
+   ANATOMY={79.4 84.2}
+   RESPHYSICAL={80 90}
+   RESFIRE={65 70}
+   RESCOLD={60 70}
+   RESPOISON={65 75}
+   RESENERGY={65 75}
 
 [CHARDEF 0506]		//incomplete
 DEFNAME=c_gallusaurus
 NAME=Gallusaurus
+ICON=i_pet_gallusaurus
 CAN=MT_WALK|MT_RUN
 CATEGORY=Animals
 SUBSECTION=Dinosaurs
 DESCRIPTION=Gallusaurus
 ON=@Create
-   NPC=brain_animal
+   NPC=brain_monster
 
 [CHARDEF 0507]		//incomplete
 DEFNAME=c_archaeosaurus
 NAME=Archaeosaurus
+ICON=i_pet_archaeosaurus
 CAN=MT_WALK|MT_RUN
 CATEGORY=Animals
 SUBSECTION=Dinosaurs
 DESCRIPTION=Archaeosaurus
 ON=@Create
-   NPC=brain_animal
+   NPC=brain_monster
 
-[CHARDEF 0508]		//incomplete
+[CHARDEF 0508]
 DEFNAME=c_dragon_turtle
 NAME=Dragon Turtle
+ICON=i_pet_dragon_turtle
 CAN=MT_WALK|MT_RUN
+DAM=25,37
+DAMPOISON=50
+ARMOR=78
+SOUND=
+FOODTYPE=t_fruit
+TAG.Barding.Diff=160.0
 CATEGORY=Animals
 SUBSECTION=Dinosaurs
 DESCRIPTION=Dragon Turtle
 ON=@Create
    NPC=brain_dragon
+   FAME=
+   KARMA=
+   STR={758 800}
+   DEX={185 240}
+   INT={487 558}
+   WRESTLING={225.0 225.7}
+   TACTICS={105.9 107.0}
+   MAGICRESISTANCE={93.2 118.1}
+   RESPHYSICAL={75 80}
+   RESFIRE={70 75}
+   RESCOLD={70 75}
+   RESPOISON=100
+   RESENERGY={65 75}
 
 [CHARDEF 0509]		//incomplete
 DEFNAME=c_najasaurus
 NAME=Najasaurus
+ICON=i_pet_najasaurus
 CAN=MT_WALK|MT_RUN
 CATEGORY=Animals
 SUBSECTION=Dinosaurs
 DESCRIPTION=Najasaurus
 ON=@Create
-   NPC=brain_animal
+   NPC=brain_monster
 
-[CHARDEF 050a]		//incomplete
+[CHARDEF 050a]
 DEFNAME=c_allosaurus
 NAME=Allosaurus
+ICON=i_pet_allosaurus
 CAN=MT_WALK|MT_RUN
+DAM=21,23
+DAMPOISON=50
+ARMOR=70
+SOUND=
+FOODTYPE=t_meat_raw
+TAG.Barding.Diff=160.0
 CATEGORY=Animals
 SUBSECTION=Dinosaurs
 DESCRIPTION=Allosaurus
 ON=@Create
-   NPC=brain_animal
+   NPC=brain_monster
+   FAME=
+   KARMA=
+   STR={347 387}
+   DEX=200
+   INT={131 148}
+   MAXHITS={942 958}
+   MAXMANA={48 70}
+   WRESTLING={99.6 108.3}
+   TACTICS={124.4 133.4}
+   MAGICRESISTANCE={106.4 109.2}
+   RESPHYSICAL={65 75}
+   RESFIRE={55 65}
+   RESCOLD={60 70}
+   RESPOISON={90 100}
+   RESENERGY={60 70}
 
 [CHARDEF 050b]		//incomplete
 DEFNAME=c_saurosaurus
 NAME=Saurosaurus
+ICON=i_pet_saurosaurus
 CAN=MT_WALK|MT_RUN
 CATEGORY=Animals
 SUBSECTION=Dinosaurs
 DESCRIPTION=Saurosaurus
 ON=@Create
-   NPC=brain_animal
+   NPC=brain_monster
 
 [CHARDEF 050c]		//incomplete
 DEFNAME=c_anchisaurus
 NAME=Anchisaurus
+ICON=i_pet_anchisaurus
 CAN=MT_WALK|MT_RUN
 CATEGORY=Animals
 SUBSECTION=Dinosaurs
 DESCRIPTION=Anchisaurus
 ON=@Create
-   NPC=brain_animal
+   NPC=brain_monster
 
-[CHARDEF 050d]		//incomplete
-DEFNAME=c_myrmidex
-NAME=Myrmidex
+[CHARDEF 050d]
+DEFNAME=c_myrmidex_larvae
+NAME=Myrmidex Larvae
+ICON=i_pet_myrmidex_larvae
 CAN=MT_WALK|MT_RUN
-CATEGORY=Animals
-SUBSECTION=Dinosaurs
-DESCRIPTION=Myrmidex
+DAM=5,13
+DAMPOISON=50
+ARMOR=2
+SOUND=
+FOODTYPE=t_meat_raw
+TAG.Barding.Diff=40.0
+CATEGORY=Monsters
+SUBSECTION=Myrmidex
+DESCRIPTION=Myrmidex Larvae
 ON=@Create
-   NPC=brain_animal
+   NPC=brain_monster
+   FAME=
+   KARMA=
+   STR={79 100}
+   DEX={82 95}
+   INT={38 57}
+   MAXHITS={446 588}
+   WRESTLING={50.9 64.6}
+   TACTICS={35.5 50.0}
+   MAGICRESISTANCE={26.6 39.1}
+   POISONING={63.7 78.6}
+   RESPHYSICAL={1 2}
+   RESPOISON={2 3}
 
 [CHARDEF 050e]		//incomplete
 DEFNAME=c_dragon_turtle_hatchling
@@ -22965,5 +23056,118 @@ ON=@NPCRestock
    //ITEM=i_map_treasure,1,R20
    //FIXME: slith eye, pottery fragments, magic items
 
+[CHARDEF c_silverback_gorilla]
+ID=c_gorilla
+NAME=Silverback Gorilla
+DAM=5,10
+ARMOR=23
+FOODTYPE=t_fruit
+RESOURCES=1 i_ribs_raw, 7 i_hide
+TAG.Barding.Diff=20.0
+CATEGORY=Animals
+SUBSECTION=Wild
+DESCRIPTION=Silverback Gorilla
+ON=@Create
+   COLOR=09c4
+   NPC=brain_monster
+   STR={79 106}
+   DEX={77 91}
+   INT={16 29}
+   MAXHITS={50 62}
+   WRESTLING={54.6 62.2}
+   TACTICS={64.8 69.5}
+   MAGICRESISTANCE={30.3 34.5}
+   RESPHYSICAL={20 25}
+   RESFIRE={10 15}
+   RESCOLD={20 25}
+   RESPOISON={40 50}
+   RESENERGY={10 15}
+
+[CHARDEF c_infernus]
+ID=c_rai_ju
+NAME=Infernus
+DAM=11,14
+DAMFIRE=100
+ARMOR=50
+TAG.Barding.Diff=60.0
+CATEGORY=Monsters
+SUBSECTION=Miscellaneous
+DESCRIPTION=Infernus
+ON=@Create
+   COLOR=0777
+   NPC=brain_monster
+   FAME=10000
+   KARMA=-10000
+   STR={318 400}
+   DEX={97 115}
+   INT={184 266}
+   MAXHITS={202 245}
+   WRESTLING={65.1 79.1}
+   TACTICS={56.4 66.6}
+   MAGICRESISTANCE={91.5 98.2}
+   RESPHYSICAL={45 55}
+   RESFIRE={80 90}
+   RESCOLD={25 35}
+   RESPOISON={40 50}
+   RESENERGY={35 45}
+
+[CHARDEF c_greater_phoenix]
+ID=c_phoenix
+NAME=Greater Phoenix
+DAM=11,14
+DAMFIRE=60
+ARMOR=50
+TAG.Barding.Diff=80.0
+CATEGORY=Monsters
+SUBSECTION=Miscellaneous
+DESCRIPTION=Greater Phoenix
+ON=@Create
+   NPC=brain_monster
+   FAME=10000
+   KARMA=-10000
+   STR={332 386}
+   DEX={97 113}
+   INT={182 258}
+   MAXHITS={119 240}
+   WRESTLING={65.2 75.7}
+   TACTICS={50.9 69.6}
+   MAGICRESISTANCE={91.4 99.9}
+   MAGERY={90.5 99.1}
+   EVALUATINGINTEL={91.9 99.7}
+   RESPHYSICAL={45 55}
+   RESFIRE={70 80}
+   RESCOLD={20 30}
+   RESPOISON={40 50}
+   RESENERGY={35 45}
+
+[CHARDEF c_myrmidex_drone]
+ID=c_solen_worker
+NAME=Myrmidex Drone
+DAM=6,12
+DAMPOISON=50
+ARMOR=2
+FOODTYPE=t_meat_raw
+RESOURCES=4 i_ribs_raw
+TAG.Barding.Diff=40.0
+CATEGORY=Monsters
+SUBSECTION=Myrmidex
+DESCRIPTION=Myrmidex Drone
+ON=@Create
+   COLOR=0a74
+   NPC=brain_monster
+   FAME=
+   KARMA=
+   STR={76 104}
+   DEX={96 136}
+   INT={25 44}
+   MAXHITS={460 597}
+   WRESTLING={41.1 49.8}
+   TACTICS={30.1 49.0}
+   MAGICRESISTANCE={30.1 43.5}
+   RESPHYSICAL=2
+   RESFIRE={1 2}
+   RESCOLD={1 2}
+   RESPOISON={3 4}
+   RESENERGY={1 2}
 
 [EOF]

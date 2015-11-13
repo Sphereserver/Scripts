@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Friday, Sept 18, 2015
+// FILE LAST UPDATED: Friday, Nov 13, 2015
 //
 VERSION=0.56c
 
@@ -3564,5 +3564,95 @@ TDATA3=c_tiger
 CATEGORY=Miscellaneous
 SUBSECTION=Character Icons
 DESCRIPTION=Tiger
+
+[ITEMDEF 09845]
+DEFNAME=i_pet_dimetrosaur
+NAME=Dimetrosaur
+TYPE=t_figurine
+TDATA3=c_dimetrosaur
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Dimetrosaur
+
+[ITEMDEF 09846]
+DEFNAME=i_pet_gallusaurus
+NAME=Gallusaurus
+TYPE=t_figurine
+TDATA3=c_gallusaurus
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Gallusaurus
+
+[ITEMDEF 09847]
+DEFNAME=i_pet_archaeosaurus
+NAME=Archaeosaurus
+TYPE=t_figurine
+TDATA3=c_archaeosaurus
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Archaeosaurus
+
+[ITEMDEF 09848]
+DEFNAME=i_pet_dragon_turtle
+NAME=Dragon Turtle
+TYPE=t_figurine
+TDATA3=c_dragon_turtle
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Dragon Turtle
+
+[ITEMDEF 09849]
+DEFNAME=i_pet_najasaurus
+NAME=Najasaurus
+TYPE=t_figurine
+TDATA3=c_najasaurus
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Najasaurus
+
+[ITEMDEF 0984a]
+DEFNAME=i_pet_allosaurus
+NAME=Allosaurus
+TYPE=t_figurine
+TDATA3=c_allosaurus
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Allosaurus
+
+[ITEMDEF 0984b]
+DEFNAME=i_pet_saurosaurus
+NAME=Saurosaurus
+TYPE=t_figurine
+TDATA3=c_saurosaurus
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Saurosaurus
+
+[ITEMDEF 0984c]
+DEFNAME=i_pet_anchisaurus
+NAME=Anchisaurus
+TYPE=t_figurine
+TDATA3=c_anchisaurus
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Anchisaurus
+
+[ITEMDEF 0984d]
+DEFNAME=i_pet_myrmidex_larvae
+NAME=Myrmidex Larvae
+TYPE=t_figurine
+TDATA3=c_myrmidex_larvae
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Myrmidex Larvae
+
+[ITEMDEF 0984e]
+DEFNAME=i_pet_dragon_turtle_hatchling
+NAME=Dragon Turtle Hatchling
+TYPE=t_figurine
+TDATA3=c_dragon_turtle_hatchling
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Dragon Turtle Hatchling
 
 [EOF]
