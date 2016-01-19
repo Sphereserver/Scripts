@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2014
+// SPHERE by : Menasoft ©1997-2016
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, May 6, 2014
+// FILE LAST UPDATED: Tuesday, Jan 19, 2016
 //
 VERSION=0.56c
 
@@ -352,7 +352,6 @@ ON=@Create
 [ITEMDEF 0e5c]
 DEFNAME=i_rune_glowing_1
 TYPE=t_light_lit
-TDATA4=i_rune_glowing_1
 VALUE=2
 //WEIGHT=0.1
 CAN=can_i_platform
@@ -372,7 +371,6 @@ DUPEITEM=0e5c
 [ITEMDEF 0e5f]
 DEFNAME=i_rune_glowing_2
 TYPE=t_light_lit
-TDATA4=i_rune_glowing_2
 VALUE=2
 //WEIGHT=0.1
 CAN=can_i_platform
@@ -392,7 +390,6 @@ DUPEITEM=0e5f
 [ITEMDEF 0e62]
 DEFNAME=i_rune_glowing_3
 TYPE=t_light_lit
-TDATA4=i_rune_glowing_3
 VALUE=2
 //WEIGHT=0.1
 CAN=can_i_platform
@@ -412,7 +409,6 @@ DUPEITEM=0e62
 [ITEMDEF 0e65]
 DEFNAME=i_rune_glowing_4
 TYPE=t_light_lit
-TDATA4=i_rune_glowing_4
 VALUE=2
 //WEIGHT=0.1
 CATEGORY=Ground Tiles
@@ -431,7 +427,6 @@ DUPEITEM=0e65
 [ITEMDEF 0e68]
 DEFNAME=i_rune_glowing_5
 TYPE=t_light_lit
-TDATA4=i_rune_glowing_5
 VALUE=2
 //WEIGHT=0.1
 CAN=can_i_platform
@@ -1002,7 +997,6 @@ morez=024
 DEFNAME=i_light_source
 //RESOURCES=BASE ITEMS THAT ARE RESOURCES DO NOT ALWAYS HAVE RESOURCES
 TYPE=t_light_lit
-TDATA4=i_light_source
 WEIGHT=0
 LAYER=15
 ON=@Create

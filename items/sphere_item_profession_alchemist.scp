@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2015
+// SPHERE by : Menasoft ©1997-2016
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, Feb 15, 2015
+// FILE LAST UPDATED: Tuesday, Jan 19, 2016
 //
 VERSION=0.56c
 
@@ -747,7 +747,6 @@ ON=@Create
 DEFNAME=i_heating_stand_lit
 TYPE=t_light_lit
 TDATA3=i_heating_stand
-TDATA4=i_heating_stand_lit
 FLIP=1
 WEIGHT=2.1
 RESOURCES=1 i_heating_stand,1 i_candle
