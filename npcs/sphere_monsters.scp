@@ -1,5 +1,5 @@
 ﻿//****************************************************************************
-// SPHERE by : Menasoft ©1997-2015
+// SPHERE by : Menasoft ©1997-2016
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Friday, Nov 13, 2015
+// FILE LAST UPDATED: Tuesday, Jan 19, 2016
 //
 VERSION=0.56c
 
@@ -22183,27 +22183,69 @@ ON=@Create
    RESPOISON={65 75}
    RESENERGY={65 75}
 
-[CHARDEF 0506]		//incomplete
+[CHARDEF 0506]
 DEFNAME=c_gallusaurus
 NAME=Gallusaurus
 ICON=i_pet_gallusaurus
 CAN=MT_WALK|MT_RUN
+DAM=11,17
+ARMOR=5
+SOUND=
+FOODTYPE=t_meat_raw
+RESOURCES=3 i_ribs_raw
+TAG.Barding.Diff=160.0
 CATEGORY=Animals
 SUBSECTION=Dinosaurs
 DESCRIPTION=Gallusaurus
 ON=@Create
    NPC=brain_monster
+   FAME=8100
+   KARMA=-8100
+   STR={477 511}
+   DEX={155 168}
+   INT={221 274}
+   MAXHITS={2220 2811}
+   WRESTLING={83.3 90.9}
+   TACTICS={82.6 88.4}
+   MAGICRESISTANCE={75.2 79.8}
+   RESPHYSICAL={5 6}
+   RESFIRE={2 3}
+   RESCOLD=2
+   RESPOISON={6 7}
+   RESENERGY=2
 
-[CHARDEF 0507]		//incomplete
+[CHARDEF 0507]
 DEFNAME=c_archaeosaurus
 NAME=Archaeosaurus
 ICON=i_pet_archaeosaurus
+DAM=14,16
+DAMFIRE=50
+DAMPOISON=50
+ARMOR=2
+SOUND=
+FOODTYPE=t_meat_raw
+RESOURCES=1 i_ribs_raw, 7 i_hide
+TAG.Barding.Diff=160.0
 CAN=MT_WALK|MT_RUN
 CATEGORY=Animals
 SUBSECTION=Dinosaurs
 DESCRIPTION=Archaeosaurus
 ON=@Create
    NPC=brain_monster
+   FAME=8100
+   KARMA=-8100
+   STR={405 421}
+   DEX={301 320}
+   INT={201 224}
+   MAXHITS={1818 2407}
+   WRESTLING={91.2 105.4}
+   TACTICS={92.0 107.5}
+   MAGICRESISTANCE={101.5 114.7}
+   RESPHYSICAL={2 3}
+   RESFIRE={4 5}
+   RESCOLD={2 3}
+   RESPOISON={3 4}
+   RESENERGY=3
 
 [CHARDEF 0508]
 DEFNAME=c_dragon_turtle
@@ -22235,16 +22277,36 @@ ON=@Create
    RESPOISON=100
    RESENERGY={65 75}
 
-[CHARDEF 0509]		//incomplete
+[CHARDEF 0509]
 DEFNAME=c_najasaurus
 NAME=Najasaurus
 ICON=i_pet_najasaurus
 CAN=MT_WALK|MT_RUN
+DAM=13,24
+DAMPOISON=50
+ARMOR=50
+SOUND=
+TAG.Barding.Diff=160.0
 CATEGORY=Animals
 SUBSECTION=Dinosaurs
 DESCRIPTION=Najasaurus
 ON=@Create
    NPC=brain_monster
+   FAME=10000
+   KARMA=-10000
+   STR={167 297}
+   DEX={169 298}
+   INT={22 40}
+   MAXHITS={737 854}
+   WRESTLING={86.3 97.9}
+   TACTICS={80.7 94.2}
+   MAGICRESISTANCE={154.3 187.9}
+   POISONING={92.1 99.4}
+   RESPHYSICAL={45 55}
+   RESFIRE={50 60}
+   RESCOLD={45 55}
+   RESPOISON=100
+   RESENERGY={35 45}
 
 [CHARDEF 050a]
 DEFNAME=c_allosaurus
@@ -22278,27 +22340,69 @@ ON=@Create
    RESPOISON={90 100}
    RESENERGY={60 70}
 
-[CHARDEF 050b]		//incomplete
+[CHARDEF 050b]
 DEFNAME=c_saurosaurus
 NAME=Saurosaurus
 ICON=i_pet_saurosaurus
+DAM=21,28
+ARMOR=80
+SOUND=
+FOODTYPE=t_meat_raw
+RESOURCES=5 i_ribs_raw, 11 i_hide, 8 i_reag_dragon_blood
+TAG.Barding.Diff=160.0
 CAN=MT_WALK|MT_RUN
 CATEGORY=Animals
 SUBSECTION=Dinosaurs
 DESCRIPTION=Saurosaurus
 ON=@Create
    NPC=brain_monster
+   FAME=11000
+   KARMA=-11000
+   STR={802 824}
+   DEX={201 220}
+   INT={403 440}
+   MAXHITS={1321 1468}
+   WRESTLING={113.2 129.6}
+   TACTICS={111.9 119.3}
+   MAGICRESISTANCE={75.1 89.5}
+   ANATOMY={55.3 59.2}
+   RESPHYSICAL={75 85}
+   RESFIRE={80 90}
+   RESCOLD={45 55}
+   RESPOISON={35 45}
+   RESENERGY={45 55}
 
-[CHARDEF 050c]		//incomplete
-DEFNAME=c_anchisaurus
-NAME=Anchisaurus
-ICON=i_pet_anchisaurus
+[CHARDEF 050c]
+DEFNAME=c_anchisaur
+NAME=Anchisaur
+ICON=i_pet_anchisaur
+DAM=16,19
+ARMOR=3
+SOUND=
+FOODTYPE=t_meat_raw
+RESOURCES=6 i_ribs_raw, 11 i_hide, 6 i_reag_dragon_blood
+TAG.Barding.Diff=160.0
 CAN=MT_WALK|MT_RUN
 CATEGORY=Animals
 SUBSECTION=Dinosaurs
-DESCRIPTION=Anchisaurus
+DESCRIPTION=Anchisaur
 ON=@Create
    NPC=brain_monster
+   FAME=8000
+   KARMA=-8000
+   STR={441 511}
+   DEX={166 185}
+   INT={362 431}
+   MAXHITS={2663 3718}
+   WRESTLING={95.7 114.9}
+   TACTICS={95.7 114.4}
+   MAGICRESISTANCE={99.7 121.1}
+   ANATOMY={95.4 113.6}
+   RESPHYSICAL={3 4}
+   RESFIRE={3 4}
+   RESCOLD=1
+   RESPOISON={2 3}
+   RESENERGY={2 3}
 
 [CHARDEF 050d]
 DEFNAME=c_myrmidex_larvae
@@ -22329,7 +22433,8 @@ ON=@Create
    RESPHYSICAL={1 2}
    RESPOISON={2 3}
 
-[CHARDEF 050e]		//incomplete
+[CHARDEF 050e]
+//FIXME: No Stratics data
 DEFNAME=c_dragon_turtle_hatchling
 NAME=Dragon Turtle Hatchling
 CAN=MT_WALK|MT_RUN
