@@ -714,6 +714,7 @@ EMOTE_DEF_UNICODE	0
 //npc_pet_targ_guard			"What should they guard?"
 //npc_pet_targ_guard_success	"%s is now guarding you."
 //npc_pet_targ_transfer			"Click on the person to transfer ownership to."
+//npc_pet_targ_transfer_summoned	"You cannot transfer ownership of a summoned creature."
 //npc_pet_wage_cost				"I will work for %d gold"
 //npc_pet_weak					"I'm too weak to carry that. "
 //npc_stablemaster_feed			"feed the %s"
