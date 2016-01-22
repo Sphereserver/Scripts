@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2015
+// SPHERE by : Menasoft ©1997-2016
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Oct 24, 2015
+// FILE LAST UPDATED: Friday, Jan 22, 2016
 //
 VERSION=0.56c
 
@@ -673,6 +673,7 @@ EMOTE_DEF_UNICODE	0
 //npc_healer_res_5				"I shall attempt to resurrect thee."
 //npc_pet_cantsell				"I can't sell this"
 //npc_pet_carrynothing			"I'm carrying nothing."
+//npc_pet_confused				"*looks confused*"
 //npc_pet_days_left				"I have been paid to work for %d more days."
 //npc_pet_decide_master			"%s appears to have decided that it is better off without a master!"
 //npc_pet_deserted				"You sense that %s has deserted you."
@@ -700,11 +701,19 @@ EMOTE_DEF_UNICODE	0
 //npc_pet_success				"Yes Master"
 //npc_pet_targ_att				"Who do you want to attack?"
 //npc_pet_targ_follow			"Who should they follow?"
-//npc_pet_targ_friend			"Who is their friend?"
+//npc_pet_targ_friend			"Click on the player whom you wish to make a co-owner."
+//npc_pet_targ_friend_already	"That person is already a friend."
+//npc_pet_targ_friend_success1	"%s will now accept movement commands from %s.")
+//npc_pet_targ_friend_success2	"%s has granted you the ability to give orders to their pet %s. This creature will now consider you as a friend.")
+//npc_pet_targ_friend_summoned	"Summoned creatures are loyal only to their summoners.")
+//npc_pet_targ_unfriend			"Click on the player whom you wish to remove as a co-owner."
+//npc_pet_targ_unfriend_notfriend	"That person is not a friend."
+//npc_pet_targ_unfriend_success1	"%s will no longer accept movement commands from %s."
+//npc_pet_targ_unfriend_success2	"%s has no longer granted you the ability to give orders to their pet %s. This creature will no longer consider you as a friend."
 //npc_pet_targ_go				"Where should they go?"
 //npc_pet_targ_guard			"What should they guard?"
-//npc_pet_targ_transfer			"Who do you want to transfer to?"
-//npc_pet_thanks				"Thank thee"
+//npc_pet_targ_guard_success	"%s is now guarding you."
+//npc_pet_targ_transfer			"Click on the person to transfer ownership to."
 //npc_pet_wage_cost				"I will work for %d gold"
 //npc_pet_weak					"I'm too weak to carry that. "
 //npc_stablemaster_feed			"feed the %s"
