@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2015
+// SPHERE by : Menasoft ©1997-2016
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Aug 25, 2015
+// FILE LAST UPDATED: Saturday, Jan 22, 2016
 //
 VERSION=0.56c
 
@@ -760,7 +760,7 @@ CAST_TIME=7.5
 RESOURCES=i_reag_blood_moss,i_reag_mandrake_root,i_reag_spider_silk
 RUNE_ITEM=i_rune_summon_creature
 SCROLL_ITEM=i_scroll_summon_creature
-FLAGS=spellflag_dir_anim|spellflag_targ_xyz|spellflag_summon|spellflag_playeronly
+FLAGS=spellflag_dir_anim|spellflag_summon|spellflag_playeronly
 EFFECT_ID=0
 EFFECT=0
 LAYER=layer_spell_summon
@@ -1152,7 +1152,7 @@ CAST_TIME=2.3
 RESOURCES=i_reag_blood_moss,i_reag_mandrake_root,i_reag_spider_silk
 RUNE_ITEM=i_rune_summon_elem_air
 SCROLL_ITEM=i_scroll_summon_elem_air
-FLAGS=spellflag_dir_anim|spellflag_targ_xyz|spellflag_summon
+FLAGS=spellflag_dir_anim|spellflag_summon
 EFFECT_ID=0
 EFFECT=0
 LAYER=layer_spell_summon
@@ -1170,7 +1170,7 @@ CAST_TIME=2.3
 RESOURCES=i_reag_blood_moss,i_reag_mandrake_root,i_reag_spider_silk,i_reag_sulfur_ash
 RUNE_ITEM=i_rune_summon_daemon
 SCROLL_ITEM=i_scroll_summon_daemon
-FLAGS=spellflag_dir_anim|spellflag_targ_xyz|spellflag_summon
+FLAGS=spellflag_dir_anim|spellflag_summon
 EFFECT_ID=0
 EFFECT=0
 LAYER=layer_spell_summon
@@ -1188,7 +1188,7 @@ CAST_TIME=2.3
 RESOURCES=i_reag_blood_moss,i_reag_mandrake_root,i_reag_spider_silk
 RUNE_ITEM=i_rune_summon_elem_earth
 SCROLL_ITEM=i_scroll_summon_elem_earth
-FLAGS=spellflag_dir_anim|spellflag_targ_xyz|spellflag_summon
+FLAGS=spellflag_dir_anim|spellflag_summon
 EFFECT_ID=0
 EFFECT=0
 LAYER=layer_spell_summon
@@ -1206,7 +1206,7 @@ CAST_TIME=2.3
 RESOURCES=i_reag_blood_moss,i_reag_mandrake_root,i_reag_spider_silk,i_reag_sulfur_ash
 RUNE_ITEM=i_rune_summon_elem_fire
 SCROLL_ITEM=i_scroll_summon_elem_fire
-FLAGS=spellflag_dir_anim|spellflag_targ_xyz|spellflag_summon
+FLAGS=spellflag_dir_anim|spellflag_summon
 EFFECT_ID=0
 EFFECT=0
 LAYER=layer_spell_summon
@@ -1224,7 +1224,7 @@ CAST_TIME=2.3
 RESOURCES=i_reag_blood_moss,i_reag_mandrake_root,i_reag_spider_silk
 RUNE_ITEM=i_rune_summon_elem_water
 SCROLL_ITEM=i_scroll_summon_elem_water
-FLAGS=spellflag_dir_anim|spellflag_targ_xyz|spellflag_summon
+FLAGS=spellflag_dir_anim|spellflag_summon
 EFFECT_ID=0
 EFFECT=0
 LAYER=layer_spell_summon
@@ -1505,7 +1505,7 @@ CAST_TIME=4.0
 RESOURCES=i_reag_blood_vial,i_reag_grave_dust
 RUNE_ITEM=i_rune_animate_dead
 SCROLL_ITEM=i_scroll_animate_dead
-FLAGS=spellflag_targ_item|spellflag_good|spellflag_summon|spellflag_fx_targ|spellflag_playeronly|spellflag_targ_no_player|spellflag_targ_no_npc
+FLAGS=spellflag_targ_item|spellflag_good|spellflag_fx_targ|spellflag_playeronly|spellflag_targ_no_player|spellflag_targ_no_npc
 EFFECT_ID=i_fx_sparkle
 EFFECT=0
 LAYER=layer_spell_summon
@@ -1768,7 +1768,7 @@ CAST_TIME=4.0
 RESOURCES=i_reag_batwing,i_reag_grave_dust,i_reag_blood_vial
 RUNE_ITEM=i_rune_summon_familiar
 SCROLL_ITEM=i_scroll_summon_familiar
-FLAGS=spellflag_dir_anim|spellflag_targ_xyz|spellflag_summon|spellflag_playeronly
+FLAGS=spellflag_dir_anim|spellflag_summon|spellflag_playeronly
 //EFFECT_ID=//FIXME
 EFFECT=0
 LAYER=layer_spell_summon
@@ -2542,7 +2542,7 @@ CAST_TIME=2.0
 RESOURCES=
 RUNE_ITEM=0
 SCROLL_ITEM=i_scroll_summon_fey
-FLAGS=spellflag_disabled|spellflag_summon|spellflag_targ_xyz
+FLAGS=spellflag_disabled|spellflag_summon
 EFFECT_ID=0
 EFFECT=0
 LAYER=layer_spell_summon
@@ -2560,7 +2560,7 @@ CAST_TIME=2.0
 RESOURCES=
 RUNE_ITEM=0
 SCROLL_ITEM=i_scroll_summon_fiend
-FLAGS=spellflag_disabled|spellflag_summon|spellflag_targ_xyz
+FLAGS=spellflag_disabled|spellflag_summon
 EFFECT_ID=0
 EFFECT=0
 LAYER=layer_spell_summon
