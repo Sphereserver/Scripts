@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Jan 19, 2016
+// FILE LAST UPDATED: Saturday, Jan 23, 2016
 //
 VERSION=0.56c
 
@@ -16515,7 +16515,7 @@ ON=@NPCRestock
 //FIXME: Incomplete Stratics data
 //FIXME: If the ore is colored they change color to match what they have eaten.
 //FIXME: Burst of speed when hit by magic.
-//FIXME: When tamed, it can mine ore (triggered using context menu).
+//FIXME: When tamed, it can mine ores periodically when standing on cave floor (it create ores on ground instead bounce on backpack).
 //FIXME: Fractional stats when tamed.
 //FIXME: Must be beaten into submission before taming.
 DEFNAME=c_beetle_iron
@@ -16565,59 +16565,55 @@ ON=@NpcRestock
    ITEM=random_weapon_all_normal,R2
    ITEM=i_powdered_iron,{1 3},R5
    ITEM=i_iron_beetle_scale,{1 3},R50
-ON=@ContextMenuRequest
-   IF (<IsMyPet>)
-      SRC.AddContextEntry 101,6122//or 6145
-//      SRC.AddContextEntry 102,6170//or 6171?
-      RETURN 0
-   ENDIF
-ON=@ContextMenuSelect
-   IF (<IsMyPet>)
-      IF (<ARGN>==101)
-         FINDLAYER(21).OPEN
-      ENDIF
-      IF (<ARGN>==102)
-         EMOTE digging
-         IF (<SKILLCHECK mining,<MINING>>)
-            EMOTE digging
-
-            FOR <P.STATICS>
-               LOCAL.GroundType=<P.STATICS.<EVAL <LOCAL._FOR>-1>.DEFNAME>
-               SERV.LOG ResourceFound: <EVAL <LOCAL._FOR>-1> ARGO=<ARGO.NAME> is a <LOCAL.GroundType>
-               IF (<LOCAL.GroundType>==i_floor_cave)
-                  FORITEMS 0
-                     IF (<BASEID>==i_worldgem_bit) && (<TYPE>==t_rock)
-                        SERV.LOG Found a worldgem of type t_rock
-                        LOCAL.FoundWorldgem=1
-                     ENDIF
-                  ENDFOR
-                  IF (<LOCAL.FoundWorldgem>==0)
-                     SERV.LOG Create a worldgembit
-                     SERV.NEWITEM i_worldgem_bit
-                     NEW.P=<P>
-                     NEW.TYPE=t_rock
-                     NEW.AMOUNT={5 10}
-                     NEW.MORE1=mr_iron
-                     NEW.TIMER=1000
-                  ENDIF
-               ENDIF
-            ENDFOR
-            FORITEMS 0
-               IF (<BASEID>==i_worldgem_bit) && (<TYPE>==t_rock)
-                  IF (<AMOUNT> > 0)
-                  SERV.NEWITEM i_ore_iron,<AMOUNT>
-                  NEW.P <P>
-                  AMOUNT=0
-                  EMOTE digging ore
-               ELSE
-                  EMOTE no ore located
-               ENDIF
-            ENDFOR
-         ELSE
-            SERV.LOG <NAME> failed used mining skill
-         ENDIF
-      ENDIF
-   ENDIF
+//ON=@ContextMenuRequest
+//   IF (<IsMyPet>)
+//      SRC.AddContextEntry 101,6170	//or 6171?
+//      RETURN 0
+//   ENDIF
+//ON=@ContextMenuSelect
+//   IF (<IsMyPet>)
+//      IF (<ARGN>==101)
+//         EMOTE digging
+//         IF (<SKILLCHECK mining,<MINING>>)
+//            EMOTE digging
+//
+//            FOR <P.STATICS>
+//               LOCAL.GroundType=<P.STATICS.<EVAL <LOCAL._FOR>-1>.DEFNAME>
+//               SERV.LOG ResourceFound: <EVAL <LOCAL._FOR>-1> ARGO=<ARGO.NAME> is a <LOCAL.GroundType>
+//               IF (<LOCAL.GroundType>==i_floor_cave)
+//                  FORITEMS 0
+//                     IF (<BASEID>==i_worldgem_bit) && (<TYPE>==t_rock)
+//                        SERV.LOG Found a worldgem of type t_rock
+//                        LOCAL.FoundWorldgem=1
+//                     ENDIF
+//                  ENDFOR
+//                  IF (<LOCAL.FoundWorldgem>==0)
+//                     SERV.LOG Create a worldgembit
+//                     SERV.NEWITEM i_worldgem_bit
+//                     NEW.P=<P>
+//                     NEW.TYPE=t_rock
+//                     NEW.AMOUNT={5 10}
+//                     NEW.MORE1=mr_iron
+//                     NEW.TIMER=1000
+//                  ENDIF
+//               ENDIF
+//            ENDFOR
+//            FORITEMS 0
+//               IF (<BASEID>==i_worldgem_bit) && (<TYPE>==t_rock)
+//                  IF (<AMOUNT> > 0)
+//                  SERV.NEWITEM i_ore_iron,<AMOUNT>
+//                  NEW.P <P>
+//                  AMOUNT=0
+//                  EMOTE digging ore
+//               ELSE
+//                  EMOTE no ore located
+//               ENDIF
+//            ENDFOR
+//         ELSE
+//            SERV.LOG <NAME> failed used mining skill
+//         ENDIF
+//      ENDIF
+//   ENDIF
 
 [CHARDEF 02cb]
 //FIXME: Stun attack
@@ -20312,12 +20308,6 @@ ON=@Create
    RESPOISON={40 50}
 ON=@NpcRestock
    ITEM=loot_sphynx
-//ON=@ContextMenuRequest
-//   SRC.AddContextEntry 101,6122//6145?
-//ON=@ContextMenuSelect
-//   IF (<ARGN>==101)
-//      FINDLAYER(21).OPEN
-//   ENDIF
 
 [CHARDEF 0315]
 DEFNAME=c_quagmire
@@ -20461,17 +20451,6 @@ ON=@Create
    RESPOISON={20 30}
 ON=@NPCRestock
    ITEM=i_ore_iron,{3 6}
-ON=@ContextMenuRequest
-   IF (<IsMyPet>)
-      SRC.AddContextEntry 101,6122//or 6145
-      RETURN 0
-   ENDIF
-ON=@ContextMenuSelect
-   IF (<IsMyPet>)
-      IF (<ARGN>==101)
-         FINDLAYER(21).OPEN
-      ENDIF
-   ENDIF
 
 [CHARDEF 0318]
 DEFNAME=c_demon_chaos
