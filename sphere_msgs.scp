@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Friday, Jan 22, 2016
+// FILE LAST UPDATED: Thursday, Feb 11, 2016
 //
 VERSION=0.56c
 
@@ -385,6 +385,7 @@ EMOTE_DEF_UNICODE	0
 //makesuccess_4					"The item is of above average quality"
 //makesuccess_5					"The item is of excellent quality"
 //makesuccess_6					"Due to your exceptional skill, the item is of superior quality"
+//macro_opendoor				"Opening door..."
 //meditation_peace_1			"You are at peace."
 //meditation_peace_2			"You are at peace."
 //meditation_try				"You attempt a meditative trance."
@@ -531,7 +532,6 @@ EMOTE_DEF_UNICODE	0
 //msg_mount_unable				"You are not physically capable of riding a horse."
 //msg_bonded_dead_cantmount		"The creature is dead and cannot be mounted."
 //msg_murderer					"Murderer!"
-//msg_nospellbook				"You have no spellbook"
 //msg_noto_change_0				"You have %s %s %s."
 //msg_noto_change_1				"a bit of"
 //msg_noto_change_2				"a small amount of"
@@ -642,7 +642,6 @@ EMOTE_DEF_UNICODE	0
 //npc_generic_snooped_2			"What do you think your doing ?"
 //npc_generic_snooped_3			"Ack, away with you!"
 //npc_generic_snooped_4			"Beware or I'll call the guards!"
-//npc_generic_thanks			"Gold is always welcome. thank thee."
 //npc_guard_strike_1			"Thou shalt regret thine actions, swine!"
 //npc_guard_strike_2			"Death to all evil!"
 //npc_guard_strike_3			"Take this vile criminal!"
@@ -677,7 +676,6 @@ EMOTE_DEF_UNICODE	0
 //npc_pet_days_left				"I have been paid to work for %d more days."
 //npc_pet_decide_master			"%s appears to have decided that it is better off without a master!"
 //npc_pet_deserted				"You sense that %s has deserted you."
-//npc_pet_drop					"Tell me to drop this when you want it back."
 //npc_pet_employed				"Sorry I am already employed."
 //npc_pet_failure				"Sorry"
 //npc_pet_food_no				"No thank you."
