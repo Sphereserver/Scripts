@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Jan 23, 2016
+// FILE LAST UPDATED: Saturday, Mar 5, 2016
 //
 VERSION=0.56c
 
@@ -22423,6 +22423,39 @@ SUBSECTION=Dinosaurs
 DESCRIPTION=Dragon Turtle Hatchling
 ON=@Create
    NPC=brain_animal
+
+[CHARDEF 051c]
+//FIXME: No Stratics data
+DEFNAME=c_giant_gorilla
+NAME=Giant Gorilla
+CAN=MT_WALK|MT_RUN
+CATEGORY=Animals
+SUBSECTION=Wild
+DESCRIPTION=Giant Gorilla
+ON=@Create
+   NPC=brain_monster
+
+[CHARDEF 051d]
+//FIXME: No Stratics data
+DEFNAME=c_tiger_cub
+NAME=Tiger Cub
+CAN=MT_WALK|MT_RUN
+CATEGORY=Animals
+SUBSECTION=Wild
+DESCRIPTION=Tiger Cub
+ON=@Create
+   NPC=brain_monster
+
+[CHARDEF 0578]
+//FIXME: No Stratics data
+DEFNAME=c_tyrannosaurus_rex
+NAME=Tyrannosaurus Rex
+CAN=MT_WALK|MT_RUN
+CATEGORY=Animals
+SUBSECTION=Dinosaurs
+DESCRIPTION=Tyrannosaurus Rex
+ON=@Create
+   NPC=brain_monster
 
 ///////////////////////////////////////////////
 // These are here for backward compatibility //

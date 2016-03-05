@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, Jan 3, 2016
+// FILE LAST UPDATED: Saturday, Mar 5, 2016
 //
 VERSION=0.56c
 
@@ -53,11 +53,12 @@ The Ironwood Inn
 1336,1997,5,0=mg_britain
 1499,3771,5,0=mg_jhelom
 771,752,5,0=mg_yew
-2701,692,5,0=mg_vesper
+2701,692,5,0=mg_minoc
 1828,2948,-20,0=mg_trinsic
-643,2067,5,0=mg_skara
+643,2067,5,0=mg_skara_brae
 3563,2139,34,0=mg_magincia
 4467,1283,5,0=mg_moonglow
+2711,2234,0,0=mg_buccaneers_den
 
 [Teleporters]
 5490,19,-25,0=5514,10,5,0=tp_shame_1_2_x

@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2014
+// SPHERE by : Menasoft ©1997-2016
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Friday, October 17, 2014
+// FILE LAST UPDATED: Saturday, Mar 5, 2016
 //
 VERSION=0.56c
 
@@ -15,11 +15,14 @@ VERSION=0.56c
 1336,1997,5,1=mg_britain_map1
 1499,3771,5,1=mg_jhelom_map1
 771,752,5,1=mg_yew_map1
-2701,692,5,1=mg_vesper_map1
+2701,692,5,1=mg_minoc_map1
 1828,2948,-20,1=mg_trinsic_map1
-643,2067,5,1=mg_skara_map1
+643,2067,5,1=mg_skara_brae_map1
 3563,2139,34,1=mg_magincia_map1
 4467,1283,5,1=mg_moonglow_map1
+2711,2234,0,1=mg_buccaneers_den_map1
+//3763,2771,50,1=mg_haven
+//3450,2677,25,1=mg_new_haven
 
 [Teleporters]
 5217,18,15,1=5204,74,17,1=tp_wind_e_w_x_map1
