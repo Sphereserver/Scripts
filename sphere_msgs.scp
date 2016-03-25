@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Thursday, Feb 11, 2016
+// FILE LAST UPDATED: Friday, Mar 25, 2016
 //
 VERSION=0.56c
 
@@ -35,11 +35,14 @@ MSG_DEF_COLOR		946
 MSG_DEF_FONT		3
 MSG_DEF_UNICODE		0
 
-// Default settings for Message when player click on items/chars
-// Note: IMSG_DEF_COLOR is not used on chars names to prevent conflict with notoriety colors
+// Default settings for Message when clicking on items
 IMSG_DEF_COLOR		946
 IMSG_DEF_FONT		3
 IMSG_DEF_UNICODE	1
+
+// Default settings for Message when clicking on chars
+CMSG_DEF_FONT		3
+CMSG_DEF_UNICODE	1
 
 // Default settings for Say
 // Note: these settings will not override player speech settings
