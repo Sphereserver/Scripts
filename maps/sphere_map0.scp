@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2014
+// SPHERE by : Menasoft ©1997-2016
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, Nov 30, 2014
+// FILE LAST UPDATED: Wednesday, Mar 30, 2016
 //
 VERSION=0.56c
 
@@ -57,9 +57,9 @@ EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
 NAME=Green Acres
 GROUP=Green Acres
 P=5454,1103,0,0
-RECT=5374,1079,5631,1280,0
-RECT=5630,1023,6143,1279,0
-RECT=5887,511,6143,1024,0
+RECT=5376,1081,5630,1280,0
+RECT=5630,1024,5888,1280,0
+RECT=5888,512,6144,1280,0
 FLAGS=region_flag_nobuilding|region_flag_underground|region_antimagic_all|region_flag_insta_logout|region_flag_safe
 EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
 
@@ -75,10 +75,10 @@ EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
 NAME=Green Acres 3
 GROUP=Green Acres
 P=5932,1945,0,0
-RECT=5121,2049,6143,2303,0
-RECT=5375,1535,5424,1792,0
-RECT=5423,1536,6144,1791,0
-RECT=5633,1777,6144,2049,0
+RECT=5376,1536,6144,1776,0
+RECT=5936,1776,6144,2040,0
+RECT=5120,2048,5608,2304,0
+RECT=5608,2040,6144,2304,0
 FLAGS=region_flag_nobuilding|region_flag_underground|region_antimagic_all|region_flag_insta_logout|region_flag_safe
 EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
 
