@@ -7,27 +7,24 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Friday, Jan 22, 2016
+// FILE LAST UPDATED: Sunday, April 10, 2016
 //
 VERSION=0.56c
 
 [SPEECH spk_player]
 // All players speech filtered through here.
-ON=home home home   //   Ghosts can go home.
-   IF (<FLAGS>&statf_dead)
-      go <home>
-   endif
-
 ON=I must consider my sins
+SYSMESSAGE Murders: <KILLS>
 
 ON=I resign from my guild
+IF (<GUILD>)
+ f_guildsys_removecharfromguild <GUILD>,<UID>
+ENDIF
 
 ON=I resign from my town
-
-ON=Guard help *
-ON=Guards*
-ON=Help Guards*
-   // trying to call guards for help.
+IF (<TOWN>)
+ f_townsys_removecharfromtown <TOWN>,<UID>
+ENDIF
 
 [SPEECH spk_pet]
 // Pets that cannot talk

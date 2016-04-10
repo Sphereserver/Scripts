@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Friday, Mar 25, 2016
+// FILE LAST UPDATED: Sunday, April 10, 2016
 //
 VERSION=0.56c
 
@@ -730,10 +730,6 @@ EMOTE_DEF_UNICODE	0
 //npc_stablemaster_claim   		"Here you go... and good day to you!"
 //npc_stablemaster_claim_nopets  "But I have no animals stabled with me at the moment!"
 //npc_stablemaster_claim_follower	"%s remained in the stables because you have too many followers."
-//npc_text_murd_1				"Thy conscience is clear."
-//npc_text_murd_2				"Although thou hast committed murder in the past, the guards will still protect you."
-//npc_text_murd_3				"Your soul is black with guilt. Because thou hast murdered, the guards shall smite thee."
-//npc_text_murd_4				"Thou hast done great naughty! I wouldst not show my face in town if I were thee."
 //npc_trainer_dunno_1			"I know nothing about that"
 //npc_trainer_dunno_2			"I know nothing about %s"
 //npc_trainer_dunno_3			"You know more about %s than I do"
