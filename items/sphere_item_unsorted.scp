@@ -7,9 +7,9 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Jan 19, 2016
+// FILE LAST UPDATED: Saturday, May 21, 2016
 //
-VERSION=0.56c
+VERSION=0.56d
 
 
 [ITEMDEF 0]
@@ -2232,9 +2232,6 @@ TYPE=t_container
 TDATA2=0102
 TDATA3=155,85
 FLIP=1
-WEIGHT=2.0
-RESOURCES=9 i_board,2 i_nails,1 i_paper,1 i_ribbon
-SKILLMAKE=carpentry 21.0,t_carpentry
 CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Containers
 DESCRIPTION=Gift Box
@@ -5330,78 +5327,71 @@ DUPEITEM=04572
 //icicles
 DUPEITEM=04572
 
-
 [ITEMDEF 046a2]
-DEFNAME=i_giftbox2
-NAME=gift box
+DEFNAME=i_giftbox_cube
 TYPE=t_container
 TDATA2=011b
-//TDATA3=100,100//FIXME
-WEIGHT=9.4
-RESOURCES=9 i_board,2 i_nails,1 i_paper,1 i_ribbon
-SKILLMAKE=carpentry 21.0,t_carpentry
+TDATA3=140,100
 CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Containers
-DESCRIPTION=Gift Box 2
+DESCRIPTION=Gift Box (Cube)
+
+ON=@Create
+COLOR={0454 1 0491 1 0493 1 0494 1 0495 1 04a8 1 04aa 1 04ab 1 04ac 1 0503 1 0504 1 0507 1 0672 1 084b 1 084f 1 0851 1 097c 1 0b8b 1 0b8c 1}
 
 [ITEMDEF 046a3]
-DEFNAME=i_giftbox3
-NAME=gift box
+DEFNAME=i_giftbox_cylinder
 TYPE=t_container
 TDATA2=011c
-//TDATA3=100,100//FIXME
-WEIGHT=9.4
-RESOURCES=9 i_board,2 i_nails,1 i_paper,1 i_ribbon
-SKILLMAKE=carpentry 21.0,t_carpentry
+TDATA3=140,115
 CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Containers
-DESCRIPTION=Gift Box 3
+DESCRIPTION=Gift Box (Cylinder)
+
+ON=@Create
+COLOR={0454 1 0491 1 0493 1 0494 1 0495 1 04a8 1 04aa 1 04ab 1 04ac 1 0503 1 0504 1 0507 1 0672 1 084b 1 084f 1 0851 1 097c 1 0b8b 1 0b8c 1}
 
 [ITEMDEF 046a4]
-DEFNAME=i_giftbox4
-NAME=gift box
+DEFNAME=i_giftbox_octogon
 TYPE=t_container
 TDATA2=011d
-//TDATA3=100,100//FIXME
-WEIGHT=9.4
-RESOURCES=9 i_board,2 i_nails,1 i_paper,1 i_ribbon
-SKILLMAKE=carpentry 21.0,t_carpentry
+TDATA3=140,115
 CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Containers
-DESCRIPTION=Gift Box 4
+DESCRIPTION=Gift Box (Octogon)
+
+ON=@Create
+COLOR={0454 1 0491 1 0493 1 0494 1 0495 1 04a8 1 04aa 1 04ab 1 04ac 1 0503 1 0504 1 0507 1 0672 1 084b 1 084f 1 0851 1 097c 1 0b8b 1 0b8c 1}
 
 [ITEMDEF 046a5]
-DEFNAME=i_giftbox5
-NAME=gift box
+DEFNAME=i_giftbox_rectangle
 TYPE=t_container
 FLIP=1
 TDATA2=011e
-//TDATA3=100,100//FIXME
-WEIGHT=9.4
-RESOURCES=9 i_board,2 i_nails,1 i_paper,1 i_ribbon
-SKILLMAKE=carpentry 21.0,t_carpentry
+TDATA3=140,100
 CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Containers
-DESCRIPTION=Gift Box 5
+DESCRIPTION=Gift Box (Rectangle)
 DUPELIST=046a6
 
+ON=@Create
+COLOR={0454 1 0491 1 0493 1 0494 1 0495 1 04a8 1 04aa 1 04ab 1 04ac 1 0503 1 0504 1 0507 1 0672 1 084b 1 084f 1 0851 1 097c 1 0b8b 1 0b8c 1}
+
 [ITEMDEF 046a6]
-//Gift Box 5
+//Gift Box (Rectangle)
 DUPEITEM=046a5
 
 [ITEMDEF 046a7]
-DEFNAME=i_giftbox6
-NAME=gift box
+DEFNAME=i_giftbox_angel
 TYPE=t_container
 TDATA2=011f
-//TDATA3=100,100//FIXME
-WEIGHT=9.4
-RESOURCES=9 i_board,2 i_nails,1 i_paper,1 i_ribbon
-SKILLMAKE=carpentry 21.0,t_carpentry
+TDATA3=140,100
 CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Containers
-DESCRIPTION=Gift Box 6
+DESCRIPTION=Gift Box (Angel)
 
+ON=@Create
+COLOR={0454 1 0491 1 0493 1 0494 1 0495 1 04a8 1 04aa 1 04ab 1 04ac 1 0503 1 0504 1 0507 1 0672 1 084b 1 084f 1 0851 1 097c 1 0b8b 1 0b8c 1}
 
 [ITEMDEF 046ae]
 //gardening scroll
