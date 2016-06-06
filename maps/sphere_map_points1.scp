@@ -29,9 +29,9 @@ VERSION=0.56d
 5490,19,-25,1=5514,10,5,1=tp_shame_1_2_x_map1
 5514,10,5,1=5490,19,-25,1=tp_shame_2_1_x_map1
 5875,19,-5,1=5507,162,5,1=tp_shame_5_4_x_map1
-5904,16,64,1=4721,3814,0,1=tp_hythloth_ent_out_x_map1
-5905,16,64,1=4722,3814,0,1=tp_hythloth_ent_out_x_map1
-5906,16,64,1=4723,3814,0,1=tp_hythloth_ent_out_x_map1
+5904,16,64,1=4721,3813,0,1=tp_hythloth_ent_out_x_map1
+5905,16,64,1=4722,3813,0,1=tp_hythloth_ent_out_x_map1
+5906,16,64,1=4723,3813,0,1=tp_hythloth_ent_out_x_map1
 4721,3813,0,1=5904,16,64,1=tp_hythloth_out_x_ent_map1
 4722,3813,0,1=5905,16,64,1=tp_hythloth_out_x_ent_map1
 4723,3813,0,1=5906,16,64,1=tp_hythloth_out_x_ent_map1

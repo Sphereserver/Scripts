@@ -64,9 +64,9 @@ The Ironwood Inn
 5490,19,-25,0=5514,10,5,0=tp_shame_1_2_x
 5514,10,5,0=5490,19,-25,0=tp_shame_2_1_x
 5875,19,-5,0=5507,162,5,0=tp_shame_5_4_x
-5904,16,64,0=4721,3814,0,0=tp_hythloth_ent_out_x
-5905,16,64,0=4722,3814,0,0=tp_hythloth_ent_out_x
-5906,16,64,0=4723,3814,0,0=tp_hythloth_ent_out_x
+5904,16,64,0=4721,3813,0,0=tp_hythloth_ent_out_x
+5905,16,64,0=4722,3813,0,0=tp_hythloth_ent_out_x
+5906,16,64,0=4723,3813,0,0=tp_hythloth_ent_out_x
 4721,3813,0,0=5904,16,64,0=tp_hythloth_out_x_ent
 4722,3813,0,0=5905,16,64,0=tp_hythloth_out_x_ent
 4723,3813,0,0=5906,16,64,0=tp_hythloth_out_x_ent

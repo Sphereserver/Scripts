@@ -7,9 +7,9 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, April 10, 2016
+// FILE LAST UPDATED: Monday, June 6, 2016
 //
-VERSION=0.56c
+VERSION=0.56d
 
 [COMMENT sphere_msgs]
 By default, lines in this file are commented out because the server itself
@@ -408,6 +408,7 @@ EMOTE_DEF_UNICODE	0
 //mining_skill					"You lack the skill to smelt %s"
 //mining_tool					"You must use a shovel or pick."
 //mining_smelt					"smelt"
+//msg_acc_age					"This account is %d months old."
 //msg_acc_badpass				"Bad password for this account."
 //msg_acc_block					"Account '%s' blocked"
 //msg_acc_blocked				"Account blocked. Send email to admin %s."
@@ -1134,8 +1135,6 @@ EMOTE_DEF_UNICODE	0
 //book_author_unknown			"unknown"
 //guild_already_member			"You are already a memberof a guild. Resign first."
 //tooltip_tag_newbie			"Newbie"
-//tooltip_tag_armor				"Armor"
-//tooltip_tag_destination 		"Destination"
 //looting_crime					"looting"
 //provoking_crime				"provoking"
 //petslots_try_control			"You have too many followers to control that creature."
