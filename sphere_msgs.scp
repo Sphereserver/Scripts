@@ -1026,8 +1026,6 @@ EMOTE_DEF_UNICODE	0
 //pet_happy_unaffected			"unaffected by hunger"
 //tradetitle_article_female  	"the"
 //tradetitle_article_male  		"the"
-//incognito_name_male			"man"
-//incognito_name_female			"woman"
 //cantmove_dead					"You can't reach anything in your state."
 //cantmove_multi				"It appears to be locked to the structure."
 //cantmove_cursed				"appears to be cursed."
