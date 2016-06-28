@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2014
+// SPHERE by : Menasoft ©1997-2016
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,9 +7,9 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, May 6, 2014
+// FILE LAST UPDATED: Tuesday, Jun 28, 2016
 //
-VERSION=0.56c
+VERSION=0.56d
 
 
 [ITEMDEF 0459]
@@ -4600,7 +4600,7 @@ COMPONENT=04c1f,0,1,0
 DEFNAME=i_chest_kings_collection
 NAME=Kings Collection Box
 TYPE=t_container
-TDATA2=04a
+TDATA2=04d0c
 FLIP=1
 VALUE=93
 WEIGHT=22.0

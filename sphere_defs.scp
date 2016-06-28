@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2015
+// SPHERE by : Menasoft ©1997-2016
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,9 +7,9 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Oct 24, 2015
+// FILE LAST UPDATED: Tuesday, Jun 28, 2016
 //
-VERSION=0.56c
+VERSION=0.56d
 
 [DEFNAME HARDCODED]
 defaultitem	i_gold  // If we cannot create the item, make it this.
@@ -24,13 +24,13 @@ guardcall	GUARD,GUARDS
 
 [DEFNAME mount_items]
 // This contain the list of the mount/mountid the format is:
-// mount_0x<dispid hex> <mount itemid hex>
+// mount_0x<dispid hex> <mount item id hex>
 // ---------------------------------------------------------
-// PreT2A
-mount_0xc8	03e9f	// horse 1
-mount_0xe2	03ea0	// horse 2
-mount_0xe4	03ea1	// horse 3
-mount_0xcc	03ea2	// horse 4
+// Pre-T2A
+mount_0xc8	03e9f	// dirty horse
+mount_0xcc	03ea2	// brown horse
+mount_0xe2	03ea0	// gray horse
+mount_0xe4	03ea1	// tan horse
 // T2A
 mount_0xd2	03ea3	// desert ostard
 mount_0xda	03ea4	// frenzied ostard
@@ -38,46 +38,45 @@ mount_0xdb	03ea5	// forest ostard
 mount_0xdc	03ea6	// llama
 // LBR
 mount_0xa9	03e95	// fire beetle
-mount_0xc3	03e97	// ethereal beetle
-mount_0xc2	03e98	// ethereal swamp dragon
-mount_0xc1	03e9a	// ethereal ridgeback
-mount_0xc0	03e9b	// ethereal unicorn
-mount_0xbf	03e9c	// ethereal kirin
+mount_0xaa	03eab	// ethereal llama
+mount_0xab	03eac	// ethereal forest ostard
+mount_0xb1	03eb5	// dread warhorse
+mount_0xb2	03eb6	// unknown mare
+mount_0xb3	03eb7	// unknown mare 2
+mount_0xbb	03eba	// ridgeback
+mount_0xbc	03eb8	// savage ridgeback
 mount_0xbe	03e9e	// fire steed
+mount_0xbf	03e9c	// ethereal kirin
+mount_0xc0	03e9b	// ethereal unicorn
+mount_0xc1	03e9a	// ethereal ridgeback
+mount_0xc2	03e98	// ethereal swamp dragon
+mount_0xc3	03e97	// ethereal giant beetle
+mount_0x72	03ea9	// dark steed
+mount_0x73	03eaa	// ethereal horse
 mount_0x74	03ea7	// nightmare
 mount_0x75	03ea8	// silver steed
-mount_0xb2	03ea9	// unknown mare
-mount_0x73	03eaa	// ethereal horse
-mount_0xaa	03eab	// ethereal llama
-mount_0xab	03eac	// ethereal ostard
-mount_0x84	03ead	// kirin
+mount_0x76	03eb2	// britannian warhorse
+mount_0x77	03eb1	// mage counsil warhorse
 mount_0x78	03eaf	// minax warhorse
 mount_0x79	03eb0	// shadowlord warhorse
-mount_0x77	03eb1	// magecounsil warhorse
-mount_0x76	03eb2	// britannian warhorse
-mount_0x90	03eb3	// seahorse
 mount_0x7a	03eb4	// unicorn
-mount_0xb1	03eb5	// dread warhorse
-mount_0x72	03eb6	// dark steed
-mount_0xb3	03eb7	// unknown mare 2
-mount_0xbb	03eb8	// ridgeback
-mount_0xbc	03eba	// savage ridgeback
+mount_0x84	03ead	// kirin
+mount_0x90	03eb3	// sea horse
+mount_0x317	03ebc	// giant beetle
 mount_0x319	03ebb	// skeletal mount
-mount_0x317	03ebc	// beetle
 mount_0x31a	03ebd	// swamp dragon
 mount_0x31f	03ebe	// armored swamp dragon
-// AOS
 // SE
 mount_0xf3	03e94	// hiryu
 // ML
-mount_0x11c	03e92	// armored steed (Mondains Steed, Charger of the Fallen)
-mount_0x115	03e91	// cu sidhe
-mount_0x114	03e90	// reptalon
-mount_0xd5	03ec5	// polar bear (veteran's award)
+mount_0xd5	03ec5	// polar bear
+mount_0x114	03e90   // reptalon
+mount_0x115	03e91   // cu sidhe
+mount_0x11c	03e92   // armored steed (mondain's steed, charger of the fallen)
 // SA
 mount_0x1b0	03ec6	// armored boura
-mount_0x4e6	03ec7	// tiger
-mount_0x4e7	03ec8	// tigress
+mount_0x4e6	03ec7	// wild tiger
+mount_0x4e7	03ec8	// ethereal tiger
 
 [DEFNAME hues]
 color_text             -1
@@ -662,10 +661,7 @@ memory_guard         00100   // guard this item (never time out)
 memory_ispawned      00200   // UNUSED!!!! i am spawned from this item. (never time out)
 memory_guild         00400   // this is my guild stone. (never time out)
 memory_town          00800   // this is my town stone. (never time out)
-memory_follow        01000   // UNUSED!!!! i am following this object (never time out)
-memory_war_targ      02000   // this is one of my current war targets.
-memory_friend        04000
-memory_gumprecord    08000   // UNUSED!!!! i've a gump opened TAG.DIALOG_NAME contain the name of the gump
+memory_friend        04000   // they can command me but not release me. (not primary blame)
 
 [DEFNAME stat_flags]
 // apply to chars
@@ -1036,8 +1032,8 @@ t_ship_other            105   // = some other part of a ship.
 t_bboard                106   // = a container and bboard object.
 t_spellbook             107   // = spellbook (with spells)
 t_corpse                108   // = special type of item.
-t_track_item            109   // - track a id or type of item.
-t_track_char            110   // = track a char or range of char id's
+//t_unused_109          109
+//t_unused_110          110
 t_weapon_arrow          111   //
 t_weapon_bolt           112   //
 t_eq_vendor_box         113   // = an equipped vendor .

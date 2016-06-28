@@ -42,7 +42,7 @@ ON=*
 ON=*train*
 ON=*teach*
 	// Can they teach skills ?
-	if ( <NPC> >= brain_human ) && ( <NPC> <= brain_animal_trainer )
+	if ( <NPC> >= brain_human ) && ( <NPC> <= brain_animal_trainer ) && ( <NPC> != brain_guard )
 		train <args>
 		return 1	// process no more.
 	endif

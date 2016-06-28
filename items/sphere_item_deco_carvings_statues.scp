@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2007
+// SPHERE by : Menasoft ©1997-2016
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,9 +7,9 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Friday, September 20, 2013
+// FILE LAST UPDATED: Tuesday, Jun 28, 2016
 //
-VERSION=0.56c
+VERSION=0.56d
 
 
 [ITEMDEF 0121d]
@@ -373,7 +373,9 @@ DUPEITEM=0139e
 
 [ITEMDEF 01947]
 DEFNAME=i_statue_stone_blessed
-NAME=blessing statue
+NAME=blessed statue
+TYPE=t_container
+TDATA2=0116
 FLIP=1
 VALUE=68
 WEIGHT=120.0
