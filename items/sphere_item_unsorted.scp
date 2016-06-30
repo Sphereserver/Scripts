@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Jun 28, 2016
+// FILE LAST UPDATED: Thursday, Jun 30, 2016
 //
 VERSION=0.56d
 
@@ -2230,7 +2230,7 @@ DUPEITEM=02328
 DEFNAME=i_giftbox
 TYPE=t_container
 TDATA2=0102
-TDATA3=155,85
+TDATA3=190,95
 FLIP=1
 CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Containers
@@ -5332,7 +5332,7 @@ DUPEITEM=04572
 DEFNAME=i_giftbox_cube
 TYPE=t_container
 TDATA2=011b
-TDATA3=140,100
+TDATA3=163,151
 CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Containers
 DESCRIPTION=Gift Box (Cube)
@@ -5344,7 +5344,7 @@ COLOR={0454 1 0491 1 0493 1 0494 1 0495 1 04a8 1 04aa 1 04ab 1 04ac 1 0503 1 050
 DEFNAME=i_giftbox_cylinder
 TYPE=t_container
 TDATA2=011c
-TDATA3=140,115
+TDATA3=156,166
 CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Containers
 DESCRIPTION=Gift Box (Cylinder)
@@ -5356,7 +5356,7 @@ COLOR={0454 1 0491 1 0493 1 0494 1 0495 1 04a8 1 04aa 1 04ab 1 04ac 1 0503 1 050
 DEFNAME=i_giftbox_octogon
 TYPE=t_container
 TDATA2=011d
-TDATA3=140,115
+TDATA3=165,166
 CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Containers
 DESCRIPTION=Gift Box (Octogon)
@@ -5369,7 +5369,7 @@ DEFNAME=i_giftbox_rectangle
 TYPE=t_container
 FLIP=1
 TDATA2=011e
-TDATA3=140,100
+TDATA3=156,151
 CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Containers
 DESCRIPTION=Gift Box (Rectangle)
@@ -5386,7 +5386,7 @@ DUPEITEM=046a5
 DEFNAME=i_giftbox_angel
 TYPE=t_container
 TDATA2=011f
-TDATA3=140,100
+TDATA3=161,151
 CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Containers
 DESCRIPTION=Gift Box (Angel)
@@ -5613,79 +5613,67 @@ DUPEITEM=04910
 
 
 [ITEMDEF 049c8]
-DEFNAME=i_giftbox7
-NAME=gift box
+DEFNAME=i_giftbox_tall
 TYPE=t_container
-FLIP=1
 TDATA2=0121
 //TDATA3=100,100//FIXME
-WEIGHT=9.4
-RESOURCES=9 i_board,2 i_nails,1 i_paper,1 i_ribbon
-SKILLMAKE=carpentry 21.0,t_carpentry
+FLIP=1
 CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Containers
-DESCRIPTION=Gift Box 7
+DESCRIPTION=Gift Box (Tall)
 DUPELIST=049c9
 
 [ITEMDEF 049c9]
-//Gift Box 7
+//Gift Box (Tall)
 DUPEITEM=049c8
 
 [ITEMDEF 049ca]
-DEFNAME=i_giftbox8
-NAME=valentine gift box
+DEFNAME=i_giftbox_heart_shaped
 TYPE=t_container
-FLIP=1
 TDATA2=0120
-//TDATA3=100,100//FIXME
-WEIGHT=9.4
-RESOURCES=9 i_board,2 i_nails,1 i_paper,1 i_ribbon
-SKILLMAKE=carpentry 21.0,t_carpentry
+TDATA3=158,104
+FLIP=1
 CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Containers
-DESCRIPTION=Gift Box 8 (valentine)
+DESCRIPTION=Gift Box (Heart Shaped)
 DUPELIST=049cb
 
 [ITEMDEF 049cb]
-//Gift Box 8 (valentine)
+//Gift Box (Heart Shaped)
 DUPEITEM=049ca
 
 [ITEMDEF 049cc]
-DEFNAME=i_giftbox9
-NAME=valentine gift box
+DEFNAME=i_giftbox_heart_shaped_beating
 TYPE=t_container
-FLIP=1
 TDATA2=0120
-//TDATA3=100,100//FIXME
-WEIGHT=9.4
-RESOURCES=9 i_board,2 i_nails,1 i_paper,1 i_ribbon
-SKILLMAKE=carpentry 21.0,t_carpentry
+TDATA3=158,104
+FLIP=1
 CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Containers
-DESCRIPTION=Gift Box 8 (animated valentine)
+DESCRIPTION=Gift Box (Heart Shaped Beating)
 DUPELIST=049d0
 
 [ITEMDEF 049cd]
-//animation stage of Gift Box 8
+//Gift Box (Heart Shaped Beating)
 
 [ITEMDEF 049ce]
-//animation stage of Gift Box 8
+//Gift Box (Heart Shaped Beating)
 
 [ITEMDEF 049cf]
-//animation stage of Gift Box 8
+//Gift Box (Heart Shaped Beating)
 
 [ITEMDEF 049d0]
-//Gift Box 8 (animated valentine)
+//Gift Box (Heart Shaped Beating)
 DUPEITEM=049cc
 
 [ITEMDEF 049d1]
-//animation stage of Gift Box 8
+//Gift Box (Heart Shaped Beating)
 
 [ITEMDEF 049d2]
-//animation stage of Gift Box 8
+//Gift Box (Heart Shaped Beating)
 
 [ITEMDEF 049d3]
-//animation stage of Gift Box 8
+//Gift Box (Heart Shaped Beating)
 
 
 [ITEMDEF 04a94]
