@@ -156,7 +156,7 @@ random_container       { random_basket 3 random_chest 3 random_crate 3 random_gi
 random_basket          { i_basket 1 i_basket_bushel 1 i_basket_2 1 i_basin 1 i_basket_square 1 i_basket_square_small 1 i_basket_round_small 1 i_basket_round_tall 1 i_basket_square_deep 1 i_basket_square_tall 1 i_basket_round_flat 1 }
 random_chest           { i_box_brass 1 i_box_wood 1 i_chest_metal 1 i_chest_metal_brass 1 i_chest_wooden_brass 1 i_chest_japanese4 1 i_chest_ornate_elven 1 i_chest_ornate_elven_2 1 i_chest_gargoyle 1 i_chest_pirate 1 i_chest_gothic 1 }
 random_crate           { i_crate_small 1 i_crate_lg 1 i_crate_md 1 i_barrel_open 1 i_keg_small 1 i_tub_empty 1 i_barrel 1 i_bucket 1 }
-random_giftbox         { i_giftbox 1 i_giftbox2 1 i_giftbox3 1 i_giftbox4 1 i_giftbox5 1 i_giftbox6 1 i_giftbox7 1 i_giftbox8 1 i_giftbox9 1 }
+random_giftbox         { i_giftbox 1 i_giftbox_cube 1 i_giftbox_cylinder 1 i_giftbox_octogon 1 i_giftbox5 1 i_giftbox_angel 1 i_giftbox7 1 i_giftbox8 1 i_giftbox9 1 }
 
 [DEFNAME items_random_spawns]
 random_all_items       { random_armor_all 3 random_scroll 3 random_wearables 2 random_activators 1 random_reagent 1 }
