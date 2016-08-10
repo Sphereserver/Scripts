@@ -7,9 +7,9 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Mar 5, 2016
+// FILE LAST UPDATED: Wednesday, Aug 10, 2016
 //
-VERSION=0.56c
+VERSION=0.56d
 
 
 [CHARDEF 01]
@@ -22457,6 +22457,94 @@ DESCRIPTION=Tyrannosaurus Rex
 ON=@Create
    NPC=brain_monster
 
+[CHARDEF 0579]
+//FIXME: No Stratics data
+DEFNAME=c_turanchula
+NAME=Turanchula
+CAN=MT_WALK|MT_RUN
+TEVENTS=e_horses
+CATEGORY=Mounts
+SUBSECTION=Wild
+DESCRIPTION=Turanchula
+ON=@Create
+   NPC=brain_animal
+
+[CHARDEF 057a]
+DEFNAME=c_myrmidex_drone
+NAME=Myrmidex Drone
+DAM=6,12
+DAMPOISON=50
+ARMOR=2
+FOODTYPE=t_meat_raw
+RESOURCES=4 i_ribs_raw
+TAG.Barding.Diff=40.0
+CATEGORY=Monsters
+SUBSECTION=Myrmidex
+DESCRIPTION=Myrmidex Drone
+RESLEVEL=9
+RESDISPDNID=c_solen_worker
+RESDISPDNHUE=0a74
+ON=@Create
+   NPC=brain_monster
+   FAME=
+   KARMA=
+   STR={76 104}
+   DEX={96 136}
+   INT={25 44}
+   MAXHITS={460 597}
+   WRESTLING={41.1 49.8}
+   TACTICS={30.1 49.0}
+   MAGICRESISTANCE={30.1 43.5}
+   RESPHYSICAL=2
+   RESFIRE={1 2}
+   RESCOLD={1 2}
+   RESPOISON={3 4}
+   RESENERGY={1 2}
+
+[CHARDEF 057b]
+//FIXME: No Stratics data
+DEFNAME=c_myrmidex_warrior
+NAME=Myrmidex Warrior
+CAN=MT_WALK|MT_RUN
+CATEGORY=Monsters
+SUBSECTION=Myrmidex
+DESCRIPTION=Myrmidex Warrior
+ON=@Create
+   NPC=brain_monster
+
+[CHARDEF 057c]
+//FIXME: No Stratics data
+DEFNAME=c_myrmidex_queen
+NAME=Myrmidex Queen
+CAN=MT_WALK|MT_RUN
+CATEGORY=Monsters
+SUBSECTION=Myrmidex
+DESCRIPTION=Myrmidex Queen
+ON=@Create
+   NPC=brain_monster
+
+[CHARDEF 057d]
+//FIXME: No Stratics data
+DEFNAME=c_dr_spector
+NAME=Dr. Spector
+CAN=MT_WALK|MT_RUN
+CATEGORY=
+SUBSECTION=
+DESCRIPTION=
+ON=@Create
+   NPC=brain_monster
+
+[CHARDEF 057e]
+//FIXME: No Stratics data
+DEFNAME=c_golem_aztec
+NAME=Golem Aztec
+CAN=MT_WALK|MT_RUN
+CATEGORY=
+SUBSECTION=
+DESCRIPTION=
+ON=@Create
+   NPC=brain_monster
+
 ///////////////////////////////////////////////
 // These are here for backward compatibility //
 ///////////////////////////////////////////////
@@ -23256,35 +23344,5 @@ ON=@Create
    RESCOLD={20 30}
    RESPOISON={40 50}
    RESENERGY={35 45}
-
-[CHARDEF c_myrmidex_drone]
-ID=c_solen_worker
-NAME=Myrmidex Drone
-DAM=6,12
-DAMPOISON=50
-ARMOR=2
-FOODTYPE=t_meat_raw
-RESOURCES=4 i_ribs_raw
-TAG.Barding.Diff=40.0
-CATEGORY=Monsters
-SUBSECTION=Myrmidex
-DESCRIPTION=Myrmidex Drone
-ON=@Create
-   COLOR=0a74
-   NPC=brain_monster
-   FAME=
-   KARMA=
-   STR={76 104}
-   DEX={96 136}
-   INT={25 44}
-   MAXHITS={460 597}
-   WRESTLING={41.1 49.8}
-   TACTICS={30.1 49.0}
-   MAGICRESISTANCE={30.1 43.5}
-   RESPHYSICAL=2
-   RESFIRE={1 2}
-   RESCOLD={1 2}
-   RESPOISON={3 4}
-   RESENERGY={1 2}
 
 [EOF]
