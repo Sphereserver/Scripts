@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, June 6, 2016
+// FILE LAST UPDATED: Friday, Aug 26, 2016
 //
 VERSION=0.56d
 
@@ -932,18 +932,16 @@ EMOTE_DEF_UNICODE	0
 //tracking_skillmenu_title  	"Tracking"
 //tracking_skillmenu_animals  	"Animals"
 //tracking_skillmenu_monsters  	"Monsters"
-//tracking_skillmenu_humans		"Humans"
+//tracking_skillmenu_npcs		"NPCs"
 //tracking_skillmenu_players  	"Players"
-//tracking_cancel				"Tracking Cancelled"
 //tracking_fail_animal			"You see no evidence of animals in the area."
 //tracking_fail_monster			"You see no evidence of creatures in the area."
-//tracking_fail_human			"You see no evidence of people in the area."
-//tracking_fail					"You see no evidence of those in the area."
-//tracking_result_0				"%s is%s %s"
-//tracking_result_1				"%s is%s near to the %s"
-//tracking_result_2				"%s is%s to the %s"
-//tracking_result_3				"%s is%s far to the %s"
-//tracking_result_4				"%s is%s very far to the %s"
+//tracking_fail_people			"You see no evidence of people in the area."
+//tracking_result_0				"%s is %s"
+//tracking_result_1				"%s is near to the %s"
+//tracking_result_2				"%s is to the %s"
+//tracking_result_3				"%s is far to the %s"
+//tracking_result_4				"%s is very far to the %s"
 //tracking_result_disc			" disconnected"
 //tracking_unable				"You cannot locate your target"
 //tracking_end					"You have lost your quarry."
