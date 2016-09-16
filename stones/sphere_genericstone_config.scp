@@ -23,6 +23,7 @@ STONEPRIV_ACCEPTED			4	// The candidate has been accepted. But they have not dcl
 STONEPRIV_WEDECLARED		1
 STONEPRIV_THEYDECLARED	2
 STONEPRIV_ENEMY					3	// Internally this is 100 (3 for scripting purpose)
+STONEPRIV_ALLY					4	// Internally this is 101 (4 for scripting purpose)
 
 [DEFNAME DEF_STONESYS_TYPENAME]
 STONECONFIG_TYPENAME_GUILD	 	"Guild"

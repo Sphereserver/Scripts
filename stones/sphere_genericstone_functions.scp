@@ -209,6 +209,10 @@ If ((<type> == t_stone_guild) && (<argo.type> == t_stone_guild))
 	  return (<align>==<argo.align>)
 	endif
 
+	If (<guildfromuid.<argo.uid>.isally> && <argo.guildfromuid.<uid>.isally>)
+	  return 1
+	endif
+
 	return 0
 endif
 

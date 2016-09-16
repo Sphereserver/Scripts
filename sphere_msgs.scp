@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Friday, Aug 26, 2016
+// FILE LAST UPDATED: Friday, Sept 16, 2016
 //
 VERSION=0.56d
 
@@ -1153,24 +1153,25 @@ EMOTE_DEF_UNICODE	0
 //item_dmg_damage2				"You damage the %s"
 //item_dmg_damage3				"Your %s is damaged and looks %s"
 //item_dmg_damage4				"Your %s may have been damaged"
-//skillact_using				"use"
-//skillact_following			"Following"
-//skillact_staying				"Staying"
-//skillact_goingto				"Going To"
-//skillact_wandering			"Wandering"
-//skillact_fleeing				"Fleeing"
-//skillact_talking				"Talking"
-//skillact_talkfollow			"TalkFollow"
-//skillact_guarding				"Guarding"
-//skillact_goinghome			"Going Home"
 //skillact_breathing			"Breathing"
-//skillact_throwing				"Throwing"
+//skillact_fleeing				"Fleeing"
+//skillact_following			"Following"
+//skillact_goinghome			"Going Home"
+//skillact_goingto				"Going To"
+//skillact_guarding				"Guarding"
+//skillact_idling				"Idling"
 //skillact_looking				"Looking"
-//skillact_training				"Training"
 //skillact_napping				"Napping"
-//skillact_searchingfood   		"Searching for Food"
-//skillact_thinking				"Thinking"
+//skillact_ridden				"Ridden"
 //skillact_runningto			"Running To"
+//skillact_searchingfood   		"Searching for Food"
+//skillact_staying				"Staying"
+//skillact_talkfollow			"TalkFollow"
+//skillact_talking				"Talking"
+//skillact_throwing				"Throwing"
+//skillact_training				"Training"
+//skillact_using				"Using"
+//skillact_wandering			"Wandering"
 //itemstatus_perfect			"absolutely flawless"
 //itemstatus_full				"in full repair"
 //itemstatus_scratched			"a bit worn"

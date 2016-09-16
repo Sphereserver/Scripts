@@ -219,45 +219,45 @@ ON=17
 	TRYP 4 INPDLG=SPEECH 20
 
 ON=18
-   IF (<ACTION>==-1)
-      SRC.MESSAGE @50 Doing nothing.
-   ELIF ((<ACTION> >= SKILL_ANATOMY) && (<ACTION> <= SKILL_THROWING)) //1~57
-      SRC.MESSAGE @50 Using skill <SERV.SKILL(<EVAL (<ACTION>&0000000ff)>).KEY>.
-   ELIF (<ACTION>==064) //100
-      SRC.MESSAGE @50 Npc following someone.
-   ELIF (<ACTION>==065) //101
-      SRC.MESSAGE @50 Npc standing.
-   ELIF (<ACTION>==066) //102
-      SRC.MESSAGE @50 Npc going somewhere (x,y). Pet command
-   ELIF (<ACTION>==067) //103
-      SRC.MESSAGE @50 Npc wandering.
-   ELIF (<ACTION>==068) //104
-      SRC.MESSAGE @50 Npc looking around intently.
-   ELIF (<ACTION>==069) //105
-      SRC.MESSAGE @50 Npc running away from target.
-   ELIF (<ACTION>==06a) //106
-      SRC.MESSAGE @50 Npc talking to target.
-   ELIF (<ACTION>==06b) //107
-      SRC.MESSAGE @50 Npc following target.
-   ELIF (<ACTION>==06c) //108
-      SRC.MESSAGE @50 Npc guarding a target object.
-   ELIF (<ACTION>==06d) //109
-      SRC.MESSAGE @50 Npc going home.
-   ELIF (<ACTION>==06e) //110
-      SRC.MESSAGE @50 Npc using breath weapon on target.
-   ELIF (<ACTION>==06f) //111
-      SRC.MESSAGE @50 Npc being ridden or shrunk as figurine.
-   ELIF (<ACTION>==070) //112
-      SRC.MESSAGE @50 Npc throwing a stone at target.
-   ELIF (<ACTION>==071) //113
-      SRC.MESSAGE @50 Npc using as a training dummy, or teaching sth. etc.
-   ELIF (<ACTION>==072) //114
-      SRC.MESSAGE @50 Npc snoozing a little bit, but not sleeping.
-   ELIF (<ACTION>==073) //115
-      SRC.MESSAGE @50 Npc searching for food.
-   ELSE
-      SRC.MESSAGE @50 Action not in this menu.
-   ENDIF
+	IF ((<ACTION> >= SKILL_ANATOMY) && (<ACTION> <= SKILL_THROWING))	//1~57
+	 SRC.MESSAGE @50 <DEFMSG.skillact_using> skill <SERV.SKILL.<EVAL <ACTION> & 0ff>.KEY>
+	ELIF (<ACTION>==064)	//100
+	 SRC.MESSAGE @50 <DEFMSG.skillact_following>
+	ELIF (<ACTION>==065)	//101
+	 SRC.MESSAGE @50 <DEFMSG.skillact_staying>
+	ELIF (<ACTION>==066)	//102
+	 SRC.MESSAGE @50 <DEFMSG.skillact_goingto>
+	ELIF (<ACTION>==067)	//103
+	 SRC.MESSAGE @50 <DEFMSG.skillact_wandering>
+	ELIF (<ACTION>==068)	//104
+	 SRC.MESSAGE @50 <DEFMSG.skillact_looking>
+	ELIF (<ACTION>==069)	//105
+	 SRC.MESSAGE @50 <DEFMSG.skillact_fleeing>
+	ELIF (<ACTION>==06a)	//106
+	 SRC.MESSAGE @50 <DEFMSG.skillact_talking>
+	ELIF (<ACTION>==06b)	//107
+	 SRC.MESSAGE @50 <DEFMSG.skillact_talkfollow>
+	ELIF (<ACTION>==06c)	//108
+	 SRC.MESSAGE @50 <DEFMSG.skillact_guarding>
+	ELIF (<ACTION>==06d)	//109
+	 SRC.MESSAGE @50 <DEFMSG.skillact_goinghome>
+	ELIF (<ACTION>==06e)	//110
+	 SRC.MESSAGE @50 <DEFMSG.skillact_breathing>
+	ELIF (<ACTION>==06f)	//111
+	 SRC.MESSAGE @50 <DEFMSG.skillact_ridden>
+	ELIF (<ACTION>==070)	//112
+	 SRC.MESSAGE @50 <DEFMSG.skillact_throwing>
+	ELIF (<ACTION>==071)	//113
+	 SRC.MESSAGE @50 <DEFMSG.skillact_training>
+	ELIF (<ACTION>==072)	//114
+	 SRC.MESSAGE @50 <DEFMSG.skillact_napping>
+	ELIF (<ACTION>==073)	//115
+	 SRC.MESSAGE @50 <DEFMSG.skillact_searchingfood>
+	ELIF (<ACTION>==074)	//116
+	 SRC.MESSAGE @50 <DEFMSG.skillact_runningto>
+	ELSE
+	 SRC.MESSAGE @50 <DEFMSG.skillact_idling>
+	ENDIF
 
 [DIALOG d_CHARPROP2]
 70, 70
@@ -1306,11 +1306,11 @@ ON=7
 0, 0	// this is always the size.
 resizepic 0 0 3600 229 173
 page 0
-text 40 17 0 0   
+text 40 17 0 0
 text 40 37 1152 1
 text 40 57 1152 2
 text 40 77 1152 3
-button 20 40 1209 1210 1 0 1      
+button 20 40 1209 1210 1 0 1
 button 20 60 1209 1210 1 0 2
 button 20 80 1209 1210 1 0 3
 
@@ -1338,12 +1338,12 @@ ON=3  //SPECIAL PLACES
 0, 0	// this is always the size.
 resizepic 0 0 3600 215 200
 page 0
-text 40 17 0 0   
+text 40 17 0 0
 text 40 37 1152 1
 text 40 57 1152 2
 text 40 77 1152 3
 text 40 97 1152 4
-text 40 117 1152 5   
+text 40 117 1152 5
 text 40 137 1152 6
 text 40 157 0 7
 button 20 40 1209 1210 1 0 1
@@ -1394,12 +1394,12 @@ ON=7//PAPUA
 0, 0	// this is always the size.
 resizepic 0 0 3600 215 165
 page 0
-text 40 17 0 0   
+text 40 17 0 0
 text 40 37 1152 1
 text 40 57 1152 2
 text 40 77 1152 3
 text 40 97 1152 4
-text 40 117 0 5   
+text 40 117 0 5
 button 20 40 1209 1210 1 0 1
 button 20 60 1209 1210 1 0 2
 button 20 80 1209 1210 1 0 3
@@ -1443,9 +1443,9 @@ text 40 37 1152 1
 text 40 57 1152 2
 text 40 77 1152 3
 text 40 97 1152 4
-text 40 117 1152 5  
-text 40 137 1152 6  
-text 40 157 1152 7 
+text 40 117 1152 5
+text 40 137 1152 6
+text 40 157 1152 7
 text 40 177 0 8
 button 20 40 1209 1210 1 0 1
 button 20 60 1209 1210 1 0 2
@@ -1501,7 +1501,7 @@ ON=8 //PREVIOUS
 0, 0	// this is always the size.
 resizepic 0 0 3600 225 100
 page 0
-text 40 17 0 0   
+text 40 17 0 0
 text 40 37 1152 1
 button 20 40 1209 1210 1 0 1
 
