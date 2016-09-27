@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Friday, Sept 16, 2016
+// FILE LAST UPDATED: Monday, Sept 26, 2016
 //
 VERSION=0.56d
 
@@ -491,7 +491,6 @@ EMOTE_DEF_UNICODE	0
 //msg_gmpages_current			"Current GM .PAGE Account=%s (%s) Reason='%s' Time=%lld."
 //msg_guards					"Guards can now be called on you!"
 //msg_guest						"Your guest curse prevents you from taking this action"
-//msg_guildresign				"You cannot quit your %s while in a fight"
 //msg_heavy						"That is too heavy. You can't move that."		
 //msg_hunger					"You are %s"
 //msg_invis_off					"Invis OFF"
