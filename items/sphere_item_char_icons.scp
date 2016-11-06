@@ -7,9 +7,9 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Jan 19, 2016
+// FILE LAST UPDATED: Sunday, Nov 6, 2016
 //
-VERSION=0.56c
+VERSION=0.56d
 
 
 [COMMENT sphere_item_char_icons]
@@ -3654,5 +3654,41 @@ TDATA3=c_dragon_turtle_hatchling
 CATEGORY=Miscellaneous
 SUBSECTION=Character Icons
 DESCRIPTION=Dragon Turtle Hatchling
+
+[ITEMDEF 09dd6]
+DEFNAME=i_pet_tarantula
+NAME=Tarantula
+TYPE=t_figurine
+TDATA3=c_tarantula
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Tarantula
+
+[ITEMDEF 09de4]
+DEFNAME=i_pet_dr_spector
+NAME=Dr. Spector
+TYPE=t_figurine
+TDATA3=c_dr_spector
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Dr. Spector
+
+[ITEMDEF 09ded]
+DEFNAME=i_pet_tyrannosaurus_rex
+NAME=Tyrannosaurus Rex
+TYPE=t_figurine
+TDATA3=c_tyrannosaurus_rex
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Tyrannosaurus Rex
+
+[ITEMDEF 09e35]
+DEFNAME=i_pet_unicorn_rainbow
+NAME=Unicorn
+TYPE=t_figurine
+TDATA3=c_unicorn_rainbow
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Unicorn (Rainbow)
 
 [EOF]

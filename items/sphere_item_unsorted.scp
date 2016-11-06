@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Thursday, Jun 30, 2016
+// FILE LAST UPDATED: Sunday, Nov 6, 2016
 //
 VERSION=0.56d
 
@@ -7059,5 +7059,14 @@ TYPE=t_normal
 // NoName //tok
 DEFNAME=i_noname_29
 TYPE=t_normal
+
+[ITEMDEF 09e1a]
+DEFNAME=i_giftbox_christmas
+TYPE=t_container
+TDATA2=0122
+TDATA3=156,166
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Containers
+DESCRIPTION=Gift Box (Christmas)
 
 [EOF]

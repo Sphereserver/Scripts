@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Wednesday, Aug 10, 2016
+// FILE LAST UPDATED: Sunday, Nov 6, 2016
 //
 VERSION=0.56d
 
@@ -22450,6 +22450,7 @@ ON=@Create
 //FIXME: No Stratics data
 DEFNAME=c_tyrannosaurus_rex
 NAME=Tyrannosaurus Rex
+ICON=i_pet_tyrannosaurus_rex
 CAN=MT_WALK|MT_RUN
 CATEGORY=Animals
 SUBSECTION=Dinosaurs
@@ -22459,13 +22460,14 @@ ON=@Create
 
 [CHARDEF 0579]
 //FIXME: No Stratics data
-DEFNAME=c_turanchula
-NAME=Turanchula
+DEFNAME=c_tarantula
+NAME=Tarantula
+ICON=i_pet_tarantula
 CAN=MT_WALK|MT_RUN
 TEVENTS=e_horses
 CATEGORY=Mounts
 SUBSECTION=Wild
-DESCRIPTION=Turanchula
+DESCRIPTION=Tarantula
 ON=@Create
    NPC=brain_animal
 
@@ -22526,6 +22528,7 @@ ON=@Create
 [CHARDEF 057d]
 //FIXME: No Stratics data
 DEFNAME=c_dr_spector
+ICON=i_pet_dr_spector
 NAME=Dr. Spector
 CAN=MT_WALK|MT_RUN
 CATEGORY=
@@ -22544,6 +22547,18 @@ SUBSECTION=
 DESCRIPTION=
 ON=@Create
    NPC=brain_monster
+
+[CHARDEF 057f]
+//FIXME: No Stratics data
+DEFNAME=c_unicorn_rainbow
+ICON=i_pet_unicorn_rainbow
+NAME=Unicorn
+CAN=MT_WALK|MT_RUN
+CATEGORY=Mounts
+SUBSECTION=Wild
+DESCRIPTION=Unicorn (Rainbow)
+ON=@Create
+   NPC=brain_animal
 
 ///////////////////////////////////////////////
 // These are here for backward compatibility //
