@@ -7,9 +7,9 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Wednesday, Mar 30, 2016
+// FILE LAST UPDATED: Saturday, Nov 12, 2016
 //
-VERSION=0.56c
+VERSION=0.56d
 
 [COMMENT sphere_map0]
 This file (and other map files like it) define map areas (also known as
@@ -550,7 +550,7 @@ GROUP=Ocllo
 P=3650,2519,0,0
 RECT=3588,2460,3707,2685,0
 RECT=3695,2558,3760,2705,0
-FLAGS=region_flag_nobuilding
+FLAGS=region_flag_nobuilding|region_flag_guarded
 EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
 TAG.MUSIC=midi_ocllo
 
