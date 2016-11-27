@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, Nov 6, 2016
+// FILE LAST UPDATED: Sunday, Nov 27, 2016
 //
 VERSION=0.56d
 
@@ -1278,8 +1278,8 @@ can_i_enchant			0100000		// can items be enchanted (runic)
 can_i_imbue				0200000		// can items be imbued (imbuing)
 can_i_recycle			0400000		// Can be recycled
 can_i_reforge			0800000		// Can be Runic Reforged.
-can_i_forcedc			01000000	// Items with this flag will not perform any check before @DClick trigger. 
-
+can_i_forcedc			01000000	// Items with this flag will not perform any check before @DClick trigger.
+can_i_damageable		02000000	// Display item health bar on HS clients >= 7.0.30.0 (MORE1L = cur hitpoints / MORE1H = max hitpoints)
 
 [DEFNAME tile_flags]
 tilef_background        000000001   // No idea. None whatsoever. Maybe it's the blackness.
