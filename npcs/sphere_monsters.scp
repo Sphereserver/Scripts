@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, Nov 6, 2016
+// FILE LAST UPDATED: Thursday, Dec 22, 2016
 //
 VERSION=0.56d
 
@@ -7573,22 +7573,19 @@ ON=@NpcRestock
    ITEM=loot_ai_healer
 
 [CHARDEF 09c]
-//FIXME: No Stratics data yet
 DEFNAME=c_turkey
 NAME=Turkey
+CAN=MT_WALK|MT_FLY|MT_NONHUM
 //ICON=i_pet_fixme
 //SOUND=snd_animal_fixme
-CAN=MT_WALK|MT_FLY|MT_NONHUM
 DAM=3,5
 ARMOR=10
-DESIRES=r_civilization,t_dirt
-AVERSIONS=e_carnivores,e_carnivores2,e_carnivores3
+DESIRES=t_dirt
+AVERSIONS=e_carnivores2,e_carnivores3
 FOODTYPE=t_seed
 MAXFOOD=15
-RESOURCES=30 i_feather,2 i_bird_raw
-BLOODCOLOR=colors_blood
-MOVERATE=150
-TAG.Barding.Diff=22.0
+RESOURCES=75 i_feather, 2 i_bird_raw
+TAG.Barding.Diff=34.8
 TAG.SlayerGroup=BIRD
 FollowerSlots=1
 CATEGORY=Animals
@@ -7596,18 +7593,14 @@ SUBSECTION=Tame
 DESCRIPTION=Turkey
 ON=@Create
    NPC=brain_monster
-   FAME={500 999}
-   KARMA={-500 -999}
-   STR={16 22}
-   MAXHITS={18 28}
-   DEX={36 45}
-   MAXSTAM={36 45}
-   INT={16 22}
-   MAXMANA={16 22}
+   STR={13 14}
+   DEX={13 20}
+   INT={5 15}
    MAGICRESISTANCE={5.0 10.0}
    TACTICS={15.0 20.0}
    TAMING={10.0 15.0}
    WRESTLING={10.0 15.0}
+   TAMING=0.0
    MODAR={0 10}
    RESCOLD={5 10}
    RESENERGY={0 5}
@@ -21572,45 +21565,38 @@ ON=@NpcRestock
 
 [CHARDEF 0402]
 DEFNAME=c_turkey_giant
-NAME=giant turkey
-CAN=MT_NONMOVER|MT_NONHUM
+NAME=Giant Turkey
+CAN=MT_WALK|MT_FLY|MT_NONHUM
 //ICON=i_pet_fixme
 //SOUND=snd_animal_fixme
-CAN=MT_WALK|MT_FLY|MT_NONHUM
-DAM=13,15
-ARMOR=20
+DAM=20,30
+ARMOR=60
 DESIRES=t_dirt
 AVERSIONS=e_carnivores2,e_carnivores3
 FOODTYPE=t_seed
 MAXFOOD=15
-RESOURCES=60 i_feather,5 i_bird_raw
-BLOODCOLOR=colors_blood
-MOVERATE=100
-//TAG.Barding.Diff=22.0
+RESOURCES=50 i_feather, 14 i_bird_raw
+TAG.Barding.Diff=120.0
 TAG.SlayerGroup=BIRD
-//FollowerSlots=3
 CATEGORY=Animals
 SUBSECTION=Wild
 DESCRIPTION=Giant Turkey
 ON=@Create
    NPC=brain_monster
-   FAME={1500 1999}
-   KARMA={-1500 -1999}
-   STR={160 222}
-   MAXHITS={180 280}
-   DEX={76 85}
-   MAXSTAM={176 185}
-   INT={36 42}
-   MAXMANA={36 42}
-   MAGICRESISTANCE={15.0 20.0}
-   TACTICS={25.0 30.0}
-//   TAMING={10.0 15.0}
-   WRESTLING={30.0 35.0}
-   MODAR={0 10}
-   RESCOLD={15 20}
-   RESENERGY={5 15}
-   RESFIRE={5 15}
-   RESPOISON={5 15}
+   STR={1204 1394}
+   DEX={172 258}
+   INT={475 557}
+   MAXHITS=30000
+   MAXMANA=1000
+   WRESTLING={101.8 119.9}
+   TACTICS={100.6 109.6}
+   MAGICRESISTANCE={86.2 98.3}
+   ANATOMY={75.1 78.6}
+   RESPHYSICAL={55 70}
+   RESFIRE={71 87}
+   RESCOLD={35 45}
+   RESPOISON={45 52}
+   RESENERGY={46 54}
 
 
 [CHARDEF 042c]
@@ -22447,16 +22433,39 @@ ON=@Create
    NPC=brain_monster
 
 [CHARDEF 0578]
-//FIXME: No Stratics data
 DEFNAME=c_tyrannosaurus_rex
 NAME=Tyrannosaurus Rex
 ICON=i_pet_tyrannosaurus_rex
-CAN=MT_WALK|MT_RUN
+CAN=MT_WALK|MT_RUN|MT_SWIM
+DAM=22,29
+ARMOR=73
+SOUND=
+RESOURCES=1 i_ribs_raw
+TAG.Barding.Diff=160.0
 CATEGORY=Animals
 SUBSECTION=Dinosaurs
 DESCRIPTION=Tyrannosaurus Rex
 ON=@Create
    NPC=brain_monster
+   FAME=24000
+   KARMA=-24000
+   STR={992 1166}
+   DEX={198 236}
+   INT={162 239}
+   MAXHITS=55000
+   MAXSTAM={236 437}
+   WRESTLING={98.2 137.0}
+   TACTICS={98.5 117.0}
+   MAGICRESISTANCE=152.0
+   ANATOMY=100.0
+   MAGERY={96.7 98.9}
+   EVALUATINGINTEL={79.6 99.3}
+   MEDITATION={26.2 38.4}
+   RESPHYSICAL={65 81}
+   RESFIRE={55 84}
+   RESCOLD={62 70}
+   RESPOISON=90
+   RESENERGY={66 75}
 
 [CHARDEF 0579]
 //FIXME: No Stratics data

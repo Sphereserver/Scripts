@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2015
+// SPHERE by : Menasoft ©1997-2016
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,9 +7,9 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, Oct 5, 2015
+// FILE LAST UPDATED: Thursday, Dec 22, 2016
 //
-VERSION=0.56c
+VERSION=0.56d
 
 
 // SphereServer 0.56* Administration console
@@ -128,6 +128,15 @@ if ((<account.plevel> > <src.account.plevel>) && (<flags> & statf_insubstantial)
 else
    src.ctag0.admin_numplayers += 1
    try src.ctag.admin_p<eval (<src.ctag0.admin_numplayers>)>=<uid>
+endif
+
+[FUNCTION admin_getclienttype]
+if (<clientiskr>) || (<clientissa>) 
+ return "Enhanced Client"
+elif (<clientis3d>)
+ return "Classic Client 3D"
+else
+ return "Classic Client 2D"
 endif
 
 [DIALOG d_sphereadmin]
@@ -249,7 +258,7 @@ dtext 300 75 0480 <title>
 dtext 160 95 0c1 PLevel:
 dtext 300 95 0480 <account.plevel> (<def0.admin_plevel_<eval <account.plevel>>>)
 dtext 160 135 0c1 Client Version:
-dtext 300 135 0480 <clientversion> / <reportedcliver>
+dtext 300 135 0480 <clientversion> / <reportedcliver> (<admin_getclienttype>)
 dtext 160 155 0c1 Resdisp:
 dtext 300 155 0480 <account.resdisp> (<def0.admin_resdisp_<eval <account.resdisp>>>)
 dtext 160 195 0c1 First login:

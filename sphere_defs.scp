@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, Nov 27, 2016
+// FILE LAST UPDATED: Thursday, Dec 22, 2016
 //
 VERSION=0.56d
 
@@ -1487,19 +1487,16 @@ los_nc_water           01000   // Do not allow LOS path checking to go through w
 
 
 [defname passive_buff_icons]
-
-passivebufficon_hidingandorstealth	1012
-passivebufficon_activemeditation	1013
-passivebufficon_incognito			1032
-passivebufficon_disguised			1033
-passivebufficon_polymorph			1035
-passivebufficon_gargoylefly			1054
-passivebufficon_despair				1060
-
+passivebufficon_Hidden				1012
+passivebufficon_ActiveMeditation	1013
+passivebufficon_Incognito			1032
+passivebufficon_Disguised			1033
+passivebufficon_Polymorph			1035
+passivebufficon_GargoyleFly			1054
+passivebufficon_Despair				1060
 
 [defname debuff_icons]
-
-debufficon_Dismount				1001
+debufficon_NoRemount			1001
 debufficon_DeathStrike			1006
 debufficon_EvilOmen				1007
 debufficon_HealingThrottle		1008
@@ -1523,8 +1520,6 @@ debufficon_MassCurse			1044
 debufficon_Sleep				1049
 debufficon_SpellPlague			1051
 debufficon_Tribulation			1059
-
-// new 'stats'
 debufficon_HitLowerAttack		1063
 debufficon_HitLowerDefense		1064
 debufficon_SpellFocusing		1071
@@ -1532,8 +1527,7 @@ debufficon_RageFocusing			1072
 debufficon_ForceArrow			1076
 debufficon_Disarm				1077
 debufficon_TalonStrike			1080
-debufficon_PhysicAttack			1081	//stractics say PhychicAttack?
-
+debufficon_PhysicAttack			1081
 debufficon_EnemyOfOne			1084
 debufficon_FandancerFanFire		1105
 debufficon_Rage					1106
@@ -1553,14 +1547,17 @@ debufficon_HeatOfBattle			1119
 debufficon_CriminalStatus		1120
 debufficon_ArmorPierce			1121
 debufficon_SplinteringEffect	1122
-debufficon_SwingSpeedSwing		1123
-
-
-// these should exists according to stratics, but I couldn't find them
-//debufficon_ArmorCorrupt
-//debufficon_Entangle
-//debufficon_FallingWalls
-//debufficon_Criminal
+debufficon_SwingSpeed			1123
+debufficon_Humility				1127
+debufficon_Stagger				1131
+debufficon_Pierce				1134
+debufficon_Onslaught			1137
+debufficon_ElementalFury		1139
+debufficon_DeathRay				1155
+debufficon_InjectedStrike		1161
+debufficon_PlayingTheOdds		1164
+debufficon_DragonTurtle			1165
+debufficon_Thrust				1168
 
 [DEFNAME buff_icons]
 bufficon_NoRearm				1002
@@ -1572,7 +1569,7 @@ bufficon_GiftOfRenewal			1020
 bufficon_AttuneWeapon			1021
 bufficon_EtherealVoyage			1024
 bufficon_FiftOfFife				1025
-bufficon_ArcaneEmpowerment		1026		//same as 1061
+bufficon_ArcaneEmpowerment		1026
 bufficon_ReactiveArmor			1028
 bufficon_Protection				1029
 bufficon_ArchProtection			1030
@@ -1585,19 +1582,22 @@ bufficon_Strength				1047
 bufficon_Bless					1048
 bufficon_StoneForm				1050
 bufficon_GargoyleBerserk		1052
-
-//Bard Mastery Buff
 bufficon_Inspire				1055
 bufficon_Invigorate				1056
 bufficon_Resilience				1057
 bufficon_Perseverance			1058
+bufficon_FishPie				1062
+bufficon_HitDualWield			1065
+bufficon_Block					1066
+bufficon_DefenseMastery			1067
 bufficon_Despair				1068
-
+bufficon_HealingEffect			1069
+bufficon_SpellFocusing			1070
 bufficon_RageFocusing			1073
 bufficon_Warding				1074
 bufficon_Yribulation			1075
 bufficon_Surge					1078
-bufficon_Feit					1079
+bufficon_Feint					1079
 bufficon_Consecrate				1082
 bufficon_GrapesOfWrath			1083
 bufficon_HorrificBeast			1085
@@ -1607,14 +1607,14 @@ bufficon_CurseWeapon			1088
 bufficon_ReaperForm				1089
 bufficon_InmolatingWeapon		1090
 bufficon_Enchant				1091
-bufficon_HonorableExecution		1092		//same as 1125
+bufficon_HonorableExecution		1092
 bufficon_Confidence				1093
 bufficon_Evasion				1094
 bufficon_CounterAttack			1095
 bufficon_LightningStrike		1096
 bufficon_MomentumStrike			1097
 bufficon_OrangePetals			1098
-bufficon_ROTPetals				1099		//RoseOfTrinsic petals
+bufficon_RoseOfTrinsic			1099
 bufficon_PoisonImmunity			1100
 bufficon_Veterinary				1101
 bufficon_Perfection				1102
@@ -1622,58 +1622,110 @@ bufficon_Honored				1103
 bufficon_ManaPhase				1104
 bufficon_WraithForm				1124
 bufficon_CityTradeDeal			1126
-bufficon_ArcaneEmpowerment		1061
-bufficon_FishBuff				1062
-bufficon_HitDualWield			1065
-bufficon_Block					1066
-bufficon_DefenseMastery			1067
-bufficon_HealingEffect			1069
-bufficon_SpellFocusing			1070
+bufficon_Spirituality			1128
+bufficon_Humility				1129
+bufficon_Rampage				1130
+bufficon_Toughness				1132
+bufficon_Thrust					1133
+bufficon_PlayingTheOdds			1135
+bufficon_FocusedEye				1136
+bufficon_ElementalFury			1138
+bufficon_CalledShot				1140
+bufficon_Knockout				1141
+bufficon_SavingThrow			1142
+bufficon_Conduit				1143
+bufficon_EtherealBurst			1144
+bufficon_MysticWeapon			1145
+bufficon_ManaShield				1146
+bufficon_AnticipateHit			1147
+bufficon_Warcry					1148
+bufficon_Shadow					1149
+bufficon_WhiteTigerForm			1150
+bufficon_Bodyguard				1151
+bufficon_HeightenedSenses		1152
+bufficon_Tolerance				1153
+bufficon_DeathRay				1154
+bufficon_Intuition				1156
+bufficon_EnchantedSummoning		1157
+bufficon_ShieldBash				1158
+bufficon_Whispering				1159
+bufficon_CombatTraining			1160
+bufficon_InjectedStrike			1162
+bufficon_UnknownTomato			1163
+bufficon_Boarding				1166
+bufficon_Potency				1167
+bufficon_FistsOfFury			1169
+bufficon_BarrabHemolymphConcentrate	1170
+bufficon_JukariBurnPoultice		1171
+bufficon_KurakAmbushersEssence	1172
+bufficon_BarakoDraftOfMight		1173
+bufficon_UraliTranceTonic		1174
+bufficon_SakkhraProphylaxis		1175
 
 [DEFNAME buff_clilocs]
-buffcliloc_empty               1070722
-buffcliloc_curse_1             1075835
-buffcliloc_curse_2             1075836
-buffcliloc_weaken_1            1075837
-buffcliloc_weaken_2            1075838
-buffcliloc_masscurse_1         1075839
-buffcliloc_masscurse_2         1075840
-buffcliloc_agility_1           1075841
-buffcliloc_agility_2           1075842
-buffcliloc_cunning_1           1075843
-buffcliloc_cunning_2           1075844
-buffcliloc_strength_1          1075845
-buffcliloc_strength_2          1075846
-buffcliloc_bless_1             1075847
-buffcliloc_bless_2             1075848
-buffcliloc_reactivearmor_1     1075812
-buffcliloc_reactivearmor_2     1075813
-buffcliloc_protection_1        1075814
-buffcliloc_protection_2        1075815
-buffcliloc_archprotection      1075816
-buffcliloc_archprotection      1070722 //empty
-buffcliloc_invisibility_1      1075825
-buffcliloc_invisibility_2      1075826
-buffcliloc_paralyze_1          1075827
-buffcliloc_paralyze_2          1075828
-buffcliloc_magicreflection_1   1075817
-buffcliloc_magicreflection_1   1075818
-buffcliloc_clumsy_1            1075831
-buffcliloc_clumsy_2            1075832
-buffcliloc_feeblemind_1        1075833
-buffcliloc_feeblemind_1        1075834
-buffcliloc_incognito_1         1075819
-buffcliloc_incognito_2         1075820
-buffcliloc_polymorph_1         1075824
-buffcliloc_polymorph_2         1070722 //empty
-buffcliloc_poison_1            1017383
-buffcliloc_poison_2            1070722
-buffcliloc_nightsight_1        1075643
-buffcliloc_nightsight_2        1075644
-buffcliloc_hidden_1            1075655
-buffcliloc_hidden_2            1075656
-buffcliloc_gargoylefly_1       1112193
-buffcliloc_gargoylefly_2       1112567
+buffcliloc_Empty				1070722
+buffcliloc_NoRemount_1			1075635
+buffcliloc_NoRemount_2			1075636
+buffcliloc_ActiveMeditation_1	1075657
+buffcliloc_ActiveMeditation_2	1075658
+buffcliloc_Curse_1				1075835
+buffcliloc_Curse_2				1075836
+buffcliloc_Weaken_1				1075837
+buffcliloc_Weaken_2				1075838
+buffcliloc_MassCurse_1			1075839
+buffcliloc_MassCurse_2			1075840
+buffcliloc_Agility_1			1075841
+buffcliloc_Agility_2			1075842
+buffcliloc_Cunning_1			1075843
+buffcliloc_Cunning_2			1075844
+buffcliloc_Strength_1			1075845
+buffcliloc_Strength_2			1075846
+buffcliloc_Bless_1				1075847
+buffcliloc_Bless_2				1075848
+buffcliloc_ReactiveArmor_1		1075812
+buffcliloc_ReactiveArmor_2		1075813
+buffcliloc_Protection_1			1075814
+buffcliloc_Protection_2			1075815
+buffcliloc_ArchProtection		1075816
+buffcliloc_ArchProtection		1075815
+buffcliloc_Invisibility_1		1075825
+buffcliloc_Invisibility_2		1075826
+buffcliloc_Paralyze_1			1075827
+buffcliloc_Paralyze_2			1075828
+buffcliloc_MagicReflection_1	1075817
+buffcliloc_MagicReflection_2	1075818
+buffcliloc_Clumsy_1				1075831
+buffcliloc_Clumsy_2				1075832
+buffcliloc_Feeblemind_1			1075833
+buffcliloc_Feeblemind_2			1075834
+buffcliloc_Incognito_1			1075819
+buffcliloc_Incognito_2			1075820
+buffcliloc_Polymorph_1			1075824
+buffcliloc_Polymorph_2			1075823
+buffcliloc_Poison_1				1017383
+buffcliloc_Poison_2				1070722
+buffcliloc_Nightsight_1			1075643
+buffcliloc_Nightsight_2			1075644
+buffcliloc_Hidden_1				1075655
+buffcliloc_Hidden_2				1075656
+buffcliloc_GargoyleFly_1		1112193
+buffcliloc_GargoyleFly_2		1112567
+buffcliloc_GrapesOfWrath_1		1032247
+buffcliloc_GrapesOfWrath_2		1153762
+buffcliloc_HorrificBeast_1		1060514
+buffcliloc_HorrificBeast_2		1153763
+buffcliloc_LichForm_1			1060515
+buffcliloc_LichForm_2			1153767
+buffcliloc_VampiricEmbrace_1	1060521
+buffcliloc_VampiricEmbrace_2	1153768
+buffcliloc_WraithForm_1			1060524
+buffcliloc_WraithForm_2			1153829
+buffcliloc_ReaperForm_1			1071034
+buffcliloc_ReaperForm_2			1153781
+buffcliloc_StoneForm_1			1080145
+buffcliloc_StoneForm_2			1080146
+buffcliloc_CriminalStatus_1		1153802
+buffcliloc_CriminalStatus_2		1153828
 
 [DEFNAME charheight]
 height_01 28 //DEFNAME=c_ogre
