@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2007
+// SPHERE by : Menasoft ©1997-2016
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,9 +7,9 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Friday, September 20, 2013
+// FILE LAST UPDATED: Saturday, Dec 24, 2016
 //
-VERSION=0.56c
+VERSION=0.56d
 
 
 [COMMENT sphere_item_profession_barber.scp]
@@ -588,7 +588,7 @@ TYPE=t_hair
 VALUE=16
 WEIGHT=0.1
 CanUse=can_u_elf
-CATEGORY=Hair and Horns
+CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Elven Hair
 DESCRIPTION=Medium Length Hair
 ON=@Create
@@ -603,7 +603,7 @@ TYPE=t_hair
 VALUE=24
 WEIGHT=0.1
 CanUse=can_u_elf
-CATEGORY=Hair and Horns
+CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Elven Hair
 DESCRIPTION=Long Feather
 ON=@Create
@@ -618,7 +618,7 @@ TYPE=t_hair
 VALUE=12
 WEIGHT=0.1
 CanUse=can_u_elf
-CATEGORY=Hair and Horns
+CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Elven Hair
 DESCRIPTION=Short Hair
 ON=@Create
@@ -633,7 +633,7 @@ TYPE=t_hair
 VALUE=10
 WEIGHT=0.1
 CanUse=can_u_elf
-CATEGORY=Hair and Horns
+CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Elven Hair
 DESCRIPTION=Mullet
 ON=@Create
@@ -648,7 +648,7 @@ TYPE=t_hair
 VALUE=22
 WEIGHT=0.1
 CanUse=can_u_elf
-CATEGORY=Hair and Horns
+CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Elven Hair
 DESCRIPTION=Flower Hair
 ON=@Create
@@ -663,7 +663,7 @@ TYPE=t_hair
 VALUE=17
 WEIGHT=0.1
 CanUse=can_u_elf
-CATEGORY=Hair and Horns
+CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Elven Hair
 DESCRIPTION=Long
 ON=@Create
@@ -678,7 +678,7 @@ TYPE=t_hair
 VALUE=23
 WEIGHT=0.1
 CanUse=can_u_elf
-CATEGORY=Hair and Horns
+CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Elven Hair
 DESCRIPTION=Topknot
 ON=@Create
@@ -693,7 +693,7 @@ TYPE=t_hair
 VALUE=25
 WEIGHT=0.1
 CanUse=can_u_elf
-CATEGORY=Hair and Horns
+CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Elven Hair
 DESCRIPTION=Long Braid
 ON=@Create
@@ -708,7 +708,7 @@ TYPE=t_hair
 VALUE=27
 WEIGHT=0.1
 CanUse=can_u_elf
-CATEGORY=Hair and Horns
+CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Elven Hair
 DESCRIPTION=Buns
 ON=@Create
@@ -723,7 +723,7 @@ TYPE=t_hair
 VALUE=29
 WEIGHT=0.1
 CanUse=can_u_elf
-CATEGORY=Hair and Horns
+CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Elven Hair
 DESCRIPTION=Spiked
 ON=@Create
@@ -738,13 +738,193 @@ TYPE=t_hair
 VALUE=19
 WEIGHT=0.1
 CanUse=can_u_elf
-CATEGORY=Hair and Horns
+CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Elven Hair
 DESCRIPTION=Long Hair 5 (duplicate)
 ON=@Create
 	ATTR=attr_newbie
 ON=@Timer
 	RETURN 1
+
+[ITEMDEF 03b44]
+DEFNAME=i_face_1
+NAME=Face 1
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Face 1
+ON=@Create
+	ATTR=attr_newbie
+
+[ITEMDEF 03b45]
+DEFNAME=i_face_2
+NAME=Face 2
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Face 2
+ON=@Create
+	ATTR=attr_newbie
+
+[ITEMDEF 03b46]
+DEFNAME=i_face_3
+NAME=Face 3
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Face 3
+ON=@Create
+	ATTR=attr_newbie
+
+[ITEMDEF 03b44]
+DEFNAME=i_face_4
+NAME=Face 4
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Face 4
+ON=@Create
+	ATTR=attr_newbie
+
+[ITEMDEF 03b48]
+DEFNAME=i_face_5
+NAME=Face 5
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Face 5
+ON=@Create
+	ATTR=attr_newbie
+
+[ITEMDEF 03b49]
+DEFNAME=i_face_6
+NAME=Face 6
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Face 6
+ON=@Create
+	ATTR=attr_newbie
+
+[ITEMDEF 03b4a]
+DEFNAME=i_face_7
+NAME=Face 7
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Face 7
+ON=@Create
+	ATTR=attr_newbie
+
+[ITEMDEF 03b4b]
+DEFNAME=i_face_8
+NAME=Face 8
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Face 8
+ON=@Create
+	ATTR=attr_newbie
+
+[ITEMDEF 03b4c]
+DEFNAME=i_face_9
+NAME=Face 9
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Face 9
+ON=@Create
+	ATTR=attr_newbie
+
+[ITEMDEF 03b4d]
+DEFNAME=i_face_10
+NAME=Face 10
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Face 10
+ON=@Create
+	ATTR=attr_newbie
+
+[ITEMDEF 03b4e]
+DEFNAME=i_face_anime
+NAME=Face (Anime)
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Anime
+ON=@Create
+	ATTR=attr_newbie
+
+[ITEMDEF 03b4f]
+DEFNAME=i_face_hellian
+NAME=Face (Hellian)
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Hellian
+ON=@Create
+	ATTR=attr_newbie
+
+[ITEMDEF 03b50]
+DEFNAME=i_face_juka
+NAME=Face (Juka)
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Juka
+ON=@Create
+	ATTR=attr_newbie
+
+[ITEMDEF 03b51]
+DEFNAME=i_face_undead
+NAME=Face (Undead)
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Undead
+ON=@Create
+	ATTR=attr_newbie
+
+[ITEMDEF 03b52]
+DEFNAME=i_face_meer
+NAME=Face (Meer)
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Meer
+ON=@Create
+	ATTR=attr_newbie
+
+[ITEMDEF 03b53]
+DEFNAME=i_face_elder
+NAME=Face (Elder)
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Elder
+ON=@Create
+	ATTR=attr_newbie
+
+[ITEMDEF 03b54]
+DEFNAME=i_face_orc
+NAME=Face (Orc)
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Orc
+ON=@Create
+	ATTR=attr_newbie
+
+[ITEMDEF 03b55]
+DEFNAME=i_face_pirate
+NAME=Face (Pirate)
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Pirate
+ON=@Create
+	ATTR=attr_newbie
+
+[ITEMDEF 03b56]
+DEFNAME=i_face_native_papuan
+NAME=Face (Native Papuan)
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Native Papuan
+ON=@Create
+	ATTR=attr_newbie
+
+[ITEMDEF 03b57]
+DEFNAME=i_face_vampire
+NAME=Face (Vampire)
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Vampire
+ON=@Create
+	ATTR=attr_newbie
 
 [ITEMDEF 04258]
 DEFNAME=i_horn_gargoyle_male_1
@@ -753,7 +933,7 @@ TYPE=t_hair
 VALUE=8
 WEIGHT=0.1
 CanUse=can_u_female|can_u_gargoyle
-CATEGORY=Hair and Horns
+CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Gargoyle Horns
 DESCRIPTION=Male Horn 1
 ON=@Create
@@ -768,7 +948,7 @@ TYPE=t_hair
 VALUE=8
 WEIGHT=0.1
 CanUse=can_u_male|can_u_gargoyle
-CATEGORY=Hair and Horns
+CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Gargoyle Horns
 DESCRIPTION=Male Horn 2
 ON=@Create
@@ -783,7 +963,7 @@ TYPE=t_hair
 VALUE=8
 WEIGHT=0.1
 CanUse=can_u_male|can_u_gargoyle
-CATEGORY=Hair and Horns
+CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Gargoyle Horns
 DESCRIPTION=Male Horn 3
 ON=@Create
@@ -798,7 +978,7 @@ TYPE=t_hair
 VALUE=8
 WEIGHT=0.1
 CanUse=can_u_male|can_u_gargoyle
-CATEGORY=Hair and Horns
+CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Gargoyle Horns
 DESCRIPTION=Male Horn 4
 ON=@Create
@@ -813,7 +993,7 @@ TYPE=t_hair
 VALUE=8
 WEIGHT=0.1
 CanUse=can_u_male|can_u_gargoyle
-CATEGORY=Hair and Horns
+CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Gargoyle Horns
 DESCRIPTION=Male Horn 5
 ON=@Create
@@ -828,7 +1008,7 @@ TYPE=t_hair
 VALUE=8
 WEIGHT=0.1
 CanUse=can_u_male|can_u_gargoyle
-CATEGORY=Hair and Horns
+CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Gargoyle Horns
 DESCRIPTION=Male Horn 6
 ON=@Create
@@ -843,7 +1023,7 @@ TYPE=t_hair
 VALUE=8
 WEIGHT=0.1
 CanUse=can_u_male|can_u_gargoyle
-CATEGORY=Hair and Horns
+CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Gargoyle Horns
 DESCRIPTION=Male Horn 7
 ON=@Create
@@ -858,7 +1038,7 @@ TYPE=t_hair
 VALUE=8
 WEIGHT=0.1
 CanUse=can_u_male|can_u_gargoyle
-CATEGORY=Hair and Horns
+CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Gargoyle Horns
 DESCRIPTION=Male Horn 8
 ON=@Create
@@ -876,7 +1056,7 @@ TYPE=t_hair
 VALUE=8
 WEIGHT=0.1
 CanUse=can_u_female|can_u_gargoyle
-CATEGORY=Hair and Horns
+CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Gargoyle Horns
 DESCRIPTION=Female Horn 1
 ON=@Create
@@ -891,7 +1071,7 @@ TYPE=t_hair
 VALUE=8
 WEIGHT=0.1
 CanUse=can_u_female|can_u_gargoyle
-CATEGORY=Hair and Horns
+CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Gargoyle Horns
 DESCRIPTION=Female Horn 2
 ON=@Create
@@ -906,7 +1086,7 @@ TYPE=t_hair
 VALUE=8
 WEIGHT=0.1
 CanUse=can_u_female|can_u_gargoyle
-CATEGORY=Hair and Horns
+CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Gargoyle Horns
 DESCRIPTION=Female Horn 3
 ON=@Create
@@ -921,7 +1101,7 @@ TYPE=t_hair
 VALUE=8
 WEIGHT=0.1
 CanUse=can_u_female|can_u_gargoyle
-CATEGORY=Hair and Horns
+CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Gargoyle Horns
 DESCRIPTION=Female Horn 4
 ON=@Create
@@ -936,7 +1116,7 @@ TYPE=t_hair
 VALUE=8
 WEIGHT=0.1
 CanUse=can_u_female|can_u_gargoyle
-CATEGORY=Hair and Horns
+CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Gargoyle Horns
 DESCRIPTION=Female Horn 5
 ON=@Create
@@ -952,7 +1132,7 @@ TYPE=t_hair
 VALUE=8
 WEIGHT=0.1
 CanUse=can_u_gargoyle
-CATEGORY=Hair and Horns
+CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Gargoyle Horns
 DESCRIPTION=Horn ?
 ON=@Create
@@ -967,7 +1147,7 @@ TYPE=t_hair
 VALUE=8
 WEIGHT=0.1
 CanUse=can_u_female|can_u_gargoyle
-CATEGORY=Hair and Horns
+CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Gargoyle Horns
 DESCRIPTION=Female Horn 6
 ON=@Create
@@ -982,7 +1162,7 @@ TYPE=t_hair
 VALUE=8
 WEIGHT=0.1
 CanUse=can_u_female|can_u_gargoyle
-CATEGORY=Hair and Horns
+CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Gargoyle Horns
 DESCRIPTION=Female Horn 7
 ON=@Create
@@ -998,7 +1178,7 @@ TYPE=t_hair
 VALUE=8
 WEIGHT=0.1
 CanUse=can_u_gargoyle
-CATEGORY=Hair and Horns
+CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Gargoyle Horns
 DESCRIPTION=Female Horn ?
 ON=@Create
@@ -1014,7 +1194,7 @@ LAYER=layer_beard
 VALUE=8
 WEIGHT=0.1
 CanUse=can_u_male|can_u_gargoyle
-CATEGORY=Hair and Horns
+CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Gargoyle Horns
 DESCRIPTION=Male Facial Horn 1
 ON=@Create
@@ -1030,7 +1210,7 @@ LAYER=layer_beard
 VALUE=8
 WEIGHT=0.1
 CanUse=can_u_male|can_u_gargoyle
-CATEGORY=Hair and Horns
+CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Gargoyle Horns
 DESCRIPTION=Male Facial Horn 2
 ON=@Create
@@ -1046,7 +1226,7 @@ LAYER=layer_beard
 VALUE=8
 WEIGHT=0.1
 CanUse=can_u_male|can_u_gargoyle
-CATEGORY=Hair and Horns
+CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Gargoyle Horns
 DESCRIPTION=Male Facial Horn 3
 ON=@Create
@@ -1062,7 +1242,7 @@ LAYER=layer_beard
 VALUE=8
 WEIGHT=0.1
 CanUse=can_u_male|can_u_gargoyle
-CATEGORY=Hair and Horns
+CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Gargoyle Horns
 DESCRIPTION=Male Facial Horn 4
 ON=@Create
@@ -1077,7 +1257,7 @@ TYPE=t_hair
 VALUE=8
 WEIGHT=0.1
 CanUse=can_u_female|can_u_gargoyle
-CATEGORY=Hair and Horns
+CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Gargoyle Horns
 DESCRIPTION=Female Horn 8
 ON=@Create
@@ -1085,6 +1265,59 @@ ON=@Create
 ON=@Timer
 	RETURN 1
 
+[ITEMDEF 05679]
+DEFNAME=i_face_gargoyle_1
+NAME=Gargoyle Face 1
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Faces
+DESCRIPTION=Face 1
+ON=@Create
+	ATTR=attr_newbie
+
+[ITEMDEF 0567a]
+DEFNAME=i_face_gargoyle_2
+NAME=Gargoyle Face 2
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Faces
+DESCRIPTION=Face 2
+ON=@Create
+	ATTR=attr_newbie
+
+[ITEMDEF 0567b]
+DEFNAME=i_face_gargoyle_3
+NAME=Gargoyle Face 3
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Faces
+DESCRIPTION=Face 3
+ON=@Create
+	ATTR=attr_newbie
+
+[ITEMDEF 0567c]
+DEFNAME=i_face_gargoyle_4
+NAME=Gargoyle Face 4
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Faces
+DESCRIPTION=Face 4
+ON=@Create
+	ATTR=attr_newbie
+
+[ITEMDEF 0567d]
+DEFNAME=i_face_gargoyle_5
+NAME=Gargoyle Face 5
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Faces
+DESCRIPTION=Face 5
+ON=@Create
+	ATTR=attr_newbie
+
+[ITEMDEF 0567e]
+DEFNAME=i_face_gargoyle_6
+NAME=Gargoyle Face 6
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Faces
+DESCRIPTION=Face 6
+ON=@Create
+	ATTR=attr_newbie
 
 //////////////////
 // Custom Items //

@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Sept 6, 2016
+// FILE LAST UPDATED: Saturday, Dec 24, 2016
 //
 VERSION=0.56d
 
@@ -92,7 +92,7 @@ ITEM=i_gargish_robe
 ITEM=i_leather_tunic
 
 [NEWBIE PROFESSION_WARRIOR ELF]
-ITEM=i_leaf_tunic
+ITEM=i_leaf_chest
 
 [NEWBIE PROFESSION_WARRIOR GARG]
 ITEM=i_gargish_leather_chest

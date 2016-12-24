@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Thursday, Dec 22, 2016
+// FILE LAST UPDATED: Saturday, Dec 24, 2016
 //
 VERSION=0.56d
 
@@ -1145,12 +1145,12 @@ layer_helm        6
 layer_gloves      7
 layer_ring        8
 layer_talisman    9   // talisman (se and ml)
-layer_collar     10    // gorget or necklace.
+layer_collar     10   // gorget or necklace.
 layer_hair       11
 layer_half_apron 12
 layer_chest      13   // armor chest
 layer_wrist      14   // watch
-layer_light      15   // a itemid_light_src equip item can be put here.
+layer_face       15   // character face style on enhanced clients (also light halo can be put here)
 layer_beard      16   // try to have only men have this.
 layer_tunic      17   // jester suit or full apron.
 layer_ears       18   // earrings
