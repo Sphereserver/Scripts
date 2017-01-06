@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2016
+// SPHERE by : Menasoft ©1997-2017
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, Nov 6, 2016
+// FILE LAST UPDATED: Thursday, Jan 5, 2017
 //
 VERSION=0.56d
 
@@ -987,20 +987,21 @@ DUPEITEM=0152c
 DEFNAME=i_dark_source
 //RESOURCES=BASE ITEMS THAT ARE RESOURCES DO NOT ALWAYS HAVE RESOURCES
 WEIGHT=0
-LAYER=9
+LAYER=2
 
 ON=@Create
 ATTR=attr_magic|attr_newbie
-morez=024
+MOREZ=024
 
 [ITEMDEF 01647]
 DEFNAME=i_light_source
 //RESOURCES=BASE ITEMS THAT ARE RESOURCES DO NOT ALWAYS HAVE RESOURCES
 TYPE=t_light_lit
 WEIGHT=0
-LAYER=15
+LAYER=2
+
 ON=@Create
-   ATTR=attr_magic|attr_newbie
+ATTR=attr_magic|attr_newbie
 
 
 [ITEMDEF 017cf]

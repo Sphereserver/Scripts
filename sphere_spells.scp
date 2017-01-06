@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2016
+// SPHERE by : Menasoft ©1997-2017
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,9 +7,9 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Jan 22, 2016
+// FILE LAST UPDATED: Thursday, Jan 5, 2017
 //
-VERSION=0.56c
+VERSION=0.56d
 
 [COMMENT sphere_spells]
 - Potions are just spells that have an effect attached at the potion layer.
@@ -623,7 +623,7 @@ INTERRUPT=100.0,100.0
 DEFNAME=s_blade_spirits
 NAME=Blade Spirit
 SOUND=snd_spell_blade_spirits
-RUNES=IHJY
+RUNES=IJHY
 CAST_TIME=7.5
 RESOURCES=i_reag_black_pearl,i_reag_mandrake_root,i_reag_nightshade
 RUNE_ITEM=i_rune_blade_spirits

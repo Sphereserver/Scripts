@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2016
+// SPHERE by : Menasoft ©1997-2017
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Dec 24, 2016
+// FILE LAST UPDATED: Thursday, Jan 5, 2017
 //
 VERSION=0.56d
 
@@ -179,7 +179,7 @@ ITEM=i_elven_boots
 [NEWBIE PROFESSION_PALADIN GARG]
 ITEM=i_spellbook_chivalry
 MORE1=03ff
-ITEM=i_sword_dream
+ITEM=i_sword_dread
 ITEM=i_gargish_plate_chest
 ITEM=i_gargish_plate_arms
 ITEM=i_gargish_plate_leggings
