@@ -103,7 +103,7 @@ If (!strlen(<local.message>))
   return 0
 endif
 
-ref1.allmembers -1,sysmessage @68,0,3 <f_stonesys_gettypename <ref1.uid>> Message: <local.message>
+ref1.allmembers -1,sysmessage @68,0,0 <f_stonesys_gettypename <ref1.uid>> Message: <local.message>
 
 // ------------------------------------------------------
 [FUNCTION f_stonesys_speech_sendsmsg]
@@ -118,7 +118,7 @@ If (!strlen(<local.message>))
   return 0
 endif
 
-ref1.allmembers -1,sysmessage @68,0,3 <f_stonesys_gettypename <ref1.uid>> Message[<name>]: <local.message>
+ref1.allmembers -1,sysmessage @68,0,0 <f_stonesys_gettypename <ref1.uid>> Message[<name>]: <local.message>
 
 // ------------------------------------------------------
 [FUNCTION f_stonesys_determine_timeleft]
