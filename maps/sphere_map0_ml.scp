@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2016
+// SPHERE by : Menasoft ©1997-2017
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,15 +7,13 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, Nov 6, 2016
+// FILE LAST UPDATED: Saturday, Jan 7, 2017
 //
 VERSION=0.56d
 
 ////////////////////////////////////////
-// Felucca
+// Cities and nearby regions
 ////////////////////////////////////////
-
-//Mondain's Legacy regions
 
 [AREADEF a_townHeartwood]
 NAME=The Heartwood
@@ -25,6 +23,10 @@ RECT=6907,253,7166,512,0
 FLAGS=region_flag_nobuilding|region_flag_guarded
 EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
 TAG.MUSIC=midi_Elf_city_1
+
+////////////////////////////////////////
+// Dungeons
+////////////////////////////////////////
 
 [AREADEF a_sanctuary]
 NAME=Sanctuary
@@ -64,203 +66,9 @@ TAG.MUSIC=midi_Melisandes_lair
 
 [AREADEF a_painted_caves]
 NAME=Painted Caves
-GROUP=ML Caves
+GROUP=ML Dungeons
 P=6308,892,0,0
 RECT=6243,846,6315,919,0
-FLAGS=region_flag_nobuilding|region_flag_underground|region_antimagic_recall_in
-EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
-TAG.MUSIC=midi_dungeon9
-
-//High Seas regions
-
-[AREADEF a_sea_market]
-NAME=Sea Market
-GROUP=HS Cities
-RECT=4472,2250,4672,2450,0
-P=4550,2317,-2,0
-FLAGS=region_flag_nobuilding|region_flag_guarded
-EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
-
-//Time of Legends regions
-
-[AREADEF a_castle_blackthorn_dungeon]
-NAME=Castle Blackthorn Dungeon
-GROUP=TOL Dungeons
-P=6432,2679,0,0
-RECT=6156,2294,6507,2825,0
-FLAGS=region_flag_nobuilding|region_flag_underground|region_antimagic_recall_in
-EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
-TAG.MUSIC=midi_dungeon9
-
-////////////////////////////////////////
-// Ilshenar
-////////////////////////////////////////
-
-//Mondain's Legacy regions
-
-[AREADEF a_twisted_weald]
-NAME=Twisted Weald
-GROUP=ML Dungeons
-P=2211,1262,3,2
-RECT=2100,1300,2258,1141,2
-FLAGS=region_flag_nobuilding|region_flag_underground|region_antimagic_recall_in
-EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
-TAG.MUSIC=midi_Dread_horn_area
-
-////////////////////////////////////////
-// Malas
-////////////////////////////////////////
-
-//Samurai Empire regions
-
-[AREADEF a_yomotsu_mines]
-NAME=Yomotsu Mines
-GROUP=SE Caves
-P=6,118,0,3
-RECT=0,0,129,129,3
-FLAGS=region_flag_nobuilding|region_flag_underground
-EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
-TAG.MUSIC=midi_TokunoDungeon
-
-[AREADEF a_ninja_cave]
-NAME=Ninja Cave
-GROUP=SE Caves
-P=404,1167,0,3
-RECT=360,960,460,1175,3
-FLAGS=region_flag_nobuilding|region_flag_underground
-EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
-
-[AREADEF a_fan_dancers_dojo]
-NAME=Fan Dancer's Dojo
-GROUP=SE Dungeons
-P=71,337,0,3
-RECT=40,320,210,720,3
-FLAGS=region_flag_nobuilding|region_flag_underground
-EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
-TAG.MUSIC=midi_TokunoDungeon
-
-[AREADEF a_citadel]
-NAME=Citadel
-GROUP=SE Dungeons
-P=106,1884,0,3
-RECT=65,1865,195,1990,3
-FLAGS=region_flag_nobuilding|region_flag_underground|region_antimagic_recall_in
-EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
-TAG.MUSIC=midi_dungeon9
-
-[AREADEF a_samurai_start]
-NAME=Samurai Start Location
-GROUP=SE Misc
-P=392,776,-1,3
-RECT=320,690,435,790,3
-FLAGS=region_flag_nobuilding
-EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
-TAG.MUSIC=midi_Zento
-
-[AREADEF a_ninja_start]
-NAME=Ninja Start Location
-GROUP=SE Misc
-P=416,823,-1,3
-RECT=360,795,440,835,3
-FLAGS=region_flag_nobuilding
-EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
-TAG.MUSIC=midi_Zento
-
-//Mondain's Legacy regions
-
-[AREADEF a_labyrinth]
-NAME=Labyrinth
-GROUP=ML Dungeons
-P=329,1973,2,3
-RECT=256,1792,511,2047,3
-FLAGS=region_flag_nobuilding|region_flag_underground|region_antimagic_recall_in
-EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
-TAG.MUSIC=midi_dungeon9
-
-[AREADEF a_bedlam]
-NAME=Bedlam
-GROUP=ML Dungeons
-P=121,1684,0,3
-RECT=60,1580,216,1703,3
-FLAGS=region_flag_nobuilding|region_flag_underground|region_antimagic_recall_in
-EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
-TAG.MUSIC=midi_Grizzle_dungeon
-
-////////////////////////////////////////
-// Ter Mur
-////////////////////////////////////////
-
-//Time of Legends regions
-
-[AREADEF a_valley_of_eodon]
-NAME=Valley of Eodon
-GROUP=TOL Misc
-P=590,1855,45,5
-RECT=63,1343,896,1984,5
-RECT=574,1855,960,2240,5
-EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
-
-[AREADEF a_shadowguard]
-NAME=Shadowguard
-GROUP=TOL Misc
-P=525,2190,25,5
-RECT=32,1984,574,2272,5
-RECT=0,2271,224,2496,5
-EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
-
-[AREADEF a_volcano_caldera]
-NAME=Volcano Caldera
-GROUP=TOL Misc
-P=930,1617,2,5
-RECT=832,1501,1087,1759,5
-EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
-
-[AREADEF a_dryad_queen_home]
-NAME=Dryad Queen's Home
-GROUP=TOL Misc
-P=856,2783,5,5
-RECT=827,2754,876,2803,5
-EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
-
-[AREADEF a_great_ape_banana_hoard]
-NAME=Great Ape's Banana Hoard
-GROUP=TOL Misc
-P=926,1463,0,5
-RECT=832,1356,948,1483,5
-EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
-
-[AREADEF a_kotl_city]
-NAME=Kotl City
-GROUP=TOL Dungeons
-P=543,2470,0,5
-RECT=438,2270,672,2491,5
-FLAGS=region_flag_nobuilding|region_flag_underground|region_antimagic_recall_in
-EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
-TAG.MUSIC=midi_dungeon9
-
-[AREADEF a_kotl_antechamber]
-NAME=Kotl Antechamber
-GROUP=TOL Dungeons
-P=896,2304,40,5
-RECT=830,2238,959,2367,5
-FLAGS=region_flag_nobuilding|region_flag_underground|region_antimagic_recall_in
-EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
-TAG.MUSIC=midi_dungeon9
-
-[AREADEF a_myrmidex_pits]
-NAME=Myrmidex Pits
-GROUP=TOL Dungeons
-P=853,1783,0,5
-RECT=830,1760,1023,1919,5
-FLAGS=region_flag_nobuilding|region_flag_underground|region_antimagic_recall_in
-EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
-TAG.MUSIC=midi_dungeon9
-
-[AREADEF a_depths_of_myrmidex_pits]
-NAME=Depths of the Myrmidex Pits
-GROUP=TOL Dungeons
-P=716,2304,0,5
-RECT=703,2238,830,2367,5
 FLAGS=region_flag_nobuilding|region_flag_underground|region_antimagic_recall_in
 EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
 TAG.MUSIC=midi_dungeon9

@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2016
+// SPHERE by : Menasoft ©1997-2017
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, May 21, 2016
+// FILE LAST UPDATED: Saturday, Jan 7, 2017
 //
 VERSION=0.56d
 
@@ -196,6 +196,7 @@ The Ironwood Inn
 5153,810,-22,0=5134,986,20,0=tp_destard_2_3_x
 5153,811,-22,0=5134,987,20,0=tp_destard_2_3_x
 1361,883,0,0=5166,245,15,0=tp_wind_out_x
+5191,152,0,0=1361,883,0,0=tp_wind_out_y
 2776,895,-23,0=5685,387,2,0=tp_VesperCemetary_CemetaryPassage
 4545,851,30,0=5736,3196,10,0=tp_moonglow_papua_1_recdu
 5409,858,52,0=5387,755,-3,0=tp_despise_3_2_x

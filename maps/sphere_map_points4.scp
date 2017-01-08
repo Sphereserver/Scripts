@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2007
+// SPHERE by : Menasoft ©1997-2017
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,10 +7,9 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, November 15, 2003
-// Changed all flags= lines from numbers to defnames for easier editing - ie -guardzones and such
-
-VERSION=0.56b
+// FILE LAST UPDATED: Saturday, Jan 7, 2017
+//
+VERSION=0.56d
 
 [MoonGates]
 1169,998,42,4=mg_isamu_jima
@@ -18,23 +17,26 @@ VERSION=0.56b
 270,628,15,4=mg_homare_jima
 
 [Teleporters]
-257,783,63,4=3,127,-1,3=tp_yomotsu_mines_entrance1
-258,783,63,4=5,127,-1,3=tp_yomotsu_mines_entrance2
-259,783,63,4=6,127,-1,3=tp_yomotsu_mines_entrance3
-260,783,63,4=7,127,-1,3=tp_yomotsu_mines_entrance4
-3,128,-1,3=257,784,64,4=tp_yomotsu_mines_exit1
-4,128,-1,3=257,784,64,4=tp_yomotsu_mines_exit2
-5,128,-1,3=258,784,64,4=tp_yomotsu_mines_exit3
-6,128,-1,3=259,784,64,4=tp_yomotsu_mines_exit4
-7,128,-1,3=260,784,64,4=tp_yomotsu_mines_exit5
-8,128,-1,3=260,784,64,4=tp_yomotsu_mines_exit6
-988,197,5,4=67,339,-1,3=tp_fan_dancers_dojo_entrance_1
-988,196,5,4=67,338,-1,3=tp_fan_dancers_dojo_entrance_2
-988,195,5,4=67,337,-1,3=tp_fan_dancers_dojo_entrance_3
-988,194,5,4=67,336,-1,3=tp_fan_dancers_dojo_entrance_4
-64,339,11,3=987,197,12,4=tp_fan_dancers_dojo_exit_1
-64,338,11,3=987,196,12,4=tp_fan_dancers_dojo_exit_2
-64,337,11,3=987,195,12,4=tp_fan_dancers_dojo_exit_3
-64,336,11,3=987,194,12,4=tp_fan_dancers_dojo_exit_4 
+257,783,63,4=3,127,-1,3=tp_TokunoIslands_YomotsuMines1
+258,783,63,4=5,127,-1,3=tp_TokunoIslands_YomotsuMines2
+259,783,63,4=6,127,-1,3=tp_TokunoIslands_YomotsuMines3
+260,783,63,4=7,127,-1,3=tp_TokunoIslands_YomotsuMines4
+3,128,-1,3=257,784,64,4=tp_YomotsuMines_TokunoIslands1
+4,128,-1,3=257,784,64,4=tp_YomotsuMines_TokunoIslands2
+5,128,-1,3=258,784,64,4=tp_YomotsuMines_TokunoIslands3
+6,128,-1,3=259,784,64,4=tp_YomotsuMines_TokunoIslands4
+7,128,-1,3=260,784,64,4=tp_YomotsuMines_TokunoIslands5
+8,128,-1,3=260,784,64,4=tp_YomotsuMines_TokunoIslands6
+
+988,197,5,4=67,339,-1,3=tp_TokunoIslands_FanDancersDojo1
+988,196,5,4=67,338,-1,3=tp_TokunoIslands_FanDancersDojo2
+988,195,5,4=67,337,-1,3=tp_TokunoIslands_FanDancersDojo3
+988,194,5,4=67,336,-1,3=tp_TokunoIslands_FanDancersDojo4
+64,339,11,3=987,197,12,4=tp_FanDancersDojo_TokunoIslands1
+64,338,11,3=987,196,12,4=tp_FanDancersDojo_TokunoIslands2
+64,337,11,3=987,195,12,4=tp_FanDancersDojo_TokunoIslands3
+64,336,11,3=987,194,12,4=tp_FanDancersDojo_TokunoIslands4
+
+1339,766,19,4=106,1882,0,3=tp_TokunoIslands_TheCitadel	//on OSI there's no teleport on ground, the player must click on an i_crate_small located here
 
 [EOF]

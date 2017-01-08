@@ -1,0 +1,32 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2017
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Saturday, Jan 7, 2017
+//
+VERSION=0.56d
+
+[Teleporters]
+1731,973,-75,3=329,1972,2,3=tp_IsleOfTheDivide_Labyrinth1
+1732,973,-75,3=329,1973,2,3=tp_IsleOfTheDivide_Labyrinth2
+1733,973,-75,3=329,1974,2,3=tp_IsleOfTheDivide_Labyrinth3
+1734,973,-75,3=329,1975,2,3=tp_IsleOfTheDivide_Labyrinth4
+328,1972,5,3=1731,974,-75,3=tp_Labyrinth_IsleOfTheDivide1
+328,1973,5,3=1732,974,-75,3=tp_Labyrinth_IsleOfTheDivide2
+328,1974,5,3=1733,974,-75,3=tp_Labyrinth_IsleOfTheDivide3
+328,1975,5,3=1734,974,-75,3=tp_Labyrinth_IsleOfTheDivide4
+
+2068,1372,-75,3=120,1682,0,3=tp_Umbra_Bedlam	//on OSI there's no teleport on ground, the player must click on an i_iron_maiden located here
+120,1684,0,3=2068,1372,-75,3=tp_Bedlam_Umbra1
+121,1684,0,3=2068,1372,-75,3=tp_Bedlam_Umbra2
+
+84,1673,-2,3=157,1609,17,3=tp_BedlamGraveyard_BedlamUnderground
+156,1608,22,3=85,1673,2,3=tp_BedlamUnderground_BedlamGraveyard1
+157,1608,22,3=85,1673,2,3=tp_BedlamUnderground_BedlamGraveyard2
+
+[EOF]

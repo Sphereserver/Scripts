@@ -1,0 +1,38 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2017
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Saturday, Jan 7, 2017
+//
+VERSION=0.56d
+
+[Teleporters]
+6945,1813,80,0=5813,2960,14,0=tp_DragonTurtle_SakTeb		//add i_fx_bless_effect here
+7013,1956,40,0=5319,981,0,0=tp_DragonTurtle_Destard		//add i_fx_bless_effect here
+
+7007,2060,5,0=7162,1906,45,0=tp_Passage_DragonTurtle1
+7007,2059,5,0=7162,1905,45,0=tp_Passage_DragonTurtle2
+7007,2058,5,0=7162,1904,45,0=tp_Passage_DragonTurtle3
+7007,2057,5,0=7162,1903,45,0=tp_Passage_DragonTurtle4
+7007,2056,5,0=7162,1902,45,0=tp_Passage_DragonTurtle5
+7163,1906,45,0=7008,2060,5,0=tp_DragonTurtle_Passage1
+7163,1905,45,0=7008,2059,5,0=tp_DragonTurtle_Passage2
+7163,1904,45,0=7008,2058,5,0=tp_DragonTurtle_Passage3
+7163,1903,45,0=7008,2057,5,0=tp_DragonTurtle_Passage4
+7163,1902,45,0=7008,2056,5,0=tp_DragonTurtle_Passage5
+
+7032,2100,0,0=5136,994,0,0=tp_Passage_Destard1
+7032,2099,0,0=5136,993,0,0=tp_Passage_Destard2
+7032,2098,0,0=5136,992,0,0=tp_Passage_Destard3
+7032,2097,0,0=5136,991,0,0=tp_Passage_Destard4
+5135,994,0,0=7031,2100,0,0=tp_Destard_Passage1
+5135,993,0,0=7031,2099,0,0=tp_Destard_Passage2
+5135,992,0,0=7031,2098,0,0=tp_Destard_Passage3
+5135,991,0,0=7031,2097,0,0=tp_Destard_Passage4
+
+[EOF]

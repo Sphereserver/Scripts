@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2015
+// SPHERE by : Menasoft ©1997-2017
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,9 +7,9 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Friday, Oct 9, 2015
+// FILE LAST UPDATED: Saturday, Jan 7, 2017
 //
-VERSION=0.56c
+VERSION=0.56d
 
 [MoonGates]
 851,3526,-38,5=mg_royal_city
@@ -17,47 +17,72 @@ VERSION=0.56c
 719,1863,40,5=mg_valley_of_eodon
 
 [Teleporters]
-1125,1076,-117,5=520,921,39,5=tp_stygian_abyss_entrance1
-1126,1076,-117,5=521,921,39,5=tp_stygian_abyss_entrance2
-519,919,39,5=1125,1076,-117,5=tp_stygian_abyss_exit1
-520,919,39,5=1125,1076,-117,5=tp_stygian_abyss_exit2
-521,919,39,5=1126,1076,-117,5=tp_stygian_abyss_exit3
-522,919,39,5=1126,1076,-117,5=tp_stygian_abyss_exit4
+843,287,22,5=436,167,-8,5=tp_GreatStygianAbyss_StygianDragonsLair1
+843,286,22,5=436,166,-8,5=tp_GreatStygianAbyss_StygianDragonsLair2
+843,273,22,5=436,153,-8,5=tp_GreatStygianAbyss_StygianDragonsLair3
+843,272,22,5=436,152,-8,5=tp_GreatStygianAbyss_StygianDragonsLair4
+437,167,-13,5=844,287,17,5=tp_StygianDragonsLair_GreatStygianAbyss1
+437,166,-13,5=844,286,17,5=tp_StygianDragonsLair_GreatStygianAbyss2
+437,153,-13,5=844,273,17,5=tp_StygianDragonsLair_GreatStygianAbyss3
+437,152,-13,5=844,272,17,5=tp_StygianDragonsLair_GreatStygianAbyss4
 
-848,272,0,5=441,152,-30,5=tp_stygian_dragon_lair_entrance1
-848,273,0,5=441,153,-30,5=tp_stygian_dragon_lair_entrance2
-848,274,0,5=441,154,-30,5=tp_stygian_dragon_lair_entrance3
-848,275,0,5=441,155,-30,5=tp_stygian_dragon_lair_entrance4
-848,276,0,5=441,156,-30,5=tp_stygian_dragon_lair_entrance5
-848,277,0,5=441,157,-30,5=tp_stygian_dragon_lair_entrance6
-848,278,0,5=441,158,-30,5=tp_stygian_dragon_lair_entrance7
-848,279,0,5=441,159,-30,5=tp_stygian_dragon_lair_entrance8
-848,280,0,5=441,160,-30,5=tp_stygian_dragon_lair_entrance9
-848,281,0,5=441,161,-30,5=tp_stygian_dragon_lair_entrance10
-848,282,0,5=441,162,-30,5=tp_stygian_dragon_lair_entrance11
-848,283,0,5=441,163,-30,5=tp_stygian_dragon_lair_entrance12
-848,284,0,5=441,164,-30,5=tp_stygian_dragon_lair_entrance13
-848,285,0,5=441,165,-30,5=tp_stygian_dragon_lair_entrance14
-848,286,0,5=441,166,-30,5=tp_stygian_dragon_lair_entrance15
-848,287,0,5=441,167,-30,5=tp_stygian_dragon_lair_entrance16
-442,152,-35,5=849,272,-5,5=tp_stygian_dragon_lair_exit1
-442,153,-35,5=849,273,-5,5=tp_stygian_dragon_lair_exit2
-442,154,-35,5=849,274,-5,5=tp_stygian_dragon_lair_exit3
-442,155,-35,5=849,275,-5,5=tp_stygian_dragon_lair_exit4
-442,156,-35,5=849,276,-5,5=tp_stygian_dragon_lair_exit5
-442,157,-35,5=849,277,-5,5=tp_stygian_dragon_lair_exit6
-442,158,-35,5=849,278,-5,5=tp_stygian_dragon_lair_exit7
-442,159,-35,5=849,279,-5,5=tp_stygian_dragon_lair_exit8
-442,160,-35,5=849,280,-5,5=tp_stygian_dragon_lair_exit9
-442,161,-35,5=849,281,-5,5=tp_stygian_dragon_lair_exit10
-442,162,-35,5=849,282,-5,5=tp_stygian_dragon_lair_exit11
-442,163,-35,5=849,283,-5,5=tp_stygian_dragon_lair_exit12
-442,164,-35,5=849,284,-5,5=tp_stygian_dragon_lair_exit13
-442,165,-35,5=849,285,-5,5=tp_stygian_dragon_lair_exit14
-442,166,-35,5=849,286,-5,5=tp_stygian_dragon_lair_exit15
-442,167,-35,5=849,287,-5,5=tp_stygian_dragon_lair_exit16
+520,919,39,5=1125,1075,-117,5=tp_GreatStygianAbyss_Underworld1
+521,919,39,5=1126,1075,-117,5=tp_GreatStygianAbyss_Underworld2
+1125,1076,-117,5=520,920,39,5=tp_Underworld_GreatStygianAbyss1
+1126,1076,-117,5=521,920,39,5=tp_Underworld_GreatStygianAbyss2
 
-946,70,72,5=37,28,0,5=tp_stygian_abyss_tomb_of_kings
-37,28,0,5=946,70,72,5=tp_tomb_of_kings_stygian_abyss
+1125,1215,5,5=4194,3261,5,1=tp_Underworld_FireIsland1
+1126,1215,5,5=4194,3261,5,1=tp_Underworld_FireIsland2
+1127,1215,5,5=4194,3261,5,1=tp_Underworld_FireIsland3
+1128,1215,5,5=4195,3261,5,1=tp_Underworld_FireIsland4
+1129,1215,5,5=4195,3261,5,1=tp_Underworld_FireIsland5
+1130,1215,5,5=4195,3261,5,1=tp_Underworld_FireIsland6
+1131,1215,5,5=4195,3261,5,1=tp_Underworld_FireIsland7
+4194,3260,5,1=1128,1214,0,5=tp_FireIsland_Underworld1
+4195,3260,5,1=1128,1214,0,5=tp_FireIsland_Underworld2
+
+1081,975,-20,5=1080,884,-4,5=tp_Underworld_NavreysLair
+1077,881,-6,5=1081,975,-20,5=tp_NavreysLair_Underworld
+
+37,28,0,5=946,70,72,5=tp_TombOfKings_GreatStygianAbyss	//add i_moongate_blue here
+946,70,72,5=37,28,0,5=tp_GreatStygianAbyss_TombOfKings	//add i_moongate_blue here
+
+33,241,7,5=996,3842,-39,5=tp_TombOfKings_HolyCity1
+34,241,7,5=997,3842,-39,5=tp_TombOfKings_HolyCity2
+35,241,7,5=998,3842,-39,5=tp_TombOfKings_HolyCity3
+36,241,7,5=999,3842,-39,5=tp_TombOfKings_HolyCity4
+37,241,7,5=1000,3842,-39,5=tp_TombOfKings_HolyCity5
+996,3841,-39,5=33,240,5,5=tp_HolyCity_TombOfKings1
+997,3841,-39,5=34,240,5,5=tp_HolyCity_TombOfKings2
+998,3841,-39,5=35,240,5,5=tp_HolyCity_TombOfKings3
+999,3841,-39,5=36,240,5,5=tp_HolyCity_TombOfKings4
+1000,3841,-39,5=37,240,5,5=tp_HolyCity_TombOfKings5
+
+511,584,11,5=6992,1369,-15,0=tp_GreatStygianAbyss_PrimevalLichsLair1
+512,584,11,5=6993,1369,-15,0=tp_GreatStygianAbyss_PrimevalLichsLair2
+513,584,11,5=6994,1369,-15,0=tp_GreatStygianAbyss_PrimevalLichsLair3
+514,584,11,5=6995,1369,-15,0=tp_GreatStygianAbyss_PrimevalLichsLair4
+6992,1370,-15,0=511,585,11,5=tp_PrimevalLichsLair_GreatStygianAbyss1
+6993,1370,-15,0=512,585,11,5=tp_PrimevalLichsLair_GreatStygianAbyss2
+6994,1370,-15,0=513,585,11,5=tp_PrimevalLichsLair_GreatStygianAbyss3
+6995,1370,-15,0=514,585,11,5=tp_PrimevalLichsLair_GreatStygianAbyss4
+
+974,420,-27,5=7150,755,25,0=tp_GreatStygianAbyss_AbyssalInfernalsLair1
+975,420,-27,5=7151,755,25,0=tp_GreatStygianAbyss_AbyssalInfernalsLair2
+976,420,-27,5=7152,755,25,0=tp_GreatStygianAbyss_AbyssalInfernalsLair3
+977,420,-27,5=7153,755,25,0=tp_GreatStygianAbyss_AbyssalInfernalsLair4
+7150,756,25,0=974,421,-27,5=tp_AbyssalInfernalsLair_GreatStygianAbyss1
+7151,756,25,0=975,421,-27,5=tp_AbyssalInfernalsLair_GreatStygianAbyss2
+7152,756,25,0=976,421,-27,5=tp_AbyssalInfernalsLair_GreatStygianAbyss3
+7153,756,25,0=977,421,-27,5=tp_AbyssalInfernalsLair_GreatStygianAbyss4
+
+6026,196,22,0=6991,801,28,0=tp_Hythloth_AbyssalInfernalsLair1
+6026,197,22,0=6991,801,28,0=tp_Hythloth_AbyssalInfernalsLair2
+
+6973,800,29,0=5955,92,22,0=tp_AbyssalInfernalsLair_Hythloth		//add i_fx_bless_effect here
+7047,712,30,0=5836,1481,-2,0=tp_AbyssalInfernalsLair_FireDungeon	//add i_fx_bless_effect here
+
+1180,885,0,5=1187,1126,-42,5=tp_ShrineOfTruth_Underworld		//add i_moongate_blue here
+1187,1126,-42,5=1180,885,0,5=tp_Underworld_ShrineOfTruth		//add i_moongate_blue here
 
 [EOF]

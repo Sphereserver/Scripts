@@ -1,0 +1,100 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2017
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Saturday, Jan 7, 2017
+//
+VERSION=0.56d
+
+////////////////////////////////////////
+// Dungeons
+////////////////////////////////////////
+
+[AREADEF a_kotl_city]
+NAME=Kotl City
+GROUP=TOL Dungeons
+P=543,2470,0,5
+RECT=438,2270,672,2491,5
+FLAGS=region_flag_nobuilding|region_flag_underground|region_antimagic_recall_in
+EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
+TAG.MUSIC=midi_dungeon9
+
+[AREADEF a_kotl_antechamber]
+NAME=Kotl Antechamber
+GROUP=TOL Dungeons
+P=896,2304,40,5
+RECT=830,2238,959,2367,5
+FLAGS=region_flag_nobuilding|region_flag_underground|region_antimagic_recall_in
+EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
+TAG.MUSIC=midi_dungeon9
+
+[AREADEF a_myrmidex_pits]
+NAME=Myrmidex Pits
+GROUP=TOL Dungeons
+P=853,1783,0,5
+RECT=830,1760,1023,1919,5
+FLAGS=region_flag_nobuilding|region_flag_underground|region_antimagic_recall_in
+EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
+TAG.MUSIC=midi_dungeon9
+
+[AREADEF a_depths_of_myrmidex_pits]
+NAME=Depths of the Myrmidex Pits
+GROUP=TOL Dungeons
+P=716,2304,0,5
+RECT=703,2238,830,2367,5
+FLAGS=region_flag_nobuilding|region_flag_underground|region_antimagic_recall_in
+EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
+TAG.MUSIC=midi_dungeon9
+
+////////////////////////////////////////
+// Misc
+////////////////////////////////////////
+
+[AREADEF a_valley_of_eodon]
+NAME=Valley of Eodon
+GROUP=TOL Misc
+P=590,1855,45,5
+RECT=63,1343,896,1984,5
+RECT=574,1855,960,2240,5
+FLAGS=region_flag_nobuilding
+EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
+
+[AREADEF a_shadowguard]
+NAME=Shadowguard
+GROUP=TOL Misc
+P=525,2190,25,5
+RECT=32,1984,574,2272,5
+RECT=0,2271,224,2496,5
+FLAGS=region_flag_nobuilding|region_antimagic_recall_in
+EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
+
+[AREADEF a_volcano_caldera]
+NAME=Volcano Caldera
+GROUP=TOL Misc
+P=930,1617,2,5
+RECT=832,1501,1087,1759,5
+FLAGS=region_flag_nobuilding|region_antimagic_recall_in
+EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
+
+[AREADEF a_dryad_queen_home]
+NAME=Dryad Queen's Home
+GROUP=TOL Misc
+P=856,2783,5,5
+RECT=827,2754,876,2803,5
+FLAGS=region_flag_nobuilding|region_antimagic_recall_in
+EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
+
+[AREADEF a_great_ape_banana_hoard]
+NAME=Great Ape's Banana Hoard
+GROUP=TOL Misc
+P=926,1463,0,5
+RECT=832,1356,948,1483,5
+FLAGS=region_flag_nobuilding|region_antimagic_recall_in
+EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
+
+[EOF]

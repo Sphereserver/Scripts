@@ -1,5 +1,5 @@
 ﻿//****************************************************************************
-// SPHERE by : Menasoft ©1997-2015
+// SPHERE by : Menasoft ©1997-2017
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,9 +7,9 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Thursday, May 28, 2015
+// FILE LAST UPDATED: Saturday, Jan 7, 2017
 //
-VERSION=0.56c
+VERSION=0.56d
 
 [COMMENT sphere_map4]
 Samurai Empire (SE, map4,statics4,staidx4), map #4
@@ -47,6 +47,7 @@ P=686,1211,30,4
 RECT=674,1203,699,1219,4
 FLAGS=region_flag_nobuilding|region_flag_underground|region_flag_insta_logout
 EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
+TAG.MUSIC=midi_Zento
 
 ////////////////////////////////////////
 // Dungeons
@@ -58,6 +59,7 @@ GROUP=Tokuno Islands
 P=977,223,23,4
 RECT=969,194,992,224,4
 EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
+TAG.MUSIC=midi_TokunoDungeon
 
 ////////////////////////////////////////
 // Misc

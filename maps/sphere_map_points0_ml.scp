@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2014
+// SPHERE by : Menasoft ©1997-2017
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,107 +7,130 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, April 14, 2014
+// FILE LAST UPDATED: Saturday, Jan 7, 2017
 //
-VERSION=0.56c
-
-//Felucca
+VERSION=0.56d
 
 [Teleporters]
-1714,2997,0,0=6310,892,0,0=tp_PaintedCaves_Entrance
-6310,892,0,0=1714,2997,0,0=tp_PaintedCaves_Exit_1
-6310,893,0,0=1714,2997,0,0=tp_PaintedCaves_Exit_2
-6310,891,0,0=1714,2997,0,0=tp_PaintedCaves_Exit_3
+535,992,0,0=6986,339,0,0=tp_Yew_Heartwood	//add i_fx_field_paralyze here
+6986,339,0,0=535,992,0,0=tp_Heartwood_Yew	//add i_fx_field_paralyze here
 
-588,1637,0,0=6476,861,8,0=tp_Blighted_Grove_Entrance
-6476,861,8,0=588,1637,0,0=tp_Blighted_Grove_Exit
-6472,868,24,0=6511,951,14,0=tp_Blighted_Grove_Branch_Entrance
-6511,951,4,0=6472,868,24,0=tp_Blighted_Grove_Branch_Exit
-6488,853,0,0=6587,867,0,0=tp_Blighted_Grove_Cave_Entrance
-6587,867,0,0=6488,853,0,0=tp_Blighted_Grove_Cave_Exit
+1714,2997,0,0=6309,892,-1,0=tp_TrinsicTerritory_PaintedCaves1
+1714,2996,0,0=6309,891,-1,0=tp_TrinsicTerritory_PaintedCaves2
+6310,890,0,0=1715,2996,0,0=tp_PaintedCaves_TrinsicTerritory1
+6310,891,0,0=1715,2996,0,0=tp_PaintedCaves_TrinsicTerritory2
+6310,892,0,0=1715,2997,0,0=tp_PaintedCaves_TrinsicTerritory3
+6310,893,0,0=1715,2997,0,0=tp_PaintedCaves_TrinsicTerritory4
 
-6471,187,20,0=3784,1100,-11,0=tp_Prismoflight_Exit_1
-6472,187,20,0=3785,1100,-11,0=tp_Prismoflight_Exit_2
-3784,1100,-11,0=6471,187,20,0=tp_Prismoflight_Entrance_1
-3785,1100,-11,0=6472,187,20,0=tp_Prismoflight_Entrance_2
-6469,97,-50,0=6471,75,-23,0=tp_Prismoflight_Secret1
-6471,75,-23,0=6469,97,-50,0=tp_Prismoflight_Secret1_Exit
-6477,94,-50,0=6568,77,-10,0=tp_Prismoflight_Secret2
-6568,77,-10,0=6477,94,-50,0=tp_Prismoflight_Secret2_Exit
-6486,122,-35,0=6501,101,-4,0=tp_Prismoflight_Secret3
-6501,101,-4,0=6486,122,-35,0=tp_Prismoflight_Secret3_Exit
-6476,150,1,0=6576,72,0,0=tp_Prismoflight_Secret4
-6576,72,0,0=6476,150,1,0=tp_Prismoflight_Secret4_Exit
-6582,109,0,0=6554,104,0,0=tp_PrismOfLight_Secret5
-6554,104,0,0=6582,109,0,0=tp_PrismOfLight_Secret5_Exit
-6474,75,-33,0=6513,182,1,0=tp_PrismOfLight_FirstChamber
-6513,182,1,0=6474,75,-33,0=tp_PrismOfLight_FirstChamber_Exit
-6507,146,1,0=6501,138,-19,0=tp_PrismOfLight_Hallway
-6501,138,-19,0=6507,146,1,0=tp_PrismOfLight_Hallway_Exit
-6541,116,-15,0=6540,138,-15,0=tp_PrismOfLight_InnerChamber_Entrance_1
-6541,117,-15,0=6540,139,-15,0=tp_PrismOfLight_InnerChamber_Entrance_1
-6540,138,-15,0=6541,116,-15,0=tp_PrismOfLight_InnerChamber_Exit_1
-6540,139,-15,0=6541,117,-15,0=tp_PrismOfLight_InnerChamber_Exit_1
-6503,114,-19,0=6589,178,26,0=tp_PrismOfLight_BeachCamp
-6589,178,26,0=6503,114,-19,0=tp_PrismOfLight_BeachCamp_Exit
-6579,160,9,0=6577,176,29,0=tp_Prismoflight_CrystalChamber
-6577,176,29,0=6579,160,9,0=tp_Prismoflight_CrystalChamber_Exit
+587,1638,0,0=6478,863,11,0=tp_YewTerritory_BlightedGrove1
+588,1638,0,0=6478,863,11,0=tp_YewTerritory_BlightedGrove2
+589,1638,0,0=6478,863,11,0=tp_YewTerritory_BlightedGrove3
+6477,862,10,0=587,1641,-1,0=tp_BlightedGrove_YewTerritory	//add i_fx_field_paralyze here
 
-5577,3017,25,0=6303,327,81,0=tp_Paroxysmus_entrance_1
-5578,3017,25,0=6303,327,81,0=tp_Paroxysmus_entrance_2
-5579,3017,25,0=6303,327,81,0=tp_Paroxysmus_entrance_3
-5577,3018,25,0=6303,327,81,0=tp_Paroxysmus_entrance_4
-5578,3018,25,0=6303,327,81,0=tp_Paroxysmus_entrance_5
-5579,3018,25,0=6303,327,81,0=tp_Paroxysmus_entrance_6
-5577,3019,25,0=6303,327,81,0=tp_Paroxysmus_entrance_7
-5578,3019,25,0=6303,327,81,0=tp_Paroxysmus_entrance_8
-5579,3019,25,0=6303,327,81,0=tp_Paroxysmus_entrance_9
-6303,327,82,0=5578,3017,25,0=tp_Paroxysmus_exit_1
-6304,327,79,0=5578,3017,25,0=tp_Paroxysmus_exit_2
+6471,869,21,0=6574,889,0,0=tp_BlightedGrove_BlightedGroveCave1
+6472,869,20,0=6574,889,0,0=tp_BlightedGrove_BlightedGroveCave2
+6473,869,20,0=6574,889,0,0=tp_BlightedGrove_BlightedGroveCave3
+6474,869,18,0=6574,889,0,0=tp_BlightedGrove_BlightedGroveCave4
+6588,867,0,0=6488,849,40,0=tp_BlightedGroveCave_BlightedGrove1
+6588,868,0,0=6488,850,40,0=tp_BlightedGroveCave_BlightedGrove2
 
-766,1647,0,0=6172,23,0,0=tp_Sanctuary_Entrance_1
-766,1646,0,0=6172,23,0,0=tp_Sanctuary_Entrance_2
-6172,23,0,0=766,1646,0,0=tp_Sanctuary_Exit_1
-6172,22,0,0=766,1646,0,0=tp_Sanctuary_Exit_2
-6159,130,-1,0=6164,73,0,0=tp_Sanctuary_Secret_1_1
-6164,73,0,0=6159,130,-1,0=tp_Sanctuary_Secret_1_2
-6211,106,0,0=6251,69,-10,0=tp_Sanctuary_Secret2_1
-6251,69,-10,0=6211,106,0,0=tp_Sanctuary_Secret2_2
-6223,25,0,0=6276,40,-10,0=tp_Sanctuary_Secret3_1
-6276,40,-10,0=6223,25,0,0=tp_Sanctuary_Secret3_2
-6173,176,-10,0=6233,14,-10,0=Sanctuary_South_1
-6174,176,-10,0=6234,14,-10,0=Sanctuary_South_2
-6175,176,-10,0=6235,14,-10,0=Sanctuary_South_3
-6176,176,-10,0=6236,14,-10,0=Sanctuary_South_4
-6177,176,-10,0=6237,14,-10,0=Sanctuary_South_5
-6178,176,-10,0=6238,14,-10,0=Sanctuary_South_6
-6179,176,-10,0=6239,14,-10,0=Sanctuary_South_7
-6233,14,-10,0=6173,176,-10,0=Sanctuary_North_1
-6234,14,-10,0=6174,176,-10,0=Sanctuary_North_2
-6235,14,-10,0=6175,176,-10,0=Sanctuary_North_3
-6236,14,-10,0=6176,176,-10,0=Sanctuary_North_4
-6237,14,-10,0=6177,176,-10,0=Sanctuary_North_5
-6238,14,-10,0=6178,176,-10,0=Sanctuary_North_6
-6239,14,-10,0=6179,176,-10,0=Sanctuary_North_7
+3784,1098,12,0=6471,188,5,0=tp_NujelmTerritory_PrismOfLight1
+3785,1098,12,0=6472,188,5,0=tp_NujelmTerritory_PrismOfLight2
+6471,187,20,0=3784,1097,15,0=tp_PrismOfLight_NujelmTerritory1
+6472,187,20,0=3785,1097,15,0=tp_PrismOfLight_NujelmTerritory2
 
-535,992,0,0=7046,332,10,0=Elven_City_Entrance
-7046,332,10,0=535,992,0,0=Elven_City_Exit
+6506,89,-4,0=6502,87,0,0=tp_PrismOfLight_TeleportTrap1
+6508,84,-4,0=6502,87,0,0=tp_PrismOfLight_TeleportTrap2
+6509,86,-4,0=6502,87,0,0=tp_PrismOfLight_TeleportTrap3
+6510,87,-4,0=6502,87,0,0=tp_PrismOfLight_TeleportTrap4
+6512,87,-4,0=6502,87,0,0=tp_PrismOfLight_TeleportTrap5
+6512,83,-4,0=6502,87,0,0=tp_PrismOfLight_TeleportTrap6
+6513,88,-4,0=6502,87,0,0=tp_PrismOfLight_TeleportTrap7
 
-//Malas
+6469,97,-50,0=6503,87,0,0=tp_PrismOfLight_Teleport1
+6568,77,-10,0=6576,72,0,0=tp_PrismOfLight_Teleport2
+6554,104,0,0=6555,115,0,0=tp_PrismOfLight_Teleport3
+6582,109,0,0=6552,142,0,0=tp_PrismOfLight_Teleport4
 
-[Teleporters]
-1732,973,-75,3=328,1974,5,3=tp_labyrinth_entrance_1
-1733,973,-75,3=328,1974,5,3=tp_labyrinth_entrance_2
-1734,973,-75,3=328,1974,5,3=tp_labyrinth_entrance_3
-328,1974,5,3=1732,973,-75,3=tp_labyrinth_exit_1
-328,1973,5,3=1732,973,-75,3=tp_labyrinth_exit_2
-328,1972,5,3=1732,973,-75,3=tp_labyrinth_exit_3
-328,1975,5,3=1732,973,-75,3=tp_labyrinth_exit_4
-2068,1372,-75,3=120,1684,0,3=tp_Bedlam_Entry_1
-121,1684,0,3=2068,1372,-75,3=tp_Bedlam_exit_1
-120,1684,0,3=2068,1372,-75,3=tp_Bedlam_exit_2
-84,1673,-2,3=156,1608,22,3=tp_BedlamCemitery_Entrance_1
-156,1608,22,3=84,1673,-2,3=tp_BedlamCemitery_Exit_1
-157,1608,22,3=84,1673,-2,3=tp_BedlamCemitery_Exit_2
+6537,175,0,0=6515,184,0,0=tp_PrismOfLight_PrismOfLightKeyRoom		//add i_moongate_blue here (color=0481)
+6515,184,0,0=6537,175,0,0=tp_PrismOfLightKeyRoom_PrismOfLight		//add i_moongate_blue here (color=0481)
+
+6477,94,-49,0=6476,76,-35,0=tp_PrismOfLight_PrismOfLightSnakePit
+6471,75,-23,0=6477,94,-49,0=tp_PrismOfLightSnakePit_PrismOfLight
+
+6578,160,12,0=6577,177,30,0=tp_PrismOfLight_PrismOfLightCamp
+6577,176,30,0=6578,159,13,0=tp_PrismOfLightCamp_PrismOfLight
+
+6541,117,-15,0=6523,136,-20,0=tp_PrismOfLight_PrismOfLightBossRoom	//add i_moongate_red here
+6523,136,-20,0=6541,117,-15,0=tp_PrismOfLightBossRoom_PrismOfLight	//add i_moongate_red here
+
+5577,3018,25,0=6222,335,60,0=tp_LostLands_PalaceOfParoxysmus1
+5578,3019,25,0=6222,335,60,0=tp_LostLands_PalaceOfParoxysmus2
+5578,3018,25,0=6222,335,60,0=tp_LostLands_PalaceOfParoxysmus3
+5578,3017,25,0=6222,335,60,0=tp_LostLands_PalaceOfParoxysmus4
+5578,3016,25,0=6222,335,60,0=tp_LostLands_PalaceOfParoxysmus5
+5579,3017,25,0=6222,335,60,0=tp_LostLands_PalaceOfParoxysmus6
+5579,3018,25,0=6222,335,60,0=tp_LostLands_PalaceOfParoxysmus7
+5579,3019,25,0=6222,335,60,0=tp_LostLands_PalaceOfParoxysmus8
+
+6303,328,65,0=5623,3038,15,0=tp_PalaceOfParoxysmus_LostLands1
+6304,328,65,0=5623,3038,15,0=tp_PalaceOfParoxysmus_LostLands2
+
+766,1646,0,0=6173,22,0,0=tp_YewTerritory_SanctuaryLevel1_1
+766,1647,0,0=6173,23,0,0=tp_YewTerritory_SanctuaryLevel1_2
+6172,22,0,0=765,1646,0,0=tp_SanctuaryLevel1_YewTerritory1
+6172,23,0,0=765,1647,0,0=tp_SanctuaryLevel1_YewTerritory2
+
+6373,49,-20,0=801,1682,0,0=tp_SanctuaryLevel3_YewTerritory1
+6374,49,-20,0=801,1682,0,0=tp_SanctuaryLevel3_YewTerritory2
+6375,49,-20,0=801,1682,0,0=tp_SanctuaryLevel3_YewTerritory3
+6376,49,-20,0=801,1682,0,0=tp_SanctuaryLevel3_YewTerritory4
+6377,49,-20,0=801,1682,0,0=tp_SanctuaryLevel3_YewTerritory5
+
+6159,130,0,0=6316,63,-15,0=tp_SanctuaryLevel1_SanctuaryLevel3
+6316,62,-5,0=6159,130,0,0=tp_SanctuaryLevel3_SanctuaryLevel1
+
+6276,40,-10,0=6375,124,-20,0=tp_SanctuaryLevel2_SanctuaryLevel3
+6375,124,-20,0=6276,40,-10,0=tp_SanctuaryLevel3_SanctuaryLevel2
+
+6319,18,-7,0=6164,73,0,0=tp_SanctuaryLevel3_SanctuaryLevel1
+6164,73,0,0=6319,19,-20,0=tp_SanctuaryLevel1_SanctuaryLevel3
+
+6356,32,-5,0=6211,106,0,0=tp_SanctuaryLevel3_SanctuaryLevel2
+6211,106,0,0=6356,33,-20,0=tp_SanctuaryLevel2_SanctuaryLevel3
+
+6262,95,-10,0=6262,99,-10,0=tp_SanctuaryLevel2_SanctuaryElvenArea
+6256,97,-4,0=6257,95,-10,0=tp_SanctuaryElvenArea_SanctuaryLevel2_1
+6260,97,-4,0=6260,95,-10,0=tp_SanctuaryElvenArea_SanctuaryLevel2_2
+6263,97,-4,0=6263,95,-10,0=tp_SanctuaryElvenArea_SanctuaryLevel2_3
+6269,97,-4,0=6269,95,-10,0=tp_SanctuaryElvenArea_SanctuaryLevel2_4
+6273,97,-4,0=6272,95,-10,0=tp_SanctuaryElvenArea_SanctuaryLevel2_5
+
+6260,87,-10,0=6257,87,-8,0=tp_SanctuaryLevel2_SanctuaryDebrisArea1
+6260,88,-10,0=6257,88,-8,0=tp_SanctuaryLevel2_SanctuaryDebrisArea2
+6244,56,-10,0=6244,59,-10,0=tp_SanctuaryLevel2_SanctuaryDebrisArea3
+6253,54,-10,0=6253,57,-10,0=tp_SanctuaryLevel2_SanctuaryDebrisArea4
+6257,87,-8,0=6260,87,-10,0=tp_SanctuaryDebrisArea_SanctuaryLevel2_1
+6257,88,-8,0=6260,88,-10,0=tp_SanctuaryDebrisArea_SanctuaryLevel2_2
+6244,59,-10,0=6244,56,-10,0=tp_SanctuaryDebrisArea_SanctuaryLevel2_3
+6253,57,-10,0=6253,54,-10,0=tp_SanctuaryDebrisArea_SanctuaryLevel2_4
+
+6244,40,-10,0=6242,41,-1,0=tp_SanctuaryLevel2_SanctuarySzavetraArea1
+6244,41,-9,0=6242,42,-2,0=tp_SanctuaryLevel2_SanctuarySzavetraArea2
+6239,33,-10,0=6238,36,0,0=tp_SanctuaryLevel2_SanctuarySzavetraArea3
+6242,41,-1,0=6244,41,-7,0=tp_SanctuarySzavetraArea_SanctuaryLevel2_1
+6238,36,0,0=6239,33,-10,0=tp_SanctuarySzavetraArea_SanctuaryLevel2_2
+
+6180,59,0,0=6178,61,0,0=tp_SanctuaryLevel1_SanctuaryMougGuurArea1
+6178,97,0,0=6174,93,0,0=tp_SanctuaryLevel1_SanctuaryMougGuurArea2
+6178,61,0,0=6180,59,0,0=tp_SanctuaryMougGuurArea_SanctuaryLevel1_1
+6174,93,0,0=6178,97,0,0=tp_SanctuaryMougGuurArea_SanctuaryLevel1_2
+
+6196,125,-10,0=6196,127,-10,0=tp_SanctuaryLevel1_SanctuaryGraveyard1
+6197,125,-10,0=6197,127,-10,0=tp_SanctuaryLevel1_SanctuaryGraveyard2
+6187,131,-10,0=6190,131,-10,0=tp_SanctuaryLevel1_SanctuaryGraveyard3
+6196,127,-10,0=6196,125,-10,0=tp_SanctuaryGraveyard_SanctuaryLevel1_1
+6197,127,-10,0=6197,125,-10,0=tp_SanctuaryGraveyard_SanctuaryLevel1_2
+6190,131,-10,0=6187,131,-10,0=tp_SanctuaryGraveyard_SanctuaryLevel1_3
 
 [EOF]

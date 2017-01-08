@@ -1,0 +1,36 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2017
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Saturday, Jan 7, 2017
+//
+VERSION=0.56d
+
+////////////////////////////////////////
+// Dungeons
+////////////////////////////////////////
+
+[AREADEF a_abyssal_infernals_lair]
+NAME=Abyssal Infernal's Lair
+GROUP=SA Dungeons
+P=6995,733,53,0
+RECT=6877,634,7167,841,0
+FLAGS=region_flag_nobuilding|region_flag_underground|region_antimagic_recall_in
+EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
+TAG.MUSIC=midi_StygianDragon
+
+[AREADEF a_primeval_lichs_lair]
+NAME=Primeval Lich's Lair
+GROUP=SA Dungeons
+P=6993,1363,-15,0
+RECT=6909,904,7130,1382,0
+FLAGS=region_flag_nobuilding|region_flag_underground|region_antimagic_recall_in
+EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
+TAG.MUSIC=midi_PrimevalLich
+
+[EOF]

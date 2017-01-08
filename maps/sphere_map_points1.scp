@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2016
+// SPHERE by : Menasoft ©1997-2017
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, May 21, 2016
+// FILE LAST UPDATED: Saturday, Jan 7, 2017
 //
 VERSION=0.56d
 
@@ -162,6 +162,7 @@ VERSION=0.56d
 5153,810,-22,1=5134,986,20,1=tp_destard_2_3_x_map1
 5153,811,-22,1=5134,987,20,1=tp_destard_2_3_x_map1
 1361,883,0,1=5166,245,15,1=tp_wind_out_x_map1
+5191,152,0,1=1361,883,0,1=tp_wind_out_y_map1
 2776,895,-23,1=5685,387,2,1=tp_VesperCemetary_CemetaryPassage_map1
 4545,851,30,1=5736,3196,10,1=tp_moonglow_papua_1_recdu_map1
 5409,858,52,1=5387,755,-3,1=tp_despise_3_2_x_map1

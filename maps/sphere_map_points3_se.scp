@@ -1,0 +1,36 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2017
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Saturday, Jan 7, 2017
+//
+VERSION=0.56d
+
+[Teleporters]
+66,351,-4,3=61,523,6,3=tp_FanDancersDojoLevel1_FanDancersDojoLevel2_1
+66,352,-4,3=61,524,6,3=tp_FanDancersDojoLevel1_FanDancersDojoLevel2_2
+66,353,-4,3=61,525,6,3=tp_FanDancersDojoLevel1_FanDancersDojoLevel2_3
+66,354,-4,3=61,526,6,3=tp_FanDancersDojoLevel1_FanDancersDojoLevel2_4
+60,523,11,3=65,351,-4,3=tp_FanDancersDojoLevel2_FanDancersDojoLevel1_1
+60,524,11,3=65,352,-4,3=tp_FanDancersDojoLevel2_FanDancersDojoLevel1_2
+60,525,11,3=65,353,-4,3=tp_FanDancersDojoLevel2_FanDancersDojoLevel1_3
+60,526,11,3=65,354,-4,3=tp_FanDancersDojoLevel2_FanDancersDojoLevel1_4
+
+102,555,-6,3=73,688,6,3=tp_FanDancersDojoLevel2_FanDancersDojoLevel3_1
+102,556,-6,3=73,690,6,3=tp_FanDancersDojoLevel2_FanDancersDojoLevel3_2
+102,557,-6,3=73,692,6,3=tp_FanDancersDojoLevel2_FanDancersDojoLevel3_3
+102,558,-6,3=73,694,6,3=tp_FanDancersDojoLevel2_FanDancersDojoLevel3_4
+72,688,11,3=101,555,-2,3=tp_FanDancersDojoLevel3_FanDancersDojoLevel2_1
+72,689,11,3=101,555,-2,3=tp_FanDancersDojoLevel3_FanDancersDojoLevel2_2
+72,690,11,3=101,556,-2,3=tp_FanDancersDojoLevel3_FanDancersDojoLevel2_3
+72,691,11,3=101,556,-2,3=tp_FanDancersDojoLevel3_FanDancersDojoLevel2_4
+72,692,11,3=101,557,-2,3=tp_FanDancersDojoLevel3_FanDancersDojoLevel2_5
+72,693,11,3=101,557,-2,3=tp_FanDancersDojoLevel3_FanDancersDojoLevel2_6
+72,694,11,3=101,558,-2,3=tp_FanDancersDojoLevel3_FanDancersDojoLevel2_7
+
+[EOF]

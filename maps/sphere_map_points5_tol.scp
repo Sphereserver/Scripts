@@ -1,0 +1,62 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2017
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Saturday, Jan 7, 2017
+//
+VERSION=0.56d
+
+[Teleporters]
+912,2022,85,5=543,2198,-15,5=tp_ValleyOfEodon_Shadowguard1
+912,2021,85,5=543,2197,-15,5=tp_ValleyOfEodon_Shadowguard2
+912,2020,85,5=543,2196,-15,5=tp_ValleyOfEodon_Shadowguard3
+912,2019,85,5=543,2195,-15,5=tp_ValleyOfEodon_Shadowguard4
+912,2018,85,5=543,2194,-15,5=tp_ValleyOfEodon_Shadowguard5
+912,2017,85,5=543,2193,-15,5=tp_ValleyOfEodon_Shadowguard6
+912,2016,85,5=543,2192,-15,5=tp_ValleyOfEodon_Shadowguard7
+912,2015,85,5=543,2191,-15,5=tp_ValleyOfEodon_Shadowguard8
+912,2014,85,5=543,2190,-15,5=tp_ValleyOfEodon_Shadowguard9
+912,2013,85,5=543,2189,-15,5=tp_ValleyOfEodon_Shadowguard10
+912,2012,85,5=543,2188,-15,5=tp_ValleyOfEodon_Shadowguard11
+912,2011,85,5=543,2187,-15,5=tp_ValleyOfEodon_Shadowguard12
+912,2010,85,5=543,2186,-15,5=tp_ValleyOfEodon_Shadowguard13
+912,2009,85,5=543,2185,-15,5=tp_ValleyOfEodon_Shadowguard14
+544,2198,-20,5=912,2022,85,5=tp_Shadowguard_ValleyOfEodon1
+544,2197,-20,5=912,2021,85,5=tp_Shadowguard_ValleyOfEodon2
+544,2196,-20,5=912,2020,85,5=tp_Shadowguard_ValleyOfEodon3
+544,2195,-20,5=912,2019,85,5=tp_Shadowguard_ValleyOfEodon4
+544,2194,-20,5=912,2018,85,5=tp_Shadowguard_ValleyOfEodon5
+544,2193,-20,5=912,2017,85,5=tp_Shadowguard_ValleyOfEodon6
+544,2192,-20,5=912,2016,85,5=tp_Shadowguard_ValleyOfEodon7
+544,2191,-20,5=912,2015,85,5=tp_Shadowguard_ValleyOfEodon8
+544,2190,-20,5=912,2014,85,5=tp_Shadowguard_ValleyOfEodon9
+544,2189,-20,5=912,2013,85,5=tp_Shadowguard_ValleyOfEodon10
+544,2188,-20,5=912,2012,85,5=tp_Shadowguard_ValleyOfEodon11
+544,2187,-20,5=912,2011,85,5=tp_Shadowguard_ValleyOfEodon12
+544,2186,-20,5=912,2010,85,5=tp_Shadowguard_ValleyOfEodon13
+544,2185,-20,5=912,2009,85,5=tp_Shadowguard_ValleyOfEodon14
+
+726,1594,35,5=922,1469,0,5=tp_ValleyOfEodon_GreatApesBananaHoard1
+727,1594,35,5=923,1469,0,5=tp_ValleyOfEodon_GreatApesBananaHoard2
+728,1594,35,5=924,1469,0,5=tp_ValleyOfEodon_GreatApesBananaHoard3
+729,1594,35,5=925,1469,0,5=tp_ValleyOfEodon_GreatApesBananaHoard4
+922,1470,0,5=726,1595,35,5=tp_GreatApesBananaHoard_ValleyOfEodon1
+923,1470,0,5=727,1595,35,5=tp_GreatApesBananaHoard_ValleyOfEodon2
+924,1470,0,5=728,1595,35,5=tp_GreatApesBananaHoard_ValleyOfEodon3
+925,1470,0,5=729,1595,35,5=tp_GreatApesBananaHoard_ValleyOfEodon3
+
+877,2101,40,5=964,1715,0,5=tp_ValleyOfEodon_VolcanoCaldera1
+878,2101,40,5=965,1715,0,5=tp_ValleyOfEodon_VolcanoCaldera2
+879,2101,40,5=966,1715,0,5=tp_ValleyOfEodon_VolcanoCaldera3
+880,2101,40,5=967,1715,0,5=tp_ValleyOfEodon_VolcanoCaldera4
+964,1716,2,5=877,2102,40,5=tp_VolcanoCaldera_ValleyOfEodon1
+965,1716,0,5=878,2102,40,5=tp_VolcanoCaldera_ValleyOfEodon2
+966,1716,0,5=879,2102,40,5=tp_VolcanoCaldera_ValleyOfEodon3
+967,1716,0,5=880,2102,40,5=tp_VolcanoCaldera_ValleyOfEodon4
+
+[EOF]

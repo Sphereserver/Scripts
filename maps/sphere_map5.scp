@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2016
+// SPHERE by : Menasoft ©1997-2017
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, Nov 6, 2016
+// FILE LAST UPDATED: Saturday, Jan 7, 2017
 //
 VERSION=0.56d
 
@@ -40,6 +40,15 @@ FLAGS=region_flag_nobuilding|region_flag_guarded
 EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
 TAG.MUSIC=midi_RoyalCity
 
+[ROOMDEF a_queens_palace]
+NAME=Queen's Palace
+GROUP=Royal City
+P=749,3358,55,5
+RECT=717,3339,785,3412,5
+FLAGS=region_flag_nobuilding|region_flag_guarded
+EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
+TAG.MUSIC=midi_QueenPalace
+
 [AREADEF a_holy_city]
 NAME=Holy City
 GROUP=Holy City
@@ -55,7 +64,7 @@ TAG.MUSIC=midi_HolyCity
 
 [AREADEF a_tomb_of_kings]
 NAME=Tomb of Kings
-GROUP=Ter Mur
+GROUP=SA Dungeons
 P=35,100,0,5
 RECT=3,18,181,242,5
 FLAGS=region_flag_nobuilding|region_antimagic_recall_in|region_antimagic_gate
@@ -63,34 +72,40 @@ EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
 
 [AREADEF a_underworld]
 NAME=Underworld
-GROUP=Ter Mur
+GROUP=SA Dungeons
 P=1143,1085,-37,5
 RECT=1003,935,1303,1235,5
 FLAGS=region_flag_nobuilding|region_antimagic_recall_in|region_antimagic_gate
 EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
 
-[AREADEF a_stygian_abyss]
-NAME=Stygian Abyss
-GROUP=Ter Mur
-P=520,522,31,5
-RECT=235,40,1155,1040,5
+[AREADEF a_great_stygian_abyss]
+NAME=The Great Stygian Abyss
+GROUP=SA Dungeons
+P=946,84,72,5
+RECT=297,547,724,971,5
+RECT=556,44,1102,715,5
 FLAGS=region_flag_nobuilding|region_antimagic_recall_in|region_antimagic_gate
 EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
 TAG.MUSIC=midi_StygianAbyss
 
 [AREADEF a_medusas_lair]
 NAME=Medusa's Lair
-GROUP=Ter Mur
+GROUP=SA Dungeons
 P=771,928,0,5
-RECT=764,894,833,983,5
-RECT=816,749,829,765,5
+RECT=768,896,849,959,5
+RECT=768,1062,849,1125,5
+RECT=768,1232,849,1295,5
 FLAGS=region_flag_nobuilding|region_antimagic_recall_in|region_antimagic_gate
 EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
 
 [AREADEF a_stygian_dragon_lair]
 NAME=Stygian Dragon's Lair
+GROUP=SA Dungeons
 P=433,158,0,5
-RECT=294,112,386,290,5
+RECT=268,90,483,230,5
+RECT=4,299,126,434,5
+RECT=4,497,126,632,5
+RECT=4,705,126,839,5
 FLAGS=region_flag_nobuilding|region_antimagic_recall_in|region_antimagic_gate
 EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
 TAG.MUSIC=midi_StygianDragon
@@ -109,13 +124,6 @@ EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
 NAME=Shrine of Truth
 P=1180,875,0,5
 RECT=1152,834,1210,897,5
-EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
-
-[AREADEF a_great_stygian_abyss]
-NAME=The Great Stygian Abyss
-P=521,923,29,5
-RECT=297,547,724,971,5
-RECT=556,44,1102,715,5
 EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
 
 [AREADEF a_atoll_bend]
