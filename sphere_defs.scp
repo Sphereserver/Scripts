@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2016
+// SPHERE by : Menasoft ©1997-2017
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Dec 24, 2016
+// FILE LAST UPDATED: Tuesday, Jan 17, 2017
 //
 VERSION=0.56d
 
@@ -845,7 +845,8 @@ midi_Paws			63
 midi_SelimsBar			64
 midi_SerpentIsleCombat		65
 midi_ValoriaShips		66
-midi_theWanderer		67
+//Stygian Abyss
+midi_TheWanderer		67
 midi_Castle			68
 midi_Festival			69
 midi_Honor			70
@@ -1121,7 +1122,7 @@ t_spellbook_arcanist    189   // ML Spellweaver spellbook (should have MOREZ=600
 t_multi_custom          190   // Customisable multi
 t_spellbook_mystic      191   // SA Mysticism spellbook (should have MOREZ=677 by default)
 t_hoverover             192   // Hover-over item (CAN_I_HOVER can hover over blocking items)
-t_spellbook_bard        193   // SA Bard spellbook (should have MOREZ=700 by default)
+t_spellbook_mastery     193   // SA/TOL Masteries spellbook (should have MOREZ=700 by default)
 t_weapon_throwing       194   // Throwing Weapon
 t_cartography           195   // cartography tool
 t_cooking               196   // cooking tool
@@ -1150,7 +1151,7 @@ layer_hair       11
 layer_half_apron 12
 layer_chest      13   // armor chest
 layer_wrist      14   // watch
-layer_face       15   // character face style on enhanced clients (also light halo can be put here)
+layer_face       15   // character face style on enhanced clients
 layer_beard      16   // try to have only men have this.
 layer_tunic      17   // jester suit or full apron.
 layer_ears       18   // earrings

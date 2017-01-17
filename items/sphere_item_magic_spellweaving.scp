@@ -1,5 +1,5 @@
 ﻿//****************************************************************************
-// SPHERE by : Menasoft ©1997-2016
+// SPHERE by : Menasoft ©1997-2017
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,9 +7,9 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Jan 22, 2016
+// FILE LAST UPDATED: Tuesday, Jan 17, 2017
 //
-VERSION=0.56c
+VERSION=0.56d
 
 
 [COMMENT sphere_item_magic_spellweaving]
@@ -25,16 +25,15 @@ This file contains all things relating to Spellweaving, such as:
 
 [ITEMDEF 02d50]
 DEFNAME=i_spellbook_spellweaving
-NAME=spellweaving book
+NAME=Spellweaving Spellbook
 TYPE=t_spellbook_arcanist
 LAYER=layer_hand1
-VALUE=488
-WEIGHT=1.0
-RESOURCES=80 i_parchment,1 i_hides_cut,1 i_cloth
-SKILLMAKE=Inscription 45.0,i_pen_and_ink
+WEIGHT=3.0
+RESOURCES=10 i_scroll_blank
+SKILLMAKE=Inscription 50.0,i_pen_and_ink
 CATEGORY=Provisions - Alchemy & Magic
 SUBSECTION=Books
-DESCRIPTION=Spellweaving Book
+DESCRIPTION=Spellweaving Spellbook
 ON=@Create
    COLOR=08a2
    ATTR=attr_magic|attr_newbie

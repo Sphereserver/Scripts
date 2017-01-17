@@ -1,0 +1,129 @@
+﻿//****************************************************************************
+// SPHERE by : Menasoft ©1997-2017
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Tuesday, Jan 17, 2017
+//
+VERSION=0.56d
+
+
+[COMMENT sphere_item_magic_skillmasteries]
+
+This file contains all things relating to Skill Masteries, such as:
+
+* Spellbook
+* Skill Mastery dialog
+
+Initially OSI created this system on SA as "Bard Masteries" with only some
+few masteries related to bard skills, but later on TOL it got renamed to
+"Skill Masteries" and new masteries of many skills were added.
+
+
+[ITEMDEF 0225a]
+DEFNAME=i_spellbook_mastery
+TYPE=t_spellbook_mastery
+NAME=Book of Masteries
+LAYER=layer_hand1
+FLIP=1
+WEIGHT=3.0
+CATEGORY=Provisions - Alchemy & Magic
+SUBSECTION=Books
+DESCRIPTION=Book of Masteries
+DUPELIST=0225b
+
+ON=@Create
+   ATTR=attr_magic|attr_newbie
+   MOREZ=700
+   MORE1=0ffffffff
+   MORE2=01fff
+
+ON=@ContextMenuRequest
+SRC.AddContextEntry 700,1151948,<QVAL (<TOPOBJ> == <SRC>)? 0:1>  //Switch Mastery
+
+ON=@ContextMenuSelect
+IF (<ARGN> == 700)
+ IF (<TOPOBJ> == <SRC>)
+  SDIALOG d_skillmastery_switch
+ ENDIF
+ENDIF
+
+ON=@ClientToolTip
+FOR 1 57
+ IF (<TAG0.Mastery> == <LOCAL._FOR>)
+  SRC.AddCliloc <DEF0.SkillMastery.<dLOCAL._FOR>>
+  return 0
+ ENDIF
+ENDFOR
+
+[ITEMDEF 0225b]
+//book of masteries
+DUPEITEM=0225a
+
+
+[DIALOG d_skillmastery_switch]
+75,25
+gumppic 0 0 8000
+gumppic 20 37 8001
+gumppic 20 107 8002
+gumppic 20 177 8001
+gumppic 20 247 8002
+gumppic 20 317 8001
+gumppic 20 387 8002
+gumppic 20 457 8003
+xmfhtmlgump 125 40 345 16 1151948 0 0	//Switch Mastery
+
+LOCAL.Y=60
+FOR 1 57
+ LOCAL.Cliloc=<DEF0.SkillMastery.<dLOCAL._FOR>>
+ IF (<LOCAL.Cliloc>)
+  IF (<TAG0.Mastery> == <LOCAL._FOR>)
+   xmfhtmlgumpcolor 75 <LOCAL.Y> 200 16 <LOCAL.Cliloc> 0 0 18432
+  ELSE
+   button 30 <LOCAL.Y> 4005 4007 1 0 <LOCAL._FOR>
+   xmfhtmlgumpcolor 75 <LOCAL.Y> 200 16 <LOCAL.Cliloc> 0 0 15
+  ENDIF
+  xmfhtmltok 250 <LOCAL.Y> 100 16 0 0 0 1156052 @<dSRC.TAG0.SkillMastery.<dLOCAL._FOR>.Tier>@
+  LOCAL.Y += 20
+ ENDIF
+ENDFOR
+
+[DIALOG d_skillmastery_switch BUTTON]
+ON=1 57
+IF (<TOPOBJ> == <SRC>)
+ IF (<SRC.<ARGN>> < 90.0)
+  SRC.SYSMESSAGELOC -1,1156236,90,<SERV.SKILL.<ARGN>.KEY> 	//You need at least ~1_SKILL_REQUIREMENT~ ~2_SKILL_NAME~ skill to use that mastery.
+ ELSE
+  SRC.SYSMESSAGELOC -1,1155886,<SERV.SKILL.<ARGN>.KEY>		//Your active skill mastery is now set to ~1_MasterySkill~!
+  TAG.Mastery=<ARGN>
+  RESENDTOOLTIP
+ ENDIF
+ENDIF
+
+
+[DEFNAME SkillMasteriesClilocs]
+SkillMastery.5	1155782	//Parrying
+SkillMastery.9	1151947	//Peacemaking
+SkillMastery.15	1151945	//Discord
+SkillMastery.22	1151946	//Provocation
+SkillMastery.25	1155771	//Magery
+SkillMastery.30	1155783	//Poisoning
+SkillMastery.31	1155786	//Archery
+SkillMastery.35	1155785	//Animal Taming
+SkillMastery.40	1155780	//Swordsmanship
+SkillMastery.41	1155779	//Mace Fighting
+SkillMastery.42	1155778	//Fencing
+SkillMastery.43	1155784	//Wrestling
+SkillMastery.49	1155773	//Necromancy
+SkillMastery.51	1155776	//Chivalry
+SkillMastery.52	1155775	//Bushido
+SkillMastery.53	1155777	//Ninjitsu
+SkillMastery.54	1155774	//Spellweaving
+SkillMastery.55	1155772	//Mysticism
+SkillMastery.57	1155781	//Throwing
+
+[EOF]

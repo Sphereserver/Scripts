@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Thursday, Jan 5, 2017
+// FILE LAST UPDATED: Tuesday, Jan 17, 2017
 //
 VERSION=0.56d
 
@@ -2144,29 +2144,6 @@ RESOURCES=2 i_hides_cut
 CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Containers
 DESCRIPTION=Bagball (large)
-
-[ITEMDEF 0225a]
-DEFNAME=i_spellbook_bard
-TYPE=t_spellbook_bard
-NAME=Bardic Spellbook
-LAYER=layer_hand1
-FLIP=1
-VALUE=488
-WEIGHT=1.0
-RESOURCES=80 i_parchment,1 i_hides_cut,1 i_cloth
-SKILLMAKE=inscription 50.0,i_pen_and_ink
-CATEGORY=Provisions - Alchemy & Magic
-SUBSECTION=Books
-DESCRIPTION=Bardic Spellbook
-DUPELIST=0225b
-ON=@Create
-   ATTR=attr_magic|attr_newbie
-   MOREZ=700
-
-[ITEMDEF 0225b]
-//bard spellbook
-DUPEITEM=0225a
-
 
 [ITEMDEF 0227a]
 //The Scroll of Calling contains a ritual that can be used near the Well of

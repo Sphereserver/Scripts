@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2007
+// SPHERE by : Menasoft ©1997-2017
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,9 +7,9 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, October 15, 2013
+// FILE LAST UPDATED: Tuesday, Jan 17, 2017
 //
-VERSION=0.56c
+VERSION=0.56d
 
 
 [COMMENT sphere_item_magic_necromancy]
@@ -22,11 +22,12 @@ This file contains all things relating to Necromancy, such as:
 
 [ITEMDEF 02253]
 DEFNAME=i_spellbook_necromancy
+NAME=Necromancer Spellbook
 TYPE=t_spellbook_necro
 LAYER=layer_hand1
-VALUE=488
-WEIGHT=1.0
-RESOURCES=80 i_parchment,1 i_hides_cut,1 i_cloth
+VALUE=131
+WEIGHT=3.0
+RESOURCES=10 i_scroll_blank
 SKILLMAKE=Inscription 50.0,i_pen_and_ink
 CATEGORY=Provisions - Alchemy & Magic
 SUBSECTION=Books
@@ -34,7 +35,7 @@ DESCRIPTION=Necromancy Spellbook
 ON=@Create
    ATTR=attr_magic|attr_newbie
    MOREZ=100
-//   MORE1=0ffff
+   //MORE1=01ffff
 
 
 [ITEMDEF 02260]

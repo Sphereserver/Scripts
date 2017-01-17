@@ -1,5 +1,5 @@
-//****************************************************************************
-// SPHERE by : Menasoft ©1997-2007
+﻿//****************************************************************************
+// SPHERE by : Menasoft ©1997-2017
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,9 +7,9 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, October 15, 2013
+// FILE LAST UPDATED: Tuesday, Jan 17, 2017
 //
-VERSION=0.56c
+VERSION=0.56d
 
 
 [COMMENT sphere_item_magic_mysticism]
@@ -26,11 +26,14 @@ This file contains all things relating to Mysticism, such as:
 [ITEMDEF 02d9d]
 DEFNAME=i_spellbook_mystic
 TYPE=t_spellbook_mystic
-NAME=Mystic Spellbook
-RESOURCES=80 i_parchment,1 i_hide,1 i_cloth
+NAME=Mysticism Spellbook
+VALUE=16
+WEIGHT=3.0
+RESOURCES=10 i_scroll_blank
+SKILLMAKE=Inscription 50.0,i_pen_and_ink
 CATEGORY=Provisions - Alchemy & Magic
-SUBSECTION=Mysticism
-DESCRIPTION=Mystic Spellbook
+SUBSECTION=Books
+DESCRIPTION=Mysticism Spellbook
 ON=@Create
 	ATTR=attr_magic|attr_newbie
 	MOREZ=677
