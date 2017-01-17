@@ -32,6 +32,7 @@ SUBSECTION=Books
 DESCRIPTION=Book of Bushido
 ON=@Create
    ATTR=attr_magic|attr_newbie
+   MOREX=6
    MOREZ=400
    MORE1=03f
 
@@ -96,6 +97,7 @@ SUBSECTION=Books
 DESCRIPTION=Book of Ninjitsu
 ON=@Create
    ATTR=attr_magic|attr_newbie
+   MOREX=8
    MOREZ=500
    MORE1=0ff
 

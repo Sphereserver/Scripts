@@ -38,6 +38,7 @@ DUPELIST=0225b
 
 ON=@Create
    ATTR=attr_magic|attr_newbie
+   MOREX=45
    MOREZ=700
    MORE1=0ffffffff
    MORE2=01fff

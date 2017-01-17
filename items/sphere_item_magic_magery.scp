@@ -128,6 +128,8 @@ ReqStr=20
 TEVENTS=t_equipitem
 ON=@Create
    ATTR=attr_magic|attr_newbie
+   MOREX=64
+   MOREZ=0
    //MORE1=0ffffffff
    //MORE2=0ffffffff
 

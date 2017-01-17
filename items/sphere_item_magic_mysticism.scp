@@ -36,6 +36,7 @@ SUBSECTION=Books
 DESCRIPTION=Mysticism Spellbook
 ON=@Create
 	ATTR=attr_magic|attr_newbie
+	MOREX=16
 	MOREZ=677
 
 
