@@ -1,5 +1,5 @@
 ﻿//****************************************************************************
-// SPHERE by : Menasoft ©1997-2016
+// SPHERE by : Menasoft ©1997-2017
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Thursday, Dec 22, 2016
+// FILE LAST UPDATED: Thursday, Jan 26, 2017
 //
 VERSION=0.56d
 
@@ -17739,13 +17739,13 @@ ON=@Create
    MEDITATION={65.0 75.0}
    MYSTICISM={100.0 115.0}
    TACTICS={20.0 25.0}
-   TAMING={95.0 100.0}
+   TAMING=95.1
    WRESTLING={20.0 35.0}
-   MODAR={0 10}
-   RESCOLD={25 40}
-   RESENERGY={25 40}
+   RESPHYSICAL={55 65}
    RESFIRE={45 55}
+   RESCOLD={25 40}
    RESPOISON={55 65}
+   RESENERGY={25 40}
 ON=@NPCRestock
    ITEM=i_gold,{50 100}
    ITEM=random_reagent_mystic,{5 9}
@@ -22399,16 +22399,40 @@ ON=@Create
    RESPOISON={2 3}
 
 [CHARDEF 050e]
-//FIXME: No Stratics data
 DEFNAME=c_dragon_turtle_hatchling
 NAME=Dragon Turtle Hatchling
+ICON=i_pet_dragon_turtle_hatchling
 CAN=MT_WALK|MT_RUN
+DAM=24,33
+ARMOR=75
+SOUND=snd_monster_dragon1
+FOODTYPE=t_food	//t_fish
+//RESOURCES=4 i_dragon_turtle_scute
+//TAG.Barding.Diff=
 FollowerSlots=5
 CATEGORY=Animals
 SUBSECTION=Dinosaurs
 DESCRIPTION=Dragon Turtle Hatchling
 ON=@Create
-   NPC=brain_animal
+   NPC=brain_monster
+   FAME=16000
+   KARMA=-16000
+   STR={550 650}
+   DEX={55 65}
+   INT={550 650}
+   MAXHITS={550 850}
+   WRESTLING={140.0 150.0}
+   TACTICS={110.0 120.0}
+   MAGICRESISTANCE={130.0 140.0}
+   POISONING={63.7 78.6}
+   MAGERY={130.0 140.0}
+   EVALUATINGINTEL={100.0 119.0}
+   TAMING=104.7
+   RESPHYSICAL={65 85}
+   RESFIRE={80 90}
+   RESCOLD={50 55}
+   RESPOISON=60
+   RESENERGY={70 75}
 
 [CHARDEF 051c]
 //FIXME: No Stratics data
@@ -22527,6 +22551,7 @@ ON=@Create
 //FIXME: No Stratics data
 DEFNAME=c_myrmidex_queen
 NAME=Myrmidex Queen
+ICON=i_pet_myrmidex_queen
 CAN=MT_WALK|MT_RUN
 CATEGORY=Monsters
 SUBSECTION=Myrmidex
@@ -22559,13 +22584,43 @@ ON=@Create
 
 [CHARDEF 057f]
 //FIXME: No Stratics data
-DEFNAME=c_unicorn_rainbow
-ICON=i_pet_unicorn_rainbow
-NAME=Unicorn
+DEFNAME=c_lasher
+NAME=Lasher	//Rainbow Unicorn
+ICON=i_pet_lasher
+CAN=MT_WALK|MT_RUN
+TAG.Barding.Diff=73.6
+CATEGORY=Mounts
+SUBSECTION=Wild
+DESCRIPTION=Lasher
+ON=@Create
+   NPC=brain_animal
+   STR=400
+   DEX=125
+   INT={60 75}
+   MAXHITS=240
+   MAXMANA={5 20}
+
+[CHARDEF 0580]
+//FIXME: No Stratics data
+DEFNAME=c_palomino
+NAME=Palomino
+ICON=i_pet_palomino
 CAN=MT_WALK|MT_RUN
 CATEGORY=Mounts
 SUBSECTION=Wild
-DESCRIPTION=Unicorn (Rainbow)
+DESCRIPTION=Palomino
+ON=@Create
+   NPC=brain_animal
+
+[CHARDEF 0582]
+//FIXME: No Stratics data
+DEFNAME=c_windrunner
+NAME=Windrunner
+ICON=i_pet_windrunner
+CAN=MT_WALK|MT_RUN
+CATEGORY=Mounts
+SUBSECTION=Wild
+DESCRIPTION=Windrunner
 ON=@Create
    NPC=brain_animal
 

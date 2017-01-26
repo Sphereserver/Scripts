@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Wednesday, Jan 25, 2017
+// FILE LAST UPDATED: Thursday, Jan 26, 2017
 //
 VERSION=0.56d
 
@@ -81,7 +81,9 @@ mount_0x4e7	03ec8	// ethereal tiger
 mount_0x42d	03ec9	// ancient hellhound
 // TOL
 mount_0x579	03eca	// tarantula
-mount_0x57f	03ecb	// unicorn (rainbow)
+mount_0x57f	03ecb	// lasher
+mount_0x580	03ecd	// palomino
+mount_0x582	03ecc	// windrunner
 
 [DEFNAME hues]
 color_text             -1
