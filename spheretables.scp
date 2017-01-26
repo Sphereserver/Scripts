@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Jan 7, 2017
+// FILE LAST UPDATED: Wednesday, Jan 25, 2017
 //
 VERSION=0.56d
 
@@ -62,7 +62,6 @@ scripts/maps/sphere_map0.scp
 scripts/maps/sphere_map0_ml.scp
 scripts/maps/sphere_map0_sa.scp
 scripts/maps/sphere_map0_hs.scp
-scripts/maps/sphere_map0_tol.scp
 scripts/maps/sphere_map1.scp
 scripts/maps/sphere_map2.scp
 scripts/maps/sphere_map2_ml.scp
@@ -74,6 +73,7 @@ scripts/maps/sphere_map5.scp
 scripts/maps/sphere_map5_tol.scp
 scripts/maps/sphere_map_points0.scp
 scripts/maps/sphere_map_points0_ml.scp
+scripts/maps/sphere_map_points0_hs.scp
 scripts/maps/sphere_map_points0_tol.scp
 scripts/maps/sphere_map_points1.scp
 scripts/maps/sphere_map_points2.scp

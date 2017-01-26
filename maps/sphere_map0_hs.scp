@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Jan 7, 2017
+// FILE LAST UPDATED: Wednesday, Jan 25, 2017
 //
 VERSION=0.56d
 
@@ -22,5 +22,18 @@ RECT=4472,2250,4672,2450,0
 P=4550,2317,-2,0
 FLAGS=region_flag_nobuilding|region_flag_guarded
 EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
+
+////////////////////////////////////////
+// Dungeons
+////////////////////////////////////////
+
+[AREADEF a_castle_blackthorn_dungeon]
+NAME=Castle Blackthorn Dungeon
+GROUP=HS Dungeons
+P=6432,2679,0,0
+RECT=6156,2294,6507,2825,0
+FLAGS=region_flag_nobuilding|region_flag_underground|region_antimagic_recall_in
+EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
+TAG.MUSIC=midi_dungeon9
 
 [EOF]

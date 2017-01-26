@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Jan 17, 2017
+// FILE LAST UPDATED: Wednesday, Jan 25, 2017
 //
 VERSION=0.56d
 
@@ -1633,7 +1633,7 @@ bufficon_FocusedEye				1136
 bufficon_ElementalFury			1138
 bufficon_CalledShot				1140
 bufficon_Knockout				1141
-bufficon_SavingThrow			1142
+bufficon_WarriorsGifts			1142	// Previously known as Saving Throw
 bufficon_Conduit				1143
 bufficon_EtherealBurst			1144
 bufficon_MysticWeapon			1145
@@ -2152,7 +2152,7 @@ noto_invul           7
 // CanUse flags
 // Uses new internal variable CANUSE. Script for this is in the addon's folder in the script pack.
 // Used on items for checks or npcs (mounts, golems, etc)
-[defname canuse_flags]
+[DEFNAME canuse_flags]
 can_u_all			0
 can_u_male			01
 can_u_female		02
@@ -2161,25 +2161,38 @@ can_u_elf			08
 can_u_gargoyle		010
 can_u_none			020
 
-[defname swing_types]
-WAR_SWING_EQUIPPING = 00			// we are recoiling our weapon.
-WAR_SWING_READY		= 01			// we can swing at any time.
-WAR_SWING_SWINGING	= 02			// we are swinging our weapon.
+[DEFNAME swing_types]
+war_swing_equipping		0	// we are recoiling our weapon.
+war_swing_ready			1	// we can swing at any time.
+war_swing_swinging		2	// we are swinging our weapon.
 
-[defname expansions]
-EXPANSION_T2A			= 0
-EXPANSION_RENAISSANCE	= 1
-EXPANSION_THIRDDAWN		= 2
-EXPANSION_LBR			= 3
-EXPANSION_AOS			= 4
-EXPANSION_SE			= 5
-EXPANSION_ML			= 6
-EXPANSION_SA			= 7
-EXPANSION_HS			= 8
-EXPANSION_TOL			= 9
+[DEFNAME expansions]
+expansion_t2a			0
+expansion_renaissance	1
+expansion_thirddawn		2
+expansion_lbr			3
+expansion_aos			4
+expansion_se			5
+expansion_ml			6
+expansion_sa			7
+expansion_hs			8
+expansion_tol			9
 
-[defname theme_packs]
-THEME_GOTHIC		01
-THEME_RUSTIC		02
+[DEFNAME theme_packs]
+theme_gothic		1
+theme_rustic		2
+
+// Waypoint types used by MAPWAYPOINT function (enhanced clients only)
+[DEFNAME mapwaypoint_types]
+mapwaypoint_remove				0
+mapwaypoint_corpse				1
+mapwaypoint_partymember			2
+mapwaypoint_questgiver			4
+mapwaypoint_newplayerquest		5
+mapwaypoint_healer				6
+mapwaypoint_shrine				11
+mapwaypoint_moongate			12
+mapwaypoint_greendot			14
+mapwaypoint_greendot_flashing	15
 
 [EOF]

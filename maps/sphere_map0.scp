@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2016
+// SPHERE by : Menasoft ©1997-2017
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Nov 12, 2016
+// FILE LAST UPDATED: Wednesday, Jan 25, 2017
 //
 VERSION=0.56d
 
@@ -191,8 +191,8 @@ FLAGS=region_flag_nobuilding|region_flag_guarded
 EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
 TAG.MUSIC=midi_LBCastle
 
-[AREADEF a_lord_blackthornes_castle]
-NAME=Lord Blackthorne's Castle
+[AREADEF a_lord_blackthorns_castle]
+NAME=Lord Blackthorn's Castle
 GROUP=Britain
 P=1523,1449,15,0
 RECT=1500,1405,1550,1478,0

@@ -1,0 +1,26 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2017
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Wednesday, Jan 25, 2017
+//
+VERSION=0.56d
+
+[Teleporters]
+1517,1417,9,0=6437,2678,12,0=tp_LordBlackthornCastle_CastleBlackthornDungeon1
+1517,1418,9,0=6437,2679,12,0=tp_LordBlackthornCastle_CastleBlackthornDungeon2
+1517,1419,9,0=6437,2680,12,0=tp_LordBlackthornCastle_CastleBlackthornDungeon3
+1517,1420,9,0=6437,2681,12,0=tp_LordBlackthornCastle_CastleBlackthornDungeon4
+6438,2677,17,0=1518,1417,13,0=tp_CastleBlackthornDungeon_LordBlackthornCastle1
+6438,2678,17,0=1518,1417,13,0=tp_CastleBlackthornDungeon_LordBlackthornCastle2
+6438,2679,17,0=1518,1418,13,0=tp_CastleBlackthornDungeon_LordBlackthornCastle3
+6438,2680,17,0=1518,1419,13,0=tp_CastleBlackthornDungeon_LordBlackthornCastle4
+6438,2681,17,0=1518,1420,13,0=tp_CastleBlackthornDungeon_LordBlackthornCastle5
+6438,2682,17,0=1518,1420,13,0=tp_CastleBlackthornDungeon_LordBlackthornCastle6
+
+[EOF]

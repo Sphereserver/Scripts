@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Jan 7, 2017
+// FILE LAST UPDATED: Wednesday, Jan 25, 2017
 //
 VERSION=0.56d
 
@@ -27,12 +27,15 @@ VERSION=0.56d
 589,1638,0,0=6478,863,11,0=tp_YewTerritory_BlightedGrove3
 6477,862,10,0=587,1641,-1,0=tp_BlightedGrove_YewTerritory	//add i_fx_field_paralyze here
 
-6471,869,21,0=6574,889,0,0=tp_BlightedGrove_BlightedGroveCave1
-6472,869,20,0=6574,889,0,0=tp_BlightedGrove_BlightedGroveCave2
-6473,869,20,0=6574,889,0,0=tp_BlightedGrove_BlightedGroveCave3
-6474,869,18,0=6574,889,0,0=tp_BlightedGrove_BlightedGroveCave4
-6588,867,0,0=6488,849,40,0=tp_BlightedGroveCave_BlightedGrove1
-6588,868,0,0=6488,850,40,0=tp_BlightedGroveCave_BlightedGrove2
+6472,869,20,0=6574,888,0,0=tp_BlightedGrove_BlightedGroveCave1
+6473,869,20,0=6575,888,0,0=tp_BlightedGrove_BlightedGroveCave2
+6574,889,0,0=6472,870,20,0=tp_BlightedGroveCave_BlightedGrove1
+6575,889,0,0=6473,870,20,0=tp_BlightedGroveCave_BlightedGrove2
+
+6488,849,40,0=6587,867,0,0=tp_BlightedGrove_BlightedGroveCave1
+6488,850,41,0=6587,868,0,0=tp_BlightedGrove_BlightedGroveCave2
+6588,867,0,0=6489,849,40,0=tp_BlightedGroveCave_BlightedGrove1
+6588,868,0,0=6489,850,40,0=tp_BlightedGroveCave_BlightedGrove2
 
 3784,1098,12,0=6471,188,5,0=tp_NujelmTerritory_PrismOfLight1
 3785,1098,12,0=6472,188,5,0=tp_NujelmTerritory_PrismOfLight2
