@@ -1599,6 +1599,188 @@ DUPEITEM=04b01
 [ITEMDEF 07815]
 //Batten Stairs (solid)
 
+[ITEMDEF 09aea]
+DEFNAME=i_stairs_jungle
+NAME=jungle stair
+CATEGORY=Buildings - Stairs
+SUBSECTION=Jungle Stairs
+DESCRIPTION=Stair
+DUPELIST=09aeb,09aec,09aed,09aee,09aef,09af0,09af1,09af2,09af3,09af4,09af5,09af6,09af7,09af8,09af9,09afa,09afb,09afc,09afd,09afe,09aff
 
+[ITEMDEF 09aeb]
+//Jungle Stairs
+DUPEITEM=09aea
+
+[ITEMDEF 09aec]
+//Jungle Stairs
+DUPEITEM=09aea
+
+[ITEMDEF 09aed]
+//Jungle Stairs
+DUPEITEM=09aea
+
+[ITEMDEF 09aee]
+//Jungle Stairs
+DUPEITEM=09aea
+
+[ITEMDEF 09aef]
+//Jungle Stairs
+DUPEITEM=09aea
+
+[ITEMDEF 09af0]
+//Jungle Stairs
+DUPEITEM=09aea
+
+[ITEMDEF 09af1]
+//Jungle Stairs
+DUPEITEM=09aea
+
+[ITEMDEF 09af2]
+//Jungle Stairs
+DUPEITEM=09aea
+
+[ITEMDEF 09af3]
+//Jungle Stairs
+DUPEITEM=09aea
+
+[ITEMDEF 09af4]
+//Jungle Stairs
+DUPEITEM=09aea
+
+[ITEMDEF 09af5]
+//Jungle Stairs
+DUPEITEM=09aea
+
+[ITEMDEF 09af6]
+//Jungle Stairs
+DUPEITEM=09aea
+
+[ITEMDEF 09af7]
+//Jungle Stairs
+DUPEITEM=09aea
+
+[ITEMDEF 09af8]
+//Jungle Stairs
+DUPEITEM=09aea
+
+[ITEMDEF 09af9]
+//Jungle Stairs
+DUPEITEM=09aea
+
+[ITEMDEF 09afa]
+//Jungle Stairs
+DUPEITEM=09aea
+
+[ITEMDEF 09afb]
+//Jungle Stairs
+DUPEITEM=09aea
+
+[ITEMDEF 09afc]
+//Jungle Stairs
+DUPEITEM=09aea
+
+[ITEMDEF 09afd]
+//Jungle Stairs
+DUPEITEM=09aea
+
+[ITEMDEF 09afe]
+//Jungle Stairs
+DUPEITEM=09aea
+
+[ITEMDEF 09aff]
+//Jungle Stairs
+DUPEITEM=09aea
+
+[ITEMDEF 09b4f]
+DEFNAME=i_stairs_shadowguard
+NAME=shadowguard stair
+CATEGORY=Buildings - Stairs
+SUBSECTION=Shadowguard Stairs
+DESCRIPTION=Stair
+DUPELIST=09b50,09b51,09b52,09b53,09b54,09b55,09b56,09b57,09b58,09b59,09b5a,09b5b,09b5c,09b5d,09b5e,09b5f,09b60,09b61,09b62,09b63,09b64
+
+[ITEMDEF 09b50]
+//Shadowguard Stairs
+DUPEITEM=09b4f
+
+[ITEMDEF 09b51]
+//Shadowguard Stairs
+DUPEITEM=09b4f
+
+[ITEMDEF 09b52]
+//Shadowguard Stairs
+DUPEITEM=09b4f
+
+[ITEMDEF 09b53]
+//Shadowguard Stairs
+DUPEITEM=09b4f
+
+[ITEMDEF 09b54]
+//Shadowguard Stairs
+DUPEITEM=09b4f
+
+[ITEMDEF 09b55]
+//Shadowguard Stairs
+DUPEITEM=09b4f
+
+[ITEMDEF 09b56]
+//Shadowguard Stairs
+DUPEITEM=09b4f
+
+[ITEMDEF 09b57]
+//Shadowguard Stairs
+DUPEITEM=09b4f
+
+[ITEMDEF 09b58]
+//Shadowguard Stairs
+DUPEITEM=09b4f
+
+[ITEMDEF 09b59]
+//Shadowguard Stairs
+DUPEITEM=09b4f
+
+[ITEMDEF 09b5a]
+//Shadowguard Stairs
+DUPEITEM=09b4f
+
+[ITEMDEF 09b5b]
+//Shadowguard Stairs
+DUPEITEM=09b4f
+
+[ITEMDEF 09b5c]
+//Shadowguard Stairs
+DUPEITEM=09b4f
+
+[ITEMDEF 09b5d]
+//Shadowguard Stairs
+DUPEITEM=09b4f
+
+[ITEMDEF 09b5e]
+//Shadowguard Stairs
+DUPEITEM=09b4f
+
+[ITEMDEF 09b5f]
+//Shadowguard Stairs
+DUPEITEM=09b4f
+
+[ITEMDEF 09b60]
+//Shadowguard Stairs
+DUPEITEM=09b4f
+
+[ITEMDEF 09b61]
+//Shadowguard Stairs
+DUPEITEM=09b4f
+
+[ITEMDEF 09b62]
+//Shadowguard Stairs
+DUPEITEM=09b4f
+
+[ITEMDEF 09b63]
+//Shadowguard Stairs
+DUPEITEM=09b4f
+
+[ITEMDEF 09b64]
+//Shadowguard Stairs
+DUPEITEM=09b4f
 
 [EOF]

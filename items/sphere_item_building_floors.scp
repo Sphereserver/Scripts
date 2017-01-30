@@ -5116,5 +5116,130 @@ DUPEITEM=0514a
 [ITEMDEF 052d5]
 DUPEITEM=0514a
 
+[ITEMDEF 09acb]
+DEFNAME=i_floor_jungle
+CATEGORY=Buildings - Floors
+SUBSECTION=TOL Jungle Floor
+DESCRIPTION=Jungle Floor
+DUPELIST=09acc,09acd,09ace,09acf,09ad0,09ad1,09ad2,09ad3,09ad4,09ad5,09ad6,09b89,09b8a
+
+[ITEMDEF 09acc]
+//Jungle Floor
+DUPEITEM=09acb
+
+[ITEMDEF 09acd]
+//Jungle Floor
+DUPEITEM=09acb
+
+[ITEMDEF 09ace]
+//Jungle Floor
+DUPEITEM=09acb
+
+[ITEMDEF 09acf]
+//Jungle Floor
+DUPEITEM=09acb
+
+[ITEMDEF 09ad0]
+//Jungle Floor
+DUPEITEM=09acb
+
+[ITEMDEF 09ad1]
+//Jungle Floor
+DUPEITEM=09acb
+
+[ITEMDEF 09ad2]
+//Jungle Floor
+DUPEITEM=09acb
+
+[ITEMDEF 09ad3]
+//Jungle Floor
+DUPEITEM=09acb
+
+[ITEMDEF 09ad4]
+//Jungle Floor
+DUPEITEM=09acb
+
+[ITEMDEF 09ad5]
+//Jungle Floor
+DUPEITEM=09acb
+
+[ITEMDEF 09ad6]
+//Jungle Floor
+DUPEITEM=09acb
+
+[ITEMDEF 09b30]
+DEFNAME=i_floor_shadowguard
+CATEGORY=Buildings - Floors
+SUBSECTION=TOL Shadowguard Floor
+DESCRIPTION=Shadowguard Floor
+DUPELIST=09b31,09b32,09b33,09b34,09b35,09b36,09b37,09b38,09b39,09b3a,09b3b,09bd9,09bda,09bdb,09bdc
+
+[ITEMDEF 09b31]
+//Shadowguard Floor
+DUPEITEM=09b30
+
+[ITEMDEF 09b32]
+//Shadowguard Floor
+DUPEITEM=09b30
+
+[ITEMDEF 09b33]
+//Shadowguard Floor
+DUPEITEM=09b30
+
+[ITEMDEF 09b34]
+//Shadowguard Floor
+DUPEITEM=09b30
+
+[ITEMDEF 09b35]
+//Shadowguard Floor
+DUPEITEM=09b30
+
+[ITEMDEF 09b36]
+//Shadowguard Floor
+DUPEITEM=09b30
+
+[ITEMDEF 09b37]
+//Shadowguard Floor
+DUPEITEM=09b30
+
+[ITEMDEF 09b38]
+//Shadowguard Floor
+DUPEITEM=09b30
+
+[ITEMDEF 09b39]
+//Shadowguard Floor
+DUPEITEM=09b30
+
+[ITEMDEF 09b3a]
+//Shadowguard Floor
+DUPEITEM=09b30
+
+[ITEMDEF 09b3b]
+//Shadowguard Floor
+DUPEITEM=09b30
+
+[ITEMDEF 09bd9]
+//Shadowguard Floor
+DUPEITEM=09b30
+
+[ITEMDEF 09bda]
+//Shadowguard Floor
+DUPEITEM=09b30
+
+[ITEMDEF 09bdb]
+//Shadowguard Floor
+DUPEITEM=09b30
+
+[ITEMDEF 09bdc]
+//Shadowguard Floor
+DUPEITEM=09b30
+
+[ITEMDEF 09b89]
+//Jungle Floor
+DUPEITEM=09acb
+
+[ITEMDEF 09b8a]
+//Jungle Floor
+DUPEITEM=09acb
 
 [EOF]

@@ -2555,5 +2555,152 @@ DUPEITEM=05142
 //SA Barred Door (opened)
 DUPEITEM=05143
 
+[ITEMDEF 09ad7]
+DEFNAME=i_door_jungle
+NAME=jungle door
+TYPE=t_door
+CATEGORY=Buildings - Doors
+SUBSECTION=TOL Jungle Door
+DESCRIPTION=@ (closed)
+DUPELIST=09ad9,09adb,09add,09adf,09ae1,09ae3,09ae5
+
+[ITEMDEF 09ad8]
+DEFNAME=i_door_jungle_o
+NAME=jungle door
+TYPE=t_door_open
+CATEGORY=Buildings - Doors
+SUBSECTION=TOL Jungle Door
+DESCRIPTION=@ (opened)
+DUPELIST=09ada,09adc,09ade,09ae0,09ae2,09ae4,09ae6
+
+[ITEMDEF 09ad9]
+//Jungle Door (closed)
+DUPEITEM=09ad7
+
+[ITEMDEF 09ada]
+//Jungle Door (opened)
+DUPEITEM=09ad8
+
+[ITEMDEF 09adb]
+//Jungle Door (closed)
+DUPEITEM=09ad7
+
+[ITEMDEF 09adc]
+//Jungle Door (opened)
+DUPEITEM=09ad8
+
+[ITEMDEF 09add]
+//Jungle Door (closed)
+DUPEITEM=09ad7
+
+[ITEMDEF 09ade]
+//Jungle Door (opened)
+DUPEITEM=09ad8
+
+[ITEMDEF 09adf]
+//Jungle Door (closed)
+DUPEITEM=09ad7
+
+[ITEMDEF 09ae0]
+//Jungle Door (opened)
+DUPEITEM=09ad8
+
+[ITEMDEF 09ae1]
+//Jungle Door (closed)
+DUPEITEM=09ad7
+
+[ITEMDEF 09ae2]
+//Jungle Door (opened)
+DUPEITEM=09ad8
+
+[ITEMDEF 09ae3]
+//Jungle Door (closed)
+DUPEITEM=09ad7
+
+[ITEMDEF 09ae4]
+//Jungle Door (opened)
+DUPEITEM=09ad8
+
+[ITEMDEF 09ae5]
+//Jungle Door (closed)
+DUPEITEM=09ad7
+
+[ITEMDEF 09ae6]
+//Jungle Door (opened)
+DUPEITEM=09ad8
+
+[ITEMDEF 09b3c]
+DEFNAME=i_door_shadowguard
+NAME=shadowguard door
+TYPE=t_door
+CATEGORY=Buildings - Doors
+SUBSECTION=TOL Shadowguard Door
+DESCRIPTION=@ (closed)
+DUPELIST=09b3e,09b40,09b42,09b44,09b46,09b48,09b4a
+
+[ITEMDEF 09b3d]
+DEFNAME=i_door_shadowguard_o
+NAME=shadowguard door
+TYPE=t_door_open
+CATEGORY=Buildings - Doors
+SUBSECTION=TOL Jungle Door
+DESCRIPTION=@ (opened)
+DUPELIST=09b3f,09b41,09b43,09b45,09b47,09b49,09b4b
+
+[ITEMDEF 09b3e]
+//Shadowguard Door (closed)
+DUPEITEM=09b3c
+
+[ITEMDEF 09b3f]
+//Shadowguard Door (opened)
+DUPEITEM=09b3d
+
+[ITEMDEF 09b40]
+//Shadowguard Door (closed)
+DUPEITEM=09b3c
+
+[ITEMDEF 09b41]
+//Shadowguard Door (opened)
+DUPEITEM=09b3d
+
+[ITEMDEF 09b42]
+//Shadowguard Door (closed)
+DUPEITEM=09b3c
+
+[ITEMDEF 09b43]
+//Shadowguard Door (opened)
+DUPEITEM=09b3d
+
+[ITEMDEF 09b44]
+//Shadowguard Door (closed)
+DUPEITEM=09b3c
+
+[ITEMDEF 09b45]
+//Shadowguard Door (opened)
+DUPEITEM=09b3d
+
+[ITEMDEF 09b46]
+//Shadowguard Door (closed)
+DUPEITEM=09b3c
+
+[ITEMDEF 09b47]
+//Shadowguard Door (opened)
+DUPEITEM=09b3d
+
+[ITEMDEF 09b48]
+//Shadowguard Door (closed)
+DUPEITEM=09b3c
+
+[ITEMDEF 09b49]
+//Shadowguard Door (opened)
+DUPEITEM=09b3d
+
+[ITEMDEF 09b4a]
+//Shadowguard Door (closed)
+DUPEITEM=09b3c
+
+[ITEMDEF 09b4b]
+//Shadowguard Door (opened)
+DUPEITEM=09b3d
 
 [EOF]

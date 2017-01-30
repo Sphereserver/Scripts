@@ -8534,6 +8534,304 @@ DUPEITEM=077e6
 //Batten Wall
 DUPEITEM=077e6
 
+[ITEMDEF 09ab0]
+DEFNAME=i_wall_jungle
+NAME=jungle wall
+TYPE=t_wall
+CATEGORY=Buildings - Walls
+SUBSECTION=Jungle Wall
+DESCRIPTION=Wall
+DUPELIST=09ab1,09ab2,09ab3,09ab4,09ab5,09ab6,09ab7,09aba,09abb,09abc,09abd,09abe,09abf,09ac0,09ac1,09ac2,09ac3,09ac4,09ac5,09ac6,09ac7,09ac8,09ac9,09aca
 
+[ITEMDEF 09ab1]
+//Jungle Wall
+DUPEITEM=09ab0
+
+[ITEMDEF 09ab2]
+//Jungle Wall
+DUPEITEM=09ab0
+
+[ITEMDEF 09ab3]
+//Jungle Wall
+DUPEITEM=09ab0
+
+[ITEMDEF 09ab4]
+//Jungle Wall
+DUPEITEM=09ab0
+
+[ITEMDEF 09ab5]
+//Jungle Wall
+DUPEITEM=09ab0
+
+[ITEMDEF 09ab6]
+//Jungle Wall
+DUPEITEM=09ab0
+
+[ITEMDEF 09ab7]
+//Jungle Wall
+DUPEITEM=09ab0
+
+[ITEMDEF 09ab8]
+DEFNAME=i_wall_jungle_window
+NAME=jungle wall
+TYPE=t_wall
+CATEGORY=Buildings - Walls
+SUBSECTION=Jungle Wall
+DESCRIPTION=Wall (window)
+DUPELIST=09ab9
+
+[ITEMDEF 09ab9]
+//Jungle Wall (window)
+DUPEITEM=09ab8
+
+[ITEMDEF 09aba]
+//Jungle Wall
+DUPEITEM=09ab0
+
+[ITEMDEF 09abb]
+//Jungle Wall
+DUPEITEM=09ab0
+
+[ITEMDEF 09abc]
+//Jungle Wall
+DUPEITEM=09ab0
+
+[ITEMDEF 09abd]
+//Jungle Wall
+DUPEITEM=09ab0
+
+[ITEMDEF 09abe]
+//Jungle Wall
+DUPEITEM=09ab0
+
+[ITEMDEF 09abf]
+//Jungle Wall
+DUPEITEM=09ab0
+
+[ITEMDEF 09ac0]
+//Jungle Wall
+DUPEITEM=09ab0
+
+[ITEMDEF 09ac1]
+//Jungle Wall
+DUPEITEM=09ab0
+
+[ITEMDEF 09ac2]
+//Jungle Wall
+DUPEITEM=09ab0
+
+[ITEMDEF 09ac3]
+//Jungle Wall
+DUPEITEM=09ab0
+
+[ITEMDEF 09ac4]
+//Jungle Wall
+DUPEITEM=09ab0
+
+[ITEMDEF 09ac5]
+//Jungle Wall
+DUPEITEM=09ab0
+
+[ITEMDEF 09ac6]
+//Jungle Wall
+DUPEITEM=09ab0
+
+[ITEMDEF 09ac7]
+//Jungle Wall
+DUPEITEM=09ab0
+
+[ITEMDEF 09ac8]
+//Jungle Wall
+DUPEITEM=09ab0
+
+[ITEMDEF 09ac9]
+//Jungle Wall
+DUPEITEM=09ab0
+
+[ITEMDEF 09aca]
+//Jungle Wall
+DUPEITEM=09ab0
+
+[ITEMDEF 09b15]
+DEFNAME=i_wall_shadowguard
+NAME=shadowguard wall
+TYPE=t_wall
+CATEGORY=Buildings - Walls
+SUBSECTION=Shadowguard Wall
+DESCRIPTION=Wall
+DUPELIST=09b16,09b17,09b18,09b19,09b1a,09b1b,09b1c,09b1f,09b20,09b21,09b22,09b23,09b24,09b25,09b26,09b27,09b28,09b29,09b2a,09b2b,09b2c,09b2d,09b2e,09b2f,09b7e,09b7f,09b80,09b81,09b82,09b83,09b84,09b85,09b86,09b87,09b88,09bd0,09bd1,09bd2,09bd3,09bd4
+
+[ITEMDEF 09b16]
+//Shadowguard Wall
+DUPEITEM=09b15
+
+[ITEMDEF 09b17]
+//Shadowguard Wall
+DUPEITEM=09b15
+
+[ITEMDEF 09b18]
+//Shadowguard Wall
+DUPEITEM=09b15
+
+[ITEMDEF 09b19]
+//Shadowguard Wall
+DUPEITEM=09b15
+
+[ITEMDEF 09b1a]
+//Shadowguard Wall
+DUPEITEM=09b15
+
+[ITEMDEF 09b1b]
+//Shadowguard Wall
+DUPEITEM=09b15
+
+[ITEMDEF 09b1c]
+//Shadowguard Wall
+DUPEITEM=09b15
+
+[ITEMDEF 09b1d]
+DEFNAME=i_wall_shadowguard_window
+NAME=shadowguard wall
+TYPE=t_wall
+CATEGORY=Buildings - Walls
+SUBSECTION=Shadowguard Wall
+DESCRIPTION=Wall (window)
+DUPELIST=09b1e
+
+[ITEMDEF 09b1e]
+//Shadowguard Wall (window)
+DUPEITEM=09b1d
+
+[ITEMDEF 09b1f]
+//Shadowguard Wall
+DUPEITEM=09b15
+
+[ITEMDEF 09b20]
+//Shadowguard Wall
+DUPEITEM=09b15
+
+[ITEMDEF 09b21]
+//Shadowguard Wall
+DUPEITEM=09b15
+
+[ITEMDEF 09b22]
+//Shadowguard Wall
+DUPEITEM=09b15
+
+[ITEMDEF 09b23]
+//Shadowguard Wall
+DUPEITEM=09b15
+
+[ITEMDEF 09b24]
+//Shadowguard Wall
+DUPEITEM=09b15
+
+[ITEMDEF 09b25]
+//Shadowguard Wall
+DUPEITEM=09b15
+
+[ITEMDEF 09b26]
+//Shadowguard Wall
+DUPEITEM=09b15
+
+[ITEMDEF 09b27]
+//Shadowguard Wall
+DUPEITEM=09b15
+
+[ITEMDEF 09b28]
+//Shadowguard Wall
+DUPEITEM=09b15
+
+[ITEMDEF 09b29]
+//Shadowguard Wall
+DUPEITEM=09b15
+
+[ITEMDEF 09b2a]
+//Shadowguard Wall
+DUPEITEM=09b15
+
+[ITEMDEF 09b2b]
+//Shadowguard Wall
+DUPEITEM=09b15
+
+[ITEMDEF 09b2c]
+//Shadowguard Wall
+DUPEITEM=09b15
+
+[ITEMDEF 09b2d]
+//Shadowguard Wall
+DUPEITEM=09b15
+
+[ITEMDEF 09b2e]
+//Shadowguard Wall
+DUPEITEM=09b15
+
+[ITEMDEF 09b2f]
+//Shadowguard Wall
+DUPEITEM=09b15
+
+[ITEMDEF 09b7e]
+//Shadowguard Wall
+DUPEITEM=09b15
+
+[ITEMDEF 09b7f]
+//Shadowguard Wall
+DUPEITEM=09b15
+
+[ITEMDEF 09b80]
+//Shadowguard Wall
+DUPEITEM=09b15
+
+[ITEMDEF 09b81]
+//Shadowguard Wall
+DUPEITEM=09b15
+
+[ITEMDEF 09b82]
+//Shadowguard Wall
+DUPEITEM=09b15
+
+[ITEMDEF 09b83]
+//Shadowguard Wall
+DUPEITEM=09b15
+
+[ITEMDEF 09b84]
+//Shadowguard Wall
+DUPEITEM=09b15
+
+[ITEMDEF 09b85]
+//Shadowguard Wall
+DUPEITEM=09b15
+
+[ITEMDEF 09b86]
+//Shadowguard Wall
+DUPEITEM=09b15
+
+[ITEMDEF 09b87]
+//Shadowguard Wall
+DUPEITEM=09b15
+
+[ITEMDEF 09b88]
+//Shadowguard Wall
+DUPEITEM=09b15
+
+[ITEMDEF 09bd0]
+//Shadowguard Wall
+DUPEITEM=09b15
+
+[ITEMDEF 09bd1]
+//Shadowguard Wall
+DUPEITEM=09b15
+
+[ITEMDEF 09bd2]
+//Shadowguard Wall
+DUPEITEM=09b15
+
+[ITEMDEF 09bd3]
+//Shadowguard Wall
+DUPEITEM=09b15
+
+[ITEMDEF 09bd4]
+//Shadowguard Wall
+DUPEITEM=09b15
 
 [EOF]

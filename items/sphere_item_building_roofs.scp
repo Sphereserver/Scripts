@@ -3113,5 +3113,134 @@ DUPEITEM=03623
 //Shadow Roof
 DUPEITEM=03623
 
+[ITEMDEF 09b00]
+DEFNAME=i_roof_jungle
+NAME=jungle roof
+TYPE=t_roof
+CATEGORY=Buildings - Roofs
+SUBSECTION=Jungle Roof
+DESCRIPTION=Roof
+DUPELIST=09b01,09b02,09b03,09b04,09b05,09b06,09b07,09b08,09b09,09b0a,09b0b,09b0c,09b0d,09b0e
+
+[ITEMDEF 09b01]
+//Jungle Roof
+DUPEITEM=09b00
+
+[ITEMDEF 09b02]
+//Jungle Roof
+DUPEITEM=09b00
+
+[ITEMDEF 09b03]
+//Jungle Roof
+DUPEITEM=09b00
+
+[ITEMDEF 09b04]
+//Jungle Roof
+DUPEITEM=09b00
+
+[ITEMDEF 09b05]
+//Jungle Roof
+DUPEITEM=09b00
+
+[ITEMDEF 09b06]
+//Jungle Roof
+DUPEITEM=09b00
+
+[ITEMDEF 09b07]
+//Jungle Roof
+DUPEITEM=09b00
+
+[ITEMDEF 09b08]
+//Jungle Roof
+DUPEITEM=09b00
+
+[ITEMDEF 09b09]
+//Jungle Roof
+DUPEITEM=09b00
+
+[ITEMDEF 09b0a]
+//Jungle Roof
+DUPEITEM=09b00
+
+[ITEMDEF 09b0b]
+//Jungle Roof
+DUPEITEM=09b00
+
+[ITEMDEF 09b0c]
+//Jungle Roof
+DUPEITEM=09b00
+
+[ITEMDEF 09b0d]
+//Jungle Roof
+DUPEITEM=09b00
+
+[ITEMDEF 09b0e]
+//Jungle Roof
+DUPEITEM=09b00
+
+[ITEMDEF 09b65]
+DEFNAME=i_roof_shadowguard
+NAME=shadowguard roof
+TYPE=t_roof
+CATEGORY=Buildings - Roofs
+SUBSECTION=Shadowguard Roof
+DESCRIPTION=Roof
+DUPELIST=09b66,09b67,09b68,09b69,09b6a,09b6b,09b6c,09b6d,09b6e,09b6f,09b70,09b71,09b72,09b73
+
+[ITEMDEF 09b66]
+//Shadowguard Roof
+DUPEITEM=09b65
+
+[ITEMDEF 09b67]
+//Shadowguard Roof
+DUPEITEM=09b65
+
+[ITEMDEF 09b68]
+//Shadowguard Roof
+DUPEITEM=09b65
+
+[ITEMDEF 09b69]
+//Shadowguard Roof
+DUPEITEM=09b65
+
+[ITEMDEF 09b6a]
+//Shadowguard Roof
+DUPEITEM=09b65
+
+[ITEMDEF 09b6b]
+//Shadowguard Roof
+DUPEITEM=09b65
+
+[ITEMDEF 09b6c]
+//Shadowguard Roof
+DUPEITEM=09b65
+
+[ITEMDEF 09b6d]
+//Shadowguard Roof
+DUPEITEM=09b65
+
+[ITEMDEF 09b6e]
+//Shadowguard Roof
+DUPEITEM=09b65
+
+[ITEMDEF 09b6f]
+//Shadowguard Roof
+DUPEITEM=09b65
+
+[ITEMDEF 09b70]
+//Shadowguard Roof
+DUPEITEM=09b65
+
+[ITEMDEF 09b71]
+//Shadowguard Roof
+DUPEITEM=09b65
+
+[ITEMDEF 09b72]
+//Shadowguard Roof
+DUPEITEM=09b65
+
+[ITEMDEF 09b73]
+//Shadowguard Roof
+DUPEITEM=09b65
 
 [EOF]
