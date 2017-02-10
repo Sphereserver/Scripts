@@ -1,0 +1,589 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2017
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Thursday, Feb 9, 2017
+//
+VERSION=0.56d
+
+
+[ITEMDEF 09e89]
+DEFNAME=i_botanical_archway_rose_east
+NAME=botanical archway
+CATEGORY=Wedding
+SUBSECTION=Decoration
+DESCRIPTION=Botanical archway (rose)(east)
+DUPELIST=09e8a,09e8b,09e8c
+
+[ITEMDEF 09e8a]
+//botanical archway
+DUPEITEM=09e89
+
+[ITEMDEF 09e8b]
+//botanical archway
+DUPEITEM=09e89
+
+[ITEMDEF 09e8c]
+//botanical archway
+DUPEITEM=09e89
+
+[ITEMDEF 09e8d]
+DEFNAME=i_table_wedding_round
+NAME=table
+DYE=1
+CATEGORY=Wedding
+SUBSECTION=Decoration
+DESCRIPTION=Table (round)
+
+[ITEMDEF 09e8e]
+DEFNAME=i_chair_wedding_fancy
+NAME=chair
+DYE=1
+CATEGORY=Wedding
+SUBSECTION=Decoration
+DESCRIPTION=Chair (fancy)
+DUPELIST=09e8f,09e90,09e91
+
+[ITEMDEF 09e8f]
+//chair
+DUPEITEM=09e8e
+
+[ITEMDEF 09e90]
+//chair
+DUPEITEM=09e8e
+
+[ITEMDEF 09e91]
+//chair
+DUPEITEM=09e8e
+
+[ITEMDEF 09e93]
+DEFNAME=i_wedding_candelabra_fancy_lit
+NAME=candelabra
+TYPE=t_light_lit
+TDATA3=i_wedding_candelabra_fancy
+DYE=1
+CATEGORY=Wedding
+SUBSECTION=Decoration
+DESCRIPTION=Candelabra (fancy)(lit)
+DUPELIST=09e94,09e95
+
+[ITEMDEF 09e94]
+//candelabra
+DUPEITEM=09e93
+
+[ITEMDEF 09e95]
+//candelabra
+DUPEITEM=09e93
+
+[ITEMDEF 09e96]
+DEFNAME=i_wedding_candelabra_fancy
+NAME=candelabra
+TYPE=t_light_out
+TDATA3=i_wedding_candelabra_fancy_lit
+DYE=1
+CATEGORY=Wedding
+SUBSECTION=Decoration
+DESCRIPTION=Candelabra (fancy)
+
+[ITEMDEF 09e98]
+DEFNAME=i_botanical_archway_rose_south
+NAME=botanical archway
+CATEGORY=Wedding
+SUBSECTION=Decoration
+DESCRIPTION=Botanical archway (rose)(south)
+DUPELIST=09e99,09e9a,09e9b
+
+[ITEMDEF 09e99]
+//botanical archway
+DUPEITEM=09e98
+
+[ITEMDEF 09e9a]
+//botanical archway
+DUPEITEM=09e98
+
+[ITEMDEF 09e9b]
+//botanical archway
+DUPEITEM=09e98
+
+[ITEMDEF 09e9f]
+DEFNAME=i_chair_wedding
+NAME=chair
+DYE=1
+CATEGORY=Wedding
+SUBSECTION=Decoration
+DESCRIPTION=Chair
+DUPELIST=09ea0,09ea1,09ea2
+
+[ITEMDEF 09ea0]
+//chair
+DUPEITEM=09e9f
+
+[ITEMDEF 09ea1]
+//chair
+DUPEITEM=09e9f
+
+[ITEMDEF 09ea2]
+//chair
+DUPEITEM=09e9f
+
+[ITEMDEF 09ea3]
+DEFNAME=i_wedding_flower_tabletop
+NAME=flowers
+DYE=1
+CATEGORY=Wedding
+SUBSECTION=Decoration
+DESCRIPTION=Flowers (tabletop)
+
+[ITEMDEF 09ea4]
+DEFNAME=i_wedding_flower_standing
+NAME=flowers
+DYE=1
+CATEGORY=Wedding
+SUBSECTION=Decoration
+DESCRIPTION=Flowers (standing)
+
+[ITEMDEF 09ea5]
+DEFNAME=i_botanical_archway_bigflow_south
+NAME=botanical archway
+CATEGORY=Wedding
+SUBSECTION=Decoration
+DESCRIPTION=Botanical archway (bigflow)(south)
+DUPELIST=09ea6,09ea7,09ea8,09ea9
+
+[ITEMDEF 09ea6]
+//botanical archway
+DUPEITEM=09ea5
+
+[ITEMDEF 09ea7]
+//botanical archway
+DUPEITEM=09ea5
+
+[ITEMDEF 09ea8]
+//botanical archway
+DUPEITEM=09ea5
+
+[ITEMDEF 09ea9]
+//botanical archway
+DUPEITEM=09ea5
+
+[ITEMDEF 09eaa]
+DEFNAME=i_wedding_candelabra_lit
+NAME=candelabra
+TYPE=t_light_lit
+TDATA3=i_wedding_candelabra
+DYE=1
+CATEGORY=Wedding
+SUBSECTION=Decoration
+DESCRIPTION=Candelabra
+DUPELIST=09eab
+
+[ITEMDEF 09eab]
+//candelabra
+DUPEITEM=09eaa
+
+[ITEMDEF 09eac]
+DEFNAME=i_wedding_candelabra_fancy2_lit
+NAME=candelabra
+DYE=1
+CATEGORY=Wedding
+SUBSECTION=Decoration
+DESCRIPTION=Candelabra (fancy)(lit)
+DUPELIST=09ead
+
+[ITEMDEF 09ead]
+DEFNAME=i_wedding_candelabra_fancy2
+NAME=candelabra
+DYE=1
+CATEGORY=Wedding
+SUBSECTION=Decoration
+DESCRIPTION=Candelabra (fancy)
+DUPELIST=09eac
+
+[ITEMDEF 09eaf]
+DEFNAME=i_wedding_candelabra
+NAME=candelabra
+TYPE=t_light_out
+TDATA3=i_wedding_candelabra_lit
+DYE=1
+CATEGORY=Wedding
+SUBSECTION=Decoration
+DESCRIPTION=Candelabra
+
+[ITEMDEF 09eb0]
+DEFNAME=i_wedding_cake_1
+NAME=cake
+DYE=1
+CATEGORY=Wedding
+SUBSECTION=Decoration
+DESCRIPTION=Cake
+
+[ITEMDEF 09eb1]
+DEFNAME=i_wedding_cake_2
+NAME=cake
+DYE=1
+CATEGORY=Wedding
+SUBSECTION=Decoration
+DESCRIPTION=Cake
+
+[ITEMDEF 09eb2]
+DEFNAME=i_wedding_cake_3
+NAME=cake
+DYE=1
+CATEGORY=Wedding
+SUBSECTION=Decoration
+DESCRIPTION=Cake
+
+[ITEMDEF 09eb3]
+DEFNAME=i_wedding_cake_4
+NAME=cake
+DYE=1
+CATEGORY=Wedding
+SUBSECTION=Decoration
+DESCRIPTION=Cake
+
+[ITEMDEF 09eb4]
+DEFNAME=i_wedding_cake_5
+NAME=cake
+DYE=1
+CATEGORY=Wedding
+SUBSECTION=Decoration
+DESCRIPTION=Cake
+
+[ITEMDEF 09eb5]
+DEFNAME=i_wedding_cake_6
+NAME=cake
+DYE=1
+CATEGORY=Wedding
+SUBSECTION=Decoration
+DESCRIPTION=Cake
+
+[ITEMDEF 09eb6]
+DEFNAME=i_wedding_cake_7
+NAME=cake
+DYE=1
+CATEGORY=Wedding
+SUBSECTION=Decoration
+DESCRIPTION=Cake
+
+[ITEMDEF 09eb7]
+DEFNAME=i_chocolate_fountain
+NAME=chocolate fountain
+CATEGORY=Wedding
+SUBSECTION=Decoration
+DESCRIPTION=Chocolate fountain
+DUPELIST=09eb8,09eb9,09eba,09ebb,09ebc,09ebd,09ebe,09ebf
+
+[ITEMDEF 09eb8]
+//chocolate fountain
+DUPEITEM=09eb7
+
+[ITEMDEF 09eb9]
+//chocolate fountain
+DUPEITEM=09eb7
+
+[ITEMDEF 09eba]
+//chocolate fountain
+DUPEITEM=09eb7
+
+[ITEMDEF 09ebb]
+//chocolate fountain
+DUPEITEM=09eb7
+
+[ITEMDEF 09ebc]
+//chocolate fountain
+DUPEITEM=09eb7
+
+[ITEMDEF 09ebd]
+//chocolate fountain
+DUPEITEM=09eb7
+
+[ITEMDEF 09ebe]
+//chocolate fountain
+DUPEITEM=09eb7
+
+[ITEMDEF 09ebf]
+//chocolate fountain
+DUPEITEM=09eb7
+
+[ITEMDEF 09ec0]
+DEFNAME=i_fruit_strawberry_chocolate
+NAME=chocolate covered strawberry
+TYPE=t_food
+CATEGORY=Wedding
+SUBSECTION=Foods
+DESCRIPTION=Chocolate covered strawberry
+ON=@Create
+   MOREM=1
+
+[ITEMDEF 09ec1]
+DEFNAME=i_cake_topper_groom
+NAME=cake topper
+CATEGORY=Wedding
+SUBSECTION=Decoration
+DESCRIPTION=Cake topper (groom)
+DUPELIST=09ec2
+
+[ITEMDEF 09ec2]
+//cake topper (groom)
+DUPEITEM=09ec1
+
+[ITEMDEF 09ec3]
+DEFNAME=i_cake_topper_bride
+NAME=cake topper
+CATEGORY=Wedding
+SUBSECTION=Decoration
+DESCRIPTION=Cake topper (bride)
+DUPELIST=09ec4
+
+[ITEMDEF 09ec4]
+//cake topper (bride)
+DUPEITEM=09ec3
+
+[ITEMDEF 09ec5]
+DEFNAME=i_botanical_archway_leafy_east
+NAME=botanical archway
+CATEGORY=Wedding
+SUBSECTION=Decoration
+DESCRIPTION=Botanical archway (leafy)(east)
+DUPELIST=09ec6,09ec7,09ec8
+
+[ITEMDEF 09ec6]
+//botanical archway
+DUPEITEM=09ec5
+
+[ITEMDEF 09ec7]
+//botanical archway
+DUPEITEM=09ec5
+
+[ITEMDEF 09ec8]
+//botanical archway
+DUPEITEM=09ec5
+
+[ITEMDEF 09ec9]
+DEFNAME=i_botanical_archway_bigflow_east
+NAME=botanical archway
+CATEGORY=Wedding
+SUBSECTION=Decoration
+DESCRIPTION=Botanical archway (bigflow)(east)
+DUPELIST=09eca,09ecb,09ecc,09ecd
+
+[ITEMDEF 09eca]
+//botanical archway
+DUPEITEM=09ec9
+
+[ITEMDEF 09ecb]
+//botanical archway
+DUPEITEM=09ec9
+
+[ITEMDEF 09ecc]
+//botanical archway
+DUPEITEM=09ec9
+
+[ITEMDEF 09ecd]
+//botanical archway
+DUPEITEM=09ec9
+
+[ITEMDEF 09ece]
+DEFNAME=i_table_wedding_rectangle_east
+NAME=table
+DYE=1
+CATEGORY=Wedding
+SUBSECTION=Decoration
+DESCRIPTION=Table (rectangle)(east)
+DUPELIST=09ecf,09ed0
+
+[ITEMDEF 09ecf]
+//table
+DUPEITEM=09ece
+
+[ITEMDEF 09ed0]
+//table
+DUPEITEM=09ece
+
+[ITEMDEF 09ed1]
+DEFNAME=i_table_wedding_rectangle_south
+NAME=table
+DYE=1
+CATEGORY=Wedding
+SUBSECTION=Decoration
+DESCRIPTION=Table (rectangle)(south)
+DUPELIST=09ed2,09ed3
+
+[ITEMDEF 09ed2]
+//table
+DUPEITEM=09ed1
+
+[ITEMDEF 09ed3]
+//table
+DUPEITEM=09ed1
+
+[ITEMDEF 09ed4]
+DEFNAME=i_wedding_cake_8
+NAME=cake
+DYE=1
+CATEGORY=Wedding
+SUBSECTION=Decoration
+DESCRIPTION=Cake
+
+[ITEMDEF 09ed7]
+DEFNAME=i_botanical_archway_leafy_south
+NAME=botanical archway
+CATEGORY=Wedding
+SUBSECTION=Decoration
+DESCRIPTION=Botanical archway (leafy)(south)
+DUPELIST=09ed8,09ed9,09eda
+
+[ITEMDEF 09ed8]
+//botanical archway
+DUPEITEM=09ed7
+
+[ITEMDEF 09ed9]
+//botanical archway
+DUPEITEM=09ed7
+
+[ITEMDEF 09eda]
+//botanical archway
+DUPEITEM=09ed7
+
+[ITEMDEF 09eef]
+DEFNAME=i_wedding_gown
+NAME=wedding gown
+TYPE=t_clothing
+DYE=1
+FLIP=1
+CanUse=can_u_human|can_u_elf
+TEVENTS=t_equipitem
+CATEGORY=Wedding
+SUBSECTION=Clothing
+DESCRIPTION=Wedding gown
+DUPELIST=09ef0
+
+[ITEMDEF 09ef0]
+//wedding gown
+DUPEITEM=09eef
+
+[ITEMDEF 09ef1]
+DEFNAME=i_wedding_candelabra2_lit
+NAME=candelabra
+TYPE=t_light_lit
+TDATA3=i_wedding_candelabra2
+DYE=1
+CATEGORY=Wedding
+SUBSECTION=Decoration
+DESCRIPTION=Candelabra (lit)
+DUPELIST=09ef2,09ef3
+
+[ITEMDEF 09ef2]
+//candelabra
+DUPEITEM=09ef1
+
+[ITEMDEF 09ef3]
+//candelabra
+DUPEITEM=09ef1
+
+[ITEMDEF 09ef4]
+DEFNAME=i_wedding_candelabra2
+NAME=candelabra
+TYPE=t_light_out
+TDATA3=i_wedding_candelabra2_lit
+DYE=1
+CATEGORY=Wedding
+SUBSECTION=Decoration
+DESCRIPTION=Candelabra
+DUPEITEM=09ef1
+
+[ITEMDEF 09ef5]
+DEFNAME=i_cake_slice
+NAME=cake slice
+TYPE=t_food
+FLIP=1
+DYE=1
+CATEGORY=Wedding
+SUBSECTION=Foods
+DESCRIPTION=Cake slice
+DUPELIST=09ef6
+ON=@Create
+   MOREM=1
+
+[ITEMDEF 09ef6]
+//cake slice
+DUPEITEM=09ef5
+
+[ITEMDEF 09ef7]
+DEFNAME=i_tuxedo_pants
+NAME=tuxedo pants
+TYPE=t_clothing
+DYE=1
+FLIP=1
+CanUse=can_u_human|can_u_elf
+TEVENTS=t_equipitem
+CATEGORY=Wedding
+SUBSECTION=Clothing
+DESCRIPTION=Tuxedo pants
+DUPELIST=09ef8
+
+[ITEMDEF 09ef8]
+//tuxedo pants
+DUPEITEM=09ef7
+
+[ITEMDEF 09ef9]
+DEFNAME=i_hat_top
+NAME=top hat
+TYPE=t_clothing
+DYE=1
+FLIP=1
+CanUse=can_u_human|can_u_elf
+TEVENTS=t_equipitem
+CATEGORY=Wedding
+SUBSECTION=Clothing
+DESCRIPTION=Top hat
+DUPELIST=09efa
+
+[ITEMDEF 09efa]
+//top hat
+DUPEITEM=09ef9
+
+[ITEMDEF 09efb]
+DEFNAME=i_tuxedo
+NAME=tuxedo
+TYPE=t_clothing
+DYE=1
+FLIP=1
+CanUse=can_u_human|can_u_elf
+TEVENTS=t_equipitem
+CATEGORY=Wedding
+SUBSECTION=Clothing
+DESCRIPTION=Tuxedo
+DUPELIST=09efc
+
+[ITEMDEF 09efc]
+//tuxedo
+DUPEITEM=09efb
+
+[ITEMDEF 09efd]
+DEFNAME=i_botanical_archway_leafy_small
+NAME=botanical archway
+CATEGORY=Wedding
+SUBSECTION=Decoration
+DESCRIPTION=Botanical archway (leafy)(small)
+
+[ITEMDEF 09efe]
+DEFNAME=i_botanical_archway_rose_small
+NAME=botanical archway
+CATEGORY=Wedding
+SUBSECTION=Decoration
+DESCRIPTION=Botanical archway (rose)(small)
+
+[ITEMDEF 09eff]
+DEFNAME=i_botanical_archway_bigflow_small
+NAME=botanical archway
+CATEGORY=Wedding
+SUBSECTION=Decoration
+DESCRIPTION=Botanical archway (bigflow)(small)
+
+[EOF]
