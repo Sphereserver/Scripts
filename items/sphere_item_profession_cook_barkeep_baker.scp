@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2015
+// SPHERE by : Menasoft ©1997-2017
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,9 +7,9 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, Feb 15, 2015
+// FILE LAST UPDATED: Friday, Feb 10, 2017
 //
-VERSION=0.56c
+VERSION=0.56d
 
 
 [ITEMDEF 021b]
@@ -1008,10 +1008,6 @@ WEIGHT=0.5
 CATEGORY=Provisions - Food
 SUBSECTION=Meat
 DESCRIPTION=Ribs (Raw)
-ON=@DClick
-   IF (<MORE2>)
-      NAME=Cut of raw <SERV.CHARDEF.<MORE2>.NAME> ribs
-   ENDIF
 ON=@TargOn_Item
    IF (<SRC.TARG.TYPE>!=t_fire) && (<SRC.TARG.TYPE>!=t_campfire)
       SRC.SYSMESSAGELOC color_text,500690//"You can't cook on that."

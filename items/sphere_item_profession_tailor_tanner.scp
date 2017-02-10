@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2015
+// SPHERE by : Menasoft ©1997-2017
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,9 +7,9 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, Feb 15, 2015
+// FILE LAST UPDATED: Friday, Feb 10, 2017
 //
-VERSION=0.56c
+VERSION=0.56d
 
 
 [ITEMDEF 0df6]
@@ -313,10 +313,6 @@ CATEGORY=Items by Professions
 SUBSECTION=Tanner
 DESCRIPTION=Cut-up Leather
 DUPELIST=01068,01081,01082
-ON=@DClick
-   IF (<MORE2>)
-      NAME=cut up <SERV.CHARDEF.<MORE2>.NAME> hides
-   ENDIF
 
 [ITEMDEF 01068]
 //cut up leather
@@ -368,10 +364,6 @@ CATEGORY=Items by Professions
 SUBSECTION=Tanner
 DESCRIPTION=Hides (Pile)
 DUPELIST=01079
-ON=@DClick
-   IF (<MORE2>)
-      NAME=<SERV.CHARDEF.<MORE2>.NAME> hides
-   ENDIF
 
 [ITEMDEF 01079]
 //pile of hides
@@ -705,11 +697,7 @@ CATEGORY=Items by Professions
 SUBSECTION=Tanner
 DESCRIPTION=Hides (spined)
 ON=@Create
-   COLOR=color_o_spined
-ON=@DClick
-   IF (<MORE2>)
-      NAME=spined <SERV.CHARDEF.<MORE2>.NAME> hides
-   ENDIF
+   COLOR=color_hide_spined
 
 [ITEMDEF i_hide_horned]
 ID=i_hide
@@ -722,11 +710,7 @@ CATEGORY=Items by Professions
 SUBSECTION=Tanner
 DESCRIPTION=Hides (horned)
 ON=@Create
-   COLOR=color_o_horned
-ON=@DClick
-   IF (<MORE2>)
-      NAME=horned <SERV.CHARDEF.<MORE2>.NAME> hides
-   ENDIF
+   COLOR=color_hide_horned
 
 [ITEMDEF i_hide_barbed]
 ID=i_hide
@@ -739,11 +723,7 @@ CATEGORY=Items by Professions
 SUBSECTION=Tanner
 DESCRIPTION=Hides (barbed)
 ON=@Create
-   COLOR=color_o_barbed
-ON=@DClick
-   IF (<MORE2>)
-      NAME=barbed <SERV.CHARDEF.<MORE2>.NAME> hides
-   ENDIF
+   COLOR=color_hide_barbed
 
 
 [ITEMDEF i_hides_cut_spined]
@@ -757,11 +737,7 @@ CATEGORY=Items by Professions
 SUBSECTION=Tanner
 DESCRIPTION=Cut-up Leather (spined)
 ON=@Create
-   COLOR=color_o_spined
-ON=@DClick
-   IF (<MORE2>)
-      NAME=cut up spined <SERV.CHARDEF.<MORE2>.NAME> hides
-   ENDIF
+   COLOR=color_hide_spined
 
 [ITEMDEF i_hides_cut_horned]
 ID=i_hides_cut
@@ -774,11 +750,7 @@ CATEGORY=Items by Professions
 SUBSECTION=Tanner
 DESCRIPTION=Cut-up Leather (horned)
 ON=@Create
-   COLOR=color_o_horned
-ON=@DClick
-   IF (<MORE2>)
-      NAME=cut up horned <SERV.CHARDEF.<MORE2>.NAME> hides
-   ENDIF
+   COLOR=color_hide_horned
 
 [ITEMDEF i_hides_cut_barbed]
 ID=i_hides_cut
@@ -791,12 +763,6 @@ CATEGORY=Items by Professions
 SUBSECTION=Tanner
 DESCRIPTION=Cut-up Leather (barbed)
 ON=@Create
-   COLOR=color_o_barbed
-ON=@DClick
-   IF (<MORE2>)
-      NAME=cut up barbed <SERV.CHARDEF.<MORE2>.NAME> hides
-   ENDIF
-
-
+   COLOR=color_hide_barbed
 
 [EOF]

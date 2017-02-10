@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2016
+// SPHERE by : Menasoft ©1997-2017
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,9 +7,9 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Jan 19, 2016
+// FILE LAST UPDATED: Friday, Feb 10, 2017
 //
-VERSION=0.56c
+VERSION=0.56d
 
 
 [ITEMDEF 091b]
@@ -93,6 +93,8 @@ CATEGORY=Animations
 SUBSECTION=Moongates
 DESCRIPTION=Red Moongate
 DUPELIST=0ddb,0ddc,0ddd,0dde
+ON=@Create
+   MOREP=-1,-1
 
 [ITEMDEF 0ddb]
 //Red Moongate (animation frame)
@@ -159,6 +161,8 @@ CATEGORY=Animations
 SUBSECTION=Moongates
 DESCRIPTION=Blue Moongate
 DUPELIST=0f6d,0f6e,0f6f,0f70
+ON=@Create
+   MOREP=-1,-1
 
 [ITEMDEF 0f6d]
 //Blue Moongate (animation frame)
@@ -602,6 +606,8 @@ CATEGORY=Animations
 SUBSECTION=Moongates
 DESCRIPTION=Black Moongate
 DUPELIST=01fd5,01fd6,01fd7,01fd8
+ON=@Create
+   MOREP=-1,-1
 
 [ITEMDEF 01fd5]
 //Black Moongate (animation frame)
@@ -666,6 +672,8 @@ CATEGORY=Animations
 SUBSECTION=Moongates
 DESCRIPTION=Gray Moongate
 DUPELIST=01fe8,01fe9,01fea,01feb
+ON=@Create
+   MOREP=-1,-1
 
 [ITEMDEF 01fe8]
 //Gray Moongate (animation frame)
@@ -3010,6 +3018,8 @@ CATEGORY=Animations
 SUBSECTION=Moongates
 DESCRIPTION=Moongate (broken)
 DUPELIST=04b90,04b91,04b92,04b93,04b94,04b95,04b96,04b97,04b98,04b99,04b9a,04b9b,04b9c
+ON=@Create
+   MOREP=-1,-1
 
 [ITEMDEF 04b90]
 //Broken Moongate (animation frame)
@@ -3071,6 +3081,8 @@ CATEGORY=Animations
 SUBSECTION=Moongates
 DESCRIPTION=Moongate (new)
 DUPELIST=04bcc,04bcd,04bce,04bcf,04bd0,04bd1,04bd2,04bd3,04bd4,04bd5,04bd6,04bd7,04bd8
+ON=@Create
+   MOREP=-1,-1
 
 [ITEMDEF 04bcc]
 //New Moongate (animation frame)

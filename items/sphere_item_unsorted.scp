@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Jan 17, 2017
+// FILE LAST UPDATED: Friday, Feb 10, 2017
 //
 VERSION=0.56d
 
@@ -1013,6 +1013,8 @@ CATEGORY=Miscellaneous
 SUBSECTION=Teleporter
 DESCRIPTION=@
 DUPELIST=017d0,017d1,017d2,017d3,017d4,017d5,017d6,017d7,017d8,017d9,017da,017db,017dc,017dd,017de,017df,017e0,017e1,017e2,017e3,017e4,017e5,017e6,017e7,017e8,017e9,017ea,017eb,017ec,017ed,017ee,017ef,017f0,017f1,017f2,017fc,017fd,017fe,017ff,01800,01801,01802,01803,01804,01805,01806,01807,01808,01809,0180a,0180b,0180c,0180d
+ON=@Create
+   MOREP=-1,-1
 
 [ITEMDEF 017d0]
 //teleporter
@@ -1236,6 +1238,8 @@ CATEGORY=Ground Tiles
 SUBSECTION=Symbols
 DESCRIPTION=Alchemical Symbol
 DUPELIST=0181e,0181f,01820,01821,01822,01823,01824,01825,01826,01827,01828
+ON=@Create
+   MOREP=-1,-1
 
 [ITEMDEF 0181e]
 DEFNAME=i_rune_alchem_2
@@ -2174,11 +2178,9 @@ DESCRIPTION=Scroll of Abraxus
 [ITEMDEF 022c5]
 DEFNAME=i_spellbook_runebook
 TYPE=t_normal //fixme: or t_runebook
-VALUE=488
 WEIGHT=1.0
-RESOURCES=20 i_parchment,1 i_hides_cut,1 i_cloth
-SKILLMAKE=inscription 45.0,i_pen_and_ink
-//LAYER=layer_hand2
+RESOURCES=8 i_scroll_blank,1 i_rune_marker,1 i_scroll_recall,1 i_scroll_gate_travel
+SKILLMAKE=Inscription 45.0,i_pen_and_ink
 CATEGORY=Provisions - Alchemy & Magic
 SUBSECTION=Books
 DESCRIPTION=Runebook
@@ -7037,6 +7039,24 @@ TYPE=t_normal
 // NoName //tok
 DEFNAME=i_noname_29
 TYPE=t_normal
+
+[ITEMDEF 09c16]
+DEFNAME=i_runic_atlas
+NAME=runic atlas
+TYPE=t_normal //fixme: or t_runebook
+FLIP=1
+WEIGHT=1.0
+RESOURCES=24 i_scroll_blank,3 i_rune_marker,3 i_scroll_recall,3 i_scroll_gate_travel
+SKILLMAKE=Inscription 45.0,i_pen_and_ink
+CATEGORY=Provisions - Alchemy & Magic
+SUBSECTION=Books
+DESCRIPTION=Runic Atlas
+DUPELIST=09c17
+ON=@Create
+   ATTR=attr_magic|attr_newbie
+
+[ITEMDEF 09c17]
+DUPEITEM=09c17
 
 [ITEMDEF 09e1a]
 DEFNAME=i_giftbox_christmas

@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Thursday, Jan 26, 2017
+// FILE LAST UPDATED: Friday, Feb 10, 2017
 //
 VERSION=0.56d
 
@@ -86,24 +86,57 @@ mount_0x580	03ecd	// palomino
 mount_0x582	03ecc	// windrunner
 
 [DEFNAME hues]
-color_text             -1
-color_none              0
-color_red1             32
-color_red2             33
-color_cyan             88
-color_gray_dk         802
-color_energy_vortex   118
-color_gray_lt         904
-color_dye_high       1000   // highest dyeable color = 1001
-color_ice            1152
-color_snow           1153
-color_rock           1154
-color_spectral      16385
+color_text                   -1
+color_none                   0
+color_red1                   32
+color_red2                   33
+color_cyan                   88
+color_gray_dk                802
+color_gray_lt                904
+color_dye_high               1000	//highest dyeable color = 1001
+color_ice                    1152
+color_snow                   1153
+color_rock                   1154
+color_spectral               16385
+
+color_magic_defense          1650
+color_magic_guarding         1430
+color_magic_hardening        1353
+color_magic_fortification    1805
+color_magic_invulnerability  1887
+color_magic_weap             0		//custom
+color_magic_arm              0		//custom
+color_magic_shield           0		//custom
+
+color_hide_spined            08ac	//pre-AOS: 0283
+color_hide_horned            0845	//pre-AOS: 0227
+color_hide_barbed            0851	//pre-AOS: 01c1
+
+color_log_oak                07da
+color_log_ash                04a7
+color_log_yew                04a8
+color_log_heartwood          04a9
+color_log_bloodwood          04aa
+color_log_frostwood          047f
+
+color_dragonscale_red        066d
+color_dragonscale_yellow     08a8
+color_dragonscale_black      0455
+color_dragonscale_green      0851
+color_dragonscale_white      08fd
+color_dragonscale_blue       08b0
+
+color_tigerpelt_orange       0f3
+color_tigerpelt_black        0497
 
 [DEFNAME hues_range]
 colors_all             {2 1001}
 colors_skin            {1002 1058}
+colors_skin_elf        {0bf 1 {024d 024f} 1 0353 1 0361 1 0367 1 {0374 0376} 1 {0381 0385} 1 0389 1 03de 1 {03e5 03e6} 1 {03e8 03e9} 1 0430 1 04a7 1 04de 1 051d 1 053f 1 0579 1 {076b 076d} 1 0835 1 0903 1}
+colors_skin_gargoyle   {1755 1779}
 colors_hair            {1102 1149}
+colors_hair_elf        {{034 039} 1 058 1 {08e 08f} 1 {090 092} 1 0101 1 {0159 015e} 1 0128 1 012f 1 01bd 1 01e4 1 01f3 1 0207 1 0211 1 0239 1 0251 1 026c 1 02c3 1 02c9 1 {031d 0326} 1 0369 1 {0386 038a} 1 059d 1 06b8 1 0725 1 0853 1}
+colors_hair_gargoyle   {06e0 1 06e2 1 06e4 1 06ef 1 06f1 1 06f3 1 0709 1 070b 1 070d 1 070f 1 0711 1 0763 1 0765 1 0768 1 076b 1}
 colors_pink            {1201 1254}
 colors_blue            {1301 1354}
 colors_green           {1401 1454}
@@ -118,32 +151,13 @@ colors_animal          {2301 2318}
 colors_metal           {2401 2430}
 
 colors_bright          {062 1 071 1 03 9 0d 9 013 9 01c 9 021 9 030 9 037 9 03a 9 044 9 059 9}
-colors_stone           {2498 1 2500 1 {2671 2706} 1}
-colors_skin_gargoyle   {1755 1779}
 colors_white           2301
 colors_black           2305
 colors_brown           {1110 1116}
 colors_gray            {946 947}
-colors_demon           { 1106 1110 }
-colors_wyrm            { 0 1 { 1105 1110 } 1 { 34 39 } 1 }
-colors_red_drag        { color_red1 1 color_red2 1 }
-colors_blood           { 33 38 }
-colors_lava            { { 32 34 } 1 { 53 55 } 1 { 43 45 } 1 }
-colors_poison          { 61 79 }
-
-color_magic_weap       0
-color_magic_shield     0
-color_magic_arm        0
-
-color_magic_defense          1650
-color_magic_guarding         1430
-color_magic_hardening        1353
-color_magic_fortification    1805
-color_magic_invulnerability  1887
-
-color_o_spined             08ac
-color_o_horned             0845
-color_o_barbed             0851
+colors_wyrm            {0 1 {1105 1110} 1 {34 39} 1}
+colors_blood           {33 38}
+colors_lava            {{32 34} 1 {53 55} 1 {43 45} 1}
 
 [DEFNAME brains]
 brain_none             0
@@ -449,6 +463,7 @@ snd_monster_stoneform         1595
 snd_monster_stygian_dragon    1599
 snd_monster_spider_trapdoor   1603
 snd_monster_gargoyle_undead   1607
+snd_monster_wildtiger         1648
 
 snd_spell_lightning             41
 snd_spell_chain_lightning       41

@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2007
+// SPHERE by : Menasoft ©1997-2017
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,9 +7,9 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Wednesday, October 16, 2013
+// FILE LAST UPDATED: Friday, Feb 10, 2017
 //
-VERSION=0.56c
+VERSION=0.56d
 
 
 [ITEMDEF 0dfa]
@@ -819,39 +819,50 @@ DUPEITEM=026b1
 //Dragon Scales
 DUPEITEM=026b1
 
+[ITEMDEF 09bcc]
+DEFNAME=i_tigerpelt
+NAME=tiger pelt%s
+TYPE=t_normal
+WEIGHT=1.0
+FLIP=1
+CATEGORY=Resources
+SUBSECTION=Animal
+DESCRIPTION=Tiger Pelt
+DUPELIST=09bcd
+ON=@Create
+   COLOR=color_tigerpelt_orange
+
+[ITEMDEF 09bcd]
+//Tiger Pelt
+DUPEITEM=09bcc
+
+[ITEMDEF 09bce]
+DEFNAME=i_dragonturtle_scute
+NAME=dragon turtle scute%s
+TYPE=t_normal
+WEIGHT=1.0
+FLIP=1
+CATEGORY=Resources
+SUBSECTION=Animal
+DESCRIPTION=Dragon Turtle Scute
+DUPELIST=09bcf
+
+[ITEMDEF 09bcf]
+//Dragon Turtle Scute
+DUPEITEM=09bce
+
 
 ///////////////////////////
 // Custom Resource Items //
 ///////////////////////////
 
-[DEFNAME colors_custom_resources]
-color_o_ash        0157
-color_o_bamboo     098
-color_o_bloodwood  04aa
-color_o_cedar      0157
-color_o_cherry     0676
-color_o_cyprus     0235
-color_o_frostwood  04ab
-color_o_heartwood  04a9
-color_o_maple      06c0
-color_o_oak        04a6
-color_o_sunwood    04ac
-color_o_walnut     0473
-color_o_willow     02e9
-color_o_yew        04a8
-
-color_o_granite    0b8e  //09c2
-color_o_sandstone  0501
-color_o_marble     0b8b  //0b8c,05b2
-color_o_jade       0505  //0506,0b83,0b93,0b94,0b95,0b96
-color_o_bloodstone 05b5  //0b85
-
-color_dragonscale_black   083a
-color_dragonscale_blue    05
-color_dragonscale_green   030b
-color_dragonscale_red     026
-color_dragonscale_white   0482
-color_dragonscale_yellow  035
+[DEFNAME resources_color]
+color_o_bamboo      098
+color_o_granite     0b8e  //09c2
+color_o_sandstone   0501
+color_o_marble      0b8b  //0b8c,05b2
+color_o_jade        0505  //0506,0b83,0b93,0b94,0b95,0b96
+color_o_bloodstone  05b5  //0b85
 
 
 [ITEMDEF i_log_bamboo]
@@ -1213,7 +1224,27 @@ SUBSECTION=Dragon Scales
 DESCRIPTION=White Dragon Scales
 ON=@Create
    DISPID={026b1 026b6}
-   COLOR=0481
+   COLOR=color_dragonscale_white
+
+[ITEMDEF i_tigerpelt_black]
+ID=i_tigerpelt
+NAME=black tiger pelt%s
+TYPE=t_normal
+WEIGHT=1.0
+CATEGORY=Resources
+SUBSECTION=Animal
+DESCRIPTION=Black Tiger Pelt
+ON=@Create
+   COLOR=color_tigerpelt_black
+
+[ITEMDEF i_tigerpelt_white]
+ID=i_tigerpelt
+NAME=white tiger pelt%s
+TYPE=t_normal
+WEIGHT=1.0
+CATEGORY=Resources
+SUBSECTION=Animal
+DESCRIPTION=White Tiger Pelt
 
 [ITEMDEF i_fairy_dragon_wings]
 ID=i_beaker2_empty
