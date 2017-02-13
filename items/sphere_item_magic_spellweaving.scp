@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Jan 17, 2017
+// FILE LAST UPDATED: Monday, Feb 13, 2017
 //
 VERSION=0.56d
 
@@ -27,7 +27,8 @@ This file contains all things relating to Spellweaving, such as:
 DEFNAME=i_spellbook_spellweaving
 NAME=Spellweaving Spellbook
 TYPE=t_spellbook_arcanist
-LAYER=layer_hand1
+TDATA3=600
+TDATA4=16
 WEIGHT=3.0
 RESOURCES=10 i_scroll_blank
 SKILLMAKE=Inscription 50.0,i_pen_and_ink
@@ -37,8 +38,6 @@ DESCRIPTION=Spellweaving Spellbook
 ON=@Create
    COLOR=08a2
    ATTR=attr_magic|attr_newbie
-   MOREX=16
-   MOREZ=600
    //MORE1=0ffff
 
 [ITEMDEF 02d51]

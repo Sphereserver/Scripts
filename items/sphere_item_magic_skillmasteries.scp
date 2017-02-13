@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Jan 17, 2017
+// FILE LAST UPDATED: Monday, Feb 13, 2017
 //
 VERSION=0.56d
 
@@ -28,7 +28,8 @@ few masteries related to bard skills, but later on TOL it got renamed to
 DEFNAME=i_spellbook_mastery
 TYPE=t_spellbook_mastery
 NAME=Book of Masteries
-LAYER=layer_hand1
+TDATA3=700
+TDATA4=45
 FLIP=1
 WEIGHT=3.0
 CATEGORY=Provisions - Alchemy & Magic
@@ -38,8 +39,6 @@ DUPELIST=0225b
 
 ON=@Create
    ATTR=attr_magic|attr_newbie
-   MOREX=45
-   MOREZ=700
    MORE1=0ffffffff
    MORE2=01fff
 

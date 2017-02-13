@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Jan 17, 2017
+// FILE LAST UPDATED: Monday, Feb 13, 2017
 //
 VERSION=0.56d
 
@@ -25,8 +25,10 @@ This file contains all things relating to Mysticism, such as:
 
 [ITEMDEF 02d9d]
 DEFNAME=i_spellbook_mystic
-TYPE=t_spellbook_mystic
 NAME=Mysticism Spellbook
+TYPE=t_spellbook_mystic
+TDATA3=677
+TDATA4=16
 VALUE=16
 WEIGHT=3.0
 RESOURCES=10 i_scroll_blank
@@ -36,8 +38,6 @@ SUBSECTION=Books
 DESCRIPTION=Mysticism Spellbook
 ON=@Create
 	ATTR=attr_magic|attr_newbie
-	MOREX=16
-	MOREZ=677
 
 
 [ITEMDEF 02d9e]
