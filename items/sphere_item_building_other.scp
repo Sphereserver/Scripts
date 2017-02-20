@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2007
+// SPHERE by : Menasoft ©1997-2017
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,9 +7,9 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, November 5, 2013
+// FILE LAST UPDATED: Monday, Feb 20, 2017
 //
-VERSION=0.56c
+VERSION=0.56d
 
 
 [COMMENT sphere_item_building_other]
@@ -555,42 +555,44 @@ DUPEITEM=01ea0
 //rope
 DUPEITEM=01ea0
 
+
 [ITEMDEF 01ea8]
-DEFNAME=i_winch
-WEIGHT=30.3
-RESOURCES=5 i_rope,1 i_axle,2 i_gears,20 i_ingot_iron
-CATEGORY=Buildings - Other
-SUBSECTION=Hooks, Pulleys and Winches
-DESCRIPTION=Winch
-DUPELIST=01ea9,01eaa,01eab,01eac,01ead,01eae,01eaf
+//winch (east)
 
 [ITEMDEF 01ea9]
-//winch
-DUPEITEM=01ea8
+DEFNAME=i_winch_east
+CATEGORY=Buildings - Other
+SUBSECTION=Hooks, Pulleys and Winches
+DESCRIPTION=Winch (east)
+DUPELIST=01eaa,01eab
 
 [ITEMDEF 01eaa]
-//winch
-DUPEITEM=01ea8
+//winch (east)
+DUPEITEM=01ea9
 
 [ITEMDEF 01eab]
-//winch
-DUPEITEM=01ea8
+//winch (east)
+DUPEITEM=01ea9
+
 
 [ITEMDEF 01eac]
-//winch
-DUPEITEM=01ea8
+//winch (south)
 
 [ITEMDEF 01ead]
-//winch
-DUPEITEM=01ea8
+DEFNAME=i_winch_south
+CATEGORY=Buildings - Other
+SUBSECTION=Hooks, Pulleys and Winches
+DESCRIPTION=Winch (south)
+DUPELIST=01eae,01eaf
 
 [ITEMDEF 01eae]
-//winch
-DUPEITEM=01ea8
+//winch (south)
+DUPEITEM=01ead
 
 [ITEMDEF 01eaf]
-//winch
-DUPEITEM=01ea8
+//winch (south)
+DUPEITEM=01ead
+
 
 [ITEMDEF 02710]
 //tightrope
