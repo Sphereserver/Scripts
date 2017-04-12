@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Friday, Feb 10, 2017
+// FILE LAST UPDATED: Wednesday, April 12, 2017
 //
 VERSION=0.56d
 
@@ -15192,6 +15192,7 @@ ON=@Hit
          ARGN2 = <DEF.dam_physical>
       ENDIF
    END
+   ENDDO
 ON=@GetHit
    //Thrown Weapon Attack (unholy bones)
    IF (<DISTANCE> > 2) && !(<R5>)
