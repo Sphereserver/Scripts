@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Friday, Feb 10, 2017
+// FILE LAST UPDATED: Wednesday, April 12, 2017
 //
 VERSION=0.56d
 
@@ -373,6 +373,7 @@ snd_monster_insect4           962
 snd_monster_insect5           963
 snd_animal_kirin              965
 snd_animal_kirin2             966
+snd_animal_llama1             1011
 snd_monster_longhorn1         1016
 snd_monster_longhorn2         1017
 snd_monster_longhorn3         1018
@@ -1271,7 +1272,7 @@ dam_noreveal            04000   // damage that does not reveal the attacker.
 dam_nounparalyze        08000   // victim won't be unparalyzed
 dam_fixed               010000	// damage will not be recalculated with default checks, lowering it because of armor, resistances ...
 
-[defname can_i_flags]
+[DEFNAME can_i_flags]
 can_i_door				000001		// is a door uflag4_door
 can_i_water				000002		// need to swim in it. uflag1_water
 can_i_platform			000004		// we can walk on top of it. (even tho the item itself might block) uflag2_platform
@@ -1504,7 +1505,7 @@ los_fishing            00800   // Do not allow LOS path checking to go through o
 los_nc_water           01000   // Do not allow LOS path checking to go through water.
 
 
-[defname passive_buff_icons]
+[DEFNAME passive_buff_icons]
 passivebufficon_Hidden				1012
 passivebufficon_ActiveMeditation	1013
 passivebufficon_Incognito			1032
@@ -1513,7 +1514,7 @@ passivebufficon_Polymorph			1035
 passivebufficon_GargoyleFly			1054
 passivebufficon_Despair				1060
 
-[defname debuff_icons]
+[DEFNAME debuff_icons]
 debufficon_NoRemount			1001
 debufficon_DeathStrike			1006
 debufficon_EvilOmen				1007
@@ -1576,6 +1577,9 @@ debufficon_InjectedStrike		1161
 debufficon_PlayingTheOdds		1164
 debufficon_DragonTurtle			1165
 debufficon_Thrust				1168
+debufficon_Sparks				1176
+debufficon_Swarm				1177
+debufficon_BoneBreaker			1178
 
 [DEFNAME buff_icons]
 bufficon_NoRearm				1002
@@ -1679,6 +1683,9 @@ bufficon_KurakAmbushersEssence	1172
 bufficon_BarakoDraftOfMight		1173
 bufficon_UraliTranceTonic		1174
 bufficon_SakkhraProphylaxis		1175
+bufficon_Sparks					1179
+bufficon_Swarm					1180
+bufficon_BoneBreaker			1181
 
 [DEFNAME buff_clilocs]
 buffcliloc_Empty				1070722
@@ -1744,6 +1751,24 @@ buffcliloc_StoneForm_1			1080145
 buffcliloc_StoneForm_2			1080146
 buffcliloc_CriminalStatus_1		1153802
 buffcliloc_CriminalStatus_2		1153828
+buffcliloc_BarrabHemolymphConcentrate_1	1156724
+buffcliloc_BarrabHemolymphConcentrate_2	1156738
+buffcliloc_JukariBurnPoultice_1		1156726
+buffcliloc_JukariBurnPoultice_2		1156739
+buffcliloc_KurakAmbushersEssence_1	1156728
+buffcliloc_KurakAmbushersEssence_2	1156740
+buffcliloc_BarakoDraftOfMight_1		1156729
+buffcliloc_BarakoDraftOfMight_2		1156741
+buffcliloc_UraliTranceTonic_1		1156734
+buffcliloc_UraliTranceTonic_2		1156742
+buffcliloc_SakkhraProphylaxis_1		1156732
+buffcliloc_SakkhraProphylaxis_2		1156743
+buffcliloc_Sparks_1					1157330
+buffcliloc_Sparks_2					1157329
+buffcliloc_Swarm_1					1157328
+buffcliloc_Swarm_2					1157327
+buffcliloc_BoneBreaker_1			1157318
+buffcliloc_BoneBreaker_2			1157319
 
 [DEFNAME charheight]
 height_01 28 //DEFNAME=c_ogre
