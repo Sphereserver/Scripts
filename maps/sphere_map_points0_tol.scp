@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Jan 7, 2017
+// FILE LAST UPDATED: Wednesday, April 12, 2017
 //
 VERSION=0.56d
 
@@ -34,5 +34,9 @@ VERSION=0.56d
 5135,993,0,0=7031,2099,0,0=tp_Destard_Passage2
 5135,992,0,0=7031,2098,0,0=tp_Destard_Passage3
 5135,991,0,0=7031,2097,0,0=tp_Destard_Passage4
+
+//The only way to reach Dryad Queen's Home is clicking on an banner (i_curtain_banner_nw, color=016)
+//located here on this P, so there's no teleport here, this line is just for documentation purposes
+//4445,3695,16,1=856,2783,5,5=tp_FireIsland_DryadQueensHome
 
 [EOF]

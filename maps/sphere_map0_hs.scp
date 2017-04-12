@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Wednesday, Jan 25, 2017
+// FILE LAST UPDATED: Wednesday, April 12, 2017
 //
 VERSION=0.56d
 
@@ -32,6 +32,24 @@ NAME=Castle Blackthorn Dungeon
 GROUP=HS Dungeons
 P=6432,2679,0,0
 RECT=6156,2294,6507,2825,0
+FLAGS=region_flag_nobuilding|region_flag_underground|region_antimagic_recall_in
+EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
+TAG.MUSIC=midi_dungeon9
+
+[AREADEF a_island_of_the_soulbinder]
+NAME=Island of the Soulbinder
+GROUP=HS Dungeons
+P=6431,1236,10,0
+RECT=6273,1089,6591,1407,0
+FLAGS=region_flag_nobuilding|region_flag_underground|region_antimagic_recall_in
+EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
+TAG.MUSIC=midi_dungeon9
+
+[AREADEF a_wreck_of_the_ararat]
+NAME=Wreck of the Ararat
+GROUP=HS Dungeons
+P=6278,1786
+RECT=6254,1614,6461,1804,0
 FLAGS=region_flag_nobuilding|region_flag_underground|region_antimagic_recall_in
 EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
 TAG.MUSIC=midi_dungeon9

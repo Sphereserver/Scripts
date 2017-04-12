@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Jan 7, 2017
+// FILE LAST UPDATED: Wednesday, April 12, 2017
 //
 VERSION=0.56d
 
@@ -58,5 +58,51 @@ VERSION=0.56d
 965,1716,0,5=878,2102,40,5=tp_VolcanoCaldera_ValleyOfEodon2
 966,1716,0,5=879,2102,40,5=tp_VolcanoCaldera_ValleyOfEodon3
 967,1716,0,5=880,2102,40,5=tp_VolcanoCaldera_ValleyOfEodon4
+
+224,1724,6,5=853,1777,0,5=tp_ValleyOfEodon_MyrmidexPits1
+224,1725,6,5=854,1777,0,5=tp_ValleyOfEodon_MyrmidexPits2
+853,1776,10,5=225,1724,6,5=tp_MyrmidexPits_ValleyOfEodon1
+854,1776,10,5=225,1725,6,5=tp_MyrmidexPits_ValleyOfEodon2
+855,1776,10,5=225,1725,6,5=tp_MyrmidexPits_ValleyOfEodon3
+
+119,1682,0,5=712,2303,0,5=tp_ValleyOfEodon_DepthsOfTheMyrmidexPits1
+119,1683,0,5=712,2304,0,5=tp_ValleyOfEodon_DepthsOfTheMyrmidexPits2
+119,1684,0,5=712,2305,0,5=tp_ValleyOfEodon_DepthsOfTheMyrmidexPits3
+711,2301,0,5=118,1682,0,5=tp_DepthsOfTheMyrmidexPits_ValleyOfEodon1
+711,2302,0,5=118,1682,0,5=tp_DepthsOfTheMyrmidexPits_ValleyOfEodon2
+711,2303,0,5=118,1683,0,5=tp_DepthsOfTheMyrmidexPits_ValleyOfEodon3
+711,2304,0,5=118,1683,0,5=tp_DepthsOfTheMyrmidexPits_ValleyOfEodon4
+711,2305,0,5=118,1683,0,5=tp_DepthsOfTheMyrmidexPits_ValleyOfEodon5
+711,2306,0,5=118,1684,0,5=tp_DepthsOfTheMyrmidexPits_ValleyOfEodon6
+711,2307,0,5=118,1684,0,5=tp_DepthsOfTheMyrmidexPits_ValleyOfEodon7
+
+492,1613,40,5=542,2471,0,5=tp_ValleyOfEodon_KotlCity1
+492,1614,40,5=542,2471,0,5=tp_ValleyOfEodon_KotlCity2
+493,1613,40,5=542,2471,0,5=tp_ValleyOfEodon_KotlCity3
+493,1614,40,5=542,2471,0,5=tp_ValleyOfEodon_KotlCity4
+542,2478,0,5=497,1609,40,5=tp_KotlCity_ValleyOfEodon1
+542,2479,0,5=497,1609,40,5=tp_KotlCity_ValleyOfEodon2
+543,2478,0,5=497,1609,40,5=tp_KotlCity_ValleyOfEodon3
+543,2479,0,5=497,1609,40,5=tp_KotlCity_ValleyOfEodon4
+
+643,2307,0,5=542,2471,0,5=tp_KotlCityCenter_KotlCity1
+643,2308,0,5=542,2471,0,5=tp_KotlCityCenter_KotlCity2
+644,2307,0,5=542,2471,0,5=tp_KotlCityCenter_KotlCity3
+644,2308,0,5=542,2471,0,5=tp_KotlCityCenter_KotlCity4
+638,2399,0,5=587,2462,0,5=tp_KotlCity_KotlCityTimeRoom1
+638,2400,0,5=587,2462,0,5=tp_KotlCity_KotlCityTimeRoom2
+639,2399,0,5=587,2462,0,5=tp_KotlCity_KotlCityTimeRoom3
+639,2400,0,5=587,2462,0,5=tp_KotlCity_KotlCityTimeRoom4
+575,2463,0,5=542,2471,0,5=tp_KotlCityTimeRoom_KotlCity1
+575,2464,0,5=542,2471,0,5=tp_KotlCityTimeRoom_KotlCity2
+576,2463,0,5=542,2471,0,5=tp_KotlCityTimeRoom_KotlCity3
+576,2464,0,5=542,2471,0,5=tp_KotlCityTimeRoom_KotlCity4
+//632,2432,-20,5=543,2308,0,5=tp_KotlCityTimeRoom_KotlCityCenter	//add i_moongate_new (color=079e) here
+
+856,2783,5,5=4445,3695,16,1=tp_DryadQueensHome_FireIsland	//add i_fx_sparkle here
+
+//The only way to reach Kotl Antechamber is clicking on an skull (item 09a1d) located here on this P
+//after complete an quest, so there's no teleport here, this line is just for documentation purposes
+//488,1856,109,5=896,2304,40,5=tp_ValleyOfEodon_KotlAntechamber
 
 [EOF]

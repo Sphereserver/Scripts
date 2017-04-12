@@ -7,13 +7,13 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Wednesday, Jan 25, 2017
+// FILE LAST UPDATED: Wednesday, April 12, 2017
 //
 VERSION=0.56d
 
 [Teleporters]
-535,992,0,0=6986,339,0,0=tp_Yew_Heartwood	//add i_fx_field_paralyze here
-6986,339,0,0=535,992,0,0=tp_Heartwood_Yew	//add i_fx_field_paralyze here
+535,992,0,0=6985,340,0,0=tp_Yew_Heartwood	//add i_fx_field_paralyze here
+6984,338,0,0=535,994,0,0=tp_Heartwood_Yew	//add i_fx_field_paralyze here
 
 1714,2997,0,0=6309,892,-1,0=tp_TrinsicTerritory_PaintedCaves1
 1714,2996,0,0=6309,891,-1,0=tp_TrinsicTerritory_PaintedCaves2
