@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Wednesday, April 12, 2017
+// FILE LAST UPDATED: Friday, April 21, 2017
 //
 VERSION=0.56d
 
@@ -23,67 +23,67 @@ deffood		{ i_fruit_grapes 1 i_ham 1 i_cheese_cut 1 i_muffin 1 i_fish_cut_cooked 
 guardcall	GUARD,GUARDS
 
 [DEFNAME mount_items]
-// This contain the list of the mount/mountid the format is:
-// mount_0x<dispid hex> <mount item id hex>
+// This list contains all mounts/mountmemories required to make NPCs act as mount.
+// Syntax: mount_0x<char dispid (hex)> <mount memory id>
 // ---------------------------------------------------------
 // Pre-T2A
-mount_0xc8	03e9f	// dirty horse
-mount_0xcc	03ea2	// brown horse
-mount_0xe2	03ea0	// gray horse
-mount_0xe4	03ea1	// tan horse
+mount_0xc8	i_mt_horse_tan                 // horse
+mount_0xcc	i_mt_horse_brown_dk            // horse
+mount_0xe2	i_mt_horse_gray                // horse
+mount_0xe4	i_mt_horse_brown_lt            // horse
 // T2A
-mount_0xd2	03ea3	// desert ostard
-mount_0xda	03ea4	// frenzied ostard
-mount_0xdb	03ea5	// forest ostard
-mount_0xdc	03ea6	// llama
+mount_0xd2	i_mt_ostard_desert             // desert ostard
+mount_0xda	i_mt_ostard_frenzied           // frenzied ostard
+mount_0xdb	i_mt_ostard_forest             // forest ostard
+mount_0xdc	i_mt_llama                     // llama
 // LBR
-mount_0xa9	03e95	// fire beetle
-mount_0xaa	03eab	// ethereal llama
-mount_0xab	03eac	// ethereal forest ostard
-mount_0xb1	03eb5	// dread warhorse
-mount_0xb2	03eb6	// unknown mare
-mount_0xb3	03eb7	// unknown mare 2
-mount_0xbb	03eba	// ridgeback
-mount_0xbc	03eb8	// savage ridgeback
-mount_0xbe	03e9e	// fire steed
-mount_0xbf	03e9c	// ethereal kirin
-mount_0xc0	03e9b	// ethereal unicorn
-mount_0xc1	03e9a	// ethereal ridgeback
-mount_0xc2	03e98	// ethereal swamp dragon
-mount_0xc3	03e97	// ethereal giant beetle
-mount_0x72	03ea9	// dark steed
-mount_0x73	03eaa	// ethereal horse
-mount_0x74	03ea7	// nightmare
-mount_0x75	03ea8	// silver steed
-mount_0x76	03eb2	// britannian warhorse
-mount_0x77	03eb1	// mage counsil warhorse
-mount_0x78	03eaf	// minax warhorse
-mount_0x79	03eb0	// shadowlord warhorse
-mount_0x7a	03eb4	// unicorn
-mount_0x84	03ead	// kirin
-mount_0x90	03eb3	// sea horse
-mount_0x317	03ebc	// giant beetle
-mount_0x319	03ebb	// skeletal mount
-mount_0x31a	03ebd	// swamp dragon
-mount_0x31f	03ebe	// armored swamp dragon
+mount_0xa9	i_mt_beetle_fire               // fire beetle
+mount_0xaa	i_mt_llama_ethereal            // ethereal llama
+mount_0xab	i_mt_ostard_ethereal           // ethereal forest ostard
+mount_0xb1	i_mt_warhorse_dread            // dread warhorse
+mount_0xb2	i_mt_unknown_mare              // unknown mare
+mount_0xb3	i_mt_unknown_mare2             // unknown mare 2
+mount_0xbb	i_mt_ridgeback                 // ridgeback
+mount_0xbc	i_mt_savage_ridgeback          // savage ridgeback
+mount_0xbe	i_mt_steed_fire                // fire steed
+mount_0xbf	i_mt_kirin_ethereal            // ethereal kirin
+mount_0xc0	i_mt_unicorn_ethereal          // ethereal unicorn
+mount_0xc1	i_mt_ridgeback_ethereal        // ethereal ridgeback
+mount_0xc2	i_mt_swamp_dragon_ethereal     // ethereal swamp dragon
+mount_0xc3	i_mt_giant_beetle_ethereal     // ethereal giant beetle
+mount_0x72	i_mt_steed_dark                // dark steed
+mount_0x73	i_mt_steed_ethereal            // ethereal horse
+mount_0x74	i_mt_nightmare                 // nightmare
+mount_0x75	i_mt_steed_silver              // silver steed
+mount_0x76	i_mt_warhorse_truebritannians  // true britannians warhorse
+mount_0x77	i_mt_warhorse_magecouncil      // mage council warhorse
+mount_0x78	i_mt_warhorse_minax            // minax warhorse
+mount_0x79	i_mt_warhorse_shadowlords      // shadowlords warhorse
+mount_0x7a	i_mt_unicorn                   // unicorn
+mount_0x84	i_mt_kirin                     // kirin
+mount_0x90	i_mt_sea_horse                 // sea horse
+mount_0x317	i_mt_giant_beetle              // giant beetle
+mount_0x319	i_mt_skeletal_mount            // skeletal mount
+mount_0x31a	i_mt_swamp_dragon              // swamp dragon
+mount_0x31f	i_mt_armored_swamp_dragon      // armored swamp dragon
 // SE
-mount_0xf3	03e94	// hiryu
+mount_0xf3	i_mt_hiryu                     // hiryu
 // ML
-mount_0xd5	03ec5	// polar bear
-mount_0x114	03e90   // reptalon
-mount_0x115	03e91   // cu sidhe
-mount_0x11c	03e92   // armored steed (mondain's steed, charger of the fallen)
+mount_0xd5	i_mt_bear_polar                // polar bear
+mount_0x114	i_mt_reptalon                  // reptalon
+mount_0x115	i_mt_cu_sidhe                  // cu sidhe
+mount_0x11c	i_mt_armor_steed               // armored steed (mondain's steed, charger of the fallen)
 // SA
-mount_0x1b0	03ec6	// armored boura
-mount_0x4e6	03ec7	// wild tiger
-mount_0x4e7	03ec8	// ethereal tiger
+mount_0x1b0	i_mt_boura_armoured            // armored boura
+mount_0x4e6	i_mt_wild_tiger                // wild tiger
+mount_0x4e7	i_mt_tiger_ethereal            // ethereal tiger
 // HS
-mount_0x42d	03ec9	// ancient hellhound
+mount_0x42d	i_mt_hellhound_ancient         // ancient hellhound
 // TOL
-mount_0x579	03eca	// tarantula
-mount_0x57f	03ecb	// lasher
-mount_0x580	03ecd	// palomino
-mount_0x582	03ecc	// windrunner
+mount_0x579	i_mt_tarantula                 // tarantula
+mount_0x57f	i_mt_lasher                    // lasher
+mount_0x580	i_mt_palomino                  // palomino
+mount_0x582	i_mt_windrunner                // windrunner
 
 [DEFNAME hues]
 color_text                   -1
@@ -1893,10 +1893,10 @@ height_072 16 //DEFNAME=c_steed_dark
 height_073 16 //DEFNAME=c_steed_ethereal
 height_074 16 //DEFNAME=c_nightmare
 height_075 16 //DEFNAME=c_steed_silver
-height_076 16 //DEFNAME=c_warhorse_white
-height_077 16 //DEFNAME=c_warhorse_blue
-height_078 16 //DEFNAME=c_warhorse_red
-height_079 16 //DEFNAME=c_warhorse_green
+height_076 16 //DEFNAME=c_warhorse_truebritannians
+height_077 16 //DEFNAME=c_warhorse_magecouncil
+height_078 16 //DEFNAME=c_warhorse_minax
+height_079 16 //DEFNAME=c_warhorse_shadowlords
 height_07a 16 //DEFNAME=c_unicorn
 height_07b 30 //DEFNAME=c_forest_lord
 height_07c 16 //DEFNAME=c_evilamge_unknown

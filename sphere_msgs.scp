@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2016
+// SPHERE by : Menasoft ©1997-2017
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, Sept 26, 2016
+// FILE LAST UPDATED: Friday, April 21, 2017
 //
 VERSION=0.56d
 
@@ -191,6 +191,8 @@ EMOTE_DEF_UNICODE	0
 //forensics_name				"It looks to have been killed by %s"
 //forensics_reach				"You are too far away to tell much."
 //forensics_timer				"This is %s and it is %lld seconds old. "
+//gargoyle_fly_cantcurrentform	"You can't fly in your current form!"
+//gargoyle_fly_cantdead			"You may not fly while dead."
 //gmpage_prompt					"Describe your comment or problem"
 //grandmaster_mark				"%s crafted by %s"
 //healing_am					"Your resurrection attempt is blocked by antimagic."
@@ -1177,6 +1179,7 @@ EMOTE_DEF_UNICODE	0
 //itemstatus_wellworn			"well worn"
 //itemstatus_badly				"badly damaged"
 //itemstatus_fall_apart			"about to fall apart"
+//web_browser_start				"Please wait for your web browser to start..."
 //web_noeffect					"You have no effect on the web"
 //web_destroy					"You destroy the web"
 //web_weaken					"You weaken the web"

@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, Feb 20, 2017
+// FILE LAST UPDATED: Friday, April 21, 2017
 //
 VERSION=0.56d
 
@@ -564,28 +564,22 @@ SUBSECTION=Deck
 DESCRIPTION=Deck
 
 [ITEMDEF 03e90]
-//ship (really used as reptalon equipped)
-DEFNAME=i_mt_reptalon
-TYPE=t_eq_horse
-LAYER=layer_horse
-TDATA3=c_reptalon
-WEIGHT=0
+TYPE=t_ship_other
+CATEGORY=Ship Parts
+SUBSECTION=Ship Side
+DESCRIPTION=Ship Side
 
 [ITEMDEF 03e91]
-//ship (really used as cu-sidhe equipped)
-DEFNAME=i_mt_cu_sidhe
-TYPE=t_eq_horse
-LAYER=layer_horse
-TDATA3=c_cu_sidhe
-WEIGHT=0
+TYPE=t_ship_other
+CATEGORY=Ship Parts
+SUBSECTION=Ship Side
+DESCRIPTION=Ship Side
 
 [ITEMDEF 03e92]
-//hold (really used as armored steed equipped)
-DEFNAME=i_mt_armor_steed
-TYPE=t_eq_horse
-LAYER=layer_horse
-TDATA3=c_armor_steed
-WEIGHT=0
+TYPE=t_ship_other
+CATEGORY=Ship Parts
+SUBSECTION=Hatch
+DESCRIPTION=Hatch (West open)
 
 [ITEMDEF 03e93]
 DEFNAME=i_ship_hatch_w
@@ -596,20 +590,16 @@ SUBSECTION=Hatch
 DESCRIPTION=Hatch (West)
 
 [ITEMDEF 03e94]
-//ship (really used as hiryu equipped)
-DEFNAME=i_mt_hiryu
-TYPE=t_eq_horse
-LAYER=layer_horse
-TDATA3=c_hiryu
-WEIGHT=0
+TYPE=t_ship_other
+CATEGORY=Ship Parts
+SUBSECTION=Ship Side
+DESCRIPTION=Ship Side
 
 [ITEMDEF 03e95]
-//prow (really used as fire beetle equipped)
-DEFNAME=i_mt_beetle_fire
-TYPE=t_eq_horse
-LAYER=layer_horse
-TDATA3=c_beetle_fire
-WEIGHT=0
+TYPE=t_ship_other
+CATEGORY=Ship Parts
+SUBSECTION=Prow
+DESCRIPTION=Prow (hatch closed)
 
 [ITEMDEF 03e96]
 TYPE=t_ship_other
@@ -618,44 +608,34 @@ SUBSECTION=Prow
 DESCRIPTION=Prow (hatch open)
 
 [ITEMDEF 03e97]
-//prow (really used as ethereal giant beetle equipped)
-DEFNAME=i_mt_giant_beetle_ethereal
-TYPE=t_eq_horse
-LAYER=layer_horse
-TDATA3=c_giant_beetle_ethereal
-WEIGHT=0
+TYPE=t_ship_other
+CATEGORY=Ship Parts
+SUBSECTION=Prow
+DESCRIPTION=Prow (hatch open)
 
 [ITEMDEF 03e98]
-//deck (really used as ethereal swamp dragon equipped)
-DEFNAME=i_mt_swamp_dragon_ethereal
-TYPE=t_eq_horse
-LAYER=layer_horse
-TDATA3=c_swamp_dragon_ethereal
-WEIGHT=0
+TYPE=t_ship_other
+CATEGORY=Ship Parts
+SUBSECTION=Deck
+DESCRIPTION=Deck
 
 [ITEMDEF 03e9a]
-//prow (really used as ethereal ridgeback equipped)
-DEFNAME=i_mt_ridgeback_ethereal
-TYPE=t_eq_horse
-LAYER=layer_horse
-TDATA3=c_ridgeback_ethereal
-WEIGHT=0
+TYPE=t_ship_other
+CATEGORY=Ship Parts
+SUBSECTION=Prow
+DESCRIPTION=Prow (hatch closed)
 
 [ITEMDEF 03e9b]
-//ship (really used as ethereal unicorn equipped)
-DEFNAME=i_mt_unicorn_ethereal
-TYPE=t_eq_horse
-LAYER=layer_horse
-TDATA3=c_unicorn_ethereal
-WEIGHT=0
+TYPE=t_ship_other
+CATEGORY=Ship Parts
+SUBSECTION=Ship Side
+DESCRIPTION=Ship Side
 
 [ITEMDEF 03e9c]
-//ship (really used as ethereal kirin equipped)
-DEFNAME=i_mt_kirin_ethereal
-TYPE=t_eq_horse
-LAYER=layer_horse
-TDATA3=c_kirin_ethereal
-WEIGHT=0
+TYPE=t_ship_other
+CATEGORY=Ship Parts
+SUBSECTION=Ship Side
+DESCRIPTION=Ship Side
 
 [ITEMDEF 03e9d]
 TYPE=t_ship_other
@@ -664,132 +644,100 @@ SUBSECTION=Ship Side
 DESCRIPTION=Ship Side
 
 [ITEMDEF 03e9e]
-//ship (really used as fire steed equipped)
-DEFNAME=i_mt_steed_fire
-TYPE=t_eq_horse
-LAYER=layer_horse
-TDATA3=c_steed_fire
-WEIGHT=0
+TYPE=t_ship_other
+CATEGORY=Ship Parts
+SUBSECTION=Ship Side
+DESCRIPTION=Ship Side
 
 [ITEMDEF 03e9f]
-//ship (really used as horse equipped)
-DEFNAME=i_mt_horse_tan
-TYPE=t_eq_horse
-LAYER=layer_horse
-TDATA3=c_horse_tan
-WEIGHT=0
+TYPE=t_ship_other
+CATEGORY=Ship Parts
+SUBSECTION=Ship Side
+DESCRIPTION=Ship Side
 
 [ITEMDEF 03ea0]
-//ship (really used as horse equipped)
-DEFNAME=i_mt_horse_gray
-TYPE=t_eq_horse
-LAYER=layer_horse
-TDATA3=c_horse_gray
-WEIGHT=0
+TYPE=t_ship_other
+CATEGORY=Ship Parts
+SUBSECTION=Ship Side
+DESCRIPTION=Ship Side
 
 [ITEMDEF 03ea1]
-//deck (really used as horse equipped)
-DEFNAME=i_mt_horse_brown_lt
-TYPE=t_eq_horse
-LAYER=layer_horse
-TDATA3=c_horse_brown_lt
-WEIGHT=0
+TYPE=t_ship_other
+CATEGORY=Ship Parts
+SUBSECTION=Deck
+DESCRIPTION=Deck
 
 [ITEMDEF 03ea2]
-//unused (really used as horse equipped)
-DEFNAME=i_mt_horse_brown_dk
-TYPE=t_eq_horse
-LAYER=layer_horse
-TDATA3=c_horse_brown_dk
-WEIGHT=0
+//unused
 
 [ITEMDEF 03ea3]
-//ship (really used as desert ostard equipped)
-DEFNAME=i_mt_ostard_desert
-TYPE=t_eq_horse
-LAYER=layer_horse
-TDATA3=c_ostard_desert
-WEIGHT=0
+TYPE=t_ship_other
+CATEGORY=Ship Parts
+SUBSECTION=Deck
+DESCRIPTION=Deck
 
 [ITEMDEF 03ea4]
-//ship (really used as frenzied ostard equipped)
-DEFNAME=i_mt_ostard_frenzied
-TYPE=t_eq_horse
-LAYER=layer_horse
-TDATA3=c_ostard_frenzied
-WEIGHT=0
+TYPE=t_ship_plank
+TDATA1=03ea5
+CATEGORY=Ship Parts
+SUBSECTION=Ship Side
+DESCRIPTION=Ship Side (unlocked)
 
 [ITEMDEF 03ea5]
-//ship (really used as forest ostard equipped)
-DEFNAME=i_mt_ostard_forest
-TYPE=t_eq_horse
-LAYER=layer_horse
-TDATA3=c_ostard_forest
-WEIGHT=0
+TYPE=t_ship_side_locked
+TDATA1=03ea4
+CATEGORY=Ship Parts
+SUBSECTION=Ship Side
+DESCRIPTION=Ship Side (locked)
 
 [ITEMDEF 03ea6]
-//ship (really used as llama equipped)
-DEFNAME=i_mt_llama
-TYPE=t_eq_horse
-LAYER=layer_horse
-TDATA3=c_llama
-WEIGHT=0
+TYPE=t_ship_other
+CATEGORY=Ship Parts
+SUBSECTION=Ship Side
+DESCRIPTION=Ship Side
 
 [ITEMDEF 03ea7]
-//ship (really used as nightmare equipped)
-DEFNAME=i_mt_nightmare
-TYPE=t_eq_horse
-LAYER=layer_horse
-TDATA3=c_nightmare
-WEIGHT=0
+TYPE=t_ship_other
+CATEGORY=Ship Parts
+SUBSECTION=Ship Side
+DESCRIPTION=Ship Side
 
 [ITEMDEF 03ea8]
-//ship (really used as silver steed equipped)
-DEFNAME=i_mt_steed_silver
-TYPE=t_eq_horse
-LAYER=layer_horse
-TDATA3=c_steed_silver
-WEIGHT=0
+TYPE=t_ship_other
+CATEGORY=Ship Parts
+SUBSECTION=Ship Side
+DESCRIPTION=Ship Side
 
 [ITEMDEF 03ea9]
-//ship (really used as dark steed equipped)
-DEFNAME=i_mt_steed_dark
-TYPE=t_eq_horse
-LAYER=layer_horse
-TDATA3=c_steed_dark
-WEIGHT=0
+TYPE=t_ship_side
+TDATA1=03ed3
+CATEGORY=Ship Parts
+SUBSECTION=Ship Door
+DESCRIPTION=Ship Door
 
 [ITEMDEF 03eaa]
-//deck (really used as ethereal horse equipped)
-DEFNAME=i_mt_steed_ethereal
-TYPE=t_eq_horse
-LAYER=layer_horse
-TDATA3=c_steed_ethereal
-WEIGHT=0
+TYPE=t_ship_other
+CATEGORY=Ship Parts
+SUBSECTION=Deck
+DESCRIPTION=Deck
 
 [ITEMDEF 03eab]
-//ship (really used as ethereal llama equipped)
-DEFNAME=i_mt_llama_ethereal
-TYPE=t_eq_horse
-LAYER=layer_horse
-TDATA3=c_llama_ethereal
-WEIGHT=0
+TYPE=t_ship_other
+CATEGORY=Ship Parts
+SUBSECTION=Ship Side
+DESCRIPTION=Ship Side
 
 [ITEMDEF 03eac]
-//deck (really used as ethereal forest ostard equipped)
-DEFNAME=i_mt_ostard_ethereal
-TYPE=t_eq_horse
-LAYER=layer_horse
-TDATA3=c_ostard_ethereal
-WEIGHT=0
+TYPE=t_ship_other
+CATEGORY=Ship Parts
+SUBSECTION=Deck
+DESCRIPTION=Deck
 
 [ITEMDEF 03ead]
-//deck (really used as kirin equipped)
-DEFNAME=i_mt_kirin
-TYPE=t_eq_horse
-LAYER=layer_horse
-TDATA3=c_kirin
-WEIGHT=0
+TYPE=t_ship_other
+CATEGORY=Ship Parts
+SUBSECTION=Deck
+DESCRIPTION=Deck
 
 [ITEMDEF 03eae]
 DEFNAME=i_ship_hatch_n
@@ -800,84 +748,66 @@ SUBSECTION=Hatch
 DESCRIPTION=Hatch (North closed)
 
 [ITEMDEF 03eaf]
-//hold (really used as minax warhorse equipped)
-DEFNAME=i_mt_warhorse_red
-TYPE=t_eq_horse
-LAYER=layer_horse
-TDATA3=c_warhorse_red
-WEIGHT=0
+TYPE=t_ship_other
+CATEGORY=Ship Parts
+SUBSECTION=Hatch
+DESCRIPTION=Hatch (North open)
 
 [ITEMDEF 03eb0]
-//deck (really used as shadowlord warhorse equipped)
-DEFNAME=i_mt_warhorse_green
-TYPE=t_eq_horse
-LAYER=layer_horse
-TDATA3=c_warhorse_green
-WEIGHT=0
+TYPE=t_ship_other
+CATEGORY=Ship Parts
+SUBSECTION=Deck
+DESCRIPTION=Deck
 
 [ITEMDEF 03eb1]
-//ship (really used as mage council warhorse equipped)
-DEFNAME=i_mt_warhorse_blue
-TYPE=t_eq_horse
-LAYER=layer_horse
-TDATA3=c_warhorse_blue
-WEIGHT=0
+TYPE=t_ship_side_locked
+TDATA1=03ed5
+CATEGORY=Ship Parts
+SUBSECTION=Ship Side
+DESCRIPTION=Ship Side (locked)
 
 [ITEMDEF 03eb2]
-//ship (really used as britannian warhorse equipped)
-DEFNAME=i_mt_warhorse_white
-TYPE=t_eq_horse
-LAYER=layer_horse
-TDATA3=c_warhorse_white
-WEIGHT=0
+TYPE=t_ship_side_locked
+TDATA1=03ed4
+CATEGORY=Ship Parts
+SUBSECTION=Ship Side
+DESCRIPTION=Ship Side (locked)
 
 [ITEMDEF 03eb3]
-//stern (really used as sea horse equipped)
-DEFNAME=i_mt_horse_sea
-TYPE=t_eq_horse
-LAYER=layer_horse
-TDATA3=c_horse_sea
-WEIGHT=0
+TYPE=t_ship_other
+CATEGORY=Ship Parts
+SUBSECTION=Ship Side
+DESCRIPTION=Ship Side
 
 [ITEMDEF 03eb4]
-//prow (really used as unicorn equipped)
-DEFNAME=i_mt_unicorn
-TYPE=t_eq_horse
-LAYER=layer_horse
-TDATA3=c_unicorn
-WEIGHT=0
+TYPE=t_ship_other
+CATEGORY=Ship Parts
+SUBSECTION=Prow
+DESCRIPTION=Prow (hatch closed)
 
 [ITEMDEF 03eb5]
-//ship (really used as dread warhorse equipped)
-DEFNAME=i_mt_warhorse_dread
-TYPE=t_eq_horse
-LAYER=layer_horse
-TDATA3=c_warhorse_dread
-WEIGHT=0
+TYPE=t_ship_other
+CATEGORY=Ship Parts
+SUBSECTION=Ship Side
+DESCRIPTION=Ship Side
 
 [ITEMDEF 03eb6]
-//ship (really used as unknown mare equipped)
-DEFNAME=i_mt_unknown_mare
-TYPE=t_eq_horse
-LAYER=layer_horse
-TDATA3=0b2
-WEIGHT=0
+TYPE=t_ship_other
+CATEGORY=Ship Parts
+SUBSECTION=Ship Side
+DESCRIPTION=Ship Side
 
 [ITEMDEF 03eb7]
-//hold (really used as unknown mare2 equipped)
-DEFNAME=i_mt_unknown_mare2
-TYPE=t_eq_horse
-LAYER=layer_horse
-TDATA3=0b3
-WEIGHT=0
+TYPE=t_ship_other
+CATEGORY=Ship Parts
+SUBSECTION=Hatch
+DESCRIPTION=Hatch (South open)
 
 [ITEMDEF 03eb8]
-//stern (really used as savage ridgeback equipped)
-DEFNAME=i_mt_savage_ridgeback
-TYPE=t_eq_horse
-LAYER=layer_horse
-TDATA3=c_savage_ridgeback
-WEIGHT=0
+TYPE=t_ship_other
+CATEGORY=Ship Parts
+SUBSECTION=Ship Side
+DESCRIPTION=Ship Side
 
 [ITEMDEF 03eb9]
 DEFNAME=i_ship_hatch_s
@@ -888,44 +818,34 @@ SUBSECTION=Hatch
 DESCRIPTION=Hatch (South closed)
 
 [ITEMDEF 03eba]
-//prow (really used as ridgeback equipped)
-DEFNAME=i_mt_ridgeback
-TYPE=t_eq_horse
-LAYER=layer_horse
-TDATA3=c_ridgeback
-WEIGHT=0
+TYPE=t_ship_other
+CATEGORY=Ship Parts
+SUBSECTION=Prow
+DESCRIPTION=Prow (hatch open)
 
 [ITEMDEF 03ebb]
-//rudder (really used as skeletal mount equipped)
-DEFNAME=i_mt_skeletal_mount
-TYPE=t_eq_horse
-LAYER=layer_horse
-TDATA3=c_skeletal_mount
-WEIGHT=0
+TYPE=t_ship_other
+CATEGORY=Ship Parts
+SUBSECTION=Tiller
+DESCRIPTION=Tiller
 
 [ITEMDEF 03ebc]
-//rudder (really used as giant beetle equipped)
-DEFNAME=i_mt_giant_beetle
-TYPE=t_eq_horse
-LAYER=layer_horse
-TDATA3=c_giant_beetle
-WEIGHT=0
+TYPE=t_ship_other
+CATEGORY=Ship Parts
+SUBSECTION=Tiller
+DESCRIPTION=Tiller
 
 [ITEMDEF 03ebd]
-//tiller (really used as swamp dragon equipped)
-DEFNAME=i_mt_swamp_dragon
-TYPE=t_eq_horse
-LAYER=layer_horse
-TDATA3=c_swamp_dragon
-WEIGHT=0
+TYPE=t_ship_other
+CATEGORY=Ship Parts
+SUBSECTION=Tiller
+DESCRIPTION=Tiller
 
 [ITEMDEF 03ebe]
-//rudder (really used as armored swamp dragon equipped)
-DEFNAME=i_mt_armored_swamp_dragon
-TYPE=t_eq_horse
-LAYER=layer_horse
-TDATA3=c_armored_swamp_dragon
-WEIGHT=0
+TYPE=t_ship_other
+CATEGORY=Ship Parts
+SUBSECTION=Tiller
+DESCRIPTION=Tiller
 
 [ITEMDEF 03ebf]
 TYPE=t_ship_other
@@ -964,76 +884,55 @@ SUBSECTION=Tiller
 DESCRIPTION=Tiller
 
 [ITEMDEF 03ec5]
-//tiller (really used as polar bear equipped)
-DEFNAME=i_mt_bear_polar
-TYPE=t_eq_horse
-LAYER=layer_horse
-TDATA3=c_bear_polar
-WEIGHT=0
+TYPE=t_ship_other
+CATEGORY=Ship Parts
+SUBSECTION=Tiller
+DESCRIPTION=Tiller
 
 [ITEMDEF 03ec6]
-//tiller (really used as armored boura equipped)
-DEFNAME=i_mt_boura_armoured
-TYPE=t_eq_horse
-LAYER=layer_horse
-TDATA3=c_boura_armoured
-WEIGHT=0
+TYPE=t_ship_other
+CATEGORY=Ship Parts
+SUBSECTION=Tiller
+DESCRIPTION=Tiller
 
 [ITEMDEF 03ec7]
-//unused (really used as wild tiger equipped)
-DEFNAME=i_mt_wild_tiger
-TYPE=t_eq_horse
-LAYER=layer_horse
-TDATA3=c_wild_tiger
-WEIGHT=0
+//unused
 
 [ITEMDEF 03ec8]
-//mast (really used as ethereal tiger equipped)
-DEFNAME=i_mt_ethereal_tiger
-TYPE=t_eq_horse
-LAYER=layer_horse
-TDATA3=c_ethereal_tiger
-WEIGHT=0
+TYPE=t_ship_other
+CATEGORY=Ship Parts
+SUBSECTION=Mast
+DESCRIPTION=Mast (sail furled)
 
 [ITEMDEF 03ec9]
-//sail (really used as ancient hellhound equipped)
-DEFNAME=i_mt_hellhound_ancient
-TYPE=t_eq_horse
-LAYER=layer_horse
-TDATA3=c_hellhound_ancient
-WEIGHT=0
+TYPE=t_ship_other
+CATEGORY=Ship Parts
+SUBSECTION=Sail
+DESCRIPTION=Sail (furled)
 
 [ITEMDEF 03eca]
-//sail (really used as tarantula equipped)
-DEFNAME=i_mt_tarantula
-TYPE=t_eq_horse
-LAYER=layer_horse
-TDATA3=c_tarantula
-WEIGHT=0
+TYPE=t_ship_other
+CATEGORY=Ship Parts
+SUBSECTION=Sail
+DESCRIPTION=Sail (furled)
 
 [ITEMDEF 03ecb]
-//mast (really used as lasher equipped)
-DEFNAME=i_mt_lasher
-TYPE=t_eq_horse
-LAYER=layer_horse
-TDATA3=c_lasher
-WEIGHT=0
+TYPE=t_ship_other
+CATEGORY=Ship Parts
+SUBSECTION=Mast
+DESCRIPTION=Mast (sail furled)
 
 [ITEMDEF 03ecc]
-//sail (really used as windrunner equipped)
-DEFNAME=i_mt_windrunner
-TYPE=t_eq_horse
-LAYER=layer_horse
-TDATA3=c_windrunner
-WEIGHT=0
+TYPE=t_ship_other
+CATEGORY=Ship Parts
+SUBSECTION=Sail
+DESCRIPTION=Sail (furled)
 
 [ITEMDEF 03ecd]
-//spar (really used as palomino equipped)
-DEFNAME=i_mt_palomino
-TYPE=t_eq_horse
-LAYER=layer_horse
-TDATA3=c_palomino
-WEIGHT=0
+TYPE=t_ship_other
+CATEGORY=Ship Parts
+SUBSECTION=Sail
+DESCRIPTION=Sail (furled)
 
 [ITEMDEF 03ece]
 TYPE=t_ship_other
@@ -1085,7 +984,6 @@ TDATA1=03eb1
 CATEGORY=Ship Parts
 SUBSECTION=Ship Side
 DESCRIPTION=Ship Side (unlocked)
-
 
 [ITEMDEF 03edc]
 TYPE=t_ship_other
@@ -1161,18 +1059,24 @@ CATEGORY=Ship Parts
 SUBSECTION=Ship Side
 DESCRIPTION=Ship Side (unlocked)
 
-
 [ITEMDEF 03ee9]
-//ship part - duplicate of 3e85
+CATEGORY=Ship Parts
+SUBSECTION=Ship Side
+DESCRIPTION=Ship Side
 
 [ITEMDEF 03eea]
-//ship part - duplicate of 3e8a
+CATEGORY=Ship Parts
+SUBSECTION=Ship Side
+DESCRIPTION=Ship Side
 
 [ITEMDEF 03eeb]
-//ship part - duplicate of 3eb2
+CATEGORY=Ship Parts
+SUBSECTION=Ship Side
+DESCRIPTION=Ship Side
 
 [ITEMDEF 03eec]
-//ship part - duplicate of 3eb1
-
+CATEGORY=Ship Parts
+SUBSECTION=Ship Side
+DESCRIPTION=Ship Side
 
 [EOF]
