@@ -4616,4 +4616,52 @@ DUPELIST=04d0e
 DUPEITEM=04d0d
 
 
+[ITEMDEF 09e1d]
+DEFNAME=i_pillow_heart
+FLIP=1
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedding
+DESCRIPTION=Pillow (heart)
+DUPELIST=09e1e
+
+[ITEMDEF 09e1e]
+//pillow (heart)
+DUPEITEM=09e1d
+
+[ITEMDEF 09e1f]
+DEFNAME=i_pillow_hand
+FLIP=1
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedding
+DESCRIPTION=Pillow (hand)
+DUPELIST=09e20
+
+[ITEMDEF 09e20]
+//pillow (hand)
+DUPEITEM=09e1f
+
+[ITEMDEF 09e21]
+DEFNAME=i_pillow_shield
+FLIP=1
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedding
+DESCRIPTION=Pillow (shield)
+DUPELIST=09e22
+
+[ITEMDEF 09e22]
+//pillow (shield)
+DUPEITEM=09e21
+
+[ITEMDEF 09e23]
+DEFNAME=i_pillow_scales
+FLIP=1
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedding
+DESCRIPTION=Pillow (scales)
+DUPELIST=09e24
+
+[ITEMDEF 09e24]
+//pillow (scales)
+DUPEITEM=09e23
+
 [EOF]

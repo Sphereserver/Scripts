@@ -3503,4 +3503,327 @@ DUPEITEM=04c32
 //Machine Wall 1
 
 
+[ITEMDEF 09a2e]
+DEFNAME=i_trophy_bullhead
+NAME=bull trophy
+FLIP=1
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Bull
+DUPELIST=09a2f
+
+[ITEMDEF 09a2f]
+//trophy bullhead
+DUPEITEM=09a2e
+
+[ITEMDEF 09a30]
+DEFNAME=i_trophy_boarhead
+NAME=boar trophy
+FLIP=1
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Boar
+DUPELIST=09a31
+
+[ITEMDEF 09a31]
+//trophy boarhead
+DUPEITEM=09a30
+
+[ITEMDEF 09a32]
+DEFNAME=i_trophy_walrushead
+NAME=walrus trophy
+FLIP=1
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Walrus
+DUPELIST=09a33
+
+[ITEMDEF 09a33]
+//trophy walrushead
+DUPEITEM=09a32
+
+[ITEMDEF 09a34]
+DEFNAME=i_trophy_alligatorhead
+NAME=alligator trophy
+FLIP=1
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Alligator
+DUPELIST=09a35
+
+[ITEMDEF 09a35]
+//trophy alligatorhead
+DUPEITEM=09a34
+
+[ITEMDEF 09a36]
+DEFNAME=i_trophy_eagle
+NAME=eagle trophy
+FLIP=1
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Eagle
+DUPELIST=09a37
+
+[ITEMDEF 09a37]
+//trophy eagle
+DUPEITEM=09a36
+
+
+[ITEMDEF 09c08]
+DEFNAME=i_trophy_anchisaurhead
+NAME=anchisaur trophy
+FLIP=1
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Anchisaur
+DUPELIST=09c09
+
+[ITEMDEF 09c09]
+//trophy anchisaurhead
+DUPEITEM=09c08
+
+[ITEMDEF 09c0a]
+DEFNAME=i_trophy_allosaurushead
+NAME=allosaurus trophy
+FLIP=1
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Allosaurus
+DUPELIST=09c0b
+
+[ITEMDEF 09c0b]
+//trophy allosaurushead
+DUPEITEM=09c0a
+
+[ITEMDEF 09c0c]
+DEFNAME=i_trophy_dimetrosaurhead
+NAME=dimetrosaur trophy
+FLIP=1
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Dimetrosaur
+DUPELIST=09c0d
+
+[ITEMDEF 09c0d]
+//trophy dimetrosaurhead
+DUPEITEM=09c0c
+
+[ITEMDEF 09c0c]
+DEFNAME=i_trophy_saurosaurushead
+NAME=saurosaurus trophy
+FLIP=1
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Saurosaurus
+DUPELIST=09c0d
+
+[ITEMDEF 09c0d]
+//trophy saurosaurushead
+DUPEITEM=09c0c
+
+
+[ITEMDEF 09ca8]
+DEFNAME=i_painting_easter
+NAME=easter painting
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Paintings
+DESCRIPTION=Easter Painting
+DUPELIST=09ca9
+
+[ITEMDEF 09ca9]
+//easter painting
+DUPEITEM=09ca8
+
+
+[ITEMDEF 09cb9]
+DEFNAME=i_banner_fireworks_south
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (multi-part)
+DESCRIPTION=Fireworks Banner (south)
+DUPELIST=09cba
+
+[ITEMDEF 09cba]
+//fireworks banner (south)
+DUPEITEM=09cb9
+
+[ITEMDEF 09ccc]
+DEFNAME=i_banner_fireworks_east
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (multi-part)
+DESCRIPTION=Fireworks Banner (east)
+DUPELIST=09ccd
+
+[ITEMDEF 09ccd]
+//fireworks banner (east)
+DUPEITEM=09ccc
+
+
+[ITEMDEF 09d3c]
+DEFNAME=i_tapestry_map_eodon
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Tapestries
+DESCRIPTION=Eodon Map
+DUPELIST=09d3d
+
+[ITEMDEF 09d3d]
+//eodon map
+DUPEITEM=09d3c
+
+
+[ITEMDEF 09d53]
+DEFNAME=i_banner_flame_tribe
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Flame Tribe
+DUPELIST=09d54
+
+[ITEMDEF 09d54]
+//flame tribe banner
+DUPEITEM=09d53
+
+[ITEMDEF 09d55]
+DEFNAME=i_banner_tiger_tribe
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Tiger Tribe
+DUPELIST=09d56
+
+[ITEMDEF 09d56]
+//tiger tribe banner
+DUPEITEM=09d55
+
+[ITEMDEF 09d57]
+DEFNAME=i_banner_ape_tribe
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Ape Tribe
+DUPELIST=09d58
+
+[ITEMDEF 09d58]
+//ape tribe banner
+DUPEITEM=09d57
+
+[ITEMDEF 09d59]
+DEFNAME=i_banner_dino_tribe
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Dino Tribe
+DUPELIST=09d5a
+
+[ITEMDEF 09d5a]
+//dino tribe banner
+DUPEITEM=09d59
+
+[ITEMDEF 09d5b]
+DEFNAME=i_banner_bug_tribe
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Bug Tribe
+DUPELIST=09d5c
+
+[ITEMDEF 09d5c]
+//bug tribe banner
+DUPEITEM=09d5b
+
+[ITEMDEF 09d5d]
+DEFNAME=i_banner_turtle_tribe
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Turtle Tribe
+DUPELIST=09d5e
+
+[ITEMDEF 09d5e]
+//turtle tribe banner
+DUPEITEM=09d5d
+
+
+[ITEMDEF 09da4]
+DEFNAME=i_trophy_tigerhead
+NAME=tiger trophy
+FLIP=1
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Tiger
+DUPELIST=09da5
+
+[ITEMDEF 09da5]
+//trophy tigerhead
+DUPEITEM=09da4
+
+[ITEMDEF 09da6]
+DEFNAME=i_trophy_myrmidexhead
+NAME=myrmidex trophy
+FLIP=1
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Myrmidex
+DUPELIST=09da7
+
+[ITEMDEF 09da7]
+//trophy myrmidexhead
+DUPEITEM=09da6
+
+
+[ITEMDEF 09e2d]
+DEFNAME=i_painting_vice_coin
+NAME=coin painting
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Paintings
+DESCRIPTION=Vice - Coin
+DUPELIST=09e2e
+
+[ITEMDEF 09e2e]
+//coin painting
+DUPEITEM=09e2d
+
+[ITEMDEF 09e2f]
+DEFNAME=i_painting_vice_wand
+NAME=wand painting
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Paintings
+DESCRIPTION=Vice - Wand
+DUPELIST=09e30
+
+[ITEMDEF 09e30]
+//wand painting
+DUPEITEM=09e2f
+
+[ITEMDEF 09e31]
+DEFNAME=i_painting_virtue_crook
+NAME=crook painting
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Paintings
+DESCRIPTION=Virtue - Crook
+DUPELIST=09e32
+
+[ITEMDEF 09e32]
+//crook painting
+DUPEITEM=09e31
+
+[ITEMDEF 09e33]
+DEFNAME=i_painting_virtue_scales
+NAME=scales painting
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Paintings
+DESCRIPTION=Virtue - Scales
+DUPELIST=09e34
+
+[ITEMDEF 09e34]
+//scales painting
+DUPEITEM=09e33
+
 [EOF]

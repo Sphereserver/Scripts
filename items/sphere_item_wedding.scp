@@ -395,7 +395,7 @@ DYE=1
 CATEGORY=Wedding
 SUBSECTION=Decoration
 DESCRIPTION=Table (rectangle)(east)
-DUPELIST=09ecf,09ed0
+DUPELIST=09ecf,09ed0,09f04
 
 [ITEMDEF 09ecf]
 //table
@@ -412,7 +412,7 @@ DYE=1
 CATEGORY=Wedding
 SUBSECTION=Decoration
 DESCRIPTION=Table (rectangle)(south)
-DUPELIST=09ed2,09ed3
+DUPELIST=09ed2,09ed3,09f05
 
 [ITEMDEF 09ed2]
 //table
@@ -585,5 +585,13 @@ NAME=botanical archway
 CATEGORY=Wedding
 SUBSECTION=Decoration
 DESCRIPTION=Botanical archway (bigflow)(small)
+
+[ITEMDEF 09f04]
+//table
+DUPEITEM=09ece
+
+[ITEMDEF 09f05]
+//table
+DUPEITEM=09ed1
 
 [EOF]

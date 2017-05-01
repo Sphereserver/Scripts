@@ -7056,7 +7056,21 @@ ON=@Create
    ATTR=attr_magic|attr_newbie
 
 [ITEMDEF 09c17]
-DUPEITEM=09c17
+//runic atlas
+DUPEITEM=09c16
+
+[ITEMDEF 09c18]
+DEFNAME=i_auction_safe
+NAME=auction safe
+FLIP=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Auction Safe
+DESCRIPTION=Auction Safe
+DUPELIST=09c19
+
+[ITEMDEF 09c19]
+//auction safe
+DUPEITEM=09c18
 
 [ITEMDEF 09e1a]
 DEFNAME=i_giftbox_christmas
@@ -7066,5 +7080,23 @@ TDATA3=156,166
 CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Containers
 DESCRIPTION=Gift Box (Christmas)
+
+[ITEMDEF 09f13]
+//Easter Egg
+
+[ITEMDEF 09f14]
+//Easter Egg
+
+[ITEMDEF 09f15]
+//Easter Egg
+
+[ITEMDEF 09f16]
+//Easter Egg
+
+[ITEMDEF 09f17]
+//Easter Egg
+
+[ITEMDEF 09f18]
+//Easter Egg
 
 [EOF]

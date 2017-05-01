@@ -402,5 +402,68 @@ ON=@Create
 //gargish glasses
 DUPEITEM=04644
 
+[ITEMDEF 09e25]
+DEFNAME=i_talisman_craftsman_tailoring
+NAME=Master Craftsman Talisman
+TYPE=t_jewelry
+CATEGORY=Provisions - Talismans
+SUBSECTION=Talismans
+DESCRIPTION=Master Craftsman Talisman (Tailoring)
+
+[ITEMDEF 09e26]
+DEFNAME=i_talisman_craftsman_alchemy
+NAME=Master Craftsman Talisman
+TYPE=t_jewelry
+CATEGORY=Provisions - Talismans
+SUBSECTION=Talismans
+DESCRIPTION=Master Craftsman Talisman (Alchemy)
+
+[ITEMDEF 09e27]
+DEFNAME=i_talisman_craftsman_cooking
+NAME=Master Craftsman Talisman
+TYPE=t_jewelry
+CATEGORY=Provisions - Talismans
+SUBSECTION=Talismans
+DESCRIPTION=Master Craftsman Talisman (Cooking)
+
+[ITEMDEF 09e28]
+DEFNAME=i_talisman_craftsman_inscription
+NAME=Master Craftsman Talisman
+TYPE=t_jewelry
+CATEGORY=Provisions - Talismans
+SUBSECTION=Talismans
+DESCRIPTION=Master Craftsman Talisman (Inscription)
+
+[ITEMDEF 09e29]
+DEFNAME=i_talisman_craftsman_fletching
+NAME=Master Craftsman Talisman
+TYPE=t_jewelry
+CATEGORY=Provisions - Talismans
+SUBSECTION=Talismans
+DESCRIPTION=Master Craftsman Talisman (Fletching)
+
+[ITEMDEF 09e2a]
+DEFNAME=i_talisman_craftsman_blacksmithing
+NAME=Master Craftsman Talisman
+TYPE=t_jewelry
+CATEGORY=Provisions - Talismans
+SUBSECTION=Talismans
+DESCRIPTION=Master Craftsman Talisman (Blacksmithing)
+
+[ITEMDEF 09e2b]
+DEFNAME=i_talisman_craftsman_tinkering
+NAME=Master Craftsman Talisman
+TYPE=t_jewelry
+CATEGORY=Provisions - Talismans
+SUBSECTION=Talismans
+DESCRIPTION=Master Craftsman Talisman (Tinkering)
+
+[ITEMDEF 09e2c]
+DEFNAME=i_talisman_craftsman_carpentry
+NAME=Master Craftsman Talisman
+TYPE=t_jewelry
+CATEGORY=Provisions - Talismans
+SUBSECTION=Talismans
+DESCRIPTION=Master Craftsman Talisman (Carpentry)
 
 [EOF]

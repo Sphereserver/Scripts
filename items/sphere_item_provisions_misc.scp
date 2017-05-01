@@ -615,5 +615,34 @@ DUPEITEM=01f24
 //bedroll square
 DUPEITEM=01f24
 
+[ITEMDEF 09c43]
+DEFNAME=i_container_fletching
+NAME=fletching container
+TYPE=t_container
+TDATA2=09bfe
+FLIP=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Containers
+DESCRIPTION=Fletching container
+DUPELIST=09c44
+
+[ITEMDEF 09c44]
+//fletching container
+DUPEITEM=09c43
+
+[ITEMDEF 09c46]
+DEFNAME=i_container_woodworking
+NAME=woodworking container
+TYPE=t_container
+TDATA2=03e
+FLIP=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Containers
+DESCRIPTION=Woodworking container
+DUPELIST=09c47
+
+[ITEMDEF 09c47]
+//woodworking container
+DUPEITEM=09c46
 
 [EOF]

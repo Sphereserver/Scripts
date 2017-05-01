@@ -1265,4 +1265,24 @@ DUPEITEM=0491b
 //Arrow (cupid)
 
 
+[ITEMDEF 09f0f]
+//Swan Statue (white)
+DEFNAME=i_statue_swan_white
+FLIP=1
+DUPELIST=09f10
+
+[ITEMDEF 09f10]
+//Swan Statue (white)
+DUPEITEM=09f0f
+
+[ITEMDEF 09f11]
+//Swan Statue (black)
+DUPEITEM=09f12
+
+[ITEMDEF 09f21]
+//Swan Statue (black)
+DEFNAME=i_statue_swan_black
+FLIP=1
+DUPELIST=09f11
+
 [EOF]
