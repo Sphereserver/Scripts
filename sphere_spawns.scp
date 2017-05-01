@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2014
+// SPHERE by : Menasoft ©1997-2017
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,9 +7,9 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Thursday, May 1, 2014
+// FILE LAST UPDATED: Monday, May 1, 2017
 //
-VERSION=0.56c
+VERSION=0.56d
 
 
 ///////////////////
@@ -686,7 +686,7 @@ ID=c_demon_balron          1
 CATEGORY=Spawn Groups
 SUBSECTION=Monsters
 DESCRIPTION=Dragons
-ID=c_dragon_wyvern        13
+ID=c_wyvern               13
 ID=c_serpentine_dragon    12
 ID=c_kepetch              11
 ID=c_dragon_wolf          10
@@ -832,7 +832,7 @@ ID=c_frost_ettin          10
 ID=c_frost_troll          10
 ID=c_troll                 8
 ID=c_troll_w_axe           8
-ID=c_troll_w_mace          8
+ID=c_frost_troll           8
 ID=c_cyclops               5
 ID=c_cyclops_king          4
 ID=c_titan                 2
@@ -1342,7 +1342,7 @@ ID=c_ettin_w_hammer         10
 ID=c_rai_ju                  9
 ID=c_troll                   8
 ID=c_troll_w_axe             8
-ID=c_troll_w_mace            8
+ID=c_frost_troll             8
 ID=c_harpy_stone             7
 ID=c_revenant_lion           7
 ID=c_kirin
@@ -1402,7 +1402,7 @@ ID=c_giant_beetle
 ID=c_ophidian_justicar      11
 ID=c_bloodworm              11
 ID=c_rotworm                11
-ID=c_dragon_wyvern          10
+ID=c_wyvern                 10
 ID=c_terathan_warrior       10
 ID=c_ophidian_shaman        10
 ID=c_gargoyle_enslaved      10
@@ -1578,10 +1578,10 @@ ID=c_gibberling
 ID=c_rotworm
 ID=c_reaper
 ID=c_snake_giant
-ID=c_dragon_wyvern
+ID=c_wyvern
 ID=c_troll
-ID=c_troll_w_mace
 ID=c_troll_w_axe
+ID=c_frost_troll
 ID=c_demon_chaos
 ID=c_terathan_warrior
 ID=c_ophidian_shaman
@@ -1808,10 +1808,10 @@ ID=c_rotworm
 ID=c_serpent_ice
 ID=c_snake_giant
 ID=c_terathan_warrior
-ID=c_dragon_wyvern
+ID=c_wyvern
 ID=c_troll
-ID=c_troll_w_mace
 ID=c_troll_w_axe
+ID=c_frost_troll
 ID=c_treefellow
 ID=c_demon_chaos
 ID=c_serpent_silver
@@ -2052,9 +2052,9 @@ ID=c_gibberling
 ID=c_rotworm
 ID=c_reaper
 ID=c_troll
-ID=c_troll_w_mace
 ID=c_troll_w_axe
-ID=c_dragon_wyvern
+ID=c_frost_troll
+ID=c_wyvern
 ID=c_pixie
 ID=c_dryad
 ID=c_fetid_essence
@@ -2188,102 +2188,12 @@ ID=c_dragon
 ID=c_dragon_red
 ID=c_drake               3
 ID=c_drake_red           3
-ID=c_dragon_wyvern       3
+ID=c_wyvern              3
 ID=c_elemental_air       2
 ID=c_elemental_earth     2
 ID=c_elemental_fire      2
 ID=c_spectre             4
 ID=c_lich                2
-
-[SPAWN spawn_Despise1]
-CATEGORY=Spawn Groups
-SUBSECTION=Dungeons
-DESCRIPTION=Despise 1
-ID=c_zombie
-ID=c_headless
-ID=c_mongbat
-ID=c_slime
-ID=c_goblin_gray
-ID=c_rat_giant
-
-[SPAWN spawn_Despise2]
-CATEGORY=Spawn Groups
-SUBSECTION=Dungeons
-DESCRIPTION=Despise 2
-ID=c_zombie
-ID=c_skeleton
-ID=c_skeleton_w_axe
-ID=c_spectre             2
-ID=c_orc
-ID=c_orc_w_club
-ID=c_ratman_w_mace
-ID=c_ratman
-ID=c_lizardman
-ID=c_lizardman_spear
-ID=c_lizardman_mace
-ID=c_spider_giant
-ID=c_scorpion_giant
-ID=c_goblin_gray
-ID=c_goblin_chief
-
-[SPAWN spawn_Despise3]
-CATEGORY=Spawn Groups
-SUBSECTION=Dungeons
-DESCRIPTION=Despise 3
-ID=c_orc
-ID=c_orc_lord            2
-ID=c_goblin_gray_mage    2
-ID=c_ogre
-ID=c_troll
-ID=c_ettin_w_hammer
-ID=c_scorpion_giant
-ID=c_snake_giant
-ID=c_spider_giant
-ID=c_spectre
-ID=c_skeleton_w_sword
-ID=c_skeleton_w_axe
-
-[SPAWN spawn_Destard1]
-CATEGORY=Spawn Groups
-SUBSECTION=Dungeons
-DESCRIPTION=Destard 1
-ID=c_drake
-ID=c_drake_red
-ID=c_dragon
-ID=c_dragon_red
-ID=c_dragon_wyvern
-ID=c_headless
-ID=c_orc_lord
-ID=c_orc_mage
-ID=c_lizardman
-ID=c_goblin_chief
-ID=c_elemental_earth
-ID=c_ettin_w_hammer
-ID=c_ogre
-
-[SPAWN spawn_Destard2]
-CATEGORY=Spawn Groups
-SUBSECTION=Dungeons
-DESCRIPTION=Destard 2
-ID=c_dragon
-ID=c_dragon_red
-ID=c_drake
-ID=c_drake_red
-ID=c_dragon_wyvern
-ID=c_ettin_w_hammer
-ID=c_troll
-ID=c_ogre
-
-[SPAWN spawn_Destard3]
-CATEGORY=Spawn Groups
-SUBSECTION=Dungeons
-DESCRIPTION=Destard 3
-ID=c_dragon              4
-ID=c_dragon_red          4
-ID=c_drake               2
-ID=c_drake_red           2
-ID=c_dragon_wyvern       2
-ID=c_dragon_wyrm
 
 [SPAWN spawn_Shame1]
 CATEGORY=Spawn Groups
@@ -2317,7 +2227,7 @@ ID=c_spider_giant
 CATEGORY=Spawn Groups
 SUBSECTION=Dungeons
 DESCRIPTION=Shame 3
-ID=c_dragon_wyvern
+ID=c_wyvern
 ID=c_drake_red
 ID=c_drake
 ID=c_elemental_air
@@ -2326,8 +2236,8 @@ ID=c_ettin
 ID=c_ettin_w_hammer
 ID=c_ogre
 ID=c_troll
-ID=c_troll_w_mace
 ID=c_troll_w_axe
+ID=c_frost_troll
 ID=c_scorpion_giant
 ID=c_snake_giant
 ID=c_spider_giant
@@ -2342,8 +2252,8 @@ DESCRIPTION=Shame 4
 ID=c_elemental_water
 ID=c_ettin_w_hammer
 ID=c_troll
-ID=c_troll_w_mace
 ID=c_troll_w_axe
+ID=c_frost_troll
 ID=c_elemental_air
 ID=c_snake_giant
 ID=c_gazer
@@ -2447,6 +2357,64 @@ ID=c_hellhound               2
 ID=c_demon                   2
 ID=c_fan_dancer              1
 
+[SPAWN spawn_Despise_level1]
+CATEGORY=Spawn Groups
+SUBSECTION=Dungeons
+DESCRIPTION=Despise 1
+ID=c_lizardman
+ID=c_lizardman_spear
+ID=c_lizardman_mace
+
+[SPAWN spawn_Despise_level3]
+CATEGORY=Spawn Groups
+SUBSECTION=Dungeons
+DESCRIPTION=Despise 3
+ID=c_ettin
+ID=c_elem_earth
+
+[SPAWN spawn_Despise_level4]
+CATEGORY=Spawn Groups
+SUBSECTION=Dungeons
+DESCRIPTION=Despise 4
+ID=c_ettin                   5
+ID=c_ogre                    5
+ID=c_troll                   5
+ID=c_cyclops                 4
+ID=c_elemental_acid          3
+ID=c_titan                   3
+ID=c_ogre_lord
+
+[SPAWN spawn_Destard_level1]
+CATEGORY=Spawn Groups
+SUBSECTION=Dungeons
+DESCRIPTION=Destard 1
+ID=c_snake_giant             3
+ID=c_elemental_water         3
+ID=c_wyvern                  3
+ID=c_drake_red               2
+ID=c_drake_gray              2
+ID=c_dragon_red
+ID=c_dragon_gray
+
+[SPAWN spawn_Destard_level2]
+CATEGORY=Spawn Groups
+SUBSECTION=Dungeons
+DESCRIPTION=Destard 2
+ID=c_wyvern                  3
+ID=c_drake_red               3
+ID=c_drake_gray              3
+ID=c_evilmage_lord           2
+ID=c_daemon                  2
+ID=c_wyrm_shadow
+
+[SPAWN spawn_Destard_level3]
+CATEGORY=Spawn Groups
+SUBSECTION=Dungeons
+DESCRIPTION=Destard 3
+ID=c_wyvern                  5
+ID=c_elemental_fire          4
+ID=c_wyrm_ancient
+
 [SPAWN spawn_OrcCave_level1]
 CATEGORY=Spawn Groups
 SUBSECTION=Dungeons
@@ -2475,9 +2443,9 @@ ID=c_orc_mage
 CATEGORY=Spawn Groups
 SUBSECTION=Dungeons
 DESCRIPTION=Orc Cave 3
-ID=c_orc		3
-ID=c_orc_bomber		3
-ID=c_elemental_earth		2
+ID=c_orc                     4
+ID=c_orc_bomber              4
+ID=c_elemental_earth         3
 ID=c_orc_brute
 
 [SPAWN spawn_FanDancerDojo_level2]
@@ -2525,7 +2493,7 @@ ID=c_minotaur_captain        3
 ID=c_drake                   2
 ID=c_drake_red               2
 ID=c_reptalon
-//ID=c_tormented_minotaur      6
+//ID=c_tormented_minotaur    6
 //Flurry
 //Grim
 //Meraktus the Tormented

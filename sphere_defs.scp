@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Friday, April 21, 2017
+// FILE LAST UPDATED: Monday, May 1, 2017
 //
 VERSION=0.56d
 
@@ -27,63 +27,63 @@ guardcall	GUARD,GUARDS
 // Syntax: mount_0x<char dispid (hex)> <mount memory id>
 // ---------------------------------------------------------
 // Pre-T2A
-mount_0xc8	i_mt_horse_tan                 // horse
-mount_0xcc	i_mt_horse_brown_dk            // horse
-mount_0xe2	i_mt_horse_gray                // horse
-mount_0xe4	i_mt_horse_brown_lt            // horse
+mount_0xc8	i_mt_horse_tan
+mount_0xcc	i_mt_horse_brown_dk
+mount_0xe2	i_mt_horse_gray
+mount_0xe4	i_mt_horse_brown_lt
 // T2A
-mount_0xd2	i_mt_ostard_desert             // desert ostard
-mount_0xda	i_mt_ostard_frenzied           // frenzied ostard
-mount_0xdb	i_mt_ostard_forest             // forest ostard
-mount_0xdc	i_mt_llama                     // llama
+mount_0xd2	i_mt_ostard_desert
+mount_0xda	i_mt_ostard_frenzied
+mount_0xdb	i_mt_ostard_forest
+mount_0xdc	i_mt_llama
 // LBR
-mount_0xa9	i_mt_beetle_fire               // fire beetle
-mount_0xaa	i_mt_llama_ethereal            // ethereal llama
-mount_0xab	i_mt_ostard_ethereal           // ethereal forest ostard
-mount_0xb1	i_mt_warhorse_dread            // dread warhorse
-mount_0xb2	i_mt_unknown_mare              // unknown mare
-mount_0xb3	i_mt_unknown_mare2             // unknown mare 2
-mount_0xbb	i_mt_ridgeback                 // ridgeback
-mount_0xbc	i_mt_savage_ridgeback          // savage ridgeback
-mount_0xbe	i_mt_steed_fire                // fire steed
-mount_0xbf	i_mt_kirin_ethereal            // ethereal kirin
-mount_0xc0	i_mt_unicorn_ethereal          // ethereal unicorn
-mount_0xc1	i_mt_ridgeback_ethereal        // ethereal ridgeback
-mount_0xc2	i_mt_swamp_dragon_ethereal     // ethereal swamp dragon
-mount_0xc3	i_mt_giant_beetle_ethereal     // ethereal giant beetle
-mount_0x72	i_mt_steed_dark                // dark steed
-mount_0x73	i_mt_steed_ethereal            // ethereal horse
-mount_0x74	i_mt_nightmare                 // nightmare
-mount_0x75	i_mt_steed_silver              // silver steed
-mount_0x76	i_mt_warhorse_truebritannians  // true britannians warhorse
-mount_0x77	i_mt_warhorse_magecouncil      // mage council warhorse
-mount_0x78	i_mt_warhorse_minax            // minax warhorse
-mount_0x79	i_mt_warhorse_shadowlords      // shadowlords warhorse
-mount_0x7a	i_mt_unicorn                   // unicorn
-mount_0x84	i_mt_kirin                     // kirin
-mount_0x90	i_mt_sea_horse                 // sea horse
-mount_0x317	i_mt_giant_beetle              // giant beetle
-mount_0x319	i_mt_skeletal_mount            // skeletal mount
-mount_0x31a	i_mt_swamp_dragon              // swamp dragon
-mount_0x31f	i_mt_armored_swamp_dragon      // armored swamp dragon
+mount_0xa9	i_mt_beetle_fire
+mount_0xaa	i_mt_llama_ethereal
+mount_0xab	i_mt_ostard_ethereal
+mount_0xb1	i_mt_warhorse_dread
+mount_0xb2	i_mt_unknown_mare
+mount_0xb3	i_mt_unknown_mare2
+mount_0xbb	i_mt_ridgeback
+mount_0xbc	i_mt_savage_ridgeback
+mount_0xbe	i_mt_steed_fire
+mount_0xbf	i_mt_kirin_ethereal
+mount_0xc0	i_mt_unicorn_ethereal
+mount_0xc1	i_mt_ridgeback_ethereal
+mount_0xc2	i_mt_swamp_dragon_ethereal
+mount_0xc3	i_mt_giant_beetle_ethereal
+mount_0x72	i_mt_steed_dark
+mount_0x73	i_mt_steed_ethereal
+mount_0x74	i_mt_nightmare
+mount_0x75	i_mt_steed_silver
+mount_0x76	i_mt_warhorse_truebritannians
+mount_0x77	i_mt_warhorse_magecouncil
+mount_0x78	i_mt_warhorse_minax
+mount_0x79	i_mt_warhorse_shadowlords
+mount_0x7a	i_mt_unicorn
+mount_0x84	i_mt_kirin
+mount_0x90	i_mt_sea_horse
+mount_0x317	i_mt_giant_beetle
+mount_0x319	i_mt_skeletal_mount
+mount_0x31a	i_mt_swamp_dragon
+mount_0x31f	i_mt_armored_swamp_dragon
 // SE
-mount_0xf3	i_mt_hiryu                     // hiryu
+mount_0xf3	i_mt_hiryu
 // ML
-mount_0xd5	i_mt_bear_polar                // polar bear
-mount_0x114	i_mt_reptalon                  // reptalon
-mount_0x115	i_mt_cu_sidhe                  // cu sidhe
-mount_0x11c	i_mt_armor_steed               // armored steed (mondain's steed, charger of the fallen)
+mount_0xd5	i_mt_bear_polar
+mount_0x114	i_mt_reptalon
+mount_0x115	i_mt_cu_sidhe
+mount_0x11c	i_mt_armor_steed
 // SA
-mount_0x1b0	i_mt_boura_armoured            // armored boura
-mount_0x4e6	i_mt_wild_tiger                // wild tiger
-mount_0x4e7	i_mt_tiger_ethereal            // ethereal tiger
+mount_0x1b0	i_mt_boura_armoured
+mount_0x4e6	i_mt_wild_tiger
+mount_0x4e7	i_mt_tiger_ethereal
 // HS
-mount_0x42d	i_mt_hellhound_ancient         // ancient hellhound
+mount_0x42d	i_mt_hellhound_ancient
 // TOL
-mount_0x579	i_mt_tarantula                 // tarantula
-mount_0x57f	i_mt_lasher                    // lasher
-mount_0x580	i_mt_palomino                  // palomino
-mount_0x582	i_mt_windrunner                // windrunner
+mount_0x579	i_mt_tarantula
+mount_0x57f	i_mt_lasher
+mount_0x580	i_mt_palomino
+mount_0x582	i_mt_windrunner
 
 [DEFNAME hues]
 color_text                   -1
@@ -1827,14 +1827,14 @@ height_033 1  //DEFNAME=c_slime
 height_034 1  //DEFNAME=c_snake
 height_035 23 //DEFNAME=c_troll_w_axe
 height_036 23 //DEFNAME=c_troll
-height_037 23 //DEFNAME=c_troll_w_mace
+height_037 23 //DEFNAME=c_frost_troll
 height_038 16 //DEFNAME=c_skeleton_w_axe
 height_039 16 //DEFNAME=c_skeleton_w_sword
 height_03a 15 //DEFNAME=c_wisp
 height_03b 35 //DEFNAME=c_dragon_red
 height_03c 30 //DEFNAME=c_drake
 height_03d 30 //DEFNAME=c_drake_red
-height_03e 18 //DEFNAME=c_dragon_wyvern
+height_03e 18 //DEFNAME=c_wyvern
 height_03f 8  //DEFNAME=c_cougar
 
 height_040 8  //DEFNAME=c_leopard
@@ -1947,7 +1947,7 @@ height_0a6 18 //DEFNAME=c_elemental_ore_gold
 height_0a7 9  //DEFNAME=c_bear_brown
 height_0a8 12 //DEFNAME=c_shadow_fiend
 height_0aa 10 //DEFNAME=c_llama_ethereal
-height_0ab 18 //DEFNAME=c_ostard_ethereal
+height_0ab 18 //DEFNAME=c_ostard_frenzied_ethereal
 height_0ac 45 //DEFNAME=c_champ_rikktor
 height_0ad 18 //DEFNAME=c_champ_mephitis
 height_0ae 35 //DEFNAME=c_champ_semidar
@@ -1971,8 +1971,8 @@ height_0c1 16 //DEFNAME=c_ridgeback_ethereal
 height_0c2 15 //DEFNAME=c_swamp_dragon_ethereal
 height_0c3 12 //DEFNAME=c_giant_beetle_ethereal
 height_0c4 18 //DEFNAME=c_kaze_kemono
-height_0c5 45 //DEFNAME=c_dragon_stygian_red
-height_0c6 45 //DEFNAME=c_dragon_stygian_blue
+height_0c5 45 //DEFNAME=c_dragon_crimson
+height_0c6 45 //DEFNAME=c_dragon_platinum
 height_0c7 18 //DEFNAME=c_rai_ju
 height_0c8 16 //DEFNAME=c_horse_tan
 height_0c9 3  //DEFNAME=c_cat
@@ -2117,7 +2117,7 @@ height_02fb 40 //DEFNAME=c_exodus_minionlord
 height_02fc 15 //DEFNAME=c_juka_warrior
 height_02fd 16 //DEFNAME=c_juka_mage
 height_02fe 17 //DEFNAME=c_juka_lord
-height_02ff 15 //DEFNAME=c_blackthorn_betrayer
+height_02ff 15 //DEFNAME=c_betrayer
 
 height_0300 18 //DEFNAME=c_juggernaut
 height_0301 15 //DEFNAME=c_blackthorn
