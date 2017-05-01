@@ -1681,7 +1681,7 @@ ID=c_lich_lord
 ID=c_ophidian_queen
 ID=c_elemental_poison
 ID=c_hellhound_ancient
-ID=c_blackthorn_betrayer
+ID=c_betrayer
 ID=c_elemental_lava
 ID=c_plague_beast_lord
 ID=c_titan
@@ -1866,7 +1866,7 @@ ID=c_raptor
 ID=c_centaur
 ID=c_ant_lion
 ID=c_rotting_corpse
-ID=c_blackthorn_betrayer
+ID=c_betrayer
 ID=c_yomotsu_warrior
 ID=c_dragon_fairy
 ID=c_yomotsu_elder
@@ -2116,7 +2116,7 @@ ID=c_centaur
 ID=c_rune_beetle
 ID=c_ant_lion
 ID=c_hellhound_ancient
-ID=c_blackthorn_betrayer
+ID=c_betrayer
 ID=c_elemental_lava
 ID=c_titan
 ID=c_oni
@@ -2370,7 +2370,7 @@ CATEGORY=Spawn Groups
 SUBSECTION=Dungeons
 DESCRIPTION=Despise 3
 ID=c_ettin
-ID=c_elem_earth
+ID=c_elemental_earth
 
 [SPAWN spawn_Despise_level4]
 CATEGORY=Spawn Groups
@@ -2391,20 +2391,20 @@ DESCRIPTION=Destard 1
 ID=c_snake_giant             3
 ID=c_elemental_water         3
 ID=c_wyvern                  3
+ID=c_drake                   2
 ID=c_drake_red               2
-ID=c_drake_gray              2
+ID=c_dragon
 ID=c_dragon_red
-ID=c_dragon_gray
 
 [SPAWN spawn_Destard_level2]
 CATEGORY=Spawn Groups
 SUBSECTION=Dungeons
 DESCRIPTION=Destard 2
 ID=c_wyvern                  3
+ID=c_drake                   3
 ID=c_drake_red               3
-ID=c_drake_gray              3
 ID=c_evilmage_lord           2
-ID=c_daemon                  2
+ID=c_demon                   2
 ID=c_wyrm_shadow
 
 [SPAWN spawn_Destard_level3]

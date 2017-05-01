@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Wednesday, April 12, 2017
+// FILE LAST UPDATED: Monday, May 1, 2017
 //
 VERSION=0.56d
 
@@ -32,7 +32,7 @@ VERSION=0.56d
 345,131,85,5=317,136,65,5=tp_StygianDragonsLair1_Teleport4
 310,159,85,5=346,192,105,5=tp_StygianDragonsLair1_Teleport5
 346,192,105,5=310,159,85,5=tp_StygianDragonsLair1_Teleport6
-40,772,105,5=344,146,5,5=tp_StygianDragonsLair1_Teleport7
+305,159,105,5=344,146,5,5=tp_StygianDragonsLair1_Teleport7
 344,146,5,5=305,159,105,5=tp_StygianDragonsLair1_Teleport8
 
 79,379,5,5=52,389,65,5=tp_StygianDragonsLair2_Teleport1
