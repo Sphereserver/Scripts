@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Wednesday, April 12, 2017
+// FILE LAST UPDATED: Monday, May 1, 2017
 //
 VERSION=0.56d
 
@@ -2574,22 +2574,22 @@ SUBSECTION=Character Icons
 DESCRIPTION=Mound of Maggots
 
 [ITEMDEF 02634]
-DEFNAME=i_pet_dragon_stygian_red
-NAME=Red Stygian Dragon
+DEFNAME=i_pet_dragon_crimson
+NAME=Crimson Dragon
 TYPE=t_figurine
-TDATA3=c_dragon_stygian_red
+TDATA3=c_dragon_crimson
 CATEGORY=Miscellaneous
 SUBSECTION=Character Icons
-DESCRIPTION=Stygian Dragon (red)
+DESCRIPTION=Crimson Dragon
 
 [ITEMDEF 02635]
-DEFNAME=i_pet_dragon_stygian_blue
-NAME=Blue Stygian Dragon
+DEFNAME=i_pet_dragon_platinum
+NAME=Platinum Dragon
 TYPE=t_figurine
-TDATA3=c_dragon_stygian_blue
+TDATA3=c_dragon_platinum
 CATEGORY=Miscellaneous
 SUBSECTION=Character Icons
-DESCRIPTION=Stygian Dragon (blue)
+DESCRIPTION=Platinum Dragon
 
 [ITEMDEF 02763]
 DEFNAME=i_pet_bakekitsune
@@ -3440,7 +3440,7 @@ SUBSECTION=Character Icons
 DESCRIPTION=Stone Form
 
 [ITEMDEF 042a6]
-DEFNAME=i_pet_stygian_dragon_2
+DEFNAME=i_pet_dragon_stygian
 NAME=Stygian Dragon
 TYPE=t_figurine
 TDATA3=c_dragon_stygian
