@@ -383,6 +383,7 @@ snd_monster_pixie             1139
 snd_monster_pixie2            1140
 snd_animal_seahorse           1144
 snd_monster_shadowlord        1149
+snd_monster_shadows           1154
 snd_monster_skeldragon        1160
 snd_succubus1                 1200
 snd_succubus2                 1201
@@ -943,7 +944,6 @@ r_dungeon_abyss				t_junk
 r_dungeon_labyrinth			t_junk
 r_black_castle				t_junk
 // item types
-t_eerie_stuff         t_junk
 t_magic               t_junk
 
 [TYPEDEFS]
