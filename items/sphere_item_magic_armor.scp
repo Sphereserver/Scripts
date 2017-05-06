@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2007
+// SPHERE by : Menasoft ©1997-2017
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,23 +7,18 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, November 22, 2003
+// FILE LAST UPDATED: Saturday, May 6, 2017
 //
-VERSION=0.56b
+VERSION=0.56d
 
-[ITEMDEF i_enchant_armor]
-// ARMOR ENHANCER - good for 20 percent skill enchant.
-ID=i_virtstone_1
-VALUE=40	// set price per level of magic enhancement.
 
-[ITEMDEF i_BUCKLER_SHIELD_DEFENSE]
+[ITEMDEF i_buckler_shield_defense]
 ID=i_shield_buckler
-NAME=Buckler of Defense
-RESOURCES=i_shield_buckler,i_enchant_armor
+NAME=Buckler Shield of Defense
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Shields
-DESCRIPTION=Buckler of Defense
+DESCRIPTION=Buckler Shield of Defense
 
 ON=@Create
 	MOREY=20.0
@@ -31,14 +26,13 @@ ON=@Create
 	HITPOINTS=55
 	COLOR=color_magic_defense
 
-[ITEMDEF i_BUCKLER_SHIELD_GUARDING]
+[ITEMDEF i_buckler_shield_guarding]
 ID=i_shield_buckler
-NAME=Buckler of Guarding
-RESOURCES=i_shield_buckler,2 i_enchant_armor
+NAME=Buckler Shield of Guarding
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Shields
-DESCRIPTION=Buckler of Guarding
+DESCRIPTION=Buckler Shield of Guarding
 
 ON=@Create
 	MOREY=40.0
@@ -46,14 +40,13 @@ ON=@Create
 	HITPOINTS=60
 	COLOR=color_magic_guarding
 
-[ITEMDEF i_BUCKLER_SHIELD_HARDENING]
+[ITEMDEF i_buckler_shield_hardening]
 ID=i_shield_buckler
-NAME=Buckler of Hardening
-RESOURCES=i_shield_buckler,3 i_enchant_armor
+NAME=Buckler Shield of Hardening
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Shields
-DESCRIPTION=Buckler of Hardening
+DESCRIPTION=Buckler Shield of Hardening
 
 ON=@Create
 	MOREY=60.0
@@ -61,14 +54,13 @@ ON=@Create
 	HITPOINTS=65
 	COLOR=color_magic_hardening
 
-[ITEMDEF i_BUCKLER_SHIELD_FORTIFICATION]
+[ITEMDEF i_buckler_shield_fortification]
 ID=i_shield_buckler
-NAME=Buckler of Fortification
-RESOURCES=i_shield_buckler,4 i_enchant_armor
+NAME=Buckler Shield of Fortification
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Shields
-DESCRIPTION=Buckler of Fortification
+DESCRIPTION=Buckler Shield of Fortification
 
 ON=@Create
 	MOREY=80.0
@@ -76,14 +68,13 @@ ON=@Create
 	HITPOINTS=70
 	COLOR=color_magic_fortification
 
-[ITEMDEF i_BUCKLER_SHIELD_INVULNERABILITY]
+[ITEMDEF i_buckler_shield_invulnerability]
 ID=i_shield_buckler
-NAME=Buckler of Invulnerability
-RESOURCES=i_shield_buckler,5 i_enchant_armor
+NAME=Buckler Shield of Invulnerability
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Shields
-DESCRIPTION=Buckler of Invulnerability
+DESCRIPTION=Buckler Shield of Invulnerability
 
 ON=@Create
 	MOREY=100.0
@@ -91,10 +82,9 @@ ON=@Create
 	HITPOINTS=75
 	COLOR=color_magic_invulnerability
 
-[ITEMDEF i_WOODEN_SHIELD_DEFENSE]
+[ITEMDEF i_wooden_shield_defense]
 ID=i_shield_wood
 NAME=Wooden Shield of Defense
-RESOURCES=i_shield_wood,1 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Shields
@@ -106,10 +96,9 @@ ON=@Create
 	HITPOINTS={21 23}
 	COLOR=color_magic_defense
 
-[ITEMDEF i_WOODEN_SHIELD_GUARDING]
+[ITEMDEF i_wooden_shield_guarding]
 ID=i_shield_wood
 NAME=Wooden Shield of Guarding
-RESOURCES=i_shield_wood,2 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Shields
@@ -121,10 +110,9 @@ ON=@Create
 	HITPOINTS=30
 	COLOR=color_magic_guarding
 
-[ITEMDEF i_WOODEN_SHIELD_HARDENING]
+[ITEMDEF i_wooden_shield_hardening]
 ID=i_shield_wood
 NAME=Wooden Shield of Hardening
-RESOURCES=i_shield_wood,3 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Shields
@@ -136,10 +124,9 @@ ON=@Create
 	HITPOINTS=35
 	COLOR=color_magic_hardening
 
-[ITEMDEF i_WOODEN_SHIELD_FORTIFICATION]
+[ITEMDEF i_wooden_shield_fortification]
 ID=i_shield_wood
 NAME=Wooden Shield of Fortification
-RESOURCES=i_shield_wood,4 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Shields
@@ -151,10 +138,9 @@ ON=@Create
 	HITPOINTS=40
 	COLOR=color_magic_fortification
 
-[ITEMDEF i_WOODEN_SHIELD_INVULNERABILITY]
+[ITEMDEF i_wooden_shield_invulnerability]
 ID=i_shield_wood
 NAME=Wooden Shield of Invulnerability
-RESOURCES=i_shield_wood,5 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Shields
@@ -166,10 +152,9 @@ ON=@Create
 	HITPOINTS=45
 	COLOR=color_magic_invulnerability
 
-[ITEMDEF i_BRONZE_SHIELD_DEFENSE]
+[ITEMDEF i_bronze_shield_defense]
 ID=i_shield_round_bronze
 NAME=Bronze Shield of Defense
-RESOURCES=i_shield_round_bronze,1 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Shields
@@ -181,10 +166,9 @@ ON=@Create
 	HITPOINTS=35
 	COLOR=color_magic_defense
 
-[ITEMDEF i_BRONZE_SHIELD_GUARDING]
+[ITEMDEF i_bronze_shield_guarding]
 ID=i_shield_round_bronze
 NAME=Bronze Shield of Guarding
-RESOURCES=i_shield_round_bronze,2 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Shields
@@ -196,10 +180,9 @@ ON=@Create
 	HITPOINTS=40
 	COLOR=color_magic_guarding
 
-[ITEMDEF i_BRONZE_SHIELD_HARDENING]
+[ITEMDEF i_bronze_shield_hardening]
 ID=i_shield_round_bronze
 NAME=Bronze Shield of Hardening
-RESOURCES=i_shield_round_bronze,3 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Shields
@@ -211,10 +194,9 @@ ON=@Create
 	HITPOINTS=45
 	COLOR=color_magic_hardening
 
-[ITEMDEF i_BRONZE_SHIELD_FORTIFICATION]
+[ITEMDEF i_bronze_shield_fortification]
 ID=i_shield_round_bronze
 NAME=Bronze Shield of Fortification
-RESOURCES=i_shield_round_bronze,4 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Shields
@@ -226,10 +208,9 @@ ON=@Create
 	HITPOINTS=50
 	COLOR=color_magic_fortification
 
-[ITEMDEF i_BRONZE_SHIELD_INVULNERABILITY]
+[ITEMDEF i_bronze_shield_invulnerability]
 ID=i_shield_round_bronze
 NAME=Bronze Shield of Invulnerability
-RESOURCES=i_shield_round_bronze,5 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Shields
@@ -241,10 +222,9 @@ ON=@Create
 	HITPOINTS=55
 	COLOR=color_magic_invulnerability
 
-[ITEMDEF i_METAL_SHIELD_DEFENSE]
+[ITEMDEF i_metal_shield_defense]
 ID=i_shield_round_metal
 NAME=Metal Shield of Defense
-RESOURCES=i_shield_round_metal,1 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Shields
@@ -256,10 +236,9 @@ ON=@Create
 	HITPOINTS=70
 	COLOR=color_magic_defense
 
-[ITEMDEF i_METAL_SHIELD_GUARDING]
+[ITEMDEF i_metal_shield_guarding]
 ID=i_shield_round_metal
 NAME=Metal Shield of Guarding
-RESOURCES=i_shield_round_metal,2 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Shields
@@ -271,10 +250,9 @@ ON=@Create
 	HITPOINTS=75
 	COLOR=color_magic_guarding
 
-[ITEMDEF i_METAL_SHIELD_HARDENING]
+[ITEMDEF i_metal_shield_hardening]
 ID=i_shield_round_metal
 NAME=Metal Shield of Hardening
-RESOURCES=i_shield_round_metal,3 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Shields
@@ -286,10 +264,9 @@ ON=@Create
 	HITPOINTS=80
 	COLOR=color_magic_hardening
 
-[ITEMDEF i_METAL_SHIELD_FORTIFICATION]
+[ITEMDEF i_metal_shield_fortification]
 ID=i_shield_round_metal
 NAME=Metal Shield of Fortification
-RESOURCES=i_shield_round_metal,4 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Shields
@@ -301,10 +278,9 @@ ON=@Create
 	HITPOINTS=85
 	COLOR=color_magic_fortification
 
-[ITEMDEF i_METAL_SHIELD_INVULNERABILITY]
+[ITEMDEF i_metal_shield_invulnerability]
 ID=i_shield_round_metal
 NAME=Metal Shield of Invulnerability
-RESOURCES=i_shield_round_metal,5 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Shields
@@ -316,14 +292,13 @@ ON=@Create
 	HITPOINTS=90
 	COLOR=color_magic_invulnerability
 
-[ITEMDEF i_METAL_KITE_SHIELD_DEFENSE]
-ID=I_SHIELD_KITE_METAL
-NAME=Kite Shield of defense
-RESOURCES=i_shield_kite_metal,i_enchant_armor
+[ITEMDEF i_metal_kite_shield_defense]
+ID=i_shield_kite_metal
+NAME=Metal Kite Shield of Defense
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Shields
-DESCRIPTION=Metal Kite Shield of defense
+DESCRIPTION=Metal Kite Shield of Defense
 
 ON=@Create
 	MOREY=20.0
@@ -331,10 +306,9 @@ ON=@Create
 	HITPOINTS=35
 	COLOR=color_magic_defense
 
-[ITEMDEF i_METAL_KITE_SHIELD_GUARDING]
-ID=I_SHIELD_KITE_METAL
-NAME=Kite Shield of Guarding
-RESOURCES=i_shield_kite_metal,2 i_enchant_armor
+[ITEMDEF i_metal_kite_shield_guarding]
+ID=i_shield_kite_metal
+NAME=Metal Kite Shield of Guarding
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Shields
@@ -346,10 +320,9 @@ ON=@Create
 	HITPOINTS=40
 	COLOR=color_magic_guarding
 
-[ITEMDEF i_METAL_KITE_SHIELD_HARDENING]
-ID=I_SHIELD_KITE_METAL
-NAME=Kite Shield of Hardening
-RESOURCES=i_shield_kite_metal,3 i_enchant_armor
+[ITEMDEF i_metal_kite_shield_hardening]
+ID=i_shield_kite_metal
+NAME=Metal Kite Shield of Hardening
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Shields
@@ -361,10 +334,9 @@ ON=@Create
 	HITPOINTS=45
 	COLOR=color_magic_hardening
 
-[ITEMDEF i_METAL_KITE_SHIELD_FORTIFICATION]
-ID=I_SHIELD_KITE_METAL
-NAME=Kite Shield of Fortification
-RESOURCES=i_shield_kite_metal,4 i_enchant_armor
+[ITEMDEF i_metal_kite_shield_fortification]
+ID=i_shield_kite_metal
+NAME=Metal Kite Shield of Fortification
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Shields
@@ -376,10 +348,9 @@ ON=@Create
 	HITPOINTS=50
 	COLOR=color_magic_fortification
 
-[ITEMDEF i_METAL_KITE_SHIELD_INVULNERABILITY]
-ID=I_SHIELD_KITE_METAL
-NAME=Kite Shield of Invulnerability
-RESOURCES=i_shield_kite_metal,5 i_enchant_armor
+[ITEMDEF i_metal_kite_shield_invulnerability]
+ID=i_shield_kite_metal
+NAME=Metal Kite Shield of Invulnerability
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Shields
@@ -391,14 +362,13 @@ ON=@Create
 	HITPOINTS=55
 	COLOR=color_magic_invulnerability
 
-[ITEMDEF i_WOODEN_KITE_SHIELD_DEFENSE]
-ID=I_SHIELD_KITE_WOOD
-NAME=Kite Shield of Defense
-RESOURCES=i_shield_kite_wood,i_enchant_armor
+[ITEMDEF i_wooden_kite_shield_defense]
+ID=i_shield_kite_wood
+NAME=Tear Kite Shield of Defense
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Shields
-DESCRIPTION=Wooden Kite Shield of Defense
+DESCRIPTION=Tear Kite Shield of Defense
 
 ON=@Create
 	MOREY=20.0
@@ -406,14 +376,13 @@ ON=@Create
 	HITPOINTS=60
 	COLOR=color_magic_defense
 
-[ITEMDEF i_WOODEN_KITE_SHIELD_GUARDING]
-ID=I_SHIELD_KITE_WOOD
-NAME=Kite Shield of Guarding
-RESOURCES=i_shield_kite_wood,2 i_enchant_armor
+[ITEMDEF i_wooden_kite_shield_guarding]
+ID=i_shield_kite_wood
+NAME=Tear Kite Shield of Guarding
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Shields
-DESCRIPTION=Wooden Kite Shield of Guarding
+DESCRIPTION=Tear Kite Shield of Guarding
 
 ON=@Create
 	MOREY=40.0
@@ -421,14 +390,13 @@ ON=@Create
 	HITPOINTS=65
 	COLOR=color_magic_guarding
 
-[ITEMDEF i_WOODEN_KITE_SHIELD_HARDENING]
-ID=I_SHIELD_KITE_WOOD
-NAME=Kite Shield of Hardening
-RESOURCES=i_shield_kite_wood,3 i_enchant_armor
+[ITEMDEF i_wooden_kite_shield_hardening]
+ID=i_shield_kite_wood
+NAME=Tear Kite Shield of Hardening
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Shields
-DESCRIPTION=Wooden Kite Shield of Hardening
+DESCRIPTION=Tear Kite Shield of Hardening
 
 ON=@Create
 	MOREY=60.0
@@ -436,14 +404,13 @@ ON=@Create
 	HITPOINTS=70
 	COLOR=color_magic_hardening
 
-[ITEMDEF i_WOODEN_KITE_SHIELD_FORTIFICATION]
-ID=I_SHIELD_KITE_WOOD
-NAME=Kite Shield of Fortification
-RESOURCES=i_shield_kite_wood,4 i_enchant_armor
+[ITEMDEF i_wooden_kite_shield_fortification]
+ID=i_shield_kite_wood
+NAME=Tear Kite Shield of Fortification
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Shields
-DESCRIPTION=Wooden Kite Shield of Fortification
+DESCRIPTION=Tear Kite Shield of Fortification
 
 ON=@Create
 	MOREY=80.0
@@ -451,14 +418,13 @@ ON=@Create
 	HITPOINTS=75
 	COLOR=color_magic_fortification
 
-[ITEMDEF i_WOODEN_KITE_SHIELD_INVULNERABILITY]
-ID=I_SHIELD_KITE_WOOD
-NAME=Kite Shield of Invulnerability
-RESOURCES=i_shield_kite_wood,5 i_enchant_armor
+[ITEMDEF i_wooden_kite_shield_invulnerability]
+ID=i_shield_kite_wood
+NAME=Tear Kite Shield of Invulnerability
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Shields
-DESCRIPTION=Wooden Kite Shield of Invulnerability
+DESCRIPTION=Tear Kite Shield of Invulnerability
 
 ON=@Create
 	MOREY=100.0
@@ -466,14 +432,13 @@ ON=@Create
 	HITPOINTS=80
 	COLOR=color_magic_invulnerability
 
-[ITEMDEF i_HEATER_SHIELD_DEFENSE]
-ID=I_SHIELD_HEATER
-NAME=Heater of Defense
-RESOURCES=i_shield_heater,i_enchant_armor
+[ITEMDEF i_heater_shield_defense]
+ID=i_shield_heater
+NAME=Heater Shield of Defense
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Shields
-DESCRIPTION=Heater of Defense
+DESCRIPTION=Heater Shield of Defense
 
 ON=@Create
 	MOREY=20.0
@@ -481,14 +446,13 @@ ON=@Create
 	HITPOINTS=40
 	COLOR=color_magic_defense
 
-[ITEMDEF i_HEATER_SHIELD_GUARDING]
-ID=I_SHIELD_HEATER
-NAME=Heater of Guarding
-RESOURCES=i_shield_heater,2 i_enchant_armor
+[ITEMDEF i_heater_shield_guarding]
+ID=i_shield_heater
+NAME=Heater Shield of Guarding
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Shields
-DESCRIPTION=Heater of Guarding
+DESCRIPTION=Heater Shield of Guarding
 
 ON=@Create
 	MOREY=40.0
@@ -496,14 +460,13 @@ ON=@Create
 	HITPOINTS=45
 	COLOR=color_magic_guarding
 
-[ITEMDEF i_HEATER_SHIELD_HARDENING]
-ID=I_SHIELD_HEATER
-NAME=Heater of Hardening
-RESOURCES=i_shield_heater,3 i_enchant_armor
+[ITEMDEF i_heater_shield_hardening]
+ID=i_shield_heater
+NAME=Heater Shield of Hardening
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Shields
-DESCRIPTION=Heater of Hardening
+DESCRIPTION=Heater Shield of Hardening
 
 ON=@Create
 	MOREY=60.0
@@ -511,14 +474,13 @@ ON=@Create
 	HITPOINTS=50
 	COLOR=color_magic_hardening
 
-[ITEMDEF i_HEATER_SHIELD_FORTIFICATION]
-ID=I_SHIELD_HEATER
-NAME=Heater of Fortification
-RESOURCES=i_shield_heater,4 i_enchant_armor
+[ITEMDEF i_heater_shield_fortification]
+ID=i_shield_heater
+NAME=Heater Shield of Fortification
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Shields
-DESCRIPTION=Heater of Fortification
+DESCRIPTION=Heater Shield of Fortification
 
 ON=@Create
 	MOREY=80.0
@@ -526,14 +488,13 @@ ON=@Create
 	HITPOINTS=55
 	COLOR=color_magic_fortification
 
-[ITEMDEF i_HEATER_SHIELD_INVULNERABILITY]
-ID=I_SHIELD_HEATER
-NAME=Heater of Invulnerability
-RESOURCES=i_shield_heater,5 i_enchant_armor
+[ITEMDEF i_heater_shield_invulnerability]
+ID=i_shield_heater
+NAME=Heater Shield of Invulnerability
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Shields
-DESCRIPTION=Heater of Invulnerability
+DESCRIPTION=Heater Shield of Invulnerability
 
 ON=@Create
 	MOREY=100.0
@@ -541,14 +502,13 @@ ON=@Create
 	HITPOINTS=60
 	COLOR=color_magic_invulnerability
 
-[ITEMDEF i_PLATEMAIL_DEFENSE]
+[ITEMDEF i_platemail_defense]
 ID=i_platemail_chest
-NAME=Platemail of Defense
-RESOURCES=i_platemail_chest,i_enchant_armor
+NAME=Platemail Chest of Defense
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Platemail
-DESCRIPTION=Platemail of Defense
+DESCRIPTION=Platemail Chest of Defense
 
 ON=@Create
 	MOREY=20.0
@@ -556,14 +516,13 @@ ON=@Create
 	HITPOINTS=70
 	COLOR=color_magic_defense
 
-[ITEMDEF i_PLATEMAIL_GUARDING]
+[ITEMDEF i_platemail_guarding]
 ID=i_platemail_chest
-NAME=Platemail of Guarding
-RESOURCES=i_platemail_chest,2 i_enchant_armor
+NAME=Platemail Chest of Guarding
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Platemail
-DESCRIPTION=Platemail of Guarding
+DESCRIPTION=Platemail Chest of Guarding
 
 ON=@Create
 	MOREY=40.0
@@ -571,14 +530,13 @@ ON=@Create
 	HITPOINTS=75
 	COLOR=color_magic_guarding
 
-[ITEMDEF i_PLATEMAIL_HARDENING]
+[ITEMDEF i_platemail_hardening]
 ID=i_platemail_chest
-NAME=Platemail of Hardening
-RESOURCES=i_platemail_chest,3 i_enchant_armor
+NAME=Platemail Chest of Hardening
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Platemail
-DESCRIPTION=Platemail of Hardening
+DESCRIPTION=Platemail Chest of Hardening
 
 ON=@Create
 	MOREY=60.0
@@ -586,14 +544,13 @@ ON=@Create
 	HITPOINTS=80
 	COLOR=color_magic_hardening
 
-[ITEMDEF i_PLATEMAIL_FORTIFICATION]
+[ITEMDEF i_platemail_fortification]
 ID=i_platemail_chest
-NAME=Platemail of Fortification
-RESOURCES=i_platemail_chest,4 i_enchant_armor
+NAME=Platemail Chest of Fortification
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Platemail
-DESCRIPTION=Platemail of Fortification
+DESCRIPTION=Platemail Chest of Fortification
 
 ON=@Create
 	MOREY=80.0
@@ -601,14 +558,13 @@ ON=@Create
 	HITPOINTS=85
 	COLOR=color_magic_fortification
 
-[ITEMDEF i_PLATEMAIL_INVULNERABILITY]
+[ITEMDEF i_platemail_invulnerability]
 ID=i_platemail_chest
-NAME=Platemail of Invulnerability
-RESOURCES=i_platemail_chest,5 i_enchant_armor
+NAME=Platemail Chest of Invulnerability
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Platemail
-DESCRIPTION=Platemail of Invulnerability
+DESCRIPTION=Platemail Chest of Invulnerability
 
 ON=@Create
 	MOREY=100.0
@@ -616,10 +572,9 @@ ON=@Create
 	HITPOINTS=90
 	COLOR=color_magic_invulnerability
 
-[ITEMDEF i_PLATEMAIL_leggings_DEFENSE]
+[ITEMDEF i_platemail_leggings_defense]
 ID=i_platemail_leggings
 NAME=Platemail Legs of Defense
-RESOURCES=i_platemail_leggings,1 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Platemail
@@ -631,10 +586,9 @@ ON=@Create
 	HITPOINTS=70
 	COLOR=color_magic_defense
 
-[ITEMDEF i_PLATEMAIL_leggings_GUARDING]
+[ITEMDEF i_platemail_leggings_guarding]
 ID=i_platemail_leggings
 NAME=Platemail Legs of Guarding
-RESOURCES=i_platemail_leggings,2 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Platemail
@@ -646,10 +600,9 @@ ON=@Create
 	HITPOINTS=75
 	COLOR=color_magic_guarding
 
-[ITEMDEF i_PLATEMAIL_leggings_HARDENING]
+[ITEMDEF i_platemail_leggings_hardening]
 ID=i_platemail_leggings
 NAME=Platemail Legs of Hardening
-RESOURCES=i_platemail_leggings,3 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Platemail
@@ -661,10 +614,9 @@ ON=@Create
 	HITPOINTS=80
 	COLOR=color_magic_hardening
 
-[ITEMDEF i_PLATEMAIL_leggings_FORTIFICATION]
+[ITEMDEF i_platemail_leggings_fortification]
 ID=i_platemail_leggings
 NAME=Platemail Legs of Fortification
-RESOURCES=i_platemail_leggings,4 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Platemail
@@ -676,10 +628,9 @@ ON=@Create
 	HITPOINTS=85
 	COLOR=color_magic_fortification
 
-[ITEMDEF i_PLATEMAIL_leggings_INVULNERABILITY]
+[ITEMDEF i_platemail_leggings_invulnerability]
 ID=i_platemail_leggings
 NAME=Platemail Legs of Invulnerability
-RESOURCES=i_platemail_leggings,5 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Platemail
@@ -691,10 +642,9 @@ ON=@Create
 	HITPOINTS=90
 	COLOR=color_magic_invulnerability
 
-[ITEMDEF i_PLATEMAIL_ARMS_DEFENSE]
+[ITEMDEF i_platemail_arms_defense]
 ID=i_platemail_arms
 NAME=Platemail Arms of Defense
-RESOURCES=i_platemail_arms,1 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Platemail
@@ -706,10 +656,9 @@ ON=@Create
 	HITPOINTS=70
 	COLOR=color_magic_defense
 
-[ITEMDEF i_PLATEMAIL_ARMS_GUARDING]
+[ITEMDEF i_platemail_arms_guarding]
 ID=i_platemail_arms
 NAME=Platemail Arms of Guarding
-RESOURCES=i_platemail_arms,2 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Platemail
@@ -721,10 +670,9 @@ ON=@Create
 	HITPOINTS=75
 	COLOR=color_magic_guarding
 
-[ITEMDEF i_PLATEMAIL_ARMS_HARDENING]
+[ITEMDEF i_platemail_arms_hardening]
 ID=i_platemail_arms
 NAME=Platemail Arms of Hardening
-RESOURCES=i_platemail_arms,3 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Platemail
@@ -736,10 +684,9 @@ ON=@Create
 	HITPOINTS=80
 	COLOR=color_magic_hardening
 
-[ITEMDEF i_PLATEMAIL_ARMS_FORTIFICATION]
+[ITEMDEF i_platemail_arms_fortification]
 ID=i_platemail_arms
 NAME=Platemail Arms of Fortification
-RESOURCES=i_platemail_arms,4 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Platemail
@@ -751,10 +698,9 @@ ON=@Create
 	HITPOINTS=85
 	COLOR=color_magic_fortification
 
-[ITEMDEF i_PLATEMAIL_ARMS_INVULNERABILITY]
+[ITEMDEF i_platemail_arms_invulnerability]
 ID=i_platemail_arms
 NAME=Platemail Arms of Invulnerability
-RESOURCES=i_platemail_arms,5 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Platemail
@@ -766,10 +712,9 @@ ON=@Create
 	HITPOINTS=90
 	COLOR=color_magic_invulnerability
 
-[ITEMDEF i_platemail_HELM_DEFENSE]
+[ITEMDEF i_platemail_helm_defense]
 ID=i_platemail_helm
 NAME=Plate Helm of Defense
-RESOURCES=i_platemail_helm,i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Platemail
@@ -781,10 +726,9 @@ ON=@Create
 	HITPOINTS=60
 	COLOR=color_magic_defense
 
-[ITEMDEF i_platemail_HELM_GUARDING]
+[ITEMDEF i_platemail_helm_guarding]
 ID=i_platemail_helm
 NAME=Plate Helm of Guarding
-RESOURCES=i_platemail_helm,2 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Platemail
@@ -796,10 +740,9 @@ ON=@Create
 	HITPOINTS=65
 	COLOR=color_magic_guarding
 
-[ITEMDEF i_platemail_HELM_HARDENING]
+[ITEMDEF i_platemail_helm_hardening]
 ID=i_platemail_helm
 NAME=Plate Helm of Hardening
-RESOURCES=i_platemail_helm,3 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Platemail
@@ -811,10 +754,9 @@ ON=@Create
 	HITPOINTS=70
 	COLOR=color_magic_hardening
 
-[ITEMDEF i_platemail_HELM_FORTIFICATION]
+[ITEMDEF i_platemail_helm_fortification]
 ID=i_platemail_helm
 NAME=Plate Helm of Fortification
-RESOURCES=i_platemail_helm,4 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Platemail
@@ -826,10 +768,9 @@ ON=@Create
 	HITPOINTS=75
 	COLOR=color_magic_fortification
 
-[ITEMDEF i_platemail_HELM_INVULNERABILITY]
+[ITEMDEF i_platemail_helm_invulnerability]
 ID=i_platemail_helm
 NAME=Plate Helm of Invulnerability
-RESOURCES=i_platemail_helm,5 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Platemail
@@ -841,10 +782,9 @@ ON=@Create
 	HITPOINTS=80
 	COLOR=color_magic_invulnerability
 
-[ITEMDEF i_PLATEMAIL_GORGET_DEFENSE]
+[ITEMDEF i_platemail_gorget_defense]
 ID=i_platemail_gorget
 NAME=Platemail Gorget of Defense
-RESOURCES=i_platemail_gorget,i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Platemail
@@ -856,10 +796,9 @@ ON=@Create
 	HITPOINTS=70
 	COLOR=color_magic_defense
 
-[ITEMDEF i_PLATEMAIL_GORGET_GUARDING]
+[ITEMDEF i_platemail_gorget_guarding]
 ID=i_platemail_gorget
 NAME=Platemail Gorget of Guarding
-RESOURCES=i_platemail_gorget,2 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Platemail
@@ -871,10 +810,9 @@ ON=@Create
 	HITPOINTS=75
 	COLOR=color_magic_guarding
 
-[ITEMDEF i_PLATEMAIL_GORGET_HARDENING]
+[ITEMDEF i_platemail_gorget_hardening]
 ID=i_platemail_gorget
 NAME=Platemail Gorget of Hardening
-RESOURCES=i_platemail_gorget,3 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Platemail
@@ -886,14 +824,12 @@ ON=@Create
 	HITPOINTS=80
 	COLOR=color_magic_hardening
 
-[ITEMDEF i_PLATEMAIL_GORGET_FORTIFICATION]
+[ITEMDEF i_platemail_gorget_fortification]
 ID=i_platemail_gorget
 NAME=Platemail Gorget of Fortification
-RESOURCES=i_platemail_gorget,4 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Platemail
-
 DESCRIPTION=Platemail Gorget of Fortification
 
 ON=@Create
@@ -902,10 +838,9 @@ ON=@Create
 	HITPOINTS=85
 	COLOR=color_magic_fortification
 
-[ITEMDEF i_PLATEMAIL_GORGET_INVULNERABILITY]
+[ITEMDEF i_platemail_gorget_invulnerability]
 ID=i_platemail_gorget
 NAME=Platemail Gorget of Invulnerability
-RESOURCES=i_platemail_gorget,5 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Platemail
@@ -917,10 +852,9 @@ ON=@Create
 	HITPOINTS=90
 	COLOR=color_magic_invulnerability
 
-[ITEMDEF i_PLATEMAIL_GAUNTLETS_DEFENSE]
+[ITEMDEF i_platemail_gauntlets_defense]
 ID=i_platemail_gloves
 NAME=Platemail Gauntlets of Defense
-RESOURCES=i_platemail_gloves,i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Platemail
@@ -932,10 +866,9 @@ ON=@Create
 	HITPOINTS=70
 	COLOR=color_magic_defense
 
-[ITEMDEF i_PLATEMAIL_GAUNTLETS_GUARDING]
+[ITEMDEF i_platemail_gauntlets_guarding]
 ID=i_platemail_gloves
 NAME=Platemail Gauntlets of Guarding
-RESOURCES=i_platemail_gloves,2 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Platemail
@@ -947,10 +880,9 @@ ON=@Create
 	HITPOINTS=75
 	COLOR=color_magic_guarding
 
-[ITEMDEF i_PLATEMAIL_GAUNTLETS_HARDENING]
+[ITEMDEF i_platemail_gauntlets_hardening]
 ID=i_platemail_gloves
 NAME=Platemail Gauntlets of Hardening
-RESOURCES=i_platemail_gloves,3 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Platemail
@@ -962,10 +894,9 @@ ON=@Create
 	HITPOINTS=80
 	COLOR=color_magic_hardening
 
-[ITEMDEF i_PLATEMAIL_GAUNTLETS_FORTIFICATION]
+[ITEMDEF i_platemail_gauntlets_fortification]
 ID=i_platemail_gloves
 NAME=Platemail Gauntlets of Fortification
-RESOURCES=i_platemail_gloves,4 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Platemail
@@ -977,10 +908,9 @@ ON=@Create
 	HITPOINTS=85
 	COLOR=color_magic_fortification
 
-[ITEMDEF i_PLATEMAIL_GAUNTLETS_INVULNERABILITY]
+[ITEMDEF i_platemail_gauntlets_invulnerability]
 ID=i_platemail_gloves
 NAME=Platemail Gauntlets of Invulnerability
-RESOURCES=i_platemail_gloves,5 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Platemail
@@ -992,10 +922,9 @@ ON=@Create
 	HITPOINTS=90
 	COLOR=color_magic_invulnerability
 
-[ITEMDEF i_PLATEMAIL_DEFENSE_FEMALE]
-ID=i_ARMOR_FEMALE_PLATE
-NAME=Platemail of Defense
-RESOURCES=i_armor_female_plate,i_enchant_armor
+[ITEMDEF i_platemail_defense_female]
+ID=i_armor_female_plate
+NAME=Female Platemail of Defense
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Platemail
@@ -1007,10 +936,9 @@ ON=@Create
 	HITPOINTS=65
 	COLOR=color_magic_defense
 
-[ITEMDEF i_PLATEMAIL_GUARDING_FEMALE]
-ID=i_ARMOR_FEMALE_PLATE
-NAME=Platemail of Guarding
-RESOURCES=i_armor_female_plate,2 i_enchant_armor
+[ITEMDEF i_platemail_guarding_female]
+ID=i_armor_female_plate
+NAME=Female Platemail of Guarding
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Platemail
@@ -1022,10 +950,9 @@ ON=@Create
 	HITPOINTS=70
 	COLOR=color_magic_guarding
 
-[ITEMDEF i_PLATEMAIL_HARDENING_FEMALE]
-ID=i_ARMOR_FEMALE_PLATE
-NAME=Platemail of Hardening
-RESOURCES=i_armor_female_plate,3 i_enchant_armor
+[ITEMDEF i_platemail_hardening_female]
+ID=i_armor_female_plate
+NAME=Female Platemail of Hardening
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Platemail
@@ -1037,10 +964,9 @@ ON=@Create
 	HITPOINTS=65
 	COLOR=color_magic_hardening
 
-[ITEMDEF i_PLATEMAIL_FORTIFICATION_FEMALE]
-ID=i_ARMOR_FEMALE_PLATE
-NAME=Platemail of Fortification
-RESOURCES=i_armor_female_plate,4 i_enchant_armor
+[ITEMDEF i_platemail_fortification_female]
+ID=i_armor_female_plate
+NAME=Female Platemail of Fortification
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Platemail
@@ -1052,10 +978,9 @@ ON=@Create
 	HITPOINTS=65
 	COLOR=color_magic_fortification
 
-[ITEMDEF i_PLATEMAIL_INVULNERABILITY_FEMALE]
-ID=i_ARMOR_FEMALE_PLATE
-NAME=Platemail of Invulnerability
-RESOURCES=i_armor_female_plate,5 i_enchant_armor
+[ITEMDEF i_platemail_invulnerability_female]
+ID=i_armor_female_plate
+NAME=Female Platemail of Invulnerability
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Platemail
@@ -1067,10 +992,9 @@ ON=@Create
 	HITPOINTS=65
 	COLOR=color_magic_invulnerability
 
-[ITEMDEF i_CHAINMAIL_COIF_DEFENSE]
+[ITEMDEF i_chainmail_coif_defense]
 ID=i_chainmail_coif
 NAME=Chainmail Coif of Defense
-RESOURCES=i_chainmail_coif,i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Chainmail
@@ -1082,10 +1006,9 @@ ON=@Create
 	HITPOINTS=45
 	COLOR=color_magic_defense
 
-[ITEMDEF i_CHAINMAIL_COIF_GUARDING]
+[ITEMDEF i_chainmail_coif_guarding]
 ID=i_chainmail_coif
 NAME=Chainmail Coif of Guarding
-RESOURCES=i_chainmail_coif,2 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Chainmail
@@ -1097,10 +1020,9 @@ ON=@Create
 	HITPOINTS=50
 	COLOR=color_magic_guarding
 
-[ITEMDEF i_CHAINMAIL_COIF_HARDENING]
+[ITEMDEF i_chainmail_coif_hardening]
 ID=i_chainmail_coif
 NAME=Chainmail Coif of Hardening
-RESOURCES=i_chainmail_coif,3 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Chainmail
@@ -1112,10 +1034,9 @@ ON=@Create
 	HITPOINTS=55
 	COLOR=color_magic_hardening
 
-[ITEMDEF i_CHAINMAIL_COIF_FORTIFICATION]
+[ITEMDEF i_chainmail_coif_fortification]
 ID=i_chainmail_coif
 NAME=Chainmail Coif of Fortification
-RESOURCES=i_chainmail_coif,4 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Chainmail
@@ -1127,10 +1048,9 @@ ON=@Create
 	HITPOINTS={60 61}
 	COLOR=color_magic_fortification
 
-[ITEMDEF i_CHAINMAIL_COIF_INVULNERABILITY]
+[ITEMDEF i_chainmail_coif_invulnerability]
 ID=i_chainmail_coif
 NAME=Chainmail Coif of Invulnerability
-RESOURCES=i_chainmail_coif,5 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Chainmail
@@ -1142,10 +1062,9 @@ ON=@Create
 	HITPOINTS={65 66}
 	COLOR=color_magic_invulnerability
 
-[ITEMDEF i_CHAINMAIL_LEGGINGS_DEFENSE]
+[ITEMDEF i_chainmail_leggings_defense]
 ID=i_chainmail_leggings
 NAME=Chainmail Leggings of Defense
-RESOURCES=i_chainmail_leggings,i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Chainmail
@@ -1157,10 +1076,9 @@ ON=@Create
 	HITPOINTS={60 61}
 	COLOR=color_magic_defense
 
-[ITEMDEF i_CHAINMAIL_LEGGINGS_GUARDING]
+[ITEMDEF i_chainmail_leggings_guarding]
 ID=i_chainmail_leggings
 NAME=Chainmail Leggings of Guarding
-RESOURCES=i_chainmail_leggings,2 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Chainmail
@@ -1172,10 +1090,9 @@ ON=@Create
 	HITPOINTS={65 66}
 	COLOR=color_magic_guarding
 
-[ITEMDEF i_CHAINMAIL_LEGGINGS_HARDENING]
+[ITEMDEF i_chainmail_leggings_hardening]
 ID=i_chainmail_leggings
 NAME=Chainmail Leggings of Hardening
-RESOURCES=i_chainmail_leggings,3 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Chainmail
@@ -1187,10 +1104,9 @@ ON=@Create
 	HITPOINTS={70 71}
 	COLOR=color_magic_hardening
 
-[ITEMDEF i_CHAINMAIL_LEGGINGS_FORTIFICATION]
+[ITEMDEF i_chainmail_leggings_fortification]
 ID=i_chainmail_leggings
 NAME=Chainmail Leggings of Fortification
-RESOURCES=i_chainmail_leggings,4 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Chainmail
@@ -1202,10 +1118,9 @@ ON=@Create
 	HITPOINTS={75 76}
 	COLOR=color_magic_fortification
 
-[ITEMDEF i_CHAINMAIL_LEGGINGS_INVULNERABILITY]
+[ITEMDEF i_chainmail_leggings_invulnerability]
 ID=i_chainmail_leggings
 NAME=Chainmail Leggings of Invulnerability
-RESOURCES=i_chainmail_leggings,5 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Chainmail
@@ -1217,10 +1132,9 @@ ON=@Create
 	HITPOINTS={80 81}
 	COLOR=color_magic_invulnerability
 
-[ITEMDEF i_CHAINMAIL_TUNIC_DEFENSE]
+[ITEMDEF i_chainmail_tunic_defense]
 ID=i_chainmail_tunic
 NAME=Chainmail Tunic of Defense
-RESOURCES=i_chainmail_tunic,i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Chainmail
@@ -1232,10 +1146,9 @@ ON=@Create
 	HITPOINTS={60 61}
 	COLOR=color_magic_defense
 
-[ITEMDEF i_CHAINMAIL_TUNIC_GUARDING]
+[ITEMDEF i_chainmail_tunic_guarding]
 ID=i_chainmail_tunic
 NAME=Chainmail Tunic of Guarding
-RESOURCES=i_chainmail_tunic,2 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Chainmail
@@ -1247,10 +1160,9 @@ ON=@Create
 	HITPOINTS={65 66}
 	COLOR=color_magic_guarding
 
-[ITEMDEF i_CHAINMAIL_TUNIC_HARDENING]
+[ITEMDEF i_chainmail_tunic_hardening]
 ID=i_chainmail_tunic
 NAME=Chainmail Tunic of Hardening
-RESOURCES=i_chainmail_tunic,3 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Chainmail
@@ -1262,10 +1174,9 @@ ON=@Create
 	HITPOINTS={70 71}
 	COLOR=color_magic_hardening
 
-[ITEMDEF i_CHAINMAIL_TUNIC_FORTIFICATION]
+[ITEMDEF i_chainmail_tunic_fortification]
 ID=i_chainmail_tunic
 NAME=Chainmail Tunic of Fortification
-RESOURCES=i_chainmail_tunic,4 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Chainmail
@@ -1277,10 +1188,9 @@ ON=@Create
 	HITPOINTS={75 76}
 	COLOR=color_magic_fortification
 
-[ITEMDEF i_CHAINMAIL_TUNIC_INVULNERABILITY]
+[ITEMDEF i_chainmail_tunic_invulnerability]
 ID=i_chainmail_tunic
 NAME=Chainmail Tunic of Invulnerability
-RESOURCES=i_chainmail_tunic,5 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Chainmail
@@ -1292,10 +1202,9 @@ ON=@Create
 	HITPOINTS={80 81}
 	COLOR=color_magic_invulnerability
 
-[ITEMDEF i_RINGMAIL_LEGGINGS_DEFENSE]
-NAME=Ringmail Leggings of Defense
+[ITEMDEF i_ringmail_leggings_defense]
 ID=i_ringmail_leggings
-RESOURCES=i_ringmail_leggings,i_enchant_armor
+NAME=Ringmail Leggings of Defense
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Ringmail
@@ -1307,10 +1216,9 @@ ON=@Create
 	HITPOINTS={55 56}
 	COLOR=color_magic_defense
 
-[ITEMDEF i_RINGMAIL_LEGGINGS_GUARDING]
-NAME=Ringmail Leggings of Guarding
+[ITEMDEF i_ringmail_leggings_guarding]
 ID=i_ringmail_leggings
-RESOURCES=i_ringmail_leggings,2 i_enchant_armor
+NAME=Ringmail Leggings of Guarding
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Ringmail
@@ -1322,10 +1230,9 @@ ON=@Create
 	HITPOINTS={60 61}
 	COLOR=color_magic_guarding
 
-[ITEMDEF i_RINGMAIL_LEGGINGS_HARDENING]
-NAME=Ringmail Leggings of Hardening
+[ITEMDEF i_ringmail_leggings_hardening]
 ID=i_ringmail_leggings
-RESOURCES=i_ringmail_leggings,3 i_enchant_armor
+NAME=Ringmail Leggings of Hardening
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Ringmail
@@ -1337,10 +1244,9 @@ ON=@Create
 	HITPOINTS={65 66}
 	COLOR=color_magic_hardening
 
-[ITEMDEF i_RINGMAIL_LEGGINGS_FORTIFICATION]
-NAME=Ringmail Leggings of Fortification
+[ITEMDEF i_ringmail_leggings_fortification]
 ID=i_ringmail_leggings
-RESOURCES=i_ringmail_leggings,4 i_enchant_armor
+NAME=Ringmail Leggings of Fortification
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Ringmail
@@ -1352,10 +1258,9 @@ ON=@Create
 	HITPOINTS={70 71}
 	COLOR=color_magic_fortification
 
-[ITEMDEF i_RINGMAIL_LEGGINGS_INVULNERABILITY]
-NAME=Ringmail Leggings of Invulnerability
+[ITEMDEF i_ringmail_leggings_invulnerability]
 ID=i_ringmail_leggings
-RESOURCES=i_ringmail_leggings,5 i_enchant_armor
+NAME=Ringmail Leggings of Invulnerability
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Ringmail
@@ -1367,10 +1272,9 @@ ON=@Create
 	HITPOINTS={75 76}
 	COLOR=color_magic_invulnerability
 
-[ITEMDEF i_RINGMAIL_SLEEVES_DEFENSE]
+[ITEMDEF i_ringmail_sleeves_defense]
 ID=i_ringmail_sleeves
 NAME=Ringmail Sleeves of Defense
-RESOURCES=i_ringmail_sleeves,i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Ringmail
@@ -1382,10 +1286,9 @@ ON=@Create
 	HITPOINTS={55 56}
 	COLOR=color_magic_defense
 
-[ITEMDEF i_RINGMAIL_SLEEVES_GUARDING]
+[ITEMDEF i_ringmail_sleeves_guarding]
 ID=i_ringmail_sleeves
 NAME=Ringmail Sleeves of Guarding
-RESOURCES=i_ringmail_sleeves,2 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Ringmail
@@ -1397,10 +1300,9 @@ ON=@Create
 	HITPOINTS={60 61}
 	COLOR=color_magic_guarding
 
-[ITEMDEF i_RINGMAIL_SLEEVES_HARDENING]
+[ITEMDEF i_ringmail_sleeves_hardening]
 ID=i_ringmail_sleeves
 NAME=Ringmail Sleeves of Hardening
-RESOURCES=i_ringmail_sleeves,3 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Ringmail
@@ -1412,10 +1314,9 @@ ON=@Create
 	HITPOINTS={65 66}
 	COLOR=color_magic_hardening
 
-[ITEMDEF i_RINGMAIL_SLEEVES_FORTIFICATION]
+[ITEMDEF i_ringmail_sleeves_fortification]
 ID=i_ringmail_sleeves
 NAME=Ringmail Sleeves of Fortification
-RESOURCES=i_ringmail_sleeves,4 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Ringmail
@@ -1427,10 +1328,9 @@ ON=@Create
 	HITPOINTS={70 71}
 	COLOR=color_magic_fortification
 
-[ITEMDEF i_RINGMAIL_SLEEVES_INVULNERABILITY]
+[ITEMDEF i_ringmail_sleeves_invulnerability]
 ID=i_ringmail_sleeves
 NAME=Ringmail Sleeves of Invulnerability
-RESOURCES=i_ringmail_sleeves,5 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Ringmail
@@ -1442,10 +1342,9 @@ ON=@Create
 	HITPOINTS={75 76}
 	COLOR=color_magic_invulnerability
 
-[ITEMDEF i_RINGMAIL_GLOVES_DEFENSE]
+[ITEMDEF i_ringmail_gloves_defense]
 ID=i_ringmail_gloves
 NAME=Ringmail Gloves of Defense
-RESOURCES=i_ringmail_gloves,i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Ringmail
@@ -1457,10 +1356,9 @@ ON=@Create
 	HITPOINTS={55 56}
 	COLOR=color_magic_defense
 
-[ITEMDEF i_RINGMAIL_GLOVES_GUARDING]
+[ITEMDEF i_ringmail_gloves_guarding]
 ID=i_ringmail_gloves
 NAME=Ringmail Gloves of Guarding
-RESOURCES=i_ringmail_gloves,2 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Ringmail
@@ -1472,10 +1370,9 @@ ON=@Create
 	HITPOINTS={60 61}
 	COLOR=color_magic_guarding
 
-[ITEMDEF i_RINGMAIL_GLOVES_HARDENING]
+[ITEMDEF i_ringmail_gloves_hardening]
 ID=i_ringmail_gloves
 NAME=Ringmail Gloves of Hardening
-RESOURCES=i_ringmail_gloves,3 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Ringmail
@@ -1487,10 +1384,9 @@ ON=@Create
 	HITPOINTS={65 66}
 	COLOR=color_magic_hardening
 
-[ITEMDEF i_RINGMAIL_GLOVES_FORTIFICATION]
+[ITEMDEF i_ringmail_gloves_fortification]
 ID=i_ringmail_gloves
 NAME=Ringmail Gloves of Fortification
-RESOURCES=i_ringmail_gloves,4 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Ringmail
@@ -1502,10 +1398,9 @@ ON=@Create
 	HITPOINTS={70 71}
 	COLOR=color_magic_fortification
 
-[ITEMDEF i_RINGMAIL_GLOVES_INVULNERABILITY]
+[ITEMDEF i_ringmail_gloves_invulnerability]
 ID=i_ringmail_gloves
 NAME=Ringmail Gloves of Invulnerability
-RESOURCES=i_ringmail_gloves,5 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Ringmail
@@ -1517,25 +1412,23 @@ ON=@Create
 	HITPOINTS={75 76}
 	COLOR=color_magic_invulnerability
 
-[ITEMDEF i_RINGMAIL_TUNIC_DEFENSE]
+[ITEMDEF i_ringmail_tunic_defense]
 ID=i_ringmail_tunic
 NAME=Ringmail Tunic of Defense
-RESOURCES=i_ringmail_tunic,i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Ringmail
 DESCRIPTION=Ringmail Tunic of Defense
 
 ON=@Create
-	ATTR=attr_magic
 	MOREY=20.0
+	ATTR=attr_magic
 	HITPOINTS={55 56}
 	COLOR=color_magic_defense
 
-[ITEMDEF i_RINGMAIL_TUNIC_GUARDING]
+[ITEMDEF i_ringmail_tunic_guarding]
 ID=i_ringmail_tunic
 NAME=Ringmail Tunic of Guarding
-RESOURCES=i_ringmail_tunic,2 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Ringmail
@@ -1547,10 +1440,9 @@ ON=@Create
 	HITPOINTS={60 61}
 	COLOR=color_magic_guarding
 
-[ITEMDEF i_RINGMAIL_TUNIC_HARDENING]
+[ITEMDEF i_ringmail_tunic_hardening]
 ID=i_ringmail_tunic
 NAME=Ringmail Tunic of Hardening
-RESOURCES=i_ringmail_tunic,3 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Ringmail
@@ -1562,10 +1454,9 @@ ON=@Create
 	HITPOINTS={65 66}
 	COLOR=color_magic_hardening
 
-[ITEMDEF i_RINGMAIL_TUNIC_FORTIFICATION]
+[ITEMDEF i_ringmail_tunic_fortification]
 ID=i_ringmail_tunic
 NAME=Ringmail Tunic of Fortification
-RESOURCES=i_ringmail_tunic,4 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Ringmail
@@ -1577,10 +1468,9 @@ ON=@Create
 	HITPOINTS={70 71}
 	COLOR=color_magic_fortification
 
-[ITEMDEF i_RINGMAIL_TUNIC_INVULNERABILITY]
+[ITEMDEF i_ringmail_tunic_invulnerability]
 ID=i_ringmail_tunic
 NAME=Ringmail Tunic of Invulnerability
-RESOURCES=i_ringmail_tunic,5 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Ringmail

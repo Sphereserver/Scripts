@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2007
+// SPHERE by : Menasoft ©1997-2017
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,32 +7,28 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, November 15, 2003
+// FILE LAST UPDATED: Saturday, May 6, 2017
 //
-VERSION=0.56b
+VERSION=0.56d
 
 
 [ITEMDEF i_leather_sleeves_invulnerability]
-//Leather Arms of Invulnerability
-NAME=Leather Arms of Invulnerability
 ID=i_leather_sleeves
-RESOURCES=i_leather_sleeves,6 i_enchant_armor
+NAME=Leather Sleeves of Invulnerability
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Leather
-DESCRIPTION=Leather Arms of Invulnerability
+DESCRIPTION=Leather Sleeves of Invulnerability
 
 ON=@Create
-	ATTR=attr_magic
 	MOREY=120.0
+	ATTR=attr_magic
 	HITPOINTS={31 37}
 	COLOR=color_magic_invulnerability
 
 [ITEMDEF i_leather_gorget_invulnerability]
-//Leather Gorget of Invulnerability
-NAME=Leather Gorget of Invulnerability
 ID=i_leather_gorget
-RESOURCES=i_leather_sleeves,6 i_enchant_armor
+NAME=Leather Gorget of Invulnerability
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Leather
@@ -45,10 +41,8 @@ ON=@Create
 	COLOR=color_magic_invulnerability
 
 [ITEMDEF i_leather_leggings_invulnerability]
-//Leather Leggings of Invulnerability
-NAME=Leather Leggings of Invulnerability
 ID=i_leather_leggings
-RESOURCES=i_leather_leggings,6 i_enchant_armor
+NAME=Leather Leggings of Invulnerability
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Leather
@@ -61,10 +55,8 @@ ON=@Create
 	COLOR=color_magic_invulnerability
 
 [ITEMDEF i_leather_tunic_invulnerability]
-//Leather Tunic of Invulnerability
-NAME=Leather Tunic of Invulnerability
 ID=i_leather_tunic
-RESOURCES=i_leather_tunic,6 i_enchant_armor
+NAME=Leather Tunic of Invulnerability
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Leather
@@ -77,10 +69,8 @@ ON=@Create
 	COLOR=color_magic_invulnerability
 
 [ITEMDEF i_leather_gloves_invulnerability]
-//Leather Gloves of Invulnerability
-NAME=Leather Gloves of Invulnerability
 ID=i_leather_gloves
-RESOURCES=i_leather_gloves,6 i_enchant_armor
+NAME=Leather Gloves of Invulnerability
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Leather
@@ -93,10 +83,8 @@ ON=@Create
 	COLOR=color_magic_invulnerability
 
 [ITEMDEF i_leather_cap_invulnerability]
-//leather cap of Invulnerability
-NAME=leather cap of Invulnerability
 ID=i_leather_cap
-RESOURCES=i_leather_cap,6 i_enchant_armor
+NAME=Leather Cap of Invulnerability
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Leather
@@ -109,9 +97,8 @@ ON=@Create
 	COLOR=color_magic_invulnerability
 
 [ITEMDEF i_leather_shorts_invulnerability]
-NAME=Leather Shorts of Invulnerability
 ID=i_armor_female_shorts
-RESOURCES=i_armor_female_shorts,6 i_enchant_armor
+NAME=Leather Shorts of Invulnerability
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Leather
@@ -124,10 +111,8 @@ ON=@Create
 	COLOR=color_magic_invulnerability
 
 [ITEMDEF i_leather_armor_invulnerability_female]
-//Female Leather Armor
-NAME=Leather Armor of Invulnerability
 ID=i_armor_female_leather
-RESOURCES=i_armor_female_leather,6 i_enchant_armor
+NAME=Leather Armor of Invulnerability
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Leather
@@ -140,9 +125,8 @@ ON=@Create
 	COLOR=color_magic_invulnerability
 
 [ITEMDEF i_leather_skirt_invulnerability]
-NAME=Leather Skirt of Invulnerability
 ID=i_armor_female_skirt
-RESOURCES=i_armor_female_skirt,6 i_enchant_armor
+NAME=Leather Skirt of Invulnerability
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Leather
@@ -155,9 +139,8 @@ ON=@Create
 	COLOR=color_magic_invulnerability
 
 [ITEMDEF i_leather_bustier_invulnerability]
-NAME=Leather Bustier of Invulnerability
 ID=i_armor_female_bustier
-RESOURCES=i_armor_female_bustier,6 i_enchant_armor
+NAME=Leather Bustier of Invulnerability
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Leather
@@ -170,10 +153,8 @@ ON=@Create
 	COLOR=color_magic_invulnerability
 
 [ITEMDEF i_studded_sleeves_invulnerability]
-//Studded Sleeves of Invulnerability
-NAME=Studded Sleeves of Invulnerability
 ID=i_studded_sleeves
-RESOURCES=i_studded_sleeves,6 i_enchant_armor
+NAME=Studded Sleeves of Invulnerability
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Studded
@@ -186,10 +167,8 @@ ON=@Create
 	COLOR=color_magic_invulnerability
 
 [ITEMDEF i_studded_gloves_invulnerability]
-//Studded Gloves of Invulnerability
-NAME=Studded Gloves of Invulnerability
 ID=i_studded_gloves
-RESOURCES=i_studded_gloves,6 i_enchant_armor
+NAME=Studded Gloves of Invulnerability
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Studded
@@ -202,10 +181,8 @@ ON=@Create
 	COLOR=color_magic_invulnerability
 
 [ITEMDEF i_studded_gorget_invulnerability]
-//Studded Gorget of Invulnerability
 ID=i_studded_gorget
 NAME=Studded Gorget of Invulnerability
-RESOURCES=i_studded_gorget,6 i_enchant_armor
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Studded
@@ -218,10 +195,8 @@ ON=@Create
 	COLOR=color_magic_invulnerability
 
 [ITEMDEF i_studded_leggings_invulnerability]
-//Studded Leggings of Invulnerability
-NAME=Studded Leggings of Invulnerability
 ID=i_studded_leggings
-RESOURCES=i_studded_leggings,6 i_enchant_armor
+NAME=Studded Leggings of Invulnerability
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Studded
@@ -234,10 +209,8 @@ ON=@Create
 	COLOR=color_magic_invulnerability
 
 [ITEMDEF i_studded_tunic_invulnerability]
-//Studded Tunic of Invulnerability
-NAME=Studded Tunic of Invulnerability
 ID=i_studded_tunic
-RESOURCES=i_studded_tunic,6 i_enchant_armor
+NAME=Studded Tunic of Invulnerability
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Studded
@@ -250,9 +223,8 @@ ON=@Create
 	COLOR=color_magic_invulnerability
 
 [ITEMDEF i_studded_armor_invulnerability]
-NAME=Studded Armor of Invulnerability
 ID=i_armor_female_studded
-RESOURCES=i_armor_female_studded,6 i_enchant_armor
+NAME=Studded Armor of Invulnerability
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Studded
@@ -265,17 +237,16 @@ ON=@Create
 	COLOR=color_magic_invulnerability
 
 [ITEMDEF i_studded_bustier_invulnerability]
-NAME=Studded Bustier of Invulnerability
 ID=i_armor_female_bustier_studded
-RESOURCES=i_armor_female_bustier_studded,6 i_enchant_armor
+NAME=Studded Bustier of Invulnerability
 
 CATEGORY=Provisions - Armor - Magic
 SUBSECTION=Studded
 DESCRIPTION=Studded Bustier of Invulnerability
 
 ON=@Create
-	ATTR=attr_magic
 	MOREY=120.0
+	ATTR=attr_magic
 	HITPOINTS={36 44}
 	COLOR=color_magic_invulnerability
 
