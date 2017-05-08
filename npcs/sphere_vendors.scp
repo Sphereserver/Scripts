@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, May 1, 2017
+// FILE LAST UPDATED: Sunday, May 7, 2017
 //
 VERSION=0.56d
 
@@ -940,11 +940,9 @@ ON=@NPCRestock
    SELL=i_jar_honey,{14 40}
    SELL=i_string,{4 10}
    SELL=i_beeswax,{4 10}
-   SELL=i_wax_seal,{4 10}
    BUY=i_jar_honey,{4 10}
    BUY=i_string,{4 10}
    BUY=i_beeswax,{4 10}
-   BUY=i_wax_seal,{4 10}
 
 [CHARDEF c_beekeeper_f]
 ID=c_woman
@@ -1003,11 +1001,9 @@ ON=@NPCRestock
    SELL=i_jar_honey,{14 40}
    SELL=i_string,{4 10}
    SELL=i_beeswax,{4 10}
-   SELL=i_wax_seal,{4 10}
    BUY=i_jar_honey,{4 10}
    BUY=i_string,{4 10}
    BUY=i_beeswax,{4 10}
-   BUY=i_wax_seal,{4 10}
 
 
 [CHARDEF c_blacksmith]
@@ -3773,7 +3769,6 @@ ON=@NPCRestock
    SELL=i_book_sm,{5 10}
    SELL=i_book_lg,{5 10}
    SELL=i_deed_guildstone,1,R2
-   SELL=i_wax_seal,{5 10}
    BUY=i_scroll_blank,{5 10}
    BUY=i_pen_and_ink,{5 10}
    BUY=i_book_sm,{5 10}
@@ -3782,8 +3777,6 @@ ON=@NPCRestock
    BUY=i_book_lg_pub,{5 10}
    BUY=i_deed_guildstone,{5 10}
    BUY=i_parchment,{5 10}
-   BUY=i_paper,{5 10}
-   BUY=i_wax_seal,{5 10}
 
 [CHARDEF c_scribe_f]
 ID=c_woman
@@ -3839,7 +3832,6 @@ ON=@Create
    SELL=i_book_sm,{5 10}
    SELL=i_book_lg,{5 10}
    SELL=i_deed_guildstone,1,R2
-   SELL=i_wax_seal,{5 10}
    BUY=i_scroll_blank,{5 10}
    BUY=i_pen_and_ink,{5 10}
    BUY=i_book_sm,{5 10}
@@ -3848,8 +3840,6 @@ ON=@Create
    BUY=i_book_lg_pub,{5 10}
    BUY=i_deed_guildstone,{5 10}
    BUY=i_parchment,{5 10}
-   BUY=i_paper,{5 10}
-   BUY=i_wax_seal,{5 10}
 
 
 [CHARDEF c_shepherd]

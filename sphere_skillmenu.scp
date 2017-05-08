@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, May 6, 2017
+// FILE LAST UPDATED: Sunday, May 7, 2017
 //
 VERSION=0.56d
 
@@ -525,9 +525,6 @@ MAKEITEM=i_CROSSBOW
 ON=i_crossbow_heavy <name> (<resmake>)
 MAKEITEM=i_crossbow_heavy
 
-ON=i_bow Exceptional Bows
-SKILLMENU=sm_bows_excep
-
 [SKILLMENU sm_bolts]
 // combine shafts with feathers.
 Select arrow type
@@ -537,30 +534,6 @@ MAKEITEM=i_xbolt
 
 ON=i_arrow <name> (<resmake>)
 MAKEITEM=i_arrow
-
-[SKILLMENU sm_bows_excep] // Exceptional Bows
-Exceptional Bows
-
-ON=i_BOW_SUP <name> (<resmake>)
-MAKEITEM=i_BOW_SUP
-
-ON=i_XBOW_SUP <name> (<resmake>)
-MAKEITEM=i_XBOW_SUP
-
-ON=i_HXBOW_SUP <name> (<resmake>)
-MAKEITEM=i_HXBOW_SUP
-
-ON=i_BOW_EXCEP <name> (<resmake>)
-MAKEITEM=i_BOW_EXCEP
-
-ON=i_XBOW_EXCEP <name> (<resmake>)
-MAKEITEM=i_XBOW_EXCEP
-
-ON=i_HXBOW_EXCEP <name> (<resmake>)
-MAKEITEM=i_HXBOW_EXCEP
-
-ON=i_bow_elven <name> (<resmake>)
-MAKEITEM=i_bow_elven
 
 // Blacksmithing section
 
@@ -2055,9 +2028,6 @@ MAKEITEM=i_BUREAU_2
 [SKILLMENU sm_wood_misc]
 Miscellaneous
 
-ON=i_PAPER <name> (<resmake>)
-MAKEITEM=i_PAPER
-
 ON=i_PARCHMENT <name> (<resmake>)
 MAKEITEM=i_PARCHMENT
 
@@ -2588,9 +2558,6 @@ MAKEITEM=i_toolkit
 
 [SKILLMENU sm_jewelry]
 Jewelry
-
-ON=i_beads <name> (<resmake>)
-MAKEITEM=i_beads
 
 ON=i_necklace_metal_beads <name> (<resmake>)
 MAKEITEM=i_necklace_metal_beads

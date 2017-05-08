@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, May 1, 2017
+// FILE LAST UPDATED: Sunday, May 7, 2017
 //
 VERSION=0.56d
 
@@ -2405,18 +2405,6 @@ ON=i_spear Spear of Vanquishing
 ADD i_SPEAR_vanq
 ON=i_spear_short Spear of Vanquishing
 ADD i_SPEAR_SHORT_vanq
-//ON=i_sword_viking Vanq Daemon Breath
-//ADD i_sword_viking_vanq_daemon_breath
-ON=i_sword_viking Vanqshing and Brimstone
-ADD i_sword_viking_vanq_Brimstone
-ON=i_sword_viking Vanquishing and Electricity
-ADD i_sword_viking_vanq_Electricity
-ON=i_crossbow_heavy Vanquishing Daemon Breath
-ADD i_crossbow_heavy_vanq_Daemon_Breath
-ON=i_bow Vanquishing & Electricity
-ADD i_bow_vanq_Electricity
-ON=i_crossbow_heavy Crossbow of Smite and Electricity
-ADD i_BOW_Smite_Electricity
 
 [MENU M_ADDI_PROV]
 Equipment & Items

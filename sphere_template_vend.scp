@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2007
+// SPHERE by : Menasoft ©1997-2017
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,9 +7,9 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Thursday, October 2, 2014
+// FILE LAST UPDATED: Sunday, May 7, 2017
 //
-VERSION=0.56c
+VERSION=0.56d
 
 
 [COMMENT sphere_template_vend]
@@ -1331,13 +1331,6 @@ BUY=Vendor_B_Gems
 CATEGORY=Vendor Templates
 SUBSECTION=Sell Templates
 DESCRIPTION=Tavernkeeper
-SELL=i_ale_amber,{6 26}
-SELL=i_ale_honey,{6 26}
-SELL=i_ale_brown,{6 26}
-SELL=i_ale_spiced,{6 26}
-SELL=i_ale_smoked,{6 26}
-SELL=i_ale_stout,{6 26}
-SELL=i_ale_oktoberfest,{6 26}
 SELL=i_bottle_ale,{6 26}
 SELL=i_bottle_wine,{6 26}
 SELL=i_bottle_liquor,{6 26}
@@ -1371,13 +1364,6 @@ SELL=i_dice_cup,{6 26}
 CATEGORY=Vendor Templates
 SUBSECTION=Buy Templates
 DESCRIPTION=Tavernkeeper
-BUY=i_ale_amber,{6 26}
-BUY=i_ale_honey,{6 26}
-BUY=i_ale_brown,{6 26}
-BUY=i_ale_spiced,{6 26}
-BUY=i_ale_smoked,{6 26}
-BUY=i_ale_stout,{6 26}
-BUY=i_ale_oktoberfest,{6 26}
 BUY=i_chessboard,{6 26}
 BUY=i_checkerboard,{6 26}
 BUY=i_dice_cup,{6 26}
@@ -1713,8 +1699,6 @@ DESCRIPTION=1st Circle Mage
 SELL=i_spellbook,{10 15}
 SELL=i_scroll_blank,{10 15}
 SELL=i_hat_wizards,{10 15}
-SELL=i_wizards_hat_plus_int,{10 15}
-COLOR=colors_all
 SELL=i_rune_marker,{10 15}
 SELL=i_potion_refresh,{10 15}
 SELL=i_potion_agility,{10 15}

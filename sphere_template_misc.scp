@@ -1,5 +1,5 @@
-//****************************************************************************
-// SPHERE by : Menasoft ©1997-2007
+﻿//****************************************************************************
+// SPHERE by : Menasoft ©1997-2017
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,9 +7,9 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Friday, October 18, 2013
+// FILE LAST UPDATED: Sunday, May 7, 2017
 //
-VERSION=0.56c
+VERSION=0.56d
 
 
 /////////////
@@ -169,7 +169,7 @@ DESCRIPTION=Random Ethereal Mount
 CATEGORY=Random Item Templates
 SUBSECTION=Special
 DESCRIPTION=Rare Items
-ITEM={ i_rock_bloodstone 1 random_item_plant_potted 1 i_horn_evil 1 i_horn_good 1 }
+ITEM={ random_item_plant_potted 1 i_horn_evil 1 i_horn_good 1 }
 
 
 ///////////////
