@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2016
+// SPHERE by : Menasoft ©1997-2017
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Jun 28, 2016
+// FILE LAST UPDATED: Sunday, May 14, 2017
 //
 VERSION=0.56d
 
@@ -469,9 +469,6 @@ DESCRIPTION=Sculpture 3
 DEFNAME=i_sculpture_fish
 TYPE=t_normal
 FLIP=1
-WEIGHT=20.0
-RESOURCES=2 i_rock_jade
-SKILLMAKE=Carpentry 65.0,t_masonry_tool
 CATEGORY=Decoration - Wall Carvings & Statues
 SUBSECTION=Sculptures
 DESCRIPTION=Fish
@@ -484,9 +481,6 @@ DUPEITEM=02846
 [ITEMDEF 02848]
 DEFNAME=i_sculpture_samurai
 TYPE=t_normal
-WEIGHT=80.0
-RESOURCES=8 i_rock_plain
-SKILLMAKE=Carpentry 30.0,t_masonry_tool
 CATEGORY=Decoration - Wall Carvings & Statues
 SUBSECTION=Sculptures
 DESCRIPTION=Samurai 1
@@ -494,9 +488,6 @@ DESCRIPTION=Samurai 1
 [ITEMDEF 02849]
 DEFNAME=i_sculpture_samurai_2
 TYPE=t_normal
-WEIGHT=80.0
-RESOURCES=8 i_rock_plain
-SKILLMAKE=Carpentry 30.0,t_masonry_tool
 CATEGORY=Decoration - Wall Carvings & Statues
 SUBSECTION=Sculptures
 DESCRIPTION=Samurai 2

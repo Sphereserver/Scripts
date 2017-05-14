@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, May 1, 2017
+// FILE LAST UPDATED: Sunday, May 14, 2017
 //
 VERSION=0.56d
 
@@ -230,20 +230,18 @@ DESCRIPTION=Small Vase 1
 
 [ITEMDEF 0b47]
 DEFNAME=i_vase_large_2
-NAME=large pyxis
 WEIGHT=15.0
-RESOURCES=15 i_clay
-SKILLMAKE=carpentry 5.0,t_masonry_tool
+RESOURCES=3 i_rock_granite
+SKILLMAKE=Carpentry 36.0,t_masonry_tool
 CATEGORY=Decoration - Potted Plants & Vases
 SUBSECTION=Vases & Pots
 DESCRIPTION=Large Vase 2
 
 [ITEMDEF 0b48]
 DEFNAME=i_vase_small_2
-NAME=small pyxis
 WEIGHT=3.0
-RESOURCES=3 i_clay
-SKILLMAKE=carpentry 5.0,t_masonry_tool
+RESOURCES=1 i_rock_granite
+SKILLMAKE=Carpentry 36.0,t_masonry_tool
 CATEGORY=Decoration - Potted Plants & Vases
 SUBSECTION=Vases & Pots
 DESCRIPTION=Small Vase 2
@@ -255,8 +253,6 @@ NAME=black chessmen
 FLIP=1
 VALUE=69
 WEIGHT=1.0
-RESOURCES=16 i_ebony
-SKILLMAKE=carpentry 45.0,t_carpentry
 CATEGORY=Games
 SUBSECTION=Pieces
 DESCRIPTION=Black Chessmen
@@ -272,8 +268,6 @@ NAME=white chessmen
 FLIP=1
 VALUE=69
 WEIGHT=1.0
-RESOURCES=16 i_ivory
-SKILLMAKE=carpentry 45.0,t_carpentry
 CATEGORY=Games
 SUBSECTION=Pieces
 DESCRIPTION=White Chessmen
@@ -283,8 +277,6 @@ DUPELIST=0fa8
 DEFNAME=i_cards
 FLIP=1
 WEIGHT=1.0
-RESOURCES=52 i_paper
-SKILLMAKE=carpentry 5.0,t_carpentry
 CATEGORY=Games
 SUBSECTION=Cards
 DESCRIPTION=Cards
@@ -312,8 +304,6 @@ NAME=red checkers
 FLIP=1
 VALUE=52
 WEIGHT=1.0
-RESOURCES=12 i_ivory
-SKILLMAKE=carpentry 35.0,t_carpentry
 CATEGORY=Games
 SUBSECTION=Pieces
 DESCRIPTION=Red Checkers
@@ -325,8 +315,6 @@ NAME=white checkers
 FLIP=1
 VALUE=52
 WEIGHT=1.0
-RESOURCES=12 i_ebony
-SKILLMAKE=carpentry 35.0,t_carpentry
 CATEGORY=Games
 SUBSECTION=Pieces
 DESCRIPTION=White Checkers
@@ -488,7 +476,7 @@ DESCRIPTION=Game Board (checkers/chess)
 DEFNAME=i_dice_cup
 VALUE=31
 WEIGHT=1.0
-RESOURCES=3 i_ivory,1 i_mug_ceramic
+RESOURCES=1 i_mug_ceramic
 SKILLMAKE=tinkering 30.0,t_tinker_tools
 CATEGORY=Games
 SUBSECTION=Dice
@@ -508,7 +496,6 @@ DEFNAME=i_game_mahjong
 //TYPE=t_game_board
 TDATA2=02c00
 WEIGHT=5.0
-RESOURCES=10 i_ivory,10 i_ebony
 CATEGORY=Games
 SUBSECTION=MahJong
 DESCRIPTION=MahJong
@@ -783,24 +770,18 @@ DUPEITEM=01122
 
 [ITEMDEF 011c6]
 DEFNAME=i_pot_small_flower
-RESOURCES=1 i_clay
-WEIGHT=2
 CATEGORY=Decoration - Potted Plants & Vases
 SUBSECTION=Vases & Pots
 DESCRIPTION=Small Empty Pot
 
 [ITEMDEF 011c7]
 DEFNAME=i_pot_flower_large
-RESOURCES=3 i_clay
-WEIGHT=6
 CATEGORY=Decoration - Potted Plants & Vases
 SUBSECTION=Vases & Pots
 DESCRIPTION=Large Empty Pot
 
 [ITEMDEF 011c8]
 DEFNAME=i_tree_small_potted
-RESOURCES=1 i_pot_small_flower,1 i_tree_sapling_planted,1 i_dirt
-WEIGHT=4
 CATEGORY=Decoration - Potted Plants & Vases
 SUBSECTION=Potted Trees
 DESCRIPTION=Small Planted Tree
@@ -831,8 +812,6 @@ DESCRIPTION=Plant 2
 
 [ITEMDEF 011cc]
 DEFNAME=i_tree_small_potted_2
-RESOURCES=1 i_pot_small_flower,1 i_tree_sapling_planted,1 i_dirt
-WEIGHT=4
 CATEGORY=Decoration - Potted Plants & Vases
 SUBSECTION=Potted Plants
 DESCRIPTION=Plant 3
@@ -918,7 +897,8 @@ DUPEITEM=014f3
 DEFNAME=i_spyglass
 TYPE=t_spy_glass
 FLIP=1
-RESOURCES=2 i_ingot_iron,1 i_glass_raw
+RESOURCES=4 i_ingot_iron
+SKILLMAKE=Tinkering 60.0,t_tinker_tools
 WEIGHT=3
 CATEGORY=Decoration - Miscellaneous
 SUBSECTION=Nautical
@@ -1366,16 +1346,12 @@ DUPEITEM=01950
 
 [ITEMDEF 01ad4]
 DEFNAME=i_nest_with_eggs
-WEIGHT=3
-RESOURCES=8 i_straw
 CATEGORY=Miscellaneous
 SUBSECTION=Birds Nest
 DESCRIPTION=@ (with eggs)
 
 [ITEMDEF 01ad5]
 DEFNAME=i_nest
-WEIGHT=3
-RESOURCES=8 i_straw
 CATEGORY=Miscellaneous
 SUBSECTION=Birds Nest
 DESCRIPTION=@
@@ -2082,7 +2058,6 @@ DUPEITEM=02198
 [ITEMDEF 021fe]
 DEFNAME=i_vial_of_stuff
 WEIGHT=1.0
-RESOURCES=5 i_glass_raw
 CATEGORY=Quest
 SUBSECTION=Unknown
 DESCRIPTION=Vial of stuff?
@@ -2357,8 +2332,8 @@ DESCRIPTION=Decorative Topiary
 DEFNAME=i_urn_1
 TYPE=t_normal
 VALUE=10
-WEIGHT=2.0
-RESOURCES=2 i_clay
+RESOURCES=3 i_rock_granite
+SKILLMAKE=Carpentry 36.0,t_masonry_tool
 CATEGORY=Decoration - Potted Plants & Vases
 SUBSECTION=Vases & Pots
 DESCRIPTION=Urn
@@ -2367,8 +2342,8 @@ DESCRIPTION=Urn
 DEFNAME=i_urn_2
 TYPE=t_normal
 VALUE=20
-WEIGHT=4.0
-RESOURCES=4 i_clay
+RESOURCES=3 i_rock_granite
+SKILLMAKE=Carpentry 36.0,t_masonry_tool
 CATEGORY=Decoration - Potted Plants & Vases
 SUBSECTION=Vases & Pots
 DESCRIPTION=Urn
@@ -2377,8 +2352,8 @@ DESCRIPTION=Urn
 DEFNAME=i_urn_3
 TYPE=t_normal
 VALUE=15
-WEIGHT=3.0
-RESOURCES=3 i_clay
+RESOURCES=3 i_rock_granite
+SKILLMAKE=Carpentry 36.0,t_masonry_tool
 CATEGORY=Decoration - Potted Plants & Vases
 SUBSECTION=Vases & Pots
 DESCRIPTION=Urn
@@ -2772,7 +2747,7 @@ DESCRIPTION=Woodsman Hatchet
 DEFNAME=i_bow_horseman
 TYPE=t_normal
 WEIGHT=6.1
-RESOURCES=3 i_log,1 i_cat_gut
+RESOURCES=3 i_log
 CATEGORY=Provisions - Weapons
 SUBSECTION=Decorative
 DESCRIPTION=Horseman Bow
@@ -2934,14 +2909,12 @@ DUPEITEM=027a1
 
 
 [ITEMDEF 02830]
-DEFNAME=i_origami_kit
-//NAME=origami kit
+DEFNAME=i_origami_paper
+//NAME=origami paper
 TYPE=t_normal
 FLIP=1
 VALUE=25
 WEIGHT=1.1
-RESOURCES=1 i_scissors,1 i_paper
-SKILLMAKE=carpentry 50.9,t_carpentry
 CATEGORY=Decoration - Miscellaneous
 SUBSECTION=Origami
 DESCRIPTION=Origami Kit
@@ -2978,8 +2951,8 @@ DEFNAME=i_windchime
 TYPE=t_normal
 VALUE=13
 WEIGHT=3.1
-RESOURCES=1 i_log,1 i_paper,1 i_ingot_iron
-SKILLMAKE=tinkering 58.1,t_tinker_tools
+RESOURCES=15 i_ingot_iron
+SKILLMAKE=Tinkering 80.0,t_tinker_tools
 CATEGORY=Decoration - Miscellaneous
 SUBSECTION=Japanese
 DESCRIPTION=Windchime
@@ -2997,8 +2970,8 @@ NAME=fancy windchimes
 TYPE=t_normal
 VALUE=15
 WEIGHT=3.1
-RESOURCES=1 i_log,1 i_paper,1 i_ingot_iron
-SKILLMAKE=tinkering 69.3,t_tinker_tools
+RESOURCES=15 i_ingot_iron
+SKILLMAKE=Tinkering 80.0,t_tinker_tools
 CATEGORY=Decoration - Miscellaneous
 SUBSECTION=Japanese
 DESCRIPTION=Windchime (fancy)
@@ -3013,8 +2986,8 @@ NAME=origami butterfly
 TYPE=t_normal
 VALUE=5
 WEIGHT=0.1
-RESOURCES=1 i_paper
-SKILLMAKE=carpentry 33.3,1 i_origami_kit
+RESOURCES=1 i_origami_paper
+SKILLMAKE=carpentry 33.3
 CATEGORY=Decoration - Miscellaneous
 SUBSECTION=Origami
 DESCRIPTION=Origami Butterfly
@@ -3025,8 +2998,8 @@ NAME=origami crane
 TYPE=t_normal
 VALUE=5
 WEIGHT=0.1
-RESOURCES=1 i_paper
-SKILLMAKE=carpentry 33.3,1 i_origami_kit
+RESOURCES=1 i_origami_paper
+SKILLMAKE=carpentry 33.3
 CATEGORY=Decoration - Miscellaneous
 SUBSECTION=Origami
 DESCRIPTION=Origami Crane
@@ -3037,8 +3010,8 @@ NAME=origami frog
 TYPE=t_normal
 VALUE=5
 WEIGHT=0.1
-RESOURCES=1 i_paper
-SKILLMAKE=carpentry 33.3,1 i_origami_kit
+RESOURCES=1 i_origami_paper
+SKILLMAKE=carpentry 33.3
 CATEGORY=Decoration - Miscellaneous
 SUBSECTION=Origami
 DESCRIPTION=Origami Frog
@@ -3049,8 +3022,8 @@ NAME=origami star
 TYPE=t_normal
 VALUE=5
 WEIGHT=0.1
-RESOURCES=1 i_paper
-SKILLMAKE=carpentry 33.3,1 i_origami_kit
+RESOURCES=1 i_origami_paper
+SKILLMAKE=carpentry 33.3
 CATEGORY=Decoration - Miscellaneous
 SUBSECTION=Origami
 DESCRIPTION=Origami Star
@@ -3061,8 +3034,8 @@ NAME=origami bird
 TYPE=t_normal
 VALUE=5
 WEIGHT=0.1
-RESOURCES=1 i_paper
-SKILLMAKE=carpentry 33.3,1 i_origami_kit
+RESOURCES=1 i_origami_paper
+SKILLMAKE=carpentry 33.3
 CATEGORY=Decoration - Miscellaneous
 SUBSECTION=Origami
 DESCRIPTION=Origami Bird
@@ -3073,8 +3046,8 @@ NAME=origami fish
 TYPE=t_normal
 VALUE=5
 WEIGHT=0.1
-RESOURCES=1 i_paper
-SKILLMAKE=carpentry 33.3,1 i_origami_kit
+RESOURCES=1 i_origami_paper
+SKILLMAKE=carpentry 33.3
 CATEGORY=Decoration - Miscellaneous
 SUBSECTION=Origami
 DESCRIPTION=Origami Fish
@@ -3163,79 +3136,6 @@ DUPELIST=02856
 [ITEMDEF 02856]
 //white sword display
 DUPEITEM=02855
-
-
-[ITEMDEF 028dc]
-DEFNAME=i_bonsai_1
-TYPE=t_normal
-WEIGHT=4.0
-RESOURCES=1 i_log,1 i_dirt,1 i_tree_sapling
-CATEGORY=Decoration - Miscellaneous
-SUBSECTION=Bonsai
-DESCRIPTION=Bonsai Tree 1
-
-[ITEMDEF 028dd]
-DEFNAME=i_bonsai_2
-TYPE=t_normal
-WEIGHT=4.0
-RESOURCES=1 i_log,1 i_dirt,1 i_tree_sapling
-CATEGORY=Decoration - Miscellaneous
-SUBSECTION=Bonsai
-DESCRIPTION=Bonsai Tree 2
-
-[ITEMDEF 028de]
-DEFNAME=i_bonsai_3
-TYPE=t_normal
-WEIGHT=4.0
-RESOURCES=1 i_log,1 i_dirt,1 i_tree_sapling
-CATEGORY=Decoration - Miscellaneous
-SUBSECTION=Bonsai
-DESCRIPTION=Bonsai Tree 3
-
-[ITEMDEF 028df]
-DEFNAME=i_bonsai_4
-TYPE=t_normal
-WEIGHT=4.0
-RESOURCES=1 i_log,1 i_dirt,1 i_tree_sapling
-CATEGORY=Decoration - Miscellaneous
-SUBSECTION=Bonsai
-DESCRIPTION=Bonsai Tree 4
-
-[ITEMDEF 028e0]
-DEFNAME=i_bonsai_5
-TYPE=t_normal
-WEIGHT=4.0
-RESOURCES=1 i_log,1 i_dirt,1 i_tree_sapling
-CATEGORY=Decoration - Miscellaneous
-SUBSECTION=Bonsai
-DESCRIPTION=Bonsai Tree 5
-
-[ITEMDEF 028e1]
-DEFNAME=i_bonsai_6
-TYPE=t_normal
-WEIGHT=4.0
-RESOURCES=1 i_log,1 i_dirt,1 i_tree_sapling
-CATEGORY=Decoration - Miscellaneous
-SUBSECTION=Bonsai
-DESCRIPTION=Bonsai Tree 6
-
-[ITEMDEF 028e2]
-DEFNAME=i_bonsai_7
-TYPE=t_normal
-WEIGHT=4.0
-RESOURCES=1 i_log,1 i_dirt,1 i_tree_sapling
-CATEGORY=Decoration - Miscellaneous
-SUBSECTION=Bonsai
-DESCRIPTION=Bonsai Tree 7
-
-[ITEMDEF 028e3]
-DEFNAME=i_bonsai_8
-TYPE=t_normal
-WEIGHT=4.0
-RESOURCES=1 i_log,1 i_dirt,1 i_tree_sapling
-CATEGORY=Decoration - Miscellaneous
-SUBSECTION=Bonsai
-DESCRIPTION=Bonsai Tree 8
 
 
 [ITEMDEF 0291c]
@@ -4565,7 +4465,7 @@ DEFNAME=i_book_sm_quest
 NAME=book
 TYPE=t_book
 WEIGHT=1.0
-RESOURCES=1 i_canvas,10 i_paper,1 i_thread,1 i_hides_cut
+RESOURCES=1 i_thread,1 i_hides_cut
 CATEGORY=Quest
 SUBSECTION=Unknown
 DESCRIPTION=Light Tan Book
@@ -4575,7 +4475,7 @@ DEFNAME=i_book_sm_quest_2
 NAME=book
 TYPE=t_book
 WEIGHT=1.0
-RESOURCES=1 i_canvas,10 i_paper,1 i_thread,1 i_hides_cut
+RESOURCES=1 i_thread,1 i_hides_cut
 CATEGORY=Quest
 SUBSECTION=Unknown
 DESCRIPTION=Reddish Book
@@ -5173,16 +5073,12 @@ DUPEITEM=0421e
 
 [ITEMDEF 042b2]
 DEFNAME=i_vase_gargoyle1
-WEIGHT=15.0
-RESOURCES=15 i_clay
 CATEGORY=Decoration - Potted Plants & Vases
 SUBSECTION=Vases & Pots
 DESCRIPTION=Large Gargish Vase 1
 
 [ITEMDEF 042b3]
 DEFNAME=i_vase_gargoyle2
-WEIGHT=15.0
-RESOURCES=15 i_clay
 CATEGORY=Decoration - Potted Plants & Vases
 SUBSECTION=Vases & Pots
 DESCRIPTION=Large Gargish Vase 1
@@ -5374,6 +5270,7 @@ DESCRIPTION=Gift Box (Angel)
 ON=@Create
 COLOR={0454 1 0491 1 0493 1 0494 1 0495 1 04a8 1 04aa 1 04ab 1 04ac 1 0503 1 0504 1 0507 1 0672 1 084b 1 084f 1 0851 1 097c 1 0b8b 1 0b8c 1}
 
+
 [ITEMDEF 046ae]
 //gardening scroll
 [ITEMDEF 046af]
@@ -5391,29 +5288,15 @@ COLOR={0454 1 0491 1 0493 1 0494 1 0495 1 04a8 1 04aa 1 04ab 1 04ac 1 0503 1 050
 [ITEMDEF 046b9]
 //sea market buoy
 
-[ITEMDEF 046d9]
-DEFNAME=i_bonsai_9
-TYPE=t_normal
-FLIP=1
-WEIGHT=4.0
-RESOURCES=1 i_log,1 i_dirt,1 i_tree_sapling
-CATEGORY=Decoration - Miscellaneous
-SUBSECTION=Bonsai
-DESCRIPTION=Bonsai Tree 9
-DUPELIST=046e5
-
-[ITEMDEF 046e5]
-//bonsai tree
-DUPEITEM=046d9
 
 [ITEMDEF 046ec]
 DEFNAME=i_nutcracker_small
-NAME=small nutcracker
+NAME=nutcracker
 TYPE=t_normal//fixme: when dclicked, it should animate once
 FLIP=1
 CATEGORY=Decoration - Miscellaneous
 SUBSECTION=Holiday Gifts
-DESCRIPTION=Small Nutcracker
+DESCRIPTION=Nutcracker (Small)
 DUPELIST=046ef
 
 [ITEMDEF 046ed]
@@ -5434,12 +5317,12 @@ DUPEITEM=046ec
 
 [ITEMDEF 046f2]
 DEFNAME=i_nutcracker_large
-NAME=large nutcracker
+NAME=nutcracker
 TYPE=t_normal//fixme: when dclicked, it should animate once
 FLIP=1
 CATEGORY=Decoration - Miscellaneous
 SUBSECTION=Holiday Gifts
-DESCRIPTION=Large Nutcracker
+DESCRIPTION=Nutcracker (Large)
 DUPELIST=046f5
 
 [ITEMDEF 046f3]
@@ -5460,9 +5343,18 @@ DUPEITEM=046f2
 
 
 [ITEMDEF 046fa]
-//xmas tree angel
+DEFNAME=i_angel_decoration
+NAME=angel decoration
+FLIP=1
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Holiday Gifts
+DESCRIPTION=Angel Decoration
+DUPELIST=046fb
+
 [ITEMDEF 046fb]
-//xmas tree angel
+//angel decoration
+DUPEITEM=046fa
+
 [ITEMDEF 046fc]
 //ship wheel (standard)
 [ITEMDEF 046fd]
@@ -5471,22 +5363,6 @@ DUPEITEM=046f2
 //ship wheel (mounted)
 [ITEMDEF 046ff]
 //ship wheel (mounted)
-
-
-[ITEMDEF 04790]
-DEFNAME=i_welcome_mat_rounded
-NAME=round doormat
-TYPE=t_normal
-DYE=1
-FLIP=1
-CATEGORY=Decoration - Carpets & Rugs
-SUBSECTION=Welcome Mat
-DESCRIPTION=Welcome Mat (rounded)
-DUPELIST=04791
-
-[ITEMDEF 04791]
-//welcome mat rounded
-DUPEITEM=04790
 
 
 [ITEMDEF 047e6]
@@ -5760,8 +5636,8 @@ TYPE=t_normal
 FLIP=1
 VALUE=5
 WEIGHT=0.1
-RESOURCES=1 i_paper
-SKILLMAKE=carpentry 66.6,1 i_origami_kit
+RESOURCES=1 i_origami_paper
+SKILLMAKE=carpentry 66.6
 CATEGORY=Decoration - Miscellaneous
 SUBSECTION=Origami
 DESCRIPTION=Origami Dragon
@@ -5778,8 +5654,8 @@ TYPE=t_normal
 FLIP=1
 VALUE=5
 WEIGHT=0.1
-RESOURCES=1 i_paper
-SKILLMAKE=carpentry 66.6,1 i_origami_kit
+RESOURCES=1 i_origami_paper
+SKILLMAKE=carpentry 66.6
 CATEGORY=Decoration - Miscellaneous
 SUBSECTION=Origami
 DESCRIPTION=Origami Bunny
@@ -5789,22 +5665,6 @@ DUPELIST=04b1f
 //Origami Bunny
 DUPEITEM=04b1e
 
-[ITEMDEF 04b20]
-DEFNAME=i_sign_fancy_blank
-NAME=sign
-TYPE=t_sign_gump
-TDATA2=067
-FLIP=1
-WEIGHT=3.1
-RESOURCES=2 i_board,1 i_ingot_iron,1 i_nails
-CATEGORY=Decoration - Signs
-SUBSECTION=Blank
-DESCRIPTION=Blank Fancy Sign
-DUPELIST=04b21
-
-[ITEMDEF 04b21]
-//Blank Fancy Sign
-DUPEITEM=04b20
 
 [ITEMDEF 04b22]
 DEFNAME=i_flowerbed
@@ -6902,143 +6762,96 @@ DUPEITEM=09706
 
 [ITEMDEF 075bf]
 // NoName // orc
-DEFNAME=i_noname
-TYPE=t_normal
 
 [ITEMDEF 077b3]
 // NoName // orc
-DEFNAME=i_noname_2
-TYPE=t_normal
 
 [ITEMDEF 079a7]
 // NoName // orc
-DEFNAME=i_noname_3
-TYPE=t_normal
 
 [ITEMDEF 07b98]
 // NoName // orc
-DEFNAME=i_noname_4
-TYPE=t_normal
 
 [ITEMDEF 07c95]
 // NoName //Orc
-DEFNAME=i_noname_5
-TYPE=t_normal
 
 [ITEMDEF 07d5c]
 // NoName //Orc
-DEFNAME=i_noname_6
-TYPE=t_normal
 
 [ITEMDEF 07e24]
 // NoName //Orc
-DEFNAME=i_noname_7
-TYPE=t_normal
 
 [ITEMDEF 07eea]
 // NoName //Orc
-DEFNAME=i_noname_8
-TYPE=t_normal
 
 [ITEMDEF 07f79]
 // NoName //Orc
-DEFNAME=i_noname_9
-TYPE=t_normal
 
 [ITEMDEF 07fb2]
 // NoName //Orc
-DEFNAME=i_noname_10
-TYPE=t_normal
 
 [ITEMDEF 08041]
 // NoName //Orc
-DEFNAME=i_noname_11
-TYPE=t_normal
 
 [ITEMDEF 08065]
 // NoName //Orc
-DEFNAME=i_noname_12
-TYPE=t_normal
 
 [ITEMDEF 0807a]
 // NoName //Orc
-DEFNAME=i_noname_13
-TYPE=t_normal
 
 [ITEMDEF 08109]
 // NoName //Orc
-DEFNAME=i_noname_14
-TYPE=t_normal
 
 [ITEMDEF 08143]
 // NoName //Orc
-DEFNAME=i_noname_15
-TYPE=t_normal
 
 [ITEMDEF 081d1]
 // NoName //Orc
-DEFNAME=i_noname_16
-TYPE=t_normal
 
 [ITEMDEF 081f5]
 // NoName //Orc
-DEFNAME=i_noname_17
-TYPE=t_normal
 
 [ITEMDEF 0820c]
 // NoName //Orc
-DEFNAME=i_noname_18
-TYPE=t_normal
 
 [ITEMDEF 087e0]
 // NoName //Garg
-DEFNAME=i_noname_19
-TYPE=t_normal
 
 [ITEMDEF 090bb]
 // NoName //Garg
-DEFNAME=i_noname_20
-TYPE=t_normal
 
 [ITEMDEF 09250]
 // NoName //tok
-DEFNAME=i_noname_21
-TYPE=t_normal
 
 [ITEMDEF 09272]
 // NoName //tok
-DEFNAME=i_noname_22
-TYPE=t_normal
 
 [ITEMDEF 092a0]
 // NoName //tok
-DEFNAME=i_noname_23
-TYPE=t_normal
 
 [ITEMDEF 092fc]
 // NoName //tok
-DEFNAME=i_noname_24
-TYPE=t_normal
 
 [ITEMDEF 095f6]
 // NoName //tok
-DEFNAME=i_noname_26
-TYPE=t_normal
 
 [ITEMDEF 095f7]
 // NoName //tok
-DEFNAME=i_noname_27
-TYPE=t_normal
 
 [ITEMDEF 0989e]
 // NoName //tok
-DEFNAME=i_noname_28
-TYPE=t_normal
 
 [ITEMDEF 098d0]
 // NoName //tok
-DEFNAME=i_noname_29
-TYPE=t_normal
+
+[ITEMDEF 09c14]
+//legend card
+FLIP=1
+DUPELIST=09c15
+
+[ITEMDEF 09c15]
+//legend card
+DUPEITEM=09c14
 
 [ITEMDEF 09c16]
 DEFNAME=i_runic_atlas
@@ -7098,5 +6911,58 @@ DESCRIPTION=Gift Box (Christmas)
 
 [ITEMDEF 09f18]
 //Easter Egg
+
+
+//////////////////////
+// Cards of Semidar //
+//////////////////////
+
+[ITEMDEF i_card_semidar_dupre]
+ID=i_card_semidar
+NAME=Cards of Semidar
+TYPE=t_sign_gump
+TDATA2=09be0
+ON=@ClientTooltip
+   SRC.ADDCLILOC 1156396	//Dupre the Paladin
+
+[ITEMDEF i_card_semidar_nystul]
+ID=i_card_semidar
+NAME=Cards of Semidar
+TYPE=t_sign_gump
+TDATA2=09be1
+ON=@ClientTooltip
+   SRC.ADDCLILOC 1156397	//Nystul the Mage
+
+[ITEMDEF i_card_semidar_shamino]
+ID=i_card_semidar
+NAME=Cards of Semidar
+TYPE=t_sign_gump
+TDATA2=09be2
+ON=@ClientTooltip
+   SRC.ADDCLILOC 1156398	//Shamino Sallé Dacil
+
+[ITEMDEF i_card_semidar_juonar]
+ID=i_card_semidar
+NAME=Cards of Semidar
+TYPE=t_sign_gump
+TDATA2=09be3
+ON=@ClientTooltip
+   SRC.ADDCLILOC 1156399	//Juo'nar the Lich
+
+[ITEMDEF i_card_semidar_professor_rafkin]
+ID=i_card_semidar
+NAME=Cards of Semidar
+TYPE=t_sign_gump
+TDATA2=09be4
+ON=@ClientTooltip
+   SRC.ADDCLILOC 1156562	//Professor Ellie Rafkin
+
+[ITEMDEF i_card_semidar_minax]
+ID=i_card_semidar
+NAME=Cards of Semidar
+TYPE=t_sign_gump
+TDATA2=09be5
+ON=@ClientTooltip
+   SRC.ADDCLILOC 1156981	//Minax the Enchantress
 
 [EOF]

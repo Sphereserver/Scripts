@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, May 1, 2017
+// FILE LAST UPDATED: Sunday, May 14, 2017
 //
 VERSION=0.56d
 
@@ -96,9 +96,6 @@ TEVENTS=t_equipitem
 DEFNAME=i_beads
 TYPE=t_jewelry
 VALUE=41
-WEIGHT=0.5
-RESOURCES=1 i_ingot_iron,3 i_gem_amber,1 i_glass_raw
-SKILLMAKE=Tinkering 60.0,t_tinker_tools
 CATEGORY=Provisions - Jewels and Jewelry
 SUBSECTION=Jewels
 DESCRIPTION=Beads
@@ -247,23 +244,18 @@ DEFNAME=i_elven_glasses
 NAME=elven glasses
 TYPE=t_jewelry
 FLIP=1
-//ARMOR=2
-VALUE=30
-WEIGHT=2.2
-RESOURCES=1 i_ingot_iron,2 i_hinge,2 i_glass_raw
-SKILLMAKE=Tinkering 59.0,t_tinker_tools
 CATEGORY=Provisions - Jewels and Jewelry
 SUBSECTION=Glasses
 DESCRIPTION=Elven Glasses
-ReqStr=45
+REQSTR=45
 DUPELIST=03172
 ON=@Create
-   //HITPOINTS={36 48}
-   RESCOLD=4
-   RESENERGY=2
-   RESFIRE=4
+   HITPOINTS={36 48}
    RESPHYSICAL=2
+   RESFIRE=4
+   RESCOLD=4
    RESPOISON=3
+   RESENERGY=2
 
 
 [ITEMDEF 03172]
@@ -346,25 +338,20 @@ DEFNAME=i_gargish_glasses_female
 NAME=Gargish female glasses
 TYPE=t_jewelry
 FLIP=1
-//ARMOR=2
-VALUE=30
-WEIGHT=2.2
-RESOURCES=1 i_ingot_iron,2 i_hinge,2 i_glass_raw
-SKILLMAKE=Tinkering 59.0,t_tinker_tools
 CATEGORY=Provisions - Jewels and Jewelry
 SUBSECTION=Glasses
 DESCRIPTION=Gargish Female Glasses
 canuse=can_u_gargoyle|can_u_female
-ReqStr=45
+REQSTR=45
 TEVENTS=t_equipitem
 DUPELIST=045b3
 ON=@Create
-   //HITPOINTS={36 48}
-   RESCOLD=4
-   RESENERGY=2
-   RESFIRE=4
+   HITPOINTS={36 48}
    RESPHYSICAL=2
+   RESFIRE=4
+   RESCOLD=4
    RESPOISON=3
+   RESENERGY=2
 
 
 [ITEMDEF 045b3]
@@ -377,26 +364,21 @@ DEFNAME=i_gargish_glasses
 NAME=Gargish glasses
 TYPE=t_jewelry
 FLIP=1
-//ARMOR=2
-VALUE=30
-WEIGHT=2.2
-RESOURCES=1 i_ingot_iron,2 i_hinge,2 i_glass_raw
-SKILLMAKE=Tinkering 59.0,t_tinker_tools
 CATEGORY=Provisions - Jewels and Jewelry
 SUBSECTION=Glasses
 DESCRIPTION=Gargish Glasses
 canuse=can_u_gargoyle
 //TAG.MaleOnly=1
-ReqStr=45
+REQSTR=45
 TEVENTS=t_equipitem
 DUPELIST=04645
 ON=@Create
-   //HITPOINTS={36 48}
-   RESCOLD=4
-   RESENERGY=2
-   RESFIRE=4
+   HITPOINTS={36 48}
    RESPHYSICAL=2
+   RESFIRE=4
+   RESCOLD=4
    RESPOISON=3
+   RESENERGY=2
 
 [ITEMDEF 04645]
 //gargish glasses

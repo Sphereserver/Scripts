@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2007
+// SPHERE by : Menasoft ©1997-2017
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,15 +7,14 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Friday, September 20, 2013
+// FILE LAST UPDATED: Sunday, May 14, 2017
 //
-VERSION=0.56c
+VERSION=0.56d
 
 
 [ITEMDEF 0550]
 DEFNAME=i_roof_stone
 TYPE=t_roof
-RESOURCES=25 i_rock_plain
 CATEGORY=Buildings - Roofs
 SUBSECTION=Flat Stone Roof (white)
 DESCRIPTION=Roof
@@ -24,7 +23,6 @@ DUPELIST=0558,0559,055a,055b,056b,056c,056d,056e,056f,0570,0571,0572,0573,0574,0
 [ITEMDEF 0554]
 DEFNAME=i_roof_stone_2
 TYPE=t_roof
-RESOURCES=25 i_rock_plain
 CATEGORY=Buildings - Roofs
 SUBSECTION=Flat Stone Roof (red)
 DESCRIPTION=Roof
@@ -173,7 +171,6 @@ DUPEITEM=0550
 [ITEMDEF 0579]
 DEFNAME=i_roof_stone_3
 TYPE=t_roof
-RESOURCES=25 i_rock_plain
 CATEGORY=Buildings - Roofs
 SUBSECTION=Flat Stone Roof (gray)
 DESCRIPTION=Roof
@@ -202,7 +199,6 @@ DUPEITEM=0579
 [ITEMDEF 057f]
 DEFNAME=i_roof_slate
 TYPE=t_roof
-RESOURCES=25 i_rock_plain
 CATEGORY=Buildings - Roofs
 SUBSECTION=Flat Slate Roof (blue)
 DESCRIPTION=Roof
@@ -299,7 +295,6 @@ DUPEITEM=0586
 [ITEMDEF 0595]
 DEFNAME=i_roof_slate_2
 TYPE=t_roof
-RESOURCES=25 i_rock_plain
 CATEGORY=Buildings - Roofs
 SUBSECTION=Slate Roof (blue)
 DESCRIPTION=Roof
@@ -364,7 +359,6 @@ DUPEITEM=0595
 [ITEMDEF 05a4]
 DEFNAME=i_roof_thatch
 TYPE=t_roof
-RESOURCES=25 i_hay
 CATEGORY=Buildings - Roofs
 SUBSECTION=Thatch Roof
 DESCRIPTION=Roof
@@ -429,7 +423,6 @@ DUPEITEM=05a4
 [ITEMDEF 05b3]
 DEFNAME=i_roof_tile
 TYPE=t_roof
-RESOURCES=25 i_rock_plain
 CATEGORY=Buildings - Roofs
 SUBSECTION=Stone Roof (red)
 DESCRIPTION=Roof
@@ -493,7 +486,6 @@ DUPEITEM=05b3
 
 [ITEMDEF 05c2]
 DEFNAME=i_shingle_wooden
-RESOURCES=25 i_board
 CATEGORY=Buildings - Roofs
 SUBSECTION=Wooden Shingles
 DESCRIPTION=Roof
@@ -670,7 +662,6 @@ DUPEITEM=0550
 [ITEMDEF 05f0]
 DEFNAME=i_roof_log
 TYPE=t_roof
-RESOURCES=25 i_log
 CATEGORY=Buildings - Roofs
 SUBSECTION=Log Roof
 DESCRIPTION=Roof
@@ -735,7 +726,6 @@ DUPEITEM=05f0
 [ITEMDEF 05ff]
 DEFNAME=i_roof_tent
 TYPE=t_roof
-RESOURCES=25 i_canvas
 CATEGORY=Buildings - Roofs
 SUBSECTION=Tent Roof
 DESCRIPTION=Roof
@@ -1193,7 +1183,6 @@ DUPEITEM=05b3
 [ITEMDEF 01939]
 DEFNAME=i_roof_stone_tile
 TYPE=t_roof
-RESOURCES=5 i_rock_plain
 CATEGORY=Buildings - Roofs
 SUBSECTION=Stone Roof Tile
 DESCRIPTION=Roof
@@ -1386,7 +1375,6 @@ DUPEITEM=05b3
 [ITEMDEF 023be]
 DEFNAME=i_roof_ceramic_blue
 TYPE=t_roof
-RESOURCES=100 i_clay
 CATEGORY=Buildings - Roofs
 SUBSECTION=Ceramic Roof (Blue)
 DESCRIPTION=Roof
@@ -1479,7 +1467,6 @@ DUPEITEM=023be
 [ITEMDEF 023d4]
 DEFNAME=i_roof_ceramic_red
 TYPE=t_roof
-RESOURCES=100 i_clay
 CATEGORY=Buildings - Roofs
 SUBSECTION=Ceramic Roof (Red)
 DESCRIPTION=Roof
@@ -1572,7 +1559,6 @@ DUPEITEM=023d4
 [ITEMDEF 023ea]
 DEFNAME=i_roof_ceramic_aqua
 TYPE=t_roof
-RESOURCES=100 i_clay
 CATEGORY=Buildings - Roofs
 SUBSECTION=Ceramic Roof (Aqua)
 DESCRIPTION=Roof
@@ -1836,7 +1822,6 @@ DUPEITEM=026f8
 [ITEMDEF 028b0]
 DEFNAME=i_roof_stone_4
 TYPE=t_roof
-RESOURCES=100 i_rock_plain
 CATEGORY=Buildings - Roofs
 SUBSECTION=Stone Roof (gray)
 DESCRIPTION=Roof
@@ -1929,7 +1914,6 @@ DUPEITEM=028b0
 [ITEMDEF 028c6]
 DEFNAME=i_roof_wood_slat
 TYPE=t_roof
-RESOURCES=100 i_rock_plain
 CATEGORY=Buildings - Roofs
 SUBSECTION=Wood Slat Roof
 DESCRIPTION=Roof
@@ -2071,7 +2055,6 @@ DESCRIPTION=Unused Ceramic Roof Tile 028ef
 [ITEMDEF 028f0]
 DEFNAME=i_roof_ceramic_green
 TYPE=t_roof
-RESOURCES=100 i_clay
 CATEGORY=Buildings - Roofs
 SUBSECTION=Ceramic Roof (Green)
 DESCRIPTION=Roof
@@ -2164,7 +2147,6 @@ DUPEITEM=028f0
 [ITEMDEF 02906]
 DEFNAME=i_roof_ceramic_white
 TYPE=t_roof
-RESOURCES=100 i_clay
 CATEGORY=Buildings - Roofs
 SUBSECTION=Ceramic Roof (White)
 DESCRIPTION=Roof
@@ -2258,7 +2240,6 @@ DUPEITEM=02906
 [ITEMDEF 02920]
 DEFNAME=i_roof_ceramic_orange
 TYPE=t_roof
-RESOURCES=100 i_clay
 CATEGORY=Buildings - Roofs
 SUBSECTION=Ceramic Roof (Orange)
 DESCRIPTION=Roof
@@ -2369,7 +2350,6 @@ DUPEITEM=028b0
 [ITEMDEF 02b81]
 DEFNAME=i_roof_diamond_shingle
 TYPE=t_roof
-RESOURCES=100 i_board
 CATEGORY=Buildings - Roofs
 SUBSECTION=Shingle (diamond)
 DESCRIPTION=Roof
@@ -2450,7 +2430,6 @@ DUPEITEM=02b81
 [ITEMDEF 02b94]
 DEFNAME=i_roof_leafed
 TYPE=t_roof
-RESOURCES=100 i_leaves
 CATEGORY=Buildings - Roofs
 SUBSECTION=Leafed Roof
 DESCRIPTION=Roof
@@ -2531,7 +2510,6 @@ DUPEITEM=02b94
 [ITEMDEF 02ba7]
 DEFNAME=i_roof_bark_edge
 TYPE=t_roof
-RESOURCES=100 i_leaves
 CATEGORY=Buildings - Roofs
 SUBSECTION=Leafed Roof
 DESCRIPTION=Edge Bark
@@ -2948,7 +2926,6 @@ DUPEITEM=02b94
 DEFNAME=i_roof_crystal
 NAME=roof
 TYPE=t_roof
-RESOURCES=100 i_crystal_shards
 CATEGORY=Buildings - Roofs
 SUBSECTION=Crystal Roof
 DESCRIPTION=Roof
@@ -3035,7 +3012,6 @@ DUPEITEM=035be
 DEFNAME=i_roof_shadow
 NAME=roof
 TYPE=t_roof
-RESOURCES=5 i_rock_plain
 CATEGORY=Buildings - Roofs
 SUBSECTION=Shadow Roof
 DESCRIPTION=Roof

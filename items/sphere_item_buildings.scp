@@ -1,4 +1,5 @@
-// SPHERE by : Menasoft ©1997-2007
+﻿//****************************************************************************
+// SPHERE by : Menasoft ©1997-2017
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -6,9 +7,9 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, October 15, 2013
+// FILE LAST UPDATED: Sunday, May 14, 2017
 //
-VERSION=0.56c
+VERSION=0.56d
 
 
 [COMMENT sphere_item_buildings]
@@ -29,7 +30,6 @@ This file contains a variety of multi-part buildings and structures such as:
 
 [ITEMDEF 07e1]
 DEFNAME=i_bridge
-RESOURCES=15 i_rope,5 i_board
 CATEGORY=Buildings
 SUBSECTION=Suspension Bridge
 DESCRIPTION=Suspension Bridge
@@ -259,8 +259,6 @@ DUPEITEM=07e1
 [ITEMDEF 01459]
 DEFNAME=i_telescope
 TYPE=t_telescope
-RESOURCES=100 i_rock_plain,20 i_ingot_gold,50 i_ingot_iron,4 i_glass_raw,2 i_rock_marble
-WEIGHT=1400
 CATEGORY=Buildings
 SUBSECTION=Telescope
 DESCRIPTION=Telescope
@@ -529,8 +527,6 @@ DUPEITEM=01459
 
 [ITEMDEF 014d7]
 DEFNAME=i_vat
-RESOURCES=34 i_board,8 i_ingot_iron,1 i_barrel_tap,1 i_nails
-WEIGHT=40
 CATEGORY=Buildings
 SUBSECTION=Vat
 DESCRIPTION=Vat
@@ -570,8 +566,6 @@ DUPEITEM=014d7
 
 [ITEMDEF 014e1]
 DEFNAME=i_vat_ladder
-RESOURCES=10 i_board,1 i_nails
-WEIGHT=10
 CATEGORY=Buildings
 SUBSECTION=Vat
 DESCRIPTION=Ladder
@@ -583,8 +577,6 @@ DUPEITEM=014e1
 
 [ITEMDEF 0151e]
 DEFNAME=i_vat_2
-RESOURCES=34 i_board,8 i_ingot_iron,1 i_barrel_tap,1 i_nails,100 i_fruit_grapes
-WEIGHT=50
 CATEGORY=Buildings
 SUBSECTION=Vat
 DESCRIPTION=Vat (Grapes)
@@ -621,8 +613,6 @@ DUPEITEM=0151e
 
 [ITEMDEF 01550]
 DEFNAME=i_vat_3
-RESOURCES=34 i_board,8 i_ingot_iron,1 i_barrel_tap,1 i_nails,20 i_water
-WEIGHT=50
 CATEGORY=Buildings
 SUBSECTION=Vat
 DESCRIPTION=Vat (Water)
@@ -663,8 +653,6 @@ DUPEITEM=01550
 
 [ITEMDEF 01731]
 DEFNAME=i_fountain_1
-RESOURCES=100 i_rock_plain,40 i_water,1 i_springs
-WEIGHT=140
 CATEGORY=Buildings
 SUBSECTION=Fountains
 DESCRIPTION=Fountain 01
@@ -836,8 +824,6 @@ DUPEITEM=01731
 
 [ITEMDEF 019c3]
 DEFNAME=i_fountain_2
-RESOURCES=100 i_rock_sandstone,40 i_water,1 i_springs
-WEIGHT=140
 CATEGORY=Buildings
 SUBSECTION=Fountains
 DESCRIPTION=Fountain 02
@@ -1010,8 +996,6 @@ DUPEITEM=019c3
 
 [ITEMDEF 01aa4]
 DEFNAME=i_lighthouse
-RESOURCES=66 i_rock_sandstone,24 i_glass_raw
-WEIGHT=156
 CATEGORY=Buildings
 SUBSECTION=Lighthouse
 DESCRIPTION=Lighthouse
@@ -1264,22 +1248,21 @@ DUPEITEM=0233c
 
 
 [ITEMDEF 0248b]
+DEFNAME=i_japanese_gate_wall
 TYPE=t_wall
-RESOURCES=200 i_log,10 i_ingot_iron
 CATEGORY=Buildings
 SUBSECTION=Japanese Gate
-DESCRIPTION=Door (does not open)
+DESCRIPTION=Wall
 DUPELIST=0248c
 
 [ITEMDEF 0248c]
-//japanese gate door
+//japanese gate wall
 DUPEITEM=0248b
 
 
 [ITEMDEF 024ad]
 DEFNAME=i_japanese_gate_n
-TYPE=t_normal
-RESOURCES=200 i_log
+TYPE=t_wall
 CATEGORY=Buildings
 SUBSECTION=Japanese Gate
 DESCRIPTION=Gate Structure (north)
@@ -1311,8 +1294,7 @@ DUPEITEM=024ad
 
 [ITEMDEF 024b4]
 DEFNAME=i_japanese_gate_w
-TYPE=t_normal
-RESOURCES=100 i_log
+TYPE=t_wall
 CATEGORY=Buildings
 SUBSECTION=Japanese Gate
 DESCRIPTION=Gate Structure (west)
@@ -1345,12 +1327,10 @@ DUPEITEM=024b4
 
 [ITEMDEF 0423b]
 DEFNAME=i_soulforge
-NAME=soulforge enclosure
-TYPE=t_normal
-VALUE=250
-WEIGHT=325.0
-RESOURCES=30 i_rock_plain,25 i_ingot_iron
-SKILLMAKE=Tinkering 56.0,t_tinker_tools
+NAME=soulforge
+TYPE=t_forge
+RESOURCES=150 i_board,150 i_ingot_iron,1 i_relic_fragment
+SKILLMAKE=Carpentry 100.0,Imbuing 75.0,t_carpentry
 CATEGORY=Buildings
 SUBSECTION=Soulforge
 DESCRIPTION=Soulforge
@@ -1389,7 +1369,7 @@ DUPEITEM=0423b
 DUPEITEM=0423b
 
 [ITEMDEF i_multi_soulforge]
-NAME=soulforge enclosure
+NAME=soulforge
 TYPE=t_multi
 CATEGORY=Multis
 SUBSECTION=Decoration
@@ -1408,12 +1388,9 @@ COMPONENT=04243,1,1,0
 
 
 [ITEMDEF 0424b]
+DEFNAME=i_soulforge_roof
 NAME=soulforge roof
 TYPE=t_roof
-VALUE=250
-WEIGHT=325.0
-RESOURCES=30 i_rock_plain,25 i_ingot_iron
-SKILLMAKE=Tinkering 56.0,t_tinker_tools
 CATEGORY=Buildings
 SUBSECTION=Soulforge
 DESCRIPTION=Soulforge Roof
@@ -1483,10 +1460,8 @@ COMPONENT=04253,1,1,13
 DEFNAME=i_soulforge_and_anvil
 NAME=soulforge and anvil
 TYPE=t_forge
-VALUE=250
-WEIGHT=650.0
-RESOURCES=60 i_rock_plain,50 i_ingot_iron
-SKILLMAKE=Tinkering 56.0,t_tinker_tools
+RESOURCES=150 i_board,150 i_ingot_iron,1 i_relic_fragment
+SKILLMAKE=Carpentry 100.0,Imbuing 75.0,t_carpentry
 CATEGORY=Buildings
 SUBSECTION=Soulforge and Anvil
 DESCRIPTION=Soulforge and Anvil
@@ -1583,10 +1558,8 @@ COMPONENT=04272,2,2,0
 DEFNAME=i_soulforge_and_anvil_with_roof
 NAME=soulforge and anvil
 TYPE=t_forge
-VALUE=250
-WEIGHT=700.0
-RESOURCES=60 i_rock_plain,50 i_ingot_iron,50 i_log
-SKILLMAKE=Tinkering 56.0,t_tinker_tools
+RESOURCES=150 i_board,150 i_ingot_iron,1 i_relic_fragment
+SKILLMAKE=Carpentry 100.0,Imbuing 75.0,t_carpentry
 CATEGORY=Buildings
 SUBSECTION=Soulforge and Anvil
 DESCRIPTION=Soulforge and Anvil (roof)
@@ -1683,8 +1656,6 @@ COMPONENT=04286,2,2,0
 [ITEMDEF 04724]
 DEFNAME=i_lighthouse_ancient_s
 NAME=Ancient Lighthouse
-RESOURCES=66 i_rock_plain,24 i_glass
-WEIGHT=156.0
 CATEGORY=Buildings
 SUBSECTION=Lighthouse (ancient)
 DESCRIPTION=Lighthouse
@@ -2340,8 +2311,6 @@ DUPEITEM=04724
 DEFNAME=i_crane
 NAME=Crane
 TYPE=t_wall
-WEIGHT=500.0
-RESOURCES=50 i_board
 CATEGORY=Buildings
 SUBSECTION=Crane
 DESCRIPTION=Crane
@@ -2508,7 +2477,6 @@ DUPEITEM=049d4
 DEFNAME=i_exodus_nexus
 NAME=Exodus Nexus
 TYPE=t_wall
-RESOURCES=1000 i_crystalline_blackrock
 CATEGORY=Buildings
 SUBSECTION=Exodus Nexus
 DESCRIPTION=Exodus Nexus
@@ -2579,13 +2547,7 @@ COMPONENT=04b75,-2,2,0
 COMPONENT=04b76,-1,2,0
 
 [ITEMDEF 04bde]
-DEFNAME=i_garden_shed_south
-NAME=garden shed
-TYPE=t_wall
-RESOURCES=100 i_log
-CATEGORY=Buildings
-SUBSECTION=Garden Shed
-DESCRIPTION=Garden Shed (south)
+//Garden Shed (south)
 DUPELIST=04bdf,04be0,04be1,04be2,04be3,04be4,04be5,04be6,04be8
 
 [ITEMDEF 04bdf]
@@ -2621,13 +2583,9 @@ DUPEITEM=04bde
 DUPEITEM=04bde
 
 [ITEMDEF 04be7]
-NAME=garden shed
+//Garden Shed (south)
 TYPE=t_container
-TDATA1=03e
-RESOURCES=100 i_log
-CATEGORY=Buildings
-SUBSECTION=Garden Shed
-DESCRIPTION=Garden Shed (south)
+TDATA2=044
 DUPELIST=04be9
 
 [ITEMDEF 04be8]
@@ -2636,6 +2594,8 @@ DUPEITEM=04bde
 
 [ITEMDEF 04be9]
 //Garden Shed (south)
+TYPE=t_container
+TDATA2=03e
 DUPEITEM=04be7
 
 [ITEMDEF i_multi_gardenshed_south]
@@ -2659,23 +2619,13 @@ COMPONENT=04be8,1,1,0
 COMPONENT=04be9,2,1,0
 
 [ITEMDEF 04bea]
-DEFNAME=i_garden_shed_east
-NAME=garden shed
-TYPE=t_wall
-RESOURCES=100 i_log
-CATEGORY=Buildings
-SUBSECTION=Garden Shed
-DESCRIPTION=Garden Shed (east)
+//Garden Shed (east)
 DUPELIST=04bec,04bee,04bef,04bf0,04bf1,04bf2,04bf3,04bf4,04bf5
 
 [ITEMDEF 04beb]
-NAME=garden shed
+//Garden Shed (east)
 TYPE=t_container
-TDATA1=03e
-RESOURCES=100 i_log
-CATEGORY=Buildings
-SUBSECTION=Garden Shed
-DESCRIPTION=Garden Shed (east)
+TDATA2=044
 DUPELIST=04bed
 
 [ITEMDEF 04bec]
@@ -2684,6 +2634,8 @@ DUPEITEM=04bea
 
 [ITEMDEF 04bed]
 //Garden Shed (east)
+TYPE=t_container
+TDATA2=03e
 DUPEITEM=04beb
 
 [ITEMDEF 04bee]
@@ -2737,6 +2689,5 @@ COMPONENT=04bf2,-1,2,0
 COMPONENT=04bf3,-1,1,0
 COMPONENT=04bf4,-1,0,0
 COMPONENT=04bf5,-1,-1,0
-
 
 [EOF]

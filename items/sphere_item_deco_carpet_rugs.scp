@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2007
+// SPHERE by : Menasoft ©1997-2017
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,9 +7,9 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Friday, September 20, 2013
+// FILE LAST UPDATED: Sunday, May 14, 2017
 //
-VERSION=0.56c
+VERSION=0.56d
 
 
 [ITEMDEF 0aa9]
@@ -17,10 +17,7 @@ DEFNAME=i_rug_1
 NAME=plain brown rug
 TYPE=t_floor
 FLIP=1
-WEIGHT=15.0
 CAN=can_i_platform
-RESOURCES=100 i_wool,100 i_thread,10 i_dyes
-SKILLMAKE=Tailoring 78.9,t_sewing_kit
 CATEGORY=Decoration - Carpets & Rugs
 SUBSECTION=Rug 1
 DESCRIPTION=Rug
@@ -67,11 +64,7 @@ DEFNAME=i_rug_2
 NAME=plain green rug
 TYPE=t_floor
 FLIP=1
-VALUE=225
-WEIGHT=15.0
 CAN=can_i_platform
-RESOURCES=100 i_wool,100 i_thread,10 i_dyes
-SKILLMAKE=Tailoring 78.9,t_sewing_kit
 CATEGORY=Decoration - Carpets & Rugs
 SUBSECTION=Rug 2
 DESCRIPTION=Rug
@@ -118,11 +111,7 @@ DEFNAME=i_carpet_1
 NAME=blue flowered carpet
 TYPE=t_floor
 FLIP=1
-VALUE=225
-WEIGHT=15.0
 CAN=can_i_platform
-RESOURCES=100 i_wool,100 i_thread,10 i_dyes
-SKILLMAKE=Tailoring 78.9,t_sewing_kit
 CATEGORY=Decoration - Carpets & Rugs
 SUBSECTION=Carpet 1
 DESCRIPTION=Carpet
@@ -165,11 +154,7 @@ DEFNAME=i_carpet_2
 NAME=red flowered carpet
 TYPE=t_floor
 FLIP=1
-VALUE=225
-WEIGHT=15.0
 CAN=can_i_platform
-RESOURCES=100 i_wool,100 i_thread,10 i_dyes
-SKILLMAKE=Tailoring 78.9,t_sewing_kit
 CATEGORY=Decoration - Carpets & Rugs
 SUBSECTION=Carpet 2
 DESCRIPTION=Carpet
@@ -220,11 +205,7 @@ DEFNAME=i_carpet_3
 NAME=golden blue carpet
 TYPE=t_floor
 FLIP=1
-VALUE=225
-WEIGHT=15.0
 CAN=can_i_platform
-RESOURCES=100 i_wool,100 i_thread,10 i_dyes
-SKILLMAKE=Tailoring 78.9,t_sewing_kit
 CATEGORY=Decoration - Carpets & Rugs
 SUBSECTION=Carpet 3
 DESCRIPTION=Carpet
@@ -267,11 +248,7 @@ DEFNAME=i_carpet_4
 NAME=golden red carpet
 TYPE=t_floor
 FLIP=1
-VALUE=225
-WEIGHT=15.0
 CAN=can_i_platform
-RESOURCES=100 i_wool,100 i_thread,10 i_dyes
-SKILLMAKE=Tailoring 78.9,t_sewing_kit
 CATEGORY=Decoration - Carpets & Rugs
 SUBSECTION=Carpet 4
 DESCRIPTION=Carpet
@@ -314,11 +291,7 @@ DEFNAME=i_carpet_5
 NAME=reddish gold carpet
 TYPE=t_floor
 FLIP=1
-VALUE=225
-WEIGHT=15.0
 CAN=can_i_platform
-RESOURCES=100 i_wool,100 i_thread,10 i_dyes
-SKILLMAKE=Tailoring 78.9,t_sewing_kit
 CATEGORY=Decoration - Carpets & Rugs
 SUBSECTION=Carpet 5
 DESCRIPTION=Carpet
@@ -361,11 +334,7 @@ DEFNAME=i_carpet_6
 NAME=royal carpet
 TYPE=t_floor
 FLIP=1
-VALUE=225
-WEIGHT=15.0
 CAN=can_i_platform
-RESOURCES=100 i_wool,100 i_thread,10 i_dyes
-SKILLMAKE=Tailoring 78.9,t_sewing_kit
 CATEGORY=Decoration - Carpets & Rugs
 SUBSECTION=Carpet 6
 DESCRIPTION=Carpet
@@ -432,10 +401,7 @@ DEFNAME=i_carpet_7
 NAME=plain gray carpet
 TYPE=t_floor
 FLIP=1
-WEIGHT=15.0
 CAN=can_i_platform
-RESOURCES=5 i_wool,100 i_thread
-SKILLMAKE=Tailoring 78.9,t_sewing_kit
 CATEGORY=Decoration - Carpets & Rugs
 SUBSECTION=Rug 4
 DESCRIPTION=Rug
@@ -489,9 +455,6 @@ DUPEITEM=01098
 [ITEMDEF 011e2]
 DEFNAME=i_mat_grass
 FLIP=1
-WEIGHT=5.0
-RESOURCES=2 i_plant_grasses
-SKILLMAKE=Tailoring 21.8
 CATEGORY=Decoration - Carpets & Rugs
 SUBSECTION=Mats
 DESCRIPTION=Mat (Grass)
@@ -512,10 +475,6 @@ DUPEITEM=011e2
 [ITEMDEF 011e6]
 DEFNAME=i_mat_woven
 FLIP=1
-VALUE=12
-WEIGHT=5.0
-RESOURCES=2 i_straw
-SKILLMAKE=Tailoring 32.6
 CATEGORY=Decoration - Carpets & Rugs
 SUBSECTION=Mats
 DESCRIPTION=Mat (Woven)
@@ -538,10 +497,7 @@ DUPEITEM=011e6
 DEFNAME=i_rug_worn
 TYPE=t_floor
 FLIP=1
-WEIGHT=15.0
 CAN=can_i_platform
-RESOURCES=100 i_wool,100 i_thread,10 i_dyes
-SKILLMAKE=Tailoring 58.9,t_sewing_kit
 CATEGORY=Decoration - Carpets & Rugs
 SUBSECTION=Rug 1
 DESCRIPTION=Worn Rug
@@ -603,10 +559,7 @@ DUPEITEM=01dd3
 DEFNAME=i_rug_2_worn
 TYPE=t_floor
 FLIP=1
-WEIGHT=15.0
 CAN=can_i_platform
-RESOURCES=100 i_wool,100 i_thread,10 i_dyes
-SKILLMAKE=Tailoring 58.9,t_sewing_kit
 CATEGORY=Decoration - Carpets & Rugs
 SUBSECTION=Rug 2
 DESCRIPTION=Worn Rug
@@ -668,10 +621,7 @@ DUPEITEM=01de1
 DEFNAME=i_rug_4
 TYPE=t_floor
 FLIP=1
-WEIGHT=15.0
 CAN=can_i_platform
-RESOURCES=100 i_wool,100 i_thread,10 i_dyes
-SKILLMAKE=Tailoring 78.9,t_sewing_kit
 CATEGORY=Decoration - Carpets & Rugs
 SUBSECTION=Rug 4
 DESCRIPTION=Worn Rug
@@ -734,11 +684,7 @@ DUPEITEM=01def
 DEFNAME=i_rug_bearskin_1
 TYPE=t_floor
 FLIP=1
-VALUE=74
-WEIGHT=30.5
 CAN=can_i_platform
-RESOURCES=1 i_cloth,5 i_fur_dark,5 i_thread,4 i_canvas
-SKILLMAKE=Tailoring 78.9,t_sewing_kit,Anatomy 43.1
 CATEGORY=Decoration - Carpets & Rugs
 SUBSECTION=Bearskin Carpet
 DESCRIPTION=Bearskin
@@ -851,11 +797,7 @@ DEFNAME=i_rug_bearskin_2
 NAME=polar bearskin rug
 TYPE=t_floor
 FLIP=1
-VALUE=74
-WEIGHT=30.5
 CAN=can_i_platform
-RESOURCES=1 i_cloth,5 i_fur_dark,5 i_thread,4 i_canvas
-SKILLMAKE=Tailoring 78.9,t_sewing_kit,Anatomy 43.1
 CATEGORY=Decoration - Carpets & Rugs
 SUBSECTION=Polar Bear Rug
 DESCRIPTION=Polar Bear Rug
@@ -967,7 +909,6 @@ COMPONENT=01e5b,-1,-1,0
 [ITEMDEF 028a4]
 DEFNAME=i_mat_goza
 TYPE=t_floor
-RESOURCES=50 i_log_bamboo,1 i_string
 CATEGORY=Decoration - Carpets & Rugs
 SUBSECTION=Goza Mat
 DESCRIPTION=Goza Mat
@@ -1222,9 +1163,7 @@ DUPEITEM=028a4
 DEFNAME=i_rug_bearskin_misc
 TYPE=t_floor
 FLIP=1
-WEIGHT=15.0
 CAN=can_i_platform
-RESOURCES=5 i_wool,100 i_thread
 CATEGORY=Decoration - Carpets & Rugs
 SUBSECTION=Bearskin Carpet Bits
 DESCRIPTION=Carpet bits
@@ -1248,10 +1187,7 @@ DEFNAME=i_rug_skull_s
 NAME=skull rug
 TYPE=t_floor
 FLIP=1
-WEIGHT=15.0
 CAN=can_i_platform
-RESOURCES=100 i_wool,100 i_thread,10 i_dyes
-SKILLMAKE=Tailoring 78.9,t_sewing_kit
 CATEGORY=Decoration - Carpets & Rugs
 SUBSECTION=Skull Rug
 DESCRIPTION=South Facing
@@ -1369,10 +1305,7 @@ DEFNAME=i_rug_skull_w
 NAME=skull rug
 TYPE=t_floor
 FLIP=1
-WEIGHT=15.0
 CAN=can_i_platform
-RESOURCES=100 i_wool,100 i_thread,10 i_dyes
-SKILLMAKE=Tailoring 78.9,t_sewing_kit
 CATEGORY=Decoration - Carpets & Rugs
 SUBSECTION=Skull Rug
 DESCRIPTION=West Rug
@@ -1434,10 +1367,7 @@ DEFNAME=i_rug_rose_s
 NAME=rose rug
 TYPE=t_floor
 FLIP=1
-WEIGHT=15.0
 CAN=can_i_platform
-RESOURCES=100 i_wool,100 i_thread,10 i_dyes
-SKILLMAKE=Tailoring 78.9,t_sewing_kit
 CATEGORY=Decoration - Carpets & Rugs
 SUBSECTION=Rose Rug
 DESCRIPTION=South Rug
@@ -1527,10 +1457,7 @@ DEFNAME=i_rug_rose_w
 NAME=rose rug
 TYPE=t_floor
 FLIP=1
-WEIGHT=15.0
 CAN=can_i_platform
-RESOURCES=100 i_wool,100 i_thread,10 i_dyes
-SKILLMAKE=Tailoring 78.9,t_sewing_kit
 CATEGORY=Decoration - Carpets & Rugs
 SUBSECTION=Rose Rug
 DESCRIPTION=West Rug
@@ -1620,10 +1547,7 @@ DEFNAME=i_rug_dolphin_s
 NAME=dolphin rug
 TYPE=t_floor
 FLIP=1
-WEIGHT=15.0
 CAN=can_i_platform
-RESOURCES=100 i_wool,100 i_thread,10 i_dyes
-SKILLMAKE=Tailoring 78.9,t_sewing_kit
 CATEGORY=Decoration - Carpets & Rugs
 SUBSECTION=Dolphin Rug
 DESCRIPTION=South Rug
@@ -1713,10 +1637,7 @@ DEFNAME=i_rug_dolphin_w
 NAME=dolphin rug
 TYPE=t_floor
 FLIP=1
-WEIGHT=15.0
 CAN=can_i_platform
-RESOURCES=100 i_wool,100 i_thread,10 i_dyes
-SKILLMAKE=Tailoring 78.9,t_sewing_kit
 CATEGORY=Decoration - Carpets & Rugs
 SUBSECTION=Dolphin Rug
 DESCRIPTION=West Rug
@@ -1762,6 +1683,21 @@ DUPEITEM=04772
 //dolphin rug west
 DUPEITEM=04772
 
+
+[ITEMDEF 04790]
+DEFNAME=i_welcome_mat_rounded
+NAME=door mat
+FLIP=1
+CATEGORY=Decoration - Carpets & Rugs
+SUBSECTION=Welcome Mat
+DESCRIPTION=Rounded
+DUPELIST=04791
+
+[ITEMDEF 04791]
+//welcome mat (rounded)
+DUPEITEM=04790
+
+
 [ITEMDEF 047d6]
 //dolphin rug west
 DUPEITEM=04772
@@ -1803,42 +1739,37 @@ COMPONENT=047d9,2,-1,0
 
 
 [ITEMDEF 047da]
-DEFNAME=i_welcome_mat
-NAME=welcome mat
-TYPE=t_normal
-DYE=1
+DEFNAME=i_welcome_mat_squared
+NAME=door mat
 FLIP=1
 CATEGORY=Decoration - Carpets & Rugs
 SUBSECTION=Welcome Mat
-DESCRIPTION=Welcome Mat
+DESCRIPTION=Squared
 DUPELIST=047db
 
 [ITEMDEF 047db]
-//welcome mat
+//welcome mat (squared)
 DUPEITEM=047da
 
 [ITEMDEF 04ab4]
 DEFNAME=i_welcome_mat_large
-NAME=welcome mat
-TYPE=t_normal
-DYE=1
+NAME=door mat
 FLIP=1
 CATEGORY=Decoration - Carpets & Rugs
 SUBSECTION=Welcome Mat
-DESCRIPTION=Welcome Mat (multi-part)
+DESCRIPTION=Squared (multi-part)
 DUPELIST=04ab5,04ab6,04ab7
 
 [ITEMDEF 04ab5]
-//welcome mat (multi-part)
+//welcome mat (squared)(multi-part)
 DUPEITEM=04ab4
 
 [ITEMDEF 04ab6]
-//welcome mat (multi-part)
+//welcome mat (squared)(multi-part)
 DUPEITEM=04ab4
 
 [ITEMDEF 04ab7]
-//welcome mat (multi-part)
+//welcome mat (squared)(multi-part)
 DUPEITEM=04ab4
-
 
 [EOF]

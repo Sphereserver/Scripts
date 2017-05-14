@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2007
+// SPHERE by : Menasoft ©1997-2017
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,15 +7,14 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Friday, September 20, 2013
+// FILE LAST UPDATED: Sunday, May 14, 2017
 //
-VERSION=0.56c
+VERSION=0.56d
 
 
 [ITEMDEF 06]
 DEFNAME=i_wall_darkwood
 TYPE=t_wall
-RESOURCES=100 i_log
 CATEGORY=Buildings - Walls
 SUBSECTION=Darkwood Wall
 DESCRIPTION=Wall
@@ -52,7 +51,6 @@ DUPEITEM=06
 [ITEMDEF 0e]
 DEFNAME=i_wall_darkwood_window
 TYPE=t_window
-RESOURCES=100 i_log,2 i_glass_raw
 CATEGORY=Buildings - Walls
 SUBSECTION=Darkwood Wall
 DESCRIPTION=Wall (window)
@@ -105,7 +103,6 @@ DUPEITEM=06
 [ITEMDEF 01a]
 DEFNAME=i_wall_stone
 TYPE=t_wall
-RESOURCES=100 i_rock_plain
 CATEGORY=Buildings - Walls
 SUBSECTION=Stone Wall 1
 DESCRIPTION=Wall
@@ -143,7 +140,6 @@ DUPEITEM=01a
 //FIXME: This window does not have a light pattern
 DEFNAME=i_wall_stone_window
 TYPE=t_window
-RESOURCES=50 i_rock_plain
 CATEGORY=Buildings - Walls
 SUBSECTION=Stone Wall 1
 DESCRIPTION=Wall (window)
@@ -216,7 +212,6 @@ DUPEITEM=01a
 [ITEMDEF 033]
 DEFNAME=i_wall_smallbrick
 TYPE=t_wall
-RESOURCES=100 i_brick
 CATEGORY=Buildings - Walls
 SUBSECTION=Smallbrick Wall
 DESCRIPTION=Wall
@@ -253,7 +248,6 @@ DUPEITEM=033
 [ITEMDEF 03b]
 DEFNAME=i_wall_smallbrick_window
 TYPE=t_window
-RESOURCES=100 i_brick,2 i_glass_raw
 CATEGORY=Buildings - Walls
 SUBSECTION=Smallbrick Wall
 DESCRIPTION=Wall (window)
@@ -370,7 +364,6 @@ DUPEITEM=033
 [ITEMDEF 057]
 DEFNAME=i_wall_largebrick
 TYPE=t_wall
-RESOURCES=100 i_brick
 CATEGORY=Buildings - Walls
 SUBSECTION=Largebrick Wall
 DESCRIPTION=Wall
@@ -392,7 +385,6 @@ DUPEITEM=057
 //FIXME: This window has the wrong light pattern
 DEFNAME=i_wall_largebrick_window
 TYPE=t_window
-RESOURCES=100 i_brick
 CATEGORY=Buildings - Walls
 SUBSECTION=Largebrick Wall
 DESCRIPTION=Wall (window)
@@ -523,7 +515,6 @@ DUPEITEM=057
 [ITEMDEF 07a]
 DEFNAME=i_wall_hugebrick
 TYPE=t_wall
-RESOURCES=100 i_brick
 CATEGORY=Buildings - Walls
 SUBSECTION=Hugebrick Wall
 DESCRIPTION=Wall
@@ -565,7 +556,6 @@ DUPEITEM=07a
 //FIXME: This window does not have a light pattern
 DEFNAME=i_wall_hugebrick_window
 TYPE=t_window
-RESOURCES=100 i_brick,1 i_glass_raw
 CATEGORY=Buildings - Walls
 SUBSECTION=Hugebrick Wall
 DESCRIPTION=Wall (window)
@@ -625,7 +615,6 @@ DUPEITEM=083
 [ITEMDEF 090]
 DEFNAME=i_wall_log
 TYPE=t_wall
-RESOURCES=100 i_log
 CATEGORY=Buildings - Walls
 SUBSECTION=Log Wall
 DESCRIPTION=Wall
@@ -663,7 +652,6 @@ DUPEITEM=090
 //FIXME: This window does not have a light pattern
 DEFNAME=i_wall_log_window
 TYPE=t_window
-RESOURCES=100 i_log,2 i_glass_raw
 CATEGORY=Buildings - Walls
 SUBSECTION=Log Wall
 DESCRIPTION=Wall (window)
@@ -725,7 +713,6 @@ DUPEITEM=090
 [ITEMDEF 0a6]
 DEFNAME=i_wall_lightwood
 TYPE=t_wall
-RESOURCES=100 i_board
 CATEGORY=Buildings - Walls
 SUBSECTION=Lightwood Wall
 DESCRIPTION=Wall
@@ -806,7 +793,6 @@ DUPEITEM=0a6
 [ITEMDEF 0b9]
 DEFNAME=i_wall_lightwood_window
 TYPE=t_window
-RESOURCES=100 i_board,2 i_glass_raw
 CATEGORY=Buildings - Walls
 SUBSECTION=lightwood Wall
 DESCRIPTION=Wall (window)
@@ -851,7 +837,6 @@ DUPEITEM=0a6
 [ITEMDEF 0c5]
 DEFNAME=i_wall_hugestone
 TYPE=t_wall
-RESOURCES=100 i_rock_plain
 CATEGORY=Buildings - Walls
 SUBSECTION=Hugestone Wall
 DESCRIPTION=Wall
@@ -876,7 +861,6 @@ DUPEITEM=0c5
 [ITEMDEF 0ca]
 DEFNAME=i_wall_hugestone_window
 TYPE=t_window
-RESOURCES=100 i_rock_plain,2 i_glass_raw
 CATEGORY=Buildings - Walls
 SUBSECTION=Hugestone Wall
 DESCRIPTION=Wall (window)
@@ -1001,7 +985,6 @@ DUPEITEM=0c5
 [ITEMDEF 0f8]
 DEFNAME=i_wall_marble
 TYPE=t_wall
-RESOURCES=100 i_rock_marble
 CATEGORY=Buildings - Walls
 SUBSECTION=Marble Wall
 DESCRIPTION=Wall
@@ -1022,7 +1005,6 @@ DUPEITEM=0f8
 [ITEMDEF 0fc]
 DEFNAME=i_wall_marble_window
 TYPE=t_window
-RESOURCES=100 i_rock_marble,2 i_glass_raw
 CATEGORY=Buildings - Walls
 SUBSECTION=Marble Wall
 DESCRIPTION=Wall (window)
@@ -1199,7 +1181,6 @@ DUPEITEM=0f8
 [ITEMDEF 0127]
 DEFNAME=i_wall_plaster
 TYPE=t_wall
-RESOURCES=100 i_plaster
 CATEGORY=Buildings - Walls
 SUBSECTION=Plaster & Wood Wall
 DESCRIPTION=Wall
@@ -1280,7 +1261,6 @@ DUPEITEM=0127
 [ITEMDEF 013a]
 DEFNAME=i_wall_plaster_window
 TYPE=t_window
-RESOURCES=50 i_plaster,2 i_glass_raw
 CATEGORY=Buildings - Walls
 SUBSECTION=Plaster & Wood Wall
 DESCRIPTION=Wall (window)
@@ -1405,7 +1385,6 @@ DUPEITEM=013a
 [ITEMDEF 0158]
 DEFNAME=i_wall_sandstone
 TYPE=t_wall
-RESOURCES=100 i_rock_sandstone
 CATEGORY=Buildings - Walls
 SUBSECTION=Sandstone Wall
 DESCRIPTION=Wall
@@ -1426,7 +1405,6 @@ DUPEITEM=0158
 [ITEMDEF 015c]
 DEFNAME=i_wall_sandstone_window
 TYPE=t_window
-RESOURCES=100 i_rock_sandstone,2 i_glass_raw
 CATEGORY=Buildings - Walls
 SUBSECTION=Sandstone Wall
 DESCRIPTION=Wall (window)
@@ -1683,7 +1661,6 @@ DUPEITEM=0158
 [ITEMDEF 019b]
 DEFNAME=i_wall_primitivewood
 TYPE=t_wall
-RESOURCES=100 i_log
 CATEGORY=Buildings - Walls
 SUBSECTION=Primitive Wall
 DESCRIPTION=Wall (support)
@@ -1728,7 +1705,6 @@ DUPEITEM=0158
 [ITEMDEF 01a5]
 DEFNAME=i_wall_rattan
 TYPE=t_wall
-RESOURCES=50 i_plant_grasses,50 i_straw
 CATEGORY=Buildings - Walls
 SUBSECTION=Rattan Wall
 DESCRIPTION=Wall
@@ -1765,7 +1741,6 @@ DUPEITEM=01a5
 [ITEMDEF 01ad]
 DEFNAME=i_wall_rattan_window
 TYPE=t_window
-RESOURCES=50 i_plant_grasses,50 i_straw
 CATEGORY=Buildings - Walls
 SUBSECTION=Rattan Wall
 DESCRIPTION=Wall (window)
@@ -1806,7 +1781,6 @@ DUPEITEM=019b
 [ITEMDEF 01b6]
 DEFNAME=i_wall_hide
 TYPE=t_wall
-RESOURCES=100 i_hide
 CATEGORY=Buildings - Walls
 SUBSECTION=Hide Wall
 DESCRIPTION=Wall
@@ -1867,7 +1841,6 @@ DUPEITEM=01b6
 [ITEMDEF 01c4]
 DEFNAME=i_wall_hide_window
 TYPE=t_window
-RESOURCES=100 i_hide
 CATEGORY=Buildings - Walls
 SUBSECTION=Hide Wall
 DESCRIPTION=Wall (window)
@@ -1916,7 +1889,6 @@ DUPEITEM=019b
 [ITEMDEF 01cf]
 DEFNAME=i_wall_hugebrownstone
 TYPE=t_wall
-RESOURCES=100 i_rock_plain
 CATEGORY=Buildings - Walls
 SUBSECTION=Huge Brownstone Wall
 DESCRIPTION=Wall
@@ -1937,7 +1909,6 @@ DUPEITEM=01cf
 [ITEMDEF 01d3]
 DEFNAME=i_wall_hugebrownstone_window
 TYPE=t_window
-RESOURCES=50 i_rock_plain,1 i_glass_raw
 CATEGORY=Buildings - Walls
 SUBSECTION=Huge Brownstone Wall
 DESCRIPTION=Wall (window)
@@ -2058,7 +2029,6 @@ DUPEITEM=0158
 [ITEMDEF 01f0]
 DEFNAME=i_wall_tent_darkblue
 TYPE=t_wall
-RESOURCES=50 i_canvas
 CATEGORY=Buildings - Walls
 SUBSECTION=Tent Wall (dark blue)
 DESCRIPTION=Wall
@@ -2103,7 +2073,6 @@ DUPEITEM=01f0
 [ITEMDEF 01ff]
 DEFNAME=i_wall_plaster_sandstone
 TYPE=t_wall
-RESOURCES=50 i_plaster,50 i_rock_sandstone
 CATEGORY=Buildings - Walls
 SUBSECTION=Plaster & Sandstone Wall
 DESCRIPTION=Wall
@@ -2140,7 +2109,6 @@ DUPEITEM=01ff
 [ITEMDEF 0207]
 DEFNAME=i_wall_plaster_sandstone_window
 TYPE=t_window
-RESOURCES=50 i_plaster,50 i_rock_sandstone,2 i_glass_raw
 CATEGORY=Buildings - Walls
 SUBSECTION=Plaster & Sandstone Wall
 DESCRIPTION=Wall (window)
@@ -2169,7 +2137,6 @@ DUPEITEM=01ff
 [ITEMDEF 020f]
 DEFNAME=i_wall_bamboo
 TYPE=t_wall
-RESOURCES=50 i_log_bamboo
 CATEGORY=Buildings - Walls
 SUBSECTION=Bamboo Wall
 DESCRIPTION=Wall
@@ -2222,7 +2189,6 @@ DUPEITEM=020f
 [ITEMDEF 021d]
 DEFNAME=i_wall_palisade
 TYPE=t_wall
-RESOURCES=50 i_board
 CATEGORY=Buildings - Walls
 SUBSECTION=Palisade
 DESCRIPTION=Wall
@@ -2279,7 +2245,6 @@ DUPEITEM=021d
 [ITEMDEF 0230]
 DEFNAME=i_wall_tent_darkgreen
 TYPE=t_wall
-RESOURCES=100 i_canvas
 CATEGORY=Buildings - Walls
 SUBSECTION=Tent Wall (dark green)
 DESCRIPTION=Wall
@@ -2324,7 +2289,6 @@ DUPEITEM=0230
 [ITEMDEF 0241]
 DEFNAME=i_wall_dungeon
 TYPE=t_wall
-RESOURCES=100 i_rock_plain
 CATEGORY=Buildings - Walls
 SUBSECTION=Dungeon Wall
 DESCRIPTION=Wall
@@ -2369,7 +2333,6 @@ DUPEITEM=0241
 [ITEMDEF 024c]
 DEFNAME=i_wall_sandstone_fancy
 TYPE=t_wall
-RESOURCES=100 i_rock_sandstone
 CATEGORY=Buildings - Walls
 SUBSECTION=Sandstone Wall (fancy)
 DESCRIPTION=Wall
@@ -2398,7 +2361,6 @@ DUPEITEM=024c
 [ITEMDEF 0252]
 DEFNAME=i_wall_sandstone_fancy_window
 TYPE=t_window
-RESOURCES=100 i_rock_plain
 CATEGORY=Buildings - Walls
 SUBSECTION=Sandstone Wall (fancy)
 DESCRIPTION=Wall (window)
@@ -2443,7 +2405,6 @@ DUPEITEM=024c
 [ITEMDEF 025c]
 DEFNAME=i_wall_cave
 TYPE=t_wall
-RESOURCES=100 i_rock_plain
 CATEGORY=Buildings - Walls
 SUBSECTION=Cave Wall
 DESCRIPTION=Wall
@@ -2556,7 +2517,6 @@ DUPEITEM=025c
 [ITEMDEF 0277]
 DEFNAME=i_wall_stone_ruined
 TYPE=t_wall
-RESOURCES=100 i_rock_plain
 CATEGORY=Buildings - Ruins
 SUBSECTION=Stone Ruins
 DESCRIPTION=Wall
@@ -2609,7 +2569,6 @@ DUPEITEM=0277
 [ITEMDEF 0291]
 DEFNAME=i_wall_whitemarble
 TYPE=t_wall
-RESOURCES=100 i_rock_marble
 CATEGORY=Buildings - Walls
 SUBSECTION=Whitemarble Wall
 DESCRIPTION=Wall
@@ -2630,7 +2589,6 @@ DUPEITEM=0291
 [ITEMDEF 0295]
 DEFNAME=i_wall_whitemarble_window
 TYPE=t_window
-RESOURCES=100 i_rock_marble,2 i_glass_raw
 CATEGORY=Buildings - Walls
 SUBSECTION=Whitemarble Wall
 DESCRIPTION=Wall (window)
@@ -2883,7 +2841,6 @@ DUPEITEM=07a
 [ITEMDEF 02de]
 DEFNAME=i_wall_tent_darkgray
 TYPE=t_wall
-RESOURCES=100 i_canvas
 CATEGORY=Buildings - Walls
 SUBSECTION=Tent Wall (dark gray)
 DESCRIPTION=Wall
@@ -2948,7 +2905,6 @@ DUPEITEM=02de
 [ITEMDEF 02ef]
 DEFNAME=i_wall_tent_patch
 TYPE=t_wall
-RESOURCES=1 i_canvas
 CATEGORY=Buildings - Walls
 SUBSECTION=Tent Wall (patch)
 DESCRIPTION=Patch
@@ -3017,7 +2973,6 @@ DUPEITEM=07a
 [ITEMDEF 0368]
 DEFNAME=i_wall_tent_lightgray
 TYPE=t_wall
-RESOURCES=100 i_canvas
 CATEGORY=Buildings - Walls
 SUBSECTION=Tent Wall (light gray)
 DESCRIPTION=Wall
@@ -3086,7 +3041,6 @@ DUPEITEM=02ef
 [ITEMDEF 0378]
 DEFNAME=i_tent_dagges
 TYPE=t_wall
-RESOURCES=5 i_canvas
 CATEGORY=Buildings - Walls
 SUBSECTION=Tent Dagges
 DESCRIPTION=Dagges
@@ -3251,7 +3205,6 @@ DUPEITEM=0127
 [ITEMDEF 03b3]
 DEFNAME=i_fence_wood
 TYPE=t_wall
-RESOURCES=100 i_log
 CATEGORY=Buildings - Fences
 SUBSECTION=Wooden Fence 1
 DESCRIPTION=Fence
@@ -3272,7 +3225,6 @@ DUPEITEM=03b3
 [ITEMDEF 03b7]
 DEFNAME=i_wall_sandstone_ruined
 TYPE=t_wall
-RESOURCES=100 i_rock_plain
 CATEGORY=Buildings - Ruins
 SUBSECTION=Sandstone Stone Ruins
 DESCRIPTION=Wall
@@ -3305,7 +3257,6 @@ DUPEITEM=03b7
 [ITEMDEF 03be]
 DEFNAME=i_wall_stone_sandstone
 TYPE=t_wall
-RESOURCES=100 i_canvas
 CATEGORY=Buildings - Walls
 SUBSECTION=Sandstone Stone Wall
 DESCRIPTION=Wall
@@ -3434,7 +3385,6 @@ DUPEITEM=03be
 [ITEMDEF 03dd]
 DEFNAME=i_wall_stone_sandstone_window
 TYPE=t_wall
-RESOURCES=100 i_canvas
 CATEGORY=Buildings - Walls
 SUBSECTION=Sandstone Stone Wall
 DESCRIPTION=Wall (windows)
@@ -3605,7 +3555,7 @@ DUPEITEM=0291
 
 [ITEMDEF 0821]
 DEFNAME=i_fence_iron
-RESOURCES=25 i_ingot_iron
+TYPE=t_wall
 CATEGORY=Buildings - Fences
 SUBSECTION=Iron Fence
 DESCRIPTION=Fence
@@ -3655,7 +3605,7 @@ DUPEITEM=057
 
 [ITEMDEF 085c]
 DEFNAME=i_fence_wood_3
-RESOURCES=25 i_board
+TYPE=t_wall
 CATEGORY=Buildings - Fences
 SUBSECTION=Wooden Fence 3
 DESCRIPTION=Fence
@@ -3708,7 +3658,7 @@ DUPEITEM=085c
 
 [ITEMDEF 088a]
 DEFNAME=i_fence_wood_2
-RESOURCES=25 i_board
+TYPE=t_wall
 CATEGORY=Buildings - Fences
 SUBSECTION=Wooden Fence 2
 DESCRIPTION=Fence
@@ -3722,7 +3672,6 @@ DUPEITEM=088a
 [ITEMDEF 01237]
 DEFNAME=i_wall_spider1
 TYPE=t_wall
-RESOURCES=100 i_brick
 CATEGORY=Buildings - Walls
 SUBSECTION=Carved Wall
 DESCRIPTION=Wall (small spiders)
@@ -3739,7 +3688,6 @@ DUPEITEM=01231
 [ITEMDEF 0123a]
 DEFNAME=i_wall_spider2
 TYPE=t_wall
-RESOURCES=100 i_brick
 CATEGORY=Buildings - Walls
 SUBSECTION=Carved Wall
 DESCRIPTION=Wall (big spider)
@@ -3756,7 +3704,6 @@ DUPEITEM=0123a
 [ITEMDEF 01243]
 DEFNAME=i_wall_spider3
 TYPE=t_wall
-RESOURCES=100 i_brick
 CATEGORY=Buildings - Walls
 SUBSECTION=Carved Wall
 DESCRIPTION=Wall (spider)
@@ -4165,7 +4112,6 @@ DUPEITEM=0fc
 [ITEMDEF 0247f]
 DEFNAME=i_japanese_wall_1
 TYPE=t_wall
-RESOURCES=100 i_log
 CATEGORY=Buildings - Walls
 SUBSECTION=Japanese Panel Wall
 DESCRIPTION=Wall
@@ -4218,7 +4164,6 @@ DUPEITEM=0247f
 [ITEMDEF 0248d]
 DEFNAME=i_wall_wood_dark
 TYPE=t_wall
-RESOURCES=100 i_log
 CATEGORY=Buildings - Walls
 SUBSECTION=Dark Wood Wall
 DESCRIPTION=Wall
@@ -4272,7 +4217,6 @@ DUPEITEM=0248d
 [ITEMDEF 02499]
 DEFNAME=i_wall_stucco
 TYPE=t_wall
-RESOURCES=100 i_log
 CATEGORY=Buildings - Walls
 SUBSECTION=Stucco Wall
 DESCRIPTION=Wall
@@ -4658,7 +4602,6 @@ DUPEITEM=0295
 [ITEMDEF 0253f]
 DEFNAME=i_wall_stone_circular
 TYPE=t_wall
-RESOURCES=100 i_rock_plain
 CATEGORY=Buildings - Walls
 SUBSECTION=Huge Brownstone Circular Wall
 DESCRIPTION=Wall
@@ -4789,7 +4732,6 @@ DUPEITEM=0295
 [ITEMDEF 02712]
 DEFNAME=i_lattice_1
 TYPE=t_wall
-RESOURCES=100 i_log
 CATEGORY=Buildings - Walls
 SUBSECTION=Lattice Patterns
 DESCRIPTION=Lattice Pattern 1
@@ -4797,7 +4739,6 @@ DESCRIPTION=Lattice Pattern 1
 [ITEMDEF 02713]
 DEFNAME=i_wall_lattice_1
 TYPE=t_wall
-RESOURCES=99 i_board,10 i_paper
 CATEGORY=Buildings - Walls
 SUBSECTION=Lattice Wall 1
 DESCRIPTION=Wall
@@ -4855,7 +4796,6 @@ DUPEITEM=02713
 [ITEMDEF 02752]
 DEFNAME=i_lattice_2
 TYPE=t_wall
-RESOURCES=100 i_log
 CATEGORY=Buildings - Walls
 SUBSECTION=Lattice Patterns
 DESCRIPTION=Lattice Pattern 2
@@ -4863,7 +4803,6 @@ DESCRIPTION=Lattice Pattern 2
 [ITEMDEF 02753]
 DEFNAME=i_wall_lattice_2
 TYPE=t_wall
-RESOURCES=100 i_board,10 i_paper
 CATEGORY=Buildings - Walls
 SUBSECTION=Lattice Wall 2
 DESCRIPTION=Wall
@@ -4933,7 +4872,6 @@ DUPEITEM=02753
 [ITEMDEF 0285f]
 DEFNAME=i_wall_wood_old
 TYPE=t_wall
-RESOURCES=100 i_log
 CATEGORY=Buildings - Walls
 SUBSECTION=Wooden Wall Old
 DESCRIPTION=Wall
@@ -4962,7 +4900,6 @@ DUPEITEM=0285f
 [ITEMDEF 02865]
 DEFNAME=i_wall_wood_old_window
 TYPE=t_wall
-RESOURCES=100 i_log
 CATEGORY=Buildings - Walls
 SUBSECTION=Wooden Wall Old
 DESCRIPTION=Wall (window)
@@ -5004,7 +4941,6 @@ DUPEITEM=0285f
 [ITEMDEF 02888]
 DEFNAME=i_wall_cloth_framed
 TYPE=t_wall
-RESOURCES=10 i_log,90 i_cloth
 CATEGORY=Buildings - Walls
 SUBSECTION=Framed Cloth Wall
 DESCRIPTION=Wall
@@ -5122,7 +5058,6 @@ DUPEITEM=02888
 [ITEMDEF 02938]
 DEFNAME=i_wall_clay
 TYPE=t_wall
-RESOURCES=100 i_clay
 CATEGORY=Buildings - Walls
 SUBSECTION=Clay Wall
 DESCRIPTION=Wall
@@ -5272,7 +5207,6 @@ DUPEITEM=02938
 [ITEMDEF 02992]
 DEFNAME=i_wall_lattice_3
 TYPE=t_wall
-RESOURCES=100 i_board,10 i_paper
 CATEGORY=Buildings - Walls
 SUBSECTION=Lattice Wall 3
 DESCRIPTION=Wall
@@ -5455,7 +5389,6 @@ DUPEITEM=03b
 [ITEMDEF 029dc]
 DEFNAME=i_wall_plaster_brown
 TYPE=t_wall
-RESOURCES=50 i_log,50 i_plaster
 CATEGORY=Buildings - Walls
 SUBSECTION=Brown Plaster Wall
 DESCRIPTION=Wall
@@ -5584,7 +5517,6 @@ DUPEITEM=029dc
 [ITEMDEF 029fb]
 DEFNAME=i_wall_plaster_brown_window
 TYPE=t_wall
-RESOURCES=50 i_log,50 i_plaster
 CATEGORY=Buildings - Walls
 SUBSECTION=Brown Plaster Wall
 DESCRIPTION=Wall (window)
@@ -5647,7 +5579,6 @@ DUPEITEM=02499
 [ITEMDEF 02b7a]
 DEFNAME=i_wall_marble_elven_simple
 TYPE=t_wall
-RESOURCES=100 i_rock_marble
 CATEGORY=Buildings - Walls
 SUBSECTION=Elven Marble Wall (simple)
 DESCRIPTION=Wall
@@ -5681,7 +5612,6 @@ DUPEITEM=02b7a
 [ITEMDEF 02ba9]
 DEFNAME=i_wall_marble_elven_ornate
 TYPE=t_wall
-RESOURCES=100 i_rock_marble
 CATEGORY=Buildings - Walls
 SUBSECTION=Elven Marble Wall (ornate)
 DESCRIPTION=Wall
@@ -5775,7 +5705,6 @@ DUPEITEM=02ba9
 [ITEMDEF 02bc3]
 DEFNAME=i_wall_marble_elven_simple_dark
 TYPE=t_wall
-RESOURCES=100 i_rock_marble
 CATEGORY=Buildings - Walls
 SUBSECTION=Elven Marble Wall Dark (simple)
 DESCRIPTION=Wall
@@ -5869,7 +5798,6 @@ DUPEITEM=02bc3
 [ITEMDEF 02d14]
 DEFNAME=i_wall_bark
 TYPE=t_wall
-RESOURCES=100 i_log
 CATEGORY=Buildings - Walls
 SUBSECTION=Elven Bark Wall
 DESCRIPTION=Wall
@@ -5946,7 +5874,6 @@ DUPEITEM=02d14
 [ITEMDEF 02d42]
 DEFNAME=i_wall_bark_window
 TYPE=t_wall
-RESOURCES=100 i_log
 CATEGORY=Buildings - Walls
 SUBSECTION=Elven Bark Wall
 DESCRIPTION=Wall (window)
@@ -6061,7 +5988,6 @@ DUPEITEM=02d14
 DEFNAME=i_wall_thorn
 NAME=thorn wall
 TYPE=t_wall
-RESOURCES=100 i_log,1 i_plant_bramble
 CATEGORY=Buildings - Walls
 SUBSECTION=Thorn Wall
 DESCRIPTION=Wall
@@ -6073,12 +5999,7 @@ DUPEITEM=02dff
 
 
 [ITEMDEF 02f13]
-TYPE=t_wall
-NAME=cave entrance
-RESOURCES=100 i_log
-CATEGORY=Buildings - Walls
-SUBSECTION=Wooden Cave Wall
-DESCRIPTION=Wooden Cave Entrance
+//wooden cave entrance
 DUPELIST=02f14,02f15,02f16,02f17,02f18,02f19,02f1a
 
 [ITEMDEF 02f14]
@@ -6130,7 +6051,6 @@ DUPEITEM=02d14
 [ITEMDEF 02fec]
 DEFNAME=i_column_gothic
 TYPE=t_wall
-RESOURCES=100 i_rock_plain
 CATEGORY=Buildings - Walls
 SUBSECTION=Columns
 DESCRIPTION=Gothic Column
@@ -6143,9 +6063,7 @@ DUPEITEM=02fec
 
 [ITEMDEF 02ffb]
 DEFNAME=i_wall_gothic_dark
-NAME=stone wall
 TYPE=t_wall
-RESOURCES=200 i_rock_plain
 CATEGORY=Buildings - Walls
 SUBSECTION=Dark Gothic Wall
 DESCRIPTION=Wall
@@ -6230,9 +6148,7 @@ DUPEITEM=02ffb
 
 [ITEMDEF 03025]
 DEFNAME=i_wall_wood_tall
-NAME=wood wall
 TYPE=t_wall
-RESOURCES=200 i_log
 CATEGORY=Buildings - Walls
 SUBSECTION=Wood Wall (tall)
 DESCRIPTION=Wall
@@ -6367,9 +6283,8 @@ DUPEITEM=01a
 
 [ITEMDEF 035d7]
 DEFNAME=i_wall_crystal
-TYPE=t_wall
 NAME=wall
-RESOURCES=100 i_crystal_shards
+TYPE=t_wall
 CATEGORY=Buildings - Walls
 SUBSECTION=Crystal Wall
 DESCRIPTION=Wall
@@ -6440,7 +6355,6 @@ DUPEITEM=035d7
 DEFNAME=i_wall_shadow
 NAME=wall
 TYPE=t_wall
-RESOURCES=100 i_rock_plain
 CATEGORY=Buildings - Walls
 SUBSECTION=Shadow Wall
 DESCRIPTION=Wall
@@ -6518,7 +6432,6 @@ DUPEITEM=0360e
 DEFNAME=i_wall_shadow_window
 NAME=wall
 TYPE=t_window
-RESOURCES=100 i_rock_plain
 CATEGORY=Buildings - Walls
 SUBSECTION=Shadow Wall
 DESCRIPTION=Wall (window)
@@ -6592,7 +6505,6 @@ DUPEITEM=0360e
 [ITEMDEF 03ef2]
 DEFNAME=i_wall_stone_circular_2
 TYPE=t_wall
-RESOURCES=100 i_ingot_iron
 CATEGORY=Buildings - Walls
 SUBSECTION=Huge Brownstone Circular Wall 2
 DESCRIPTION=Wall
@@ -6681,9 +6593,7 @@ DUPEITEM=03ef2
 
 [ITEMDEF 04114]
 DEFNAME=i_wall_stone_aged
-NAME=wall
 TYPE=t_wall
-RESOURCES=200 i_rock_plain
 CATEGORY=Buildings - Walls
 SUBSECTION=Aged Stone Wall
 DESCRIPTION=Wall
@@ -6791,7 +6701,6 @@ DUPEITEM=07a
 DEFNAME=i_wall_set_1
 NAME=wall
 TYPE=t_wall
-RESOURCES=100 i_rock_granite
 CATEGORY=Buildings - Walls
 SUBSECTION=Gargish Wall Set 1
 DESCRIPTION=Wall
@@ -6804,7 +6713,6 @@ DUPEITEM=04146
 [ITEMDEF 04148]
 DEFNAME=i_wall_gargish_ruin
 TYPE=t_wall
-RESOURCES=100 i_rock_sandstone
 CATEGORY=Buildings - Ruins
 SUBSECTION=Gargish Stone Ruins
 DESCRIPTION=Ruin
@@ -6956,7 +6864,6 @@ DUPEITEM=04146
 DEFNAME=i_wall_blue_marble
 NAME=blue marble wall
 TYPE=t_wall
-RESOURCES=100 i_rock_marble
 CATEGORY=Buildings - Walls
 SUBSECTION=Gargish Blue Marble
 DESCRIPTION=Wall
@@ -7651,6 +7558,7 @@ DUPEITEM=024c
 
 [ITEMDEF 046be]
 DEFNAME=i_stone_ruin_again
+TYPE=t_wall
 CATEGORY=Buildings - Walls
 SUBSECTION=SA Ruins
 DESCRIPTION=Stone Ruins
@@ -7901,7 +7809,6 @@ DUPEITEM=046be
 DEFNAME=i_column_large
 NAME=large carved column
 TYPE=t_wall
-RESOURCES=100 i_rock_plain
 CATEGORY=Buildings - Walls
 SUBSECTION=Columns
 DESCRIPTION=Large Carved Column
@@ -7910,7 +7817,6 @@ DESCRIPTION=Large Carved Column
 [ITEMDEF 04af5]
 DEFNAME=i_wall_gothic
 TYPE=t_wall
-RESOURCES=100 i_rock_marble
 CATEGORY=Buildings - Walls
 SUBSECTION=Gothic Wall
 DESCRIPTION=Wall
@@ -8125,7 +8031,6 @@ DUPEITEM=04af5
 DEFNAME=i_column_totem
 NAME=totem
 TYPE=t_wall
-RESOURCES=100 i_rock_plain
 CATEGORY=Buildings - Walls
 SUBSECTION=Columns
 DESCRIPTION=Totem
@@ -8134,7 +8039,6 @@ DESCRIPTION=Totem
 DEFNAME=i_column_totem_tall
 NAME=totem
 TYPE=t_wall
-RESOURCES=100 i_rock_plain
 CATEGORY=Buildings - Walls
 SUBSECTION=Columns
 DESCRIPTION=Totem (tall)
@@ -8143,7 +8047,6 @@ DESCRIPTION=Totem (tall)
 [ITEMDEF 050fd]
 DEFNAME=i_wall_marble_garg
 TYPE=t_wall
-RESOURCES=100 i_log
 CATEGORY=Buildings - Walls
 SUBSECTION=Gargoyle Marble Wall
 DESCRIPTION=Wall
@@ -8426,7 +8329,6 @@ DUPEITEM=050fd
 DEFNAME=i_wall_batten
 NAME=batten wall
 TYPE=t_wall
-RESOURCES=100 i_rock_plain
 CATEGORY=Buildings - Walls
 SUBSECTION=Batten Wall
 DESCRIPTION=Wall
@@ -8468,7 +8370,6 @@ DUPEITEM=077e6
 DEFNAME=i_wall_batten_window
 NAME=batten wall
 TYPE=t_wall
-RESOURCES=100 i_rock_plain
 CATEGORY=Buildings - Walls
 SUBSECTION=Batten Wall
 DESCRIPTION=Wall (window)

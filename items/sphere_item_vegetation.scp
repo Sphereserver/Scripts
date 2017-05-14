@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2014
+// SPHERE by : Menasoft ©1997-2017
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,9 +7,9 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, October 7, 2014
+// FILE LAST UPDATED: Sunday, May 14, 2017
 //
-VERSION=0.56c
+VERSION=0.56d
 
 
 [ITEMDEF 0994]
@@ -4260,7 +4260,6 @@ DEFNAME=i_bowl_plant
 TYPE=t_normal //type=t_planter
 VALUE=10
 WEIGHT=2.0
-RESOURCES=2 i_clay
 CATEGORY=Quest
 SUBSECTION=Unknown
 DESCRIPTION=Plant Bowl
@@ -4302,6 +4301,54 @@ DUPEITEM=026ef
 [ITEMDEF 026f3]
 //plum blossoms
 DUPEITEM=026ef
+
+[ITEMDEF 028dc]
+DEFNAME=i_bonsai_common_green
+CATEGORY=Decoration - Potted Plants & Vases
+SUBSECTION=Potted Trees
+DESCRIPTION=Bonsai (Common)
+
+[ITEMDEF 028dd]
+DEFNAME=i_bonsai_uncommon_green
+CATEGORY=Decoration - Potted Plants & Vases
+SUBSECTION=Potted Trees
+DESCRIPTION=Bonsai (Uncommon)
+
+[ITEMDEF 028de]
+DEFNAME=i_bonsai_rare_green
+CATEGORY=Decoration - Potted Plants & Vases
+SUBSECTION=Potted Trees
+DESCRIPTION=Bonsai (Rare)
+
+[ITEMDEF 028df]
+DEFNAME=i_bonsai_common_pink
+CATEGORY=Decoration - Potted Plants & Vases
+SUBSECTION=Potted Trees
+DESCRIPTION=Bonsai (Common)
+
+[ITEMDEF 028e0]
+DEFNAME=i_bonsai_uncommon_pink
+CATEGORY=Decoration - Potted Plants & Vases
+SUBSECTION=Potted Trees
+DESCRIPTION=Bonsai (Uncommon)
+
+[ITEMDEF 028e1]
+DEFNAME=i_bonsai_rare_pink
+CATEGORY=Decoration - Potted Plants & Vases
+SUBSECTION=Potted Trees
+DESCRIPTION=Bonsai (Rare)
+
+[ITEMDEF 028e2]
+DEFNAME=i_bonsai_exceptional
+CATEGORY=Decoration - Potted Plants & Vases
+SUBSECTION=Potted Trees
+DESCRIPTION=Bonsai (Exceptional)
+
+[ITEMDEF 028e3]
+DEFNAME=i_bonsai_exotic
+CATEGORY=Decoration - Potted Plants & Vases
+SUBSECTION=Potted Trees
+DESCRIPTION=Bonsai (Exotic)
 
 [ITEMDEF 02cf9]
 DEFNAME=i_decorative_vines
@@ -5331,6 +5378,20 @@ SUBSECTION=Potted Trees
 DESCRIPTION=Silver Sapling (potted)
 
 
+[ITEMDEF 046d9]
+DEFNAME=i_bonsai_tree
+FLIP=1
+CATEGORY=Decoration - Potted Plants & Vases
+SUBSECTION=Potted Trees
+DESCRIPTION=Bonsai Tree
+DUPELIST=046e5
+
+
+[ITEMDEF 046e5]
+//bonsai tree
+DUPEITEM=046d9
+
+
 [ITEMDEF 04792]
 DEFNAME=i_crop_ruinplant
 NAME=ruin plant
@@ -5436,126 +5497,14 @@ DESCRIPTION=Pumpkin (rotten)
 ON=@Create
    MOREM=1
 
-//////////////////
-// Custom Items //
-//////////////////
 
-
-[ITEMDEF i_fruit_potato]
-ID=0f7f
-NAME=potato%es
-TYPE=t_fruit
-TDATA1=i_crop_potato1
-PILE=1
-VALUE=1
-WEIGHT=0.1
-CATEGORY=Vegetation
-SUBSECTION=Fruits and Vegetables
-DESCRIPTION=Potato
+[ITEMDEF 09b0f]
+DEFNAME=i_tree_potted_snowfluff
+NAME=Potted Snowfluff Tree
+CATEGORY=Decoration - Potted Plants & Vases
+SUBSECTION=Potted Trees
+DESCRIPTION=Potted Snowfluff Tree
 ON=@Create
-   COLOR=083c
-   MOREM=1
-
-[ITEMDEF i_fruit_tomato]
-ID=09d0
-NAME=tomato
-TYPE=t_fruit
-TDATA1=i_crop_tomato1
-PILE=1
-VALUE=1
-WEIGHT=0.1
-CATEGORY=Vegetation
-SUBSECTION=Fruits and Vegetables
-DESCRIPTION=Tomato
-ON=@Create
-   COLOR=020
-   MOREM=1
-
-[ITEMDEF i_fruit_peas]
-ID=0105e
-NAME=peas
-TYPE=t_fruit
-TDATA1=i_crop_peas1
-PILE=1
-VALUE=1
-WEIGHT=0.1
-CATEGORY=Vegetation
-SUBSECTION=Fruits and Vegetables
-DESCRIPTION=Peas
-ON=@Create
-   COLOR=044
-   MOREM=1
-
-[ITEMDEF i_fruit_barley]
-ID=i_hay_sheaf
-NAME=barley
-TYPE=t_grain
-VALUE=1
-WEIGHT=0.5
-CATEGORY=Vegetation
-SUBSECTION=Grains
-DESCRIPTION=Barley
-ON=@Create
-   COLOR=colors_brown
-
-[ITEMDEF i_tree_sapling_planted]
-ID=i_plant_weed
-NAME=Planted Tree Sapling
-WEIGHT=4
-CATEGORY=Vegetation
-SUBSECTION=Planted
-DESCRIPTION=Planted Tree Sapling
-
-[ITEMDEF i_crop_peas1]
-ID=01a99
-NAME=peas
-TYPE=t_crops
-TDATA1=i_crop_peas1
-TDATA2=i_crop_peas
-TDATA3=0
-VALUE=1
-CATEGORY=Vegetation
-SUBSECTION=Plants and Flowers
-DESCRIPTION=Peas (young)
-ON=@Create
-   COLOR=029b
-
-[ITEMDEF i_crop_peas]
-ID=01a9b
-NAME=peas
-TYPE=t_crops
-TDATA1=i_crop_peas1
-TDATA2=0
-TDATA3=i_fruit_peas
-VALUE=1
-CATEGORY=Vegetation
-SUBSECTION=Plants and Flowers
-DESCRIPTION=Peas (mature)
-ON=@Create
-   COLOR=029b
-
-[ITEMDEF i_crop_potato1]
-ID=0c61
-NAME=potato plant
-TYPE=t_crops
-TDATA1=i_crop_potato1
-TDATA2=i_crop_potato
-TDATA3=0
-VALUE=2
-CATEGORY=Vegetation
-SUBSECTION=Fruits and Vegetables
-DESCRIPTION=Potato Crop
-
-[ITEMDEF i_crop_potato]
-ID=0c62
-NAME=potato plant
-TYPE=t_crops
-TDATA1=i_crop_potato1
-TDATA2=0
-TDATA3=i_fruit_potato
-VALUE=2
-CATEGORY=Vegetation
-SUBSECTION=Fruits and Vegetables
-DESCRIPTION=Potato Crop (mature)
+   COLOR={0 92 048e 1 0507 1 0652 1 0776 1 077a 1 07b0 1 0a26 1 0aa9 1}
 
 [EOF]
