@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2016
+// SPHERE by : Menasoft ©1997-2017
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Dec 24, 2016
+// FILE LAST UPDATED: Tuesday, May 16, 2017
 //
 VERSION=0.56d
 
@@ -26,9 +26,9 @@ implementation into a TYPEDEF so you can disable it in one place.
 
 [ITEMDEF 0dfc]
 DEFNAME=i_scissors_barber
-RESOURCES=2 i_ingot_iron,1 i_screw
-WEIGHT=.4
-TYPE=T_SCISSORS
+TYPE=t_scissors
+RESOURCES=2 i_ingot_iron
+SKILLMAKE=Tinkering 5.0,t_tinker_tools
 CATEGORY=Items by Professions
 SUBSECTION=Barber
 DESCRIPTION=Barber Scissors
@@ -1365,17 +1365,6 @@ ON=@TIMER
 	new.color=<cont.findlayer(layer_hair).color>
 	cont.equip <new.uid>
 	return 1
-
-[ITEMDEF i_hair_dyes]
-ID=i_testtube_rack_full
-NAME=Hair Dyes
-TYPE=t_hair_dye
-WEIGHT=4
-CATEGORY=Items by Professions
-SUBSECTION=Barber
-DESCRIPTION=Hair Dyes
-ON=@Create
-	COLOR=colors_hair
 
 [ITEMDEF i_bottle_hair_dye]
 ID=0e27

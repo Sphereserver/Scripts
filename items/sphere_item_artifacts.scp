@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, May 8, 2017
+// FILE LAST UPDATED: Tuesday, May 16, 2017
 //
 VERSION=0.56d
 
@@ -898,7 +898,7 @@ ON=@Create
 ///////////////////////////////////////
 
 [ITEMDEF i_yomotsu_mines_tower_lantern]
-ID=i_lantern_paper3
+ID=i_lantern_tower
 Rarity=3
 TAG.StealingTimer=16
 CATEGORY=Artifacts

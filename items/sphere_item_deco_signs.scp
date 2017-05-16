@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2015
+// SPHERE by : Menasoft ©1997-2017
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,9 +7,9 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, May 30, 2015
+// FILE LAST UPDATED: Tuesday, May 16, 2017
 //
-VERSION=0.56c
+VERSION=0.56d
 
 
 [ITEMDEF 0b95]
@@ -1085,9 +1085,7 @@ SUBSECTION=Road Signs
 DESCRIPTION=Road Sign (225)
 
 [ITEMDEF 0163d]
-DEFNAME=i_SIGN_NINOS
-RESOURCES=6 i_board,1 i_nails,20 i_reag_blood_moss,1 i_glass_raw
-WEIGHT=7
+DEFNAME=i_sign_ninos
 CATEGORY=Decoration - Miscellaneous
 SUBSECTION=Ninos Sign
 DESCRIPTION=@
@@ -1103,10 +1101,7 @@ DUPEITEM=0163d
 
 [ITEMDEF 01641]
 DEFNAME=i_sign_os
-//NAME=NINO
 FLIP=1
-WEIGHT=9.1
-RESOURCES=6 i_board,1 i_nails,20 i_reag_blood_moss,1 i_glass_raw
 CATEGORY=Decoration - Miscellaneous
 SUBSECTION=Ninos Sign
 DESCRIPTION=Ninos Sign (just the os)
@@ -1139,5 +1134,81 @@ DUPELIST=01f29
 DEFNAME=i_sign_blank_2
 DUPEITEM=01f28
 
+[ITEMDEF 04b20]
+DEFNAME=i_sign_customizable
+NAME=sign
+TYPE=t_sign_gump
+TDATA2=024f4
+FLIP=1
+CATEGORY=Decoration - Signs
+SUBSECTION=Blank
+DESCRIPTION=Customizable Sign
+DUPELIST=04b21
+
+[ITEMDEF 04b21]
+//customizable sign
+DUPEITEM=04b20
+
+[ITEMDEF 09a0c]
+//bar sign (south)
+DEFNAME=i_sign_bar
+NAME=bar sign
+FLIP=1
+DUPELIST=09a10
+CATEGORY=Decoration - Signs
+SUBSECTION=Decoration
+DESCRIPTION=Bar
+ON=@DClick
+   //toggle animation
+   IF (<DISPID>==i_sign_bar)
+      DISPID=i_sign_bar_anim
+   ELIF (<DISPID>==i_sign_bar_anim)
+      DISPID=i_sign_bar
+   ELIF (<DISPID>==i_sign_bar2)
+      DISPID=i_sign_bar2_anim
+   ELIF (<DISPID>==i_sign_bar2_anim)
+      DISPID=i_sign_bar2
+   ENDIF
+   UPDATE
+   return 1
+
+[ITEMDEF 09a0d]
+//bar sign (south)(anim)
+DEFNAME=i_sign_bar_anim
+
+[ITEMDEF 09a0e]
+//bar sign (south)(anim)
+
+[ITEMDEF 09a0f]
+//bar sign (south)(anim)
+
+[ITEMDEF 09a10]
+//bar sign (east)
+DEFNAME=i_sign_bar2
+NAME=bar sign
+DUPEITEM=09a0c
+ON=@DClick
+   //toggle animation
+   IF (<DISPID>==i_sign_bar)
+      DISPID=i_sign_bar_anim
+   ELIF (<DISPID>==i_sign_bar_anim)
+      DISPID=i_sign_bar
+   ELIF (<DISPID>==i_sign_bar2)
+      DISPID=i_sign_bar2_anim
+   ELIF (<DISPID>==i_sign_bar2_anim)
+      DISPID=i_sign_bar2
+   ENDIF
+   UPDATE
+   return 1
+
+[ITEMDEF 09a11]
+//bar sign (east)(anim)
+DEFNAME=i_sign_bar2_anim
+
+[ITEMDEF 09a12]
+//bar sign (east)(anim)
+
+[ITEMDEF 09a13]
+//bar sign (east)(anim)
 
 [EOF]

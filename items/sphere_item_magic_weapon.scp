@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2015
+// SPHERE by : Menasoft ©1997-2017
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,9 +7,9 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Mar 14, 2015
+// FILE LAST UPDATED: Tuesday, May 16, 2017
 //
-VERSION=0.56c
+VERSION=0.56d
 
 [ITEMDEF i_scimitar_ruin]
 ID=i_scimitar
@@ -2330,115 +2330,5 @@ MOREY=100.0
 ATTR=attr_magic
 HITPOINTS={31 100}
 COLOR=color_magic_weap
-
-//Sphere custom weapons
-
-[ITEMDEF i_sword_viking_vanq_daemon_breath]
-//Viking Sword of Vanquishing & Fireball 40 charges
-ID=i_sword_viking
-NAME=Viking of Vanquishing and Daemon's Breath
-RESOURCES=14 i_ingot_iron, i_sword_viking, i_wand_1, 40 i_scroll_fireball
-
-CATEGORY=Provisions - Weapons - Magic
-SUBSECTION=Magic Special Weapons
-DESCRIPTION=Viking of Vanquishing and Daemon's Breath
-
-ON=@Create
-COLOR=color_magic_weap
-HITPOINTS={31 100}
-ATTR=attr_magic
-MOREX=s_fireball
-MOREY=100.0
-MORE2=40
-
-[ITEMDEF i_sword_viking_vanq_brimstone]
-//Viking Sword of Vanquishing & Flamestrike 40 charges
-ID=i_sword_viking
-NAME=Viking of Vanquishing and Brimstone
-RESOURCES=14 i_ingot_iron, i_sword_viking, i_wand_1, 40 i_scroll_flamestrike
-
-CATEGORY=Provisions - Weapons - Magic
-SUBSECTION=Magic Special Weapons
-DESCRIPTION=Viking of Vanquishing and Brimstone
-
-ON=@Create
-COLOR=color_magic_weap
-HITPOINTS={31 100}
-ATTR=attr_magic
-MOREX=s_flamestrike
-MOREY=100.0
-MORE2=40
-
-[ITEMDEF i_sword_viking_vanq_electricity]
-//Viking Sword of Vanquishing & Energy Bolt 40 charges
-ID=i_sword_viking
-NAME=Viking of Vanquishing and Electricity
-RESOURCES=14 i_ingot_iron, i_sword_viking, i_wand_1, 40 i_scroll_energy_bolt
-
-CATEGORY=Provisions - Weapons - Magic
-SUBSECTION=Magic Special Weapons
-DESCRIPTION=Viking of Vanquishing and Electricity
-
-ON=@Create
-COLOR=063
-HITPOINTS={31 100}
-ATTR=attr_magic
-MOREX=s_energy_bolt
-MOREY=100.0
-MORE2=40
-
-[ITEMDEF i_crossbow_heavy_vanq_daemon_breath]
-//Heavy Crossbow of Vanquishing & Fireball 40 charges
-ID=i_crossbow_heavy
-NAME=Heavy Crossbow of Vanquishing & Daemon's Breath
-RESOURCES=7 i_log, i_crossbow_heavy, i_wand_1, 40 i_scroll_fireball
-
-CATEGORY=Provisions - Weapons - Magic
-SUBSECTION=Magic Special Weapons
-DESCRIPTION=Heavy Crossbow of Vanquishing & Daemon's Breath
-
-ON=@Create
-COLOR=color_magic_weap
-HITPOINTS={31 100}
-ATTR=attr_magic
-MOREX=s_fireball
-MOREY=100.0
-MORE2=40
-
-[ITEMDEF i_bow_vanq_electricity]
-//Bow of Vanquishing & Energy Bolt 40 Charges
-ID=i_bow
-NAME=Bow of Vanquishing & Electricity
-RESOURCES=7 i_log, i_bow, i_wand_1, 40 i_scroll_energy_bolt
-
-CATEGORY=Provisions - Weapons - Magic
-SUBSECTION=Magic Special Weapons
-DESCRIPTION=Bow of Vanquishing & Electricity
-
-ON=@Create
-COLOR=063
-HITPOINTS={31 60}
-ATTR=attr_magic
-MOREX=s_energy_bolt
-MOREY=100.0
-MORE2=40
-
-[ITEMDEF i_bow_smite_electricity]
-//GM Bow of Smite and Energy Bolt
-ID=i_bow
-NAME=GM Bow of Smite and Electricity
-RESOURCES=7 i_log, i_bow, i_wand_1, 100 i_scroll_energy_bolt
-
-CATEGORY=Provisions - Weapons - Magic
-SUBSECTION=Magic Special Weapons
-DESCRIPTION=GM Bow of Smite and Electricity
-
-ON=@Create
-COLOR=063
-HITPOINTS={31 60}
-ATTR=attr_magic
-MOREX=s_energy_bolt
-MOREY=500.0
-MORE2=100
 
 [EOF]

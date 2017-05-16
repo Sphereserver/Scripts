@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, May 1, 2017
+// FILE LAST UPDATED: Tuesday, May 16, 2017
 //
 VERSION=0.56d
 
@@ -597,7 +597,6 @@ DEFNAME=i_bedroll_open
 TYPE=t_bedroll
 VALUE=136
 WEIGHT=12.5
-RESOURCES=5 i_cloth,1 i_canvas,50 i_feather,1 i_hides_cut,5 i_thread
 CATEGORY=Decoration - Furniture
 SUBSECTION=Beds
 DESCRIPTION=Bedroll Tile

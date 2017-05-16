@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2007
+// SPHERE by : Menasoft ©1997-2017
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,9 +7,9 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Friday, September 20, 2013
+// FILE LAST UPDATED: Tuesday, May 16, 2017
 //
-VERSION=0.56c
+VERSION=0.56d
 
 
 [ITEMDEF 0283]
@@ -664,52 +664,20 @@ ON=@Create
 [ITEMDEF 013bc]
 DEFNAME=i_chainmail_leggings_decoration
 NAME=decorative chainmail leggings
-TYPE=t_armor
 FLIP=1
-//ARMOR=25
-VALUE=73
-WEIGHT=7.1
-RESOURCES=1 i_chainmail_leggings,1 i_peg
-SKILLMAKE=Blacksmithing 36.7
 CATEGORY=Provisions - Armor
 SUBSECTION=Chainmail Armor
 DESCRIPTION=Chainmail Leggings (decorative)
-canuse=can_u_human|can_u_elf
-ReqStr=60
-TEVENTS=t_equipitem
 DUPELIST=013c1
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=4
-   RESENERGY=2
-   RESFIRE=4
-   RESPHYSICAL=4
-   RESPOISON=1
 
 [ITEMDEF 013bd]
 DEFNAME=i_chainmail_tunic_decoration
 NAME=decorative chainmail tunic
-TYPE=t_armor
 FLIP=1
-//ARMOR=25
-VALUE=81
-WEIGHT=7.1
-RESOURCES=1 i_chainmail_tunic,1 i_peg
-SKILLMAKE=Blacksmithing 39.1
 CATEGORY=Provisions - Armor
 SUBSECTION=Chainmail Armor
 DESCRIPTION=Chainmail Tunic (decorative)
-canuse=can_u_human|can_u_elf
-ReqStr=60
-TEVENTS=t_equipitem
 DUPELIST=013c2
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=4
-   RESENERGY=2
-   RESFIRE=4
-   RESPHYSICAL=4
-   RESPOISON=1
 
 [ITEMDEF 013be]
 DEFNAME=i_chainmail_leggings
@@ -854,77 +822,29 @@ ON=@Create
 [ITEMDEF 013c8]
 DEFNAME=i_leather_sleeves_decoration
 NAME=decorative leather sleeves
-TYPE=t_armor_leather
 FLIP=1
-//ARMOR=13
-VALUE=70
-WEIGHT=2.0
-RESOURCES=1 i_leather_sleeves,1 i_peg
-SKILLMAKE=Tailoring 59.0,t_sewing_kit
 CATEGORY=Provisions - Armor
 SUBSECTION=Leather Armor
 DESCRIPTION=Leather Sleeves (decorative)
-canuse=can_u_human|can_u_elf
-ReqStr=20
-TEVENTS=t_equipitem
 DUPELIST=013cf
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=3
-   RESENERGY=3
-   RESFIRE=4
-   RESPHYSICAL=2
-   RESPOISON=3
 
 [ITEMDEF 013c9]
 DEFNAME=i_leather_leggings_decoration
 NAME=decorative leather leggings
-TYPE=t_armor_leather
 FLIP=1
-//ARMOR=13
-VALUE=94
-WEIGHT=4.0
-RESOURCES=1 i_leather_leggings,1 i_peg
-SKILLMAKE=Tailoring 66.3,t_sewing_kit
 CATEGORY=Provisions - Armor
 SUBSECTION=Leather Armor
 DESCRIPTION=Leather Leggings (decorative)
-canuse=can_u_human|can_u_elf
-ReqStr=20
-TEVENTS=t_equipitem
 DUPELIST=013d0
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=3
-   RESENERGY=3
-   RESFIRE=4
-   RESPHYSICAL=2
-   RESPOISON=3
 
 [ITEMDEF 013ca]
 DEFNAME=i_leather_tunic_decoration
 NAME=decorative leather tunic
-TYPE=t_armor_leather
 FLIP=1
-//ARMOR=13
-VALUE=125
-WEIGHT=6.0
-RESOURCES=1 i_leather_tunic,1 i_peg
-SKILLMAKE=Tailoring 70.5,t_sewing_kit
 CATEGORY=Provisions - Armor
 SUBSECTION=Leather Armor
 DESCRIPTION=Leather Tunic (decorative)
-canuse=can_u_human|can_u_elf
-ReqStr=25
-TEVENTS=t_equipitem
 DUPELIST=013d1
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=3
-   RESENERGY=3
-   RESFIRE=4
-   RESPHYSICAL=2
-   RESPOISON=3
 
 [ITEMDEF 013cb]
 DEFNAME=i_leather_leggings
@@ -1075,76 +995,30 @@ ON=@Create
 [ITEMDEF 013d7]
 DEFNAME=i_studded_sleeves_decoration
 NAME=decorative studded sleeves
-TYPE=t_armor_leather
 FLIP=1
-//ARMOR=16
-VALUE=129
-WEIGHT=4.1
-RESOURCES=1 i_studded_sleeves,1 i_peg
 SKILLMAKE=Tailoring 87.1,t_sewing_kit
 CATEGORY=Provisions - Armor
 SUBSECTION=Studded Armor
 DESCRIPTION=Studded Sleeves (decorative)
-ReqStr=25
-canuse=can_u_human|can_u_elf
-TEVENTS=t_equipitem
 DUPELIST=013de
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=3
-   RESENERGY=4
-   RESFIRE=4
-   RESPHYSICAL=2
-   RESPOISON=3
 
 [ITEMDEF 013d8]
 DEFNAME=i_studded_leggings_decoration
 NAME=decorative studded leggings
-TYPE=t_armor_leather
 FLIP=1
-//ARMOR=16
-VALUE=155
-WEIGHT=5.1
-RESOURCES=1 i_studded_leggings,1 i_peg
-SKILLMAKE=Tailoring 91.2,t_sewing_kit
 CATEGORY=Provisions - Armor
 SUBSECTION=Studded Armor
 DESCRIPTION=Studded Leggings (decorative)
-ReqStr=30
-canuse=can_u_human|can_u_elf
-TEVENTS=t_equipitem
 DUPELIST=013df
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=3
-   RESENERGY=4
-   RESFIRE=4
-   RESPHYSICAL=2
-   RESPOISON=3
 
 [ITEMDEF 013d9]
 DEFNAME=i_studded_tunic_decoration
 NAME=decorative studded tunic
-TYPE=t_armor_leather
 FLIP=1
-//ARMOR=16
-WEIGHT=8.0
-RESOURCES=1 i_studded_tunic,1 i_peg
-SKILLMAKE=Tailoring 94.0,t_sewing_kit
 CATEGORY=Provisions - Armor
 SUBSECTION=Studded Armor
 DESCRIPTION=Studded Tunic (decorative)
-ReqStr=35
-canuse=can_u_human|can_u_elf
-TEVENTS=t_equipitem
 DUPELIST=013e0
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=3
-   RESENERGY=4
-   RESFIRE=4
-   RESPHYSICAL=2
-   RESPOISON=3
 
 [ITEMDEF 013da]
 DEFNAME=i_studded_leggings
@@ -1226,27 +1100,11 @@ DUPEITEM=013db
 [ITEMDEF 013e5]
 DEFNAME=i_ringmail_leggings_decoration
 NAME=decorative ringmail leggings
-TYPE=t_armor
 FLIP=1
-//ARMOR=22
-VALUE=65
-WEIGHT=15.1
-RESOURCES=1 i_ringmail_leggings,1 i_peg
-SKILLMAKE=Blacksmithing 19.4
 CATEGORY=Provisions - Armor
 SUBSECTION=Ringmail Armor
 DESCRIPTION=Ringmail Leggings (decorative)
-CanUse=can_u_human|can_u_elf
-ReqStr=40
-TEVENTS=t_equipitem
 DUPELIST=013e6
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=1
-   RESENERGY=3
-   RESFIRE=3
-   RESPHYSICAL=3
-   RESPOISON=5
 
 [ITEMDEF 013e6]
 //ringmail leggings
@@ -1255,27 +1113,12 @@ DUPEITEM=013e5
 [ITEMDEF 013e7]
 DEFNAME=i_ringmail_tunic_decoration
 NAME=decorative ringmail tunic
-TYPE=t_armor
 FLIP=1
-//ARMOR=22
-VALUE=73
-WEIGHT=15.1
-RESOURCES=1 i_ringmail_tunic,1 i_peg
 SKILLMAKE=Blacksmithing 21.9
 CATEGORY=Provisions - Armor
 SUBSECTION=Ringmail Armor
 DESCRIPTION=Ringmail Tunic (decorative)
-CanUse=can_u_human|can_u_elf
-ReqStr=40
-TEVENTS=t_equipitem
 DUPELIST=013e8
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=1
-   RESENERGY=3
-   RESFIRE=3
-   RESPHYSICAL=3
-   RESPOISON=5
 
 [ITEMDEF 013e8]
 //ringmail armor
@@ -1284,27 +1127,11 @@ DUPEITEM=013e7
 [ITEMDEF 013e9]
 DEFNAME=i_ringmail_sleeves_decoration
 NAME=decorative ringmail sleeves
-TYPE=t_armor
 FLIP=1
-//ARMOR=22
-VALUE=57
-WEIGHT=15.1
-RESOURCES=1 i_ringmail_sleeves,1 i_peg
-SKILLMAKE=Blacksmithing 16.9
 CATEGORY=Provisions - Armor
 SUBSECTION=Ringmail Armor
 DESCRIPTION=Ringmail Sleeves (decorative)
-CanUse=can_u_human|can_u_elf
-ReqStr=40
-TEVENTS=t_equipitem
 DUPELIST=013ea
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=1
-   RESENERGY=3
-   RESFIRE=3
-   RESPHYSICAL=3
-   RESPOISON=5
 
 [ITEMDEF 013ea]
 //ringmail sleeves

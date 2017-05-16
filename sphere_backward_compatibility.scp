@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2015
+// SPHERE by : Menasoft ©1997-2017
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,9 +7,9 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Oct 24, 2015
+// FILE LAST UPDATED: Tuesday, May 16, 2017
 //
-VERSION=0.56c
+VERSION=0.56d
 
 
 [DEFNAME backward_compatibility_defs]
@@ -551,6 +551,30 @@ i_bed_ruined_5					0c2a
 i_bed_ruined_6					0c2b
 i_BED_DOUBLE_2					011d2
 i_cot_sw						i_cot
+i_bonsai_1                      i_bonsai_common_green
+i_bonsai_2                      i_bonsai_uncommon_green
+i_bonsai_3                      i_bonsai_rare_green
+i_bonsai_4                      i_bonsai_common_pink
+i_bonsai_5                      i_bonsai_uncommon_pink
+i_bonsai_6                      i_bonsai_rare_pink
+i_bonsai_7                      i_bonsai_exceptional
+i_bonsai_8                      i_bonsai_exotic
+i_lantern_paper1				i_lantern_shoji
+i_lantern_paper1_lit			i_lantern_shoji_lit
+i_lantern_paper2				i_lantern_paper
+i_lantern_paper2_lit			i_lantern_paper_lit
+i_lantern_paper3				i_lantern_tower
+i_lantern_paper3_lit			i_lantern_tower_lit
+i_lantern_paper4				i_lantern_red_hanging_south
+i_lantern_paper4_lit			i_lantern_red_handing_south_lit
+i_lantern_paper4b				i_lantern_red_hanging_east
+i_lantern_paper4b_lit			i_lantern_red_handing_east_lit
+i_lantern_paper5				i_lantern_white_hanging_south
+i_lantern_paper5_lit			i_lantern_white_handing_south_lit
+i_lantern_paper5b				i_lantern_white_hanging_east
+i_lantern_paper5b_lit			i_lantern_white_handing_east_lit
+i_lantern_paper6				i_lantern_round_paper
+i_lantern_paper6_lit			i_lantern_round_paper_lit
 
 // Definitions
 brain_beserk					brain_berserk

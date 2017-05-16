@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2015
+// SPHERE by : Menasoft ©1997-2017
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,9 +7,9 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Friday, July 10, 2015
+// FILE LAST UPDATED: Tuesday, May 16, 2017
 //
-VERSION=0.56c
+VERSION=0.56d
 
 
 [ITEMDEF 020e]
@@ -248,7 +248,7 @@ SPEED=53
 VALUE=22
 WEIGHT=4.0
 TWOHANDS=Y
-RESOURCES=10 i_glass_raw
+RESOURCES=10 i_sand
 SKILLMAKE=Alchemy 100.0,Magery 30.0,ArmsLore 30.0
 CATEGORY=Provisions - Weapons
 SUBSECTION=Macefighting
@@ -400,7 +400,7 @@ SPEED=47
 VALUE=30
 WEIGHT=6.0
 TWOHANDS=N
-RESOURCES=14 i_glass_raw
+RESOURCES=14 i_sand
 SKILLMAKE=Alchemy 100.0,Magery 30.0,ArmsLore 30.0
 CATEGORY=Provisions - Weapons
 SUBSECTION=Swordsmanship
@@ -914,8 +914,8 @@ RANGE=2,8
 VALUE=33
 WEIGHT=9.0
 TWOHANDS=Y
-RESOURCES=7 i_log,1 i_ingot_iron,1 i_wire_iron
-SKILLMAKE=Bowcraft 37.8
+RESOURCES=7 i_log
+SKILLMAKE=Bowcraft 60.0
 CATEGORY=Provisions - Weapons
 SUBSECTION=Archery
 DESCRIPTION=Crossbow
@@ -1141,8 +1141,8 @@ RANGE=2,10
 VALUE=20
 WEIGHT=8.0
 TWOHANDS=Y
-RESOURCES=2 i_log,1 i_cat_gut
-SKILLMAKE=Bowcraft 17.8
+RESOURCES=7 i_log
+SKILLMAKE=Bowcraft 30.0
 CATEGORY=Provisions - Weapons
 SUBSECTION=Archery
 DESCRIPTION=Bow
@@ -1416,8 +1416,8 @@ RANGE=2,8
 VALUE=35
 WEIGHT=14.0
 TWOHANDS=Y
-RESOURCES=10 i_log,1 i_ingot_iron,1 i_wire_iron
-SKILLMAKE=Bowcraft 57.8
+RESOURCES=10 i_log
+SKILLMAKE=Bowcraft 80.0
 CATEGORY=Provisions - Weapons
 SUBSECTION=Archery
 DESCRIPTION=Heavy Crossbow
@@ -1973,7 +1973,7 @@ RANGE=2,10
 VALUE=26
 WEIGHT=14.9
 TWOHANDS=Y
-RESOURCES=7 i_log,1 i_ingot_silver
+RESOURCES=7 i_log
 SKILLMAKE=Bowcraft 70.0
 CATEGORY=Provisions - Weapons
 SUBSECTION=Archery
@@ -1999,7 +1999,7 @@ RANGE=2,7
 VALUE=34
 WEIGHT=22.0
 TWOHANDS=Y
-RESOURCES=10 i_log,2 i_ingot_iron
+RESOURCES=10 i_log
 SKILLMAKE=Bowcraft 90.0
 CATEGORY=Provisions - Weapons
 SUBSECTION=Archery
@@ -2169,7 +2169,7 @@ RANGE=2,10
 VALUE=29
 WEIGHT=10.9
 TWOHANDS=Y
-RESOURCES=5 i_log,1 i_ingot_silver
+RESOURCES=10 i_log
 SKILLMAKE=Bowcraft 90.0
 CATEGORY=Provisions - Weapons
 SUBSECTION=Archery
@@ -2553,8 +2553,8 @@ RANGE=2,10
 VALUE=35
 WEIGHT=10.0
 TWOHANDS=Y
-RESOURCES=4 i_log,2 i_ingot_gold
-SKILLMAKE=Bowcraft 95.0,1 i_elven_bowstringer
+RESOURCES=20 i_log
+SKILLMAKE=Bowcraft 95.0
 CATEGORY=Provisions - Weapons
 SUBSECTION=Archery
 DESCRIPTION=Elven Composite LongBow
@@ -2579,8 +2579,8 @@ RANGE=2,10
 VALUE=93
 WEIGHT=12.0
 TWOHANDS=Y
-RESOURCES=4 i_log,2 i_ingot_silver,1 i_scroll_strength
-SKILLMAKE=Bowcraft 85.0,1 i_elven_bowstringer,Magery 71.2
+RESOURCES=15 i_log
+SKILLMAKE=Bowcraft 85.0
 CATEGORY=Provisions - Weapons
 SUBSECTION=Archery
 DESCRIPTION=Magical Shortbow

@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, May 14, 2017
+// FILE LAST UPDATED: Tuesday, May 16, 2017
 //
 VERSION=0.56d
 
@@ -4549,6 +4549,55 @@ DUPELIST=04d0e
 [ITEMDEF 04d0e]
 //Kings Collection Box
 DUPEITEM=04d0d
+
+
+[ITEMDEF 099c8]
+DEFNAME=i_bar_marble
+NAME=marble bar
+TYPE=t_table
+FLIP=1
+CATEGORY=Decoration - Furniture
+SUBSECTION=Tables
+DESCRIPTION=Marble Bar Sink
+DUPELIST=099c9,099ca,099cb,09a14,09a15,09a16,09a17,09a18,09a19
+
+[ITEMDEF 099c9]
+//marble bar
+TYPE=t_container
+TDATA2=048
+DUPEITEM=099c8
+
+[ITEMDEF 099ca]
+//marble bar
+DUPEITEM=099c8
+
+[ITEMDEF 099cb]
+//marble bar
+DUPEITEM=099c8
+
+[ITEMDEF 09a14]
+//marble bar
+DUPEITEM=099c8
+
+[ITEMDEF 09a15]
+//marble bar
+DUPEITEM=099c8
+
+[ITEMDEF 09a16]
+//marble bar
+DUPEITEM=099c8
+
+[ITEMDEF 09a17]
+//marble bar
+DUPEITEM=099c8
+
+[ITEMDEF 09a18]
+//marble bar
+DUPEITEM=099c8
+
+[ITEMDEF 09a19]
+//marble bar
+DUPEITEM=099c8
 
 
 [ITEMDEF 09e1d]

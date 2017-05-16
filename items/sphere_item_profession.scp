@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, May 14, 2017
+// FILE LAST UPDATED: Tuesday, May 16, 2017
 //
 VERSION=0.56d
 
@@ -3895,60 +3895,5 @@ DUPEITEM=0981c
 [ITEMDEF 09839]
 //advanced training dummy
 DUPEITEM=0981c
-
-
-//////////////////
-// Custom Items //
-//////////////////
-
-
-[ITEMDEF i_screw]
-ID=i_hinge
-NAME=screw%s
-VALUE=1
-WEIGHT=0.2
-NAME=Screw
-RESOURCES=1 i_ingot_iron
-CATEGORY=Items by Professions
-SUBSECTION=Tinker
-DESCRIPTION=Screw
-
-[ITEMDEF i_hinges_brass]
-ID=i_hinge
-NAME=brass hinge%s
-WEIGHT=0.1
-RESOURCES=3 i_ingot_iron
-CATEGORY=Items by Professions
-SUBSECTION=Tinker
-DESCRIPTION=Brass Hinge
-ON=@Create
-	COLOR=color_o_gold
-
-[ITEMDEF i_ink_pot]
-ID=i_spittoon
-NAME=inkpot
-WEIGHT=1
-CATEGORY=Items by Professions
-SUBSECTION=Scribe
-DESCRIPTION=Inkpot
-ON=@Create
-	COLOR=color_gray_dk
-
-[ITEMDEF i_wax_seal]
-ID=i_gem_tourmaline
-NAME=wax seal
-RESOURCES=1 i_ivory
-CATEGORY=Items by Professions
-SUBSECTION=Scribe
-DESCRIPTION=Wax Seal
-
-[ITEMDEF i_cat_gut]
-ID=i_flesh_entrails
-NAME=Cat Gut
-WEIGHT=0.1
-CATEGORY=Items by Professions
-SUBSECTION=Bowyer
-DESCRIPTION=Cat Gut
-
 
 [EOF]

@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, May 7, 2017
+// FILE LAST UPDATED: Tuesday, May 16, 2017
 //
 VERSION=0.56d
 
@@ -15,18 +15,6 @@ VERSION=0.56d
 /////////////
 // Natural //
 /////////////
-
-[TEMPLATE tm_rocks]
-CATEGORY=Random Item Templates
-SUBSECTION=Natural
-DESCRIPTION=Rock
-ITEM={ i_rock_plain 1 i_rock_plain_x 1 }
-
-[TEMPLATE tm_boulders]
-CATEGORY=Random Item Templates
-SUBSECTION=Natural
-DESCRIPTION=Boulder
-ITEM={ i_boulder 1 i_boulder_x 1 }
 
 [TEMPLATE random_item_dragonscale]
 CATEGORY=Random Item Templates
@@ -103,19 +91,13 @@ ITEM={ i_origami1 1 i_origami2 1 i_origami3 1 i_origami4 1 i_origami5 1 i_origam
 CATEGORY=Random Item Templates
 SUBSECTION=Miscellaneous
 DESCRIPTION=Potted Plant
-ITEM={ i_plant_cactus_potted 1 i_plant_cactus_potted_2 1 i_plant_cactus_potted_3 1 i_plant_cactus_potted_4 1 i_plant_cactus_potted_5 1 i_plant_cactus_potted_6 1 i_tree_small_potted 1 i_tree_large_potted 1 i_plant_potted_small 1 i_flower_potted_small 1 i_tree_small_potted_2 1 i_cactus_festive 1 i_tree_snowy 1 i_tree_decorative 1 i_bonsai_1 1 i_bonsai_2 1 i_bonsai_3 1 i_bonsai_4 1 i_bonsai_5 1 i_bonsai_6 1 i_bonsai_7 1 i_bonsai_8 1 }
+ITEM={ i_plant_cactus_potted 1 i_plant_cactus_potted_2 1 i_plant_cactus_potted_3 1 i_plant_cactus_potted_4 1 i_plant_cactus_potted_5 1 i_plant_cactus_potted_6 1 i_tree_small_potted 1 i_tree_large_potted 1 i_plant_potted_small 1 i_flower_potted_small 1 i_tree_small_potted_2 1 i_cactus_festive 1 i_tree_snowy 1 i_tree_decorative 1 }
 
 [TEMPLATE random_statue]
 CATEGORY=Random Item Templates
 SUBSECTION=Miscellaneous
 DESCRIPTION=Statue
 ITEM={ 01224 1 01225 1 01226 1 01227 1 01228 1 012ca 1 01f18 1 02419 1 0241a 1 0241b 1 02846 1 02848 1 02849 1 02d0e 1 02d10 1 02d12 1 03b0f 1 }
-
-[TEMPLATE random_item_dyetub_rare]
-CATEGORY=Random Item Templates
-SUBSECTION=Miscellaneous
-DESCRIPTION=Rare Dyetub
-ITEM={ i_gold 1 }
 
 
 [TEMPLATE random_ingot]
@@ -128,7 +110,7 @@ ITEM={ i_ingot_iron 512 i_ingot_copper 256 i_ingot_gold 256 i_ingot_rose 128 i_i
 CATEGORY=Random Item Templates
 SUBSECTION=Miscellaneous
 DESCRIPTION=Ingot (common)
-ITEM={ i_ingot_iron 128 i_ingot_copper 64 i_ingot_gold 32 i_ingot_rose 16 i_ingot_agapite 8 i_ingot_silver 4 i_ingot_shadow 2 i_ingot_verite 1 }
+ITEM={ i_ingot_iron 128 i_ingot_copper 64 i_ingot_gold 32 i_ingot_rose 16 i_ingot_agapite 8 i_ingot_silver 4 i_ingot_shadow 2 }
 
 [TEMPLATE random_ingot_rare]
 CATEGORY=Random Item Templates
@@ -158,12 +140,6 @@ ITEM={ i_fishing_net 1 i_fishing_net_2 1 i_fishing_net_3 1 i_fishing_net_4 1 i_f
 /////////////
 // Special //
 /////////////
-
-[TEMPLATE random_ethereal_mount]
-CATEGORY=Random Item Templates
-SUBSECTION=Special
-DESCRIPTION=Random Ethereal Mount
-//ITEM={ i_steed_ethereal 1 i_llama_ethereal 1 i_ostard_ethereal 1 i_kirin_ethereal 1 i_unicorn_ethereal 1 i_ridgeback_ethereal 1 i_swamp_dragon_ethereal 1 i_giant_beetle_ethereal 1 }
 
 [TEMPLATE random_item_misc_rare]
 CATEGORY=Random Item Templates
@@ -211,6 +187,5 @@ CATEGORY=Random Item Templates
 SUBSECTION=Clothing
 DESCRIPTION=All Clothing
 ITEM={ random_clothing_jewelry 1 random_clothing_hats 1 random_clothing_upperbody 1 random_clothing_lowerbody 1 random_clothing_footwear 1 }
-
 
 [EOF]

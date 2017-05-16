@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2007
+// SPHERE by : Menasoft ©1997-2017
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,9 +7,9 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, November 17, 2013
+// FILE LAST UPDATED: Tuesday, May 16, 2017
 //
-VERSION=0.56c
+VERSION=0.56d
 
 
 [ITEMDEF 0141b]
@@ -442,8 +442,8 @@ FLIP=1
 //ARMOR=5
 VALUE=15
 WEIGHT=4.4
-RESOURCES=1 i_straw,1 i_canvas,1 i_feather,1 i_bone,1 i_thread
-SKILLMAKE=Tailoring 16.1,t_sewing_kit
+RESOURCES=12 i_cloth
+SKILLMAKE=Tailoring 82.5,t_sewing_kit
 CanUse=can_u_human|can_u_elf
 ReqStr=10
 TEVENTS=t_equipitem
@@ -472,8 +472,8 @@ FLIP=1
 //ARMOR=5
 VALUE=15
 WEIGHT=5.1
-RESOURCES=1 i_straw,1 i_canvas,1 i_feather,1 i_bone,1 i_thread
-SKILLMAKE=Tailoring 16.1,t_sewing_kit
+RESOURCES=12 i_cloth
+SKILLMAKE=Tailoring 82.5,t_sewing_kit
 CanUse=can_u_human|can_u_elf
 ReqStr=10
 TEVENTS=t_equipitem
@@ -628,9 +628,8 @@ DYE=1
 //LAYER=layer_helm
 //ARMOR=3
 VALUE=43
-WEIGHT=13.1
-RESOURCES=12 i_cloth,1 i_straw,1 i_thread
-SKILLMAKE=Tailoring 6.8,t_sewing_kit
+RESOURCES=12 i_cloth
+SKILLMAKE=Tailoring 6.2,t_sewing_kit
 CanUse=can_u_human|can_u_elf
 ReqStr=10
 TEVENTS=t_equipitem
@@ -652,7 +651,7 @@ DYE=1
 //ARMOR=3
 VALUE=24
 WEIGHT=5.1
-RESOURCES=4 i_cloth,1 i_canvas,1 i_thread
+RESOURCES=4 i_cloth,1 i_thread
 SKILLMAKE=Tailoring 18.4,t_sewing_kit
 CanUse=can_u_human|can_u_elf
 ReqStr=10
@@ -675,8 +674,8 @@ DYE=1
 //ARMOR=3
 VALUE=42
 WEIGHT=13.1
-RESOURCES=12 i_cloth,1 i_straw,1 i_thread
-SKILLMAKE=Tailoring 6.8,t_sewing_kit
+RESOURCES=13 i_cloth
+SKILLMAKE=Tailoring 82.5,t_sewing_kit
 CanUse=can_u_human|can_u_elf
 ReqStr=10
 TEVENTS=t_equipitem
@@ -698,8 +697,8 @@ DYE=1
 //ARMOR=3
 VALUE=35
 WEIGHT=11.1
-RESOURCES=10 i_cloth,1 i_straw,1 i_thread
-SKILLMAKE=Tailoring 6.8,t_sewing_kit
+RESOURCES=10 i_cloth
+SKILLMAKE=Tailoring 6.2,t_sewing_kit
 CanUse=can_u_human|can_u_elf
 ReqStr=10
 TEVENTS=t_equipitem
@@ -721,7 +720,7 @@ DYE=1
 //ARMOR=3
 VALUE=34
 WEIGHT=8.1
-RESOURCES=7 i_cloth,1 i_canvas,1 i_thread
+RESOURCES=7 i_cloth,1 i_thread
 SKILLMAKE=Tailoring 16.8,t_sewing_kit
 CanUse=can_u_human|can_u_elf
 ReqStr=10
@@ -1194,8 +1193,8 @@ FLIP=1
 //ARMOR=6
 VALUE=86
 WEIGHT=10.0
-RESOURCES=6 i_cloth,2 i_wire_gold,2 i_linen
-SKILLMAKE=Tailoring 73.6,t_sewing_kit
+RESOURCES=8 i_cloth
+SKILLMAKE=Tailoring 37.5,t_sewing_kit
 TEVENTS=t_equipitem
 ReqStr=10
 DUPELIST=0230e
@@ -1952,7 +1951,7 @@ FLIP=1
 //ARMOR=5
 VALUE=26
 WEIGHT=3.6
-RESOURCES=1 i_straw,1 i_canvas,6 i_feather,1 i_bone
+RESOURCES=10 i_cloth
 SKILLMAKE=Tailoring 16.1,t_sewing_kit
 CanUse=can_u_human|can_u_elf|can_u_none
 ReqStr=10
@@ -2965,34 +2964,5 @@ ON=@Create
 [ITEMDEF 050d9]
 //Gargish half apron
 DUPEITEM=050d8
-
-
-//////////////////
-// Custom Items //
-//////////////////
-
-[ITEMDEF i_hat_wizards_magic]
-ID=i_hat_wizards
-NAME=wizard hat
-RESOURCES=i_hat_wizards,i_scroll_cunning,2 i_wire_gold
-SKILLMAKE=Tailoring 60.0,Magery 60.0,t_sewing_kit
-CanUse=can_u_human|can_u_elf
-ReqStr=25
-TEVENTS=t_equipitem
-CATEGORY=Magic
-SUBSECTION=Clothing
-DESCRIPTION=Magic Wizard Hat
-ON=@Create
-   COLOR=colors_all
-   HITPOINTS={36 48}
-   ATTR=attr_magic|attr_identified
-   BonusINT=<R8,10>
-   BonusDex=<R3,5>
-   BonusStr=<R3,5>
-   RESCOLD=9
-   RESENERGY=5
-   RESFIRE=5
-   RESPOISON=5
-   RESPHYSICAL=1
 
 [EOF]
