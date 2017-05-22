@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, May 16, 2017
+// FILE LAST UPDATED: Monday, May 21, 2017
 //
 VERSION=0.56d
 
@@ -4531,7 +4531,7 @@ COMPONENT=04c1e,0,0,0
 COMPONENT=04c1f,0,1,0
 
 
-[ITEMDEF 04d0d]
+[ITEMDEF 04d0c]
 DEFNAME=i_chest_kings_collection
 NAME=Kings Collection Box
 TYPE=t_container
@@ -4544,11 +4544,11 @@ SKILLMAKE=Tinkering 75.0,t_tinker_tools
 CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Containers
 DESCRIPTION=Kings Collection Box
-DUPELIST=04d0e
+DUPELIST=04d0d
 
-[ITEMDEF 04d0e]
+[ITEMDEF 04d0d]
 //Kings Collection Box
-DUPEITEM=04d0d
+DUPEITEM=04d0c
 
 
 [ITEMDEF 099c8]

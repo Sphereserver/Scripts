@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, May 16, 2017
+// FILE LAST UPDATED: Monday, May 21, 2017
 //
 VERSION=0.56d
 
@@ -2249,12 +2249,22 @@ DUPEITEM=01bd4
 
 
 [ITEMDEF 01c11]
-DEFNAME=i_book_giant
-NAME=blue book
-TYPE=t_book
-CATEGORY=Items by Professions
-SUBSECTION=Scribe
-DESCRIPTION=Huge Book
+DEFNAME=i_unabridged_atlas_eodon
+NAME=Unabridged Atlas of Eodon
+VALUE=62500
+CATEGORY=Quest
+SUBSECTION=Myrmidex Threat
+DESCRIPTION=Unabridged Atlas of Eodon
+ON=@Create
+   COLOR=07d7
+ON=@DClick
+   SDIALOG d_unabridged_atlas_eodon
+   return 1
+
+[DIALOG d_unabridged_atlas_eodon]
+100,50
+gumppic 0 0 30236
+xmfhtmlgump 115 35 350 600 1156723 0 0
 
 
 [ITEMDEF 01db3]

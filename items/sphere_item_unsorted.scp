@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, May 14, 2017
+// FILE LAST UPDATED: Monday, May 21, 2017
 //
 VERSION=0.56d
 
@@ -5449,22 +5449,19 @@ DUPEITEM=048e5
 
 
 [ITEMDEF 04910]
-DEFNAME=i_chest_gothic
-NAME=gothic chest
-TYPE=t_container
-TDATA2=04a
+//TO-DO: Although this item looks like an container, it can't be used as container.
+//Players must lock it down on house and then DClick it to get an target selection,
+//selected items will be sent to player bankbox.
+DEFNAME=i_chest_sending
+NAME=chest of sending
 FLIP=1
-VALUE=93
-WEIGHT=22.0
-RESOURCES=22 i_board,2 i_ingot_iron,1 i_nails
-SKILLMAKE=tinkering 75.0,t_tinker_tools
 CATEGORY=Provisions - Miscellaneous
-SUBSECTION=Containers
-DESCRIPTION=Gothic Chest
+SUBSECTION=Gothic Pack
+DESCRIPTION=Chest of Sending
 DUPELIST=04911
 
 [ITEMDEF 04911]
-//gothic chest
+//chest of sending
 DUPEITEM=04910
 
 

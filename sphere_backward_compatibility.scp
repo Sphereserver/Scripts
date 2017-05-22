@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, May 16, 2017
+// FILE LAST UPDATED: Monday, May 21, 2017
 //
 VERSION=0.56d
 
@@ -372,7 +372,7 @@ i_floor_tile_marble_yellow		i_floor_marble_2
 i_floor_tile_green				i_floor_marble_3
 i_floor_tile_marble				i_floor_marble_4
 i_floor_flagstone_sandstone_small	i_floor_sandstone_2
-i_floor_flagstone_sandstone_small_dark	i_floor_sandstone_3			
+i_floor_flagstone_sandstone_small_dark	i_floor_sandstone_3
 // i_tile_stone_sand					i_tile_sandstone
 i_paver_stone_dark				0521
 i_paver_stone_medium			0521
@@ -514,7 +514,6 @@ i_gravestone_damaged			i_grave_stone_damaged
 //i_gravestone_22					i_gravestone_18
 i_memorial						i_gravestone_19
 i_trap_spike_floor_2			i_trap_spike_4
-//
 i_pole_shackles_broken			i_pole_single_shackles
 i_floorswitch_stone				01bbf
 i_body_shrouded_2				i_body_shrouded_parts
@@ -549,16 +548,22 @@ i_bed_ruined_3					0c28
 i_bed_ruined_4					0c29
 i_bed_ruined_5					0c2a
 i_bed_ruined_6					0c2b
-i_BED_DOUBLE_2					011d2
+i_bed_double_2					011d2
 i_cot_sw						i_cot
-i_bonsai_1                      i_bonsai_common_green
-i_bonsai_2                      i_bonsai_uncommon_green
-i_bonsai_3                      i_bonsai_rare_green
-i_bonsai_4                      i_bonsai_common_pink
-i_bonsai_5                      i_bonsai_uncommon_pink
-i_bonsai_6                      i_bonsai_rare_pink
-i_bonsai_7                      i_bonsai_exceptional
-i_bonsai_8                      i_bonsai_exotic
+i_map							i_map_blank
+i_tapestry_elven_3				i_tattered_wall_map
+i_chest_gothic					i_chest_sending
+i_tray_sushi					i_sushi_rolls
+i_tray_sushi2					i_sushi_platter
+i_bonsai_1						i_bonsai_common_green
+i_bonsai_2						i_bonsai_uncommon_green
+i_bonsai_3						i_bonsai_rare_green
+i_bonsai_4						i_bonsai_common_pink
+i_bonsai_5						i_bonsai_uncommon_pink
+i_bonsai_6						i_bonsai_rare_pink
+i_bonsai_7						i_bonsai_exceptional
+i_bonsai_8						i_bonsai_exotic
+i_bonsai_9						i_bonsai_ancient_oak
 i_lantern_paper1				i_lantern_shoji
 i_lantern_paper1_lit			i_lantern_shoji_lit
 i_lantern_paper2				i_lantern_paper

@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, May 14, 2017
+// FILE LAST UPDATED: Monday, May 21, 2017
 //
 VERSION=0.56d
 
@@ -5379,16 +5379,17 @@ DESCRIPTION=Silver Sapling (potted)
 
 
 [ITEMDEF 046d9]
-DEFNAME=i_bonsai_tree
+DEFNAME=i_bonsai_ancient_oak
+NAME=ancient oak bonsai tree
 FLIP=1
 CATEGORY=Decoration - Potted Plants & Vases
 SUBSECTION=Potted Trees
-DESCRIPTION=Bonsai Tree
+DESCRIPTION=Bonsai (Ancient Oak)
 DUPELIST=046e5
 
 
 [ITEMDEF 046e5]
-//bonsai tree
+//ancient oak bonsai tree
 DUPEITEM=046d9
 
 
