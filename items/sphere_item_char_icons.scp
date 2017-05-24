@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, May 1, 2017
+// FILE LAST UPDATED: Wednesday, May 24, 2017
 //
 VERSION=0.56d
 
@@ -3663,6 +3663,22 @@ TDATA3=c_tiger_cub
 CATEGORY=Miscellaneous
 SUBSECTION=Character Icons
 DESCRIPTION=Tiger Cub
+
+[ITEMDEF 09db1]
+//kotl automaton head (south)
+DEFNAME=i_pet_kotl_automaton
+NAME=Kotl Automaton Head
+TYPE=t_figurine
+TDATA3=c_kotl_automaton
+FLIP=1
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Kotl Automaton
+DUPELIST=09db2
+
+[ITEMDEF 09db2]
+//kotl automaton head (east)
+DUPEITEM=09db1
 
 [ITEMDEF 09db6]
 DEFNAME=i_pet_myrmidex_queen

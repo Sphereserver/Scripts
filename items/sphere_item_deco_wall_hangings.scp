@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, May 14, 2017
+// FILE LAST UPDATED: Wednesday, May 24, 2017
 //
 VERSION=0.56d
 
@@ -2648,20 +2648,6 @@ DUPELIST=02d72
 //elven tapestry 2
 DUPEITEM=02d71
 
-[ITEMDEF 02d73]
-DEFNAME=i_tapestry_elven_3
-FLIP=1
-WEIGHT=54.0
-RESOURCES=1 i_cloth_bolt,2 i_dyes,1 i_board,1 i_rope
-CATEGORY=Decoration - Wall Hangings
-SUBSECTION=Tapestries
-DESCRIPTION=Elven Tapestry 3
-DUPELIST=02d74
-
-[ITEMDEF 02d74]
-//elven tapestry 3
-DUPEITEM=02d73
-
 
 [ITEMDEF 02ff2]
 DEFNAME=i_tapestry_colorful
@@ -2745,8 +2731,6 @@ CATEGORY=Decoration - Wall Hangings
 SUBSECTION=Tapestries
 DESCRIPTION=Britannia Tapestry
 DUPELIST=03bb7
-ON=@Create
-   NAME=Map of <SERV.SERVNAME>
 
 [ITEMDEF 03bb7]
 //Britannia Tapestry
@@ -3590,19 +3574,6 @@ DUPELIST=09ccd
 [ITEMDEF 09ccd]
 //fireworks banner (east)
 DUPEITEM=09ccc
-
-
-[ITEMDEF 09d3c]
-DEFNAME=i_tapestry_map_eodon
-FLIP=1
-CATEGORY=Decoration - Wall Hangings
-SUBSECTION=Tapestries
-DESCRIPTION=Eodon Map
-DUPELIST=09d3d
-
-[ITEMDEF 09d3d]
-//eodon map
-DUPEITEM=09d3c
 
 
 [ITEMDEF 09d53]

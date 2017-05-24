@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, May 1, 2017
+// FILE LAST UPDATED: Wednesday, May 24, 2017
 //
 VERSION=0.56d
 
@@ -99,15 +99,6 @@ color_snow                   1153
 color_rock                   1154
 color_spectral               16385
 
-color_magic_defense          1650
-color_magic_guarding         1430
-color_magic_hardening        1353
-color_magic_fortification    1805
-color_magic_invulnerability  1887
-color_magic_weap             0		//custom
-color_magic_arm              0		//custom
-color_magic_shield           0		//custom
-
 color_hide_spined            08ac	//pre-AOS: 0283
 color_hide_horned            0845	//pre-AOS: 0227
 color_hide_barbed            0851	//pre-AOS: 01c1
@@ -128,6 +119,14 @@ color_dragonscale_blue       08b0
 
 color_tigerpelt_orange       0f3
 color_tigerpelt_black        0497
+
+// Custom
+color_magic_weap             0
+color_magic_defense          0
+color_magic_guarding         0
+color_magic_hardening        0
+color_magic_fortification    0
+color_magic_invulnerability  0
 
 [DEFNAME hues_range]
 colors_all             {2 1001}
@@ -302,6 +301,7 @@ snd_monster_slime1        456
 snd_monster_troll1        461
 snd_monster_wisp1         466
 snd_monster_zombie1       471
+snd_monster_blade         537
 snd_weapons_axe01         562
 snd_weapons_blunt01       563
 snd_weapons_crossbow      564
@@ -373,6 +373,7 @@ snd_monster_insect4           962
 snd_monster_insect5           963
 snd_animal_kirin              965
 snd_animal_kirin2             966
+snd_animal_lion               1007
 snd_animal_llama1             1011
 snd_monster_longhorn1         1016
 snd_monster_longhorn2         1017

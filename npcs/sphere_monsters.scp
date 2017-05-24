@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, May 1, 2017
+// FILE LAST UPDATED: Wednesday, May 24, 2017
 //
 VERSION=0.56d
 
@@ -2812,7 +2812,7 @@ DESIRES=r_forests
 AVERSIONS=r_civilization
 FOODTYPE=t_meat_raw
 MAXFOOD=15
-RESOURCES=1 i_ribs_raw,7 i_hide,2 i_fur_dark,1 i_cat_gut
+RESOURCES=1 i_ribs_raw,10 i_hide
 TAG.Barding.Diff=33.3
 FollowerSlots=1
 TEVENTS=e_carnivores
@@ -2852,7 +2852,7 @@ DESIRES=r_jungle
 AVERSIONS=r_civilization,r_water
 FOODTYPE=t_meat_raw
 MAXFOOD=15
-RESOURCES=1 i_ribs_raw,5 i_hide,2 i_fur_light,1 i_cat_gut
+RESOURCES=1 i_ribs_raw,8 i_hide
 TAG.Barding.Diff=33.3
 FollowerSlots=1
 TEVENTS=e_carnivores
@@ -2891,7 +2891,7 @@ DESIRES=r_snow
 AVERSIONS=r_civilization,r_water
 FOODTYPE=t_meat_raw
 MAXFOOD=15
-RESOURCES=1 i_ribs_raw,5 i_hide,2 i_fur_light,1 i_cat_gut
+RESOURCES=1 i_ribs_raw,8 i_hide
 TAG.Barding.Diff=34.3
 FollowerSlots=1
 TEVENTS=e_carnivores
@@ -9956,7 +9956,7 @@ DESIRES=r_snow
 AVERSIONS=r_civilization
 FOODTYPE=t_fish
 MAXFOOD=25
-RESOURCES=12 i_hide,2 i_ivory
+RESOURCES=12 i_hide,1 i_fish_cut_raw
 TAG.Barding.Diff=18.2
 FollowerSlots=1
 CATEGORY=Animals
@@ -21144,10 +21144,11 @@ NAME=Gallusaurus
 ICON=i_pet_gallusaurus
 CAN=MT_WALK|MT_RUN
 DAM=11,17
-ARMOR=5
+ARMOR=60
 SOUND=snd_animal_ostard_frenzied1
 FOODTYPE=t_meat_raw
 RESOURCES=3 i_ribs_raw
+FollowerSlots=3
 TAG.Barding.Diff=160.0
 CATEGORY=Animals
 SUBSECTION=Dinosaurs
@@ -21156,18 +21157,18 @@ ON=@Create
    NPC=brain_monster
    FAME=8100
    KARMA=-8100
-   STR={477 511}
-   DEX={155 168}
-   INT={221 274}
-   MAXHITS={2220 2811}
-   WRESTLING={83.3 90.9}
-   TACTICS={82.6 88.4}
-   MAGICRESISTANCE={75.2 79.8}
-   RESPHYSICAL={5 6}
-   RESFIRE={2 3}
-   RESCOLD=2
-   RESPOISON={6 7}
-   RESENERGY=2
+   STR={470 520}
+   DEX={150 170}
+   INT={140 260}
+   MAXHITS={750 790}
+   WRESTLING={80.1 90.0}
+   TACTICS={80.1 90.0}
+   MAGICRESISTANCE={75.1 80.0}
+   RESPHYSICAL={50 70}
+   RESFIRE={20 30}
+   RESCOLD={20 30}
+   RESPOISON={60 70}
+   RESENERGY={20 25}
 
 [CHARDEF 0507]
 DEFNAME=c_archaeosaurus
@@ -21674,57 +21675,563 @@ ON=@Create
    RESENERGY={70 80}
 
 [CHARDEF 057e]
-//FIXME: No Stratics data
-DEFNAME=c_golem_aztec
-NAME=Golem Aztec
+DEFNAME=c_kotl_automaton
+NAME=Kotl Automaton
+ICON=i_pet_kotl_automaton
+SOUND=snd_monster_blade
 CAN=MT_WALK|MT_RUN
-CATEGORY=
-SUBSECTION=
-DESCRIPTION=
+DAM=15,20
+ARMOR=48
+FollowerSlots=4
+CATEGORY=Crafted
+SUBSECTION=Mechanical Pets
+DESCRIPTION=Kotl Automaton
 ON=@Create
    NPC=brain_monster
+   FAME=14000
+   KARMA=-14000
+   STR={800 900}
+   DEX={65 75}
+   INT={250 270}
+   MAXHITS={820 880}
+   WRESTLING={90.1 110.0}
+   TACTICS={80.1 100.0}
+   PARRYING={70.1 80.0}
+   MAGICRESISTANCE={120.1 130.0}
+   DETECTINGHIDDEN=40.1
+   ANATOMY={90.1 100.0}
+   RESPHYSICAL={45 50}
+   RESFIRE={45 50}
+   RESCOLD={45 50}
+   RESPOISON={45 50}
+   RESENERGY={45 50}
 
 [CHARDEF 057f]
-//FIXME: No Stratics data
 DEFNAME=c_lasher
-NAME=Lasher	//Rainbow Unicorn
+NAME=Lasher
 ICON=i_pet_lasher
+SOUND=snd_animal_unicorn1
 CAN=MT_WALK|MT_RUN
-TAG.Barding.Diff=73.6
+DAM=1,4
+ARMOR=45
+FOODTYPE=t_fruit,t_grain,t_grass
+RESOURCES=6 i_ribs_raw,20 i_hide
+FollowerSlots=1
 CATEGORY=Mounts
 SUBSECTION=Wild
 DESCRIPTION=Lasher
 ON=@Create
    NPC=brain_animal
+   FAME=300
+   KARMA=-300
    STR=400
    DEX=125
    INT={60 75}
    MAXHITS=240
-   MAXMANA={5 20}
+   WRESTLING={30.1 40.0}
+   TACTICS={30.1 40.0}
+   MAGICRESISTANCE={20.1 30.0}
+   TAMING=29.1
+   RESPHYSICAL={40 50}
+   RESFIRE={30 40}
+   RESCOLD={30 40}
+   RESPOISON={30 40}
+   RESENERGY={30 40}
 
 [CHARDEF 0580]
-//FIXME: No Stratics data
-DEFNAME=c_palomino
-NAME=Palomino
-ICON=i_pet_palomino
+DEFNAME=c_horse_palomino
+NAME=horse
+ICON=i_pet_horse_palomino
+SOUND=snd_animals_horse1
 CAN=MT_WALK|MT_RUN
+DAM=3,4
+ARMOR=18
+FOODTYPE=t_fruit,t_grain,t_grass
+RESOURCES=6 i_ribs_raw,20 i_hide
+FollowerSlots=1
 CATEGORY=Mounts
-SUBSECTION=Wild
-DESCRIPTION=Palomino
+SUBSECTION=Tame
+DESCRIPTION=Horse (palomino)
 ON=@Create
    NPC=brain_animal
+   FAME=300
+   KARMA=-300
+   STR={45 65}
+   DEX={55 75}
+   INT={5 10}
+   MAXHITS={35 40}
+   WRESTLING={30.1 40.0}
+   TACTICS={30.1 40.0}
+   MAGICRESISTANCE={25.1 30.0}
+   TAMING=29.1
+   RESPHYSICAL={15 20}
+   RESFIRE=0
+   RESCOLD=0
+   RESPOISON=0
+   RESENERGY=0
 
 [CHARDEF 0582]
-//FIXME: No Stratics data
 DEFNAME=c_windrunner
 NAME=Windrunner
 ICON=i_pet_windrunner
+SOUND=snd_animals_wolf1
 CAN=MT_WALK|MT_RUN
+DAM=1,4
+ARMOR=45
+FOODTYPE=t_meat_raw
+RESOURCES=6 i_ribs_raw,20 i_hide
+FollowerSlots=1
 CATEGORY=Mounts
 SUBSECTION=Wild
 DESCRIPTION=Windrunner
 ON=@Create
    NPC=brain_animal
+   FAME=300
+   KARMA=-300
+   STR=400
+   DEX=125
+   INT=0
+   MAXHITS=240
+   WRESTLING={30.1 40.0}
+   TACTICS={30.1 40.0}
+   MAGICRESISTANCE={20.1 30.0}
+   TAMING=29.1
+   RESPHYSICAL={40 50}
+   RESFIRE={30 40}
+   RESCOLD={30 40}
+   RESPOISON={30 40}
+   RESENERGY={30 40}
+
+[CHARDEF 0587]
+DEFNAME=c_triceratops
+NAME=Triceratops
+ICON=i_pet_triceratops
+//SOUND=
+CAN=MT_WALK|MT_RUN
+DAM=21,28
+ARMOR=75
+FOODTYPE=t_fruit,t_grain,t_grass
+RESOURCES=3 i_ribs_raw,11 i_hide
+FollowerSlots=3
+CATEGORY=Animals
+SUBSECTION=Dinosaurs
+DESCRIPTION=Triceratops
+ON=@Create
+   NPC=brain_monster
+   //FAME=
+   //KARMA=
+   STR={1100 1300}
+   DEX={150 170}
+   INT={270 300}
+   MAXHITS={1000 1200}
+   WRESTLING={90.1 110.0}
+   TACTICS={90.1 100.0}
+   PARRYING={70.1 85.0}
+   DETECTINGHIDDEN=75.1
+   ANATOMY={60.1 70.0}
+   TAMING=101.1
+   RESPHYSICAL={70 80}
+   RESFIRE={20 40}
+   RESCOLD={40 50}
+   RESPOISON={35 45}
+   RESENERGY={30 50}
+
+[CHARDEF 0588]
+DEFNAME=c_sabertoothed_tiger
+NAME=Saber-Toothed Tiger
+ICON=i_pet_sabertoothed_tiger
+SOUND=snd_monster_wildtiger
+CAN=MT_WALK|MT_RUN
+DAM=21,28
+ARMOR=55
+FOODTYPE=t_meat_raw
+RESOURCES=3 i_ribs_raw,11 i_hide
+FollowerSlots=2
+CATEGORY=Animals
+SUBSECTION=Wild
+DESCRIPTION=Saber-Toothed Tiger
+ON=@Create
+   NPC=brain_monster
+   FAME=11000
+   KARMA=-11000
+   STR={500 520}
+   DEX={400 420}
+   INT={440 460}
+   MAXHITS={360 420}
+   WRESTLING={100.1 110.0}
+   TACTICS={90.1 100.0}
+   PARRYING={80.1 110.0}
+   DETECTINGHIDDEN=75.1
+   TAMING=101.1
+   RESPHYSICAL={45 65}
+   RESFIRE={30 40}
+   RESCOLD={50 60}
+   RESPOISON={25 35}
+   RESENERGY={40 50}
+
+[CHARDEF 0589]
+DEFNAME=c_drake_platinum
+NAME=Platinum Drake
+ICON=i_pet_drake_platinum
+SOUND=snd_monster_dragon1
+CAN=MT_WALK|MT_FLY|MT_NONHUM
+DAM=11,17
+ARMOR=40
+//FOODTYPE=t_fish
+RESOURCES=10 i_ribs_raw,22 i_hide_horned,8 i_reag_dragon_blood,2 i_dragonscale_blue
+FollowerSlots=2
+CATEGORY=Monsters
+SUBSECTION=Dragonkind
+DESCRIPTION=Platinum Drake
+ON=@Create
+   NPC=brain_dragon
+   FAME=5500
+   KARMA=-5500
+   STR={400 430}
+   DEX={130 160}
+   INT={100 140}
+   MAXHITS={240 260}
+   WRESTLING={65.1 80.0}
+   TACTICS={65.1 90.0}
+   MAGICRESISTANCE={65.1 80.0}
+   DETECTINGHIDDEN=50.6
+   TAMING=84.3			
+   RESPHYSICAL={30 50}
+   RESFIRE={30 50}
+   RESCOLD={30 50}
+   RESPOISON={30 50}
+   RESENERGY={30 50}
+
+[CHARDEF 058a]
+DEFNAME=c_drake_platinum_elemental
+NAME=Platinum Drake
+ICON=i_pet_drake_platinum_elemental
+SOUND=snd_monster_dragon1
+CAN=MT_WALK|MT_FLY|MT_NONHUM
+DAM=11,17
+ARMOR=40
+//FOODTYPE=t_fish
+RESOURCES=10 i_ribs_raw,22 i_hide_horned,8 i_reag_dragon_blood,2 i_dragonscale_blue
+FollowerSlots=2
+CATEGORY=Monsters
+SUBSECTION=Dragonkind
+DESCRIPTION=Platinum Drake (elemental)
+ON=@Create
+   NPC=brain_dragon
+   FAME=5500
+   KARMA=-5500
+   STR={400 430}
+   DEX={130 160}
+   INT={100 140}
+   MAXHITS={240 260}
+   WRESTLING={65.1 80.0}
+   TACTICS={65.1 90.0}
+   MAGICRESISTANCE={65.1 80.0}
+   DETECTINGHIDDEN=50.6
+   TAMING=84.3
+   RESPHYSICAL={30 50}
+   RESFIRE={30 50}
+   RESCOLD={30 50}
+   RESPOISON={30 50}
+   RESENERGY={30 50}
+   SetRandomDrakeElementalDamage
+
+[CHARDEF 058b]
+DEFNAME=c_drake_crimson
+NAME=Crimson Drake
+ICON=i_pet_drake_crimson
+SOUND=snd_monster_dragon1
+CAN=MT_WALK|MT_FLY|MT_NONHUM
+DAM=11,17
+ARMOR=40
+//FOODTYPE=t_fish
+RESOURCES=10 i_ribs_raw,22 i_hide_horned,8 i_reag_dragon_blood,2 i_dragonscale_red
+FollowerSlots=2
+CATEGORY=Monsters
+SUBSECTION=Dragonkind
+DESCRIPTION=Crimson Drake
+ON=@Create
+   NPC=brain_dragon
+   FAME=5500
+   KARMA=-5500
+   STR={400 430}
+   DEX={130 160}
+   INT={100 140}
+   MAXHITS={240 260}
+   WRESTLING={65.1 80.0}
+   TACTICS={65.1 90.0}
+   MAGICRESISTANCE={65.1 80.0}
+   DETECTINGHIDDEN=50.6
+   TAMING=84.3			
+   RESPHYSICAL={30 50}
+   RESFIRE={30 50}
+   RESCOLD={30 50}
+   RESPOISON={30 50}
+   RESENERGY={30 50}
+
+[CHARDEF 058c]
+DEFNAME=c_drake_crimson_elemental
+NAME=Crimson Drake
+ICON=i_pet_drake_crimson_elemental
+SOUND=snd_monster_dragon1
+CAN=MT_WALK|MT_FLY|MT_NONHUM
+DAM=11,17
+ARMOR=40
+//FOODTYPE=t_fish
+RESOURCES=10 i_ribs_raw,22 i_hide_horned,8 i_reag_dragon_blood,2 i_dragonscale_red
+FollowerSlots=2
+CATEGORY=Monsters
+SUBSECTION=Dragonkind
+DESCRIPTION=Crimson Drake (elemental)
+ON=@Create
+   NPC=brain_dragon
+   FAME=5500
+   KARMA=-5500
+   STR={400 430}
+   DEX={130 160}
+   INT={100 140}
+   MAXHITS={240 260}
+   WRESTLING={65.1 80.0}
+   TACTICS={65.1 90.0}
+   MAGICRESISTANCE={65.1 80.0}
+   DETECTINGHIDDEN=50.6
+   TAMING=84.3
+   RESPHYSICAL={30 50}
+   RESFIRE={30 50}
+   RESCOLD={30 50}
+   RESPOISON={30 50}
+   RESENERGY={30 50}
+   SetRandomDrakeElementalDamage
+
+[FUNCTION SetRandomDrakeElementalDamage]
+//This function is used by elemental version of Platinum/Crimson Drake to generate NPCs with random elemental damage 
+//PS: There's no color for physical damage because it's already the non-elemental version of these drakes
+DORAND 4
+ BEGIN
+  DAMFIRE=100
+  COLOR=08000|1260
+ END
+ BEGIN
+  DAMCOLD=100
+  COLOR=08000|1366
+ END
+ BEGIN
+  DAMPOISON=100
+  COLOR=08000|1268
+ END
+ BEGIN
+  DAMENERGY=100
+  COLOR=08000|2620
+ END
+ENDDO
+
+[CHARDEF 058d]
+DEFNAME=c_drake_stygian
+NAME=Stygian Drake
+ICON=i_pet_drake_stygian
+SOUND=snd_monster_dragon1
+CAN=MT_WALK|MT_FLY|MT_NONHUM
+DAM=11,17
+ARMOR=60
+//FOODTYPE=t_fish
+RESOURCES=10 i_ribs_raw,22 i_hide_horned,8 i_reag_dragon_blood,2 i_dragonscale_yellow
+FollowerSlots=4
+CATEGORY=Monsters
+SUBSECTION=Dragonkind
+DESCRIPTION=Stygian Drake
+ON=@Create
+   NPC=brain_dragon
+   FAME=5500
+   KARMA=-5500
+   STR={800 830}
+   DEX={85 125}
+   INT={400 450}
+   MAXHITS={480 510}
+   WRESTLING={90.1 100.0}
+   TACTICS={90.1 105.0}
+   MAGICRESISTANCE={90.1 105.0}
+   DETECTINGHIDDEN=75.0
+   MAGERY=100.0
+   EVALUATINGINTEL={90.1 105.0}
+   TAMING=84.3
+   RESPHYSICAL={55 65}
+   RESFIRE={60 70}
+   RESCOLD={30 40}
+   RESPOISON={20 30}
+   RESENERGY={60 70}
+
+[CHARDEF 058e]
+//Although elemental version of Platinum/Crimson Drake have different damage types and the color
+//is based on this damage type, Stygian Drake always have physical damage with random colors
+DEFNAME=c_drake_stygian_elemental
+NAME=Stygian Drake
+ICON=i_pet_drake_stygian_elemental
+SOUND=snd_monster_dragon1
+CAN=MT_WALK|MT_FLY|MT_NONHUM
+DAM=11,17
+ARMOR=60
+//FOODTYPE=t_fish
+RESOURCES=10 i_ribs_raw,22 i_hide_horned,8 i_reag_dragon_blood,2 i_dragonscale_yellow
+FollowerSlots=4
+CATEGORY=Monsters
+SUBSECTION=Dragonkind
+DESCRIPTION=Stygian Drake (elemental)
+ON=@Create
+   COLOR={0 1 0482 1 048e 1}
+   NPC=brain_dragon
+   FAME=5500
+   KARMA=-5500
+   STR={800 830}
+   DEX={85 125}
+   INT={400 450}
+   MAXHITS={480 510}
+   WRESTLING={90.1 100.0}
+   TACTICS={90.1 105.0}
+   MAGICRESISTANCE={90.1 105.0}
+   DETECTINGHIDDEN=75.0
+   MAGERY=100.0
+   EVALUATINGINTEL={90.1 105.0}
+   TAMING=84.3
+   RESPHYSICAL={55 65}
+   RESFIRE={60 70}
+   RESCOLD={30 40}
+   RESPOISON={20 30}
+   RESENERGY={60 70}
+
+[CHARDEF 058f]
+DEFNAME=c_blood_fox
+NAME=Blood Fox
+ICON=i_pet_blood_fox
+CAN=MT_WALK|MT_RUN
+DAM=16,22
+ARMOR=60
+//FOODTYPE=t_fish
+FOODTYPE=t_meat_raw
+RESOURCES=5 i_ribs_raw
+FollowerSlots=2
+CATEGORY=Animals
+SUBSECTION=Wild
+DESCRIPTION=Blood Fox
+ON=@Create
+   NPC=brain_monster
+   //FAME=
+   //KARMA=
+   STR={290 330}
+   DEX={180 220}
+   INT={180 220}
+   MAXHITS={180 220}
+   WRESTLING={80.1 90.0}
+   TACTICS={60.1 70.0}
+   MAGICRESISTANCE={40.1 60.0}
+   DETECTINGHIDDEN=60.0
+   TAMING=71.1
+   RESPHYSICAL={55 65}
+   RESFIRE={25 35}
+   RESCOLD={55 65}
+   RESPOISON={25 35}
+   RESENERGY={25 35}
+
+[CHARDEF 0590]
+DEFNAME=c_frost_mite
+NAME=Frost Mite
+ICON=i_pet_frost_mite
+CAN=MT_WALK|MT_RUN
+DAM=21,28
+DAMCOLD=100
+ARMOR=60
+FOODTYPE=t_meat_raw
+RESOURCES=5 i_ribs_raw
+FollowerSlots=3
+CATEGORY=Monsters
+SUBSECTION=Insects
+DESCRIPTION=Frost Mite
+ON=@Create
+   NPC=brain_monster
+   //FAME=
+   //KARMA=
+   STR={1000 1030}
+   DEX={150 180}
+   INT={250 280}
+   MAXHITS={800 1000}
+   WRESTLING={100.1 120.0}
+   TACTICS={100.1 110.0}
+   MAGICRESISTANCE={75.1 90.0}
+   DETECTINGHIDDEN=75.0
+   ANATOMY={55.1 60.0}
+   TAMING=101.1
+   RESPHYSICAL={50 65}
+   RESFIRE={15 25}
+   RESCOLD={85 95}
+   RESPOISON={50 65}
+   RESENERGY={40 55}
+
+[CHARDEF 0591]
+DEFNAME=c_ossein_ram
+NAME=Ossein Ram
+ICON=i_pet_ossein_ram
+CAN=MT_WALK|MT_RUN
+DAM=18,23
+DAMCOLD=25
+DAMENERGY=25
+ARMOR=55
+FOODTYPE=t_meat_raw
+RESOURCES=3 i_ribs_raw
+FollowerSlots=2
+CATEGORY=Animals
+SUBSECTION=Wild
+DESCRIPTION=Ossein Ram
+ON=@Create
+   NPC=brain_monster
+   //FAME=
+   //KARMA=
+   STR={300 370}
+   DEX={80 120}
+   INT={110 150}
+   MAXHITS={420 520}
+   WRESTLING={80.1 90.0}
+   TACTICS={80.1 90.0}
+   MAGICRESISTANCE={70.1 80.0}
+   ANATOMY={80.1 90.0}
+   DETECTINGHIDDEN=38.3
+   TAMING=71.1
+   RESPHYSICAL={50 60}
+   RESFIRE={10 20}
+   RESCOLD={40 50}
+   RESPOISON={30 40}
+   RESENERGY={40 50}
+
+[CHARDEF 0592]
+DEFNAME=c_lion
+NAME=Lion
+ICON=i_pet_lion
+SOUND=snd_animal_lion
+CAN=MT_WALK|MT_RUN
+DAM=16,22
+ARMOR=55
+FOODTYPE=t_meat_raw
+RESOURCES=5 i_ribs_raw,11 i_hide
+FollowerSlots=2
+CATEGORY=Animals
+SUBSECTION=Wild
+DESCRIPTION=Lion
+ON=@Create
+   NPC=brain_monster
+   FAME=11000
+   KARMA=-11000
+   STR={700 720}
+   DEX={200 220}
+   INT={120 140}
+   MAXHITS={350 370}
+   WRESTLING={100.1 110.0}
+   TACTICS={90.1 100.0}
+   PARRYING={75.1 90.0}
+   DETECTINGHIDDEN=72.0
+   TAMING=95.1
+   RESPHYSICAL={50 60}
+   RESFIRE={30 40}
+   RESCOLD={30 40}
+   RESPOISON={30 40}
+   RESENERGY={20 30}
 
 ///////////////////////////////////////////////
 // These are here for backward compatibility //
