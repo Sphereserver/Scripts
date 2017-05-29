@@ -1,5 +1,5 @@
 ﻿//****************************************************************************
-// SPHERE by : Menasoft ©1997-2015
+// SPHERE by : Menasoft ©1997-2017
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,9 +7,9 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Thursday, May 28, 2015
+// FILE LAST UPDATED: Sunday, May 28, 2017
 //
-VERSION=0.56c
+VERSION=0.56d
 
 [COMMENT sphere_map3]
 Malas
@@ -97,6 +97,16 @@ RECT=2222,382,2254,402,3
 FLAGS=region_flag_nobuilding
 EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
 
+[AREADEF a_gravewater_lake]
+NAME=Gravewater Lake
+GROUP=Malas
+P=1700,1562,-109,3
+RECT=1385,1571,1477,1784,3
+RECT=1477,1531,1590,1784,3
+RECT=1590,1531,1860,1732,3
+FLAGS=region_flag_nobuilding
+EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
+
 [AREADEF a_grand_arena]
 NAME=Grand Arena
 GROUP=Malas
@@ -118,7 +128,7 @@ NAME=Crystal Cave Entrance
 GROUP=Malas
 P=1195,515,-90,3
 RECT=1176,509,1219,522,3
-FLAGS=region_flag_nobuilding|region_flag_underground
+FLAGS=region_flag_nobuilding
 EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
 
 [AREADEF a_hanses_hostel]

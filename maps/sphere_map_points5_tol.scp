@@ -7,9 +7,12 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Wednesday, April 12, 2017
+// FILE LAST UPDATED: Sunday, May 28, 2017
 //
 VERSION=0.56d
+
+[MoonGates]
+719,1863,40,5=mg_valley_of_eodon
 
 [Teleporters]
 912,2022,85,5=543,2198,-15,5=tp_ValleyOfEodon_Shadowguard1

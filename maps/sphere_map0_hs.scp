@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Wednesday, April 12, 2017
+// FILE LAST UPDATED: Sunday, May 28, 2017
 //
 VERSION=0.56d
 
@@ -45,8 +45,8 @@ FLAGS=region_flag_nobuilding|region_flag_underground|region_antimagic_recall_in
 EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
 TAG.MUSIC=midi_dungeon9
 
-[AREADEF a_wreck_of_the_ararat]
-NAME=Wreck of the Ararat
+[AREADEF a_underwater_world]
+NAME=Underwater World
 GROUP=HS Dungeons
 P=6278,1786
 RECT=6254,1614,6461,1804,0

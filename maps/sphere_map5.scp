@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Wednesday, April 12, 2017
+// FILE LAST UPDATED: Sunday, May 28, 2017
 //
 VERSION=0.56d
 
@@ -35,7 +35,11 @@ EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
 NAME=Royal City
 GROUP=Royal City
 P=750,3450,-20,5
-RECT=662,3316,962,3716,5
+RECT=634,3302,834,3447,5
+RECT=637,3446,840,3513,5
+RECT=686,3513,804,3546,5
+RECT=833,3323,858,3382,5
+RECT=833,3382,878,3476,5
 FLAGS=region_flag_nobuilding|region_flag_guarded
 EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
 TAG.MUSIC=midi_RoyalCity
