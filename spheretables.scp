@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Wednesday, Jan 25, 2017
+// FILE LAST UPDATED: Monday, May 29, 2017
 //
 VERSION=0.56d
 
@@ -51,6 +51,7 @@ scripts/stones/guilds/
 scripts/stones/towns/
 scripts/npcs/
 scripts/speech/
+scripts/systems/
 scripts/sphere_spawns.scp
 scripts/sphere_spells.scp
 
