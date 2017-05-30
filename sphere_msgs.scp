@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Friday, April 21, 2017
+// FILE LAST UPDATED: Tuesday, May 30, 2017
 //
 VERSION=0.56d
 
@@ -850,7 +850,10 @@ EMOTE_DEF_UNICODE	0
 //spell_dispellf_wt				"That is not a field!"
 //spell_enchant_activate   		"Magic items must be on your person to activate."
 //spell_enchant_lack			"This item lacks any enchantment."
-//spell_gate_am					"Antimagic blocks the gate"
+//spell_gate_alreadythere		"There is already a gate there."
+//spell_gate_am,				"An anti-magic field blocks the gate."
+//spell_gate_open				"You open a magical gate to another location."
+//spell_gate_somethingblocking	"Something is blocking the location."
 //spell_gen_fizzles				"The spell fizzles"
 //spell_looks					"looks %s"
 //spell_poison_1				"sickly"
@@ -867,12 +870,11 @@ EMOTE_DEF_UNICODE	0
 //spell_osipoison_greater1		"stumbles around in confusion and pain."
 //spell_osipoison_deadly1		"is wracked with extreme pain."
 //spell_osipoison_lethal1		"begins to spasm uncontrollably."
-//spell_recall_blank			"The recall rune is blank."
-//spell_recall_fadec			"The recall rune fades completely."
-//spell_recall_faded			"The recall rune's magic has faded"
-//spell_recall_notrune			"That item is not a recall rune."
-//spell_recall_sfade			"The recall rune is starting to fade."
-//spell_mark_cont				"The rune must be on your person to mark."
+//spell_recall_cantrecallobj	"I can not recall from that object."
+//spell_recall_nocharges		"There are no charges left on that item."
+//spell_recall_runenotmarked	"That rune is not yet marked."
+//spell_mark_cantmarkobj		"I cannot mark that object."
+//spell_mark_cont				"You must have this rune in your backpack in order to mark it."
 //spell_res_am					"Anti-Magic blocks the Resurrection!"
 //spell_res_rejoin				"Your spirit rejoins your body."
 //spell_res_robename			"Resurrection Robe"
