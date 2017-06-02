@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, May 21, 2017
+// FILE LAST UPDATED: Friday, Jun 2, 2017
 //
 VERSION=0.56d
 
@@ -755,6 +755,7 @@ DESCRIPTION=Barrel Tap
 DEFNAME=i_archery_butte
 TYPE=t_archery_butte
 FLIP=1
+CAN=can_i_dcignoredist
 CATEGORY=Items by Professions
 SUBSECTION=Archer/Bowyer
 DESCRIPTION=Archery Butte
@@ -1145,10 +1146,8 @@ DUPEITEM=0105d
 [ITEMDEF 01070]
 DEFNAME=i_training_dummy
 TYPE=t_train_dummy
-VALUE=330
-WEIGHT=110.5
-RESOURCES=20 i_log,35 i_cloth,50 i_cotton,5 i_thread,5 i_hides_cut
-SKILLMAKE=Carpentry 85.0,Tailoring 70.0,t_carpentry,t_sewing_kit
+RESOURCES=55 i_log,60 i_cloth
+SKILLMAKE=Carpentry 68.4,Tailoring 50.0,t_carpentry
 CATEGORY=Items by Professions
 SUBSECTION=Fighter
 DESCRIPTION=Training Dummy
@@ -2365,21 +2364,10 @@ DESCRIPTION=Stack of Books 2
 
 
 [ITEMDEF 01e2c]
-DEFNAME=i_pickpocket_dip
-TYPE=t_train_pickpocket
-FLIP=1
-VALUE=274
-WEIGHT=195.0
-RESOURCES=15 i_log,15 i_cloth
-SKILLMAKE=Carpentry 80.0,Tailoring 60.0,t_sewing_kit,t_carpentry
-CATEGORY=Items by Professions
-SUBSECTION=Thief
-DESCRIPTION=Pickpocket Dip
-DUPELIST=01e2d,01ec0,01ec1,01ec2,01ec3,01ec4,01ec5
+//pickpocket dip
 
 [ITEMDEF 01e2d]
 //pickpocket dip
-DUPEITEM=01e2c
 
 
 [ITEMDEF 01e34]
@@ -2690,28 +2678,42 @@ DESCRIPTION=Sheaf of Wheat
 
 
 [ITEMDEF 01ec0]
-//pickpocket dip
-DUPEITEM=01e2c
+DEFNAME=i_pickpocket_dip
+TYPE=t_train_pickpocket
+FLIP=1
+RESOURCES=65 i_log,60 i_cloth
+SKILLMAKE=Carpentry 73.6,Tailoring 50.0,t_carpentry
+CATEGORY=Items by Professions
+SUBSECTION=Thief
+DESCRIPTION=Pickpocket Dip
+DUPELIST=01ec1,01ec2
 
 [ITEMDEF 01ec1]
 //pickpocket dip
-DUPEITEM=01e2c
+DUPEITEM=01ec0
 
 [ITEMDEF 01ec2]
 //pickpocket dip
-DUPEITEM=01e2c
+DUPEITEM=01ec0
 
 [ITEMDEF 01ec3]
-//pickpocket dip
-DUPEITEM=01e2c
+DEFNAME=i_pickpocket_dip2
+TYPE=t_train_pickpocket
+FLIP=1
+RESOURCES=65 i_log,60 i_cloth
+SKILLMAKE=Carpentry 73.6,Tailoring 50.0,t_carpentry
+CATEGORY=Items by Professions
+SUBSECTION=Thief
+DESCRIPTION=Pickpocket Dip
+DUPELIST=01ec4,01ec5
 
 [ITEMDEF 01ec4]
 //pickpocket dip
-DUPEITEM=01e2c
+DUPEITEM=01ec3
 
 [ITEMDEF 01ec5]
 //pickpocket dip
-DUPEITEM=01e2c
+DUPEITEM=01ec3
 
 
 [ITEMDEF 02258]
