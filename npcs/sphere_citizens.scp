@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, May 1, 2017
+// FILE LAST UPDATED: Tuesday, Jun 20, 2017
 //
 VERSION=0.56d
 
@@ -35,7 +35,7 @@ c_wandering_recluse (has a skill in excess of 100)
 
 [CHARDEF c_actor]
 ID=c_man
-NAME=actor
+NAME=#NAMES_HUMANMALE the actor
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -53,8 +53,6 @@ CATEGORY=Civilized
 SUBSECTION=Arts & Music
 DESCRIPTION=Actor (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=actor
    COLOR=colors_skin
    NPC=brain_human
    NEED=i_gold
@@ -99,7 +97,7 @@ ON=@NPCRestock
 
 [CHARDEF c_actor_f]
 ID=c_woman
-NAME=actress
+NAME=#NAMES_HUMANFEMALE the actress
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -117,8 +115,6 @@ CATEGORY=Civilized
 SUBSECTION=Arts & Music
 DESCRIPTION=Actor (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=actress
    COLOR=colors_skin
    NPC=brain_human
    NEED=i_gold
@@ -164,13 +160,12 @@ ON=@NPCRestock
 
 [CHARDEF c_artist]
 ID=c_man
-NAME=artist
+NAME=#NAMES_HUMANMALE the artist
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
 TSPEECH=spk_human_default
 TSPEECH=spk_shopkeep
-//TSPEECH=jobArtist
 TEVENTS=e_Human_HearUnk
 TEVENTS=e_Human_ConvInit
 TEVENTS=e_Human_Needs
@@ -183,8 +178,6 @@ CATEGORY=Civilized
 SUBSECTION=Arts & Music
 DESCRIPTION=Artist (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=artist
    COLOR=colors_skin
    NPC=brain_human
    NEED=i_gold
@@ -219,14 +212,13 @@ ON=@NPCRestock
    ITEM=i_palette
 
 [CHARDEF c_artist_f]
-ID=c_WOMAN
-NAME=artist
+ID=c_woman
+NAME=#NAMES_HUMANFEMALE the artist
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
 TSPEECH=spk_human_default
 TSPEECH=spk_shopkeep
-//TSPEECH=jobartist
 TEVENTS=e_Human_HearUnk
 TEVENTS=e_Human_ConvInit
 TEVENTS=e_Human_Needs
@@ -239,8 +231,6 @@ CATEGORY=Civilized
 SUBSECTION=Arts & Music
 DESCRIPTION=Artist (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=artist
    COLOR=colors_skin
    NPC=brain_human
    NEED=i_gold
@@ -275,7 +265,7 @@ ON=@NPCRestock
 
 [CHARDEF c_bard]
 ID=c_man
-NAME=bard
+NAME=#NAMES_HUMANMALE the bard
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -293,8 +283,6 @@ CATEGORY=Civilized
 SUBSECTION=Arts & Music
 DESCRIPTION=Bard (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=bard
    COLOR=colors_skin
    NPC=brain_human
    NEED=i_gold
@@ -340,7 +328,7 @@ ON=@NPCRestock
 
 [CHARDEF c_bard_f]
 ID=c_woman
-NAME=bard
+NAME=#NAMES_HUMANFEMALE the bard
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -358,8 +346,6 @@ CATEGORY=Civilized
 SUBSECTION=Arts & Music
 DESCRIPTION=Bard (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=bard
    COLOR=colors_skin
    NPC=brain_human
    NEED=i_gold
@@ -405,7 +391,7 @@ ON=@NPCRestock
 
 [CHARDEF c_begger]
 ID=c_man
-NAME=begger
+NAME=#NAMES_HUMANMALE the begger
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -417,15 +403,13 @@ TEVENTS=e_Human_Needs
 TEVENTS=e_Human_Greet
 TEVENTS=e_Human_Space
 TEVENTS=e_Human_Refuse
-TEVENTS=e_Human_Scavenge
 TEVENTS=e_Human_Environ
+TEVENTS=e_Human_Scavenge
 TEVENTS=e_trainer
 CATEGORY=Civilized
 SUBSECTION=Villagers
 DESCRIPTION=Beggar (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=beggar
    COLOR=colors_skin
    NPC=brain_beggar
    NEED=i_gold
@@ -455,7 +439,7 @@ ON=@NPCRestock
 
 [CHARDEF c_begger_f]
 ID=c_woman
-NAME=beggar
+NAME=#NAMES_HUMANFEMALE the beggar
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -467,15 +451,13 @@ TEVENTS=e_Human_Needs
 TEVENTS=e_Human_Greet
 TEVENTS=e_Human_Space
 TEVENTS=e_Human_Refuse
-TEVENTS=e_Human_Scavenge
 TEVENTS=e_Human_Environ
+TEVENTS=e_Human_Scavenge
 TEVENTS=e_trainer
 CATEGORY=Civilized
 SUBSECTION=Villagers
 DESCRIPTION=Beggar (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=beggar
    COLOR=colors_skin
    NPC=brain_beggar
    NEED=i_gold
@@ -504,15 +486,15 @@ ON=@NPCRestock
 
 [CHARDEF c_fighter]
 ID=c_man
-NAME=fighter
+NAME=#NAMES_HUMANMALE the fighter
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
 TSPEECH=spk_human_default
 TSPEECH=spk_shopkeep
 TEVENTS=e_Human_HearUnk
-TEVENTS=e_Human_Needs
 TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
 TEVENTS=e_Human_Greet
 TEVENTS=e_Human_Space
 TEVENTS=e_Human_Refuse
@@ -522,7 +504,6 @@ CATEGORY=Civilized
 SUBSECTION=Fighters
 DESCRIPTION=Fighter (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
    DORAND 4
       TITLE=sword fighter
       TITLE=shield fighter
@@ -568,7 +549,7 @@ ON=@NPCRestock
 
 [CHARDEF c_fighter_f]
 ID=c_woman
-NAME=fighter
+NAME=#NAMES_HUMANFEMALE the fighter
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -586,7 +567,6 @@ CATEGORY=Civilized
 SUBSECTION=Fighters
 DESCRIPTION=Fighter (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
    DORAND 5
       TITLE=sword fighter
       TITLE=shield fighter
@@ -631,7 +611,7 @@ ON=@NPCRestock
 
 [CHARDEF c_gambler]
 ID=c_man
-NAME=gambler
+NAME=#NAMES_HUMANMALE the gambler
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -649,8 +629,6 @@ CATEGORY=Civilized
 SUBSECTION=Villagers
 DESCRIPTION=Gambler (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=gambler
    COLOR=colors_skin
    NPC=brain_human
    NEED=i_gold
@@ -686,7 +664,7 @@ ON=@NPCRestock
 
 [CHARDEF c_gambler_f]
 ID=c_woman
-NAME=gambler
+NAME=#NAMES_HUMANFEMALE the gambler
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -704,8 +682,6 @@ CATEGORY=Civilized
 SUBSECTION=Villagers
 DESCRIPTION=Gambler (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=gambler
    COLOR=colors_skin
    NPC=brain_human
    NEED=i_gold
@@ -742,7 +718,7 @@ ON=@NPCRestock
 
 [CHARDEF c_guard]
 ID=c_man
-NAME=guard
+NAME=#NAMES_HUMANMALE the guard
 //DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -760,8 +736,6 @@ CATEGORY=Civilized
 SUBSECTION=Guards & Law
 DESCRIPTION=Guard (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=guard
    COLOR=colors_skin
    NPC=brain_guard
    STR={151 165}
@@ -808,7 +782,7 @@ ON=@NPCRefuseItem
 
 [CHARDEF c_guard_f]
 ID=c_woman
-NAME=guard
+NAME=#NAMES_HUMANFEMALE the guard
 //DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -826,8 +800,6 @@ CATEGORY=Civilized
 SUBSECTION=Guards & Law
 DESCRIPTION=Guard (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=guard
    COLOR=colors_skin
    NPC=brain_guard
    STR={151 165}
@@ -873,7 +845,7 @@ ON=@NPCRefuseItem
 
 [CHARDEF c_gypsy]
 ID=c_man
-NAME=gypsy
+NAME=#NAMES_HUMANMALE the gypsy
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -891,8 +863,6 @@ CATEGORY=Civilized
 SUBSECTION=Villagers
 DESCRIPTION=Gypsy (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=gypsy
    COLOR=colors_skin
    NPC=brain_human
    NEED=i_gold
@@ -944,8 +914,8 @@ ON=@NPCRestock
    ITEM=monster_regbag_mysticism
 
 [CHARDEF c_gypsy_f]
-ID=c_WOMAN
-NAME=gypsy
+ID=c_woman
+NAME=#NAMES_HUMANFEMALE the gypsy
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -963,8 +933,6 @@ CATEGORY=Civilized
 SUBSECTION=Villagers
 DESCRIPTION=Gypsy (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=gypsy
    COLOR=colors_skin
    NPC=brain_human
    NEED=i_gold
@@ -1016,7 +984,7 @@ ON=@NPCRestock
 
 [CHARDEF c_jailor]
 ID=c_man
-NAME=jailor
+NAME=#NAMES_HUMANMALE the jailor
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -1034,8 +1002,6 @@ CATEGORY=Civilized
 SUBSECTION=Guards & Law
 DESCRIPTION=Jailor (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=jailor
    COLOR=colors_skin
    NPC=brain_human
    NEED=i_gold
@@ -1069,7 +1035,7 @@ ON=@NPCRestock
 
 [CHARDEF c_jailor_f]
 ID=c_woman
-NAME=jailor
+NAME=#NAMES_HUMANFEMALE the jailor
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -1087,8 +1053,6 @@ CATEGORY=Civilized
 SUBSECTION=Guards & Law
 DESCRIPTION=Jailor (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=jailor
    COLOR=colors_skin
    NPC=brain_human
    NEED=i_gold
@@ -1121,7 +1085,7 @@ ON=@NPCRestock
 
 [CHARDEF c_judge]
 ID=c_man
-NAME=judge
+NAME=#NAMES_HUMANMALE the judge
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -1139,8 +1103,6 @@ CATEGORY=Civilized
 SUBSECTION=Guards & Law
 DESCRIPTION=Judge (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=judge
    COLOR=colors_skin
    NPC=brain_human
    NEED=i_gold
@@ -1173,7 +1135,7 @@ ON=@NPCRestock
 
 [CHARDEF c_judge_f]
 ID=c_woman
-NAME=judge
+NAME=#NAMES_HUMANFEMALE the judge
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -1191,8 +1153,6 @@ CATEGORY=Civilized
 SUBSECTION=Guards & Law
 DESCRIPTION=Judge (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=judge
    COLOR=colors_skin
    NPC=brain_human
    NEED=i_gold
@@ -1224,15 +1184,15 @@ ON=@NPCRestock
 
 [CHARDEF c_mage]
 ID=c_man
-NAME=mage
+NAME=#NAMES_HUMANMALE the mage
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
 TSPEECH=spk_human_default
 TSPEECH=spk_shopkeep
 TEVENTS=e_Human_HearUnk
-TEVENTS=e_Human_Needs
 TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
 TEVENTS=e_Human_Greet
 TEVENTS=e_Human_Space
 TEVENTS=e_Human_Refuse
@@ -1242,8 +1202,6 @@ CATEGORY=Civilized
 SUBSECTION=Villagers
 DESCRIPTION=Mage (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=mage
    COLOR=colors_skin
    NPC=brain_human
    NEED=i_gold
@@ -1294,15 +1252,15 @@ ON=@NPCRestock
 
 [CHARDEF c_mage_f]
 ID=c_woman
-NAME=mage
+NAME=#NAMES_HUMANFEMALE the mage
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
 TSPEECH=spk_human_default
 TSPEECH=spk_shopkeep
 TEVENTS=e_Human_HearUnk
-TEVENTS=e_Human_Needs
 TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
 TEVENTS=e_Human_Greet
 TEVENTS=e_Human_Space
 TEVENTS=e_Human_Refuse
@@ -1312,8 +1270,6 @@ CATEGORY=Civilized
 SUBSECTION=Villagers
 DESCRIPTION=Mage (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=mage
    COLOR=colors_skin
    NPC=brain_human
    NEED=i_gold
@@ -1367,7 +1323,7 @@ ON=@NPCRestock
 
 [CHARDEF c_magincia_council]
 ID=c_man
-NAME=Magincia council member
+NAME=#NAMES_HUMANMALE the Magincia council member
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -1385,8 +1341,6 @@ CATEGORY=Civilized
 SUBSECTION=Magincia Town Members
 DESCRIPTION=Magincia Council Member (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=Magincia council member
    COLOR=colors_skin
    NPC=brain_human
    NEED=i_gold
@@ -1427,7 +1381,7 @@ ON=@NPCRestock
 
 [CHARDEF c_magincia_council_f]
 ID=c_woman
-NAME=Magincia council member
+NAME=#NAMES_HUMANFEMALE the Magincia council member
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -1445,8 +1399,6 @@ CATEGORY=Civilized
 SUBSECTION=Magincia Town Members
 DESCRIPTION=Magincia Council Member (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=Magincia council member
    COLOR=colors_skin
    NPC=brain_human
    NEED=i_gold
@@ -1486,7 +1438,7 @@ ON=@NPCRestock
 
 [CHARDEF c_magincia_servant]
 ID=c_man
-NAME=Magincia servant
+NAME=#NAMES_HUMANMALE the Magincia servant
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -1504,8 +1456,6 @@ CATEGORY=Civilized
 SUBSECTION=Magincia Town Members
 DESCRIPTION=Magincia Servant (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=Magincia servant
    COLOR=colors_skin
    NPC=brain_human
    NEED=i_gold
@@ -1530,7 +1480,7 @@ ON=@NPCRestock
 
 [CHARDEF c_magincia_servant_f]
 ID=c_woman
-NAME=Magincia servant
+NAME=#NAMES_HUMANFEMALE the Magincia servant
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -1548,8 +1498,6 @@ CATEGORY=Civilized
 SUBSECTION=Magincia Town Members
 DESCRIPTION=Magincia Servant (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=Magincia servant
    COLOR=colors_skin
    NPC=brain_human
    NEED=i_gold
@@ -1575,7 +1523,7 @@ ON=@NPCRestock
 
 [CHARDEF c_mayor]
 ID=c_man
-NAME=mayor
+NAME=#NAMES_HUMANMALE the mayor
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -1593,8 +1541,6 @@ CATEGORY=Civilized
 SUBSECTION=Villagers
 DESCRIPTION=Mayor (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=mayor
    COLOR=colors_skin
    NPC=brain_human
    NEED=i_gold
@@ -1633,7 +1579,7 @@ ON=@NPCRestock
 
 [CHARDEF c_mayor_f]
 ID=c_woman
-NAME=mayor
+NAME=#NAMES_HUMANFEMALE the mayor
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -1651,8 +1597,6 @@ CATEGORY=Civilized
 SUBSECTION=Villagers
 DESCRIPTION=Mayor (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=mayor
    COLOR=colors_skin
    NPC=brain_human
    NEED=i_gold
@@ -1688,7 +1632,7 @@ ON=@NPCRestock
 
 [CHARDEF c_mercenary]
 ID=c_man
-NAME=mercenary
+NAME=#NAMES_HUMANMALE the mercenary
 DESIRES=i_gold
 AVERSIONS=t_trap
 HIREDAYWAGE=70
@@ -1707,8 +1651,6 @@ CATEGORY=Civilized
 SUBSECTION=Fighters
 DESCRIPTION=Mercenary (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=mercenary
    COLOR=colors_skin
    NPC=brain_human
    NEED=i_gold
@@ -1753,7 +1695,7 @@ ON=@NPCRestock
 
 [CHARDEF c_mercenary_f]
 ID=c_woman
-NAME=mercenary
+NAME=#NAMES_HUMANFEMALE the mercenary
 DESIRES=i_gold
 AVERSIONS=t_trap
 HIREDAYWAGE=70
@@ -1772,8 +1714,6 @@ CATEGORY=Civilized
 SUBSECTION=Fighters
 DESCRIPTION=Mercenary (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=mercenary
    COLOR=colors_skin
    NPC=brain_human
    NEED=i_gold
@@ -1817,7 +1757,7 @@ ON=@NPCRestock
 
 [CHARDEF c_miner]
 ID=c_man
-NAME=miner
+NAME=#NAMES_HUMANMALE the miner
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -1835,8 +1775,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Miner (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=miner
    COLOR=colors_skin
    NPC=brain_human
    NEED=i_gold
@@ -1875,7 +1813,7 @@ ON=@NPCRestock
 
 [CHARDEF c_miner_f]
 ID=c_woman
-NAME=miner
+NAME=#NAMES_HUMANFEMALE the miner
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -1893,8 +1831,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Miner (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=miner
    COLOR=colors_skin
    NPC=brain_human
    NEED=i_gold
@@ -1932,7 +1868,7 @@ ON=@NPCRestock
 
 [CHARDEF c_monk]
 ID=c_man
-NAME=monk
+NAME=#NAMES_HUMANMALE the monk
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -1950,8 +1886,6 @@ CATEGORY=Civilized
 SUBSECTION=Religious
 DESCRIPTION=Monk (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=monk
    COLOR=colors_skin
    NPC=brain_human
    NEED=i_gold
@@ -1984,7 +1918,7 @@ ON=@NPCRestock
 
 [CHARDEF c_monk_f]
 ID=c_woman
-NAME=monk
+NAME=#NAMES_HUMANFEMALE the monk
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -2002,8 +1936,6 @@ CATEGORY=Civilized
 SUBSECTION=Religious
 DESCRIPTION=Monk (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=monk
    COLOR=colors_skin
    NPC=brain_human
    NEED=i_gold
@@ -2035,16 +1967,15 @@ ON=@NPCRestock
 
 [CHARDEF c_necromancer]
 ID=c_man
-NAME=necromancer
+NAME=#NAMES_HUMANMALE the necromancer
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
 TSPEECH=spk_human_default
 TSPEECH=spk_shopkeep
-//TSPEECH=jobNecromancer
 TEVENTS=e_Human_HearUnk
-TEVENTS=e_Human_Needs
 TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
 TEVENTS=e_Human_Greet
 TEVENTS=e_Human_Space
 TEVENTS=e_Human_Refuse
@@ -2054,8 +1985,6 @@ CATEGORY=Civilized
 SUBSECTION=Villagers
 DESCRIPTION=Necromancer (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=necromancer
    COLOR=colors_skin
    NPC=brain_human
    NEED=i_gold
@@ -2108,16 +2037,15 @@ ON=@NPCRestock
 
 [CHARDEF c_necromancer_f]
 ID=c_woman
-NAME=necromancer
+NAME=#NAMES_HUMANFEMALE the necromancer
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
 TSPEECH=spk_human_default
 TSPEECH=spk_shopkeep
-//TSPEECH=jobNecromancer
 TEVENTS=e_Human_HearUnk
-TEVENTS=e_Human_Needs
 TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
 TEVENTS=e_Human_Greet
 TEVENTS=e_Human_Space
 TEVENTS=e_Human_Refuse
@@ -2127,8 +2055,6 @@ CATEGORY=Civilized
 SUBSECTION=Villagers
 DESCRIPTION=Necromancer (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=necromancer
    COLOR=colors_skin
    NPC=brain_human
    NEED=i_gold
@@ -2184,7 +2110,7 @@ ON=@NPCRestock
 
 [CHARDEF c_noble]
 ID=c_man
-NAME=noble
+NAME=#NAMES_HUMANMALE the noble
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -2202,8 +2128,6 @@ CATEGORY=Civilized
 SUBSECTION=Villagers
 DESCRIPTION=Noble (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=noble
    COLOR=colors_skin
    NPC=brain_human
    NEED=i_gold
@@ -2252,7 +2176,7 @@ ON=@NPCRestock
 
 [CHARDEF c_noble_f]
 ID=c_woman
-NAME=noble
+NAME=#NAMES_HUMANFEMALE the noble
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -2270,8 +2194,6 @@ CATEGORY=Civilized
 SUBSECTION=Villagers
 DESCRIPTION=Noble (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=noble
    COLOR=colors_skin
    NPC=brain_human
    NEED=i_gold
@@ -2317,7 +2239,7 @@ ON=@NPCRestock
 
 [CHARDEF c_ocllorunner]
 ID=c_man
-NAME=runner
+NAME=#NAMES_HUMANMALE the runner
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -2335,8 +2257,6 @@ CATEGORY=Civilized
 SUBSECTION=Ocllo Town Members
 DESCRIPTION=Ocllo Runner (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=runner
    COLOR=colors_skin
    NPC=brain_human
    NEED=i_gold
@@ -2362,7 +2282,7 @@ ON=@NPCRestock
 
 [CHARDEF c_ocllorunner_f]
 ID=c_woman
-NAME=runner
+NAME=#NAMES_HUMANFEMALE the runner
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -2380,8 +2300,6 @@ CATEGORY=Civilized
 SUBSECTION=Ocllo Town Members
 DESCRIPTION=Ocllo Runner (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=runner
    COLOR=colors_skin
    NPC=brain_human
    NEED=i_gold
@@ -2406,7 +2324,7 @@ ON=@NPCRestock
 
 [CHARDEF c_paladin]
 ID=c_man
-NAME=paladin
+NAME=#NAMES_HUMANMALE the paladin
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -2424,8 +2342,6 @@ CATEGORY=Civilized
 SUBSECTION=Fighters
 DESCRIPTION=Paladin (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=paladin
    COLOR=colors_skin
    NPC=brain_human
    NEED=i_gold
@@ -2472,7 +2388,7 @@ ON=@NPCRestock
 
 [CHARDEF c_paladin_f]
 ID=c_woman
-NAME=paladin
+NAME=#NAMES_HUMANFEMALE the paladin
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -2490,8 +2406,6 @@ CATEGORY=Civilized
 SUBSECTION=Fighters
 DESCRIPTION=Paladin (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=paladin
    COLOR=colors_skin
    NPC=brain_human
    NEED=i_gold
@@ -2537,7 +2451,7 @@ ON=@NPCRestock
 
 [CHARDEF c_peasant]
 ID=c_man
-NAME=peasant
+NAME=#NAMES_HUMANMALE the peasant
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -2547,17 +2461,15 @@ TEVENTS=e_Human_HearUnk
 TEVENTS=e_Human_ConvInit
 TEVENTS=e_Human_Needs
 TEVENTS=e_Human_Greet
-TEVENTS=e_Human_Scavenge
 TEVENTS=e_Human_Space
 TEVENTS=e_Human_Refuse
 TEVENTS=e_Human_Environ
+TEVENTS=e_Human_Scavenge
 TEVENTS=e_trainer
 CATEGORY=Civilized
 SUBSECTION=Villagers
 DESCRIPTION=Peasant (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=peasant
    COLOR=colors_skin
    NPC=brain_human
    NEED=i_gold
@@ -2581,27 +2493,25 @@ ON=@NPCRestock
 
 [CHARDEF c_peasant_f]
 ID=c_woman
-NAME=peasant
+NAME=#NAMES_HUMANFEMALE the peasant
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
 TSPEECH=spk_human_default
 TSPEECH=spk_shopkeep
 TEVENTS=e_Human_HearUnk
-TEVENTS=e_Human_Needs
 TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
 TEVENTS=e_Human_Greet
 TEVENTS=e_Human_Space
-TEVENTS=e_Human_Scavenge
 TEVENTS=e_Human_Refuse
 TEVENTS=e_Human_Environ
+TEVENTS=e_Human_Scavenge
 TEVENTS=e_trainer
 CATEGORY=Civilized
 SUBSECTION=Villagers
 DESCRIPTION=Peasant (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=peasant
    COLOR=colors_skin
    NPC=brain_human
    NEED=i_gold
@@ -2624,7 +2534,7 @@ ON=@NPCRestock
 
 [CHARDEF c_priest]
 ID=c_man
-NAME=priest
+NAME=#NAMES_HUMANMALE the priest
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -2642,8 +2552,6 @@ CATEGORY=Civilized
 SUBSECTION=Religious
 DESCRIPTION=Priest (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=priest
    COLOR=colors_skin
    NPC=brain_human
    NEED=i_gold
@@ -2677,7 +2585,7 @@ ON=@NPCRestock
 
 [CHARDEF c_priestess_f]
 ID=c_woman
-NAME=priestess
+NAME=#NAMES_HUMANFEMALE the priestess
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -2695,8 +2603,6 @@ CATEGORY=Civilized
 SUBSECTION=Religious
 DESCRIPTION=Priestess (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=priestess
    COLOR=colors_skin
    NPC=brain_human
    NEED=i_gold
@@ -2729,7 +2635,7 @@ ON=@NPCRestock
 
 [CHARDEF c_ranger]
 ID=c_man
-NAME=ranger
+NAME=#NAMES_HUMANMALE the ranger
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -2747,8 +2653,6 @@ CATEGORY=Civilized
 SUBSECTION=Fighters
 DESCRIPTION=Ranger (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=ranger
    COLOR=colors_skin
    NPC=brain_human
    NEED=i_gold
@@ -2797,7 +2701,7 @@ ON=@NPCRestock
 
 [CHARDEF c_ranger_f]
 ID=c_woman
-NAME=ranger
+NAME=#NAMES_HUMANFEMALE the ranger
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -2815,8 +2719,6 @@ CATEGORY=Civilized
 SUBSECTION=Fighters
 DESCRIPTION=Ranger (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=ranger
    COLOR=colors_skin
    NPC=brain_human
    NEED=i_gold
@@ -2864,7 +2766,7 @@ ON=@NPCRestock
 
 [CHARDEF c_sailor]
 ID=c_man
-NAME=sailor
+NAME=#NAMES_HUMANMALE the sailor
 DESIRES=i_gold
 AVERSIONS=t_trap
 HIREDAYWAGE=50
@@ -2883,8 +2785,6 @@ CATEGORY=Civilized
 SUBSECTION=Villagers
 DESCRIPTION=Sailor (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=sailor
    COLOR=colors_skin
    NPC=brain_human
    NEED=i_gold
@@ -2920,7 +2820,7 @@ ON=@NPCRestock
 
 [CHARDEF c_sailor_f]
 ID=c_woman
-NAME=sailor
+NAME=#NAMES_HUMANFEMALE the sailor
 DESIRES=i_gold
 AVERSIONS=t_trap
 HIREDAYWAGE=50
@@ -2939,8 +2839,6 @@ CATEGORY=Civilized
 SUBSECTION=Villagers
 DESCRIPTION=Sailor (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=sailor
    COLOR=colors_skin
    NPC=brain_human
    NEED=i_gold
@@ -2975,7 +2873,7 @@ ON=@NPCRestock
 
 [CHARDEF c_sculptor]
 ID=c_man
-NAME=sculptor
+NAME=#NAMES_HUMANMALE the sculptor
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -2993,8 +2891,6 @@ CATEGORY=Civilized
 SUBSECTION=Arts & Music
 DESCRIPTION=Sculptor (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=sculptor
    COLOR=colors_skin
    NPC=brain_human
    NEED=i_gold
@@ -3030,7 +2926,7 @@ ON=@NPCRestock
 
 [CHARDEF c_sculptor_f]
 ID=c_woman
-NAME=sculptor
+NAME=#NAMES_HUMANFEMALE the sculptor
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -3048,8 +2944,6 @@ CATEGORY=Civilized
 SUBSECTION=Arts & Music
 DESCRIPTION=Sculptor (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=sculptor
    COLOR=colors_skin
    NPC=brain_human
    NEED=i_gold
@@ -3085,7 +2979,7 @@ ON=@NPCRestock
 
 [CHARDEF c_thief]
 ID=c_man
-NAME=thief
+NAME=#NAMES_HUMANMALE the thief
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -3097,15 +2991,13 @@ TEVENTS=e_Human_Needs
 TEVENTS=e_Human_Greet
 TEVENTS=e_Human_Space
 TEVENTS=e_Human_Refuse
-TEVENTS=e_Human_Scavenge
 TEVENTS=e_Human_Environ
+TEVENTS=e_Human_Scavenge
 TEVENTS=e_trainer
 CATEGORY=Civilized
 SUBSECTION=Villagers
 DESCRIPTION=Thief (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=thief
    COLOR=colors_skin
    NPC=brain_thief
    NEED=i_gold
@@ -3152,7 +3044,7 @@ ON=@NPCRestock
 
 [CHARDEF c_thief_f]
 ID=c_woman
-NAME=thief
+NAME=#NAMES_HUMANFEMALE the thief
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -3164,15 +3056,13 @@ TEVENTS=e_Human_Needs
 TEVENTS=e_Human_Greet
 TEVENTS=e_Human_Space
 TEVENTS=e_Human_Refuse
-TEVENTS=e_Human_Scavenge
 TEVENTS=e_Human_Environ
+TEVENTS=e_Human_Scavenge
 TEVENTS=e_trainer
 CATEGORY=Civilized
 SUBSECTION=Villagers
 DESCRIPTION=Thief (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=thief
    COLOR=colors_skin
    NPC=brain_thief
    NEED=i_gold
@@ -3218,7 +3108,7 @@ ON=@NPCRestock
 
 [CHARDEF c_heal_wander]
 ID=c_man
-NAME=wandering healer
+NAME=#NAMES_HUMANMALE the wandering healer
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -3236,8 +3126,6 @@ CATEGORY=Civilized
 SUBSECTION=Villagers
 DESCRIPTION=Wandering Healer (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=wandering healer
    COLOR=colors_skin
    NPC=brain_healer
    NEED=i_gold
@@ -3277,7 +3165,7 @@ ON=@NPCRestock
 
 [CHARDEF c_heal_wander_f]
 ID=c_woman
-NAME=wandering healer
+NAME=#NAMES_HUMANFEMALE the wandering healer
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -3295,8 +3183,6 @@ CATEGORY=Civilized
 SUBSECTION=Villagers
 DESCRIPTION=Wandering Healer (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=wandering healer
    COLOR=colors_skin
    NPC=brain_healer
    NEED=i_gold
@@ -3335,7 +3221,7 @@ ON=@NPCRestock
 
 [CHARDEF c_weaponstrainer]
 ID=c_man
-NAME=weapons trainer
+NAME=#NAMES_HUMANMALE the weapons trainer
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -3353,8 +3239,6 @@ CATEGORY=Civilized
 SUBSECTION=Fighters
 DESCRIPTION=Weapons Trainer (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=weapons trainer
    COLOR=colors_skin
    NPC=brain_human
    NEED=i_gold
@@ -3392,15 +3276,15 @@ ON=@NPCRestock
 
 [CHARDEF c_weaponstrainer_f]
 ID=c_woman
-NAME=weapons trainer
+NAME=#NAMES_HUMANFEMALE the weapons trainer
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
 TSPEECH=spk_human_default
 TSPEECH=spk_shopkeep
 TEVENTS=e_Human_HearUnk
-TEVENTS=e_Human_Needs
 TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
 TEVENTS=e_Human_Greet
 TEVENTS=e_Human_Space
 TEVENTS=e_Human_Refuse
@@ -3410,8 +3294,6 @@ CATEGORY=Civilized
 SUBSECTION=Fighters
 DESCRIPTION=Weapons Trainer (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=weapons trainer
    COLOR=colors_skin
    NPC=brain_human
    NEED=i_gold
@@ -3448,7 +3330,7 @@ ON=@NPCRestock
 
 [CHARDEF c_gladiator_overseer]
 ID=c_man
-NAME=gladiator overseer
+NAME=#NAMES_HUMANMALE the gladiator overseer
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -3466,8 +3348,6 @@ CATEGORY=Civilized
 SUBSECTION=Fighters
 DESCRIPTION=Gladiator Overseer (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=gladiator overseer
    COLOR=colors_skin
    NPC=brain_human
    NEED=i_gold

@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, May 7, 2017
+// FILE LAST UPDATED: Tuesday, Jun 20, 2017
 //
 VERSION=0.56d
 
@@ -34,7 +34,7 @@ c_ninjashopkeep_f
 
 [CHARDEF c_alchemist]
 ID=c_man
-NAME=alchemist
+NAME=#NAMES_HUMANMALE the alchemist
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -52,8 +52,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Alchemist (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=alchemist
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -96,7 +94,7 @@ ON=@NPCRestock
 
 [CHARDEF c_alchemist_f]
 ID=c_woman
-NAME=alchemist
+NAME=#NAMES_HUMANFEMALE the alchemist
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -114,8 +112,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Alchemist (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=alchemist
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -157,7 +153,7 @@ ON=@NPCRestock
 
 [CHARDEF c_animaltrainer]
 ID=c_man
-NAME=animal trainer
+NAME=#NAMES_HUMANMALE the animal trainer
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -175,8 +171,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Animal Trainer (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=animal trainer
    COLOR=colors_skin
    NPC=brain_animal_trainer
    NEED=i_gold
@@ -217,7 +211,7 @@ ON=@NPCRestock
 
 [CHARDEF c_animaltrainer_f]
 ID=c_woman
-NAME=animal trainer
+NAME=#NAMES_HUMANFEMALE the animal trainer
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -235,8 +229,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Animal Trainer (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=animal trainer
    COLOR=colors_skin
    NPC=brain_animal_trainer
    NEED=i_gold
@@ -276,7 +268,7 @@ ON=@NPCRestock
 
 [CHARDEF c_architect]
 ID=c_man
-NAME=architect
+NAME=#NAMES_HUMANMALE the architect
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -294,8 +286,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Architect (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=architect
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -335,7 +325,7 @@ ON=@NPCRestock
 
 [CHARDEF c_architect_f]
 ID=c_woman
-NAME=architect
+NAME=#NAMES_HUMANFEMALE the architect
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -353,8 +343,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Architect (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=architect
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -393,7 +381,7 @@ ON=@NPCRestock
 
 [CHARDEF c_armorer]
 ID=c_man
-NAME=armorer
+NAME=#NAMES_HUMANMALE the armorer
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -411,8 +399,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Armorer (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=armorer
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -465,7 +451,7 @@ ON=@NPCRestock
 
 [CHARDEF c_armorer_f]
 ID=c_woman
-NAME=armorer
+NAME=#NAMES_HUMANFEMALE the armorer
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -483,8 +469,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Armorer (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=armorer
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -536,7 +520,7 @@ ON=@NPCRestock
 
 [CHARDEF c_baker]
 ID=c_man
-NAME=baker
+NAME=#NAMES_HUMANMALE the baker
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -554,8 +538,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Baker (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=baker
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -595,7 +577,7 @@ ON=@NPCRestock
 
 [CHARDEF c_baker_f]
 ID=c_woman
-NAME=baker
+NAME=#NAMES_HUMANFEMALE the baker
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -613,8 +595,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Baker (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=baker
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -653,13 +633,13 @@ ON=@NPCRestock
 
 [CHARDEF c_banker]
 ID=c_man
-NAME=banker
+NAME=#NAMES_HUMANMALE the banker
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
 TSPEECH=spk_human_default
 TSPEECH=spk_shopkeep
-//TSPEECH=jobBanker
+TSPEECH=jobBanker
 TEVENTS=e_Human_HearUnk
 TEVENTS=e_Human_ConvInit
 TEVENTS=e_Human_Needs
@@ -672,8 +652,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Banker (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=banker
    COLOR=colors_skin
    NPC=brain_banker
    NEED=i_gold
@@ -711,13 +689,13 @@ ON=@NPCRestock
 
 [CHARDEF c_banker_f]
 ID=c_woman
-NAME=banker
+NAME=#NAMES_HUMANFEMALE the banker
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
 TSPEECH=spk_human_default
 TSPEECH=spk_shopkeep
-//TSPEECH=jobBanker
+TSPEECH=jobBanker
 TEVENTS=e_Human_HearUnk
 TEVENTS=e_Human_ConvInit
 TEVENTS=e_Human_Needs
@@ -730,8 +708,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Banker (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=banker
    COLOR=colors_skin
    NPC=brain_banker
    NEED=i_gold
@@ -768,7 +744,7 @@ ON=@NPCRestock
 
 [CHARDEF c_barber]
 ID=c_man
-NAME=barber
+NAME=#NAMES_HUMANMALE the barber
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -786,8 +762,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Barber (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=barber
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -826,7 +800,7 @@ ON=@NPCRestock
 
 [CHARDEF c_barber_f]
 ID=c_woman
-NAME=barber
+NAME=#NAMES_HUMANFEMALE the barber
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -844,8 +818,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Barber (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=barber
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -883,7 +855,7 @@ ON=@NPCRestock
 
 [CHARDEF c_beekeeper]
 ID=c_man
-NAME=beekeeper
+NAME=#NAMES_HUMANMALE the beekeeper
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -901,8 +873,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Beekeeper (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=beekeeper
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -946,7 +916,7 @@ ON=@NPCRestock
 
 [CHARDEF c_beekeeper_f]
 ID=c_woman
-NAME=beekeeper
+NAME=#NAMES_HUMANFEMALE the beekeeper
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -964,8 +934,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Beekeeper (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=beekeeper
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -1008,7 +976,7 @@ ON=@NPCRestock
 
 [CHARDEF c_blacksmith]
 ID=c_man
-NAME=blacksmith
+NAME=#NAMES_HUMANMALE the blacksmith
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -1026,8 +994,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Blacksmith (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=blacksmith
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -1084,7 +1050,7 @@ ON=@NPCRestock
 
 [CHARDEF c_blacksmith_f]
 ID=c_woman
-NAME=blacksmith
+NAME=#NAMES_HUMANFEMALE the blacksmith
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -1102,8 +1068,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Blacksmith (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=blacksmith
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -1159,7 +1123,7 @@ ON=@NPCRestock
 
 [CHARDEF c_bowyer]
 ID=c_man
-NAME=bowyer
+NAME=#NAMES_HUMANMALE the bowyer
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -1177,8 +1141,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Bowyer (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=bowyer
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -1220,7 +1182,7 @@ ON=@NPCRestock
 
 [CHARDEF c_bowyer_f]
 ID=c_woman
-NAME=bowyer
+NAME=#NAMES_HUMANFEMALE the bowyer
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -1238,8 +1200,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Bowyer (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=bowyer
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -1280,7 +1240,7 @@ ON=@NPCRestock
 
 [CHARDEF c_butcher]
 ID=c_man
-NAME=butcher
+NAME=#NAMES_HUMANMALE the butcher
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -1298,8 +1258,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Butcher (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=butcher
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -1344,7 +1302,7 @@ ON=@NPCRestock
 
 [CHARDEF c_butcher_f]
 ID=c_woman
-NAME=butcher
+NAME=#NAMES_HUMANFEMALE the butcher
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -1362,8 +1320,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Butcher (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=butcher
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -1407,7 +1363,7 @@ ON=@NPCRestock
 
 [CHARDEF c_carpenter]
 ID=c_man
-NAME=carpenter
+NAME=#NAMES_HUMANMALE the carpenter
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -1425,8 +1381,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Carpenter (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=carpenter
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -1465,7 +1419,7 @@ ON=@NPCRestock
 
 [CHARDEF c_carpenter_f]
 ID=c_woman
-NAME=carpenter
+NAME=#NAMES_HUMANFEMALE the carpenter
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -1483,8 +1437,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Carpenter (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=carpenter
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -1522,7 +1474,7 @@ ON=@NPCRestock
 
 [CHARDEF c_cashual]
 ID=c_man
-NAME=cashual
+NAME=#NAMES_HUMANMALE the cashual
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -1537,11 +1489,9 @@ TEVENTS=e_Human_Refuse
 TEVENTS=e_Human_Environ
 TEVENTS=e_trainer
 CATEGORY=Civilized
-SUBSECTION=Ocllo Town Members
-DESCRIPTION=Ocllo Casual (human male)
+SUBSECTION=Tradesmen
+DESCRIPTION=Cashual (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=cashual
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -1581,7 +1531,7 @@ ON=@NPCRestock
 
 [CHARDEF c_cashual_f]
 ID=c_woman
-NAME=Cashual
+NAME=#NAMES_HUMANFEMALE the cashual
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -1596,11 +1546,9 @@ TEVENTS=e_Human_Refuse
 TEVENTS=e_Human_Environ
 TEVENTS=e_trainer
 CATEGORY=Civilized
-SUBSECTION=Ocllo Town Members
-DESCRIPTION=Ocllo Casual (human female)
+SUBSECTION=Tradesmen
+DESCRIPTION=Cashual (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=cashual
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -1639,7 +1587,7 @@ ON=@NPCRestock
 
 [CHARDEF c_cobbler]
 ID=c_man
-NAME=cobbler
+NAME=#NAMES_HUMANMALE the cobbler
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -1657,8 +1605,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Cobbler (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=cobbler
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -1694,7 +1640,7 @@ ON=@NPCRestock
 
 [CHARDEF c_cobbler_f]
 ID=c_woman
-NAME=cobbler
+NAME=#NAMES_HUMANFEMALE the cobbler
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -1712,8 +1658,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Cobbler (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=cobbler
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -1750,7 +1694,7 @@ ON=@NPCRestock
 
 [CHARDEF c_cook]
 ID=c_man
-NAME=cook
+NAME=#NAMES_HUMANMALE the cook
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -1768,8 +1712,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Cook (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=cook
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -1812,7 +1754,7 @@ ON=@NPCRestock
 
 [CHARDEF c_cook_f]
 ID=c_woman
-NAME=cook
+NAME=#NAMES_HUMANFEMALE the cook
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -1830,8 +1772,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Cook (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=cook
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -1873,7 +1813,7 @@ ON=@NPCRestock
 
 [CHARDEF c_farmer]
 ID=c_man
-NAME=farmer
+NAME=#NAMES_HUMANMALE the farmer
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -1891,8 +1831,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Farmer (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=farmer
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -1930,7 +1868,7 @@ ON=@NPCRestock
 
 [CHARDEF c_farmer_f]
 ID=c_woman
-NAME=farmer
+NAME=#NAMES_HUMANFEMALE the farmer
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -1948,8 +1886,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Farmer (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=farmer
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -1985,7 +1921,7 @@ ON=@NPCRestock
 
 [CHARDEF c_fisher]
 ID=c_man
-NAME=fisherman
+NAME=#NAMES_HUMANMALE the fisherman
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -2003,8 +1939,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Fisherman (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=fisherman
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -2045,7 +1979,7 @@ ON=@NPCRestock
 
 [CHARDEF c_fisher_f]
 ID=c_woman
-NAME=fisherwoman
+NAME=#NAMES_HUMANFEMALE the fisherwoman
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -2063,8 +1997,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Fisherwoman (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=fisherwoman
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -2104,7 +2036,7 @@ ON=@NPCRestock
 
 [CHARDEF c_furtrader]
 ID=c_man
-NAME=fur trader
+NAME=#NAMES_HUMANMALE the fur trader
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -2122,8 +2054,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Fur Trader (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=fur trader
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -2167,7 +2097,7 @@ ON=@NPCRestock
 
 [CHARDEF c_furtrader_f]
 ID=c_woman
-NAME=fur trader
+NAME=#NAMES_HUMANFEMALE the fur trader
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -2185,8 +2115,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Fur Trader (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=fur trader
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -2229,7 +2157,7 @@ ON=@NPCRestock
 
 [CHARDEF c_glassblower]
 ID=c_MAN
-NAME=glassblower
+NAME=#NAMES_HUMANMALE the glassblower
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -2247,8 +2175,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Glassblower (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=glassblower
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -2286,7 +2212,7 @@ ON=@NPCRestock
 
 [CHARDEF c_glassblower_f]
 ID=c_woman
-NAME=glassblower
+NAME=#NAMES_HUMANFEMALE the glassblower
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -2304,8 +2230,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Glassblower (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=glassblower
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -2347,7 +2271,7 @@ ON=@NPCRestock
 
 [CHARDEF c_healer]
 ID=c_man
-NAME=healer
+NAME=#NAMES_HUMANMALE the healer
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -2365,8 +2289,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Healer (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=healer
    COLOR=colors_skin
    NPC=brain_healer
    NEED=i_gold
@@ -2406,7 +2328,7 @@ ON=@NPCRestock
 
 [CHARDEF c_healer_f]
 ID=c_woman
-NAME=healer
+NAME=#NAMES_HUMANFEMALE the healer
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -2424,8 +2346,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Healer (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=healer
    COLOR=colors_skin
    NPC=brain_healer
    NEED=i_gold
@@ -2464,7 +2384,7 @@ ON=@NPCRestock
 
 [CHARDEF c_herbalist]
 ID=c_man
-NAME=herbalist
+NAME=#NAMES_HUMANMALE the herbalist
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -2482,8 +2402,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Herbalist (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=herbalist
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -2541,7 +2459,7 @@ ON=@NPCRestock
 
 [CHARDEF c_herbalist_f]
 ID=c_woman
-NAME=herbalist
+NAME=#NAMES_HUMANFEMALE the herbalist
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -2559,8 +2477,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Herbalist (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=herbalist
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -2614,7 +2530,7 @@ ON=@NPCRestock
 
 [CHARDEF c_innkeeper]
 ID=c_man
-NAME=innkeeper
+NAME=#NAMES_HUMANMALE the innkeeper
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -2632,8 +2548,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Innkeeper (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=innkeeper
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -2678,7 +2592,7 @@ ON=@NPCRestock
 
 [CHARDEF c_innkeeper_f]
 ID=c_woman
-NAME=innkeeper
+NAME=#NAMES_HUMANFEMALE the innkeeper
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -2696,8 +2610,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Innkeeper (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=innkeeper
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -2741,7 +2653,7 @@ ON=@NPCRestock
 
 [CHARDEF c_jeweler]
 ID=c_man
-NAME=jewler
+NAME=#NAMES_HUMANMALE the jeweler
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -2759,8 +2671,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Jeweler (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=jeweler
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -2803,7 +2713,7 @@ ON=@NPCRestock
 
 [CHARDEF c_jeweler_f]
 ID=c_woman
-NAME=jewler
+NAME=#NAMES_HUMANFEMALE the jeweler
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -2821,8 +2731,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Jeweler (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=jeweler
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -2864,7 +2772,7 @@ ON=@NPCRestock
 
 [CHARDEF c_lumberjack]
 ID=c_man
-NAME=lumberjack
+NAME=#NAMES_HUMANMALE the lumberjack
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -2882,8 +2790,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Lumberjack (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=lumberjack
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -2935,7 +2841,7 @@ ON=@NPCRestock
 
 [CHARDEF c_lumberjack_f]
 ID=c_woman
-NAME=lumberjack
+NAME=#NAMES_HUMANFEMALE the lumberjack
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -2953,8 +2859,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Lumberjack (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=lumberjack
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -3005,7 +2909,7 @@ ON=@NPCRestock
 
 [CHARDEF c_mageshop]
 ID=c_man
-NAME=mage
+NAME=#NAMES_HUMANMALE the mage
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -3023,8 +2927,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Mage (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=mage
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -3068,7 +2970,7 @@ ON=@NPCRestock
 
 [CHARDEF c_mageshop_f]
 ID=c_woman
-NAME=mage
+NAME=#NAMES_HUMANFEMALE the mage
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -3086,8 +2988,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Mage (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=mage
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -3130,7 +3030,7 @@ ON=@NPCRestock
 
 [CHARDEF c_mapmaker]
 ID=c_man
-NAME=mapmaker
+NAME=#NAMES_HUMANMALE the mapmaker
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -3148,8 +3048,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Mapmaker (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=mapmaker
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -3189,7 +3087,7 @@ ON=@NPCRestock
 
 [CHARDEF c_mapmaker_f]
 ID=c_woman
-NAME=mapmaker
+NAME=#NAMES_HUMANFEMALE the mapmaker
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -3207,8 +3105,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Mapmaker (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=mapmaker
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -3247,7 +3143,7 @@ ON=@NPCRestock
 
 [CHARDEF c_miller]
 ID=c_man
-NAME=miller
+NAME=#NAMES_HUMANMALE the miller
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -3265,8 +3161,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Miller (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=miller
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -3303,15 +3197,15 @@ ON=@NPCRestock
 
 [CHARDEF c_miller_f]
 ID=c_woman
-NAME=
+NAME=#NAMES_HUMANFEMALE the miller
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
 TSPEECH=spk_human_default
 TSPEECH=spk_shopkeep
 TEVENTS=e_Human_HearUnk
-TEVENTS=e_Human_Needs
 TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
 TEVENTS=e_Human_Greet
 TEVENTS=e_Human_Space
 TEVENTS=e_Human_Refuse
@@ -3321,8 +3215,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Miller (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=miller
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -3358,13 +3250,13 @@ ON=@NPCRestock
 
 [CHARDEF c_minter]
 ID=c_man
-NAME=minter
+NAME=#NAMES_HUMANMALE the minter
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
 TSPEECH=spk_human_default
 TSPEECH=spk_shopkeep
-//TSPEECH=jobBanker
+TSPEECH=jobBanker
 TEVENTS=e_Human_HearUnk
 TEVENTS=e_Human_ConvInit
 TEVENTS=e_Human_Needs
@@ -3377,8 +3269,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Minter (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=minter
    COLOR=colors_skin
    NPC=brain_banker
    NEED=i_gold
@@ -3413,13 +3303,13 @@ ON=@NPCRestock
 
 [CHARDEF c_minter_f]
 ID=c_woman
-NAME=minter
+NAME=#NAMES_HUMANFEMALE the minter
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
 TSPEECH=spk_human_default
 TSPEECH=spk_shopkeep
-//TSPEECH=jobBanker
+TSPEECH=jobBanker
 TEVENTS=e_Human_HearUnk
 TEVENTS=e_Human_ConvInit
 TEVENTS=e_Human_Needs
@@ -3432,8 +3322,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Minter (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=minter
    COLOR=colors_skin
    NPC=brain_banker
    NEED=i_gold
@@ -3467,7 +3355,7 @@ ON=@NPCRestock
 
 [CHARDEF c_provis]
 ID=c_man
-NAME=provisioner
+NAME=#NAMES_HUMANMALE the provisioner
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -3485,8 +3373,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Provisioner (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=provisioner
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -3528,7 +3414,7 @@ ON=@NPCRestock
 
 [CHARDEF c_provis_f]
 ID=c_woman
-NAME=provisioner
+NAME=#NAMES_HUMANFEMALE the provisioner
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -3546,8 +3432,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Provisioner (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=provisioner
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -3589,7 +3473,7 @@ ON=@NPCRestock
 
 [CHARDEF c_rancher]
 ID=c_man
-NAME=rancher
+NAME=#NAMES_HUMANMALE the rancher
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -3607,8 +3491,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Rancher (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=rancher
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -3651,7 +3533,7 @@ ON=@NPCRestock
 
 [CHARDEF c_rancher_f]
 ID=c_woman
-NAME=rancher
+NAME=#NAMES_HUMANFEMALE the rancher
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -3669,8 +3551,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Rancher (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=rancher
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -3712,7 +3592,7 @@ ON=@NPCRestock
 
 [CHARDEF c_scribe]
 ID=c_man
-NAME=scribe
+NAME=#NAMES_HUMANMALE the scribe
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -3730,8 +3610,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Scribe (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=scribe
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -3780,7 +3658,7 @@ ON=@NPCRestock
 
 [CHARDEF c_scribe_f]
 ID=c_woman
-NAME=scribe
+NAME=#NAMES_HUMANFEMALE the scribe
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -3798,8 +3676,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Scribe (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=scribe
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -3844,7 +3720,7 @@ ON=@Create
 
 [CHARDEF c_shepherd]
 ID=c_man
-NAME=shepherd
+NAME=#NAMES_HUMANMALE the shepherd
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -3862,8 +3738,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Shepherd (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=shepherd
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -3902,7 +3776,7 @@ ON=@NPCRestock
 
 [CHARDEF c_shepherd_f]
 ID=c_woman
-NAME=shepherdess
+NAME=#NAMES_HUMANFEMALE the shepherdess
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -3920,8 +3794,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Shepherd (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=shepherdess
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -3959,7 +3831,7 @@ ON=@NPCRestock
 
 [CHARDEF c_shipwright]
 ID=c_man
-NAME=shipwright
+NAME=#NAMES_HUMANMALE the shipwright
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -3977,8 +3849,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Shipwright (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=shipwright
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -4015,7 +3885,7 @@ ON=@NPCRestock
 
 [CHARDEF c_shipwright_f]
 ID=c_woman
-NAME=shipwright
+NAME=#NAMES_HUMANFEMALE the shipwright
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -4033,8 +3903,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Shipwright (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=shipwright
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -4070,7 +3938,7 @@ ON=@NPCRestock
 
 [CHARDEF c_tailor]
 ID=c_man
-NAME=tailor
+NAME=#NAMES_HUMANMALE the tailor
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -4088,8 +3956,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Tailor (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=tailor
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -4129,7 +3995,7 @@ ON=@NPCRestock
 
 [CHARDEF c_tailor_f]
 ID=c_woman
-NAME=tailor
+NAME=#NAMES_HUMANFEMALE the tailor
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -4147,8 +4013,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Tailor (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=tailor
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -4187,7 +4051,7 @@ ON=@NPCRestock
 
 [CHARDEF c_tanner]
 ID=c_man
-NAME=tanner
+NAME=#NAMES_HUMANMALE the tanner
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -4205,8 +4069,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Tanner (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=tanner
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -4250,7 +4112,7 @@ ON=@NPCRestock
 
 [CHARDEF c_tanner_f]
 ID=c_woman
-NAME=tanner
+NAME=#NAMES_HUMANFEMALE the tanner
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -4268,8 +4130,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Tanner (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=tanner
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -4311,7 +4171,7 @@ ON=@NPCRestock
 
 [CHARDEF c_tavernkeeper]
 ID=c_man
-NAME=tavernkeeper
+NAME=#NAMES_HUMANMALE the tavernkeeper
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -4329,8 +4189,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Tavernkeeper (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=tavernkeeper
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -4372,7 +4230,7 @@ ON=@NPCRestock
 
 [CHARDEF c_tavernkeeper_f]
 ID=c_woman
-NAME=tavernkeeper
+NAME=#NAMES_HUMANFEMALE the tavernkeeper
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -4390,8 +4248,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Tavernkeeper (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=tavernkeeper
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -4432,7 +4288,7 @@ ON=@NPCRestock
 
 [CHARDEF c_tinker]
 ID=c_man
-NAME=tinker
+NAME=#NAMES_HUMANMALE the tinker
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -4450,8 +4306,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Tinker (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=tinker
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -4492,7 +4346,7 @@ ON=@NPCRestock
 
 [CHARDEF c_tinker_f]
 ID=c_woman
-NAME=tinker
+NAME=#NAMES_HUMANFEMALE the tinker
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -4510,8 +4364,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Tinker (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=tinker
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -4549,7 +4401,7 @@ ON=@NPCRestock
 
 [CHARDEF c_vegiseller]
 ID=c_man
-NAME=vegetable seller
+NAME=#NAMES_HUMANMALE the vegetable seller
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -4567,8 +4419,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Vegetable Seller (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=vegetable seller
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -4605,7 +4455,7 @@ ON=@NPCRestock
 
 [CHARDEF c_vegiseller_f]
 ID=c_woman
-NAME=vegetable seller
+NAME=#NAMES_HUMANFEMALE the vegetable seller
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -4623,8 +4473,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Vegetable Seller (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=vegetable seller
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -4660,7 +4508,7 @@ ON=@NPCRestock
 
 [CHARDEF c_vet]
 ID=c_man
-NAME=veterinarian
+NAME=#NAMES_HUMANMALE the veterinarian
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -4678,8 +4526,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Veterinarian (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=veterinarian
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -4719,7 +4565,7 @@ ON=@NPCRestock
 
 [CHARDEF c_vet_f]
 ID=c_woman
-NAME=veterinarian
+NAME=#NAMES_HUMANFEMALE the veterinarian
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -4737,8 +4583,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Veterinarian (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=veterinarian
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -4777,7 +4621,7 @@ ON=@NPCRestock
 
 [CHARDEF c_waiter]
 ID=c_man
-NAME=waiter
+NAME=#NAMES_HUMANMALE the waiter
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -4795,8 +4639,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Waiter (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=waiter
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -4834,17 +4676,17 @@ ON=@NPCRestock
 
 [CHARDEF c_waitress]
 ID=c_woman
-NAME=waitress
+NAME=#NAMES_HUMANFEMALE the waitress
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
 TSPEECH=spk_human_default
 TSPEECH=spk_shopkeep
+TEVENTS=e_Human_HearUnk
 TEVENTS=e_Human_ConvInit
 TEVENTS=e_Human_Needs
 TEVENTS=e_Human_Greet
 TEVENTS=e_Human_Space
-TEVENTS=e_Human_HearUnk
 TEVENTS=e_Human_Refuse
 TEVENTS=e_Human_Environ
 TEVENTS=e_trainer
@@ -4852,8 +4694,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Waitress (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=waitress
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -4890,7 +4730,7 @@ ON=@NPCRestock
 
 [CHARDEF c_weaponsmith_blade]
 ID=c_man
-NAME=bladed weapons smith
+NAME=#NAMES_HUMANMALE the weaponsmith
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -4906,10 +4746,8 @@ TEVENTS=e_Human_Environ
 TEVENTS=e_trainer
 CATEGORY=Civilized
 SUBSECTION=Tradesmen
-DESCRIPTION=Bladed Weapons Smith (human male)
+DESCRIPTION=Weaponsmith (bladed)(human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=bladed weapons smith
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -4962,7 +4800,7 @@ ON=@NPCRestock
 
 [CHARDEF c_weaponsmith_blade_f]
 ID=c_woman
-NAME=bladed weapons smith
+NAME=#NAMES_HUMANFEMALE the weaponsmith
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -4978,10 +4816,8 @@ TEVENTS=e_Human_Environ
 TEVENTS=e_trainer
 CATEGORY=Civilized
 SUBSECTION=Tradesmen
-DESCRIPTION=Bladed Weapons Smith (human female)
+DESCRIPTION=Weaponsmith (bladed)(human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=bladed weapons smith
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -5032,7 +4868,7 @@ ON=@NPCRestock
 
 [CHARDEF c_weaponsmith_blunt]
 ID=c_man
-NAME=blunt weapons smith
+NAME=#NAMES_HUMANMALE the weaponsmith
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -5048,10 +4884,8 @@ TEVENTS=e_Human_Environ
 TEVENTS=e_trainer
 CATEGORY=Civilized
 SUBSECTION=Tradesmen
-DESCRIPTION=Blunt Weapons Smith (human male)
+DESCRIPTION=Weaponsmith (blunt)(human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=blunt weapons smith
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -5103,7 +4937,7 @@ ON=@NPCRestock
 
 [CHARDEF c_weaponsmith_blunt_f]
 ID=c_woman
-NAME=blunt weapons smith
+NAME=#NAMES_HUMANFEMALE the weaponsmith
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -5119,10 +4953,8 @@ TEVENTS=e_Human_Environ
 TEVENTS=e_trainer
 CATEGORY=Civilized
 SUBSECTION=Tradesmen
-DESCRIPTION=Blunt Weapons Smith (human female)
+DESCRIPTION=Weaponsmith (blunt)(human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=blunt weapons smith
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -5173,7 +5005,7 @@ ON=@NPCRestock
 
 [CHARDEF c_weaver]
 ID=c_man
-NAME=weaver
+NAME=#NAMES_HUMANMALE the weaver
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -5191,8 +5023,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Weaver (human male)
 ON=@Create
-   NAME=#NAMES_HUMANMALE
-   TITLE=weaver
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -5232,7 +5062,7 @@ ON=@NPCRestock
 
 [CHARDEF c_weaver_f]
 ID=c_woman
-NAME=weaver
+NAME=#NAMES_HUMANFEMALE the weaver
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -5250,8 +5080,6 @@ CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Weaver (human female)
 ON=@Create
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=weaver
    COLOR=colors_skin
    NPC=brain_vendor
    NEED=i_gold
@@ -5286,6 +5114,5 @@ ON=@NPCRestock
 
    SELL=VENDOR_S_WEAVER
    BUY=VENDOR_B_WEAVER
-
 
 [EOF]

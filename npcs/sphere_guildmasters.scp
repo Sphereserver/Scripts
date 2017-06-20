@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, May 1, 2017
+// FILE LAST UPDATED: Tuesday, Jun 20, 2017
 //
 VERSION=0.56d
 
@@ -20,7 +20,7 @@ FIXME: NPC guildmaster "to do" list
 
 [CHARDEF c_guild_arcane]
 ID=c_man
-NAME=Guildmaster of Magery
+NAME=#NAMES_HUMANMALE the mage guildmaster
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -35,12 +35,10 @@ TEVENTS=e_Human_Environ
 TEVENTS=e_trainer
 CATEGORY=Civilized
 SUBSECTION=Guildmasters
-DESCRIPTION=Guildmaster of Arcane Arts (human male)
+DESCRIPTION=Mage (human male)
 ON=@Create
    TAG.OVERRIDE.TRAINSKILLMAX=50.0
    TAG.OVERRIDE.TRAINSKILLMAXPERCENT=50
-   NAME=#NAMES_HUMANMALE
-   TITLE=Guildmaster of Magery
    NPC=brain_human
    COLOR=colors_skin
    STR={91 105}
@@ -70,7 +68,7 @@ ON=@NPCRestock
 
 [CHARDEF c_guild_arcane_f]
 ID=c_woman
-NAME=Guildmaster of Arcane Arts
+NAME=#NAMES_HUMANFEMALE the mage guildmistress
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -85,12 +83,10 @@ TEVENTS=e_Human_Environ
 TEVENTS=e_trainer
 CATEGORY=Civilized
 SUBSECTION=Guildmasters
-DESCRIPTION=Guildmaster of Arcane Arts (human female)
+DESCRIPTION=Mage (human female)
 ON=@Create
    TAG.OVERRIDE.TRAINSKILLMAX=500
    TAG.OVERRIDE.TRAINSKILLMAXPERCENT=50
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=Guildmaster of Arcane Arts
    NPC=brain_human
    COLOR=colors_skin
    STR={91 105}
@@ -119,7 +115,7 @@ ON=@NPCRestock
 
 [CHARDEF c_guild_clothier]
 ID=c_man
-NAME=Guildmaster Clothier
+NAME=#NAMES_HUMANMALE the tailor guildmaster
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -134,12 +130,10 @@ TEVENTS=e_Human_Environ
 TEVENTS=e_trainer
 CATEGORY=Civilized
 SUBSECTION=Guildmasters
-DESCRIPTION=Guildmaster Clothier  (human male)
+DESCRIPTION=Tailor (human male)
 ON=@Create
    TAG.OVERRIDE.TRAINSKILLMAX=500
    TAG.OVERRIDE.TRAINSKILLMAXPERCENT=50
-   NAME=#NAMES_HUMANMALE
-   TITLE=Guildmaster Clothier
    NPC=brain_human
    COLOR=colors_skin
    STR={71 85}
@@ -166,7 +160,7 @@ ON=@NPCRestock
 
 [CHARDEF c_guild_clothier_f]
 ID=c_woman
-NAME=Guildmaster Clothier
+NAME=#NAMES_HUMANFEMALE the tailor guildmistress
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -181,12 +175,10 @@ TEVENTS=e_Human_Environ
 TEVENTS=e_trainer
 CATEGORY=Civilized
 SUBSECTION=Guildmasters
-DESCRIPTION=Guildmaster Clothier  (human female)
+DESCRIPTION=Tailor (human female)
 ON=@Create
    TAG.OVERRIDE.TRAINSKILLMAX=500
    TAG.OVERRIDE.TRAINSKILLMAXPERCENT=50
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=Guildmaster Clothier
    NPC=brain_human
    COLOR=colors_skin
    STR={71 85}
@@ -214,7 +206,7 @@ ON=@NPCRestock
 
 [CHARDEF c_guild_bard]
 ID=c_man
-NAME=Guildmaster Bard
+NAME=#NAMES_HUMANMALE the bard guildmaster
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -229,12 +221,10 @@ TEVENTS=e_Human_Environ
 TEVENTS=e_trainer
 CATEGORY=Civilized
 SUBSECTION=Guildmasters
-DESCRIPTION=Guildmaster Bard (human male)
+DESCRIPTION=Bard (human male)
 ON=@Create
    TAG.OVERRIDE.TRAINSKILLMAX=500
    TAG.OVERRIDE.TRAINSKILLMAXPERCENT=50
-   NAME=#NAMES_HUMANMALE
-   TITLE=Guildmaster Bard
    NPC=brain_human
    COLOR=colors_skin
    STR={86 100}
@@ -268,7 +258,7 @@ ON=@NPCRestock
 
 [CHARDEF c_guild_bard_f]
 ID=c_woman
-NAME=Guildmaster Bard
+NAME=#NAMES_HUMANFEMALE the bard guildmistress
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -283,12 +273,10 @@ TEVENTS=e_Human_Environ
 TEVENTS=e_trainer
 CATEGORY=Civilized
 SUBSECTION=Guildmasters
-DESCRIPTION=Guildmaster Bard (human female)
+DESCRIPTION=Bard (human female)
 ON=@Create
    TAG.OVERRIDE.TRAINSKILLMAX=500
    TAG.OVERRIDE.TRAINSKILLMAXPERCENT=50
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=Guildmaster Bard
    NPC=brain_human
    COLOR=colors_skin
    STR={86 100}
@@ -321,7 +309,7 @@ ON=@NPCRestock
 
 [CHARDEF c_guild_engineer]
 ID=c_man
-NAME=Guildmaster Engineer
+NAME=#NAMES_HUMANMALE the engineer guildmaster
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -336,12 +324,10 @@ TEVENTS=e_Human_Environ
 TEVENTS=e_trainer
 CATEGORY=Civilized
 SUBSECTION=Guildmasters
-DESCRIPTION=Guildmaster Engineer (human male)
+DESCRIPTION=Engineer (human male)
 ON=@Create
    TAG.OVERRIDE.TRAINSKILLMAX=500
    TAG.OVERRIDE.TRAINSKILLMAXPERCENT=50
-   NAME=#NAMES_HUMANMALE
-   TITLE=Guildmaster Engineer
    NPC=brain_human
    COLOR=colors_skin
    STR={71 85}
@@ -371,7 +357,7 @@ ON=@NPCRestock
 
 [CHARDEF c_guild_engineer_f]
 ID=c_woman
-NAME=Guildmaster Engineer
+NAME=#NAMES_HUMANFEMALE the engineer guildmistress
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -386,12 +372,10 @@ TEVENTS=e_Human_Environ
 TEVENTS=e_trainer
 CATEGORY=Civilized
 SUBSECTION=Guildmasters
-DESCRIPTION=Guildmaster Engineer (human female)
+DESCRIPTION=Engineer (human female)
 ON=@Create
    TAG.OVERRIDE.TRAINSKILLMAX=500
    TAG.OVERRIDE.TRAINSKILLMAXPERCENT=50
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=Guildmaster Engineer
    NPC=brain_human
    COLOR=colors_skin
    STR={71 85}
@@ -420,7 +404,7 @@ ON=@NPCRestock
 
 [CHARDEF c_guild_healer]
 ID=c_man
-NAME=Guildmaster Healer
+NAME=#NAMES_HUMANMALE the healer guildmaster
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -435,12 +419,10 @@ TEVENTS=e_Human_Environ
 TEVENTS=e_trainer
 CATEGORY=Civilized
 SUBSECTION=Guildmasters
-DESCRIPTION=Guildmaster Healer (human male)
+DESCRIPTION=Healer (human male)
 ON=@Create
    TAG.OVERRIDE.TRAINSKILLMAX=500
    TAG.OVERRIDE.TRAINSKILLMAXPERCENT=50
-   NAME=#NAMES_HUMANMALE
-   TITLE=Guildmaster Healer
    NPC=brain_healer
    COLOR=colors_skin
    STR={81 95}
@@ -465,7 +447,7 @@ ON=@NPCRestock
 
 [CHARDEF c_guild_healer_f]
 ID=c_woman
-NAME=Guildmaster Healer
+NAME=#NAMES_HUMANFEMALE the healer guildmistress
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -480,12 +462,10 @@ TEVENTS=e_Human_Environ
 TEVENTS=e_trainer
 CATEGORY=Civilized
 SUBSECTION=Guildmasters
-DESCRIPTION=Guildmaster Healer (human female)
+DESCRIPTION=Healer (human female)
 ON=@Create
    TAG.OVERRIDE.TRAINSKILLMAX=500
    TAG.OVERRIDE.TRAINSKILLMAXPERCENT=50
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=Guildmaster Healer
    NPC=brain_healer
    COLOR=colors_skin
    STR={81 95}
@@ -509,7 +489,7 @@ ON=@NPCRestock
 
 [CHARDEF c_guild_maritime]
 ID=c_man
-NAME=Maritime Guildmaster
+NAME=#NAMES_HUMANMALE the fisher guildmaster
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -524,12 +504,10 @@ TEVENTS=e_Human_Environ
 TEVENTS=e_trainer
 CATEGORY=Civilized
 SUBSECTION=Guildmasters
-DESCRIPTION=Maritime Guildmaster  (human male)
+DESCRIPTION=Fisher (human male)
 ON=@Create
    TAG.OVERRIDE.TRAINSKILLMAX=500
    TAG.OVERRIDE.TRAINSKILLMAXPERCENT=50
-   NAME=#NAMES_HUMANMALE
-   TITLE=Maritime Guildmaster
    NPC=brain_human
    COLOR=colors_skin
    STR={81 98}
@@ -555,7 +533,7 @@ ON=@NPCRestock
 
 [CHARDEF c_guild_maritime_f]
 ID=c_woman
-NAME=Maritime Guildmaster
+NAME=#NAMES_HUMANFEMALE the fisher guildmistress
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -570,12 +548,10 @@ TEVENTS=e_Human_Environ
 TEVENTS=e_trainer
 CATEGORY=Civilized
 SUBSECTION=Guildmasters
-DESCRIPTION=Maritime Guildmaster (human female)
+DESCRIPTION=Fisher (human female)
 ON=@Create
    TAG.OVERRIDE.TRAINSKILLMAX=500
    TAG.OVERRIDE.TRAINSKILLMAXPERCENT=50
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=Maritime Guildmaster
    NPC=brain_human
    COLOR=colors_skin
    STR={81 98}
@@ -600,7 +576,7 @@ ON=@NPCRestock
 
 [CHARDEF c_guild_merchant]
 ID=c_man
-NAME=Guildmaster Merchant
+NAME=#NAMES_HUMANMALE the merchant guildmaster
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -615,12 +591,10 @@ TEVENTS=e_Human_Environ
 TEVENTS=e_trainer
 CATEGORY=Civilized
 SUBSECTION=Guildmasters
-DESCRIPTION=Guildmaster Merchant (human male)
+DESCRIPTION=Merchant (human male)
 ON=@Create
    TAG.OVERRIDE.TRAINSKILLMAX=500
    TAG.OVERRIDE.TRAINSKILLMAXPERCENT=50
-   NAME=#NAMES_HUMANMALE
-   TITLE=Guildmaster Merchant
    NPC=brain_human
    COLOR=colors_skin
    STR={71 85}
@@ -649,7 +623,7 @@ ON=@NPCRestock
 
 [CHARDEF c_guild_merchant_f]
 ID=c_woman
-NAME=Guildmaster Merchant
+NAME=#NAMES_HUMANFEMALE the merchant guildmistress
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -664,12 +638,10 @@ TEVENTS=e_Human_Environ
 TEVENTS=e_trainer
 CATEGORY=Civilized
 SUBSECTION=Guildmasters
-DESCRIPTION=Guildmaster Merchant (human female)
+DESCRIPTION=Merchant (human female)
 ON=@Create
    TAG.OVERRIDE.TRAINSKILLMAX=500
    TAG.OVERRIDE.TRAINSKILLMAXPERCENT=50
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=Guildmaster Merchant
    NPC=brain_human
    COLOR=colors_skin
    STR={71 85}
@@ -697,7 +669,7 @@ ON=@NPCRestock
 
 [CHARDEF c_guild_ranger]
 ID=c_man
-NAME=Guildmaster Ranger
+NAME=#NAMES_HUMANMALE the ranger guildmaster
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -712,12 +684,10 @@ TEVENTS=e_Human_Environ
 TEVENTS=e_trainer
 CATEGORY=Civilized
 SUBSECTION=Guildmasters
-DESCRIPTION=Guildmaster Ranger (human male)
+DESCRIPTION=Ranger (human male)
 ON=@Create
    TAG.OVERRIDE.TRAINSKILLMAX=500
    TAG.OVERRIDE.TRAINSKILLMAXPERCENT=50
-   NAME=#NAMES_HUMANMALE
-   TITLE=Guildmaster Ranger
    NPC=brain_human
    COLOR=colors_skin
    STR={91 105}
@@ -755,7 +725,7 @@ ON=@NPCRestock
 
 [CHARDEF c_guild_ranger_f]
 ID=c_woman
-NAME=Guildmaster Ranger
+NAME=#NAMES_HUMANFEMALE the ranger guildmistress
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -770,12 +740,10 @@ TEVENTS=e_Human_Environ
 TEVENTS=e_trainer
 CATEGORY=Civilized
 SUBSECTION=Guildmasters
-DESCRIPTION=Guildmaster Ranger (human female)
+DESCRIPTION=Ranger (human female)
 ON=@Create
    TAG.OVERRIDE.TRAINSKILLMAX=500
    TAG.OVERRIDE.TRAINSKILLMAXPERCENT=50
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=Guildmaster Ranger
    NPC=brain_human
    COLOR=colors_skin
    STR={91 105}
@@ -812,7 +780,7 @@ ON=@NPCRestock
 
 [CHARDEF c_guild_miner]
 ID=c_man
-NAME=Guildmaster Miner
+NAME=#NAMES_HUMANMALE the miner guildmaster
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -827,12 +795,10 @@ TEVENTS=e_Human_Environ
 TEVENTS=e_trainer
 CATEGORY=Civilized
 SUBSECTION=Guildmasters
-DESCRIPTION=Guildmaster Miner (human male)
+DESCRIPTION=Miner (human male)
 ON=@Create
    TAG.OVERRIDE.TRAINSKILLMAX=500
    TAG.OVERRIDE.TRAINSKILLMAXPERCENT=50
-   NAME=#NAMES_HUMANMALE
-   TITLE=Guildmaster Miner
    NPC=brain_human
    COLOR=colors_skin
    STR={86 100}
@@ -863,7 +829,7 @@ ON=@NPCRestock
 
 [CHARDEF c_guild_miner_f]
 ID=c_woman
-NAME=Guildmaster Miner
+NAME=#NAMES_HUMANFEMALE the miner guildmistress
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -878,12 +844,10 @@ TEVENTS=e_Human_Environ
 TEVENTS=e_trainer
 CATEGORY=Civilized
 SUBSECTION=Guildmasters
-DESCRIPTION=Guildmaster Miner (human female)
+DESCRIPTION=Miner (human female)
 ON=@Create
    TAG.OVERRIDE.TRAINSKILLMAX=500
    TAG.OVERRIDE.TRAINSKILLMAXPERCENT=50
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=Guildmaster Miner
    NPC=brain_human
    COLOR=colors_skin
    STR={86 100}
@@ -913,7 +877,7 @@ ON=@NPCRestock
 
 [CHARDEF c_guild_thief]
 ID=c_man
-NAME=Guildmaster Thief
+NAME=#NAMES_HUMANMALE the thief guildmaster
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -928,12 +892,11 @@ TEVENTS=e_Human_Environ
 TEVENTS=e_trainer
 CATEGORY=Civilized
 SUBSECTION=Guildmasters
-DESCRIPTION=Guildmaster Thief (human male)
+DESCRIPTION=Thief (human male)
 ON=@Create
    TAG.OVERRIDE.TRAINSKILLMAX=500
    TAG.OVERRIDE.TRAINSKILLMAXPERCENT=50
-   NAME=#NAMES_HUMANMALE
-   TITLE=Guildmaster Thief
+   NPC=brain_human
    COLOR=colors_skin
    STR={91 105}
    DEX={91 105}
@@ -951,7 +914,6 @@ ON=@Create
    WRESTLING={35.0 55.0}
    MACEFIGHTING={35.0 55.0}
    TACTICS={35.0 55.0}
-   NPC=brain_human
    ITEMNEWBIE=random_male_hair
    COLOR=colors_hair
    ITEMNEWBIE=random_facial_hair
@@ -969,7 +931,7 @@ ON=@NPCRestock
 
 [CHARDEF c_guild_thief_f]
 ID=c_woman
-NAME=Guildmaster Thief
+NAME=#NAMES_HUMANFEMALE the thief guildmistress
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -984,12 +946,10 @@ TEVENTS=e_Human_Environ
 TEVENTS=e_trainer
 CATEGORY=Civilized
 SUBSECTION=Guildmasters
-DESCRIPTION=Guildmaster Thief (human female)
+DESCRIPTION=Thief (human female)
 ON=@Create
    TAG.OVERRIDE.TRAINSKILLMAX=500
    TAG.OVERRIDE.TRAINSKILLMAXPERCENT=50
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=Guildmaster Thief
    NPC=brain_human
    COLOR=colors_skin
    STR={91 105}
@@ -1024,7 +984,7 @@ ON=@NPCRestock
 
 [CHARDEF c_guild_warrior]
 ID=c_man
-NAME=Guildmaster Warrior
+NAME=#NAMES_HUMANMALE the warrior guildmaster
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -1039,12 +999,10 @@ TEVENTS=e_Human_Environ
 TEVENTS=e_trainer
 CATEGORY=Civilized
 SUBSECTION=Guildmasters
-DESCRIPTION=Guildmaster Warrior (human male)
+DESCRIPTION=Warrior (human male)
 ON=@Create
    TAG.OVERRIDE.TRAINSKILLMAX=500
    TAG.OVERRIDE.TRAINSKILLMAXPERCENT=50
-   NAME=#NAMES_HUMANMALE
-   TITLE=Guildmaster Warrior
    NPC=brain_human
    COLOR=colors_skin
    STR={96 110}
@@ -1076,7 +1034,7 @@ ON=@NPCRestock
 
 [CHARDEF c_guild_warrior_f]
 ID=c_woman
-NAME=Guildmaster Warrior
+NAME=#NAMES_HUMANFEMALE the warrior guildmistress
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -1091,12 +1049,10 @@ TEVENTS=e_Human_Environ
 TEVENTS=e_trainer
 CATEGORY=Civilized
 SUBSECTION=Guildmasters
-DESCRIPTION=Guildmaster Warrior (human female)
+DESCRIPTION=Warrior (human female)
 ON=@Create
    TAG.OVERRIDE.TRAINSKILLMAX=500
    TAG.OVERRIDE.TRAINSKILLMAXPERCENT=50
-   NAME=#NAMES_HUMANFEMALE
-   TITLE=Guildmaster Warrior
    NPC=brain_human
    COLOR=colors_skin
    STR={96 110}
@@ -1123,6 +1079,5 @@ ON=@NPCRestock
    ITEM=i_platemail_gorget
    ITEM=i_axe_double
    ITEM=random_coin_purse
-
 
 [EOF]
