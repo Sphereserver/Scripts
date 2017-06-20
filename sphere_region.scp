@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2014
+// SPHERE by : Menasoft ©1997-2017
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,9 +7,9 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, Nov 30, 2014
+// FILE LAST UPDATED: Tuesday, Jun 20, 2017
 //
-VERSION=0.56c
+VERSION=0.56d
 
 [COMMENT sphere_resource]
 A REGIONRESOURCE (usually named mr_something) describes how a map resource
@@ -352,7 +352,7 @@ SRC.SOUND={0e 10 0f 10 022 1 023 1 024 1 0267 1}
 
 [REGIONTYPE r_default]
 ON=@Enter
-IF (<SRC.ISPLAYER>)
+IF (<SRC.ISPLAYER>) && STRCMPI("<TAG.MUSIC>","<SRC.REGION.TAG.MUSIC>")
  IF !(<isempty <TAG.MUSIC>>)
   SRC.MIDILIST=<TAG.MUSIC>
  ELSE

@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, May 16, 2017
+// FILE LAST UPDATED: Tuesday, Jun 20, 2017
 //
 VERSION=0.56d
 
@@ -4675,11 +4675,6 @@ resfire=6
 rescold=7
 respoison=6
 resenergy=6
-
-on=@ClientTooltip
-addcliloc_description
-addcliloc_wearable
-return 1
 
 [itemdef 0404e]
 dupeitem=0306
