@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, May 1, 2017
+// FILE LAST UPDATED: Thursday, Jul 6, 2017
 //
 VERSION=0.56d
 
@@ -1009,7 +1009,7 @@ ON=@Hit
 [CHARDEF c_wisp_crystal]
 ID=c_wisp
 NAME=crystal wisp
-CAN=MT_WALK|MT_FLY|MT_FIRE_IMMUNE|MT_USEHANDS
+CAN=MT_WALK|MT_RUN|MT_FIRE_IMMUNE|MT_USEHANDS
 DAM=30,50
 ARMOR=50
 RESOURCES=1 i_crystals_broken
@@ -1752,7 +1752,7 @@ ID=c_changeling
 NAME=Travesty
 ICON=i_worldgem_bit
 SOUND=snd_monster_daemon1
-CAN=MT_WALK|MT_FLY|MT_USEHANDS|MT_EQUIP
+CAN=MT_WALK|MT_RUN|MT_USEHANDS|MT_EQUIP
 DAM=90,120
 RANGE=2
 ARMOR=95
@@ -2031,7 +2031,7 @@ ID=c_demon_arcane
 NAME=crystal demon
 ICON=i_pet_demon_arcane
 SOUND=snd_monster_dragon1
-CAN=MT_WALK|MT_FLY|MT_RUN
+CAN=MT_WALK|MT_RUN|MT_USEHANDS|MT_EQUIP
 DAM=25,50
 ARMOR=60
 DESIRES=r_dungeon_prism_of_light,i_gold,t_gem
@@ -2164,7 +2164,7 @@ ID=c_changeling
 NAME=Guile
 ICON=i_pet_changeling
 //SOUND=snd_monster_daemon1
-CAN=MT_WALK|MT_FLY|MT_USEHANDS|MT_EQUIP
+CAN=MT_WALK|MT_RUN|MT_USEHANDS|MT_EQUIP
 DAM=14,20
 ARMOR=80
 DESIRES=r_dungeon_twisted_weald,i_gold,t_gem
@@ -2211,7 +2211,7 @@ ID=c_changeling
 NAME=Irk
 ICON=i_pet_changeling
 //SOUND=snd_monster_daemon1
-CAN=MT_WALK|MT_USEHANDS|MT_EQUIP|MT_FLY
+CAN=MT_WALK|MT_RUN|MT_USEHANDS|MT_EQUIP
 DAM=14,20
 ARMOR=80
 DESIRES=r_dungeon_twisted_weald,i_gold,t_gem
@@ -2259,7 +2259,7 @@ ID=c_changeling
 NAME=Spite
 ICON=i_pet_changeling
 //SOUND=snd_monster_daemon1
-CAN=MT_WALK|MT_FLY|MT_USEHANDS|MT_EQUIP
+CAN=MT_WALK|MT_RUN|MT_USEHANDS|MT_EQUIP
 DAM=14,20
 ARMOR=80
 DESIRES=r_dungeon_twisted_weald,i_gold,t_gem

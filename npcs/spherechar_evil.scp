@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, May 1, 2017
+// FILE LAST UPDATED: Thursday, Jul 6, 2017
 //
 VERSION=0.56d
 
@@ -270,7 +270,7 @@ ON=@NPCRestock
 [CHARDEF c_sprite_sprite]
 ID=c_elf_female
 NAME=sprite
-CAN=MT_WALK|MT_FLY|MT_FEMALE|MT_EQUIP
+CAN=MT_WALK|MT_RUN|MT_FEMALE|MT_EQUIP
 DAM=6,10
 TSPEECH=spk_human_prime
 TSPEECH=spk_human_default
@@ -314,7 +314,7 @@ ON=@NPCRestock
 [CHARDEF c_sprite_mage]
 ID=c_elf_female
 NAME=sprite
-CAN=MT_WALK|MT_FLY|MT_FEMALE|MT_EQUIP|MT_USEHANDS
+CAN=MT_WALK|MT_RUN|MT_FEMALE|MT_EQUIP|MT_USEHANDS
 DAM=6,10
 TAG.SlayerGroup=FEY
 TSPEECH=spk_human_prime
@@ -357,7 +357,7 @@ ON=@NPCRestock
 [CHARDEF c_sprite_sorc]
 ID=c_elf_female
 NAME=sprite
-CAN=MT_WALK|MT_FLY|MT_FEMALE|MT_EQUIP|MT_USEHANDS
+CAN=MT_WALK|MT_RUN|MT_FEMALE|MT_EQUIP|MT_USEHANDS
 DAM=6,10
 TAG.SlayerGroup=FEY
 TSPEECH=spk_human_prime
@@ -389,7 +389,7 @@ ON=@Create
    COLOR=colors_green
 ON=@NPCRestock
    ITEM={ i_servered_elf_ears 1 0 9 }
-   ITEM={ i_hat_wizards 99 i_hat_wizards_magic 1 }
+   ITEM=i_hat_wizards
    COLOR=0599
    ITEM=random_dresses
    COLOR=0599
@@ -403,7 +403,7 @@ ON=@NPCRestock
 [CHARDEF c_sprite_archer]
 ID=c_elf_female
 NAME=sprite
-CAN=MT_WALK|MT_FLY|MT_FEMALE|MT_EQUIP|MT_USEHANDS
+CAN=MT_WALK|MT_RUN|MT_FEMALE|MT_EQUIP|MT_USEHANDS
 DAM=6,10
 TAG.SlayerGroup=FEY
 TSPEECH=spk_human_prime
@@ -454,7 +454,7 @@ ON=@NPCRestock
 [CHARDEF c_sprite_assassin]
 ID=c_elf_female
 NAME=sprite
-CAN=MT_WALK|MT_FLY|MT_FEMALE
+CAN=MT_WALK|MT_RUN|MT_FEMALE
 DESIRES=i_gold,t_gem
 AVERSIONS=t_trap,r_civilization
 DAM=6,15
@@ -499,7 +499,7 @@ ON=@NPCRestock
 [CHARDEF c_sprite_witch]
 ID=c_elf_female
 NAME=sprite
-CAN=MT_WALK|MT_FLY|MT_FEMALE
+CAN=MT_WALK|MT_RUN|MT_FEMALE
 DAM=6,10
 DESIRES=i_gold,t_gem,t_wand,t_potion,t_scroll,t_reagent
 AVERSIONS=t_trap,r_civilization
@@ -544,7 +544,7 @@ ON=@NPCRestock
 [CHARDEF c_sprite_necro]
 ID=c_elf_female
 NAME=sprite
-CAN=MT_WALK|MT_FLY|MT_FEMALE
+CAN=MT_WALK|MT_RUN|MT_FEMALE
 DAM=6,10
 DESIRES=i_gold,t_gem,t_wand,t_potion,t_scroll,t_reagent
 AVERSIONS=t_trap,r_civilization,e_carnivores3
@@ -590,7 +590,7 @@ ON=@NPCRestock
 [CHARDEF c_sprite_paladin]
 ID=c_elf_female
 NAME=sprite
-CAN=MT_WALK|MT_FLY|MT_FEMALE
+CAN=MT_WALK|MT_RUN|MT_FEMALE
 DAM=8,20
 DESIRES=i_gold,t_gem
 AVERSIONS=t_trap,r_civilization,e_carnivores3
