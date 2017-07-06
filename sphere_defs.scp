@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Wednesday, May 24, 2017
+// FILE LAST UPDATED: Wednesday, Jul 5, 2017
 //
 VERSION=0.56d
 
@@ -1942,7 +1942,7 @@ height_0a0 18 //DEFNAME=c_elemental_unknown_red
 height_0a1 18 //DEFNAME=c_elemental_ice
 height_0a2 18 //DEFNAME=c_elemental_poison
 height_0a3 18 //DEFNAME=c_elemental_snow
-height_0a4 16 //DEFNAME=c_elemental_swamp
+height_0a4 16 //DEFNAME=c_energy_vortex
 height_0a5 15 //DEFNAME=c_wisp_dark
 height_0a6 18 //DEFNAME=c_elemental_ore_gold
 height_0a7 9  //DEFNAME=c_bear_brown
@@ -2086,13 +2086,12 @@ height_0191 16 //DEFNAME=c_woman
 height_0192 16 //DEFNAME=c_ghost_man
 height_0193 16 //DEFNAME=c_ghost_woman
 
-height_01a4 8 //DEFNAME=c_child_mb
-height_01a5 8 //DEFNAME=c_child_md
-height_01a6 8 //DEFNAME=c_child_fb
-height_01a7 8 //DEFNAME=c_child_fd
-height_01a8 2 //DEFNAME=c_man_invisible
+height_01a4 8  //DEFNAME=c_child_mb
+height_01a5 8  //DEFNAME=c_child_md
+height_01a6 8  //DEFNAME=c_child_fb
+height_01a7 8  //DEFNAME=c_child_fd
+height_01a8 2  //DEFNAME=c_man_invisible
 
-height_023d 18 //DEFNAME=c_vortex
 height_023e 16 //DEFNAME=c_blade_spirit
 
 height_025d 16 //DEFNAME=c_elf_male

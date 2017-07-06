@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, May 1, 2017
+// FILE LAST UPDATED: Wednesday, Jul 5, 2017
 //
 VERSION=0.56d
 
@@ -749,9 +749,8 @@ ID=c_kaze_kemono             7
 ID=c_crystal_elemental       7
 ID=c_efreet                  6
 ID=c_elemental_acid          5
-ID=c_elemental_swamp         4
-ID=c_elemental_snow          3
-ID=c_elemental_poison        2
+ID=c_elemental_snow          4
+ID=c_elemental_poison        3
 ID=c_elemental_lava          2
 ID=c_elemental_blood         1
 
@@ -1089,7 +1088,6 @@ CATEGORY=Spawn Groups
 SUBSECTION=Monsters
 DESCRIPTION=Void Monsters
 ID=c_wanderer_void         1
-//ID=c_vortex                1
 
 [SPAWN spawn_Worms]
 CATEGORY=Spawn Groups
@@ -1245,7 +1243,6 @@ ID=c_quagmire                9
 ID=c_swamp_dragon
 ID=c_kappa                   6
 ID=c_slith_toxic             5
-ID=c_elemental_swamp         5
 ID=c_steed_dark
 ID=c_plague_beast            4
 ID=c_elemental_poison        3
@@ -1558,7 +1555,6 @@ ID=c_skeletal_mount
 ID=c_minotaur
 ID=c_wanderer_void
 ID=c_patchwork_skeleton
-//ID=c_vortex
 ID=c_gargoyle
 ID=c_ogre
 ID=c_ettin
@@ -1648,7 +1644,6 @@ ID=c_demon_ice
 ID=c_gargoyle_stone
 ID=c_succubus
 ID=c_mummy
-ID=c_elemental_swamp
 ID=c_steed_fire
 ID=c_meer_mage
 ID=c_demon_moloch
@@ -1790,7 +1785,6 @@ ID=c_slith
 ID=c_skeletal_mount
 ID=c_minotaur
 ID=c_patchwork_skeleton
-//ID=c_vortex
 ID=c_ophidian_justicar
 ID=c_corpser
 ID=c_ettin_w_hammer
@@ -1846,7 +1840,6 @@ ID=c_cyclops
 ID=c_slith_toxic
 ID=c_solen_warrior
 ID=c_goblin_gray
-ID=c_elemental_swamp
 ID=c_mummy
 ID=c_demon_moloch
 ID=c_serpent_lava
@@ -2042,7 +2035,6 @@ ID=c_demon_arcane
 ID=c_skeletal_mount
 ID=c_wanderer_void
 ID=c_patchwork_skeleton
-//ID=c_vortex
 ID=c_corpser
 ID=c_hellcat_pred
 ID=c_giant_beetle
@@ -2092,7 +2084,6 @@ ID=c_gargoyle_undead
 ID=c_demon_ice
 ID=c_gargoyle_stone
 ID=c_gargoyle_fire
-ID=c_elemental_swamp
 ID=c_demon_moloch
 ID=c_serpent_lava
 ID=c_warhorse_dread

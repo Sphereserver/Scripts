@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Wednesday, May 24, 2017
+// FILE LAST UPDATED: Wednesday, Jul 5, 2017
 //
 VERSION=0.56d
 
@@ -2612,7 +2612,6 @@ ON=@Create
    RESFIRE={20 40}
    RESPOISON={5 10}
    ITEMNEWBIE=i_light_source
-   ATTR=attr_magic|attr_newbie
 ON=@NPCRestock
    ITEM=loot_wisp
 
@@ -7518,52 +7517,39 @@ ON=@GetHit
    ENDIF
 
 [CHARDEF 0a4]
-//FIXME: No Stratics entry...looks like a purple air elemental
-DEFNAME=c_elemental_swamp
-NAME=swamp elemental
-ICON=i_pet_elem_blood
-SOUND=snd_elementl_watrel1
-CAN=MT_WALK|MT_SWIM|MT_NONHUM
-DAM=18,36
-ARMOR=45
-DESIRES=r_swamp,t_coin,t_gold,t_gem,t_wand,t_potion,t_scroll,t_reagent
-AVERSIONS=t_trap,r_civilization
-//FOODTYPE=
-//MAXFOOD=
-//RESOURCES=
-BLOODCOLOR=colors_green
-TAG.Barding.Diff=130.1
-DamPoison=50
-TAG.HitPoison=4	//Deadly
-TAG.SlayerGroup=ELEMENTAL
-CATEGORY=Monsters
-SUBSECTION=Elementals
-DESCRIPTION=Swamp Elemental
+DEFNAME=c_energy_vortex
+NAME=energy vortex
+ICON=i_fx_blade_spirit_1
+SOUND=snd_elementl_airelem1
+CAN=MT_WALK|MT_RUN|MT_NONHUM
+DAM=14,17
+ARMOR=40
+BLOODCOLOR=-1
+MOVERATE=150
+FollowerSlots=2
+DamEnergy=100
+CATEGORY=Spells
+SUBSECTION=Magery
+DESCRIPTION=Energy Vortex
 ON=@Create
-   NPC=brain_monster
-   FAME={2500 2999}
-   KARMA={-2500 -2999}
-   STR={350 400}
-   MAXHITS={350 400}
-   DEX={115 125}
-   MAXSTAM={115 125}
-   INT={126 150}
-   MAXMANA={126 150}
-   MAXMANA={226 350}
-   EVALUATINGINTEL={65.0 70.0}
-   MAGERY={65.0 70.0}
-   MAGICRESISTANCE={60.0 75.0}
-   MEDITATION={10.0 50.0}
-   POISONING={100.0 110.0}
-   TACTICS={60.0 70.0}
-   WRESTLING={60.0 70.0}
-   MODAR={0 10}
+   NPC=brain_berserk
+   FAME=0
+   KARMA=0
+   STR=200
+   DEX=200
+   INT=100
+   MAXHITS=140
+   MAXSTAM=250
+   MAXMANA=0
+   MAGICRESISTANCE=100.0
+   TACTICS=100.0
+   WRESTLING=120.0
+   RESPHYSICAL={60 70}
+   RESFIRE={40 50}
    RESCOLD={40 50}
-   RESENERGY={10 20}
-   RESFIRE={20 30}
-   RESPOISON={50 60}
-ON=@NPCRestock
-   ITEM=loot_elem_swamp
+   RESPOISON={40 50}
+   RESENERGY={90 100}
+   ITEMNEWBIE=i_light_source
 
 [CHARDEF 0a5]
 DEFNAME=c_wisp_dark
@@ -7607,7 +7593,6 @@ ON=@Create
    RESFIRE={10 20}
    RESPOISON={10 20}
    ITEMNEWBIE=i_light_source
-   ATTR=attr_magic|attr_newbie
 ON=@NPCRestock
    ITEM=loot_wisp_dark
 
@@ -14905,62 +14890,20 @@ ON=@NPCRestock
    ITEM=i_boura_pelt,{1 3},R5
 
 
-[CHARDEF 023d]
-//"Not visible with some clients, if so, set BODY=c_elemental_air
-// in the ON=@Create trigger."
-DEFNAME=c_vortex
-NAME=energy vortex
-ICON=i_fx_blade_spirit_1
-SOUND=snd_special_spelleffect1
-CAN=MT_WALK|MT_FLY|MT_NONHUM
-DAM=33,40//FIXME: Might be too strong...
-ARMOR=60
-//FOODTYPE=
-//MAXFOOD=
-//RESOURCES=
-BLOODCOLOR=-1
-MOVERATE=150
-TAG.Barding.Diff=75.3
-FollowerSlots=2
-DamEnergy=100
-CATEGORY=Spells
-SUBSECTION=Magery
-DESCRIPTION=Energy Vortex
-ON=@Create
-   NPC=brain_berserk
-   FAME={1500 1999}
-   KARMA={-1500 -1999}
-   STR={195 205}
-   MAXHITS={135 145}
-   DEX={195 205}//FIXME: Might be too fast...
-   MAXSTAM={195 205}
-   INT={95 105}
-   MAXMANA={95 105}
-   MAGICRESISTANCE={95.0 105.0}
-   TACTICS={95.0 105.0}
-   WRESTLING={115.0 125.0}
-   RESCOLD={40 50}
-   RESENERGY={90 100}
-   RESFIRE={40 50}
-   RESPOISON={40 50}
-   MODAR={0 10}
-   ITEMNEWBIE=i_light_source
-   ATTR=attr_magic|attr_newbie
+//[CHARDEF 023d]
+//OSI created this chardef to use it as an "new" Energy Vortex but it was never used.
+//It doesn't even have proper animations.
 
 [CHARDEF 023e]
 DEFNAME=c_blade_spirit
 NAME=blade spirit
 ICON=i_fx_blade_spirit_1
 SOUND=snd_weapons_sword1
-CAN=MT_WALK|MT_FLY|MT_NONHUM
-DAM=20,32//FIXME: Might be too strong...
-ARMOR=30
-//FOODTYPE=
-//MAXFOOD=
-//RESOURCES=
+CAN=MT_WALK|MT_RUN|MT_NONHUM
+DAM=10,14
+ARMOR=40
 BLOODCOLOR=-1
 MOVERATE=150
-TAG.Barding.Diff=74.5
 FollowerSlots=2
 DamPoison=20
 DamEnergy=20
@@ -14971,21 +14914,20 @@ ON=@Create
    NPC=brain_berserk
    FAME=0
    KARMA=0
-   STR={145 155}
-   MAXHITS={145 155}
-   DEX={145 155}//FIXME: Might be too fast...
-   MAXSTAM={245 255}
-   INT={95 105}
-   MAXMANA={95 105}
-   MAGICRESISTANCE={65.0 75.0}
-   POISONING={15.0 25.0}
-   TACTICS={95.0 105.0}
-   WRESTLING={85.0 95.0}
-   MODAR={0 10}
-   RESCOLD={30 40}
-   RESENERGY={20 30}
+   STR=150
+   DEX=150
+   INT=100
+   MAXHITS=160
+   MAXSTAM=250
+   MAXMANA=0
+   MAGICRESISTANCE=70.0
+   TACTICS=90.0
+   WRESTLING=90.0
+   RESPHYSICAL={30 40}
    RESFIRE={40 50}
+   RESCOLD={30 40}
    RESPOISON=100
+   RESENERGY={20 30}
 
 
 [CHARDEF 025d]
