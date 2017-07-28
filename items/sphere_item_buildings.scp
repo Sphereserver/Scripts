@@ -7,25 +7,9 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, May 14, 2017
+// FILE LAST UPDATED: Thursday, Jul 27, 2017
 //
 VERSION=0.56d
-
-
-[COMMENT sphere_item_buildings]
-
-This file contains a variety of multi-part buildings and structures such as:
-
-* Suspension bridge
-* Telescope
-* Winemaking "Vats"
-* Lighthouse
-* Sepent pillar
-* Japanese gate
-* Shipwreck
-* Large Soulforges
-* Garden Shed
-* Exodus Nexus
 
 
 [ITEMDEF 07e1]
@@ -258,7 +242,6 @@ DUPEITEM=07e1
 
 [ITEMDEF 01459]
 DEFNAME=i_telescope
-TYPE=t_telescope
 CATEGORY=Buildings
 SUBSECTION=Telescope
 DESCRIPTION=Telescope

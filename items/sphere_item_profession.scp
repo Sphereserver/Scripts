@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Friday, Jun 2, 2017
+// FILE LAST UPDATED: Thursday, Jul 27, 2017
 //
 VERSION=0.56d
 
@@ -2109,7 +2109,6 @@ DUPEITEM=0197e
 
 [ITEMDEF 019f1]
 DEFNAME=i_bench_woodworker
-TYPE=t_table
 FLIP=1
 VALUE=68
 WEIGHT=35.2
@@ -2150,7 +2149,6 @@ DUPEITEM=019f1
 
 [ITEMDEF 019f9]
 DEFNAME=i_bench_cooper
-TYPE=t_table
 FLIP=1
 VALUE=47
 WEIGHT=31.1
@@ -2509,7 +2507,6 @@ DUPEITEM=01e76
 [ITEMDEF 01e7f]
 DEFNAME=i_table_nightstand_unfinished
 NAME=unfinished nighttable
-TYPE=t_table
 WEIGHT=17.4
 RESOURCES=17 i_board,4 i_nails
 CATEGORY=Items by Professions
@@ -3497,7 +3494,6 @@ DUPELIST=04ba1
 [ITEMDEF 04f80]
 DEFNAME=i_tinker_table_electric
 NAME=tinker table
-TYPE=t_table
 FLIP=1
 VALUE=118
 WEIGHT=66.0
@@ -3530,7 +3526,6 @@ DUPELIST=04f9e
 [ITEMDEF 04f8a]
 DEFNAME=i_tinker_table_candle
 NAME=tinker table
-TYPE=t_table
 FLIP=1
 VALUE=118
 WEIGHT=66.0
@@ -3563,7 +3558,6 @@ DUPELIST=04fa8
 [ITEMDEF 04f94]
 DEFNAME=i_tinker_table_mechanism
 NAME=tinker table
-TYPE=t_table
 FLIP=1
 VALUE=118
 WEIGHT=66.0

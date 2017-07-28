@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, May 16, 2017
+// FILE LAST UPDATED: Thursday, Jul 27, 2017
 //
 VERSION=0.56d
 
@@ -164,18 +164,12 @@ DUPEITEM=0de3
 [ITEMDEF 0de9]
 DEFNAME=i_ember_lit
 TYPE=t_campfire
-VALUE=2
-WEIGHT=1.0
 CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Campfires
 DESCRIPTION=Embers
 
 [ITEMDEF 0dea]
 DEFNAME=i_ember
-TYPE=t_garbage
-VALUE=1
-WEIGHT=1.0
-RESOURCES=1 i_kindling
 CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Campfires
 DESCRIPTION=Burned Wood

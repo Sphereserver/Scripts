@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, May 21, 2017
+// FILE LAST UPDATED: Thursday, Jul 27, 2017
 //
 VERSION=0.56d
 
@@ -720,10 +720,7 @@ DESCRIPTION=Hanging Pole (N) (03/03)
 
 [ITEMDEF 010ee]
 DEFNAME=i_garbage
-TYPE=t_garbage
 FLIP=1
-VALUE=1
-WEIGHT=2.0
 CATEGORY=Decoration - Miscellaneous
 SUBSECTION=Garbage
 DESCRIPTION=Garbage
@@ -6842,7 +6839,7 @@ DUPEITEM=09706
 // NoName //tok
 
 [ITEMDEF 09c14]
-//legend card
+DEFNAME=i_card_legend
 FLIP=1
 DUPELIST=09c15
 
@@ -6874,7 +6871,7 @@ DEFNAME=i_auction_safe
 NAME=auction safe
 FLIP=1
 CATEGORY=Provisions - Miscellaneous
-SUBSECTION=Auction Safe
+SUBSECTION=Misc
 DESCRIPTION=Auction Safe
 DUPELIST=09c19
 
@@ -6915,7 +6912,7 @@ DESCRIPTION=Gift Box (Christmas)
 //////////////////////
 
 [ITEMDEF i_card_semidar_dupre]
-ID=i_card_semidar
+ID=i_card_legend
 NAME=Cards of Semidar
 TYPE=t_sign_gump
 TDATA2=09be0
@@ -6923,7 +6920,7 @@ ON=@ClientTooltip
    SRC.ADDCLILOC 1156396	//Dupre the Paladin
 
 [ITEMDEF i_card_semidar_nystul]
-ID=i_card_semidar
+ID=i_card_legend
 NAME=Cards of Semidar
 TYPE=t_sign_gump
 TDATA2=09be1
@@ -6931,7 +6928,7 @@ ON=@ClientTooltip
    SRC.ADDCLILOC 1156397	//Nystul the Mage
 
 [ITEMDEF i_card_semidar_shamino]
-ID=i_card_semidar
+ID=i_card_legend
 NAME=Cards of Semidar
 TYPE=t_sign_gump
 TDATA2=09be2
@@ -6939,7 +6936,7 @@ ON=@ClientTooltip
    SRC.ADDCLILOC 1156398	//Shamino Sallé Dacil
 
 [ITEMDEF i_card_semidar_juonar]
-ID=i_card_semidar
+ID=i_card_legend
 NAME=Cards of Semidar
 TYPE=t_sign_gump
 TDATA2=09be3
@@ -6947,7 +6944,7 @@ ON=@ClientTooltip
    SRC.ADDCLILOC 1156399	//Juo'nar the Lich
 
 [ITEMDEF i_card_semidar_professor_rafkin]
-ID=i_card_semidar
+ID=i_card_legend
 NAME=Cards of Semidar
 TYPE=t_sign_gump
 TDATA2=09be4
@@ -6955,7 +6952,7 @@ ON=@ClientTooltip
    SRC.ADDCLILOC 1156562	//Professor Ellie Rafkin
 
 [ITEMDEF i_card_semidar_minax]
-ID=i_card_semidar
+ID=i_card_legend
 NAME=Cards of Semidar
 TYPE=t_sign_gump
 TDATA2=09be5

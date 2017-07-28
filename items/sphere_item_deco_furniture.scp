@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, May 21, 2017
+// FILE LAST UPDATED: Thursday, Jul 27, 2017
 //
 VERSION=0.56d
 
@@ -356,7 +356,6 @@ DUPEITEM=0a57
 [ITEMDEF 0a5a]
 DEFNAME=i_bed_small_unmade
 NAME=small unmade bed
-TYPE=t_bed
 TDATA1=0
 FLIP=1
 VALUE=183
@@ -375,7 +374,6 @@ DUPEITEM=0a5a
 [ITEMDEF 0a5c]
 DEFNAME=i_bed_small_made
 NAME=small bed
-TYPE=t_bed
 TDATA1=0
 FLIP=1
 VALUE=301
@@ -394,7 +392,6 @@ DUPEITEM=0a5c
 [ITEMDEF 0a5e]
 DEFNAME=i_bed_small_sheet
 NAME=small bed with sheets
-TYPE=t_bed
 TDATA1=0
 FLIP=1
 VALUE=223
@@ -430,7 +427,6 @@ DUPEITEM=0a5c
 //brown bed (duplicate of 0a5a)
 DEFNAME=i_bed_small_unmade_2
 NAME=small unmade bed
-TYPE=t_bed
 TDATA1=0
 FLIP=1
 VALUE=183
@@ -499,7 +495,6 @@ DUPEITEM=0a6c
 [ITEMDEF 0a70]
 DEFNAME=i_bed_large_unmade
 NAME=large unmade bed
-TYPE=t_bed
 TDATA1=0
 DYE=1
 FLIP=1
@@ -543,7 +538,6 @@ DUPEITEM=0a70
 [ITEMDEF 0a78]
 DEFNAME=i_bed_large_made
 NAME=large bed
-TYPE=t_bed
 TDATA1=0
 DYE=1
 FLIP=1
@@ -603,7 +597,6 @@ DUPEITEM=0a78
 [ITEMDEF 0a84]
 DEFNAME=i_bed_large_sheet
 NAME=large bed with sheets
-TYPE=t_bed
 TDATA1=0
 DYE=1
 FLIP=1
@@ -996,7 +989,6 @@ DUPEITEM=0b32
 
 [ITEMDEF 0b34]
 DEFNAME=i_table_nightstand
-TYPE=t_table
 FLIP=1
 VALUE=29
 WEIGHT=17.4
@@ -1061,7 +1053,6 @@ DUPEITEM=0b3d
 
 [ITEMDEF 0b49]
 DEFNAME=i_table_writing
-TYPE=t_table
 FLIP=1
 VALUE=60
 WEIGHT=26.2
@@ -1258,7 +1249,6 @@ DUPEITEM=0b62
 
 [ITEMDEF 0b6b]
 DEFNAME=i_table_wood_smooth_narrow_end
-TYPE=t_table
 FLIP=1
 VALUE=45
 WEIGHT=16.3
@@ -1279,7 +1269,6 @@ DUPEITEM=0b6b
 
 [ITEMDEF 0b6e]
 DEFNAME=i_table_wood_solid_narrow_end
-TYPE=t_table
 FLIP=1
 VALUE=43
 WEIGHT=16.3
@@ -1296,7 +1285,6 @@ DUPEITEM=0b6e
 
 [ITEMDEF 0b70]
 DEFNAME=i_table_wood_smooth_large
-TYPE=t_table
 FLIP=1
 VALUE=42
 WEIGHT=14.3
@@ -1325,7 +1313,6 @@ DUPEITEM=0b70
 
 [ITEMDEF 0b75]
 DEFNAME=i_table_board_rough_end
-TYPE=t_table
 FLIP=1
 VALUE=36
 WEIGHT=12.3
@@ -1342,7 +1329,6 @@ DUPEITEM=0b75
 
 [ITEMDEF 0b77]
 DEFNAME=i_table_board_rough_large
-TYPE=t_table
 FLIP=1
 VALUE=38
 WEIGHT=12.3
@@ -1371,7 +1357,6 @@ DUPEITEM=0b77
 
 [ITEMDEF 0b7c]
 DEFNAME=i_table_wood_rough_small
-TYPE=t_table
 FLIP=1
 VALUE=16
 WEIGHT=16.2
@@ -1384,7 +1369,6 @@ DUPELIST=0b8f
 
 [ITEMDEF 0b7d]
 DEFNAME=i_table_wood_rough_board
-TYPE=t_table
 FLIP=1
 VALUE=19
 WEIGHT=22.2
@@ -1636,7 +1620,6 @@ DUPEITEM=0c24
 
 [ITEMDEF 0c26]
 NAME=ruined bed
-TYPE=t_bed
 CATEGORY=Decoration - Furniture
 SUBSECTION=Broken Furniture
 DESCRIPTION=Ruined Large Bed (flawed graphics)
@@ -1795,7 +1778,6 @@ DUPEITEM=0e50
 [ITEMDEF 0118b]
 DEFNAME=i_table_runner_purple
 NAME=table with purple runner
-TYPE=t_table
 FLIP=1
 VALUE=139
 WEIGHT=47.2
@@ -1813,7 +1795,6 @@ DUPEITEM=0118b
 [ITEMDEF 0118d]
 DEFNAME=i_table_runner_red
 NAME=table with red runner
-TYPE=t_table
 FLIP=1
 VALUE=139
 WEIGHT=47.2
@@ -1831,7 +1812,6 @@ DUPEITEM=0118d
 [ITEMDEF 0118f]
 DEFNAME=i_table_runner_blue
 NAME=table with blue runner
-TYPE=t_table
 FLIP=1
 VALUE=136
 WEIGHT=47.2
@@ -1856,7 +1836,6 @@ DUPEITEM=0118f
 
 [ITEMDEF 011ce]
 DEFNAME=i_bed_double_1
-TYPE=t_bed
 TDATA1=0
 FLIP=1
 WEIGHT=200.0
@@ -1896,7 +1875,6 @@ DUPEITEM=011ce
 
 [ITEMDEF 011d6]
 DEFNAME=i_table_bamboo
-TYPE=t_table
 FLIP=1
 CATEGORY=Decoration - Furniture
 SUBSECTION=Tables
@@ -1925,7 +1903,6 @@ DUPEITEM=011d6
 
 [ITEMDEF 011dc]
 DEFNAME=i_table_log_end
-TYPE=t_table
 FLIP=1
 VALUE=42
 WEIGHT=30.4
@@ -2002,7 +1979,6 @@ DESCRIPTION=Bamboo Stool
 
 [ITEMDEF 011fd]
 DEFNAME=i_cot
-TYPE=t_bed
 TDATA1=2
 FLIP=1
 WEIGHT=17.0
@@ -2025,7 +2001,6 @@ DUPEITEM=011fd
 
 [ITEMDEF 01201]
 DEFNAME=i_table_stone_end
-TYPE=t_table
 FLIP=1
 VALUE=100
 WEIGHT=300.0
@@ -2312,7 +2287,6 @@ DESCRIPTION=Pillow
 [ITEMDEF 01667]
 DEFNAME=i_table_runner_checkered
 NAME=table with checkered runner
-TYPE=t_table
 FLIP=1
 VALUE=150
 WEIGHT=52.2
@@ -2346,7 +2320,6 @@ DUPEITEM=01667
 
 [ITEMDEF 01894]
 DEFNAME=i_bed_ruined_7
-TYPE=t_bed
 TDATA1=0
 FLIP=1
 WEIGHT=149.5
@@ -2450,7 +2423,6 @@ DESCRIPTION=Pillow
 
 [ITEMDEF 01916]
 DEFNAME=i_table_massage_end
-TYPE=t_table
 FLIP=1
 CATEGORY=Decoration - Furniture
 SUBSECTION=Massage Table
@@ -2526,7 +2498,6 @@ DUPEITEM=01945
 
 [ITEMDEF 01da5]
 DEFNAME=i_table_wood_rough_small_end
-TYPE=t_table
 FLIP=1
 VALUE=24
 WEIGHT=16.2
@@ -2543,7 +2514,6 @@ DUPEITEM=01da5
 
 [ITEMDEF 01da7]
 DEFNAME=i_table_board_rough_small_end
-TYPE=t_table
 FLIP=1
 VALUE=26
 WEIGHT=22.2
@@ -2576,7 +2546,6 @@ DUPEITEM=01da7
 
 [ITEMDEF 01dbb]
 DEFNAME=i_table_sandstone_end
-TYPE=t_table
 FLIP=1
 VALUE=160
 WEIGHT=300.0
@@ -2609,7 +2578,6 @@ DUPEITEM=01dbb
 
 [ITEMDEF 01dc1]
 DEFNAME=i_table_marble_end
-TYPE=t_table
 FLIP=1
 VALUE=160
 WEIGHT=300.0
@@ -2711,7 +2679,6 @@ DUPEITEM=01dcd
 
 [ITEMDEF 0207e]
 DEFNAME=i_table_keyed
-TYPE=t_table
 WEIGHT=17.4
 RESOURCES=17 i_log,4 i_nails
 CATEGORY=Quest
@@ -2972,7 +2939,6 @@ DUPEITEM=02817
 
 [ITEMDEF 02819]
 DEFNAME=i_table_low1
-TYPE=t_table
 VALUE=75
 WEIGHT=28.2
 RESOURCES=14 i_board,2 i_nails
@@ -2983,7 +2949,6 @@ DESCRIPTION=Table 1
 
 [ITEMDEF 0281a]
 DEFNAME=i_table_low2
-TYPE=t_table
 VALUE=75
 WEIGHT=28.2
 RESOURCES=14 i_board,2 i_nails
@@ -3134,7 +3099,6 @@ DUPEITEM=02a5a
 [ITEMDEF 02a5c]
 DEFNAME=i_table_bone
 NAME=bone table
-TYPE=t_table
 VALUE=64
 WEIGHT=14.8
 RESOURCES=27 i_bone,1 i_thread,4 i_bone_skull
@@ -3528,7 +3492,6 @@ DUPEITEM=02de7
 //FIXME: this container does not open
 DEFNAME=i_table_elven_storage
 NAME=elven storage table
-TYPE=t_table
 TDATA2=0107
 FLIP=1
 VALUE=94
@@ -3625,7 +3588,6 @@ DUPEITEM=02fea
 [ITEMDEF 0304c]
 DEFNAME=i_bed_small_elven
 NAME=small elven bed
-TYPE=t_bed
 TDATA1=0
 FLIP=1
 VALUE=178
@@ -3662,7 +3624,6 @@ DUPEITEM=0304c
 [ITEMDEF 03052]
 DEFNAME=i_bed_large_elven_made
 NAME=large elven bed
-TYPE=t_bed
 TDATA1=0
 DYE=1
 FLIP=1
@@ -3925,7 +3886,6 @@ DUPEITEM=035ed
 [ITEMDEF 03605]
 DEFNAME=i_table_crystal
 NAME=crystal table
-TYPE=t_table
 FLIP=1
 VALUE=2503
 WEIGHT=25.0
@@ -3951,7 +3911,6 @@ DUPEITEM=03605
 [ITEMDEF 03d8a]
 DEFNAME=i_bed_ruined
 NAME=ruined bed
-TYPE=t_bed
 WEIGHT=149.5
 RESOURCES=120 i_board,15 i_cloth,20 i_nails,2 i_bedroll
 CATEGORY=Decoration - Furniture
@@ -4008,7 +3967,6 @@ DUPEITEM=03dff
 [ITEMDEF 0400c]
 DEFNAME=i_bed_small_gargish
 NAME=Gargish single bed
-TYPE=t_bed
 TDATA1=0
 FLIP=1
 VALUE=301
@@ -4035,7 +3993,6 @@ DUPEITEM=0400c
 [ITEMDEF 04010]
 DEFNAME=i_bed_large_gargish
 NAME=Gargish double bed
-TYPE=t_bed
 TDATA1=0
 FLIP=1
 VALUE=301
@@ -4206,7 +4163,6 @@ DUPEITEM=0402b
 [ITEMDEF 0402f]
 DEFNAME=i_table_gargish_long
 NAME=long table
-TYPE=t_table
 WEIGHT=30.0
 RESOURCES=30 i_rock_plain
 SKILLMAKE=Carpentry 81.0,t_masonry_tool
@@ -4230,7 +4186,6 @@ DUPEITEM=0402f
 [ITEMDEF 04033]
 DEFNAME=i_table_gargish_short
 NAME=Gargish short table
-TYPE=t_table
 WEIGHT=30.0
 RESOURCES=30 i_rock_plain
 SKILLMAKE=Carpentry 81.0,t_masonry_tool
@@ -4268,7 +4223,6 @@ DUPELIST=04046
 [ITEMDEF 04041]
 DEFNAME=i_table_ter_mur
 NAME=Ter-Mur style table
-TYPE=t_table
 WEIGHT=25
 RESOURCES=50 i_board
 SKILLMAKE=Carpentry 75.0,t_carpentry
@@ -4280,7 +4234,6 @@ DESCRIPTION=Ter-Mur Style Table
 [ITEMDEF 04982]
 DEFNAME=i_table_cthulu
 NAME=Cthulu table
-TYPE=t_table
 FLIP=1
 VALUE=29
 WEIGHT=17.4
@@ -4390,7 +4343,6 @@ COMPONENT=04bdd,1,0,0
 [ITEMDEF 04bf6]
 DEFNAME=i_table_britannia_east
 NAME=Britannia Maptable
-TYPE=t_table
 FLIP=1
 VALUE=29
 WEIGHT=17.4
@@ -4438,7 +4390,6 @@ COMPONENT=04bfb,0,1,0
 [ITEMDEF 04bfc]
 DEFNAME=i_table_britannia_south
 NAME=Britannia Maptable
-TYPE=t_table
 FLIP=1
 VALUE=29
 WEIGHT=17.4
@@ -4554,7 +4505,6 @@ DUPEITEM=04d0c
 [ITEMDEF 099c8]
 DEFNAME=i_bar_marble
 NAME=marble bar
-TYPE=t_table
 FLIP=1
 CATEGORY=Decoration - Furniture
 SUBSECTION=Tables

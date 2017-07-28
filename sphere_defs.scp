@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Wednesday, Jul 5, 2017
+// FILE LAST UPDATED: Thursday, Jul 27, 2017
 //
 VERSION=0.56d
 
@@ -380,6 +380,8 @@ snd_monster_longhorn2         1017
 snd_monster_longhorn3         1018
 snd_monster_longhorn4         1019
 snd_monster_longhorn5         1020
+snd_monster_orc2              1114
+snd_animals_panther2          1122
 snd_monster_pixie             1139
 snd_monster_pixie2            1140
 snd_animal_seahorse           1144
@@ -949,148 +951,148 @@ t_magic               t_junk
 
 [TYPEDEFS]
 t_normal                  0
-t_container               1   // any unlocked container or corpse. ccontainer based
+t_container               1   // any unlocked container or corpse
 t_container_locked        2
-t_door                    3   // 3 = door can be opened
-t_door_locked             4   // a locked door.
+t_door                    3
+t_door_locked             4
 t_key                     5
-t_light_lit               6   // local light giving object
-t_light_out               7   // can be lit.
-t_food                    8   // edible food. (poisoned food ?)
-t_food_raw                9   // must cook raw food unless your an animal.
-t_armor                  10   // some type of armor. (no real action)
+t_light_lit               6
+t_light_out               7
+t_food                    8   // cooked food (can be poisoned)
+t_food_raw                9   // must cook raw food unless your an animal
+t_armor                  10   // some type of armor (no real action)
 t_weapon_mace_smith      11   // can be used for smithing
-t_weapon_mace_sharp      12   // war axe can be used to cut/chop trees.
-t_weapon_sword           13   //
-t_weapon_fence           14   // can't be used to chop trees. (make kindling)
-t_weapon_bow             15   // bow or xbow
+t_weapon_mace_sharp      12   // war axe can be used to cut/chop trees
+t_weapon_sword           13
+t_weapon_fence           14   // can't be used to chop trees (make kindling)
+t_weapon_bow             15
 t_wand                   16   // a magic storage item
 t_telepad                17   // walk on teleport
-t_switch                 18   // this is a switch which effects some other object in the world.
-t_book                   19   // read this book. (static or dynamic text)
-t_rune                   20   // can be marked and renamed as a recall rune.
-t_booze                  21   // booze      (drunk effect)
-t_potion                 22   // some magic effect.
-t_fire                   23   // it will burn you.
+t_switch                 18   // this is a switch which effects some other object in the world
+t_book                   19
+t_rune                   20   // can be marked and renamed as a recall rune
+t_booze                  21   // drunk effect
+t_potion                 22   // some magic effect
+t_fire                   23   // it will burn you
 t_clock                  24   // or a wristwatch
-t_trap                   25   // walk on trap.
-t_trap_active            26   // = some animation
-t_musical                27   // = a musical instrument.
-t_spell                  28   // = magic spell effect.
-t_gem                    29   // = no use yet
-t_water                  30   // = this is water (fishable) (not a glass of water)
-t_clothing               31   // = all cloth based wearable stuff
-t_scroll                 32   // = magic scroll
-t_carpentry              33   // = tool of some sort.
-t_spawn_char             34   // = spawn object. should be invis also.
-t_game_piece             35   // = can't be removed from game.
-t_portculis              36   // = z delta moving gate. (open)
-t_figurine               37   // = magic figure that turns into a creature when activated.
-t_shrine                 38   // = can res you
-t_moongate               39   // = linked to other moon gates (hard coded locations)
-t_chair                  40   // = any sort of a chair item. we can sit on.
-t_forge                  41   // = used to smelt ore blacksmithy etc.
-t_ore                    42   // = smelt to ingots.
-t_log                    43   // = make into furniture etc. lumberlogs
-t_tree                   44   // = can be chopped.
-t_rock                   45   // = can be mined for ore.
-t_carpentry_chop         46   // = tool of some sort.
-t_multi                  47   // = multi part object like house or ship.
-t_reagent                48   // = alchemy when clicked ?
-t_ship                   49   // = this is a ship multi
-t_ship_plank             50   //
-t_ship_side              51   // = should extend to make a plank
-t_ship_side_locked       52   //
-t_ship_tiller            53   // = tiller man on the ship.
-t_eq_trade_window        54   // = container for the trade window.
-t_fish                   55   // = fish can be cut up.
-t_sign_gump              56   // = things like grave stones and sign plaques
-t_stone_guild            57   // = guild stones
-t_anim_active            58   // = active anium that will recycle when done.
-t_sand                   59   // = sand on the beach
-t_cloth                  60   // = bolt or folded cloth
-t_hair                   61   //
-t_beard                  62   // = just for grouping purposes.
-t_ingot                  63   // = ingot.
-t_coin                   64   // = coin of some sort. gold or otherwise.
-t_crops                  65   // = a plant that will regrow. picked type.
-t_drink                  66   // = some sort of drink (non booze)
-t_anvil                  67   // = for repair.
-t_port_locked            68   // = this portcullis must be triggered.
-t_spawn_item             69   // = spawn other items.
-t_telescope              70   // = big telescope pic.
-t_bed                    71   // = bed.
-t_gold                   72   // = gold coin
-t_map                    73   // = map object with pins.
-t_eq_memory_obj          74   // = a char has a memory link to some object. (i am fighting with someone. this records the fight.)
-t_weapon_mace_staff      75   // = staff type of mace. or just other type of mace.
-t_eq_horse               76   // = equipped horse object represents a riding horse to the client.
-t_comm_crystal           77   // = communication crystal.
-t_game_board             78   // = this is a container of pieces.
-t_trash_can              79   // = delete any object dropped on it.
-t_cannon_muzzle          80   // = cannon muzzle. not the other cannon parts.
-t_cannon                 81   // = the rest of the cannon.
-t_cannon_ball            82   //
-t_armor_leather          83   // = non metallic armor (t_clothing)
-t_seed                   84   // = fruit to seed
-t_junk                   85   // = never used
-t_crystal_ball           86   //
-t_swamp                  87   // = swamp (smelly)
-t_message                88   // = user written message item. (for bboard ussually)
-t_reagent_raw            89   // = freshly grown reagents...not processed yet.
-t_eq_client_linger       90   // = change player to npc for a while.
-t_snow                   91   // = snow
-t_it_stone               92   // = double click for items
+t_trap                   25   // walk on trap
+t_trap_active            26   // some animation
+t_musical                27   // a musical instrument
+t_spell                  28   // magic spell effect
+t_gem                    29   // no use yet
+t_water                  30   // this is water (fishable) (not a glass of water)
+t_clothing               31   // all cloth based wearable stuff
+t_scroll                 32   // magic scroll
+t_carpentry              33   // tool of some sort
+t_spawn_char             34   // spawn object. should be invis also
+t_game_piece             35   // can't be removed from game board
+t_portculis              36   // z delta moving gate (open)
+t_figurine               37   // magic figure that turns into a creature when activated.
+t_shrine                 38   // can resurrect you
+t_moongate               39   // linked to other moon gates (hardcoded locations)
+t_chair                  40   // any sort of a chair item. we can sit on
+t_forge                  41   // used to smelt ores
+t_ore                    42   // smelt to ingots
+t_log                    43   // make into furniture etc. lumber logs
+t_tree                   44   // can be chopped
+t_rock                   45   // can be mined for ore
+t_carpentry_chop         46   // tool of some sort
+t_multi                  47   // multi part object like house or ship
+t_reagent                48   // alchemy when clicked ?
+t_ship                   49   // this is a ship multi
+t_ship_plank             50
+t_ship_side              51   // should extend to make a plank
+t_ship_side_locked       52
+t_ship_tiller            53
+t_eq_trade_window        54   // container for the trade window
+t_fish                   55   // fish can be cut up
+t_sign_gump              56   // things like grave stones and sign plaques
+t_stone_guild            57   // guild stones
+t_anim_active            58   // active anim that will recycle when done
+t_sand                   59   // sand on the beach
+t_cloth                  60   // bolt or folded cloth
+t_hair                   61
+t_beard                  62   // just for grouping purposes
+t_ingot                  63
+t_coin                   64   // coin of some sort. gold or otherwise
+t_crops                  65   // a plant that will regrow. picked type
+t_drink                  66   // some sort of drink (non booze)
+t_anvil                  67
+t_port_locked            68   // this portcullis must be triggered
+t_spawn_item             69   // spawn other items.
+//t_unused_70            70
+//t_unused_71            71
+t_gold                   72   // gold coin
+t_map                    73   // map object with pins
+t_eq_memory_obj          74   // a char has a memory link to some object (i am fighting with someone. this records the fight.)
+t_weapon_mace_staff      75   // staff type of mace. or just other type of mace
+t_eq_horse               76   // equipped horse object represents a riding horse to the client
+t_comm_crystal           77   // communication crystal
+t_game_board             78   // this is a container of pieces
+t_trash_can              79   // delete any object dropped on it
+t_cannon_muzzle          80   // cannon muzzle. not the other cannon parts
+t_cannon                 81   // the rest of the cannon
+t_cannon_ball            82
+t_armor_leather          83   // non metallic armor (t_clothing)
+t_seed                   84   // fruit to seed
+t_junk                   85   // never used
+t_crystal_ball           86
+t_swamp                  87
+t_message                88   // user written message item (for bboard usually)
+t_reagent_raw            89   // freshly grown reagents...not processed yet.
+t_eq_client_linger       90   // change player to npc for a while.
+t_snow                   91
+//t_unused_92            92
 //t_unused_93            93
-t_explosion              94   // = async explosion.
-t_eq_npc_script          95   // = script npc actions in the form of a book. (get rid of this in favor of waiting on m_events)
-t_web                    96   // = walk on this and transform into some other object.
-t_grass                  97   // = can be eaten by grazing animals
-t_arock                  98   // = a rock or boulder. can be thrown by giants.
-t_tracker                99   // = points to a linked object.
-t_sound                 100   // = this is a sound source.
-t_stone_town            101   // = town stones. everyone free to join.
-t_weapon_mace_crook     102   //
-t_weapon_mace_pick      103   //
-t_leather               104   // = leather or skins of some sort.(not wearable)
-t_ship_other            105   // = some other part of a ship.
-t_bboard                106   // = a container and bboard object.
-t_spellbook             107   // = spellbook (with spells)
-t_corpse                108   // = special type of item.
+t_explosion              94
+t_eq_npc_script          95   // script npc actions in the form of a book (get rid of this in favor of waiting on m_events)
+t_web                    96   // walk on this and transform into some other object
+t_grass                  97   // can be eaten by grazing animals
+t_arock                  98   // a rock or boulder. can be thrown by giants
+t_tracker                99   // points to a linked object
+t_sound                 100   // this is a sound source
+t_stone_town            101   // town stones. everyone free to join
+t_weapon_mace_crook     102
+t_weapon_mace_pick      103
+t_leather               104   // leather or skins of some sort (not wearable)
+t_ship_other            105   // some other part of a ship
+t_bboard                106   // a container and bboard object
+t_spellbook             107   // spellbook (with spells)
+t_corpse                108   // special type of item
 //t_unused_109          109
 //t_unused_110          110
-t_weapon_arrow          111   //
-t_weapon_bolt           112   //
-t_eq_vendor_box         113   // = an equipped vendor .
-t_eq_bank_box           114   // = an equipped bank box
-t_deed                  115   //
-t_loom                  116   //
-t_bee_hive              117   //
-t_archery_butte         118   //
-t_eq_murder_count       119   // = my murder count flag.
+t_weapon_arrow          111
+t_weapon_bolt           112
+t_eq_vendor_box         113   // an equipped vendor
+t_eq_bank_box           114   // an equipped bank box
+t_deed                  115
+t_loom                  116
+t_bee_hive              117
+t_archery_butte         118
+t_eq_murder_count       119   // my murder count flag
 t_eq_stuck              120   // we are stuck in a web
-t_trap_inactive         121   //  = a safe trap.
+t_trap_inactive         121   // a safe trap
 //t_unused_122          122
-t_bandage               123   //  = can be used for healing.
-t_campfire              124   //  = this is a fire but a small one.
+t_bandage               123   // can be used for healing
+t_campfire              124   // this is a fire but a small one
 t_map_blank             125
 t_spy_glass             126
 t_sextant               127
 t_scroll_blank          128
 t_fruit                 129
-t_water_wash            130   // water that will not contain fish. (for washing or drinking)
+t_water_wash            130   // water that will not contain fish (for washing or drinking)
 t_weapon_axe            131   // not the same as a sword. but uses swordsmanship skill
 t_weapon_xbow           132
 t_spellicon             133
 t_door_open             134
-t_meat_raw              135   // just a meaty part of a corpse. (uncooked meat)
-t_garbage               136
+t_meat_raw              135   // just a meaty part of a corpse (uncooked meat)
+//t_unused_136          136
 t_keyring               137
-t_table                 138   // doesn't really do anything.
+//t_unused_138          138
 t_floor                 139
 t_roof                  140
 t_feather               141   // a birds feather
-t_wool                  142   // wool cut frm a sheep.
+t_wool                  142   // wool cut frm a sheep
 t_fur                   143
 t_blood                 144   // blood of some creature
 t_foliage               145   // does not go invis when reaped. but will if eaten
@@ -1099,36 +1101,36 @@ t_scissors              147
 t_thread                148
 t_yarn                  149
 t_spinwheel             150
-t_bandage_blood         151   //  = can't be used for healing.
+t_bandage_blood         151   // can't be used for healing
 t_fish_pole             152
-t_shaft                 153   // bolt or arrow.
+t_shaft                 153   // bolt or arrow
 t_lockpick              154
 t_kindling              155
 t_train_dummy           156
 t_train_pickpocket      157
 t_bedroll               158
 //t_unused_159          159
-t_hide                  160   // made into leather.
+t_hide                  160   // made into leather
 t_cloth_bolt            161
-t_board                 162   // = logs are plained into decent lumber
+t_board                 162   // logs are plained into decent lumber
 t_pitcher               163
 t_pitcher_empty         164
 t_dye_vat               165
 t_dye                   166
-t_potion_empty          167   // empty bottle.
+t_potion_empty          167   // empty bottle
 t_mortar                168
-t_hair_dye              169
+//t_unused_169          169
 t_sewing_kit            170
 t_tinker_tools          171
-t_wall                  172   // wall of a structure.
-t_window                173   // window for a structure.
+t_wall                  172   // wall of a structure
+t_window                173   // window for a structure
 t_cotton                174   // cotton from the plant
 t_bone                  175
-t_eq_script             176   // pure scriptable item equipped.
-t_ship_hold             177   // ships hold.
+t_eq_script             176   // pure scriptable item equipped
+t_ship_hold             177
 t_ship_hold_lock        178
 t_lava                  179
-t_shield                180   // equippable armor.
+t_shield                180   // equippable armor
 t_jewelry               181
 t_dirt                  182   // a patch of dirt where i can plant something
 t_script                183
