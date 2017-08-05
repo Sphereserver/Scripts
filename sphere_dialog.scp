@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2015
+// SPHERE by : Menasoft ©1997-2017
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,9 +7,9 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Jul 18, 2015
+// FILE LAST UPDATED: Friday, Aug 4, 2017
 //
-VERSION=0.56c
+VERSION=0.56d
 
 [COMMENT DIALOG_HELP_SECTION]
 dorigin x,y                                     // sets a dynamic origin point
@@ -1165,6 +1165,209 @@ ON=20
 	TRYP 4 INPDLG=LINK 8
 
 
+[DIALOG d_body_sculptor]
+50,50
+
+resizepic 50 10 2600 450 125
+dhtmlgump 100 40 350 20 0 0 Choose your body modification:
+
+button 100 75 4005 4007 1 0 1
+dhtmlgump 140 75 300 20 0 0 New face style
+
+[DIALOG d_body_sculptor BUTTON]
+ON=1
+IF !(<SRC.CANSEELOS <UID>>)
+ return 1
+ENDIF
+SRC.CHANGEFACE
+
+
+[DIALOG d_hairstylist]
+50,50
+
+ARGS=<QVAL ((<SRC.f_ishuman>) && !(<SRC.f_isfemale>))? "1,2,3,4,5,6,7,8" : "1,3,4">
+LOCAL.Entries=<ARGS>
+
+resizepic 50 10 2600 450 <eval 100+(<ARGV>*25)>
+dhtmlgump 100 40 350 20 0 0 Choose your hairstyle change:
+FOR <ARGV>
+ ARGS=<DEF.HairStylist.Menu.<dSTRARG <LOCAL.Entries>>>
+ button 100 <eval 75+((<LOCAL._FOR>-1)*25)> 4005 4007 1 0 <dSTRARG <LOCAL.Entries>>
+ dhtmlgump 140 <eval 75+((<LOCAL._FOR>-1)*25)> 300 20 0 0 <ARGV[0]> (<ARGV[1]> gold)
+ LOCAL.Entries=<STREAT <LOCAL.Entries>>
+ENDFOR
+
+[DIALOG d_hairstylist BUTTON]
+ON=1 8
+IF !(<SRC.CANSEELOS <UID>>)
+ return 1
+ELIF !((<SRC.f_ishuman>) && !(<SRC.f_isfemale>)) && !((<ARGN>==1) || (<ARGN>==3) || (<ARGN>==4))
+ return 1
+ENDIF
+SRC.CTAG.Hairstylist.Dye.Palette=<QVAL ((<ARGN>==4) || (<ARGN>==7) || (<ARGN>==8))? "Bright" : "Normal">
+ARGS=<DEF.HairStylist.Menu.<ARGN>>
+SRC.CTAG.Hairstylist.Price=<ARGV[1]>
+SRC.CTAG.Hairstylist.Dye.Hair=<ARGV[3]>
+SRC.CTAG.Hairstylist.Dye.Beard=<ARGV[4]>
+SDIALOG <ARGV[2]>
+
+[DEFNAME HairStylistMenu]
+HairStylist.Menu.1		New Hair,		50000,	d_hair_style
+HairStylist.Menu.2		New Beard,		50000,	d_beard_style
+HairStylist.Menu.3		Normal Hair Dye,	50,	d_hair_dye, 1, 1
+HairStylist.Menu.4		Bright Hair Dye,	500000,	d_hair_dye, 1, 1
+HairStylist.Menu.5		Hair Only Dye,		30000,	d_hair_dye, 1, 0
+HairStylist.Menu.6		Beard Only Dye,		30000,	d_hair_dye, 0, 1
+HairStylist.Menu.7		Bright Hair Only Dye,	500000,	d_hair_dye, 1, 0
+HairStylist.Menu.8		Bright Beard Only Dye,	500000,	d_hair_dye, 0, 1
+
+
+[DIALOG d_hair_style]
+50,50
+
+resizepic 0 0 2600 450 350
+dhtmlgump 50 15 350 20 0 0 <DEF.CENTER>New Hairstyle<DEF.CENTERE>
+button 45 290 4005 4007 1 0 1
+dhtmlgump 77 290 300 20 0 0 OK
+button 270 290 4005 4007 1 0 0
+dhtmlgump 302 290 300 20 0 0 Cancel
+
+LOCAL.Race=<QVAL (<SRC.f_iself>)? "Elf" : "Human">
+LOCAL.Gender=<QVAL (<SRC.f_isfemale>)? "Female" : "Male">
+FOR 9
+ LOCAL.X=<eval ((<LOCAL._FOR>-1)%3)*123>
+ LOCAL.Y=<eval ((<LOCAL._FOR>-1)/3)*65>
+ ARGS=<DEF.Hair.Style.<LOCAL.Race>.<dLOCAL._FOR>.<LOCAL.Gender>>
+ IF !(<isempty <ARGS>>)
+  radio <eval 40+<LOCAL.X>> <eval 70+<LOCAL.Y>> 208 209 0 <LOCAL._FOR>
+  resizepic <eval 87+<LOCAL.X>> <eval 50+<LOCAL.Y>> 2620 50 50
+  gumppic <eval 87+<LOCAL.X>+<ARGV[2]>> <eval 50+<LOCAL.Y>+<ARGV[3]>> <ARGV[1]>
+ ENDIF
+ENDFOR
+radio 40 240 208 209 0 10
+dhtmlgump 85 240 180 35 0 0 Bald (You will lose your hair color.)
+
+[DIALOG d_hair_style BUTTON]
+ON=1 10
+IF !(<SRC.CANSEELOS <UID>>)
+ return 1
+ELIF !(<SRC.ISGM>)
+ IF (<SRC.GOLD> < <SRC.CTAG0.Hairstylist.Price>)
+  SAY You cannot afford my services for that style.
+  return 1
+ ENDIF
+ SRC.GOLD -= <SRC.CTAG0.Hairstylist.Price>
+ SRC.SYSMESSAGE <dSRC.CTAG0.Hairstylist.Price> gold has been removed from your bank box.
+ENDIF
+
+LOCAL.Race=<QVAL (<SRC.f_iself>)? "Elf" : "Human">
+LOCAL.Gender=<QVAL (<SRC.f_isfemale>)? "Female" : "Male">
+ARGS=<DEF.Hair.Style.<LOCAL.Race>.<ARGCHKID>.<LOCAL.Gender>>
+REF1=<SRC.FINDLAYER.layer_hair>
+IF (<REF1>)
+ LOCAL.Color=<REF1.COLOR>
+ REF1.REMOVE
+ENDIF
+IF !(<isempty <ARGV[0]>>)
+ SERV.NEWITEM <ARGV[0]>
+ NEW.COLOR=<LOCAL.Color>
+ NEW.EQUIP <SRC>
+ENDIF
+
+[DEFNAME HairStyles]
+Hair.Style.Human.1.Male		i_hair_short,		0c60c,	-67,	-40
+Hair.Style.Human.1.Female	i_hair_short,		0ed1c,	-67,	-40
+Hair.Style.Human.2.Male		i_hair_pageboy,		0ed26,	-67,	-42
+Hair.Style.Human.2.Female	i_hair_pageboy,		0ed26,	-67,	-42
+Hair.Style.Human.3.Male		i_hair_mohawk,		0c60f,	-67,	-35
+Hair.Style.Human.3.Female	i_hair_mohawk,		0ed27,	-67,	-35
+Hair.Style.Human.4.Male		i_hair_long,		0c60d,	-67,	-50
+Hair.Style.Human.4.Female	i_hair_long,		0ed1d,	-67,	-50
+Hair.Style.Human.5.Male		i_hair_curly,		0c618,	-67,	-40
+Hair.Style.Human.5.Female	i_hair_curly,		0ed25,	-67,	-40
+Hair.Style.Human.6.Male		i_hair_topknot,		0ed29,	-63,	-40
+Hair.Style.Human.6.Female	i_hair_topknot,		0ed29,	-63,	-40
+Hair.Style.Human.7.Male		i_hair_ponytail,	0c60e,	-67,	-50
+Hair.Style.Human.7.Female	i_hair_ponytail,	0ed1e,	-67,	-50
+Hair.Style.Human.8.Male		i_hair_2_pigtails,	0c612,	-67,	-50
+Hair.Style.Human.8.Female	i_hair_2_pigtails,	0ede6,	-67,	-50
+Hair.Style.Human.9.Male		i_hair_receding,	0ede5,	-68,	-40
+Hair.Style.Human.9.Female	i_hair_buns,		0ed28,	-68,	-40
+
+Hair.Style.Elf.1.Male		i_hair_long_feather,	0c6e5,	-67,	-42
+Hair.Style.Elf.1.Female		i_hair_long_feather,	0edf5,	-65,	-42
+Hair.Style.Elf.2.Male		i_hair_short1,		0c6e6,	-67,	-40
+Hair.Style.Elf.2.Female		i_hair_short1,		0edf6,	-67,	-42
+Hair.Style.Elf.3.Male		i_hair_elven_mullet,	0c6e7,	-67,	-42
+Hair.Style.Elf.3.Female		i_hair_elven_mullet,	0edf7,	-67,	-45
+Hair.Style.Elf.4.Male		i_hair_elven_topknot,	0c6cc,	-67,	-40
+Hair.Style.Elf.4.Female		i_hair_elven_topknot,	0eddc,	-67,	-42
+Hair.Style.Elf.5.Male		i_hair_elven_braid,	0c6cd,	-67,	-42
+Hair.Style.Elf.5.Female		i_hair_elven_braid,	0eddd,	-67,	-45
+Hair.Style.Elf.6.Male		i_hair_elven_spike,	0c6cf,	-67,	-40
+Hair.Style.Elf.6.Female		i_hair_elven_spike,	0eddf,	-65,	-40
+Hair.Style.Elf.7.Male		i_hair_elven_ml,	0c6e4,	-67,	-42
+Hair.Style.Elf.7.Female		i_hair_elven_flower,	0edda,	-65,	-45
+Hair.Style.Elf.8.Male		i_hair_elven_long,	0c6cb,	-67,	-45
+Hair.Style.Elf.8.Female		i_hair_elven_buns,	0edde,	-65,	-45
+
+
+[DIALOG d_beard_style]
+50,50
+
+resizepic 0 0 2600 310 390
+dhtmlgump 55 15 200 20 0 0 <DEF.CENTER>New Beard<DEF.CENTERE>
+button 45 340 4005 4007 1 0 1
+dhtmlgump 77 340 300 20 0 0 OK
+button 170 340 4005 4007 1 0 0
+dhtmlgump 202 340 300 20 0 0 Cancel
+
+FOR 8
+ LOCAL.X=<eval ((<LOCAL._FOR>-1)%2)*123>
+ LOCAL.Y=<eval ((<LOCAL._FOR>-1)/2)*70>
+ ARGS=<DEF.Beard.Style.Human.<dLOCAL._FOR>>
+ radio <eval 40+<LOCAL.X>> <eval 90+<LOCAL.Y>> 208 209 0 <LOCAL._FOR>
+ IF !(<isempty <ARGS>>)
+  resizepic <eval 87+<LOCAL.X>> <eval 70+<LOCAL.Y>> 2620 50 50
+  gumppic <eval 87+<LOCAL.X>+<ARGV[2]>> <eval 70+<LOCAL.Y>+<ARGV[3]>> <ARGV[1]>
+ ENDIF
+ENDFOR
+
+[DIALOG d_beard_style BUTTON]
+ON=1 8
+IF !(<SRC.CANSEELOS <UID>>)
+ return 1
+ELIF !(<SRC.ISGM>)
+ IF (<SRC.GOLD> < <SRC.CTAG0.Hairstylist.Price>)
+  SAY You cannot afford my services for that style.
+  return 1
+ ENDIF
+ SRC.GOLD -= <SRC.CTAG0.Hairstylist.Price>
+ SRC.SYSMESSAGE <dSRC.CTAG0.Hairstylist.Price> gold has been removed from your bank box.
+ENDIF
+
+ARGS=<DEF.Beard.Style.Human.<ARGCHKID>>
+REF1=<SRC.FINDLAYER.layer_beard>
+IF (<REF1>)
+ LOCAL.Color=<REF1.COLOR>
+ REF1.REMOVE
+ENDIF
+IF !(<isempty <ARGV[0]>>)
+ SERV.NEWITEM <ARGV[0]>
+ NEW.COLOR=<LOCAL.Color>
+ NEW.EQUIP <SRC>
+ENDIF
+
+[DEFNAME BeardStyles]
+Beard.Style.Human.1		i_beard_goatee,		0c670,	-67,	-50
+Beard.Style.Human.2		i_beard_short_med,	0c6d8,	-67,	-47
+Beard.Style.Human.3		i_beard_vandyke,	0c6da,	-67,	-50
+Beard.Style.Human.4		i_beard_long,		0c671,	-67,	-55
+Beard.Style.Human.5		i_beard_short,		0c672,	-67,	-47
+Beard.Style.Human.6		i_beard_long_med,	0c6d9,	-67,	-55
+Beard.Style.Human.7		i_beard_mustache,	0c678,	-67,	-48
+
+
 [DIALOG d_hair_dye]
 50,50
 
@@ -1172,18 +1375,17 @@ page 0
 resizepic 100 10 2600 350 355
 resizepic 120 54 5100 110 270
 dhtmlgump 70 25 400 35 0 0 <DEF.CENTER>Hair Color Selection Menu<DEF.CENTERE>
-
 button 149 328 4005 4007 1 0 1
 dhtmlgump 185 329 250 35 0 0 Dye my hair this color!
 
-WHILE !(<isempty <DEF.HairDye.Range.<dLOCAL._WHILE>>>)
- ARGS=<DEF.HairDye.Range.<dLOCAL._WHILE>>
+WHILE !(<isempty <DEF.Hair.Dye.<SRC.CTAG0.Hairstylist.Dye.Palette>.<eval <LOCAL._WHILE>+1>>>)
+ ARGS=<DEF.Hair.Dye.<SRC.CTAG0.Hairstylist.Dye.Palette>.<eval <LOCAL._WHILE>+1>>
  dtext 130 <eval 59+(<LOCAL._WHILE>*22)> <eval <ARGV0>-1> *****
  button 207 <eval 60+(<LOCAL._WHILE>*22)> 5224 5224 0 <eval <LOCAL._WHILE>+1> 0
 ENDWHILE
 
-WHILE !(<isempty <DEF.HairDye.Range.<dLOCAL._WHILE>>>)
- ARGS=<DEF.HairDye.Range.<dLOCAL._WHILE>>
+WHILE !(<isempty <DEF.Hair.Dye.<SRC.CTAG0.Hairstylist.Dye.Palette>.<eval <LOCAL._WHILE>+1>>>)
+ ARGS=<DEF.Hair.Dye.<SRC.CTAG0.Hairstylist.Dye.Palette>.<eval <LOCAL._WHILE>+1>>
  page <eval <LOCAL._WHILE>+1>
  LOCAL.N=0
  FOR <ARGV0> <ARGV1>
@@ -1194,43 +1396,53 @@ WHILE !(<isempty <DEF.HairDye.Range.<dLOCAL._WHILE>>>)
 ENDWHILE
 
 [DIALOG d_hair_dye BUTTON]
-ON=0
-SRC.SYSMESSAGE You decide not to dye your hair
-
 ON=1 2500
-IF (<CONT> != <SRC.FINDLAYER.layer_pack>)
- SRC.SYSMESSAGE You must have the object in your backpack to use it.
+IF !(<SRC.CANSEELOS <UID>>)
  return 1
+ELIF !(<SRC.ISGM>)
+ IF (<SRC.GOLD> < <SRC.CTAG0.Hairstylist.Price>)
+  SAY You cannot afford my services for that style.
+  return 1
+ ENDIF
+ SRC.GOLD -= <SRC.CTAG0.Hairstylist.Price>
+ SRC.SYSMESSAGE <dSRC.CTAG0.Hairstylist.Price> gold has been removed from your bank box.
 ENDIF
-IF !(<SRC.FINDLAYER.layer_hair>) && !(<SRC.FINDLAYER.layer_beard>)
- SRC.SYSMESSAGE You have no hair to dye and cannot use this
- return 1
-ENDIF
-WHILE !(<isempty <DEF.HairDye.Range.<dLOCAL._WHILE>>>)
- ARGS=<DEF.HairDye.Range.<dLOCAL._WHILE>>
+
+WHILE !(<isempty <DEF.Hair.Dye.<SRC.CTAG0.Hairstylist.Dye.Palette>.<eval <LOCAL._WHILE>+1>>>)
+ ARGS=<DEF.Hair.Dye.<SRC.CTAG0.Hairstylist.Dye.Palette>.<eval <LOCAL._WHILE>+1>>
  IF (<ARGCHKID> >= <ARGV0>) && (<ARGCHKID> <= <ARGV1>)
-  SRC.FINDLAYER.layer_hair.COLOR=<ARGCHKID>
-  SRC.FINDLAYER.layer_beard.COLOR=<ARGCHKID>
-  SRC.SYSMESSAGE You dye your hair
-  SRC.SOUND 04e
-  REMOVE
+  IF (<SRC.CTAG0.Hairstylist.Dye.Hair>)
+   SRC.FINDLAYER.layer_hair.COLOR=<ARGCHKID>
+  ENDIF
+  IF (<SRC.CTAG0.Hairstylist.Dye.Beard>)
+   SRC.FINDLAYER.layer_beard.COLOR=<ARGCHKID>
+  ENDIF
   return 1
  ENDIF
 ENDWHILE
 
-[DEFNAME HairDye]
-HairDye.Range.0		"1602, 1627"	//Brown
-HairDye.Range.1		"1628, 1654"	//Chestnut
-HairDye.Range.2		"1502, 1533"	//Auburn
-HairDye.Range.3		"1302, 1333"	//Blue
-HairDye.Range.4		"1402, 1433"	//Green
-HairDye.Range.5		"1202, 1225"	//Red
-HairDye.Range.6		"2402, 2430"	//Light
-HairDye.Range.7		"2213, 2218"	//Blonde
-HairDye.Range.8		"1102, 1109"	//Black
-HairDye.Range.9		"1110, 1117"	//Beige
-HairDye.Range.10	"1118, 1133"	//Golden
-HairDye.Range.11	"1134, 1149"	//Dk Brown
+[DEFNAME HairDyes]
+Hair.Dye.Normal.1		1602, 1627	//Brown
+Hair.Dye.Normal.2		1628, 1654	//Chestnut
+Hair.Dye.Normal.3		1502, 1533	//Auburn
+Hair.Dye.Normal.4		1302, 1333	//Blue
+Hair.Dye.Normal.5		1402, 1433	//Green
+Hair.Dye.Normal.6		1202, 1225	//Red
+Hair.Dye.Normal.7		2402, 2430	//Light
+Hair.Dye.Normal.8		2213, 2218	//Blonde
+Hair.Dye.Normal.9		1102, 1109	//Black
+Hair.Dye.Normal.10		1110, 1117	//Beige
+Hair.Dye.Normal.11		1118, 1133	//Golden
+Hair.Dye.Normal.12		1134, 1149	//Dark Brown
+
+Hair.Dye.Bright.1		12, 21		//Purple
+Hair.Dye.Bright.2		32, 36		//Red
+Hair.Dye.Bright.3		38, 45		//Orange
+Hair.Dye.Bright.4		54, 56		//Yellow
+Hair.Dye.Bright.5		62, 71		//Green
+Hair.Dye.Bright.6		81, 82		//Light Green
+Hair.Dye.Bright.7		89, 90		//Blue
+Hair.Dye.Bright.8		1153, 1154	//White
 
 
 [DIALOG d_HELPGM]	// 12

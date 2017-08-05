@@ -7,30 +7,10 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Jun 20, 2017
+// FILE LAST UPDATED: Friday, Aug 4, 2017
 //
 VERSION=0.56d
 
-
-[COMMENT npc_vendors]
-FIXME: NPC vendor "to do" list
-- fix DESIRES and AVERSIONS
-- make new NPCs listed below
-- make elven versions of most NPCs
-- make gargoyle versions of most NPCs
-
-c_mysticshopkeep
-c_mysticshopkeep_f
-c_spellweavershopkeep
-c_spellweavershopkeep_f
-c_samuraishopkeep
-c_samuraishopkeep_f
-c_ninjashopkeep
-c_ninjashopkeep_f
-
-/////////////////
-// NPC Vendors //
-/////////////////
 
 [CHARDEF c_alchemist]
 ID=c_man
@@ -742,117 +722,6 @@ ON=@NPCRestock
    ITEM=random_shield
 
 
-[CHARDEF c_barber]
-ID=c_man
-NAME=#NAMES_HUMANMALE the barber
-DESIRES=i_gold
-AVERSIONS=t_trap
-TSPEECH=spk_human_prime
-TSPEECH=spk_human_default
-TSPEECH=spk_shopkeep
-TEVENTS=e_Human_HearUnk
-TEVENTS=e_Human_ConvInit
-TEVENTS=e_Human_Needs
-TEVENTS=e_Human_Greet
-TEVENTS=e_Human_Space
-TEVENTS=e_Human_Refuse
-TEVENTS=e_Human_Environ
-TEVENTS=e_trainer
-CATEGORY=Civilized
-SUBSECTION=Tradesmen
-DESCRIPTION=Barber (human male)
-ON=@Create
-   COLOR=colors_skin
-   NPC=brain_vendor
-   NEED=i_gold
-   STR={45 55}
-   DEX={45 55}
-   INT={45 55}
-
-   ALCHEMY={20.0 30.0}
-   ANATOMY={20.0 30.0}
-   FENCING={20.0 30.0}
-   MAGICRESISTANCE={20.0 30.0}
-   PARRYING={20.0 30.0}
-   TACTICS={20.0 30.0}
-   WRESTLING={20.0 30.0}
-
-   ITEMNEWBIE=random_light
-   ITEMNEWBIE=random_male_hair
-   COLOR=colors_hair
-   ITEMNEWBIE=random_facial_hair,1,R5
-   COLOR=match_hair
-   ITEM=random_shirts_human
-   COLOR=colors_all
-   ITEM=random_pants_human
-   COLOR=colors_all
-   ITEM=random_footwear_human
-   COLOR=colors_neutral
-ON=@NPCRestock
-   ITEM=random_coin_purse
-   ITEM=i_dagger
-   ITEM=random_shield
-   SELL=i_hair_dyes,10
-   SELL=i_barber_haircut,10
-   SELL=i_barber_dye_beard,10
-   SELL=i_barber_dye_hair,10
-   SELL=i_bodypaint,10
-
-[CHARDEF c_barber_f]
-ID=c_woman
-NAME=#NAMES_HUMANFEMALE the barber
-DESIRES=i_gold
-AVERSIONS=t_trap
-TSPEECH=spk_human_prime
-TSPEECH=spk_human_default
-TSPEECH=spk_shopkeep
-TEVENTS=e_Human_HearUnk
-TEVENTS=e_Human_ConvInit
-TEVENTS=e_Human_Needs
-TEVENTS=e_Human_Greet
-TEVENTS=e_Human_Space
-TEVENTS=e_Human_Refuse
-TEVENTS=e_Human_Environ
-TEVENTS=e_trainer
-CATEGORY=Civilized
-SUBSECTION=Tradesmen
-DESCRIPTION=Barber (human female)
-ON=@Create
-   COLOR=colors_skin
-   NPC=brain_vendor
-   NEED=i_gold
-   STR={45 55}
-   DEX={45 55}
-   INT={45 55}
-
-   ALCHEMY={20.0 30.0}
-   ANATOMY={20.0 30.0}
-   FENCING={20.0 30.0}
-   MAGICRESISTANCE={20.0 30.0}
-   PARRYING={20.0 30.0}
-   TACTICS={20.0 30.0}
-   WRESTLING={20.0 30.0}
-
-   ITEMNEWBIE=random_light
-   ITEMNEWBIE=random_male_hair
-   COLOR=colors_hair
-   ITEM=random_shirts_human
-   COLOR=colors_all
-   ITEM=random_pants_human
-   COLOR=colors_all
-   ITEM=random_footwear_human
-   COLOR=colors_neutral
-ON=@NPCRestock
-   ITEM=random_coin_purse
-   ITEM=i_dagger
-   ITEM=random_shield
-   SELL=i_hair_dyes,10
-   SELL=i_barber_haircut,10
-   SELL=i_barber_dye_beard,10
-   SELL=i_barber_dye_hair,10
-   SELL=i_bodypaint,10
-
-
 [CHARDEF c_beekeeper]
 ID=c_man
 NAME=#NAMES_HUMANMALE the beekeeper
@@ -1119,6 +988,77 @@ ON=@NPCRestock
    BUY=VENDOR_B_MAGIC_ARMOR
    BUY=VENDOR_B_MAGIC_WEAPONS
    //FIXME: Buys ingots
+
+
+[CHARDEF c_body_sculptor]
+ID=c_man
+NAME=#NAMES_HUMANMALE the body sculptor
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_bodysculptor
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Tradesmen
+DESCRIPTION=Body Sculptor (human male)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_vendor
+   NEED=i_gold
+   STR={45 55}
+   DEX={45 55}
+   INT={45 55}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_male_hair
+   COLOR=colors_bright
+   ITEMNEWBIE=random_facial_hair,1,R5
+   COLOR=match_hair
+   ITEM=i_robe
+   COLOR=colors_brown
+   ITEM=i_sandals
+
+[CHARDEF c_body_sculptor_f]
+ID=c_woman
+NAME=#NAMES_HUMANFEMALE the body sculptor
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_bodysculptor
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Tradesmen
+DESCRIPTION=Body Sculptor (human female)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_vendor
+   NEED=i_gold
+   STR={45 55}
+   DEX={45 55}
+   INT={45 55}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_female_hair
+   COLOR=colors_bright
+   ITEM=i_robe
+   COLOR=colors_brown
+   ITEM=i_sandals
 
 
 [CHARDEF c_bowyer]
@@ -2267,6 +2207,77 @@ ON=@NPCRestock
 
    SELL=VENDOR_S_GLASSBLOWER
    BUY=VENDOR_B_GLASSBLOWER
+
+
+[CHARDEF c_hairstylist]
+ID=c_man
+NAME=#NAMES_HUMANMALE the hairstylist
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_hairstylist
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Tradesmen
+DESCRIPTION=Hairstylist (human male)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_vendor
+   NEED=i_gold
+   STR={45 55}
+   DEX={45 55}
+   INT={45 55}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_male_hair
+   COLOR=colors_bright
+   ITEMNEWBIE=random_facial_hair,1,R5
+   COLOR=match_hair
+   ITEM=i_robe
+   COLOR=colors_brown
+   ITEM=i_sandals
+
+[CHARDEF c_hairstylist_f]
+ID=c_woman
+NAME=#NAMES_HUMANFEMALE the hairstylist
+DESIRES=i_gold
+AVERSIONS=t_trap
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TSPEECH=spk_hairstylist
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+TEVENTS=e_trainer
+CATEGORY=Civilized
+SUBSECTION=Tradesmen
+DESCRIPTION=Hairstylist (human female)
+ON=@Create
+   COLOR=colors_skin
+   NPC=brain_vendor
+   NEED=i_gold
+   STR={45 55}
+   DEX={45 55}
+   INT={45 55}
+
+   ITEMNEWBIE=random_light
+   ITEMNEWBIE=random_female_hair
+   COLOR=colors_bright
+   ITEM=i_robe
+   COLOR=colors_brown
+   ITEM=i_sandals
 
 
 [CHARDEF c_healer]

@@ -7,744 +7,423 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, May 16, 2017
+// FILE LAST UPDATED: Friday, Aug 4, 2017
 //
 VERSION=0.56d
-
-
-[COMMENT sphere_item_profession_barber.scp]
-
-This file contains:
-
-* tools used by barbers
-* decoration found in babershops
-* items of type t_hair and t_beard for both human and gargoyle
-
-FIXME: Make enabling or disabling "hair growth" easier by moving the
-implementation into a TYPEDEF so you can disable it in one place.
 
 
 [ITEMDEF 0dfc]
 DEFNAME=i_scissors_barber
 TYPE=t_scissors
-RESOURCES=2 i_ingot_iron
-SKILLMAKE=Tinkering 5.0,t_tinker_tools
+FLIP=1
 CATEGORY=Items by Professions
-SUBSECTION=Barber
+SUBSECTION=Hairstylist
 DESCRIPTION=Barber Scissors
 DUPELIST=0dfd
 
 [ITEMDEF 0dfd]
-//Barber SCISSORS
+//barber scissors
 DUPEITEM=0dfc
 
 [ITEMDEF 0dfe]
 DEFNAME=i_hair_cut
-VALUE=1
 CATEGORY=Items by Professions
-SUBSECTION=Barber
-DESCRIPTION=CUT HAIR
+SUBSECTION=Hairstylist
+DESCRIPTION=Cut Hair
 
 [ITEMDEF 0dff]
 DEFNAME=i_wig
-RESOURCES=1 i_cloth,5 i_thread,20 i_hair_cut
-WEIGHT=1
+FLIP=1
 CATEGORY=Items by Professions
-SUBSECTION=Barber
-DESCRIPTION=WIG
+SUBSECTION=Hairstylist
+DESCRIPTION=Wig
+DUPELIST=0e00
 
 [ITEMDEF 0e00]
-DEFNAME=i_wig_1
-RESOURCES=1 i_cloth,5 i_thread,20 i_hair_cut
-WEIGHT=1
-CATEGORY=Items by Professions
-SUBSECTION=Barber
-DESCRIPTION=WIG 1
+//wig
+DUPEITEM=0dff
 
 [ITEMDEF 0e01]
 DEFNAME=i_wig_2
-RESOURCES=1 i_cloth,5 i_thread,20 i_hair_cut
-WEIGHT=1
+FLIP=1
 CATEGORY=Items by Professions
-SUBSECTION=Barber
-DESCRIPTION=WIG 2
+SUBSECTION=Hairstylist
+DESCRIPTION=Wig
+DUPELIST=0e02
 
 [ITEMDEF 0e02]
-DEFNAME=i_wig_3
-RESOURCES=1 i_cloth,5 i_thread,20 i_hair_cut
-WEIGHT=1
-CATEGORY=Items by Professions
-SUBSECTION=Barber
-DESCRIPTION=WIG 3
+//wig
+DUPEITEM=0e01
 
 [ITEMDEF 0e03]
-DEFNAME=i_wig_4
-RESOURCES=1 i_cloth,5 i_thread,20 i_hair_cut
-WEIGHT=1
+DEFNAME=i_wig_3
+FLIP=1
 CATEGORY=Items by Professions
-SUBSECTION=Barber
-DESCRIPTION=WIG 4
+SUBSECTION=Hairstylist
+DESCRIPTION=Wig
+DUPELIST=0e04
 
 [ITEMDEF 0e04]
-DEFNAME=i_wig_5
-RESOURCES=1 i_cloth,5 i_thread,20 i_hair_cut
-WEIGHT=1
-CATEGORY=Items by Professions
-SUBSECTION=Barber
-DESCRIPTION=WIG 5
+//wig
+DUPEITEM=0e03
 
 [ITEMDEF 0e05]
 DEFNAME=i_wig_stand
-RESOURCES=1 i_cloth,5 i_board
-WEIGHT=2
+FLIP=1
 CATEGORY=Items by Professions
-SUBSECTION=Barber
-DESCRIPTION=WIG STAND
+SUBSECTION=Hairstylist
+DESCRIPTION=Wig Stand
+DUPELIST=0e06
 
 [ITEMDEF 0e06]
-DEFNAME=i_wig_stand_2
-RESOURCES=1 i_cloth,5 i_board
-WEIGHT=2
-CATEGORY=Items by Professions
-SUBSECTION=Barber
-DESCRIPTION=WIG STAND 2
+//wig stand
+DUPEITEM=0e05
 
 [ITEMDEF 0e07]
-DEFNAME=i_wig_stand_3
-RESOURCES=1 i_cloth,5 i_board
-WEIGHT=2
+DEFNAME=i_wig_stand_2
+FLIP=1
 CATEGORY=Items by Professions
-SUBSECTION=Barber
-DESCRIPTION=WIG STAND 3
+SUBSECTION=Hairstylist
+DESCRIPTION=Wig Stand
+DUPELIST=0e08
 
 [ITEMDEF 0e08]
-DEFNAME=i_wig_stand_4
-RESOURCES=1 i_cloth,5 i_board
-WEIGHT=2
-CATEGORY=Items by Professions
-SUBSECTION=Barber
-DESCRIPTION=WIG STAND 4
+//wig stand
+DUPEITEM=0e07
 
 [ITEMDEF 0e09]
-DEFNAME=i_wig_6
-RESOURCES=1 i_cloth,5 i_thread,20 i_hair_cut
-WEIGHT=1
+DEFNAME=i_wig_4
+FLIP=1
 CATEGORY=Items by Professions
-SUBSECTION=Barber
-DESCRIPTION=WIG 6
+SUBSECTION=Hairstylist
+DESCRIPTION=Wig
+DUPELIST=0e0a
 
 [ITEMDEF 0e0a]
-DEFNAME=i_wig_7
-RESOURCES=1 i_cloth,5 i_thread,20 i_hair_cut
-WEIGHT=1
-CATEGORY=Items by Professions
-SUBSECTION=Barber
-DESCRIPTION=WIG 7
+//wig
+DUPEITEM=0e09
 
 [ITEMDEF 0e0b]
-DEFNAME=i_wig_8
-RESOURCES=1 i_cloth,5 i_thread,20 i_hair_cut
-WEIGHT=1
+DEFNAME=i_wig_5
+FLIP=1
 CATEGORY=Items by Professions
-SUBSECTION=Barber
-DESCRIPTION=WIG 8
+SUBSECTION=Hairstylist
+DESCRIPTION=Wig
+DUPELIST=0e0c
 
 [ITEMDEF 0e0c]
-DEFNAME=i_wig_9
-RESOURCES=1 i_cloth,5 i_thread,20 i_hair_cut
-WEIGHT=1
-CATEGORY=Items by Professions
-SUBSECTION=Barber
-DESCRIPTION=WIG 9
+//wig
+DUPEITEM=0e0b
 
 [ITEMDEF 0e0d]
-DEFNAME=i_wig_10
-RESOURCES=1 i_cloth,5 i_thread,20 i_hair_cut
-WEIGHT=1
+DEFNAME=i_wig_6
+FLIP=1
 CATEGORY=Items by Professions
-SUBSECTION=Barber
-DESCRIPTION=WIG 10
+SUBSECTION=Hairstylist
+DESCRIPTION=Wig
+DUPELIST=0e0e
 
 [ITEMDEF 0e0e]
-DEFNAME=i_wig_11
-RESOURCES=1 i_cloth,5 i_thread,20 i_hair_cut
-WEIGHT=1
-CATEGORY=Items by Professions
-SUBSECTION=Barber
-DESCRIPTION=WIG 11
+//wig
+DUPEITEM=0e0d
 
 
 [ITEMDEF 0203b]
 DEFNAME=i_hair_short
-NAME=short hair
-TYPE=T_HAIR
-VALUE={8 12}
-CATEGORY=Items by Professions
-SUBSECTION=Barber
-DESCRIPTION=Short Hair
+NAME=Short Hair
+TYPE=t_hair
+CanUse=can_u_human
+CATEGORY=Hairs, Horns and Faces
+CATEGORY=Human Hair
+DESCRIPTION=Short
 ON=@Create
-	ATTR=attr_newbie
-	TIMER=550000
-ON=@TIMER
-	if !<cont>	// on ground?
-		return 0
-	endif
-	if <cont.npc>	// players only
-		return 1
-	endif
-	serv.newitem=i_hair_BUNS
-	new.color=<cont.findlayer(layer_hair).color>
-	new.more=1
-	cont.equip <new.uid>
-	return 1
+   ATTR=attr_newbie
 
 [ITEMDEF 0203c]
 DEFNAME=i_hair_long
-NAME=long hair
-TYPE=T_HAIR
-VALUE={8 12}
-CATEGORY=Items by Professions
-SUBSECTION=Barber
-DESCRIPTION=Long Hair
-
+NAME=Long Hair
+TYPE=t_hair
+CanUse=can_u_human
+CATEGORY=Hairs, Horns and Faces
+CATEGORY=Human Hair
+DESCRIPTION=Long
 ON=@Create
-	ATTR=attr_newbie
-
-ON=@TIMER
-	return 1
+   ATTR=attr_newbie
 
 [ITEMDEF 0203d]
 DEFNAME=i_hair_ponytail
-NAME=ponytail
-TYPE=T_HAIR
-VALUE={8 12}
-CATEGORY=Items by Professions
-SUBSECTION=Barber
-DESCRIPTION=Pony Tail
-
+NAME=Ponytail Hair
+TYPE=t_hair
+CanUse=can_u_human
+CATEGORY=Hairs, Horns and Faces
+CATEGORY=Human Hair
+DESCRIPTION=Ponytail
 ON=@Create
-	ATTR=attr_newbie
-	TIMER=550000
-
-ON=@TIMER
-	if !<cont>	// on ground?
-		return 0
-	endif
-	if <cont.npc>	// players only
-		return 1
-	endif
-	serv.newitem=i_hair_LONG
-	new.color=<cont.findlayer(layer_hair).color>
-	new.more=1
-	cont.equip <new.uid>
-	return 1
+   ATTR=attr_newbie
 
 [ITEMDEF 0203e]
 DEFNAME=i_beard_long
-NAME=long beard
-TYPE=T_BEARD
-VALUE={8 12}
-CATEGORY=Items by Professions
-SUBSECTION=Barber
-DESCRIPTION=Long Beard
-
+NAME=Long Beard
+TYPE=t_beard
+CanUse=can_u_human|can_u_male
+CATEGORY=Hairs, Horns and Faces
+CATEGORY=Human Beard
+DESCRIPTION=Long
 ON=@Create
-	ATTR=attr_newbie
-
-ON=@TIMER
-	return 1
+   ATTR=attr_newbie
 
 [ITEMDEF 0203f]
 DEFNAME=i_beard_short
-NAME=short beard
-TYPE=T_BEARD
-VALUE={8 12}
-CATEGORY=Items by Professions
-SUBSECTION=Barber
-DESCRIPTION=Short Beard
-
+NAME=Short Beard
+TYPE=t_beard
+CanUse=can_u_human|can_u_male
+CATEGORY=Hairs, Horns and Faces
+CATEGORY=Human Beard
+DESCRIPTION=Short
 ON=@Create
-	ATTR=attr_newbie
-	TIMER=550000
-
-ON=@TIMER
-	if !<cont>	// on ground?
-		return 0
-	endif
-	if <cont.npc>	// players only
-		return 1
-	endif
-	serv.newitem=i_beard_LONG
-	new.color=<cont.findlayer(layer_beard).color>
-	cont.equip <new.uid>
-	return 1
+   ATTR=attr_newbie
 
 [ITEMDEF 02040]
 DEFNAME=i_beard_goatee
-NAME=goatee
-TYPE=T_BEARD
-VALUE={8 12}
-CATEGORY=Items by Professions
-SUBSECTION=Barber
+NAME=Goatee
+TYPE=t_beard
+CanUse=can_u_human|can_u_male
+CATEGORY=Hairs, Horns and Faces
+CATEGORY=Human Beard
 DESCRIPTION=Goatee
-
 ON=@Create
-	ATTR=attr_newbie
-	TIMER=550000
-
-ON=@TIMER
-	if !<cont>	// on ground?
-		return 0
-	endif
-	if <cont.npc>	// players only
-		return 1
-	endif
-	serv.newitem=i_beard_short
-	new.color=<cont.findlayer(layer_beard).color>
-	cont.equip <new.uid>
-	return 1
+   ATTR=attr_newbie
 
 [ITEMDEF 02041]
 DEFNAME=i_beard_mustache
-NAME=mustache
-TYPE=T_BEARD
-VALUE={8 12}
-CATEGORY=Items by Professions
-SUBSECTION=Barber
+NAME=Mustache
+TYPE=t_beard
+CanUse=can_u_human|can_u_male
+CATEGORY=Hairs, Horns and Faces
+CATEGORY=Human Beard
 DESCRIPTION=Mustache
-
 ON=@Create
-	ATTR=attr_newbie
-	TIMER=550000
-
-ON=@TIMER
-	if !<cont>	// on ground?
-		return 0
-	endif
-	if <cont.npc>	// players only
-		return 1
-	endif
-	serv.newitem=i_beard_GOATEE
-	new.color=<cont.findlayer(layer_beard).color>
-	cont.equip <new.uid>
-	return 1
+   ATTR=attr_newbie
 
 [ITEMDEF 02044]
 DEFNAME=i_hair_mohawk
-NAME=mohawk
-TYPE=T_HAIR
-VALUE={8 12}
-CATEGORY=Items by Professions
-SUBSECTION=Barber
+NAME=Mohawk Hair
+TYPE=t_hair
+CanUse=can_u_human
+CATEGORY=Hairs, Horns and Faces
+CATEGORY=Human Hair
 DESCRIPTION=Mohawk
-
 ON=@Create
-	ATTR=attr_newbie
-	TIMER=550000
-
-ON=@TIMER
-	if !<cont>	// on ground?
-		return 0
-	endif
-	if <cont.npc>	// players only
-		return 1
-	endif
-	serv.newitem=i_hair_SHORT
-	new.color=<cont.findlayer(layer_hair).color>
-	new.more=1
-	cont.equip <new.uid>
-	return 1
+   ATTR=attr_newbie
 
 [ITEMDEF 02045]
 DEFNAME=i_hair_pageboy
-NAME=pageboy
-TYPE=T_HAIR
-VALUE={8 12}
-CATEGORY=Items by Professions
-SUBSECTION=Barber
+NAME=Pageboy Hair
+TYPE=t_hair
+CanUse=can_u_human
+CATEGORY=Hairs, Horns and Faces
+CATEGORY=Human Hair
 DESCRIPTION=Pageboy
-
 ON=@Create
-	ATTR=attr_newbie
-	TIMER=550000
-
-ON=@TIMER
-	if !<cont>	// on ground?
-		return 0
-	endif
-	if <cont.npc>	// players only
-		return 1
-	endif
-	serv.newitem=i_hair_BUNS
-	new.color=<cont.findlayer(layer_hair).color>
-	new.more=1
-	cont.equip <new.uid>
-	return 1
+   ATTR=attr_newbie
 
 [ITEMDEF 02046]
 DEFNAME=i_hair_buns
-NAME=buns hair
-TYPE=T_HAIR
-VALUE={8 12}
-CATEGORY=Items by Professions
-SUBSECTION=Barber
-DESCRIPTION=Buns Hair
-
+NAME=Buns Hair
+TYPE=t_hair
+CanUse=can_u_human|can_u_female
+CATEGORY=Hairs, Horns and Faces
+CATEGORY=Human Hair
+DESCRIPTION=Buns
 ON=@Create
-	ATTR=attr_newbie
-	TIMER=550000
-
-ON=@TIMER
-	if !<cont>	// on ground?
-		return 0
-	endif
-	if <cont.npc>	// players only
-		return 1
-	endif
-	serv.newitem=i_hair_curly
-	new.color=<cont.findlayer(layer_hair).color>
-	cont.equip <new.uid>
-	return 1
+   ATTR=attr_newbie
 
 [ITEMDEF 02047]
 DEFNAME=i_hair_curly
-NAME=Curly
-TYPE=T_HAIR
-VALUE={8 12}
-CATEGORY=Items by Professions
-SUBSECTION=Barber
+NAME=Curly Hair
+TYPE=t_hair
+CanUse=can_u_human
+CATEGORY=Hairs, Horns and Faces
+CATEGORY=Human Hair
 DESCRIPTION=Curly
-
 ON=@Create
-	ATTR=attr_newbie
-	TIMER=550000
-
-ON=@TIMER
-	if !<cont>	// on ground?
-		return 0
-	endif
-	if <cont.npc>	// players only
-		return 1
-	endif
-	serv.newitem=i_hair_LONG
-	new.color=<cont.findlayer(layer_hair).color>
-	cont.equip <new.uid>
-	return 1
+   ATTR=attr_newbie
 
 [ITEMDEF 02048]
 DEFNAME=i_hair_receding
-NAME=Receding
-TYPE=T_HAIR
-VALUE={8 12}
-CATEGORY=Items by Professions
-SUBSECTION=Barber
+NAME=Receding Hair
+TYPE=t_hair
+CanUse=can_u_human|can_u_male
+CATEGORY=Hairs, Horns and Faces
+CATEGORY=Human Hair
 DESCRIPTION=Receding
-
 ON=@Create
-	ATTR=attr_newbie
-	TIMER=550000
-
-ON=@TIMER
-	if !<cont>	// on ground?
-		return 0
-	endif
-	if <cont.npc>	// players only
-		return 1
-	endif
-	serv.newitem=i_hair_SHORT
-	new.color=<cont.findlayer(layer_hair).color>
-	cont.equip <new.uid>
-	return 1
+   ATTR=attr_newbie
 
 [ITEMDEF 02049]
 DEFNAME=i_hair_2_pigtails
-NAME=2 Tails
-TYPE=T_HAIR
-VALUE={8 12}
-CATEGORY=Items by Professions
-SUBSECTION=Barber
-DESCRIPTION=2 Tails
-
+NAME=2-tails Hair
+TYPE=t_hair
+CanUse=can_u_human
+CATEGORY=Hairs, Horns and Faces
+CATEGORY=Human Hair
+DESCRIPTION=2-tails
 ON=@Create
-	ATTR=attr_newbie
-	TIMER=550000
-
-ON=@TIMER
-	if !<cont>	// on ground?
-		return 0
-	endif
-	if <cont.npc>	// players only
-		return 1
-	endif
-	serv.newitem=i_hair_long
-	new.color=<cont.findlayer(layer_hair).color>
-	cont.equip <new.uid>
-	return 1
+   ATTR=attr_newbie
 
 [ITEMDEF 0204a]
 DEFNAME=i_hair_topknot
-NAME=Topknot
-TYPE=T_HAIR
-VALUE={8 12}
-CATEGORY=Items by Professions
-SUBSECTION=Barber
+NAME=Topknot Hair
+TYPE=t_hair
+CanUse=can_u_human
+CATEGORY=Hairs, Horns and Faces
+CATEGORY=Human Hair
 DESCRIPTION=Topknot
-
 ON=@Create
-	ATTR=attr_newbie
-	TIMER=550000
-
-ON=@TIMER
-	if !<cont>	// on ground?
-		return 0
-	endif
-	if <cont.npc>	// players only
-		return 1
-	endif
-	serv.newitem=i_hair_RECEDING
-	new.color=<cont.findlayer(layer_hair).color>
-	cont.equip <new.uid>
-	return 1
+   ATTR=attr_newbie
 
 [ITEMDEF 0204b]
 DEFNAME=i_beard_short_med
 NAME=Short Beard & Mustache
-TYPE=T_BEARD
-VALUE={8 12}
-CATEGORY=Items by Professions
-SUBSECTION=Barber
+TYPE=t_beard
+CanUse=can_u_human|can_u_male
+CATEGORY=Hairs, Horns and Faces
+CATEGORY=Human Beard
 DESCRIPTION=Short Beard & Mustache
-
 ON=@Create
-	ATTR=attr_newbie
-	TIMER=550000
-
-ON=@TIMER
-	if !<cont>	// on ground?
-		return 0
-	endif
-	if <cont.npc>	// players only
-		return 1
-	endif
-	serv.newitem=i_beard_long
-	new.color=<cont.findlayer(layer_beard).color>
-	cont.equip <new.uid>
-	return 1
+   ATTR=attr_newbie
 
 [ITEMDEF 0204c]
 DEFNAME=i_beard_long_med
 NAME=Long Beard & Mustache
-TYPE=T_BEARD
-VALUE={8 12}
-CATEGORY=Items by Professions
-SUBSECTION=Barber
+TYPE=t_beard
+CanUse=can_u_human|can_u_male
+CATEGORY=Hairs, Horns and Faces
+CATEGORY=Human Beard
 DESCRIPTION=Long Beard & Mustache
-
 ON=@Create
-	ATTR=attr_newbie
-	TIMER=550000
-
-ON=@TIMER
-	if !<cont>	// on ground?
-		return 0
-	endif
-	if <cont.npc>	// players only
-		return 1
-	endif
-	serv.newitem=i_beard_LONG_MED
-	new.color=<cont.findlayer(layer_beard).color>
-	cont.equip <new.uid>
-	return 1
+   ATTR=attr_newbie
 
 [ITEMDEF 0204d]
 DEFNAME=i_beard_vandyke
-NAME=vandyke
-TYPE=T_BEARD
-VALUE={8 12}
-CATEGORY=Items by Professions
-SUBSECTION=Barber
+NAME=Vandyke
+TYPE=t_beard
+CanUse=can_u_human|can_u_male
+CATEGORY=Hairs, Horns and Faces
+CATEGORY=Human Beard
 DESCRIPTION=Vandyke
-
 ON=@Create
-	ATTR=attr_newbie
-	TIMER=550000
-
-ON=@TIMER
-	if !<cont>	// on ground?
-		return 0
-	endif
-	if <cont.npc>	// players only
-		return 1
-	endif
-	serv.newitem=i_beard_short_med
-	new.color=<cont.findlayer(layer_beard).color>
-	cont.equip <new.uid>
-	return 1
+   ATTR=attr_newbie
 
 [ITEMDEF 02fbf]
-DEFNAME=i_hair_elven_ML
-NAME=medium length hair
+DEFNAME=i_hair_elven_ml
+NAME=Mid Long Hair
 TYPE=t_hair
-VALUE=16
-WEIGHT=0.1
-CanUse=can_u_elf
+CanUse=can_u_elf|can_u_male
 CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Elven Hair
-DESCRIPTION=Medium Length Hair
+DESCRIPTION=Mid Long
 ON=@Create
-	ATTR=attr_newbie
-ON=@Timer
-	RETURN 1
+   ATTR=attr_newbie
 
 [ITEMDEF 02fc0]
 DEFNAME=i_hair_long_feather
-NAME=Long Feather
+NAME=Long Feather Hair
 TYPE=t_hair
-VALUE=24
-WEIGHT=0.1
 CanUse=can_u_elf
 CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Elven Hair
 DESCRIPTION=Long Feather
 ON=@Create
-	ATTR=attr_newbie
-ON=@Timer
-	RETURN 1
+   ATTR=attr_newbie
 
 [ITEMDEF 02fc1]
 DEFNAME=i_hair_short1
-NAME=short hair
+NAME=Short Hair
 TYPE=t_hair
-VALUE=12
-WEIGHT=0.1
 CanUse=can_u_elf
 CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Elven Hair
-DESCRIPTION=Short Hair
+DESCRIPTION=Short
 ON=@Create
-	ATTR=attr_newbie
-ON=@Timer
-	RETURN 1
+   ATTR=attr_newbie
 
 [ITEMDEF 02fc2]
 DEFNAME=i_hair_elven_mullet
-NAME=Mullet
+NAME=Mullet Hair
 TYPE=t_hair
-VALUE=10
-WEIGHT=0.1
 CanUse=can_u_elf
 CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Elven Hair
 DESCRIPTION=Mullet
 ON=@Create
-	ATTR=attr_newbie
-ON=@Timer
-	RETURN 1
+   ATTR=attr_newbie
 
 [ITEMDEF 02fcc]
 DEFNAME=i_hair_elven_flower
-NAME=flower hair
+NAME=Flower Hair
 TYPE=t_hair
-VALUE=22
-WEIGHT=0.1
-CanUse=can_u_elf
+CanUse=can_u_elf|can_u_female
 CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Elven Hair
-DESCRIPTION=Flower Hair
+DESCRIPTION=Flower
 ON=@Create
-	ATTR=attr_newbie
-ON=@Timer
-	RETURN 1
+   ATTR=attr_newbie
 
 [ITEMDEF 02fcd]
 DEFNAME=i_hair_elven_long
-NAME=Long
+NAME=Long Hair
 TYPE=t_hair
-VALUE=17
-WEIGHT=0.1
 CanUse=can_u_elf
 CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Elven Hair
 DESCRIPTION=Long
 ON=@Create
-	ATTR=attr_newbie
-ON=@Timer
-	RETURN 1
+   ATTR=attr_newbie
 
 [ITEMDEF 02fce]
 DEFNAME=i_hair_elven_topknot
-NAME=Topknot
+NAME=Topknot Hair
 TYPE=t_hair
-VALUE=23
-WEIGHT=0.1
 CanUse=can_u_elf
 CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Elven Hair
 DESCRIPTION=Topknot
 ON=@Create
-	ATTR=attr_newbie
-ON=@Timer
-	RETURN 1
+   ATTR=attr_newbie
 
 [ITEMDEF 02fcf]
 DEFNAME=i_hair_elven_braid
-NAME=Long Braid
+NAME=Long Braid Hair
 TYPE=t_hair
-VALUE=25
-WEIGHT=0.1
 CanUse=can_u_elf
 CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Elven Hair
 DESCRIPTION=Long Braid
 ON=@Create
-	ATTR=attr_newbie
-ON=@Timer
-	RETURN 1
+   ATTR=attr_newbie
 
 [ITEMDEF 02fd0]
 DEFNAME=i_hair_elven_buns
-NAME=Buns
+NAME=Buns Hair
 TYPE=t_hair
-VALUE=27
-WEIGHT=0.1
 CanUse=can_u_elf
 CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Elven Hair
 DESCRIPTION=Buns
 ON=@Create
-	ATTR=attr_newbie
-ON=@Timer
-	RETURN 1
+   ATTR=attr_newbie
 
 [ITEMDEF 02fd1]
 DEFNAME=i_hair_elven_spike
-NAME=Spiked
+NAME=Spiked Hair
 TYPE=t_hair
-VALUE=29
-WEIGHT=0.1
 CanUse=can_u_elf
 CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Elven Hair
 DESCRIPTION=Spiked
 ON=@Create
-	ATTR=attr_newbie
-ON=@Timer
-	RETURN 1
-
-[ITEMDEF 02fd2]
-DEFNAME=i_hair_elven_long5
-NAME=long hair
-TYPE=t_hair
-VALUE=19
-WEIGHT=0.1
-CanUse=can_u_elf
-CATEGORY=Hairs, Horns and Faces
-SUBSECTION=Elven Hair
-DESCRIPTION=Long Hair 5 (duplicate)
-ON=@Create
-	ATTR=attr_newbie
-ON=@Timer
-	RETURN 1
+   ATTR=attr_newbie
 
 [ITEMDEF 03b44]
 DEFNAME=i_face_1
@@ -753,7 +432,7 @@ CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Faces
 DESCRIPTION=Face 1
 ON=@Create
-	ATTR=attr_newbie
+   ATTR=attr_newbie
 
 [ITEMDEF 03b45]
 DEFNAME=i_face_2
@@ -762,7 +441,7 @@ CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Faces
 DESCRIPTION=Face 2
 ON=@Create
-	ATTR=attr_newbie
+   ATTR=attr_newbie
 
 [ITEMDEF 03b46]
 DEFNAME=i_face_3
@@ -771,16 +450,16 @@ CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Faces
 DESCRIPTION=Face 3
 ON=@Create
-	ATTR=attr_newbie
+   ATTR=attr_newbie
 
-[ITEMDEF 03b44]
+[ITEMDEF 03b47]
 DEFNAME=i_face_4
 NAME=Face 4
 CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Faces
 DESCRIPTION=Face 4
 ON=@Create
-	ATTR=attr_newbie
+   ATTR=attr_newbie
 
 [ITEMDEF 03b48]
 DEFNAME=i_face_5
@@ -789,7 +468,7 @@ CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Faces
 DESCRIPTION=Face 5
 ON=@Create
-	ATTR=attr_newbie
+   ATTR=attr_newbie
 
 [ITEMDEF 03b49]
 DEFNAME=i_face_6
@@ -798,7 +477,7 @@ CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Faces
 DESCRIPTION=Face 6
 ON=@Create
-	ATTR=attr_newbie
+   ATTR=attr_newbie
 
 [ITEMDEF 03b4a]
 DEFNAME=i_face_7
@@ -807,7 +486,7 @@ CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Faces
 DESCRIPTION=Face 7
 ON=@Create
-	ATTR=attr_newbie
+   ATTR=attr_newbie
 
 [ITEMDEF 03b4b]
 DEFNAME=i_face_8
@@ -816,7 +495,7 @@ CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Faces
 DESCRIPTION=Face 8
 ON=@Create
-	ATTR=attr_newbie
+   ATTR=attr_newbie
 
 [ITEMDEF 03b4c]
 DEFNAME=i_face_9
@@ -825,7 +504,7 @@ CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Faces
 DESCRIPTION=Face 9
 ON=@Create
-	ATTR=attr_newbie
+   ATTR=attr_newbie
 
 [ITEMDEF 03b4d]
 DEFNAME=i_face_10
@@ -834,7 +513,7 @@ CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Faces
 DESCRIPTION=Face 10
 ON=@Create
-	ATTR=attr_newbie
+   ATTR=attr_newbie
 
 [ITEMDEF 03b4e]
 DEFNAME=i_face_anime
@@ -843,7 +522,7 @@ CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Faces
 DESCRIPTION=Anime
 ON=@Create
-	ATTR=attr_newbie
+   ATTR=attr_newbie
 
 [ITEMDEF 03b4f]
 DEFNAME=i_face_hellian
@@ -852,7 +531,7 @@ CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Faces
 DESCRIPTION=Hellian
 ON=@Create
-	ATTR=attr_newbie
+   ATTR=attr_newbie
 
 [ITEMDEF 03b50]
 DEFNAME=i_face_juka
@@ -861,7 +540,7 @@ CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Faces
 DESCRIPTION=Juka
 ON=@Create
-	ATTR=attr_newbie
+   ATTR=attr_newbie
 
 [ITEMDEF 03b51]
 DEFNAME=i_face_undead
@@ -870,7 +549,7 @@ CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Faces
 DESCRIPTION=Undead
 ON=@Create
-	ATTR=attr_newbie
+   ATTR=attr_newbie
 
 [ITEMDEF 03b52]
 DEFNAME=i_face_meer
@@ -879,7 +558,7 @@ CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Faces
 DESCRIPTION=Meer
 ON=@Create
-	ATTR=attr_newbie
+   ATTR=attr_newbie
 
 [ITEMDEF 03b53]
 DEFNAME=i_face_elder
@@ -888,7 +567,7 @@ CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Faces
 DESCRIPTION=Elder
 ON=@Create
-	ATTR=attr_newbie
+   ATTR=attr_newbie
 
 [ITEMDEF 03b54]
 DEFNAME=i_face_orc
@@ -897,7 +576,7 @@ CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Faces
 DESCRIPTION=Orc
 ON=@Create
-	ATTR=attr_newbie
+   ATTR=attr_newbie
 
 [ITEMDEF 03b55]
 DEFNAME=i_face_pirate
@@ -906,7 +585,7 @@ CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Faces
 DESCRIPTION=Pirate
 ON=@Create
-	ATTR=attr_newbie
+   ATTR=attr_newbie
 
 [ITEMDEF 03b56]
 DEFNAME=i_face_native_papuan
@@ -915,7 +594,7 @@ CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Faces
 DESCRIPTION=Native Papuan
 ON=@Create
-	ATTR=attr_newbie
+   ATTR=attr_newbie
 
 [ITEMDEF 03b57]
 DEFNAME=i_face_vampire
@@ -924,346 +603,230 @@ CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Faces
 DESCRIPTION=Vampire
 ON=@Create
-	ATTR=attr_newbie
+   ATTR=attr_newbie
 
 [ITEMDEF 04258]
 DEFNAME=i_horn_gargoyle_male_1
-NAME=male gargoyle horns
+NAME=Male Horn 1
 TYPE=t_hair
-VALUE=8
-WEIGHT=0.1
-CanUse=can_u_female|can_u_gargoyle
+CanUse=can_u_gargoyle|can_u_female
 CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Gargoyle Horns
 DESCRIPTION=Male Horn 1
 ON=@Create
-	ATTR=attr_newbie
-ON=@Timer
-	RETURN 1
+   ATTR=attr_newbie
 
 [ITEMDEF 04259]
 DEFNAME=i_horn_gargoyle_male_2
-NAME=male gargoyle horns
+NAME=Male Horn 2
 TYPE=t_hair
-VALUE=8
-WEIGHT=0.1
-CanUse=can_u_male|can_u_gargoyle
+CanUse=can_u_gargoyle|can_u_male
 CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Gargoyle Horns
 DESCRIPTION=Male Horn 2
 ON=@Create
-	ATTR=attr_newbie
-ON=@Timer
-	RETURN 1
+   ATTR=attr_newbie
 
 [ITEMDEF 0425a]
 DEFNAME=i_horn_gargoyle_male_3
-NAME=male gargoyle horns
+NAME=Male Horn 3
 TYPE=t_hair
-VALUE=8
-WEIGHT=0.1
-CanUse=can_u_male|can_u_gargoyle
+CanUse=can_u_gargoyle|can_u_male
 CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Gargoyle Horns
 DESCRIPTION=Male Horn 3
 ON=@Create
-	ATTR=attr_newbie
-ON=@Timer
-	RETURN 1
+   ATTR=attr_newbie
 
 [ITEMDEF 0425b]
 DEFNAME=i_horn_gargoyle_male_4
-NAME=male gargoyle horns
+NAME=Male Horn 4
 TYPE=t_hair
-VALUE=8
-WEIGHT=0.1
-CanUse=can_u_male|can_u_gargoyle
+CanUse=can_u_gargoyle|can_u_male
 CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Gargoyle Horns
 DESCRIPTION=Male Horn 4
 ON=@Create
-	ATTR=attr_newbie
-ON=@Timer
-	RETURN 1
+   ATTR=attr_newbie
 
 [ITEMDEF 0425c]
 DEFNAME=i_horn_gargoyle_male_5
-NAME=male gargoyle horns
+NAME=Male Horn 5
 TYPE=t_hair
-VALUE=8
-WEIGHT=0.1
-CanUse=can_u_male|can_u_gargoyle
+CanUse=can_u_gargoyle|can_u_male
 CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Gargoyle Horns
 DESCRIPTION=Male Horn 5
 ON=@Create
-	ATTR=attr_newbie
-ON=@Timer
-	RETURN 1
+   ATTR=attr_newbie
 
 [ITEMDEF 0425d]
 DEFNAME=i_horn_gargoyle_male_6
-NAME=male gargoyle horns
+NAME=Male Horn 6
 TYPE=t_hair
-VALUE=8
-WEIGHT=0.1
-CanUse=can_u_male|can_u_gargoyle
+CanUse=can_u_gargoyle|can_u_male
 CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Gargoyle Horns
 DESCRIPTION=Male Horn 6
 ON=@Create
-	ATTR=attr_newbie
-ON=@Timer
-	RETURN 1
+   ATTR=attr_newbie
 
 [ITEMDEF 0425e]
 DEFNAME=i_horn_gargoyle_male_7
-NAME=male gargoyle horns
+NAME=Male Horn 7
 TYPE=t_hair
-VALUE=8
-WEIGHT=0.1
-CanUse=can_u_male|can_u_gargoyle
+CanUse=can_u_gargoyle|can_u_male
 CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Gargoyle Horns
 DESCRIPTION=Male Horn 7
 ON=@Create
-	ATTR=attr_newbie
-ON=@Timer
-	RETURN 1
+   ATTR=attr_newbie
 
 [ITEMDEF 0425f]
 DEFNAME=i_horn_gargoyle_male_8
-NAME=male gargoyle horns
+NAME=Male Horn 8
 TYPE=t_hair
-VALUE=8
-WEIGHT=0.1
-CanUse=can_u_male|can_u_gargoyle
+CanUse=can_u_gargoyle|can_u_male
 CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Gargoyle Horns
 DESCRIPTION=Male Horn 8
 ON=@Create
-	ATTR=attr_newbie
-ON=@Timer
-	RETURN 1
+   ATTR=attr_newbie
 
 [ITEMDEF 04260]
 //FIXME: what is this?
 
 [ITEMDEF 04261]
 DEFNAME=i_horn_gargoyle_female_1
-NAME=female gargoyle horns
+NAME=Female Horn 1
 TYPE=t_hair
-VALUE=8
-WEIGHT=0.1
-CanUse=can_u_female|can_u_gargoyle
+CanUse=can_u_gargoyle|can_u_female
 CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Gargoyle Horns
 DESCRIPTION=Female Horn 1
 ON=@Create
-	ATTR=attr_newbie
-ON=@Timer
-	RETURN 1
+   ATTR=attr_newbie
 
 [ITEMDEF 04262]
 DEFNAME=i_horn_gargoyle_female_2
-NAME=female gargoyle horns
+NAME=Female Horn 2
 TYPE=t_hair
-VALUE=8
-WEIGHT=0.1
-CanUse=can_u_female|can_u_gargoyle
+CanUse=can_u_gargoyle|can_u_female
 CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Gargoyle Horns
 DESCRIPTION=Female Horn 2
 ON=@Create
-	ATTR=attr_newbie
-ON=@Timer
-	RETURN 1
+   ATTR=attr_newbie
 
 [ITEMDEF 04273]
 DEFNAME=i_horn_gargoyle_female_3
-NAME=female gargoyle horns
+NAME=Female Horn 3
 TYPE=t_hair
-VALUE=8
-WEIGHT=0.1
-CanUse=can_u_female|can_u_gargoyle
+CanUse=can_u_gargoyle|can_u_female
 CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Gargoyle Horns
 DESCRIPTION=Female Horn 3
 ON=@Create
-	ATTR=attr_newbie
-ON=@Timer
-	RETURN 1
+   ATTR=attr_newbie
 
 [ITEMDEF 04274]
 DEFNAME=i_horn_gargoyle_female_4
-NAME=female gargoyle horns
+NAME=Female Horn 4
 TYPE=t_hair
-VALUE=8
-WEIGHT=0.1
-CanUse=can_u_female|can_u_gargoyle
+CanUse=can_u_gargoyle|can_u_female
 CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Gargoyle Horns
 DESCRIPTION=Female Horn 4
 ON=@Create
-	ATTR=attr_newbie
-ON=@Timer
-	RETURN 1
+   ATTR=attr_newbie
 
 [ITEMDEF 04275]
 DEFNAME=i_horn_gargoyle_female_5
-NAME=female gargoyle horns
+NAME=Female Horn 5
 TYPE=t_hair
-VALUE=8
-WEIGHT=0.1
-CanUse=can_u_female|can_u_gargoyle
+CanUse=can_u_gargoyle|can_u_female
 CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Gargoyle Horns
 DESCRIPTION=Female Horn 5
 ON=@Create
-	ATTR=attr_newbie
-ON=@Timer
-	RETURN 1
-
-[ITEMDEF 04276]
-//FIXME: This needs to be tested
-DEFNAME=i_horn_gargoyle_x
-NAME=gargoyle horns
-TYPE=t_hair
-VALUE=8
-WEIGHT=0.1
-CanUse=can_u_gargoyle
-CATEGORY=Hairs, Horns and Faces
-SUBSECTION=Gargoyle Horns
-DESCRIPTION=Horn ?
-ON=@Create
-	ATTR=attr_newbie
-ON=@Timer
-	RETURN 1
+   ATTR=attr_newbie
 
 [ITEMDEF 042aa]
 DEFNAME=i_horn_gargoyle_female_6
-NAME=female gargoyle horns
+NAME=Female Horn 6
 TYPE=t_hair
-VALUE=8
-WEIGHT=0.1
-CanUse=can_u_female|can_u_gargoyle
+CanUse=can_u_gargoyle|can_u_female
 CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Gargoyle Horns
 DESCRIPTION=Female Horn 6
 ON=@Create
-	ATTR=attr_newbie
-ON=@Timer
-	RETURN 1
+   ATTR=attr_newbie
 
 [ITEMDEF 042ab]
 DEFNAME=i_horn_gargoyle_female_7
-NAME=female gargoyle horns
+NAME=Female Horn 7
 TYPE=t_hair
-VALUE=8
-WEIGHT=0.1
-CanUse=can_u_female|can_u_gargoyle
+CanUse=can_u_gargoyle|can_u_female
 CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Gargoyle Horns
 DESCRIPTION=Female Horn 7
 ON=@Create
-	ATTR=attr_newbie
-ON=@Timer
-	RETURN 1
-
-[ITEMDEF 042ac]
-//FIXME: This needs to be tested
-DEFNAME=i_horn_gargoyle_y
-NAME=gargoyle horns
-TYPE=t_hair
-VALUE=8
-WEIGHT=0.1
-CanUse=can_u_gargoyle
-CATEGORY=Hairs, Horns and Faces
-SUBSECTION=Gargoyle Horns
-DESCRIPTION=Female Horn ?
-ON=@Create
-	ATTR=attr_newbie
-ON=@Timer
-	RETURN 1
+   ATTR=attr_newbie
 
 [ITEMDEF 042ad]
 DEFNAME=i_horn_gargoyle_facial_1
-NAME=facial gargoyle horns
+NAME=Male Facial Horn 1
 TYPE=t_beard
-LAYER=layer_beard
-VALUE=8
-WEIGHT=0.1
-CanUse=can_u_male|can_u_gargoyle
+CanUse=can_u_gargoyle|can_u_male
 CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Gargoyle Horns
 DESCRIPTION=Male Facial Horn 1
 ON=@Create
-	ATTR=attr_newbie
-ON=@Timer
-	RETURN 1
+   ATTR=attr_newbie
 
 [ITEMDEF 042ae]
 DEFNAME=i_horn_gargoyle_facial_2
-NAME=facial gargoyle horns
+NAME=Male Facial Horn 2
 TYPE=t_beard
-LAYER=layer_beard
-VALUE=8
-WEIGHT=0.1
-CanUse=can_u_male|can_u_gargoyle
+CanUse=can_u_gargoyle|can_u_male
 CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Gargoyle Horns
 DESCRIPTION=Male Facial Horn 2
 ON=@Create
-	ATTR=attr_newbie
-ON=@Timer
-	RETURN 1
+   ATTR=attr_newbie
 
 [ITEMDEF 042af]
 DEFNAME=i_horn_gargoyle_facial_3
-NAME=facial gargoyle horns
+NAME=Male Facial Horn 3
 TYPE=t_beard
-LAYER=layer_beard
-VALUE=8
-WEIGHT=0.1
-CanUse=can_u_male|can_u_gargoyle
+CanUse=can_u_gargoyle|can_u_male
 CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Gargoyle Horns
 DESCRIPTION=Male Facial Horn 3
 ON=@Create
-	ATTR=attr_newbie
-ON=@Timer
-	RETURN 1
+   ATTR=attr_newbie
 
 [ITEMDEF 042b0]
 DEFNAME=i_horn_gargoyle_facial_4
-NAME=facial gargoyle horns
+NAME=Male Facial Horn 4
 TYPE=t_beard
-LAYER=layer_beard
-VALUE=8
-WEIGHT=0.1
-CanUse=can_u_male|can_u_gargoyle
+CanUse=can_u_gargoyle|can_u_male
 CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Gargoyle Horns
 DESCRIPTION=Male Facial Horn 4
 ON=@Create
-	ATTR=attr_newbie
-ON=@Timer
-	RETURN 1
+   ATTR=attr_newbie
 
 [ITEMDEF 042b1]
 DEFNAME=i_horn_gargoyle_female_8
-NAME=female gargoyle horn
+NAME=Female Horn 8
 TYPE=t_hair
-VALUE=8
-WEIGHT=0.1
-CanUse=can_u_female|can_u_gargoyle
+CanUse=can_u_gargoyle|can_u_female
 CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Gargoyle Horns
 DESCRIPTION=Female Horn 8
 ON=@Create
-	ATTR=attr_newbie
-ON=@Timer
-	RETURN 1
+   ATTR=attr_newbie
 
 [ITEMDEF 05679]
 DEFNAME=i_face_gargoyle_1
@@ -1272,7 +835,7 @@ CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Gargoyle Faces
 DESCRIPTION=Face 1
 ON=@Create
-	ATTR=attr_newbie
+   ATTR=attr_newbie
 
 [ITEMDEF 0567a]
 DEFNAME=i_face_gargoyle_2
@@ -1281,7 +844,7 @@ CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Gargoyle Faces
 DESCRIPTION=Face 2
 ON=@Create
-	ATTR=attr_newbie
+   ATTR=attr_newbie
 
 [ITEMDEF 0567b]
 DEFNAME=i_face_gargoyle_3
@@ -1290,7 +853,7 @@ CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Gargoyle Faces
 DESCRIPTION=Face 3
 ON=@Create
-	ATTR=attr_newbie
+   ATTR=attr_newbie
 
 [ITEMDEF 0567c]
 DEFNAME=i_face_gargoyle_4
@@ -1299,7 +862,7 @@ CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Gargoyle Faces
 DESCRIPTION=Face 4
 ON=@Create
-	ATTR=attr_newbie
+   ATTR=attr_newbie
 
 [ITEMDEF 0567d]
 DEFNAME=i_face_gargoyle_5
@@ -1308,7 +871,7 @@ CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Gargoyle Faces
 DESCRIPTION=Face 5
 ON=@Create
-	ATTR=attr_newbie
+   ATTR=attr_newbie
 
 [ITEMDEF 0567e]
 DEFNAME=i_face_gargoyle_6
@@ -1317,63 +880,6 @@ CATEGORY=Hairs, Horns and Faces
 SUBSECTION=Gargoyle Faces
 DESCRIPTION=Face 6
 ON=@Create
-	ATTR=attr_newbie
-
-//////////////////
-// Custom Items //
-//////////////////
-
-[ITEMDEF i_beard_none]
-ID=i_eq_marker
-NAME=No Beard
-TYPE=t_beard
-LAYER=layer_beard
-VALUE=10
-ON=@Create
-	ATTR=attr_newbie
-	TIMER=550000
-ON=@TIMER
-	if !<cont>	// on ground?
-		return 0
-	endif
-	if <cont.npc>	// players only
-		return 1
-	endif
-	serv.newitem=i_beard_mustache
-	new.color=<cont.findlayer(layer_beard).color>
-	cont.equip <new.uid>
-	return 1
-
-
-[ITEMDEF i_hair_none]
-ID=i_eq_marker
-NAME=No Hair
-TYPE=t_hair
-LAYER=layer_hair
-VALUE=10
-ON=@Create
-	ATTR=attr_newbie
-	TIMER=550000
-ON=@TIMER
-	if !<cont>	// on ground?
-		return 0
-	endif
-	if <cont.npc>	// players only
-		return 1
-	endif
-	serv.newitem=i_hair_topknot
-	new.color=<cont.findlayer(layer_hair).color>
-	cont.equip <new.uid>
-	return 1
-
-[ITEMDEF i_bottle_hair_dye]
-ID=0e27
-NAME=Bottle of Hair Dye
-TYPE=t_hair_dye
-WEIGHT=2
-RESOURCES=1 i_bottle,1 i_dyes
-CATEGORY=Items by Professions
-SUBSECTION=Barber
-DESCRIPTION=Hair Dye
+   ATTR=attr_newbie
 
 [EOF]

@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, May 7, 2017
+// FILE LAST UPDATED: Friday, Aug 4, 2017
 //
 VERSION=0.56d
 
@@ -506,13 +506,11 @@ SELL=i_reag_nightshade,{33 118}
 SELL=i_reag_sulfur_ash,{33 118}
 SELL=i_reag_spider_silk,{33 118}
 SELL=i_BOTTLE_EMPTY,{23 48}
-SELL=i_bottle_hair_dye,{3 18}
 
 [TEMPLATE VENDOR_B_ALCHEMIST]
 CATEGORY=Vendor Templates
 SUBSECTION=Buy Templates
 DESCRIPTION=Alchemist
-BUY=i_bottle_hair_dye,{3 18}
 BUY=i_bottle_empty,{3 18}
 BUY=i_potion_refresh,{3 18}
 BUY=i_potion_agility,{3 18}
@@ -1166,7 +1164,6 @@ SELL=i_key_copper,{5 38}
 SELL=i_bedroll,{5 38}
 SELL=i_kindling,{5 38}
 SELL=i_deed_GUILDSTONE,{5 38}
-SELL=i_bottle_hair_dye,{5 38}
 SELL=i_chessboard,{5 38}
 SELL=i_checkerboard,{5 38}
 SELL=i_backgammon_game,{5 38}
@@ -1194,7 +1191,6 @@ BUY=i_chessboard,{5 38}
 BUY=i_checkerboard,{5 38}
 BUY=i_dice_cup,{5 38}
 BUY=i_backgammon_game,{5 38}
-BUY=i_bottle_hair_dye,{5 38}
 BUY=i_kindling,{5 38}
 BUY=i_bottle_empty,{5 38}
 BUY=i_Box_Wood,{5 38}
