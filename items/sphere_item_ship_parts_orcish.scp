@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2011
+// SPHERE by : Menasoft ©1997-2017
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,9 +7,9 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, March 24, 2015
+// FILE LAST UPDATED: Saturday, Aug 12, 2017
 //
-VERSION=0.56b
+VERSION=0.56d
 
 [ITEMDEF 07530]
 // OrcShipMainHull SOUT
@@ -599,7 +599,8 @@ TYPE=t_normal
 [ITEMDEF 075a5]
 // OrcShipMainHull SOUT
 DEFNAME=i_orcshipmainhull_sout_118
-TYPE=t_container
+TYPE=t_ship_hold
+TDATA2=04c
 
 [ITEMDEF 075a6]
 // OrcShipMainHull SOUT
@@ -1299,7 +1300,8 @@ TYPE=t_normal
 [ITEMDEF 07799]
 // OrcShipMainHull WEST
 DEFNAME=i_orcshipmainhull_west_118
-TYPE=t_container
+TYPE=t_ship_hold
+TDATA2=04c
 
 [ITEMDEF 0779a]
 // OrcShipMainHull WEST
@@ -1999,7 +2001,8 @@ TYPE=t_normal
 [ITEMDEF 0798d]
 // OrcShipMainHull NORT
 DEFNAME=i_orcshipmainhull_nort_118
-TYPE=t_container
+TYPE=t_ship_hold
+TDATA2=04c
 
 [ITEMDEF 0798e]
 // OrcShipMainHull NORT
@@ -2699,7 +2702,8 @@ TYPE=t_normal
 [ITEMDEF 07b81]
 // OrcShipMainHull EAST
 DEFNAME=i_orcshipmainhull_east_118
-TYPE=t_container
+TYPE=t_ship_hold
+TDATA2=04c
 
 [ITEMDEF 07b82]
 // OrcShipMainHull EAST
@@ -3399,7 +3403,8 @@ TYPE=t_normal
 [ITEMDEF 07c49]
 // OrcShip MainHull D1 
 DEFNAME=i_orcship_mainhull_d_118
-TYPE=t_container
+TYPE=t_ship_hold
+TDATA2=04c
 
 [ITEMDEF 07c4a]
 // OrcShip MainHull D1 
@@ -4105,7 +4110,8 @@ TYPE=t_normal
 [ITEMDEF 07d12]
 // OrcShip MainHull D1 
 DEFNAME=i_orcship_mainhull_d_259
-TYPE=t_container
+TYPE=t_ship_hold
+TDATA2=04c
 
 [ITEMDEF 07d13]
 // OrcShip MainHull D1 
@@ -4801,7 +4807,8 @@ TYPE=t_normal
 [ITEMDEF 07dd9]
 // OrcShip MainHull D1 
 DEFNAME=i_orcship_mainhull_d_398
-TYPE=t_container
+TYPE=t_ship_hold
+TDATA2=04c
 
 [ITEMDEF 07dda]
 // OrcShip MainHull D1 
@@ -5501,7 +5508,8 @@ TYPE=t_normal
 [ITEMDEF 07ea1]
 // OrcShip MainHull D1 
 DEFNAME=i_orcship_mainhull_d_538
-TYPE=t_container
+TYPE=t_ship_hold
+TDATA2=04c
 
 [ITEMDEF 07ea2]
 // OrcShip MainHull D1 
@@ -6201,7 +6209,8 @@ TYPE=t_normal
 [ITEMDEF 07f69]
 // OrcShip D2 MainHull 
 DEFNAME=i_orcship_d_mainhull_118
-TYPE=t_container
+TYPE=t_ship_hold
+TDATA2=04c
 
 [ITEMDEF 07f6a]
 // OrcShip D2 MainHull 
@@ -6896,7 +6905,8 @@ TYPE=t_normal
 [ITEMDEF 08031]
 // OrcShip D2 MainHull 
 DEFNAME=i_orcship_d_mainhull_257
-TYPE=t_container
+TYPE=t_ship_hold
+TDATA2=04c
 
 [ITEMDEF 08032]
 // OrcShip D2 MainHull 
@@ -7591,7 +7601,8 @@ TYPE=t_normal
 [ITEMDEF 080f9]
 // OrcShip D2 MainHull 
 DEFNAME=i_orcship_d_mainhull_396
-TYPE=t_container
+TYPE=t_ship_hold
+TDATA2=04c
 
 [ITEMDEF 080fa]
 // OrcShip D2 MainHull 
@@ -8286,7 +8297,8 @@ TYPE=t_normal
 [ITEMDEF 081c1]
 // OrcShip D2 MainHull 
 DEFNAME=i_orcship_d_mainhull_535
-TYPE=t_container
+TYPE=t_ship_hold
+TDATA2=04c
 
 [ITEMDEF 081c2]
 // OrcShip D2 MainHull 

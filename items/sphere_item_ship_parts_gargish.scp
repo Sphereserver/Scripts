@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2011
+// SPHERE by : Menasoft ©1997-2017
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,9 +7,9 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, March 24, 2015
+// FILE LAST UPDATED: Saturday, Aug 12, 2017
 //
-VERSION=0.56b
+VERSION=0.56d
 
 [ITEMDEF 049fc]
 // GargoyleMainHull D1 
@@ -329,7 +329,8 @@ TYPE=t_normal
 [ITEMDEF 04a3b]
 // GargoyleMainHull D1 
 DEFNAME=i_gargoylemainhull_d_64
-TYPE=t_container
+TYPE=t_ship_hold
+TDATA2=04c
 
 [ITEMDEF 04a3c]
 // GargoyleMainHull D1 
@@ -1179,7 +1180,8 @@ TYPE=t_normal
 [ITEMDEF 0826b]
 // GargoyleMainHull D0 
 DEFNAME=i_gargoylemainhull_d_234
-TYPE=t_container
+TYPE=t_ship_hold
+TDATA2=04c
 
 [ITEMDEF 0826c]
 // GargoyleMainHull D0 
@@ -2290,7 +2292,8 @@ TYPE=t_normal
 [ITEMDEF 0839c]
 // GargoyleMainHull D0 
 DEFNAME=i_gargoylemainhull_d_456
-TYPE=t_container
+TYPE=t_ship_hold
+TDATA2=04c
 
 [ITEMDEF 0839d]
 // GargoyleMainHull D0 
@@ -3280,7 +3283,8 @@ TYPE=t_normal
 [ITEMDEF 084ca]
 // GargoyleMainHull D0 
 DEFNAME=i_gargoylemainhull_d_654
-TYPE=t_container
+TYPE=t_ship_hold
+TDATA2=04c
 
 [ITEMDEF 084cb]
 // GargoyleMainHull D0 
@@ -4135,7 +4139,8 @@ TYPE=t_normal
 [ITEMDEF 085f9]
 // GargoyleMainHull D0 
 DEFNAME=i_gargoylemainhull_d_825
-TYPE=t_container
+TYPE=t_ship_hold
+TDATA2=04c
 
 [ITEMDEF 085fa]
 // GargoyleMainHull D0 
@@ -5225,7 +5230,8 @@ TYPE=t_normal
 [ITEMDEF 08726]
 // GargoyleMainHull D1 
 DEFNAME=i_gargoylemainhull_d_1043
-TYPE=t_container
+TYPE=t_ship_hold
+TDATA2=04c
 
 [ITEMDEF 08727]
 // GargoyleMainHull D1 
@@ -6310,7 +6316,8 @@ TYPE=t_normal
 [ITEMDEF 08856]
 // GargoyleMainHull D1 
 DEFNAME=i_gargoylemainhull_d_1260
-TYPE=t_container
+TYPE=t_ship_hold
+TDATA2=04c
 
 [ITEMDEF 08857]
 // GargoyleMainHull D1 
@@ -8185,7 +8192,8 @@ TYPE=t_normal
 [ITEMDEF 08ab2]
 // GargoyleMainHull D1 
 DEFNAME=i_gargoylemainhull_d_1635
-TYPE=t_container
+TYPE=t_ship_hold
+TDATA2=04c
 
 [ITEMDEF 08ab3]
 // GargoyleMainHull D1 
@@ -15475,7 +15483,8 @@ TYPE=t_normal
 [ITEMDEF 0891c]
 // ShipHull D2 EAST
 DEFNAME=i_shiphull_d_east_64
-TYPE=t_container
+TYPE=t_ship_hold
+TDATA2=04c
 
 [ITEMDEF 0891d]
 // ShipHull D2 EAST
@@ -16335,7 +16344,8 @@ TYPE=t_normal
 [ITEMDEF 08cf4]
 // ShipHull D2 NORTH
 DEFNAME=i_shiphull_d_north_64
-TYPE=t_container
+TYPE=t_ship_hold
+TDATA2=04c
 
 [ITEMDEF 08cf5]
 // ShipHull D2 NORTH
@@ -17195,7 +17205,8 @@ TYPE=t_normal
 [ITEMDEF 08e22]
 // ShipHull D2 SOUTH
 DEFNAME=i_shiphull_d_south_64
-TYPE=t_container
+TYPE=t_ship_hold
+TDATA2=04c
 
 [ITEMDEF 08e23]
 // ShipHull D2 SOUTH
@@ -18055,7 +18066,8 @@ TYPE=t_normal
 [ITEMDEF 08f50]
 // ShipHull D2 WEST
 DEFNAME=i_shiphull_d_west_64
-TYPE=t_container
+TYPE=t_ship_hold
+TDATA2=04c
 
 [ITEMDEF 08f51]
 // ShipHull D2 WEST

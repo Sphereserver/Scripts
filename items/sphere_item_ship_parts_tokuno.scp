@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2011
+// SPHERE by : Menasoft ©1997-2017
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,9 +7,9 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, March 24, 2015
+// FILE LAST UPDATED: Saturday, Aug 12, 2017
 //
-VERSION=0.56b
+VERSION=0.56d
 
 [ITEMDEF 090c4]
 // TokunoMainHull WEST
@@ -234,7 +234,8 @@ TYPE=t_normal
 [ITEMDEF 090f0]
 // TokunoMainHull WEST
 DEFNAME=i_tokunomainhull_west_45
-TYPE=t_container
+TYPE=t_ship_hold
+TDATA2=04c
 
 [ITEMDEF 090f1]
 // TokunoMainHull WEST
@@ -949,7 +950,8 @@ TYPE=t_normal
 [ITEMDEF 09345]
 // TokunoHull D1 SOUTH
 DEFNAME=i_tokunohull_d_south_45
-TYPE=t_container
+TYPE=t_ship_hold
+TDATA2=04c
 
 [ITEMDEF 09346]
 // TokunoHull D1 SOUTH
@@ -1624,7 +1626,8 @@ TYPE=t_normal
 [ITEMDEF 093cc]
 // TokunoHull D1 WEST
 DEFNAME=i_tokunohull_d_west_45
-TYPE=t_container
+TYPE=t_ship_hold
+TDATA2=04c
 
 [ITEMDEF 093cd]
 // TokunoHull D1 WEST
@@ -2299,7 +2302,8 @@ TYPE=t_normal
 [ITEMDEF 09453]
 // TokunoHull D1 NORTH
 DEFNAME=i_tokunohull_d_north_45
-TYPE=t_container
+TYPE=t_ship_hold
+TDATA2=04c
 
 [ITEMDEF 09454]
 // TokunoHull D1 NORTH
@@ -2974,7 +2978,8 @@ TYPE=t_normal
 [ITEMDEF 094da]
 // TokunoHull D1 EAST
 DEFNAME=i_tokunohull_d_east_45
-TYPE=t_container
+TYPE=t_ship_hold
+TDATA2=04c
 
 [ITEMDEF 094db]
 // TokunoHull D1 EAST
@@ -3639,7 +3644,8 @@ TYPE=t_normal
 [ITEMDEF 09622]
 // TokunoHull D2 EAST
 DEFNAME=i_tokunohull_d_east_178
-TYPE=t_container
+TYPE=t_ship_hold
+TDATA2=04c
 
 [ITEMDEF 09623]
 // TokunoHull D2 EAST
@@ -4314,7 +4320,8 @@ TYPE=t_normal
 [ITEMDEF 096a9]
 // TokunoHull D2 NORTH
 DEFNAME=i_tokunohull_d_north_180
-TYPE=t_container
+TYPE=t_ship_hold
+TDATA2=04c
 
 [ITEMDEF 096aa]
 // TokunoHull D2 NORTH
@@ -4989,7 +4996,8 @@ TYPE=t_normal
 [ITEMDEF 09735]
 // TokunoHull D2 SOUTH
 DEFNAME=i_tokunohull_d_south_180
-TYPE=t_container
+TYPE=t_ship_hold
+TDATA2=04c
 
 [ITEMDEF 09736]
 // TokunoHull D2 SOUTH
@@ -5664,7 +5672,8 @@ TYPE=t_normal
 [ITEMDEF 097c1]
 // TokunoHull D2 WEST
 DEFNAME=i_tokunohull_d_west_180
-TYPE=t_container
+TYPE=t_ship_hold
+TDATA2=04c
 
 [ITEMDEF 097c2]
 // TokunoHull D2 WEST
@@ -6339,7 +6348,8 @@ TYPE=t_normal
 [ITEMDEF 09069]
 // TokunoMainHull SOUTH
 DEFNAME=i_tokunomainhull_south_45
-TYPE=t_container
+TYPE=t_ship_hold
+TDATA2=04c
 
 [ITEMDEF 0906a]
 // TokunoMainHull SOUTH
@@ -7009,7 +7019,8 @@ TYPE=t_normal
 [ITEMDEF 09177]
 // TokunoMainHull NORTH
 DEFNAME=i_tokunomainhull_north_45
-TYPE=t_container
+TYPE=t_ship_hold
+TDATA2=04c
 
 [ITEMDEF 09178]
 // TokunoMainHull NORTH
@@ -7684,7 +7695,8 @@ TYPE=t_normal
 [ITEMDEF 091fe]
 // TokunoMainHull EAST
 DEFNAME=i_tokunomainhull_east_45
-TYPE=t_container
+TYPE=t_ship_hold
+TDATA2=04c
 
 [ITEMDEF 091ff]
 // TokunoMainHull EAST

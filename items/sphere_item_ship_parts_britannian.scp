@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2011
+// SPHERE by : Menasoft ©1997-2017
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,9 +7,9 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, March 24, 2015
+// FILE LAST UPDATED: Saturday, Aug 12, 2017
 //
-VERSION=0.56b
+VERSION=0.56d
 
 [ITEMDEF 05780]
 // BritanianShip MainHu
@@ -6439,7 +6439,8 @@ TYPE=t_normal
 [ITEMDEF 061f4]
 // BritanianShip PropsD
 DEFNAME=i_britanianship_propsd_11
-TYPE=t_container
+TYPE=t_ship_hold
+TDATA2=04c
 
 [ITEMDEF 061f5]
 // BritanianShip PropsD
@@ -6669,7 +6670,8 @@ TYPE=t_normal
 [ITEMDEF 0622a]
 // BritanianShip PropsD
 DEFNAME=i_britanianship_propsd_35
-TYPE=t_container
+TYPE=t_ship_hold
+TDATA2=04c
 
 [ITEMDEF 0622b]
 // BritanianShip PropsD
@@ -6899,7 +6901,8 @@ TYPE=t_normal
 [ITEMDEF 06260]
 // BritanianShip PropsD
 DEFNAME=i_britanianship_propsd_59
-TYPE=t_container
+TYPE=t_ship_hold
+TDATA2=04c
 
 [ITEMDEF 06261]
 // BritanianShip PropsD
@@ -7129,7 +7132,8 @@ TYPE=t_normal
 [ITEMDEF 06296]
 // BritanianShip PropsD
 DEFNAME=i_britanianship_propsd_82
-TYPE=t_container
+TYPE=t_ship_hold
+TDATA2=04c
 
 [ITEMDEF 06297]
 // BritanianShip PropsD

@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Friday, Aug 11, 2017
+// FILE LAST UPDATED: Saturday, Aug 12, 2017
 //
 VERSION=0.56d
 
@@ -482,7 +482,7 @@ CATEGORY=Games
 SUBSECTION=Dice
 DESCRIPTION=Dice and Cup
 ON=@DClick
-   SRC.EMOTELOC -1,3,1062695,<SRC.NAME>,<R1,6>,<R1,6>
+   SRC.EMOTE rolls the dice and gets a <R1,6> and a <R1,6>!
    RETURN 1
 
 [ITEMDEF 0fa8]
@@ -1785,24 +1785,6 @@ DESCRIPTION=Lord British Armour
 ON=@Create
 HITPOINTS=150
 
-ON=@equip
-IF (0<SRC.FINDLAYER(11)>)
-SRC.TAG.HaarID=<SRC.FINDLAYER(11).ID>
-SRC.TAG.HaarFarbe=<SRC.FINDLAYER(11).color>
-SRC.FINDLAYER(11).REMOVE
-ELSE
-SRC.TAG.HaarID=0
-ENDIF
-
-ON=@unequip
-IF !(<SRC.TAG0.HaarID> == 0)
-Serv.NEWITEM=<SRC.TAG0.HaarID>
-New.EQUIP
-SRC.FINDLAYER(11).color=<src.tag.HaarFarbe>
-SRC.TAG.HaarFarbe=
-src.tag.haarid=
-ENDIF
-
 [ITEMDEF 02043]
 // Blackthorne Robe
 DEFNAME=i_person_black_thorne
@@ -1815,24 +1797,6 @@ DESCRIPTION=Blackthorne Robe
 ON=@Create
 HITPOINTS=150
 
-ON=@equip
-IF (0<SRC.FINDLAYER(11)>)
-SRC.TAG.HaarID=<SRC.FINDLAYER(11).ID>
-SRC.TAG.HaarFarbe=<SRC.FINDLAYER(11).color>
-SRC.FINDLAYER(11).REMOVE
-ELSE
-SRC.TAG.HaarID=0
-ENDIF
-
-ON=@unequip
-IF !(<SRC.TAG0.HaarID> == 0)
-Serv.NEWITEM=<SRC.TAG0.HaarID>
-New.EQUIP
-SRC.FINDLAYER(11).color=<src.tag.HaarFarbe>
-SRC.TAG.HaarFarbe=
-src.tag.haarid=
-ENDIF
-
 [ITEMDEF 0204E]
 DEFNAME=i_deathshroud
 NAME=Death Shroud
@@ -1842,30 +1806,10 @@ CATEGORY=Provisions - GM Items
 SUBSECTION=Special Items
 DESCRIPTION=Death Shroud
 
-ON=@equip
-IF (0<SRC.FINDLAYER(11)>)
-SRC.TAG.HaarID=<SRC.FINDLAYER(11).ID>
-SRC.TAG.HaarFarbe=<SRC.FINDLAYER(11).color>
-SRC.FINDLAYER(11).REMOVE
-ELSE
-SRC.TAG.HaarID=0
-ENDIF
-
-ON=@unequip
-IF !(<SRC.TAG0.HaarID> == 0)
-Serv.NEWITEM=<SRC.TAG0.HaarID>
-New.EQUIP
-SRC.FINDLAYER(11).color=<src.tag.HaarFarbe>
-SRC.TAG.HaarFarbe=
-src.tag.haarid=
-ENDIF
-
 [ITEMDEF 0204F]
 // GM Robe
 DEFNAME=i_robe_gm
 TYPE=t_clothing
-//ATT=50
-ARMOR=500
 DYE=1
 DESCRIPTION=GM Robes
 SUBSECTION=GM Robes
@@ -1874,30 +1818,10 @@ CATEGORY=Provisions - GM Items
 ON=@Create
 HITPOINTS=150
 
-ON=@equip
-IF (0<SRC.FINDLAYER(11)>)
-SRC.TAG.HaarID=<SRC.FINDLAYER(11).ID>
-SRC.TAG.HaarFarbe=<SRC.FINDLAYER(11).color>
-SRC.FINDLAYER(11).REMOVE
-ELSE
-SRC.TAG.HaarID=0
-ENDIF
-
-ON=@unequip
-IF !(<SRC.TAG0.HaarID> == 0)
-Serv.NEWITEM=<SRC.TAG0.HaarID>
-New.EQUIP
-SRC.FINDLAYER(11).color=<src.tag.HaarFarbe>
-SRC.TAG.HaarFarbe=
-src.tag.haarid=
-ENDIF
-
 [ITEMDEF 02050]
 // Dupre
 DEFNAME=i_dupre
 TYPE=t_armor
-//ATT=50
-ARMOR=30
 
 ON=@Create
 HITPOINTS=150
