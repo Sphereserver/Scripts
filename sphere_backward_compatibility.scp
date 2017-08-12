@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, May 21, 2017
+// FILE LAST UPDATED: Friday, Aug 11, 2017
 //
 VERSION=0.56d
 
@@ -463,6 +463,11 @@ i_armoire_japanese1				i_armoire_red
 i_armoire_japanese2				i_armoire_elegant
 i_armoire_japanese3				i_armoire_maple
 i_armoire_japanese4				i_armoire_cherry
+i_table_elven_ornate_2			i_table_hardwood
+i_table_elven_storage			i_chest_ornate_elven
+i_chest_ornate_elven			i_chest_rarewood
+i_chest_ornate_elven_2			i_box_decorative
+i_chest_gargoyle				i_chest_gargish
 
 i_fx_bee_swarm					i_bee_swar
 i_fx_magical_sparkles			i_magical_sparkles

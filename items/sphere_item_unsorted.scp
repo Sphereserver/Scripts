@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Thursday, Jul 27, 2017
+// FILE LAST UPDATED: Friday, Aug 11, 2017
 //
 VERSION=0.56d
 
@@ -1622,7 +1622,6 @@ DUPEITEM=01e2e
 
 [ITEMDEF 01e30]
 DEFNAME=i_dartboard_axe
-//TYPE=t_game_board
 FLIP=1
 WEIGHT=13.1
 RESOURCES=1 i_dartboard,1 i_axe
@@ -1638,7 +1637,6 @@ DUPEITEM=01e30
 
 [ITEMDEF 01e32]
 DEFNAME=i_dartboard_knives
-//TYPE=t_game_board
 FLIP=1
 WEIGHT=14.1
 RESOURCES=1 i_dartboard,3 i_dagger
@@ -3653,41 +3651,41 @@ SUBSECTION=Slasher of Veils
 DESCRIPTION=Claw of Slasher of Veils
 
 [ITEMDEF 02df1]
-DEFNAME=i_chest_ornate_elven
-NAME=ornate elven chest
+DEFNAME=i_chest_rarewood
+NAME=rarewood chest
 TYPE=t_container
-TDATA2=0107
+TDATA2=010c
 FLIP=1
 VALUE=79
-WEIGHT=24.6
-RESOURCES=12 i_board,4 i_nails,2 i_hinge
-SKILLMAKE=carpentry 94.2,t_carpentry
+WEIGHT=1.0
+RESOURCES=30 i_board
+SKILLMAKE=Carpentry 80.0,t_carpentry
 CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Containers
-DESCRIPTION=Ornate Elven Chest
+DESCRIPTION=Rarewood Chest
 DUPELIST=02df2
 
 [ITEMDEF 02df2]
-//ornate elven chest
+//rarewood chest
 DUPEITEM=02df1
 
 [ITEMDEF 02df3]
-DEFNAME=i_chest_ornate_elven_2
-NAME=ornate elven chest
+DEFNAME=i_box_decorative
+NAME=decorative box
 TYPE=t_container
-TDATA2=0107
+TDATA2=043
 FLIP=1
 VALUE=79
-WEIGHT=24.6
-RESOURCES=12 i_board,4 i_nails,2 i_hinge
-SKILLMAKE=carpentry 94.2,t_carpentry
+WEIGHT=1.0
+RESOURCES=25 i_board
+SKILLMAKE=Carpentry 80.0,t_carpentry
 CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Containers
-DESCRIPTION=Ornate Elven Chest (2)
+DESCRIPTION=Decorative Box
 DUPELIST=02df4
 
 [ITEMDEF 02df4]
-//ornate elven chest
+//decorative box
 DUPEITEM=02df3
 
 

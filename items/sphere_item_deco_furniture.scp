@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Thursday, Jul 27, 2017
+// FILE LAST UPDATED: Friday, Aug 11, 2017
 //
 VERSION=0.56d
 
@@ -2812,8 +2812,8 @@ TDATA2=0109
 FLIP=1
 VALUE=175
 WEIGHT=15.0
-RESOURCES=20 i_board,2 i_hinge,10 i_nails
-SKILLMAKE=Carpentry 85.3,t_carpentry
+RESOURCES=30 i_board
+SKILLMAKE=Carpentry 90.0,t_carpentry
 CATEGORY=Decoration - Furniture
 SUBSECTION=Cabinetry
 DESCRIPTION=Plain Wooden Chest
@@ -2831,8 +2831,8 @@ TDATA2=010b
 FLIP=1
 VALUE=185
 WEIGHT=15.0
-RESOURCES=20 i_board,2 i_hinge,2 i_wire_iron,10 i_nails
-SKILLMAKE=Carpentry 85.3,t_carpentry
+RESOURCES=30 i_board
+SKILLMAKE=Carpentry 90.0,t_carpentry
 CATEGORY=Decoration - Furniture
 SUBSECTION=Cabinetry
 DESCRIPTION=Ornate Wooden Chest
@@ -3433,7 +3433,7 @@ TYPE=t_normal
 FLIP=1
 VALUE=98
 WEIGHT=50.6
-RESOURCES=25 i_board,6 i_nails
+RESOURCES=60 i_board
 SKILLMAKE=Carpentry 85.0,t_carpentry
 CATEGORY=Decoration - Furniture
 SUBSECTION=Tables
@@ -3451,8 +3451,8 @@ TYPE=t_chair
 FLIP=1
 VALUE=85
 WEIGHT=33.4
-RESOURCES=15 i_board,2 i_cloth,1 i_wool,4 i_nails
-SKILLMAKE=Carpentry 80.0,Tailoring 40.0,t_carpentry,t_sewing_kit
+RESOURCES=30 i_board
+SKILLMAKE=Carpentry 80.0,t_carpentry
 CATEGORY=Decoration - Furniture
 SUBSECTION=Chairs
 DESCRIPTION=Ornate Elven Chair
@@ -3471,40 +3471,39 @@ DUPEITEM=02de3
 DUPEITEM=02de3
 
 [ITEMDEF 02de7]
-DEFNAME=i_table_elven_ornate_2
-NAME=ornate elven table
-TYPE=t_normal
+DEFNAME=i_table_hardwood
+NAME=hardwood table
 FLIP=1
 VALUE=108
 WEIGHT=40.6
-RESOURCES=20 i_board,6 i_nails
-SKILLMAKE=Carpentry 88.8,t_carpentry
+RESOURCES=50 i_board
+SKILLMAKE=Carpentry 80.0,t_carpentry
 CATEGORY=Decoration - Furniture
 SUBSECTION=Tables
-DESCRIPTION=Ornate Elven Table
+DESCRIPTION=Hardwood Table
 DUPELIST=02de8,03092,03093,03094,03095,03096,03097
 
 [ITEMDEF 02de8]
-//ornate elven table
+//hardwood table
 DUPEITEM=02de7
 
 [ITEMDEF 02de9]
-//FIXME: this container does not open
-DEFNAME=i_table_elven_storage
-NAME=elven storage table
+DEFNAME=i_chest_ornate_elven
+NAME=ornate elven chest
+TYPE=t_container
 TDATA2=0107
 FLIP=1
 VALUE=94
 WEIGHT=60.0
-RESOURCES=60 i_board,4 i_ingot_iron
+RESOURCES=40 i_board
 SKILLMAKE=Carpentry 94.7,t_carpentry
 CATEGORY=Decoration - Furniture
 SUBSECTION=Tables
-DESCRIPTION=Elven Storage Table
+DESCRIPTION=Ornate Elven Chest
 DUPELIST=02dea,03098,03099,0309a,0309b
 
 [ITEMDEF 02dea]
-//elven storage table
+//ornate elven chest
 DUPEITEM=02de9
 
 [ITEMDEF 02deb]
@@ -4092,22 +4091,22 @@ DUPELIST=04024
 DUPEITEM=04023
 
 [ITEMDEF 04025]
-DEFNAME=i_chest_gargoyle
-NAME=gargoyle chest
+DEFNAME=i_chest_gargish
+NAME=gargish chest
 TYPE=t_container
-TDATA2=0107//FIXME
+TDATA2=042
 FLIP=1
 VALUE=79
-WEIGHT=24.6
-RESOURCES=12 i_board,4 i_nails,2 i_hinge
-SKILLMAKE=Carpentry 94.2,t_carpentry
+WEIGHT=2.0
+RESOURCES=30 i_board
+SKILLMAKE=Carpentry 80.0,t_carpentry
 CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Containers
-DESCRIPTION=Gargoyle Chest
+DESCRIPTION=Gargish Chest
 DUPELIST=04026
 
 [ITEMDEF 04026]
-//gargoyle chest
+//gargish chest
 DUPEITEM=04025
 
 [ITEMDEF 04027]

@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, May 16, 2017
+// FILE LAST UPDATED: Friday, Aug 11, 2017
 //
 VERSION=0.56d
 
@@ -245,8 +245,7 @@ ON=@Create
 ID=i_game_board
 NAME=Checkerboard
 TYPE=t_game_board
-SKILLMAKE=tinkering 40.0, carpentry 40.0
-RESOURCES=3 i_board, 3 i_log
+TDATA2=091a
 CATEGORY=Games
 SUBSECTION=Checkers
 DESCRIPTION=Checkerboard
@@ -257,8 +256,7 @@ ON=@Create
 ID=i_game_board
 NAME=Chessboard
 TYPE=t_game_board
-SKILLMAKE=tinkering 60.0, carpentry 60.0
-RESOURCES=3 i_board, 4 i_log
+TDATA2=091a
 CATEGORY=Games
 SUBSECTION=Chess
 DESCRIPTION=Chessboard
