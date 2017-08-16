@@ -1,0 +1,235 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2017
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Tuesday, Aug 15, 2017
+//
+VERSION=0.56d
+
+
+[ITEMDEF 09f23]
+DEFNAME=i_pumpkin_owl
+NAME=pumpkin
+TYPE=t_light_out
+TDATA3=i_pumpkin_owl_lit
+CATEGORY=Halloween
+SUBSECTION=Lightsources
+DESCRIPTION=Pumpkin (owl)(unlit)
+
+[ITEMDEF 09f24]
+DEFNAME=i_pumpkin_owl_lit
+NAME=pumpkin
+TYPE=t_light_lit
+TDATA3=i_pumpkin_owl
+CATEGORY=Halloween
+SUBSECTION=Lightsources
+DESCRIPTION=Pumpkin (owl)(lit)
+DUPELIST=09f25,09f26
+
+[ITEMDEF 09f25]
+//pumpkin (owl)
+DUPEITEM=09f24
+
+[ITEMDEF 09f26]
+//pumpkin (owl)
+DUPEITEM=09f24
+
+[ITEMDEF 09f27]
+DEFNAME=i_pumpkin_cat
+NAME=pumpkin
+TYPE=t_light_out
+TDATA3=i_pumpkin_cat_lit
+CATEGORY=Halloween
+SUBSECTION=Lightsources
+DESCRIPTION=Pumpkin (cat)(unlit)
+
+[ITEMDEF 09f28]
+DEFNAME=i_pumpkin_cat_lit
+NAME=pumpkin
+TYPE=t_light_lit
+TDATA3=i_pumpkin_cat
+CATEGORY=Halloween
+SUBSECTION=Lightsources
+DESCRIPTION=Pumpkin (cat)(lit)
+DUPELIST=09f29,09f2a
+
+[ITEMDEF 09f29]
+//pumpkin (cat)
+DUPEITEM=09f27
+
+[ITEMDEF 09f2a]
+//pumpkin (cat)
+DUPEITEM=09f27
+
+[ITEMDEF 09f33]
+DEFNAME=i_scarecrow_halloween_south
+NAME=scarecrow
+FLIP=1
+CATEGORY=Halloween
+SUBSECTION=Decoration
+DESCRIPTION=Scarecrow (south)
+DUPELIST=09f34,09f35,09f36,09f37,09f38
+
+[ITEMDEF 09f34]
+//scarecrow
+DUPEITEM=09f33
+
+[ITEMDEF 09f35]
+//scarecrow
+DUPEITEM=09f33
+
+[ITEMDEF 09f36]
+//scarecrow
+DUPEITEM=09f33
+
+[ITEMDEF 09f37]
+//scarecrow
+DUPEITEM=09f33
+
+[ITEMDEF 09f38]
+//scarecrow
+DUPEITEM=09f33
+
+[ITEMDEF 09f39]
+DEFNAME=i_scarecrow_halloween_east
+NAME=scarecrow
+FLIP=1
+CATEGORY=Halloween
+SUBSECTION=Decoration
+DESCRIPTION=Scarecrow (east)
+DUPELIST=09f3a,09f3b,09f3c,09f3d,09f3e
+
+[ITEMDEF 09f3a]
+//scarecrow
+DUPEITEM=09f39
+
+[ITEMDEF 09f3b]
+//scarecrow
+DUPEITEM=09f39
+
+[ITEMDEF 09f3c]
+//scarecrow
+DUPEITEM=09f39
+
+[ITEMDEF 09f3d]
+//scarecrow
+DUPEITEM=09f39
+
+[ITEMDEF 09f3e]
+//scarecrow
+DUPEITEM=09f39
+
+[ITEMDEF 09f51]
+DEFNAME=i_pumpkin_plain
+NAME=pumpkin
+CATEGORY=Halloween
+SUBSECTION=Decoration
+DESCRIPTION=Pumpkin (plain)
+
+[ITEMDEF 09f64]
+DEFNAME=i_jack_in_the_box_east
+NAME=Jack in the Box
+CATEGORY=Halloween
+SUBSECTION=Artifacts of Enchanted Origin
+DESCRIPTION=Jack in the Box (east)
+DUPELIST=09f65,09f66,09f67,09f68,09f69,09f6a,09f6b
+
+[ITEMDEF 09f65]
+//Jack in the Box
+DUPEITEM=09f64
+
+[ITEMDEF 09f66]
+//Jack in the Box
+DUPEITEM=09f64
+
+[ITEMDEF 09f67]
+//Jack in the Box
+DUPEITEM=09f64
+
+[ITEMDEF 09f68]
+//Jack in the Box
+DUPEITEM=09f64
+
+[ITEMDEF 09f69]
+//Jack in the Box
+DUPEITEM=09f64
+
+[ITEMDEF 09f6a]
+//Jack in the Box
+DUPEITEM=09f64
+
+[ITEMDEF 09f6b]
+//Jack in the Box
+DUPEITEM=09f64
+
+[ITEMDEF 09f6c]
+DEFNAME=i_jack_in_the_box_south
+NAME=Jack in the Box
+CATEGORY=Halloween
+SUBSECTION=Artifacts of Enchanted Origin
+DESCRIPTION=Jack in the Box (south)
+DUPELIST=09f6d,09f6e,09f6f,09f70,09f71,09f72,09f73
+
+[ITEMDEF 09f6d]
+//Jack in the Box
+DUPEITEM=09f6c
+
+[ITEMDEF 09f6e]
+//Jack in the Box
+DUPEITEM=09f6c
+
+[ITEMDEF 09f6f]
+//Jack in the Box
+DUPEITEM=09f6c
+
+[ITEMDEF 09f70]
+//Jack in the Box
+DUPEITEM=09f6c
+
+[ITEMDEF 09f71]
+//Jack in the Box
+DUPEITEM=09f6c
+
+[ITEMDEF 09f72]
+//Jack in the Box
+DUPEITEM=09f6c
+
+[ITEMDEF 09f73]
+//Jack in the Box
+DUPEITEM=09f6c
+
+[ITEMDEF 09f74]
+DEFNAME=i_serpent_jawbone
+NAME=Serpent Jawbone
+FLIP=1
+CATEGORY=Halloween
+SUBSECTION=Artifacts of Enchanted Origin
+DESCRIPTION=Serpent Jawbone
+DUPELIST=09f75
+
+[ITEMDEF 09f75]
+//Serpent Jawbone
+DUPEITEM=09f74
+
+[ITEMDEF 09f85]
+DEFNAME=i_jacks_bag_of_tricks
+NAME=Jack's Bag of Tricks
+CATEGORY=Halloween
+SUBSECTION=Artifacts of Enchanted Origin
+DESCRIPTION=Jack's Bag of Tricks
+DUPELIST=09f86,09f87
+
+[ITEMDEF 09f86]
+//Jack's Bag of Tricks
+DUPEITEM=09f85
+
+[ITEMDEF 09f87]
+//Jack's Bag of Tricks
+DUPEITEM=09f85
+
+[EOF]

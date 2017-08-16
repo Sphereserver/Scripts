@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Jun 20, 2017
+// FILE LAST UPDATED: Tuesday, Aug 15, 2017
 //
 VERSION=0.56d
 
@@ -4832,5 +4832,265 @@ hitpoints={ 36 48 }
 [itemdef 0450e]
 dupeitem=0450d
 nameloc=1096550
+
+[ITEMDEF 07822]
+DEFNAME=i_tigerpelt_chest
+NAME=tiger pelt chest
+TYPE=t_armor
+RESOURCES=8 i_hides_cut,4 i_tigerpelt
+SKILLMAKE=Tailoring 90.0,t_sewing_kit
+CATEGORY=Provisions - Armor
+SUBSECTION=Tiger Pelt
+DESCRIPTION=Tiger Pelt Chest
+ReqStr=30
+CanUse=can_u_human|can_u_elf
+TEVENTS=t_equipitem
+ON=@Create
+   HITPOINTS={36 48}
+   RESPHYSICAL=3
+   RESFIRE=4
+   RESCOLD=3
+   RESPOISON=3
+   RESENERGY=3
+
+[ITEMDEF 07823]
+DEFNAME=i_tigerpelt_bustier
+NAME=tiger pelt bustier
+TYPE=t_armor
+RESOURCES=6 i_hides_cut,3 i_tigerpelt
+SKILLMAKE=Tailoring 90.0,t_sewing_kit
+CATEGORY=Provisions - Armor
+SUBSECTION=Tiger Pelt
+DESCRIPTION=Tiger Pelt Bustier
+ReqStr=25
+CanUse=can_u_human|can_u_elf|can_u_female
+TEVENTS=t_equipitem
+ON=@Create
+   HITPOINTS={36 48}
+   RESPHYSICAL=3
+   RESFIRE=4
+   RESCOLD=3
+   RESPOISON=3
+   RESENERGY=3
+
+[ITEMDEF 07824]
+DEFNAME=i_tigerpelt_leggings
+NAME=tiger pelt leggings
+TYPE=t_armor
+RESOURCES=8 i_hides_cut,4 i_tigerpelt
+SKILLMAKE=Tailoring 90.0,t_sewing_kit
+CATEGORY=Provisions - Armor
+SUBSECTION=Tiger Pelt
+DESCRIPTION=Tiger Pelt Leggings
+ReqStr=30
+CanUse=can_u_human|can_u_elf
+TEVENTS=t_equipitem
+ON=@Create
+   HITPOINTS={36 48}
+   RESPHYSICAL=3
+   RESFIRE=4
+   RESCOLD=3
+   RESPOISON=3
+   RESENERGY=3
+
+[ITEMDEF 07825]
+DEFNAME=i_tigerpelt_shorts
+NAME=tiger pelt shorts
+TYPE=t_armor
+RESOURCES=4 i_hides_cut,2 i_tigerpelt
+SKILLMAKE=Tailoring 90.0,t_sewing_kit
+CATEGORY=Provisions - Armor
+SUBSECTION=Tiger Pelt
+DESCRIPTION=Tiger Pelt Shorts
+ReqStr=25
+CanUse=can_u_human|can_u_elf
+TEVENTS=t_equipitem
+ON=@Create
+   HITPOINTS={36 48}
+   RESPHYSICAL=3
+   RESFIRE=4
+   RESCOLD=3
+   RESPOISON=3
+   RESENERGY=3
+
+[ITEMDEF 07826]
+DEFNAME=i_tigerpelt_skirt_long
+NAME=tiger pelt long skirt
+TYPE=t_armor
+RESOURCES=4 i_hides_cut,2 i_tigerpelt
+SKILLMAKE=Tailoring 90.0,t_sewing_kit
+CATEGORY=Provisions - Armor
+SUBSECTION=Tiger Pelt
+DESCRIPTION=Tiger Pelt Long Skirt
+ReqStr=25
+CanUse=can_u_human|can_u_elf|can_u_female
+TEVENTS=t_equipitem
+ON=@Create
+   HITPOINTS={36 48}
+   RESPHYSICAL=3
+   RESFIRE=4
+   RESCOLD=3
+   RESPOISON=3
+   RESENERGY=3
+
+[ITEMDEF 07827]
+DEFNAME=i_tigerpelt_skirt
+NAME=tiger pelt skirt
+TYPE=t_armor
+RESOURCES=4 i_hides_cut,2 i_tigerpelt
+SKILLMAKE=Tailoring 90.0,t_sewing_kit
+CATEGORY=Provisions - Armor
+SUBSECTION=Tiger Pelt
+DESCRIPTION=Tiger Pelt Skirt
+ReqStr=25
+CanUse=can_u_human|can_u_elf|can_u_female
+TEVENTS=t_equipitem
+ON=@Create
+   HITPOINTS={36 48}
+   RESPHYSICAL=3
+   RESFIRE=4
+   RESCOLD=3
+   RESPOISON=3
+   RESENERGY=3
+
+[ITEMDEF 07828]
+DEFNAME=i_tigerpelt_helm
+NAME=tiger pelt helm
+TYPE=t_armor
+RESOURCES=2 i_hides_cut,1 i_tigerpelt
+SKILLMAKE=Tailoring 90.0,t_sewing_kit
+CATEGORY=Provisions - Armor
+SUBSECTION=Tiger Pelt
+DESCRIPTION=Tiger Pelt Helm
+ReqStr=30
+CanUse=can_u_human|can_u_elf
+TEVENTS=t_equipitem
+ON=@Create
+   HITPOINTS={36 48}
+   RESPHYSICAL=3
+   RESFIRE=4
+   RESCOLD=3
+   RESPOISON=3
+   RESENERGY=3
+
+[ITEMDEF 07829]
+DEFNAME=i_tigerpelt_collar
+NAME=tiger pelt collar
+TYPE=t_armor
+RESOURCES=2 i_hides_cut,1 i_tigerpelt
+SKILLMAKE=Tailoring 90.0,t_sewing_kit
+CATEGORY=Provisions - Armor
+SUBSECTION=Tiger Pelt
+DESCRIPTION=Tiger Pelt Collar
+ReqStr=30
+CanUse=can_u_human|can_u_elf
+TEVENTS=t_equipitem
+ON=@Create
+   HITPOINTS={36 48}
+   RESPHYSICAL=3
+   RESFIRE=4
+   RESCOLD=3
+   RESPOISON=3
+   RESENERGY=3
+
+[ITEMDEF 0782a]
+DEFNAME=i_dragonturtle_chest
+NAME=dragon turtle hide chest
+TYPE=t_armor
+RESOURCES=8 i_hides_cut,4 i_dragonturtle_scute
+SKILLMAKE=Tailoring 101.5,t_sewing_kit
+CATEGORY=Provisions - Armor
+SUBSECTION=Dragon Turtle Hide
+DESCRIPTION=Dragon Turtle Hide Chest
+ReqStr=30
+CanUse=can_u_human|can_u_elf
+TEVENTS=t_equipitem
+ON=@Create
+   HITPOINTS={36 48}
+   RESPHYSICAL=4
+   RESFIRE=2
+   RESCOLD=2
+   RESPOISON=4
+   RESENERGY=4
+
+[ITEMDEF 0782b]
+DEFNAME=i_dragonturtle_bustier
+NAME=dragon turtle hide bustier
+TYPE=t_armor
+RESOURCES=6 i_hides_cut,3 i_dragonturtle_scute
+SKILLMAKE=Tailoring 101.5,t_sewing_kit
+CATEGORY=Provisions - Armor
+SUBSECTION=Dragon Turtle Hide
+DESCRIPTION=Dragon Turtle Hide Bustier
+ReqStr=30
+CanUse=can_u_human|can_u_elf|can_u_female
+TEVENTS=t_equipitem
+ON=@Create
+   HITPOINTS={35 54}
+   RESPHYSICAL=4
+   RESFIRE=2
+   RESCOLD=2
+   RESPOISON=4
+   RESENERGY=4
+
+[ITEMDEF 0782c]
+DEFNAME=i_dragonturtle_leggings
+NAME=dragon turtle hide leggings
+TYPE=t_armor
+RESOURCES=8 i_hides_cut,4 i_dragonturtle_scute
+SKILLMAKE=Tailoring 101.5,t_sewing_kit
+CATEGORY=Provisions - Armor
+SUBSECTION=Dragon Turtle Hide
+DESCRIPTION=Dragon Turtle Hide Leggings
+ReqStr=30
+CanUse=can_u_human|can_u_elf
+TEVENTS=t_equipitem
+ON=@Create
+   HITPOINTS={36 48}
+   RESPHYSICAL=4
+   RESFIRE=2
+   RESCOLD=2
+   RESPOISON=4
+   RESENERGY=4
+
+[ITEMDEF 0782d]
+DEFNAME=i_dragonturtle_helm
+NAME=dragon turtle hide helm
+TYPE=t_armor
+RESOURCES=2 i_hides_cut,1 i_dragonturtle_scute
+SKILLMAKE=Tailoring 101.5,t_sewing_kit
+CATEGORY=Provisions - Armor
+SUBSECTION=Dragon Turtle Hide
+DESCRIPTION=Dragon Turtle Hide Helm
+ReqStr=30
+CanUse=can_u_human|can_u_elf
+TEVENTS=t_equipitem
+ON=@Create
+   HITPOINTS={36 48}
+   RESPHYSICAL=4
+   RESFIRE=2
+   RESCOLD=2
+   RESPOISON=4
+   RESENERGY=4
+
+[ITEMDEF 0782e]
+DEFNAME=i_dragonturtle_arms
+NAME=dragon turtle hide arms
+TYPE=t_armor
+RESOURCES=4 i_hides_cut,2 i_dragonturtle_scute
+SKILLMAKE=Tailoring 101.5,t_sewing_kit
+CATEGORY=Provisions - Armor
+SUBSECTION=Dragon Turtle Hide
+DESCRIPTION=Dragon Turtle Hide Arms
+ReqStr=30
+CanUse=can_u_human|can_u_elf
+TEVENTS=t_equipitem
+ON=@Create
+   HITPOINTS={36 48}
+   RESPHYSICAL=4
+   RESFIRE=2
+   RESCOLD=2
+   RESPOISON=4
+   RESENERGY=4
 
 [EOF]

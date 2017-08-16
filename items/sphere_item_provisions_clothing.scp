@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, May 16, 2017
+// FILE LAST UPDATED: Tuesday, Aug 15, 2017
 //
 VERSION=0.56d
 
@@ -2964,5 +2964,142 @@ ON=@Create
 [ITEMDEF 050d9]
 //Gargish half apron
 DUPEITEM=050d8
+
+
+[ITEMDEF 07819]
+DEFNAME=i_shoes_jester
+NAME=Jester Shoes
+TYPE=t_clothing
+DYE=1
+RESOURCES=6 i_cloth
+SKILLMAKE=Tailoring 20.0,t_sewing_kit
+CanUse=can_u_human|can_u_elf
+TEVENTS=t_equipitem
+CATEGORY=Provisions - Clothes
+SUBSECTION=Footwear
+DESCRIPTION=Jester Shoes
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 0781a]
+DEFNAME=i_hat_chef
+NAME=Chef's Toque
+TYPE=t_clothing
+DYE=1
+RESOURCES=11 i_cloth
+SKILLMAKE=Tailoring 6.2,t_sewing_kit
+CanUse=can_u_human|can_u_elf
+TEVENTS=t_equipitem
+CATEGORY=Provisions - Clothes
+SUBSECTION=Hats
+DESCRIPTION=Chef's Toque
+ON=@Create
+   HITPOINTS={20 30}
+   RESFIRE=5
+   RESCOLD=9
+   RESPOISON=5
+   RESENERGY=5
+
+[ITEMDEF 0781b]
+DEFNAME=i_kilt_gilded
+NAME=Gilded Kilt
+TYPE=t_clothing
+DYE=1
+ReqStr=10
+RESOURCES=8 i_cloth
+SKILLMAKE=Tailoring 82.8,t_sewing_kit
+CanUse=can_u_human|can_u_elf
+TEVENTS=t_equipitem
+CATEGORY=Provisions - Clothes
+SUBSECTION=Pants & Skirts
+DESCRIPTION=Gilded Kilt
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 0781c]
+DEFNAME=i_kilt_checkered
+NAME=Checkered Kilt
+TYPE=t_clothing
+DYE=1
+ReqStr=10
+RESOURCES=8 i_cloth
+SKILLMAKE=Tailoring 41.4,t_sewing_kit
+CanUse=can_u_human|can_u_elf
+TEVENTS=t_equipitem
+CATEGORY=Provisions - Clothes
+SUBSECTION=Pants & Skirts
+DESCRIPTION=Checkered Kilt
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 0781d]
+DEFNAME=i_kilt_fancy
+NAME=Fancy Kilt
+TYPE=t_clothing
+DYE=1
+ReqStr=10
+RESOURCES=8 i_cloth
+SKILLMAKE=Tailoring 20.7,t_sewing_kit
+CanUse=can_u_human|can_u_elf
+TEVENTS=t_equipitem
+CATEGORY=Provisions - Clothes
+SUBSECTION=Pants & Skirts
+DESCRIPTION=Fancy Kilt
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 0781e]
+DEFNAME=i_dress_flowered
+NAME=Flowered Dress
+TYPE=t_clothing
+DYE=1
+ReqStr=10
+RESOURCES=18 i_cloth
+SKILLMAKE=Tailoring 75.0,t_sewing_kit
+CanUse=can_u_human|can_u_elf
+TEVENTS=t_equipitem
+CATEGORY=Provisions - Clothes
+SUBSECTION=Shirts & Robes
+DESCRIPTION=Flowered Dress
+ON=@Create
+   HITPOINTS={36 48}
+
+
+[ITEMDEF 07821]
+DEFNAME=i_gown_evening
+NAME=Evening Gown
+TYPE=t_clothing
+DYE=1
+ReqStr=10
+RESOURCES=18 i_cloth
+SKILLMAKE=Tailoring 75.0,t_sewing_kit
+CanUse=can_u_human|can_u_elf
+TEVENTS=t_equipitem
+CATEGORY=Provisions - Clothes
+SUBSECTION=Shirts & Robes
+DESCRIPTION=Evening Gown
+ON=@Create
+   HITPOINTS={36 48}
+
+
+[ITEMDEF 09985]
+DEFNAME=i_epaulette
+NAME=Epaulette
+TYPE=t_clothing
+CanUse=can_u_human|can_u_elf
+TEVENTS=t_equipitem
+CATEGORY=Provisions - Clothes
+SUBSECTION=Miscellaneous
+DESCRIPTION=Epaulette
+
+[ITEMDEF 09986]
+DEFNAME=i_epaulette_garg
+NAME=Gargish Epaulette
+TYPE=t_clothing
+CanUse=can_u_gargoyle
+TEVENTS=t_equipitem
+CATEGORY=Provisions - Clothes
+SUBSECTION=Miscellaneous
+DESCRIPTION=Gargish Epaulette
 
 [EOF]

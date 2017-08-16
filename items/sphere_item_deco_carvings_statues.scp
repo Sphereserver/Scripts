@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, May 14, 2017
+// FILE LAST UPDATED: Tuesday, Aug 15, 2017
 //
 VERSION=0.56d
 
@@ -1257,23 +1257,93 @@ DUPEITEM=0491b
 
 
 [ITEMDEF 09f0f]
-//Swan Statue (white)
 DEFNAME=i_statue_swan_white
+NAME=swan statue
 FLIP=1
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Statues
+DESCRIPTION=Swan Statue (white)
 DUPELIST=09f10
 
 [ITEMDEF 09f10]
-//Swan Statue (white)
+//swan statue (white)
 DUPEITEM=09f0f
 
 [ITEMDEF 09f11]
-//Swan Statue (black)
+//swan statue (black)
 DUPEITEM=09f12
 
 [ITEMDEF 09f21]
-//Swan Statue (black)
 DEFNAME=i_statue_swan_black
+NAME=swan statue
 FLIP=1
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Statues
+DESCRIPTION=Swan Statue (black)
 DUPELIST=09f11
+
+[ITEMDEF 09f41]
+DEFNAME=i_statue_platinum_dragon_east
+NAME=platinum dragon statue
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Statues
+DESCRIPTION=Platinum Dragon Statue
+DUPELIST=09f42,09f43,09f44,09f45,09f46,09f4a
+
+[ITEMDEF 09f42]
+//platinum dragon statue
+DUPEITEM=09f41
+
+[ITEMDEF 09f43]
+//platinum dragon statue
+DUPEITEM=09f41
+
+[ITEMDEF 09f44]
+//platinum dragon statue
+DUPEITEM=09f41
+
+[ITEMDEF 09f45]
+//platinum dragon statue
+DUPEITEM=09f41
+
+[ITEMDEF 09f46]
+//platinum dragon statue
+DUPEITEM=09f41
+
+[ITEMDEF 09f4a]
+//platinum dragon statue
+DUPEITEM=09f41
+
+[ITEMDEF 09f4b]
+//platinum dragon statue
+DUPEITEM=09f5e
+
+[ITEMDEF 09f5e]
+DEFNAME=i_statue_platinum_dragon_south
+NAME=platinum dragon statue
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Statues
+DESCRIPTION=Platinum Dragon Statue
+DUPELIST=09f4b,09f5f,09f60,09f61,09f62,09f63
+
+[ITEMDEF 09f5f]
+//platinum dragon statue
+DUPEITEM=09f5e
+
+[ITEMDEF 09f60]
+//platinum dragon statue
+DUPEITEM=09f5e
+
+[ITEMDEF 09f61]
+//platinum dragon statue
+DUPEITEM=09f5e
+
+[ITEMDEF 09f62]
+//platinum dragon statue
+DUPEITEM=09f5e
+
+[ITEMDEF 09f63]
+//platinum dragon statue
+DUPEITEM=09f5e
 
 [EOF]

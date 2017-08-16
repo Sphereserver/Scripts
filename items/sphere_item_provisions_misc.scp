@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Thursday, Jul 27, 2017
+// FILE LAST UPDATED: Tuesday, Aug 15, 2017
 //
 VERSION=0.56d
 
@@ -637,5 +637,72 @@ DUPELIST=09c47
 [ITEMDEF 09c47]
 //woodworking container
 DUPEITEM=09c46
+
+[ITEMDEF 09f1c]
+DEFNAME=i_box_jewelry
+NAME=jewelry box
+FLIP=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Misc
+DESCRIPTION=Jewelry box
+DUPELIST=09f1d
+
+[ITEMDEF 09f1d]
+//jewelry box
+DUPEITEM=09f1c
+
+[ITEMDEF 09f88]
+DEFNAME=i_confetti
+NAME=confetti
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Misc
+DESCRIPTION=Confetti
+
+[ITEMDEF 09f89]
+DEFNAME=i_confetti_explosion
+NAME=confetti
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Misc
+DESCRIPTION=Confetti (explosion)
+DUPELIST=09f8a,09f8b,09f8c,09f8d,09f8e,09f8f,09f90,09f91
+
+[ITEMDEF 09f8a]
+//confetti (explosion)
+DUPEITEM=09f89
+
+[ITEMDEF 09f8b]
+//confetti (explosion)
+DUPEITEM=09f89
+
+[ITEMDEF 09f8c]
+//confetti (explosion)
+DUPEITEM=09f89
+
+[ITEMDEF 09f8d]
+//confetti (explosion)
+DUPEITEM=09f89
+
+[ITEMDEF 09f8e]
+//confetti (explosion)
+DUPEITEM=09f89
+
+[ITEMDEF 09f8f]
+//confetti (explosion)
+DUPEITEM=09f89
+
+[ITEMDEF 09f90]
+//confetti (explosion)
+DUPEITEM=09f89
+
+[ITEMDEF 09f91]
+//confetti (explosion)
+DUPEITEM=09f89
+
+[ITEMDEF 09f93]
+DEFNAME=i_confetti_cannon
+NAME=confetti cannon
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Misc
+DESCRIPTION=Confetti cannon
 
 [EOF]

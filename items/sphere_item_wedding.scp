@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, May 1, 2017
+// FILE LAST UPDATED: Tuesday, Aug 15, 2017
 //
 VERSION=0.56d
 
@@ -593,5 +593,54 @@ DUPEITEM=09ece
 [ITEMDEF 09f05]
 //table
 DUPEITEM=09ed1
+
+[ITEMDEF 09f3f]
+DEFNAME=i_veil_undead_wedding
+NAME=undead wedding veil
+TYPE=t_clothing
+DYE=1
+FLIP=1
+CanUse=can_u_human|can_u_elf
+TEVENTS=t_equipitem
+CATEGORY=Wedding
+SUBSECTION=Clothing
+DESCRIPTION=Undead wedding veil
+DUPELIST=09f40
+
+[ITEMDEF 09f40]
+//undead wedding veil
+DUPEITEM=09f3f
+
+[ITEMDEF 09f47]
+DEFNAME=i_hat_undead_wedding
+NAME=undead wedding hat
+TYPE=t_clothing
+DYE=1
+FLIP=1
+CanUse=can_u_human|can_u_elf
+TEVENTS=t_equipitem
+CATEGORY=Wedding
+SUBSECTION=Clothing
+DESCRIPTION=Undead wedding hat
+DUPELIST=09f48
+
+[ITEMDEF 09f48]
+//undead wedding hat
+DUPEITEM=09f47
+
+[ITEMDEF 09f94]
+DEFNAME=i_chest_wedding
+NAME=wedding chest
+TYPE=t_container
+TDATA2=0266a
+FLIP=1
+CATEGORY=Wedding
+SUBSECTION=Decoration
+DESCRIPTION=Wedding chest
+DUPELIST=09f95
+
+[ITEMDEF 09f95]
+//wedding chest
+DUPEITEM=09f94
 
 [EOF]
