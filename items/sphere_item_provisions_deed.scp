@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, May 16, 2017
+// FILE LAST UPDATED: Wednesday, Aug 16, 2017
 //
 VERSION=0.56d
 
@@ -33,7 +33,7 @@ FLIP=1
 WEIGHT=1
 CATEGORY=Provisions - Deeds
 SUBSECTION=Ship Plans
-DESCRIPTION=Ship Plans (EMPTY)
+DESCRIPTION=Ship Plans (Blank)
 DUPELIST=014f2
 
 [ITEMDEF 014f2]
@@ -54,6 +54,33 @@ DESCRIPTION=Deed 2 (Blank)
 //////////////////
 // Custom Items //
 //////////////////
+
+[ITEMDEF i_bank_check]
+ID=i_deed
+NAME=bank check
+WEIGHT=1.0
+CATEGORY=Provisions - Deeds
+SUBSECTION=Misc
+DESCRIPTION=Bank Check
+ON=@Create
+   ATTR=attr_newbie
+   COLOR=034
+ON=@ClientTooltip
+   SRC.ADDCLILOC 1060738,<MORE>	//value: ~1_val~
+ON=@AfterClick
+   LOCAL.ClickMsgText .= ": <MORE>"
+ON=@DClick
+   IF (<TOPOBJ> != <SRC>) || (<CONT.TYPE> != t_eq_bank_box)
+    SRC.SYSMESSAGE That must be in your bank box to use it.
+    return 1
+   ELIF (<SERV.FeatureTOL> & 02)	//FEATURE_TOL_VIRTUALGOLD
+    SRC.VIRTUALGOLD += <MORE>
+   ELSE
+    SRC.GOLD += <MORE>
+   ENDIF
+   SRC.SYSMESSAGE Gold was deposited in your account: <MORE>
+   REMOVE
+   return 1
 
 [ITEMDEF i_deed_stone_and_plaster_house]
 ID=i_deed
