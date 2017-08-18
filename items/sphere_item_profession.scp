@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Thursday, Jul 27, 2017
+// FILE LAST UPDATED: Friday, Aug 18, 2017
 //
 VERSION=0.56d
 
@@ -3355,35 +3355,6 @@ UsesMax={350 450}
 [ITEMDEF 045a7]
 //Gargish Flute
 DUPEITEM=045a6
-
-
-[ITEMDEF 0468a]
-DEFNAME=i_crystal_ball_small
-TYPE=t_crystal_ball
-CATEGORY=Items by Professions
-SUBSECTION=Fortune Teller
-DESCRIPTION=Crystal Ball (small)
-
-[ITEMDEF 0468b]
-DEFNAME=i_crystal_ball_large
-TYPE=t_crystal_ball
-CATEGORY=Items by Professions
-SUBSECTION=Fortune Teller
-DESCRIPTION=Crystal Ball (large)
-
-
-[ITEMDEF 0469b]
-DEFNAME=i_scarecrow_2
-NAME=scarecrow
-FLIP=1
-CATEGORY=Items by Professions
-SUBSECTION=Farmer
-DESCRIPTION=Scarecrow
-DUPELIST=0469c
-
-[ITEMDEF 0469c]
-//scarecrow 2
-DUPEITEM=0469b
 
 
 [ITEMDEF 048d4]

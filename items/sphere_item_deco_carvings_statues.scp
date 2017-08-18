@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Aug 15, 2017
+// FILE LAST UPDATED: Friday, Aug 18, 2017
 //
 VERSION=0.56d
 
@@ -1126,24 +1126,6 @@ DUPELIST=0457d
 [ITEMDEF 0457d]
 //griffin statue
 DUPEITEM=0457c
-
-
-[ITEMDEF 04688]
-DEFNAME=i_statue_cat
-NAME=black cat statue
-FLIP=1
-VALUE=150
-WEIGHT=100.0
-RESOURCES=10 i_rock_plain
-SKILLMAKE=Carpentry 40.0,t_masonry_tool
-CATEGORY=Decoration - Wall Carvings & Statues
-SUBSECTION=Statues
-DESCRIPTION=Black Cat
-DUPELIST=04689
-
-[ITEMDEF 04689]
-//small cat statue
-DUPEITEM=04688
 
 
 [ITEMDEF 0493b]

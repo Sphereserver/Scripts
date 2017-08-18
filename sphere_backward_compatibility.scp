@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Friday, Aug 11, 2017
+// FILE LAST UPDATED: Friday, Aug 18, 2017
 //
 VERSION=0.56d
 
@@ -556,6 +556,10 @@ i_bed_ruined_6					0c2b
 i_bed_double_2					011d2
 i_cot_sw						i_cot
 i_map							i_map_blank
+i_banner_serpent				i_banner_order
+i_portrait_horror				i_portrait_gargish
+i_tapestry_elven_1				i_tapestry_elven_sophisticated
+i_tapestry_elven_2				i_tapestry_elven_ornate
 i_tapestry_elven_3				i_tattered_wall_map
 i_chest_gothic					i_chest_sending
 i_tray_sushi					i_sushi_rolls
@@ -585,6 +589,13 @@ i_lantern_paper5b				i_lantern_white_hanging_east
 i_lantern_paper5b_lit			i_lantern_white_handing_east_lit
 i_lantern_paper6				i_lantern_round_paper
 i_lantern_paper6_lit			i_lantern_round_paper_lit
+i_lollypop_red					i_lollipop_cherry
+i_lollypop_yellow				i_lollipop_orange
+i_lollypop_green				i_lollipop_lime
+i_candy_nougat					i_nougat_swirl
+i_candy_taffy					i_taffy
+i_candy_wrapped					i_wrapped_candy
+i_cake_2						i_cake_12th_anniversary
 
 // Definitions
 brain_beserk					brain_berserk

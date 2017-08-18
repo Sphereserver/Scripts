@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, May 14, 2017
+// FILE LAST UPDATED: Friday, Aug 18, 2017
 //
 VERSION=0.56d
 
@@ -4225,23 +4225,5 @@ RESOURCES=1 i_rock_plain,1 i_springs
 CATEGORY=Traps
 SUBSECTION=Goblin Trap
 DESCRIPTION=Goblin Trap
-
-
-[ITEMDEF 042bd]
-DEFNAME=i_skull_spine_ribs
-NAME=skull, spine and ribs
-TYPE=t_bone
-FLIP=1
-VALUE=1
-WEIGHT=2.0
-CATEGORY=Decoration - Dungeons and The Dead
-SUBSECTION=Skeletons
-DESCRIPTION=Skull, Spine, and Ribs
-DUPELIST=04687
-
-[ITEMDEF 04687]
-//Skull, Spine, and Ribs
-DUPEITEM=042bd
-
 
 [EOF]

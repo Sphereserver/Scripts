@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, May 16, 2017
+// FILE LAST UPDATED: Friday, Aug 18, 2017
 //
 VERSION=0.56d
 
@@ -3141,105 +3141,6 @@ DUPELIST=044e6
 DUPEITEM=044e5
 
 
-[ITEMDEF 0468c]
-DEFNAME=i_jellybeans
-NAME=jellybeans
-TYPE=t_food
-WEIGHT=0.9
-VALUE=3
-CATEGORY=Provisions - Food
-SUBSECTION=Candy
-DESCRIPTION=Jellybeans
-ON=@Create
-   MOREM=1
-
-[ITEMDEF 0468d]
-DEFNAME=i_lollypop_red
-NAME=cherry lollypop%s
-TYPE=t_food
-WEIGHT=0.1
-VALUE=3
-CATEGORY=Provisions - Food
-SUBSECTION=Candy
-DESCRIPTION=Lollypop (red)
-ON=@Create
-   MOREM=1
-
-[ITEMDEF 0468e]
-DEFNAME=i_lollypop_yellow
-NAME=orange lollypop%s
-TYPE=t_food
-WEIGHT=0.1
-VALUE=3
-CATEGORY=Provisions - Food
-SUBSECTION=Candy
-DESCRIPTION=Lollypop (yellow)
-ON=@Create
-   MOREM=1
-
-[ITEMDEF 0468f]
-DEFNAME=i_lollypop_green
-NAME=lime lollypop%s
-TYPE=t_food
-WEIGHT=0.1
-VALUE=3
-CATEGORY=Provisions - Food
-SUBSECTION=Candy
-DESCRIPTION=Lollypop (green)
-ON=@Create
-   MOREM=1
-
-[ITEMDEF 04690]
-DEFNAME=i_candy_nougat
-NAME=nougat swirl%s
-TYPE=t_food
-WEIGHT=0.1
-VALUE=3
-CATEGORY=Provisions - Food
-SUBSECTION=Candy
-DESCRIPTION=Nougat Swirl
-ON=@Create
-   MOREM=1
-
-
-[ITEMDEF 0469d]
-DEFNAME=i_candy_taffy
-NAME=taffy
-TYPE=t_food
-WEIGHT=0.1
-VALUE=3
-CATEGORY=Provisions - Food
-SUBSECTION=Candy
-DESCRIPTION=Taffy
-ON=@Create
-   MOREM=1
-
-[ITEMDEF 0469e]
-DEFNAME=i_candy_wrapped
-NAME=wrapped candy%s//should be candies
-TYPE=t_food
-WEIGHT=0.1
-VALUE=3
-CATEGORY=Provisions - Food
-SUBSECTION=Candy
-DESCRIPTION=Wrapped Candy
-ON=@Create
-   MOREM=1
-
-[ITEMDEF 0469f]
-DEFNAME=i_cake_2
-NAME=valentine cake
-TYPE=t_food
-WEIGHT=0.1
-VALUE=3
-RESOURCES=3 i_flour_bowl,1 i_eggs_fresh
-SKILLMAKE=Cooking 51.6, t_cooking
-CATEGORY=Provisions - Food
-SUBSECTION=Baked
-DESCRIPTION=Valentine Cake
-ON=@Create
-   MOREM=1
-
 [ITEMDEF 046a0]
 DEFNAME=i_cornucopia
 NAME=cornucopia
@@ -3410,34 +3311,6 @@ ON=@Create
 //////////////////
 // Custom Items //
 //////////////////
-
-[ITEMDEF i_caramel_apple]
-ID=i_fruit_apple
-NAME=caramel apple
-TYPE=t_food
-VALUE=5
-WEIGHT=0.1
-RESOURCES=1 i_fruit_apple
-CATEGORY=Provisions - Food
-SUBSECTION=Halloween
-DESCRIPTION=Caramel Apple
-ON=@Create
-   MOREM=1
-   COLOR=032
-
-[ITEMDEF i_licorice]
-ID=i_reag_pig_iron
-NAME=licorice
-TYPE=t_food
-VALUE=5
-WEIGHT=0.1
-RESOURCES=1 i_dried_herbs
-CATEGORY=Provisions - Food
-SUBSECTION=Halloween
-DESCRIPTION=Licorice
-ON=@Create
-   MOREM=1
-   COLOR=colors_black
 
 [ITEMDEF i_cocoa_pulp]
 ID=i_reag_blood_spawn

@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Wednesday, May 24, 2017
+// FILE LAST UPDATED: Friday, Aug 18, 2017
 //
 VERSION=0.56d
 
@@ -2290,10 +2290,8 @@ DUPEITEM=02311
 
 
 [ITEMDEF 0234e]
-TYPE=t_normal
+DEFNAME=i_tapestry_sosaria
 FLIP=1
-WEIGHT=54.0
-RESOURCES=1 i_cloth_bolt,2 i_dyes,1 i_board,1 i_rope
 CATEGORY=Decoration - Wall Hangings
 SUBSECTION=Tapestries
 DESCRIPTION=Sosaria Tapestry
@@ -2620,32 +2618,29 @@ DUPEITEM=02a79
 
 
 [ITEMDEF 02d6f]
-DEFNAME=i_tapestry_elven_1
-NAME=small elven tapestry
+DEFNAME=i_tapestry_elven_sophisticated
+NAME=sophisticated elven tapestry
 FLIP=1
-WEIGHT=54.0
-RESOURCES=1 i_cloth_bolt,2 i_dyes,1 i_board,1 i_rope
 CATEGORY=Decoration - Wall Hangings
 SUBSECTION=Tapestries
-DESCRIPTION=Elven Tapestry 1
+DESCRIPTION=Sophisticated Elven Tapestry
 DUPELIST=02d70
 
 [ITEMDEF 02d70]
-//elven tapestry 1
+//sophisticated elven tapestry
 DUPEITEM=02d6f
 
 [ITEMDEF 02d71]
-DEFNAME=i_tapestry_elven_2
+DEFNAME=i_tapestry_elven_ornate
+NAME=ornate elven tapestry
 FLIP=1
-WEIGHT=54.0
-RESOURCES=1 i_cloth_bolt,2 i_dyes,1 i_board,1 i_rope
 CATEGORY=Decoration - Wall Hangings
 SUBSECTION=Tapestries
-DESCRIPTION=Elven Tapestry 2
+DESCRIPTION=Ornate Elven Tapestry
 DUPELIST=02d72
 
 [ITEMDEF 02d72]
-//elven tapestry 2
+//ornate elven tapestry
 DUPEITEM=02d71
 
 
@@ -2822,9 +2817,7 @@ DUPEITEM=0403a
 
 
 [ITEMDEF 042b6]
-DEFNAME=i_portrait_horror
-TYPE=t_normal
-FLIP=1
+DEFNAME=i_portrait_gargish
 CATEGORY=Decoration - Wall Hangings
 SUBSECTION=Paintings
 DESCRIPTION=Gargish Portrait
@@ -2843,9 +2836,7 @@ DESCRIPTION=Colorful Tapestry 2
 
 [ITEMDEF 042c9]
 DEFNAME=i_banner_ultima
-NAME=Ultima banner
-WEIGHT=5.0
-RESOURCES=1 i_log,5 i_cloth
+NAME=ultima banner
 CATEGORY=Decoration - Wall Hangings
 SUBSECTION=Banners
 DESCRIPTION=Ultima Banner
@@ -2858,8 +2849,6 @@ DUPEITEM=042c9
 [ITEMDEF 042cb]
 DEFNAME=i_banner_chaos
 NAME=chaos banner
-WEIGHT=5.0
-RESOURCES=1 i_log,5 i_cloth
 CATEGORY=Decoration - Wall Hangings
 SUBSECTION=Banners
 DESCRIPTION=Chaos Banner
@@ -2870,17 +2859,15 @@ DUPELIST=042cc
 DUPEITEM=042cb
 
 [ITEMDEF 042cd]
-DEFNAME=i_banner_serpent
-NAME=serpent banner
-WEIGHT=5.0
-RESOURCES=1 i_log,5 i_cloth
+DEFNAME=i_banner_order
+NAME=order banner
 CATEGORY=Decoration - Wall Hangings
 SUBSECTION=Banners
-DESCRIPTION=Serpent Banner
+DESCRIPTION=Order Banner
 DUPELIST=042ce
 
 [ITEMDEF 042ce]
-//serpent banner
+//order banner
 DUPEITEM=042cd
 
 
@@ -2935,20 +2922,6 @@ DUPEITEM=044e9
 DUPEITEM=044e9
 
 
-[ITEMDEF 04699]
-DEFNAME=i_picture_ruined
-NAME=ruined picture
-FLIP=1
-CATEGORY=Decoration - Furniture
-SUBSECTION=Broken Furniture
-DESCRIPTION=Ruined Picture
-DUPELIST=0469a
-
-[ITEMDEF 0469a]
-//ruined picture
-DUPEITEM=04699
-
-
 [ITEMDEF 046ba]
 DEFNAME=i_trophy_crab
 NAME=crab trophy
@@ -2982,58 +2955,6 @@ DUPELIST=046bd
 [ITEMDEF 046bd]
 //lobster trophy
 DUPEITEM=046bc
-
-
-[ITEMDEF 04a8e]
-DEFNAME=i_mask_plague
-NAME=plague mask
-FLIP=1
-VALUE=23
-WEIGHT=0.4
-RESOURCES=2 i_hides_cut,1 i_thread
-SKILLMAKE=Tailoring 100.0,t_sewing_kit
-CATEGORY=Decoration - Wall Hangings
-SUBSECTION=Masks
-DESCRIPTION=Plague Mask
-DUPELIST=04a8f
-
-[ITEMDEF 04a8f]
-//Plague Mask
-DUPEITEM=04a8e
-
-[ITEMDEF 04a90]
-DEFNAME=i_mask_clown
-NAME=plague mask
-FLIP=1
-VALUE=23
-WEIGHT=0.4
-RESOURCES=2 i_hides_cut,1 i_thread
-SKILLMAKE=Tailoring 100.0,t_sewing_kit
-CATEGORY=Decoration - Wall Hangings
-SUBSECTION=Masks
-DESCRIPTION=Clown Mask
-DUPELIST=04a91
-
-[ITEMDEF 04a91]
-//Clown Mask
-DUPEITEM=04a90
-
-[ITEMDEF 04a92]
-DEFNAME=i_mask_daemon
-NAME=daemon mask
-FLIP=1
-VALUE=23
-WEIGHT=0.4
-RESOURCES=2 i_hides_cut,1 i_thread
-SKILLMAKE=Tailoring 100.0,t_sewing_kit
-CATEGORY=Decoration - Wall Hangings
-SUBSECTION=Masks
-DESCRIPTION=Daemon Mask
-DUPELIST=04a93
-
-[ITEMDEF 04a93]
-//Daemon Mask
-DUPEITEM=04a92
 
 
 [ITEMDEF 04a9e]
@@ -3249,41 +3170,6 @@ DUPEITEM=04b6a
 //Machine Wall 4
 [ITEMDEF 04b89]
 //Machine Wall 4
-
-
-[ITEMDEF 04ba5]
-DEFNAME=i_mask_eviljester
-NAME=evil jester mask
-FLIP=1
-VALUE=23
-WEIGHT=0.4
-RESOURCES=2 i_hides_cut,1 i_thread
-SKILLMAKE=Tailoring 100.0,t_sewing_kit
-CATEGORY=Decoration - Wall Hangings
-SUBSECTION=Masks
-DESCRIPTION=Evil Jester
-DUPELIST=04ba6
-
-[ITEMDEF 04ba6]
-//Evil Jester Mask
-DUPEITEM=04ba5
-
-[ITEMDEF 04ba7]
-DEFNAME=i_mask_porcelain
-NAME=porcelain mask
-FLIP=1
-VALUE=23
-WEIGHT=0.4
-RESOURCES=2 i_hides_cut,1 i_thread
-SKILLMAKE=Tailoring 100.0,t_sewing_kit
-CATEGORY=Decoration - Wall Hangings
-SUBSECTION=Masks
-DESCRIPTION=Porcelain
-DUPELIST=04ba8
-
-[ITEMDEF 04ba8]
-//Porcelain Mask
-DUPEITEM=04ba7
 
 
 [ITEMDEF 04b8d]
