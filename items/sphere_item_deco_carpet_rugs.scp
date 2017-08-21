@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, May 14, 2017
+// FILE LAST UPDATED: Monday, Aug 21, 2017
 //
 VERSION=0.56d
 
@@ -1684,20 +1684,6 @@ DUPEITEM=04772
 DUPEITEM=04772
 
 
-[ITEMDEF 04790]
-DEFNAME=i_welcome_mat_rounded
-NAME=door mat
-FLIP=1
-CATEGORY=Decoration - Carpets & Rugs
-SUBSECTION=Welcome Mat
-DESCRIPTION=Rounded
-DUPELIST=04791
-
-[ITEMDEF 04791]
-//welcome mat (rounded)
-DUPEITEM=04790
-
-
 [ITEMDEF 047d6]
 //dolphin rug west
 DUPEITEM=04772
@@ -1736,40 +1722,5 @@ COMPONENT=047d6,1,-1,0
 COMPONENT=047d7,-2,1,0
 COMPONENT=047d8,-2,-1,0
 COMPONENT=047d9,2,-1,0
-
-
-[ITEMDEF 047da]
-DEFNAME=i_welcome_mat_squared
-NAME=door mat
-FLIP=1
-CATEGORY=Decoration - Carpets & Rugs
-SUBSECTION=Welcome Mat
-DESCRIPTION=Squared
-DUPELIST=047db
-
-[ITEMDEF 047db]
-//welcome mat (squared)
-DUPEITEM=047da
-
-[ITEMDEF 04ab4]
-DEFNAME=i_welcome_mat_large
-NAME=door mat
-FLIP=1
-CATEGORY=Decoration - Carpets & Rugs
-SUBSECTION=Welcome Mat
-DESCRIPTION=Squared (multi-part)
-DUPELIST=04ab5,04ab6,04ab7
-
-[ITEMDEF 04ab5]
-//welcome mat (squared)(multi-part)
-DUPEITEM=04ab4
-
-[ITEMDEF 04ab6]
-//welcome mat (squared)(multi-part)
-DUPEITEM=04ab4
-
-[ITEMDEF 04ab7]
-//welcome mat (squared)(multi-part)
-DUPEITEM=04ab4
 
 [EOF]

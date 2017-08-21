@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Friday, Aug 18, 2017
+// FILE LAST UPDATED: Monday, Aug 21, 2017
 //
 VERSION=0.56d
 
@@ -2464,97 +2464,6 @@ ON=@Create
 //miso soups
 DUPEITEM=0284f
 
-
-[ITEMDEF 02bdd]
-DEFNAME=i_candycane_red
-NAME=red candycane
-TYPE=t_food
-WEIGHT=0.1
-VALUE=3
-CATEGORY=Provisions - Food
-SUBSECTION=Candy
-DESCRIPTION=Candy Cane (red)
-DUPELIST=02bde
-ON=@Create
-   MOREM=1
-
-[ITEMDEF 02bde]
-//Candy Cane (red)
-DUPEITEM=02bdd
-
-[ITEMDEF 02bdf]
-DEFNAME=i_candycane_green
-NAME=green candycane
-TYPE=t_food
-WEIGHT=0.1
-VALUE=3
-CATEGORY=Provisions - Food
-SUBSECTION=Candy
-DESCRIPTION=Candy Cane (green)
-DUPELIST=02be0
-ON=@Create
-   MOREM=1
-
-[ITEMDEF 02be0]
-//Candy Cane (green)
-DUPEITEM=02bdf
-
-[ITEMDEF 02be1]
-DEFNAME=i_gingerbreadman
-NAME=gingerbread cookie
-TYPE=t_food
-WEIGHT=1.2
-VALUE=4
-CATEGORY=Provisions - Food
-SUBSECTION=Candy
-DESCRIPTION=Gingerbread Cookie
-DUPELIST=02be2
-ON=@Create
-   MOREM=1
-
-[ITEMDEF 02be2]
-//Gingerbread Cookie
-DUPEITEM=02be1
-
-[ITEMDEF 02be3]
-DEFNAME=i_ginger
-NAME=ginger
-TYPE=t_food
-PILE=1
-VALUE=1
-WEIGHT=0.1
-CATEGORY=Provisions - Food
-SUBSECTION=Herbs
-DESCRIPTION=Ginger
-DUPELIST=02be4
-ON=@Create
-   MOREM=1
-
-[ITEMDEF 02be4]
-//Ginger
-DUPEITEM=02be3
-
-[ITEMDEF 02be5]
-DEFNAME=i_gingerbreadhouse
-NAME=gingerbread house
-TYPE=t_food
-FLIP=1
-VALUE=15
-WEIGHT=3.2
-CATEGORY=Provisions - Food
-SUBSECTION=Candy
-DESCRIPTION=Gingerbread House
-DUPELIST=02be6,02be7
-ON=@Create
-   MOREM=3
-
-[ITEMDEF 02be6]
-//Gingerbread house
-DUPEITEM=02be5
-
-[ITEMDEF 02be7]
-//Gingerbread house
-DUPEITEM=02be5
 
 [ITEMDEF 02be8]
 DEFNAME=i_chocolate_dark

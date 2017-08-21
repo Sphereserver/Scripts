@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Aug 12, 2017
+// FILE LAST UPDATED: Monday, Aug 21, 2017
 //
 VERSION=0.56d
 
@@ -2082,171 +2082,6 @@ ON=@Create
    ATTR=attr_magic|attr_newbie
 
 
-[ITEMDEF 02328]
-DEFNAME=i_snowman
-FLIP=1
-DYE=1
-WEIGHT=10.0
-RESOURCES=100 i_snow,1 i_fruit_carrot,12 i_reag_eye_of_newt,1 i_ribbon,1 i_hat_floppy
-CATEGORY=Decoration - Miscellaneous
-SUBSECTION=Holiday Gifts
-DESCRIPTION=Snowman
-DUPELIST=02329
-
-ON=@Create
-COLOR=colors_all
-
-[ITEMDEF 02329]
-//snowman
-DUPEITEM=02328
-
-[ITEMDEF 0232a]
-DEFNAME=i_giftbox
-TYPE=t_container
-TDATA2=0102
-TDATA3=190,95
-FLIP=1
-CATEGORY=Provisions - Miscellaneous
-SUBSECTION=Containers
-DESCRIPTION=Gift Box
-DUPELIST=0232b
-
-ON=@Create
-COLOR=colors_all
-
-[ITEMDEF 0232b]
-//gift box
-DUPEITEM=0232a
-
-[ITEMDEF 0232c]
-DEFNAME=i_wreath
-FLIP=1
-DYE=1
-RESOURCES=10 i_twig,1 i_mistletoe
-CATEGORY=Decoration - Miscellaneous
-SUBSECTION=Holiday Gifts
-DESCRIPTION=Wreath
-DUPELIST=0232d
-
-ON=@Create
-COLOR=colors_all
-
-[ITEMDEF 0232d]
-//wreath
-DUPEITEM=0232c
-
-[ITEMDEF 0232e]
-DEFNAME=i_snowflake1
-TYPE=t_normal
-WEIGHT=0.1
-RESOURCES=1 i_snow
-CATEGORY=Decoration - Miscellaneous
-SUBSECTION=Holiday Gifts
-DESCRIPTION=Snowflake
-
-[ITEMDEF 0232f]
-DEFNAME=i_snowflake2
-TYPE=t_normal
-WEIGHT=0.1
-RESOURCES=1 i_snow
-CATEGORY=Decoration - Miscellaneous
-SUBSECTION=Holiday Gifts
-DESCRIPTION=Snowflake 2
-
-[ITEMDEF 02330]
-DEFNAME=i_pointsetia_red
-TYPE=t_normal
-WEIGHT=10.0
-RESOURCES=10 i_log
-CATEGORY=Decoration - Miscellaneous
-SUBSECTION=Holiday Gifts
-DESCRIPTION=Red Pointsetia
-
-[ITEMDEF 02331]
-DEFNAME=i_pointsetia_white
-TYPE=t_normal
-WEIGHT=10.0
-RESOURCES=10 i_log
-CATEGORY=Decoration - Miscellaneous
-SUBSECTION=Holiday Gifts
-DESCRIPTION=White Pointsetia
-
-
-[ITEMDEF 0236e]
-DEFNAME=i_candle_holiday
-TYPE=t_normal
-VALUE=100
-WEIGHT=2.1
-RESOURCES=10 i_beeswax,1 i_string,1 i_ribbon
-CATEGORY=Decoration - Miscellaneous
-SUBSECTION=Holiday Gifts
-DESCRIPTION=Holiday Candle
-DUPELIST=0236f,02370,02371,02372,02373
-
-[ITEMDEF 0236f]
-//holiday candle
-DUPEITEM=0236e
-
-[ITEMDEF 02370]
-//holiday candle
-DUPEITEM=0236e
-
-[ITEMDEF 02371]
-//holiday candle
-DUPEITEM=0236e
-
-[ITEMDEF 02372]
-//holiday candle
-DUPEITEM=0236e
-
-[ITEMDEF 02373]
-//holiday candle
-DUPEITEM=0236e
-
-[ITEMDEF 02374]
-DEFNAME=i_mistletoe
-TYPE=t_normal
-FLIP=1
-VALUE=100
-WEIGHT=0.2
-CATEGORY=Decoration - Miscellaneous
-SUBSECTION=Holiday Gifts
-DESCRIPTION=Mistletoe
-DUPELIST=02375
-
-[ITEMDEF 02375]
-//mistletoe
-DUPEITEM=02374
-
-[ITEMDEF 02376]
-DEFNAME=i_cactus_festive
-TYPE=t_normal
-WEIGHT=28.0
-RESOURCES=1 i_pot_flower_large,1 i_plant_cactus,1 i_dirt
-CATEGORY=Decoration - Miscellaneous
-SUBSECTION=Holiday Gifts
-DESCRIPTION=Festive Cactus
-
-[ITEMDEF 02377]
-DEFNAME=i_tree_snowy
-TYPE=t_normal
-WEIGHT=28.0
-RESOURCES=1 i_pot_flower_large,1 i_tree_sapling,1 i_dirt
-CATEGORY=Decoration - Miscellaneous
-SUBSECTION=Holiday Gifts
-DESCRIPTION=Snowy Tree
-
-[ITEMDEF 02378]
-DEFNAME=i_tree_decorative
-TYPE=t_normal
-WEIGHT=28.0
-RESOURCES=1 i_pot_flower_large 1 i_tree_sapling,1 i_dirt
-CATEGORY=Decoration - Miscellaneous
-SUBSECTION=Holiday Gifts
-DESCRIPTION=Decorative Topiary
-
-
-
 [ITEMDEF 0241c]
 DEFNAME=i_urn_1
 TYPE=t_normal
@@ -3467,57 +3302,6 @@ DUPEITEM=02af9
 [ITEMDEF 02b00]
 //dawns music box
 DUPEITEM=02af9
-
-
-[ITEMDEF 02b14]
-//Cannot be opened
-DEFNAME=i_stocking_green2
-NAME=Christmas Stocking
-TYPE=t_container
-TDATA2=0103
-VALUE=12
-WEIGHT=1.2
-RESOURCES=1 i_wool,1 i_thread,1 i_cloth
-SKILLMAKE=tailoring 39.2,t_sewing_kit
-CATEGORY=Provisions - Miscellaneous
-SUBSECTION=Containers
-DESCRIPTION=Christmas Stocking (broken)
-
-[ITEMDEF 02bd9]
-DEFNAME=i_stocking_green
-NAME=Christmas stocking
-TYPE=t_container
-TDATA2=0103
-WEIGHT=1.2
-VALUE=12
-RESOURCES=1 i_wool,1 i_thread,1 i_cloth
-SKILLMAKE=tailoring 39.2,t_sewing_kit
-CATEGORY=Provisions - Miscellaneous
-SUBSECTION=Containers
-DESCRIPTION=Christmas Stocking (green)
-DUPELIST=02bda
-
-[ITEMDEF 02bda]
-//Christmas Stocking (green)
-DUPEITEM=02bd9
-
-[ITEMDEF 02bdb]
-DEFNAME=i_stocking_red
-NAME=Christmas stocking
-TYPE=t_container
-TDATA2=0103
-WEIGHT=1.2
-VALUE=12
-RESOURCES=1 i_wool,1 i_thread,1 i_cloth
-SKILLMAKE=tailoring 39.2,t_sewing_kit
-CATEGORY=Provisions - Miscellaneous
-SUBSECTION=Containers
-DESCRIPTION=Christmas Stocking (red)
-DUPELIST=02bdc
-
-[ITEMDEF 02bdc]
-//Christmas Stocking (red)
-DUPEITEM=02bdb
 
 
 [ITEMDEF 02db0]
@@ -4951,19 +4735,6 @@ DUPEITEM=041fe
 //Weapon Rack (full)
 DUPEITEM=041fe
 
-[ITEMDEF 04214]
-DEFNAME=i_toy_rockinghorse
-NAME=rocking horse
-TYPE=t_normal
-FLIP=1
-CATEGORY=Decoration - Miscellaneous
-SUBSECTION=Holiday Gifts
-DESCRIPTION=Rocking Horse
-DUPELIST=04215
-
-[ITEMDEF 04215]
-//toy rocking horse
-DUPEITEM=04214
 
 [ITEMDEF 0421e]
 DEFNAME=i_weapon_rack_smallarms
@@ -5093,103 +4864,6 @@ DESCRIPTION=Oak Barrel
 //stackable empty vial
 
 
-[ITEMDEF 04572]
-DEFNAME=i_icicles
-NAME=icicles
-TYPE=t_normal
-FLIP=1
-CATEGORY=Yard Decoration
-SUBSECTION=Icicles
-DESCRIPTION=Icicles
-DUPELIST=04573,04574,04575,04576,04577
-
-[ITEMDEF 04573]
-//icicles
-DUPEITEM=04572
-
-[ITEMDEF 04574]
-//icicles
-DUPEITEM=04572
-
-[ITEMDEF 04575]
-//icicles
-DUPEITEM=04572
-
-[ITEMDEF 04576]
-//icicles
-DUPEITEM=04572
-
-[ITEMDEF 04577]
-//icicles
-DUPEITEM=04572
-
-[ITEMDEF 046a2]
-DEFNAME=i_giftbox_cube
-TYPE=t_container
-TDATA2=011b
-TDATA3=163,151
-CATEGORY=Provisions - Miscellaneous
-SUBSECTION=Containers
-DESCRIPTION=Gift Box (Cube)
-
-ON=@Create
-COLOR={0454 1 0491 1 0493 1 0494 1 0495 1 04a8 1 04aa 1 04ab 1 04ac 1 0503 1 0504 1 0507 1 0672 1 084b 1 084f 1 0851 1 097c 1 0b8b 1 0b8c 1}
-
-[ITEMDEF 046a3]
-DEFNAME=i_giftbox_cylinder
-TYPE=t_container
-TDATA2=011c
-TDATA3=156,166
-CATEGORY=Provisions - Miscellaneous
-SUBSECTION=Containers
-DESCRIPTION=Gift Box (Cylinder)
-
-ON=@Create
-COLOR={0454 1 0491 1 0493 1 0494 1 0495 1 04a8 1 04aa 1 04ab 1 04ac 1 0503 1 0504 1 0507 1 0672 1 084b 1 084f 1 0851 1 097c 1 0b8b 1 0b8c 1}
-
-[ITEMDEF 046a4]
-DEFNAME=i_giftbox_octogon
-TYPE=t_container
-TDATA2=011d
-TDATA3=165,166
-CATEGORY=Provisions - Miscellaneous
-SUBSECTION=Containers
-DESCRIPTION=Gift Box (Octogon)
-
-ON=@Create
-COLOR={0454 1 0491 1 0493 1 0494 1 0495 1 04a8 1 04aa 1 04ab 1 04ac 1 0503 1 0504 1 0507 1 0672 1 084b 1 084f 1 0851 1 097c 1 0b8b 1 0b8c 1}
-
-[ITEMDEF 046a5]
-DEFNAME=i_giftbox_rectangle
-TYPE=t_container
-FLIP=1
-TDATA2=011e
-TDATA3=156,151
-CATEGORY=Provisions - Miscellaneous
-SUBSECTION=Containers
-DESCRIPTION=Gift Box (Rectangle)
-DUPELIST=046a6
-
-ON=@Create
-COLOR={0454 1 0491 1 0493 1 0494 1 0495 1 04a8 1 04aa 1 04ab 1 04ac 1 0503 1 0504 1 0507 1 0672 1 084b 1 084f 1 0851 1 097c 1 0b8b 1 0b8c 1}
-
-[ITEMDEF 046a6]
-//Gift Box (Rectangle)
-DUPEITEM=046a5
-
-[ITEMDEF 046a7]
-DEFNAME=i_giftbox_angel
-TYPE=t_container
-TDATA2=011f
-TDATA3=161,151
-CATEGORY=Provisions - Miscellaneous
-SUBSECTION=Containers
-DESCRIPTION=Gift Box (Angel)
-
-ON=@Create
-COLOR={0454 1 0491 1 0493 1 0494 1 0495 1 04a8 1 04aa 1 04ab 1 04ac 1 0503 1 0504 1 0507 1 0672 1 084b 1 084f 1 0851 1 097c 1 0b8b 1 0b8c 1}
-
-
 [ITEMDEF 046ae]
 //gardening scroll
 [ITEMDEF 046af]
@@ -5207,72 +4881,6 @@ COLOR={0454 1 0491 1 0493 1 0494 1 0495 1 04a8 1 04aa 1 04ab 1 04ac 1 0503 1 050
 [ITEMDEF 046b9]
 //sea market buoy
 
-
-[ITEMDEF 046ec]
-DEFNAME=i_nutcracker_small
-NAME=nutcracker
-TYPE=t_normal//fixme: when dclicked, it should animate once
-FLIP=1
-CATEGORY=Decoration - Miscellaneous
-SUBSECTION=Holiday Gifts
-DESCRIPTION=Nutcracker (Small)
-DUPELIST=046ef
-
-[ITEMDEF 046ed]
-//small nutcracker (animation frame)
-
-[ITEMDEF 046ee]
-//small nutcracker (animation frame)
-
-[ITEMDEF 046ef]
-//small nutcracker
-DUPEITEM=046ec
-
-[ITEMDEF 046f0]
-//small nutcracker (animation frame)
-
-[ITEMDEF 046f1]
-//small nutcracker (animation frame)
-
-[ITEMDEF 046f2]
-DEFNAME=i_nutcracker_large
-NAME=nutcracker
-TYPE=t_normal//fixme: when dclicked, it should animate once
-FLIP=1
-CATEGORY=Decoration - Miscellaneous
-SUBSECTION=Holiday Gifts
-DESCRIPTION=Nutcracker (Large)
-DUPELIST=046f5
-
-[ITEMDEF 046f3]
-//large nutcracker (animation frame)
-
-[ITEMDEF 046f4]
-//large nutcracker (animation frame)
-
-[ITEMDEF 046f5]
-//large nutcracker
-DUPEITEM=046f2
-
-[ITEMDEF 046f6]
-//large nutcracker (animation frame)
-
-[ITEMDEF 046f7]
-//large nutcracker (animation frame)
-
-
-[ITEMDEF 046fa]
-DEFNAME=i_angel_decoration
-NAME=angel decoration
-FLIP=1
-CATEGORY=Decoration - Miscellaneous
-SUBSECTION=Holiday Gifts
-DESCRIPTION=Angel Decoration
-DUPELIST=046fb
-
-[ITEMDEF 046fb]
-//angel decoration
-DUPEITEM=046fa
 
 [ITEMDEF 046fc]
 //ship wheel (standard)
@@ -5659,18 +5267,8 @@ DUPEITEM=04b82
 //Exodus Object 4
 DUPEITEM=04b83
 
-
-[ITEMDEF 04ba9]//Small Xmas Tree
-[ITEMDEF 04baa]//Small Xmas Tree (animation frame)
 [ITEMDEF 04bab]//Basket of Rolls
 [ITEMDEF 04bac]
-[ITEMDEF 04bad]//Small Xmas Tree (animation frame)
-[ITEMDEF 04bae]//Small Xmas Tree (animation frame)
-[ITEMDEF 04baf]//Small Xmas Tree (animation frame)
-[ITEMDEF 04bb0]//Small Xmas Tree (animation frame)
-[ITEMDEF 04bb1]//Small Xmas Tree (animation frame)
-[ITEMDEF 04bb2]//Small Xmas Tree (animation frame)
-[ITEMDEF 04bb3]//Small Xmas Tree (animation frame)
 [ITEMDEF 04bb4]//Game Dice (1)
 [ITEMDEF 04bb5]//Game Dice (2)
 [ITEMDEF 04bb6]//Game Dice (3)
@@ -5707,9 +5305,6 @@ CATEGORY=Resources
 SUBSECTION=Mineral
 DESCRIPTION=Gold Dust
 
-[ITEMDEF 04c0a]
-//small Xmas tree
-
 [ITEMDEF 04c0b]
 DEFNAME=i_vase_roses
 NAME=roses in a vase
@@ -5733,15 +5328,6 @@ ON=@DClick
 [ITEMDEF 04c13]
 [ITEMDEF 04c14]
 [ITEMDEF 04c15]
-
-[ITEMDEF 04c16]
-//small Xmas tree (creature)
-[ITEMDEF 04c17]
-//small Xmas tree (green)
-[ITEMDEF 04c18]
-//small Xmas tree (charlie brown)
-[ITEMDEF 04c19]
-//small Xmas tree (charlie brown)
 
 [ITEMDEF 04c24]
 DEFNAME=i_bookcase_alchemist
@@ -6629,24 +6215,6 @@ DUPELIST=09707
 //Combination Chest
 DUPEITEM=09706
 
-[ITEMDEF 0992d]
-//Pumpkin Carving Kit
-[ITEMDEF 0992e]
-//Pumpkin Carving Kit
-
-[ITEMDEF 09955]
-//head on a spear
-[ITEMDEF 09956]
-[ITEMDEF 09957]
-[ITEMDEF 09958]
-[ITEMDEF 09959]
-[ITEMDEF 0995a]
-[ITEMDEF 0995b]
-[ITEMDEF 0995c]
-[ITEMDEF 0995d]
-[ITEMDEF 0995e]
-[ITEMDEF 0995f]
-
 [ITEMDEF 09960]
 //silver platter
 [ITEMDEF 09961]
@@ -6760,15 +6328,6 @@ DUPEITEM=09706
 [ITEMDEF 098d0]
 // NoName //tok
 
-[ITEMDEF 09c14]
-DEFNAME=i_card_legend
-FLIP=1
-DUPELIST=09c15
-
-[ITEMDEF 09c15]
-//legend card
-DUPEITEM=09c14
-
 [ITEMDEF 09c16]
 DEFNAME=i_runic_atlas
 NAME=runic atlas
@@ -6827,58 +6386,5 @@ DESCRIPTION=Gift Box (Christmas)
 
 [ITEMDEF 09f18]
 //Easter Egg
-
-
-//////////////////////
-// Cards of Semidar //
-//////////////////////
-
-[ITEMDEF i_card_semidar_dupre]
-ID=i_card_legend
-NAME=Cards of Semidar
-TYPE=t_sign_gump
-TDATA2=09be0
-ON=@ClientTooltip
-   SRC.ADDCLILOC 1156396	//Dupre the Paladin
-
-[ITEMDEF i_card_semidar_nystul]
-ID=i_card_legend
-NAME=Cards of Semidar
-TYPE=t_sign_gump
-TDATA2=09be1
-ON=@ClientTooltip
-   SRC.ADDCLILOC 1156397	//Nystul the Mage
-
-[ITEMDEF i_card_semidar_shamino]
-ID=i_card_legend
-NAME=Cards of Semidar
-TYPE=t_sign_gump
-TDATA2=09be2
-ON=@ClientTooltip
-   SRC.ADDCLILOC 1156398	//Shamino Sallé Dacil
-
-[ITEMDEF i_card_semidar_juonar]
-ID=i_card_legend
-NAME=Cards of Semidar
-TYPE=t_sign_gump
-TDATA2=09be3
-ON=@ClientTooltip
-   SRC.ADDCLILOC 1156399	//Juo'nar the Lich
-
-[ITEMDEF i_card_semidar_professor_rafkin]
-ID=i_card_legend
-NAME=Cards of Semidar
-TYPE=t_sign_gump
-TDATA2=09be4
-ON=@ClientTooltip
-   SRC.ADDCLILOC 1156562	//Professor Ellie Rafkin
-
-[ITEMDEF i_card_semidar_minax]
-ID=i_card_legend
-NAME=Cards of Semidar
-TYPE=t_sign_gump
-TDATA2=09be5
-ON=@ClientTooltip
-   SRC.ADDCLILOC 1156981	//Minax the Enchantress
 
 [EOF]

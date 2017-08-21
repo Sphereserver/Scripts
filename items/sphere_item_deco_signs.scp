@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, May 16, 2017
+// FILE LAST UPDATED: Monday, Aug 21, 2017
 //
 VERSION=0.56d
 
@@ -1133,21 +1133,6 @@ DUPELIST=01f29
 //sign
 DEFNAME=i_sign_blank_2
 DUPEITEM=01f28
-
-[ITEMDEF 04b20]
-DEFNAME=i_sign_customizable
-NAME=sign
-TYPE=t_sign_gump
-TDATA2=024f4
-FLIP=1
-CATEGORY=Decoration - Signs
-SUBSECTION=Blank
-DESCRIPTION=Customizable Sign
-DUPELIST=04b21
-
-[ITEMDEF 04b21]
-//customizable sign
-DUPEITEM=04b20
 
 [ITEMDEF 09a0c]
 //bar sign (south)

@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Friday, Aug 18, 2017
+// FILE LAST UPDATED: Monday, Aug 21, 2017
 //
 VERSION=0.56d
 
@@ -801,45 +801,6 @@ ON=@Create
    MOREZ=1
 
 
-[ITEMDEF 02332]
-DEFNAME=fx_decorative_lights
-NAME=decorative lights
-TYPE=t_normal
-FLIP=1
-CATEGORY=Yard Decoration
-SUBSECTION=Blinking Lights
-DESCRIPTION=Decorative Lights
-DUPELIST=02333,02334,02335,02336,02337,02338,02339
-
-[ITEMDEF 02333]
-//Decorative Lights
-DUPEITEM=02332
-
-[ITEMDEF 02334]
-//Decorative Lights
-DUPEITEM=02332
-
-[ITEMDEF 02335]
-//Decorative Lights
-DUPEITEM=02332
-
-[ITEMDEF 02336]
-//Decorative Lights
-DUPEITEM=02332
-
-[ITEMDEF 02337]
-//Decorative Lights
-DUPEITEM=02332
-
-[ITEMDEF 02338]
-//Decorative Lights
-DUPEITEM=02332
-
-[ITEMDEF 02339]
-//Decorative Lights
-DUPEITEM=02332
-
-
 [ITEMDEF 024bb]
 DEFNAME=i_lantern_shoji_lit
 TYPE=t_light_lit
@@ -1334,69 +1295,6 @@ SUBSECTION=Lanterns
 DESCRIPTION=Dragon Lamp (Unlit)
 ON=@Create
    MOREZ=1
-
-
-[ITEMDEF 04a98]
-DEFNAME=i_lamp_santa
-NAME=Saint Nicholas Statue
-TYPE=t_light_out
-TDATA3=i_lamp_santa_lit
-VALUE=10
-CATEGORY=Decoration - Lightsources
-SUBSECTION=Holiday
-DESCRIPTION=Santa Lantern (Unlit)
-ON=@Create
-   MOREZ=1
-ON=@DropOn_Ground
-   ID=i_lamp_santa2
-
-[ITEMDEF 04a99]
-DEFNAME=i_lamp_santa2
-NAME=Saint Nicholas Statue
-TYPE=t_light_out
-TDATA3=i_lamp_santa2_lit
-VALUE=10
-CATEGORY=Decoration - Lightsources
-SUBSECTION=Holiday
-DESCRIPTION=Santa Lantern (Unlit)
-ON=@Create
-   MOREZ=1
-ON=@DropOn_Ground
-   ID=i_lamp_santa
-
-[ITEMDEF 04a9a]
-DEFNAME=i_lamp_santa_lit
-NAME=Saint Nicholas Statue
-TYPE=t_light_lit
-TDATA3=i_lamp_santa
-FLIP=1
-VALUE=10
-WEIGHT=1.0
-RESOURCES=1 i_lantern
-CATEGORY=Decoration - Lightsources
-SUBSECTION=Holiday
-DESCRIPTION=Santa Lantern (Lit)
-ON=@Create
-   MOREZ=1
-ON=@DropOn_Ground
-   ID=i_lamp_santa2_lit
-
-[ITEMDEF 04a9b]
-DEFNAME=i_lamp_santa2_lit
-NAME=Saint Nicholas Statue
-TYPE=t_light_lit
-TDATA3=i_lamp_santa2
-FLIP=1
-VALUE=10
-WEIGHT=1.0
-RESOURCES=1 i_lantern
-CATEGORY=Decoration - Lightsources
-SUBSECTION=Holiday
-DESCRIPTION=Santa Lantern (Lit)
-ON=@Create
-   MOREZ=1
-ON=@DropOn_Ground
-   ID=i_lamp_santa_lit
 
 
 [ITEMDEF 04c40]

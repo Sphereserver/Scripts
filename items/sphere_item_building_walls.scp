@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, May 14, 2017
+// FILE LAST UPDATED: Monday, Aug 21, 2017
 //
 VERSION=0.56d
 
@@ -7238,8 +7238,6 @@ DUPEITEM=024c
 [ITEMDEF 0456b]
 [ITEMDEF 0456c]
 [ITEMDEF 0456d]
-[ITEMDEF 0456e]
-[ITEMDEF 0456f]
 
 [ITEMDEF 04582]
 [ITEMDEF 04583]

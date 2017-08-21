@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Friday, Aug 18, 2017
+// FILE LAST UPDATED: Monday, Aug 21, 2017
 //
 VERSION=0.56d
 
@@ -1074,58 +1074,6 @@ SKILLMAKE=Carpentry 20.0,t_masonry_tool
 CATEGORY=Decoration - Wall Carvings & Statues
 SUBSECTION=Statues
 DESCRIPTION=Gargoyle Lord Statue
-
-
-[ITEMDEF 04578]
-DEFNAME=i_statue_seahorse
-NAME=seahorse statue
-FLIP=1
-VALUE=150
-WEIGHT=200.0
-RESOURCES=20 i_rock_plain
-SKILLMAKE=Carpentry 45.0,t_masonry_tool
-CATEGORY=Decoration - Wall Carvings & Statues
-SUBSECTION=Statues
-DESCRIPTION=Seahorse
-DUPELIST=04579
-
-[ITEMDEF 04579]
-//seahorse statue
-DUPEITEM=04578
-
-[ITEMDEF 0457a]
-DEFNAME=i_statue_mermaid
-NAME=mermaid statue
-FLIP=1
-VALUE=150
-WEIGHT=200.0
-RESOURCES=20 i_rock_plain
-SKILLMAKE=Carpentry 45.0,t_masonry_tool
-CATEGORY=Decoration - Wall Carvings & Statues
-SUBSECTION=Statues
-DESCRIPTION=Mermaid
-DUPELIST=0457b
-
-[ITEMDEF 0457b]
-//mermaid statue
-DUPEITEM=0457a
-
-[ITEMDEF 0457c]
-DEFNAME=i_statue_griffin
-NAME=gryffon statue
-FLIP=1
-VALUE=150
-WEIGHT=200.0
-RESOURCES=10 i_rock_plain
-SKILLMAKE=Carpentry 45.0,t_masonry_tool
-CATEGORY=Decoration - Wall Carvings & Statues
-SUBSECTION=Statues
-DESCRIPTION=Griffin
-DUPELIST=0457d
-
-[ITEMDEF 0457d]
-//griffin statue
-DUPEITEM=0457c
 
 
 [ITEMDEF 0493b]
