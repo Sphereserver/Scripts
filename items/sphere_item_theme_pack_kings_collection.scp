@@ -1,0 +1,1378 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2017
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Saturday, Aug 26, 2017
+//
+VERSION=0.56d
+
+
+[ITEMDEF 04c20]
+DEFNAME=i_painting_castle
+NAME=castle painting
+FLIP=1
+CATEGORY=King's Collection
+SUBSECTION=Decoration
+DESCRIPTION=Castle Painting
+DUPELIST=04c21
+
+[ITEMDEF 04c21]
+//castle painting
+DUPEITEM=04c20
+
+[ITEMDEF 04c22]
+DEFNAME=i_painting_horse
+NAME=horse painting
+FLIP=1
+CATEGORY=King's Collection
+SUBSECTION=Decoration
+DESCRIPTION=Horse Painting
+DUPELIST=04c23
+
+[ITEMDEF 04c23]
+//horse painting
+DUPEITEM=04c22
+
+[ITEMDEF 04c24]
+DEFNAME=i_bookcase_alchemist
+NAME=alchemist bookcase
+TYPE=t_container
+TDATA2=04d
+FLIP=1
+CATEGORY=King's Collection
+SUBSECTION=Containers
+DESCRIPTION=Alchemist Bookcase
+DUPELIST=04c25
+
+[ITEMDEF 04c25]
+//alchemist bookcase
+DUPEITEM=04c24
+
+[ITEMDEF 04c26]
+DEFNAME=i_painting_ship
+NAME=ship painting
+FLIP=1
+CATEGORY=King's Collection
+SUBSECTION=Decoration
+DESCRIPTION=Ship Painting
+DUPELIST=04c27
+
+[ITEMDEF 04c27]
+//ship painting
+DUPEITEM=04c26
+
+[ITEMDEF 04c28]
+DEFNAME=i_painting_fire
+NAME=fire painting
+FLIP=1
+CATEGORY=King's Collection
+SUBSECTION=Decoration
+DESCRIPTION=Fire Painting
+DUPELIST=04c29
+
+[ITEMDEF 04c29]
+//fire painting
+DUPEITEM=04c28
+
+
+[ITEMDEF 04c32]
+//15th anniversary lithograph (multi-part)(east)
+NAME=15th anniversary lithograph
+
+[ITEMDEF 04c33]
+//15th anniversary lithograph (multi-part)(east)
+NAME=15th anniversary lithograph
+
+[ITEMDEF 04c34]
+//15th anniversary lithograph (multi-part)(east)
+NAME=15th anniversary lithograph
+
+[ITEMDEF 04c35]
+//15th anniversary lithograph (multi-part)(south)
+NAME=15th anniversary lithograph
+
+[ITEMDEF 04c36]
+//15th anniversary lithograph (multi-part)(south)
+NAME=15th anniversary lithograph
+
+[ITEMDEF 04c37]
+//15th anniversary lithograph (multi-part)(south)
+NAME=15th anniversary lithograph
+
+[ITEMDEF 04c38]
+DEFNAME=i_wooden_shelf_fancy
+NAME=fancy wooden shelf
+FLIP=1
+RESOURCES=15 i_board
+SKILLMAKE=Carpentry 40.0,t_carpentry
+CATEGORY=King's Collection
+SUBSECTION=Decoration
+DESCRIPTION=Fancy Wooden Shelf
+DUPELIST=04c39
+
+[ITEMDEF 04c39]
+//fancy wooden shelf
+DUPEITEM=04c38
+
+[ITEMDEF 04c3a]
+DEFNAME=i_wooden_shelf_plain
+NAME=plain wooden shelf
+FLIP=1
+RESOURCES=15 i_board
+SKILLMAKE=Carpentry 40.0,t_carpentry
+CATEGORY=King's Collection
+SUBSECTION=Decoration
+DESCRIPTION=Plain Wooden Shelf
+DUPELIST=04c3b
+
+[ITEMDEF 04c3b]
+//plain wooden shelf
+DUPEITEM=04c3a
+
+[ITEMDEF 04c3c]
+DEFNAME=i_trumpet
+NAME=trumpet
+FLIP=1
+RESOURCES=10 i_board,15 i_ingot_iron
+SKILLMAKE=Carpentry 85.0,Musicianship 45.0,t_carpentry
+CATEGORY=King's Collection
+SUBSECTION=Decoration
+DESCRIPTION=Trumpet
+DUPELIST=04c3d
+ON=@DClick
+   SOUND 066f
+   return 1
+
+[ITEMDEF 04c3d]
+//trumpet
+DUPEITEM=04c3c
+
+[ITEMDEF 04c3e]
+DEFNAME=i_cello
+NAME=cello
+FLIP=1
+RESOURCES=15 i_board,5 i_cloth
+SKILLMAKE=Carpentry 75.0,Musicianship 45.0,t_carpentry
+CATEGORY=King's Collection
+SUBSECTION=Decoration
+DESCRIPTION=Cello
+DUPELIST=04c3f
+ON=@DClick
+   SOUND 066d
+   return 1
+
+[ITEMDEF 04c3f]
+//cello
+DUPEITEM=04c3e
+
+[ITEMDEF 04c40]
+DEFNAME=i_lantern_dragon_s
+NAME=dragon lantern
+TYPE=t_light_out
+TDATA3=i_lantern_dragon_s_lit
+CATEGORY=King's Collection
+SUBSECTION=Lightsources
+DESCRIPTION=Dragon Lantern (south)(unlit)
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 04c41]
+DEFNAME=i_lantern_dragon_s_lit
+NAME=dragon lantern
+TYPE=t_light_lit
+TDATA3=i_lantern_dragon_s
+CATEGORY=King's Collection
+SUBSECTION=Lightsources
+DESCRIPTION=Dragon Lantern (south)(lit)
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 04c42]
+DEFNAME=i_lantern_dragon_e
+NAME=dragon lantern
+TYPE=t_light_out
+TDATA3=i_lantern_dragon_e_lit
+CATEGORY=King's Collection
+SUBSECTION=Lightsources
+DESCRIPTION=Dragon Lantern (east)(unlit)
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 04c43]
+DEFNAME=i_lantern_dragon_e_lit
+NAME=dragon lantern
+TYPE=t_light_lit
+TDATA3=i_lantern_dragon_e
+CATEGORY=King's Collection
+SUBSECTION=Lightsources
+DESCRIPTION=Dragon Lantern (east)(lit)
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 04c44]
+DEFNAME=i_lamp_bird_s
+NAME=bird lamp
+TYPE=t_light_out
+TDATA3=i_lamp_bird_s_lit
+CATEGORY=King's Collection
+SUBSECTION=Lightsources
+DESCRIPTION=Bird Lamp (south)(unlit)
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 04c45]
+DEFNAME=i_lamp_bird_s_lit
+NAME=bird lamp
+TYPE=t_light_lit
+TDATA3=i_lamp_bird_s
+CATEGORY=King's Collection
+SUBSECTION=Lightsources
+DESCRIPTION=Bird Lamp (south)(lit)
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 04c46]
+DEFNAME=i_lamp_bird_e
+NAME=bird lamp
+TYPE=t_light_out
+TDATA3=i_lamp_bird_e_lit
+CATEGORY=King's Collection
+SUBSECTION=Lightsources
+DESCRIPTION=Bird Lamp (east)(unlit)
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 04c47]
+DEFNAME=i_lamp_bird_e_lit
+NAME=bird lamp
+TYPE=t_light_lit
+TDATA3=i_lamp_bird_e
+CATEGORY=King's Collection
+SUBSECTION=Lightsources
+DESCRIPTION=Bird Lamp (east)(lit)
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 04c48]
+DEFNAME=i_koi_lamp_s
+NAME=koi lamp
+TYPE=t_light_out
+TDATA3=i_koi_lamp_s_lit
+CATEGORY=King's Collection
+SUBSECTION=Lightsources
+DESCRIPTION=Koi Lamp (south)(unlit)
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 04c49]
+DEFNAME=i_koi_lamp_s_lit
+NAME=koi lamp
+TYPE=t_light_lit
+TDATA3=i_koi_lamp_s
+CATEGORY=King's Collection
+SUBSECTION=Lightsources
+DESCRIPTION=Koi Lamp (south)(lit)
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 04c4a]
+DEFNAME=i_koi_lamp_e
+NAME=koi lamp
+TYPE=t_light_out
+TDATA3=i_koi_lamp_e_lit
+CATEGORY=King's Collection
+SUBSECTION=Lightsources
+DESCRIPTION=Koi Lamp (east)(unlit)
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 04c4b]
+DEFNAME=i_koi_lamp_e_lit
+NAME=koi lamp
+TYPE=t_light_lit
+TDATA3=i_koi_lamp_e
+CATEGORY=King's Collection
+SUBSECTION=Lightsources
+DESCRIPTION=Koi Lamp (east)(lit)
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 04c4c]
+DEFNAME=i_lamp_dragon_s
+NAME=dragon lamp
+TYPE=t_light_out
+TDATA3=i_lamp_dragon_s_lit
+RESOURCES=8 i_ingot_iron,1 i_candelabra,1 i_workable_glass
+SKILLMAKE=Tinkering 85.0,t_tinker_tools
+CATEGORY=King's Collection
+SUBSECTION=Lightsources
+DESCRIPTION=Dragon Lamp (south)(unlit)
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 04c4d]
+DEFNAME=i_lamp_dragon_s_lit
+NAME=dragon lamp
+TYPE=t_light_lit
+TDATA3=i_lamp_dragon_s
+RESOURCES=8 i_ingot_iron,1 i_candelabra,1 i_workable_glass
+SKILLMAKE=Tinkering 85.0,t_tinker_tools
+CATEGORY=King's Collection
+SUBSECTION=Lightsources
+DESCRIPTION=Dragon Lamp (south)(lit)
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 04c4e]
+DEFNAME=i_lamp_dragon_e
+NAME=dragon lamp
+TYPE=t_light_out
+TDATA3=i_lamp_dragon_e_lit
+RESOURCES=8 i_ingot_iron,1 i_candelabra,1 i_workable_glass
+SKILLMAKE=Tinkering 85.0,t_tinker_tools
+CATEGORY=King's Collection
+SUBSECTION=Lightsources
+DESCRIPTION=Dragon Lamp (east)(unlit)
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 04c4f]
+DEFNAME=i_lamp_dragon_e_lit
+NAME=dragon lamp
+TYPE=t_light_lit
+TDATA3=i_lamp_dragon_e
+RESOURCES=8 i_ingot_iron,1 i_candelabra,1 i_workable_glass
+SKILLMAKE=Tinkering 85.0,t_tinker_tools
+CATEGORY=King's Collection
+SUBSECTION=Lightsources
+DESCRIPTION=Dragon Lamp (east)(lit)
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 04c50]
+DEFNAME=i_stained_glass_lamp
+NAME=stained glass lamp
+TYPE=t_light_out
+TDATA3=i_stained_glass_lamp_lit
+RESOURCES=8 i_ingot_iron,1 i_candelabra,1 i_workable_glass
+SKILLMAKE=Tinkering 85.0,t_tinker_tools
+CATEGORY=King's Collection
+SUBSECTION=Lightsources
+DESCRIPTION=Stained Glass Lamp (unlit)
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 04c51]
+DEFNAME=i_stained_glass_lamp_lit
+NAME=stained glass lamp
+TYPE=t_light_lit
+TDATA3=i_stained_glass_lamp
+RESOURCES=8 i_ingot_iron,1 i_candelabra,1 i_workable_glass
+SKILLMAKE=Tinkering 85.0,t_tinker_tools
+CATEGORY=King's Collection
+SUBSECTION=Lightsources
+DESCRIPTION=Stained Glass Lamp (lit)
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 04c52]
+DEFNAME=i_lamp_tall_s
+NAME=tall lamp
+TYPE=t_light_out
+TDATA3=i_lamp_tall_s_lit
+CATEGORY=King's Collection
+SUBSECTION=Lightsources
+DESCRIPTION=Tall Lamp (south)(unlit)
+ON=@Create
+   MOREZ=29
+
+[ITEMDEF 04c53]
+DEFNAME=i_lamp_tall_s_lit
+NAME=tall lamp
+TYPE=t_light_lit
+TDATA3=i_lamp_tall_s
+CATEGORY=King's Collection
+SUBSECTION=Lightsources
+DESCRIPTION=Tall Lamp (south)(lit)
+ON=@Create
+   MOREZ=29
+
+[ITEMDEF 04c54]
+DEFNAME=i_lamp_tall_e
+NAME=tall lamp
+TYPE=t_light_out
+TDATA3=i_lamp_tall_e_lit
+CATEGORY=King's Collection
+SUBSECTION=Lightsources
+DESCRIPTION=Tall Lamp (east)(unlit)
+ON=@Create
+   MOREZ=29
+
+[ITEMDEF 04c55]
+DEFNAME=i_lamp_tall_e_lit
+NAME=tall lamp
+TYPE=t_light_lit
+TDATA3=i_lamp_tall_e
+CATEGORY=King's Collection
+SUBSECTION=Lightsources
+DESCRIPTION=Tall Lamp (east)(lit)
+ON=@Create
+   MOREZ=29
+
+[ITEMDEF 04c56]
+DEFNAME=i_lamp_tall_double_s
+NAME=tall double lamp
+TYPE=t_light_out
+TDATA3=i_lamp_tall_double_s_lit
+RESOURCES=8 i_ingot_iron,1 i_candelabra,1 i_workable_glass
+SKILLMAKE=Tinkering 85.0,t_tinker_tools
+CATEGORY=King's Collection
+SUBSECTION=Lightsources
+DESCRIPTION=Tall Double Lamp (south)(unlit)
+ON=@Create
+   MOREZ=29
+
+[ITEMDEF 04c57]
+DEFNAME=i_lamp_tall_double_s_lit
+NAME=tall double lamp
+TYPE=t_light_lit
+TDATA3=i_lamp_tall_double_s
+RESOURCES=8 i_ingot_iron,1 i_candelabra,1 i_workable_glass
+SKILLMAKE=Tinkering 85.0,t_tinker_tools
+CATEGORY=King's Collection
+SUBSECTION=Lightsources
+DESCRIPTION=Tall Double Lamp (south)(lit)
+ON=@Create
+   MOREZ=29
+
+[ITEMDEF 04c58]
+DEFNAME=i_lamp_tall_double_e
+NAME=tall double lamp
+TYPE=t_light_out
+TDATA3=i_lamp_tall_double_e_lit
+RESOURCES=8 i_ingot_iron,1 i_candelabra,1 i_workable_glass
+SKILLMAKE=Tinkering 85.0,t_tinker_tools
+CATEGORY=King's Collection
+SUBSECTION=Lightsources
+DESCRIPTION=Tall Double Lamp (east)(unlit)
+ON=@Create
+   MOREZ=29
+
+[ITEMDEF 04c59]
+DEFNAME=i_lamp_tall_double_e_lit
+NAME=tall double lamp
+TYPE=t_light_lit
+TDATA3=i_lamp_tall_double_e
+RESOURCES=8 i_ingot_iron,1 i_candelabra,1 i_workable_glass
+SKILLMAKE=Tinkering 85.0,t_tinker_tools
+CATEGORY=King's Collection
+SUBSECTION=Lightsources
+DESCRIPTION=Tall Double Lamp (east)(lit)
+ON=@Create
+   MOREZ=29
+
+[ITEMDEF 04c5a]
+DEFNAME=i_cowbell
+NAME=cowbell
+FLIP=1
+RESOURCES=10 i_board,15 i_ingot_iron
+SKILLMAKE=Carpentry 85.0,Musicianship 45.0,t_carpentry
+CATEGORY=King's Collection
+SUBSECTION=Decoration
+DESCRIPTION=Cowbell
+DUPELIST=04c5b
+ON=@DClick
+   SOUND 066e
+   return 1
+
+[ITEMDEF 04c5b]
+//cowbell
+DUPEITEM=04c5a
+
+[ITEMDEF 04c5c]
+DEFNAME=i_wall_mounted_bell
+NAME=wall mounted bell
+FLIP=1
+RESOURCES=50 i_board,50 i_cloth
+SKILLMAKE=Carpentry 75.0,Musicianship 45.0,t_carpentry
+CATEGORY=King's Collection
+SUBSECTION=Decoration
+DESCRIPTION=Wall Mounted Bell
+DUPELIST=04c5d
+ON=@DClick
+   SOUND 066e
+   return 1
+
+[ITEMDEF 04c5d]
+//wall mounted bell
+DUPEITEM=04c5c
+
+
+[ITEMDEF 04c68]
+//four post bed (multi-part)(south)
+NAME=four post bed
+
+[ITEMDEF 04c69]
+//four post bed (multi-part)(south)
+NAME=four post bed
+
+[ITEMDEF 04c6a]
+//four post bed (multi-part)(south)
+NAME=four post bed
+
+[ITEMDEF 04c6b]
+//four post bed (multi-part)(south)
+NAME=four post bed
+
+[ITEMDEF 04c6c]
+//four post bed (multi-part)(south)
+NAME=four post bed
+
+[ITEMDEF 04c6d]
+//four post bed (multi-part)(south)
+NAME=four post bed
+
+[ITEMDEF 04c6e]
+//four post bed (multi-part)(east)
+NAME=four post bed
+
+[ITEMDEF 04c6f]
+//four post bed (multi-part)(east)
+NAME=four post bed
+
+[ITEMDEF 04c70]
+//four post bed (multi-part)(east)
+NAME=four post bed
+
+[ITEMDEF 04c71]
+//four post bed (multi-part)(east)
+NAME=four post bed
+
+[ITEMDEF 04c72]
+//four post bed (multi-part)(east)
+NAME=four post bed
+
+[ITEMDEF 04c73]
+//four post bed (multi-part)(east)
+NAME=four post bed
+
+[ITEMDEF 04c74]
+//ornate bed (multi-part)(south)
+NAME=ornate bed
+
+[ITEMDEF 04c75]
+//ornate bed (multi-part)(south)
+NAME=ornate bed
+
+[ITEMDEF 04c76]
+//ornate bed (multi-part)(south)
+NAME=ornate bed
+
+[ITEMDEF 04c77]
+//ornate bed (multi-part)(south)
+NAME=ornate bed
+
+[ITEMDEF 04c78]
+//ornate bed (multi-part)(south)
+NAME=ornate bed
+
+[ITEMDEF 04c79]
+//ornate bed (multi-part)(south)
+NAME=ornate bed
+
+[ITEMDEF 04c7a]
+//ornate bed (multi-part)(east)
+NAME=ornate bed
+
+[ITEMDEF 04c7b]
+//ornate bed (multi-part)(east)
+NAME=ornate bed
+
+[ITEMDEF 04c7c]
+//ornate bed (multi-part)(east)
+NAME=ornate bed
+
+[ITEMDEF 04c7d]
+//ornate bed (multi-part)(east)
+NAME=ornate bed
+
+[ITEMDEF 04c7e]
+//ornate bed (multi-part)(east)
+NAME=ornate bed
+
+[ITEMDEF 04c7f]
+//ornate bed (multi-part)(east)
+NAME=ornate bed
+
+[ITEMDEF 04c80]
+DEFNAME=i_chair_upholstered
+NAME=upholstered chair
+FLIP=1
+RESOURCES=40 i_board,12 i_cloth
+SKILLMAKE=Carpentry 70.0,Tailoring 55.0,t_carpentry
+CATEGORY=King's Collection
+SUBSECTION=Decoration
+DESCRIPTION=Upholstered Chair
+DUPELIST=04c81
+
+[ITEMDEF 04c81]
+//upholstered chair
+DUPEITEM=04c80
+
+[ITEMDEF 04c82]
+//plush loveseat (multi-part)(south)
+NAME=plush loveseat
+
+[ITEMDEF 04c83]
+//plush loveseat (multi-part)(south)
+NAME=plush loveseat
+
+[ITEMDEF 04c84]
+//plush loveseat (multi-part)(east)
+NAME=plush loveseat
+
+[ITEMDEF 04c85]
+//plush loveseat (multi-part)(east)
+NAME=plush loveseat
+
+[ITEMDEF 04c86]
+//fancy loveseat (multi-part)(south)
+NAME=fancy loveseat
+
+[ITEMDEF 04c87]
+//fancy loveseat (multi-part)(south)
+NAME=fancy loveseat
+
+[ITEMDEF 04c88]
+//fancy loveseat (multi-part)(east)
+NAME=fancy loveseat
+
+[ITEMDEF 04c89]
+//fancy loveseat (multi-part)(east)
+NAME=fancy loveseat
+
+[ITEMDEF 04c8a]
+//fancy couch (multi-part)(east)
+NAME=fancy couch
+
+[ITEMDEF 04c8b]
+//fancy couch (multi-part)(east)
+NAME=fancy couch
+
+[ITEMDEF 04c8c]
+//fancy couch (multi-part)(east)
+NAME=fancy couch
+
+[ITEMDEF 04c8d]
+//fancy couch (multi-part)(south)
+NAME=fancy couch
+
+[ITEMDEF 04c8e]
+//fancy couch (multi-part)(south)
+NAME=fancy couch
+
+[ITEMDEF 04c8f]
+//fancy couch (multi-part)(south)
+NAME=fancy couch
+
+[ITEMDEF 04c90]
+//monastery bell (multi-part)(south)
+NAME=monastery bell
+DUPELIST=04c91,04c92,04c93
+ON=@DClick
+   SOUND 066c
+   return 1
+
+[ITEMDEF 04c91]
+//monastery bell (multi-part)(south)
+NAME=monastery bell
+DUPEITEM=04c90
+
+[ITEMDEF 04c92]
+//monastery bell (multi-part)(south)
+NAME=monastery bell
+DUPEITEM=04c90
+
+[ITEMDEF 04c93]
+//monastery bell (multi-part)(south)
+NAME=monastery bell
+DUPEITEM=04c90
+
+[ITEMDEF 04c94]
+//monastery bell (multi-part)(east)
+NAME=monastery bell
+DUPELIST=04c95,04c96,04c97
+ON=@DClick
+   SOUND 066c
+   return 1
+
+[ITEMDEF 04c95]
+//monastery bell (multi-part)(east)
+NAME=monastery bell
+DUPEITEM=04c94
+
+[ITEMDEF 04c96]
+//monastery bell (multi-part)(east)
+NAME=monastery bell
+DUPEITEM=04c94
+
+[ITEMDEF 04c97]
+//monastery bell (multi-part)(east)
+NAME=monastery bell
+DUPEITEM=04c94
+
+[ITEMDEF 04c98]
+//embroidered tapestry (multi-part)(south)
+NAME=embroidered tapestry
+
+[ITEMDEF 04c99]
+//embroidered tapestry (multi-part)(south)
+NAME=embroidered tapestry
+
+[ITEMDEF 04c9a]
+//embroidered tapestry (multi-part)(east)
+NAME=embroidered tapestry
+
+[ITEMDEF 04c9b]
+//embroidered tapestry (multi-part)(east)
+NAME=embroidered tapestry
+
+[ITEMDEF 04c9c]
+//plant tapestry (multi-part)(south)
+NAME=plant tapestry
+
+[ITEMDEF 04c9d]
+//plant tapestry (multi-part)(south)
+NAME=plant tapestry
+
+[ITEMDEF 04c9e]
+//plant tapestry (multi-part)(east)
+NAME=plant tapestry
+
+[ITEMDEF 04c9f]
+//plant tapestry (multi-part)(east)
+NAME=plant tapestry
+
+[ITEMDEF 04ca0]
+//bull tapestry (multi-part)(south)
+NAME=bull tapestry
+
+[ITEMDEF 04ca1]
+//bull tapestry (multi-part)(south)
+NAME=bull tapestry
+
+[ITEMDEF 04ca2]
+//bull tapestry (multi-part)(east)
+NAME=bull tapestry
+
+[ITEMDEF 04ca3]
+//bull tapestry (multi-part)(east)
+NAME=bull tapestry
+
+[ITEMDEF 04ca4]
+//golden table (multi-part)(south)
+NAME=golden table
+
+[ITEMDEF 04ca5]
+//golden table (multi-part)(south)
+NAME=golden table
+
+[ITEMDEF 04ca6]
+//golden table (multi-part)(south)
+NAME=golden table
+
+[ITEMDEF 04ca7]
+//golden table (multi-part)(south)
+NAME=golden table
+
+[ITEMDEF 04ca8]
+//golden table (multi-part)(east)
+NAME=golden table
+
+[ITEMDEF 04ca9]
+//golden table (multi-part)(east)
+NAME=golden table
+
+[ITEMDEF 04caa]
+//golden table (multi-part)(east)
+NAME=golden table
+
+[ITEMDEF 04cab]
+//golden table (multi-part)(east)
+NAME=golden table
+
+[ITEMDEF 04cac]
+//marble table (multi-part)(south)
+NAME=marble table
+
+[ITEMDEF 04cad]
+//marble table (multi-part)(south)
+NAME=marble table
+
+[ITEMDEF 04cae]
+//marble table (multi-part)(south)
+NAME=marble table
+
+[ITEMDEF 04caf]
+//marble table (multi-part)(south)
+NAME=marble table
+
+[ITEMDEF 04cb0]
+//marble table (multi-part)(east)
+NAME=marble table
+
+[ITEMDEF 04cb1]
+//marble table (multi-part)(east)
+NAME=marble table
+
+[ITEMDEF 04cb2]
+//marble table (multi-part)(east)
+NAME=marble table
+
+[ITEMDEF 04cb3]
+//marble table (multi-part)(east)
+NAME=marble table
+
+[ITEMDEF 04cb4]
+//metal table (multi-part)(south)
+NAME=metal table
+
+[ITEMDEF 04cb5]
+//metal table (multi-part)(south)
+NAME=metal table
+
+[ITEMDEF 04cb6]
+//metal table (multi-part)(south)
+NAME=metal table
+
+[ITEMDEF 04cb7]
+//metal table (multi-part)(south)
+NAME=metal table
+
+[ITEMDEF 04cb8]
+//metal table (multi-part)(east)
+NAME=metal table
+
+[ITEMDEF 04cb9]
+//metal table (multi-part)(east)
+NAME=metal table
+
+[ITEMDEF 04cba]
+//metal table (multi-part)(east)
+NAME=metal table
+
+[ITEMDEF 04cbb]
+//metal table (multi-part)(east)
+NAME=metal table
+
+[ITEMDEF 04cbc]
+//long metal table (multi-part)(south)
+NAME=long metal table
+
+[ITEMDEF 04cbd]
+//long metal table (multi-part)(south)
+NAME=long metal table
+
+[ITEMDEF 04cbe]
+//long metal table (multi-part)(south)
+NAME=long metal table
+
+[ITEMDEF 04cbf]
+//long metal table (multi-part)(south)
+NAME=long metal table
+
+[ITEMDEF 04cc0]
+//long metal table (multi-part)(south)
+NAME=long metal table
+
+[ITEMDEF 04cc1]
+//long metal table (multi-part)(south)
+NAME=long metal table
+
+[ITEMDEF 04cc2]
+//long metal table (multi-part)(east)
+NAME=long metal table
+
+[ITEMDEF 04cc3]
+//long metal table (multi-part)(east)
+NAME=long metal table
+
+[ITEMDEF 04cc4]
+//long metal table (multi-part)(east)
+NAME=long metal table
+
+[ITEMDEF 04cc5]
+//long metal table (multi-part)(east)
+NAME=long metal table
+
+[ITEMDEF 04cc6]
+//long metal table (multi-part)(east)
+NAME=long metal table
+
+[ITEMDEF 04cc7]
+//long metal table (multi-part)(east)
+NAME=long metal table
+
+[ITEMDEF 04cc8]
+//wooden table (multi-part)(south)
+NAME=wooden table
+
+[ITEMDEF 04cc9]
+//wooden table (multi-part)(south)
+NAME=wooden table
+
+[ITEMDEF 04cca]
+//wooden table (multi-part)(east)
+NAME=wooden table
+
+[ITEMDEF 04ccb]
+//wooden table (multi-part)(east)
+NAME=wooden table
+
+[ITEMDEF 04ccc]
+//long wooden table (multi-part)(south)
+NAME=long wooden table
+
+[ITEMDEF 04ccd]
+//long wooden table (multi-part)(south)
+NAME=long wooden table
+
+[ITEMDEF 04cce]
+//long wooden table (multi-part)(south)
+NAME=long wooden table
+
+[ITEMDEF 04ccf]
+//long wooden table (multi-part)(south)
+NAME=long wooden table
+
+[ITEMDEF 04cd0]
+//long wooden table (multi-part)(south)
+NAME=long wooden table
+
+[ITEMDEF 04cd1]
+//long wooden table (multi-part)(south)
+NAME=long wooden table
+
+[ITEMDEF 04cd2]
+//long wooden table (multi-part)(east)
+NAME=long wooden table
+
+[ITEMDEF 04cd3]
+//long wooden table (multi-part)(east)
+NAME=long wooden table
+
+[ITEMDEF 04cd4]
+//long wooden table (multi-part)(east)
+NAME=long wooden table
+
+[ITEMDEF 04cd5]
+//long wooden table (multi-part)(east)
+NAME=long wooden table
+
+[ITEMDEF 04cd6]
+//long wooden table (multi-part)(east)
+NAME=long wooden table
+
+[ITEMDEF 04cd7]
+//long wooden table (multi-part)(east)
+NAME=long wooden table
+
+
+[ITEMDEF 04d0c]
+DEFNAME=i_chest_kings_collection
+NAME=king's collection box
+TYPE=t_container
+TDATA2=04d0c
+FLIP=1
+CATEGORY=King's Collection
+SUBSECTION=Containers
+DESCRIPTION=King's Collection Box
+DUPELIST=04d0d
+
+[ITEMDEF 04d0d]
+//king's collection box
+DUPEITEM=04d0c
+
+
+//////////////////
+// Custom Items //
+//////////////////
+
+[ITEMDEF m_lithograph_15th_anniversary_east]
+ID=04c33
+NAME=15th Anniversary Lithograph
+TYPE=t_multi
+CATEGORY=King's Collection
+SUBSECTION=Multis
+DESCRIPTION=15th Anniversary Lithograph (east)
+MULTIREGION=0,0,0,0
+COMPONENT=04c32,0,-1
+COMPONENT=04c34,0,1
+
+[ITEMDEF m_lithograph_15th_anniversary_south]
+ID=04c36
+NAME=15th Anniversary Lithograph
+TYPE=t_multi
+CATEGORY=King's Collection
+SUBSECTION=Multis
+DESCRIPTION=15th Anniversary Lithograph (south)
+MULTIREGION=0,0,0,0
+COMPONENT=04c35,1,0
+COMPONENT=04c37,-1,0
+
+[ITEMDEF m_bed_four_post_south]
+ID=04c6c
+NAME=Four Post Bed
+TYPE=t_multi
+CATEGORY=King's Collection
+SUBSECTION=Multis
+DESCRIPTION=Four Post Bed (south)
+MULTIREGION=0,0,0,0
+COMPONENT=04c68,1,0
+COMPONENT=04c69,1,1
+COMPONENT=04c6a,1,-1
+COMPONENT=04c6b,0,-1
+COMPONENT=04c6d,0,1
+
+[ITEMDEF m_bed_four_post_east]
+ID=04c72
+NAME=Four Post Bed
+TYPE=t_multi
+CATEGORY=King's Collection
+SUBSECTION=Multis
+DESCRIPTION=Four Post Bed (east)
+MULTIREGION=0,0,0,0
+COMPONENT=04c6e,0,1
+COMPONENT=04c6f,-1,1
+COMPONENT=04c70,1,1
+COMPONENT=04c71,1,0
+COMPONENT=04c73,-1,0
+
+[ITEMDEF m_bed_ornate_south]
+ID=04c74
+NAME=Ornate Bed
+TYPE=t_multi
+CATEGORY=King's Collection
+SUBSECTION=Multis
+DESCRIPTION=Ornate Bed (south)
+MULTIREGION=0,0,0,0
+COMPONENT=04c75,0,1
+COMPONENT=04c76,0,-1
+COMPONENT=04c77,-1,-1
+COMPONENT=04c78,-1,0
+COMPONENT=04c79,-1,1
+
+[ITEMDEF m_bed_ornate_east]
+ID=04c7e
+NAME=Ornate Bed
+TYPE=t_multi
+CATEGORY=King's Collection
+SUBSECTION=Multis
+DESCRIPTION=Ornate Bed (east)
+MULTIREGION=0,0,0,0
+COMPONENT=04c7a,0,-1
+COMPONENT=04c7b,1,-1
+COMPONENT=04c7c,-1,-1
+COMPONENT=04c7d,-1,0
+COMPONENT=04c7f,1,0
+
+[ITEMDEF m_loveseat_plush_south]
+ID=04c82
+NAME=Plush Loveseat
+TYPE=t_multi
+CATEGORY=King's Collection
+SUBSECTION=Multis
+DESCRIPTION=Plush Loveseat (south)
+MULTIREGION=0,0,0,0
+COMPONENT=04c83,-1,0
+
+[ITEMDEF m_loveseat_plush_east]
+ID=04c84
+NAME=Plush Loveseat
+TYPE=t_multi
+CATEGORY=King's Collection
+SUBSECTION=Multis
+DESCRIPTION=Plush Loveseat (east)
+MULTIREGION=0,0,0,0
+COMPONENT=04c85,0,1
+
+[ITEMDEF m_loveseat_fancy_south]
+ID=04c86
+NAME=Fancy Loveseat
+TYPE=t_multi
+CATEGORY=King's Collection
+SUBSECTION=Multis
+DESCRIPTION=Fancy Loveseat (south)
+MULTIREGION=0,0,0,0
+COMPONENT=04c87,-1,0
+
+[ITEMDEF m_loveseat_fancy_east]
+ID=04c88
+NAME=Fancy Loveseat
+TYPE=t_multi
+CATEGORY=King's Collection
+SUBSECTION=Multis
+DESCRIPTION=Fancy Loveseat (east)
+MULTIREGION=0,0,0,0
+COMPONENT=04c89,0,1
+
+[ITEMDEF m_couch_fancy_east]
+ID=04c8a
+NAME=Fancy Couch
+TYPE=t_multi
+CATEGORY=King's Collection
+SUBSECTION=Multis
+DESCRIPTION=Fancy Couch (east)
+MULTIREGION=0,0,0,0
+COMPONENT=04c8b,0,1
+COMPONENT=04c8c,0,-1
+
+[ITEMDEF m_couch_fancy_south]
+ID=04c8d
+NAME=Fancy Couch
+TYPE=t_multi
+CATEGORY=King's Collection
+SUBSECTION=Multis
+DESCRIPTION=Fancy Couch (south)
+MULTIREGION=0,0,0,0
+COMPONENT=04c8e,-1,0
+COMPONENT=04c8f,1,0
+
+[ITEMDEF m_monastery_bell_south]
+ID=04c92
+NAME=Monastery Bell
+TYPE=t_multi
+CATEGORY=King's Collection
+SUBSECTION=Multis
+DESCRIPTION=Monastery Bell (south)
+MULTIREGION=0,0,0,0
+COMPONENT=04c90,-1,-1
+COMPONENT=04c91,0,-1
+COMPONENT=04c93,-1,0
+
+[ITEMDEF m_monastery_bell_east]
+ID=04c95
+NAME=Monastery Bell
+TYPE=t_multi
+CATEGORY=King's Collection
+SUBSECTION=Multis
+DESCRIPTION=Monastery Bell (east)
+MULTIREGION=0,0,0,0
+COMPONENT=04c94,0,-1
+COMPONENT=04c96,-1,0
+COMPONENT=04c97,-1,-1
+
+[ITEMDEF m_tapestry_embroidered_south]
+ID=04c99
+NAME=Embroidered Tapestry
+TYPE=t_multi
+CATEGORY=King's Collection
+SUBSECTION=Multis
+DESCRIPTION=Embroidered Tapestry (south)
+MULTIREGION=0,0,0,0
+COMPONENT=04c98,-1,0
+
+[ITEMDEF m_tapestry_embroidered_east]
+ID=04c9b
+NAME=Embroidered Tapestry
+TYPE=t_multi
+CATEGORY=King's Collection
+SUBSECTION=Multis
+DESCRIPTION=Embroidered Tapestry (east)
+MULTIREGION=0,0,0,0
+COMPONENT=04c9a,0,-1
+
+[ITEMDEF m_tapestry_plant_south]
+ID=04c9d
+NAME=Plant Tapestry
+TYPE=t_multi
+CATEGORY=King's Collection
+SUBSECTION=Multis
+DESCRIPTION=Plant Tapestry (south)
+MULTIREGION=0,0,0,0
+COMPONENT=04c9c,-1,0
+
+[ITEMDEF m_tapestry_plant_east]
+ID=04c9e
+NAME=Plant Tapestry
+TYPE=t_multi
+CATEGORY=King's Collection
+SUBSECTION=Multis
+DESCRIPTION=Plant Tapestry (east)
+MULTIREGION=0,0,0,0
+COMPONENT=04c9f,0,-1
+
+[ITEMDEF m_tapestry_bull_south]
+ID=04ca1
+NAME=Bull Tapestry
+TYPE=t_multi
+CATEGORY=King's Collection
+SUBSECTION=Multis
+DESCRIPTION=Bull Tapestry (south)
+MULTIREGION=0,0,0,0
+COMPONENT=04ca0,-1,0
+
+[ITEMDEF m_tapestry_bull_east]
+ID=04ca2
+NAME=Bull Tapestry
+TYPE=t_multi
+CATEGORY=King's Collection
+SUBSECTION=Multis
+DESCRIPTION=Bull Tapestry (east)
+MULTIREGION=0,0,0,0
+COMPONENT=04ca3,0,-1
+
+[ITEMDEF m_table_golden_south]
+ID=04ca7
+NAME=Golden Table
+TYPE=t_multi
+CATEGORY=King's Collection
+SUBSECTION=Multis
+DESCRIPTION=Golden Table (south)
+MULTIREGION=0,0,0,0
+COMPONENT=04ca4,-1,-1
+COMPONENT=04ca5,0,-1
+COMPONENT=04ca6,-1,0
+
+[ITEMDEF m_table_golden_east]
+ID=04ca9
+NAME=Golden Table
+TYPE=t_multi
+CATEGORY=King's Collection
+SUBSECTION=Multis
+DESCRIPTION=Golden Table (east)
+MULTIREGION=0,0,0,0
+COMPONENT=04ca8,0,-1
+COMPONENT=04caa,-1,0
+COMPONENT=04cab,-1,-1
+
+[ITEMDEF m_table_marble_south]
+ID=04caf
+NAME=Marble Table
+TYPE=t_multi
+CATEGORY=King's Collection
+SUBSECTION=Multis
+DESCRIPTION=Marble Table (south)
+MULTIREGION=0,0,0,0
+COMPONENT=04cac,-1,-1
+COMPONENT=04cad,0,-1
+COMPONENT=04cae,-1,0
+
+[ITEMDEF m_table_marble_east]
+ID=04cb0
+NAME=Marble Table
+TYPE=t_multi
+CATEGORY=King's Collection
+SUBSECTION=Multis
+DESCRIPTION=Marble Table (east)
+MULTIREGION=0,0,0,0
+COMPONENT=04cb1,-1,0
+COMPONENT=04cb2,-1,-1
+COMPONENT=04cb3,0,-1
+
+[ITEMDEF m_table_metal_south]
+ID=04cb6
+NAME=Metal Table
+TYPE=t_multi
+CATEGORY=King's Collection
+SUBSECTION=Multis
+DESCRIPTION=Metal Table (south)
+MULTIREGION=0,0,0,0
+COMPONENT=04cb4,-1,-1
+COMPONENT=04cb5,0,-1
+COMPONENT=04cb7,-1,0
+
+[ITEMDEF m_table_metal_east]
+ID=04cb8
+NAME=Metal Table
+TYPE=t_multi
+CATEGORY=King's Collection
+SUBSECTION=Multis
+DESCRIPTION=Metal Table (east)
+MULTIREGION=0,0,0,0
+COMPONENT=04cb9,-1,0
+COMPONENT=04cba,-1,-1
+COMPONENT=04cbb,0,-1
+
+[ITEMDEF m_table_metal_long_south]
+ID=04cc0
+NAME=Long Metal Table
+TYPE=t_multi
+CATEGORY=King's Collection
+SUBSECTION=Multis
+DESCRIPTION=Long Metal Table (south)
+MULTIREGION=0,0,0,0
+COMPONENT=04cbc,1,-1
+COMPONENT=04cbd,-1,-1
+COMPONENT=04cbe,0,-1
+COMPONENT=04cbf,1,0
+COMPONENT=04cc1,-1,0
+
+[ITEMDEF m_table_metal_long_east]
+ID=04cc2
+NAME=Long Metal Table
+TYPE=t_multi
+CATEGORY=King's Collection
+SUBSECTION=Multis
+DESCRIPTION=Long Metal Table (east)
+MULTIREGION=0,0,0,0
+COMPONENT=04cc3,0,1
+COMPONENT=04cc4,0,-1
+COMPONENT=04cc5,-1,-1
+COMPONENT=04cc6,-1,1
+COMPONENT=04cc7,-1,0
+
+[ITEMDEF m_table_wooden_south]
+ID=04cc9
+NAME=Wooden Table
+TYPE=t_multi
+CATEGORY=King's Collection
+SUBSECTION=Multis
+DESCRIPTION=Wooden Table (south)
+MULTIREGION=0,0,0,0
+COMPONENT=04cc8,-1,0
+
+[ITEMDEF m_table_wooden_east]
+ID=04cca
+NAME=Wooden Table
+TYPE=t_multi
+CATEGORY=King's Collection
+SUBSECTION=Multis
+DESCRIPTION=Wooden Table (east)
+MULTIREGION=0,0,0,0
+COMPONENT=04ccb,0,-1
+
+[ITEMDEF m_table_wooden_long_south]
+ID=04cd0
+NAME=Long Wooden Table
+TYPE=t_multi
+CATEGORY=King's Collection
+SUBSECTION=Multis
+DESCRIPTION=Long Wooden Table (south)
+MULTIREGION=0,0,0,0
+COMPONENT=04ccc,-1,-1
+COMPONENT=04ccd,1,-1
+COMPONENT=04cce,0,-1
+COMPONENT=04ccf,1,0
+COMPONENT=04cd1,-1,0
+
+[ITEMDEF m_table_wooden_long_east]
+ID=04cd2
+NAME=Long Wooden Table
+TYPE=t_multi
+CATEGORY=King's Collection
+SUBSECTION=Multis
+DESCRIPTION=Long Wooden Table (east)
+MULTIREGION=0,0,0,0
+COMPONENT=04cd3,0,-1
+COMPONENT=04cd4,0,1
+COMPONENT=04cd5,-1,1
+COMPONENT=04cd6,-1,-1
+COMPONENT=04cd7,-1,0
+
+[EOF]

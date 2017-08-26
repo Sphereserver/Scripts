@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Friday, Aug 18, 2017
+// FILE LAST UPDATED: Saturday, Aug 26, 2017
 //
 VERSION=0.56d
 
@@ -3186,99 +3186,6 @@ DUPELIST=04b8e
 [ITEMDEF 04b8e]
 //Plague Banner
 DUPEITEM=04b8d
-
-
-[ITEMDEF 04c20]
-DEFNAME=i_painting_castle
-NAME=castle painting
-FLIP=1
-CATEGORY=Decoration - Wall Hangings
-SUBSECTION=Paintings
-DESCRIPTION=Castle Painting
-DUPELIST=04c21
-
-[ITEMDEF 04c21]
-//Castle Painting
-DUPEITEM=04c20
-
-[ITEMDEF 04c22]
-DEFNAME=i_painting_horse
-NAME=horse painting
-FLIP=1
-CATEGORY=Decoration - Wall Hangings
-SUBSECTION=Paintings
-DESCRIPTION=Horse Painting
-DUPELIST=04c23
-
-[ITEMDEF 04c23]
-//Horse Painting
-DUPEITEM=04c22
-
-
-[ITEMDEF 04c26]
-DEFNAME=i_painting_ship
-NAME=ship painting
-FLIP=1
-CATEGORY=Decoration - Wall Hangings
-SUBSECTION=Paintings
-DESCRIPTION=Ship Painting
-DUPELIST=04c27
-
-[ITEMDEF 04c27]
-//Ship Painting
-DUPEITEM=04c26
-
-[ITEMDEF 04c28]
-DEFNAME=i_painting_firemaiden
-NAME=firemaiden painting
-FLIP=1
-CATEGORY=Decoration - Wall Hangings
-SUBSECTION=Paintings
-DESCRIPTION=Firemaiden Painting
-DUPELIST=04c29
-
-[ITEMDEF 04c29]
-//Firemaiden Painting
-DUPEITEM=04c28
-
-
-[ITEMDEF 04c32]
-DEFNAME=i_painting_abstract
-NAME=abstract painting
-FLIP=1
-CATEGORY=Decoration - Wall Hangings
-SUBSECTION=Paintings
-DESCRIPTION=Abstract Painting (multi-part)
-DUPELIST=04c33,04c34,04c35,04c36,04c37
-
-[ITEMDEF 04c33]
-//Abstract Painting (multi-part)
-DUPEITEM=04c32
-
-[ITEMDEF 04c34]
-//Abstract Painting (multi-part)
-DUPEITEM=04c32
-
-[ITEMDEF 04c35]
-//Abstract Painting (multi-part)
-DUPEITEM=04c32
-
-[ITEMDEF 04c36]
-//Abstract Painting (multi-part)
-DUPEITEM=04c32
-
-[ITEMDEF 04c37]
-//Abstract Painting (multi-part)
-DUPEITEM=04c32
-
-[ITEMDEF 04c38]
-//Wall Shelf (metal)
-[ITEMDEF 04c39]
-//Wall Shelf (metal)
-[ITEMDEF 04c3a]
-//Wall Shelf (wood)
-[ITEMDEF 04c3b]
-//Wall Shelf (wood)
 
 
 [ITEMDEF 04c60]

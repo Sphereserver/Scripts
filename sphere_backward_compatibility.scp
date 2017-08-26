@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Friday, Aug 18, 2017
+// FILE LAST UPDATED: Saturday, Aug 26, 2017
 //
 VERSION=0.56d
 
@@ -335,6 +335,30 @@ i_candleabra					i_candelabra
 i_candleabra_lit				i_candelabra_lit
 i_candleabra2					i_candelabra2
 i_candleabra2_lit				i_candelabra2_lit
+i_dragon_lamp					i_lamp_table
+i_dragon_lamp_lit				i_lamp_table_lit
+i_dragon_lamp_2s				i_lantern_dragon_s
+i_dragon_lamp_2s_lit			i_lantern_dragon_s_lit
+i_dragon_lamp_2e				i_lantern_dragon_e
+i_dragon_lamp_2e_lit			i_lantern_dragon_e_lit
+i_stork_lamp_s					i_lamp_bird_s
+i_stork_lamp_s_lit				i_lamp_bird_s_lit
+i_stork_lamp_e					i_lamp_bird_e
+i_stork_lamp_e_lit				i_lamp_bird_e_lit
+i_dragon_egg_lamp_s				i_lamp_dragon_s
+i_dragon_egg_lamp_s_lit			i_lamp_dragon_s_lit
+i_dragon_egg_lamp_e				i_lamp_dragon_e
+i_dragon_egg_lamp_e_lit			i_lamp_dragon_e_lit
+i_classic_standing_lamp_s		i_lamp_tall_s
+i_classic_standing_lamp_s_lit	i_lamp_tall_s_lit
+i_classic_standing_lamp_e		i_lamp_tall_e
+i_classic_standing_lamp_e_lit	i_lamp_tall_e_lit
+i_standing_bell_lamp_s			i_lamp_tall_double_s
+i_standing_bell_lamp_s_lit		i_lamp_tall_double_s_lit
+i_standing_bell_lamp_e			i_lamp_tall_double_e
+i_standing_bell_lamp_e_lit		i_lamp_tall_double_e_lit
+i_painting_firemaiden			i_painting_fire
+i_painting_abstract				i_lithograph_15th_anniversary
 i_spellbook_paladin				i_spellbook_chivalry
 i_spellbook_arcanist			i_spellbook_spellweaving
 i_scroll_blood_oat				i_scroll_blood_oath
@@ -596,6 +620,8 @@ i_candy_nougat					i_nougat_swirl
 i_candy_taffy					i_taffy
 i_candy_wrapped					i_wrapped_candy
 i_cake_2						i_cake_12th_anniversary
+i_ginger						i_fresh_ginger
+i_gingerbreadman				i_gingerbread_cookie
 
 // Definitions
 brain_beserk					brain_berserk

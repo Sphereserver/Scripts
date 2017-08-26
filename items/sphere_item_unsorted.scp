@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, Aug 21, 2017
+// FILE LAST UPDATED: Saturday, Aug 26, 2017
 //
 VERSION=0.56d
 
@@ -5329,25 +5329,6 @@ ON=@DClick
 [ITEMDEF 04c14]
 [ITEMDEF 04c15]
 
-[ITEMDEF 04c24]
-DEFNAME=i_bookcase_alchemist
-NAME=alchemist bookcase
-TYPE=t_container
-TDATA2=04d
-FLIP=1
-VALUE=140
-WEIGHT=94.2
-RESOURCES=1 i_bookcase,20 i_book_sm
-SKILLMAKE=carpentry 36.5,t_carpentry
-CATEGORY=Decoration - Furniture
-SUBSECTION=Bookcases
-DESCRIPTION=Bookcase (Alchemist)
-DUPELIST=04c25
-
-[ITEMDEF 04c25]
-//Bookcase (Alchemist)
-DUPEITEM=04c24
-
 
 [ITEMDEF 04c2a]
 DEFNAME=i_coral_4
@@ -5429,141 +5410,9 @@ CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Aquarium
 DESCRIPTION=Sea Sponge (5)
 
-
-[ITEMDEF 04c3c]
-//Trumpet on Stand
-[ITEMDEF 04c3d]
-//Trumpet on Stand
-[ITEMDEF 04c3e]
-//Cello on Stand
-[ITEMDEF 04c3f]
-//Cello on Stand
-
-[ITEMDEF 04c5a]
-//Cow Bell
-[ITEMDEF 04c5b]
-
-[ITEMDEF 04c5c]
-//Monastary Bell
-[ITEMDEF 04c5d]
-
 [ITEMDEF 04c5e]
-//Monastary Bell (large)
 [ITEMDEF 04c5f]
 
-[ITEMDEF 04c68]
-//four post bed
-[ITEMDEF 04c69]
-[ITEMDEF 04c6a]
-[ITEMDEF 04c6b]
-[ITEMDEF 04c6c]
-[ITEMDEF 04c6d]
-[ITEMDEF 04c6e]
-[ITEMDEF 04c6f]
-[ITEMDEF 04c70]
-[ITEMDEF 04c71]
-[ITEMDEF 04c72]
-[ITEMDEF 04c73]
-[ITEMDEF 04c74]
-[ITEMDEF 04c75]
-[ITEMDEF 04c76]
-[ITEMDEF 04c77]
-[ITEMDEF 04c78]
-[ITEMDEF 04c79]
-[ITEMDEF 04c7a]
-[ITEMDEF 04c7b]
-[ITEMDEF 04c7c]
-[ITEMDEF 04c7d]
-[ITEMDEF 04c7e]
-[ITEMDEF 04c7f]
-[ITEMDEF 04c80]
-[ITEMDEF 04c81]
-[ITEMDEF 04c82]
-[ITEMDEF 04c83]
-[ITEMDEF 04c84]
-[ITEMDEF 04c85]
-[ITEMDEF 04c86]
-[ITEMDEF 04c87]
-[ITEMDEF 04c88]
-[ITEMDEF 04c89]
-[ITEMDEF 04c8a]
-[ITEMDEF 04c8b]
-[ITEMDEF 04c8c]
-[ITEMDEF 04c8d]
-[ITEMDEF 04c8e]
-[ITEMDEF 04c8f]
-[ITEMDEF 04c90]
-[ITEMDEF 04c91]
-[ITEMDEF 04c92]
-[ITEMDEF 04c93]
-[ITEMDEF 04c94]
-[ITEMDEF 04c95]
-[ITEMDEF 04c96]
-[ITEMDEF 04c97]
-[ITEMDEF 04c98]
-[ITEMDEF 04c99]
-[ITEMDEF 04c9a]
-[ITEMDEF 04c9b]
-[ITEMDEF 04c9c]
-[ITEMDEF 04c9d]
-[ITEMDEF 04c9e]
-[ITEMDEF 04c9f]
-[ITEMDEF 04ca0]
-[ITEMDEF 04ca1]
-[ITEMDEF 04ca2]
-[ITEMDEF 04ca3]
-[ITEMDEF 04ca4]
-[ITEMDEF 04ca5]
-[ITEMDEF 04ca6]
-[ITEMDEF 04ca7]
-[ITEMDEF 04ca8]
-[ITEMDEF 04ca9]
-[ITEMDEF 04caa]
-[ITEMDEF 04cab]
-[ITEMDEF 04cac]
-[ITEMDEF 04cad]
-[ITEMDEF 04cae]
-[ITEMDEF 04caf]
-[ITEMDEF 04cb0]
-[ITEMDEF 04cb1]
-[ITEMDEF 04cb2]
-[ITEMDEF 04cb3]
-[ITEMDEF 04cb4]
-[ITEMDEF 04cb5]
-[ITEMDEF 04cb6]
-[ITEMDEF 04cb7]
-[ITEMDEF 04cb8]
-[ITEMDEF 04cb9]
-[ITEMDEF 04cba]
-[ITEMDEF 04cbb]
-[ITEMDEF 04cbc]
-[ITEMDEF 04cbd]
-[ITEMDEF 04cbe]
-[ITEMDEF 04cbf]
-[ITEMDEF 04cc0]
-[ITEMDEF 04cc1]
-[ITEMDEF 04cc2]
-[ITEMDEF 04cc3]
-[ITEMDEF 04cc4]
-[ITEMDEF 04cc5]
-[ITEMDEF 04cc6]
-[ITEMDEF 04cc7]
-[ITEMDEF 04cc8]
-[ITEMDEF 04cc9]
-[ITEMDEF 04cca]
-[ITEMDEF 04ccb]
-[ITEMDEF 04ccc]
-[ITEMDEF 04ccd]
-[ITEMDEF 04cce]
-[ITEMDEF 04ccf]
-[ITEMDEF 04cd0]
-[ITEMDEF 04cd1]
-[ITEMDEF 04cd2]
-[ITEMDEF 04cd3]
-[ITEMDEF 04cd4]
-[ITEMDEF 04cd5]
-[ITEMDEF 04cd6]
-[ITEMDEF 04cd7]
 [ITEMDEF 04cd8]
 [ITEMDEF 04cd9]
 [ITEMDEF 04cda]

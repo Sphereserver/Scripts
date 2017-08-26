@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, May 16, 2017
+// FILE LAST UPDATED: Saturday, Aug 26, 2017
 //
 VERSION=0.56d
 
@@ -1057,5 +1057,14 @@ SUBSECTION=Medusa
 DESCRIPTION=Medusa Scale
 ON=@Create
    COLOR={04f2 1 08af 1}
+
+[ITEMDEF i_workable_glass]
+ID=04b80
+NAME=workable glass
+RESOURCES=10 i_sand
+SKILLMAKE=Alchemy 100.0,t_glassblowing_tool
+CATEGORY=Resources
+SUBSECTION=Glassblowing
+DESCRIPTION=Workable Glass
 
 [EOF]
