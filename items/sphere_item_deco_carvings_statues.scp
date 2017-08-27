@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, Aug 21, 2017
+// FILE LAST UPDATED: Sunday, Aug 27, 2017
 //
 VERSION=0.56d
 
@@ -1074,41 +1074,6 @@ SKILLMAKE=Carpentry 20.0,t_masonry_tool
 CATEGORY=Decoration - Wall Carvings & Statues
 SUBSECTION=Statues
 DESCRIPTION=Gargoyle Lord Statue
-
-
-[ITEMDEF 0493b]
-DEFNAME=i_statue_gargoyle_gryphon
-NAME=gargoyle gryphon
-FLIP=1
-VALUE=150
-WEIGHT=20.0
-RESOURCES=2 i_rock_plain
-SKILLMAKE=Carpentry 20.0,t_masonry_tool
-CATEGORY=Decoration - Wall Carvings & Statues
-SUBSECTION=Statues
-DESCRIPTION=Gargoyle Gryphon
-DUPELIST=0493c
-
-[ITEMDEF 0493c]
-//Gargoyle Gryphon
-DUPEITEM=0493b
-
-[ITEMDEF 0494d]
-DEFNAME=i_statue_gargoyle_traditional
-NAME=traditional gargoyle
-FLIP=1
-VALUE=150
-WEIGHT=20.0
-RESOURCES=2 i_rock_plain
-SKILLMAKE=Carpentry 20.0,t_masonry_tool
-CATEGORY=Decoration - Wall Carvings & Statues
-SUBSECTION=Statues
-DESCRIPTION=Traditional Gargoyle
-DUPELIST=0494e
-
-[ITEMDEF 0494e]
-//Traditional Gargoyle
-DUPEITEM=0494d
 
 
 [ITEMDEF 04960]

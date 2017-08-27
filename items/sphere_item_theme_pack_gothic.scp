@@ -1,0 +1,575 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2017
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Sunday, Aug 27, 2017
+//
+VERSION=0.56d
+
+
+[ITEMDEF 04910]
+//Although UO files consider this item an default container (Gothic Chest), OSI use it as Chest of Sending
+//which is an 'virtual' container that can't be opened (it send dropped items directly to bankbox instead).
+DEFNAME=i_chest_gothic
+NAME=gothic chest
+TYPE=t_container
+TDATA2=049
+FLIP=1
+CATEGORY=Gothic
+SUBSECTION=Containers
+DESCRIPTION=Gothic Chest
+DUPELIST=04911
+
+[ITEMDEF 04911]
+//gothic chest
+DUPEITEM=04910
+
+
+[ITEMDEF 0493b]
+DEFNAME=i_statue_gryphon
+NAME=gryphon statue
+FLIP=1
+RESOURCES=16 i_rock_granite
+SKILLMAKE=Carpentry 91.0,t_masonry_tool
+CATEGORY=Gothic
+SUBSECTION=Decoration
+DESCRIPTION=Gryphon Statue
+DUPELIST=0493c
+
+[ITEMDEF 0493c]
+//gryphon statue
+DUPEITEM=0493b
+
+
+[ITEMDEF 0494d]
+DEFNAME=i_statue_gargoyle
+NAME=gargoyle statue
+FLIP=1
+RESOURCES=20 i_rock_granite
+SKILLMAKE=Carpentry 91.0,t_masonry_tool
+CATEGORY=Gothic
+SUBSECTION=Decoration
+DESCRIPTION=Gargoyle Statue
+DUPELIST=0494e
+
+[ITEMDEF 0494e]
+//gargoyle statue
+DUPEITEM=0494d
+
+
+[ITEMDEF 04982]
+//ritual table (multi-part)
+NAME=ritual table
+
+[ITEMDEF 04983]
+//ritual table (multi-part)
+NAME=ritual table
+
+[ITEMDEF 04984]
+//ritual table (multi-part)
+NAME=ritual table
+
+[ITEMDEF 04985]
+//ritual table (multi-part)
+NAME=ritual table
+
+
+[ITEMDEF 04af5]
+DEFNAME=i_wall_gothic
+NAME=gothic wall
+TYPE=t_wall
+CATEGORY=Buildings - Walls
+SUBSECTION=Gothic Wall
+DESCRIPTION=Wall
+DUPELIST=04af6,04af7,04af8,04af9,04afa,04afb,04afc,04afd,04afe,04aff,04b00,04b06,04b07,04b08,04b09,04b0a,04b0b,04b0c,04b0d,04b0e,04b0f,04b10,04b11,04b12,04b13,04b14,04b15,04b16,04b17,04b18,04b19,04b1a,04b1b,04b2b,04b2c,04b2d,04b2e,04b2f,04b30,04b31,04b35,04b36,04b37,04b38,04b39,04b3a,04b3b,04b3c,04b3d,04b42,04b43
+
+[ITEMDEF 04af6]
+//gothic wall (full)
+NAME=gothic wall
+DUPEITEM=04af5
+
+[ITEMDEF 04af7]
+//gothic wall (window)
+NAME=gothic window
+DUPEITEM=04af5
+
+[ITEMDEF 04af8]
+//gothic wall (arch)
+NAME=gothic archway
+DUPEITEM=04af5
+
+[ITEMDEF 04af9]
+//gothic wall (half)
+NAME=gothic half wall
+DUPEITEM=04af5
+
+[ITEMDEF 04afa]
+//gothic wall (quarter)
+NAME=gothic quarter wall
+DUPEITEM=04af5
+
+[ITEMDEF 04afb]
+//gothic wall (full)
+NAME=gothic wall
+DUPEITEM=04af5
+
+[ITEMDEF 04afc]
+//gothic wall (full)
+NAME=gothic wall
+DUPEITEM=04af5
+
+[ITEMDEF 04afd]
+//gothic wall (window)
+NAME=gothic window
+DUPEITEM=04af5
+
+[ITEMDEF 04afe]
+//gothic wall (arch)
+NAME=gothic archway
+DUPEITEM=04af5
+
+[ITEMDEF 04aff]
+//gothic wall (half)
+NAME=gothic half wall
+DUPEITEM=04af5
+
+[ITEMDEF 04b00]
+//gothic wall (quarter)
+NAME=gothic quarter wall
+DUPEITEM=04af5
+
+[ITEMDEF 04b01]
+DEFNAME=i_stairs_gothic
+NAME=gothic stairs
+RESOURCES=100 i_rock_marble
+CATEGORY=Buildings - Stairs
+SUBSECTION=Gothic Stairs
+DESCRIPTION=Stair
+DUPELIST=04b02,04b03,04b04,04b05,04b32,04b33,04b34,04b3e,04b3f,04b40,04b41
+
+[ITEMDEF 04b02]
+//gothic stairs
+NAME=gothic stairs
+DUPEITEM=04b01
+
+[ITEMDEF 04b03]
+//gothic stairs
+NAME=gothic stairs
+DUPEITEM=04b01
+
+[ITEMDEF 04b04]
+//gothic stairs
+NAME=gothic stairs
+DUPEITEM=04b01
+
+[ITEMDEF 04b05]
+//gothic stairs
+NAME=gothic stairs
+DUPEITEM=04b01
+
+[ITEMDEF 04b06]
+//gothic wall (quarter)
+NAME=gothic quarter wall
+DUPEITEM=04af5
+
+[ITEMDEF 04b07]
+//gothic wall (blockquarter)
+NAME=gothic quarter block
+DUPEITEM=04af5
+
+[ITEMDEF 04b08]
+//gothic wall (quarter)
+NAME=gothic quarter wall
+DUPEITEM=04af5
+
+[ITEMDEF 04b09]
+//gothic wall (half)
+NAME=gothic half wall
+DUPEITEM=04af5
+
+[ITEMDEF 04b0a]
+//gothic wall (half)
+NAME=gothic half wall
+DUPEITEM=04af5
+
+[ITEMDEF 04b0b]
+//gothic wall (blockhalf)
+NAME=gothic half block
+DUPEITEM=04af5
+
+[ITEMDEF 04b0c]
+//gothic wall (full)
+NAME=gothic wall
+DUPEITEM=04af5
+
+[ITEMDEF 04b0d]
+//gothic wall (full)
+NAME=gothic wall
+DUPEITEM=04af5
+
+[ITEMDEF 04b0e]
+//gothic wall (full)
+NAME=gothic wall
+DUPEITEM=04af5
+
+[ITEMDEF 04b0f]
+//gothic wall (blockfull)
+NAME=gothic block
+DUPEITEM=04af5
+
+[ITEMDEF 04b10]
+//gothic wall (rosewindow)
+NAME=gothic rose window
+DUPEITEM=04af5
+
+[ITEMDEF 04b11]
+//gothic wall (rosewindow)
+NAME=gothic rose window
+DUPEITEM=04af5
+
+[ITEMDEF 04b12]
+//gothic wall (rosewindow)
+NAME=gothic rose window
+DUPEITEM=04af5
+
+[ITEMDEF 04b13]
+//gothic wall (rosewindow)
+NAME=gothic rose window
+DUPEITEM=04af5
+
+[ITEMDEF 04b14]
+//gothic wall (rosewindow)
+NAME=gothic rose window
+DUPEITEM=04af5
+
+[ITEMDEF 04b15]
+//gothic wall (rosewindow)
+NAME=gothic rose window
+DUPEITEM=04af5
+
+[ITEMDEF 04b16]
+//gothic wall (rosewindow)
+NAME=gothic rose window
+DUPEITEM=04af5
+
+[ITEMDEF 04b17]
+//gothic wall (rosewindow)
+NAME=gothic rose window
+DUPEITEM=04af5
+
+[ITEMDEF 04b18]
+//gothic wall (rosewindow)
+NAME=gothic rose window
+DUPEITEM=04af5
+
+[ITEMDEF 04b19]
+//gothic wall (rosewindow)
+NAME=gothic rose window
+DUPEITEM=04af5
+
+[ITEMDEF 04b1a]
+//gothic wall (rosewindow)
+NAME=gothic rose window
+DUPEITEM=04af5
+
+[ITEMDEF 04b1b]
+//gothic wall (rosewindow)
+NAME=gothic rose window
+DUPEITEM=04af5
+
+
+[ITEMDEF 04b2b]
+//gothic wall (full)
+NAME=gothic wall
+DUPEITEM=04af5
+
+[ITEMDEF 04b2c]
+//gothic wall (full)
+NAME=gothic wall
+DUPEITEM=04af5
+
+[ITEMDEF 04b2d]
+//gothic wall (full)
+NAME=gothic wall
+DUPEITEM=04af5
+
+[ITEMDEF 04b2e]
+//gothic wall (full)
+NAME=gothic wall
+DUPEITEM=04af5
+
+[ITEMDEF 04b2f]
+//gothic wall (full)
+NAME=gothic wall
+DUPEITEM=04af5
+
+[ITEMDEF 04b30]
+//gothic wall (arch)
+NAME=gothic archway
+DUPEITEM=04af5
+
+[ITEMDEF 04b31]
+//gothic wall (arch)
+NAME=gothic archway
+DUPEITEM=04af5
+
+[ITEMDEF 04b32]
+//gothic stairs
+NAME=gothic stairs
+DUPEITEM=04b01
+
+[ITEMDEF 04b33]
+//gothic stairs
+NAME=gothic stairs
+DUPEITEM=04b01
+
+[ITEMDEF 04b34]
+//gothic stairs
+NAME=gothic stairs
+DUPEITEM=04b01
+
+[ITEMDEF 04b35]
+//gothic wall (half)
+NAME=gothic half wall
+DUPEITEM=04af5
+
+[ITEMDEF 04b36]
+//gothic wall (half)
+NAME=gothic half wall
+DUPEITEM=04af5
+
+[ITEMDEF 04b37]
+//gothic wall (half)
+NAME=gothic half wall
+DUPEITEM=04af5
+
+[ITEMDEF 04b38]
+//gothic wall (quarter)
+NAME=gothic quarter wall
+DUPEITEM=04af5
+
+[ITEMDEF 04b39]
+//gothic wall (quarter)
+NAME=gothic quarter wall
+DUPEITEM=04af5
+
+[ITEMDEF 04b3a]
+//gothic wall (quarter)
+NAME=gothic quarter wall
+DUPEITEM=04af5
+
+[ITEMDEF 04b3b]
+//gothic wall (quarter)
+NAME=gothic quarter wall
+DUPEITEM=04af5
+
+[ITEMDEF 04b3c]
+//gothic wall (quarter)
+NAME=gothic quarter wall
+DUPEITEM=04af5
+
+[ITEMDEF 04b3d]
+//gothic wall (arch)
+NAME=gothic archway
+DUPEITEM=04af5
+
+[ITEMDEF 04b3e]
+//gothic stairs
+NAME=gothic stairs
+DUPEITEM=04b01
+
+[ITEMDEF 04b3f]
+//gothic stairs
+NAME=gothic stairs
+DUPEITEM=04b01
+
+[ITEMDEF 04b40]
+//gothic stairs
+NAME=gothic stairs
+DUPEITEM=04b01
+
+[ITEMDEF 04b41]
+//gothic stairs
+NAME=gothic stairs
+DUPEITEM=04b01
+
+[ITEMDEF 04b42]
+//gothic wall (full)
+NAME=gothic wall
+DUPEITEM=04af5
+
+[ITEMDEF 04b43]
+//gothic wall (full)
+NAME=gothic wall
+DUPEITEM=04af5
+
+
+[ITEMDEF 0981c]
+NAME=advanced training dummy	//south
+TYPE=t_train_dummy
+DUPELIST=0981d,0981e,0981f,09820
+TAG.OVERRIDE.PRACTICEMAX.SKILL_40=60.0	//Swordsmanship
+TAG.OVERRIDE.PRACTICEMAX.SKILL_41=60.0	//Macefighting
+TAG.OVERRIDE.PRACTICEMAX.SKILL_42=60.0	//Fencing
+TAG.OVERRIDE.PRACTICEMAX.SKILL_43=60.0	//Wrestling
+
+[ITEMDEF 0981d]
+//advanced training dummy (south)
+NAME=advanced training dummy
+DUPEITEM=0981c
+
+[ITEMDEF 0981e]
+//advanced training dummy (south)
+NAME=advanced training dummy
+DUPEITEM=0981c
+
+[ITEMDEF 0981f]
+//advanced training dummy (south)
+NAME=advanced training dummy
+DUPEITEM=0981c
+
+[ITEMDEF 09820]
+//advanced training dummy (south)
+NAME=advanced training dummy
+DUPEITEM=0981c
+
+[ITEMDEF 09821]
+NAME=advanced training dummy	//east
+TYPE=t_train_dummy
+DUPELIST=09822,09823,09824,09825
+TAG.OVERRIDE.PRACTICEMAX.SKILL_40=60.0	//Swordsmanship
+TAG.OVERRIDE.PRACTICEMAX.SKILL_41=60.0	//Macefighting
+TAG.OVERRIDE.PRACTICEMAX.SKILL_42=60.0	//Fencing
+TAG.OVERRIDE.PRACTICEMAX.SKILL_43=60.0	//Wrestling
+
+[ITEMDEF 09822]
+//advanced training dummy (east)
+NAME=advanced training dummy
+DUPEITEM=09821
+
+[ITEMDEF 09823]
+//advanced training dummy (east)
+NAME=advanced training dummy
+DUPEITEM=09821
+
+[ITEMDEF 09824]
+//advanced training dummy (east)
+NAME=advanced training dummy
+DUPEITEM=09821
+
+[ITEMDEF 09825]
+//advanced training dummy (east)
+NAME=advanced training dummy
+DUPEITEM=09821
+
+[ITEMDEF 09826]
+//advanced training dummy frame (south)
+NAME=advanced training dummy
+
+[ITEMDEF 09827]
+//advanced training dummy frame (south)
+NAME=advanced training dummy
+
+[ITEMDEF 09828]
+//advanced training dummy frame (south)
+NAME=advanced training dummy
+
+[ITEMDEF 09829]
+//advanced training dummy frame (south)
+NAME=advanced training dummy
+
+[ITEMDEF 0982a]
+//advanced training dummy frame (south)
+NAME=advanced training dummy
+
+[ITEMDEF 0982b]
+//advanced training dummy frame (south)
+NAME=advanced training dummy
+
+[ITEMDEF 0982c]
+//advanced training dummy frame (south)
+NAME=advanced training dummy
+
+[ITEMDEF 0982d]
+//advanced training dummy frame (east)
+NAME=advanced training dummy
+
+[ITEMDEF 0982e]
+//advanced training dummy frame (east)
+NAME=advanced training dummy
+
+[ITEMDEF 0982f]
+//advanced training dummy frame (east)
+NAME=advanced training dummy
+
+[ITEMDEF 09830]
+//advanced training dummy frame (east)
+NAME=advanced training dummy
+
+[ITEMDEF 09831]
+//advanced training dummy frame (east)
+NAME=advanced training dummy
+
+[ITEMDEF 09832]
+//advanced training dummy frame (east)
+NAME=advanced training dummy
+
+[ITEMDEF 09833]
+//advanced training dummy frame (east)
+NAME=advanced training dummy
+
+
+//////////////////
+// Custom Items //
+//////////////////
+
+[ITEMDEF m_table_ritual]
+ID=04982
+NAME=ritual table
+TYPE=t_multi
+CATEGORY=Gothic
+SUBSECTION=Multis
+DESCRIPTION=Ritual Table
+MULTIREGION=0,0,0,0
+COMPONENT=04983,0,-1,0
+COMPONENT=04984,-1,0,0
+COMPONENT=04985,-1,-1,0
+
+[ITEMDEF m_advanced_training_dummy_south]
+ID=09829
+NAME=advanced training dummy
+TYPE=t_multi
+CATEGORY=Gothic
+SUBSECTION=Multis
+DESCRIPTION=Advanced Training Dummy (south)
+MULTIREGION=0,0,0,0
+COMPONENT=0981c,0,0
+COMPONENT=09826,1,1
+COMPONENT=09827,1,0
+COMPONENT=09828,1,-1
+COMPONENT=0982a,-1,1
+COMPONENT=0982b,-1,0
+COMPONENT=0982c,-1,-1
+
+[ITEMDEF m_advanced_training_dummy_east]
+ID=09830
+NAME=advanced training dummy
+TYPE=t_multi
+CATEGORY=Gothic
+SUBSECTION=Multis
+DESCRIPTION=Advanced Training Dummy (east)
+MULTIREGION=0,0,0,0
+COMPONENT=09821,0,0
+COMPONENT=0982d,1,-1
+COMPONENT=0982e,0,1
+COMPONENT=0982f,-1,1
+COMPONENT=09831,1,1
+COMPONENT=09832,0,-1
+COMPONENT=09833,-1,-1
+
+[EOF]

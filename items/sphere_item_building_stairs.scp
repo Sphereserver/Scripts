@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2007
+// SPHERE by : Menasoft ©1997-2017
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,9 +7,9 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Wednesday, September 20, 2013
+// FILE LAST UPDATED: Sunday, Aug 27, 2017
 //
-VERSION=0.56c
+VERSION=0.56d
 
 
 [ITEMDEF 03ee]
@@ -1479,60 +1479,6 @@ DUPEITEM=046b0
 [ITEMDEF 04706]
 //Magincia Sandstone Stairs (broken?)
 DUPEITEM=046b0
-
-
-[ITEMDEF 04b01]
-DEFNAME=i_stairs_gothic
-NAME=gothic stair
-RESOURCES=100 i_rock_marble
-CATEGORY=Buildings - Stairs
-SUBSECTION=Gothic Stairs
-DESCRIPTION=Stair
-DUPELIST=04b02,04b03,04b04,04b05,04b32,04b33,04b34,04b3e,04b3f,04b40,04b41
-
-[ITEMDEF 04b02]
-//Gothic Stair
-DUPEITEM=04b01
-
-[ITEMDEF 04b03]
-//Gothic Stair
-DUPEITEM=04b01
-
-[ITEMDEF 04b04]
-//Gothic Stair
-DUPEITEM=04b01
-
-[ITEMDEF 04b05]
-//Gothic Stair
-DUPEITEM=04b01
-
-[ITEMDEF 04b32]
-//Gothic Stair
-DUPEITEM=04b01
-
-[ITEMDEF 04b33]
-//Gothic Stair
-DUPEITEM=04b01
-
-[ITEMDEF 04b34]
-//Gothic Stair
-DUPEITEM=04b01
-
-[ITEMDEF 04b3e]
-//Gothic Stair
-DUPEITEM=04b01
-
-[ITEMDEF 04b3f]
-//Gothic Stair
-DUPEITEM=04b01
-
-[ITEMDEF 04b40]
-//Gothic Stair
-DUPEITEM=04b01
-
-[ITEMDEF 04b41]
-//Gothic Stair
-DUPEITEM=04b01
 
 
 [ITEMDEF 04d2a]

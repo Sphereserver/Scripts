@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Aug 26, 2017
+// FILE LAST UPDATED: Sunday, Aug 27, 2017
 //
 VERSION=0.56d
 
@@ -4228,44 +4228,6 @@ SKILLMAKE=Carpentry 75.0,t_carpentry
 CATEGORY=Decoration - Furniture
 SUBSECTION=Tables
 DESCRIPTION=Ter-Mur Style Table
-
-
-[ITEMDEF 04982]
-DEFNAME=i_table_cthulu
-NAME=Cthulu table
-FLIP=1
-VALUE=29
-WEIGHT=17.4
-RESOURCES=17 i_rock_plain
-SKILLMAKE=Carpentry 42.1,t_masonry_tool
-CATEGORY=Decoration - Furniture
-SUBSECTION=Tables
-DESCRIPTION=Cthulu Table
-DUPELIST=04983,04984,04985
-
-[ITEMDEF 04983]
-//Cthulu table
-DUPEITEM=04982
-
-[ITEMDEF 04984]
-//Cthulu table
-DUPEITEM=04982
-
-[ITEMDEF 04985]
-//Cthulu table
-DUPEITEM=04982
-
-[ITEMDEF i_multi_table_cthulu]
-NAME=Cthulu table
-TYPE=t_multi
-CATEGORY=Multis
-SUBSECTION=Furniture
-DESCRIPTION=Cthulu Table
-MULTIREGION=0,0,0,0
-COMPONENT=04982,0,0,0
-COMPONENT=04983,0,-1,0
-COMPONENT=04984,-1,0,0
-COMPONENT=04985,-1,-1,0
 
 
 [ITEMDEF 04b58]

@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Aug 26, 2017
+// FILE LAST UPDATED: Sunday, Aug 27, 2017
 //
 VERSION=0.56d
 
@@ -4973,23 +4973,6 @@ DUPEITEM=048e5
 [ITEMDEF 048ec]
 //Banner Assembly
 DUPEITEM=048e5
-
-
-[ITEMDEF 04910]
-//TO-DO: Although this item looks like an container, it can't be used as container.
-//Players must lock it down on house and then DClick it to get an target selection,
-//selected items will be sent to player bankbox.
-DEFNAME=i_chest_sending
-NAME=chest of sending
-FLIP=1
-CATEGORY=Provisions - Miscellaneous
-SUBSECTION=Gothic Pack
-DESCRIPTION=Chest of Sending
-DUPELIST=04911
-
-[ITEMDEF 04911]
-//chest of sending
-DUPEITEM=04910
 
 
 [ITEMDEF 049c8]
