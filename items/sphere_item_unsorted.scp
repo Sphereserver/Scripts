@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, Aug 27, 2017
+// FILE LAST UPDATED: Monday, Aug 28, 2017
 //
 VERSION=0.56d
 
@@ -5171,51 +5171,6 @@ DUPELIST=04b1f
 [ITEMDEF 04b1f]
 //Origami Bunny
 DUPEITEM=04b1e
-
-
-[ITEMDEF 04b22]
-DEFNAME=i_flowerbed
-NAME=flowerbed
-FLIP=1
-WEIGHT=15.0
-RESOURCES=3 i_rock_plain,100 i_reag_fertile_dirt
-SKILLMAKE=carpentry 5.0,t_masonry_tool
-CATEGORY=Yard Decoration
-SUBSECTION=Flowerbed
-DESCRIPTION=Flowerbed (multi-part)
-DUPELIST=04b23,04b24,04b25,04b26,04b27,04b28,04b29,04b2a
-
-[ITEMDEF 04b23]
-//Flowerbed (multi-part)
-DUPEITEM=04b22
-
-[ITEMDEF 04b24]
-//Flowerbed (multi-part)
-DUPEITEM=04b22
-
-[ITEMDEF 04b25]
-//Flowerbed (multi-part)
-DUPEITEM=04b22
-
-[ITEMDEF 04b26]
-//Flowerbed (multi-part)
-DUPEITEM=04b22
-
-[ITEMDEF 04b27]
-//Flowerbed (multi-part)
-DUPEITEM=04b22
-
-[ITEMDEF 04b28]
-//Flowerbed (multi-part)
-DUPEITEM=04b22
-
-[ITEMDEF 04b29]
-//Flowerbed (multi-part)
-DUPEITEM=04b22
-
-[ITEMDEF 04b2a]
-//Flowerbed (multi-part)
-DUPEITEM=04b22
 
 
 [ITEMDEF 04b80]

@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, Aug 27, 2017
+// FILE LAST UPDATED: Monday, Aug 28, 2017
 //
 VERSION=0.56d
 
@@ -1105,36 +1105,6 @@ DUPELIST=0497e
 [ITEMDEF 0497e]
 //Topiary Ostard
 DUPEITEM=0497d
-
-[ITEMDEF 04919]
-DEFNAME=i_topiary_goblin
-NAME=topiary goblin
-FLIP=1
-TYPE=t_normal
-WEIGHT=12.0
-CATEGORY=Decoration - Wall Carvings & Statues
-SUBSECTION=Topiary
-DESCRIPTION=Topiary Goblin
-DUPELIST=0491a
-
-[ITEMDEF 0491a]
-//Topiary Goblin
-DUPEITEM=04919
-
-[ITEMDEF 0491b]
-DEFNAME=i_topiary_llama
-NAME=topiary llama
-FLIP=1
-TYPE=t_normal
-WEIGHT=12.0
-CATEGORY=Decoration - Wall Carvings & Statues
-SUBSECTION=Topiary
-DESCRIPTION=Topiary Llama
-DUPELIST=04930
-
-[ITEMDEF 04930]
-//Topiary Llama
-DUPEITEM=0491b
 
 
 [ITEMDEF 04f7a]

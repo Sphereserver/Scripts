@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, Aug 27, 2017
+// FILE LAST UPDATED: Monday, Aug 28, 2017
 //
 VERSION=0.56d
 
@@ -8109,116 +8109,6 @@ DUPEITEM=050fd
 //Gargoyle Marble Wall
 DUPEITEM=050fd
 
-
-[ITEMDEF 077e6]
-DEFNAME=i_wall_batten
-NAME=batten wall
-TYPE=t_wall
-CATEGORY=Buildings - Walls
-SUBSECTION=Batten Wall
-DESCRIPTION=Wall
-DUPELIST=077e7,077e8,077e9,077ea,077eb,077ec,077ed,077ee,077f1,077f2,077f3,077f4,077f5,077f6,077f7,077f8,077f9,077fa,07803,07804,07805,07806
-
-[ITEMDEF 077e7]
-//Batten Wall
-DUPEITEM=077e6
-
-[ITEMDEF 077e8]
-//Batten Wall
-DUPEITEM=077e6
-
-[ITEMDEF 077e9]
-//Batten Wall
-DUPEITEM=077e6
-
-[ITEMDEF 077ea]
-//Batten Wall
-DUPEITEM=077e6
-
-[ITEMDEF 077eb]
-//Batten Wall
-DUPEITEM=077e6
-
-[ITEMDEF 077ec]
-//Batten Wall
-DUPEITEM=077e6
-
-[ITEMDEF 077ed]
-//Batten Wall
-DUPEITEM=077e6
-
-[ITEMDEF 077ee]
-//Batten Wall
-DUPEITEM=077e6
-
-[ITEMDEF 077ef]
-DEFNAME=i_wall_batten_window
-NAME=batten wall
-TYPE=t_wall
-CATEGORY=Buildings - Walls
-SUBSECTION=Batten Wall
-DESCRIPTION=Wall (window)
-DUPELIST=077f0
-
-[ITEMDEF 077f0]
-//Batten Wall (window)
-DUPEITEM=077ef
-
-[ITEMDEF 077f1]
-//Batten Wall
-DUPEITEM=077e6
-
-[ITEMDEF 077f2]
-//Batten Wall
-DUPEITEM=077e6
-
-[ITEMDEF 077f3]
-//Batten Wall
-DUPEITEM=077e6
-
-[ITEMDEF 077f4]
-//Batten Wall
-DUPEITEM=077e6
-
-[ITEMDEF 077f5]
-//Batten Wall
-DUPEITEM=077e6
-
-[ITEMDEF 077f6]
-//Batten Wall
-DUPEITEM=077e6
-
-[ITEMDEF 077f7]
-//Batten Wall
-DUPEITEM=077e6
-
-[ITEMDEF 077f8]
-//Batten Wall
-DUPEITEM=077e6
-
-[ITEMDEF 077f9]
-//Batten Wall
-DUPEITEM=077e6
-
-[ITEMDEF 077fa]
-//Batten Wall
-DUPEITEM=077e6
-
-[ITEMDEF 07803]
-//Batten Wall
-DUPEITEM=077e6
-
-[ITEMDEF 07804]
-//Batten Wall
-DUPEITEM=077e6
-
-[ITEMDEF 07805]
-//Batten Wall
-DUPEITEM=077e6
-
-[ITEMDEF 07806]
-//Batten Wall
-DUPEITEM=077e6
 
 [ITEMDEF 09ab0]
 DEFNAME=i_wall_jungle

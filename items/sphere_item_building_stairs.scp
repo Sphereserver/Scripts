@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, Aug 27, 2017
+// FILE LAST UPDATED: Monday, Aug 28, 2017
 //
 VERSION=0.56d
 
@@ -1500,50 +1500,6 @@ DUPEITEM=046b0
 [ITEMDEF 04f65]
 //Tan Stairs (blue trim)
 
-
-[ITEMDEF 077fb]
-//Batten Stairs (open)
-[ITEMDEF 077fc]
-//Batten Stairs (open)
-[ITEMDEF 077fd]
-//Batten Stairs (open)
-[ITEMDEF 077fe]
-//Batten Stairs (open)
-[ITEMDEF 077ff]
-//Batten Stairs (open)
-[ITEMDEF 07800]
-//Batten Stairs (open)
-[ITEMDEF 07801]
-//Batten Stairs (open)
-[ITEMDEF 07802]
-//Batten Stairs (open)
-
-[ITEMDEF 07807]
-//Batten Stairs (solid)
-[ITEMDEF 07808]
-//Batten Stairs (solid)
-[ITEMDEF 07809]
-//Batten Stairs (solid)
-[ITEMDEF 0780a]
-//Batten Stairs (solid)
-[ITEMDEF 0780b]
-//Batten Stairs (solid)
-[ITEMDEF 0780c]
-//Batten Stairs (solid)
-[ITEMDEF 0780d]
-//Batten Stairs (solid)
-[ITEMDEF 0780e]
-//Batten Stairs (solid)
-[ITEMDEF 0780f]
-//Batten Stairs (solid)
-[ITEMDEF 07812]
-//Batten Stairs (solid)
-[ITEMDEF 07813]
-//Batten Stairs (solid)
-[ITEMDEF 07814]
-//Batten Stairs (solid)
-[ITEMDEF 07815]
-//Batten Stairs (solid)
 
 [ITEMDEF 09aea]
 DEFNAME=i_stairs_jungle

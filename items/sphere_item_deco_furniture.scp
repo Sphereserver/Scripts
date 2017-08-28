@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, Aug 27, 2017
+// FILE LAST UPDATED: Monday, Aug 28, 2017
 //
 VERSION=0.56d
 
@@ -1748,32 +1748,6 @@ DUPEITEM=0a78
 //large made bed
 DUPEITEM=0a78
 
-
-[ITEMDEF 0e50]
-DEFNAME=i_bench_wood_light
-NAME=light wood bench
-TYPE=t_chair
-FLIP=1
-VALUE=32
-WEIGHT=17.4
-RESOURCES=17 i_board,4 i_nails
-SKILLMAKE=Carpentry 52.6,t_carpentry
-CATEGORY=Decoration - Furniture
-SUBSECTION=Chairs
-DESCRIPTION=Bench (light wood)
-DUPELIST=0e51,0e52,0e53
-
-[ITEMDEF 0e51]
-//Bench (light wood)
-DUPEITEM=0e50
-
-[ITEMDEF 0e52]
-//Bench (light wood)
-DUPEITEM=0e50
-
-[ITEMDEF 0e53]
-//Bench (light wood)
-DUPEITEM=0e50
 
 [ITEMDEF 0118b]
 DEFNAME=i_table_runner_purple

@@ -1,0 +1,460 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2017
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Monday, Aug 28, 2017
+//
+VERSION=0.56d
+
+
+[ITEMDEF 0e50]
+//rustic bench (multi-part)(south)
+NAME=rustic bench
+
+[ITEMDEF 0e51]
+//rustic bench (multi-part)(south)
+NAME=rustic bench
+
+[ITEMDEF 0e52]
+//rustic bench (multi-part)(east)
+NAME=rustic bench
+
+[ITEMDEF 0e53]
+//rustic bench (multi-part)(east)
+NAME=rustic bench
+
+
+[ITEMDEF 03db8]
+//distillery (multi-part)(south)
+NAME=distillery
+
+[ITEMDEF 03db9]
+//distillery (multi-part)(south)
+NAME=distillery
+
+[ITEMDEF 03dba]
+//distillery (multi-part)(east)
+NAME=distillery
+
+[ITEMDEF 03dbb]
+//distillery (multi-part)(east)
+NAME=distillery
+
+
+[ITEMDEF 04919]
+DEFNAME=i_topiary_goblin
+NAME=goblin topiary
+FLIP=1
+CATEGORY=Rustic
+SUBSECTION=Decoration
+DESCRIPTION=Goblin Topiary
+DUPELIST=0491a
+
+[ITEMDEF 0491a]
+//goblin topiary
+DUPEITEM=04919
+
+[ITEMDEF 0491b]
+DEFNAME=i_topiary_llama
+NAME=llama topiary
+FLIP=1
+CATEGORY=Rustic
+SUBSECTION=Decoration
+DESCRIPTION=Llama Topiary
+DUPELIST=04930
+
+
+[ITEMDEF 04930]
+//llama topiary
+DUPEITEM=0491b
+
+
+[ITEMDEF 04b22]
+//raised garden bed (multi-part)
+NAME=raised garden bed
+
+[ITEMDEF 04b23]
+//raised garden bed (multi-part)
+NAME=raised garden bed
+
+[ITEMDEF 04b24]
+//raised garden bed (multi-part)
+NAME=raised garden bed
+
+[ITEMDEF 04b25]
+//raised garden bed (multi-part)
+NAME=raised garden bed
+
+[ITEMDEF 04b26]
+//raised garden bed (multi-part)
+NAME=raised garden bed
+
+[ITEMDEF 04b27]
+//raised garden bed (multi-part)
+NAME=raised garden bed
+
+[ITEMDEF 04b28]
+//raised garden bed (multi-part)
+NAME=raised garden bed
+
+[ITEMDEF 04b29]
+//raised garden bed (multi-part)
+NAME=raised garden bed
+
+[ITEMDEF 04b2a]
+//raised garden bed (multi-part)
+NAME=raised garden bed
+
+
+[ITEMDEF 077e6]
+DEFNAME=i_wall_batten
+NAME=board and batten wall
+TYPE=t_wall
+CATEGORY=Buildings - Walls
+SUBSECTION=Board and Batten Wall
+DESCRIPTION=Wall
+DUPELIST=077e7,077e8,077e9,077ea,077eb,077ec,077ed,077ee,077ef,077f0,077f1,077f2,077f3,077f4,077f5,077f6,077f7,077f8,077f9,077fa,07803,07804,07805,07806,07810,07811
+
+[ITEMDEF 077e7]
+//board and batten wall (half)
+NAME=board and batten half wall
+DUPEITEM=077e6
+
+[ITEMDEF 077e8]
+//board and batten wall (quarter)
+NAME=board and batten quarter wall
+DUPEITEM=077e6
+
+[ITEMDEF 077e9]
+//board and batten wall (full)
+NAME=board and batten wall
+DUPEITEM=077e6
+
+[ITEMDEF 077ea]
+//board and batten wall (half)
+NAME=board and batten half wall
+DUPEITEM=077e6
+
+[ITEMDEF 077eb]
+//board and batten wall (quarter)
+NAME=board and batten quarter wall
+DUPEITEM=077e6
+
+[ITEMDEF 077ec]
+//board and batten wall (full)
+NAME=board and batten wall
+DUPEITEM=077e6
+
+[ITEMDEF 077ed]
+//board and batten wall (half)
+NAME=board and batten half wall
+DUPEITEM=077e6
+
+[ITEMDEF 077ee]
+//board and batten wall (quarter)
+NAME=board and batten quarter wall
+DUPEITEM=077e6
+
+[ITEMDEF 077ef]
+//board and batten wall (window)
+NAME=board and batten window
+DUPEITEM=077e6
+
+[ITEMDEF 077f0]
+//board and batten wall (window)
+NAME=board and batten window
+DUPEITEM=077e6
+
+[ITEMDEF 077f1]
+//board and batten wall (archway)
+NAME=board and batten wall
+DUPEITEM=077e6
+
+[ITEMDEF 077f2]
+//board and batten wall (archway)
+NAME=board and batten wall
+DUPEITEM=077e6
+
+[ITEMDEF 077f3]
+//board and batten wall (archway)
+NAME=board and batten wall
+DUPEITEM=077e6
+
+[ITEMDEF 077f4]
+//board and batten wall (archway)
+NAME=board and batten wall
+DUPEITEM=077e6
+
+[ITEMDEF 077f5]
+//board and batten wall (archway)
+NAME=board and batten wall
+DUPEITEM=077e6
+
+[ITEMDEF 077f6]
+//board and batten post (full)
+NAME=board and batten post
+DUPEITEM=077e6
+
+[ITEMDEF 077f7]
+//board and batten post (half)
+NAME=board and batten half post
+DUPEITEM=077e6
+
+[ITEMDEF 077f8]
+//board and batten post (quarter)
+NAME=board and batten quarter post
+DUPEITEM=077e6
+
+[ITEMDEF 077f9]
+//board and batton narrow post (full)
+NAME=board and batton narrow post
+DUPEITEM=077e6
+
+[ITEMDEF 077fa]
+//board and batton narrow post (half)
+NAME=board and batton narrow half post
+DUPEITEM=077e6
+
+[ITEMDEF 077fb]
+//wooden steps
+NAME=wooden steps
+DUPELIST=077fc,077fd,077fe,077ff,07800,07801,07802
+
+[ITEMDEF 077fc]
+//wooden steps
+NAME=wooden steps
+DUPEITEM=077fb
+
+[ITEMDEF 077fd]
+//wooden steps
+NAME=wooden steps
+DUPEITEM=077fb
+
+[ITEMDEF 077fe]
+//wooden steps
+NAME=wooden steps
+DUPEITEM=077fb
+
+[ITEMDEF 077ff]
+//wooden steps
+NAME=wooden steps
+DUPEITEM=077fb
+
+[ITEMDEF 07800]
+//wooden steps
+NAME=wooden steps
+DUPEITEM=077fb
+
+[ITEMDEF 07801]
+//wooden steps
+NAME=wooden steps
+DUPEITEM=077fb
+
+[ITEMDEF 07802]
+//wooden steps
+NAME=wooden steps
+DUPEITEM=077fb
+
+[ITEMDEF 07803]
+//board and batten wall (post)
+NAME=board and batton wall with post
+DUPEITEM=077e6
+
+[ITEMDEF 07804]
+//board and batten wall (post)
+NAME=board and batton wall with post
+DUPEITEM=077e6
+
+[ITEMDEF 07805]
+//board and batten wall (post)
+NAME=board and batton wall with post
+DUPEITEM=077e6
+
+[ITEMDEF 07806]
+//board and batten wall (post)
+NAME=board and batton wall with post
+DUPEITEM=077e6
+
+[ITEMDEF 07807]
+//board and batton steps
+NAME=board and batton steps
+DUPELIST=07808,07809,0780a,0780b,0780c,0780d,0780e,0780f,07812,07813,07814,07815
+
+[ITEMDEF 07808]
+//board and batton steps
+NAME=board and batton steps
+DUPEITEM=07807
+
+[ITEMDEF 07809]
+//board and batton steps
+NAME=board and batton steps
+DUPEITEM=07807
+
+[ITEMDEF 0780a]
+//board and batton steps
+NAME=board and batton steps
+DUPEITEM=07807
+
+[ITEMDEF 0780b]
+//board and batton steps
+NAME=board and batton steps
+DUPEITEM=07807
+
+[ITEMDEF 0780c]
+//board and batton steps
+NAME=board and batton steps
+DUPEITEM=07807
+
+[ITEMDEF 0780d]
+//board and batton steps
+NAME=board and batton steps
+DUPEITEM=07807
+
+[ITEMDEF 0780e]
+//board and batton steps
+NAME=board and batton steps
+DUPEITEM=07807
+
+[ITEMDEF 0780f]
+//board and batton steps
+NAME=board and batton steps
+DUPEITEM=07807
+
+[ITEMDEF 07810]
+//board and batten wall (quarter)
+NAME=board and batten quarter wall
+DUPEITEM=077e6
+
+[ITEMDEF 07811]
+//board and batten wall (quarter)
+NAME=board and batten quarter wall
+DUPEITEM=077e6
+
+[ITEMDEF 07812]
+//board and batton steps
+NAME=board and batton steps
+DUPEITEM=07807
+
+[ITEMDEF 07813]
+//board and batton steps
+NAME=board and batton steps
+DUPEITEM=07807
+
+[ITEMDEF 07814]
+//board and batton steps
+NAME=board and batton steps
+DUPEITEM=07807
+
+[ITEMDEF 07815]
+//board and batton steps
+NAME=board and batton steps
+DUPEITEM=07807
+
+
+//////////////////
+// Custom Items //
+//////////////////
+
+[ITEMDEF m_bench_rustic_south]
+ID=0e51
+NAME=rustic bench
+TYPE=t_multi
+CATEGORY=Rustic
+SUBSECTION=Multis
+DESCRIPTION=Rustic Bench (south)
+MULTIREGION=0,0,0,0
+COMPONENT=0e50,-1,0
+
+[ITEMDEF m_bench_rustic_east]
+ID=0e52
+NAME=rustic bench
+TYPE=t_multi
+CATEGORY=Rustic
+SUBSECTION=Multis
+DESCRIPTION=Rustic Bench (east)
+MULTIREGION=0,0,0,0
+COMPONENT=0e53,0,-1
+
+[ITEMDEF m_distillery_south]
+ID=03db8
+NAME=distillery
+TYPE=t_multi
+CATEGORY=Rustic
+SUBSECTION=Multis
+DESCRIPTION=Distillery (south)
+MULTIREGION=0,0,0,0
+COMPONENT=03db9,-1,0
+
+[ITEMDEF m_distillery_east]
+ID=03dba
+NAME=distillery
+TYPE=t_multi
+CATEGORY=Rustic
+SUBSECTION=Multis
+DESCRIPTION=Distillery (east)
+MULTIREGION=0,0,0,0
+COMPONENT=03dbb,0,1
+
+[ITEMDEF m_raised_garden_bed_small]
+ID=04b22
+NAME=raised garden bed
+TYPE=t_multi
+CATEGORY=Rustic
+SUBSECTION=Multis
+DESCRIPTION=Raised Garden Bed (small)
+MULTIREGION=0,0,0,0
+COMPONENT=04b23,1,0
+COMPONENT=04b26,0,1
+COMPONENT=04b27,1,1
+
+[ITEMDEF m_raised_garden_bed_large]
+ID=04b22
+NAME=raised garden bed
+TYPE=t_multi
+CATEGORY=Rustic
+SUBSECTION=Multis
+DESCRIPTION=Raised Garden Bed (large)
+MULTIREGION=0,0,0,0
+COMPONENT=04b23,2,0
+COMPONENT=04b24,0,1
+COMPONENT=04b25,2,1
+COMPONENT=04b26,0,2
+COMPONENT=04b27,2,2
+COMPONENT=04b28,1,0
+COMPONENT=04b29,1,1
+COMPONENT=04b2a,1,2
+
+[ITEMDEF m_raised_garden_bed_south]
+ID=04b22
+NAME=raised garden bed
+TYPE=t_multi
+CATEGORY=Rustic
+SUBSECTION=Multis
+DESCRIPTION=Raised Garden Bed (south)
+MULTIREGION=0,0,0,0
+COMPONENT=04b23,2,0
+COMPONENT=04b26,0,1
+COMPONENT=04b27,2,1
+COMPONENT=04b28,1,0
+COMPONENT=04b2a,1,1
+
+[ITEMDEF m_raised_garden_bed_east]
+ID=04b22
+NAME=raised garden bed
+TYPE=t_multi
+CATEGORY=Rustic
+SUBSECTION=Multis
+DESCRIPTION=Raised Garden Bed (east)
+MULTIREGION=0,0,0,0
+COMPONENT=04b23,1,0
+COMPONENT=04b24,0,1
+COMPONENT=04b25,1,1
+COMPONENT=04b26,0,2
+COMPONENT=04b27,1,2
+
+[EOF]

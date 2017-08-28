@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, Aug 21, 2017
+// FILE LAST UPDATED: Monday, Aug 28, 2017
 //
 VERSION=0.56d
 
@@ -2851,31 +2851,6 @@ DUPELIST=03db0
 [ITEMDEF 03db0]
 //Cauldron (full with white background)
 DUPEITEM=03daf
-
-
-[ITEMDEF 03db8]
-DEFNAME=i_still
-NAME=still
-TYPE=t_normal
-FLIP=1
-WEIGHT=15.0
-RESOURCES=15 i_ingot_copper
-CATEGORY=Decoration - Kitchen and Dining
-SUBSECTION=Cookware
-DESCRIPTION=Still
-DUPELIST=03db9,03dba,03dbb
-
-[ITEMDEF 03db9]
-//still
-DUPEITEM=03db8
-
-[ITEMDEF 03dba]
-//still
-DUPEITEM=03db8
-
-[ITEMDEF 03dbb]
-//still
-DUPEITEM=03db8
 
 
 [ITEMDEF 041bd]
