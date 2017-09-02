@@ -1,0 +1,386 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2017
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Saturday, Sept 2, 2017
+//
+VERSION=0.56d
+
+
+[ITEMDEF 018d9]
+DEFNAME=i_freshly_picked_rose
+NAME=freshly picked rose
+FLIP=1
+CATEGORY=Valentine's Day
+SUBSECTION=Decoration
+DESCRIPTION=Freshly Picked Rose
+DUPELIST=018da
+
+[ITEMDEF 018da]
+//freshly picked rose
+DUPEITEM=018d9
+
+
+[ITEMDEF 048e0]
+DEFNAME=i_st_valentine_bear_panda
+NAME=st. valentine bear
+FLIP=1
+CATEGORY=Valentine's Day
+SUBSECTION=Decoration
+DESCRIPTION=St. Valentine Bear (panda)
+DUPELIST=048e1
+
+[ITEMDEF 048e1]
+//st. valentine bear (panda)
+DUPEITEM=048e0
+
+[ITEMDEF 048e2]
+DEFNAME=i_st_valentine_bear_polar
+NAME=st. valentine bear
+FLIP=1
+CATEGORY=Valentine's Day
+SUBSECTION=Decoration
+DESCRIPTION=St. Valentine Bear (polar)
+DUPELIST=048e3
+
+[ITEMDEF 048e3]
+//st. valentine bear (polar)
+DUPEITEM=048e2
+
+
+[ITEMDEF 049c8]
+DEFNAME=i_giftbox_tall
+NAME=tall gift box
+TYPE=t_container
+TDATA2=0121
+FLIP=1
+CATEGORY=Valentine's Day
+SUBSECTION=Containers
+DESCRIPTION=Gift Box (tall)
+DUPELIST=049c9
+
+[ITEMDEF 049c9]
+//gift box (tall)
+DUPEITEM=049c8
+
+[ITEMDEF 049ca]
+DEFNAME=i_giftbox_heart_shaped
+NAME=heart shaped box
+TYPE=t_container
+TDATA2=0120
+TDATA3=158,104
+FLIP=1
+CATEGORY=Valentine's Day
+SUBSECTION=Containers
+DESCRIPTION=Gift Box (Heart Shaped)
+DUPELIST=049cb
+
+[ITEMDEF 049cb]
+//gift box (heart shaped)
+DUPEITEM=049ca
+
+[ITEMDEF 049cc]
+DEFNAME=i_giftbox_heart_shaped_beating
+NAME=heart shaped box
+TYPE=t_container
+TDATA2=0120
+TDATA3=158,104
+FLIP=1
+CATEGORY=Valentine's Day
+SUBSECTION=Containers
+DESCRIPTION=Gift Box (heart shaped)(beating)
+DUPELIST=049d0
+
+[ITEMDEF 049cd]
+//gift box (heart shaped)(beating)
+
+[ITEMDEF 049ce]
+//gift box (heart shaped)(beating)
+
+[ITEMDEF 049cf]
+//gift box (heart shaped)(beating)
+
+[ITEMDEF 049d0]
+//gift box (heart shaped)(beating)
+DUPEITEM=049cc
+
+[ITEMDEF 049d1]
+//gift box (heart shaped)(beating)
+
+[ITEMDEF 049d2]
+//gift box (heart shaped)(beating)
+
+[ITEMDEF 049d3]
+//gift box (heart shaped)(beating)
+
+
+[ITEMDEF 04aa4]
+DEFNAME=i_fx_hearts
+CATEGORY=Animations
+SUBSECTION=Hearts
+DESCRIPTION=Hearts
+DUPELIST=04aa5,04aa6,04aa7,04aa8,04aa9
+
+[ITEMDEF 04aa5]
+//hearts (animation frame)
+DUPEITEM=04aa4
+
+[ITEMDEF 04aa6]
+//hearts (animation frame)
+DUPEITEM=04aa4
+
+[ITEMDEF 04aa7]
+//hearts (animation frame)
+DUPEITEM=04aa4
+
+[ITEMDEF 04aa8]
+//hearts (animation frame)
+DUPEITEM=04aa4
+
+[ITEMDEF 04aa9]
+//hearts (animation frame)
+DUPEITEM=04aa4
+
+
+[ITEMDEF 04c0b]
+DEFNAME=i_vase_roses
+NAME=Bouquet of roses in a vase
+CATEGORY=Valentine's Day
+SUBSECTION=Decoration
+DESCRIPTION=Bouquet of roses in a vase
+
+
+[ITEMDEF 04f7a]
+DEFNAME=i_arrow_cupid
+NAME=cupid's arrow
+FLIP=1
+CATEGORY=Valentine's Day
+SUBSECTION=Decoration
+DESCRIPTION=Cupid's Arrow
+DUPELIST=04f7b,04f7e,04f7f
+ON=@ClientTooltip
+   IF !(<ISEMPTY <TAG.Name1>>) && !(<ISEMPTY <TAG.Name1>>)
+    SRC.ADDCLILOC 1152273,<TAG.Name1>,<TAG.Name2>	//~1_val~ is madly in love with ~2_val~
+   ENDIF
+ON=@DClick
+   IF (<TOPOBJ> != <SRC>)
+    SRC.SYSMESSAGE You must have the object in your backpack to use it.
+   ELSE
+    TARGET
+   ENDIF
+   return 1
+ON=@TargOn_Char
+   IF (<SRC.CANSEELOS <ARGO>>)
+    IF (<ARGO.FLAGS> & statf_dead)
+     SRC.SYSMESSAGE That target is dead and even Cupid's arrow won't make them love you.
+    ELSE
+     TAG.Name1=<SRC.NAME>
+     TAG.Name2=<ARGO.NAME>
+     RESENDTOOLTIP
+     SRC.SOUND 0234
+     ARGO.EFFECT 0,i_arrow_cupid,10
+     ARGO.EFFECT 3,i_fx_hearts,1,20
+    ENDIF
+   ENDIF
+   return 1
+
+[ITEMDEF 04f7b]
+//cupid's arrow
+DUPEITEM=04f7a
+
+[ITEMDEF 04f7c]
+DEFNAME=i_statue_cupid
+NAME=cupid statue
+FLIP=1
+CATEGORY=Valentine's Day
+SUBSECTION=Decoration
+DESCRIPTION=Cupid Statue
+DUPELIST=04f7d
+
+[ITEMDEF 04f7d]
+//cupid statue
+DUPEITEM=04f7c
+
+[ITEMDEF 04f7e]
+//cupid's arrow
+DUPEITEM=04f7a
+
+[ITEMDEF 04f7f]
+//cupid's arrow
+DUPEITEM=04f7a
+
+
+[ITEMDEF 063d6]
+DEFNAME=i_sleeping_kitten_white
+NAME=sleeping kitten
+FLIP=1
+CATEGORY=Valentine's Day
+SUBSECTION=Decoration
+DESCRIPTION=Sleeping Kitten (white)
+DUPELIST=063d9
+ON=@DClick
+   SOUND 0676
+   return 1
+
+[ITEMDEF 063d7]
+//sleeping kitten (white)(animation frame)
+
+[ITEMDEF 063d8]
+//sleeping kitten (white)(animation frame)
+
+[ITEMDEF 063d9]
+//sleeping kitten (white)
+DUPEITEM=063d6
+
+[ITEMDEF 063da]
+//sleeping kitten (white)(animation frame)
+
+[ITEMDEF 063db]
+//sleeping kitten (white)(animation frame)
+
+[ITEMDEF 063dc]
+DEFNAME=i_sleeping_kitten_black
+NAME=sleeping kitten
+FLIP=1
+CATEGORY=Valentine's Day
+SUBSECTION=Decoration
+DESCRIPTION=Sleeping Kitten (black)
+DUPELIST=063df
+ON=@DClick
+   SOUND 0676
+   return 1
+
+[ITEMDEF 063dd]
+//sleeping kitten (black)(animation frame)
+
+[ITEMDEF 063de]
+//sleeping kitten (black)(animation frame)
+
+[ITEMDEF 063df]
+//sleeping kitten (black)
+DUPEITEM=063dc
+
+[ITEMDEF 063e0]
+//sleeping kitten (black)(animation frame)
+
+[ITEMDEF 063e1]
+//sleeping kitten (black)(animation frame)
+
+[ITEMDEF 063e2]
+DEFNAME=i_sleeping_kitten_brown
+NAME=sleeping kitten
+FLIP=1
+CATEGORY=Valentine's Day
+SUBSECTION=Decoration
+DESCRIPTION=Sleeping Kitten (brown)
+DUPELIST=063e5
+ON=@DClick
+   SOUND 0676
+   return 1
+
+[ITEMDEF 063e3]
+//sleeping kitten (brown)(animation frame)
+
+[ITEMDEF 063e4]
+//sleeping kitten (brown)(animation frame)
+
+[ITEMDEF 063e5]
+//sleeping kitten (brown)
+DUPEITEM=063e2
+
+[ITEMDEF 063e6]
+//sleeping kitten (brown)(animation frame)
+
+[ITEMDEF 063e7]
+//sleeping kitten (brown)(animation frame)
+
+[ITEMDEF 063e8]
+DEFNAME=i_sleeping_puppy_white
+NAME=sleeping puppy
+FLIP=1
+CATEGORY=Valentine's Day
+SUBSECTION=Decoration
+DESCRIPTION=Sleeping Puppy (white)
+DUPELIST=063eb
+ON=@DClick
+   SOUND <R0674,0675>
+   return 1
+
+[ITEMDEF 063e9]
+//sleeping puppy (white)(animation frame)
+
+[ITEMDEF 063ea]
+//sleeping puppy (white)(animation frame)
+
+[ITEMDEF 063eb]
+//sleeping puppy (white)
+DUPEITEM=063e8
+
+[ITEMDEF 063ec]
+//sleeping puppy (white)(animation frame)
+
+[ITEMDEF 063ed]
+//sleeping puppy (white)(animation frame)
+
+[ITEMDEF 063ee]
+DEFNAME=i_sleeping_puppy_black
+NAME=sleeping puppy
+FLIP=1
+CATEGORY=Valentine's Day
+SUBSECTION=Decoration
+DESCRIPTION=Sleeping Puppy (black)
+DUPELIST=063f1
+ON=@DClick
+   SOUND <R0674,0675>
+   return 1
+
+[ITEMDEF 063ef]
+//sleeping puppy (black)(animation frame)
+
+[ITEMDEF 063f0]
+//sleeping puppy (black)(animation frame)
+
+[ITEMDEF 063f1]
+//sleeping puppy (black)
+DUPEITEM=063ee
+
+[ITEMDEF 063f2]
+//sleeping puppy (black)(animation frame)
+
+[ITEMDEF 063f3]
+//sleeping puppy (black)(animation frame)
+
+[ITEMDEF 063f4]
+DEFNAME=i_sleeping_puppy_brown
+NAME=sleeping puppy
+FLIP=1
+CATEGORY=Valentine's Day
+SUBSECTION=Decoration
+DESCRIPTION=Sleeping Puppy (brown)
+DUPELIST=063f7
+ON=@DClick
+   SOUND <R0674,0675>
+   return 1
+
+[ITEMDEF 063f5]
+//sleeping puppy (brown)(animation frame)
+
+[ITEMDEF 063f6]
+//sleeping puppy (brown)(animation frame)
+
+[ITEMDEF 063f7]
+//sleeping puppy (brown)
+DUPEITEM=063f4
+
+[ITEMDEF 063f8]
+//sleeping puppy (brown)(animation frame)
+
+[ITEMDEF 063f9]
+//sleeping puppy (brown)(animation frame)
+
+[EOF]

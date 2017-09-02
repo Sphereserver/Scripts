@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Friday, Feb 10, 2017
+// FILE LAST UPDATED: Saturday, Sept 2, 2017
 //
 VERSION=0.56d
 
@@ -2981,34 +2981,6 @@ DUPEITEM=046e9
 [ITEMDEF 046eb]
 //Blue Fireball (animation frame)
 DUPEITEM=046e9
-
-[ITEMDEF 04aa4]
-DEFNAME=i_fx_hearts
-NAME=Love
-CATEGORY=Animations
-SUBSECTION=Hearts
-DESCRIPTION=Hearts
-DUPELIST=04aa5,04aa6,04aa7,04aa8,04aa9
-
-[ITEMDEF 04aa5]
-//Hearts (animation frame)
-DUPEITEM=04aa4
-
-[ITEMDEF 04aa6]
-//Hearts (animation frame)
-DUPEITEM=04aa4
-
-[ITEMDEF 04aa7]
-//Hearts (animation frame)
-DUPEITEM=04aa4
-
-[ITEMDEF 04aa8]
-//Hearts (animation frame)
-DUPEITEM=04aa4
-
-[ITEMDEF 04aa9]
-//Hearts (animation frame)
-DUPEITEM=04aa4
 
 [ITEMDEF 04b8f]
 DEFNAME=i_moongate_broken

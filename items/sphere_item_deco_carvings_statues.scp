@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, Aug 28, 2017
+// FILE LAST UPDATED: Saturday, Sept 2, 2017
 //
 VERSION=0.56d
 
@@ -1105,20 +1105,6 @@ DUPELIST=0497e
 [ITEMDEF 0497e]
 //Topiary Ostard
 DUPEITEM=0497d
-
-
-[ITEMDEF 04f7a]
-//Arrow (cupid)
-[ITEMDEF 04f7b]
-//Arrow (cupid)
-[ITEMDEF 04f7c]
-//Cupid Statue
-[ITEMDEF 04f7d]
-//Cupid Statue
-[ITEMDEF 04f7e]
-//Arrow (cupid)
-[ITEMDEF 04f7f]
-//Arrow (cupid)
 
 
 [ITEMDEF 09f0f]

@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Aug 15, 2017
+// FILE LAST UPDATED: Saturday, Sept 2, 2017
 //
 VERSION=0.56d
 
@@ -3533,22 +3533,6 @@ DUPEITEM=09d2
 DUPEITEM=0994
 
 
-
-[ITEMDEF 018d9]
-DEFNAME=i_flower_rose_white
-NAME=white trinsic rose
-FLIP=1
-VALUE=10
-CATEGORY=Vegetation
-SUBSECTION=Picked
-DESCRIPTION=Trinsic Rose (white)
-DUPELIST=018da
-
-[ITEMDEF 018da]
-//Trinsic Rose (white)
-DUPEITEM=018d9
-
-
 [ITEMDEF 018dd]
 //sprouting mandrake root (like the plant was pulled from the ground)
 DEFNAME=i_fruit_mandrake
@@ -5471,42 +5455,6 @@ CATEGORY=Vegetation
 SUBSECTION=Plants and Flowers
 DESCRIPTION=Vanilla Plant (mature)
 
-
-[ITEMDEF 0992f]
-DEFNAME=i_fruit_pumpkin_tall
-NAME=pumpkin
-TYPE=t_fruit
-TDATA1=i_crop_vines1
-VALUE=2
-WEIGHT=1.0
-CATEGORY=Vegetation
-SUBSECTION=Fruits and Vegetables
-DESCRIPTION=Pumpkin (tall)
-ON=@Create
-   MOREM=4
-
-[ITEMDEF 09930]
-DEFNAME=i_fruit_pumpkin_rotten
-NAME=rotten pumpkin
-TYPE=t_food
-TDATA1=i_crop_vines1
-VALUE=2
-WEIGHT=0.1
-CATEGORY=Vegetation
-SUBSECTION=Fruits and Vegetables
-DESCRIPTION=Pumpkin (rotten)
-ON=@Create
-   MOREM=1
-
-
-[ITEMDEF 09b0f]
-DEFNAME=i_tree_potted_snowfluff
-NAME=Potted Snowfluff Tree
-CATEGORY=Decoration - Potted Plants & Vases
-SUBSECTION=Potted Trees
-DESCRIPTION=Potted Snowfluff Tree
-ON=@Create
-   COLOR={0 92 048e 1 0507 1 0652 1 0776 1 077a 1 07b0 1 0a26 1 0aa9 1}
 
 [ITEMDEF 09b10]
 DEFNAME=i_potted_orchid

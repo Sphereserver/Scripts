@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, Aug 28, 2017
+// FILE LAST UPDATED: Saturday, Sept 2, 2017
 //
 VERSION=0.56d
 
@@ -4902,34 +4902,6 @@ SUBSECTION=Holiday Gifts
 DESCRIPTION=Easter Egg
 
 
-[ITEMDEF 048e0]
-DEFNAME=i_toy_bear
-NAME=toy bear
-TYPE=t_normal
-FLIP=1
-CATEGORY=Decoration - Miscellaneous
-SUBSECTION=Holiday Gifts
-DESCRIPTION=Toy Valentine Bear
-DUPELIST=048e1
-
-[ITEMDEF 048e1]
-//toy valentine bear
-DUPEITEM=048e0
-
-[ITEMDEF 048e2]
-DEFNAME=i_toy_bear_2
-NAME=toy bear
-TYPE=t_normal
-FLIP=1
-CATEGORY=Decoration - Miscellaneous
-SUBSECTION=Holiday Gifts
-DESCRIPTION=Toy Valentine Bear 2
-DUPELIST=048e3
-
-[ITEMDEF 048e3]
-//toy valentine bear 2
-DUPEITEM=048e2
-
 [ITEMDEF 048e4]
 CATEGORY=Miscellaneous
 SUBSECTION=Bad Tiles
@@ -4973,70 +4945,6 @@ DUPEITEM=048e5
 [ITEMDEF 048ec]
 //Banner Assembly
 DUPEITEM=048e5
-
-
-[ITEMDEF 049c8]
-DEFNAME=i_giftbox_tall
-TYPE=t_container
-TDATA2=0121
-//TDATA3=100,100//FIXME
-FLIP=1
-CATEGORY=Provisions - Miscellaneous
-SUBSECTION=Containers
-DESCRIPTION=Gift Box (Tall)
-DUPELIST=049c9
-
-[ITEMDEF 049c9]
-//Gift Box (Tall)
-DUPEITEM=049c8
-
-[ITEMDEF 049ca]
-DEFNAME=i_giftbox_heart_shaped
-TYPE=t_container
-TDATA2=0120
-TDATA3=158,104
-FLIP=1
-CATEGORY=Provisions - Miscellaneous
-SUBSECTION=Containers
-DESCRIPTION=Gift Box (Heart Shaped)
-DUPELIST=049cb
-
-[ITEMDEF 049cb]
-//Gift Box (Heart Shaped)
-DUPEITEM=049ca
-
-[ITEMDEF 049cc]
-DEFNAME=i_giftbox_heart_shaped_beating
-TYPE=t_container
-TDATA2=0120
-TDATA3=158,104
-FLIP=1
-CATEGORY=Provisions - Miscellaneous
-SUBSECTION=Containers
-DESCRIPTION=Gift Box (Heart Shaped Beating)
-DUPELIST=049d0
-
-[ITEMDEF 049cd]
-//Gift Box (Heart Shaped Beating)
-
-[ITEMDEF 049ce]
-//Gift Box (Heart Shaped Beating)
-
-[ITEMDEF 049cf]
-//Gift Box (Heart Shaped Beating)
-
-[ITEMDEF 049d0]
-//Gift Box (Heart Shaped Beating)
-DUPEITEM=049cc
-
-[ITEMDEF 049d1]
-//Gift Box (Heart Shaped Beating)
-
-[ITEMDEF 049d2]
-//Gift Box (Heart Shaped Beating)
-
-[ITEMDEF 049d3]
-//Gift Box (Heart Shaped Beating)
 
 
 [ITEMDEF 04a94]
@@ -5243,17 +5151,6 @@ CATEGORY=Resources
 SUBSECTION=Mineral
 DESCRIPTION=Gold Dust
 
-[ITEMDEF 04c0b]
-DEFNAME=i_vase_roses
-NAME=roses in a vase
-TYPE=t_message
-WEIGHT=2.0
-RESOURCES=1 i_vase_small_1,10 i_flower_rose_white
-CATEGORY=Decoration - Potted Plants & Vases
-SUBSECTION=Vases & Pots
-DESCRIPTION=Vase with Roses
-ON=@DClick
-   RETURN 1
 
 [ITEMDEF 04c0e]
 //Snow tile
