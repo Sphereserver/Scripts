@@ -7,9 +7,10 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, Aug 21, 2017
+// FILE LAST UPDATED: Monday, Sept 4, 2017
 //
 VERSION=0.56d
+
 
 [ITEMDEF 02328]
 DEFNAME=i_snowman
@@ -673,16 +674,16 @@ DUPELIST=0457b
 DUPEITEM=0457a
 
 [ITEMDEF 0457c]
-DEFNAME=i_snow_statue_griffon
+DEFNAME=i_snow_statue_gryphon
 NAME=snow statue
 FLIP=1
 CATEGORY=Christmas
 SUBSECTION=Decoration
-DESCRIPTION=Snow Statue (griffon)
+DESCRIPTION=Snow Statue (gryphon)
 DUPELIST=0457d
 
 [ITEMDEF 0457d]
-//snow statue (griffon)
+//snow statue (gryphon)
 DUPEITEM=0457c
 
 
@@ -965,44 +966,44 @@ DUPEITEM=04b20
 
 
 [ITEMDEF 04ba9]
-DEFNAME=i_tree_winter_creature
-NAME=winter tree
+DEFNAME=i_tree_infested
+NAME=infested tree
 CATEGORY=Christmas
 SUBSECTION=Decoration
-DESCRIPTION=Winter Tree (creature)
+DESCRIPTION=Infested Tree
 DUPELIST=04baa,04bad,04bae,04baf,04bb0,04bb1,04bb2,04bb3
 
 [ITEMDEF 04baa]
-//winter tree (creature)
+//infested tree
 DUPEITEM=04ba9
 
 
 [ITEMDEF 04bad]
-//winter tree (creature)
+//infested tree
 DUPEITEM=04ba9
 
 [ITEMDEF 04bae]
-//winter tree (creature)
+//infested tree
 DUPEITEM=04ba9
 
 [ITEMDEF 04baf]
-//winter tree (creature)
+//infested tree
 DUPEITEM=04ba9
 
 [ITEMDEF 04bb0]
-//winter tree (creature)
+//infested tree
 DUPEITEM=04ba9
 
 [ITEMDEF 04bb1]
-//winter tree (creature)
+//infested tree
 DUPEITEM=04ba9
 
 [ITEMDEF 04bb2]
-//winter tree (creature)
+//infested tree
 DUPEITEM=04ba9
 
 [ITEMDEF 04bb3]
-//winter tree (creature)
+//infested tree
 DUPEITEM=04ba9
 
 
@@ -1022,18 +1023,18 @@ SUBSECTION=Decoration
 DESCRIPTION=Festive Tree
 
 [ITEMDEF 04c18]
-DEFNAME=i_tree_infested
-NAME=infested tree
+DEFNAME=i_tree_decorative
+NAME=decorative tree
 FLIP=1
 CATEGORY=Christmas
 SUBSECTION=Decoration
-DESCRIPTION=Infested Tree
+DESCRIPTION=Decorative Tree
 DUPELIST=04c19
 ON=@Create
    COLOR=colors_all
 
 [ITEMDEF 04c19]
-//infested tree
+//decorative tree
 DUPEITEM=04c18
 
 
@@ -1682,16 +1683,16 @@ DUPELIST=09dc2
 DUPEITEM=09dc1
 
 [ITEMDEF 09dc3]
-DEFNAME=i_candycane_giant
+DEFNAME=i_candycane_giant_green
 NAME=candy cane
 FLIP=1
 CATEGORY=Christmas
 SUBSECTION=Decoration
-DESCRIPTION=Candy Cane (giant)
+DESCRIPTION=Candy Cane (giant)(green)
 DUPELIST=09dc4
 
 [ITEMDEF 09dc4]
-//christmas candy cane
+//candy cane (giant)(green)
 DUPEITEM=09dc3
 
 [ITEMDEF 09dc5]
@@ -1763,6 +1764,30 @@ NAME=snowy holiday tree
 NAME=snowy holiday tree
 
 
+[ITEMDEF 09e1a]
+DEFNAME=i_giftbox_bell
+NAME=gift box
+TYPE=t_container
+TDATA2=0122
+TDATA3=156,166
+CATEGORY=Christmas
+SUBSECTION=Containers
+DESCRIPTION=Gift Box (bell)
+
+[ITEMDEF 09e1b]
+DEFNAME=i_candycane_giant_red
+NAME=candy cane
+FLIP=1
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Candy Cane (giant)(red)
+DUPELIST=09e1c
+
+[ITEMDEF 09e1c]
+//candy cane (giant)(red)
+DUPEITEM=09e1b
+
+
 [ITEMDEF 09e97]
 DEFNAME=i_snowflake3
 NAME=snowflake
@@ -1823,50 +1848,50 @@ DESCRIPTION=Writing Desk (east)
 
 
 [ITEMDEF 09ffa]
-DEFNAME=i_christmas_garland_south
-NAME=garland
+DEFNAME=i_garland_firefly_south
+NAME=firefly garland
 CATEGORY=Christmas
 SUBSECTION=Decoration
-DESCRIPTION=Garland (south)
+DESCRIPTION=Firefly Garland (south)
 ON=@DClick
-   DISPID <QVAL (<DISPID>==i_christmas_garland_south)? 09ffb : i_christmas_garland_south>
+   DISPID <QVAL (<DISPID>==i_garland_firefly_south)? 09ffb : i_garland_firefly_south>
    UPDATE
    return 1
 
 [ITEMDEF 09ffb]
-//garland
+//firefly garland
 
 [ITEMDEF 09ffc]
-//garland
+//firefly garland
 
 [ITEMDEF 09ffd]
-//garland
+//firefly garland
 
 [ITEMDEF 09ffe]
-//garland
+//firefly garland
 
 [ITEMDEF 09fff]
-DEFNAME=i_christmas_garland_east
-NAME=garland
+DEFNAME=i_garland_firefly_east
+NAME=firefly garland
 CATEGORY=Christmas
 SUBSECTION=Decoration
-DESCRIPTION=Garland (east)
+DESCRIPTION=Firefly Garland (east)
 ON=@DClick
-   DISPID <QVAL (<DISPID>==i_christmas_garland_east)? 09ffb : i_christmas_garland_east>
+   DISPID <QVAL (<DISPID>==i_garland_firefly_east)? 09ffb : i_garland_firefly_east>
    UPDATE
    return 1
 
 [ITEMDEF 0a000]
-//garland
+//firefly garland
 
 [ITEMDEF 0a001]
-//garland
+//firefly garland
 
 [ITEMDEF 0a002]
-//garland
+//firefly garland
 
 [ITEMDEF 0a003]
-//garland
+//firefly garland
 
 
 //////////////////

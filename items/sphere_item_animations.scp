@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Sept 2, 2017
+// FILE LAST UPDATED: Monday, Sept 4, 2017
 //
 VERSION=0.56d
 
@@ -1347,7 +1347,7 @@ DUPEITEM=03728
 DEFNAME=i_fx_smoke_small
 TYPE=t_spell
 CATEGORY=Animations
-SUBSECTION=Smoke Puff
+SUBSECTION=Smoke Fizzle
 DESCRIPTION=@
 DUPELIST=03736,03737,03738,03739
 
@@ -3128,5 +3128,109 @@ DUPEITEM=05683
 //Sparkles (hovering)
 DUPEITEM=05683
 
+[ITEMDEF 09dac]
+DEFNAME=i_fx_smoke_puff
+TYPE=t_spell
+CATEGORY=Animations
+SUBSECTION=Smoke Puff
+DESCRIPTION=@
+DUPELIST=09dad,09dae,09daf,09db0
+
+[ITEMDEF 09dad]
+//Smoke Puff (animation frame)
+DUPELIST=09dac
+
+[ITEMDEF 09dae]
+//Smoke Puff (animation frame)
+DUPELIST=09dac
+
+[ITEMDEF 09daf]
+//Smoke Puff (animation frame)
+DUPELIST=09dac
+
+[ITEMDEF 09db0]
+//Smoke Puff (animation frame)
+DUPELIST=09dac
+
+[ITEMDEF 09f76]
+DEFNAME=i_warp_gray
+NAME=Warp
+TYPE=t_telepad
+CATEGORY=Animations
+SUBSECTION=Warps
+DESCRIPTION=Gray Warp
+DUPELIST=09f77,09f78,09f79,09f7a
+ON=@Create
+   MOREP=-1,-1
+
+[ITEMDEF 09f77]
+//Gray Warp (animation frame)
+DUPEITEM=09f76
+
+[ITEMDEF 09f78]
+//Gray Warp (animation frame)
+DUPEITEM=09f76
+
+[ITEMDEF 09f79]
+//Gray Warp (animation frame)
+DUPEITEM=09f76
+
+[ITEMDEF 09f7a]
+//Gray Warp (animation frame)
+DUPEITEM=09f76
+
+[ITEMDEF 09f7b]
+DEFNAME=i_warp_blue
+NAME=Warp
+TYPE=t_telepad
+CATEGORY=Animations
+SUBSECTION=Warps
+DESCRIPTION=Blue Warp
+DUPELIST=09f7c,09f7d,09f7e,09f7f
+ON=@Create
+   MOREP=-1,-1
+
+[ITEMDEF 09f7c]
+//Blue Warp (animation frame)
+DUPEITEM=09f7b
+
+[ITEMDEF 09f7d]
+//Blue Warp (animation frame)
+DUPEITEM=09f7b
+
+[ITEMDEF 09f7e]
+//Blue Warp (animation frame)
+DUPEITEM=09f7b
+
+[ITEMDEF 09f7f]
+//Blue Warp (animation frame)
+DUPEITEM=09f7b
+
+[ITEMDEF 09f80]
+DEFNAME=i_warp_green
+NAME=Warp
+TYPE=t_telepad
+CATEGORY=Animations
+SUBSECTION=Warps
+DESCRIPTION=Green Warp
+DUPELIST=09f81,09f82,09f83,09f84
+ON=@Create
+   MOREP=-1,-1
+
+[ITEMDEF 09f81]
+//Green Warp (animation frame)
+DUPEITEM=09f80
+
+[ITEMDEF 09f82]
+//Green Warp (animation frame)
+DUPEITEM=09f80
+
+[ITEMDEF 09f83]
+//Green Warp (animation frame)
+DUPEITEM=09f80
+
+[ITEMDEF 09f84]
+//Green Warp (animation frame)
+DUPEITEM=09f80
 
 [EOF]
