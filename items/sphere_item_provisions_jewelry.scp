@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, May 14, 2017
+// FILE LAST UPDATED: Saturday, Sept 9, 2017
 //
 VERSION=0.56d
 
@@ -279,25 +279,28 @@ DESCRIPTION=Ankh Pendant
 [ITEMDEF 04210]
 DEFNAME=i_necklace_gargoyle
 NAME=Gargish necklace
-TYPE=t_jewelry
-VALUE=24
-WEIGHT=0.2
-RESOURCES=2 i_ingot_gold
-SKILLMAKE=Tinkering 75.0,t_tinker_tools
+TYPE=t_armor
+RESOURCES=3 i_ingot_gold
+SKILLMAKE=Tinkering 60.0,t_tinker_tools
 CATEGORY=Provisions - Jewels and Jewelry
 SUBSECTION=Jewelry
 DESCRIPTION=Gargish Necklace
 canuse=can_u_gargoyle
 TEVENTS=t_equipitem
+ON=@Create
+   HITPOINTS={30 40}
+   RESPHYSICAL=1
+   RESFIRE=2
+   RESCOLD=2
+   RESPOISON=2
+   RESENERGY=3
 
 [ITEMDEF 04211]
 DEFNAME=i_bracelet_gargoyle
 NAME=Gargish bracelet
 TYPE=t_jewelry
-VALUE=48
-WEIGHT=0.4
-RESOURCES=4 i_ingot_gold
-SKILLMAKE=Tinkering 73.5,t_tinker_tools
+RESOURCES=3 i_ingot_gold
+SKILLMAKE=Tinkering 55.0,t_tinker_tools
 CATEGORY=Provisions - Jewels and Jewelry
 SUBSECTION=Jewelry
 DESCRIPTION=Gargish Bracelet
@@ -308,10 +311,8 @@ TEVENTS=t_equipitem
 DEFNAME=i_ring_gargoyle
 NAME=Gargish ring
 TYPE=t_jewelry
-VALUE=24
-WEIGHT=0.2
-RESOURCES=2 i_ingot_gold
-SKILLMAKE=Tinkering 73.0,t_tinker_tools
+RESOURCES=3 i_ingot_gold
+SKILLMAKE=Tinkering 65.0,t_tinker_tools
 CATEGORY=Provisions - Jewels and Jewelry
 SUBSECTION=Jewelry
 DESCRIPTION=Gargoyle Ring
@@ -321,16 +322,21 @@ TEVENTS=t_equipitem
 [ITEMDEF 04213]
 DEFNAME=i_earrings_gargoyle
 NAME=Gargish earrings
-TYPE=t_jewelry
-VALUE=24
-WEIGHT=0.2
-RESOURCES=2 i_ingot_gold
-SKILLMAKE=Tinkering 72.5,t_tinker_tools
+TYPE=t_armor
+RESOURCES=3 i_ingot_gold
+SKILLMAKE=Tinkering 55.0,t_tinker_tools
 CATEGORY=Provisions - Jewels and Jewelry
 SUBSECTION=Jewelry
 DESCRIPTION=Gargish Earrings
 canuse=can_u_gargoyle
 TEVENTS=t_equipitem
+ON=@Create
+   HITPOINTS={30 40}
+   RESPHYSICAL=1
+   RESFIRE=2
+   RESCOLD=2
+   RESPOISON=2
+   RESENERGY=3
 
 
 [ITEMDEF 045b1]
@@ -383,6 +389,48 @@ ON=@Create
 [ITEMDEF 04645]
 //gargish glasses
 DUPEITEM=04644
+
+
+[ITEMDEF 04d0a]
+DEFNAME=i_gargish_stone_amulet
+NAME=gargish stone amulet
+TYPE=t_armor
+REQSTR=40
+RESOURCES=3 i_rock_granite
+SKILLMAKE=Carpentry 60.0,t_masonry_tool
+CATEGORY=Provisions - Jewels and Jewelry
+SUBSECTION=Jewelry
+DESCRIPTION=Gargish Stone Amulet
+canuse=can_u_gargoyle
+TEVENTS=t_equipitem
+ON=@Create
+   COLOR=09c4
+   HITPOINTS={30 40}
+   RESPHYSICAL=1
+   RESFIRE=2
+   RESCOLD=2
+   RESPOISON=2
+   RESENERGY=3
+
+[ITEMDEF 04d0b]
+DEFNAME=i_gargish_amulet
+NAME=gargish amulet
+TYPE=t_armor
+RESOURCES=3 i_ingot_iron
+SKILLMAKE=Blacksmithing 60.0
+CATEGORY=Provisions - Jewels and Jewelry
+SUBSECTION=Jewelry
+DESCRIPTION=Gargish Amulet
+canuse=can_u_gargoyle
+TEVENTS=t_equipitem
+ON=@Create
+   HITPOINTS={30 40}
+   RESPHYSICAL=1
+   RESFIRE=2
+   RESCOLD=2
+   RESPOISON=2
+   RESENERGY=3
+
 
 [ITEMDEF 09e25]
 DEFNAME=i_talisman_craftsman_tailoring

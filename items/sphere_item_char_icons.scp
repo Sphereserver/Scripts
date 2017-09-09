@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Wednesday, May 24, 2017
+// FILE LAST UPDATED: Saturday, Sept 9, 2017
 //
 VERSION=0.56d
 
@@ -3850,5 +3850,50 @@ TDATA3=c_drake_stygian_elemental
 CATEGORY=Miscellaneous
 SUBSECTION=Character Icons
 DESCRIPTION=Stygian Drake (elemental)
+
+[ITEMDEF 09f49]
+DEFNAME=i_pet_hydros
+NAME=Hydros
+TYPE=t_figurine
+TDATA3=c_hydros
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Hydros
+
+[ITEMDEF 09f4c]
+DEFNAME=i_pet_stratos
+NAME=Stratos
+TYPE=t_figurine
+TDATA3=c_stratos
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Stratos
+
+[ITEMDEF 09f4d]
+DEFNAME=i_pet_pyros
+NAME=Pyros
+TYPE=t_figurine
+TDATA3=c_pyros
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Pyros
+
+[ITEMDEF 09f4e]
+DEFNAME=i_pet_jack_in_the_box
+NAME=Jack in the Box
+TYPE=t_figurine
+TDATA3=c_jack_in_the_box
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Jack in the Box
+
+[ITEMDEF 09fa1]
+DEFNAME=i_pet_lithos
+NAME=Lithos
+TYPE=t_figurine
+TDATA3=c_lithos
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Lithos
 
 [EOF]

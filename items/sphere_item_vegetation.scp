@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Sept 2, 2017
+// FILE LAST UPDATED: Saturday, Sept 9, 2017
 //
 VERSION=0.56d
 
@@ -299,7 +299,7 @@ CATEGORY=Vegetation
 SUBSECTION=Plants and Flowers
 DESCRIPTION=Vines
 ON=@Create
-   FRUIT={ i_fruit_watermelon, i_fruit_pumpkin, i_fruit_pumpkin_2, i_fruit_pumpkin_3, i_fruit_pumpkin_tall, i_fruit_gourd_yellow, i_fruit_gourd_green, i_fruit_cantaloupe, i_fruit_honeydewmelon, i_fruit_squash }
+   FRUIT={ i_fruit_watermelon, i_fruit_pumpkin, i_fruit_pumpkin_2, i_fruit_pumpkin_3, i_fruit_gourd_yellow, i_fruit_gourd_green, i_fruit_cantaloupe, i_fruit_honeydewmelon, i_fruit_squash }
 
 [ITEMDEF 0c5f]
 //vines
@@ -313,7 +313,7 @@ CATEGORY=Vegetation
 SUBSECTION=Plants and Flowers
 DESCRIPTION=Vines
 ON=@Create
-   FRUIT={ i_fruit_watermelon, i_fruit_pumpkin, i_fruit_pumpkin_2, i_fruit_pumpkin_3, i_fruit_pumpkin_tall, i_fruit_gourd_yellow, i_fruit_gourd_green, i_fruit_cantaloupe, i_fruit_honeydewmelon, i_fruit_squash }
+   FRUIT={ i_fruit_watermelon, i_fruit_pumpkin, i_fruit_pumpkin_2, i_fruit_pumpkin_3, i_fruit_gourd_yellow, i_fruit_gourd_green, i_fruit_cantaloupe, i_fruit_honeydewmelon, i_fruit_squash }
 
 [ITEMDEF 0c60]
 //vines
@@ -326,7 +326,7 @@ CATEGORY=Vegetation
 SUBSECTION=Plants and Flowers
 DESCRIPTION=Vines
 ON=@Create
-   FRUIT={ i_fruit_watermelon, i_fruit_pumpkin, i_fruit_pumpkin_2, i_fruit_pumpkin_3, i_fruit_pumpkin_tall, i_fruit_gourd_yellow, i_fruit_gourd_green, i_fruit_cantaloupe, i_fruit_honeydewmelon, i_fruit_squash }
+   FRUIT={ i_fruit_watermelon, i_fruit_pumpkin, i_fruit_pumpkin_2, i_fruit_pumpkin_3, i_fruit_gourd_yellow, i_fruit_gourd_green, i_fruit_cantaloupe, i_fruit_honeydewmelon, i_fruit_squash }
 
 [ITEMDEF 0c61]
 DEFNAME=i_crop_turnip1
@@ -819,7 +819,6 @@ DESCRIPTION=Bulrushes
 //coconut palm
 DEFNAME=i_tree_coconutpalm
 VALUE=2
-// TYPE=t_tree
 TYPE=t_foliage
 CATEGORY=Vegetation
 SUBSECTION=Trees
@@ -831,7 +830,6 @@ FRUIT=i_fruit_coconut
 [ITEMDEF 0c96]
 //date palm
 DEFNAME=i_tree_datepalm
-// TYPE=t_tree
 TYPE=t_foliage
 CATEGORY=Vegetation
 SUBSECTION=Trees
@@ -1352,7 +1350,6 @@ VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Trees
 DESCRIPTION=Oak Leaves
-TYPE=t_tree
 
 [ITEMDEF 0cdc]
 //oak leaves
@@ -1362,7 +1359,6 @@ VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Trees
 DESCRIPTION=Oak Leaves
-TYPE=t_tree
 
 [ITEMDEF 0cdd]
 //oak tree
@@ -1381,7 +1377,6 @@ VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Trees
 DESCRIPTION=Oak Leaves
-TYPE=t_tree
 
 [ITEMDEF 0cdf]
 //oak leaves
@@ -1391,7 +1386,6 @@ VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Trees
 DESCRIPTION=Oak Leaves
-TYPE=t_tree
 
 [ITEMDEF 0ce0]
 //walnut tree
@@ -5327,19 +5321,15 @@ DUPEITEM=04128
 
 
 [ITEMDEF 042b9]
-DEFNAME=i_potted_tree
-TYPE=t_normal
-WEIGHT=18.0
-RESOURCES=1 i_pot_flower_large,1 i_dirt
+DEFNAME=i_potted_dying_plant_large
+NAME=large dying plant
 CATEGORY=Decoration - Potted Plants & Vases
 SUBSECTION=Potted Trees
 DESCRIPTION=Potted Tree 1
 
 [ITEMDEF 042ba]
-DEFNAME=i_potted_tree_2
-TYPE=t_normal
-WEIGHT=18.0
-RESOURCES=1 i_pot_flower_large,1 i_dirt
+DEFNAME=i_potted_dying_plant
+NAME=dying plant
 CATEGORY=Decoration - Potted Plants & Vases
 SUBSECTION=Potted Trees
 DESCRIPTION=Potted Tree 2
@@ -5348,7 +5338,6 @@ DESCRIPTION=Potted Tree 2
 [ITEMDEF 042c7]
 DEFNAME=i_tree_silver_sapling
 NAME=silver sapling
-WEIGHT=40.0
 CATEGORY=Decoration - Potted Plants & Vases
 SUBSECTION=Potted Trees
 DESCRIPTION=Silver Sapling (unpotted)
@@ -5356,7 +5345,6 @@ DESCRIPTION=Silver Sapling (unpotted)
 [ITEMDEF 042c8]
 DEFNAME=i_tree_silver_sapling_potted
 NAME=potted silver sapling
-WEIGHT=40.0
 CATEGORY=Decoration - Potted Plants & Vases
 SUBSECTION=Potted Trees
 DESCRIPTION=Silver Sapling (potted)
@@ -5456,6 +5444,65 @@ SUBSECTION=Plants and Flowers
 DESCRIPTION=Vanilla Plant (mature)
 
 
+[ITEMDEF 09962]
+DEFNAME=i_elephant_ear_dieffenbachia
+NAME=Elephant Ear Dieffenbachia
+FLIP=1
+CATEGORY=Decoration - Potted Plants & Vases
+SUBSECTION=Potted Trees
+DESCRIPTION=Elephant Ear Dieffenbachia
+DUPELIST=09963
+
+[ITEMDEF 09963]
+//elephant ear dieffenbachia
+DUPEITEM=09962
+
+[ITEMDEF 09964]
+DEFNAME=i_staghorn_fern
+NAME=Staghorn Fern
+FLIP=1
+CATEGORY=Vegetation
+SUBSECTION=Plants and Flowers
+DESCRIPTION=Staghorn Fern
+DUPELIST=09965
+
+[ITEMDEF 09965]
+//staghorn fern
+DUPEITEM=09964
+
+[ITEMDEF 09967]
+DEFNAME=i_enormous_venus_flytrap
+NAME=Enormous Venus Flytrap
+TYPE=t_trash_can
+TDATA2=0107
+FLIP=1
+CATEGORY=Decoration - Potted Plants & Vases
+SUBSECTION=Potted Trees
+DESCRIPTION=Enormous Venus Flytrap
+DUPELIST=09968
+ON=@Create
+   COLOR=colors_red
+
+[ITEMDEF 09968]
+//enormous venus flytrap
+DUPEITEM=09967
+
+[ITEMDEF 09969]
+DEFNAME=i_japanese_maple
+NAME=Japanese Maple
+FLIP=1
+CATEGORY=Decoration - Potted Plants & Vases
+SUBSECTION=Potted Trees
+DESCRIPTION=Japanese Maple
+DUPELIST=0996a
+ON=@Create
+   COLOR=colors_red
+
+[ITEMDEF 0996a]
+//japanese maple
+DUPEITEM=09969
+
+
 [ITEMDEF 09b10]
 DEFNAME=i_potted_orchid
 NAME=Potted Plant
@@ -5483,5 +5530,22 @@ SUBSECTION=Potted Trees
 DESCRIPTION=Potted Amaryllis
 ON=@Create
    COLOR={0 1 02 1 012 1 021 1 0e1 1 01bb 1 043f 1 044b 1 044c 1 0485 1 048d 1 048e 1 0780 1 0813 1 0aa1 1 0ab8 1}
+
+
+[ITEMDEF 09e38]
+DEFNAME=i_tree_plum
+NAME=plum tree
+TYPE=t_tree
+CATEGORY=Vegetation
+SUBSECTION=Trees
+DESCRIPTION=Plum Tree
+
+[ITEMDEF 09e39]
+DEFNAME=i_foliage_plum
+NAME=plum tree
+TYPE=t_foliage
+CATEGORY=Vegetation
+SUBSECTION=Trees
+DESCRIPTION=Plum Leaves
 
 [EOF]

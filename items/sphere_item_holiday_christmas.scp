@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, Sept 4, 2017
+// FILE LAST UPDATED: Saturday, Sept 9, 2017
 //
 VERSION=0.56d
 
@@ -634,7 +634,7 @@ DUPEITEM=04214
 
 
 [ITEMDEF 0456e]
-DEFNAME=i_snow_statue_pegasus
+DEFNAME=i_statue_snow_pegasus
 NAME=snow statue
 FLIP=1
 CATEGORY=Christmas
@@ -648,7 +648,7 @@ DUPEITEM=0456e
 
 
 [ITEMDEF 04578]
-DEFNAME=i_snow_statue_seahorse
+DEFNAME=i_statue_snow_seahorse
 NAME=snow statue
 FLIP=1
 CATEGORY=Christmas
@@ -661,7 +661,7 @@ DUPELIST=04579
 DUPEITEM=04578
 
 [ITEMDEF 0457a]
-DEFNAME=i_snow_statue_mermaid
+DEFNAME=i_statue_snow_mermaid
 NAME=snow statue
 FLIP=1
 CATEGORY=Christmas
@@ -674,7 +674,7 @@ DUPELIST=0457b
 DUPEITEM=0457a
 
 [ITEMDEF 0457c]
-DEFNAME=i_snow_statue_gryphon
+DEFNAME=i_statue_snow_gryphon
 NAME=snow statue
 FLIP=1
 CATEGORY=Christmas
@@ -897,10 +897,10 @@ DUPEITEM=047da
 
 
 [ITEMDEF 04a98]
-DEFNAME=i_santa_statue_east
+DEFNAME=i_statue_santa_east
 NAME=santa statue
 TYPE=t_light_out
-TDATA3=i_santa_statue_east_lit
+TDATA3=i_statue_santa_east_lit
 CATEGORY=Christmas
 SUBSECTION=Lightsources
 DESCRIPTION=Santa Statue (unlit)
@@ -910,10 +910,10 @@ ON=@ClientTooltip
    SRC.ADDCLILOC 502696	//turned off
 
 [ITEMDEF 04a99]
-DEFNAME=i_santa_statue_south
+DEFNAME=i_statue_santa_south
 NAME=santa statue
 TYPE=t_light_out
-TDATA3=i_santa_statue_south_lit
+TDATA3=i_statue_santa_south_lit
 CATEGORY=Christmas
 SUBSECTION=Lightsources
 DESCRIPTION=Santa Statue (unlit)
@@ -923,10 +923,10 @@ ON=@ClientTooltip
    SRC.ADDCLILOC 502696	//turned off
 
 [ITEMDEF 04a9a]
-DEFNAME=i_santa_statue_east_lit
+DEFNAME=i_statue_santa_east_lit
 NAME=santa statue
 TYPE=t_light_lit
-TDATA3=i_santa_statue_east
+TDATA3=i_statue_santa_east
 CATEGORY=Christmas
 SUBSECTION=Lightsources
 DESCRIPTION=Santa Statue (lit)
@@ -936,10 +936,10 @@ ON=@ClientTooltip
    SRC.ADDCLILOC 502695	//turned on
 
 [ITEMDEF 04a9b]
-DEFNAME=i_santa_statue_south_lit
+DEFNAME=i_statue_santa_south_lit
 NAME=santa statue
 TYPE=t_light_lit
-TDATA3=i_santa_statue_south
+TDATA3=i_statue_santa_south
 CATEGORY=Christmas
 SUBSECTION=Lightsources
 DESCRIPTION=Santa Statue (lit)

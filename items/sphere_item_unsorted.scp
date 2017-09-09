@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Sept 2, 2017
+// FILE LAST UPDATED: Saturday, Sept 9, 2017
 //
 VERSION=0.56d
 
@@ -5301,11 +5301,6 @@ DESCRIPTION=Sea Sponge (5)
 //Easter Egg (bronze)
 [ITEMDEF 04d09]
 //Easter Egg (silver)
-[ITEMDEF 04d0a]
-//Gargish Necklace
-[ITEMDEF 04d0b]
-//Gargish Necklace
-[ITEMDEF 04d0c]
 
 [ITEMDEF 0571c]
 // This is the base ID of a number of imbuing ingredients.
@@ -5904,29 +5899,8 @@ DUPEITEM=09706
 [ITEMDEF 09961]
 //silver platter
 
-[ITEMDEF 09962]
-//potted elephant fern
-[ITEMDEF 09963]
-//potted elephant fern
-
-[ITEMDEF 09964]
-//potted wall fern
-[ITEMDEF 09965]
-//potted wall fern
-
 [ITEMDEF 09966]
 //amalgamator
-
-[ITEMDEF 09967]
-//venus flytrap
-[ITEMDEF 09968]
-//venus flytrap
-
-[ITEMDEF 0996a]
-//japanese maple
-[ITEMDEF 0996b]
-//japanese maple
-
 
 [ITEMDEF 075bf]
 // NoName // orc
@@ -6043,15 +6017,6 @@ DUPELIST=09c19
 [ITEMDEF 09c19]
 //auction safe
 DUPEITEM=09c18
-
-[ITEMDEF 09e1a]
-DEFNAME=i_giftbox_christmas
-TYPE=t_container
-TDATA2=0122
-TDATA3=156,166
-CATEGORY=Provisions - Miscellaneous
-SUBSECTION=Containers
-DESCRIPTION=Gift Box (Christmas)
 
 [ITEMDEF 09f13]
 //Easter Egg
