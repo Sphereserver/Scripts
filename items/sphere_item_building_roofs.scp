@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, May 14, 2017
+// FILE LAST UPDATED: Sunday, Sept 17, 2017
 //
 VERSION=0.56d
 
@@ -3007,87 +3007,6 @@ DUPEITEM=035be
 //crystal roof
 DUPEITEM=035be
 
-
-[ITEMDEF 03623]
-DEFNAME=i_roof_shadow
-NAME=roof
-TYPE=t_roof
-CATEGORY=Buildings - Roofs
-SUBSECTION=Shadow Roof
-DESCRIPTION=Roof
-DUPELIST=03624,03625,03626,03627,03628,03629,0362a,0362b,0362c,0362d,0362e,0362f,03630,03631,03632,03633,03634,03635
-
-[ITEMDEF 03624]
-//Shadow Roof
-DUPEITEM=03623
-
-[ITEMDEF 03625]
-//Shadow Roof
-DUPEITEM=03623
-
-[ITEMDEF 03626]
-//Shadow Roof
-DUPEITEM=03623
-
-[ITEMDEF 03627]
-//Shadow Roof
-DUPEITEM=03623
-
-[ITEMDEF 03628]
-//Shadow Roof
-DUPEITEM=03623
-
-[ITEMDEF 03629]
-//Shadow Roof
-DUPEITEM=03623
-
-[ITEMDEF 0362a]
-//Shadow Roof
-DUPEITEM=03623
-
-[ITEMDEF 0362b]
-//Shadow Roof
-DUPEITEM=03623
-
-[ITEMDEF 0362c]
-//Shadow Roof
-DUPEITEM=03623
-
-[ITEMDEF 0362d]
-//Shadow Roof
-DUPEITEM=03623
-
-[ITEMDEF 0362e]
-//Shadow Roof
-DUPEITEM=03623
-
-[ITEMDEF 0362f]
-//Shadow Roof
-DUPEITEM=03623
-
-[ITEMDEF 03630]
-//Shadow Roof
-DUPEITEM=03623
-
-[ITEMDEF 03631]
-//Shadow Roof
-DUPEITEM=03623
-
-[ITEMDEF 03632]
-//Shadow Roof
-DUPEITEM=03623
-
-[ITEMDEF 03633]
-//Shadow Roof
-DUPEITEM=03623
-
-[ITEMDEF 03634]
-//Shadow Roof
-DUPEITEM=03623
-
-[ITEMDEF 03635]
-//Shadow Roof
-DUPEITEM=03623
 
 [ITEMDEF 09b00]
 DEFNAME=i_roof_jungle

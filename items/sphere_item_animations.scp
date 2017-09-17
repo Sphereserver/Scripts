@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, Sept 4, 2017
+// FILE LAST UPDATED: Sunday, Sept 17, 2017
 //
 VERSION=0.56d
 
@@ -706,74 +706,6 @@ DUPEITEM=022c6
 [ITEMDEF 022c8]
 //physical reflect (animation frame)
 DUPEITEM=022c6
-
-[ITEMDEF 03660]
-DEFNAME=i_globe_animation
-NAME=Sosaria
-CATEGORY=Animations
-SUBSECTION=Globe
-DESCRIPTION=Globe
-DUPELIST=3661,03662,03663,03664,03665,03666,03667,03668,03669,0366a,0366b,0366c,0366d,0366e,0366f
-
-[ITEMDEF 03661]
-//Globe (animation frame)
-DUPEITEM=03660
-
-[ITEMDEF 03662]
-//Globe (animation frame)
-DUPEITEM=03660
-
-[ITEMDEF 03663]
-//Globe (animation frame)
-DUPEITEM=03660
-
-[ITEMDEF 03664]
-//Globe (animation frame)
-DUPEITEM=03660
-
-[ITEMDEF 03665]
-//Globe (animation frame)
-DUPEITEM=03660
-
-[ITEMDEF 03666]
-//Globe (animation frame)
-DUPEITEM=03660
-
-[ITEMDEF 03667]
-//Globe (animation frame)
-DUPEITEM=03660
-
-[ITEMDEF 03668]
-//Globe (animation frame)
-DUPEITEM=03660
-
-[ITEMDEF 03669]
-//Globe (animation frame)
-DUPEITEM=03660
-
-[ITEMDEF 0366a]
-//Globe (animation frame)
-DUPEITEM=03660
-
-[ITEMDEF 0366b]
-//Globe (animation frame)
-DUPEITEM=03660
-
-[ITEMDEF 0366c]
-//Globe (animation frame)
-DUPEITEM=03660
-
-[ITEMDEF 0366d]
-//Globe (animation frame)
-DUPEITEM=03660
-
-[ITEMDEF 0366e]
-//Globe (animation frame)
-DUPEITEM=03660
-
-[ITEMDEF 0366f]
-//Globe (animation frame)
-DUPEITEM=03660
 
 [ITEMDEF 036b0]
 DEFNAME=i_fx_explode

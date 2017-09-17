@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Wednesday, May 24, 2017
+// FILE LAST UPDATED: Sunday, Sept 17, 2017
 //
 VERSION=0.56d
 
@@ -73,24 +73,6 @@ DUPELIST=02d74
 [ITEMDEF 02d74]
 //tattered wall map
 DUPEITEM=02d73
-
-
-[ITEMDEF 03657]
-DEFNAME=i_globe_of_sosaria
-NAME=globe of sosaria
-FLIP=1
-CATEGORY=Items by Professions
-SUBSECTION=Cartographer
-DESCRIPTION=Globe of Sosaria
-DUPELIST=03658,03659
-
-[ITEMDEF 03658]
-//globe of sosaria
-DUPEITEM=03657
-
-[ITEMDEF 03659]
-//globe of sosaria
-DUPEITEM=03657
 
 
 [ITEMDEF 09d3c]

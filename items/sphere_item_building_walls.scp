@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, Aug 28, 2017
+// FILE LAST UPDATED: Sunday, Sept 17, 2017
 //
 VERSION=0.56d
 
@@ -6351,120 +6351,6 @@ DUPEITEM=035d7
 DUPEITEM=035d7
 
 
-[ITEMDEF 0360e]
-DEFNAME=i_wall_shadow
-NAME=wall
-TYPE=t_wall
-CATEGORY=Buildings - Walls
-SUBSECTION=Shadow Wall
-DESCRIPTION=Wall
-DUPELIST=0360f,03610,03611,03612,03613,03614,03615,03616,03617,03618,03619,03636,03637,03638,03639,0363a.0363b,03647,03648,03649,0364a,03674,03675,03676,03677,0369f
-
-[ITEMDEF 0360f]
-//Shadow Wall
-DUPEITEM=0360e
-
-[ITEMDEF 03610]
-//Shadow Wall
-DUPEITEM=0360e
-
-[ITEMDEF 03611]
-//Shadow Wall
-DUPEITEM=0360e
-
-[ITEMDEF 03612]
-//Shadow Wall
-DUPEITEM=0360e
-
-[ITEMDEF 03613]
-//Shadow Wall
-DUPEITEM=0360e
-
-[ITEMDEF 03614]
-//Shadow Wall
-DUPEITEM=0360e
-
-[ITEMDEF 03615]
-//Shadow Wall
-DUPEITEM=0360e
-
-[ITEMDEF 03616]
-//Shadow Wall
-DUPEITEM=0360e
-
-[ITEMDEF 03617]
-//Shadow Wall
-DUPEITEM=0360e
-
-[ITEMDEF 03618]
-//Shadow Wall
-DUPEITEM=0360e
-
-[ITEMDEF 03619]
-//Shadow Wall
-DUPEITEM=0360e
-
-[ITEMDEF 03636]
-//Shadow Wall
-DUPEITEM=0360e
-
-[ITEMDEF 03637]
-//Shadow Wall
-DUPEITEM=0360e
-
-[ITEMDEF 03638]
-//Shadow Wall
-DUPEITEM=0360e
-
-[ITEMDEF 03639]
-//Shadow Wall
-DUPEITEM=0360e
-
-[ITEMDEF 0363a]
-//Shadow Wall
-DUPEITEM=0360e
-
-[ITEMDEF 0363b]
-//Shadow Wall
-DUPEITEM=0360e
-
-[ITEMDEF 0363c]
-DEFNAME=i_wall_shadow_window
-NAME=wall
-TYPE=t_window
-CATEGORY=Buildings - Walls
-SUBSECTION=Shadow Wall
-DESCRIPTION=Wall (window)
-DUPELIST=0363d,0363e,0363f
-
-[ITEMDEF 0363d]
-//shadow wall (window)
-DUPEITEM=0363c
-
-[ITEMDEF 0363e]
-//shadow wall (window)
-DUPEITEM=0363c
-
-[ITEMDEF 0363f]
-//shadow wall (window)
-DUPEITEM=0363c
-
-[ITEMDEF 03647]
-//Shadow Wall
-DUPEITEM=0360e
-
-[ITEMDEF 03648]
-//Shadow Wall
-DUPEITEM=0360e
-
-[ITEMDEF 03649]
-//Shadow Wall
-DUPEITEM=0360e
-
-[ITEMDEF 0364a]
-//Shadow Wall
-DUPEITEM=0360e
-
 [ITEMDEF 03670]
 //Crystal wall (quarter)
 DUPEITEM=035d7
@@ -6480,26 +6366,6 @@ DUPEITEM=035d7
 [ITEMDEF 03673]
 //Crystal wall (quarter)
 DUPEITEM=035d7
-
-[ITEMDEF 03674]
-//Shadow Wall (quarter)
-DUPEITEM=0360e
-
-[ITEMDEF 03675]
-//Shadow Wall (quarter)
-DUPEITEM=0360e
-
-[ITEMDEF 03676]
-//Shadow Wall (quarter)
-DUPEITEM=0360e
-
-[ITEMDEF 03677]
-//Shadow Wall (quarter)
-DUPEITEM=0360e
-
-[ITEMDEF 0369f]
-//Shadow Wall (arch)
-DUPEITEM=0360e
 
 
 [ITEMDEF 03ef2]

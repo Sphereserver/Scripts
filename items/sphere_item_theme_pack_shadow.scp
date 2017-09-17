@@ -1,0 +1,743 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2017
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Sunday, Sept 17, 2017
+//
+VERSION=0.56d
+
+
+[ITEMDEF 03609]
+DEFNAME=i_stairs_shadow
+NAME=shadow stairs
+RESOURCES=100 i_rock_plain
+CATEGORY=Buildings - Stairs
+SUBSECTION=Shadow Stairs
+DESCRIPTION=Stair
+DUPELIST=0360a,0360b,0360c,0360d
+
+[ITEMDEF 0360a]
+//shadow stairs
+NAME=shadow stairs
+DUPEITEM=03609
+
+[ITEMDEF 0360b]
+//shadow stairs
+NAME=shadow stairs
+DUPEITEM=03609
+
+[ITEMDEF 0360c]
+//shadow stairs
+NAME=shadow stairs
+DUPEITEM=03609
+
+[ITEMDEF 0360d]
+//shadow stairs
+NAME=shadow stairs
+DUPEITEM=03609
+
+[ITEMDEF 0360e]
+DEFNAME=i_wall_shadow
+NAME=shadow arch
+TYPE=t_wall
+CATEGORY=Buildings - Walls
+SUBSECTION=Shadow Wall
+DESCRIPTION=Wall
+DUPELIST=0360f,03610,03611,03612,03613,03614,03615,03616,03617,03618,03619,03636,03637,03638,03639,0363a,0363b,0363c,0363d,0363e,0363f,03647,03648,03649,0364a,03674,03675,03676,03677,0369f
+
+[ITEMDEF 0360f]
+//shadow wall (arch)
+NAME=shadow arch
+DUPEITEM=0360e
+
+[ITEMDEF 03610]
+//shadow wall (arch)
+NAME=shadow arch
+DUPEITEM=0360e
+
+[ITEMDEF 03611]
+//shadow wall (arch)
+NAME=shadow arch
+DUPEITEM=0360e
+
+[ITEMDEF 03612]
+//shadow wall (full)
+NAME=shadow wall
+DUPEITEM=0360e
+
+[ITEMDEF 03613]
+//shadow wall (full)
+NAME=shadow wall
+DUPEITEM=0360e
+
+[ITEMDEF 03614]
+//shadow wall (quarter)
+NAME=shadow wall
+DUPEITEM=0360e
+
+[ITEMDEF 03615]
+//shadow wall (half)
+NAME=shadow wall
+DUPEITEM=0360e
+
+[ITEMDEF 03616]
+//shadow wall (full)
+NAME=shadow wall
+DUPEITEM=0360e
+
+[ITEMDEF 03617]
+//shadow wall (quarter)
+NAME=shadow wall
+DUPEITEM=0360e
+
+[ITEMDEF 03618]
+//shadow wall (half)
+NAME=shadow wall
+DUPEITEM=0360e
+
+[ITEMDEF 03619]
+//shadow wall (full)
+NAME=shadow wall
+DUPEITEM=0360e
+
+[ITEMDEF 0361a]
+DEFNAME=i_floor_shadow
+NAME=shadow floor
+TYPE=t_floor
+FLIP=1
+CATEGORY=Buildings - Floors
+SUBSECTION=Pavers (shadow)
+DESCRIPTION=Paver
+DUPELIST=0361b,0361c,0361d,0361e,0361f,03620,03621,03622
+
+[ITEMDEF 0361b]
+//shadow floor
+NAME=shadow floor
+DUPEITEM=0361a
+
+[ITEMDEF 0361c]
+//shadow floor
+NAME=shadow floor
+DUPEITEM=0361a
+
+[ITEMDEF 0361d]
+//shadow floor
+NAME=shadow floor
+DUPEITEM=0361a
+
+[ITEMDEF 0361e]
+//shadow floor
+NAME=shadow floor
+DUPEITEM=0361a
+
+[ITEMDEF 0361f]
+//shadow floor
+NAME=shadow floor
+DUPEITEM=0361a
+
+[ITEMDEF 03620]
+//shadow floor
+NAME=shadow floor
+DUPEITEM=0361a
+
+[ITEMDEF 03621]
+//shadow floor
+NAME=shadow floor
+DUPEITEM=0361a
+
+[ITEMDEF 03622]
+//shadow floor
+NAME=shadow floor
+DUPEITEM=0361a
+
+[ITEMDEF 03623]
+DEFNAME=i_roof_shadow
+NAME=shadow roof
+TYPE=t_roof
+CATEGORY=Buildings - Roofs
+SUBSECTION=Shadow Roof
+DESCRIPTION=Roof
+DUPELIST=03624,03625,03626,03627,03628,03629,0362a,0362b,0362c,0362d,0362e,0362f,03630,03631,03632,03633,03634,03635
+
+[ITEMDEF 03624]
+//shadow roof
+NAME=shadow roof
+DUPEITEM=03623
+
+[ITEMDEF 03625]
+//shadow roof
+NAME=shadow roof
+DUPEITEM=03623
+
+[ITEMDEF 03626]
+//shadow roof
+NAME=shadow roof
+DUPEITEM=03623
+
+[ITEMDEF 03627]
+//shadow roof
+NAME=shadow roof
+DUPEITEM=03623
+
+[ITEMDEF 03628]
+//shadow roof
+NAME=shadow roof
+DUPEITEM=03623
+
+[ITEMDEF 03629]
+//shadow roof
+NAME=shadow roof
+DUPEITEM=03623
+
+[ITEMDEF 0362a]
+//shadow roof
+NAME=shadow roof
+DUPEITEM=03623
+
+[ITEMDEF 0362b]
+//shadow roof
+NAME=shadow roof
+DUPEITEM=03623
+
+[ITEMDEF 0362c]
+//shadow roof
+NAME=shadow roof
+DUPEITEM=03623
+
+[ITEMDEF 0362d]
+//shadow roof
+NAME=shadow roof
+DUPEITEM=03623
+
+[ITEMDEF 0362e]
+//shadow roof
+NAME=shadow roof
+DUPEITEM=03623
+
+[ITEMDEF 0362f]
+//shadow roof
+NAME=shadow roof
+DUPEITEM=03623
+
+[ITEMDEF 03630]
+//shadow roof
+NAME=shadow roof
+DUPEITEM=03623
+
+[ITEMDEF 03631]
+//shadow roof
+NAME=shadow roof
+DUPEITEM=03623
+
+[ITEMDEF 03632]
+//shadow roof
+NAME=shadow roof
+DUPEITEM=03623
+
+[ITEMDEF 03633]
+//shadow roof
+NAME=shadow roof
+DUPEITEM=03623
+
+[ITEMDEF 03634]
+//shadow roof
+NAME=shadow roof
+DUPEITEM=03623
+
+[ITEMDEF 03635]
+//shadow roof
+NAME=shadow roof
+DUPEITEM=03623
+
+[ITEMDEF 03636]
+//shadow wall (quarter)
+NAME=shadow wall
+DUPEITEM=0360e
+
+[ITEMDEF 03637]
+//shadow wall (quarter)
+NAME=shadow wall
+DUPEITEM=0360e
+
+[ITEMDEF 03638]
+//shadow wall (half)
+NAME=shadow wall
+DUPEITEM=0360e
+
+[ITEMDEF 03639]
+//shadow wall (half)
+NAME=shadow wall
+DUPEITEM=0360e
+
+[ITEMDEF 0363a]
+//shadow wall (full)
+NAME=shadow wall
+DUPEITEM=0360e
+
+[ITEMDEF 0363b]
+//shadow wall (full)
+NAME=shadow wall
+DUPEITEM=0360e
+
+[ITEMDEF 0363c]
+//shadow wall (window)
+DUPEITEM=0363e
+
+[ITEMDEF 0363d]
+//shadow wall (window)
+DUPEITEM=0363e
+
+[ITEMDEF 0363e]
+//shadow wall (window)
+DUPEITEM=0363e
+
+[ITEMDEF 0363f]
+//shadow wall (window)
+DUPEITEM=0363e
+
+
+[ITEMDEF 03647]
+//shadow wall (tattered)
+NAME=shadow wall
+DUPEITEM=0360e
+
+[ITEMDEF 03648]
+//shadow wall (tattered)
+NAME=shadow wall
+DUPEITEM=0360e
+
+[ITEMDEF 03649]
+//shadow wall (tattered)
+NAME=shadow wall
+DUPEITEM=0360e
+
+[ITEMDEF 0364a]
+//shadow wall (tattered)
+NAME=shadow wall
+DUPEITEM=0360e
+
+[ITEMDEF 0364b]
+DEFNAME=i_statue_fire_demon
+NAME=fire demon statue
+FLIP=1
+CATEGORY=Shadow
+SUBSECTION=Decoration
+DESCRIPTION=Fire Demon Statue
+DUPELIST=0369b
+
+[ITEMDEF 0364c]
+DEFNAME=i_spike_column
+NAME=spike column
+CATEGORY=Shadow
+SUBSECTION=Decoration
+DESCRIPTION=Spike Column
+
+[ITEMDEF 0364d]
+DEFNAME=i_spike_post
+NAME=spike post
+FLIP=1
+CATEGORY=Shadow
+SUBSECTION=Decoration
+DESCRIPTION=Spike Post
+DUPELIST=0369c
+
+[ITEMDEF 0364e]
+DEFNAME=i_obsidian_rock
+NAME=obsidian rock
+CATEGORY=Shadow
+SUBSECTION=Decoration
+DESCRIPTION=Obsidian Rock
+
+[ITEMDEF 0364f]
+DEFNAME=i_obsidian_pillar
+NAME=obsidian pillar
+CATEGORY=Shadow
+SUBSECTION=Decoration
+DESCRIPTION=Obsidian Pillar
+
+[ITEMDEF 03650]
+DEFNAME=i_shadow_pillar
+NAME=shadow pillar
+CATEGORY=Shadow
+SUBSECTION=Decoration
+DESCRIPTION=Shadow Pillar
+
+[ITEMDEF 03651]
+//shadow fire pit (multi-part)(closed)
+NAME=shadow fire pit
+
+[ITEMDEF 03652]
+//shadow fire pit (multi-part)(closed)
+NAME=shadow fire pit
+
+[ITEMDEF 03653]
+//shadow fire pit (multi-part)(closed)
+NAME=shadow fire pit
+
+[ITEMDEF 03654]
+//shadow fire pit (multi-part)(open)
+NAME=shadow fire pit
+
+[ITEMDEF 03655]
+//shadow fire pit (multi-part)(open)
+NAME=shadow fire pit
+
+[ITEMDEF 03656]
+//shadow fire pit (multi-part)(open)
+NAME=shadow fire pit
+
+[ITEMDEF 03657]
+//globe of sosaria (multi-part)
+NAME=Globe of Sosaria
+
+[ITEMDEF 03658]
+//globe of sosaria (multi-part)
+NAME=Globe of Sosaria
+
+[ITEMDEF 03659]
+//globe of sosaria (multi-part)
+NAME=Globe of Sosaria
+
+[ITEMDEF 0365a]
+//shadow altar (multi-part)(south)
+NAME=shadow altar
+
+[ITEMDEF 0365b]
+//shadow altar (multi-part)(south)
+NAME=shadow altar
+
+[ITEMDEF 0365c]
+//shadow banner (multi-part)(south)
+NAME=shadow banner
+
+[ITEMDEF 0365d]
+//shadow banner (multi-part)(south)
+NAME=shadow banner
+
+[ITEMDEF 0365e]
+//shadow banner (multi-part)(east)
+NAME=shadow banner
+
+[ITEMDEF 0365f]
+//shadow banner (multi-part)(east)
+NAME=shadow banner
+
+[ITEMDEF 03660]
+//globe of sosaria (multi-part)(anim)
+NAME=Globe of Sosaria
+DUPELIST=3661,03662,03663,03664,03665,03666,03667,03668,03669,0366a,0366b,0366c,0366d,0366e,0366f
+
+[ITEMDEF 03661]
+//globe of sosaria (multi-part)(anim)
+NAME=Globe of Sosaria
+DUPEITEM=03660
+
+[ITEMDEF 03662]
+//globe of sosaria (multi-part)(anim)
+NAME=Globe of Sosaria
+DUPEITEM=03660
+
+[ITEMDEF 03663]
+//globe of sosaria (multi-part)(anim)
+NAME=Globe of Sosaria
+DUPEITEM=03660
+
+[ITEMDEF 03664]
+//globe of sosaria (multi-part)(anim)
+NAME=Globe of Sosaria
+DUPEITEM=03660
+
+[ITEMDEF 03665]
+//globe of sosaria (multi-part)(anim)
+NAME=Globe of Sosaria
+DUPEITEM=03660
+
+[ITEMDEF 03666]
+//globe of sosaria (multi-part)(anim)
+NAME=Globe of Sosaria
+DUPEITEM=03660
+
+[ITEMDEF 03667]
+//globe of sosaria (multi-part)(anim)
+NAME=Globe of Sosaria
+DUPEITEM=03660
+
+[ITEMDEF 03668]
+//globe of sosaria (multi-part)(anim)
+NAME=Globe of Sosaria
+DUPEITEM=03660
+
+[ITEMDEF 03669]
+//globe of sosaria (multi-part)(anim)
+NAME=Globe of Sosaria
+DUPEITEM=03660
+
+[ITEMDEF 0366a]
+//globe of sosaria (multi-part)(anim)
+NAME=Globe of Sosaria
+DUPEITEM=03660
+
+[ITEMDEF 0366b]
+//globe of sosaria (multi-part)(anim)
+NAME=Globe of Sosaria
+DUPEITEM=03660
+
+[ITEMDEF 0366c]
+//globe of sosaria (multi-part)(anim)
+NAME=Globe of Sosaria
+DUPEITEM=03660
+
+[ITEMDEF 0366d]
+//globe of sosaria (multi-part)(anim)
+NAME=Globe of Sosaria
+DUPEITEM=03660
+
+[ITEMDEF 0366e]
+//globe of sosaria (multi-part)(anim)
+NAME=Globe of Sosaria
+DUPEITEM=03660
+
+[ITEMDEF 0366f]
+//globe of sosaria (multi-part)(anim)
+NAME=Globe of Sosaria
+DUPEITEM=03660
+
+
+[ITEMDEF 03674]
+//shadow wall (quarter)
+NAME=shadow wall
+DUPEITEM=0360e
+
+[ITEMDEF 03675]
+//shadow wall (quarter)
+NAME=shadow wall
+DUPEITEM=0360e
+
+[ITEMDEF 03676]
+//shadow wall (quarter)
+NAME=shadow wall
+DUPEITEM=0360e
+
+[ITEMDEF 03677]
+//shadow wall (quarter)
+NAME=shadow wall
+DUPEITEM=0360e
+
+
+[ITEMDEF 03679]
+DEFNAME=i_shadow_token
+NAME=shadow token
+TYPE=t_light_lit
+CATEGORY=Shadow
+SUBSECTION=Decoration
+DESCRIPTION=Shadow Token
+ON=@Create
+   MOREZ=29
+
+
+[ITEMDEF 0368b]
+DEFNAME=i_door_shadow
+NAME=shadow door
+TYPE=t_door
+CATEGORY=Buildings - Doors
+SUBSECTION=Shadow Door
+DESCRIPTION=@ (closed)
+DUPELIST=0368d,0368f,03691,03693,03695,03697,03699
+
+[ITEMDEF 0368c]
+DEFNAME=i_door_shadow_o
+NAME=shadow door
+TYPE=t_door_open
+CATEGORY=Buildings - Doors
+SUBSECTION=Shadow Door
+DESCRIPTION=@ (opened)
+DUPELIST=0368e,03690,03692,03694,03696,03698,0369a
+
+[ITEMDEF 0368d]
+//shadow door (closed)
+DUPEITEM=0368b
+
+[ITEMDEF 0368e]
+//shadow door (opened)
+DUPEITEM=0368c
+
+[ITEMDEF 0368f]
+//shadow door (closed)
+DUPEITEM=0368b
+
+[ITEMDEF 03690]
+//shadow door (opened)
+DUPEITEM=0368c
+
+[ITEMDEF 03691]
+//shadow door (closed)
+DUPEITEM=0368b
+
+[ITEMDEF 03692]
+//shadow door (opened)
+DUPEITEM=0368c
+
+[ITEMDEF 03693]
+//shadow door (closed)
+DUPEITEM=0368b
+
+[ITEMDEF 03694]
+//shadow door (opened)
+DUPEITEM=0368c
+
+[ITEMDEF 03695]
+//shadow door (closed)
+DUPEITEM=0368b
+
+[ITEMDEF 03696]
+//shadow door (opened)
+DUPEITEM=0368c
+
+[ITEMDEF 03697]
+//shadow door (closed)
+DUPEITEM=0368b
+
+[ITEMDEF 03698]
+//shadow door (opened)
+DUPEITEM=0368c
+
+[ITEMDEF 03699]
+//shadow door (closed)
+DUPEITEM=0368b
+
+[ITEMDEF 0369a]
+//shadow door (opened)
+DUPEITEM=0368c
+
+[ITEMDEF 0369b]
+//fire demon statue
+DUPEITEM=0364b
+
+[ITEMDEF 0369c]
+//spike post
+DUPEITEM=0364d
+
+[ITEMDEF 0369d]
+//shadow altar (multi-part)(east)
+NAME=shadow altar
+
+[ITEMDEF 0369e]
+//shadow altar (multi-part)(east)
+NAME=shadow altar
+
+[ITEMDEF 0369f]
+//shadow wall (arch)
+NAME=shadow arch
+DUPEITEM=0360e
+
+
+//////////////////
+// Custom Items //
+//////////////////
+
+[ITEMDEF i_globe_sosaria]
+ID=03657
+NAME=Globe of Sosaria
+TYPE=t_multi
+CATEGORY=Shadow
+SUBSECTION=Multis
+DESCRIPTION=Globe of Sosaria
+MULTIREGION=0,0,0,0
+COMPONENT=03658,-1,0
+COMPONENT=03659,0,-1
+COMPONENT=03660,0,0
+
+[ITEMDEF i_shadow_altar_south]
+ID=0365a
+NAME=Shadow Altar
+TYPE=t_multi
+CATEGORY=Shadow
+SUBSECTION=Multis
+DESCRIPTION=Shadow Altar (south)
+MULTIREGION=0,0,0,0
+COMPONENT=0365b,-1,0
+
+[ITEMDEF i_shadow_altar_east]
+ID=0369d
+NAME=Shadow Altar
+TYPE=t_multi
+CATEGORY=Shadow
+SUBSECTION=Multis
+DESCRIPTION=Shadow Altar (east)
+MULTIREGION=0,0,0,0
+COMPONENT=0369e,0,1
+
+[ITEMDEF i_shadow_banner_south]
+ID=0365c
+NAME=Shadow Banner
+TYPE=t_multi
+CATEGORY=Shadow
+SUBSECTION=Multis
+DESCRIPTION=Shadow Banner (south)
+MULTIREGION=0,0,0,0
+COMPONENT=0365d,-1,0
+
+[ITEMDEF i_shadow_banner_east]
+ID=0365e
+NAME=Shadow Banner
+TYPE=t_multi
+CATEGORY=Shadow
+SUBSECTION=Multis
+DESCRIPTION=Shadow Banner (east)
+MULTIREGION=0,0,0,0
+COMPONENT=0365f,0,1
+
+[ITEMDEF i_shadow_fire_pit]
+ID=03651
+NAME=Shadow Fire Pit
+TYPE=t_multi
+CAN=can_i_light
+CATEGORY=Shadow
+SUBSECTION=Multis
+DESCRIPTION=Shadow Fire Pit (closed)
+MULTIREGION=0,0,0,0
+COMPONENT=03652,-1,0
+COMPONENT=03653,0,-1
+ON=@Create
+   MOREZ=2
+ON=@DClick
+   ARGS=<P>
+   REMOVE
+   SERV.NEWITEM i_shadow_fire_pit_o
+   NEW.P=<ARGS>
+   NEW.ATTR=<ATTR>
+   NEW.COLOR=<COLOR>
+   NEW.EVENTS=<EVENTS>
+   NEW.MULTICREATE
+   return 1
+
+[ITEMDEF i_shadow_fire_pit_o]
+ID=03654
+NAME=Shadow Fire Pit
+TYPE=t_multi
+CAN=can_i_light
+CATEGORY=Shadow
+SUBSECTION=Multis
+DESCRIPTION=Shadow Fire Pit (open)
+MULTIREGION=0,0,0,0
+COMPONENT=03655,-1,0
+COMPONENT=03656,0,-1
+ON=@Create
+   MOREZ=2
+ON=@DClick
+   ARGS=<P>
+   REMOVE
+   SERV.NEWITEM i_shadow_fire_pit
+   NEW.P=<ARGS>
+   NEW.ATTR=<ATTR>
+   NEW.COLOR=<COLOR>
+   NEW.EVENTS=<EVENTS>
+   NEW.MULTICREATE
+   return 1
+
+[EOF]

@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Sept 9, 2017
+// FILE LAST UPDATED: Sunday, Sept 17, 2017
 //
 VERSION=0.56d
 
@@ -4142,15 +4142,6 @@ CATEGORY=Quest
 SUBSECTION=Token
 DESCRIPTION=Crystal Token
 
-[ITEMDEF 03679]
-DEFNAME=i_shadow_token
-NAME=Shadow Token
-TYPE=t_normal
-VALUE=100
-WEIGHT=0.1
-CATEGORY=Quest
-SUBSECTION=Token
-DESCRIPTION=Shadow Token
 
 [ITEMDEF 0367a]
 DEFNAME=i_heritage_token

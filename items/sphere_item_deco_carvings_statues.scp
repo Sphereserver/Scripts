@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Sept 2, 2017
+// FILE LAST UPDATED: Sunday, Sept 17, 2017
 //
 VERSION=0.56d
 
@@ -853,86 +853,6 @@ DESCRIPTION=Crystal Altar (multi-part)
 [ITEMDEF 03604]
 DUPEITEM=035e9
 DESCRIPTION=Crystal Altar (multi-part)
-
-
-[ITEMDEF 0364b]
-DEFNAME=i_statue_fire_demon
-NAME=fire demon statue
-FLIP=1
-VALUE=172
-WEIGHT=800.0
-RESOURCES=80 i_rock_obsidian
-SKILLMAKE=Carpentry 95.0,t_masonry_tool
-CATEGORY=Decoration - Wall Carvings & Statues
-SUBSECTION=Statues
-DESCRIPTION=Fire Demon Statue
-DUPELIST=0369b
-
-
-[ITEMDEF 0364c]
-DEFNAME=i_spiked_column
-NAME=spiked column
-VALUE=172
-WEIGHT=800.0
-RESOURCES=20 i_rock_obsidian
-SKILLMAKE=Carpentry 95.0,t_masonry_tool
-CATEGORY=Decoration - Wall Carvings & Statues
-SUBSECTION=Statues
-DESCRIPTION=Spiked Column
-
-[ITEMDEF 0364d]
-DEFNAME=i_spiked_post
-NAME=spiked post
-FLIP=1
-VALUE=172
-WEIGHT=800.0
-RESOURCES=20 i_rock_obsidian
-SKILLMAKE=Carpentry 95.0,t_masonry_tool
-CATEGORY=Decoration - Wall Carvings & Statues
-SUBSECTION=Statues
-DESCRIPTION=Spiked Post
-DUPELIST=0369c
-
-
-[ITEMDEF 03650]
-DEFNAME=i_shadow_pillar
-NAME=shadow pillar
-VALUE=100
-CATEGORY=Decoration - Wall Carvings & Statues
-SUBSECTION=Sculptures
-DESCRIPTION=Shadow Pillar
-
-
-[ITEMDEF 0365a]
-DEFNAME=i_altar_shadow
-NAME=shadow altar
-FLIP=1
-RESOURCES=40 i_rock_obsidian
-CATEGORY=Decoration - Wall Carvings & Statues
-SUBSECTION=Sculptures
-DESCRIPTION=Shadow Altar
-DUPELIST=0365b,0369d,0369e
-
-[ITEMDEF 0365b]
-//shadow altar
-DUPEITEM=0365a
-
-
-[ITEMDEF 0369b]
-//Fire Demon statue
-DUPEITEM=0364b
-
-[ITEMDEF 0369c]
-//Spiked Post
-DUPEITEM=0364d
-
-[ITEMDEF 0369d]
-//shadow altar
-DUPEITEM=0365a
-
-[ITEMDEF 0369e]
-//shadow altar
-DUPEITEM=0365a
 
 
 [ITEMDEF 03b0f]

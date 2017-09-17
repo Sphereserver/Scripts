@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, Aug 28, 2017
+// FILE LAST UPDATED: Sunday, Sept 17, 2017
 //
 VERSION=0.56d
 
@@ -1059,32 +1059,6 @@ DUPEITEM=035d2
 DUPEITEM=035d2
 
 
-[ITEMDEF 03609]
-DEFNAME=i_stairs_shadow
-NAME=stairs
-RESOURCES=100 i_rock_plain
-CATEGORY=Buildings - Stairs
-SUBSECTION=Shadow Stairs
-DESCRIPTION=Stair
-DUPELIST=0360a,0360b,0360c,0360d
-
-[ITEMDEF 0360a]
-//Shadow Stairs
-DUPEITEM=03609
-
-[ITEMDEF 0360b]
-//Shadow Stairs
-DUPEITEM=03609
-
-[ITEMDEF 0360c]
-//Shadow Stairs
-DUPEITEM=03609
-
-[ITEMDEF 0360d]
-//Shadow Stairs
-DUPEITEM=03609
-
-
 [ITEMDEF 04130]
 DEFNAME=i_stairs_stone_aged
 NAME=stairs
@@ -1501,13 +1475,22 @@ DUPEITEM=046b0
 //Tan Stairs (blue trim)
 
 
+[ITEMDEF 09ae7]
+//Jungle Stairs
+
+[ITEMDEF 09ae8]
+//Jungle Stairs
+
+[ITEMDEF 09ae9]
+//Jungle Stairs
+
 [ITEMDEF 09aea]
 DEFNAME=i_stairs_jungle
 NAME=jungle stair
 CATEGORY=Buildings - Stairs
 SUBSECTION=Jungle Stairs
 DESCRIPTION=Stair
-DUPELIST=09aeb,09aec,09aed,09aee,09aef,09af0,09af1,09af2,09af3,09af4,09af5,09af6,09af7,09af8,09af9,09afa,09afb,09afc,09afd,09afe,09aff
+DUPELIST=09aeb,09aec,09aed,09aee,09aef,09af0,09af1,09af2,09af3,09af4,09af5,09af6,09af7,09af8,09af9,09afa,09afb,09afc,09afd,09afe
 
 [ITEMDEF 09aeb]
 //Jungle Stairs
@@ -1591,7 +1574,15 @@ DUPEITEM=09aea
 
 [ITEMDEF 09aff]
 //Jungle Stairs
-DUPEITEM=09aea
+
+[ITEMDEF 09b4c]
+//Shadowguard Stairs
+
+[ITEMDEF 09b4d]
+//Shadowguard Stairs
+
+[ITEMDEF 09b4e]
+//Shadowguard Stairs
 
 [ITEMDEF 09b4f]
 DEFNAME=i_stairs_shadowguard
@@ -1599,7 +1590,7 @@ NAME=shadowguard stair
 CATEGORY=Buildings - Stairs
 SUBSECTION=Shadowguard Stairs
 DESCRIPTION=Stair
-DUPELIST=09b50,09b51,09b52,09b53,09b54,09b55,09b56,09b57,09b58,09b59,09b5a,09b5b,09b5c,09b5d,09b5e,09b5f,09b60,09b61,09b62,09b63,09b64
+DUPELIST=09b50,09b51,09b52,09b53,09b54,09b55,09b56,09b57,09b58,09b59,09b5a,09b5b,09b5c,09b5d,09b5e,09b5f,09b60,09b61,09b62,09b63
 
 [ITEMDEF 09b50]
 //Shadowguard Stairs
@@ -1683,6 +1674,5 @@ DUPEITEM=09b4f
 
 [ITEMDEF 09b64]
 //Shadowguard Stairs
-DUPEITEM=09b4f
 
 [EOF]
