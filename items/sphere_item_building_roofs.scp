@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, Sept 17, 2017
+// FILE LAST UPDATED: Monday, Sept 18, 2017
 //
 VERSION=0.56d
 
@@ -2920,92 +2920,6 @@ DUPEITEM=02b94
 [ITEMDEF 02f28]
 //Leafed Roof
 DUPEITEM=02b94
-
-
-[ITEMDEF 035be]
-DEFNAME=i_roof_crystal
-NAME=roof
-TYPE=t_roof
-CATEGORY=Buildings - Roofs
-SUBSECTION=Crystal Roof
-DESCRIPTION=Roof
-DUPELIST=035bf,035c0,035c1,035c2,035c3,035c4,035c5,035c6,035c7,035c8,035c9,035ca,035cb,035cc,035cd,035ce,035cf,035d0,035d1
-
-[ITEMDEF 035bf]
-//crystal roof
-DUPEITEM=035be
-
-[ITEMDEF 035c0]
-//crystal roof
-DUPEITEM=035be
-
-[ITEMDEF 035c1]
-//crystal roof
-DUPEITEM=035be
-
-[ITEMDEF 035c2]
-//crystal roof
-DUPEITEM=035be
-
-[ITEMDEF 035c3]
-//crystal roof
-DUPEITEM=035be
-
-[ITEMDEF 035c4]
-//crystal roof
-DUPEITEM=035be
-
-[ITEMDEF 035c5]
-//crystal roof
-DUPEITEM=035be
-
-[ITEMDEF 035c6]
-//crystal roof
-DUPEITEM=035be
-
-[ITEMDEF 035c7]
-//crystal roof
-DUPEITEM=035be
-
-[ITEMDEF 035c8]
-//crystal roof
-DUPEITEM=035be
-
-[ITEMDEF 035c9]
-//crystal roof
-DUPEITEM=035be
-
-[ITEMDEF 035ca]
-//crystal roof
-DUPEITEM=035be
-
-[ITEMDEF 035cb]
-//crystal roof
-DUPEITEM=035be
-
-[ITEMDEF 035cc]
-//crystal roof
-DUPEITEM=035be
-
-[ITEMDEF 035cd]
-//crystal roof
-DUPEITEM=035be
-
-[ITEMDEF 035ce]
-//crystal roof
-DUPEITEM=035be
-
-[ITEMDEF 035cf]
-//crystal roof
-DUPEITEM=035be
-
-[ITEMDEF 035d0]
-//crystal roof
-DUPEITEM=035be
-
-[ITEMDEF 035d1]
-//crystal roof
-DUPEITEM=035be
 
 
 [ITEMDEF 09b00]

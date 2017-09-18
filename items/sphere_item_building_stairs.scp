@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, Sept 17, 2017
+// FILE LAST UPDATED: Monday, Sept 18, 2017
 //
 VERSION=0.56d
 
@@ -1031,32 +1031,6 @@ DUPEITEM=011bc
 [ITEMDEF 011bf]
 //stone ramp
 DUPEITEM=011bc
-
-
-[ITEMDEF 035d2]
-DEFNAME=i_stairs_crystal
-NAME=stairs
-RESOURCES=100 i_crystal_shards
-CATEGORY=Buildings - Stairs
-SUBSECTION=Crystal Stairs
-DESCRIPTION=Stair
-DUPELIST=035d3,035d4,035d5,035d6
-
-[ITEMDEF 035d3]
-//Crystal stairs
-DUPEITEM=035d2
-
-[ITEMDEF 035d4]
-//Crystal stairs
-DUPEITEM=035d2
-
-[ITEMDEF 035d5]
-//Crystal stairs
-DUPEITEM=035d2
-
-[ITEMDEF 035d6]
-//Crystal stairs
-DUPEITEM=035d2
 
 
 [ITEMDEF 04130]

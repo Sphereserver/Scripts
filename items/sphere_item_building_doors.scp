@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, Sept 17, 2017
+// FILE LAST UPDATED: Monday, Sept 18, 2017
 //
 VERSION=0.56d
 
@@ -1868,88 +1868,6 @@ DUPEITEM=02d46
 [ITEMDEF 031af]
 //Elven Bark Door (opened)
 DUPEITEM=02d47
-
-[ITEMDEF 035e7]
-DEFNAME=i_door_crystal
-NAME=crystal door
-TYPE=t_door
-CATEGORY=Buildings - Doors
-SUBSECTION=Crystal Door
-DESCRIPTION=@ (closed)
-DUPELIST=0367b,0367d,0367f,03681,03683,03685,03687,03689
-
-[ITEMDEF 035e8]
-DEFNAME=i_door_crystal_o
-NAME=crystal door
-TYPE=t_door_open
-CATEGORY=Buildings - Doors
-SUBSECTION=Crystal Door
-DESCRIPTION=@ (opened)
-DUPELIST=0367c,0367e,03680,03682,03684,03686,03688,0368a
-
-[ITEMDEF 0367b]
-//Crystal Door (closed)
-DUPEITEM=035e7
-
-[ITEMDEF 0367c]
-//Crystal Door (opened)
-DUPEITEM=035e8
-
-[ITEMDEF 0367d]
-//Crystal Door (closed)
-DUPEITEM=035e7
-
-[ITEMDEF 0367e]
-//Crystal Door (opened)
-DUPEITEM=035e8
-
-[ITEMDEF 0367f]
-//Crystal Door (closed)
-DUPEITEM=035e7
-
-[ITEMDEF 03680]
-//Crystal Door (opened)
-DUPEITEM=035e8
-
-[ITEMDEF 03681]
-//Crystal Door (closed)
-DUPEITEM=035e7
-
-[ITEMDEF 03682]
-//Crystal Door (opened)
-DUPEITEM=035e8
-
-[ITEMDEF 03683]
-//Crystal Door (closed)
-DUPEITEM=035e7
-
-[ITEMDEF 03684]
-//Crystal Door (opened)
-DUPEITEM=035e8
-
-[ITEMDEF 03685]
-//Crystal Door (closed)
-DUPEITEM=035e7
-
-[ITEMDEF 03686]
-//Crystal Door (opened)
-DUPEITEM=035e8
-
-[ITEMDEF 03687]
-//Crystal Door (closed)
-DUPEITEM=035e7
-
-[ITEMDEF 03688]
-//Crystal Door (opened)
-DUPEITEM=035e8
-
-[ITEMDEF 03689]
-//Crystal Door (closed)
-DUPEITEM=035e7
-
-[ITEMDEF 0368a]
-//Crystal Door (opened)
-DUPEITEM=035e8
 
 [ITEMDEF 0409b]
 DEFNAME=i_door_ws3

@@ -1,0 +1,616 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2017
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Monday, Sept 18, 2017
+//
+VERSION=0.56d
+
+
+[ITEMDEF 035b2]
+DEFNAME=i_floor_crystal
+TYPE=t_floor
+NAME=crystal floor
+FLIP=1
+CATEGORY=Buildings - Floors
+SUBSECTION=Pavers (crystal)
+DESCRIPTION=Paver
+DUPELIST=035b3,035b4,035b5,035b6,035b7,035b8,035b9,035ba,035bb,035bc,035bd
+
+[ITEMDEF 035b3]
+//crystal floor
+NAME=crystal floor
+DUPEITEM=035b2
+
+[ITEMDEF 035b4]
+//crystal floor
+NAME=crystal floor
+DUPEITEM=035b2
+
+[ITEMDEF 035b5]
+//crystal floor
+NAME=crystal floor
+DUPEITEM=035b2
+
+[ITEMDEF 035b6]
+//crystal floor
+NAME=crystal floor
+DUPEITEM=035b2
+
+[ITEMDEF 035b7]
+//crystal floor
+NAME=crystal floor
+DUPEITEM=035b2
+
+[ITEMDEF 035b8]
+//crystal floor
+NAME=crystal floor
+DUPEITEM=035b2
+
+[ITEMDEF 035b9]
+//crystal floor
+NAME=crystal floor
+DUPEITEM=035b2
+
+[ITEMDEF 035ba]
+//crystal floor
+NAME=crystal floor
+DUPEITEM=035b2
+
+[ITEMDEF 035bb]
+//crystal floor
+NAME=crystal floor
+DUPEITEM=035b2
+
+[ITEMDEF 035bc]
+//crystal floor
+NAME=crystal floor
+DUPEITEM=035b2
+
+[ITEMDEF 035bd]
+//crystal floor
+NAME=crystal floor
+DUPEITEM=035b2
+
+[ITEMDEF 035be]
+DEFNAME=i_roof_crystal
+NAME=crystal roof
+TYPE=t_roof
+CATEGORY=Buildings - Roofs
+SUBSECTION=Crystal Roof
+DESCRIPTION=Roof
+DUPELIST=035bf,035c0,035c1,035c2,035c3,035c4,035c5,035c6,035c7,035c8,035c9,035ca,035cb,035cc,035cd,035ce,035cf,035d0,035d1
+
+[ITEMDEF 035bf]
+//crystal roof
+NAME=crystal roof
+DUPEITEM=035be
+
+[ITEMDEF 035c0]
+//crystal roof
+NAME=crystal roof
+DUPEITEM=035be
+
+[ITEMDEF 035c1]
+//crystal roof
+NAME=crystal roof
+DUPEITEM=035be
+
+[ITEMDEF 035c2]
+//crystal roof
+NAME=crystal roof
+DUPEITEM=035be
+
+[ITEMDEF 035c3]
+//crystal roof
+NAME=crystal roof
+DUPEITEM=035be
+
+[ITEMDEF 035c4]
+//crystal roof
+NAME=crystal roof
+DUPEITEM=035be
+
+[ITEMDEF 035c5]
+//crystal roof
+NAME=crystal roof
+DUPEITEM=035be
+
+[ITEMDEF 035c6]
+//crystal roof
+NAME=crystal roof
+DUPEITEM=035be
+
+[ITEMDEF 035c7]
+//crystal roof
+NAME=crystal roof
+DUPEITEM=035be
+
+[ITEMDEF 035c8]
+//crystal roof
+NAME=crystal roof
+DUPEITEM=035be
+
+[ITEMDEF 035c9]
+//crystal roof
+NAME=crystal roof
+DUPEITEM=035be
+
+[ITEMDEF 035ca]
+//crystal roof
+NAME=crystal roof
+DUPEITEM=035be
+
+[ITEMDEF 035cb]
+//crystal roof
+NAME=crystal roof
+DUPEITEM=035be
+
+[ITEMDEF 035cc]
+//crystal roof
+NAME=crystal roof
+DUPEITEM=035be
+
+[ITEMDEF 035cd]
+//crystal roof
+NAME=crystal roof
+DUPEITEM=035be
+
+[ITEMDEF 035ce]
+//crystal roof
+NAME=crystal roof
+DUPEITEM=035be
+
+[ITEMDEF 035cf]
+//crystal roof
+NAME=crystal roof
+DUPEITEM=035be
+
+[ITEMDEF 035d0]
+//crystal roof
+NAME=crystal roof
+DUPEITEM=035be
+
+[ITEMDEF 035d1]
+//crystal roof
+NAME=crystal roof
+DUPEITEM=035be
+
+[ITEMDEF 035d2]
+DEFNAME=i_stairs_crystal
+NAME=crystal stairs
+RESOURCES=100 i_crystal_shards
+CATEGORY=Buildings - Stairs
+SUBSECTION=Crystal Stairs
+DESCRIPTION=Stair
+DUPELIST=035d3,035d4,035d5,035d6
+
+[ITEMDEF 035d3]
+//crystal stairs
+NAME=crystal stairs
+DUPEITEM=035d2
+
+[ITEMDEF 035d4]
+//crystal stairs
+NAME=crystal stairs
+DUPEITEM=035d2
+
+[ITEMDEF 035d5]
+//crystal stairs
+NAME=crystal stairs
+DUPEITEM=035d2
+
+[ITEMDEF 035d6]
+//crystal stairs
+NAME=crystal stairs
+DUPEITEM=035d2
+
+[ITEMDEF 035d7]
+DEFNAME=i_wall_crystal
+NAME=crystal wall
+TYPE=t_wall
+CATEGORY=Buildings - Walls
+SUBSECTION=Crystal Wall
+DESCRIPTION=Wall
+DUPELIST=035d8,035d9,035da,035db,035dc,035dd,035de,035df,035e0,035e1,035e2,035e3,035e4,035e5,035e6,03670,03671,03672,03673
+
+[ITEMDEF 035d8]
+//crystal wall (half)
+NAME=crystal wall
+DUPEITEM=035d7
+
+[ITEMDEF 035d9]
+//crystal wall (full)
+NAME=crystal wall
+DUPEITEM=035d7
+
+[ITEMDEF 035da]
+//crystal wall (quarter)
+NAME=crystal wall
+DUPEITEM=035d7
+
+[ITEMDEF 035db]
+//crystal wall (half)
+NAME=crystal wall
+DUPEITEM=035d7
+
+[ITEMDEF 035dc]
+//crystal wall (full)
+NAME=crystal wall
+DUPEITEM=035d7
+
+[ITEMDEF 035dd]
+//crystal wall (quarter)
+NAME=crystal wall
+DUPEITEM=035d7
+
+[ITEMDEF 035de]
+//crystal wall (quarter)
+NAME=crystal wall
+DUPEITEM=035d7
+
+[ITEMDEF 035df]
+//crystal wall (half)
+NAME=crystal wall
+DUPEITEM=035d7
+
+[ITEMDEF 035e0]
+//crystal wall (half)
+NAME=crystal wall
+DUPEITEM=035d7
+
+[ITEMDEF 035e1]
+//crystal wall (full)
+NAME=crystal wall
+DUPEITEM=035d7
+
+[ITEMDEF 035e2]
+//crystal wall (full)
+NAME=crystal wall
+DUPEITEM=035d7
+
+[ITEMDEF 035e3]
+//crystal wall (full)
+NAME=crystal wall
+DUPEITEM=035d7
+
+[ITEMDEF 035e4]
+//crystal wall (full)
+NAME=crystal wall
+DUPEITEM=035d7
+
+[ITEMDEF 035e5]
+//crystal wall (window)
+NAME=crystal wall
+DUPEITEM=035d7
+
+[ITEMDEF 035e6]
+//crystal wall (window)
+NAME=crystal wall
+DUPEITEM=035d7
+
+
+[ITEMDEF 035e9]
+DEFNAME=i_crystal_altar
+NAME=crystal altar
+CATEGORY=Crystal
+SUBSECTION=Decoration
+DESCRIPTION=Crystal Altar
+
+[ITEMDEF 035ea]
+DEFNAME=i_crystal_pillar
+NAME=crystal
+CATEGORY=Crystal
+SUBSECTION=Decoration
+DESCRIPTION=Crystal
+DUPELIST=035eb,035ec,035f6,035f7
+
+[ITEMDEF 035eb]
+//crystal
+DUPEITEM=035ea
+
+[ITEMDEF 035ec]
+//crystal
+DUPEITEM=035ea
+
+[ITEMDEF 035ed]
+DEFNAME=i_crystal_throne
+NAME=crystal throne
+FLIP=1
+CATEGORY=Crystal
+SUBSECTION=Decoration
+DESCRIPTION=Crystal Throne
+DUPELIST=035ee
+
+[ITEMDEF 035ee]
+//crystal throne
+DUPEITEM=035ed
+
+[ITEMDEF 035ef]
+DEFNAME=i_crystal_brazier
+NAME=crystal brazier
+TYPE=t_light_lit
+CATEGORY=Crystal
+SUBSECTION=Decoration
+DESCRIPTION=Crystal Brazier
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 035f0]
+//crystal brazier (anim)
+NAME=crystal brazier
+
+[ITEMDEF 035f1]
+//crystal brazier (anim)
+NAME=crystal brazier
+
+[ITEMDEF 035f2]
+//crystal brazier (anim)
+NAME=crystal brazier
+
+[ITEMDEF 035f3]
+//crystal brazier (anim)
+NAME=crystal brazier
+
+[ITEMDEF 035f4]
+//crystal brazier (anim)
+NAME=crystal brazier
+
+[ITEMDEF 035f5]
+//crystal brazier (anim)
+NAME=crystal brazier
+
+[ITEMDEF 035f6]
+//crystal
+DUPEITEM=035ea
+
+[ITEMDEF 035f7]
+//crystal
+DUPEITEM=035ea
+
+[ITEMDEF 035f8]
+DEFNAME=i_statue_crystal_begger
+NAME=crystal begger statue
+FLIP=1
+CATEGORY=Crystal
+SUBSECTION=Decoration
+DESCRIPTION=Crystal Begger Statue
+DUPELIST=035f9
+
+[ITEMDEF 035f9]
+//crystal begger statue
+DUPEITEM=035f8
+
+[ITEMDEF 035fa]
+DEFNAME=i_statue_crystal_supplicant
+NAME=crystal supplicant statue
+FLIP=1
+CATEGORY=Crystal
+SUBSECTION=Decoration
+DESCRIPTION=Crystal Supplicant Statue
+DUPELIST=035fb
+
+[ITEMDEF 035fb]
+//crystal supplicant statue
+DUPEITEM=035fa
+
+[ITEMDEF 035fc]
+DEFNAME=i_statue_crystal_runner
+NAME=crystal runner statue
+FLIP=1
+CATEGORY=Crystal
+SUBSECTION=Decoration
+DESCRIPTION=Crystal Runner Statue
+DUPELIST=035fd
+
+[ITEMDEF 035fd]
+//crystal runner statue
+DUPEITEM=035fc
+
+[ITEMDEF 035fe]
+//crystal bull statue (multi-part)(east)
+NAME=crystal bull statue
+
+[ITEMDEF 035ff]
+//crystal bull statue (multi-part)(east)
+NAME=crystal bull statue
+
+[ITEMDEF 03600]
+//crystal bull statue (multi-part)(south)
+NAME=crystal bull statue
+
+[ITEMDEF 03601]
+//crystal bull statue (multi-part)(south)
+NAME=crystal bull statue
+
+[ITEMDEF 03602]
+//crystal altar (multi-part)
+NAME=crystal altar
+
+[ITEMDEF 03603]
+//crystal altar (multi-part)
+NAME=crystal altar
+
+[ITEMDEF 03604]
+//crystal altar (multi-part)
+NAME=crystal altar
+
+[ITEMDEF 03605]
+//crystal table (multi-part)(east)
+NAME=crystal table
+
+[ITEMDEF 03606]
+//crystal table (multi-part)(east)
+NAME=crystal table
+
+[ITEMDEF 03607]
+//crystal table (multi-part)(south)
+NAME=crystal table
+
+[ITEMDEF 03608]
+//crystal table (multi-part)(south)
+NAME=crystal table
+
+
+[ITEMDEF 03670]
+//crystal wall (quarter)
+NAME=crystal wall
+DUPEITEM=035d7
+
+[ITEMDEF 03671]
+//crystal wall (quarter)
+NAME=crystal wall
+DUPEITEM=035d7
+
+[ITEMDEF 03672]
+//crystal wall (quarter)
+NAME=crystal wall
+DUPEITEM=035d7
+
+[ITEMDEF 03673]
+//crystal wall (quarter)
+NAME=crystal wall
+DUPEITEM=035d7
+
+
+[ITEMDEF 03678]
+DEFNAME=i_crystal_token
+NAME=crystal token
+TYPE=t_light_lit
+CATEGORY=Crystal
+SUBSECTION=Decoration
+DESCRIPTION=Crystal Token
+ON=@Create
+   MOREZ=29
+
+
+[ITEMDEF 0367b]
+DEFNAME=i_door_crystal
+NAME=crystal door
+TYPE=t_door
+CATEGORY=Buildings - Doors
+SUBSECTION=Crystal Door
+DESCRIPTION=@ (closed)
+DUPELIST=0367d,0367f,03681,03683,03685,03687,03689
+
+[ITEMDEF 0367c]
+DEFNAME=i_door_crystal_o
+NAME=crystal door
+TYPE=t_door_open
+CATEGORY=Buildings - Doors
+SUBSECTION=Crystal Door
+DESCRIPTION=@ (opened)
+DUPELIST=0367e,03680,03682,03684,03686,03688,0368a
+
+[ITEMDEF 0367d]
+//crystal door (closed)
+DUPEITEM=0367b
+
+[ITEMDEF 0367e]
+//crystal door (opened)
+DUPEITEM=0367c
+
+[ITEMDEF 0367f]
+//crystal door (closed)
+DUPEITEM=0367b
+
+[ITEMDEF 03680]
+//crystal door (opened)
+DUPEITEM=0367c
+
+[ITEMDEF 03681]
+//crystal door (closed)
+DUPEITEM=0367b
+
+[ITEMDEF 03682]
+//crystal door (opened)
+DUPEITEM=0367c
+
+[ITEMDEF 03683]
+//crystal door (closed)
+DUPEITEM=0367b
+
+[ITEMDEF 03684]
+//crystal door (opened)
+DUPEITEM=0367c
+
+[ITEMDEF 03685]
+//crystal door (closed)
+DUPEITEM=0367b
+
+[ITEMDEF 03686]
+//crystal door (opened)
+DUPEITEM=0367c
+
+[ITEMDEF 03687]
+//crystal door (closed)
+DUPEITEM=0367b
+
+[ITEMDEF 03688]
+//crystal door (opened)
+DUPEITEM=0367c
+
+[ITEMDEF 03689]
+//crystal door (closed)
+DUPEITEM=0367b
+
+[ITEMDEF 0368a]
+//crystal door (opened)
+DUPEITEM=0367c
+
+
+[ITEMDEF 03da2]
+//crystal altar (multi-part)
+NAME=crystal altar
+
+
+//////////////////
+// Custom Items //
+//////////////////
+
+[ITEMDEF i_statue_crystal_bull_east]
+ID=035fe
+NAME=Crystal Bull Statue
+TYPE=t_multi
+CATEGORY=Crystal
+SUBSECTION=Multis
+DESCRIPTION=Crystal Bull Statue (east)
+MULTIREGION=0,0,0,0
+COMPONENT=035ff,0,-1
+
+[ITEMDEF i_statue_crystal_bull_south]
+ID=03600
+NAME=Crystal Bull Statue
+TYPE=t_multi
+CATEGORY=Crystal
+SUBSECTION=Multis
+DESCRIPTION=Crystal Bull Statue (south)
+MULTIREGION=0,0,0,0
+COMPONENT=03601,-1,0
+
+[ITEMDEF i_table_crystal_east]
+ID=03605
+NAME=Crystal Table
+TYPE=t_multi
+CATEGORY=Crystal
+SUBSECTION=Multis
+DESCRIPTION=Crystal Table (east)
+MULTIREGION=0,0,0,0
+COMPONENT=03606,0,-1
+
+[ITEMDEF i_table_crystal_south]
+ID=03607
+NAME=Crystal Table
+TYPE=t_multi
+CATEGORY=Crystal
+SUBSECTION=Multis
+DESCRIPTION=Crystal Table (south)
+MULTIREGION=0,0,0,0
+COMPONENT=03608,-1,0
+
+[EOF]

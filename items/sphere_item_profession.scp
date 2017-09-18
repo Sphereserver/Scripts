@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, Aug 27, 2017
+// FILE LAST UPDATED: Monday, Sept 18, 2017
 //
 VERSION=0.56d
 
@@ -2921,45 +2921,6 @@ SUBSECTION=Artist
 DESCRIPTION=Hammer and Chisel
 
 
-[ITEMDEF 035ef]
-DEFNAME=i_gargish_crystal_ball
-NAME=glowing crystal ball
-TYPE=t_crystal_ball
-FLIP=1
-VALUE=1000
-WEIGHT=10.0
-RESOURCES=10 i_crystal_shards
-SKILLMAKE=Tinkering 95.7,Alchemy 50.0,Magery 85.1,t_tinker_tools
-CATEGORY=Items by Professions
-SUBSECTION=Fortune Teller
-DESCRIPTION=Gargish Crystal Ball
-DUPELIST=035f0,035f1,035f2,035f3,035f4,035f5
-
-[ITEMDEF 035f0]
-//Gargish crystal ball
-DUPEITEM=035ef
-
-[ITEMDEF 035f1]
-//Gargish crystal ball
-DUPEITEM=035ef
-
-[ITEMDEF 035f2]
-//Gargish crystal ball
-DUPEITEM=035ef
-
-[ITEMDEF 035f3]
-//Gargish crystal ball
-DUPEITEM=035ef
-
-[ITEMDEF 035f4]
-//Gargish crystal ball
-DUPEITEM=035ef
-
-[ITEMDEF 035f5]
-//Gargish crystal ball
-DUPEITEM=035ef
-
-
 [ITEMDEF 03d8e]
 //Weighted Fishing Net
 DUPEITEM=01ea3
@@ -2987,8 +2948,7 @@ TYPE=t_musical
 TDATA1=045
 TDATA2=046
 FLIP=1
-WEIGHT=10
-RESOURCES=35 i_board
+RESOURCES=35 i_board,15 i_rock_granite
 SKILLMAKE=Carpentry 78.9,Musicianship 45.0,t_carpentry
 CATEGORY=Items by Professions
 SUBSECTION=Musician
@@ -3142,15 +3102,11 @@ DESCRIPTION=Book (evil cover)
 
 
 [ITEMDEF 042c6]
-DEFNAME=i_brush
-NAME=brush
-VALUE=45
-WEIGHT=1.0
-RESOURCES=1 i_board,1 i_fur
-SKILLMAKE=Tinkering 14.1,t_tinker_tools
-CATEGORY=Items by Professions
-SUBSECTION=Artist
-DESCRIPTION=Brush
+DEFNAME=i_retouching_tool
+NAME=retouching tool
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Tools
+DESCRIPTION=Retouching Tool
 
 
 [ITEMDEF 044c7]

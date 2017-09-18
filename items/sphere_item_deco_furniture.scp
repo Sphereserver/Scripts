@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, Aug 28, 2017
+// FILE LAST UPDATED: Monday, Sept 18, 2017
 //
 VERSION=0.56d
 
@@ -3838,48 +3838,6 @@ DUPEITEM=030e3
 //elven dresser
 DUPEITEM=030e3
 
-[ITEMDEF 035ed]
-DEFNAME=i_throne_crystal
-NAME=crystal throne
-TYPE=t_chair
-FLIP=1
-VALUE=5000
-WEIGHT=50.0
-RESOURCES=50 i_crystal_shards
-SKILLMAKE=Carpentry 82.1,t_carpentry
-CATEGORY=Decoration - Furniture
-SUBSECTION=Chairs
-DESCRIPTION=Crystal Throne
-DUPELIST=035ee
-
-[ITEMDEF 035ee]
-//Crystal throne
-DUPEITEM=035ed
-
-[ITEMDEF 03605]
-DEFNAME=i_table_crystal
-NAME=crystal table
-FLIP=1
-VALUE=2503
-WEIGHT=25.0
-RESOURCES=25 i_crystal_shards,1 i_cloth
-SKILLMAKE=Carpentry 42.1,t_carpentry
-CATEGORY=Decoration - Furniture
-SUBSECTION=Tables
-DESCRIPTION=Crystal Table (multi-part)
-DUPELIST=03606,03607,03608
-
-[ITEMDEF 03606]
-//Crystal Table (multi-part)
-DUPEITEM=03605
-
-[ITEMDEF 03607]
-//Crystal Table (multi-part)
-DUPEITEM=03605
-
-[ITEMDEF 03608]
-//Crystal Table (multi-part)
-DUPEITEM=03605
 
 [ITEMDEF 03d8a]
 DEFNAME=i_bed_ruined

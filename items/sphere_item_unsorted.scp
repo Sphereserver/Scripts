@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, Sept 17, 2017
+// FILE LAST UPDATED: Monday, Sept 18, 2017
 //
 VERSION=0.56d
 
@@ -4132,17 +4132,6 @@ TYPE=t_game_piece
 TYPE=t_game_piece
 
 
-[ITEMDEF 03678]
-DEFNAME=i_crystal_token
-NAME=Crystal Token
-TYPE=t_normal
-VALUE=100
-WEIGHT=0.1
-CATEGORY=Quest
-SUBSECTION=Token
-DESCRIPTION=Crystal Token
-
-
 [ITEMDEF 0367a]
 DEFNAME=i_heritage_token
 NAME=Heritage Token
@@ -4305,9 +4294,6 @@ DUPEITEM=03d9c
 //Long Curtain
 DUPEITEM=03d9c
 
-[ITEMDEF 03da2]
-DUPEITEM=035e9
-DESCRIPTION=Crystal Altar (multi-part)
 
 [ITEMDEF 03da3]
 //Long Curtain

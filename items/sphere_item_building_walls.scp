@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, Sept 17, 2017
+// FILE LAST UPDATED: Monday, Sept 18, 2017
 //
 VERSION=0.56d
 
@@ -6279,93 +6279,6 @@ DUPEITEM=02ffb
 [ITEMDEF 03127]
 //stone wall 1 (full)
 DUPEITEM=01a
-
-
-[ITEMDEF 035d7]
-DEFNAME=i_wall_crystal
-NAME=wall
-TYPE=t_wall
-CATEGORY=Buildings - Walls
-SUBSECTION=Crystal Wall
-DESCRIPTION=Wall
-DUPELIST=035d8,035d9,035da,035db,035dc,035dd,035de,035df,035e0,035e1,035e2,035e3,035e4,035e5,035e6,03670,03671,03672,03673
-
-[ITEMDEF 035d8]
-//Crystal wall
-DUPEITEM=035d7
-
-[ITEMDEF 035d9]
-//Crystal wall
-DUPEITEM=035d7
-
-[ITEMDEF 035da]
-//Crystal wall
-DUPEITEM=035d7
-
-[ITEMDEF 035db]
-//Crystal wall
-DUPEITEM=035d7
-
-[ITEMDEF 035dc]
-//Crystal wall
-DUPEITEM=035d7
-
-[ITEMDEF 035dd]
-//Crystal wall
-DUPEITEM=035d7
-
-[ITEMDEF 035de]
-//Crystal wall
-DUPEITEM=035d7
-
-[ITEMDEF 035df]
-//Crystal wall
-DUPEITEM=035d7
-
-[ITEMDEF 035e0]
-//Crystal wall
-DUPEITEM=035d7
-
-[ITEMDEF 035e1]
-//Crystal wall
-DUPEITEM=035d7
-
-[ITEMDEF 035e2]
-//Crystal wall
-DUPEITEM=035d7
-
-[ITEMDEF 035e3]
-//Crystal wall
-DUPEITEM=035d7
-
-[ITEMDEF 035e4]
-//Crystal wall
-DUPEITEM=035d7
-
-[ITEMDEF 035e5]
-//Crystal wall
-DUPEITEM=035d7
-
-[ITEMDEF 035e6]
-//Crystal wall
-DUPEITEM=035d7
-
-
-[ITEMDEF 03670]
-//Crystal wall (quarter)
-DUPEITEM=035d7
-
-[ITEMDEF 03671]
-//Crystal wall (quarter)
-DUPEITEM=035d7
-
-[ITEMDEF 03672]
-//Crystal wall (quarter)
-DUPEITEM=035d7
-
-[ITEMDEF 03673]
-//Crystal wall (quarter)
-DUPEITEM=035d7
 
 
 [ITEMDEF 03ef2]

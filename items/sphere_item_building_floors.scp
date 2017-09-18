@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, Sept 17, 2017
+// FILE LAST UPDATED: Monday, Sept 18, 2017
 //
 VERSION=0.56d
 
@@ -1677,61 +1677,6 @@ DUPEITEM=03004
 [ITEMDEF 03007]
 //tile floor (black)
 DUPEITEM=03004
-
-
-[ITEMDEF 035b2]
-DEFNAME=i_floor_crystal
-TYPE=t_floor
-NAME=floor
-FLIP=1
-CATEGORY=Buildings - Floors
-SUBSECTION=Pavers (crystal)
-DESCRIPTION=Paver
-DUPELIST=035b3,035b4,035b5,035b6,035b7,035b8,035b9,035ba,035bb,035bc,035bd
-
-[ITEMDEF 035b3]
-//Pavers (crystal)
-DUPEITEM=035b2
-
-[ITEMDEF 035b4]
-//Pavers (crystal)
-DUPEITEM=035b2
-
-[ITEMDEF 035b5]
-//Pavers (crystal)
-DUPEITEM=035b2
-
-[ITEMDEF 035b6]
-//Pavers (crystal)
-DUPEITEM=035b2
-
-[ITEMDEF 035b7]
-//Pavers (crystal)
-DUPEITEM=035b2
-
-[ITEMDEF 035b8]
-//Pavers (crystal)
-DUPEITEM=035b2
-
-[ITEMDEF 035b9]
-//Pavers (crystal)
-DUPEITEM=035b2
-
-[ITEMDEF 035ba]
-//Pavers (crystal)
-DUPEITEM=035b2
-
-[ITEMDEF 035bb]
-//Pavers (crystal)
-DUPEITEM=035b2
-
-[ITEMDEF 035bc]
-//Pavers (crystal)
-DUPEITEM=035b2
-
-[ITEMDEF 035bd]
-//Pavers (crystal)
-DUPEITEM=035b2
 
 
 [ITEMDEF 0407e]
