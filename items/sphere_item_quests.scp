@@ -1,0 +1,249 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2017
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Friday, Sept 29, 2017
+//
+VERSION=0.56d
+
+
+///////////////////////////
+// The Shattered Obelisk //
+///////////////////////////
+
+[ITEMDEF 09f96]
+DEFNAME=i_obelisk_heart_of_earth
+NAME=Heart of Earth
+CATEGORY=Quests
+SUBSECTION=Shattered Obelisk
+DESCRIPTION=Heart of Earth
+
+[ITEMDEF 09f97]
+DEFNAME=i_obelisk_tongue_of_flames
+NAME=Tongue of Flames
+CATEGORY=Quests
+SUBSECTION=Shattered Obelisk
+DESCRIPTION=Tongue of Flames
+
+[ITEMDEF 09f98]
+DEFNAME=i_obelisk_breath_of_air
+NAME=Breath of Air
+CATEGORY=Quests
+SUBSECTION=Shattered Obelisk
+DESCRIPTION=Breath of Air
+
+[ITEMDEF 09f99]
+DEFNAME=i_obelisk_tear_of_seas
+NAME=Tear of Seas
+CATEGORY=Quests
+SUBSECTION=Shattered Obelisk
+DESCRIPTION=Tear of Seas
+
+[ITEMDEF 09f9a]
+DEFNAME=i_obelisk_tip
+NAME=Obelisk Tip
+CATEGORY=Quests
+SUBSECTION=Shattered Obelisk
+DESCRIPTION=Obelisk Tip
+
+[ITEMDEF 09f9b]
+//obelisk tip (anim)
+
+[ITEMDEF 09f9c]
+//obelisk tip (anim)
+
+[ITEMDEF 09f9d]
+//obelisk (damaged 1)
+
+[ITEMDEF 09f9e]
+//obelisk (damaged 2)
+
+[ITEMDEF 09f9f]
+//obelisk (damaged 3)
+
+[ITEMDEF 09fa0]
+//obelisk (damaged 4)
+
+
+[ITEMDEF 09fa2]
+DEFNAME=i_obelisk_stone_cache
+NAME=Stone Cache
+TYPE=t_container
+TDATA2=0266b
+CATEGORY=Quests
+SUBSECTION=Shattered Obelisk
+DESCRIPTION=Stone Cache (container)
+
+
+[ITEMDEF 09fab]
+//FIXME: This item should be damageable, but hitpoints value is missing
+DEFNAME=i_obelisk
+NAME=Obelisk
+//CAN=can_i_damageable
+//MORE1H=	//max hitpoints
+CATEGORY=Quests
+SUBSECTION=Shattered Obelisk
+DESCRIPTION=Obelisk
+
+[ITEMDEF 09fac]
+DEFNAME=i_banner_titan_pyros
+NAME=banner
+WEIGHT=5.0
+CATEGORY=Quests
+SUBSECTION=Shattered Obelisk
+DESCRIPTION=Banner (Pyros)
+DUPELIST=09fad
+
+[ITEMDEF 09fad]
+//banner (Pyros)
+DUPEITEM=09fac
+
+[ITEMDEF 09fae]
+DEFNAME=i_banner_titan_stratos
+NAME=banner
+WEIGHT=5.0
+CATEGORY=Quests
+SUBSECTION=Shattered Obelisk
+DESCRIPTION=Banner (Stratos)
+DUPELIST=09faf
+
+[ITEMDEF 09faf]
+//banner (Stratos)
+DUPEITEM=09fae
+
+[ITEMDEF 09fb0]
+DEFNAME=i_banner_titan_lithos
+NAME=banner
+WEIGHT=5.0
+CATEGORY=Quests
+SUBSECTION=Shattered Obelisk
+DESCRIPTION=Banner (Lithos)
+DUPELIST=09fb1
+
+[ITEMDEF 09fb1]
+//banner (Lithos)
+DUPEITEM=09fb0
+
+[ITEMDEF 09fb2]
+DEFNAME=i_banner_titan_hydros
+NAME=banner
+WEIGHT=5.0
+CATEGORY=Quests
+SUBSECTION=Shattered Obelisk
+DESCRIPTION=Banner (Hydros)
+DUPELIST=09fb3
+
+[ITEMDEF 09fb3]
+//banner (Hydros)
+DUPEITEM=09fb2
+
+[ITEMDEF 09fb4]
+//This is the Town Cryer empty template (decorative). To enable its functionality as newspaper
+//set TYPE=t_town_cryer and fill the TAGs with proper info (as the example items below)
+DEFNAME=i_town_cryer
+NAME=The Town Cryer
+
+[TYPEDEF t_town_cryer]
+ON=@ClientTooltip
+   SRC.ADDCLILOC 1042971,"<TAG.Title>"	//~1_NOTHING~
+   SRC.ADDCLILOC 1154760,<TAG.Author>	//By: ~1_NAME~
+ON=@DClick
+   SDIALOG d_town_cryer
+   return 1
+
+[DIALOG d_town_cryer]
+50,50
+resizepic 0 0 9390 655 900
+gumppic 60 40 0eff7
+gumppic 40 205 <TAG0.GumpID>
+dhtmlgump 40 140 580 20 0 0 <DEF.CENTER><TAG.Title><DEF.CENTERE>
+dhtmlgump 40 167 580 20 0 0 <DEF.CENTER><TAG.Author><DEF.CENTERE>
+xmfhtmlgumpcolor 327 205 290 650 <TAG0.TextCliloc> 0 1 1
+
+[ITEMDEF i_town_cryer_shattered_obelisk_1]
+ID=i_town_cryer
+TYPE=t_town_cryer
+TAG.Title="Feeling Pressure, Crown Announces Tariff Reduction to Spur Trade"
+TAG.Author="Rita Radcliffe"
+TAG.TextCliloc=1157748
+TAG.GumpID=0266d
+CATEGORY=Quests
+SUBSECTION=Shattered Obelisk
+DESCRIPTION=The Town Cryer (1)
+
+[ITEMDEF i_town_cryer_shattered_obelisk_2]
+ID=i_town_cryer
+TYPE=t_town_cryer
+TAG.Title="Classifieds: Yearning for Adventure?  HUGE Treasure Map Sale!"
+TAG.Author="Al Harrington"
+TAG.TextCliloc=1157751
+TAG.GumpID=0266e
+CATEGORY=Quests
+SUBSECTION=Shattered Obelisk
+DESCRIPTION=The Town Cryer (2)
+
+[ITEMDEF i_town_cryer_shattered_obelisk_3]
+ID=i_town_cryer
+TYPE=t_town_cryer
+TAG.Title="Murder in Moonglow! Lycaeum Ransacked - Again!"
+TAG.Author="Rita Radcliffe"
+TAG.TextCliloc=1157764
+TAG.GumpID=0266f
+CATEGORY=Quests
+SUBSECTION=Shattered Obelisk
+DESCRIPTION=The Town Cryer (3)
+
+[ITEMDEF i_town_cryer_shattered_obelisk_4]
+ID=i_town_cryer
+TYPE=t_town_cryer
+TAG.Title="BRITANNIA INVADED!  CALL TO ARMS ISSUED!"
+TAG.Author="Royal Britannian Guard"
+TAG.TextCliloc=1157926
+TAG.GumpID=02670
+CATEGORY=Quests
+SUBSECTION=Shattered Obelisk
+DESCRIPTION=The Town Cryer (4)
+
+
+[ITEMDEF i_card_titan_stratos]
+ID=09c14
+NAME=Stratos
+TYPE=t_sign_gump
+TDATA2=09be6
+CATEGORY=Quests
+SUBSECTION=Shattered Obelisk
+DESCRIPTION=Card (Stratos)
+
+[ITEMDEF i_card_titan_pyros]
+ID=09c14
+NAME=Pyros
+TYPE=t_sign_gump
+TDATA2=09be7
+CATEGORY=Quests
+SUBSECTION=Shattered Obelisk
+DESCRIPTION=Card (Pyros)
+
+[ITEMDEF i_card_titan_lithos]
+ID=09c14
+NAME=Lithos
+TYPE=t_sign_gump
+TDATA2=09be8
+CATEGORY=Quests
+SUBSECTION=Shattered Obelisk
+DESCRIPTION=Card (Lithos)
+
+[ITEMDEF i_card_titan_hydros]
+ID=09c14
+NAME=Hydros
+TYPE=t_sign_gump
+TDATA2=09be9
+CATEGORY=Quests
+SUBSECTION=Shattered Obelisk
+DESCRIPTION=Card (Hydros)
+
+[EOF]

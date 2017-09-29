@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Aug 26, 2017
+// FILE LAST UPDATED: Friday, Sept 29, 2017
 //
 VERSION=0.56d
 
@@ -2291,6 +2291,8 @@ DUPEITEM=02311
 
 [ITEMDEF 0234e]
 DEFNAME=i_tapestry_sosaria
+TYPE=t_sign_gump
+TDATA2=02c95
 FLIP=1
 CATEGORY=Decoration - Wall Hangings
 SUBSECTION=Tapestries
@@ -2691,30 +2693,6 @@ DUPELIST=03159
 [ITEMDEF 03159]
 //trophy dread horn
 DUPEITEM=03158
-
-
-[ITEMDEF 0365c]
-DEFNAME=i_banner_shadow
-NAME=shadow banner
-FLIP=1
-WEIGHT=5.0
-RESOURCES=1 i_log,5 i_cloth
-CATEGORY=Decoration - Wall Hangings
-SUBSECTION=Banners (multi-part)
-DESCRIPTION=Shadow Banner
-DUPELIST=0365d,0365e,0365f
-
-[ITEMDEF 0365d]
-//shadow banner
-DUPEITEM=0365c
-
-[ITEMDEF 0365e]
-//shadow banner
-DUPEITEM=0365c
-
-[ITEMDEF 0365f]
-//shadow banner
-DUPEITEM=0365c
 
 
 [ITEMDEF 03bb6]
@@ -3205,11 +3183,320 @@ DUPEITEM=04b8d
 [ITEMDEF 04c67]
 
 
+[ITEMDEF 08b8f]
+DEFNAME=i_currency_wall_safe
+NAME=Currency Wall Safe
+FLIP=1
+RESOURCES=20 i_ingot_iron
+SKILLMAKE=Tinkering 0.0,t_tinker_tools
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Misc
+DESCRIPTION=Currency Wall Safe
+DUPELIST=08b90
+
+[ITEMDEF 08b90]
+//currency wall safe
+DUPEITEM=08b8f
+
+
 [ITEMDEF 09704]
 //Machine Wall 1
 [ITEMDEF 09705]
 //Machine Wall 1
 
+
+[ITEMDEF 099a7]
+DEFNAME=i_banner_vice_covetous
+NAME=Covetous Banner
+TYPE=t_sign_gump
+TDATA2=07767
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Vice - Covetous
+DUPELIST=099a8
+
+[ITEMDEF 099a8]
+//covetous banner
+DUPEITEM=099a7
+
+[ITEMDEF 099a9]
+DEFNAME=i_banner_vice_deceit
+NAME=Deceit Banner
+TYPE=t_sign_gump
+TDATA2=07768
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Vice - Deceit
+DUPELIST=099aa
+
+[ITEMDEF 099aa]
+//deceit banner
+DUPEITEM=099a9
+
+[ITEMDEF 099ab]
+DEFNAME=i_banner_vice_despise
+NAME=Despise Banner
+TYPE=t_sign_gump
+TDATA2=07769
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Vice - Despise
+DUPELIST=099ac
+
+[ITEMDEF 099ac]
+//despise banner
+DUPEITEM=099ab
+
+[ITEMDEF 099ad]
+DEFNAME=i_banner_vice_destard
+NAME=Destard Banner
+TYPE=t_sign_gump
+TDATA2=0776a
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Vice - Destard
+DUPELIST=099ae
+
+[ITEMDEF 099ae]
+//destard banner
+DUPEITEM=099ad
+
+[ITEMDEF 099af]
+DEFNAME=i_banner_vice_hythloth
+NAME=Hythloth Banner
+TYPE=t_sign_gump
+TDATA2=0776b
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Vice - Hythloth
+DUPELIST=099b0
+
+[ITEMDEF 099b0]
+//hythloth banner
+DUPEITEM=099af
+
+[ITEMDEF 099b1]
+DEFNAME=i_banner_vice_pride
+NAME=Pride Banner
+TYPE=t_sign_gump
+TDATA2=0776c
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Vice - Pride
+DUPELIST=099b2
+
+[ITEMDEF 099b2]
+//pride banner
+DUPEITEM=099b1
+
+[ITEMDEF 099b3]
+DEFNAME=i_banner_vice_shame
+NAME=Shame Banner
+TYPE=t_sign_gump
+TDATA2=0776d
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Vice - Shame
+DUPELIST=099b4
+
+[ITEMDEF 099b4]
+//shame banner
+DUPEITEM=099b3
+
+[ITEMDEF 099b5]
+DEFNAME=i_banner_vice_wrong
+NAME=Wrong Banner
+TYPE=t_sign_gump
+TDATA2=0776e
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Vice - Wrong
+DUPELIST=099b6
+
+[ITEMDEF 099b6]
+//wrong banner
+DUPEITEM=099b5
+
+[ITEMDEF 099b7]
+DEFNAME=i_banner_virtue_compassion
+NAME=Compassion Banner
+TYPE=t_sign_gump
+TDATA2=0776f
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Virtue - Compassion
+DUPELIST=099b8
+
+[ITEMDEF 099b8]
+//compassion banner
+DUPEITEM=099b7
+
+[ITEMDEF 099b9]
+DEFNAME=i_banner_virtue_honesty
+NAME=Honesty Banner
+TYPE=t_sign_gump
+TDATA2=07770
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Virtue - Honesty
+DUPELIST=099ba
+
+[ITEMDEF 099ba]
+//honesty banner
+DUPEITEM=099b9
+
+[ITEMDEF 099bb]
+DEFNAME=i_banner_virtue_honor
+NAME=Honor Banner
+TYPE=t_sign_gump
+TDATA2=07771
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Virtue - Honor
+DUPELIST=099bc
+
+[ITEMDEF 099bc]
+//honor banner
+DUPEITEM=099bb
+
+[ITEMDEF 099bd]
+DEFNAME=i_banner_virtue_humility
+NAME=Humility Banner
+TYPE=t_sign_gump
+TDATA2=07772
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Virtue - Humility
+DUPELIST=099be
+
+[ITEMDEF 099be]
+//humility banner
+DUPEITEM=099bd
+
+[ITEMDEF 099bf]
+DEFNAME=i_banner_virtue_justice
+NAME=Justice Banner
+TYPE=t_sign_gump
+TDATA2=07773
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Virtue - Justice
+DUPELIST=099c0
+
+[ITEMDEF 099c0]
+//justice banner
+DUPEITEM=099bf
+
+[ITEMDEF 099c1]
+DEFNAME=i_banner_virtue_sacrifice
+NAME=Sacrifice Banner
+TYPE=t_sign_gump
+TDATA2=07774
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Virtue - Sacrifice
+DUPELIST=099c2
+
+[ITEMDEF 099c2]
+//sacrifice banner
+DUPEITEM=099c1
+
+[ITEMDEF 099c3]
+DEFNAME=i_banner_virtue_spirituality
+NAME=Spirituality Banner
+TYPE=t_sign_gump
+TDATA2=07775
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Virtue - Spirituality
+DUPELIST=099c4
+
+[ITEMDEF 099c4]
+//spirituality banner
+DUPEITEM=099c3
+
+[ITEMDEF 099c5]
+DEFNAME=i_banner_virtue_valor
+NAME=Valor Banner
+TYPE=t_sign_gump
+TDATA2=07776
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Virtue - Valor
+DUPELIST=099c6
+
+[ITEMDEF 099c6]
+//valor banner
+DUPEITEM=099c5
+
+
+[ITEMDEF 09a26]
+DEFNAME=i_trophy_bear
+NAME=bear trophy
+FLIP=1
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Bear
+DUPELIST=09a27
+
+[ITEMDEF 09a27]
+//trophy bear
+DUPEITEM=09a26
+
+[ITEMDEF 09a28]
+DEFNAME=i_trophy_graywolf
+NAME=gray wolf trophy
+FLIP=1
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Gray Wolf
+DUPELIST=09a29
+
+[ITEMDEF 09a29]
+//trophy gray wolf
+DUPEITEM=09a28
+
+[ITEMDEF 09a2a]
+DEFNAME=i_trophy_cougar
+NAME=cougar trophy
+FLIP=1
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Cougar
+DUPELIST=09a2b
+
+[ITEMDEF 09a2b]
+//trophy cougar
+DUPEITEM=09a2a
+
+[ITEMDEF 09a2c]
+DEFNAME=i_trophy_turkey
+NAME=turkey trophy
+FLIP=1
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Turkey
+DUPELIST=09a2d
+
+[ITEMDEF 09a2d]
+//trophy turkey
+DUPEITEM=09a2c
 
 [ITEMDEF 09a2e]
 DEFNAME=i_trophy_bullhead
@@ -3520,5 +3807,58 @@ DUPELIST=09e34
 [ITEMDEF 09e34]
 //scales painting
 DUPEITEM=09e33
+
+
+[ITEMDEF 09f2b]
+DEFNAME=i_trophy_triceratopshead
+NAME=triceratops trophy
+FLIP=1
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Triceratops
+DUPELIST=09f2c
+
+[ITEMDEF 09f2c]
+//trophy triceratopshead
+DUPEITEM=09f2b
+
+[ITEMDEF 09f2d]
+DEFNAME=i_trophy_lionhead
+NAME=lion trophy
+FLIP=1
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Lion
+DUPELIST=09f2e
+
+[ITEMDEF 09f2e]
+//trophy lionhead
+DUPEITEM=09f2d
+
+[ITEMDEF 09f2f]
+DEFNAME=i_trophy_whitetigerhead
+NAME=tiger trophy
+FLIP=1
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Tiger (white)
+DUPELIST=09f30
+
+[ITEMDEF 09f30]
+//trophy whitetigerhead
+DUPEITEM=09f2f
+
+[ITEMDEF 09f31]
+DEFNAME=i_trophy_blacktigerhead
+NAME=tiger trophy
+FLIP=1
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Tiger (black)
+DUPELIST=09f32
+
+[ITEMDEF 09f32]
+//trophy blacktigerhead
+DUPEITEM=09f31
 
 [EOF]
