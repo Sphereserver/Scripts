@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Jan 7, 2017
+// FILE LAST UPDATED: Sunday, Oct 8, 2017
 //
 VERSION=0.56d
 
@@ -350,5 +350,10 @@ VERSION=0.56d
 5364,1289,4,1=5272,2041,4,1=tp_orccave2_orccave3_map1
 5272,2043,4,1=5363,1290,4,1=tp_orccave3_orccave2_map1
 5273,2043,4,1=5363,1290,4,1=tp_orccave3_orccave2_map1
+3508,2777,0,1=5913,355,0,1=tp_newhaven_island_newhaven_mine
+3508,2778,0,1=5913,355,0,1=tp_newhaven_island_newhaven_mine
+5912,354,0,1=3509,2778,0,1=tp_newhaven_mine_newhaven_island
+5912,355,0,1=3509,2778,0,1=tp_newhaven_mine_newhaven_island
+5912,356,0,1=3509,2778,0,1=tp_newhaven_mine_newhaven_island
 
 [EOF]

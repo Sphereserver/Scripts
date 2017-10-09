@@ -1,0 +1,57 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2017
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Sunday, Oct 8, 2017
+//
+VERSION=0.56d
+
+////////////////////////////////////////
+// Misc
+////////////////////////////////////////
+
+[AREADEF a_event_arenas]
+NAME=Event Arenas
+GROUP=Events
+P=6776,704,0,1
+RECT=6721,648,6840,760,1
+FLAGS=region_flag_nobuilding|region_flag_underground|region_antimagic_all|region_flag_safe
+
+[AREADEF a_event_arena_1]
+NAME=Arena 1
+GROUP=Events
+P=6746,679,0,1
+RECT=6732,674,6735,685,1
+RECT=6735,671,6759,688,1
+RECT=6758,674,6760,685,1
+FLAGS=region_flag_nobuilding|region_flag_underground|region_antimagic_recall_in|region_antimagic_recall_out|region_antimagic_gate|region_flag_arena
+
+[AREADEF a_event_arena_2]
+NAME=Arena 2
+GROUP=Events
+P=6746,728,0,1
+RECT=6732,723,6735,734,1
+RECT=6735,720,6759,737,1
+RECT=6758,723,6760,734,1
+FLAGS=region_flag_nobuilding|region_flag_underground|region_antimagic_recall_in|region_antimagic_recall_out|region_antimagic_gate|region_flag_arena
+
+[AREADEF a_event_arena_3]
+NAME=Arena 3
+GROUP=Events
+P=6801,680,0,1
+RECT=6788,672,6813,688,1
+FLAGS=region_flag_nobuilding|region_flag_underground|region_antimagic_recall_in|region_antimagic_recall_out|region_antimagic_gate|region_flag_arena
+
+[AREADEF a_event_arena_4]
+NAME=Arena 4
+GROUP=Events
+P=6801,729,0,1
+RECT=6788,721,6813,737,1
+FLAGS=region_flag_nobuilding|region_flag_underground|region_antimagic_recall_in|region_antimagic_recall_out|region_antimagic_gate|region_flag_arena
+
+[EOF]

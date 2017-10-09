@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Thursday, Aug 10, 2017
+// FILE LAST UPDATED: Sunday, Oct 8, 2017
 //
 VERSION=0.56d
 
@@ -20892,8 +20892,23 @@ ON=@NpcRestock
 
 
 [CHARDEF 04e5]
-NAME=King Blackthorn
-CAN=MT_WALK|MT_RUN|MT_USEHANDS|MT_EQUIP
+//FIXME: No Stratics data yet
+DEFNAME=c_lord_blackthorn
+NAME=Lord Blackthorn
+ICON=i_pet_man
+CAN=MT_WALK|MT_RUN|MT_USEHANDS
+DAM=1,4
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TEVENTS=e_Human_HearUnk
+CATEGORY=Civilized
+SUBSECTION=Miscellaneous
+DESCRIPTION=Lord Blackthorn
+ON=@Create
+   NPC=brain_human
+   STR=100
+   DEX=100
+   INT=100
 
 [CHARDEF 04e6]
 DEFNAME=c_wild_tiger
@@ -22072,6 +22087,182 @@ ON=@Create
    RESCOLD={30 40}
    RESPOISON={30 40}
    RESENERGY={20 30}
+
+[CHARDEF 0593]
+DEFNAME=c_hydros
+NAME=Hydros
+ICON=i_pet_hydros
+//SOUND=
+CAN=MT_WALK|MT_RUN
+DAM=8,10
+DAMCOLD=100
+ARMOR=85
+CATEGORY=Monsters
+SUBSECTION=Pagan Titans
+DESCRIPTION=Hydros (Water)
+ON=@Create
+   NPC=brain_monster
+   FAME=20000
+   KARMA=-20000
+   STR={1900 2200}
+   DEX={200 280}
+   INT={900 1200}
+   MAXHITS=10000
+   ANATOMY={0.0 30.0}
+   DETECTINGHIDDEN=100.0
+   MAGICRESISTANCE={100.0 140.0}
+   PARRYING={60.0 90.0}
+   TACTICS={100.0 140.0}
+   WRESTLING={105.0 115.0}
+   MAGERY={105.0 115.0}
+   EVALUATINGINTEL={105.0 115.0}
+   MEDITATION={60.0 80.0}
+   RESPHYSICAL={80 90}
+   RESFIRE={70 90}
+   RESCOLD={80 95}
+   RESPOISON={60 90}
+   RESENERGY={80 85}
+
+[CHARDEF 0594]
+DEFNAME=c_jack_in_the_box
+NAME=Jack in the Box
+ICON=i_pet_jack_in_the_box
+//SOUND=
+CAN=MT_WALK|MT_RUN
+DAM=11,18
+ARMOR=75
+CATEGORY=Monsters
+SUBSECTION=Halloween
+DESCRIPTION=Jack in the Box
+ON=@Create
+   NPC=brain_monster
+   //FAME=
+   //KARMA=
+   STR={200 230}
+   DEX={150 180}
+   INT={700 800}
+   MAXHITS=5000
+   ANATOMY=25.0
+   DETECTINGHIDDEN=100.0
+   MAGICRESISTANCE=120.0
+   PARRYING={25.0 50.0}
+   TACTICS={100.0 110.0}
+   WRESTLING={100 140.0}
+   MAGERY=120.0
+   EVALUATINGINTEL=120.0
+   MEDITATION=120.0
+   NECROMANCY=120.0
+   SPIRITSPEAK=120.0
+   RESPHYSICAL={50 80}
+   RESFIRE={50 80}
+   RESCOLD={50 80}
+   RESPOISON={50 80}
+   RESENERGY={50 80}
+
+[CHARDEF 0597]
+DEFNAME=c_lithos
+NAME=Lithos
+ICON=i_pet_lithos
+//SOUND=
+CAN=MT_WALK|MT_RUN
+DAM=8,10
+DAMPOISON=50
+ARMOR=80
+CATEGORY=Monsters
+SUBSECTION=Pagan Titans
+DESCRIPTION=Lithos (Earth)
+ON=@Create
+   NPC=brain_monster
+   FAME=20000
+   KARMA=-20000
+   STR={1900 2200}
+   DEX={200 280}
+   INT={900 1200}
+   MAXHITS=10000
+   ANATOMY={0.0 30.0}
+   DETECTINGHIDDEN=100.0
+   MAGICRESISTANCE={100.0 140.0}
+   PARRYING={60.0 90.0}
+   TACTICS={100.0 140.0}
+   WRESTLING={105.0 115.0}
+   MAGERY={105.0 115.0}
+   EVALUATINGINTEL={105.0 115.0}
+   MEDITATION={60.0 80.0}
+   RESPHYSICAL={70 85}
+   RESFIRE={60 90}
+   RESCOLD={80 95}
+   RESPOISON={65 85}
+   RESENERGY={80 85}
+
+[CHARDEF 0598]
+DEFNAME=c_stratos
+NAME=Stratos
+ICON=i_pet_stratos
+//SOUND=
+CAN=MT_WALK|MT_RUN
+DAM=8,10
+DAMENERGY=100
+ARMOR=70
+CATEGORY=Monsters
+SUBSECTION=Pagan Titans
+DESCRIPTION=Stratos (Air)
+ON=@Create
+   NPC=brain_monster
+   FAME=20000
+   KARMA=-20000
+   STR={1900 2200}
+   DEX={200 280}
+   INT={900 1200}
+   MAXHITS=10000
+   ANATOMY={0.0 30.0}
+   DETECTINGHIDDEN=100.0
+   MAGICRESISTANCE={100.0 140.0}
+   PARRYING={60.0 90.0}
+   TACTICS={100.0 140.0}
+   WRESTLING={105.0 115.0}
+   MAGERY={105.0 115.0}
+   EVALUATINGINTEL={105.0 115.0}
+   MEDITATION={60.0 80.0}
+   RESPHYSICAL={45 95}
+   RESFIRE={35 90}
+   RESCOLD={50 95}
+   RESPOISON={30 85}
+   RESENERGY={40 85}
+
+[CHARDEF 0599]
+DEFNAME=c_pyros
+NAME=Pyros
+ICON=i_pet_pyros
+//SOUND=
+CAN=MT_WALK|MT_RUN
+DAM=8,10
+DAMFIRE=100
+ARMOR=70
+CATEGORY=Monsters
+SUBSECTION=Pagan Titans
+DESCRIPTION=Pyros (Fire)
+ON=@Create
+   NPC=brain_monster
+   FAME=20000
+   KARMA=-20000
+   STR={1900 2200}
+   DEX={200 280}
+   INT={900 1200}
+   MAXHITS=10000
+   ANATOMY={0.0 30.0}
+   DETECTINGHIDDEN=100.0
+   MAGICRESISTANCE={100.0 140.0}
+   PARRYING={60.0 90.0}
+   TACTICS={100.0 140.0}
+   WRESTLING={105.0 115.0}
+   MAGERY={105.0 115.0}
+   EVALUATINGINTEL={105.0 115.0}
+   MEDITATION={60.0 80.0}
+   RESPHYSICAL={40 95}
+   RESFIRE={35 90}
+   RESCOLD={40 90}
+   RESPOISON={35 85}
+   RESENERGY={35 85}
 
 ///////////////////////////////////////////////
 // These are here for backward compatibility //

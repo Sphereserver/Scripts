@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, May 28, 2017
+// FILE LAST UPDATED: Sunday, Oct 8, 2017
 //
 VERSION=0.56d
 
@@ -18,8 +18,8 @@ VERSION=0.56d
 [AREADEF a_sea_market]
 NAME=Sea Market
 GROUP=HS Cities
-RECT=4472,2250,4672,2450,0
-P=4550,2317,-2,0
+RECT=4530,2298,4574,2408,0
+P=4552,2332,-2,0
 FLAGS=region_flag_nobuilding|region_flag_guarded
 EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
 

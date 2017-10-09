@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Jan 7, 2017
+// FILE LAST UPDATED: Sunday, Oct 8, 2017
 //
 VERSION=0.56d
 
@@ -35,7 +35,7 @@ EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
 // Dungeons
 ////////////////////////////////////////
 
-[AREADEF a_solen_hiven_map1]	//Apparently Solen Hive exists only on Trammel facet
+[AREADEF a_solen_hive_map1]
 NAME=Solen Hive
 GROUP=Dungeons
 P=5803,1920,0,1
@@ -75,15 +75,15 @@ TAG.MUSIC=midi_dungeon9
 //[AREADEF a_new_haven_island]
 //NAME=Haven Island
 //GROUP=New Haven
-//P=3627,2606,0,1
-//RECT=3314,2345,3814,3095,1
+//P=3581,2530,0,1
+//RECT=3333,2355,3810,2845,1
 //FLAGS=region_flag_no_pvp|region_flag_nobuilding|region_antimagic_recall_in|region_antimagic_gate
 //EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
 
 //[AREADEF a_new_haven_town]
 //NAME=New Haven
 //GROUP=New Haven
-//P=3503,2574,14,1
+//P=3498,2572,14,1
 //RECT=3423,2480,3534,2623,1
 //FLAGS=region_flag_no_pvp|region_flag_nobuilding|region_antimagic_recall_in|region_antimagic_gate|region_flag_guarded
 //EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
@@ -98,5 +98,14 @@ TAG.MUSIC=midi_dungeon9
 //FLAGS=region_flag_no_pvp|region_flag_nobuilding|region_antimagic_recall_in|region_antimagic_gate|region_flag_insta_logout
 //EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
 //TAG.MUSIC=midi_intown01
+
+//[AREADEF a_new_haven_mine]
+//NAME=New Haven Mine
+//GROUP=New Haven
+//P=5914,355,0,1
+//RECT=5890,271,6013,367,1
+//FLAGS=region_flag_no_pvp|region_flag_nobuilding|region_antimagic_recall_in|region_antimagic_gate
+//EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
+//TAG.MUSIC=midi_dungeon9
 
 [EOF]
