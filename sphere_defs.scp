@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Thursday, Jul 27, 2017
+// FILE LAST UPDATED: Tuesday, Oct 17, 2017
 //
 VERSION=0.56d
 
@@ -84,6 +84,7 @@ mount_0x579	i_mt_tarantula
 mount_0x57f	i_mt_lasher
 mount_0x580	i_mt_palomino
 mount_0x582	i_mt_windrunner
+mount_0x59a	i_mt_serpentine_dragon_ethereal
 
 [DEFNAME hues]
 color_text                   -1
@@ -990,7 +991,7 @@ t_portculis              36   // z delta moving gate (open)
 t_figurine               37   // magic figure that turns into a creature when activated.
 t_shrine                 38   // can resurrect you
 t_moongate               39   // linked to other moon gates (hardcoded locations)
-t_chair                  40   // any sort of a chair item. we can sit on
+//t_unused_40            40
 t_forge                  41   // used to smelt ores
 t_ore                    42   // smelt to ingots
 t_log                    43   // make into furniture etc. lumber logs

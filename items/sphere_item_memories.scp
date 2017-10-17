@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Friday, April 21, 2017
+// FILE LAST UPDATED: Tuesday, Oct 17, 2017
 //
 VERSION=0.56d
 
@@ -575,6 +575,13 @@ ID=03ecd
 TYPE=t_eq_horse
 LAYER=layer_horse
 TDATA3=c_palomino
+WEIGHT=0
+
+[ITEMDEF i_mt_serpentine_dragon_ethereal]
+ID=03ece
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_serpentine_dragon_ethereal
 WEIGHT=0
 
 [EOF]

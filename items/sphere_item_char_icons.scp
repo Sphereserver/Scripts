@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Sept 9, 2017
+// FILE LAST UPDATED: Tuesday, Oct 17, 2017
 //
 VERSION=0.56d
 
@@ -3895,5 +3895,14 @@ TDATA3=c_lithos
 CATEGORY=Miscellaneous
 SUBSECTION=Character Icons
 DESCRIPTION=Lithos
+
+[ITEMDEF 0a010]
+DEFNAME=i_pet_serpentine_dragon_ethereal
+NAME=Ethereal Serpentine Dragon
+TYPE=t_figurine
+TDATA3=c_serpentine_dragon_ethereal
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Ethereal Serpentine Dragon
 
 [EOF]

@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Sept 9, 2017
+// FILE LAST UPDATED: Tuesday, Oct 17, 2017
 //
 VERSION=0.56d
 
@@ -1657,29 +1657,29 @@ DUPEITEM=09dbb
 DUPEITEM=09dbb
 
 [ITEMDEF 09dbf]
-DEFNAME=i_christmas_wall_bells
-NAME=christmas bells
+DEFNAME=i_holiday_bells
+NAME=holiday bells
 FLIP=1
 CATEGORY=Christmas
 SUBSECTION=Decoration
-DESCRIPTION=Christmas Bells (wall)
+DESCRIPTION=Holiday Bells
 DUPELIST=09dc0
 
 [ITEMDEF 09dc0]
-//christmas bells
+//holiday bells
 DUPEITEM=09dbf
 
 [ITEMDEF 09dc1]
-DEFNAME=i_christmas_wall_bow
-NAME=christmas bow
+DEFNAME=i_holiday_ribbon
+NAME=holiday ribbon
 FLIP=1
 CATEGORY=Christmas
 SUBSECTION=Decoration
-DESCRIPTION=Christmas Bow (wall)
+DESCRIPTION=Holiday Ribbon
 DUPELIST=09dc2
 
 [ITEMDEF 09dc2]
-//christmas bow
+//holiday ribbon
 DUPEITEM=09dc1
 
 [ITEMDEF 09dc3]
@@ -1796,102 +1796,89 @@ SUBSECTION=Decoration
 DESCRIPTION=Snowflake
 
 
-[ITEMDEF 09fea]
-DEFNAME=i_christmas_writing_desk_south
-NAME=writing desk
+[ITEMDEF 09f1c]
+DEFNAME=i_box_jewelry
+NAME=jewelry box
+FLIP=1
 CATEGORY=Christmas
 SUBSECTION=Decoration
-DESCRIPTION=Writing Desk (south)
+DESCRIPTION=Jewelry Box
+DUPELIST=09f1d
 
-[ITEMDEF 09feb]
-//writing desk
-
-[ITEMDEF 09fec]
-//writing desk
-
-[ITEMDEF 09fed]
-//writing desk
-
-[ITEMDEF 09fee]
-//writing desk
-
-[ITEMDEF 09fef]
-//writing desk
-
-[ITEMDEF 09ff0]
-//writing desk
-
-[ITEMDEF 09ff1]
-DEFNAME=i_christmas_writing_desk_east
-NAME=writing desk
-CATEGORY=Christmas
-SUBSECTION=Decoration
-DESCRIPTION=Writing Desk (east)
-
-[ITEMDEF 09ff2]
-//writing desk
-
-[ITEMDEF 09ff3]
-//writing desk
-
-[ITEMDEF 09ff4]
-//writing desk
-
-[ITEMDEF 09ff5]
-//writing desk
-
-[ITEMDEF 09ff6]
-//writing desk
-
-[ITEMDEF 09ff7]
-//writing desk
+[ITEMDEF 09f1d]
+//jewelry box
+DUPEITEM=09f1c
 
 
 [ITEMDEF 09ffa]
 DEFNAME=i_garland_firefly_south
 NAME=firefly garland
+TYPE=t_light_out
+TDATA3=i_garland_firefly_south_lit
 CATEGORY=Christmas
 SUBSECTION=Decoration
-DESCRIPTION=Firefly Garland (south)
-ON=@DClick
-   DISPID <QVAL (<DISPID>==i_garland_firefly_south)? 09ffb : i_garland_firefly_south>
-   UPDATE
-   return 1
+DESCRIPTION=Firefly Garland (unlit)
+ON=@Create
+   MOREZ=1
 
 [ITEMDEF 09ffb]
-//firefly garland
+DEFNAME=i_garland_firefly_south_lit
+NAME=firefly garland
+TYPE=t_light_lit
+TDATA3=i_garland_firefly_south
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Firefly Garland (lit)
+ON=@Create
+   MOREZ=1
 
 [ITEMDEF 09ffc]
-//firefly garland
+//firefly garland (anim)
 
 [ITEMDEF 09ffd]
-//firefly garland
+//firefly garland (anim)
 
 [ITEMDEF 09ffe]
-//firefly garland
+//firefly garland (anim)
 
 [ITEMDEF 09fff]
 DEFNAME=i_garland_firefly_east
 NAME=firefly garland
+TYPE=t_light_out
+TDATA3=i_garland_firefly_east_lit
 CATEGORY=Christmas
 SUBSECTION=Decoration
-DESCRIPTION=Firefly Garland (east)
-ON=@DClick
-   DISPID <QVAL (<DISPID>==i_garland_firefly_east)? 09ffb : i_garland_firefly_east>
-   UPDATE
-   return 1
+DESCRIPTION=Firefly Garland (unlit)
+ON=@Create
+   MOREZ=1
 
 [ITEMDEF 0a000]
-//firefly garland
+DEFNAME=i_garland_firefly_east_lit
+NAME=firefly garland
+TYPE=t_light_lit
+TDATA3=i_garland_firefly_east
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Firefly Garland (lit)
+ON=@Create
+   MOREZ=1
 
 [ITEMDEF 0a001]
-//firefly garland
+//firefly garland (anim)
 
 [ITEMDEF 0a002]
-//firefly garland
+//firefly garland (anim)
 
 [ITEMDEF 0a003]
-//firefly garland
+//firefly garland (anim)
+
+
+[ITEMDEF 0a094]
+DEFNAME=i_holiday_gift_token
+NAME=holiday gift token
+CATEGORY=Christmas
+SUBSECTION=Misc
+DESCRIPTION=Holiday Gift Token
 
 
 //////////////////

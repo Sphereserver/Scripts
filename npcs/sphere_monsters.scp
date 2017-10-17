@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, Oct 8, 2017
+// FILE LAST UPDATED: Tuesday, Oct 17, 2017
 //
 VERSION=0.56d
 
@@ -22263,6 +22263,19 @@ ON=@Create
    RESCOLD={40 90}
    RESPOISON={35 85}
    RESENERGY={35 85}
+
+[CHARDEF 059a]
+DEFNAME=c_serpentine_dragon_ethereal
+NAME=Ethereal Serpentine Dragon
+ICON=i_pet_serpentine_dragon_ethereal
+CAN=MT_WALK
+FollowerSlots=1
+CATEGORY=Mounts
+SUBSECTION=Ethereal
+DESCRIPTION=Serpentine Dragon
+ON=@Create
+   NPC=brain_animal
+   STR=1
 
 ///////////////////////////////////////////////
 // These are here for backward compatibility //

@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Aug 15, 2017
+// FILE LAST UPDATED: Tuesday, Oct 17, 2017
 //
 VERSION=0.56d
 
@@ -140,6 +140,8 @@ CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Campfires
 DESCRIPTION=Campfire
 DUPELIST=0de4,0de5,0de6,0de7,0de8
+ON=@Create
+   MOREZ=29
 
 [ITEMDEF 0de4]
 //campfire
@@ -167,6 +169,8 @@ TYPE=t_campfire
 CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Campfires
 DESCRIPTION=Embers
+ON=@Create
+   MOREZ=2
 
 [ITEMDEF 0dea]
 DEFNAME=i_ember
@@ -638,71 +642,514 @@ DUPELIST=09c47
 //woodworking container
 DUPEITEM=09c46
 
-[ITEMDEF 09f1c]
-DEFNAME=i_box_jewelry
-NAME=jewelry box
-FLIP=1
+
+[ITEMDEF 09fb5]
+//hildebrandt dragon rug (multi-part)(south)
+NAME=hildebrandt dragon rug
+
+[ITEMDEF 09fb6]
+//hildebrandt dragon rug (multi-part)(south)
+NAME=hildebrandt dragon rug
+
+[ITEMDEF 09fb7]
+//hildebrandt dragon rug (multi-part)(south)
+NAME=hildebrandt dragon rug
+
+[ITEMDEF 09fb8]
+//hildebrandt dragon rug (multi-part)(south)
+NAME=hildebrandt dragon rug
+
+[ITEMDEF 09fb9]
+//hildebrandt dragon rug (multi-part)(south)
+NAME=hildebrandt dragon rug
+
+[ITEMDEF 09fba]
+//hildebrandt dragon rug (multi-part)(south)
+NAME=hildebrandt dragon rug
+
+[ITEMDEF 09fbb]
+//hildebrandt dragon rug (multi-part)(south)
+NAME=hildebrandt dragon rug
+
+[ITEMDEF 09fbc]
+//hildebrandt dragon rug (multi-part)(south)
+NAME=hildebrandt dragon rug
+
+[ITEMDEF 09fbd]
+//hildebrandt dragon rug (multi-part)(south)
+NAME=hildebrandt dragon rug
+
+[ITEMDEF 09fbe]
+//hildebrandt dragon rug (multi-part)(south)
+NAME=hildebrandt dragon rug
+
+[ITEMDEF 09fbf]
+//hildebrandt dragon rug (multi-part)(south)
+NAME=hildebrandt dragon rug
+
+[ITEMDEF 09fc0]
+//hildebrandt dragon rug (multi-part)(south)
+NAME=hildebrandt dragon rug
+
+[ITEMDEF 09fc1]
+//hildebrandt dragon rug (multi-part)(south)
+NAME=hildebrandt dragon rug
+
+[ITEMDEF 09fc2]
+//hildebrandt dragon rug (multi-part)(south)
+NAME=hildebrandt dragon rug
+
+[ITEMDEF 09fc3]
+//hildebrandt dragon rug (multi-part)(south)
+NAME=hildebrandt dragon rug
+
+[ITEMDEF 09fc4]
+//hildebrandt dragon rug (multi-part)(south)
+NAME=hildebrandt dragon rug
+
+[ITEMDEF 09fc5]
+//hildebrandt dragon rug (multi-part)(south)
+NAME=hildebrandt dragon rug
+
+[ITEMDEF 09fc6]
+//hildebrandt dragon rug (multi-part)(south)
+NAME=hildebrandt dragon rug
+
+[ITEMDEF 09fc7]
+//hildebrandt dragon rug (multi-part)(south)
+NAME=hildebrandt dragon rug
+
+[ITEMDEF 09fc8]
+//hildebrandt dragon rug (multi-part)(south)
+NAME=hildebrandt dragon rug
+
+[ITEMDEF 09fc9]
+//hildebrandt dragon rug (multi-part)(south)
+NAME=hildebrandt dragon rug
+
+[ITEMDEF 09fca]
+//hildebrandt dragon rug (multi-part)(south)
+NAME=hildebrandt dragon rug
+
+[ITEMDEF 09fcb]
+//hildebrandt dragon rug (multi-part)(south)
+NAME=hildebrandt dragon rug
+
+[ITEMDEF 09fcc]
+//hildebrandt dragon rug (multi-part)(south)
+NAME=hildebrandt dragon rug
+
+[ITEMDEF 09fcd]
+//hildebrandt dragon rug (multi-part)(south)
+NAME=hildebrandt dragon rug
+
+[ITEMDEF 09fce]
+//hildebrandt dragon rug (multi-part)(east)
+NAME=hildebrandt dragon rug
+
+[ITEMDEF 09fcf]
+//hildebrandt dragon rug (multi-part)(east)
+NAME=hildebrandt dragon rug
+
+[ITEMDEF 09fd0]
+//hildebrandt dragon rug (multi-part)(east)
+NAME=hildebrandt dragon rug
+
+[ITEMDEF 09fd1]
+//hildebrandt dragon rug (multi-part)(east)
+NAME=hildebrandt dragon rug
+
+[ITEMDEF 09fd2]
+//hildebrandt dragon rug (multi-part)(east)
+NAME=hildebrandt dragon rug
+
+[ITEMDEF 09fd3]
+//hildebrandt dragon rug (multi-part)(east)
+NAME=hildebrandt dragon rug
+
+[ITEMDEF 09fd4]
+//hildebrandt dragon rug (multi-part)(east)
+NAME=hildebrandt dragon rug
+
+[ITEMDEF 09fd5]
+//hildebrandt dragon rug (multi-part)(east)
+NAME=hildebrandt dragon rug
+
+[ITEMDEF 09fd6]
+//hildebrandt dragon rug (multi-part)(east)
+NAME=hildebrandt dragon rug
+
+[ITEMDEF 09fd7]
+//hildebrandt dragon rug (multi-part)(east)
+NAME=hildebrandt dragon rug
+
+[ITEMDEF 09fd8]
+//hildebrandt dragon rug (multi-part)(east)
+NAME=hildebrandt dragon rug
+
+[ITEMDEF 09fd9]
+//hildebrandt dragon rug (multi-part)(east)
+NAME=hildebrandt dragon rug
+
+[ITEMDEF 09fda]
+//hildebrandt dragon rug (multi-part)(east)
+NAME=hildebrandt dragon rug
+
+[ITEMDEF 09fdb]
+//hildebrandt dragon rug (multi-part)(east)
+NAME=hildebrandt dragon rug
+
+[ITEMDEF 09fdc]
+//hildebrandt dragon rug (multi-part)(east)
+NAME=hildebrandt dragon rug
+
+[ITEMDEF 09fdd]
+//hildebrandt dragon rug (multi-part)(east)
+NAME=hildebrandt dragon rug
+
+[ITEMDEF 09fde]
+//hildebrandt dragon rug (multi-part)(east)
+NAME=hildebrandt dragon rug
+
+[ITEMDEF 09fdf]
+//hildebrandt dragon rug (multi-part)(east)
+NAME=hildebrandt dragon rug
+
+[ITEMDEF 09fe0]
+//hildebrandt dragon rug (multi-part)(east)
+NAME=hildebrandt dragon rug
+
+[ITEMDEF 09fe1]
+//hildebrandt dragon rug (multi-part)(east)
+NAME=hildebrandt dragon rug
+
+[ITEMDEF 09fe2]
+//hildebrandt dragon rug (multi-part)(east)
+NAME=hildebrandt dragon rug
+
+[ITEMDEF 09fe3]
+//hildebrandt dragon rug (multi-part)(east)
+NAME=hildebrandt dragon rug
+
+[ITEMDEF 09fe4]
+//hildebrandt dragon rug (multi-part)(east)
+NAME=hildebrandt dragon rug
+
+[ITEMDEF 09fe5]
+//hildebrandt dragon rug (multi-part)(east)
+NAME=hildebrandt dragon rug
+
+[ITEMDEF 09fe6]
+//hildebrandt dragon rug (multi-part)(east)
+NAME=hildebrandt dragon rug
+
+
+[ITEMDEF 09fe9]
+DEFNAME=i_obsidian
+NAME=obsidian
 CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Misc
-DESCRIPTION=Jewelry box
-DUPELIST=09f1d
+DESCRIPTION=Obsidian
 
-[ITEMDEF 09f1d]
-//jewelry box
-DUPEITEM=09f1c
 
-[ITEMDEF 09f88]
-DEFNAME=i_confetti
-NAME=confetti
-CATEGORY=Provisions - Miscellaneous
-SUBSECTION=Misc
-DESCRIPTION=Confetti
+[ITEMDEF 0a011]
+//koi pond (multi-part)(small)
+NAME=koi pond
 
-[ITEMDEF 09f89]
-DEFNAME=i_confetti_explosion
-NAME=confetti
-CATEGORY=Provisions - Miscellaneous
-SUBSECTION=Misc
-DESCRIPTION=Confetti (explosion)
-DUPELIST=09f8a,09f8b,09f8c,09f8d,09f8e,09f8f,09f90,09f91
+[ITEMDEF 0a012]
+//koi pond (multi-part)(small)
+NAME=koi pond
 
-[ITEMDEF 09f8a]
-//confetti (explosion)
-DUPEITEM=09f89
+[ITEMDEF 0a013]
+//koi pond (multi-part)(small)
+NAME=koi pond
 
-[ITEMDEF 09f8b]
-//confetti (explosion)
-DUPEITEM=09f89
+[ITEMDEF 0a014]
+//koi pond (multi-part)(small)
+NAME=koi pond
 
-[ITEMDEF 09f8c]
-//confetti (explosion)
-DUPEITEM=09f89
+[ITEMDEF 0a015]
+//koi pond (multi-part)(small)
+NAME=koi pond
 
-[ITEMDEF 09f8d]
-//confetti (explosion)
-DUPEITEM=09f89
+[ITEMDEF 0a016]
+//koi pond (multi-part)(small)
+NAME=koi pond
 
-[ITEMDEF 09f8e]
-//confetti (explosion)
-DUPEITEM=09f89
+[ITEMDEF 0a017]
+//koi pond (multi-part)(small)
+NAME=koi pond
 
-[ITEMDEF 09f8f]
-//confetti (explosion)
-DUPEITEM=09f89
+[ITEMDEF 0a018]
+//koi pond (multi-part)(small)
+NAME=koi pond
 
-[ITEMDEF 09f90]
-//confetti (explosion)
-DUPEITEM=09f89
+[ITEMDEF 0a019]
+//koi pond (multi-part)(small)
+NAME=koi pond
 
-[ITEMDEF 09f91]
-//confetti (explosion)
-DUPEITEM=09f89
+[ITEMDEF 0a01a]
+//koi pond (multi-part)(small)(anim)
+NAME=koi pond
 
-[ITEMDEF 09f93]
-DEFNAME=i_confetti_cannon
-NAME=confetti cannon
-CATEGORY=Provisions - Miscellaneous
-SUBSECTION=Misc
-DESCRIPTION=Confetti cannon
+[ITEMDEF 0a01b]
+//koi pond (multi-part)(small)(anim)
+NAME=koi pond
+
+[ITEMDEF 0a01c]
+//koi pond (multi-part)(small)(anim)
+NAME=koi pond
+
+[ITEMDEF 0a01d]
+//koi pond (multi-part)(small)(anim)
+NAME=koi pond
+
+[ITEMDEF 0a01e]
+//koi pond (multi-part)(small)(anim)
+NAME=koi pond
+
+[ITEMDEF 0a01f]
+//koi pond (multi-part)(medium)
+NAME=koi pond
+
+[ITEMDEF 0a020]
+//koi pond (multi-part)(medium)
+NAME=koi pond
+
+[ITEMDEF 0a021]
+//koi pond (multi-part)(medium)
+NAME=koi pond
+
+[ITEMDEF 0a022]
+//koi pond (multi-part)(medium)
+NAME=koi pond
+
+[ITEMDEF 0a023]
+//koi pond (multi-part)(medium)
+NAME=koi pond
+
+[ITEMDEF 0a024]
+//koi pond (multi-part)(medium)
+NAME=koi pond
+
+[ITEMDEF 0a025]
+//koi pond (multi-part)(medium)
+NAME=koi pond
+
+[ITEMDEF 0a026]
+//koi pond (multi-part)(medium)
+NAME=koi pond
+
+[ITEMDEF 0a027]
+//koi pond (multi-part)(medium)
+NAME=koi pond
+
+[ITEMDEF 0a028]
+//koi pond (multi-part)(medium)
+NAME=koi pond
+
+[ITEMDEF 0a029]
+//koi pond (multi-part)(medium)
+NAME=koi pond
+
+[ITEMDEF 0a02a]
+//koi pond (multi-part)(medium)
+NAME=koi pond
+
+[ITEMDEF 0a02b]
+//koi pond (multi-part)(medium)
+NAME=koi pond
+
+[ITEMDEF 0a02c]
+//koi pond (multi-part)(medium)
+NAME=koi pond
+
+[ITEMDEF 0a02d]
+//koi pond (multi-part)(medium)
+NAME=koi pond
+
+[ITEMDEF 0a02e]
+//koi pond (multi-part)(medium)
+NAME=koi pond
+
+[ITEMDEF 0a02f]
+//koi pond (multi-part)(medium)
+NAME=koi pond
+
+[ITEMDEF 0a030]
+//koi pond (multi-part)(medium)(anim)
+NAME=koi pond
+
+[ITEMDEF 0a031]
+//koi pond (multi-part)(medium)(anim)
+NAME=koi pond
+
+[ITEMDEF 0a032]
+//koi pond (multi-part)(medium)(anim)
+NAME=koi pond
+
+[ITEMDEF 0a033]
+//koi pond (multi-part)(medium)(anim)
+NAME=koi pond
+
+[ITEMDEF 0a034]
+//koi pond (multi-part)(medium)(anim)
+NAME=koi pond
+
+[ITEMDEF 0a035]
+//koi pond (multi-part)(medium)(anim)
+NAME=koi pond
+
+[ITEMDEF 0a036]
+//koi pond (multi-part)(medium)(anim)
+NAME=koi pond
+
+[ITEMDEF 0a037]
+//koi pond (multi-part)(medium)(anim)
+NAME=koi pond
+
+[ITEMDEF 0a038]
+//koi pond (multi-part)(large)
+NAME=koi pond
+
+[ITEMDEF 0a039]
+//koi pond (multi-part)(large)
+NAME=koi pond
+
+[ITEMDEF 0a03a]
+//koi pond (multi-part)(large)
+NAME=koi pond
+
+[ITEMDEF 0a03b]
+//koi pond (multi-part)(large)
+NAME=koi pond
+
+[ITEMDEF 0a03c]
+//koi pond (multi-part)(large)
+NAME=koi pond
+
+[ITEMDEF 0a03d]
+//koi pond (multi-part)(large)
+NAME=koi pond
+
+[ITEMDEF 0a03e]
+//koi pond (multi-part)(large)
+NAME=koi pond
+
+[ITEMDEF 0a03f]
+//koi pond (multi-part)(large)
+NAME=koi pond
+
+[ITEMDEF 0a040]
+//koi pond (multi-part)(large)
+NAME=koi pond
+
+[ITEMDEF 0a041]
+//koi pond (multi-part)(large)
+NAME=koi pond
+
+[ITEMDEF 0a042]
+//koi pond (multi-part)(large)
+NAME=koi pond
+
+[ITEMDEF 0a043]
+//koi pond (multi-part)(large)
+NAME=koi pond
+
+[ITEMDEF 0a044]
+//koi pond (multi-part)(large)
+NAME=koi pond
+
+[ITEMDEF 0a045]
+//koi pond (multi-part)(large)
+NAME=koi pond
+
+[ITEMDEF 0a046]
+//koi pond (multi-part)(large)
+NAME=koi pond
+
+[ITEMDEF 0a047]
+//koi pond (multi-part)(large)
+NAME=koi pond
+
+[ITEMDEF 0a048]
+//koi pond (multi-part)(large)
+NAME=koi pond
+
+[ITEMDEF 0a049]
+//koi pond (multi-part)(large)
+NAME=koi pond
+
+[ITEMDEF 0a04a]
+//koi pond (multi-part)(large)
+NAME=koi pond
+
+[ITEMDEF 0a04b]
+//koi pond (multi-part)(large)
+NAME=koi pond
+
+[ITEMDEF 0a04c]
+//koi pond (multi-part)(large)
+NAME=koi pond
+
+[ITEMDEF 0a04d]
+//koi pond (multi-part)(large)
+NAME=koi pond
+
+[ITEMDEF 0a04e]
+//koi pond (multi-part)(large)
+NAME=koi pond
+
+[ITEMDEF 0a04f]
+//koi pond (multi-part)(large)
+NAME=koi pond
+
+[ITEMDEF 0a050]
+//koi pond (multi-part)(large)
+NAME=koi pond
+
+[ITEMDEF 0a051]
+//koi pond (multi-part)(large)(anim)
+NAME=koi pond
+
+[ITEMDEF 0a052]
+//koi pond (multi-part)(large)(anim)
+NAME=koi pond
+
+[ITEMDEF 0a053]
+//koi pond (multi-part)(large)(anim)
+NAME=koi pond
+
+[ITEMDEF 0a054]
+//koi pond (multi-part)(large)(anim)
+NAME=koi pond
+
+[ITEMDEF 0a055]
+//koi pond (multi-part)(large)(anim)
+NAME=koi pond
+
+[ITEMDEF 0a056]
+//koi pond (multi-part)(large)(anim)
+NAME=koi pond
+
+[ITEMDEF 0a057]
+//koi pond (multi-part)(large)(anim)
+NAME=koi pond
+
+[ITEMDEF 0a058]
+//koi pond (multi-part)(large)(anim)
+NAME=koi pond
+
+[ITEMDEF 0a059]
+//koi pond (multi-part)(large)(anim)
+NAME=koi pond
+
+[ITEMDEF 0a05a]
+//koi pond (multi-part)(large)(anim)
+NAME=koi pond
+
+[ITEMDEF 0a05b]
+//koi pond (multi-part)(large)(anim)
+NAME=koi pond
 
 [EOF]

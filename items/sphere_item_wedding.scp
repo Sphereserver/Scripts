@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Aug 15, 2017
+// FILE LAST UPDATED: Tuesday, Oct 17, 2017
 //
 VERSION=0.56d
 
@@ -61,6 +61,7 @@ DUPEITEM=09e8e
 //chair
 DUPEITEM=09e8e
 
+
 [ITEMDEF 09e93]
 DEFNAME=i_wedding_candelabra_fancy_lit
 NAME=candelabra
@@ -90,6 +91,7 @@ CATEGORY=Wedding
 SUBSECTION=Decoration
 DESCRIPTION=Candelabra (fancy)
 
+
 [ITEMDEF 09e98]
 DEFNAME=i_botanical_archway_rose_south
 NAME=botanical archway
@@ -109,6 +111,7 @@ DUPEITEM=09e98
 [ITEMDEF 09e9b]
 //botanical archway
 DUPEITEM=09e98
+
 
 [ITEMDEF 09e9f]
 DEFNAME=i_chair_wedding
@@ -203,6 +206,7 @@ CATEGORY=Wedding
 SUBSECTION=Decoration
 DESCRIPTION=Candelabra (fancy)
 DUPELIST=09eac
+
 
 [ITEMDEF 09eaf]
 DEFNAME=i_wedding_candelabra
@@ -430,6 +434,7 @@ CATEGORY=Wedding
 SUBSECTION=Decoration
 DESCRIPTION=Cake
 
+
 [ITEMDEF 09ed7]
 DEFNAME=i_botanical_archway_leafy_south
 NAME=botanical archway
@@ -449,6 +454,7 @@ DUPEITEM=09ed7
 [ITEMDEF 09eda]
 //botanical archway
 DUPEITEM=09ed7
+
 
 [ITEMDEF 09eef]
 DEFNAME=i_wedding_gown
@@ -586,6 +592,7 @@ CATEGORY=Wedding
 SUBSECTION=Decoration
 DESCRIPTION=Botanical archway (bigflow)(small)
 
+
 [ITEMDEF 09f04]
 //table
 DUPEITEM=09ece
@@ -594,22 +601,31 @@ DUPEITEM=09ece
 //table
 DUPEITEM=09ed1
 
+
 [ITEMDEF 09f3f]
 DEFNAME=i_veil_undead_wedding
 NAME=undead wedding veil
 TYPE=t_clothing
 DYE=1
 FLIP=1
+REQSTR=10
 CanUse=can_u_human|can_u_elf
 TEVENTS=t_equipitem
 CATEGORY=Wedding
 SUBSECTION=Clothing
 DESCRIPTION=Undead wedding veil
 DUPELIST=09f40
+ON=@Equip
+   TAG.BodyColor=<SRC.COLOR>
+   SRC.COLOR=047e
+ON=@Unequip
+   SRC.COLOR=<TAG.BodyColor>
+   TAG.BodyColor=
 
 [ITEMDEF 09f40]
 //undead wedding veil
 DUPEITEM=09f3f
+
 
 [ITEMDEF 09f47]
 DEFNAME=i_hat_undead_wedding
@@ -617,16 +633,24 @@ NAME=undead wedding hat
 TYPE=t_clothing
 DYE=1
 FLIP=1
+REQSTR=10
 CanUse=can_u_human|can_u_elf
 TEVENTS=t_equipitem
 CATEGORY=Wedding
 SUBSECTION=Clothing
 DESCRIPTION=Undead wedding hat
 DUPELIST=09f48
+ON=@Equip
+   TAG.BodyColor=<SRC.COLOR>
+   SRC.COLOR=047e
+ON=@Unequip
+   SRC.COLOR=<TAG.BodyColor>
+   TAG.BodyColor=
 
 [ITEMDEF 09f48]
 //undead wedding hat
 DUPEITEM=09f47
+
 
 [ITEMDEF 09f94]
 DEFNAME=i_chest_wedding
@@ -634,6 +658,7 @@ NAME=wedding chest
 TYPE=t_container
 TDATA2=0266a
 FLIP=1
+WEIGHT=3.0
 CATEGORY=Wedding
 SUBSECTION=Decoration
 DESCRIPTION=Wedding chest
