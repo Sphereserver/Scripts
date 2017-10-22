@@ -1023,11 +1023,11 @@ ON=@Create
 
 [ITEMDEF 09f29]
 //carved pumpkin (cat)
-DUPEITEM=09f27
+DUPEITEM=09f28
 
 [ITEMDEF 09f2a]
 //carved pumpkin (cat)
-DUPEITEM=09f27
+DUPEITEM=09f28
 
 
 [ITEMDEF 09f33]

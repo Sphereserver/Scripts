@@ -905,7 +905,7 @@ DUPEITEM=09f0f
 //swan statue (black)
 DUPEITEM=09f12
 
-[ITEMDEF 09f21]
+[ITEMDEF 09f12]
 DEFNAME=i_statue_swan_black
 NAME=swan statue
 FLIP=1

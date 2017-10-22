@@ -251,7 +251,7 @@ DUPEITEM=09a81
 
 [ITEMDEF 09a91]
 DEFNAME=i_smithing_press_cont
-DEFNAME=smithing press
+NAME=smithing press
 TYPE=t_container
 TDATA2=044
 CATEGORY=Veteran Rewards
@@ -453,7 +453,7 @@ DUPEITEM=09c2e
 
 [ITEMDEF 09d83]
 DEFNAME=i_alchemy_station
-DEFNAME=alchemy station
+NAME=alchemy station
 FLIP=1
 CATEGORY=Veteran Rewards
 SUBSECTION=Year 7
@@ -486,7 +486,7 @@ DUPELIST=09d8e
 
 [ITEMDEF 09d8c]
 DEFNAME=i_alchemy_station_cont
-DEFNAME=alchemy station
+NAME=alchemy station
 FLIP=1
 TYPE=t_container
 TDATA2=051
@@ -530,7 +530,7 @@ DUPEITEM=09d8c
 
 [ITEMDEF 09d98]
 DEFNAME=i_bbq_smoker
-DEFNAME=BBQ smoker
+NAME=BBQ smoker
 FLIP=1
 CATEGORY=Veteran Rewards
 SUBSECTION=Year 7
@@ -551,7 +551,7 @@ DUPELIST=09d9e
 
 [ITEMDEF 09d9d]
 DEFNAME=i_bbq_smoker_cont
-DEFNAME=BBQ smoker
+NAME=BBQ smoker
 FLIP=1
 TYPE=t_container
 //TDATA2=
