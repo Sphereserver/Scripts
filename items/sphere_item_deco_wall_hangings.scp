@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Wednesday, Oct 18, 2017
+// FILE LAST UPDATED: Saturday, Oct 21, 2017
 //
 VERSION=0.56d
 
@@ -2823,30 +2823,6 @@ DUPELIST=042ca
 [ITEMDEF 042ca]
 //ultima banner
 DUPEITEM=042c9
-
-[ITEMDEF 042cb]
-DEFNAME=i_banner_chaos
-NAME=chaos banner
-CATEGORY=Decoration - Wall Hangings
-SUBSECTION=Banners
-DESCRIPTION=Chaos Banner
-DUPELIST=042cc
-
-[ITEMDEF 042cc]
-//chaos banner
-DUPEITEM=042cb
-
-[ITEMDEF 042cd]
-DEFNAME=i_banner_order
-NAME=order banner
-CATEGORY=Decoration - Wall Hangings
-SUBSECTION=Banners
-DESCRIPTION=Order Banner
-DUPELIST=042ce
-
-[ITEMDEF 042ce]
-//order banner
-DUPEITEM=042cd
 
 
 [ITEMDEF 044e7]

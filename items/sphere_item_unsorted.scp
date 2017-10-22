@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, Sept 18, 2017
+// FILE LAST UPDATED: Saturday, Oct 21, 2017
 //
 VERSION=0.56d
 
@@ -5982,18 +5982,6 @@ ON=@Create
 //runic atlas
 DUPEITEM=09c16
 
-[ITEMDEF 09c18]
-DEFNAME=i_auction_safe
-NAME=auction safe
-FLIP=1
-CATEGORY=Provisions - Miscellaneous
-SUBSECTION=Misc
-DESCRIPTION=Auction Safe
-DUPELIST=09c19
-
-[ITEMDEF 09c19]
-//auction safe
-DUPEITEM=09c18
 
 [ITEMDEF 09f13]
 //Easter Egg

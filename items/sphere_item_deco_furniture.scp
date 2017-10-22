@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, Sept 18, 2017
+// FILE LAST UPDATED: Saturday, Oct 21, 2017
 //
 VERSION=0.56d
 
@@ -4160,43 +4160,6 @@ SKILLMAKE=Carpentry 75.0,t_carpentry
 CATEGORY=Decoration - Furniture
 SUBSECTION=Tables
 DESCRIPTION=Ter-Mur Style Table
-
-
-[ITEMDEF 04b58]
-//FIXME: The usable area on gump 087c is too small
-DEFNAME=i_seed_organizer
-NAME=seed organizer
-FLIP=1
-TYPE=t_container
-TDATA2=087c
-WEIGHT=27.2
-RESOURCES=25 i_board,2 i_nails
-SKILLMAKE=Carpentry 41.0,t_carpentry
-CATEGORY=Decoration - Furniture
-SUBSECTION=Display Case
-DESCRIPTION=Seed Organizer
-DUPELIST=04b5a
-
-[ITEMDEF 04b59]
-DEFNAME=i_seed_organizer_full
-NAME=seed organizer
-FLIP=1
-TYPE=t_container
-TDATA2=087c
-WEIGHT=27.2
-RESOURCES=25 i_board,2 i_nails
-CATEGORY=Decoration - Furniture
-SUBSECTION=Display Case
-DESCRIPTION=Seed Organizer (full)
-DUPELIST=04b5b
-
-[ITEMDEF 04b5a]
-//Seed Organizer
-DUPEITEM=04b58
-
-[ITEMDEF 04b5b]
-//Seed Organizer (full)
-DUPEITEM=04b58
 
 
 [ITEMDEF 04bdb]

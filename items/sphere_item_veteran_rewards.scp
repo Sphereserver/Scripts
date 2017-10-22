@@ -1,0 +1,967 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2017
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Saturday, Oct 21, 2017
+//
+VERSION=0.56d
+
+
+[ITEMDEF 042cb]
+DEFNAME=i_banner_chaos
+NAME=chaos banner
+CATEGORY=Veteran Rewards
+SUBSECTION=Year 12
+DESCRIPTION=Chaos Banner
+DUPELIST=042cc
+
+[ITEMDEF 042cc]
+//chaos banner
+DUPEITEM=042cb
+
+[ITEMDEF 042cd]
+DEFNAME=i_banner_order
+NAME=order banner
+CATEGORY=Veteran Rewards
+SUBSECTION=Year 12
+DESCRIPTION=Order Banner
+DUPELIST=042ce
+
+[ITEMDEF 042ce]
+//order banner
+DUPEITEM=042cd
+
+
+[ITEMDEF 04b58]
+DEFNAME=i_seed_box
+NAME=seed box
+FLIP=1
+CATEGORY=Veteran Rewards
+SUBSECTION=Year 4
+DESCRIPTION=Seed box
+DUPELIST=04b5a
+
+[ITEMDEF 04b59]
+DEFNAME=i_seed_box_full
+NAME=seed box
+FLIP=1
+CATEGORY=Veteran Rewards
+SUBSECTION=Year 4
+DESCRIPTION=Seed box (full)
+DUPELIST=04b5b
+
+[ITEMDEF 04b5a]
+//seed box
+DUPEITEM=04b58
+
+[ITEMDEF 04b5b]
+//seed box (full)
+DUPEITEM=04b59
+
+
+[ITEMDEF 04bf6]
+//davies' locker (multi-part)(east)
+
+[ITEMDEF 04bf7]
+//davies' locker (multi-part)(east)
+
+[ITEMDEF 04bf8]
+//davies' locker (multi-part)(east)
+
+[ITEMDEF 04bf9]
+//davies' locker (multi-part)(east)
+
+[ITEMDEF 04bfa]
+//davies' locker (multi-part)(east)
+
+[ITEMDEF 04bfb]
+//davies' locker (multi-part)(east)
+
+[ITEMDEF 04bfc]
+//davies' locker (multi-part)(south)
+
+[ITEMDEF 04bfd]
+//davies' locker (multi-part)(south)
+
+[ITEMDEF 04bfe]
+//davies' locker (multi-part)(south)
+
+[ITEMDEF 04bff]
+//davies' locker (multi-part)(south)
+
+[ITEMDEF 04c00]
+//davies' locker (multi-part)(south)
+
+[ITEMDEF 04c01]
+//davies' locker (multi-part)(south)
+
+
+[ITEMDEF 04ce6]
+//gadgetry table (multi-part)(south)
+
+[ITEMDEF 04ce7]
+//gadgetry table (multi-part)(south)
+
+[ITEMDEF 04ce8]
+//gadgetry table (multi-part)(south)
+
+[ITEMDEF 04ce9]
+//gadgetry table (multi-part)(south)
+
+[ITEMDEF 04cea]
+//gadgetry table (multi-part)(east)
+
+[ITEMDEF 04ceb]
+//gadgetry table (multi-part)(east)
+
+[ITEMDEF 04cec]
+//gadgetry table (multi-part)(east)
+
+[ITEMDEF 04ced]
+//gadgetry table (multi-part)(east)
+
+
+[ITEMDEF 09a38]
+//sewing machine (anim)
+
+[ITEMDEF 09a39]
+//sewing machine (anim)
+
+[ITEMDEF 09a3a]
+//sewing machine (anim)
+
+[ITEMDEF 09a3b]
+//sewing machine (anim)
+
+[ITEMDEF 09a3c]
+//sewing machine (anim)
+
+[ITEMDEF 09a3d]
+//sewing machine (anim)
+
+[ITEMDEF 09a3e]
+//sewing machine (anim)
+
+[ITEMDEF 09a3f]
+//sewing machine (anim)
+
+[ITEMDEF 09a40]
+//sewing machine (anim)
+
+[ITEMDEF 09a41]
+//sewing machine (anim)
+
+[ITEMDEF 09a42]
+//sewing machine (anim)
+
+[ITEMDEF 09a43]
+//sewing machine (anim)
+
+[ITEMDEF 09a44]
+//sewing machine (anim)
+
+[ITEMDEF 09a45]
+//sewing machine (anim)
+
+[ITEMDEF 09a46]
+//sewing machine (anim)
+
+[ITEMDEF 09a47]
+//sewing machine (anim)
+
+[ITEMDEF 09a48]
+DEFNAME=i_sewing_machine
+NAME=sewing machine
+FLIP=1
+CATEGORY=Veteran Rewards
+SUBSECTION=Year 7
+DESCRIPTION=Sewing Machine
+DUPELIST=09a49
+
+[ITEMDEF 09a49]
+//sewing machine
+DUPEITEM=09a48
+
+[ITEMDEF 09a4a]
+DEFNAME=i_sewing_machine_stool
+CATEGORY=Veteran Rewards
+SUBSECTION=Year 7
+DESCRIPTION=Sewing Machine Stool
+
+
+[ITEMDEF 09a81]
+DEFNAME=i_smithing_press
+NAME=smithing press
+FLIP=1
+CATEGORY=Veteran Rewards
+SUBSECTION=Year 7
+DESCRIPTION=Smithing Press
+DUPELIST=09a89
+
+[ITEMDEF 09a82]
+//smithing press (anim)
+
+[ITEMDEF 09a83]
+//smithing press (anim)
+
+[ITEMDEF 09a84]
+//smithing press (anim)
+
+[ITEMDEF 09a85]
+//smithing press (anim)
+
+[ITEMDEF 09a86]
+//smithing press (anim)
+
+[ITEMDEF 09a87]
+//smithing press (anim)
+
+[ITEMDEF 09a88]
+//smithing press (anim)
+
+[ITEMDEF 09a89]
+//smithing press
+DUPEITEM=09a81
+
+[ITEMDEF 09a8a]
+//smithing press (anim)
+
+[ITEMDEF 09a8b]
+//smithing press (anim)
+
+[ITEMDEF 09a8c]
+//smithing press (anim)
+
+[ITEMDEF 09a8d]
+//smithing press (anim)
+
+[ITEMDEF 09a8e]
+//smithing press (anim)
+
+[ITEMDEF 09a8f]
+//smithing press (anim)
+
+[ITEMDEF 09a90]
+//smithing press (anim)
+
+[ITEMDEF 09a91]
+DEFNAME=i_smithing_press_cont
+DEFNAME=smithing press
+TYPE=t_container
+TDATA2=044
+CATEGORY=Veteran Rewards
+SUBSECTION=Year 7
+DESCRIPTION=Smithing Press (container)
+
+
+[ITEMDEF 09a9b]
+//coral the owl (anim)(south)
+
+[ITEMDEF 09a9c]
+//coral the owl (anim)(south)
+
+[ITEMDEF 09a9d]
+//coral the owl (anim)(south)
+
+[ITEMDEF 09a9e]
+//coral the owl (anim)(south)
+
+[ITEMDEF 09a9f]
+//coral the owl (anim)(south)
+
+[ITEMDEF 09aa0]
+//coral the owl (anim)(east)
+
+[ITEMDEF 09aa1]
+//coral the owl (anim)(east)
+
+[ITEMDEF 09aa2]
+//coral the owl (anim)(east)
+
+[ITEMDEF 09aa3]
+//coral the owl (anim)(east)
+
+[ITEMDEF 09aa4]
+//coral the owl (anim)(east)
+
+[ITEMDEF 09aa5]
+DEFNAME=i_coral_the_owl
+NAME=Coral the owl
+FLIP=1
+CATEGORY=Veteran Rewards
+SUBSECTION=Year 1
+DESCRIPTION=Coral the Owl
+DUPELIST=09aa6
+
+[ITEMDEF 09aa6]
+//coral the owl
+DUPEITEM=09aa5
+
+
+[ITEMDEF 09c18]
+DEFNAME=i_auction_safe
+NAME=auction safe
+FLIP=1
+CATEGORY=Veteran Rewards
+SUBSECTION=Year 1
+DESCRIPTION=Auction Safe
+DUPELIST=09c19
+
+[ITEMDEF 09c19]
+//auction safe
+DUPEITEM=09c18
+
+[ITEMDEF 09c1a]
+DEFNAME=i_spinning_lathe
+NAME=spinning lathe
+FLIP=1
+CATEGORY=Veteran Rewards
+SUBSECTION=Year 7
+DESCRIPTION=Spinning Lathe
+DUPELIST=09c24
+
+[ITEMDEF 09c1b]
+//spinning lathe (anim)
+
+[ITEMDEF 09c1c]
+//spinning lathe (anim)
+
+[ITEMDEF 09c1d]
+//spinning lathe (anim)
+
+[ITEMDEF 09c1e]
+//spinning lathe (anim)
+
+[ITEMDEF 09c1f]
+//spinning lathe (anim)
+
+[ITEMDEF 09c20]
+//spinning lathe (anim)
+
+[ITEMDEF 09c21]
+//spinning lathe (anim)
+
+[ITEMDEF 09c22]
+//spinning lathe (anim)
+
+[ITEMDEF 09c23]
+//spinning lathe (anim)
+
+[ITEMDEF 09c24]
+//spinning lathe
+DUPEITEM=09c1a
+
+[ITEMDEF 09c25]
+//spinning lathe (anim)
+
+[ITEMDEF 09c26]
+//spinning lathe (anim)
+
+[ITEMDEF 09c27]
+//spinning lathe (anim)
+
+[ITEMDEF 09c28]
+//spinning lathe (anim)
+
+[ITEMDEF 09c29]
+//spinning lathe (anim)
+
+[ITEMDEF 09c2a]
+//spinning lathe (anim)
+
+[ITEMDEF 09c2b]
+//spinning lathe (anim)
+
+[ITEMDEF 09c2c]
+//spinning lathe (anim)
+
+[ITEMDEF 09c2d]
+//spinning lathe (anim)
+
+[ITEMDEF 09c2e]
+DEFNAME=i_fletching_station
+NAME=fletching station
+FLIP=1
+CATEGORY=Veteran Rewards
+SUBSECTION=Year 7
+DESCRIPTION=Fletching Station
+DUPELIST=09c38
+
+[ITEMDEF 09c2f]
+//fletching station (anim)
+
+[ITEMDEF 09c30]
+//fletching station (anim)
+
+[ITEMDEF 09c31]
+//fletching station (anim)
+
+[ITEMDEF 09c32]
+//fletching station (anim)
+
+[ITEMDEF 09c33]
+//fletching station (anim)
+
+[ITEMDEF 09c34]
+//fletching station (anim)
+
+[ITEMDEF 09c35]
+//fletching station (anim)
+
+[ITEMDEF 09c36]
+//fletching station (anim)
+
+[ITEMDEF 09c37]
+//fletching station (anim)
+
+[ITEMDEF 09c38]
+//fletching station
+DUPEITEM=09c2e
+
+[ITEMDEF 09c39]
+//fletching station (anim)
+
+[ITEMDEF 09c3a]
+//fletching station (anim)
+
+[ITEMDEF 09c3b]
+//fletching station (anim)
+
+[ITEMDEF 09c3c]
+//fletching station (anim)
+
+[ITEMDEF 09c3d]
+//fletching station (anim)
+
+[ITEMDEF 09c3e]
+//fletching station (anim)
+
+[ITEMDEF 09c3f]
+//fletching station (anim)
+
+[ITEMDEF 09c40]
+//fletching station (anim)
+
+[ITEMDEF 09c41]
+//fletching station (anim)
+
+
+[ITEMDEF 09d83]
+DEFNAME=i_alchemy_station
+DEFNAME=alchemy station
+FLIP=1
+CATEGORY=Veteran Rewards
+SUBSECTION=Year 7
+DESCRIPTION=Alchemy Station
+DUPELIST=09d8e
+
+[ITEMDEF 09d84]
+//alchemy station (anim)
+
+[ITEMDEF 09d85]
+//alchemy station (anim)
+
+[ITEMDEF 09d86]
+//alchemy station (anim)
+
+[ITEMDEF 09d87]
+//alchemy station (anim)
+
+[ITEMDEF 09d88]
+//alchemy station (anim)
+
+[ITEMDEF 09d89]
+//alchemy station (anim)
+
+[ITEMDEF 09d8a]
+//alchemy station (anim)
+
+[ITEMDEF 09d8b]
+//alchemy station (anim)
+
+[ITEMDEF 09d8c]
+DEFNAME=i_alchemy_station_cont
+DEFNAME=alchemy station
+FLIP=1
+TYPE=t_container
+TDATA2=051
+CATEGORY=Veteran Rewards
+SUBSECTION=Year 7
+DESCRIPTION=Alchemy Station (container)
+DUPELIST=09d97
+
+
+[ITEMDEF 09d8e]
+//alchemy station
+DUPEITEM=09d83
+
+[ITEMDEF 09d8f]
+//alchemy station (anim)
+
+[ITEMDEF 09d90]
+//alchemy station (anim)
+
+[ITEMDEF 09d91]
+//alchemy station (anim)
+
+[ITEMDEF 09d92]
+//alchemy station (anim)
+
+[ITEMDEF 09d93]
+//alchemy station (anim)
+
+[ITEMDEF 09d94]
+//alchemy station (anim)
+
+[ITEMDEF 09d95]
+//alchemy station (anim)
+
+[ITEMDEF 09d96]
+//alchemy station (anim)
+
+[ITEMDEF 09d97]
+//alchemy station (container)
+DUPEITEM=09d8c
+
+[ITEMDEF 09d98]
+DEFNAME=i_bbq_smoker
+DEFNAME=BBQ smoker
+FLIP=1
+CATEGORY=Veteran Rewards
+SUBSECTION=Year 7
+DESCRIPTION=BBQ Smoker
+DUPELIST=09d9e
+
+[ITEMDEF 09d99]
+//BBQ smoker (anim)
+
+[ITEMDEF 09d9a]
+//BBQ smoker (anim)
+
+[ITEMDEF 09d9b]
+//BBQ smoker (anim)
+
+[ITEMDEF 09d9c]
+//BBQ smoker (anim)
+
+[ITEMDEF 09d9d]
+DEFNAME=i_bbq_smoker_cont
+DEFNAME=BBQ smoker
+FLIP=1
+TYPE=t_container
+//TDATA2=
+CATEGORY=Veteran Rewards
+SUBSECTION=Year 7
+DESCRIPTION=BBQ Smoker (container)
+DUPELIST=09da3
+
+[ITEMDEF 09d9e]
+//BBQ smoker
+DUPEITEM=09d98
+
+[ITEMDEF 09d9f]
+//BBQ smoker (anim)
+
+[ITEMDEF 09da0]
+//BBQ smoker (anim)
+
+[ITEMDEF 09da1]
+//BBQ smoker (anim)
+
+[ITEMDEF 09da2]
+//BBQ smoker (anim)
+
+[ITEMDEF 09da3]
+//BBQ smoker (container)
+DUPEITEM=09d9d
+
+
+[ITEMDEF 09fea]
+DEFNAME=i_enchanted_writing_desk_south
+NAME=enchanted writing desk
+TYPE=t_light_out
+TDATA3=i_enchanted_writing_desk_south_lit
+CATEGORY=Veteran Rewards
+SUBSECTION=Year 7
+DESCRIPTION=Enchanted Writing Desk (unlit)
+ON=@Create
+   MOREZ=29
+ON=@ClientTooltip
+   SRC.ADDCLILOC 502696	//turned off
+
+[ITEMDEF 09feb]
+DEFNAME=i_enchanted_writing_desk_south_lit
+NAME=enchanted writing desk
+TYPE=t_light_lit
+TDATA3=i_enchanted_writing_desk_south
+CATEGORY=Veteran Rewards
+SUBSECTION=Year 7
+DESCRIPTION=Enchanted Writing Desk (lit)
+ON=@Create
+   MOREZ=29
+ON=@ClientTooltip
+   SRC.ADDCLILOC 502695	//turned on
+
+[ITEMDEF 09fec]
+//enchanted writing desk (south)(anim)
+
+[ITEMDEF 09fed]
+//enchanted writing desk (south)(anim)
+
+[ITEMDEF 09fee]
+//enchanted writing desk (south)(anim)
+
+[ITEMDEF 09fef]
+//enchanted writing desk (south)(anim)
+
+[ITEMDEF 09ff0]
+//enchanted writing desk (south)(anim)
+
+[ITEMDEF 09ff1]
+DEFNAME=i_enchanted_writing_desk_east
+NAME=enchanted writing desk
+TYPE=t_light_out
+TDATA3=i_enchanted_writing_desk_east_lit
+CATEGORY=Veteran Rewards
+SUBSECTION=Year 7
+DESCRIPTION=Enchanted Writing Desk (unlit)
+ON=@Create
+   MOREZ=29
+ON=@ClientTooltip
+   SRC.ADDCLILOC 502696	//turned off
+
+[ITEMDEF 09ff2]
+DEFNAME=i_enchanted_writing_desk_east_lit
+NAME=enchanted writing desk
+TYPE=t_light_lit
+TDATA3=i_enchanted_writing_desk_east
+CATEGORY=Veteran Rewards
+SUBSECTION=Year 7
+DESCRIPTION=Enchanted Writing Desk (lit)
+ON=@Create
+   MOREZ=29
+ON=@ClientTooltip
+   SRC.ADDCLILOC 502695	//turned on
+
+[ITEMDEF 09ff3]
+//enchanted writing desk (east)(anim)
+
+[ITEMDEF 09ff4]
+//enchanted writing desk (east)(anim)
+
+[ITEMDEF 09ff5]
+//enchanted writing desk (east)(anim)
+
+[ITEMDEF 09ff6]
+//enchanted writing desk (east)(anim)
+
+[ITEMDEF 09ff7]
+//enchanted writing desk (east)(anim)
+
+
+[ITEMDEF 0a011]
+//koi pond (multi-part)(small)
+NAME=koi pond
+
+[ITEMDEF 0a012]
+//koi pond (multi-part)(small)
+NAME=koi pond
+
+[ITEMDEF 0a013]
+//koi pond (multi-part)(small)
+NAME=koi pond
+
+[ITEMDEF 0a014]
+//koi pond (multi-part)(small)
+NAME=koi pond
+
+[ITEMDEF 0a015]
+//koi pond (multi-part)(small)
+NAME=koi pond
+
+[ITEMDEF 0a016]
+//koi pond (multi-part)(small)
+NAME=koi pond
+
+[ITEMDEF 0a017]
+//koi pond (multi-part)(small)
+NAME=koi pond
+
+[ITEMDEF 0a018]
+//koi pond (multi-part)(small)
+NAME=koi pond
+
+[ITEMDEF 0a019]
+//koi pond (multi-part)(small)
+NAME=koi pond
+
+[ITEMDEF 0a01a]
+//koi pond (multi-part)(small)(anim)
+NAME=koi pond
+
+[ITEMDEF 0a01b]
+//koi pond (multi-part)(small)(anim)
+NAME=koi pond
+
+[ITEMDEF 0a01c]
+//koi pond (multi-part)(small)(anim)
+NAME=koi pond
+
+[ITEMDEF 0a01d]
+//koi pond (multi-part)(small)(anim)
+NAME=koi pond
+
+[ITEMDEF 0a01e]
+//koi pond (multi-part)(small)(anim)
+NAME=koi pond
+
+[ITEMDEF 0a01f]
+//koi pond (multi-part)(medium)
+NAME=koi pond
+
+[ITEMDEF 0a020]
+//koi pond (multi-part)(medium)
+NAME=koi pond
+
+[ITEMDEF 0a021]
+//koi pond (multi-part)(medium)
+NAME=koi pond
+
+[ITEMDEF 0a022]
+//koi pond (multi-part)(medium)
+NAME=koi pond
+
+[ITEMDEF 0a023]
+//koi pond (multi-part)(medium)
+NAME=koi pond
+
+[ITEMDEF 0a024]
+//koi pond (multi-part)(medium)
+NAME=koi pond
+
+[ITEMDEF 0a025]
+//koi pond (multi-part)(medium)
+NAME=koi pond
+
+[ITEMDEF 0a026]
+//koi pond (multi-part)(medium)
+NAME=koi pond
+
+[ITEMDEF 0a027]
+//koi pond (multi-part)(medium)
+NAME=koi pond
+
+[ITEMDEF 0a028]
+//koi pond (multi-part)(medium)
+NAME=koi pond
+
+[ITEMDEF 0a029]
+//koi pond (multi-part)(medium)
+NAME=koi pond
+
+[ITEMDEF 0a02a]
+//koi pond (multi-part)(medium)
+NAME=koi pond
+
+[ITEMDEF 0a02b]
+//koi pond (multi-part)(medium)
+NAME=koi pond
+
+[ITEMDEF 0a02c]
+//koi pond (multi-part)(medium)
+NAME=koi pond
+
+[ITEMDEF 0a02d]
+//koi pond (multi-part)(medium)
+NAME=koi pond
+
+[ITEMDEF 0a02e]
+//koi pond (multi-part)(medium)
+NAME=koi pond
+
+[ITEMDEF 0a02f]
+//koi pond (multi-part)(medium)
+NAME=koi pond
+
+[ITEMDEF 0a030]
+//koi pond (multi-part)(medium)(anim)
+NAME=koi pond
+
+[ITEMDEF 0a031]
+//koi pond (multi-part)(medium)(anim)
+NAME=koi pond
+
+[ITEMDEF 0a032]
+//koi pond (multi-part)(medium)(anim)
+NAME=koi pond
+
+[ITEMDEF 0a033]
+//koi pond (multi-part)(medium)(anim)
+NAME=koi pond
+
+[ITEMDEF 0a034]
+//koi pond (multi-part)(medium)(anim)
+NAME=koi pond
+
+[ITEMDEF 0a035]
+//koi pond (multi-part)(medium)(anim)
+NAME=koi pond
+
+[ITEMDEF 0a036]
+//koi pond (multi-part)(medium)(anim)
+NAME=koi pond
+
+[ITEMDEF 0a037]
+//koi pond (multi-part)(medium)(anim)
+NAME=koi pond
+
+[ITEMDEF 0a038]
+//koi pond (multi-part)(large)
+NAME=koi pond
+
+[ITEMDEF 0a039]
+//koi pond (multi-part)(large)
+NAME=koi pond
+
+[ITEMDEF 0a03a]
+//koi pond (multi-part)(large)
+NAME=koi pond
+
+[ITEMDEF 0a03b]
+//koi pond (multi-part)(large)
+NAME=koi pond
+
+[ITEMDEF 0a03c]
+//koi pond (multi-part)(large)
+NAME=koi pond
+
+[ITEMDEF 0a03d]
+//koi pond (multi-part)(large)
+NAME=koi pond
+
+[ITEMDEF 0a03e]
+//koi pond (multi-part)(large)
+NAME=koi pond
+
+[ITEMDEF 0a03f]
+//koi pond (multi-part)(large)
+NAME=koi pond
+
+[ITEMDEF 0a040]
+//koi pond (multi-part)(large)
+NAME=koi pond
+
+[ITEMDEF 0a041]
+//koi pond (multi-part)(large)
+NAME=koi pond
+
+[ITEMDEF 0a042]
+//koi pond (multi-part)(large)
+NAME=koi pond
+
+[ITEMDEF 0a043]
+//koi pond (multi-part)(large)
+NAME=koi pond
+
+[ITEMDEF 0a044]
+//koi pond (multi-part)(large)
+NAME=koi pond
+
+[ITEMDEF 0a045]
+//koi pond (multi-part)(large)
+NAME=koi pond
+
+[ITEMDEF 0a046]
+//koi pond (multi-part)(large)
+NAME=koi pond
+
+[ITEMDEF 0a047]
+//koi pond (multi-part)(large)
+NAME=koi pond
+
+[ITEMDEF 0a048]
+//koi pond (multi-part)(large)
+NAME=koi pond
+
+[ITEMDEF 0a049]
+//koi pond (multi-part)(large)
+NAME=koi pond
+
+[ITEMDEF 0a04a]
+//koi pond (multi-part)(large)
+NAME=koi pond
+
+[ITEMDEF 0a04b]
+//koi pond (multi-part)(large)
+NAME=koi pond
+
+[ITEMDEF 0a04c]
+//koi pond (multi-part)(large)
+NAME=koi pond
+
+[ITEMDEF 0a04d]
+//koi pond (multi-part)(large)
+NAME=koi pond
+
+[ITEMDEF 0a04e]
+//koi pond (multi-part)(large)
+NAME=koi pond
+
+[ITEMDEF 0a04f]
+//koi pond (multi-part)(large)
+NAME=koi pond
+
+[ITEMDEF 0a050]
+//koi pond (multi-part)(large)
+NAME=koi pond
+
+[ITEMDEF 0a051]
+//koi pond (multi-part)(large)(anim)
+NAME=koi pond
+
+[ITEMDEF 0a052]
+//koi pond (multi-part)(large)(anim)
+NAME=koi pond
+
+[ITEMDEF 0a053]
+//koi pond (multi-part)(large)(anim)
+NAME=koi pond
+
+[ITEMDEF 0a054]
+//koi pond (multi-part)(large)(anim)
+NAME=koi pond
+
+[ITEMDEF 0a055]
+//koi pond (multi-part)(large)(anim)
+NAME=koi pond
+
+[ITEMDEF 0a056]
+//koi pond (multi-part)(large)(anim)
+NAME=koi pond
+
+[ITEMDEF 0a057]
+//koi pond (multi-part)(large)(anim)
+NAME=koi pond
+
+[ITEMDEF 0a058]
+//koi pond (multi-part)(large)(anim)
+NAME=koi pond
+
+[ITEMDEF 0a059]
+//koi pond (multi-part)(large)(anim)
+NAME=koi pond
+
+[ITEMDEF 0a05a]
+//koi pond (multi-part)(large)(anim)
+NAME=koi pond
+
+[ITEMDEF 0a05b]
+//koi pond (multi-part)(large)(anim)
+NAME=koi pond
+
+[EOF]
