@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Friday, Aug 18, 2017
+// FILE LAST UPDATED: Monday, Oct 23, 2017
 //
 VERSION=0.56d
 
@@ -122,7 +122,7 @@ SUBSECTION=Lightsources
 DESCRIPTION=Jack-o-lantern (menancing)(lit)
 DUPELIST=04692,04693
 ON=@Create
-   MOREZ=1
+   MOREZ=2
 
 [ITEMDEF 04692]
 //jack-o-lantern (menancing)
@@ -142,7 +142,7 @@ CATEGORY=Halloween
 SUBSECTION=Lightsources
 DESCRIPTION=Jack-o-lantern (menancing)(unlit)
 ON=@Create
-   MOREZ=1
+   MOREZ=2
 
 [ITEMDEF 04695]
 DEFNAME=i_jackolantern2_lit
@@ -155,7 +155,7 @@ SUBSECTION=Lightsources
 DESCRIPTION=Jack-o-lantern (leering)(lit)
 DUPELIST=04696,04697
 ON=@Create
-   MOREZ=1
+   MOREZ=2
 
 [ITEMDEF 04696]
 //jack-o-lantern (leering)
@@ -175,7 +175,7 @@ CATEGORY=Halloween
 SUBSECTION=Lightsources
 DESCRIPTION=Jack-o-lantern (leering)(unlit)
 ON=@Create
-   MOREZ=1
+   MOREZ=2
 
 [ITEMDEF 04699]
 DEFNAME=i_tapestry_ruined
@@ -204,7 +204,7 @@ DUPELIST=0469c
 DUPEITEM=0469b
 
 [ITEMDEF 0469d]
-DEFNAME=i_candy_taffy
+DEFNAME=i_taffy
 NAME=taffy
 TYPE=t_food
 CATEGORY=Halloween
@@ -220,16 +220,6 @@ TYPE=t_food
 CATEGORY=Halloween
 SUBSECTION=Candies
 DESCRIPTION=Wrapped Candy
-ON=@Create
-   MOREM=1
-
-[ITEMDEF 0469f]
-DEFNAME=i_cake_12th_anniversary
-NAME=12th anniversary cake
-TYPE=t_food
-CATEGORY=Halloween
-SUBSECTION=Candies
-DESCRIPTION=12th anniversary cake
 ON=@Create
    MOREM=1
 
@@ -896,7 +886,7 @@ CATEGORY=Halloween
 SUBSECTION=Lightsources
 DESCRIPTION=Gypsy Wagon Lamp (south)(lit)
 ON=@Create
-   MOREZ=2
+   MOREZ=1
 
 [ITEMDEF 09d35]
 DEFNAME=i_gypsy_wagon_lamp_east_lit
@@ -907,7 +897,7 @@ CATEGORY=Halloween
 SUBSECTION=Lightsources
 DESCRIPTION=Gypsy Wagon Lamp (east)(lit)
 ON=@Create
-   MOREZ=2
+   MOREZ=1
 
 [ITEMDEF 09d36]
 DEFNAME=i_gypsy_wagon_lamp_south
@@ -918,7 +908,7 @@ CATEGORY=Halloween
 SUBSECTION=Lightsources
 DESCRIPTION=Gypsy Wagon Lamp (south)(unlit)
 ON=@Create
-   MOREZ=2
+   MOREZ=1
 
 [ITEMDEF 09d37]
 DEFNAME=i_gypsy_wagon_lamp_east
@@ -929,38 +919,38 @@ CATEGORY=Halloween
 SUBSECTION=Lightsources
 DESCRIPTION=Gypsy Wagon Lamp (east)(unlit)
 ON=@Create
-   MOREZ=2
+   MOREZ=1
 
 
 [ITEMDEF 09f1e]
-DEFNAME=i_container_skeleton_human
+DEFNAME=i_bones_skeleton_human
 NAME=skeleton
-TYPE=t_container
+TYPE=t_corpse
 TDATA2=09
 FLIP=1
 CATEGORY=Halloween
 SUBSECTION=Decoration
-DESCRIPTION=Skeleton (container)(human)
+DESCRIPTION=Skeleton (corpse)(human)
 DUPELIST=09f1f
 
 [ITEMDEF 09f1f]
-//skeleton (container)(human)
+//skeleton (corpse)(human)
 DUPEITEM=09f1e
 
 
 [ITEMDEF 09f21]
-DEFNAME=i_container_skeleton_gargoyle
+DEFNAME=i_bones_skeleton_gargoyle
 NAME=skeleton
-TYPE=t_container
+TYPE=t_corpse
 TDATA2=09
 FLIP=1
 CATEGORY=Halloween
 SUBSECTION=Decoration
-DESCRIPTION=Skeleton (container)(gargoyle)
+DESCRIPTION=Skeleton (corpse)(gargoyle)
 DUPELIST=09f22
 
 [ITEMDEF 09f22]
-//skeleton (container)(gargoyle)
+//skeleton (corpse)(gargoyle)
 DUPEITEM=09f21
 
 [ITEMDEF 09f23]
@@ -1095,109 +1085,6 @@ NAME=pumpkin
 CATEGORY=Halloween
 SUBSECTION=Decoration
 DESCRIPTION=Pumpkin (plain)
-
-
-[ITEMDEF 09f64]
-DEFNAME=i_jack_in_the_box_east
-NAME=Jack in the Box
-CATEGORY=Halloween
-SUBSECTION=Artifacts of Enchanted Origin
-DESCRIPTION=Jack in the Box (east)
-DUPELIST=09f65,09f66,09f67,09f68,09f69,09f6a,09f6b
-
-[ITEMDEF 09f65]
-//Jack in the Box
-DUPEITEM=09f64
-
-[ITEMDEF 09f66]
-//Jack in the Box
-DUPEITEM=09f64
-
-[ITEMDEF 09f67]
-//Jack in the Box
-DUPEITEM=09f64
-
-[ITEMDEF 09f68]
-//Jack in the Box
-DUPEITEM=09f64
-
-[ITEMDEF 09f69]
-//Jack in the Box
-DUPEITEM=09f64
-
-[ITEMDEF 09f6a]
-//Jack in the Box
-DUPEITEM=09f64
-
-[ITEMDEF 09f6b]
-//Jack in the Box
-DUPEITEM=09f64
-
-[ITEMDEF 09f6c]
-DEFNAME=i_jack_in_the_box_south
-NAME=Jack in the Box
-CATEGORY=Halloween
-SUBSECTION=Artifacts of Enchanted Origin
-DESCRIPTION=Jack in the Box (south)
-DUPELIST=09f6d,09f6e,09f6f,09f70,09f71,09f72,09f73
-
-[ITEMDEF 09f6d]
-//Jack in the Box
-DUPEITEM=09f6c
-
-[ITEMDEF 09f6e]
-//Jack in the Box
-DUPEITEM=09f6c
-
-[ITEMDEF 09f6f]
-//Jack in the Box
-DUPEITEM=09f6c
-
-[ITEMDEF 09f70]
-//Jack in the Box
-DUPEITEM=09f6c
-
-[ITEMDEF 09f71]
-//Jack in the Box
-DUPEITEM=09f6c
-
-[ITEMDEF 09f72]
-//Jack in the Box
-DUPEITEM=09f6c
-
-[ITEMDEF 09f73]
-//Jack in the Box
-DUPEITEM=09f6c
-
-[ITEMDEF 09f74]
-DEFNAME=i_serpent_jawbone
-NAME=Serpent Jawbone
-FLIP=1
-CATEGORY=Halloween
-SUBSECTION=Artifacts of Enchanted Origin
-DESCRIPTION=Serpent Jawbone
-DUPELIST=09f75
-
-[ITEMDEF 09f75]
-//Serpent Jawbone
-DUPEITEM=09f74
-
-
-[ITEMDEF 09f85]
-DEFNAME=i_jacks_bag_of_tricks
-NAME=Jack's Bag of Tricks
-CATEGORY=Halloween
-SUBSECTION=Artifacts of Enchanted Origin
-DESCRIPTION=Jack's Bag of Tricks
-DUPELIST=09f86,09f87
-
-[ITEMDEF 09f86]
-//Jack's Bag of Tricks
-DUPEITEM=09f85
-
-[ITEMDEF 09f87]
-//Jack's Bag of Tricks
-DUPEITEM=09f85
 
 
 //////////////////

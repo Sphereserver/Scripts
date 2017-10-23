@@ -1,0 +1,1226 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2017
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Monday, Oct 23, 2017
+//
+VERSION=0.56d
+
+
+[ITEMDEF 0234b]
+DEFNAME=i_rose_trinsic_flower
+CATEGORY=Anniversary Gifts
+SUBSECTION=7th Anniversary
+DESCRIPTION=Rose of Trinsic (flower)
+
+[ITEMDEF 0234c]
+DEFNAME=i_rose_trinsic
+FLIP=1
+CATEGORY=Anniversary Gifts
+SUBSECTION=7th Anniversary
+DESCRIPTION=Rose of Trinsic
+DUPELIST=0234d
+
+[ITEMDEF 0234d]
+//rose of trinsic
+DUPEITEM=0234c
+
+[ITEMDEF 0234e]
+DEFNAME=i_tapestry_sosaria
+TYPE=t_sign_gump
+TDATA2=02c95
+FLIP=1
+CATEGORY=Anniversary Gifts
+SUBSECTION=7th Anniversary
+DESCRIPTION=Sosaria Tapestry
+DUPELIST=0234f
+
+[ITEMDEF 0234f]
+//sosaria tapestry
+DUPEITEM=0234e
+
+
+[ITEMDEF 02ac0]
+DEFNAME=i_fountain_life
+NAME=Fountain of Life
+TYPE=t_container
+TDATA2=0484
+FLIP=1
+CATEGORY=Anniversary Gifts
+SUBSECTION=8th Anniversary
+DESCRIPTION=Fountain of Life
+DUPELIST=02ac3
+
+[ITEMDEF 02ac1]
+//fountain of life (anim)
+
+[ITEMDEF 02ac2]
+//fountain of life (anim)
+
+[ITEMDEF 02ac3]
+//fountain of life
+DUPEITEM=02ac0
+
+[ITEMDEF 02ac4]
+//fountain of life (anim)
+DUPEITEM=02ac0
+
+[ITEMDEF 02ac5]
+//fountain of life (anim)
+DUPEITEM=02ac0
+
+
+[ITEMDEF 02af9]
+DEFNAME=i_dawns_music_box
+NAME=Dawn's Music Box
+FLIP=1
+CATEGORY=Anniversary Gifts
+SUBSECTION=8th Anniversary
+DESCRIPTION=Dawn's Music Box
+DUPELIST=02afd
+
+[ITEMDEF 02afa]
+//dawns music box (anim)
+
+[ITEMDEF 02afb]
+//dawns music box (anim)
+
+[ITEMDEF 02afc]
+//dawns music box (anim)
+
+[ITEMDEF 02afd]
+//dawns music box
+DUPEITEM=02af9
+
+[ITEMDEF 02afe]
+//dawns music box (anim)
+
+[ITEMDEF 02aff]
+//dawns music box (anim)
+
+[ITEMDEF 02b00]
+//dawns music box (anim)
+
+[ITEMDEF 02b01]
+DEFNAME=i_shield_dupre
+NAME=Dupre's Shield
+TYPE=t_shield
+CATEGORY=Anniversary Gifts
+SUBSECTION=8th Anniversary
+DESCRIPTION=Dupre's Shield
+CanUse=can_u_human|can_u_elf
+ReqStr=50
+TEVENTS=t_equipitem
+ON=@Create
+   HITPOINTS=255
+   BONUSHITS=5
+   REGENHITS=1
+   RESPHYSICAL=1
+   RESENERGY=1
+
+[ITEMDEF 02b02]
+DEFNAME=i_quiver_infinity
+NAME=Quiver of Infinity
+TYPE=t_clothing
+FLIP=1
+CATEGORY=Anniversary Gifts
+SUBSECTION=8th Anniversary
+DESCRIPTION=Quiver of Infinity
+DUPELIST=02b03
+ON=@Create
+   HITPOINTS=255
+   INCREASEDAM=10
+   INCREASEDEFCHANCE=5
+   //LOWERAMMOCOST=20
+
+[ITEMDEF 02b03]
+//quiver of infinity
+DUPEITEM=02b02
+
+
+[ITEMDEF 0367a]
+DEFNAME=i_heritage_token
+NAME=heritage token
+TYPE=t_light_lit
+CATEGORY=Anniversary Gifts
+SUBSECTION=7th Anniversary
+DESCRIPTION=Heritage Token
+ON=@Create
+   MOREZ=29
+
+
+[ITEMDEF 03bb3]
+DEFNAME=i_sculpture_10th_anniversary
+NAME=10th Anniversary Sculpture
+FLIP=1
+CATEGORY=Anniversary Gifts
+SUBSECTION=10th Anniversary
+DESCRIPTION=10th Anniversary Sculpture
+DUPELIST=033b4
+
+[ITEMDEF 03bb4]
+//10th anniversary sculpture
+DUPEITEM=03bb3
+
+
+[ITEMDEF 04141]
+//mailbox (south)
+
+[ITEMDEF 04142]
+DEFNAME=i_mailbox_s
+NAME=mailbox
+TYPE=t_container
+TDATA2=011a
+CATEGORY=Anniversary Gifts
+SUBSECTION=12th Anniversary
+DESCRIPTION=Mailbox (south)
+ON=@DropOn_Self
+   IF (<DISPID> != 04141)
+    DISPID=04141
+    UPDATE
+   ENDIF
+ON=@PickUp_Self
+   IF (<DISPID> != 04142) && (<RESCOUNT> < 2)
+    DISPID=04142
+    UPDATE
+   ENDIF
+
+[ITEMDEF 04143]
+//mailbox (west)
+
+[ITEMDEF 04144]
+DEFNAME=i_mailbox_e
+NAME=mailbox
+TYPE=t_container
+TDATA2=011a
+CATEGORY=Anniversary Gifts
+SUBSECTION=12th Anniversary
+DESCRIPTION=Mailbox (east)
+ON=@DropOn_Self
+   IF (<DISPID> != 04143)
+    DISPID=04143
+    UPDATE
+   ENDIF
+ON=@PickUp_Self
+   IF (<DISPID> != 04144) && (<RESCOUNT> < 2)
+    DISPID=04144
+    UPDATE
+   ENDIF
+
+
+[ITEMDEF 042c7]
+DEFNAME=i_tree_silver_sapling
+NAME=silver sapling replica
+CATEGORY=Anniversary Gifts
+SUBSECTION=12th Anniversary
+DESCRIPTION=Silver Sapling Replica
+
+[ITEMDEF 042c8]
+DEFNAME=i_tree_silver_sapling_potted
+NAME=potted silver sapling replica
+CATEGORY=Anniversary Gifts
+SUBSECTION=12th Anniversary
+DESCRIPTION=Silver Sapling Replica (Potted)
+
+[ITEMDEF 042c9]
+DEFNAME=i_banner_ultima
+NAME=ultima banner
+CATEGORY=Anniversary Gifts
+SUBSECTION=12th Anniversary
+DESCRIPTION=Ultima Banner
+DUPELIST=042ca
+
+[ITEMDEF 042ca]
+//ultima banner
+DUPEITEM=042c9
+
+
+[ITEMDEF 044d5]
+DEFNAME=i_grandfather_clock_small
+NAME=grandfather clock
+TYPE=t_clock
+FLIP=1
+CATEGORY=Anniversary Gifts
+SUBSECTION=14th Anniversary
+DESCRIPTION=Grandfather Clock (Small)
+DUPELIST=044d9
+
+[ITEMDEF 044d6]
+//small grandfather clock (anim)
+
+[ITEMDEF 044d7]
+//small grandfather clock (anim)
+
+[ITEMDEF 044d8]
+//small grandfather clock (anim)
+
+[ITEMDEF 044d9]
+//small grandfather clock
+DUPEITEM=044d5
+
+[ITEMDEF 044da]
+//small grandfather clock (anim)
+
+[ITEMDEF 044db]
+//small grandfather clock (anim)
+
+[ITEMDEF 044dc]
+//small grandfather clock (anim)
+
+[ITEMDEF 044dd]
+DEFNAME=i_grandfather_clock_large
+NAME=grandfather clock
+TYPE=t_clock
+FLIP=1
+CATEGORY=Anniversary Gifts
+SUBSECTION=14th Anniversary
+DESCRIPTION=Grandfather Clock (Large)
+DUPELIST=044e1
+
+[ITEMDEF 044de]
+//large grandfather clock (anim)
+
+[ITEMDEF 044df]
+//large grandfather clock (anim)
+
+[ITEMDEF 044e0]
+//large grandfather clock (anim)
+
+[ITEMDEF 044e1]
+//large grandfather clock
+DUPEITEM=044dd
+
+[ITEMDEF 044e2]
+//large grandfather clock (anim)
+
+[ITEMDEF 044e3]
+//large grandfather clock (anim)
+
+[ITEMDEF 044e4]
+//large grandfather clock (anim)
+
+
+[ITEMDEF 044ef]
+DEFNAME=i_planter_ancient_stone
+NAME=ancient stone planter
+CATEGORY=Anniversary Gifts
+SUBSECTION=14th Anniversary
+DESCRIPTION=Ancient Stone Planter
+
+[ITEMDEF 044f0]
+DEFNAME=i_planter_grecian
+NAME=grecian planter
+CATEGORY=Anniversary Gifts
+SUBSECTION=14th Anniversary
+DESCRIPTION=Grecian Planter
+
+[ITEMDEF 044f1]
+DEFNAME=i_planter_modern_stone
+NAME=modern stone planter
+CATEGORY=Anniversary Gifts
+SUBSECTION=14th Anniversary
+DESCRIPTION=Modern Stone Planter
+
+[ITEMDEF 044f2]
+DEFNAME=i_planter_oak_barrel
+NAME=oak barrel planter
+CATEGORY=Anniversary Gifts
+SUBSECTION=14th Anniversary
+DESCRIPTION=Oak Barrel Planter
+
+
+[ITEMDEF 0469f]
+DEFNAME=i_cake_12th_anniversary
+NAME=12th anniversary cake
+TYPE=t_food
+CATEGORY=Anniversary Gifts
+SUBSECTION=12th Anniversary
+DESCRIPTION=12th Anniversary Cake
+ON=@Create
+   MOREM=1
+
+
+[ITEMDEF 048d4]
+DEFNAME=i_grandfather_clock_white
+NAME=grandfather clock
+TYPE=t_clock
+FLIP=1
+CATEGORY=Anniversary Gifts
+SUBSECTION=14th Anniversary
+DESCRIPTION=Grandfather Clock (White)
+DUPELIST=048d8
+
+[ITEMDEF 048d5]
+//white grandfather clock (anim)
+
+[ITEMDEF 048d6]
+//white grandfather clock (anim)
+
+[ITEMDEF 048d7]
+//white grandfather clock (anim)
+
+[ITEMDEF 048d8]
+//white grandfather clock
+DUPEITEM=048d4
+
+[ITEMDEF 048d9]
+//white grandfather clock (anim)
+
+[ITEMDEF 048da]
+//white grandfather clock (anim)
+
+[ITEMDEF 048db]
+//white grandfather clock (anim)
+
+
+[ITEMDEF 049a0]
+DEFNAME=i_tapestry_sacrifice
+NAME=sacrifice tapestry
+FLIP=1
+CATEGORY=Anniversary Gifts
+SUBSECTION=14th Anniversary
+DESCRIPTION=Sacrifice Tapestry
+DUPELIST=049b4
+
+[ITEMDEF 049a1]
+DEFNAME=i_tapestry_spirituality
+NAME=spirituality tapestry
+FLIP=1
+CATEGORY=Anniversary Gifts
+SUBSECTION=14th Anniversary
+DESCRIPTION=Spirituality Tapestry
+DUPELIST=049b9
+
+[ITEMDEF 049a2]
+DEFNAME=i_tapestry_honesty
+NAME=honesty tapestry
+FLIP=1
+CATEGORY=Anniversary Gifts
+SUBSECTION=14th Anniversary
+DESCRIPTION=Honesty Tapestry
+DUPELIST=049bf
+
+[ITEMDEF 049a3]
+DEFNAME=i_tapestry_humility
+NAME=humility tapestry
+FLIP=1
+CATEGORY=Anniversary Gifts
+SUBSECTION=14th Anniversary
+DESCRIPTION=Humility Tapestry
+DUPELIST=049c0
+
+
+[ITEMDEF 049a7]
+DEFNAME=i_tapestry_justice
+NAME=justice tapestry
+FLIP=1
+CATEGORY=Anniversary Gifts
+SUBSECTION=14th Anniversary
+DESCRIPTION=Justice Tapestry
+DUPELIST=049ba
+
+[ITEMDEF 049a8]
+DEFNAME=i_tapestry_compassion
+NAME=compassion tapestry
+FLIP=1
+CATEGORY=Anniversary Gifts
+SUBSECTION=14th Anniversary
+DESCRIPTION=Compassion Tapestry
+DUPELIST=049b5
+
+
+[ITEMDEF 049b2]
+DEFNAME=i_tapestry_honor
+NAME=honor tapestry
+FLIP=1
+CATEGORY=Anniversary Gifts
+SUBSECTION=14th Anniversary
+DESCRIPTION=Honor Tapestry
+DUPELIST=049be
+
+[ITEMDEF 049b3]
+DEFNAME=i_tapestry_valor
+NAME=valor tapestry
+FLIP=1
+CATEGORY=Anniversary Gifts
+SUBSECTION=14th Anniversary
+DESCRIPTION=Valor Tapestry
+DUPELIST=049bb
+
+[ITEMDEF 049b4]
+//sacrifice tapestry
+NAME=sacrifice tapestry
+DUPEITEM=049a0
+
+[ITEMDEF 049b5]
+//compassion tapestry
+NAME=compassion tapestry
+DUPEITEM=049a8
+
+
+[ITEMDEF 049b9]
+//spirituality tapestry
+NAME=spirituality tapestry
+DUPEITEM=049a1
+
+[ITEMDEF 049ba]
+//justice tapestry
+NAME=justice tapestry
+DUPEITEM=049a7
+
+[ITEMDEF 049bb]
+//valor tapestry
+NAME=valor tapestry
+DUPEITEM=049b3
+
+
+[ITEMDEF 049be]
+//honor tapestry
+NAME=honor tapestry
+DUPEITEM=049b2
+
+[ITEMDEF 049bf]
+//honesty tapestry
+NAME=honesty tapestry
+DUPEITEM=049a2
+
+[ITEMDEF 049c0]
+//humility tapestry
+NAME=humility tapestry
+DUPEITEM=049a3
+
+
+[ITEMDEF 04b9d]
+DEFNAME=i_robe_15th_anniversary
+NAME=15th anniversary commemorative robe
+TYPE=t_clothing
+DYE=1
+FLIP=1
+REQSTR=10
+TEVENTS=t_equipitem
+CanUse=can_u_human|can_u_elf
+CATEGORY=Anniversary Gifts
+SUBSECTION=15th Anniversary
+DESCRIPTION=15th Anniversary Commemorative Robe
+DUPELIST=04b9e
+ON=@Create
+   ATTR=attr_newbie
+   HITPOINTS=255
+
+[ITEMDEF 04b9e]
+//15th anniversary commemorative robe
+DUPEITEM=04b9d
+
+[ITEMDEF 04b9f]
+DEFNAME=i_gargish_robe_15th_anniversary
+NAME=15th anniversary commemorative gargish robe
+TYPE=t_clothing
+DYE=1
+FLIP=1
+REQSTR=10
+TEVENTS=t_equipitem
+CanUse=can_u_gargoyle
+CATEGORY=Anniversary Gifts
+SUBSECTION=15th Anniversary
+DESCRIPTION=15th Anniversary Commemorative Gargish Robe
+DUPELIST=04ba0
+ON=@Create
+   ATTR=attr_newbie
+   HITPOINTS=255
+
+[ITEMDEF 04ba0]
+//15th anniversary commemorative gargish robe
+DUPEITEM=04b9f
+
+[ITEMDEF 04ba1]
+DEFNAME=i_harpsichord_roll
+NAME=harpsichord roll
+FLIP=1
+CATEGORY=Anniversary Gifts
+SUBSECTION=15th Anniversary
+DESCRIPTION=Harpsichord Roll
+DUPELIST=04ba2
+
+[ITEMDEF 04ba2]
+//harpsichord roll
+DUPEITEM=04ba1
+
+[ITEMDEF 04ba3]
+DEFNAME=i_cake_15th_anniversary
+NAME=15th anniversary cake
+CATEGORY=Anniversary Gifts
+SUBSECTION=15th Anniversary
+DESCRIPTION=15th Anniversary Cake
+ON=@Create
+   MORE2=10
+ON=@ClientTooltip
+   SRC.ADDCLILOC 1153151,<dMORE2>	//Slices: ~1_amt~ 
+ON=@DClick
+   SERV.NEWITEM i_cake_15th_anniversary_slice
+   NEW.BOUNCE
+   MORE2 --
+   RESENDTOOLTIP
+   IF (<MORE2> <= 0)
+    REMOVE
+   ENDIF
+   return 1
+
+[ITEMDEF 04ba4]
+DEFNAME=i_cake_15th_anniversary_slice
+NAME=piece of cake%s
+TYPE=t_food
+CATEGORY=Anniversary Gifts
+SUBSECTION=15th Anniversary
+DESCRIPTION=Piece of Cake
+ON=@Create
+   MOREM=1
+
+
+[ITEMDEF 063bc]
+//harpsichord bench (multi-part)(south)
+NAME=bench
+
+[ITEMDEF 063bd]
+//harpsichord bench (multi-part)(south)
+NAME=bench
+
+[ITEMDEF 063be]
+//harpsichord (multi-part)(south)
+NAME=harpsichord
+
+[ITEMDEF 063bf]
+//harpsichord (multi-part)(south)
+NAME=harpsichord
+
+[ITEMDEF 063c0]
+//harpsichord (multi-part)(south)
+NAME=harpsichord
+
+[ITEMDEF 063c1]
+//harpsichord (multi-part)(south)
+NAME=harpsichord
+
+[ITEMDEF 063c2]
+//harpsichord (multi-part)(south)
+NAME=harpsichord
+
+[ITEMDEF 063c3]
+//harpsichord bench (multi-part)(east)
+NAME=bench
+
+[ITEMDEF 063c4]
+//harpsichord bench (multi-part)(east)
+NAME=bench
+
+[ITEMDEF 063c5]
+//harpsichord (multi-part)(east)
+NAME=harpsichord
+
+[ITEMDEF 063c6]
+//harpsichord (multi-part)(east)
+NAME=harpsichord
+
+[ITEMDEF 063c7]
+//harpsichord (multi-part)(east)
+NAME=harpsichord
+
+[ITEMDEF 063c8]
+//harpsichord (multi-part)(east)
+NAME=harpsichord
+
+[ITEMDEF 063c9]
+//harpsichord (multi-part)(east)
+NAME=harpsichord
+
+
+[ITEMDEF 09960]
+DEFNAME=i_16th_anniversary_silver_serving_tray
+NAME=16th anniversary silver serving tray
+FLIP=1
+CATEGORY=Anniversary Gifts
+SUBSECTION=16th Anniversary
+DESCRIPTION=16th Anniversary Silver Serving Tray
+DUPELIST=09961
+
+[ITEMDEF 09961]
+//16th anniversary silver serving tray
+DUPEITEM=09960
+
+[ITEMDEF 09962]
+DEFNAME=i_elephant_ear_dieffenbachia
+NAME=elephant ear dieffenbachia
+FLIP=1
+CATEGORY=Anniversary Gifts
+SUBSECTION=16th Anniversary
+DESCRIPTION=Elephant Ear Dieffenbachia
+DUPELIST=09963
+
+[ITEMDEF 09963]
+//elephant ear dieffenbachia
+DUPEITEM=09962
+
+[ITEMDEF 09964]
+DEFNAME=i_staghorn_fern
+NAME=staghorn fern
+FLIP=1
+CATEGORY=Anniversary Gifts
+SUBSECTION=16th Anniversary
+DESCRIPTION=Staghorn Fern
+DUPELIST=09965
+
+[ITEMDEF 09965]
+//staghorn fern
+DUPEITEM=09964
+
+
+[ITEMDEF 09967]
+DEFNAME=i_enormous_venus_flytrap
+NAME=enormous venus flytrap
+TYPE=t_trash_can
+TDATA2=0107
+FLIP=1
+CATEGORY=Anniversary Gifts
+SUBSECTION=16th Anniversary
+DESCRIPTION=Enormous Venus Flytrap
+DUPELIST=09968
+ON=@Create
+   COLOR=colors_red
+
+[ITEMDEF 09968]
+//enormous venus flytrap
+DUPEITEM=09967
+
+[ITEMDEF 09969]
+DEFNAME=i_japanese_maple
+NAME=japanese maple
+FLIP=1
+CATEGORY=Anniversary Gifts
+SUBSECTION=16th Anniversary
+DESCRIPTION=Japanese Maple
+DUPELIST=0996a
+ON=@Create
+   COLOR=colors_red
+
+[ITEMDEF 0996a]
+//japanese maple
+DUPEITEM=09969
+
+
+[ITEMDEF 099c8]
+DEFNAME=i_bar_marble
+NAME=marble bar
+FLIP=1
+CATEGORY=Anniversary Gifts
+SUBSECTION=17th Anniversary
+DESCRIPTION=Marble Bar
+DUPELIST=099c9,099ca,099cb,09a14,09a15,09a16,09a17,09a18,09a19
+
+[ITEMDEF 099c9]
+//marble bar
+TYPE=t_container
+TDATA2=048
+DUPEITEM=099c8
+
+[ITEMDEF 099ca]
+//marble bar
+DUPEITEM=099c8
+
+[ITEMDEF 099cb]
+//marble bar
+DUPEITEM=099c8
+
+
+[ITEMDEF 09a0c]
+DEFNAME=i_sign_bar
+NAME=bar
+FLIP=1
+CATEGORY=Anniversary Gifts
+SUBSECTION=17th Anniversary
+DESCRIPTION=Bar Sign
+DUPELIST=09a10
+ON=@DClick
+   //Toggle animation
+   IF (<DISPID>==i_sign_bar)
+    DISPID=i_sign_bar_anim
+   ELIF (<DISPID>==i_sign_bar_anim)
+    DISPID=i_sign_bar
+   ELIF (<DISPID>==i_sign_bar2)
+    DISPID=i_sign_bar2_anim
+   ELIF (<DISPID>==i_sign_bar2_anim)
+    DISPID=i_sign_bar2
+   ENDIF
+   UPDATE
+   return 1
+
+[ITEMDEF 09a0d]
+//bar sign (south)(anim)
+DEFNAME=i_sign_bar_anim
+
+[ITEMDEF 09a0e]
+//bar sign (south)(anim)
+
+[ITEMDEF 09a0f]
+//bar sign (south)(anim)
+
+[ITEMDEF 09a10]
+//bar sign (east)
+DEFNAME=i_sign_bar2
+NAME=bar
+DUPEITEM=09a0c
+ON=@DClick
+   //Toggle animation
+   IF (<DISPID>==i_sign_bar)
+    DISPID=i_sign_bar_anim
+   ELIF (<DISPID>==i_sign_bar_anim)
+    DISPID=i_sign_bar
+   ELIF (<DISPID>==i_sign_bar2)
+    DISPID=i_sign_bar2_anim
+   ELIF (<DISPID>==i_sign_bar2_anim)
+    DISPID=i_sign_bar2
+   ENDIF
+   UPDATE
+   return 1
+
+[ITEMDEF 09a11]
+//bar sign (east)(anim)
+DEFNAME=i_sign_bar2_anim
+
+[ITEMDEF 09a12]
+//bar sign (east)(anim)
+
+[ITEMDEF 09a13]
+//bar sign (east)(anim)
+
+[ITEMDEF 09a14]
+//marble bar
+DUPEITEM=099c8
+
+[ITEMDEF 09a15]
+//marble bar
+DUPEITEM=099c8
+
+[ITEMDEF 09a16]
+//marble bar
+DUPEITEM=099c8
+
+[ITEMDEF 09a17]
+//marble bar
+DUPEITEM=099c8
+
+[ITEMDEF 09a18]
+//marble bar
+DUPEITEM=099c8
+
+[ITEMDEF 09a19]
+//marble bar
+DUPEITEM=099c8
+
+
+[ITEMDEF 09bba]
+DEFNAME=i_enchanted_timepiece_1
+NAME=enchanted timepiece
+CATEGORY=Anniversary Gifts
+SUBSECTION=18th Anniversary
+DESCRIPTION=Enchanted Timepiece (1 o'clock)
+
+[ITEMDEF 09bbb]
+DEFNAME=i_enchanted_timepiece_2
+NAME=enchanted timepiece
+CATEGORY=Anniversary Gifts
+SUBSECTION=18th Anniversary
+DESCRIPTION=Enchanted Timepiece (2 o'clock)
+
+[ITEMDEF 09bbc]
+DEFNAME=i_enchanted_timepiece_3
+NAME=enchanted timepiece
+CATEGORY=Anniversary Gifts
+SUBSECTION=18th Anniversary
+DESCRIPTION=Enchanted Timepiece (3 o'clock)
+
+[ITEMDEF 09bbd]
+DEFNAME=i_enchanted_timepiece_4
+NAME=enchanted timepiece
+CATEGORY=Anniversary Gifts
+SUBSECTION=18th Anniversary
+DESCRIPTION=Enchanted Timepiece (4 o'clock)
+
+[ITEMDEF 09bbe]
+DEFNAME=i_enchanted_timepiece_5
+NAME=enchanted timepiece
+CATEGORY=Anniversary Gifts
+SUBSECTION=18th Anniversary
+DESCRIPTION=Enchanted Timepiece (5 o'clock)
+
+[ITEMDEF 09bbf]
+DEFNAME=i_enchanted_timepiece_6
+NAME=enchanted timepiece
+CATEGORY=Anniversary Gifts
+SUBSECTION=18th Anniversary
+DESCRIPTION=Enchanted Timepiece (6 o'clock)
+
+[ITEMDEF 09bc0]
+DEFNAME=i_enchanted_timepiece_7
+NAME=enchanted timepiece
+CATEGORY=Anniversary Gifts
+SUBSECTION=18th Anniversary
+DESCRIPTION=Enchanted Timepiece (7 o'clock)
+
+[ITEMDEF 09bc1]
+DEFNAME=i_enchanted_timepiece_8
+NAME=enchanted timepiece
+CATEGORY=Anniversary Gifts
+SUBSECTION=18th Anniversary
+DESCRIPTION=Enchanted Timepiece (8 o'clock)
+
+[ITEMDEF 09bc2]
+DEFNAME=i_enchanted_timepiece_9
+NAME=enchanted timepiece
+CATEGORY=Anniversary Gifts
+SUBSECTION=18th Anniversary
+DESCRIPTION=Enchanted Timepiece (9 o'clock)
+
+[ITEMDEF 09bc3]
+DEFNAME=i_enchanted_timepiece_10
+NAME=enchanted timepiece
+CATEGORY=Anniversary Gifts
+SUBSECTION=18th Anniversary
+DESCRIPTION=Enchanted Timepiece (10 o'clock)
+
+[ITEMDEF 09bc4]
+DEFNAME=i_enchanted_timepiece_11
+NAME=enchanted timepiece
+CATEGORY=Anniversary Gifts
+SUBSECTION=18th Anniversary
+DESCRIPTION=Enchanted Timepiece (11 o'clock)
+
+[ITEMDEF 09bc5]
+DEFNAME=i_enchanted_timepiece_12
+NAME=enchanted timepiece
+CATEGORY=Anniversary Gifts
+SUBSECTION=18th Anniversary
+DESCRIPTION=Enchanted Timepiece (12 o'clock)
+
+[ITEMDEF 09bc6]
+DEFNAME=i_enchanted_timepiece_night
+NAME=enchanted timepiece
+CATEGORY=Anniversary Gifts
+SUBSECTION=18th Anniversary
+DESCRIPTION=Enchanted Timepiece (night)
+
+[ITEMDEF 09bc7]
+DEFNAME=i_vase_18th_anniversary_tall
+NAME=tall 18th anniversary vase
+RESOURCES=6 i_rock_granite
+SKILLMAKE=Carpentry 36.0,t_masonry_tool
+CATEGORY=Anniversary Gifts
+SUBSECTION=18th Anniversary
+DESCRIPTION=Tall 18th Anniversary Vase
+
+[ITEMDEF 09bc8]
+DEFNAME=i_plate_commemorative_ornately_decorated
+NAME=ornately decorated commemorative plate
+CATEGORY=Anniversary Gifts
+SUBSECTION=18th Anniversary
+DESCRIPTION=Ornately Decorated Commemorative Plate
+
+
+[ITEMDEF 09bca]
+DEFNAME=i_vase_18th_anniversary_short
+NAME=short 18th anniversary vase
+RESOURCES=6 i_rock_granite
+SKILLMAKE=Carpentry 36.0,t_masonry_tool
+CATEGORY=Anniversary Gifts
+SUBSECTION=18th Anniversary
+DESCRIPTION=Short 18th Anniversary Vase
+
+
+[ITEMDEF 09c42]
+DEFNAME=i_19th_anniversary_token
+NAME=19th anniversary gift token
+TYPE=t_light_lit
+CATEGORY=Anniversary Gifts
+SUBSECTION=19th Anniversary
+DESCRIPTION=19th Anniversary Gift Token
+ON=@Create
+   MOREZ=29
+
+
+[ITEMDEF 09cef]
+DEFNAME=i_sculpture_weathered_bronze_globe
+NAME=weathered bronze globe sculpture
+FLIP=1
+CATEGORY=Anniversary Gifts
+SUBSECTION=19th Anniversary
+DESCRIPTION=Weathered Bronze Globe Sculpture
+DUPELIST=09cf8
+
+[ITEMDEF 09cf0]
+//weathered bronze globe sculpture (south)(anim)
+
+[ITEMDEF 09cf1]
+//weathered bronze globe sculpture (south)(anim)
+
+[ITEMDEF 09cf2]
+//weathered bronze globe sculpture (south)(anim)
+
+[ITEMDEF 09cf3]
+//weathered bronze globe sculpture (south)(anim)
+
+[ITEMDEF 09cf4]
+//weathered bronze globe sculpture (south)(anim)
+
+[ITEMDEF 09cf5]
+//weathered bronze globe sculpture (south)(anim)
+
+[ITEMDEF 09cf6]
+//weathered bronze globe sculpture (south)(anim)
+
+[ITEMDEF 09cf7]
+//weathered bronze globe sculpture (south)(anim)
+
+[ITEMDEF 09cf8]
+//weathered bronze globe sculpture (east)
+DUPEITEM=09cef
+
+[ITEMDEF 09cf9]
+//weathered bronze globe sculpture (east)(anim)
+
+[ITEMDEF 09cfa]
+//weathered bronze globe sculpture (east)(anim)
+
+[ITEMDEF 09cfb]
+//weathered bronze globe sculpture (east)(anim)
+
+[ITEMDEF 09cfc]
+//weathered bronze globe sculpture (east)(anim)
+
+[ITEMDEF 09cfd]
+//weathered bronze globe sculpture (east)(anim)
+
+[ITEMDEF 09cfe]
+//weathered bronze globe sculpture (east)(anim)
+
+[ITEMDEF 09cff]
+//weathered bronze globe sculpture (east)(anim)
+
+[ITEMDEF 09d00]
+//weathered bronze globe sculpture (east)(anim)
+
+
+[ITEMDEF 09d05]
+//weathered bronze man on a bench sculpture (multi-part)(south)
+
+[ITEMDEF 09d06]
+//weathered bronze man on a bench sculpture (multi-part)(south)
+
+[ITEMDEF 09d07]
+//weathered bronze man on a bench sculpture (multi-part)(east)
+
+[ITEMDEF 09d08]
+//weathered bronze man on a bench sculpture (multi-part)(east)
+
+[ITEMDEF 09d09]
+DEFNAME=i_sculpture_weathered_bronze_fairy
+NAME=weathered bronze fairy sculpture
+FLIP=1
+CATEGORY=Anniversary Gifts
+SUBSECTION=19th Anniversary
+DESCRIPTION=Weathered Bronze Fairy Sculpture
+DUPELIST=09d0a
+
+[ITEMDEF 09d0a]
+//weathered bronze fairy sculpture
+DUPEITEM=09d09
+
+
+[ITEMDEF 09d2e]
+DEFNAME=i_sculpture_weathered_bronze_archer
+NAME=weathered bronze archer sculpture
+FLIP=1
+CATEGORY=Anniversary Gifts
+SUBSECTION=19th Anniversary
+DESCRIPTION=Weathered Bronze Archer Sculpture
+DUPELIST=09d2f
+
+[ITEMDEF 09d2f]
+//weathered bronze archer sculpture
+DUPEITEM=09d2e
+
+
+[ITEMDEF 09d3e]
+DEFNAME=i_potted_amaryllis
+NAME=potted amaryllis
+CATEGORY=Anniversary Gifts
+SUBSECTION=19th Anniversary
+DESCRIPTION=Potted Amaryllis
+ON=@Create
+   COLOR={0 1 02 1 012 1 021 1 0e1 1 01bb 1 043f 1 044b 1 044c 1 0485 1 048d 1 048e 1 0780 1 0813 1 0aa1 1 0ab8 1}
+
+
+[ITEMDEF 09f41]
+DEFNAME=i_statue_platinum_dragon
+NAME=platinum dragon statue
+CATEGORY=Anniversary Gifts
+SUBSECTION=20th Anniversary
+DESCRIPTION=Platinum Dragon Statue
+DUPELIST=09f5e
+
+[ITEMDEF 09f42]
+//platinum dragon statue (anim)
+
+[ITEMDEF 09f43]
+//platinum dragon statue (anim)
+
+[ITEMDEF 09f44]
+//platinum dragon statue (anim)
+
+[ITEMDEF 09f45]
+//platinum dragon statue (anim)
+
+[ITEMDEF 09f46]
+//platinum dragon statue (anim)
+
+
+[ITEMDEF 09f4a]
+//platinum dragon statue (anim)
+
+[ITEMDEF 09f4b]
+//platinum dragon statue (anim)
+
+
+[ITEMDEF 09f5e]
+//platinum dragon statue
+DUPEITEM=09f41
+
+[ITEMDEF 09f5f]
+//platinum dragon statue (anim)
+
+[ITEMDEF 09f60]
+//platinum dragon statue (anim)
+
+[ITEMDEF 09f61]
+//platinum dragon statue (anim)
+
+[ITEMDEF 09f62]
+//platinum dragon statue (anim)
+
+[ITEMDEF 09f63]
+//platinum dragon statue (anim)
+
+
+[ITEMDEF 09f88]
+DEFNAME=i_confetti
+NAME=confetti
+CATEGORY=Anniversary Gifts
+SUBSECTION=20th Anniversary
+DESCRIPTION=Confetti
+
+[ITEMDEF 09f89]
+DEFNAME=i_confetti_explosion
+NAME=confetti
+CATEGORY=Anniversary Gifts
+SUBSECTION=20th Anniversary
+DESCRIPTION=Confetti (explosion)
+DUPELIST=09f8a,09f8b,09f8c,09f8d,09f8e,09f8f,09f90,09f91
+
+[ITEMDEF 09f8a]
+//confetti (anim)
+DUPEITEM=09f89
+
+[ITEMDEF 09f8b]
+//confetti (anim)
+DUPEITEM=09f89
+
+[ITEMDEF 09f8c]
+//confetti (anim)
+DUPEITEM=09f89
+
+[ITEMDEF 09f8d]
+//confetti (anim)
+DUPEITEM=09f89
+
+[ITEMDEF 09f8e]
+//confetti (anim)
+DUPEITEM=09f89
+
+[ITEMDEF 09f8f]
+//confetti (anim)
+DUPEITEM=09f89
+
+[ITEMDEF 09f90]
+//confetti (anim)
+DUPEITEM=09f89
+
+[ITEMDEF 09f91]
+//confetti (anim)
+DUPEITEM=09f89
+
+
+[ITEMDEF 09f93]
+DEFNAME=i_confetti_cannon
+NAME=confetti cannon
+CATEGORY=Anniversary Gifts
+SUBSECTION=20th Anniversary
+DESCRIPTION=Confetti Cannon
+ON=@DClick
+   IF (<CONT>)
+    SRC.SYSMESSAGE You cannot use this while it's inside a container.
+    return 1
+   ENDIF
+   SRC.MESSAGE You fire the cannon!
+   EFFECT 2,i_confetti_explosion,16,24
+   return 1
+
+
+//////////////////
+// Custom Items //
+//////////////////
+
+[ITEMDEF m_harpsichord_south]
+ID=063be
+NAME=Harpsichord
+TYPE=t_multi
+MULTIREGION=0,0,0,0
+COMPONENT=063bc,1,1
+COMPONENT=063bd,0,1
+COMPONENT=063bf,1,0
+COMPONENT=063c0,0,-1
+COMPONENT=063c1,1,-1
+COMPONENT=063c2,0,-2
+
+[MULTIDEF m_harpsichord_east]
+ID=063c5
+NAME=Harpsichord
+TYPE=t_multi
+MULTIREGION=0,0,0,0
+COMPONENT=063c3,1,-1
+COMPONENT=063c4,1,0
+COMPONENT=063c6,0,-1
+COMPONENT=063c7,-1,0
+COMPONENT=063c8,-1,-1
+COMPONENT=063c9,-2,-1
+
+[ITEMDEF i_deed_harpsichord_south]
+ID=i_deed
+NAME=Harpsichord Deed (south)
+CATEGORY=Anniversary Gifts
+SUBSECTION=15th Anniversary
+DESCRIPTION=Harpsichord Deed (south)
+ON=@Create
+   MORE=m_harpsichord_south
+
+[ITEMDEF i_deed_harpsichord_east]
+ID=i_deed
+NAME=Harpsichord Deed (east)
+CATEGORY=Anniversary Gifts
+SUBSECTION=15th Anniversary
+DESCRIPTION=Harpsichord Deed (east)
+ON=@Create
+   MORE=m_harpsichord_east
+
+[EOF]

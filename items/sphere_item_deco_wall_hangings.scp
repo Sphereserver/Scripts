@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Oct 21, 2017
+// FILE LAST UPDATED: Monday, Oct 23, 2017
 //
 VERSION=0.56d
 
@@ -2289,21 +2289,6 @@ DUPELIST=02312
 DUPEITEM=02311
 
 
-[ITEMDEF 0234e]
-DEFNAME=i_tapestry_sosaria
-TYPE=t_sign_gump
-TDATA2=02c95
-FLIP=1
-CATEGORY=Decoration - Wall Hangings
-SUBSECTION=Tapestries
-DESCRIPTION=Sosaria Tapestry
-DUPELIST=0234f
-
-[ITEMDEF 0234f]
-//sosaria tapestry
-DUPEITEM=0234e
-
-
 [ITEMDEF 02409]
 DEFNAME=i_fan_small
 TYPE=t_normal
@@ -2810,19 +2795,6 @@ RESOURCES=1 i_cloth_bolt,2 i_dyes,1 i_board,1 i_rope
 CATEGORY=Decoration - Wall Hangings
 SUBSECTION=Tapestries
 DESCRIPTION=Colorful Tapestry 2
-
-
-[ITEMDEF 042c9]
-DEFNAME=i_banner_ultima
-NAME=ultima banner
-CATEGORY=Decoration - Wall Hangings
-SUBSECTION=Banners
-DESCRIPTION=Ultima Banner
-DUPELIST=042ca
-
-[ITEMDEF 042ca]
-//ultima banner
-DUPEITEM=042c9
 
 
 [ITEMDEF 044e7]

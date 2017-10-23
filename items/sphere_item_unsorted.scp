@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Oct 21, 2017
+// FILE LAST UPDATED: Monday, Oct 23, 2017
 //
 VERSION=0.56d
 
@@ -3176,40 +3176,6 @@ SUBSECTION=Classes
 DESCRIPTION=Tamer
 
 
-[ITEMDEF 02ac0]
-DEFNAME=i_fountain_life
-NAME=Fountain of Life
-TYPE=t_container
-TDATA2=0484
-CATEGORY=Provisions - Miscellaneous
-SUBSECTION=8th Age Items
-DESCRIPTION=Fountain of Life
-DUPELIST=02ac1,02ac2,02ac3,02ac4,02ac5
-
-[ITEMDEF 02ac1]
-//fountain of life
-DUPEITEM=02ac0
-
-[ITEMDEF 02ac2]
-//fountain of life
-DUPEITEM=02ac0
-
-[ITEMDEF 02ac3]
-//fountain of life
-CATEGORY=Provisions - Miscellaneous
-SUBSECTION=8th Age Items
-DESCRIPTION=Fountain of Life
-DUPEITEM=02ac0
-
-[ITEMDEF 02ac4]
-//fountain of life
-DUPEITEM=02ac0
-
-[ITEMDEF 02ac5]
-//fountain of life
-DUPEITEM=02ac0
-
-
 [ITEMDEF 02adc]
 DEFNAME=i_soulstone_blue
 NAME=Blue Soulstone
@@ -3265,43 +3231,6 @@ DEFNAME=i_vendorbox
 NAME=Vendor Box
 TYPE=t_eq_vendor_box
 TDATA2=04a
-
-[ITEMDEF 02af9]
-DEFNAME=i_dawns_music_box
-NAME=Dawn's Music Box
-TYPE=t_normal
-CATEGORY=Provisions - Miscellaneous
-SUBSECTION=8th Age Items
-DESCRIPTION=Dawn's Music Box
-DUPELIST=02afa,02afb,02afc,02afd,02afe,02aff,02b00
-
-[ITEMDEF 02afa]
-//dawns music box
-DUPEITEM=02af9
-
-[ITEMDEF 02afb]
-//dawns music box
-DUPEITEM=02af9
-
-[ITEMDEF 02afc]
-//dawns music box
-DUPEITEM=02af9
-
-[ITEMDEF 02afd]
-//dawns music box
-DUPEITEM=02af9
-
-[ITEMDEF 02afe]
-//dawns music box
-DUPEITEM=02af9
-
-[ITEMDEF 02aff]
-//dawns music box
-DUPEITEM=02af9
-
-[ITEMDEF 02b00]
-//dawns music box
-DUPEITEM=02af9
 
 
 [ITEMDEF 02db0]
@@ -4132,17 +4061,6 @@ TYPE=t_game_piece
 TYPE=t_game_piece
 
 
-[ITEMDEF 0367a]
-DEFNAME=i_heritage_token
-NAME=Heritage Token
-TYPE=t_normal
-VALUE=100
-WEIGHT=0.1
-CATEGORY=Quest
-SUBSECTION=Token
-DESCRIPTION=Heritage Token
-
-
 [ITEMDEF 036a2]
 DEFNAME=i_book_sm_quest
 NAME=book
@@ -4549,53 +4467,6 @@ DUPELIST=0410b
 DUPEITEM=0410a
 
 
-[ITEMDEF 04141]
-DEFNAME=i_mailbox_s
-NAME=mailbox
-TYPE=t_container
-TDATA2=011a
-TEVENTS=t_mailbox
-TAG.FullID=04141
-TAG.EmptyID=04142
-CATEGORY=Yard Decoration
-SUBSECTION=Mailbox
-DESCRIPTION=Mailbox South (full)
-
-[ITEMDEF 04142]
-NAME=mailbox
-TYPE=t_container
-TDATA2=011a
-TEVENTS=t_mailbox
-TAG.FullID=04141
-TAG.EmptyID=04142
-CATEGORY=Yard Decoration
-SUBSECTION=Mailbox
-DESCRIPTION=Mailbox South
-
-[ITEMDEF 04143]
-DEFNAME=i_mailbox_w
-NAME=mailbox
-TYPE=t_container
-TEVENTS=t_mailbox
-TDATA2=011a
-TAG.FullID=04143
-TAG.EmptyID=04144
-CATEGORY=Yard Decoration
-SUBSECTION=Mailbox
-DESCRIPTION=Mailbox West (full)
-
-[ITEMDEF 04144]
-NAME=mailbox
-TYPE=t_container
-TDATA2=011a
-TEVENTS=t_mailbox
-TAG.FullID=04143
-TAG.EmptyID=04144
-CATEGORY=Yard Decoration
-SUBSECTION=Mailbox
-DESCRIPTION=Mailbox West
-
-
 [ITEMDEF 041ad]
 DEFNAME=i_weaponstand1_full
 NAME=weapon stand
@@ -4784,51 +4655,6 @@ SUBSECTION=Virtue Items
 DESCRIPTION=Book of Truth (Gargish)
 ON=@Create
    MORE1=b_principal_truth
-
-
-[ITEMDEF 044ef]
-DEFNAME=i_planter_ancient
-NAME=ancient stone planter
-WEIGHT=15.0
-RESOURCES=3 i_rock_plain
-SKILLMAKE=carpentry 5.0,t_masonry_tool
-CATEGORY=Decoration - Potted Plants & Vases
-SUBSECTION=Vases & Pots
-DESCRIPTION=Ancient Stone Planter
-
-[ITEMDEF 044f0]
-DEFNAME=i_planter_grecian
-NAME=grecian planter
-WEIGHT=20.0
-RESOURCES=4 i_rock_plain
-SKILLMAKE=carpentry 5.0,t_masonry_tool
-CATEGORY=Decoration - Potted Plants & Vases
-SUBSECTION=Vases & Pots
-DESCRIPTION=Grecian Planter
-
-[ITEMDEF 044f1]
-DEFNAME=i_planter_modern
-NAME=modern stone planter
-WEIGHT=15.0
-RESOURCES=3 i_rock_plain
-SKILLMAKE=carpentry 5.0,t_masonry_tool
-CATEGORY=Decoration - Potted Plants & Vases
-SUBSECTION=Vases & Pots
-DESCRIPTION=Modern Stone Planter
-
-[ITEMDEF 044f2]
-//FIXME: Not a container apparently?
-DEFNAME=i_barrel_oak
-NAME=oak barrel
-TYPE=t_container
-TDATA2=03e
-VALUE=149
-WEIGHT=87.0
-RESOURCES=1 i_barrel_staves,1 i_barrel_hoops,1 i_barrel_lid
-SKILLMAKE=tinkering 55.0,t_tinker_tools//requires proximity to coopers bench
-CATEGORY=Provisions - Miscellaneous
-SUBSECTION=Containers
-DESCRIPTION=Oak Barrel
 
 
 [ITEMDEF 04515]
@@ -5239,14 +5065,7 @@ DESCRIPTION=Sea Sponge (5)
 [ITEMDEF 04ce3]
 [ITEMDEF 04ce4]
 [ITEMDEF 04ce5]
-[ITEMDEF 04ce6]
-[ITEMDEF 04ce7]
-[ITEMDEF 04ce8]
-[ITEMDEF 04ce9]
-[ITEMDEF 04cea]
-[ITEMDEF 04ceb]
-[ITEMDEF 04cec]
-[ITEMDEF 04ced]
+
 [ITEMDEF 04cee]
 [ITEMDEF 04cef]
 [ITEMDEF 04cf0]
@@ -5871,10 +5690,6 @@ DUPELIST=09707
 //Combination Chest
 DUPEITEM=09706
 
-[ITEMDEF 09960]
-//silver platter
-[ITEMDEF 09961]
-//silver platter
 
 [ITEMDEF 09966]
 //amalgamator

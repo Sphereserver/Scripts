@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, Aug 21, 2017
+// FILE LAST UPDATED: Monday, Oct 23, 2017
 //
 VERSION=0.56d
 
@@ -1133,67 +1133,5 @@ DUPELIST=01f29
 //sign
 DEFNAME=i_sign_blank_2
 DUPEITEM=01f28
-
-[ITEMDEF 09a0c]
-//bar sign (south)
-DEFNAME=i_sign_bar
-NAME=bar sign
-FLIP=1
-DUPELIST=09a10
-CATEGORY=Decoration - Signs
-SUBSECTION=Decoration
-DESCRIPTION=Bar
-ON=@DClick
-   //toggle animation
-   IF (<DISPID>==i_sign_bar)
-      DISPID=i_sign_bar_anim
-   ELIF (<DISPID>==i_sign_bar_anim)
-      DISPID=i_sign_bar
-   ELIF (<DISPID>==i_sign_bar2)
-      DISPID=i_sign_bar2_anim
-   ELIF (<DISPID>==i_sign_bar2_anim)
-      DISPID=i_sign_bar2
-   ENDIF
-   UPDATE
-   return 1
-
-[ITEMDEF 09a0d]
-//bar sign (south)(anim)
-DEFNAME=i_sign_bar_anim
-
-[ITEMDEF 09a0e]
-//bar sign (south)(anim)
-
-[ITEMDEF 09a0f]
-//bar sign (south)(anim)
-
-[ITEMDEF 09a10]
-//bar sign (east)
-DEFNAME=i_sign_bar2
-NAME=bar sign
-DUPEITEM=09a0c
-ON=@DClick
-   //toggle animation
-   IF (<DISPID>==i_sign_bar)
-      DISPID=i_sign_bar_anim
-   ELIF (<DISPID>==i_sign_bar_anim)
-      DISPID=i_sign_bar
-   ELIF (<DISPID>==i_sign_bar2)
-      DISPID=i_sign_bar2_anim
-   ELIF (<DISPID>==i_sign_bar2_anim)
-      DISPID=i_sign_bar2
-   ENDIF
-   UPDATE
-   return 1
-
-[ITEMDEF 09a11]
-//bar sign (east)(anim)
-DEFNAME=i_sign_bar2_anim
-
-[ITEMDEF 09a12]
-//bar sign (east)(anim)
-
-[ITEMDEF 09a13]
-//bar sign (east)(anim)
 
 [EOF]

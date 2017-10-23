@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, Aug 28, 2017
+// FILE LAST UPDATED: Monday, Oct 23, 2017
 //
 VERSION=0.56d
 
@@ -420,7 +420,6 @@ CATEGORY=Decoration - Kitchen and Dining
 SUBSECTION=Table Settings
 DESCRIPTION=Butter Knife
 DUPELIST=09a6,09f6,09f7
-TEVENTS=t_kitchenknife
 
 [ITEMDEF 09a6]
 //butter knife
@@ -3083,34 +3082,6 @@ ON=@Create
 DUPEITEM=04988
 
 
-[ITEMDEF 04ba3]
-DEFNAME=i_cake_tiered
-NAME=anniversary cake
-TYPE=t_food
-WEIGHT=0.1
-VALUE=3
-RESOURCES=3 i_flour_bowl,1 i_eggs_fresh
-SKILLMAKE=Cooking 51.6, t_cooking
-CATEGORY=Provisions - Food
-SUBSECTION=Baked
-DESCRIPTION=Anniversary Cake
-ON=@Create
-   MOREM=6
-   COLOR=colors_all
-
-[ITEMDEF 04ba4]
-DEFNAME=i_cake_tiered_slice
-NAME=slice of anniversary cake
-TYPE=t_food
-WEIGHT=0.1
-VALUE=3
-CATEGORY=Provisions - Food
-SUBSECTION=Baked
-DESCRIPTION=Anniversary Cake Slice
-ON=@Create
-   MOREM=1
-
-
 [ITEMDEF 04bd9]
 DEFNAME=i_horn_of_plenty
 NAME=horn of plenty
@@ -3190,6 +3161,20 @@ SUBSECTION=Baked
 DESCRIPTION=Pie (baked)
 ON=@Create
    MOREM=5
+
+
+[ITEMDEF 09e36]
+DEFNAME=i_fermentation_barrel
+NAME=fermentation barrel
+FLIP=1
+CATEGORY=Items by Professions
+SUBSECTION=Cook
+DESCRIPTION=Fermentation Barrel
+DUPELIST=09e37
+
+[ITEMDEF 09e37]
+//fermentation barrel
+DUPEITEM=09e36
 
 
 //////////////////

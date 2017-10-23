@@ -1,5 +1,5 @@
-//****************************************************************************
-// SPHERE by : Menasoft ©1997-2007
+﻿//****************************************************************************
+// SPHERE by : Menasoft ©1997-2017
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,9 +7,9 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Wednesday, October 16, 2013
+// FILE LAST UPDATED: Monday, Oct 23, 2017
 //
-VERSION=0.56c
+VERSION=0.56d
 
 
 [ITEMDEF 01b72]
@@ -258,31 +258,6 @@ ON=@Create
 DUPEITEM=01bc6
 
 
-[ITEMDEF 02b01]
-DEFNAME=i_shield_dupre
-NAME=Dupre's Shield
-TYPE=t_shield
-//ARMOR=15
-VALUE=1000
-WEIGHT=14.0
-RESOURCES=10 i_ingot_iron,2 i_ingot_gold,2 i_ingot_silver
-SKILLMAKE=Blacksmithing 100.0,Armslore 100.0
-CATEGORY=Quest
-SUBSECTION=8th Age
-DESCRIPTION=Dupre's Shield
-CanUse=can_u_human|can_u_elf
-ReqStr=50
-TEVENTS=t_equipitem
-ON=@Create
-   ATTR=attr_magic
-   HITPOINTS=255
-   Rarity=1
-   TAG.HitpointIncrease=5
-   RegenHits=1
-   RESPHYSICAL=1
-   RESENERGY=1
-
-
 [ITEMDEF 04200]
 DEFNAME=i_shield_gargish_wooden
 NAME=Gargish wooden shield
@@ -481,6 +456,5 @@ ON=@Create
 [ITEMDEF 0422c]
 //Gargish Order Shield
 DUPEITEM=0422a
-
 
 [EOF]

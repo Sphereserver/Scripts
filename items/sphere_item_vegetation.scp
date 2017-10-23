@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Sept 9, 2017
+// FILE LAST UPDATED: Monday, Oct 23, 2017
 //
 VERSION=0.56d
 
@@ -4087,34 +4087,6 @@ SUBSECTION=Trees
 DESCRIPTION=Oak Tree 4 (trunk)
 
 
-[ITEMDEF 0234b]
-DEFNAME=i_flower_rose_trinsic
-VALUE=10
-CATEGORY=Vegetation
-SUBSECTION=Plants and Flowers
-DESCRIPTION=Trinsic Rose
-
-[ITEMDEF 0234c]
-DEFNAME=i_crop_trinsic_rose
-TYPE=t_crops
-TDATA1=i_crop_trinsic_rose
-TDATA2=1
-TDATA3=i_flower_rose_trinsic
-FLIP=1
-CATEGORY=Vegetation
-SUBSECTION=Plants and Flowers
-DESCRIPTION=Trinsic Rose Bush
-DUPELIST=0234d
-ON=@Create
-   MORE1=10000
-   MORE2={ i_flower_rose_white 1 i_flower_rose_trinsic 99 }
-   MOREX=1
-
-[ITEMDEF 0234d]
-//trinsic rose plant
-DUPEITEM=0234c
-
-
 [ITEMDEF 0246c]
 DEFNAME=i_tree_bamboo
 TYPE=t_tree
@@ -5335,21 +5307,6 @@ SUBSECTION=Potted Trees
 DESCRIPTION=Potted Tree 2
 
 
-[ITEMDEF 042c7]
-DEFNAME=i_tree_silver_sapling
-NAME=silver sapling
-CATEGORY=Decoration - Potted Plants & Vases
-SUBSECTION=Potted Trees
-DESCRIPTION=Silver Sapling (unpotted)
-
-[ITEMDEF 042c8]
-DEFNAME=i_tree_silver_sapling_potted
-NAME=potted silver sapling
-CATEGORY=Decoration - Potted Plants & Vases
-SUBSECTION=Potted Trees
-DESCRIPTION=Silver Sapling (potted)
-
-
 [ITEMDEF 046d9]
 DEFNAME=i_bonsai_ancient_oak
 NAME=ancient oak bonsai tree
@@ -5444,65 +5401,6 @@ SUBSECTION=Plants and Flowers
 DESCRIPTION=Vanilla Plant (mature)
 
 
-[ITEMDEF 09962]
-DEFNAME=i_elephant_ear_dieffenbachia
-NAME=Elephant Ear Dieffenbachia
-FLIP=1
-CATEGORY=Decoration - Potted Plants & Vases
-SUBSECTION=Potted Trees
-DESCRIPTION=Elephant Ear Dieffenbachia
-DUPELIST=09963
-
-[ITEMDEF 09963]
-//elephant ear dieffenbachia
-DUPEITEM=09962
-
-[ITEMDEF 09964]
-DEFNAME=i_staghorn_fern
-NAME=Staghorn Fern
-FLIP=1
-CATEGORY=Vegetation
-SUBSECTION=Plants and Flowers
-DESCRIPTION=Staghorn Fern
-DUPELIST=09965
-
-[ITEMDEF 09965]
-//staghorn fern
-DUPEITEM=09964
-
-[ITEMDEF 09967]
-DEFNAME=i_enormous_venus_flytrap
-NAME=Enormous Venus Flytrap
-TYPE=t_trash_can
-TDATA2=0107
-FLIP=1
-CATEGORY=Decoration - Potted Plants & Vases
-SUBSECTION=Potted Trees
-DESCRIPTION=Enormous Venus Flytrap
-DUPELIST=09968
-ON=@Create
-   COLOR=colors_red
-
-[ITEMDEF 09968]
-//enormous venus flytrap
-DUPEITEM=09967
-
-[ITEMDEF 09969]
-DEFNAME=i_japanese_maple
-NAME=Japanese Maple
-FLIP=1
-CATEGORY=Decoration - Potted Plants & Vases
-SUBSECTION=Potted Trees
-DESCRIPTION=Japanese Maple
-DUPELIST=0996a
-ON=@Create
-   COLOR=colors_red
-
-[ITEMDEF 0996a]
-//japanese maple
-DUPEITEM=09969
-
-
 [ITEMDEF 09b10]
 DEFNAME=i_potted_orchid
 NAME=Potted Plant
@@ -5520,16 +5418,6 @@ SUBSECTION=Potted Trees
 DESCRIPTION=Potted Plant (Crown of Thorns)
 ON=@Create
    COLOR={0 1 04b0 1 04b5 1 04c7 1 04e9 1 0507 1 054f 1 0562 1 05b6 1 0780 1 0782 1 09c7 1 09f4 1 0a05 1 0a0c 1 0a26 1 0a32 1 0aa1 1}
-
-
-[ITEMDEF 09d3e]
-DEFNAME=i_potted_amaryllis
-NAME=Potted Amaryllis
-CATEGORY=Decoration - Potted Plants & Vases
-SUBSECTION=Potted Trees
-DESCRIPTION=Potted Amaryllis
-ON=@Create
-   COLOR={0 1 02 1 012 1 021 1 0e1 1 01bb 1 043f 1 044b 1 044c 1 0485 1 048d 1 048e 1 0780 1 0813 1 0aa1 1 0ab8 1}
 
 
 [ITEMDEF 09e38]

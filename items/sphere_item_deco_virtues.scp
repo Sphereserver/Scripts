@@ -1,5 +1,5 @@
 ﻿//****************************************************************************
-// SPHERE by : Menasoft ©1997-2016
+// SPHERE by : Menasoft ©1997-2017
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,9 +7,9 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Jan 19, 2016
+// FILE LAST UPDATED: Monday, Oct 23, 2017
 //
-VERSION=0.56c
+VERSION=0.56d
 
 
 [ITEMDEF 02]
@@ -1544,135 +1544,5 @@ DUPEITEM=043e0
 
 [ITEMDEF 044c0]
 DUPEITEM=043e0
-
-
-[ITEMDEF 049a0]
-DEFNAME=i_tapestry_sacrifice
-NAME=sacrifice tapestry
-FLIP=1
-WEIGHT=5.0
-RESOURCES=10 i_cloth,2 i_thread
-SKILLMAKE=Tailoring 51.0,t_sewing_kit
-CATEGORY=Decoration - Virtues
-SUBSECTION=Sacrifice
-DESCRIPTION=Sacrifice Tapestry
-DUPELIST=049b4
-
-[ITEMDEF 049a1]
-DEFNAME=i_tapestry_spirituality
-NAME=spirituality tapestry
-FLIP=1
-WEIGHT=5.0
-RESOURCES=10 i_cloth,2 i_thread
-SKILLMAKE=Tailoring 51.0,t_sewing_kit
-CATEGORY=Decoration - Virtues
-SUBSECTION=Spirituality
-DESCRIPTION=Spirituality Tapestry
-DUPELIST=049b9
-
-[ITEMDEF 049a2]
-DEFNAME=i_tapestry_honesty
-NAME=honesty tapestry
-FLIP=1
-WEIGHT=5.0
-RESOURCES=10 i_cloth,2 i_thread
-SKILLMAKE=Tailoring 51.0,t_sewing_kit
-CATEGORY=Decoration - Virtues
-SUBSECTION=Honesty
-DESCRIPTION=Honesty Tapestry
-DUPELIST=049bf
-
-[ITEMDEF 049a3]
-DEFNAME=i_tapestry_humility
-NAME=humility tapestry
-FLIP=1
-WEIGHT=5.0
-RESOURCES=10 i_cloth,2 i_thread
-SKILLMAKE=Tailoring 51.0,t_sewing_kit
-CATEGORY=Decoration - Virtues
-SUBSECTION=Humility
-DESCRIPTION=Humility Tapestry
-DUPELIST=049c0
-
-[ITEMDEF 049a7]
-DEFNAME=i_tapestry_justice
-NAME=justice tapestry
-FLIP=1
-WEIGHT=5.0
-RESOURCES=10 i_cloth,2 i_thread
-SKILLMAKE=Tailoring 51.0,t_sewing_kit
-CATEGORY=Decoration - Virtues
-SUBSECTION=Justice
-DESCRIPTION=Justice Tapestry
-DUPELIST=049ba
-
-[ITEMDEF 049a8]
-DEFNAME=i_tapestry_compassion
-NAME=compassion tapestry
-FLIP=1
-WEIGHT=5.0
-RESOURCES=10 i_cloth,2 i_thread
-SKILLMAKE=Tailoring 51.0,t_sewing_kit
-CATEGORY=Decoration - Virtues
-SUBSECTION=Compassion
-DESCRIPTION=Compassion Tapestry
-DUPELIST=049b5
-
-[ITEMDEF 049b2]
-DEFNAME=i_tapestry_honor
-NAME=honor tapestry
-FLIP=1
-WEIGHT=5.0
-RESOURCES=10 i_cloth,2 i_thread
-SKILLMAKE=Tailoring 51.0,t_sewing_kit
-CATEGORY=Decoration - Virtues
-SUBSECTION=Honor
-DESCRIPTION=Honor Tapestry
-DUPELIST=049be
-
-[ITEMDEF 049b3]
-DEFNAME=i_tapestry_valor
-NAME=valor tapestry
-FLIP=1
-WEIGHT=5.0
-RESOURCES=10 i_cloth,2 i_thread
-SKILLMAKE=Tailoring 51.0,t_sewing_kit
-CATEGORY=Decoration - Virtues
-SUBSECTION=Valor
-DESCRIPTION=Valor Tapestry
-DUPELIST=049bb
-
-[ITEMDEF 049b4]
-//sacrifice tapestry
-DUPEITEM=049a0
-
-[ITEMDEF 049b5]
-//compassion tapestry
-DUPEITEM=049a8
-
-[ITEMDEF 049b9]
-//spirituality tapestry
-DUPEITEM=049a1
-
-[ITEMDEF 049ba]
-//justice tapestry
-DUPEITEM=049a7
-
-[ITEMDEF 049bb]
-//valor tapestry
-DUPEITEM=049b3
-
-[ITEMDEF 049be]
-//honor tapestry
-DUPEITEM=049b2
-
-[ITEMDEF 049bf]
-//honesty tapestry
-DUPEITEM=049a2
-
-[ITEMDEF 049c0]
-//humility tapestry
-DUPEITEM=049a3
-
 
 [EOF]

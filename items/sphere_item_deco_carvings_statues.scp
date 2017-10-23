@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, Sept 18, 2017
+// FILE LAST UPDATED: Monday, Oct 23, 2017
 //
 VERSION=0.56d
 
@@ -728,22 +728,6 @@ SUBSECTION=Statues
 DESCRIPTION=Moai
 
 
-[ITEMDEF 03bb3]
-DEFNAME=i_statue_ou
-NAME=Ultima Statue
-WEIGHT=130.0
-FLIP=1
-RESOURCES=12 i_rock_plain
-CATEGORY=Decoration - Wall Carvings & Statues
-SUBSECTION=Statues
-DESCRIPTION=Ultima Statue
-DUPELIST=033b4
-
-[ITEMDEF 03bb4]
-//Ultima statue
-DUPEITEM=03bb3
-
-
 [ITEMDEF 0403f]
 DEFNAME=i_sculpture_gargoyle
 NAME=gargoyle sculpture
@@ -913,69 +897,5 @@ CATEGORY=Decoration - Wall Carvings & Statues
 SUBSECTION=Statues
 DESCRIPTION=Swan Statue (black)
 DUPELIST=09f11
-
-[ITEMDEF 09f41]
-DEFNAME=i_statue_platinum_dragon_east
-NAME=platinum dragon statue
-CATEGORY=Decoration - Wall Carvings & Statues
-SUBSECTION=Statues
-DESCRIPTION=Platinum Dragon Statue
-DUPELIST=09f42,09f43,09f44,09f45,09f46,09f4a
-
-[ITEMDEF 09f42]
-//platinum dragon statue
-DUPEITEM=09f41
-
-[ITEMDEF 09f43]
-//platinum dragon statue
-DUPEITEM=09f41
-
-[ITEMDEF 09f44]
-//platinum dragon statue
-DUPEITEM=09f41
-
-[ITEMDEF 09f45]
-//platinum dragon statue
-DUPEITEM=09f41
-
-[ITEMDEF 09f46]
-//platinum dragon statue
-DUPEITEM=09f41
-
-[ITEMDEF 09f4a]
-//platinum dragon statue
-DUPEITEM=09f41
-
-[ITEMDEF 09f4b]
-//platinum dragon statue
-DUPEITEM=09f5e
-
-[ITEMDEF 09f5e]
-DEFNAME=i_statue_platinum_dragon_south
-NAME=platinum dragon statue
-CATEGORY=Decoration - Wall Carvings & Statues
-SUBSECTION=Statues
-DESCRIPTION=Platinum Dragon Statue
-DUPELIST=09f4b,09f5f,09f60,09f61,09f62,09f63
-
-[ITEMDEF 09f5f]
-//platinum dragon statue
-DUPEITEM=09f5e
-
-[ITEMDEF 09f60]
-//platinum dragon statue
-DUPEITEM=09f5e
-
-[ITEMDEF 09f61]
-//platinum dragon statue
-DUPEITEM=09f5e
-
-[ITEMDEF 09f62]
-//platinum dragon statue
-DUPEITEM=09f5e
-
-[ITEMDEF 09f63]
-//platinum dragon statue
-DUPEITEM=09f5e
 
 [EOF]

@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, Sept 18, 2017
+// FILE LAST UPDATED: Monday, Oct 23, 2017
 //
 VERSION=0.56d
 
@@ -2393,7 +2393,6 @@ DUPELIST=01e77
 
 [ITEMDEF 01e6f]
 DEFNAME=i_chair_wood_fancy_unfinished
-TYPE=t_chair
 FLIP=1
 WEIGHT=15.0
 RESOURCES=2 i_lathework_unfinished,1 i_board_unfinished,1 i_nails
@@ -3171,78 +3170,6 @@ DUPELIST=044d0
 //Lobster Cage
 DUPEITEM=044cf
 
-[ITEMDEF 044d5]
-DEFNAME=i_grandfather_clock
-NAME=grandfather clock
-TYPE=t_clock
-FLIP=1
-VALUE=44
-WEIGHT=9.2
-RESOURCES=1 i_clock_frame,1 i_parchment,10 i_board,1 i_clock_parts
-SKILLMAKE=Tinkering 90.7,t_tinker_tools
-CATEGORY=Items by Professions
-SUBSECTION=Tinker
-DESCRIPTION=Grandfather Clock
-DUPELIST=044d9
-
-[ITEMDEF 044d6]
-//grandfather clock (animation frame)
-
-[ITEMDEF 044d7]
-//grandfather clock (animation frame)
-
-[ITEMDEF 044d8]
-//grandfather clock (animation frame)
-
-[ITEMDEF 044d9]
-//grandfather clock
-DUPEITEM=044d5
-
-[ITEMDEF 044da]
-//grandfather clock (animation frame)
-
-[ITEMDEF 044db]
-//grandfather clock (animation frame)
-
-[ITEMDEF 044dc]
-//grandfather clock (animation frame)
-
-[ITEMDEF 044dd]
-DEFNAME=i_grandfather_clock_2
-NAME=grandfather clock
-TYPE=t_clock
-FLIP=1
-VALUE=44
-WEIGHT=9.2
-RESOURCES=1 i_clock_frame,1 i_parchment,10 i_board,1 i_clock_parts
-SKILLMAKE=Tinkering 90.7,t_tinker_tools
-CATEGORY=Items by Professions
-SUBSECTION=Tinker
-DESCRIPTION=Grandfather Clock 2
-DUPELIST=044e1
-
-[ITEMDEF 044de]
-//grandfather clock 2 (animation frame)
-
-[ITEMDEF 044df]
-//grandfather clock 2 (animation frame)
-
-[ITEMDEF 044e0]
-//grandfather clock 2 (animation frame)
-
-[ITEMDEF 044e1]
-//grandfather clock 2
-DUPEITEM=044dd
-
-[ITEMDEF 044e2]
-//grandfather clock 2 (animation frame)
-
-[ITEMDEF 044e3]
-//grandfather clock 2 (animation frame)
-
-[ITEMDEF 044e4]
-//grandfather clock 2 (animation frame)
-
 
 [ITEMDEF 04513]
 //FIXME: chicken coop placement limits
@@ -3313,43 +3240,6 @@ UsesMax={350 450}
 DUPEITEM=045a6
 
 
-[ITEMDEF 048d4]
-DEFNAME=i_grandfather_clock_3
-NAME=grandfather clock
-TYPE=t_clock
-FLIP=1
-VALUE=44
-WEIGHT=9.2
-RESOURCES=1 i_clock_frame,1 i_parchment,10 i_board,1 i_clock_parts
-SKILLMAKE=Tinkering 90.7,t_tinker_tools
-CATEGORY=Items by Professions
-SUBSECTION=Tinker
-DESCRIPTION=Grandfather Clock 3
-DUPELIST=048d8
-
-[ITEMDEF 048d5]
-//grandfather clock (animation frame)
-
-[ITEMDEF 048d6]
-//grandfather clock (animation frame)
-
-[ITEMDEF 048d7]
-//grandfather clock (animation frame)
-
-[ITEMDEF 048d8]
-//grandfather clock
-DUPEITEM=048d4
-
-[ITEMDEF 048d9]
-//grandfather clock (animation frame)
-
-[ITEMDEF 048da]
-//grandfather clock (animation frame)
-
-[ITEMDEF 048db]
-//grandfather clock (animation frame)
-
-
 [ITEMDEF 04b44]
 //FIXME: Magic fishhook allows a fishing rod to fish from lava
 DEFNAME=i_fishhook_magic
@@ -3384,38 +3274,6 @@ DUPELIST=04b47
 [ITEMDEF 04b47]
 //Fish Hook
 DUPEITEM=04b46
-
-
-[ITEMDEF 04ba1]
-DEFNAME=i_harpsichord_roll
-TYPE=t_normal
-FLIP=1
-CATEGORY=Items by Professions
-SUBSECTION=Musician
-DESCRIPTION=Harpsichord Roll
-DUPELIST=04ba2
-
-//"
-// A Skaran Lullaby
-// Anvil Strike In Minoc
-// Blackthorn's March
-// Dupre's Night in Trinsic
-// Fayaxion and the Six
-// Flight of the Nexus
-// Galehaven Jaunt
-// Jhelom to Arms
-// Midnight in Yew
-// Moonglow Sonata
-// New Magincia March
-// Nujelm Waltz
-// Sherry's Song
-// Starlight In Britain
-// The Vesper Mist
-//"
-
-[ITEMDEF 04ba2]
-//Harpsichord Roll
-DUPELIST=04ba1
 
 
 [ITEMDEF 04f80]
@@ -3582,108 +3440,5 @@ DUPEITEM=04f94
 //Tinker Table (mechanism) (animation frame)
 [ITEMDEF 04fbb]
 //Tinker Table (mechanism) (animation frame)
-
-
-[ITEMDEF 063bc]
-DEFNAME=i_bench_harpsichord
-NAME=harpsichord bench
-TYPE=t_chair
-FLIP=1
-VALUE=60
-WEIGHT=100.0
-RESOURCES=20 i_board
-SKILLMAKE=Carpentry 25.0
-CATEGORY=Items by Professions
-SUBSECTION=Musician
-DESCRIPTION=Harpsichord Bench (multi-part)
-DUPELIST=063bd,063c3,063c4
-
-[ITEMDEF 063bd]
-//Harpsichord Bench (multi-part)
-DUPEITEM=063bc
-
-[ITEMDEF 063be]
-DEFNAME=i_harpsichord
-NAME=harpsichord
-TYPE=t_normal
-FLIP=1
-CATEGORY=Items by Professions
-SUBSECTION=Musician
-DESCRIPTION=Harpsichord (multi-part)
-DUPELIST=063bf,063c0,063c1,063c2,063c5,063c6,063c7,063c8,063c9
-
-[ITEMDEF 063bf]
-//Harpsichord (multi-part)
-DUPEITEM=063be
-
-[ITEMDEF 063c0]
-//Harpsichord (multi-part)
-DUPEITEM=063be
-
-[ITEMDEF 063c1]
-//Harpsichord (multi-part)
-DUPEITEM=063be
-
-[ITEMDEF 063c2]
-//Harpsichord (multi-part)
-DUPEITEM=063be
-
-[ITEMDEF i_multi_harpsichord_south]
-NAME=harpsichord
-TYPE=t_multi
-CATEGORY=Multis
-SUBSECTION=Furniture
-DESCRIPTION=Harpsichord (south)
-MULTIREGION=0,0,0,0
-COMPONENT=063bc,1,2,0
-COMPONENT=063bd,0,2,0
-COMPONENT=063be,0,1,0
-COMPONENT=063bf,1,1,0
-COMPONENT=063c0,0,0,0
-COMPONENT=063c1,1,0,0
-COMPONENT=063c2,0,0,0
-
-[ITEMDEF 063c3]
-//Harpsichord Bench (multi-part)
-DUPEITEM=063bc
-
-[ITEMDEF 063c4]
-//Harpsichord Bench (multi-part)
-DUPEITEM=063bc
-
-[ITEMDEF 063c5]
-//Harpsichord (multi-part)
-DUPEITEM=063be
-
-[ITEMDEF 063c6]
-//Harpsichord (multi-part)
-DUPEITEM=063be
-
-[ITEMDEF 063c7]
-//Harpsichord (multi-part)
-DUPEITEM=063be
-
-[ITEMDEF 063c8]
-//Harpsichord (multi-part)
-DUPEITEM=063be
-
-[ITEMDEF 063c9]
-//Harpsichord (multi-part)
-DUPEITEM=063be
-
-[ITEMDEF i_multi_harpsichord_east]
-NAME=harpsichord
-TYPE=t_multi
-CATEGORY=Multis
-SUBSECTION=Furniture
-DESCRIPTION=Harpsichord (east)
-MULTIREGION=0,0,0,0
-COMPONENT=063c3,2,0,0
-COMPONENT=063c4,2,1,0
-COMPONENT=063c5,1,1,0
-COMPONENT=063c6,1,0,0
-COMPONENT=063c7,0,1,0
-COMPONENT=063c8,0,0,0
-COMPONENT=063c9,-1,0,0
 
 [EOF]

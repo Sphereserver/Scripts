@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Oct 21, 2017
+// FILE LAST UPDATED: Monday, Oct 23, 2017
 //
 VERSION=0.56d
 
@@ -4336,102 +4336,5 @@ MULTIREGION=0,0,0,0
 COMPONENT=04c1d,0,-1,0//fixme
 COMPONENT=04c1e,0,0,0
 COMPONENT=04c1f,0,1,0
-
-
-[ITEMDEF 099c8]
-DEFNAME=i_bar_marble
-NAME=marble bar
-FLIP=1
-CATEGORY=Decoration - Furniture
-SUBSECTION=Tables
-DESCRIPTION=Marble Bar Sink
-DUPELIST=099c9,099ca,099cb,09a14,09a15,09a16,09a17,09a18,09a19
-
-[ITEMDEF 099c9]
-//marble bar
-TYPE=t_container
-TDATA2=048
-DUPEITEM=099c8
-
-[ITEMDEF 099ca]
-//marble bar
-DUPEITEM=099c8
-
-[ITEMDEF 099cb]
-//marble bar
-DUPEITEM=099c8
-
-[ITEMDEF 09a14]
-//marble bar
-DUPEITEM=099c8
-
-[ITEMDEF 09a15]
-//marble bar
-DUPEITEM=099c8
-
-[ITEMDEF 09a16]
-//marble bar
-DUPEITEM=099c8
-
-[ITEMDEF 09a17]
-//marble bar
-DUPEITEM=099c8
-
-[ITEMDEF 09a18]
-//marble bar
-DUPEITEM=099c8
-
-[ITEMDEF 09a19]
-//marble bar
-DUPEITEM=099c8
-
-
-[ITEMDEF 09e1d]
-DEFNAME=i_pillow_heart
-FLIP=1
-CATEGORY=Decoration - Furniture
-SUBSECTION=Bedding
-DESCRIPTION=Pillow (heart)
-DUPELIST=09e1e
-
-[ITEMDEF 09e1e]
-//pillow (heart)
-DUPEITEM=09e1d
-
-[ITEMDEF 09e1f]
-DEFNAME=i_pillow_hand
-FLIP=1
-CATEGORY=Decoration - Furniture
-SUBSECTION=Bedding
-DESCRIPTION=Pillow (hand)
-DUPELIST=09e20
-
-[ITEMDEF 09e20]
-//pillow (hand)
-DUPEITEM=09e1f
-
-[ITEMDEF 09e21]
-DEFNAME=i_pillow_shield
-FLIP=1
-CATEGORY=Decoration - Furniture
-SUBSECTION=Bedding
-DESCRIPTION=Pillow (shield)
-DUPELIST=09e22
-
-[ITEMDEF 09e22]
-//pillow (shield)
-DUPEITEM=09e21
-
-[ITEMDEF 09e23]
-DEFNAME=i_pillow_scales
-FLIP=1
-CATEGORY=Decoration - Furniture
-SUBSECTION=Bedding
-DESCRIPTION=Pillow (scales)
-DUPELIST=09e24
-
-[ITEMDEF 09e24]
-//pillow (scales)
-DUPEITEM=09e23
 
 [EOF]

@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Aug 15, 2017
+// FILE LAST UPDATED: Monday, Oct 23, 2017
 //
 VERSION=0.56d
 
@@ -2434,31 +2434,6 @@ DUPEITEM=0279a
 DUPEITEM=0279b
 
 
-[ITEMDEF 02b02]
-DEFNAME=i_quiver_infinity
-NAME=Quiver of Infinity
-TYPE=t_clothing
-FLIP=1
-LAYER=17
-RESOURCES=28 i_hides_cut
-WEIGHT=5
-RESDISPDNID=i_sash
-RESLEVEL=5
-RESDISPDNHUE=0482
-TDATA2=03c
-SKILLMAKE=TAILORING 75.0
-DUPELIST=02b03
-CATEGORY=Provisions - Miscellaneous
-SUBSECTION=8th Age Items
-DESCRIPTION=Quiver of Infinity
-ON=@Create
-   HITPOINTS={26 30}
-
-[ITEMDEF 02b03]
-//quiver of infinity
-DUPEITEM=02b02
-
-
 [ITEMDEF 02b04]
 DEFNAME=i_cloak_humility
 NAME=Cloak of Humility
@@ -2882,60 +2857,6 @@ ON=@Create
 [ITEMDEF 046b5]
 //gargish sash
 DUPEITEM=046b4
-
-
-[ITEMDEF 04b9d]
-DEFNAME=i_robe_anniversary
-NAME=anniversary robe
-TYPE=t_clothing
-DYE=1
-FLIP=1
-//LAYER=layer_robe
-//ARMOR=7
-VALUE=105
-WEIGHT=16.1
-RESOURCES=16 i_cloth,1 i_thread
-SKILLMAKE=Tailoring 59.0,t_sewing_kit
-ReqStr=10
-TEVENTS=t_equipitem
-DUPELIST=04b9e
-CATEGORY=Provisions - Clothes
-SUBSECTION=Shirts & Robes
-DESCRIPTION=Anniversary Robe
-ON=@Create
-   HITPOINTS={48 64}
-   RESPHYSICAL=1
-
-[ITEMDEF 04b9e]
-//Anniversary Robe
-DUPEITEM=04b9d
-
-[ITEMDEF 04b9f]
-DEFNAME=i_gargish_robe_anniversary
-NAME=Gargish anniversary robe
-TYPE=t_clothing
-DYE=1
-FLIP=1
-//LAYER=layer_robe
-//ARMOR=7
-VALUE=105
-WEIGHT=16.1
-RESOURCES=16 i_cloth,1 i_thread
-SKILLMAKE=Tailoring 59.0,t_sewing_kit
-canuse=can_u_gargoyle
-ReqStr=10
-TEVENTS=t_equipitem
-DUPELIST=04ba0
-CATEGORY=Provisions - Clothes
-SUBSECTION=Shirts & Robes
-DESCRIPTION=Gargish Anniversary Robe
-ON=@Create
-   HITPOINTS={48 64}
-   RESPHYSICAL=1
-
-[ITEMDEF 04ba0]
-//Gargish Anniversary Robe
-DUPEITEM=04b9f
 
 
 [ITEMDEF 050d8]
