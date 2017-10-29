@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, Oct 23, 2017
+// FILE LAST UPDATED: Saturday, Oct 28, 2017
 //
 VERSION=0.56d
 
@@ -1680,33 +1680,6 @@ ON=@Create
 DEFNAME=i_plate_cookies
 RESOURCES=1 i_cookie_mix,1 i_plate
 
-[ITEMDEF 0194f]
-DEFNAME=i_basket_herbs
-NAME=basket of herbs
-WEIGHT=1.0
-RESOURCES=1 i_basket,5 i_dried_herbs
-CATEGORY=Provisions - Food
-SUBSECTION=Assembled
-DESCRIPTION=Basket of Herbs
-
-
-[ITEMDEF 01956]
-DEFNAME=i_bottle_shochu
-NAME=bottle of shochu
-TYPE=t_booze
-WEIGHT=1.0
-RESOURCES=1 i_bottle_shochu_empty,1 i_fruit_grapes,1 i_reag_fertile_dirt
-CATEGORY=Provisions - Food
-SUBSECTION=Alcohol
-DESCRIPTION=Bottle of Shochu
-
-[ITEMDEF 01957]
-DEFNAME=i_bottle_shochu_empty
-NAME=bottle of shochu
-CATEGORY=Provisions - Food
-SUBSECTION=Alcohol
-DESCRIPTION=Bottle of Shochu (empty)
-
 
 [ITEMDEF 01ad3]
 DEFNAME=i_donuts
@@ -2244,21 +2217,19 @@ DUPEITEM=0ff8
 
 
 [ITEMDEF 02068]
-DEFNAME=i_cauldron_2
+DEFNAME=i_cauldron_cont
 NAME=cauldron
+TYPE=t_container
+TDATA2=09
 FLIP=1
-VALUE=169
-WEIGHT=39.0
-RESOURCES=8 i_ingot_iron,1 i_kettle
-SKILLMAKE=Tinkering 65.0,t_tinker_tools
 CATEGORY=Decoration - Kitchen and Dining
 SUBSECTION=Cookware
-DESCRIPTION=Cauldron 2 (duplicate)
+DESCRIPTION=Cauldron (container)
 DUPELIST=0207a
 
 
 [ITEMDEF 0207a]
-//Cauldron2 (empty)
+//cauldron (container)
 DUPEITEM=02068
 
 
@@ -2810,28 +2781,6 @@ WEIGHT=1.0
 CATEGORY=Provisions - Food
 SUBSECTION=Aquarium
 DESCRIPTION=Sea Sponge
-
-
-[ITEMDEF 03bb8]
-DEFNAME=i_cauldron_eggnog
-NAME=cauldron of eggnog
-TYPE=t_normal//t_drink
-VALUE=168
-WEIGHT=39.0
-RESOURCES=1 i_cauldron,24 i_eggs_fresh,24 i_pitcher_milk,2 i_bottle_liquor
-SKILLMAKE=Cooking 65.0, t_cooking
-CATEGORY=Decoration - Kitchen and Dining
-SUBSECTION=Cookware
-DESCRIPTION=Cauldron of Eggnog
-DUPELIST=03bb9,03bba
-
-[ITEMDEF 03bb9]
-DUPEITEM=03bb8
-DESCRIPTION=Cauldron of Eggnog (half)
-
-[ITEMDEF 03bba]
-DUPEITEM=03bb8
-DESCRIPTION=Cauldron of Eggnog (full)
 
 
 [ITEMDEF 03daf]

@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, Sept 4, 2017
+// FILE LAST UPDATED: Saturday, Oct 28, 2017
 //
 VERSION=0.56d
 
@@ -631,29 +631,6 @@ DUPEITEM=01854
 [ITEMDEF 0185a]
 //skull candle
 DUPEITEM=01854
-
-
-[ITEMDEF 0194d]
-DEFNAME=i_brazier_dragon_lit
-NAME=dragon brazier
-TYPE=t_light_lit
-TDATA3=i_brazier_dragon
-CATEGORY=Decoration - Lightsources
-SUBSECTION=Brazier
-DESCRIPTION=Dragon Brazier (lit)
-ON=@Create
-   MOREZ=1
-
-[ITEMDEF 0194e]
-DEFNAME=i_brazier_dragon
-NAME=dragon brazier
-TYPE=t_light_out
-TDATA3=i_brazier_dragon_lit
-CATEGORY=Decoration - Lightsources
-SUBSECTION=Brazier
-DESCRIPTION=Dragon Brazier (unlit)
-ON=@Create
-   MOREZ=1
 
 
 [ITEMDEF 019aa]

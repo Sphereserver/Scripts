@@ -1,0 +1,566 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2017
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Saturday, Oct 28, 2017
+//
+VERSION=0.56d
+
+
+[ITEMDEF 01944]
+DEFNAME=i_pillow_throw
+NAME=throw pillow
+CATEGORY=Decor Collection
+SUBSECTION=Spring Decor
+DESCRIPTION=Throw Pillow
+
+[ITEMDEF 01945]
+DEFNAME=i_screen_wooden_carved
+NAME=carved wooden screen
+FLIP=1
+CATEGORY=Decor Collection
+SUBSECTION=Spring Decor
+DESCRIPTION=Carved Wooden Screen
+DUPELIST=01946
+
+[ITEMDEF 01946]
+//carved wooden screen
+DUPEITEM=01945
+
+[ITEMDEF 01947]
+DEFNAME=i_statue_blessed
+NAME=blessed statue
+TYPE=t_container
+TDATA2=0116
+FLIP=1
+CATEGORY=Decor Collection
+SUBSECTION=Spring Decor
+DESCRIPTION=Blessed Statue
+DUPELIST=01948,01949,0194a
+
+[ITEMDEF 01948]
+//blessed statue (empty)(east)
+DUPEITEM=01947
+
+[ITEMDEF 01949]
+//blessed statue (full)(south)
+DUPEITEM=01947
+
+[ITEMDEF 0194a]
+//blessed statue (full)(east)
+DUPEITEM=01947
+
+[ITEMDEF 0194b]
+DEFNAME=i_scope_surveyor
+NAME=surveyor's scope
+FLIP=1
+CATEGORY=Decor Collection
+SUBSECTION=Spring Decor
+DESCRIPTION=Surveyor's Scope
+DUPELIST=0194c
+
+[ITEMDEF 0194c]
+//surveyor's scope
+DUPEITEM=0194b
+
+[ITEMDEF 0194d]
+DEFNAME=i_brazier_dragon_lit
+NAME=dragon brazier
+TYPE=t_light_lit
+TDATA3=i_brazier_dragon
+CATEGORY=Decor Collection
+SUBSECTION=Spring Decor
+DESCRIPTION=Dragon Brazier (lit)
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 0194e]
+DEFNAME=i_brazier_dragon
+NAME=dragon brazier
+TYPE=t_light_out
+TDATA3=i_brazier_dragon_lit
+CATEGORY=Decor Collection
+SUBSECTION=Spring Decor
+DESCRIPTION=Dragon Brazier (unlit)
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 0194f]
+DEFNAME=i_basket_herbs
+NAME=basket of herbs
+CATEGORY=Decor Collection
+SUBSECTION=Spring Decor
+DESCRIPTION=Basket of Herbs
+
+[ITEMDEF 01950]
+//FIXME: Should be a game
+DEFNAME=i_dartboard_mongbat
+NAME=mongbat dartboard
+FLIP=1
+CATEGORY=Decor Collection
+SUBSECTION=Spring Decor
+DESCRIPTION=Mongbat Dartboard
+DUPELIST=01953
+
+[ITEMDEF 01951]
+//mongbat dartboard (animation frame)
+
+[ITEMDEF 01952]
+//mongbat dartboard (animation frame)
+
+[ITEMDEF 01953]
+//mongbat dartboard
+DUPEITEM=01950
+
+[ITEMDEF 01954]
+//mongbat dartboard (animation frame)
+
+[ITEMDEF 01955]
+//mongbat dartboard (animation frame)
+
+[ITEMDEF 01956]
+DEFNAME=i_bottle_shochu
+NAME=shochu
+TYPE=t_booze
+TDATA1=i_bottle_shochu_empty
+CATEGORY=Decor Collection
+SUBSECTION=Spring Decor
+DESCRIPTION=Shochu
+
+[ITEMDEF 01957]
+DEFNAME=i_bottle_shochu_empty
+NAME=shochu
+CATEGORY=Decor Collection
+SUBSECTION=Spring Decor
+DESCRIPTION=Shochu (empty)
+
+
+[ITEMDEF 02a58]
+DEFNAME=i_throne_bone
+NAME=bone throne
+FLIP=1
+CATEGORY=Decor Collection
+SUBSECTION=Evil Home Decor
+DESCRIPTION=Bone Throne
+DUPELIST=02a59
+
+[ITEMDEF 02a59]
+//bone throne
+NAME=bone throne
+DUPEITEM=02a58
+
+[ITEMDEF 02a5a]
+DEFNAME=i_couch_bone
+NAME=bone couch
+FLIP=1
+CATEGORY=Decor Collection
+SUBSECTION=Evil Home Decor
+DESCRIPTION=Bone Couch
+DUPELIST=02a5b,02a7f,02a80
+
+[ITEMDEF 02a5b]
+//bone couch
+NAME=bone couch
+DUPEITEM=02a5a
+
+[ITEMDEF 02a5c]
+DEFNAME=i_table_bone
+NAME=bone table
+CATEGORY=Decor Collection
+SUBSECTION=Evil Home Decor
+DESCRIPTION=Bone Table
+
+[ITEMDEF 02a5d]
+DEFNAME=i_portrait_disturbing
+NAME=disturbing portrait
+FLIP=1
+CATEGORY=Decor Collection
+SUBSECTION=Evil Home Decor
+DESCRIPTION=Disturbing Portrait
+DUPELIST=02a61
+ON=@Create
+   TIMER=180
+ON=@Timer
+   IF !(<ATTR> & attr_can_decay|attr_decay)
+    IF (<DISPIDDEC> < 02a61)
+     DISPID=<R02a5d,02a60>
+    ELSE
+     DISPID=<R02a61,02a64>
+    ENDIF
+    UPDATE
+    TIMER=180
+    return 1
+   ENDIF
+ON=@DClick
+   SRC.SOUND <R0567,0568>
+   return 1
+
+[ITEMDEF 02a5e]
+//disturbing portrait (south)(anim)
+NAME=disturbing portrait
+
+[ITEMDEF 02a5f]
+//disturbing portrait (south)(anim)
+NAME=disturbing portrait
+
+[ITEMDEF 02a60]
+//disturbing portrait (south)(anim)
+NAME=disturbing portrait
+
+[ITEMDEF 02a61]
+//disturbing portrait (east)
+NAME=disturbing portrait
+DUPEITEM=02a5d
+
+[ITEMDEF 02a62]
+//disturbing portrait (east)(anim)
+NAME=disturbing portrait
+
+[ITEMDEF 02a63]
+//disturbing portrait (east)(anim)
+NAME=disturbing portrait
+
+[ITEMDEF 02a64]
+//disturbing portrait (east)(anim)
+NAME=disturbing portrait
+
+[ITEMDEF 02a65]
+DEFNAME=i_portrait_unsettling
+NAME=unsettling portrait
+FLIP=1
+CATEGORY=Decor Collection
+SUBSECTION=Evil Home Decor
+DESCRIPTION=Unsettling Portrait
+DUPELIST=02a67
+ON=@Create
+   TIMER=180
+ON=@Timer
+   IF !(<ATTR> & attr_can_decay|attr_decay)
+    IF (<DISPIDDEC> == 02a65) || (<DISPIDDEC> == 02a67)
+     DISPID=<eval <DISPIDDEC>+1>
+    ELIF (<DISPIDDEC> == 02a66) || (<DISPIDDEC> == 02a68)
+     DISPID=<eval <DISPIDDEC>-1>
+    ENDIF
+    UPDATE
+    TIMER=180
+    return 1
+   ENDIF
+ON=@DClick
+   SRC.SOUND <R0567,0568>
+   return 1
+
+[ITEMDEF 02a66]
+//unsettling portrait (south)(anim)
+NAME=unsettling portrait
+
+[ITEMDEF 02a67]
+//unsettling portrait (east)
+NAME=unsettling portrait
+DUPEITEM=02a65
+
+[ITEMDEF 02a68]
+//unsettling portrait (east)(anim)
+NAME=unsettling portrait
+
+[ITEMDEF 02a69]
+DEFNAME=i_portrait_creepy
+NAME=creepy portrait
+FLIP=1
+CATEGORY=Decor Collection
+SUBSECTION=Evil Home Decor
+DESCRIPTION=Creepy Portrait
+DUPELIST=02a6d
+ON=@Create
+   TIMER=180
+ON=@Timer
+   IF !(<ATTR> & attr_can_decay|attr_decay)
+    IF (<DISPIDDEC> < 02a6d)
+     DISPID=<R02a69,02a6c>
+    ELSE
+     DISPID=<R02a6d,02a70>
+    ENDIF
+    UPDATE
+    TIMER=180
+    return 1
+   ENDIF
+ON=@DClick
+   SRC.SOUND <R0567,0568>
+   return 1
+
+[ITEMDEF 02a6a]
+//creepy portrait (south)(anim)
+NAME=creepy portrait
+
+[ITEMDEF 02a6b]
+//creepy portrait (south)(anim)
+NAME=creepy portrait
+
+[ITEMDEF 02a6c]
+//creepy portrait (south)(anim)
+NAME=creepy portrait
+
+[ITEMDEF 02a6d]
+//creepy portrait (east)
+NAME=creepy portrait
+DUPEITEM=02a69
+
+[ITEMDEF 02a6e]
+//creepy portrait (east)(anim)
+NAME=creepy portrait
+
+[ITEMDEF 02a6f]
+//creepy portrait (east)(anim)
+NAME=creepy portrait
+
+[ITEMDEF 02a70]
+//creepy portrait (east)(anim)
+NAME=creepy portrait
+
+[ITEMDEF 02a71]
+DEFNAME=i_mounted_pixie_green
+NAME=mounted pixie
+FLIP=1
+CATEGORY=Decor Collection
+SUBSECTION=Evil Home Decor
+DESCRIPTION=Mounted Pixie (green)
+DUPELIST=02a72
+ON=@DClick
+   SRC.SOUND <R0554,0557>
+   return 1
+
+[ITEMDEF 02a72]
+//mounted pixie (green)
+NAME=mounted pixie
+DUPEITEM=02a71
+
+[ITEMDEF 02a73]
+DEFNAME=i_mounted_pixie_orange
+NAME=mounted pixie
+FLIP=1
+CATEGORY=Decor Collection
+SUBSECTION=Evil Home Decor
+DESCRIPTION=Mounted Pixie (orange)
+DUPELIST=02a74
+ON=@DClick
+   SRC.SOUND <R0558,055b>
+   return 1
+
+[ITEMDEF 02a74]
+//mounted pixie (orange)
+NAME=mounted pixie
+DUPEITEM=02a73
+
+[ITEMDEF 02a75]
+DEFNAME=i_mounted_pixie_blue
+NAME=mounted pixie
+FLIP=1
+CATEGORY=Decor Collection
+SUBSECTION=Evil Home Decor
+DESCRIPTION=Mounted Pixie (blue)
+DUPELIST=02a76
+ON=@DClick
+   SRC.SOUND <R055c,055e>
+   return 1
+
+[ITEMDEF 02a76]
+//mounted pixie (blue)
+NAME=mounted pixie
+DUPEITEM=02a75
+
+[ITEMDEF 02a77]
+DEFNAME=i_mounted_pixie_lime
+NAME=mounted pixie
+FLIP=1
+CATEGORY=Decor Collection
+SUBSECTION=Evil Home Decor
+DESCRIPTION=Mounted Pixie (lime)
+DUPELIST=02a78
+ON=@DClick
+   SRC.SOUND <R055f,0561>
+   return 1
+
+[ITEMDEF 02a78]
+//mounted pixie (lime)
+NAME=mounted pixie
+DUPEITEM=02a77
+
+[ITEMDEF 02a79]
+DEFNAME=i_mounted_pixie_white
+NAME=mounted pixie
+FLIP=1
+CATEGORY=Decor Collection
+SUBSECTION=Evil Home Decor
+DESCRIPTION=Mounted Pixie (white)
+DUPELIST=02a7a
+ON=@DClick
+   SRC.SOUND <R0562,0564>
+   return 1
+
+[ITEMDEF 02a7a]
+//mounted pixie (white)
+NAME=mounted pixie
+DUPEITEM=02a79
+
+[ITEMDEF 02a7b]
+DEFNAME=i_haunted_mirror
+NAME=haunted mirror
+FLIP=1
+CATEGORY=Decor Collection
+SUBSECTION=Evil Home Decor
+DESCRIPTION=Haunted Mirror
+DUPELIST=02a7d
+ON=@Step
+   IF !(<ARGN>) && !(<TAG0.Anim>)
+    TAG.Anim=1
+    SOUND <R0551,0553>
+    DISPID=<eval <DISPIDDEC>+1>
+    UPDATE
+    TIMERF 5,TAG.Anim=
+    TIMERF 5,DISPID=<eval <DISPIDDEC>-1>
+    TIMERF 5,UPDATE
+   ENDIF
+
+[ITEMDEF 02a7c]
+//haunted mirror (south)(skull)
+NAME=haunted mirror
+
+[ITEMDEF 02a7d]
+//haunted mirror (east)
+NAME=haunted mirror
+DUPEITEM=02a7b
+
+[ITEMDEF 02a7e]
+//haunted mirror (east)(skull)
+NAME=haunted mirror
+
+[ITEMDEF 02a7f]
+//bone couch
+NAME=bone couch
+DUPEITEM=02a5a
+
+[ITEMDEF 02a80]
+//bone couch
+NAME=bone couch
+DUPEITEM=02a5a
+
+[ITEMDEF 02a81]
+//bed of nails (south)(multi-part)
+NAME=bed of nails
+TYPE=t_bed_nails
+
+[ITEMDEF 02a82]
+//bed of nails (south)(multi-part)
+NAME=bed of nails
+TYPE=t_bed_nails
+
+[ITEMDEF 02a83]
+//bed of nails (south)(multi-part)(anim)
+NAME=bed of nails
+TYPE=t_bed_nails
+
+[ITEMDEF 02a84]
+//bed of nails (south)(multi-part)(anim)
+NAME=bed of nails
+TYPE=t_bed_nails
+
+[ITEMDEF 02a85]
+//bed of nails (south)(multi-part)(anim)
+NAME=bed of nails
+TYPE=t_bed_nails
+
+[ITEMDEF 02a86]
+//bed of nails (south)(multi-part)(anim)
+NAME=bed of nails
+TYPE=t_bed_nails
+
+[ITEMDEF 02a87]
+//bed of nails (south)(multi-part)(anim)
+NAME=bed of nails
+TYPE=t_bed_nails
+
+[ITEMDEF 02a88]
+//bed of nails (south)(multi-part)(anim)
+NAME=bed of nails
+TYPE=t_bed_nails
+
+[ITEMDEF 02a89]
+//bed of nails (east)(multi-part)
+NAME=bed of nails
+TYPE=t_bed_nails
+
+[ITEMDEF 02a8a]
+//bed of nails (east)(multi-part)
+NAME=bed of nails
+TYPE=t_bed_nails
+
+[ITEMDEF 02a8b]
+//bed of nails (east)(multi-part)(anim)
+NAME=bed of nails
+TYPE=t_bed_nails
+
+[ITEMDEF 02a8c]
+//bed of nails (east)(multi-part)(anim)
+NAME=bed of nails
+TYPE=t_bed_nails
+
+[ITEMDEF 02a8d]
+//bed of nails (east)(multi-part)(anim)
+NAME=bed of nails
+TYPE=t_bed_nails
+
+[ITEMDEF 02a8e]
+//bed of nails (east)(multi-part)(anim)
+NAME=bed of nails
+TYPE=t_bed_nails
+
+[ITEMDEF 02a8f]
+//bed of nails (east)(multi-part)(anim)
+NAME=bed of nails
+TYPE=t_bed_nails
+
+[ITEMDEF 02a90]
+//bed of nails (east)(multi-part)(anim)
+NAME=bed of nails
+TYPE=t_bed_nails
+
+[TYPEDEF t_bed_nails]
+ON=@Step
+   IF !(<ARGN>)
+    SRC.SOUND <SRC.SEX <R053e,0540>/<R053b,053d>>
+    FOR <R7>
+     SERV.NEWITEM {0122c 0122f}
+     NEW.ATTR=attr_move_never|attr_decay
+     NEW.MOVENEAR <UID> 1
+     NEW.TIMER=<R4,8>
+    ENDFOR
+   ENDIF
+
+
+[ITEMDEF 02a9a]
+//sacrificial altar (multi-part)(south)
+NAME=sacrificial altar
+TYPE=t_trash_can
+TDATA2=09
+DUPELIST=02a9b,02a9c,02a9d
+
+[ITEMDEF 02a9b]
+//sacrificial altar (multi-part)(south)
+NAME=sacrificial altar
+DUPEITEM=02a9a
+
+[ITEMDEF 02a9c]
+//sacrificial altar (multi-part)(east)
+NAME=sacrificial altar
+DUPEITEM=02a9a
+
+[ITEMDEF 02a9d]
+//sacrificial altar (multi-part)(east)
+NAME=sacrificial altar
+DUPEITEM=02a9a
+
+[EOF]

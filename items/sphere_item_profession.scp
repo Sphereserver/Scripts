@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, Oct 23, 2017
+// FILE LAST UPDATED: Saturday, Oct 28, 2017
 //
 VERSION=0.56d
 
@@ -1881,25 +1881,6 @@ DUPEITEM=01930
 DUPEITEM=01930
 
 
-[ITEMDEF 0194b]
-DEFNAME=i_scope_surveyor
-NAME=surveyor scope
-TYPE=t_sextant
-FLIP=1
-VALUE=51
-WEIGHT=0.6
-RESOURCES=1 i_sextant_parts,1 i_spyglass
-SKILLMAKE=Tinkering 30.7,t_tinker_tools
-CATEGORY=Items by Professions
-SUBSECTION=Tinker
-DESCRIPTION=Surveyor Scope
-DUPELIST=0194c
-
-[ITEMDEF 0194c]
-//surveyor scope
-DUPEITEM=0194b
-
-
 [ITEMDEF 0197a]
 DEFNAME=i_forge_large_bellows
 TYPE=t_forge
@@ -2965,9 +2946,9 @@ DUPEITEM=0403b
 [ITEMDEF 0407c]
 DEFNAME=i_incubator
 NAME=incubator
-//TYPE=t_incubator//FIXME: container using gump 087c
+TYPE=t_container
+TDATA2=040
 FLIP=1
-WEIGHT=10.0
 RESOURCES=100 i_board
 SKILLMAKE=Carpentry 90.0,t_carpentry
 CATEGORY=Items by Professions

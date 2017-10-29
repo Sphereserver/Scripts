@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, Oct 23, 2017
+// FILE LAST UPDATED: Saturday, Oct 28, 2017
 //
 VERSION=0.56d
 
@@ -369,33 +369,6 @@ DUPEITEM=0139e
 [ITEMDEF 013a3]
 //Large Statue 5 (multi-part)
 DUPEITEM=0139e
-
-
-[ITEMDEF 01947]
-DEFNAME=i_statue_stone_blessed
-NAME=blessed statue
-TYPE=t_container
-TDATA2=0116
-FLIP=1
-VALUE=68
-WEIGHT=120.0
-RESOURCES=12 i_rock_plain
-CATEGORY=Decoration - Wall Carvings & Statues
-SUBSECTION=Statues
-DESCRIPTION=Blessed Statue (multi-part)
-DUPELIST=01948,01949,0194a
-
-[ITEMDEF 01948]
-//blessed statue (multi-part)
-DUPEITEM=01947
-
-[ITEMDEF 01949]
-//blessed statue (multi-part)
-DUPEITEM=01947
-
-[ITEMDEF 0194a]
-//blessed statue (multi-part)
-DUPEITEM=01947
 
 
 [ITEMDEF 01f18]
