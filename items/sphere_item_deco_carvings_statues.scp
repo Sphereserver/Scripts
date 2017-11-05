@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Oct 28, 2017
+// FILE LAST UPDATED: Sunday, Nov 5, 2017
 //
 VERSION=0.56d
 
@@ -843,32 +843,5 @@ DUPELIST=0497e
 [ITEMDEF 0497e]
 //Topiary Ostard
 DUPEITEM=0497d
-
-
-[ITEMDEF 09f0f]
-DEFNAME=i_statue_swan_white
-NAME=swan statue
-FLIP=1
-CATEGORY=Decoration - Wall Carvings & Statues
-SUBSECTION=Statues
-DESCRIPTION=Swan Statue (white)
-DUPELIST=09f10
-
-[ITEMDEF 09f10]
-//swan statue (white)
-DUPEITEM=09f0f
-
-[ITEMDEF 09f11]
-//swan statue (black)
-DUPEITEM=09f12
-
-[ITEMDEF 09f12]
-DEFNAME=i_statue_swan_black
-NAME=swan statue
-FLIP=1
-CATEGORY=Decoration - Wall Carvings & Statues
-SUBSECTION=Statues
-DESCRIPTION=Swan Statue (black)
-DUPELIST=09f11
 
 [EOF]

@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Oct 28, 2017
+// FILE LAST UPDATED: Sunday, Nov 5, 2017
 //
 VERSION=0.56d
 
@@ -3112,20 +3112,6 @@ DUPELIST=09c0d
 [ITEMDEF 09c0d]
 //trophy saurosaurushead
 DUPEITEM=09c0c
-
-
-[ITEMDEF 09ca8]
-DEFNAME=i_painting_easter
-NAME=easter painting
-FLIP=1
-CATEGORY=Decoration - Wall Hangings
-SUBSECTION=Paintings
-DESCRIPTION=Easter Painting
-DUPELIST=09ca9
-
-[ITEMDEF 09ca9]
-//easter painting
-DUPEITEM=09ca8
 
 
 [ITEMDEF 09cb9]

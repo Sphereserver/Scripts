@@ -1,0 +1,327 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2017
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Sunday, Nov 5, 2017
+//
+VERSION=0.56d
+
+
+[ITEMDEF 047e6]
+DEFNAME=i_easter_egg_dragon
+NAME=dragon easter egg
+DYE=1
+CATEGORY=Easter
+SUBSECTION=Decoration
+DESCRIPTION=Dragon Easter Egg
+
+
+[ITEMDEF 04cee]
+DEFNAME=i_golden_easter_goose_south
+NAME=golden easter goose
+TYPE=t_golden_easter_goose
+FLIP=1
+CATEGORY=Easter
+SUBSECTION=Decoration
+DESCRIPTION=Golden Easter Goose
+DUPELIST=04cf5
+ON=@Create
+   COLOR={04e7 04fe}
+   MORE1=1
+
+[ITEMDEF 04cef]
+//golden easter goose (south)(anim)
+
+[ITEMDEF 04cf0]
+//golden easter goose (south)(anim)
+
+[ITEMDEF 04cf1]
+//golden easter goose (south)(anim)
+
+[ITEMDEF 04cf2]
+//golden easter goose (south)(anim)
+
+[ITEMDEF 04cf3]
+//golden easter goose (south)(anim)
+
+[ITEMDEF 04cf4]
+DEFNAME=i_golden_easter_goose_south_open
+TYPE=t_golden_easter_goose
+DUPELIST=04cfb
+ON=@Create
+   COLOR={04e7 04fe}
+   MORE1=1
+
+[ITEMDEF 04cf5]
+DEFNAME=i_golden_easter_goose_east
+TYPE=t_golden_easter_goose
+DUPEITEM=04cee
+ON=@Create
+   COLOR={04e7 04fe}
+   MORE1=1
+
+[ITEMDEF 04cf6]
+//golden easter goose (east)(anim)
+
+[ITEMDEF 04cf7]
+//golden easter goose (east)(anim)
+
+[ITEMDEF 04cf8]
+//golden easter goose (east)(anim)
+
+[ITEMDEF 04cf9]
+//golden easter goose (east)(anim)
+
+[ITEMDEF 04cfa]
+//golden easter goose (east)(anim)
+
+[ITEMDEF 04cfb]
+DEFNAME=i_golden_easter_goose_east_open
+TYPE=t_golden_easter_goose
+DUPEITEM=04cf4
+ON=@Create
+   COLOR={04e7 04fe}
+   MORE1=1
+
+[TYPEDEF t_golden_easter_goose]
+ON=@ClientTooltip
+   IF (<MORE1>)
+    SRC.ADDCLILOC 1154089	//The goose contains an egg!
+   ENDIF
+ON=@DClick
+   IF (<DISPID>==i_golden_easter_goose_south) || (<DISPID>==i_golden_easter_goose_east)
+    IF (<MORE1>)
+     SERV.NEWITEM {i_easter_egg_gold 1 i_easter_egg_silver 1 i_easter_egg_bronze 1}
+     NEW.BOUNCE
+     MORE1 --
+     RESENDTOOLTIP
+    ENDIF
+    DISPID=<eval <DISPIDDEC>+1>
+    TIMERF 2,DISPID=<eval <DISPIDDEC>+5>
+   ELIF (<DISPID>==i_golden_easter_goose_south_open) || (<DISPID>==i_golden_easter_goose_east_open)
+    DISPID=<eval <DISPIDDEC>-1>
+    TIMERF 2,DISPID=<eval <DISPIDDEC>-5>
+   ENDIF
+   UPDATE
+   TIMERF 2,UPDATE
+   return 1
+
+[ITEMDEF 04cfc]
+DEFNAME=i_easter_egg_gem
+NAME=easter egg
+CATEGORY=Easter
+SUBSECTION=Decoration
+DESCRIPTION=Easter Egg (gem)
+ON=@DClick
+   DISPID=<QVAL (<DISPID>==i_easter_egg_gem)? 04cfd : i_easter_egg_gem>
+   UPDATE
+   return 1
+
+[ITEMDEF 04cfd]
+//easter egg (anim)
+
+[ITEMDEF 04cfe]
+//easter egg (anim)
+
+[ITEMDEF 04cff]
+//easter egg (anim)
+
+[ITEMDEF 04d00]
+//easter egg (anim)
+
+[ITEMDEF 04d01]
+//easter egg (anim)
+
+[ITEMDEF 04d02]
+//easter egg (anim)
+
+[ITEMDEF 04d03]
+//easter egg (anim)
+
+[ITEMDEF 04d04]
+//easter egg (anim)
+
+[ITEMDEF 04d05]
+//easter egg (anim)
+
+[ITEMDEF 04d06]
+//easter egg (anim)
+
+[ITEMDEF 04d07]
+DEFNAME=i_easter_egg_gold
+NAME=easter egg
+CATEGORY=Easter
+SUBSECTION=Decoration
+DESCRIPTION=Easter Egg (gold)
+ON=@Create
+   COLOR={{09c5 0a54} 1 {0a5b 0a66} 1}
+
+[ITEMDEF 04d08]
+DEFNAME=i_easter_egg_bronze
+NAME=easter egg
+CATEGORY=Easter
+SUBSECTION=Decoration
+DESCRIPTION=Easter Egg (bronze)
+ON=@Create
+   COLOR={{09c5 0a54} 1 {0a5b 0a66} 1}
+
+[ITEMDEF 04d09]
+DEFNAME=i_easter_egg_silver
+NAME=easter egg
+CATEGORY=Easter
+SUBSECTION=Decoration
+DESCRIPTION=Easter Egg (silver)
+ON=@Create
+   COLOR={{09c5 0a54} 1 {0a5b 0a66} 1}
+
+
+[ITEMDEF 099a3]
+DEFNAME=i_easter_bunny
+NAME=easter bunny
+FLIP=1
+CATEGORY=Easter
+SUBSECTION=Decoration
+DESCRIPTION=Easter Bunny
+DUPELIST=099a4
+ON=@Create
+   COLOR={011 1 021 1 04ac 1 054f 1 0485 1 0556 1 055c 1 0562 1}
+ON=@DClick
+   IF (<TAG0.LastCreated> != <SERV.RTIME.FORMAT %d>)
+    TAG.LastCreated=<SERV.RTIME.FORMAT %d>
+    SAY @0800 Here you go! A freshly made marshmallow duckling! Don't eat too many! *chuckles*
+    SERV.NEWITEM i_marshmallow_duckling
+    NEW.BOUNCE
+   ELSE
+    SAY @0800 I haven't quite finished a marshmallow duckling yet...
+   ENDIF
+   return 1
+
+[ITEMDEF 099a4]
+//easter bunny
+DUPEITEM=099a3
+
+[ITEMDEF 099a5]
+DEFNAME=i_marshmallow_duckling
+NAME=marshmallow duckling
+TYPE=t_food
+FLIP=1
+CATEGORY=Easter
+SUBSECTION=Candies
+DESCRIPTION=Marshmallow Duckling
+DUPELIST=099a6
+ON=@Create
+   COLOR={02c 1 037 1 04d 1 058 1 06f 1 083 1}
+   MOREM=1
+
+[ITEMDEF 099a6]
+//marshmallow duckling
+DUPEITEM=099a5
+
+
+[ITEMDEF 09b10]
+DEFNAME=i_potted_orchid
+NAME=potted plant
+CATEGORY=Easter
+SUBSECTION=Decoration
+DESCRIPTION=Potted Plant (Orchid)
+ON=@Create
+   COLOR={0 1 04b0 1 04b5 1 04c7 1 04e9 1 0507 1 054f 1 0562 1 05b6 1 0780 1 0782 1 09c7 1 09f4 1 0a05 1 0a0c 1 0a26 1 0a32 1 0aa1 1}
+
+[ITEMDEF 09b11]
+DEFNAME=i_potted_crown_of_thorns
+NAME=potted plant
+CATEGORY=Easter
+SUBSECTION=Decoration
+DESCRIPTION=Potted Plant (Crown of Thorns)
+ON=@Create
+   COLOR={0 1 04b0 1 04b5 1 04c7 1 04e9 1 0507 1 054f 1 0562 1 05b6 1 0780 1 0782 1 09c7 1 09f4 1 0a05 1 0a0c 1 0a26 1 0a32 1 0aa1 1}
+
+
+[ITEMDEF 09ca8]
+DEFNAME=i_painting_easter
+NAME=easter painting
+FLIP=1
+CATEGORY=Easter
+SUBSECTION=Decoration
+DESCRIPTION=Easter Painting
+DUPELIST=09ca9
+
+[ITEMDEF 09ca9]
+//easter painting
+DUPEITEM=09ca8
+
+
+[ITEMDEF 09f0f]
+DEFNAME=i_statue_swan_white
+NAME=swan statue
+FLIP=1
+CATEGORY=Easter
+SUBSECTION=Decoration
+DESCRIPTION=Swan Statue (white)
+DUPELIST=09f10
+
+[ITEMDEF 09f10]
+//swan statue (white)
+DUPEITEM=09f0f
+
+[ITEMDEF 09f11]
+//swan statue (black)
+DUPEITEM=09f12
+
+[ITEMDEF 09f12]
+DEFNAME=i_statue_swan_black
+NAME=swan statue
+FLIP=1
+CATEGORY=Easter
+SUBSECTION=Decoration
+DESCRIPTION=Swan Statue (black)
+DUPELIST=09f11
+
+[ITEMDEF 09f13]
+DEFNAME=i_easter_egg_golden
+NAME=easter egg
+CATEGORY=Easter
+SUBSECTION=Decoration
+DESCRIPTION=Easter Egg
+
+[ITEMDEF 09f14]
+DEFNAME=i_easter_egg_1
+NAME=easter egg
+CATEGORY=Easter
+SUBSECTION=Decoration
+DESCRIPTION=Easter Egg
+
+[ITEMDEF 09f15]
+DEFNAME=i_easter_egg_2
+NAME=easter egg
+CATEGORY=Easter
+SUBSECTION=Decoration
+DESCRIPTION=Easter Egg
+
+[ITEMDEF 09f16]
+DEFNAME=i_easter_egg_3
+NAME=easter egg
+CATEGORY=Easter
+SUBSECTION=Decoration
+DESCRIPTION=Easter Egg
+
+[ITEMDEF 09f17]
+DEFNAME=i_easter_egg_4
+NAME=easter egg
+CATEGORY=Easter
+SUBSECTION=Decoration
+DESCRIPTION=Easter Egg
+
+[ITEMDEF 09f18]
+DEFNAME=i_easter_egg_5
+NAME=easter egg
+CATEGORY=Easter
+SUBSECTION=Decoration
+DESCRIPTION=Easter Egg
+
+[EOF]

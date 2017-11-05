@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, Oct 23, 2017
+// FILE LAST UPDATED: Sunday, Nov 5, 2017
 //
 VERSION=0.56d
 
@@ -5399,25 +5399,6 @@ TDATA3=0//i_vanilla_bean
 CATEGORY=Vegetation
 SUBSECTION=Plants and Flowers
 DESCRIPTION=Vanilla Plant (mature)
-
-
-[ITEMDEF 09b10]
-DEFNAME=i_potted_orchid
-NAME=Potted Plant
-CATEGORY=Decoration - Potted Plants & Vases
-SUBSECTION=Potted Trees
-DESCRIPTION=Potted Plant (Orchid)
-ON=@Create
-   COLOR={0 1 04b0 1 04b5 1 04c7 1 04e9 1 0507 1 054f 1 0562 1 05b6 1 0780 1 0782 1 09c7 1 09f4 1 0a05 1 0a0c 1 0a26 1 0a32 1 0aa1 1}
-
-[ITEMDEF 09b11]
-DEFNAME=i_potted_crown_of_thorns
-NAME=Potted Plant
-CATEGORY=Decoration - Potted Plants & Vases
-SUBSECTION=Potted Trees
-DESCRIPTION=Potted Plant (Crown of Thorns)
-ON=@Create
-   COLOR={0 1 04b0 1 04b5 1 04c7 1 04e9 1 0507 1 054f 1 0562 1 05b6 1 0780 1 0782 1 09c7 1 09f4 1 0a05 1 0a0c 1 0a26 1 0a32 1 0aa1 1}
 
 
 [ITEMDEF 09e38]

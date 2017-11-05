@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Oct 28, 2017
+// FILE LAST UPDATED: Sunday, Nov 5, 2017
 //
 VERSION=0.56d
 
@@ -4663,16 +4663,6 @@ ON=@Create
 //ship wheel (mounted)
 
 
-[ITEMDEF 047e6]
-DEFNAME=i_gift_easteregg
-NAME=Easter egg
-TYPE=t_normal
-FLIP=1
-CATEGORY=Decoration - Miscellaneous
-SUBSECTION=Holiday Gifts
-DESCRIPTION=Easter Egg
-
-
 [ITEMDEF 048e4]
 CATEGORY=Miscellaneous
 SUBSECTION=Bad Tiles
@@ -5033,38 +5023,6 @@ DESCRIPTION=Sea Sponge (5)
 [ITEMDEF 04ce3]
 [ITEMDEF 04ce4]
 [ITEMDEF 04ce5]
-
-[ITEMDEF 04cee]
-[ITEMDEF 04cef]
-[ITEMDEF 04cf0]
-[ITEMDEF 04cf1]
-[ITEMDEF 04cf2]
-[ITEMDEF 04cf3]
-[ITEMDEF 04cf4]
-[ITEMDEF 04cf5]
-[ITEMDEF 04cf6]
-[ITEMDEF 04cf7]
-[ITEMDEF 04cf8]
-[ITEMDEF 04cf9]
-[ITEMDEF 04cfa]
-[ITEMDEF 04cfb]
-[ITEMDEF 04cfc]
-[ITEMDEF 04cfd]
-[ITEMDEF 04cfe]
-[ITEMDEF 04cff]
-[ITEMDEF 04d00]
-[ITEMDEF 04d01]
-[ITEMDEF 04d02]
-[ITEMDEF 04d03]
-[ITEMDEF 04d04]
-[ITEMDEF 04d05]
-[ITEMDEF 04d06]
-[ITEMDEF 04d07]
-//Easter Egg (gold)
-[ITEMDEF 04d08]
-//Easter Egg (bronze)
-[ITEMDEF 04d09]
-//Easter Egg (silver)
 
 [ITEMDEF 0571c]
 // This is the base ID of a number of imbuing ingredients.
@@ -5764,24 +5722,5 @@ ON=@Create
 [ITEMDEF 09c17]
 //runic atlas
 DUPEITEM=09c16
-
-
-[ITEMDEF 09f13]
-//Easter Egg
-
-[ITEMDEF 09f14]
-//Easter Egg
-
-[ITEMDEF 09f15]
-//Easter Egg
-
-[ITEMDEF 09f16]
-//Easter Egg
-
-[ITEMDEF 09f17]
-//Easter Egg
-
-[ITEMDEF 09f18]
-//Easter Egg
 
 [EOF]
