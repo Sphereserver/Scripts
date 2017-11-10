@@ -796,6 +796,7 @@ EMOTE_DEF_UNICODE	0
 //poisoning_witem				"You can only poison food or piercing weapons."
 //provocation_emote_1			"looks peaceful"
 //provocation_emote_2			"looks furious"
+//provocation_kind			"The creature refuses to attack one of its own kind!"
 //provocation_player			"You can not provoke players!"
 //provocation_upset				"You are really upset about this"
 //provoke_select				"Who do you want to provoke them against?"
