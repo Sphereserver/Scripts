@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Oct 28, 2017
+// FILE LAST UPDATED: Sunday, Nov 12, 2017
 //
 VERSION=0.56d
 
@@ -2973,26 +2973,6 @@ DUPELIST=044e6
 DUPEITEM=044e5
 
 
-[ITEMDEF 046a0]
-DEFNAME=i_cornucopia
-NAME=cornucopia
-TYPE=t_food
-VALUE=26
-WEIGHT=3.0
-RESOURCES=1 i_bowl_wood,1 i_fruit_gourd_yellow,1 i_fruit_gourd_green,1 i_fruit_pumpkin,2 i_fruit_onion,1 i_fruit_squash,1 i_fruit_carrot,1 i_fruit_corn,1 i_fruit_turnip,1 i_fruit_garlic
-SKILLMAKE=Cooking 125.0, t_cooking
-CATEGORY=Provisions - Food
-SUBSECTION=Assembled
-DESCRIPTION=Cornucopia
-DUPELIST=046a1
-ON=@Create
-   MOREM=100
-
-[ITEMDEF 046a1]
-//Cornucopia
-DUPEITEM=046a0
-
-
 [ITEMDEF 0495e]
 DEFNAME=i_jug_hooch
 NAME=hooch jug
@@ -3008,108 +2988,6 @@ DUPELIST=0495f
 [ITEMDEF 0495f]
 //Jug of Hooch
 DUPEITEM=0495e
-
-
-[ITEMDEF 04988]
-DEFNAME=i_turkey_roast
-TYPE=t_food
-//TDATA1=i_platter
-FLIP=1
-VALUE=143
-WEIGHT=11.0
-RESOURCES=10 i_bird_raw,1 i_dried_herbs
-SKILLMAKE=Cooking 90.0, t_cooking
-CATEGORY=Provisions - Food
-SUBSECTION=Assembled
-DESCRIPTION=Roast Turkey
-DUPELIST=0498f
-ON=@Create
-   MOREM=8
-
-[ITEMDEF 0498f]
-//Roast Turkey
-DUPEITEM=04988
-
-
-[ITEMDEF 04bd9]
-DEFNAME=i_horn_of_plenty
-NAME=horn of plenty
-TYPE=t_food
-CATEGORY=Provisions - Food
-SUBSECTION=Assembled
-DESCRIPTION=Horn of Plenty
-DUPELIST=04bda
-ON=@Create
-   MOREM=10
-
-[ITEMDEF 04bda]
-//Horn of Plenty
-DUPEITEM=04bd9
-
-
-[ITEMDEF 04c02]
-DEFNAME=i_pie_cut
-NAME=baked pie
-TYPE=t_food
-VALUE=12
-WEIGHT=0.3
-RESOURCES=1 i_pie_baked
-//SKILLMAKE=Cooking 10.1, t_cooking
-CATEGORY=Provisions - Food
-SUBSECTION=Baked
-DESCRIPTION=Pie (wedge missing)
-ON=@Create
-   MOREM=3
-
-[ITEMDEF 04c03]
-DEFNAME=i_pie_wedge
-NAME=slice of pie
-TYPE=t_food
-FLIP=1
-VALUE=5
-WEIGHT=0.3
-RESOURCES=1 i_pie_baked
-//SKILLMAKE=Cooking 10.0, t_cooking
-CATEGORY=Provisions - Food
-SUBSECTION=Baked
-DESCRIPTION=Pie (wedge)
-DUPELIST=04c04
-ON=@Create
-   MOREM=1
-
-[ITEMDEF 04c04]
-//Baked Pie (wedge)
-DUPEITEM=04c03
-
-[ITEMDEF 04c05]
-//FIXME: looks like a cream pie?
-
-
-[ITEMDEF 04c0c]
-DEFNAME=i_pie_unbaked
-TYPE=t_food_raw
-TDATA1=i_pie_baked
-VALUE=10
-WEIGHT=0.4
-RESOURCES=1 i_dough,1 t_fruit
-SKILLMAKE=Cooking 20.0, t_cooking
-CATEGORY=Provisions - Food
-SUBSECTION=Baked
-DESCRIPTION=Pie (uncooked)
-
-[ITEMDEF 04c0d]
-DEFNAME=i_pie_baked
-NAME=baked pie
-TYPE=t_food
-VALUE=15
-WEIGHT=0.4
-RESOURCES=1 i_dough
-SKILLMAKE=Cooking 0.0, t_cooking
-CATEGORY=Provisions - Food
-SUBSECTION=Baked
-DESCRIPTION=Pie (baked)
-ON=@Create
-   MOREM=5
 
 
 [ITEMDEF 09e36]
