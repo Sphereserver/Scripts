@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, May 16, 2017
+// FILE LAST UPDATED: Sunday, Nov 26, 2017
 //
 VERSION=0.56d
 
@@ -893,6 +893,140 @@ ON=@Create
    HITPOINTS=255
    TAG.Stealable=1
 
+[ITEMDEF 09edb]
+DEFNAME=i_doom_incense_burner_lit
+NAME=Incense Burner
+Rarity=12
+CATEGORY=Artifacts
+SUBSECTION=Doom (Stealable)
+DESCRIPTION=Incense Burner (lit)
+DUPELIST=09edf
+ON=@Create
+   ATTR=attr_magic|attr_identified
+   TAG.Stealable=1
+
+[ITEMDEF 09edc]
+//incense burner (lit)(south)(anim)
+
+[ITEMDEF 09edd]
+//incense burner (lit)(south)(anim)
+
+[ITEMDEF 09ede]
+//incense burner (lit)(south)(anim)
+
+[ITEMDEF 09edf]
+//incense burner (lit)(east)
+DUPEITEM=09edb
+
+[ITEMDEF 09ee0]
+//incense burner (lit)(east)(anim)
+
+[ITEMDEF 09ee1]
+//incense burner (lit)(east)(anim)
+
+[ITEMDEF 09ee2]
+//incense burner (lit)(east)(anim)
+
+[ITEMDEF 09ee3]
+DEFNAME=i_doom_alchemist_shelf
+NAME=Alchemist Shelf
+Rarity=9
+FLIP=1
+CATEGORY=Artifacts
+SUBSECTION=Doom (Stealable)
+DESCRIPTION=Alchemist Shelf
+DUPELIST=09ee4
+ON=@Create
+   ATTR=attr_magic|attr_identified
+   TAG.Stealable=1
+
+[ITEMDEF 09ee4]
+//alchemist shelf
+DUPEITEM=09ee3
+
+[ITEMDEF 09ee5]
+DEFNAME=i_doom_arcane_table
+NAME=Arcane Table
+Rarity=9
+FLIP=1
+CATEGORY=Artifacts
+SUBSECTION=Doom (Stealable)
+DESCRIPTION=Arcane Table
+DUPELIST=09ee6
+ON=@Create
+   ATTR=attr_magic|attr_identified
+   TAG.Stealable=1
+
+[ITEMDEF 09ee6]
+//arcane table
+DUPEITEM=09ee5
+
+[ITEMDEF 09ee7]
+DEFNAME=i_doom_hanging_plate_chest
+NAME=Hanging Plate Chest
+Rarity=8
+FLIP=1
+CATEGORY=Artifacts
+SUBSECTION=Doom (Stealable)
+DESCRIPTION=Hanging Plate Chest
+DUPELIST=09ee8
+ON=@Create
+   ATTR=attr_magic|attr_identified
+   TAG.Stealable=1
+
+[ITEMDEF 09ee8]
+//hanging plate chest
+DUPEITEM=09ee7
+
+[ITEMDEF 09ee9]
+DEFNAME=i_doom_hanging_plate_arms
+NAME=Hanging Plate Arms
+Rarity=8
+FLIP=1
+CATEGORY=Artifacts
+SUBSECTION=Doom (Stealable)
+DESCRIPTION=Hanging Plate Arms
+DUPELIST=09eea
+ON=@Create
+   ATTR=attr_magic|attr_identified
+   TAG.Stealable=1
+
+[ITEMDEF 09eea]
+//hanging plate arms
+DUPEITEM=09ee9
+
+[ITEMDEF 09eeb]
+DEFNAME=i_doom_hanging_plate_legs
+NAME=Hanging Plate Legs
+Rarity=8
+FLIP=1
+CATEGORY=Artifacts
+SUBSECTION=Doom (Stealable)
+DESCRIPTION=Hanging Plate Legs
+DUPELIST=09eec
+ON=@Create
+   ATTR=attr_magic|attr_identified
+   TAG.Stealable=1
+
+[ITEMDEF 09eec]
+//hanging plate legs
+DUPEITEM=09eeb
+
+[ITEMDEF 09eed]
+DEFNAME=i_doom_incense_burner
+NAME=Incense Burner
+Rarity=12
+CATEGORY=Artifacts
+SUBSECTION=Doom (Stealable)
+DESCRIPTION=Incense Burner (unlit)
+DUPELIST=09edf
+ON=@Create
+   ATTR=attr_magic|attr_identified
+   TAG.Stealable=1
+
+[ITEMDEF 09eee]
+//incense burner (unlit)
+
 ///////////////////////////////////////
 // Yomotsu Mines Stealable Artifacts //
 ///////////////////////////////////////
@@ -1088,5 +1222,174 @@ ON=@Create
    COLOR=03a
    ATTR=attr_magic|attr_identified
    HITPOINTS=255
+
+///////////////////////////
+// Shadowguard Artifacts //
+///////////////////////////
+
+[ITEMDEF 07816]
+DEFNAME=i_robe_hawkwinds
+NAME=Hawkwind's Robe
+TYPE=t_clothing
+RegenMana=2
+IncreaseSpellDam=5
+LowerManaCost=10
+LowerReagentCost=10
+CanUse=can_u_human|can_u_elf
+TEVENTS=t_equipitem
+CATEGORY=Artifacts
+SUBSECTION=Shadowguard
+DESCRIPTION=Hawkwind's Robe
+ON=@Create
+   ATTR=attr_magic|attr_identified
+   HITPOINTS=255
+
+////////////////////////////////
+// Enchanted Origin Artifacts //
+////////////////////////////////
+
+[ITEMDEF 09f64]
+DEFNAME=i_jack_in_the_box_east
+NAME=Jack in the Box
+CATEGORY=Artifacts
+SUBSECTION=Enchanted Origin
+DESCRIPTION=Jack in the Box (east)
+DUPELIST=09f65,09f66,09f67,09f68,09f69,09f6a,09f6b
+ON=@DClick
+   IF (<TYPE> != t_anim_active)
+    ATTR |= attr_move_never
+    MORE1=<DISPID>
+    MORE2=<TYPE>
+    TYPE=t_anim_active
+    TAG.Animate=1
+    SOUND 067d
+    TIMER=13
+    return 1
+   ENDIF
+ON=@Timer
+   IF (<TAG0.Animate>)
+    TAG.Animate=
+    DISPID=09f65
+    TIMER=4
+    UPDATE
+    return 1
+   ELIF (<TYPE> == t_anim_active)
+    ATTR &= ~attr_move_never
+   ENDIF
+
+[ITEMDEF 09f65]
+//jack in the box (anim)
+DUPEITEM=09f64
+
+[ITEMDEF 09f66]
+//jack in the box (anim)
+DUPEITEM=09f64
+
+[ITEMDEF 09f67]
+//jack in the box (anim)
+DUPEITEM=09f64
+
+[ITEMDEF 09f68]
+//jack in the box (anim)
+DUPEITEM=09f64
+
+[ITEMDEF 09f69]
+//jack in the box (anim)
+DUPEITEM=09f64
+
+[ITEMDEF 09f6a]
+//jack in the box (anim)
+DUPEITEM=09f64
+
+[ITEMDEF 09f6b]
+//jack in the box (anim)
+DUPEITEM=09f64
+
+[ITEMDEF 09f6c]
+DEFNAME=i_jack_in_the_box_south
+NAME=Jack in the Box
+CATEGORY=Artifacts
+SUBSECTION=Enchanted Origin
+DESCRIPTION=Jack in the Box (south)
+DUPELIST=09f6d,09f6e,09f6f,09f70,09f71,09f72,09f73
+ON=@DClick
+   IF (<TYPE> != t_anim_active)
+    ATTR |= attr_move_never
+    MORE1=<DISPID>
+    MORE2=<TYPE>
+    TYPE=t_anim_active
+    TAG.Animate=1
+    SOUND 067d
+    TIMER=13
+    return 1
+   ENDIF
+ON=@Timer
+   IF (<TAG0.Animate>)
+    TAG.Animate=
+    DISPID=09f6d
+    TIMER=4
+    UPDATE
+    return 1
+   ELIF (<TYPE> == t_anim_active)
+    ATTR &= ~attr_move_never
+   ENDIF
+
+[ITEMDEF 09f6d]
+//jack in the box (anim)
+DUPEITEM=09f6c
+
+[ITEMDEF 09f6e]
+//jack in the box (anim)
+DUPEITEM=09f6c
+
+[ITEMDEF 09f6f]
+//jack in the box (anim)
+DUPEITEM=09f6c
+
+[ITEMDEF 09f70]
+//jack in the box (anim)
+DUPEITEM=09f6c
+
+[ITEMDEF 09f71]
+//jack in the box (anim)
+DUPEITEM=09f6c
+
+[ITEMDEF 09f72]
+//jack in the box (anim)
+DUPEITEM=09f6c
+
+[ITEMDEF 09f73]
+//jack in the box (anim)
+DUPEITEM=09f6c
+
+[ITEMDEF 09f74]
+DEFNAME=i_serpent_jawbone
+NAME=Serpent Jawbone
+FLIP=1
+CATEGORY=Artifacts
+SUBSECTION=Enchanted Origin
+DESCRIPTION=Serpent Jawbone
+DUPELIST=09f75
+
+[ITEMDEF 09f75]
+//serpent jawbone
+DUPEITEM=09f74
+
+
+[ITEMDEF 09f85]
+DEFNAME=i_jacks_bag_of_tricks
+NAME=Jack's Bag of Tricks
+CATEGORY=Artifacts
+SUBSECTION=Enchanted Origin
+DESCRIPTION=Jack's Bag of Tricks
+DUPELIST=09f86,09f87
+
+[ITEMDEF 09f86]
+//jack's bag of tricks (anim)
+DUPEITEM=09f85
+
+[ITEMDEF 09f87]
+//jack's bag of tricks (anim)
+DUPEITEM=09f85
 
 [EOF]

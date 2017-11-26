@@ -7,14 +7,13 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Oct 28, 2017
+// FILE LAST UPDATED: Sunday, Nov 26, 2017
 //
 VERSION=0.56d
 
 
 [ITEMDEF 0459]
 DEFNAME=i_bench_marble
-TYPE=t_chair
 FLIP=1
 VALUE=60
 WEIGHT=100.0
@@ -31,7 +30,6 @@ DUPEITEM=0459
 
 [ITEMDEF 045b]
 DEFNAME=i_bench_sandstone
-TYPE=t_chair
 FLIP=1
 VALUE=60
 WEIGHT=100.0
@@ -48,7 +46,6 @@ DUPEITEM=045b
 
 [ITEMDEF 0a2a]
 DEFNAME=i_chair_stool_bar
-TYPE=t_chair
 VALUE=13
 WEIGHT=9.1
 RESOURCES=9 i_board,1 i_nails
@@ -59,7 +56,6 @@ DESCRIPTION=Barstool (Cross Bars)
 
 [ITEMDEF 0a2b]
 DEFNAME=i_chair_stool
-TYPE=t_chair
 FLIP=1
 VALUE=11
 WEIGHT=7.1
@@ -930,7 +926,6 @@ DUPEITEM=0aa3
 
 [ITEMDEF 0b2c]
 DEFNAME=i_bench_wood_dark
-TYPE=t_chair
 FLIP=1
 VALUE=32
 WEIGHT=17.4
@@ -947,7 +942,6 @@ DUPEITEM=0b2c
 
 [ITEMDEF 0b2e]
 DEFNAME=i_chair_wood_rough_dark
-TYPE=t_chair
 FLIP=1
 VALUE=28
 WEIGHT=17.4
@@ -972,7 +966,6 @@ DUPEITEM=0b2e
 
 [ITEMDEF 0b32]
 DEFNAME=i_chair_throne
-TYPE=t_chair
 FLIP=1
 VALUE=79
 WEIGHT=48.5
@@ -1077,7 +1070,6 @@ DUPEITEM=0b49
 
 [ITEMDEF 0b4e]
 DEFNAME=i_chair_wood_fancy_cushion
-TYPE=t_chair
 DYE=1
 FLIP=1
 VALUE=52
@@ -1103,7 +1095,6 @@ DUPEITEM=0b4e
 
 [ITEMDEF 0b52]
 DEFNAME=i_chair_wood_cushion
-TYPE=t_chair
 DYE=1
 FLIP=1
 VALUE=49
@@ -1129,7 +1120,6 @@ DUPEITEM=0b52
 
 [ITEMDEF 0b56]
 DEFNAME=i_chair_wood
-TYPE=t_chair
 FLIP=1
 VALUE=20
 WEIGHT=13.2
@@ -1154,7 +1144,6 @@ DUPEITEM=0b56
 
 [ITEMDEF 0b5a]
 DEFNAME=i_chair_wood_2
-TYPE=t_chair
 FLIP=1
 VALUE=34
 WEIGHT=14.2
@@ -1183,7 +1172,6 @@ DUPEITEM=0a2b
 
 [ITEMDEF 0b5f]
 DEFNAME=i_bench_board_rough_end
-TYPE=t_chair
 FLIP=1
 VALUE=14
 WEIGHT=4.2
@@ -1204,7 +1192,6 @@ DUPEITEM=0b5f
 
 [ITEMDEF 0b62]
 DEFNAME=i_bench_wood_smooth
-TYPE=t_chair
 FLIP=1
 VALUE=14
 WEIGHT=4.2
@@ -1457,7 +1444,6 @@ DUPEITEM=0b7d
 
 [ITEMDEF 0b91]
 DEFNAME=i_bench_wood_highback
-TYPE=t_chair
 FLIP=1
 VALUE=57
 WEIGHT=20.6
@@ -1942,7 +1928,6 @@ DUPEITEM=011f0
 
 [ITEMDEF 011fc]
 DEFNAME=i_chair_stool_bamboo
-TYPE=t_chair
 VALUE=61
 WEIGHT=17.1
 RESOURCES=9 i_board
@@ -2006,7 +1991,6 @@ DUPEITEM=01201
 
 [ITEMDEF 01207]
 DEFNAME=i_bench_stone_1
-TYPE=t_chair
 FLIP=1
 VALUE=30
 WEIGHT=40.0
@@ -2039,7 +2023,6 @@ DUPEITEM=01207
 
 [ITEMDEF 01218]
 DEFNAME=i_chair_stone
-TYPE=t_chair
 FLIP=1
 VALUE=55
 WEIGHT=100.0
@@ -2209,7 +2192,6 @@ DESCRIPTION=Tankards
 
 [ITEMDEF 01526]
 DEFNAME=i_chair_throne_lb
-TYPE=t_chair
 FLIP=1
 VALUE=204
 WEIGHT=120.0
@@ -2554,7 +2536,6 @@ DUPEITEM=01dc1
 
 [ITEMDEF 01dc7]
 DEFNAME=i_bench_sandstone_end
-TYPE=t_chair
 FLIP=1
 VALUE=35
 WEIGHT=60.0
@@ -2588,7 +2569,6 @@ DUPEITEM=01dc7
 
 [ITEMDEF 01dcd]
 DEFNAME=i_bench_marble_end
-TYPE=t_chair
 FLIP=1
 VALUE=35
 WEIGHT=60.0
@@ -3155,7 +3135,6 @@ DUPEITEM=02ddd
 [ITEMDEF 02ddf]
 DEFNAME=i_loveseat
 NAME=elven loveseat
-TYPE=t_chair
 FLIP=1
 VALUE=92
 WEIGHT=33.5
@@ -3191,7 +3170,6 @@ DUPEITEM=02de1
 [ITEMDEF 02de3]
 DEFNAME=i_chair_elven_ornate
 NAME=ornate elven chair
-TYPE=t_chair
 FLIP=1
 VALUE=85
 WEIGHT=33.4
@@ -3253,7 +3231,6 @@ DUPEITEM=02de9
 [ITEMDEF 02deb]
 DEFNAME=i_chair_elven_big
 NAME=big elven chair
-TYPE=t_chair
 FLIP=1
 VALUE=79
 WEIGHT=42.4
@@ -3298,7 +3275,6 @@ DUPEITEM=02def
 [ITEMDEF 02df5]
 DEFNAME=i_chair_reading
 NAME=elven reading chair
-TYPE=t_chair
 FLIP=1
 VALUE=75
 WEIGHT=33.4
@@ -3649,135 +3625,143 @@ DUPEITEM=03d8a
 
 [ITEMDEF 03dff]
 DEFNAME=i_bench_stone
-TYPE=t_chair
 FLIP=1
-VALUE=50
-WEIGHT=100.0
-RESOURCES=10 i_rock_obsidian
-SKILLMAKE=Carpentry 65.0,t_masonry_tool
 CATEGORY=Decoration - Furniture
 SUBSECTION=Chairs
 DESCRIPTION=Bench (Dark Stone)
 DUPELIST=03e00
 
 [ITEMDEF 03e00]
-//bench dark stone
+//bench (dark stone)
 DUPEITEM=03dff
 
 
 [ITEMDEF 0400c]
 DEFNAME=i_bed_small_gargish
-NAME=Gargish single bed
-TDATA1=0
+NAME=gargish cot
 FLIP=1
-VALUE=301
-WEIGHT=64.0
-RESOURCES=20 i_rock_granite,1 i_blanket,1 i_pillow_11
-SKILLMAKE=Carpentry 81.3,t_masonry_tool
+RESOURCES=100 i_rock_granite,100 i_cloth
+SKILLMAKE=Carpentry 60.6,Tailoring 75.0,t_masonry_tool
 CATEGORY=Decoration - Furniture
 SUBSECTION=Beds
-DESCRIPTION=Gargish Single Bed
+DESCRIPTION=Gargish Cot
 DUPELIST=0400d,0400e,0400f
 
 [ITEMDEF 0400d]
-//Gargish single bed
+//gargish cot (south)
+NAME=gargish cot
 DUPEITEM=0400c
 
 [ITEMDEF 0400e]
-//Gargish single bed
+//gargish cot (east)
+NAME=gargish cot
 DUPEITEM=0400c
 
 [ITEMDEF 0400f]
-//Gargish single bed
+//gargish cot (east)
+NAME=gargish cot
 DUPEITEM=0400c
 
 [ITEMDEF 04010]
 DEFNAME=i_bed_large_gargish
-NAME=Gargish double bed
-TDATA1=0
+NAME=large gargish bed
 FLIP=1
-VALUE=301
-WEIGHT=64.0
-RESOURCES=40 i_rock_granite,1 i_blanket,1 i_pillow_11
-SKILLMAKE=Carpentry 81.3,t_masonry_tool
+RESOURCES=100 i_rock_granite,100 i_cloth
+SKILLMAKE=Carpentry 60.6,Tailoring 75.0,t_masonry_tool
 CATEGORY=Decoration - Furniture
 SUBSECTION=Beds
-DESCRIPTION=Gargish Double Bed
+DESCRIPTION=Large Gargish Bed
 DUPELIST=04011,04012,04013,04014,04015,04016,04017,04018,04019,0401a,0401b,0401c,0401d,0401e,0401f,04020,04021
 
 [ITEMDEF 04011]
-//Gargish double bed
+//large gargish bed (south)
+NAME=large gargish bed
 DUPEITEM=04010
 
 [ITEMDEF 04012]
-//Gargish double bed
+//large gargish bed (south)
+NAME=large gargish bed
 DUPEITEM=04010
 
 [ITEMDEF 04013]
-//Gargish double bed
+//large gargish bed (south)
+NAME=large gargish bed
 DUPEITEM=04010
 
 [ITEMDEF 04014]
-//Gargish double bed
+//large gargish bed (south)
+NAME=large gargish bed
 DUPEITEM=04010
 
 [ITEMDEF 04015]
-//Gargish double bed
+//large gargish bed (south)
+NAME=large gargish bed
 DUPEITEM=04010
 
 [ITEMDEF 04016]
-//Gargish double bed
+//large gargish bed (south)
+NAME=large gargish bed
 DUPEITEM=04010
 
 [ITEMDEF 04017]
-//Gargish double bed
+//large gargish bed (south)
+NAME=large gargish bed
 DUPEITEM=04010
 
 [ITEMDEF 04018]
-//Gargish double bed
+//large gargish bed (south)
+NAME=large gargish bed
 DUPEITEM=04010
 
 [ITEMDEF 04019]
-//Gargish double bed
+//large gargish bed (east)
+NAME=large gargish bed
 DUPEITEM=04010
 
 [ITEMDEF 0401a]
-//Gargish double bed
+//large gargish bed (east)
+NAME=large gargish bed
 DUPEITEM=04010
 
 [ITEMDEF 0401b]
-//Gargish double bed
+//large gargish bed (east)
+NAME=large gargish bed
 DUPEITEM=04010
 
 [ITEMDEF 0401c]
-//Gargish double bed
+//large gargish bed (east)
+NAME=large gargish bed
 DUPEITEM=04010
 
 [ITEMDEF 0401d]
-//Gargish double bed
+//large gargish bed (east)
+NAME=large gargish bed
 DUPEITEM=04010
 
 [ITEMDEF 0401e]
-//Gargish double bed
+//large gargish bed (east)
+NAME=large gargish bed
 DUPEITEM=04010
 
 [ITEMDEF 0401f]
-//Gargish double bed
+//large gargish bed (east)
+NAME=large gargish bed
 DUPEITEM=04010
 
 [ITEMDEF 04020]
-//Gargish double bed
+//large gargish bed (east)
+NAME=large gargish bed
 DUPEITEM=04010
 
 [ITEMDEF 04021]
-//Gargish double bed
+//large gargish bed (east)
+NAME=large gargish bed
 DUPEITEM=04010
 
 
 [ITEMDEF 04023]
 DEFNAME=i_chair_ter_mur
 NAME=Ter-Mur style chair
-TYPE=t_chair
 FLIP=1
 VALUE=79
 WEIGHT=48.5
@@ -3789,7 +3773,8 @@ DESCRIPTION=Ter-Mur Style Chair
 DUPELIST=04024
 
 [ITEMDEF 04024]
-//Ter-Mur Style Chair
+//Ter-Mur style Chair
+NAME=Ter-Mur style chair
 DUPEITEM=04023
 
 [ITEMDEF 04025]
@@ -3809,112 +3794,115 @@ DUPELIST=04026
 
 [ITEMDEF 04026]
 //gargish chest
+NAME=gargish chest
 DUPEITEM=04025
 
 [ITEMDEF 04027]
 DEFNAME=i_gargish_couch
-NAME=Gargish couch
-TYPE=t_chair
+NAME=gargish couch
 FLIP=1
 WEIGHT=50
-RESOURCES=20 i_rock_plain
-SKILLMAKE=Carpentry 85.6,t_masonry_tool
+RESOURCES=75 i_board
+SKILLMAKE=Carpentry 90.0,t_masonry_tool
 CATEGORY=Decoration - Furniture
 SUBSECTION=Chairs
 DESCRIPTION=Gargish Couch
 DUPELIST=04028,04029,0402a
 
 [ITEMDEF 04028]
-//Gargish Couch
+//gargish couch (south)
+NAME=gargish couch
 DUPEITEM=04027
 
 [ITEMDEF 04029]
-//Gargish Couch
+//gargish couch (east)
+NAME=gargish couch
 DUPEITEM=04027
 
 [ITEMDEF 0402a]
-//Gargish Couch
+//gargish couch (east)
+NAME=gargish couch
 DUPEITEM=04027
 
 [ITEMDEF 0402b]
-DEFNAME=i_gargish_dresser
-NAME=Gargish dresser
+DEFNAME=i_dresser_termur
+NAME=Ter-Mur style dresser
 TYPE=t_container
+TDATA2=010d
 FLIP=1
-WEIGHT=50
-RESOURCES=20 i_rock_plain
-SKILLMAKE=Carpentry 85.6,t_masonry_tool
+RESOURCES=60 i_board
+SKILLMAKE=Carpentry 90.0,t_carpentry
 CATEGORY=Decoration - Furniture
 SUBSECTION=Bedroom Furniture
-DESCRIPTION=Gargish Dresser
+DESCRIPTION=Ter-Mur style dresser
 DUPELIST=0402c,0402d,0402e
 
 [ITEMDEF 0402c]
-//Gargish dresser
+//Ter-Mur style dresser
+NAME=Ter-Mur style dresser
 DUPEITEM=0402b
 
 [ITEMDEF 0402d]
-//Gargish dresser
+//Ter-Mur style dresser
+NAME=Ter-Mur style dresser
 DUPEITEM=0402b
 
 [ITEMDEF 0402e]
-//Gargish dresser
+//Ter-Mur style dresser
+NAME=Ter-Mur style dresser
 DUPEITEM=0402b
 
 [ITEMDEF 0402f]
-DEFNAME=i_table_gargish_long
+DEFNAME=i_table_long
 NAME=long table
-WEIGHT=30.0
-RESOURCES=30 i_rock_plain
-SKILLMAKE=Carpentry 81.0,t_masonry_tool
+RESOURCES=80 i_board
+SKILLMAKE=Carpentry 90.0,t_carpentry
 CATEGORY=Decoration - Furniture
 SUBSECTION=Tables
-DESCRIPTION=Gargish Long Table
+DESCRIPTION=Long Table
 DUPELIST=04030,04031,04032
 
 [ITEMDEF 04030]
-//Gargish Long Table
+//long table
 DUPEITEM=0402f
 
 [ITEMDEF 04031]
-//Gargish Long Table
+//long table
 DUPEITEM=0402f
 
 [ITEMDEF 04032]
-//Gargish Long Table
+//long table
 DUPEITEM=0402f
 
 [ITEMDEF 04033]
-DEFNAME=i_table_gargish_short
-NAME=Gargish short table
-WEIGHT=30.0
-RESOURCES=30 i_rock_plain
-SKILLMAKE=Carpentry 81.0,t_masonry_tool
+DEFNAME=i_table_short
+NAME=short table
+RESOURCES=60 i_board
+SKILLMAKE=Carpentry 80.0,t_carpentry
 CATEGORY=Decoration - Furniture
 SUBSECTION=Tables
-DESCRIPTION=Gargish Short Table
+DESCRIPTION=Short Table
 DUPELIST=04034,04035,04036
 
 [ITEMDEF 04034]
-//Gargish Short Table
+//short table
 DUPEITEM=04033
 
 [ITEMDEF 04035]
-//Gargish Short Table
+//short table
 DUPEITEM=04033
 
 [ITEMDEF 04036]
-//Gargish Short Table
+//short table
 DUPEITEM=04033
 
 
 [ITEMDEF 0403a]
-DEFNAME=i_gargish_mirror
-NAME=Ter-Mur Style Floor Mirror
+DEFNAME=i_mirror_floor_termur
+NAME=Ter-Mur style floor mirror
 FLIP=1
-WEIGHT=20.2
 RESOURCES=20 i_sand
-SKILLMAKE=Alchemy 72.0,Carpentry 60.0,t_masonry_tool
+SKILLMAKE=Carpentry 50.0,t_masonry_tool
 CATEGORY=Decoration - Furniture
 SUBSECTION=Bedroom Furniture
 DESCRIPTION=Ter-Mur Style Floor Mirror
@@ -3922,9 +3910,8 @@ DUPELIST=04046
 
 
 [ITEMDEF 04041]
-DEFNAME=i_table_ter_mur
+DEFNAME=i_table_termur
 NAME=Ter-Mur style table
-WEIGHT=25
 RESOURCES=50 i_board
 SKILLMAKE=Carpentry 75.0,t_carpentry
 CATEGORY=Decoration - Furniture
@@ -3932,179 +3919,85 @@ SUBSECTION=Tables
 DESCRIPTION=Ter-Mur Style Table
 
 
-[ITEMDEF 04bdb]
-DEFNAME=i_chair_throne_blackthorn
-NAME=Throne of Blackthorn
-TYPE=t_chair
+[ITEMDEF 04044]
+DEFNAME=i_mirror_wall_termur
+NAME=Ter-Mur style wall mirror
 FLIP=1
-VALUE=420
-WEIGHT=68.5
-RESOURCES=60 i_board,4 i_cloth,4 i_cotton,1 i_nails,4 i_ingot_gold
-SKILLMAKE=Carpentry 52.6,t_carpentry
+RESOURCES=10 i_sand
+SKILLMAKE=Carpentry 60.0,t_masonry_tool
 CATEGORY=Decoration - Furniture
-SUBSECTION=Chairs
-DESCRIPTION=Throne of Blackthorn
-DUPELIST=04bdc,04bdd,04c1a,04c1b,04c1c,04c1d,04c1e,04c1f
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Ter-Mur Style Wall Mirror
+DUPELIST=04045
+
+[ITEMDEF 04045]
+//Ter-Mur style wall mirror
+NAME=Ter-Mur style wall mirror
+DUPEITEM=04044
+
+[ITEMDEF 04046]
+//Ter-Mur style floor mirror
+NAME=Ter-Mur style floor mirror
+DUPEITEM=0403a
+
+
+[ITEMDEF 04bdb]
+//Lord Blackthorn's Throne (south)(bottles)
+NAME=Lord Blackthorn's Throne
 
 [ITEMDEF 04bdc]
-//Throne of Blackthorn
-DUPEITEM=04bdb
+//Lord Blackthorn's Throne (south)(bottles)
+NAME=Lord Blackthorn's Throne
 
 [ITEMDEF 04bdd]
-//Throne of Blackthorn
-DUPEITEM=04bdb
-
-[ITEMDEF i_multi_throne_blackthorn_south]
-NAME=Blackthorn's Throne
-TYPE=t_multi
-CATEGORY=Multis
-SUBSECTION=Furniture
-DESCRIPTION=Blackthorn's Throne S (loaded)
-MULTIREGION=0,0,0,0
-COMPONENT=04bdb,-1,0,0
-COMPONENT=04bdc,0,0,0
-COMPONENT=04bdd,1,0,0
-
-
-[ITEMDEF 04bf6]
-DEFNAME=i_table_britannia_east
-NAME=Britannia Maptable
-FLIP=1
-VALUE=29
-WEIGHT=17.4
-RESOURCES=17 i_board,4 i_nails
-SKILLMAKE=Carpentry 42.1,t_carpentry
-CATEGORY=Decoration - Furniture
-SUBSECTION=Tables
-DESCRIPTION=Britannia Maptable (east)
-DUPELIST=04bf7,04bf8,04bf9,04bfa,04bfb
-
-[ITEMDEF 04bf7]
-//Britannia Maptable (east)
-DUPEITEM=04bf6
-
-[ITEMDEF 04bf8]
-//Britannia Maptable (east)
-DUPEITEM=04bf6
-
-[ITEMDEF 04bf9]
-//Britannia Maptable (east)
-DUPEITEM=04bf6
-
-[ITEMDEF 04bfa]
-//Britannia Maptable (east)
-DUPEITEM=04bf6
-
-[ITEMDEF 04bfb]
-//Britannia Maptable (east)
-DUPEITEM=04bf6
-
-[ITEMDEF i_multi_maptable_east]
-NAME=Britannia Maptable
-TYPE=t_multi
-CATEGORY=Multis
-SUBSECTION=Furniture
-DESCRIPTION=Britannia Maptable (east)
-MULTIREGION=0,0,0,0
-COMPONENT=04bf6,1,1,0
-COMPONENT=04bf7,1,0,0
-COMPONENT=04bf8,1,-1,0
-COMPONENT=04bf9,0,-1,0
-COMPONENT=04bfa,0,0,0
-COMPONENT=04bfb,0,1,0
-
-[ITEMDEF 04bfc]
-DEFNAME=i_table_britannia_south
-NAME=Britannia Maptable
-FLIP=1
-VALUE=29
-WEIGHT=17.4
-RESOURCES=17 i_board,4 i_nails
-SKILLMAKE=Carpentry 42.1,t_carpentry
-CATEGORY=Decoration - Furniture
-SUBSECTION=Tables
-DESCRIPTION=Britannia Maptable (south)
-DUPELIST=04bfd,04bfe,04bff,04c00,04c01
-
-[ITEMDEF 04bfd]
-//Britannia Maptable (south)
-DUPEITEM=04bfc
-
-[ITEMDEF 04bfe]
-//Britannia Maptable (south)
-DUPEITEM=04bfc
-
-[ITEMDEF 04bff]
-//Britannia Maptable (south)
-DUPEITEM=04bfc
-
-[ITEMDEF 04c00]
-//Britannia Maptable (south)
-DUPEITEM=04bfc
-
-[ITEMDEF 04c01]
-//Britannia Maptable (south)
-DUPEITEM=04bfc
-
-[ITEMDEF i_multi_maptable_south]
-NAME=Britannia Maptable
-TYPE=t_multi
-CATEGORY=Multis
-SUBSECTION=Furniture
-DESCRIPTION=Britannia Maptable (south)
-MULTIREGION=0,0,0,0
-COMPONENT=04bfd,-1,1,0
-COMPONENT=04bfc,0,1,0
-COMPONENT=04bfe,1,1,0
-COMPONENT=04bff,-1,0,0
-COMPONENT=04c00,0,0,0
-COMPONENT=04c01,1,0,0
+//Lord Blackthorn's Throne (south)(bottles)
+NAME=Lord Blackthorn's Throne
 
 
 [ITEMDEF 04c1a]
-//Throne of Blackthorn
-DUPEITEM=04bdb
+//Lord Blackthorn's Throne (south)
+NAME=Lord Blackthorn's Throne
 
 [ITEMDEF 04c1b]
-//Throne of Blackthorn
-DUPEITEM=04bdb
+//Lord Blackthorn's Throne (south)
+NAME=Lord Blackthorn's Throne
 
 [ITEMDEF 04c1c]
-//Throne of Blackthorn
-DUPEITEM=04bdb
+//Lord Blackthorn's Throne (south)
+NAME=Lord Blackthorn's Throne
 
-[ITEMDEF i_multi_throne_blackthorn_south_empty]
-NAME=Blackthorn's Throne
+[ITEMDEF i_throne_lord_blackthorn_south]
+ID=04c1b
+NAME=Lord Blackthorn's Throne
 TYPE=t_multi
 CATEGORY=Multis
 SUBSECTION=Furniture
-DESCRIPTION=Blackthorn's Throne S (empty)
+DESCRIPTION=Lord Blackthorn's Throne (south)
 MULTIREGION=0,0,0,0
-COMPONENT=04c1a,-1,0,0//fixme
-COMPONENT=04c1b,0,0,0
-COMPONENT=04c1c,1,0,0
+COMPONENT=04c1a,-1,0
+COMPONENT=04c1c,1,0
 
 [ITEMDEF 04c1d]
-//Throne of Blackthorn
-DUPEITEM=04bdb
+//Lord Blackthorn's Throne (east)
+NAME=Lord Blackthorn's Throne
 
 [ITEMDEF 04c1e]
-//Throne of Blackthorn
-DUPEITEM=04bdb
+//Lord Blackthorn's Throne (east)
+NAME=Lord Blackthorn's Throne
 
 [ITEMDEF 04c1f]
-//Throne of Blackthorn
-DUPEITEM=04bdb
+//Lord Blackthorn's Throne (east)
+NAME=Lord Blackthorn's Throne
 
-[ITEMDEF i_multi_throne_blackthorn_west_empty]
-NAME=Blackthorn's Throne
+[ITEMDEF i_throne_lord_blackthorn_east]
+ID=04c1e
+NAME=Lord Blackthorn's Throne
 TYPE=t_multi
 CATEGORY=Multis
 SUBSECTION=Furniture
-DESCRIPTION=Blackthorn's Throne W (empty)
+DESCRIPTION=Lord Blackthorn's Throne (east)
 MULTIREGION=0,0,0,0
-COMPONENT=04c1d,0,-1,0//fixme
-COMPONENT=04c1e,0,0,0
-COMPONENT=04c1f,0,1,0
+COMPONENT=04c1d,0,-1
+COMPONENT=04c1f,0,1
 
 [EOF]

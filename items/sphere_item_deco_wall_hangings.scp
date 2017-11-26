@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, Nov 5, 2017
+// FILE LAST UPDATED: Sunday, Nov 26, 2017
 //
 VERSION=0.56d
 
@@ -2485,17 +2485,19 @@ DUPEITEM=03158
 
 
 [ITEMDEF 03bb6]
-DEFNAME=i_tapestry_map
-NAME=Britannia Tapestry
-WEIGHT=5.0
-RESOURCES=1 i_log,5 i_cloth
+DEFNAME=i_tapestry_known_world
+NAME=map of the known world
+TYPE=t_sign_gump
+TDATA2=012b
+FLIP=1
+WEIGHT=1.0
 CATEGORY=Decoration - Wall Hangings
 SUBSECTION=Tapestries
-DESCRIPTION=Britannia Tapestry
+DESCRIPTION=Map of the Known World
 DUPELIST=03bb7
 
 [ITEMDEF 03bb7]
-//Britannia Tapestry
+//map of the known world
 DUPEITEM=03bb6
 
 
@@ -2520,57 +2522,39 @@ DUPEITEM=03ed8
 
 [ITEMDEF 04037]
 DEFNAME=i_gargish_banner_hanging
-TYPE=t_normal
+NAME=gargish banner
 FLIP=1
-DYE=1
-WEIGHT=4.2
-RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+RESOURCES=50 i_board,50 i_cloth
+SKILLMAKE=Carpentry 94.7,Tailoring 75.0,t_carpentry
 CATEGORY=Decoration - Wall Hangings
 SUBSECTION=Banners
-DESCRIPTION=Gargish Hanging Banner
+DESCRIPTION=Gargish Banner
 DUPELIST=04038
 
 [ITEMDEF 04038]
-//Gargish Hanging Banner
+//gargish banner
 DUPEITEM=04037
 
 
 [ITEMDEF 0403d]
 DEFNAME=i_painting_gargoyle
-NAME=gargoyle painting
+NAME=gargish painting
 FLIP=1
+RESOURCES=3 i_rock_granite
+SKILLMAKE=Carpentry 34.0,t_masonry_tool
 CATEGORY=Decoration - Wall Hangings
 SUBSECTION=Paintings
-DESCRIPTION=Gargoyle Painting
+DESCRIPTION=Gargish Painting
 DUPELIST=0403e
 
 [ITEMDEF 0403e]
-//gargoyle painting
+//gargish painting
 DUPEITEM=0403d
-
-
-[ITEMDEF 04044]
-DEFNAME=i_gargish_mirror_wall
-NAME=Ter-Mur Style Wall Mirror
-FLIP=1
-RESOURCES=10 i_sand
-SKILLMAKE=Alchemy 72.0,Carpentry 60.0,t_masonry_tool
-CATEGORY=Decoration - Furniture
-SUBSECTION=Bedroom Furniture
-DESCRIPTION=Ter-Mur Style Wall Mirror
-DUPELIST=04045
-
-[ITEMDEF 04045]
-//Ter-Mur Style Wall Mirror
-DUPEITEM=04044
-
-[ITEMDEF 04046]
-//Ter-Mur Style Floor Mirror
-DUPEITEM=0403a
 
 
 [ITEMDEF 042b6]
 DEFNAME=i_portrait_gargish
+NAME=gargish portrait
 CATEGORY=Decoration - Wall Hangings
 SUBSECTION=Paintings
 DESCRIPTION=Gargish Portrait
@@ -3237,6 +3221,22 @@ DUPELIST=09da7
 [ITEMDEF 09da7]
 //trophy myrmidexhead
 DUPEITEM=09da6
+
+[ITEMDEF 09da8]
+//decorative black widow trophy (multi-part)
+NAME=decorative black widow trophy
+
+[ITEMDEF 09da9]
+//decorative black widow trophy (multi-part)
+NAME=decorative black widow trophy
+
+[ITEMDEF 09daa]
+//decorative black widow trophy (multi-part)
+NAME=decorative black widow trophy
+
+[ITEMDEF 09dab]
+//decorative black widow trophy (multi-part)
+NAME=decorative black widow trophy
 
 
 [ITEMDEF 09f2b]
