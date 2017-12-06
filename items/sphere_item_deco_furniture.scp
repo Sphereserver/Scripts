@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, Nov 26, 2017
+// FILE LAST UPDATED: Tuesday, Dec 5, 2017
 //
 VERSION=0.56d
 
@@ -3383,32 +3383,6 @@ DUPEITEM=03052
 //large elven bed (made)
 DUPEITEM=03052
 
-
-[ITEMDEF 03060]
-DEFNAME=i_aquarium
-NAME=aquarium
-TYPE=t_container
-TDATA2=02c96
-TDATA3=010001
-TDATA4=015c00c6
-FLIP=1
-CATEGORY=Decoration - Furniture
-SUBSECTION=Aquarium
-DESCRIPTION=Aquarium
-TEVENTS=t_aquarium
-DUPELIST=03061,03062,03063
-
-[ITEMDEF 03061]
-//aquarium
-DUPEITEM=03060
-
-[ITEMDEF 03062]
-//aquarium
-DUPEITEM=03060
-
-[ITEMDEF 03063]
-//aquarium
-DUPEITEM=03060
 
 [ITEMDEF 03066]
 DEFNAME=i_displaycase_monster

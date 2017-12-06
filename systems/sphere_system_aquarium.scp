@@ -1,0 +1,418 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2017
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Tuesday, Dec 5, 2017
+//
+VERSION=0.56d
+
+
+[COMMENT]
+This aquarium system still incomplete yet.
+Only items and basic features (add/remove items on aquarium) are done.
+Others features such as aquarium state, events and rewards will be added later.
+
+
+///////////
+// Items //
+///////////
+
+[ITEMDEF 03060]
+//aquarium (multi-part)(south)
+NAME=aquarium
+TYPE=t_container
+TEVENTS=t_aquarium
+
+[ITEMDEF 03061]
+//aquarium (multi-part)(south)
+NAME=aquarium
+
+[ITEMDEF 03062]
+//aquarium (multi-part)(east)
+NAME=aquarium
+TYPE=t_container
+TEVENTS=t_aquarium
+
+[ITEMDEF 03063]
+//aquarium (multi-part)(east)
+NAME=aquarium
+
+
+[ITEMDEF 03af9]
+DEFNAME=i_aquarium_coral
+NAME=coral
+TAG.AquariumDecoration=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Coral
+
+[ITEMDEF 03afa]
+DEFNAME=i_aquarium_coral_2
+NAME=coral
+TAG.AquariumDecoration=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Coral (2)
+
+[ITEMDEF 03afb]
+DEFNAME=i_aquarium_coral_3
+NAME=coral
+TAG.AquariumDecoration=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Coral (3)
+
+[ITEMDEF 03afc]
+DEFNAME=i_aquarium_speckled_crab
+NAME=speckled crab
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Speckled Crab
+
+[ITEMDEF 03afd]
+DEFNAME=i_aquarium_makoto_courtesan_fish
+NAME=makoto courtesan fish
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Makoto Courtesan Fish
+
+[ITEMDEF 03afe]
+DEFNAME=i_aquarium_minoc_blue_fish
+NAME=Minoc blue fish
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Minoc Blue Fish
+
+[ITEMDEF 03aff]
+DEFNAME=i_aquarium_britain_crown_fish
+NAME=Britain crown fish
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Britain Crown Fish
+
+[ITEMDEF 03b00]
+DEFNAME=i_aquarium_red_dart_fish
+NAME=red dart fish
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Red Dart Fish
+
+[ITEMDEF 03b01]
+DEFNAME=i_aquarium_small_mouth_sucker_fin
+NAME=small mouth sucker fin
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Small Mouth Sucker Fin
+
+[ITEMDEF 03b02]
+DEFNAME=i_aquarium_fandancer_fish
+NAME=fandancer fish
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Fandancer Fish
+
+[ITEMDEF 03b03]
+DEFNAME=i_aquarium_golden_broadtail
+NAME=golden broadtail
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Golden Broadtail
+
+[ITEMDEF 03b04]
+DEFNAME=i_aquarium_albino_courtesan_fish
+NAME=albino courtesan fish
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Albino Courtesan Fish
+
+[ITEMDEF 03b05]
+DEFNAME=i_aquarium_spined_scratcher_fish
+NAME=spined scratcher fish
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Spined Scratcher Fish
+
+[ITEMDEF 03b06]
+DEFNAME=i_aquarium_nujelm_honey_fish
+NAME=Nujel'm honey fish
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Nujel'm Honey Fish
+
+[ITEMDEF 03b07]
+DEFNAME=i_aquarium_yellow_fin_bluebelly
+NAME=yellow fin bluebelly
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Yellow Fin Bluebelly
+
+[ITEMDEF 03b08]
+DEFNAME=i_aquarium_vesper_reef_tiger
+NAME=Vesper reef tiger
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Vesper Reef Tiger
+
+[ITEMDEF 03b09]
+DEFNAME=i_aquarium_spotted_buccaneer
+NAME=spotted buccaneer
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Spotted Buccaneer
+
+[ITEMDEF 03b0a]
+DEFNAME=i_aquarium_stripped_flake_fish
+NAME=stripped flake fish
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Stripped Flake Fish
+
+[ITEMDEF 03b0b]
+//fish (unused)
+
+[ITEMDEF 03b0c]
+DEFNAME=i_aquarium_fish_bones
+NAME=fish bones
+TAG.AquariumDecoration=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Fish Bones
+
+[ITEMDEF 03b0d]
+DEFNAME=i_aquarium_killer_frog
+NAME=killer frog
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Killer Frog
+
+[ITEMDEF 03b0e]
+DEFNAME=i_aquarium_jellyfish
+NAME=jellyfish
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Jellyfish
+
+[ITEMDEF 03b0f]
+DEFNAME=i_aquarium_island_statue
+NAME=island statue
+TAG.AquariumDecoration=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Island Statue
+
+[ITEMDEF 03b10]
+DEFNAME=i_aquarium_seahorse
+NAME=sea horse
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Sea Horse
+
+[ITEMDEF 03b11]
+DEFNAME=i_aquarium_brine_shrimp
+NAME=brine shrimp
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Brine Shrimp
+
+[ITEMDEF 03b12]
+DEFNAME=i_aquarium_shell
+NAME=shell
+TAG.AquariumDecoration=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Shell
+
+[ITEMDEF 03b13]
+DEFNAME=i_aquarium_shell_2
+NAME=shell
+TAG.AquariumDecoration=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Shell (2)
+
+[ITEMDEF 03b14]
+DEFNAME=i_aquarium_shrimp
+NAME=shrimp
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Shrimp
+
+[ITEMDEF 03b15]
+DEFNAME=i_aquarium_full_moon_fish
+NAME=full moon fish
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Full Moon Fish
+
+
+[ITEMDEF 04c2a]
+DEFNAME=i_aquarium_coral_4
+NAME=coral
+TAG.AquariumDecoration=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Coral (4)
+
+[ITEMDEF 04c2b]
+DEFNAME=i_aquarium_coral_5
+NAME=coral
+TAG.AquariumDecoration=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Coral (5)
+
+[ITEMDEF 04c2c]
+DEFNAME=i_aquarium_coral_6
+NAME=coral
+TAG.AquariumDecoration=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Coral (6)
+
+[ITEMDEF 04c2d]
+DEFNAME=i_aquarium_coral_7
+NAME=coral
+TAG.AquariumDecoration=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Coral (7)
+
+
+////////////
+// Multis //
+////////////
+
+[ITEMDEF m_aquarium_south]
+ID=03061
+NAME=Aquarium
+TYPE=t_multi
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Aquarium (south)
+MULTIREGION=0,0,0,0
+COMPONENT=03060,1,0
+
+[ITEMDEF m_aquarium_east]
+ID=03063
+NAME=Aquarium
+TYPE=t_multi
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Aquarium (east)
+MULTIREGION=0,0,0,0
+COMPONENT=03062,0,1
+
+
+////////////
+// Events //
+////////////
+
+[TYPEDEF t_aquarium]
+ON=@DClick
+   SDIALOG d_aquarium
+   SOUND 05a4
+   return 1
+
+ON=@ClientTooltip
+   SRC.ADDCLILOC 1074247,<dTAG0.LiveCreatures>,30	//Live Creatures: ~1_NUM~ / ~2_MAX~
+   IF (<TAG0.Decorations>)
+      SRC.ADDCLILOC 1074249,<dTAG0.Decorations>		//Decorations: ~1_NUM~
+   ENDIF
+
+ON=@DropOn_Self
+   IF (<ARGO.TAG0.AquariumCreature>)
+      IF (<TAG0.LiveCreatures> >= 30)
+         SRC.SYSMESSAGE The aquarium can not hold the creature.
+         return 1
+      ENDIF
+      SRC.SYSMESSAGE You add the following creature to your aquarium: <ARGO.NAME>
+      TAG0.LiveCreatures ++
+   ELSE
+      IF !(<ARGO.TAG0.AquariumDecoration>)
+         SRC.SYSMESSAGE The aquarium can not hold that item.
+         return 1
+      ELIF (<RESCOUNT> >= 125)
+         SRC.SYSMESSAGE The decoration will not fit in the aquarium.
+         return 1
+      ENDIF
+      SRC.SYSMESSAGE You add the following decoration to your aquarium: <ARGO.NAME>
+      TAG0.Decorations ++
+   ENDIF
+   TIMERF 1,RESENDTOOLTIP
+
+
+/////////////
+// Dialogs //
+/////////////
+
+[DIALOG d_aquarium]
+100,100
+
+page 0
+resizepic 0 0 0e10 350 323
+gumppic 0 0 02c96
+
+IF (<RESCOUNT>)
+   FOR 1 <RESCOUNT>
+      page <LOCAL._FOR>
+      REF1=<FINDCONT.<eval <LOCAL._FOR>-1>>
+
+      tilepichue 150 80 <REF1.DISPIDDEC> <dREF1.COLOR>
+      dhtmlgump 20 195 250 20 0 0 <DEF.BFONT_WHITE><dLOCAL._FOR>/<RESCOUNT>
+      dhtmlgump 20 217 250 20 0 0 <DEF.BFONT_WHITE><REF1.NAME>
+      dhtmlgump 20 239 315 20 0 0 <DEF.BFONT_WHITE><QVAL (<REF1.TAG0.AquariumCreature>)? A live aquarium creature : An aquarium decoration>
+
+      resizepic 230 195 013be 100 26
+      button 235 200 0845 0846 1 0 <LOCAL._FOR>
+      dhtmlgump 260 198 60 26 0 0 Remove
+
+      IF (<FINDCONT.<eval <LOCAL._FOR>-2>>)
+         button 45 280 0fae 0faf 0 <eval <LOCAL._FOR>-1> 0
+         dhtmlgump 80 283 100 18 0 0 <DEF.BFONT_WHITE>PREV PAGE
+      ENDIF
+      IF (<FINDCONT.<LOCAL._FOR>>)
+         button 195 280 0fa5 0fa7 0 <eval <LOCAL._FOR>+1> 0
+         dhtmlgump 230 283 100 18 0 0 <DEF.BFONT_WHITE>NEXT PAGE
+      ENDIF
+   ENDFOR
+ENDIF
+
+[DIALOG d_aquarium BUTTON]
+ON=1 125
+REF1=<FINDCONT.<eval <ARGN>-1>>
+IF (<REF1.TAG0.AquariumCreature>)
+   TAG0.LiveCreatures --
+ELIF (<REF1.TAG0.AquariumDecoration>)
+   TAG0.Decorations --
+ENDIF
+REF1.BOUNCE
+SDIALOG d_aquarium <eval <ARGN>-1>
+RESENDTOOLTIP
+
+[EOF]

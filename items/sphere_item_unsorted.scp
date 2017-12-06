@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, Nov 5, 2017
+// FILE LAST UPDATED: Tuesday, Dec 5, 2017
 //
 VERSION=0.56d
 
@@ -4071,57 +4071,6 @@ SUBSECTION=Weirdness
 DESCRIPTION=Strange Yellow Dot
 
 
-[ITEMDEF 03af9]
-DEFNAME=i_coral
-NAME=coral
-TYPE=t_aquarium_item
-VALUE=10
-WEIGHT=1.0
-CATEGORY=Provisions - Miscellaneous
-SUBSECTION=Aquarium
-DESCRIPTION=Coral
-
-[ITEMDEF 03afa]
-DEFNAME=i_coral_2
-NAME=coral
-TYPE=t_aquarium_item
-VALUE=10
-WEIGHT=1.0
-CATEGORY=Provisions - Miscellaneous
-SUBSECTION=Aquarium
-DESCRIPTION=Coral (2)
-
-[ITEMDEF 03afb]
-DEFNAME=i_coral_3
-NAME=coral
-TYPE=t_aquarium_item
-VALUE=10
-WEIGHT=1.0
-CATEGORY=Provisions - Miscellaneous
-SUBSECTION=Aquarium
-DESCRIPTION=Coral (3)
-
-[ITEMDEF 03b12]
-DEFNAME=i_shell_2
-NAME=shell
-TYPE=t_aquarium_item
-VALUE=10
-WEIGHT=1.0
-CATEGORY=Provisions - Miscellaneous
-SUBSECTION=Aquarium
-DESCRIPTION=Shell (2)
-
-[ITEMDEF 03b13]
-DEFNAME=i_shell_3
-NAME=shell
-TYPE=t_aquarium_item
-VALUE=10
-WEIGHT=1.0
-CATEGORY=Provisions - Miscellaneous
-SUBSECTION=Aquarium
-DESCRIPTION=Shell (3)
-
-
 [ITEMDEF 03d86]
 DEFNAME=i_decorative_armor
 NAME=decorative armor
@@ -4874,8 +4823,7 @@ DUPEITEM=04b82
 //Exodus Object 4
 DUPEITEM=04b83
 
-[ITEMDEF 04bab]//Basket of Rolls
-[ITEMDEF 04bac]
+
 [ITEMDEF 04bb4]//Game Dice (1)
 [ITEMDEF 04bb5]//Game Dice (2)
 [ITEMDEF 04bb6]//Game Dice (3)
@@ -4899,6 +4847,7 @@ DUPEITEM=04b83
 [ITEMDEF 04bc8]//Poker Chips (3)
 [ITEMDEF 04bc9]//Poker Chips (4)
 [ITEMDEF 04bca]//Poker Chips (5)
+
 
 [ITEMDEF 04c09]
 DEFNAME=i_gold_dust
@@ -4924,87 +4873,6 @@ DESCRIPTION=Gold Dust
 [ITEMDEF 04c13]
 [ITEMDEF 04c14]
 [ITEMDEF 04c15]
-
-
-[ITEMDEF 04c2a]
-DEFNAME=i_coral_4
-NAME=sea coral
-TYPE=t_aquarium_item
-VALUE=10
-WEIGHT=1.0
-CATEGORY=Provisions - Miscellaneous
-SUBSECTION=Aquarium
-DESCRIPTION=Coral (4)
-
-[ITEMDEF 04c2b]
-DEFNAME=i_coral_5
-NAME=sea coral
-TYPE=t_aquarium_item
-VALUE=10
-WEIGHT=1.0
-CATEGORY=Provisions - Miscellaneous
-SUBSECTION=Aquarium
-DESCRIPTION=Coral (5)
-
-[ITEMDEF 04c2c]
-DEFNAME=i_coral_6
-NAME=sea coral
-TYPE=t_aquarium_item
-VALUE=10
-WEIGHT=1.0
-CATEGORY=Provisions - Miscellaneous
-SUBSECTION=Aquarium
-DESCRIPTION=Coral (6)
-
-[ITEMDEF 04c2d]
-DEFNAME=i_coral_7
-NAME=sea coral
-TYPE=t_aquarium_item
-VALUE=10
-WEIGHT=1.0
-CATEGORY=Provisions - Miscellaneous
-SUBSECTION=Aquarium
-DESCRIPTION=Coral (7)
-
-[ITEMDEF 04c2e]
-DEFNAME=i_sea_sponge_2
-NAME=sea coral
-TYPE=t_aquarium_item
-VALUE=10
-WEIGHT=1.0
-CATEGORY=Provisions - Miscellaneous
-SUBSECTION=Aquarium
-DESCRIPTION=Sea Sponge (2)
-
-[ITEMDEF 04c2f]
-DEFNAME=i_sea_sponge_3
-NAME=sea coral
-TYPE=t_aquarium_item
-VALUE=10
-WEIGHT=1.0
-CATEGORY=Provisions - Miscellaneous
-SUBSECTION=Aquarium
-DESCRIPTION=Sea Sponge (3)
-
-[ITEMDEF 04c30]
-DEFNAME=i_sea_sponge_4
-NAME=sea coral
-TYPE=t_aquarium_item
-VALUE=10
-WEIGHT=1.0
-CATEGORY=Provisions - Miscellaneous
-SUBSECTION=Aquarium
-DESCRIPTION=Sea Sponge (4)
-
-[ITEMDEF 04c31]
-DEFNAME=i_sea_sponge_5
-NAME=sea coral
-TYPE=t_aquarium_item
-VALUE=10
-WEIGHT=1.0
-CATEGORY=Provisions - Miscellaneous
-SUBSECTION=Aquarium
-DESCRIPTION=Sea Sponge (5)
 
 [ITEMDEF 04c5e]
 [ITEMDEF 04c5f]
