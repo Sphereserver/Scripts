@@ -7,13 +7,12 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Oct 28, 2017
+// FILE LAST UPDATED: Sunday, Dec 10, 2017
 //
 VERSION=0.56d
 
 
 [COMMENT sphere_item_deco_lightsources]
-
 This file still needs a lot of fixes so that lighting and extinguishing work
 without also causing the item to flip... that having been said, drop flipping
 should still be able to work.  Can this be accomplished without eliminating
@@ -198,58 +197,48 @@ DUPEITEM=0a12
 //torch lit
 DUPEITEM=0a12
 
-[ITEMDEF 0a15]
-DEFNAME=i_lantern_lit
-TYPE=t_light_lit
-TDATA3=i_lantern
-FLIP=1
-VALUE=2
-CATEGORY=Decoration - Lightsources
-SUBSECTION=Lanterns
-DESCRIPTION=Lantern (Lit)
-DUPELIST=0a16,0a17,0a1a,0a1b,0a1c,0a22,0a23,0a24
-ON=@Create
-   MOREZ=2
+//[ITEMDEF 0a15]
+//lantern (unused, wrong equip id)
 
-[ITEMDEF 0a16]
-//lantern lit
-DUPEITEM=0a15
+//[ITEMDEF 0a16]
+//lantern (unused, wrong equip id)
 
-[ITEMDEF 0a17]
-//lantern lit
-DUPEITEM=0a15
+//[ITEMDEF 0a17]
+//lantern (unused, wrong equip id)
 
-[ITEMDEF 0a18]
-DEFNAME=i_lantern
-TYPE=t_light_out
-TDATA3=i_lantern_lit
-FLIP=1
-VALUE=2
-RESOURCES=4 i_ingot_iron
-SKILLMAKE=Tinkering 30.0,t_tinker_tools
-CATEGORY=Decoration - Lightsources
-SUBSECTION=Lanterns
-DESCRIPTION=Lantern (Unlit)
-DUPELIST=0a1d,0a25
-ON=@Create
-   MOREZ=2
+//[ITEMDEF 0a18]
+//lantern (unused, wrong equip id)
 
 
 [ITEMDEF 0a1a]
-DEFNAME=i_lantern2_lit
-DUPEITEM=0a15
+DEFNAME=i_lantern_hanging_lit
+TYPE=t_light_lit
+TDATA3=i_lantern_hanging
+CATEGORY=Decoration - Lightsources
+SUBSECTION=Lanterns
+DESCRIPTION=Hanging Lantern (Lit)
+DUPEITEM=0a1d
+ON=@Create
+   MOREZ=1
 
 [ITEMDEF 0a1b]
-//lantern lit
-DUPEITEM=0a15
+//hanging lantern
+DUPEITEM=0a1d
 
 [ITEMDEF 0a1c]
-//lantern lit
-DUPEITEM=0a15
+//hanging lantern
+DUPEITEM=0a1d
 
 [ITEMDEF 0a1d]
-DEFNAME=i_lantern2
-DUPEITEM=0a18
+DEFNAME=i_lantern_hanging
+TYPE=t_light_out
+TDATA3=i_lantern_hanging_lit
+CATEGORY=Decoration - Lightsources
+SUBSECTION=Lanterns
+DESCRIPTION=Hanging Lantern (Unlit)
+DUPELIST=0a1b,0a1c
+ON=@Create
+   MOREZ=1
 
 
 [ITEMDEF 0a1f]
@@ -265,20 +254,32 @@ DUPEITEM=0a1f
 
 
 [ITEMDEF 0a22]
-DEFNAME=i_lantern3_lit
-DUPEITEM=0a15
+DEFNAME=i_lantern_lit
+TYPE=t_light_lit
+TDATA3=i_lantern
+CATEGORY=Decoration - Lightsources
+SUBSECTION=Lanterns
+DESCRIPTION=Lantern (Unlit)
+DUPEITEM=0a25
 
 [ITEMDEF 0a23]
-//lantern lit
-DUPEITEM=0a15
+//lantern
+DUPEITEM=0a25
 
 [ITEMDEF 0a24]
-//lantern lit
-DUPEITEM=0a15
+//lantern
+DUPEITEM=0a25
 
 [ITEMDEF 0a25]
-DEFNAME=i_lantern3
-DUPEITEM=0a18
+DEFNAME=i_lantern
+TYPE=t_light_out
+TDATA3=i_lantern_lit
+RESOURCES=4 i_ingot_iron
+SKILLMAKE=Tinkering 30.0,t_tinker_tools
+CATEGORY=Decoration - Lightsources
+SUBSECTION=Lanterns
+DESCRIPTION=Lantern (Unlit)
+DUPELIST=0a22,0a23,0a24
 
 [ITEMDEF 0a26]
 DEFNAME=i_candle2
@@ -308,7 +309,6 @@ ON=@Create
 [ITEMDEF 0a28]
 DEFNAME=i_candle
 TYPE=t_light_out
-LAYER=layer_hand2
 TDATA3=i_candle_lit
 VALUE=6
 RESOURCES=1 i_beeswax,1 i_string

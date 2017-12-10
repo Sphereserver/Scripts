@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Dec 5, 2017
+// FILE LAST UPDATED: Sunday, Dec 10, 2017
 //
 VERSION=0.56d
 
@@ -5464,26 +5464,6 @@ DESCRIPTION=Reflective Wolf Eye
 //Sick Female Gargoyle
 [ITEMDEF 063bb]
 //Sick Female Gargoyle
-
-[ITEMDEF 09706]
-DEFNAME=i_chest_combination
-NAME=combination chest
-TYPE=t_container
-TDATA2=058e
-FLIP=1
-VALUE=93
-WEIGHT=22.0
-//RESOURCES=20 i_ingot_iron,2 i_board,1 i_nails
-//SKILLMAKE=Tinkering 75.0,t_tinker_tools
-CATEGORY=Provisions - Miscellaneous
-SUBSECTION=Containers
-DESCRIPTION=Combination Chest
-DUPELIST=09707
-
-[ITEMDEF 09707]
-//Combination Chest
-DUPEITEM=09706
-
 
 [ITEMDEF 09966]
 //amalgamator

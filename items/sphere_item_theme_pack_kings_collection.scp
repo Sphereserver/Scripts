@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Aug 26, 2017
+// FILE LAST UPDATED: Sunday, Dec 10, 2017
 //
 VERSION=0.56d
 
@@ -79,6 +79,42 @@ DUPELIST=04c29
 //fire painting
 DUPEITEM=04c28
 
+
+[ITEMDEF 04c2e]
+DEFNAME=i_sponge_cactus
+NAME=cactus sponge
+CATEGORY=King's Collection
+SUBSECTION=Decoration
+DESCRIPTION=Cactus Sponge
+ON=@Create
+   COLOR=07ae
+
+[ITEMDEF 04c2f]
+DEFNAME=i_sponge_shelf
+NAME=shelf sponge
+CATEGORY=King's Collection
+SUBSECTION=Decoration
+DESCRIPTION=Shelf Sponge
+ON=@Create
+   COLOR=07ae
+
+[ITEMDEF 04c30]
+DEFNAME=i_sponge_barrel
+NAME=barrel sponge
+CATEGORY=King's Collection
+SUBSECTION=Decoration
+DESCRIPTION=Barrel Sponge
+ON=@Create
+   COLOR=07ae
+
+[ITEMDEF 04c31]
+DEFNAME=i_sponge_fluffy
+NAME=fluffy sponge
+CATEGORY=King's Collection
+SUBSECTION=Decoration
+DESCRIPTION=Fluffy Sponge
+ON=@Create
+   COLOR=07ae
 
 [ITEMDEF 04c32]
 //15th anniversary lithograph (multi-part)(east)
