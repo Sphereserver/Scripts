@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, May 22, 2017
+// FILE LAST UPDATED: Tuesday, Dec 12, 2017
 //
 VERSION=0.56d
 
@@ -109,7 +109,7 @@ COMPONENT=i_sign_brass_2,2,4,5
 
 [MULTIDEF 06d]
 //Wood and plaster house
-DUPEITEM=0406c
+DUPEITEM=06c
 
 [MULTIDEF 06e]
 DEFNAME=m_thatched_roof_cottage
@@ -129,43 +129,7 @@ COMPONENT=i_sign_brass_2,2,4,5
 
 [MULTIDEF 06f]
 //Thatched-roof cottage
-DUPEITEM=0406e
-
-[MULTIDEF 070]
-DEFNAME=m_blue_tent
-NAME=Blue Tent
-TYPE=t_multi
-VALUE=22800
-REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
-TSPEECH=spk_house_cmds
-DUPELIST=071
-CATEGORY=Multis
-SUBSECTION=Tents
-DESCRIPTION=Blue Tent
-MULTIREGION=-3,-3,4,4
-COMPONENT=0e43,0,-2	//wooden chest
-
-[MULTIDEF 071]
-//Blue tent
-DUPEITEM=04070
-
-[MULTIDEF 072]
-DEFNAME=m_green_tent
-NAME=Green Tent
-TYPE=t_multi
-VALUE=22800
-REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
-TSPEECH=spk_house_cmds
-DUPELIST=073
-CATEGORY=Multis
-SUBSECTION=Tents
-DESCRIPTION=Green Tent
-MULTIREGION=-3,-3,4,4
-COMPONENT=0e43,0,-2	//wooden chest
-
-[MULTIDEF 073]
-//Green tent
-DUPEITEM=04072
+DUPEITEM=06e
 
 [MULTIDEF 074]
 DEFNAME=m_brick_house
@@ -188,7 +152,7 @@ COMPONENT=i_sign_brass_2,3,7,5
 
 [MULTIDEF 075]
 //Brick house
-DUPEITEM=04074
+DUPEITEM=074
 
 [MULTIDEF 076]
 DEFNAME=m_two_story_wood_and_plaster_house
@@ -211,7 +175,7 @@ COMPONENT=i_sign_brass_2,1,7,5
 
 [MULTIDEF 077]
 //Two-story wood and plaster house
-DUPEITEM=04076
+DUPEITEM=076
 
 [MULTIDEF 078]
 DEFNAME=m_two_story_stone_and_plaster_house
@@ -234,7 +198,7 @@ COMPONENT=i_sign_brass_2,1,7,5
 
 [MULTIDEF 079]
 //Two-story stone and plaster house
-DUPEITEM=04078
+DUPEITEM=078
 
 [MULTIDEF 07a]
 DEFNAME=m_tower
@@ -251,14 +215,14 @@ DESCRIPTION=Tower
 MULTIREGION=-11,-7,12,8
 COMPONENT=067d,1,4,46	//metal door
 COMPONENT=067d,1,4,26	//metal door
-COMPONENT=i_door_metal,3,-2,7
-COMPONENT=0677,1,6,7	//metal door
-COMPONENT=i_door_metal,0,6,7
+COMPONENT=i_door_metal,3,-2,6
+COMPONENT=0677,1,6,6	//metal door
+COMPONENT=i_door_metal,0,6,6
 COMPONENT=i_sign_brass_2,4,7,5
 
 [MULTIDEF 07b]
 //Tower
-DUPEITEM=0407a
+DUPEITEM=07a
 
 [MULTIDEF 07c]
 DEFNAME=m_small_stone_keep
@@ -273,13 +237,13 @@ CATEGORY=Multis
 SUBSECTION=Houses
 DESCRIPTION=Small Stone Keep
 MULTIREGION=-11,-11,12,12
-COMPONENT=0677,1,10,7	//metal door
-COMPONENT=i_door_metal,0,10,7
+COMPONENT=0677,1,10,6	//metal door
+COMPONENT=i_door_metal,0,10,6
 COMPONENT=i_sign_brass_2,4,11,5
 
 [MULTIDEF 07d]
 //Small stone keep
-DUPEITEM=0407c
+DUPEITEM=07c
 
 [MULTIDEF 07e]
 DEFNAME=m_castle
@@ -294,10 +258,10 @@ CATEGORY=Multis
 SUBSECTION=Houses
 DESCRIPTION=Castle
 MULTIREGION=-15,-15,15,16
-COMPONENT=0677,1,5,7	//metal door
-COMPONENT=i_door_metal,0,5,7
-COMPONENT=0677,1,15,7	//metal door
-COMPONENT=i_door_metal,0,15,7
+COMPONENT=0677,1,5,6	//metal door
+COMPONENT=i_door_metal,0,5,6
+COMPONENT=0677,1,15,6	//metal door
+COMPONENT=i_door_metal,0,15,6
 COMPONENT=i_sign_brass_2,4,16,5
 COMPONENT=0677,1,11,6	//metal door
 COMPONENT=i_door_metal,0,11,6
@@ -306,29 +270,13 @@ COMPONENT=i_door_metal,-1,-11,6
 
 [MULTIDEF 07f]
 //Castle
-DUPEITEM=0407e
+DUPEITEM=07e
 
 [MULTIDEF 087]
-DEFNAME=m_large_house_with_patio_2
-NAME=Large house with patio
-NAMELOC=1011315	//Large house with patio
-TYPE=t_multi
-VALUE=129250
-REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
-TSPEECH=spk_house_cmds
-CATEGORY=Multis
-SUBSECTION=Houses
-DESCRIPTION=Large House with Patio
-MULTIREGION=-7,-7,7,7
-COMPONENT=i_door_wood,4,-1,7
-COMPONENT=06ad,1,4,7	//wooden door
-COMPONENT=06ad,1,-4,7	//wooden door
-COMPONENT=06a7,-3,6,7	//wooden door
-COMPONENT=i_door_wood,-4,6,7
-COMPONENT=i_sign_brass_2,0,7,5
+//Large house with patio
+DUPEITEM=08c
 
 [MULTIDEF 08c]
-// minor support diff from 4087
 DEFNAME=m_large_house_with_patio
 NAME=Large house with patio
 NAMELOC=1011315	//Large house with patio
@@ -336,7 +284,7 @@ TYPE=t_multi
 VALUE=129250
 REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
 TSPEECH=spk_house_cmds
-DUPELIST=08d
+DUPELIST=087,08d
 CATEGORY=Multis
 SUBSECTION=Houses
 DESCRIPTION=Large House with Patio
@@ -350,10 +298,8 @@ COMPONENT=i_sign_brass_2,0,7,5
 
 [MULTIDEF 08d]
 //Large house with patio
-DUPEITEM=0408c
+DUPEITEM=08c
 
-// Marble House with Patio
-// aka Villa.
 [MULTIDEF 096]
 DEFNAME=m_marble_house_with_patio
 NAME=Marble house with patio
@@ -371,7 +317,6 @@ COMPONENT=0677,-3,3,4	//metal door
 COMPONENT=i_sign_brass_2,0,7,0
 
 [MULTIDEF 098]
-// Small Stone Tower
 DEFNAME=m_small_stone_tower
 NAME=Small stone tower
 NAMELOC=1011317	//Small stone tower
@@ -386,8 +331,6 @@ MULTIREGION=-3,-3,4,4
 COMPONENT=i_door_metal,3,3,6
 COMPONENT=i_sign_brass_2,1,4,5
 
-// Two-Story Log Cabin
-// aka Log Cabin
 [MULTIDEF 09a]
 DEFNAME=m_two_story_log_cabin
 NAME=Two-story log cabin
@@ -435,11 +378,11 @@ COMPONENT=i_door_wood,-3,-1,25
 COMPONENT=06b3,1,0,25	//wooden door
 COMPONENT=i_door_wood,3,1,5
 COMPONENT=06a7,4,1,5	//wooden door
-COMPONENT=i_sign_brass_2,1,6,2
+COMPONENT=i_sign_brass_2,1,6,3
 
 [MULTIDEF 0a0]
 DEFNAME=m_small_stone_workshop
-NAME=Small Stone Workshop
+NAME=Small stone workshop
 NAMELOC=1011321	//Small stone workshop
 TYPE=t_multi
 VALUE=50500
@@ -447,14 +390,14 @@ REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
 TSPEECH=spk_house_cmds
 CATEGORY=Multis
 SUBSECTION=Houses
-DESCRIPTION=Small Stone Shop
+DESCRIPTION=Small Stone Workshop
 MULTIREGION=-3,-3,3,4
 COMPONENT=067b,-2,0,27	//metal door
 COMPONENT=i_sign_brass_2,3,4,7
 
 [MULTIDEF 0a2]
 DEFNAME=m_small_marble_workshop
-NAME=Small Marble Workshop
+NAME=Small marble workshop
 NAMELOC=1011322	//Small marble workshop
 TYPE=t_multi
 VALUE=52500
@@ -462,24 +405,9 @@ REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
 TSPEECH=spk_house_cmds
 CATEGORY=Multis
 SUBSECTION=Houses
-DESCRIPTION=Small Marble Shop
+DESCRIPTION=Small Marble Workshop
 MULTIREGION=-3,-3,3,4
 COMPONENT=067b,-2,0,24	//metal door
 COMPONENT=i_sign_brass_2,3,4,5
-
-[MULTIDEF 0bb8]
-DEFNAME=m_wheat_cottage
-NAME=Wheat Cottage
-TYPE=t_multi
-VALUE=76500
-REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
-TSPEECH=spk_house_cmds
-CATEGORY=Multis
-SUBSECTION=Houses
-DESCRIPTION=Wheat Cottage
-MULTIREGION=-4,-5,4,5
-COMPONENT=06ad,4,0,0	//wooden door
-COMPONENT=i_signpost_metal_a,5,-4,1
-COMPONENT=i_sign_brass_2,5,-4,0
 
 [EOF]

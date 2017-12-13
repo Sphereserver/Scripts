@@ -7,9 +7,39 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Oct 17, 2017
+// FILE LAST UPDATED: Tuesday, Dec 12, 2017
 //
 VERSION=0.56d
+
+[MULTIDEF 070]
+DEFNAME=m_blue_tent
+NAME=Blue Tent
+TYPE=t_multi
+DUPELIST=071
+CATEGORY=Multis
+SUBSECTION=Tents
+DESCRIPTION=Blue Tent
+MULTIREGION=-3,-3,4,4
+COMPONENT=0e43,0,-2	//wooden chest
+
+[MULTIDEF 071]
+//blue tent
+DUPEITEM=070
+
+[MULTIDEF 072]
+DEFNAME=m_green_tent
+NAME=Green Tent
+TYPE=t_multi
+DUPELIST=073
+CATEGORY=Multis
+SUBSECTION=Tents
+DESCRIPTION=Green Tent
+MULTIREGION=-3,-3,4,4
+COMPONENT=0e43,0,-2	//wooden chest
+
+[MULTIDEF 073]
+//green tent
+DUPEITEM=072
 
 [MULTIDEF 0c8]
 DEFNAME=m_booth_carpeted
@@ -156,6 +186,16 @@ CATEGORY=Multis
 SUBSECTION=Other
 DESCRIPTION=Lattice
 MULTIREGION=-4,-5,4,5
+
+[MULTIDEF 0bb8]
+DEFNAME=m_wheat_cottage
+NAME=Wheat Cottage
+TYPE=t_multi
+CATEGORY=Multis
+SUBSECTION=Misc
+DESCRIPTION=Wheat Cottage
+MULTIREGION=-4,-5,4,5
+COMPONENT=06ad,4,0	//wooden door
 
 [MULTIDEF 0fa0]
 DEFNAME=m_exodus_generator

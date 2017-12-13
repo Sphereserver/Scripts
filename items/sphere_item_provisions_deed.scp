@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Wednesday, Aug 16, 2017
+// FILE LAST UPDATED: Tuesday, Dec 12, 2017
 //
 VERSION=0.56d
 
@@ -85,6 +85,7 @@ ON=@DClick
 [ITEMDEF i_deed_stone_and_plaster_house]
 ID=i_deed
 NAME=Deed to a Small Stone and Plaster House
+VALUE=37000
 CATEGORY=Provisions - Deeds
 SUBSECTION=House Deeds
 DESCRIPTION=Small Stone and Plaster House
@@ -94,6 +95,7 @@ ON=@Create
 [ITEMDEF i_deed_field_stone_house]
 ID=i_deed
 NAME=Deed to a Small Stone House
+VALUE=37000
 CATEGORY=Provisions - Deeds
 SUBSECTION=House Deeds
 DESCRIPTION=Small Stone House
@@ -103,6 +105,7 @@ ON=@Create
 [ITEMDEF i_deed_small_brick_house]
 ID=i_deed
 NAME=Deed to a Small Brick House
+VALUE=36750
 CATEGORY=Provisions - Deeds
 SUBSECTION=House Deeds
 DESCRIPTION=Small Brick House
@@ -111,34 +114,38 @@ ON=@Create
 
 [ITEMDEF i_deed_wooden_house]
 ID=i_deed
-NAME=Deed to a Small Wood House
+NAME=Deed to a Wooden House
+VALUE=35250
 CATEGORY=Provisions - Deeds
 SUBSECTION=House Deeds
-DESCRIPTION=Small Wood House
+DESCRIPTION=Wooden House
 ON=@Create
    MORE=m_wooden_house
 
 [ITEMDEF i_deed_wood_and_plaster_house]
 ID=i_deed
-NAME=Deed to a Small Wood and Plaster House
+NAME=Deed to a Wood and Plaster House
+VALUE=36750
 CATEGORY=Provisions - Deeds
 SUBSECTION=House Deeds
-DESCRIPTION=Small Wood and Plaster House
+DESCRIPTION=Wood and Plaster House
 ON=@Create
    MORE=m_wood_and_plaster_house
 
 [ITEMDEF i_deed_thatched_roof_cottage]
 ID=i_deed
-NAME=Deed to a Small Wood House Thatched Roof
+NAME=Deed to a Thatched-Roof Cottage
+VALUE=36750
 CATEGORY=Provisions - Deeds
 SUBSECTION=House Deeds
-DESCRIPTION=Small Wood House Thatched Roof
+DESCRIPTION=Thatched-Roof Cottage
 ON=@Create
    MORE=m_thatched_roof_cottage
 
 [ITEMDEF i_deed_blue_tent]
 ID=i_deed
 NAME=Deed to a Blue Tent
+VALUE=22800
 CATEGORY=Provisions - Deeds
 SUBSECTION=House Deeds
 DESCRIPTION=Blue Tent
@@ -148,6 +155,7 @@ ON=@Create
 [ITEMDEF i_deed_green_tent]
 ID=i_deed
 NAME=Deed to a Green Tent
+VALUE=22800
 CATEGORY=Provisions - Deeds
 SUBSECTION=House Deeds
 DESCRIPTION=Green Tent
@@ -156,34 +164,38 @@ ON=@Create
 
 [ITEMDEF i_deed_brick_house]
 ID=i_deed
-NAME=Deed to a Three Room House
+NAME=Deed to a Brick House
+VALUE=131500
 CATEGORY=Provisions - Deeds
 SUBSECTION=House Deeds
-DESCRIPTION=Three Room House
+DESCRIPTION=Brick House
 ON=@Create
    MORE=m_brick_house
 
 [ITEMDEF i_deed_two_story_wood_and_plaster_house]
 ID=i_deed
-NAME=Deed to a Two Story Wood and Plaster House
+NAME=Deed to a Two-Story Wood and Plaster House
+VALUE=162750
 CATEGORY=Provisions - Deeds
 SUBSECTION=House Deeds
-DESCRIPTION=Two Story Wood and Plaster House
+DESCRIPTION=Two-Story Wood and Plaster House
 ON=@Create
    MORE=m_two_story_wood_and_plaster_house
 
 [ITEMDEF i_deed_two_story_stone_and_plaster_house]
 ID=i_deed
-NAME=Deed to a Two Story Stone and Plaster House
+NAME=Deed to a Two-Story Stone and Plaster House
+VALUE=162000
 CATEGORY=Provisions - Deeds
 SUBSECTION=House Deeds
-DESCRIPTION=Two Story Stone and Plaster House
+DESCRIPTION=Two-Story Stone and Plaster House
 ON=@Create
    MORE=m_two_story_stone_and_plaster_house
 
 [ITEMDEF i_deed_tower]
 ID=i_deed
 NAME=Deed to a Tower
+VALUE=366500
 CATEGORY=Provisions - Deeds
 SUBSECTION=House Deeds
 DESCRIPTION=Tower
@@ -192,16 +204,18 @@ ON=@Create
 
 [ITEMDEF i_deed_small_stone_keep]
 ID=i_deed
-NAME=Deed to a Keep
+NAME=Deed to a Small Stone Keep
+VALUE=572750
 CATEGORY=Provisions - Deeds
 SUBSECTION=House Deeds
-DESCRIPTION=Keep
+DESCRIPTION=Small Stone Keep
 ON=@Create
    MORE=m_small_stone_keep
 
 [ITEMDEF i_deed_castle]
 ID=i_deed
 NAME=Deed to a Castle
+VALUE=865250
 CATEGORY=Provisions - Deeds
 SUBSECTION=House Deeds
 DESCRIPTION=Castle
@@ -210,106 +224,98 @@ ON=@Create
 
 [ITEMDEF i_deed_large_house_with_patio]
 ID=i_deed
-NAME=Deed to a Large Blacksmithy Shop
+NAME=Deed to a Large House with Patio
+VALUE=129250
 CATEGORY=Provisions - Deeds
 SUBSECTION=House Deeds
-DESCRIPTION=Large Blacksmithy Shop
+DESCRIPTION=Large House with Patio
 ON=@Create
    MORE=m_large_house_with_patio
 
 [ITEMDEF i_deed_marble_house_with_patio]
 ID=i_deed
-NAME=Deed to a Large Marble Patio House
+NAME=Deed to a Marble House with Patio
+VALUE=160500
 CATEGORY=Provisions - Deeds
 SUBSECTION=House Deeds
-DESCRIPTION=Large Marble Patio House
+DESCRIPTION=Marble House with Patio
 ON=@Create
    MORE=m_marble_house_with_patio
 
 [ITEMDEF i_deed_small_stone_tower]
 ID=i_deed
-NAME=Deed to a Wizards Tower
+NAME=Deed to a Small Stone Tower
+VALUE=73500
 CATEGORY=Provisions - Deeds
 SUBSECTION=House Deeds
-DESCRIPTION=Wizards Tower
+DESCRIPTION=Small Stone Tower
 ON=@Create
    MORE=m_small_stone_tower
 
 [ITEMDEF i_deed_two_story_log_cabin]
 ID=i_deed
-NAME=Deed to a Two Story Log Cabin
+NAME=Deed to a Two-Story Log Cabin
+VALUE=81750
 CATEGORY=Provisions - Deeds
 SUBSECTION=House Deeds
-DESCRIPTION=Two Story Log Cabin
+DESCRIPTION=Two-Story Log Cabin
 ON=@Create
    MORE=m_two_story_log_cabin
 
 [ITEMDEF i_deed_sandstone_house_with_patio]
 ID=i_deed
-NAME=Deed to a Sandstone Patio House
+NAME=Deed to a Sandstone House with Patio
+VALUE=76500
 CATEGORY=Provisions - Deeds
 SUBSECTION=House Deeds
-DESCRIPTION=Sandstone Patio House
+DESCRIPTION=Sandstone House with Patio
 ON=@Create
    MORE=m_sandstone_house_with_patio
 
 [ITEMDEF i_deed_two_story_villa]
 ID=i_deed
-NAME=Deed to a Two Story Villa
+NAME=Deed to a Two-Story Villa
+VALUE=113750
 CATEGORY=Provisions - Deeds
 SUBSECTION=House Deeds
-DESCRIPTION=Two Story Villa
+DESCRIPTION=Two-Story Villa
 ON=@Create
    MORE1=m_two_story_villa
 
 [ITEMDEF i_deed_small_stone_workshop]
 ID=i_deed
-NAME=Deed to a Small Stone Shop
+NAME=Deed to a Small Stone Workshop
+VALUE=50500
 CATEGORY=Provisions - Deeds
 SUBSECTION=House Deeds
-DESCRIPTION=Small Stone Shop
+DESCRIPTION=Small Stone Workshop
 ON=@Create
    MORE=m_small_stone_workshop
 
 [ITEMDEF i_deed_small_marble_workshop]
 ID=i_deed
-NAME=Deed to a Small Marble Shop
+NAME=Deed to a Small Marble Workshop
+VALUE=52500
 CATEGORY=Provisions - Deeds
 SUBSECTION=House Deeds
-DESCRIPTION=Small Marble Shop
+DESCRIPTION=Small Marble Workshop
 ON=@Create
    MORE=m_small_marble_workshop
 
 [ITEMDEF i_deed_guildstone]
 ID=i_deed
 NAME=Deed to a Guildstone
+VALUE=25000
 CATEGORY=Provisions - Deeds
 SUBSECTION=Guild and Town Stones
 DESCRIPTION=Guildstone
 ON=@Create
    MORE=i_guildstone
 
-[ITEMDEF i_deed_wheat_cottage]
-ID=i_deed
-NAME=Deed to a Wheat Cottage
-CATEGORY=Provisions - Deeds
-SUBSECTION=House Deeds
-DESCRIPTION=Wheat Cottage
-ON=@Create
-   MORE=m_wheat_cottage
-
-[ITEMDEF i_deed_evil_compound]
-ID=i_deed
-NAME=Deed to a Evil Compound
-CATEGORY=Provisions - Deeds
-SUBSECTION=House Deeds
-DESCRIPTION=Evil Compound
-ON=@Create
-   MORE=i_multi_evil_compound
-
 [ITEMDEF i_deed_small_ship_n]
 ID=i_deed_ship
 NAME=Deed to a Small Ship
+VALUE=12500
 CATEGORY=Provisions - Deeds
 SUBSECTION=Ship Plans
 DESCRIPTION=Small Ship
@@ -319,6 +325,7 @@ ON=@Create
 [ITEMDEF i_deed_small_dragon_ship_n]
 ID=i_deed_ship
 NAME=Deed to a Small Dragon Ship
+VALUE=12500
 CATEGORY=Provisions - Deeds
 SUBSECTION=Ship Plans
 DESCRIPTION=Small Dragon Ship
@@ -328,6 +335,7 @@ ON=@Create
 [ITEMDEF i_deed_medium_ship_n]
 ID=i_deed_ship
 NAME=Deed to a Medium Ship
+VALUE=14200
 CATEGORY=Provisions - Deeds
 SUBSECTION=Ship Plans
 DESCRIPTION=Medium Ship
@@ -337,6 +345,7 @@ ON=@Create
 [ITEMDEF i_deed_medium_dragon_ship_n]
 ID=i_deed_ship
 NAME=Deed to a Medium Dragon Ship
+VALUE=14200
 CATEGORY=Provisions - Deeds
 SUBSECTION=Ship Plans
 DESCRIPTION=Medium Dragon Ship
@@ -346,6 +355,7 @@ ON=@Create
 [ITEMDEF i_deed_large_ship_n]
 ID=i_deed_ship
 NAME=Deed to a Long Ship
+VALUE=15900
 CATEGORY=Provisions - Deeds
 SUBSECTION=Ship Plans
 DESCRIPTION=Long Ship
@@ -355,6 +365,7 @@ ON=@Create
 [ITEMDEF i_deed_large_dragon_ship_n]
 ID=i_deed_ship
 NAME=Deed to a Long Dragon Ship
+VALUE=15900
 CATEGORY=Provisions - Deeds
 SUBSECTION=Ship Plans
 DESCRIPTION=Long Dragon Ship
@@ -364,6 +375,7 @@ ON=@Create
 [ITEMDEF i_deed_orc_ship_n]
 ID=i_deed_ship
 NAME=Deed to a Orc Ship
+VALUE=100000
 CATEGORY=Provisions - Deeds
 SUBSECTION=Ship Plans
 DESCRIPTION=Orc Ship
@@ -373,6 +385,7 @@ ON=@Create
 [ITEMDEF i_deed_rowboat_n]
 ID=i_deed_ship
 NAME=Deed to a Rowboat
+VALUE=6200
 CATEGORY=Provisions - Deeds
 SUBSECTION=Ship Plans
 DESCRIPTION=Rowboat
@@ -382,6 +395,7 @@ ON=@Create
 [ITEMDEF i_deed_gargoyle_ship_n]
 ID=i_deed_ship
 NAME=Deed to a Gargoyle Ship
+VALUE=200000
 CATEGORY=Provisions - Deeds
 SUBSECTION=Ship Plans
 DESCRIPTION=Gargoyle Ship
@@ -391,6 +405,7 @@ ON=@Create
 [ITEMDEF i_deed_tokuno_ship_n]
 ID=i_deed_ship
 NAME=Deed to a Tokuno Ship
+VALUE=150000
 CATEGORY=Provisions - Deeds
 SUBSECTION=Ship Plans
 DESCRIPTION=Tokuno Ship
@@ -400,6 +415,7 @@ ON=@Create
 [ITEMDEF i_deed_britannian_ship_n]
 ID=i_deed_ship
 NAME=Deed to a Britannian Ship
+VALUE=250000
 CATEGORY=Provisions - Deeds
 SUBSECTION=Ship Plans
 DESCRIPTION=Britannian Ship
