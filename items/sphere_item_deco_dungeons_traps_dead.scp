@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Friday, Aug 18, 2017
+// FILE LAST UPDATED: Wednesday, Dec 20, 2017
 //
 VERSION=0.56d
 
@@ -139,9 +139,6 @@ DUPEITEM=0edb
 DEFNAME=i_guildstone
 TYPE=t_stone_guild
 FLIP=1
-VALUE=15000
-//WEIGHT=400.0
-RESOURCES=40 i_rock_plain
 CATEGORY=Decoration - Dungeons and The Dead
 SUBSECTION=Graves & Gravestones
 DESCRIPTION=Gravestone (Guildstone)
@@ -4115,6 +4112,16 @@ DUPEITEM=01da3
 DUPEITEM=01da4
 
 
+[ITEMDEF 0207c]
+//This statue is duplicated from 01226/0139b, but used on Twisted Weald
+//as container to drop dungeon keys and receive the Essence of the Wind
+DEFNAME=i_statue_faie
+NAME=statue of the faie
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Twisted Weald
+DESCRIPTION=Statue of the Faie
+
+
 [ITEMDEF 021fc]
 DEFNAME=i_skull_spikes
 NAME=skull spikes
@@ -4225,5 +4232,217 @@ RESOURCES=1 i_rock_plain,1 i_springs
 CATEGORY=Traps
 SUBSECTION=Goblin Trap
 DESCRIPTION=Goblin Trap
+
+
+[ITEMDEF 09cee]
+DEFNAME=i_automaton_actuator_right
+NAME=automaton actuator
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Kotl City
+DESCRIPTION=Automaton Actuator (right)
+
+[ITEMDEF 09ccf]
+//automaton actuator (right)
+NAME=automaton actuator
+
+[ITEMDEF 09cd0]
+//automaton actuator (right)
+NAME=automaton actuator
+
+[ITEMDEF 09cd1]
+//automaton actuator (right)
+NAME=automaton actuator
+
+[ITEMDEF 09cd2]
+DEFNAME=i_kotl_power_core
+NAME=kotl power core
+WEIGHT=10.0
+RESOURCES=100 i_ingot_iron,1 i_candelabra,5 i_workable_glass,5 i_wire_copper,5 i_moonstone_crystal_shards
+SKILLMAKE=Tinkering 85.0,t_tinker_tools
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Kotl City
+DESCRIPTION=Kotl Power Core
+
+[ITEMDEF 09cd3]
+//kotl power core (animation frame)
+NAME=kotl power core
+
+[ITEMDEF 09cd4]
+//kotl power core (animation frame)
+NAME=kotl power core
+
+[ITEMDEF 09cd5]
+//kotl power core (animation frame)
+NAME=kotl power core
+
+[ITEMDEF 09cd6]
+//kotl power core (animation frame)
+NAME=kotl power core
+
+[ITEMDEF 09cd7]
+//kotl power core (animation frame)
+NAME=kotl power core
+
+[ITEMDEF 09cd8]
+//kotl power core (animation frame)
+NAME=kotl power core
+
+[ITEMDEF 09cd9]
+//kotl power core (animation frame)
+NAME=kotl power core
+
+[ITEMDEF 09cda]
+DEFNAME=i_kotl_power_core_broken
+NAME=kotl power core
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Kotl City
+DESCRIPTION=Kotl Power Core (broken)
+
+[ITEMDEF 09cdb]
+DEFNAME=i_stasis_chamber_power_core
+NAME=stasis chamber power core
+VALUE=100000
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Kotl City
+DESCRIPTION=Stasis Chamber Power Core
+
+[ITEMDEF09cdc]
+DEFNAME=i_stasis_chamber_stator
+NAME=stasis chamber stator
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Kotl City
+DESCRIPTION=Stasis Chamber Stator
+
+[ITEMDEF 09cdd]
+DEFNAME=i_stasis_chamber_regulator
+NAME=stasis chamber regulator
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Kotl City
+DESCRIPTION=Stasis Chamber Regulator
+
+[ITEMDEF 09cde]
+DEFNAME=i_stasis_chamber_activator
+NAME=stasis chamber activator
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Kotl City
+DESCRIPTION=Stasis Chamber Activator
+
+[ITEMDEF 09cdf]
+DEFNAME=i_stasis_chamber_broken
+NAME=stasis chamber
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Kotl City
+DESCRIPTION=Stasis Chamber (broken)
+
+[ITEMDEF 09ce0]
+DEFNAME=i_stasis_chamber_tube_broken
+NAME=stasis chamber
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Kotl City
+DESCRIPTION=Stasis Chamber (tube)(broken)
+
+[ITEMDEF 09ce1]
+DEFNAME=i_stasis_chamber
+NAME=stasis chamber
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Kotl City
+DESCRIPTION=Stasis Chamber
+
+[ITEMDEF 09ce2]
+//stasis chamber (animation frame)
+NAME=stasis chamber
+
+[ITEMDEF 09ce3]
+//stasis chamber (animation frame)
+NAME=stasis chamber
+
+[ITEMDEF 09ce4]
+//stasis chamber (animation frame)
+NAME=stasis chamber
+
+[ITEMDEF 09ce5]
+DEFNAME=i_stasis_chamber_tube
+NAME=stasis chamber
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Kotl City
+DESCRIPTION=Stasis Chamber (tube)
+
+[ITEMDEF 09ce6]
+//stasis chamber tube (animation frame)
+NAME=stasis chamber
+
+[ITEMDEF 09ce7]
+//stasis chamber tube (animation frame)
+NAME=stasis chamber
+
+[ITEMDEF 09ce8]
+//stasis chamber tube (animation frame)
+NAME=stasis chamber
+
+[ITEMDEF 09ce9]
+DEFNAME=i_automaton_actuator_left
+NAME=automaton actuator
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Kotl City
+DESCRIPTION=Automaton Actuator (left)
+
+[ITEMDEF 09cea]
+//automaton actuator (left)
+NAME=automaton actuator
+
+[ITEMDEF 09ceb]
+//automaton actuator (left)
+NAME=automaton actuator
+
+[ITEMDEF 09cec]
+//automaton actuator (left)
+NAME=automaton actuator
+
+[ITEMDEF 09ced]
+DEFNAME=i_automaton_actuator_right_disabled
+NAME=automaton actuator
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Kotl City
+DESCRIPTION=Automaton Actuator (right)(disabled)
+
+[ITEMDEF 09cee]
+DEFNAME=i_automaton_actuator_left_disabled
+NAME=automaton actuator
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Kotl City
+DESCRIPTION=Automaton Actuator (left)(disabled)
+
+
+[ITEMDEF 09d5f]
+//kotl sacrificial altar (multi-part)(south)
+NAME=kotl sacrificial altar
+
+[ITEMDEF 09d60]
+//kotl sacrificial altar (multi-part)(south)
+NAME=kotl sacrificial altar
+
+[ITEMDEF 09d61]
+//kotl sacrificial altar (multi-part)(south)
+NAME=kotl sacrificial altar
+
+[ITEMDEF 09d62]
+//kotl sacrificial altar (multi-part)(south)
+NAME=kotl sacrificial altar
+
+[ITEMDEF 09d63]
+//kotl sacrificial altar (multi-part)(east)
+NAME=kotl sacrificial altar
+
+[ITEMDEF 09d64]
+//kotl sacrificial altar (multi-part)(east)
+NAME=kotl sacrificial altar
+
+[ITEMDEF 09d65]
+//kotl sacrificial altar (multi-part)(east)
+NAME=kotl sacrificial altar
+
+[ITEMDEF 09d66]
+//kotl sacrificial altar (multi-part)(east)
+NAME=kotl sacrificial altar
 
 [EOF]
