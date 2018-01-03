@@ -4306,7 +4306,7 @@ CATEGORY=Decoration - Dungeons and The Dead
 SUBSECTION=Kotl City
 DESCRIPTION=Stasis Chamber Power Core
 
-[ITEMDEF09cdc]
+[ITEMDEF 09cdc]
 DEFNAME=i_stasis_chamber_stator
 NAME=stasis chamber stator
 CATEGORY=Decoration - Dungeons and The Dead

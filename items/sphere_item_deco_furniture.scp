@@ -3560,7 +3560,7 @@ DUPEITEM=030e3
 
 
 [ITEMDEF 03d8a]
-DEFNAME=i_bed_ruined
+DEFNAME=i_bed_ruined_dupe // looks identical to i_bed_ruined
 NAME=ruined bed
 WEIGHT=149.5
 RESOURCES=120 i_board,15 i_cloth,20 i_nails,2 i_bedroll

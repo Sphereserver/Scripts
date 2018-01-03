@@ -406,11 +406,6 @@ i_paver_stone_medium			0521
 // i_floor_crystal					i_paver_ice
 // i_floor_shadow					i_floor_stone
 // i_sa_floor_green_paver			i_floor_gargish_greenstone
-i_post_stone					07d6
-i_rail_stone_4					08f7
-i_floor_cracks					01b01
-i_wall_cracks					01b6c
-i_ladder_wood_tall				02710
 i_tile_sandstone				01383
 i_wall_wood						i_wall_darkwood
 i_wall_stone_2					i_wall_stone_window
@@ -489,7 +484,7 @@ i_armoire_japanese3				i_armoire_maple
 i_armoire_japanese4				i_armoire_cherry
 i_table_elven_ornate_2			i_table_hardwood
 i_table_elven_storage			i_chest_ornate_elven
-i_chest_ornate_elven			i_chest_rarewood
+//i_chest_ornate_elven			i_chest_rarewood  // the old defname is now used by a new item
 i_chest_ornate_elven_2			i_box_decorative
 i_chest_gargoyle				i_chest_gargish
 
@@ -500,8 +495,6 @@ i_fx_moongate_blue				i_moongate_blue_fx
 i_fx_moongate_black				i_moongate_black_fx
 i_fx_moongate_gray				i_moongate_gray_fx
 i_fx_lavafire_3					02ea4
-i_fountain_splash				090d
-i_fx_oil_flask					01c19
 i_fx_lavafire					01a75
 i_lavafire_2					01a7c
 i_fx_falling_coins				01ec6
@@ -585,7 +578,6 @@ i_portrait_horror				i_portrait_gargish
 i_tapestry_elven_1				i_tapestry_elven_sophisticated
 i_tapestry_elven_2				i_tapestry_elven_ornate
 i_tapestry_elven_3				i_tattered_wall_map
-i_chest_gothic					i_chest_sending
 i_tray_sushi					i_sushi_rolls
 i_tray_sushi2					i_sushi_platter
 i_bonsai_1						i_bonsai_common_green

@@ -2191,7 +2191,7 @@ DUPEITEM=0264b
 
 [ITEMDEF 02653]
 //not visible on paperdoll
-DEFNAME=i_platemail_waraji
+DEFNAME=i_platemail_waraji_3d
 TYPE=t_armor
 FLIP=1
 //LAYER=layer_gloves

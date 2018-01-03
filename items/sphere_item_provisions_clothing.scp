@@ -1340,7 +1340,7 @@ DUPEITEM=025f0
 
 [ITEMDEF 025f2]
 //not visible on paperdoll
-DEFNAME=i_skirt_knee
+DEFNAME=i_skirt_knee_3d
 TYPE=t_clothing
 DYE=1
 FLIP=1
@@ -1368,7 +1368,7 @@ DUPEITEM=025f2
 
 [ITEMDEF 02649]
 //not visible on paperdoll
-DEFNAME=i_pants_jester
+DEFNAME=i_pants_jester_3d
 TYPE=t_clothing
 DYE=1
 FLIP=1
@@ -1395,7 +1395,7 @@ DUPEITEM=02649
 
 [ITEMDEF 0264d]
 //appears as sword on paperdoll
-DEFNAME=i_haidate
+DEFNAME=i_haidate_3d
 TYPE=t_clothing
 DYE=1
 FLIP=1
@@ -1421,7 +1421,7 @@ DUPEITEM=0264d
 
 [ITEMDEF 0264f]
 //not visible on paperdoll
-DEFNAME=i_kobakama
+DEFNAME=i_kobakama_3d
 TYPE=t_clothing
 DYE=1
 FLIP=1
@@ -1447,7 +1447,7 @@ DUPEITEM=0264f
 
 [ITEMDEF 02651]
 //appears like cyclone on paperdoll
-DEFNAME=i_pants_ninja
+DEFNAME=i_pants_ninja_3d
 TYPE=t_clothing
 DYE=1
 FLIP=1
@@ -1474,7 +1474,7 @@ DUPEITEM=02651
 
 [ITEMDEF 02655]
 //not visible on paperdoll
-DEFNAME=i_shoes_jester
+DEFNAME=i_shoes_jester_3d
 TYPE=t_clothing
 DYE=1
 FLIP=1
@@ -1501,7 +1501,7 @@ DUPEITEM=02655
 
 [ITEMDEF 0265f]
 //appears like nothing on paperdoll
-DEFNAME=i_shirt_plain_2
+DEFNAME=i_shirt_plain_2_3d
 TYPE=t_clothing
 DYE=1
 FLIP=1
@@ -1527,7 +1527,7 @@ DUPEITEM=0265f
 
 [ITEMDEF 02661]
 //appears like nothing on paperdoll
-DEFNAME=i_shirt_plain_3
+DEFNAME=i_shirt_plain_3_3d
 TYPE=t_clothing
 DYE=1
 FLIP=1
@@ -1553,7 +1553,7 @@ DUPEITEM=02661
 
 [ITEMDEF 02663]
 //appears like nothing on paperdoll
-DEFNAME=i_shirt_plain_4
+DEFNAME=i_shirt_plain_4_3d
 TYPE=t_clothing
 DYE=1
 FLIP=1
@@ -1579,7 +1579,7 @@ DUPEITEM=02663
 
 [ITEMDEF 02665]
 //appears like nothing on paperdoll
-DEFNAME=i_shirt_plain_5
+DEFNAME=i_shirt_plain_5_3d
 TYPE=t_clothing
 DYE=1
 FLIP=1
@@ -1605,7 +1605,7 @@ DUPEITEM=02665
 
 [ITEMDEF 02667]
 //appears like a glass sword on paperdoll
-DEFNAME=i_shirt_ninja
+DEFNAME=i_shirt_ninja_3d
 TYPE=t_clothing
 DYE=1
 FLIP=1
@@ -1632,7 +1632,7 @@ DUPEITEM=02667
 
 [ITEMDEF 0266b]
 //appears like glass staff on paperdoll
-DEFNAME=i_sleeves_kote1
+DEFNAME=i_sleeves_kote1_3d
 TYPE=t_clothing
 DYE=1
 FLIP=1
@@ -1658,7 +1658,7 @@ DUPEITEM=0266b
 
 [ITEMDEF 0266d]
 //appears like nothing on paperdoll
-DEFNAME=i_sleeves_kote2
+DEFNAME=i_sleeves_kote_2_3d
 TYPE=t_clothing
 DYE=1
 FLIP=1
@@ -1685,7 +1685,7 @@ DUPEITEM=0266d
 
 [ITEMDEF 02671]
 //appears like dual pointed spear on paperdoll
-DEFNAME=i_domaru
+DEFNAME=i_domaru_3d
 TYPE=t_clothing
 DYE=1
 FLIP=1
@@ -1711,7 +1711,7 @@ DUPEITEM=02671
 
 [ITEMDEF 02673]
 //appears like nothing on paperdoll
-DEFNAME=i_haramakido
+DEFNAME=i_haramakido_3d
 TYPE=t_clothing
 DYE=1
 FLIP=1

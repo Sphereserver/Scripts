@@ -4228,7 +4228,7 @@ DUPELIST=026ee
 DUPEITEM=026ed
 
 [ITEMDEF 026ef]
-DEFNAME=i_foliage_plum
+DEFNAME=i_blossoms_plum
 TYPE=t_foliage
 VALUE=1
 CATEGORY=Vegetation
