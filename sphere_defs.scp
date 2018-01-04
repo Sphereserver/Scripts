@@ -205,7 +205,7 @@ snd_animals_chicken1      110
 snd_animals_cougar1       115
 snd_animals_cow1          120
 snd_animals_crow1         125
-snd_animals_deer3         130
+snd_animals_deer3         130 // it has only 3 sounds (hit, gethit, die): need to use sound overrides
 snd_animals_deer4         131
 snd_animals_deer5         132
 snd_animals_dog1          133
@@ -218,14 +218,14 @@ snd_animals_grizzly1      163
 snd_animals_horse1        168
 snd_animals_jungbrd1      173
 snd_animals_lion1         178
-snd_animals_llama3        183
-snd_animals_llama4        184
+snd_animals_llama3        183 // it has only 3 sounds (hit, gethit, die): need to use sound overrides
+snd_animals_llama4        184 //  plus: use snd_animals_llama1, it has all of the sounds
 snd_animals_llama5        185
 snd_animals_panther1      186
 snd_animals_parrot1       191
 snd_animals_pig1          196
 snd_animals_pig2          197
-snd_animals_rabbit3       201
+snd_animals_rabbit3       201 // it has only 3 sounds (hit, gethit, die): need to use sound overrides
 snd_animals_rabbit4       202
 snd_animals_rabbit5       203
 snd_animals_rat1          204
@@ -404,9 +404,9 @@ snd_monster_longhorn5         1020
 snd_monster_yomotsu1          1105
 snd_monster_orc2_1            1114
 snd_animals_panther2_1        1122
-snd_monster_pixie1            1127 // special handling
+snd_monster_pixie1            1127 // unordered sound IDs, need to use the SOUND overrides
 snd_monster_pixie_spe         1128
-snd_monster_pixie2_1	      1133 // special handling
+snd_monster_pixie2_1	      1133 // unordered sound IDs, need to use the SOUND overrides
 snd_monster_pixie2_spe        1134
 snd_animal_seahorse1          1144
 snd_monster_shadowlord1       1149
@@ -510,9 +510,6 @@ snd_monster_wildtiger1        1648
 
 // START of special sounds: they are internally converted to the right sound
 snd_special_human             0900
-snd_special_monster_juka      0901
-snd_special_monster_meer      0902
-snd_special_monster_exodus_minion  0903
 // END of special sounds
 
 snd_spell_lightning             41
