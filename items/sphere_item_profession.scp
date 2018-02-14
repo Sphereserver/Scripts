@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2017
+// SPHERE by : Menasoft ©1997-2018
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Oct 28, 2017
+// FILE LAST UPDATED: Tuesday, Feb 13, 2018
 //
 VERSION=0.56d
 
@@ -584,7 +584,6 @@ DESCRIPTION=Small Forge
 [ITEMDEF 0fb6]
 DEFNAME=i_horse_shoes
 NAME=horseshoes
-TYPE=t_horseshoes
 VALUE=35
 WEIGHT=8.0
 RESOURCES=8 i_ingot_iron
@@ -3255,171 +3254,5 @@ DUPELIST=04b47
 [ITEMDEF 04b47]
 //Fish Hook
 DUPEITEM=04b46
-
-
-[ITEMDEF 04f80]
-DEFNAME=i_tinker_table_electric
-NAME=tinker table
-FLIP=1
-VALUE=118
-WEIGHT=66.0
-RESOURCES=30 i_board
-SKILLMAKE=Carpentry 85.0,t_carpentry
-CATEGORY=Items by Professions
-SUBSECTION=Tinker
-DESCRIPTION=Tinker Table (electric)
-DUPELIST=04f9e
-
-[ITEMDEF 04f81]
-//Tinker Table (electric) (animation frame)
-[ITEMDEF 04f82]
-//Tinker Table (electric) (animation frame)
-[ITEMDEF 04f83]
-//Tinker Table (electric) (animation frame)
-[ITEMDEF 04f84]
-//Tinker Table (electric) (animation frame)
-[ITEMDEF 04f85]
-//Tinker Table (electric) (animation frame)
-[ITEMDEF 04f86]
-//Tinker Table (electric) (animation frame)
-[ITEMDEF 04f87]
-//Tinker Table (electric) (animation frame)
-[ITEMDEF 04f88]
-//Tinker Table (electric) (animation frame)
-[ITEMDEF 04f89]
-//Tinker Table (electric) (animation frame)
-
-[ITEMDEF 04f8a]
-DEFNAME=i_tinker_table_candle
-NAME=tinker table
-FLIP=1
-VALUE=118
-WEIGHT=66.0
-RESOURCES=30 i_board
-SKILLMAKE=Carpentry 85.0,t_carpentry
-CATEGORY=Items by Professions
-SUBSECTION=Tinker
-DESCRIPTION=Tinker Table (candle)
-DUPELIST=04fa8
-
-[ITEMDEF 04f8b]
-//Tinker Table (candle) (animation frame)
-[ITEMDEF 04f8c]
-//Tinker Table (candle) (animation frame)
-[ITEMDEF 04f8d]
-//Tinker Table (candle) (animation frame)
-[ITEMDEF 04f8e]
-//Tinker Table (candle) (animation frame)
-[ITEMDEF 04f8f]
-//Tinker Table (candle) (animation frame)
-[ITEMDEF 04f90]
-//Tinker Table (candle) (animation frame)
-[ITEMDEF 04f91]
-//Tinker Table (candle) (animation frame)
-[ITEMDEF 04f92]
-//Tinker Table (candle) (animation frame)
-[ITEMDEF 04f93]
-//Tinker Table (candle) (animation frame)
-
-[ITEMDEF 04f94]
-DEFNAME=i_tinker_table_mechanism
-NAME=tinker table
-FLIP=1
-VALUE=118
-WEIGHT=66.0
-RESOURCES=30 i_board
-SKILLMAKE=Carpentry 85.0,t_carpentry
-CATEGORY=Items by Professions
-SUBSECTION=Tinker
-DESCRIPTION=Tinker Table (mechanism)
-DUPELIST=04fb2
-
-[ITEMDEF 04f95]
-//Tinker Table (mechanism) (animation frame)
-[ITEMDEF 04f96]
-//Tinker Table (mechanism) (animation frame)
-[ITEMDEF 04f97]
-//Tinker Table (mechanism) (animation frame)
-[ITEMDEF 04f98]
-//Tinker Table (mechanism) (animation frame)
-[ITEMDEF 04f99]
-//Tinker Table (mechanism) (animation frame)
-[ITEMDEF 04f9a]
-//Tinker Table (mechanism) (animation frame)
-[ITEMDEF 04f9b]
-//Tinker Table (mechanism) (animation frame)
-[ITEMDEF 04f9c]
-//Tinker Table (mechanism) (animation frame)
-[ITEMDEF 04f9d]
-//Tinker Table (mechanism) (animation frame)
-
-[ITEMDEF 04f9e]
-//Tinker Table (electric)
-DUPEITEM=04f80
-
-[ITEMDEF 04f9f]
-//Tinker Table (electric) (animation frame)
-[ITEMDEF 04fa0]
-//Tinker Table (electric) (animation frame)
-[ITEMDEF 04fa1]
-//Tinker Table (electric) (animation frame)
-[ITEMDEF 04fa2]
-//Tinker Table (electric) (animation frame)
-[ITEMDEF 04fa3]
-//Tinker Table (electric) (animation frame)
-[ITEMDEF 04fa4]
-//Tinker Table (electric) (animation frame)
-[ITEMDEF 04fa5]
-//Tinker Table (electric) (animation frame)
-[ITEMDEF 04fa6]
-//Tinker Table (electric) (animation frame)
-[ITEMDEF 04fa7]
-//Tinker Table (electric) (animation frame)
-
-[ITEMDEF 04fa8]
-//Tinker Table (candle)
-DUPEITEM=04f8a
-
-[ITEMDEF 04fa9]
-//Tinker Table (candle) (animation frame)
-[ITEMDEF 04faa]
-//Tinker Table (candle) (animation frame)
-[ITEMDEF 04fab]
-//Tinker Table (candle) (animation frame)
-[ITEMDEF 04fac]
-//Tinker Table (candle) (animation frame)
-[ITEMDEF 04fad]
-//Tinker Table (candle) (animation frame)
-[ITEMDEF 04fae]
-//Tinker Table (candle) (animation frame)
-[ITEMDEF 04faf]
-//Tinker Table (candle) (animation frame)
-[ITEMDEF 04fb0]
-//Tinker Table (candle) (animation frame)
-[ITEMDEF 04fb1]
-//Tinker Table (candle) (animation frame)
-
-[ITEMDEF 04fb2]
-//Tinker Table (mechanism)
-DUPEITEM=04f94
-
-[ITEMDEF 04fb3]
-//Tinker Table (mechanism) (animation frame)
-[ITEMDEF 04fb4]
-//Tinker Table (mechanism) (animation frame)
-[ITEMDEF 04fb5]
-//Tinker Table (mechanism) (animation frame)
-[ITEMDEF 04fb6]
-//Tinker Table (mechanism) (animation frame)
-[ITEMDEF 04fb7]
-//Tinker Table (mechanism) (animation frame)
-[ITEMDEF 04fb8]
-//Tinker Table (mechanism) (animation frame)
-[ITEMDEF 04fb9]
-//Tinker Table (mechanism) (animation frame)
-[ITEMDEF 04fba]
-//Tinker Table (mechanism) (animation frame)
-[ITEMDEF 04fbb]
-//Tinker Table (mechanism) (animation frame)
 
 [EOF]

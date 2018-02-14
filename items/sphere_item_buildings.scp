@@ -1,5 +1,5 @@
 ﻿//****************************************************************************
-// SPHERE by : Menasoft ©1997-2017
+// SPHERE by : Menasoft ©1997-2018
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Thursday, Jul 27, 2017
+// FILE LAST UPDATED: Tuesday, Feb 13, 2018
 //
 VERSION=0.56d
 
@@ -1170,63 +1170,63 @@ DUPEITEM=01aa4
 
 
 [ITEMDEF 0233c]
-//serpant pillar
+//serpent pillar
 DUPELIST=0233d,0233e,0233f,02340,02341,02342,02343,02344,02345,02346,02347,02348,02349,0234a
 
 [ITEMDEF 0233d]
-//serpant pillar
+//serpent pillar
 DUPEITEM=0233c
 
 [ITEMDEF 0233e]
-//serpant pillar
+//serpent pillar
 DUPEITEM=0233c
 
 [ITEMDEF 0233f]
-//serpant pillar
+//serpent pillar
 DUPEITEM=0233c
 
 [ITEMDEF 02340]
-//serpant pillar
+//serpent pillar
 DUPEITEM=0233c
 
 [ITEMDEF 02341]
-//serpant pillar
+//serpent pillar
 DUPEITEM=0233c
 
 [ITEMDEF 02342]
-//serpant pillar
+//serpent pillar
 DUPEITEM=0233c
 
 [ITEMDEF 02343]
-//serpant pillar
+//serpent pillar
 DUPEITEM=0233c
 
 [ITEMDEF 02344]
-//serpant pillar
+//serpent pillar
 DUPEITEM=0233c
 
 [ITEMDEF 02345]
-//serpant pillar
+//serpent pillar
 DUPEITEM=0233c
 
 [ITEMDEF 02346]
-//serpant pillar
+//serpent pillar
 DUPEITEM=0233c
 
 [ITEMDEF 02347]
-//serpant pillar
+//serpent pillar
 DUPEITEM=0233c
 
 [ITEMDEF 02348]
-//serpant pillar
+//serpent pillar
 DUPEITEM=0233c
 
 [ITEMDEF 02349]
-//serpant pillar
+//serpent pillar
 DUPEITEM=0233c
 
 [ITEMDEF 0234a]
-//serpant pillar
+//serpent pillar
 DUPEITEM=0233c
 
 
@@ -1351,24 +1351,6 @@ DUPEITEM=0423b
 //Soulforge
 DUPEITEM=0423b
 
-[ITEMDEF i_multi_soulforge]
-NAME=soulforge
-TYPE=t_multi
-CATEGORY=Multis
-SUBSECTION=Decoration
-DESCRIPTION=Soulforge
-TEVENTS=t_soulforge
-MULTIREGION=0,0,0,0
-COMPONENT=0423b,-1,-1,0
-COMPONENT=0423c,0,-1,0
-COMPONENT=0423d,1,-1,0
-COMPONENT=0423e,-1,0,-1
-COMPONENT=0423f,0,0,0
-COMPONENT=04240,1,0,0
-COMPONENT=04241,-1,1,0
-COMPONENT=04242,0,1,0
-COMPONENT=04243,1,1,0
-
 
 [ITEMDEF 0424b]
 DEFNAME=i_soulforge_roof
@@ -1410,33 +1392,6 @@ DUPEITEM=0424b
 [ITEMDEF 04253]
 //Soulforge Roof
 DUPEITEM=0424b
-
-[ITEMDEF i_multi_soulforge_with_roof]
-NAME=soulforge
-TYPE=t_multi
-CATEGORY=Multis
-SUBSECTION=Decoration
-DESCRIPTION=Soulforge (roof)
-TEVENTS=t_soulforge
-MULTIREGION=0,0,0,0
-COMPONENT=0423b,-1,-1,0
-COMPONENT=0423c,0,-1,0
-COMPONENT=0423d,1,-1,0
-COMPONENT=0423e,-1,0,-1
-COMPONENT=0423f,0,0,0
-COMPONENT=04240,1,0,0
-COMPONENT=04241,-1,1,0
-COMPONENT=04242,0,1,0
-COMPONENT=04243,1,1,0
-COMPONENT=0424b,-1,-1,13
-COMPONENT=0424c,0,-1,13
-COMPONENT=0424d,1,-1,13
-COMPONENT=0424e,-1,0,13
-COMPONENT=0424f,0,0,13
-COMPONENT=04250,1,0,13
-COMPONENT=04251,-1,1,13
-COMPONENT=04252,0,1,13
-COMPONENT=04253,1,1,13
 
 
 [ITEMDEF 04263]
@@ -1512,30 +1467,6 @@ DUPEITEM=04263
 //Soulforge and Anvil
 DUPEITEM=04263
 
-[ITEMDEF i_multi_soulforge_and_anvil]
-NAME=soulforge and anvil
-TYPE=t_multi
-CATEGORY=Multis
-SUBSECTION=Decoration
-DESCRIPTION=Soulforge and Anvil
-TEVENTS=t_soulforge
-MULTIREGION=0,0,0,0
-COMPONENT=04263,-1,-1,0
-COMPONENT=04264,0,-1,0
-COMPONENT=04265,1,-1,0
-COMPONENT=04266,2,-1,0
-COMPONENT=04267,-1,0,0
-COMPONENT=04268,0,0,0
-COMPONENT=04269,1,0,0
-COMPONENT=0426a,2,0,0
-COMPONENT=0426b,-1,1,0
-COMPONENT=0426c,0,1,0
-COMPONENT=0426d,1,1,0
-COMPONENT=0426e,2,1,0
-COMPONENT=0426f,-1,2,0
-COMPONENT=04270,0,2,0
-COMPONENT=04271,1,2,0
-COMPONENT=04272,2,2,0
 
 [ITEMDEF 04277]
 DEFNAME=i_soulforge_and_anvil_with_roof
@@ -1609,31 +1540,6 @@ DUPEITEM=04277
 [ITEMDEF 04286]
 //Soulforge and Anvil (roof)
 DUPEITEM=04277
-
-[ITEMDEF i_multi_soulforge_and_anvil_with_roof]
-NAME=soulforge and anvil
-TYPE=t_multi
-CATEGORY=Multis
-SUBSECTION=Decoration
-DESCRIPTION=Soulforge and Anvil (roof)
-TEVENTS=t_soulforge
-MULTIREGION=0,0,0,0
-COMPONENT=04277,-1,-1,0
-COMPONENT=04278,0,-1,0
-COMPONENT=04279,1,-1,0
-COMPONENT=0427a,2,-1,0
-COMPONENT=0427b,-1,0,0
-COMPONENT=0427c,0,0,0
-COMPONENT=0427d,1,0,0
-COMPONENT=0427e,2,0,0
-COMPONENT=0427f,-1,1,0
-COMPONENT=04280,0,1,0
-COMPONENT=04281,1,1,0
-COMPONENT=04282,2,1,0
-COMPONENT=04283,-1,2,0
-COMPONENT=04284,0,2,0
-COMPONENT=04285,1,2,0
-COMPONENT=04286,2,2,0
 
 
 [ITEMDEF 04724]
@@ -2457,220 +2363,241 @@ DUPEITEM=049d4
 
 
 [ITEMDEF 04b74]
-DEFNAME=i_exodus_nexus
-NAME=Exodus Nexus
-TYPE=t_wall
+DEFNAME=i_nexus
+NAME=nexus
 CATEGORY=Buildings
-SUBSECTION=Exodus Nexus
-DESCRIPTION=Exodus Nexus
+SUBSECTION=Nexus
+DESCRIPTION=Nexus
 DUPELIST=04b75,04b76,04b77,04b78,04b79,04b7a,04b7b,04b7c,04b7d,04b7e,04b7f
 
 [ITEMDEF 04b75]
-//Exodus Nexus
+NAME=nexus
 DUPEITEM=04b74
 
 [ITEMDEF 04b76]
-//Exodus Nexus
+NAME=nexus
 DUPEITEM=04b74
 
 [ITEMDEF 04b77]
-//Exodus Nexus
+NAME=nexus
 DUPEITEM=04b74
 
 [ITEMDEF 04b78]
-//Exodus Nexus
+NAME=nexus
 DUPEITEM=04b74
 
 [ITEMDEF 04b79]
-//Exodus Nexus
+NAME=nexus
 DUPEITEM=04b74
 
 [ITEMDEF 04b7a]
-//Exodus Nexus
+NAME=nexus
 DUPEITEM=04b74
 
 [ITEMDEF 04b7b]
-//Exodus Nexus
+NAME=nexus
 DUPEITEM=04b74
 
 [ITEMDEF 04b7c]
-//Exodus Nexus
+NAME=nexus
 DUPEITEM=04b74
 
 [ITEMDEF 04b7d]
-//Exodus Nexus
+NAME=nexus
 DUPEITEM=04b74
 
 [ITEMDEF 04b7e]
-//Exodus Nexus
+NAME=nexus
 DUPEITEM=04b74
 
 [ITEMDEF 04b7f]
-//Exodus Nexus
+NAME=nexus
 DUPEITEM=04b74
 
-[ITEMDEF i_multi_exodus_nexus]
-NAME=Exodus Nexus
+
+[ITEMDEF 09c97]
+//dragon turtle fountain (south)
+NAME=dragon turtle fountain
+DUPELIST=09c98,09c99,09c9a
+
+[ITEMDEF 09c98]
+//dragon turtle fountain (south)
+NAME=dragon turtle fountain
+DUPEITEM=09c97
+
+[ITEMDEF 09c99]
+//dragon turtle fountain (south)
+NAME=dragon turtle fountain
+DUPEITEM=09c97
+
+[ITEMDEF 09c9a]
+//dragon turtle fountain (south)
+NAME=dragon turtle fountain
+DUPEITEM=09c97
+
+
+[ITEMDEF 09c9c]
+//dragon turtle fountain (east)
+NAME=dragon turtle fountain
+DUPELIST=09c9d,09c9e,09ca0
+
+[ITEMDEF 09c9d]
+//dragon turtle fountain (east)
+NAME=dragon turtle fountain
+DUPEITEM=09c9c
+
+[ITEMDEF 09c9e]
+//dragon turtle fountain (east)
+NAME=dragon turtle fountain
+DUPEITEM=09c9c
+
+[ITEMDEF 09ca0]
+//dragon turtle fountain (east)
+NAME=dragon turtle fountain
+DUPEITEM=09c9c
+
+
+////////////
+// Multis //
+////////////
+
+[MULTIDEF m_soulforge]
+ID=0423f
+NAME=soulforge
 TYPE=t_multi
 CATEGORY=Multis
-SUBSECTION=Building
-DESCRIPTION=Exodus Nexus
+SUBSECTION=Decoration
+DESCRIPTION=Soulforge
+TEVENTS=t_soulforge
 MULTIREGION=0,0,0,0
-COMPONENT=04b7a,-1,-1,0
-COMPONENT=04b7f,0,-1,0
-COMPONENT=04b7e,-1,0,0
-COMPONENT=04b7d,0,0,0
-COMPONENT=04b7c,-2,1,0
-COMPONENT=04b79,1,1,0
-COMPONENT=04b78,1,2,0
-COMPONENT=04b77,0,2,0
-COMPONENT=04b7b,-1,1,0
-COMPONENT=04b74,0,1,0
-COMPONENT=04b75,-2,2,0
-COMPONENT=04b76,-1,2,0
+COMPONENT=0423b,-1,-1
+COMPONENT=0423c,0,-1
+COMPONENT=0423d,1,-1
+COMPONENT=0423e,-1,0,-1
+COMPONENT=04240,1,0
+COMPONENT=04241,-1,1
+COMPONENT=04242,0,1
+COMPONENT=04243,1,1
 
-[ITEMDEF 04bde]
-//Garden Shed (south)
-DUPELIST=04bdf,04be0,04be1,04be2,04be3,04be4,04be5,04be6,04be8
-
-[ITEMDEF 04bdf]
-//Garden Shed (south)
-DUPEITEM=04bde
-
-[ITEMDEF 04be0]
-//Garden Shed (south)
-DUPEITEM=04bde
-
-[ITEMDEF 04be1]
-//Garden Shed (south)
-DUPEITEM=04bde
-
-[ITEMDEF 04be2]
-//Garden Shed (south)
-DUPEITEM=04bde
-
-[ITEMDEF 04be3]
-//Garden Shed (south)
-DUPEITEM=04bde
-
-[ITEMDEF 04be4]
-//Garden Shed (south)
-DUPEITEM=04bde
-
-[ITEMDEF 04be5]
-//Garden Shed (south)
-DUPEITEM=04bde
-
-[ITEMDEF 04be6]
-//Garden Shed (south)
-DUPEITEM=04bde
-
-[ITEMDEF 04be7]
-//Garden Shed (south)
-TYPE=t_container
-TDATA2=044
-DUPELIST=04be9
-
-[ITEMDEF 04be8]
-//Garden Shed (south)
-DUPEITEM=04bde
-
-[ITEMDEF 04be9]
-//Garden Shed (south)
-TYPE=t_container
-TDATA2=03e
-DUPEITEM=04be7
-
-[ITEMDEF i_multi_gardenshed_south]
-NAME=Garden Shed
+[MULTIDEF m_soulforge_with_roof]
+ID=0423f
+NAME=soulforge
 TYPE=t_multi
 CATEGORY=Multis
-SUBSECTION=Building
-DESCRIPTION=Garden Shed (south)
-MULTIREGION=-1,-1,2,1
-COMPONENT=04bde,-1,-1,0
-COMPONENT=04bdf,0,-1,0
-COMPONENT=04be0,1,-1,0
-COMPONENT=04be1,2,-1,0
-COMPONENT=04be2,2,0,0
-COMPONENT=04be3,1,0,0
-COMPONENT=04be4,0,0,0
-COMPONENT=04be5,-1,0,0
-COMPONENT=04be6,-1,1,0
-COMPONENT=04be7,0,1,0
-COMPONENT=04be8,1,1,0
-COMPONENT=04be9,2,1,0
-
-[ITEMDEF 04bea]
-//Garden Shed (east)
-DUPELIST=04bec,04bee,04bef,04bf0,04bf1,04bf2,04bf3,04bf4,04bf5
-
-[ITEMDEF 04beb]
-//Garden Shed (east)
-TYPE=t_container
-TDATA2=044
-DUPELIST=04bed
-
-[ITEMDEF 04bec]
-//Garden Shed (east)
-DUPEITEM=04bea
-
-[ITEMDEF 04bed]
-//Garden Shed (east)
-TYPE=t_container
-TDATA2=03e
-DUPEITEM=04beb
-
-[ITEMDEF 04bee]
-//Garden Shed (east)
-DUPEITEM=04bea
-
-[ITEMDEF 04bef]
-//Garden Shed (east)
-DUPEITEM=04bea
-
-[ITEMDEF 04bf0]
-//Garden Shed (east)
-DUPEITEM=04bea
-
-[ITEMDEF 04bf1]
-//Garden Shed (east)
-DUPEITEM=04bea
-
-[ITEMDEF 04bf2]
-//Garden Shed (east)
-DUPEITEM=04bea
-
-[ITEMDEF 04bf3]
-//Garden Shed (east)
-DUPEITEM=04bea
-
-[ITEMDEF 04bf4]
-//Garden Shed (east)
-DUPEITEM=04bea
-
-[ITEMDEF 04bf5]
-//Garden Shed (east)
-DUPEITEM=04bea
-
-[ITEMDEF i_multi_gardenshed_east]
-NAME=Garden Shed
-TYPE=t_multi
-CATEGORY=Multis
-SUBSECTION=Building
-DESCRIPTION=Garden Shed (east)
+SUBSECTION=Decoration
+DESCRIPTION=Soulforge (roof)
+TEVENTS=t_soulforge
 MULTIREGION=0,0,0,0
-COMPONENT=04bea,1,2,0
-COMPONENT=04beb,1,1,0
-COMPONENT=04bec,1,0,0
-COMPONENT=04bed,1,-1,0
-COMPONENT=04bee,0,-1,0
-COMPONENT=04bef,0,0,0
-COMPONENT=04bf0,0,1,0
-COMPONENT=04bf1,0,2,0
-COMPONENT=04bf2,-1,2,0
-COMPONENT=04bf3,-1,1,0
-COMPONENT=04bf4,-1,0,0
-COMPONENT=04bf5,-1,-1,0
+COMPONENT=0423b,-1,-1
+COMPONENT=0423c,0,-1
+COMPONENT=0423d,1,-1
+COMPONENT=0423e,-1,0,-1
+COMPONENT=04240,1,0
+COMPONENT=04241,-1,1
+COMPONENT=04242,0,1
+COMPONENT=04243,1,1
+COMPONENT=0424b,-1,-1,13
+COMPONENT=0424c,0,-1,13
+COMPONENT=0424d,1,-1,13
+COMPONENT=0424e,-1,0,13
+COMPONENT=0424f,0,0,13
+COMPONENT=04250,1,0,13
+COMPONENT=04251,-1,1,13
+COMPONENT=04252,0,1,13
+COMPONENT=04253,1,1,13
+
+[MULTIDEF m_soulforge_and_anvil]
+ID=04268
+NAME=soulforge and anvil
+TYPE=t_multi
+CATEGORY=Multis
+SUBSECTION=Decoration
+DESCRIPTION=Soulforge and Anvil
+TEVENTS=t_soulforge
+MULTIREGION=0,0,0,0
+COMPONENT=04263,-1,-1
+COMPONENT=04264,0,-1
+COMPONENT=04265,1,-1
+COMPONENT=04266,2,-1
+COMPONENT=04267,-1,0
+COMPONENT=04269,1,0
+COMPONENT=0426a,2,0
+COMPONENT=0426b,-1,1
+COMPONENT=0426c,0,1
+COMPONENT=0426d,1,1
+COMPONENT=0426e,2,1
+COMPONENT=0426f,-1,2
+COMPONENT=04270,0,2
+COMPONENT=04271,1,2
+COMPONENT=04272,2,2
+
+[MULTIDEF m_soulforge_and_anvil_with_roof]
+ID=0427c
+NAME=soulforge and anvil
+TYPE=t_multi
+CATEGORY=Multis
+SUBSECTION=Decoration
+DESCRIPTION=Soulforge and Anvil (roof)
+TEVENTS=t_soulforge
+MULTIREGION=0,0,0,0
+COMPONENT=04277,-1,-1
+COMPONENT=04278,0,-1
+COMPONENT=04279,1,-1
+COMPONENT=0427a,2,-1
+COMPONENT=0427b,-1,0
+COMPONENT=0427d,1,0
+COMPONENT=0427e,2,0
+COMPONENT=0427f,-1,1
+COMPONENT=04280,0,1
+COMPONENT=04281,1,1
+COMPONENT=04282,2,1
+COMPONENT=04283,-1,2
+COMPONENT=04284,0,2
+COMPONENT=04285,1,2
+COMPONENT=04286,2,2
+
+[MULTIDEF m_nexus]
+ID=04b7e
+NAME=Nexus
+TYPE=t_multi
+CATEGORY=Multis
+SUBSECTION=Building
+DESCRIPTION=Nexus
+MULTIREGION=0,0,0,0
+COMPONENT=04b74,1,1
+COMPONENT=04b75,-1,2
+COMPONENT=04b76,0,2
+COMPONENT=04b77,1,2
+COMPONENT=04b78,2,2
+COMPONENT=04b79,2,1
+COMPONENT=04b7a,0,-1
+COMPONENT=04b7b,0,1
+COMPONENT=04b7c,-1,1
+COMPONENT=04b7d,1,0
+COMPONENT=04b7f,1,-1
+
+[ITEMDEF m_fountain_dragon_turtle_s]
+ID=09c98
+NAME=Dragon Turtle Fountain
+TYPE=t_multi
+CATEGORY=Multis
+SUBSECTION=Misc
+DESCRIPTION=Dragon Turtle Fountain (south)
+MULTIREGION=0,0,0,0
+COMPONENT=09c97,0,1
+COMPONENT=09c99,-1,0
+COMPONENT=09c9a,0,-1
+
+[ITEMDEF m_fountain_dragon_turtle_e]
+ID=09c9e
+NAME=Dragon Turtle Fountain
+TYPE=t_multi
+CATEGORY=Multis
+SUBSECTION=Misc
+DESCRIPTION=Dragon Turtle Fountain (east)
+MULTIREGION=0,0,0,0
+COMPONENT=09c9c,1,0
+COMPONENT=09c9d,0,-1
+COMPONENT=09ca0,-1,0
 
 [EOF]

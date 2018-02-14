@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2017
+// SPHERE by : Menasoft ©1997-2018
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,9 +7,29 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Oct 21, 2017
+// FILE LAST UPDATED: Tuesday, Feb 13, 2018
 //
 VERSION=0.56d
+
+
+[ITEMDEF 032f0]
+DEFNAME=i_character_statue_maker
+NAME=character statue maker
+CATEGORY=Veteran Rewards
+SUBSECTION=Year 6
+DESCRIPTION=Character Statue Maker
+ON=@Create
+   COLOR={0b8f 0b9a}
+
+
+[ITEMDEF 032f2]
+DEFNAME=i_character_statue_maker_plinth
+NAME=character statue
+CATEGORY=Veteran Rewards
+SUBSECTION=Year 6
+DESCRIPTION=Character Statue Maker (plinth)
+ON=@Create
+   COLOR={0b8f 0b9a}
 
 
 [ITEMDEF 042cb]
@@ -64,66 +84,431 @@ DUPEITEM=04b58
 DUPEITEM=04b59
 
 
+[ITEMDEF 04bde]
+//garden shed (multi-part)(south)
+NAME=garden shed
+
+[ITEMDEF 04bdf]
+//garden shed (multi-part)(south)
+NAME=garden shed
+
+[ITEMDEF 04be0]
+//garden shed (multi-part)(south)
+NAME=garden shed
+
+[ITEMDEF 04be1]
+//garden shed (multi-part)(south)
+NAME=garden shed
+
+[ITEMDEF 04be2]
+//garden shed (multi-part)(south)
+NAME=garden shed
+
+[ITEMDEF 04be3]
+//garden shed (multi-part)(south)
+NAME=garden shed
+
+[ITEMDEF 04be4]
+//garden shed (multi-part)(south)
+NAME=garden shed
+
+[ITEMDEF 04be5]
+//garden shed (multi-part)(south)
+NAME=garden shed
+
+[ITEMDEF 04be6]
+//garden shed (multi-part)(south)
+NAME=garden shed
+
+[ITEMDEF 04be7]
+//garden shed (multi-part)(south)
+NAME=garden shed
+TYPE=t_container
+TDATA2=044
+
+[ITEMDEF 04be8]
+//garden shed (multi-part)(south)
+NAME=garden shed
+
+[ITEMDEF 04be9]
+//garden shed (multi-part)(south)
+NAME=garden shed
+TYPE=t_container
+TDATA2=03e
+
+[ITEMDEF 04bea]
+//garden shed (multi-part)(east)
+NAME=garden shed
+
+[ITEMDEF 04beb]
+//garden shed (multi-part)(east)
+NAME=garden shed
+TYPE=t_container
+TDATA2=044
+
+[ITEMDEF 04bec]
+//garden shed (multi-part)(east)
+NAME=garden shed
+
+[ITEMDEF 04bed]
+//garden shed (multi-part)(east)
+NAME=garden shed
+TYPE=t_container
+TDATA2=03e
+
+[ITEMDEF 04bee]
+//garden shed (multi-part)(east)
+NAME=garden shed
+
+[ITEMDEF 04bef]
+//garden shed (multi-part)(east)
+NAME=garden shed
+
+[ITEMDEF 04bf0]
+//garden shed (multi-part)(east)
+NAME=garden shed
+
+[ITEMDEF 04bf1]
+//garden shed (multi-part)(east)
+NAME=garden shed
+
+[ITEMDEF 04bf2]
+//garden shed (multi-part)(east)
+NAME=garden shed
+
+[ITEMDEF 04bf3]
+//garden shed (multi-part)(east)
+NAME=garden shed
+
+[ITEMDEF 04bf4]
+//garden shed (multi-part)(east)
+NAME=garden shed
+
+[ITEMDEF 04bf5]
+//garden shed (multi-part)(east)
+NAME=garden shed
+
 [ITEMDEF 04bf6]
 //davies' locker (multi-part)(east)
+NAME=Davies' locker
 
 [ITEMDEF 04bf7]
 //davies' locker (multi-part)(east)
+NAME=Davies' locker
 
 [ITEMDEF 04bf8]
 //davies' locker (multi-part)(east)
+NAME=Davies' locker
 
 [ITEMDEF 04bf9]
 //davies' locker (multi-part)(east)
+NAME=Davies' locker
 
 [ITEMDEF 04bfa]
 //davies' locker (multi-part)(east)
+NAME=Davies' locker
 
 [ITEMDEF 04bfb]
 //davies' locker (multi-part)(east)
+NAME=Davies' locker
 
 [ITEMDEF 04bfc]
 //davies' locker (multi-part)(south)
+NAME=Davies' locker
 
 [ITEMDEF 04bfd]
 //davies' locker (multi-part)(south)
+NAME=Davies' locker
 
 [ITEMDEF 04bfe]
 //davies' locker (multi-part)(south)
+NAME=Davies' locker
 
 [ITEMDEF 04bff]
 //davies' locker (multi-part)(south)
+NAME=Davies' locker
 
 [ITEMDEF 04c00]
 //davies' locker (multi-part)(south)
+NAME=Davies' locker
 
 [ITEMDEF 04c01]
 //davies' locker (multi-part)(south)
+NAME=Davies' locker
 
 
 [ITEMDEF 04ce6]
-//gadgetry table (multi-part)(south)
+//gadgetry table (multi-part)(south)(electric)
+NAME=gadgetry table
 
 [ITEMDEF 04ce7]
-//gadgetry table (multi-part)(south)
+//gadgetry table (multi-part)(south)(box)
+NAME=gadgetry table
 
 [ITEMDEF 04ce8]
-//gadgetry table (multi-part)(south)
+//gadgetry table (multi-part)(south)(candle)
+NAME=gadgetry table
 
 [ITEMDEF 04ce9]
-//gadgetry table (multi-part)(south)
+//gadgetry table (multi-part)(south)(gears)
+NAME=gadgetry table
 
 [ITEMDEF 04cea]
-//gadgetry table (multi-part)(east)
+//gadgetry table (multi-part)(east)(gears)
+NAME=gadgetry table
 
 [ITEMDEF 04ceb]
-//gadgetry table (multi-part)(east)
+//gadgetry table (multi-part)(east)(candle)
+NAME=gadgetry table
 
 [ITEMDEF 04cec]
-//gadgetry table (multi-part)(east)
+//gadgetry table (multi-part)(east)(box)
+NAME=gadgetry table
 
 [ITEMDEF 04ced]
-//gadgetry table (multi-part)(east)
+//gadgetry table (multi-part)(east)(electric)
+NAME=gadgetry table
+
+
+[ITEMDEF 04f80]
+//gadgetry table (multi-part)(south)(electric anim)
+NAME=gadgetry table
+
+[ITEMDEF 04f81]
+//gadgetry table (multi-part)(south)(electric anim)
+NAME=gadgetry table
+
+[ITEMDEF 04f82]
+//gadgetry table (multi-part)(south)(electric anim)
+NAME=gadgetry table
+
+[ITEMDEF 04f83]
+//gadgetry table (multi-part)(south)(electric anim)
+NAME=gadgetry table
+
+[ITEMDEF 04f84]
+//gadgetry table (multi-part)(south)(electric anim)
+NAME=gadgetry table
+
+[ITEMDEF 04f85]
+//gadgetry table (multi-part)(south)(electric anim)
+NAME=gadgetry table
+
+[ITEMDEF 04f86]
+//gadgetry table (multi-part)(south)(electric anim)
+NAME=gadgetry table
+
+[ITEMDEF 04f87]
+//gadgetry table (multi-part)(south)(electric anim)
+NAME=gadgetry table
+
+[ITEMDEF 04f88]
+//gadgetry table (multi-part)(south)(electric anim)
+NAME=gadgetry table
+
+[ITEMDEF 04f89]
+//gadgetry table (multi-part)(south)(electric anim)
+NAME=gadgetry table
+
+[ITEMDEF 04f8a]
+//gadgetry table (multi-part)(south)(candle anim)
+NAME=gadgetry table
+
+[ITEMDEF 04f8b]
+//gadgetry table (multi-part)(south)(candle anim)
+NAME=gadgetry table
+
+[ITEMDEF 04f8c]
+//gadgetry table (multi-part)(south)(candle anim)
+NAME=gadgetry table
+
+[ITEMDEF 04f8d]
+//gadgetry table (multi-part)(south)(candle anim)
+NAME=gadgetry table
+
+[ITEMDEF 04f8e]
+//gadgetry table (multi-part)(south)(candle anim)
+NAME=gadgetry table
+
+[ITEMDEF 04f8f]
+//gadgetry table (multi-part)(south)(candle anim)
+NAME=gadgetry table
+
+[ITEMDEF 04f90]
+//gadgetry table (multi-part)(south)(candle anim)
+NAME=gadgetry table
+
+[ITEMDEF 04f91]
+//gadgetry table (multi-part)(south)(candle anim)
+NAME=gadgetry table
+
+[ITEMDEF 04f92]
+//gadgetry table (multi-part)(south)(candle anim)
+NAME=gadgetry table
+
+[ITEMDEF 04f93]
+//gadgetry table (multi-part)(south)(candle anim)
+NAME=gadgetry table
+
+[ITEMDEF 04f94]
+//gadgetry table (multi-part)(south)(gears anim)
+NAME=gadgetry table
+
+[ITEMDEF 04f95]
+//gadgetry table (multi-part)(south)(gears anim)
+NAME=gadgetry table
+
+[ITEMDEF 04f96]
+//gadgetry table (multi-part)(south)(gears anim)
+NAME=gadgetry table
+
+[ITEMDEF 04f97]
+//gadgetry table (multi-part)(south)(gears anim)
+NAME=gadgetry table
+
+[ITEMDEF 04f98]
+//gadgetry table (multi-part)(south)(gears anim)
+NAME=gadgetry table
+
+[ITEMDEF 04f99]
+//gadgetry table (multi-part)(south)(gears anim)
+NAME=gadgetry table
+
+[ITEMDEF 04f9a]
+//gadgetry table (multi-part)(south)(gears anim)
+NAME=gadgetry table
+
+[ITEMDEF 04f9b]
+//gadgetry table (multi-part)(south)(gears anim)
+NAME=gadgetry table
+
+[ITEMDEF 04f9c]
+//gadgetry table (multi-part)(south)(gears anim)
+NAME=gadgetry table
+
+[ITEMDEF 04f9d]
+//gadgetry table (multi-part)(south)(gears anim)
+NAME=gadgetry table
+
+[ITEMDEF 04f9e]
+//gadgetry table (multi-part)(east)(electric anim)
+NAME=gadgetry table
+
+[ITEMDEF 04f9f]
+//gadgetry table (multi-part)(east)(electric anim)
+NAME=gadgetry table
+
+[ITEMDEF 04fa0]
+//gadgetry table (multi-part)(east)(electric anim)
+NAME=gadgetry table
+
+[ITEMDEF 04fa1]
+//gadgetry table (multi-part)(east)(electric anim)
+NAME=gadgetry table
+
+[ITEMDEF 04fa2]
+//gadgetry table (multi-part)(east)(electric anim)
+NAME=gadgetry table
+
+[ITEMDEF 04fa3]
+//gadgetry table (multi-part)(east)(electric anim)
+NAME=gadgetry table
+
+[ITEMDEF 04fa4]
+//gadgetry table (multi-part)(east)(electric anim)
+NAME=gadgetry table
+
+[ITEMDEF 04fa5]
+//gadgetry table (multi-part)(east)(electric anim)
+NAME=gadgetry table
+
+[ITEMDEF 04fa6]
+//gadgetry table (multi-part)(east)(electric anim)
+NAME=gadgetry table
+
+[ITEMDEF 04fa7]
+//gadgetry table (multi-part)(east)(electric anim)
+NAME=gadgetry table
+
+[ITEMDEF 04fa8]
+//gadgetry table (multi-part)(east)(candle anim)
+NAME=gadgetry table
+
+[ITEMDEF 04fa9]
+//gadgetry table (multi-part)(east)(candle anim)
+NAME=gadgetry table
+
+[ITEMDEF 04faa]
+//gadgetry table (multi-part)(east)(candle anim)
+NAME=gadgetry table
+
+[ITEMDEF 04fab]
+//gadgetry table (multi-part)(east)(candle anim)
+NAME=gadgetry table
+
+[ITEMDEF 04fac]
+//gadgetry table (multi-part)(east)(candle anim)
+NAME=gadgetry table
+
+[ITEMDEF 04fad]
+//gadgetry table (multi-part)(east)(candle anim)
+NAME=gadgetry table
+
+[ITEMDEF 04fae]
+//gadgetry table (multi-part)(east)(candle anim)
+NAME=gadgetry table
+
+[ITEMDEF 04faf]
+//gadgetry table (multi-part)(east)(candle anim)
+NAME=gadgetry table
+
+[ITEMDEF 04fb0]
+//gadgetry table (multi-part)(east)(candle anim)
+NAME=gadgetry table
+
+[ITEMDEF 04fb1]
+//gadgetry table (multi-part)(east)(candle anim)
+NAME=gadgetry table
+
+[ITEMDEF 04fb2]
+//gadgetry table (multi-part)(east)(gears anim)
+NAME=gadgetry table
+
+[ITEMDEF 04fb3]
+//gadgetry table (multi-part)(east)(gears anim)
+NAME=gadgetry table
+
+[ITEMDEF 04fb4]
+//gadgetry table (multi-part)(east)(gears anim)
+NAME=gadgetry table
+
+[ITEMDEF 04fb5]
+//gadgetry table (multi-part)(east)(gears anim)
+NAME=gadgetry table
+
+[ITEMDEF 04fb6]
+//gadgetry table (multi-part)(east)(gears anim)
+NAME=gadgetry table
+
+[ITEMDEF 04fb7]
+//gadgetry table (multi-part)(east)(gears anim)
+NAME=gadgetry table
+
+[ITEMDEF 04fb8]
+//gadgetry table (multi-part)(east)(gears anim)
+NAME=gadgetry table
+
+[ITEMDEF 04fb9]
+//gadgetry table (multi-part)(east)(gears anim)
+NAME=gadgetry table
+
+[ITEMDEF 04fba]
+//gadgetry table (multi-part)(east)(gears anim)
+NAME=gadgetry table
+
+[ITEMDEF 04fbb]
+//gadgetry table (multi-part)(east)(gears anim)
+NAME=gadgetry table
 
 
 [ITEMDEF 09a38]
@@ -663,6 +1048,21 @@ ON=@ClientTooltip
 [ITEMDEF 09ff7]
 //enchanted writing desk (east)(anim)
 
+[ITEMDEF 09ff8]
+DEFNAME=i_enchanted_writing_desk_container
+NAME=wooden chest
+TYPE=t_container
+TDATA2=09cd9
+FLIP=1
+CATEGORY=Veteran Rewards
+SUBSECTION=Year 7
+DESCRIPTION=Enchanted Writing Desk (wooden chest)
+DUPELIST=09ff9
+
+[ITEMDEF 09ff9]
+//wooden chest
+DUPEITEM=09ff8
+
 
 [ITEMDEF 0a011]
 //koi pond (multi-part)(small)
@@ -963,5 +1363,177 @@ NAME=koi pond
 [ITEMDEF 0a05b]
 //koi pond (multi-part)(large)(anim)
 NAME=koi pond
+
+
+////////////
+// Multis //
+////////////
+
+[MULTIDEF m_garden_shed_south]
+ID=04be4
+NAME=Garden Shed
+TYPE=t_multi
+CATEGORY=Veteran Rewards
+SUBSECTION=Year 15
+DESCRIPTION=Garden Shed (south)(multi)
+MULTIREGION=-1,-1,2,1
+COMPONENT=04bde,-1,-1
+COMPONENT=04bdf,0,-1
+COMPONENT=04be0,1,-1
+COMPONENT=04be1,2,-1
+COMPONENT=04be2,2,0
+COMPONENT=04be3,1,0
+COMPONENT=04be5,-1,0
+COMPONENT=04be6,-1,1
+COMPONENT=04be7,0,1
+COMPONENT=04be8,1,1
+COMPONENT=04be9,2,1
+
+[MULTIDEF m_garden_shed_east]
+ID=04bef
+NAME=Garden Shed
+TYPE=t_multi
+CATEGORY=Veteran Rewards
+SUBSECTION=Year 15
+DESCRIPTION=Garden Shed (east)(multi)
+MULTIREGION=0,0,0,0
+COMPONENT=04bea,1,2
+COMPONENT=04beb,1,1
+COMPONENT=04bec,1,0
+COMPONENT=04bed,1,-1
+COMPONENT=04bee,0,-1
+COMPONENT=04bf0,0,1
+COMPONENT=04bf1,0,2
+COMPONENT=04bf2,-1,2
+COMPONENT=04bf3,-1,1
+COMPONENT=04bf4,-1,0
+COMPONENT=04bf5,-1,-1
+
+[ITEMDEF m_davies_locker_e]
+ID=04bf7
+NAME=Davies' Locker
+TYPE=t_multi
+CATEGORY=Veteran Rewards
+SUBSECTION=Year 8
+DESCRIPTION=Davies' Locker (east)(multi)
+MULTIREGION=0,0,0,0
+COMPONENT=04bf6,0,1
+COMPONENT=04bf8,0,-1
+COMPONENT=04bf9,-1,-1
+COMPONENT=04bfa,-1,0
+COMPONENT=04bfb,-1,1
+
+[ITEMDEF m_davies_locker_s]
+ID=04bfc
+NAME=Davies' Locker
+TYPE=t_multi
+CATEGORY=Veteran Rewards
+SUBSECTION=Year 8
+DESCRIPTION=Davies' Locker (south)(multi)
+MULTIREGION=0,0,0,0
+COMPONENT=04bfd,-1,0
+COMPONENT=04bfe,1,0
+COMPONENT=04bff,-1,-1
+COMPONENT=04c00,0,-1
+COMPONENT=04c01,1,-1
+
+[ITEMDEF m_gadgetry_table_s]
+ID=04ce8
+NAME=Gadgetry Table
+TYPE=t_multi
+CATEGORY=Veteran Rewards
+SUBSECTION=Year 8
+DESCRIPTION=Gadgetry Table (south)(multi)
+MULTIREGION=0,0,0,0
+COMPONENT=04ce6,-1,0
+COMPONENT=04ce7,-1,1
+COMPONENT=04ce9,1,0
+
+[ITEMDEF m_gadgetry_table_e]
+ID=04ceb
+NAME=Gadgetry Table
+TYPE=t_multi
+CATEGORY=Veteran Rewards
+SUBSECTION=Year 8
+DESCRIPTION=Gadgetry Table (east)(multi)
+MULTIREGION=0,0,0,0
+COMPONENT=04cea,0,-1
+COMPONENT=04cec,1,1
+COMPONENT=04ced,0,1
+
+[MULTIDEF m_koi_pond_small]
+ID=0a019
+NAME=Koi Pond
+TYPE=t_multi
+CATEGORY=Veteran Rewards
+SUBSECTION=Year 10
+DESCRIPTION=Koi Pond (small)(multi)
+MULTIREGION=0,0,0,0
+COMPONENT=0a011,0,0
+COMPONENT=0a012,-1,0
+COMPONENT=0a013,-2,0
+COMPONENT=0a014,-2,-1
+COMPONENT=0a015,-2,-2
+COMPONENT=0a016,-1,-2
+COMPONENT=0a017,0,-2
+COMPONENT=0a018,0,-1
+
+[MULTIDEF m_koi_pond_medium]
+ID=0a02f
+NAME=Koi Pond
+TYPE=t_multi
+CATEGORY=Veteran Rewards
+SUBSECTION=Year 10
+DESCRIPTION=Koi Pond (medium)(multi)
+MULTIREGION=0,0,0,0
+COMPONENT=0a01f,0,0
+COMPONENT=0a020,-1,0
+COMPONENT=0a021,-2,0
+COMPONENT=0a022,-3,0
+COMPONENT=0a023,-4,0
+COMPONENT=0a024,-4,-1
+COMPONENT=0a025,-4,-2
+COMPONENT=0a026,-4,-3
+COMPONENT=0a027,-4,-4
+COMPONENT=0a028,-3,-4
+COMPONENT=0a029,-2,-4
+COMPONENT=0a02a,-1,-4
+COMPONENT=0a02b,0,-4
+COMPONENT=0a02c,0,-3
+COMPONENT=0a02d,0,-2
+COMPONENT=0a02e,0,-1
+
+[MULTIDEF m_koi_pond_large]
+ID=0a050
+NAME=Koi Pond
+TYPE=t_multi
+CATEGORY=Veteran Rewards
+SUBSECTION=Year 10
+DESCRIPTION=Koi Pond (large)(multi)
+MULTIREGION=0,0,0,0
+COMPONENT=0a038,1,1
+COMPONENT=0a039,0,1
+COMPONENT=0a03a,-1,1
+COMPONENT=0a03b,-2,1
+COMPONENT=0a03c,-3,1
+COMPONENT=0a03d,-4,1
+COMPONENT=0a03e,-5,1
+COMPONENT=0a03f,-5,0
+COMPONENT=0a040,-5,-1
+COMPONENT=0a041,-5,-2
+COMPONENT=0a042,-5,-3
+COMPONENT=0a043,-5,-4
+COMPONENT=0a044,-5,-5
+COMPONENT=0a045,-4,-5
+COMPONENT=0a046,-3,-5
+COMPONENT=0a047,-2,-5
+COMPONENT=0a048,-1,-5
+COMPONENT=0a049,0,-5
+COMPONENT=0a04a,1,-5
+COMPONENT=0a04b,1,-4
+COMPONENT=0a04c,1,-3
+COMPONENT=0a04d,1,-2
+COMPONENT=0a04e,1,-1
+COMPONENT=0a04f,1,0
 
 [EOF]

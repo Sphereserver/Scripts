@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2017
+// SPHERE by : Menasoft ©1997-2018
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, Nov 26, 2017
+// FILE LAST UPDATED: Tuesday, Feb 13, 2018
 //
 VERSION=0.56d
 
@@ -3124,75 +3124,81 @@ DUPEITEM=09ccc
 
 
 [ITEMDEF 09d53]
-DEFNAME=i_banner_flame_tribe
+DEFNAME=i_banner_tribal_jukari
+NAME=jukari tribal banner
 FLIP=1
 CATEGORY=Decoration - Wall Hangings
 SUBSECTION=Banners
-DESCRIPTION=Flame Tribe
+DESCRIPTION=Jukari Tribal Banner
 DUPELIST=09d54
 
 [ITEMDEF 09d54]
-//flame tribe banner
+//jukari tribal banner
 DUPEITEM=09d53
 
 [ITEMDEF 09d55]
-DEFNAME=i_banner_tiger_tribe
+DEFNAME=i_banner_tribal_kurak
+NAME=kurak tribal banner
 FLIP=1
 CATEGORY=Decoration - Wall Hangings
 SUBSECTION=Banners
-DESCRIPTION=Tiger Tribe
+DESCRIPTION=Kurak Tribal Banner
 DUPELIST=09d56
 
 [ITEMDEF 09d56]
-//tiger tribe banner
+//kurak tribal banner
 DUPEITEM=09d55
 
 [ITEMDEF 09d57]
-DEFNAME=i_banner_ape_tribe
+DEFNAME=i_banner_tribal_barako
+NAME=barako tribal banner
 FLIP=1
 CATEGORY=Decoration - Wall Hangings
 SUBSECTION=Banners
-DESCRIPTION=Ape Tribe
+DESCRIPTION=Barako Tribal Banner
 DUPELIST=09d58
 
 [ITEMDEF 09d58]
-//ape tribe banner
+//barako tribal banner
 DUPEITEM=09d57
 
 [ITEMDEF 09d59]
-DEFNAME=i_banner_dino_tribe
+DEFNAME=i_banner_tribal_sakkhra
+NAME=sakkhra tribal banner
 FLIP=1
 CATEGORY=Decoration - Wall Hangings
 SUBSECTION=Banners
-DESCRIPTION=Dino Tribe
+DESCRIPTION=Sakkhra Tribal Banner
 DUPELIST=09d5a
 
 [ITEMDEF 09d5a]
-//dino tribe banner
+//sakkhra tribal banner
 DUPEITEM=09d59
 
 [ITEMDEF 09d5b]
-DEFNAME=i_banner_bug_tribe
+DEFNAME=i_banner_tribal_barrab
+NAME=barrab tribal banner
 FLIP=1
 CATEGORY=Decoration - Wall Hangings
 SUBSECTION=Banners
-DESCRIPTION=Bug Tribe
+DESCRIPTION=Barrab Tribal Banner
 DUPELIST=09d5c
 
 [ITEMDEF 09d5c]
-//bug tribe banner
+//barrab tribal banner
 DUPEITEM=09d5b
 
 [ITEMDEF 09d5d]
-DEFNAME=i_banner_turtle_tribe
+DEFNAME=i_banner_tribal_urali
+NAME=urali tribal banner
 FLIP=1
 CATEGORY=Decoration - Wall Hangings
 SUBSECTION=Banners
-DESCRIPTION=Turtle Tribe
+DESCRIPTION=Urali Tribal Banner
 DUPELIST=09d5e
 
 [ITEMDEF 09d5e]
-//turtle tribe banner
+//urali tribal banner
 DUPEITEM=09d5d
 
 

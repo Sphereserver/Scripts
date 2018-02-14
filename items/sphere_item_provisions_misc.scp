@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2017
+// SPHERE by : Menasoft ©1997-2018
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Oct 21, 2017
+// FILE LAST UPDATED: Tuesday, Feb 13, 2018
 //
 VERSION=0.56d
 
@@ -850,5 +850,76 @@ NAME=obsidian
 CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Misc
 DESCRIPTION=Obsidian
+
+
+////////////
+// Multis //
+////////////
+
+[MULTIDEF m_hildebrandt_dragon_rug_s]
+ID=09fb8
+NAME=Hildebrandt Dragon Rug
+TYPE=t_multi
+CATEGORY=Multis
+SUBSECTION=Misc
+DESCRIPTION=Hildebrandt Dragon Rug (South)
+MULTIREGION=0,0,0,0
+COMPONENT=09fb5,1,1
+COMPONENT=09fb6,0,1
+COMPONENT=09fb7,1,0
+COMPONENT=09fb9,1,-1
+COMPONENT=09fba,0,-1
+COMPONENT=09fbb,0,-2
+COMPONENT=09fbc,1,-2
+COMPONENT=09fbd,0,2
+COMPONENT=09fbe,1,2
+COMPONENT=09fbf,-1,2
+COMPONENT=09fc0,-1,1
+COMPONENT=09fc1,-1,0
+COMPONENT=09fc2,-1,-1
+COMPONENT=09fc3,-1,-2
+COMPONENT=09fc4,2,2
+COMPONENT=09fc5,2,1
+COMPONENT=09fc6,2,0
+COMPONENT=09fc7,2,-1
+COMPONENT=09fc8,2,-2
+COMPONENT=09fc9,-2,2
+COMPONENT=09fca,-2,1
+COMPONENT=09fcb,-2,0
+COMPONENT=09fcc,-2,-1
+COMPONENT=09fcd,-2,-2
+
+[MULTIDEF m_hildebrandt_dragon_rug_e]
+ID=09fd1
+NAME=Hildebrandt Dragon Rug
+TYPE=t_multi
+CATEGORY=Multis
+SUBSECTION=Misc
+DESCRIPTION=Hildebrandt Dragon Rug (East)
+MULTIREGION=0,0,0,0
+COMPONENT=09fce,1,1
+COMPONENT=09fcf,0,1
+COMPONENT=09fd0,1,0
+COMPONENT=09fd2,1,-1
+COMPONENT=09fd3,0,-1
+COMPONENT=09fd4,0,-2
+COMPONENT=09fd5,1,-2
+COMPONENT=09fd6,0,2
+COMPONENT=09fd7,1,2
+COMPONENT=09fd8,-1,2
+COMPONENT=09fd9,-1,1
+COMPONENT=09fda,-1,0
+COMPONENT=09fdb,-1,-1
+COMPONENT=09fdc,-1,-2
+COMPONENT=09fdd,2,2
+COMPONENT=09fde,2,1
+COMPONENT=09fdf,2,0
+COMPONENT=09fe0,2,-1
+COMPONENT=09fe1,2,-2
+COMPONENT=09fe2,-2,2
+COMPONENT=09fe3,-2,1
+COMPONENT=09fe4,-2,0
+COMPONENT=09fe5,-2,-1
+COMPONENT=09fe6,-2,-2
 
 [EOF]

@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2017
+// SPHERE by : Menasoft ©1997-2018
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, Nov 12, 2017
+// FILE LAST UPDATED: Tuesday, Feb 13, 2018
 //
 VERSION=0.56d
 
@@ -44,7 +44,7 @@ NAME=turkey platter
 FLIP=1
 CATEGORY=Thanksgiving
 SUBSECTION=Misc
-DESCRIPTION=Roast Turkey
+DESCRIPTION=Turkey Platter
 DUPELIST=0498f
 ON=@Create
    MORE2=8
@@ -193,29 +193,17 @@ ON=@DClick
 
 
 [ITEMDEF 09987]
-DEFNAME=i_roasting_pig_spit_empty
+//roasting pig on a spit (east)(empty)
 NAME=roasting pig on a spit
-CATEGORY=Thanksgiving
-SUBSECTION=Decoration
-DESCRIPTION=Roasting Pig on a Spit
-DUPELIST=09993
 
 [ITEMDEF 09988]
-DEFNAME=i_roasting_pig_spit_logs
+//pile of logs (east)
 NAME=pile of logs
-CATEGORY=Thanksgiving
-SUBSECTION=Decoration
-DESCRIPTION=Pile of Logs
-DUPELIST=09994
 
 [ITEMDEF 09989]
-DEFNAME=i_roasting_pig_spit
+//roasting pig on a spit (east)
 NAME=roasting pig on a spit
 TYPE=t_fire
-CATEGORY=Thanksgiving
-SUBSECTION=Decoration
-DESCRIPTION=Roasting Pig on a Spit
-DUPELIST=09995
 
 [ITEMDEF 0998a]
 //roasting pig on a spit (east)(anim)
@@ -256,17 +244,15 @@ NAME=roasting pig on a spit
 [ITEMDEF 09993]
 //roasting pig on a spit (south)(empty)
 NAME=roasting pig on a spit
-DUPEITEM=09987
 
 [ITEMDEF 09994]
 //pile of logs (south)
 NAME=pile of logs
-DUPEITEM=09988
 
 [ITEMDEF 09995]
 //roasting pig on a spit (south)
 NAME=roasting pig on a spit
-DUPEITEM=09989
+TYPE=t_fire
 
 [ITEMDEF 09996]
 //roasting pig on a spit (south)(anim)
@@ -548,5 +534,199 @@ DYE=1
 //formal dining table (multi-part)(south)
 NAME=formal dining table
 DYE=1
+
+
+[ITEMDEF 09f52]
+//ale table (multi-part)(south)
+NAME=table
+
+[ITEMDEF 09f53]
+//ale table (multi-part)(south)
+NAME=table
+
+[ITEMDEF 09f54]
+//ale table (multi-part)(south)
+NAME=table
+ON=@DClick
+   IF (<TYPE> != t_anim_active)
+    MORE1=<DISPID>
+    MORE2=<TYPE>
+    DISPID=<eval <DISPIDDEC>+1>
+    TYPE=t_anim_active
+    SOUND 04e
+    TIMER=2
+    UPDATE
+    return 1
+   ENDIF
+
+[ITEMDEF 09f55]
+//ale table (multi-part)(south)(anim)
+NAME=table
+
+[ITEMDEF 09f56]
+//ale table (multi-part)(south)(anim)
+NAME=table
+
+[ITEMDEF 09f57]
+//ale table (multi-part)(south)(anim)
+NAME=table
+
+[ITEMDEF 09f58]
+//ale table (multi-part)(east)
+NAME=table
+
+[ITEMDEF 09f59]
+//ale table (multi-part)(east)
+NAME=table
+
+[ITEMDEF 09f5a]
+//ale table (multi-part)(east)
+NAME=table
+ON=@DClick
+   IF (<TYPE> != t_anim_active)
+    MORE1=<DISPID>
+    MORE2=<TYPE>
+    DISPID=<eval <DISPIDDEC>+1>
+    TYPE=t_anim_active
+    SOUND 04e
+    TIMER=2
+    UPDATE
+    return 1
+   ENDIF
+
+[ITEMDEF 09f5b]
+//ale table (multi-part)(east)(anim)
+NAME=table
+
+[ITEMDEF 09f5c]
+//ale table (multi-part)(east)(anim)
+NAME=table
+
+[ITEMDEF 09f5d]
+//ale table (multi-part)(east)(anim)
+NAME=table
+
+
+////////////
+// Multis //
+////////////
+
+[MULTIDEF m_roasting_pig_spit_e]
+ID=09989
+NAME=Roasting Pig on a Spit
+TYPE=t_multi
+CATEGORY=Thanksgiving
+SUBSECTION=Decoration
+DESCRIPTION=Roasting Pig on a Spit (east)(multi)
+MULTIREGION=0,0,0,0
+COMPONENT=09988,1,-1
+
+[MULTIDEF m_roasting_pig_spit_s]
+ID=09995
+NAME=Roasting Pig on a Spit
+TYPE=t_multi
+CATEGORY=Thanksgiving
+SUBSECTION=Decoration
+DESCRIPTION=Roasting Pig on a Spit (south)(multi)
+MULTIREGION=0,0,0,0
+COMPONENT=09994,-1,1
+
+[MULTIDEF m_buffet_table_e]
+ID=09d44
+NAME=Buffet Table
+TYPE=t_multi
+CATEGORY=Thanksgiving
+SUBSECTION=Decoration
+DESCRIPTION=Buffet Table (east)(multi)
+MULTIREGION=0,0,0,0
+COMPONENT=09d3f,-1,-2
+COMPONENT=09d40,0,-2
+COMPONENT=09d41,-1,-1
+COMPONENT=09d42,0,-1
+COMPONENT=09d43,-1,0
+COMPONENT=09d45,-1,1
+COMPONENT=09d46,0,1
+COMPONENT=09d47,-1,2
+COMPONENT=09d48,0,2
+
+[MULTIDEF m_buffet_table_s]
+ID=09d4e
+NAME=Buffet Table
+TYPE=t_multi
+CATEGORY=Thanksgiving
+SUBSECTION=Decoration
+DESCRIPTION=Buffet Table (south)(multi)
+MULTIREGION=0,0,0,0
+COMPONENT=09d49,-2,-1
+COMPONENT=09d4a,-2,0
+COMPONENT=09d4b,-1,-1
+COMPONENT=09d4c,-1,0
+COMPONENT=09d4d,0,-1
+COMPONENT=09d4f,1,-1
+COMPONENT=09d50,1,0
+COMPONENT=09d51,2,-1
+COMPONENT=09d52,2,0
+
+[MULTIDEF m_formal_dining_table_e]
+ID=09d6e
+NAME=Formal Dining Table
+TYPE=t_multi
+CATEGORY=Thanksgiving
+SUBSECTION=Decoration
+DESCRIPTION=Formal Dining Table (east)(multi)
+MULTIREGION=0,0,0,0
+COMPONENT=09d67,-1,-3
+COMPONENT=09d68,0,-3
+COMPONENT=09d69,-1,-2
+COMPONENT=09d6a,0,-2
+COMPONENT=09d6b,-1,-1
+COMPONENT=09d6c,0,-1
+COMPONENT=09d6d,-1,0
+COMPONENT=09d6f,-1,1
+COMPONENT=09d70,0,1
+COMPONENT=09d71,-1,2
+COMPONENT=09d72,0,2
+
+[MULTIDEF m_formal_dining_table_s]
+ID=09d7a
+NAME=Formal Dining Table
+TYPE=t_multi
+CATEGORY=Thanksgiving
+SUBSECTION=Decoration
+DESCRIPTION=Formal Dining Table (south)(multi)
+MULTIREGION=0,0,0,0
+COMPONENT=09d73,-3,-1
+COMPONENT=09d74,-3,0
+COMPONENT=09d75,-2,-1
+COMPONENT=09d76,-2,0
+COMPONENT=09d77,-1,-1
+COMPONENT=09d78,-1,0
+COMPONENT=09d79,0,-1
+COMPONENT=09d7b,1,-1
+COMPONENT=09d7c,1,0
+COMPONENT=09d7d,2,-1
+COMPONENT=09d7e,2,0
+
+[MULTIDEF m_ale_table_s]
+ID=09f53
+NAME=Ale Table
+TYPE=t_multi
+CATEGORY=Thanksgiving
+SUBSECTION=Decoration
+DESCRIPTION=Ale Table (south)(multi)
+MULTIREGION=0,0,0,0
+COMPONENT=09f52,1,0
+COMPONENT=09f54,-1,0
+
+[MULTIDEF m_ale_table_e]
+ID=09f59
+NAME=Ale Table
+TYPE=t_multi
+CATEGORY=Thanksgiving
+SUBSECTION=Decoration
+DESCRIPTION=Ale Table (east)(multi)
+MULTIREGION=0,0,0,0
+COMPONENT=09f58,0,1
+COMPONENT=09f5a,0,-1
 
 [EOF]

@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2017
+// SPHERE by : Menasoft ©1997-2018
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, Oct 23, 2017
+// FILE LAST UPDATED: Tuesday, Feb 13, 2018
 //
 VERSION=0.56d
 
@@ -166,6 +166,151 @@ DUPELIST=033b4
 [ITEMDEF 03bb4]
 //10th anniversary sculpture
 DUPEITEM=03bb3
+
+
+[ITEMDEF 040da]
+//codex of virtue (multi-part)
+NAME=codex of virtue
+
+[ITEMDEF 040db]
+//codex of virtue (multi-part)
+NAME=codex of virtue
+
+[ITEMDEF 040dc]
+//codex of virtue (multi-part)
+NAME=codex of virtue
+
+[ITEMDEF 040dd]
+//codex of virtue (multi-part)
+NAME=codex of virtue
+
+[ITEMDEF 040de]
+//codex of virtue (multi-part)
+NAME=codex of virtue
+
+[ITEMDEF 040df]
+//codex of virtue (multi-part)
+NAME=codex of virtue
+
+[ITEMDEF 040e0]
+//codex of virtue (multi-part)
+NAME=codex of virtue
+
+[ITEMDEF 040e1]
+//codex of virtue (multi-part)
+NAME=codex of virtue
+
+[ITEMDEF 040e2]
+//codex of virtue (multi-part)
+NAME=codex of virtue
+
+[ITEMDEF 040e3]
+//codex of virtue (multi-part)
+NAME=codex of virtue
+
+[ITEMDEF 040e4]
+//codex of virtue (multi-part)
+NAME=codex of virtue
+
+[ITEMDEF 040e5]
+//codex of virtue (multi-part)
+NAME=codex of virtue
+
+[ITEMDEF 040e6]
+//codex of virtue (multi-part)
+NAME=codex of virtue
+
+[ITEMDEF 040e7]
+//codex of virtue (multi-part)
+NAME=codex of virtue
+
+[ITEMDEF 040e8]
+//codex of virtue (multi-part)
+NAME=codex of virtue
+
+[ITEMDEF 040e9]
+//codex of virtue (multi-part)
+NAME=codex of virtue
+
+[ITEMDEF 040ea]
+//codex of virtue (multi-part)
+NAME=codex of virtue
+
+[ITEMDEF 040eb]
+//codex of virtue (multi-part)
+NAME=codex of virtue
+
+[ITEMDEF 040ec]
+//codex of virtue (multi-part)
+NAME=codex of virtue
+
+[ITEMDEF 040ed]
+//codex of virtue (multi-part)
+NAME=codex of virtue
+
+[ITEMDEF 040ee]
+//codex of virtue (multi-part)
+NAME=codex of virtue
+
+[ITEMDEF 040ef]
+//codex of virtue (multi-part)
+NAME=codex of virtue
+
+[ITEMDEF 040f0]
+//codex of virtue (multi-part)
+NAME=codex of virtue
+
+[ITEMDEF 040f1]
+//codex of virtue (multi-part)
+NAME=codex of virtue
+
+[ITEMDEF 040f2]
+//codex of virtue (multi-part)
+NAME=codex of virtue
+
+[ITEMDEF 040f3]
+//codex of virtue (multi-part)
+NAME=codex of virtue
+
+[ITEMDEF 040f4]
+//codex of virtue (multi-part)
+NAME=codex of virtue
+
+[ITEMDEF 040f5]
+//codex of virtue (multi-part)
+NAME=codex of virtue
+
+[ITEMDEF 040f6]
+//codex of virtue (multi-part)
+NAME=codex of virtue
+
+[ITEMDEF 040f7]
+//codex of virtue (multi-part)
+NAME=codex of virtue
+
+[ITEMDEF 040f8]
+//codex of virtue (multi-part)
+NAME=codex of virtue
+
+[ITEMDEF 040f9]
+//codex of virtue (multi-part)
+NAME=codex of virtue
+
+[ITEMDEF 040fa]
+//codex of virtue (multi-part)
+NAME=codex of virtue
+
+[ITEMDEF 040fb]
+//codex of virtue (multi-part)
+NAME=codex of virtue
+
+[ITEMDEF 040fc]
+//codex of virtue (multi-part)
+NAME=codex of virtue
+
+[ITEMDEF 040fd]
+//codex of virtue (multi-part)
+NAME=codex of virtue
 
 
 [ITEMDEF 04141]
@@ -689,7 +834,7 @@ SUBSECTION=16th Anniversary
 DESCRIPTION=Enormous Venus Flytrap
 DUPELIST=09968
 ON=@Create
-   COLOR=colors_red
+   COLOR={01a 1 021 1 07e 1 085 1 0e2 1 0e9 1 014d 1 078b 1 0813 1}
 
 [ITEMDEF 09968]
 //enormous venus flytrap
@@ -704,7 +849,7 @@ SUBSECTION=16th Anniversary
 DESCRIPTION=Japanese Maple
 DUPELIST=0996a
 ON=@Create
-   COLOR=colors_red
+   COLOR={0641 1 0643 1 0645 1 066a 1 0673 1 0676 1 06bc 1 06c2 1 06c8 1 06d0 1 06ec 1 06f3 1 073f 1 0745 1 0780 1}
 
 [ITEMDEF 0996a]
 //japanese maple
@@ -1177,14 +1322,61 @@ ON=@DClick
    return 1
 
 
-//////////////////
-// Custom Items //
-//////////////////
+////////////
+// Multis //
+////////////
 
-[ITEMDEF m_harpsichord_south]
+[MULTIDEF m_codex_virtue]
+ID=040ef
+NAME=Codex of Virtue
+TYPE=t_multi
+CATEGORY=Anniversary Gifts
+SUBSECTION=12th Anniversary
+DESCRIPTION=Codex of Virtue (multi)
+MULTIREGION=0,0,0,0
+COMPONENT=040da,-3,-3
+COMPONENT=040db,-2,-3
+COMPONENT=040dc,-1,-3
+COMPONENT=040dd,0,-3
+COMPONENT=040de,1,-3
+COMPONENT=040df,2,-3
+COMPONENT=040e0,-3,-2
+COMPONENT=040e1,-2,-2
+COMPONENT=040e2,-1,-2
+COMPONENT=040e3,0,-2
+COMPONENT=040e4,1,-2
+COMPONENT=040e5,2,-2
+COMPONENT=040e6,-3,-1
+COMPONENT=040e7,-2,-1
+COMPONENT=040e8,-1,-1
+COMPONENT=040e9,0,-1
+COMPONENT=040ea,1,-1
+COMPONENT=040eb,2,-1
+COMPONENT=040ec,-3,0
+COMPONENT=040ed,-2,0
+COMPONENT=040ee,-1,0
+COMPONENT=040f0,1,0
+COMPONENT=040f1,2,0
+COMPONENT=040f2,-3,1
+COMPONENT=040f3,-2,1
+COMPONENT=040f4,-1,1
+COMPONENT=040f5,0,1
+COMPONENT=040f6,1,1
+COMPONENT=040f7,2,1
+COMPONENT=040f8,-3,2
+COMPONENT=040f9,-2,2
+COMPONENT=040fa,-1,2
+COMPONENT=040fb,0,2
+COMPONENT=040fc,1,2
+COMPONENT=040fd,2,2
+
+[MULTIDEF m_harpsichord_south]
 ID=063be
 NAME=Harpsichord
 TYPE=t_multi
+CATEGORY=Anniversary Gifts
+SUBSECTION=15th Anniversary
+DESCRIPTION=Harpsichord (south)(multi)
 MULTIREGION=0,0,0,0
 COMPONENT=063bc,1,1
 COMPONENT=063bd,0,1
@@ -1197,6 +1389,9 @@ COMPONENT=063c2,0,-2
 ID=063c5
 NAME=Harpsichord
 TYPE=t_multi
+CATEGORY=Anniversary Gifts
+SUBSECTION=15th Anniversary
+DESCRIPTION=Harpsichord (east)(multi)
 MULTIREGION=0,0,0,0
 COMPONENT=063c3,1,-1
 COMPONENT=063c4,1,0
@@ -1204,6 +1399,11 @@ COMPONENT=063c6,0,-1
 COMPONENT=063c7,-1,0
 COMPONENT=063c8,-1,-1
 COMPONENT=063c9,-2,-1
+
+
+//////////////////
+// Custom Items //
+//////////////////
 
 [ITEMDEF i_deed_harpsichord_south]
 ID=i_deed
@@ -1213,6 +1413,7 @@ SUBSECTION=15th Anniversary
 DESCRIPTION=Harpsichord Deed (south)
 ON=@Create
    MORE=m_harpsichord_south
+   COLOR={0490 1 0499 1 04ab 1 0776 1 0782 1 078d 1 09c2 1 09ed 1 0a18 1 0a31 1}
 
 [ITEMDEF i_deed_harpsichord_east]
 ID=i_deed
@@ -1222,5 +1423,6 @@ SUBSECTION=15th Anniversary
 DESCRIPTION=Harpsichord Deed (east)
 ON=@Create
    MORE=m_harpsichord_east
+   COLOR={0490 1 0499 1 04ab 1 0776 1 0782 1 078d 1 09c2 1 09ed 1 0a18 1 0a31 1}
 
 [EOF]

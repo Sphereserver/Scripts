@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2017
+// SPHERE by : Menasoft ©1997-2018
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, Aug 21, 2017
+// FILE LAST UPDATED: Tuesday, Feb 13, 2018
 //
 VERSION=0.56d
 
@@ -1722,5 +1722,365 @@ COMPONENT=047d6,1,-1,0
 COMPONENT=047d7,-2,1,0
 COMPONENT=047d8,-2,-1,0
 COMPONENT=047d9,2,-1,0
+
+
+[ITEMDEF 09e3a]
+//world tree (small)(south)
+NAME=world tree
+
+[ITEMDEF 09e3b]
+//world tree (small)(south)
+NAME=world tree
+
+[ITEMDEF 09e3c]
+//world tree (small)(south)
+NAME=world tree
+
+[ITEMDEF 09e3d]
+//world tree (small)(south)
+NAME=world tree
+
+[ITEMDEF 09e3e]
+//world tree (small)(south)
+NAME=world tree
+
+[ITEMDEF 09e3f]
+//world tree (small)(south)
+NAME=world tree
+
+[ITEMDEF 09e40]
+//world tree (small)(south)
+NAME=world tree
+
+[ITEMDEF 09e41]
+//world tree (small)(south)
+NAME=world tree
+
+[ITEMDEF 09e42]
+//world tree (small)(south)
+NAME=world tree
+
+[ITEMDEF 09e43]
+//world tree (small)(east)
+NAME=world tree
+
+[ITEMDEF 09e44]
+//world tree (small)(east)
+NAME=world tree
+
+[ITEMDEF 09e45]
+//world tree (small)(east)
+NAME=world tree
+
+[ITEMDEF 09e46]
+//world tree (small)(east)
+NAME=world tree
+
+[ITEMDEF 09e47]
+//world tree (small)(east)
+NAME=world tree
+
+[ITEMDEF 09e48]
+//world tree (small)(east)
+NAME=world tree
+
+[ITEMDEF 09e49]
+//world tree (small)(east)
+NAME=world tree
+
+[ITEMDEF 09e4a]
+//world tree (small)(east)
+NAME=world tree
+
+[ITEMDEF 09e4b]
+//world tree (small)(east)
+NAME=world tree
+
+
+[ITEMDEF 09e4d]
+//world tree (large)(south)
+NAME=world tree
+
+[ITEMDEF 09e4e]
+//world tree (large)(south)
+NAME=world tree
+
+[ITEMDEF 09e4f]
+//world tree (large)(south)
+NAME=world tree
+
+[ITEMDEF 09e50]
+//world tree (large)(south)
+NAME=world tree
+
+[ITEMDEF 09e51]
+//world tree (large)(south)
+NAME=world tree
+
+[ITEMDEF 09e52]
+//world tree (large)(south)
+NAME=world tree
+
+[ITEMDEF 09e53]
+//world tree (large)(south)
+NAME=world tree
+
+[ITEMDEF 09e54]
+//world tree (large)(south)
+NAME=world tree
+
+[ITEMDEF 09e55]
+//world tree (large)(south)
+NAME=world tree
+
+[ITEMDEF 09e56]
+//world tree (large)(south)
+NAME=world tree
+
+[ITEMDEF 09e57]
+//world tree (large)(south)
+NAME=world tree
+
+[ITEMDEF 09e58]
+//world tree (large)(south)
+NAME=world tree
+
+[ITEMDEF 09e59]
+//world tree (large)(south)
+NAME=world tree
+
+[ITEMDEF 09e5a]
+//world tree (large)(south)
+NAME=world tree
+
+[ITEMDEF 09e5b]
+//world tree (large)(south)
+NAME=world tree
+
+[ITEMDEF 09e5c]
+//world tree (large)(south)
+NAME=world tree
+
+[ITEMDEF 09e5d]
+//world tree (large)(south)
+NAME=world tree
+
+[ITEMDEF 09e5e]
+//world tree (large)(south)
+NAME=world tree
+
+[ITEMDEF 09e5f]
+//world tree (large)(south)
+NAME=world tree
+
+[ITEMDEF 09e60]
+//world tree (large)(south)
+NAME=world tree
+
+[ITEMDEF 09e61]
+//world tree (large)(south)
+NAME=world tree
+
+[ITEMDEF 09e62]
+//world tree (large)(south)
+NAME=world tree
+
+[ITEMDEF 09e63]
+//world tree (large)(south)
+NAME=world tree
+
+
+[ITEMDEF 09e66]
+//world tree (large)(east)
+NAME=world tree
+
+[ITEMDEF 09e67]
+//world tree (large)(east)
+NAME=world tree
+
+[ITEMDEF 09e68]
+//world tree (large)(east)
+NAME=world tree
+
+[ITEMDEF 09e69]
+//world tree (large)(east)
+NAME=world tree
+
+[ITEMDEF 09e6a]
+//world tree (large)(east)
+NAME=world tree
+
+[ITEMDEF 09e6b]
+//world tree (large)(east)
+NAME=world tree
+
+[ITEMDEF 09e6c]
+//world tree (large)(east)
+NAME=world tree
+
+[ITEMDEF 09e6d]
+//world tree (large)(east)
+NAME=world tree
+
+[ITEMDEF 09e6e]
+//world tree (large)(east)
+NAME=world tree
+
+[ITEMDEF 09e6f]
+//world tree (large)(east)
+NAME=world tree
+
+[ITEMDEF 09e70]
+//world tree (large)(east)
+NAME=world tree
+
+[ITEMDEF 09e71]
+//world tree (large)(east)
+NAME=world tree
+
+[ITEMDEF 09e72]
+//world tree (large)(east)
+NAME=world tree
+
+[ITEMDEF 09e73]
+//world tree (large)(east)
+NAME=world tree
+
+[ITEMDEF 09e74]
+//world tree (large)(east)
+NAME=world tree
+
+[ITEMDEF 09e75]
+//world tree (large)(east)
+NAME=world tree
+
+[ITEMDEF 09e76]
+//world tree (large)(east)
+NAME=world tree
+
+[ITEMDEF 09e77]
+//world tree (large)(east)
+NAME=world tree
+
+[ITEMDEF 09e78]
+//world tree (large)(east)
+NAME=world tree
+
+[ITEMDEF 09e79]
+//world tree (large)(east)
+NAME=world tree
+
+[ITEMDEF 09e7a]
+//world tree (large)(east)
+NAME=world tree
+
+[ITEMDEF 09e7b]
+//world tree (large)(east)
+NAME=world tree
+
+[ITEMDEF 09e7c]
+//world tree (large)(east)
+NAME=world tree
+
+
+////////////
+// Multis //
+////////////
+
+[MULTIDEF m_world_tree_small_s]
+ID=09e3a
+NAME=World Tree
+TYPE=t_multi
+CATEGORY=House Addons
+SUBSECTION=Misc
+DESCRIPTION=World Tree (small)(south)
+MULTIREGION=0,0,0,0
+COMPONENT=09e3b,0,1
+COMPONENT=09e3c,-1,1
+COMPONENT=09e3d,-1,0
+COMPONENT=09e3e,-1,-1
+COMPONENT=09e3f,0,-1
+COMPONENT=09e40,1,-1
+COMPONENT=09e41,1,0
+COMPONENT=09e42,1,1
+
+[MULTIDEF m_world_tree_small_e]
+ID=09e43
+NAME=World Tree
+TYPE=t_multi
+CATEGORY=House Addons
+SUBSECTION=Misc
+DESCRIPTION=World Tree (small)(east)
+MULTIREGION=0,0,0,0
+COMPONENT=09e44,1,0
+COMPONENT=09e45,1,-1
+COMPONENT=09e46,0,-1
+COMPONENT=09e47,-1,-1
+COMPONENT=09e48,-1,0
+COMPONENT=09e49,-1,1
+COMPONENT=09e4a,0,1
+COMPONENT=09e4b,1,1
+
+[MULTIDEF m_world_tree_large_s]
+ID=09e54
+NAME=World Tree
+TYPE=t_multi
+CATEGORY=House Addons
+SUBSECTION=Misc
+DESCRIPTION=World Tree (large)(south)
+MULTIREGION=0,0,0,0
+COMPONENT=09e4d,1,2
+COMPONENT=09e4e,2,1
+COMPONENT=09e4f,0,2
+COMPONENT=09e50,1,1
+COMPONENT=09e51,2,0
+COMPONENT=09e52,0,1
+COMPONENT=09e53,1,0
+COMPONENT=09e55,2,-1
+COMPONENT=09e56,1,-1
+COMPONENT=09e57,2,-2
+COMPONENT=09e58,0,-1
+COMPONENT=09e59,1,-2
+COMPONENT=09e5a,0,-2
+COMPONENT=09e5b,-1,2
+COMPONENT=09e5c,-2,2
+COMPONENT=09e5d,-1,1
+COMPONENT=09e5e,-2,1
+COMPONENT=09e5f,-1,0
+COMPONENT=09e60,-2,0
+COMPONENT=09e61,-1,-1
+COMPONENT=09e62,-2,-1
+COMPONENT=09e63,-1,-2
+
+[MULTIDEF m_world_tree_large_e]
+ID=09e6d
+NAME=World Tree
+TYPE=t_multi
+CATEGORY=House Addons
+SUBSECTION=Misc
+DESCRIPTION=World Tree (large)(east)
+MULTIREGION=0,0,0,0
+COMPONENT=09e66,2,1
+COMPONENT=09e67,1,2
+COMPONENT=09e68,2,0
+COMPONENT=09e69,1,1
+COMPONENT=09e6a,0,2
+COMPONENT=09e6b,1,0
+COMPONENT=09e6c,0,1
+COMPONENT=09e6e,-1,2
+COMPONENT=09e6f,-1,1
+COMPONENT=09e70,-2,2
+COMPONENT=09e71,-1,0
+COMPONENT=09e72,-2,1
+COMPONENT=09e73,-2,0
+COMPONENT=09e74,2,-1
+COMPONENT=09e75,2,-2
+COMPONENT=09e76,1,-1
+COMPONENT=09e77,1,-2
+COMPONENT=09e78,0,-1
+COMPONENT=09e79,0,-2
+COMPONENT=09e7a,-1,-1
+COMPONENT=09e7b,-1,-2
+COMPONENT=09e7c,-2,-1
 
 [EOF]

@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2017
+// SPHERE by : Menasoft ©1997-2018
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, Dec 10, 2017
+// FILE LAST UPDATED: Tuesday, Feb 13, 2018
 //
 VERSION=0.56d
 
@@ -211,44 +211,30 @@ DEFNAME=i_lantern_dragon_s
 NAME=dragon lantern
 TYPE=t_light_out
 TDATA3=i_lantern_dragon_s_lit
+WEIGHT=1.0
 CATEGORY=King's Collection
 SUBSECTION=Lightsources
 DESCRIPTION=Dragon Lantern (south)(unlit)
 ON=@Create
    MOREZ=1
 
-[ITEMDEF 04c41]
-DEFNAME=i_lantern_dragon_s_lit
-NAME=dragon lantern
-TYPE=t_light_lit
-TDATA3=i_lantern_dragon_s
-CATEGORY=King's Collection
-SUBSECTION=Lightsources
-DESCRIPTION=Dragon Lantern (south)(lit)
-ON=@Create
-   MOREZ=1
+//[ITEMDEF 04c41]
+//dragon lantern (unused, replaced by 04cde)
 
 [ITEMDEF 04c42]
 DEFNAME=i_lantern_dragon_e
 NAME=dragon lantern
 TYPE=t_light_out
 TDATA3=i_lantern_dragon_e_lit
+WEIGHT=1.0
 CATEGORY=King's Collection
 SUBSECTION=Lightsources
 DESCRIPTION=Dragon Lantern (east)(unlit)
 ON=@Create
    MOREZ=1
 
-[ITEMDEF 04c43]
-DEFNAME=i_lantern_dragon_e_lit
-NAME=dragon lantern
-TYPE=t_light_lit
-TDATA3=i_lantern_dragon_e
-CATEGORY=King's Collection
-SUBSECTION=Lightsources
-DESCRIPTION=Dragon Lantern (east)(lit)
-ON=@Create
-   MOREZ=1
+//[ITEMDEF 04c43]
+//dragon lantern (unused, replaced by 04ce2)
 
 [ITEMDEF 04c44]
 DEFNAME=i_lamp_bird_s
@@ -1017,6 +1003,55 @@ NAME=long wooden table
 [ITEMDEF 04cd7]
 //long wooden table (multi-part)(east)
 NAME=long wooden table
+
+
+[ITEMDEF 04cde]
+DEFNAME=i_lantern_dragon_s_lit
+NAME=dragon lantern
+TYPE=t_light_lit
+TDATA3=i_lantern_dragon_s
+WEIGHT=1.0
+CATEGORY=King's Collection
+SUBSECTION=Lightsources
+DESCRIPTION=Dragon Lantern (south)(lit)
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 04cdf]
+//dragon lantern (south)(animation frame)
+NAME=dragon lantern
+
+[ITEMDEF 04ce0]
+//dragon lantern (south)(animation frame)
+NAME=dragon lantern
+
+[ITEMDEF 04ce1]
+//dragon lantern (south)(animation frame)
+NAME=dragon lantern
+
+[ITEMDEF 04ce2]
+DEFNAME=i_lantern_dragon_e_lit
+NAME=dragon lantern
+TYPE=t_light_lit
+TDATA3=i_lantern_dragon_e
+WEIGHT=1.0
+CATEGORY=King's Collection
+SUBSECTION=Lightsources
+DESCRIPTION=Dragon Lantern (east)(lit)
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 04ce3]
+//dragon lantern (east)(animation frame)
+NAME=dragon lantern
+
+[ITEMDEF 04ce4]
+//dragon lantern (east)(animation frame)
+NAME=dragon lantern
+
+[ITEMDEF 04ce5]
+//dragon lantern (east)(animation frame)
+NAME=dragon lantern
 
 
 [ITEMDEF 04d0c]
