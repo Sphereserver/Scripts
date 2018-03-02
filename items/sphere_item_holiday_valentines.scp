@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2017
+// SPHERE by : Menasoft ©1997-2018
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Sept 2, 2017
+// FILE LAST UPDATED: Friday, Mar 2, 2018
 //
 VERSION=0.56d
 
@@ -81,7 +81,7 @@ DESCRIPTION=Gift Box (Heart Shaped)
 DUPELIST=049cb
 
 [ITEMDEF 049cb]
-//gift box (heart shaped)
+//heart shaped box
 DUPEITEM=049ca
 
 [ITEMDEF 049cc]
@@ -97,30 +97,31 @@ DESCRIPTION=Gift Box (heart shaped)(beating)
 DUPELIST=049d0
 
 [ITEMDEF 049cd]
-//gift box (heart shaped)(beating)
+//heart shaped box (animation frame)
 
 [ITEMDEF 049ce]
-//gift box (heart shaped)(beating)
+//heart shaped box (animation frame)
 
 [ITEMDEF 049cf]
-//gift box (heart shaped)(beating)
+//heart shaped box (animation frame)
 
 [ITEMDEF 049d0]
-//gift box (heart shaped)(beating)
+//heart shaped box (animation frame)
 DUPEITEM=049cc
 
 [ITEMDEF 049d1]
-//gift box (heart shaped)(beating)
+//heart shaped box (animation frame)
 
 [ITEMDEF 049d2]
-//gift box (heart shaped)(beating)
+//heart shaped box (animation frame)
 
 [ITEMDEF 049d3]
-//gift box (heart shaped)(beating)
+//heart shaped box (animation frame)
 
 
 [ITEMDEF 04aa4]
 DEFNAME=i_fx_hearts
+NAME=hearts
 CATEGORY=Animations
 SUBSECTION=Hearts
 DESCRIPTION=Hearts
@@ -149,7 +150,7 @@ DUPEITEM=04aa4
 
 [ITEMDEF 04c0b]
 DEFNAME=i_vase_roses
-NAME=Bouquet of roses in a vase
+NAME=bouquet of roses in a vase
 CATEGORY=Valentine's Day
 SUBSECTION=Decoration
 DESCRIPTION=Bouquet of roses in a vase
@@ -382,5 +383,105 @@ DUPEITEM=063f4
 
 [ITEMDEF 063f9]
 //sleeping puppy (brown)(animation frame)
+
+
+[ITEMDEF 0a004]
+DEFNAME=i_table_heart
+NAME=table
+TYPE=t_light_out
+TDATA3=i_table_heart_lit
+CATEGORY=Valentine's Day
+SUBSECTION=Decoration
+DESCRIPTION=Table with Candle (unlit)
+ON=@Create
+   MOREZ=2
+
+[ITEMDEF 0a005]
+DEFNAME=i_table_heart_lit
+NAME=table
+TYPE=t_light_lit
+TDATA3=i_table_heart
+CATEGORY=Valentine's Day
+SUBSECTION=Decoration
+DESCRIPTION=Table with Candle (lit)
+ON=@Create
+   MOREZ=2
+
+[ITEMDEF 0a006]
+//table (animation frame)
+NAME=table
+
+[ITEMDEF 0a007]
+//table (animation frame)
+NAME=table
+
+[ITEMDEF 0a008]
+//table (animation frame)
+NAME=table
+
+[ITEMDEF 0a009]
+//table (animation frame)
+NAME=table
+
+[ITEMDEF 0a00a]
+//table (animation frame)
+NAME=table
+
+[ITEMDEF 0a00b]
+//table (animation frame)
+NAME=table
+
+[ITEMDEF 0a00c]
+//table (animation frame)
+NAME=table
+
+[ITEMDEF 0a00d]
+//table (animation frame)
+NAME=table
+
+[ITEMDEF 0a00e]
+//table (animation frame)
+NAME=table
+
+[ITEMDEF 0a00f]
+//table (animation frame)
+NAME=table
+
+
+[ITEMDEF 0a05c]
+DEFNAME=i_chair_heart
+FLIP=1
+CATEGORY=Valentine's Day
+SUBSECTION=Decoration
+DESCRIPTION=Chair
+DUPELIST=0a05d,0a05e,0a05f
+
+[ITEMDEF 0a05d]
+//chair
+DUPEITEM=0a05c
+
+[ITEMDEF 0a05e]
+//chair
+DUPEITEM=0a05c
+
+[ITEMDEF 0a05f]
+//chair
+DUPEITEM=0a05c
+
+
+[ITEMDEF 0a0a1]
+DEFNAME=i_pillow_heart
+NAME=pillow
+FLIP=1
+TYPE=t_container
+TDATA2=09cda
+CATEGORY=Valentine's Day
+SUBSECTION=Containers
+DESCRIPTION=Pillow
+DUPELIST=0a0a2
+
+[ITEMDEF 0a0a2]
+//pillow
+DUPEITEM=0a0a1
 
 [EOF]

@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2017
+// SPHERE by : Menasoft ©1997-2018
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, Oct 23, 2017
+// FILE LAST UPDATED: Friday, Mar 2, 2018
 //
 VERSION=0.56d
 
@@ -3022,5 +3022,71 @@ TEVENTS=t_equipitem
 CATEGORY=Provisions - Clothes
 SUBSECTION=Miscellaneous
 DESCRIPTION=Gargish Epaulette
+
+
+[ITEMDEF 0a0ab]
+DEFNAME=i_robe_hooded_britannia_1
+NAME=Hooded Britannia Robe
+TYPE=t_clothing
+DYE=1
+TEVENTS=t_equipitem
+CanUse=can_u_human|can_u_elf
+CATEGORY=Provisions - Clothes
+SUBSECTION=Shirts & Robes
+DESCRIPTION=Hooded Britannia Robe (1)
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 0a0ac]
+DEFNAME=i_robe_hooded_britannia_2
+NAME=Hooded Britannia Robe
+TYPE=t_clothing
+DYE=1
+TEVENTS=t_equipitem
+CanUse=can_u_human|can_u_elf
+CATEGORY=Provisions - Clothes
+SUBSECTION=Shirts & Robes
+DESCRIPTION=Hooded Britannia Robe (2)
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 0a0ad]
+DEFNAME=i_robe_hooded_britannia_3
+NAME=Hooded Britannia Robe
+TYPE=t_clothing
+DYE=1
+TEVENTS=t_equipitem
+CanUse=can_u_human|can_u_elf
+CATEGORY=Provisions - Clothes
+SUBSECTION=Shirts & Robes
+DESCRIPTION=Hooded Britannia Robe (4)
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 0a0ae]
+DEFNAME=i_robe_hooded_britannia_4
+NAME=Hooded Britannia Robe
+TYPE=t_clothing
+DYE=1
+TEVENTS=t_equipitem
+CanUse=can_u_human|can_u_elf
+CATEGORY=Provisions - Clothes
+SUBSECTION=Shirts & Robes
+DESCRIPTION=Hooded Britannia Robe (4)
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 0a0af]
+DEFNAME=i_robe_hooded_britannia_5
+NAME=Hooded Britannia Robe
+TYPE=t_clothing
+DYE=1
+TEVENTS=t_equipitem
+CanUse=can_u_human|can_u_elf
+CATEGORY=Provisions - Clothes
+SUBSECTION=Shirts & Robes
+DESCRIPTION=Hooded Britannia Robe (5)
+ON=@Create
+   HITPOINTS={36 48}
 
 [EOF]

@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2017
+// SPHERE by : Menasoft ©1997-2018
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, Dec 10, 2017
+// FILE LAST UPDATED: Friday, Mar 2, 2018
 //
 VERSION=0.56d
 
@@ -437,7 +437,6 @@ DEFNAME=i_vase_rose
 NAME=rose in a vase
 TYPE=t_message
 WEIGHT=1.1
-RESOURCES=1 i_vase_small_1,1 i_flower_rose_white
 CATEGORY=Decoration - Potted Plants & Vases
 SUBSECTION=Vases & Pots
 DESCRIPTION=Vase with Rose
@@ -3711,14 +3710,14 @@ SUBSECTION=Miscellaneous
 DESCRIPTION=Grizzled Bones
 
 [ITEMDEF 0318d]
-DEFNAME=i_eye
-NAME=eye
+DEFNAME=i_eye_travesty
+NAME=eye of the travesty
 TYPE=t_meat_raw
 VALUE=1
 WEIGHT=0.1
 CATEGORY=Quest
 SUBSECTION=Anatomy
-DESCRIPTION=Eye
+DESCRIPTION=Eye of the Travesty
 
 [ITEMDEF 0318e]
 DEFNAME=i_captured_essence
@@ -4280,19 +4279,19 @@ DESCRIPTION=Soul Gem
 
 
 [ITEMDEF 04042]
-DEFNAME=i_vase_gargish_tall
-NAME=tall Gargish vase
+DEFNAME=i_vase_gargish
+NAME=gargish vase
 FLIP=1
 WEIGHT=15.0
-RESOURCES=5 i_rock_plain
-SKILLMAKE=carpentry 5.0,t_masonry_tool
+RESOURCES=4 i_rock_granite
+SKILLMAKE=Carpentry 40.0,t_masonry_tool
 CATEGORY=Decoration - Potted Plants & Vases
 SUBSECTION=Vases & Pots
-DESCRIPTION=Tall Gargish Vase
+DESCRIPTION=Gargish Vase
 DUPELIST=04043
 
 [ITEMDEF 04043]
-//Gargish vase (tall)
+//gargish vase
 DUPEITEM=04042
 
 
@@ -4527,16 +4526,18 @@ DUPEITEM=0421e
 
 
 [ITEMDEF 042b2]
-DEFNAME=i_vase_gargoyle1
+DEFNAME=i_vase_gargish_traditional
+NAME=gargish traditional vase
 CATEGORY=Decoration - Potted Plants & Vases
 SUBSECTION=Vases & Pots
-DESCRIPTION=Large Gargish Vase 1
+DESCRIPTION=Gargish Traditional Vase
 
 [ITEMDEF 042b3]
-DEFNAME=i_vase_gargoyle2
+DEFNAME=i_vase_gargish_bentas
+NAME=gargish bentas vase
 CATEGORY=Decoration - Potted Plants & Vases
 SUBSECTION=Vases & Pots
-DESCRIPTION=Large Gargish Vase 1
+DESCRIPTION=Gargish Bentas Vase
 
 [ITEMDEF 042b5]
 DEFNAME=i_skulls_spiked
@@ -4551,11 +4552,7 @@ DESCRIPTION=Spiked Skulls
 
 [ITEMDEF 042be]
 DEFNAME=i_bowl_pewter_gargish
-NAME=pewter bowl
-VALUE=12
-WEIGHT=2.0
-RESOURCES=2 i_ingot_iron
-SKILLMAKE=tinkering 42.0,t_tinker_tools
+NAME=large pewter bowl
 CATEGORY=Decoration - Kitchen and Dining
 SUBSECTION=Table Settings
 DESCRIPTION=Large Gargish Pewter Bowl
@@ -4564,9 +4561,6 @@ DESCRIPTION=Large Gargish Pewter Bowl
 DEFNAME=i_book_of_truth_gargish
 NAME=book of truth
 TYPE=t_book
-VALUE=500
-WEIGHT=1.0
-RESOURCES=1 i_book_sm
 CATEGORY=Quest
 SUBSECTION=Virtue Items
 DESCRIPTION=Book of Truth (Gargish)
@@ -4874,23 +4868,63 @@ DESCRIPTION=Gold Dust
 [ITEMDEF 04c14]
 [ITEMDEF 04c15]
 
+
 [ITEMDEF 04c5e]
+DEFNAME=i_ship_bell
+NAME=ship bell
+FLIP=1
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Nautical
+DESCRIPTION=Ship Bell
+DUPELIST=04c5f
+
 [ITEMDEF 04c5f]
+//ship bell
+DUPEITEM=04c5e
+
 
 [ITEMDEF 04cd8]
+DEFNAME=i_refinement_polish
+NAME=polish
+CATEGORY=Armor Refinement
+SUBSECTION=Components
+DESCRIPTION=Polish
+
 [ITEMDEF 04cd9]
+DEFNAME=i_refinement_scouring
+NAME=scouring
+CATEGORY=Armor Refinement
+SUBSECTION=Components
+DESCRIPTION=Scouring
+
 [ITEMDEF 04cda]
+DEFNAME=i_refinement_gloss
+NAME=gloss
+CATEGORY=Armor Refinement
+SUBSECTION=Components
+DESCRIPTION=Gloss
+
 [ITEMDEF 04cdb]
+DEFNAME=i_refinement_threads
+NAME=threads
+CATEGORY=Armor Refinement
+SUBSECTION=Components
+DESCRIPTION=Threads
+
 [ITEMDEF 04cdc]
+DEFNAME=i_refinement_plating
+NAME=plating
+CATEGORY=Armor Refinement
+SUBSECTION=Components
+DESCRIPTION=Plating
+
 [ITEMDEF 04cdd]
-[ITEMDEF 04cde]
-[ITEMDEF 04cdf]
-[ITEMDEF 04ce0]
-[ITEMDEF 04ce1]
-[ITEMDEF 04ce2]
-[ITEMDEF 04ce3]
-[ITEMDEF 04ce4]
-[ITEMDEF 04ce5]
+DEFNAME=i_refinement_resin
+NAME=resin
+CATEGORY=Armor Refinement
+SUBSECTION=Components
+DESCRIPTION=Resin
+
 
 [ITEMDEF 0571c]
 // This is the base ID of a number of imbuing ingredients.
@@ -5112,10 +5146,19 @@ SUBSECTION=Stygian
 DESCRIPTION=Vile Tentacles
 
 [ITEMDEF 05728]
-//void core
+DEFNAME=i_void_core
+CATEGORY=Resources
+SUBSECTION=Void
+DESCRIPTION=Void Core
+
 [ITEMDEF 05729]
+//void core (animation frame)
+
 [ITEMDEF 0572a]
+//void core (animation frame)
+
 [ITEMDEF 0572b]
+//void core (animation frame)
 
 [ITEMDEF 0572c]
 // Is an imbuing ingredient used to imbue the Repond Slayer property onto
@@ -5465,8 +5508,6 @@ DESCRIPTION=Reflective Wolf Eye
 [ITEMDEF 063bb]
 //Sick Female Gargoyle
 
-[ITEMDEF 09966]
-//amalgamator
 
 [ITEMDEF 075bf]
 // NoName // orc
@@ -5552,6 +5593,21 @@ DESCRIPTION=Reflective Wolf Eye
 [ITEMDEF 098d0]
 // NoName //tok
 
+
+[ITEMDEF 09966]
+DEFNAME=i_refinement_amalgamator
+NAME=refinement amalgamator
+CATEGORY=Armor Refinement
+SUBSECTION=Tools
+DESCRIPTION=Refinement Amalgamator
+ON=@Create
+   COLOR=0480
+
+
+[ITEMDEF 09bcb]
+//clouds
+
+
 [ITEMDEF 09c16]
 DEFNAME=i_runic_atlas
 NAME=runic atlas
@@ -5570,5 +5626,21 @@ ON=@Create
 [ITEMDEF 09c17]
 //runic atlas
 DUPEITEM=09c16
+
+
+[ITEMDEF 09fe7]
+DEFNAME=i_vault
+NAME=vault
+TYPE=t_container
+TDATA2=09bf2
+FLIP=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Containers
+DESCRIPTION=Vault
+DUPELIST=09fe8
+
+[ITEMDEF 09fe8]
+//vault
+DUPEITEM=09fe7
 
 [EOF]
