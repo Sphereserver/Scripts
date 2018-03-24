@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Feb 13, 2018
+// FILE LAST UPDATED: Saturday, Mar 24, 2018
 //
 VERSION=0.56d
 
@@ -2466,24 +2466,6 @@ DUPELIST=03000
 DUPEITEM=02fff
 
 
-[ITEMDEF 03158]
-DEFNAME=i_trophy_dread_horn
-NAME=dread horn trophy
-FLIP=1
-VALUE=2036
-WEIGHT=7.2
-RESOURCES=1 i_trophy_mountboard,1 i_pristine_dread_horn
-SKILLMAKE=Carpentry 72.0,Tailoring 60.0,t_carpentry,t_sewing_kit
-CATEGORY=Decoration - Miscellaneous
-SUBSECTION=Trophies
-DESCRIPTION=Dread Horn
-DUPELIST=03159
-
-[ITEMDEF 03159]
-//trophy dread horn
-DUPEITEM=03158
-
-
 [ITEMDEF 03bb6]
 DEFNAME=i_tapestry_known_world
 NAME=map of the known world
@@ -2731,138 +2713,120 @@ DUPEITEM=04b56
 
 
 [ITEMDEF 04b62]
-DEFNAME=i_cityflag_trinsic
-NAME=Trinsic city flag
+DEFNAME=i_banner_city_trinsic
+NAME=Banner of Trinsic
 FLIP=1
-WEIGHT=5.0
-RESOURCES=1 i_log,5 i_cloth
 CATEGORY=Decoration - Wall Hangings
-SUBSECTION=City Flags
-DESCRIPTION=Trinsic City Flag
+SUBSECTION=Banners (cities)
+DESCRIPTION=Trinsic
 DUPELIST=04b6b
 
 [ITEMDEF 04b63]
-DEFNAME=i_cityflag_moonglow
-NAME=Moonglow city flag
+DEFNAME=i_banner_city_moonglow
+NAME=Banner of Moonglow
 FLIP=1
-WEIGHT=5.0
-RESOURCES=1 i_log,5 i_cloth
 CATEGORY=Decoration - Wall Hangings
-SUBSECTION=City Flags
-DESCRIPTION=Moonglow City Flag
+SUBSECTION=Banners (cities)
+DESCRIPTION=Moonglow
 DUPELIST=04b6c
 
 [ITEMDEF 04b64]
-DEFNAME=i_cityflag_britain
-NAME=Britain city flag
+DEFNAME=i_banner_city_britain
+NAME=Banner of Britain
 FLIP=1
-WEIGHT=5.0
-RESOURCES=1 i_log,5 i_cloth
 CATEGORY=Decoration - Wall Hangings
-SUBSECTION=City Flags
-DESCRIPTION=Britain City Flag
+SUBSECTION=Banners (cities)
+DESCRIPTION=Britain
 DUPELIST=04b6d
 
 [ITEMDEF 04b65]
-DEFNAME=i_cityflag_jhelom
-NAME=Jhelom city flag
+DEFNAME=i_banner_city_jhelom
+NAME=Banner of Jhelom
 FLIP=1
-WEIGHT=5.0
-RESOURCES=1 i_log,5 i_cloth
 CATEGORY=Decoration - Wall Hangings
-SUBSECTION=City Flags
-DESCRIPTION=Jhelom City Flag
+SUBSECTION=Banners (cities)
+DESCRIPTION=Jhelom
 DUPELIST=04b6e
 
 [ITEMDEF 04b66]
-DEFNAME=i_cityflag_yew
-NAME=Yew city flag
+DEFNAME=i_banner_city_yew
+NAME=Banner of Yew
 FLIP=1
-WEIGHT=5.0
-RESOURCES=1 i_log,5 i_cloth
 CATEGORY=Decoration - Wall Hangings
-SUBSECTION=City Flags
-DESCRIPTION=Yew City Flag
+SUBSECTION=Banners (cities)
+DESCRIPTION=Yew
 DUPELIST=04b6f
 
 [ITEMDEF 04b67]
-DEFNAME=i_cityflag_minoc
-NAME=Minoc city flag
+DEFNAME=i_banner_city_minoc
+NAME=Banner of Minoc
 FLIP=1
-WEIGHT=5.0
-RESOURCES=1 i_log,5 i_cloth
 CATEGORY=Decoration - Wall Hangings
-SUBSECTION=City Flags
-DESCRIPTION=Minoc City Flag
+SUBSECTION=Banners (cities)
+DESCRIPTION=Minoc
 DUPELIST=04b70
 
 [ITEMDEF 04b68]
-DEFNAME=i_cityflag_vesper
-NAME=Vesper city flag
+DEFNAME=i_banner_city_vesper
+NAME=Banner of Vesper
 FLIP=1
-WEIGHT=5.0
-RESOURCES=1 i_log,5 i_cloth
 CATEGORY=Decoration - Wall Hangings
-SUBSECTION=City Flags
-DESCRIPTION=Vesper City Flag
+SUBSECTION=Banners (cities)
+DESCRIPTION=Vesper
 DUPELIST=04b71
 
 [ITEMDEF 04b69]
-DEFNAME=i_cityflag_magincia
-NAME=Magincia city flag
+DEFNAME=i_banner_city_newmagincia
+NAME=Banner of New Magincia
 FLIP=1
-WEIGHT=5.0
-RESOURCES=1 i_log,5 i_cloth
 CATEGORY=Decoration - Wall Hangings
-SUBSECTION=City Flags
-DESCRIPTION=Magincia City Flag
+SUBSECTION=Banners (cities)
+DESCRIPTION=New Magincia
 DUPELIST=04b72
 
 [ITEMDEF 04b6a]
-DEFNAME=i_cityflag_skarabrae
-NAME=Skara Brae city flag
+DEFNAME=i_banner_city_skarabrae
+NAME=Banner of Skara Brae
 FLIP=1
-WEIGHT=5.0
-RESOURCES=1 i_log,5 i_cloth
 CATEGORY=Decoration - Wall Hangings
-SUBSECTION=City Flags
-DESCRIPTION=Skara Brae City Flag
+SUBSECTION=Banners (cities)
+DESCRIPTION=Skara Brae
 DUPELIST=04b73
 
 [ITEMDEF 04b6b]
-//Trinsic City Flag
+//Banner of Trinsic
 DUPEITEM=04b62
 
 [ITEMDEF 04b6c]
-//Moonglow City Flag
+//Banner of Moonglow
 DUPEITEM=04b63
 
 [ITEMDEF 04b6d]
-//Britain City Flag
+//Banner of Britain
 DUPEITEM=04b64
 
 [ITEMDEF 04b6e]
-//Jhelom City Flag
+//Banner of Jhelom
 DUPEITEM=04b65
 
 [ITEMDEF 04b6f]
-//Yew City Flag
+//Banner of Yew
 DUPEITEM=04b66
 
 [ITEMDEF 04b70]
-//Minoc City Flag
+//Banner of Minoc
 DUPEITEM=04b67
 
 [ITEMDEF 04b71]
-//Vesper City Flag
+//Banner of Vesper
 DUPEITEM=04b68
 
 [ITEMDEF 04b72]
-//Magincia City Flag
+//Banner of New Magincia
 DUPEITEM=04b69
 
 [ITEMDEF 04b73]
-//Skara Brae City Flag
+//Banner of Skara Brae
 DUPEITEM=04b6a
 
 
@@ -2889,20 +2853,408 @@ DUPEITEM=04b8d
 
 
 [ITEMDEF 04c60]
-//Landscape Painting
+DEFNAME=i_painting_landscape_1
+NAME=landscape
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Paintings
+DESCRIPTION=Landscape (1)
+DUPELIST=04c61
+
 [ITEMDEF 04c61]
+//landscape
+DUPEITEM=04c60
 
 [ITEMDEF 04c62]
-//Landscape Painting (2)
+DEFNAME=i_painting_landscape_2
+NAME=landscape
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Paintings
+DESCRIPTION=Landscape (2)
+DUPELIST=04c63
+
 [ITEMDEF 04c63]
+//landscape
+DUPEITEM=04c62
 
 [ITEMDEF 04c64]
-//Landscape Painting (3)
+DEFNAME=i_painting_landscape_3
+NAME=landscape
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Paintings
+DESCRIPTION=Landscape (3)
+DUPELIST=04c65
+
 [ITEMDEF 04c65]
+//landscape
+DUPEITEM=04c64
 
 [ITEMDEF 04c66]
-//Landscape Painting (4)
+DEFNAME=i_painting_landscape_4
+NAME=landscape
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Paintings
+DESCRIPTION=Landscape (4)
+DUPELIST=04c67
+
 [ITEMDEF 04c67]
+//landscape
+DUPEITEM=04c66
+
+
+[ITEMDEF 06380]
+DEFNAME=i_shard_symbol_legends
+NAME=Legends Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Legends
+DUPELIST=0639b
+
+[ITEMDEF 06381]
+DEFNAME=i_shard_symbol_arirang
+NAME=Arirang Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Arirang
+DUPELIST=0639c
+
+[ITEMDEF 06382]
+DEFNAME=i_shard_symbol_asuka
+NAME=Asuka Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Asuka
+DUPELIST=0639d
+
+[ITEMDEF 06383]
+DEFNAME=i_shard_symbol_atlantic
+NAME=Atlantic Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Atlantic
+DUPELIST=0639e
+
+[ITEMDEF 06384]
+DEFNAME=i_shard_symbol_baja
+NAME=Baja Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Baja
+DUPELIST=0639f
+
+[ITEMDEF 06385]
+DEFNAME=i_shard_symbol_balhae
+NAME=Balhae Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Balhae
+DUPELIST=063a0
+
+[ITEMDEF 06386]
+DEFNAME=i_shard_symbol_catskills
+NAME=Catskills Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Catskills
+DUPELIST=063a1
+
+[ITEMDEF 06387]
+DEFNAME=i_shard_symbol_chesapeake
+NAME=Chesapeake Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Chesapeake
+DUPELIST=063a2
+
+[ITEMDEF 06388]
+DEFNAME=i_shard_symbol_drachenfels
+NAME=Drachenfels Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Drachenfels
+DUPELIST=063a3
+
+[ITEMDEF 06389]
+DEFNAME=i_shard_symbol_europa
+NAME=Europa Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Europa
+DUPELIST=063a4
+
+[ITEMDEF 0638a]
+DEFNAME=i_shard_symbol_formosa
+NAME=Formosa Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Formosa
+DUPELIST=063a5
+
+[ITEMDEF 0638b]
+DEFNAME=i_shard_symbol_greatlakes
+NAME=Great Lakes Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Great Lakes
+DUPELIST=063a6
+
+[ITEMDEF 0638c]
+DEFNAME=i_shard_symbol_hokuto
+NAME=Hokuto Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Hokuto
+DUPELIST=063a7
+
+[ITEMDEF 0638d]
+DEFNAME=i_shard_symbol_izumo
+NAME=Izumo Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Izumo
+DUPELIST=063a8
+
+[ITEMDEF 0638e]
+DEFNAME=i_shard_symbol_lakeaustin
+NAME=Lake Austin Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Lake Austin
+DUPELIST=063a9
+
+[ITEMDEF 0638f]
+DEFNAME=i_shard_symbol_lakesuperior
+NAME=Lake Superior Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Lake Superior
+DUPELIST=063aa
+
+[ITEMDEF 06390]
+DEFNAME=i_shard_symbol_mizuho
+NAME=Mizuho Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Mizuho
+DUPELIST=063ab
+
+[ITEMDEF 06391]
+DEFNAME=i_shard_symbol_mugen
+NAME=Mugen Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Mugen
+DUPELIST=063ac
+
+[ITEMDEF 06392]
+DEFNAME=i_shard_symbol_napavalley
+NAME=Napa Valley Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Napa Valley
+DUPELIST=063ad
+
+[ITEMDEF 06393]
+DEFNAME=i_shard_symbol_oceania
+NAME=Oceania Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Oceania
+DUPELIST=063ae
+
+[ITEMDEF 06394]
+DEFNAME=i_shard_symbol_origin
+NAME=Origin Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Origin
+DUPELIST=063af
+
+[ITEMDEF 06395]
+DEFNAME=i_shard_symbol_pacific
+NAME=Pacific Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Pacific
+DUPELIST=063b0
+
+[ITEMDEF 06396]
+DEFNAME=i_shard_symbol_sakura
+NAME=Sakura Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Sakura
+DUPELIST=063b1
+
+[ITEMDEF 06397]
+DEFNAME=i_shard_symbol_siegeperilous
+NAME=Siege Perilous Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Siege Perilous
+DUPELIST=063b2
+
+[ITEMDEF 06398]
+DEFNAME=i_shard_symbol_sonoma
+NAME=Sonoma Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Sonoma
+DUPELIST=063b3
+
+[ITEMDEF 06399]
+DEFNAME=i_shard_symbol_wakoku
+NAME=Wakoku Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Wakoku
+DUPELIST=063b4
+
+[ITEMDEF 0639a]
+DEFNAME=i_shard_symbol_yamato
+NAME=Yamato Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Yamato
+DUPELIST=063b5
+
+[ITEMDEF 0639b]
+//Legends Shard Symbol
+DUPEITEM=06380
+
+[ITEMDEF 0639c]
+//Arirang Shard Symbol
+DUPEITEM=06381
+
+[ITEMDEF 0639d]
+//Asuka Shard Symbol
+DUPEITEM=06382
+
+[ITEMDEF 0639e]
+//Atlantic Shard Symbol
+DUPEITEM=06383
+
+[ITEMDEF 0639f]
+//Baja Shard Symbol
+DUPEITEM=06384
+
+[ITEMDEF 063a0]
+//Balhae Shard Symbol
+DUPEITEM=06385
+
+[ITEMDEF 063a1]
+//Catskills Shard Symbol
+DUPEITEM=06386
+
+[ITEMDEF 063a2]
+//Chesapeake Shard Symbol
+DUPEITEM=06387
+
+[ITEMDEF 063a3]
+//Drachenfels Shard Symbol
+DUPEITEM=06388
+
+[ITEMDEF 063a4]
+//Europa Shard Symbol
+DUPEITEM=06389
+
+[ITEMDEF 063a5]
+//Formosa Shard Symbol
+DUPEITEM=0638a
+
+[ITEMDEF 063a6]
+//Great Lakes Shard Symbol
+DUPEITEM=0638b
+
+[ITEMDEF 063a7]
+//Hokuto Shard Symbol
+DUPEITEM=0638c
+
+[ITEMDEF 063a8]
+//Izumo Shard Symbol
+DUPEITEM=0638d
+
+[ITEMDEF 063a9]
+//Lake Austin Shard Symbol
+DUPEITEM=0638e
+
+[ITEMDEF 063aa]
+//Lake Superior Shard Symbol
+DUPEITEM=0638f
+
+[ITEMDEF 063ab]
+//Mizuho Shard Symbol
+DUPEITEM=06390
+
+[ITEMDEF 063ac]
+//Mugen Shard Symbol
+DUPEITEM=06391
+
+[ITEMDEF 063ad]
+//Napa Valley Shard Symbol
+DUPEITEM=06392
+
+[ITEMDEF 063ae]
+//Oceania Shard Symbol
+DUPEITEM=06393
+
+[ITEMDEF 063af]
+//Origin Shard Symbol
+DUPEITEM=06394
+
+[ITEMDEF 063b0]
+//Pacific Shard Symbol
+DUPEITEM=06395
+
+[ITEMDEF 063b1]
+//Sakura Shard Symbol
+DUPEITEM=06396
+
+[ITEMDEF 063b2]
+//Siege Perilous Shard Symbol
+DUPEITEM=06397
+
+[ITEMDEF 063b3]
+//Sonoma Shard Symbol
+DUPEITEM=06398
+
+[ITEMDEF 063b4]
+//Wakoku Shard Symbol
+DUPEITEM=06399
+
+[ITEMDEF 063b5]
+//Yamato Shard Symbol
+DUPEITEM=0639a
 
 
 [ITEMDEF 08b8f]
@@ -3128,7 +3480,7 @@ DEFNAME=i_banner_tribal_jukari
 NAME=jukari tribal banner
 FLIP=1
 CATEGORY=Decoration - Wall Hangings
-SUBSECTION=Banners
+SUBSECTION=Banners (tribal)
 DESCRIPTION=Jukari Tribal Banner
 DUPELIST=09d54
 
@@ -3141,7 +3493,7 @@ DEFNAME=i_banner_tribal_kurak
 NAME=kurak tribal banner
 FLIP=1
 CATEGORY=Decoration - Wall Hangings
-SUBSECTION=Banners
+SUBSECTION=Banners (tribal)
 DESCRIPTION=Kurak Tribal Banner
 DUPELIST=09d56
 
@@ -3154,7 +3506,7 @@ DEFNAME=i_banner_tribal_barako
 NAME=barako tribal banner
 FLIP=1
 CATEGORY=Decoration - Wall Hangings
-SUBSECTION=Banners
+SUBSECTION=Banners (tribal)
 DESCRIPTION=Barako Tribal Banner
 DUPELIST=09d58
 
@@ -3167,7 +3519,7 @@ DEFNAME=i_banner_tribal_sakkhra
 NAME=sakkhra tribal banner
 FLIP=1
 CATEGORY=Decoration - Wall Hangings
-SUBSECTION=Banners
+SUBSECTION=Banners (tribal)
 DESCRIPTION=Sakkhra Tribal Banner
 DUPELIST=09d5a
 
@@ -3180,7 +3532,7 @@ DEFNAME=i_banner_tribal_barrab
 NAME=barrab tribal banner
 FLIP=1
 CATEGORY=Decoration - Wall Hangings
-SUBSECTION=Banners
+SUBSECTION=Banners (tribal)
 DESCRIPTION=Barrab Tribal Banner
 DUPELIST=09d5c
 
@@ -3193,7 +3545,7 @@ DEFNAME=i_banner_tribal_urali
 NAME=urali tribal banner
 FLIP=1
 CATEGORY=Decoration - Wall Hangings
-SUBSECTION=Banners
+SUBSECTION=Banners (tribal)
 DESCRIPTION=Urali Tribal Banner
 DUPELIST=09d5e
 

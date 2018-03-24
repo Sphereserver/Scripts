@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2017
+// SPHERE by : Menasoft ©1997-2018
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,9 +7,111 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Friday, Sept 29, 2017
+// FILE LAST UPDATED: Saturday, Mar 24, 2018
 //
 VERSION=0.56d
+
+
+////////////////////
+// Prism of Light //
+////////////////////
+
+[ITEMDEF 02da]
+DEFNAME=i_prismatic_crystal
+NAME=prismatic crystal
+CATEGORY=Quests
+SUBSECTION=Prism of Light
+DESCRIPTION=Prismatic Crystal
+ON=@Create
+   COLOR=032
+
+
+///////////////////
+// Twisted Weald //
+///////////////////
+
+[ITEMDEF 02db]
+DEFNAME=i_blighted_cotton
+NAME=blighted cotton
+CATEGORY=Quests
+SUBSECTION=Twisted Weald
+DESCRIPTION=Blighted Cotton
+ON=@Create
+   COLOR=034
+
+
+[ITEMDEF 02001]
+DEFNAME=i_lissith_silk
+NAME=lissith's silk
+CATEGORY=Quests
+SUBSECTION=Twisted Weald
+DESCRIPTION=Lissith's Silk
+ON=@Create
+   COLOR=04fe
+
+
+[ITEMDEF 0207c]
+//This statue is duplicated from 01226/0139b, but used on Twisted Weald
+//as container to drop dungeon keys and receive the Essence of the Wind
+DEFNAME=i_statue_faie
+NAME=statue of the faie
+CATEGORY=Quests
+SUBSECTION=Twisted Weald
+DESCRIPTION=Statue of the Faie
+
+
+[ITEMDEF 03156]
+DEFNAME=i_mangled_head_dread_horn
+NAME=mangled head of dread horn
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Twisted Weald
+DESCRIPTION=Mangled Head of Dread Horn
+DUPELIST=03157
+
+[ITEMDEF 03157]
+//mangled head of dread horn
+DUPEITEM=03156
+
+[ITEMDEF 03158]
+DEFNAME=i_mounted_dread_horn
+NAME=mounted dread horn
+FLIP=1
+RESOURCES=50 i_board,1 i_pristine_dread_horn
+SKILLMAKE=Carpentry 90.0,t_carpentry
+CATEGORY=Quests
+SUBSECTION=Twisted Weald
+DESCRIPTION=Mounted Dread Horn
+DUPELIST=03159
+
+[ITEMDEF 03159]
+//mounted dread horn
+DUPEITEM=03158
+
+[ITEMDEF 0315a]
+DEFNAME=i_pristine_dread_horn
+NAME=pristine dread horn
+CATEGORY=Quests
+SUBSECTION=Twisted Weald
+DESCRIPTION=Pristine Dread Horn
+DUPELIST=0315b
+
+[ITEMDEF 0315b]
+//pristine dread horn
+DUPEITEM=0315a
+
+[ITEMDEF 0315c]
+DEFNAME=i_horn_dread_horn
+NAME=horn of dread horn
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Twisted Weald
+DESCRIPTION=Horn of Dread Horn
+DUPELIST=0315d
+
+[ITEMDEF 0315d]
+//horn of dread horn
+DUPEITEM=0315c
 
 
 ///////////////////////////
@@ -208,6 +310,17 @@ TAG.GumpID=02670
 CATEGORY=Quests
 SUBSECTION=Shattered Obelisk
 DESCRIPTION=The Town Cryer (4)
+
+[ITEMDEF i_town_cryer_shattered_obelisk_5]
+ID=i_town_cryer
+TYPE=t_town_cryer
+TAG.Title="Titan Threat Quelled!  Britannians Rejoice in Victory!  Celebratory Parade Held in Britain!"
+TAG.Author="Rita Radcliffe"
+TAG.TextCliloc=1157928
+TAG.GumpID=02671
+CATEGORY=Quests
+SUBSECTION=Shattered Obelisk
+DESCRIPTION=The Town Cryer (5)
 
 
 [ITEMDEF i_card_titan_stratos]

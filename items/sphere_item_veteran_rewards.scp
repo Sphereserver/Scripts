@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Feb 13, 2018
+// FILE LAST UPDATED: Saturday, Mar 24, 2018
 //
 VERSION=0.56d
 
@@ -55,6 +55,33 @@ DUPELIST=042ce
 [ITEMDEF 042ce]
 //order banner
 DUPEITEM=042cd
+
+
+[ITEMDEF 04a94]
+DEFNAME=i_statue_sheep
+NAME=sheep statue
+FLIP=1
+CATEGORY=Veteran Rewards
+SUBSECTION=Year 7
+DESCRIPTION=Sheep Statue
+DUPELIST=04a96
+
+[ITEMDEF 04a95]
+DEFNAME=i_statue_sheep_shorn
+NAME=sheep statue
+FLIP=1
+CATEGORY=Veteran Rewards
+SUBSECTION=Year 7
+DESCRIPTION=Sheep Statue (shorn)
+DUPELIST=04a97
+
+[ITEMDEF 04a96]
+//sheep statue
+DUPEITEM=04a94
+
+[ITEMDEF 04a97]
+//sheep statue (shorn)
+DUPEITEM=04a95
 
 
 [ITEMDEF 04b58]

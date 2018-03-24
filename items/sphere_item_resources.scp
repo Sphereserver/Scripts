@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2017
+// SPHERE by : Menasoft ©1997-2018
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Aug 26, 2017
+// FILE LAST UPDATED: Saturday, Mar 24, 2018
 //
 VERSION=0.56d
 
@@ -710,7 +710,6 @@ DUPEITEM=01bd1
 [ITEMDEF 0223a]
 DEFNAME=i_crystals_broken
 NAME=broken crystals
-TYPE=t_normal
 VALUE=2
 WEIGHT=1.0
 CATEGORY=Resources
@@ -792,7 +791,6 @@ DUPEITEM=0223a
 [ITEMDEF 026b1]
 DEFNAME=i_dragonscale
 NAME=dragon scale%s
-TYPE=t_normal
 VALUE=17
 WEIGHT=0.1
 CATEGORY=Resources
@@ -819,10 +817,160 @@ DUPEITEM=026b1
 //Dragon Scales
 DUPEITEM=026b1
 
+
+[ITEMDEF 02db1]
+DEFNAME=i_magical_residue
+CATEGORY=Resources
+SUBSECTION=Imbuing
+DESCRIPTION=Magical Residue
+
+[ITEMDEF 02db2]
+DEFNAME=i_enchanted_essence
+CATEGORY=Resources
+SUBSECTION=Imbuing
+DESCRIPTION=Enchanted Essence
+
+[ITEMDEF 02db3]
+DEFNAME=i_relic_fragment
+CATEGORY=Resources
+SUBSECTION=Imbuing
+DESCRIPTION=Relic Fragment
+
+[ITEMDEF 02db4]
+DEFNAME=i_stygian_dragon_head
+NAME=stygian dragon head
+CATEGORY=Resources
+SUBSECTION=Stygian Abyss
+DESCRIPTION=Stygian Dragon Head
+
+[ITEMDEF 02db5]
+DEFNAME=i_primeval_lich_dust
+NAME=primeval lich dust
+CATEGORY=Resources
+SUBSECTION=Stygian Abyss
+DESCRIPTION=Primeval Lich Dust
+
+[ITEMDEF 02db6]
+DEFNAME=i_medusa_blood
+NAME=medusa blood
+CATEGORY=Resources
+SUBSECTION=Stygian Abyss
+DESCRIPTION=Medusa Blood
+
+[ITEMDEF 02db7]
+DEFNAME=i_horn_abyssal_infernal
+NAME=horn of abyssal infernal
+CATEGORY=Resources
+SUBSECTION=Stygian Abyss
+DESCRIPTION=Horn of Abyssal Infernal
+
+[ITEMDEF 02db8]
+DEFNAME=i_claw_slasher_of_veils
+NAME=claw of slasher of veils
+CATEGORY=Resources
+SUBSECTION=Stygian Abyss
+DESCRIPTION=Claw of Slasher of Veils
+
+
+[ITEMDEF 02f57]
+DEFNAME=i_prism_runed
+NAME=runed prism
+RESOURCES=1 i_prism_hollow,1 i_reag_black_pearl,1 i_reag_spider_silk,1 i_scroll_blank
+SKILLMAKE=Inscription 45.0
+CATEGORY=Resources
+SUBSECTION=Carpentry
+DESCRIPTION=Runed Prism
+
+
+[ITEMDEF 02f5c]
+DEFNAME=i_switch_enchanted
+NAME=enchanted switch
+RESOURCES=1 i_switch_wood,1 i_reag_black_pearl,1 i_reag_spider_silk,1 i_scroll_blank
+SKILLMAKE=Inscription 45.0
+CATEGORY=Resources
+SUBSECTION=Carpentry
+DESCRIPTION=Enchanted Switch
+
+[ITEMDEF 02f5d]
+DEFNAME=i_prism_hollow
+NAME=hollow prism
+RESOURCES=8 i_sand
+SKILLMAKE=Alchemy 100.0,t_glassblowing_tool
+CATEGORY=Resources
+SUBSECTION=Carpentry
+DESCRIPTION=Hollow Prism
+
+[ITEMDEF 02f5e]
+DEFNAME=i_jeweled_filigree
+NAME=jeweled filigree
+RESOURCES=2 i_ingot_iron,1 i_gem_ruby,1 i_gem_star_sapphire
+SKILLMAKE=Tinkering 70.0,t_tinker_tools
+CATEGORY=Resources
+SUBSECTION=Carpentry
+DESCRIPTION=Jeweled Filigree
+
+[ITEMDEF 02f5f]
+DEFNAME=i_switch_wood
+NAME=switch
+CATEGORY=Resources
+SUBSECTION=Carpentry
+DESCRIPTION=Switch
+
+[ITEMDEF 02f60]
+DEFNAME=i_wisps_light
+NAME=wisps of light
+CATEGORY=Resources
+SUBSECTION=Carpentry
+DESCRIPTION=Wisps of Light
+
+[ITEMDEF 02f61]
+DEFNAME=i_switch_runed
+NAME=runed switch
+RESOURCES=2 i_board,1 i_switch_enchanted,1 i_jeweled_filigree,1 i_prism_runed
+SKILLMAKE=carpentry 70.0,t_carpentry
+CATEGORY=Resources
+SUBSECTION=Carpentry
+DESCRIPTION=Runed Switch
+
+
+[ITEMDEF 04008]
+DEFNAME=i_crystal_granule
+SKILLMAKE=Alchemy 75.0,t_glassblowing_tool
+RESOURCES=1 i_shimmering_crystal
+CATEGORY=Resources
+SUBSECTION=Glassblowing
+DESCRIPTION=Crystal Granule
+ON=@Create
+   COLOR=0a41
+
+[ITEMDEF 04009]
+DEFNAME=i_crystal_dust
+RESOURCES=4 i_crystals_broken
+SKILLMAKE=Alchemy 75.0,t_mortar
+CATEGORY=Resources
+SUBSECTION=Fabricated
+DESCRIPTION=Crystal Dust
+ON=@Create
+   COLOR=0837
+
+[ITEMDEF 0400a]
+DEFNAME=i_wilted_soul_fragment
+CATEGORY=Resources
+SUBSECTION=Fabricated
+DESCRIPTION=Wilted Soul Fragment
+
+[ITEMDEF 0400b]
+DEFNAME=i_soul_gem
+CATEGORY=Resources
+SUBSECTION=Fabricated
+DESCRIPTION=Soul Gem
+ON=@Create
+   COLOR=0496
+
+
 [ITEMDEF 09bcc]
 DEFNAME=i_tigerpelt
 NAME=tiger pelt%s
-TYPE=t_normal
 WEIGHT=1.0
 FLIP=1
 CATEGORY=Resources
@@ -839,7 +987,6 @@ DUPEITEM=09bcc
 [ITEMDEF 09bce]
 DEFNAME=i_dragonturtle_scute
 NAME=dragon turtle scute%s
-TYPE=t_normal
 WEIGHT=1.0
 FLIP=1
 CATEGORY=Resources
@@ -866,7 +1013,6 @@ color_o_sandstone   0501
 ID=i_ore_iron
 NAME=sand
 TYPE=t_ore //t_sand
-TDATA1=i_glass_raw
 VALUE=1
 WEIGHT=3.0
 SKILLMAKE=MINING 60.0
@@ -879,7 +1025,6 @@ ON=@Create
 [ITEMDEF i_rock_granite]
 ID=01779
 NAME=high quality granite
-TYPE=t_normal
 VALUE=5
 WEIGHT=10.0
 SKILLMAKE=Mining 100.0
@@ -892,7 +1037,6 @@ ON=@Create
 [ITEMDEF i_rock_marble]
 ID=01779
 NAME=high quality marble
-TYPE=t_normal
 VALUE=5
 WEIGHT=10.0
 SKILLMAKE=Mining 100.0
@@ -905,7 +1049,6 @@ ON=@Create
 [ITEMDEF i_rock_sandstone]
 ID=01779
 NAME=high quality sandstone
-TYPE=t_normal
 VALUE=5
 WEIGHT=10.0
 SKILLMAKE=Mining 100.0
@@ -919,7 +1062,6 @@ ON=@Create
 //obtained by using t_plantclipping_tool on a plant
 ID=01bd5
 NAME=dry reed%s
-TYPE=t_normal
 VALUE=1
 WEIGHT=0.1
 CATEGORY=Items by Professions
@@ -929,7 +1071,6 @@ DESCRIPTION=Dry Reeds
 [ITEMDEF i_parchment]
 ID=01044
 NAME=parchment
-TYPE=t_normal
 VALUE=1
 WEIGHT=0.1
 CATEGORY=Items by Professions
@@ -941,7 +1082,6 @@ ON=@Create
 [ITEMDEF i_saltpeter]
 ID=i_cannon_powder
 NAME=saltpeter
-TYPE=t_normal
 VALUE=1
 WEIGHT=0.1
 CATEGORY=Items by Professions
@@ -953,7 +1093,6 @@ ON=@Create
 [ITEMDEF i_dragonscale_black]
 ID=i_dragonscale
 NAME=black dragon scale%s
-TYPE=t_normal
 VALUE=17
 WEIGHT=0.7
 CATEGORY=Resources
@@ -966,7 +1105,6 @@ ON=@Create
 [ITEMDEF i_dragonscale_blue]
 ID=i_dragonscale
 NAME=blue dragon scale%s
-TYPE=t_normal
 VALUE=17
 WEIGHT=0.7
 CATEGORY=Resources
@@ -979,7 +1117,6 @@ ON=@Create
 [ITEMDEF i_dragonscale_green]
 ID=i_dragonscale
 NAME=green dragon scale%s
-TYPE=t_normal
 VALUE=17
 WEIGHT=0.7
 CATEGORY=Resources
@@ -992,7 +1129,6 @@ ON=@Create
 [ITEMDEF i_dragonscale_red]
 ID=i_dragonscale
 NAME=red dragon scale%s
-TYPE=t_normal
 VALUE=17
 WEIGHT=0.7
 CATEGORY=Resources
@@ -1005,7 +1141,6 @@ ON=@Create
 [ITEMDEF i_dragonscale_yellow]
 ID=i_dragonscale
 NAME=yellow dragon scale%s
-TYPE=t_normal
 VALUE=17
 WEIGHT=0.7
 CATEGORY=Resources
@@ -1018,7 +1153,6 @@ ON=@Create
 [ITEMDEF i_dragonscale_white]
 ID=i_dragonscale
 NAME=white dragon scale%s
-TYPE=t_normal
 VALUE=17
 WEIGHT=0.7
 CATEGORY=Resources
@@ -1031,7 +1165,6 @@ ON=@Create
 [ITEMDEF i_tigerpelt_black]
 ID=i_tigerpelt
 NAME=black tiger pelt%s
-TYPE=t_normal
 WEIGHT=1.0
 CATEGORY=Resources
 SUBSECTION=Animal
@@ -1042,7 +1175,6 @@ ON=@Create
 [ITEMDEF i_tigerpelt_white]
 ID=i_tigerpelt
 NAME=white tiger pelt%s
-TYPE=t_normal
 WEIGHT=1.0
 CATEGORY=Resources
 SUBSECTION=Animal
@@ -1051,7 +1183,6 @@ DESCRIPTION=White Tiger Pelt
 [ITEMDEF i_medusa_scale]
 ID=026b4
 NAME=Medusa scale%s
-TYPE=t_normal
 CATEGORY=Quest
 SUBSECTION=Medusa
 DESCRIPTION=Medusa Scale
@@ -1066,5 +1197,12 @@ SKILLMAKE=Alchemy 100.0,t_glassblowing_tool
 CATEGORY=Resources
 SUBSECTION=Glassblowing
 DESCRIPTION=Workable Glass
+
+[ITEMDEF i_shimmering_crystals]
+ID=02206
+NAME=shimmering crystals
+CATEGORY=Resources
+SUBSECTION=Glassblowing
+DESCRIPTION=Shimmering Crystals
 
 [EOF]

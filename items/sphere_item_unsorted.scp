@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Friday, Mar 2, 2018
+// FILE LAST UPDATED: Saturday, Mar 24, 2018
 //
 VERSION=0.56d
 
@@ -33,7 +33,7 @@ NAME=acid proof rope
 TYPE=t_normal
 VALUE=12
 WEIGHT=2.0
-RESOURCES=2 i_switch_normal,2 i_potion_strengthgreat,1 i_scroll_protection
+RESOURCES=2 i_switch_wood,2 i_potion_strengthgreat,1 i_scroll_protection
 SKILLMAKE=carpentry 80.0,t_carpentry
 CATEGORY=Quest
 SUBSECTION=Palace of Paroxysmus
@@ -135,33 +135,6 @@ WEIGHT=0.1
 CATEGORY=Quest
 SUBSECTION=Heart of Ice
 DESCRIPTION=Icy Heart
-
-[ITEMDEF 02da]
-//"A rare drop from the peerless monster, shimmering effusion
-//Resource required to make crystal granules"
-DEFNAME=i_shimmering_crystal
-NAME=shimmering crystal
-TYPE=t_normal
-VALUE=100
-WEIGHT=1.0
-CATEGORY=Resources
-SUBSECTION=Animal
-DESCRIPTION=Shimmering Crystal
-
-[ITEMDEF 02db]
-//"One of the keys to access Dreadhorn.
-//Found on the ground in Twisted Weald, this item has a timed life span."
-DEFNAME=i_blighted_cotton
-NAME=blighted cotton
-TYPE=t_normal
-VALUE=100
-WEIGHT=1.0
-CATEGORY=Quest
-SUBSECTION=Twisted Weald
-DESCRIPTION=Blighted Cotton
-//TEVENTS=e_timed_key
-ON=@Create
-   COLOR=05a3
 
 
 [ITEMDEF 090d]
@@ -1689,19 +1662,6 @@ CATEGORY=Quest
 SUBSECTION=Unknown
 DESCRIPTION=Brass Box (corroded)
 
-[ITEMDEF 02001]
-DEFNAME=i_silk_lissith
-NAME=Lissith's silk
-TYPE=t_normal
-VALUE=3
-PILE=0
-WEIGHT=0.1
-CATEGORY=Quest
-SUBSECTION=Twisted Weald
-DESCRIPTION=Lissith's Silk
-//TEVENTS=e_timed_key
-ON=@Create
-   COLOR=01a4
 
 [ITEMDEF 02002]
 DEFNAME=i_key_quest
@@ -3204,56 +3164,6 @@ TDATA2=04a
 //soulforge (looks like a regular forge)
 
 
-[ITEMDEF 02db4]
-DEFNAME=i_head_stygian_dragon
-NAME=stygian dragon head
-TYPE=t_normal
-VALUE=1000
-WEIGHT=5.0
-CATEGORY=Quest
-SUBSECTION=Stygian
-DESCRIPTION=Stygian Dragon Head
-
-[ITEMDEF 02db5]
-DEFNAME=i_lich_dust
-NAME=lich dust
-TYPE=t_normal
-VALUE=100
-WEIGHT=0.1
-CATEGORY=Quest
-SUBSECTION=Lich
-DESCRIPTION=Lich Dust
-
-[ITEMDEF 02db6]
-DEFNAME=i_blood_medusa
-NAME=Medusa blood
-TYPE=t_normal
-VALUE=100
-WEIGHT=0.1
-CATEGORY=Quest
-SUBSECTION=Medusa
-DESCRIPTION=Medusa Blood
-
-[ITEMDEF 02db7]
-DEFNAME=i_horn_abyssal
-NAME=horn of Abyssal Infernal
-TYPE=t_normal
-VALUE=100
-WEIGHT=0.1
-CATEGORY=Quest
-SUBSECTION=Abyssal Infernal
-DESCRIPTION=Horn of Abyssal Infernal
-
-[ITEMDEF 02db8]
-DEFNAME=i_claw_slasher_of_veils
-NAME=claw of Slasher of Veils
-TYPE=t_normal
-VALUE=100
-WEIGHT=0.1
-CATEGORY=Quest
-SUBSECTION=Slasher of Veils
-DESCRIPTION=Claw of Slasher of Veils
-
 [ITEMDEF 02df1]
 DEFNAME=i_chest_rarewood
 NAME=rarewood chest
@@ -3388,82 +3298,6 @@ CATEGORY=Miscellaneous
 SUBSECTION=Invisible Tiles
 DESCRIPTION=Invisible Tile 02f56
 
-[ITEMDEF 02f57]
-DEFNAME=i_prism_runed
-NAME=runed prism
-TYPE=t_normal
-VALUE=23
-RESOURCES=1 i_prism_hollow,1 i_reag_black_pearl,1 i_reag_spider_silk,1 i_scroll_blank
-SKILLMAKE=inscription 45.0
-CATEGORY=Quest
-SUBSECTION=Unknown
-DESCRIPTION=Prism (runed)
-
-[ITEMDEF 02f5c]
-DEFNAME=i_switch_enchanted
-NAME=enchanted switch
-TYPE=t_normal
-VALUE=27
-WEIGHT=0.1
-RESOURCES=1 i_switch_normal,1 i_reag_black_pearl,1 i_reag_spider_silk,1 i_scroll_blank
-SKILLMAKE=inscription 45.0
-CATEGORY=Quest
-SUBSECTION=Unknown
-DESCRIPTION=Enchanted Switch
-
-[ITEMDEF 02f5d]
-DEFNAME=i_prism_hollow
-NAME=hollow prism
-TYPE=t_normal
-VALUE=8
-WEIGHT=0.1
-RESOURCES=8 i_sand
-SKILLMAKE=alchemy 100.0,t_glassblowing_tool
-CATEGORY=Quest
-SUBSECTION=Unknown
-DESCRIPTION=Prism (hollow)
-
-[ITEMDEF 02f5e]
-DEFNAME=i_filigree_jeweled
-NAME=jeweled filigree
-TYPE=t_normal
-VALUE=73
-WEIGHT=0.1
-RESOURCES=2 i_ingot_iron,1 i_gem_ruby,1 i_gem_star_sapphire
-SKILLMAKE=tinkering 70.0,t_tinker_tools
-CATEGORY=Quest
-SUBSECTION=Unknown
-DESCRIPTION=Jeweled Filigree
-
-[ITEMDEF 02f5f]
-DEFNAME=i_switch_normal
-NAME=wood switch
-TYPE=t_normal
-VALUE=12
-WEIGHT=0.1
-CATEGORY=Resources
-SUBSECTION=Plant
-DESCRIPTION=Switch
-
-[ITEMDEF 02f60]
-DEFNAME=i_light_wisps
-NAME=wisps of light
-TYPE=t_normal
-CATEGORY=Quest
-SUBSECTION=Unknown
-DESCRIPTION=Wisps of Light
-
-[ITEMDEF 02f61]
-DEFNAME=i_switch_runed
-NAME=runed switch
-TYPE=t_normal
-VALUE=127
-RESOURCES=2 i_board,1 i_switch_enchanted,1 i_filigree_jeweled,1 i_prism_runed
-SKILLMAKE=carpentry 70.0,t_carpentry
-CATEGORY=Quest
-SUBSECTION=Unknown
-DESCRIPTION=Switch (runed)
-
 
 [ITEMDEF 02fb6]
 NAME=special parrot perch
@@ -3534,58 +3368,6 @@ DUPELIST=03130
 [ITEMDEF 03130]
 //severed human ears
 DUPEITEM=0312f
-
-
-[ITEMDEF 03156]
-DEFNAME=i_mangled_dread_horn
-NAME=mangled dread horn head
-TYPE=t_normal
-FLIP=1
-VALUE=150
-WEIGHT=1.0
-CATEGORY=Quest
-SUBSECTION=Twisted Weald
-DESCRIPTION=Mangled Dread Horn Head
-DUPELIST=03157
-
-[ITEMDEF 03157]
-//mangled dread horn
-DUPEITEM=03156
-
-[ITEMDEF 0315a]
-DEFNAME=i_pristine_dread_horn
-NAME=pristine dread horn
-TYPE=t_normal
-FLIP=1
-VALUE=2000
-WEIGHT=3.2
-CATEGORY=Quest
-SUBSECTION=Twisted Weald
-DESCRIPTION=Pristine Dread Horn Head
-DUPELIST=0315b
-ON=@DClick
-   SRC.SYSMESSAGE You dont have the right tools to remove the horn
-   RETURN 1
-
-[ITEMDEF 0315b]
-//pristine dread horn
-DUPEITEM=0315a
-
-[ITEMDEF 0315c]
-DEFNAME=i_horn_dread
-NAME=horn of dread horn
-TYPE=t_normal
-FLIP=1
-VALUE=150
-WEIGHT=1.0
-CATEGORY=Quest
-SUBSECTION=Twisted Weald
-DESCRIPTION=Dread Horn Horn
-DUPELIST=0315d
-
-[ITEMDEF 0315d]
-//horn of dread horn
-DUPEITEM=0315c
 
 
 [ITEMDEF 03171]
@@ -4233,50 +4015,6 @@ CATEGORY=Resources
 SUBSECTION=Animal
 DESCRIPTION=Void Essence
 
-[ITEMDEF 04008]
-DEFNAME=i_crystal_granule
-TYPE=t_normal
-VALUE=100
-WEIGHT=0.1
-SKILLMAKE=alchemy 75.0,t_glassblowing_tool
-RESOURCES=1 i_shimmering_crystal
-CATEGORY=Resources
-SUBSECTION=Fabricated
-DESCRIPTION=Crystal Granule
-
-[ITEMDEF 04009]
-//"Crystal dust is used with Medusa scales to craft Gorgon Lenses. To
-// create Crystal Dust you need 4 Broken Crystals.  These are more commonly
-// known as Crystalline Fragments (for example:  Broken Crystals, Shattered
-// Crystals, Scattered Crystals, Crushed Crystals, Jagged Crystals, Crystal
-// Pieces, or Ancient Pottery Fragments."
-DEFNAME=i_crystal_dust
-TYPE=t_normal
-VALUE=100
-WEIGHT=0.1
-RESOURCES=4 i_crystals_broken
-SKILLMAKE=alchemy 75.0,t_mortar
-CATEGORY=Resources
-SUBSECTION=Fabricated
-DESCRIPTION=Crystal Dust
-ON=@Create
-   COLOR=2500
-
-[ITEMDEF 0400a]
-//wilted soul fragment
-//1112375//"This is not the proper resting place. Find these remains' rightful grave."
-//1112376//"Where would you like to bury these remains?"
-//1112377//"Try burying them in the ground instead."
-
-[ITEMDEF 0400b]
-DEFNAME=i_soul_gem
-TYPE=t_normal
-VALUE=1000
-WEIGHT=0.1
-CATEGORY=Resources
-SUBSECTION=Mineral
-DESCRIPTION=Soul Gem
-
 
 [ITEMDEF 04042]
 DEFNAME=i_vase_gargish
@@ -4649,52 +4387,6 @@ DUPEITEM=048e5
 [ITEMDEF 048ec]
 //Banner Assembly
 DUPEITEM=048e5
-
-
-[ITEMDEF 04a94]
-DEFNAME=i_toy_sheep
-NAME=toy sheep
-TYPE=t_normal
-FLIP=1
-CATEGORY=Decoration - Miscellaneous
-SUBSECTION=Holiday Gifts
-DESCRIPTION=Toy Sheep
-DUPELIST=04a96
-
-[ITEMDEF 04a95]
-DEFNAME=i_toy_sheep_shorn
-NAME=toy sheep
-TYPE=t_normal
-FLIP=1
-CATEGORY=Decoration - Miscellaneous
-SUBSECTION=Holiday Gifts
-DESCRIPTION=Toy Sheep (shorn)
-DUPELIST=04a97
-
-[ITEMDEF 04a96]
-//Toy Sheep
-DUPEITEM=04a94
-
-[ITEMDEF 04a97]
-//Toy Sheep (shorn)
-DUPEITEM=04a95
-
-[ITEMDEF 04a9c]
-DEFNAME=i_shackled_heart
-NAME=shackled heart
-FLIP=1
-VALUE=200
-WEIGHT=0.1
-RESOURCES=1 i_ingot_iron,1 i_heart_icy
-SKILLMAKE=tinkering 100.0,t_tinker_tools
-CATEGORY=Quest
-SUBSECTION=Heart of Ice
-DESCRIPTION=Shackled Heart
-DUPELIST=04a9d
-
-[ITEMDEF 04a9d]
-//shackled heart
-DUPEITEM=04a9c
 
 
 [ITEMDEF 04aa0]
@@ -5439,65 +5131,6 @@ CATEGORY=Resources
 SUBSECTION=Animal
 DESCRIPTION=Reflective Wolf Eye
 
-
-[ITEMDEF 06380]
-//AOL Legends Shield
-[ITEMDEF 06381]
-[ITEMDEF 06382]
-[ITEMDEF 06383]
-[ITEMDEF 06384]
-[ITEMDEF 06385]
-[ITEMDEF 06386]
-[ITEMDEF 06387]
-[ITEMDEF 06388]
-[ITEMDEF 06389]
-[ITEMDEF 0638a]
-[ITEMDEF 0638b]
-[ITEMDEF 0638c]
-[ITEMDEF 0638d]
-[ITEMDEF 0638e]
-[ITEMDEF 0638f]
-[ITEMDEF 06390]
-[ITEMDEF 06391]
-[ITEMDEF 06392]
-[ITEMDEF 06393]
-[ITEMDEF 06394]
-[ITEMDEF 06395]
-[ITEMDEF 06396]
-[ITEMDEF 06397]
-[ITEMDEF 06398]
-[ITEMDEF 06399]
-[ITEMDEF 0639a]
-[ITEMDEF 0639b]
-[ITEMDEF 0639c]
-[ITEMDEF 0639d]
-[ITEMDEF 0639e]
-[ITEMDEF 0639f]
-[ITEMDEF 063a0]
-[ITEMDEF 063a1]
-[ITEMDEF 063a2]
-[ITEMDEF 063a3]
-[ITEMDEF 063a4]
-[ITEMDEF 063a5]
-[ITEMDEF 063a6]
-[ITEMDEF 063a7]
-[ITEMDEF 063a8]
-[ITEMDEF 063a9]
-[ITEMDEF 063aa]
-[ITEMDEF 063ab]
-[ITEMDEF 063ac]
-[ITEMDEF 063ad]
-[ITEMDEF 063ae]
-[ITEMDEF 063af]
-[ITEMDEF 063b0]
-[ITEMDEF 063b1]
-[ITEMDEF 063b2]
-[ITEMDEF 063b3]
-[ITEMDEF 063b4]
-[ITEMDEF 063b5]
-
-[ITEMDEF 063b6]
-[ITEMDEF 063b7]
 
 [ITEMDEF 063b8]
 //Sick Male Gargoyle
