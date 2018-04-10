@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Feb 13, 2018
+// FILE LAST UPDATED: Monday, Apr 9, 2018
 //
 VERSION=0.56d
 
@@ -2805,47 +2805,6 @@ DUPELIST=02d62
 DUPEITEM=02d61
 
 
-[ITEMDEF 02db1]
-// magical residue is the lowest level of the three core imbuing
-// ingredients. It can be obtained my unraveling weak magical items in
-// proximity to a Soul Forge.
-DEFNAME=i_magical_residue
-NAME=magical residue
-TYPE=t_normal
-VALUE=500
-WEIGHT=0.1
-CATEGORY=Items by Professions
-SUBSECTION=Artificer
-DESCRIPTION=Magical Residue
-
-[ITEMDEF 02db2]
-// Enchanted essence is an ingredient used with the Imbuing skill. It
-// can be obtained from unraveling minor Artifacts and from high intensity
-// magical equipment. An imbuing skill of more than 45 is required to
-// unravel Enchanted Essence.
-DEFNAME=i_enchanted_essence
-NAME=enchanted essence
-TYPE=t_normal
-VALUE=1000
-WEIGHT=0.1
-CATEGORY=Items by Professions
-SUBSECTION=Artificer
-DESCRIPTION=Enchanted Essence
-
-[ITEMDEF 02db3]
-// relic fragments are one of the most rare ingredients for Imbuing. They
-// mostly come from Artifacts and sometimes from very high intensity
-// equipment. They are used to imbue the most desirable properties.
-DEFNAME=i_relic_fragment
-NAME=relic fragment
-TYPE=t_normal
-VALUE=5000
-WEIGHT=0.1
-CATEGORY=Items by Professions
-SUBSECTION=Artificer
-DESCRIPTION=Relic Fragment
-
-
 [ITEMDEF 02dd5]
 DEFNAME=i_anvil_elven
 NAME=elven anvil
@@ -2865,16 +2824,11 @@ DUPELIST=02dd6
 DUPEITEM=02dd5
 
 [ITEMDEF 02dd7]
-DEFNAME=i_elven_bowstringer
-NAME=elven bowstringer
-TYPE=t_normal
-VALUE=21
-WEIGHT=3.0
-RESOURCES=2 i_ingot_iron,1 i_wire_iron
-SKILLMAKE=Tinkering 24.1,t_tinker_tools
+DEFNAME=i_elven_bow_stringer
+NAME=elven bow stringer
 CATEGORY=Items by Professions
 SUBSECTION=Archer/Bowyer
-DESCRIPTION=Elven Bowstringer
+DESCRIPTION=Elven Bow Stringer
 
 [ITEMDEF 02dd8]
 DEFNAME=i_forge_elven

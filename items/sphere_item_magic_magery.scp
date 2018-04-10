@@ -1,5 +1,5 @@
 ﻿//****************************************************************************
-// SPHERE by : Menasoft ©1997-2017
+// SPHERE by : Menasoft ©1997-2018
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, Feb 13, 2017
+// FILE LAST UPDATED: Monday, Apr 9, 2018
 //
 VERSION=0.56d
 
@@ -162,18 +162,16 @@ DUPEITEM=0e3a
 DEFNAME=i_rune_marker
 TYPE=t_rune
 FLIP=1
-VALUE=62
-WEIGHT=2.5
-RESOURCES=1 i_ingot_gold,1 i_scroll_mark
-SKILLMAKE=Tinkering 90.0,Magery 90.0,t_tinker_tools
+VALUE=14
 CATEGORY=Provisions - Alchemy & Magic
 SUBSECTION=Magical Items
 DESCRIPTION=Recall Rune
 DUPELIST=01f15,01f16,01f17
 ON=@Create
-   MORE1=50
-ON=@ClientToolTip
-   SRC.ADDCLILOC 1075217,<dMORE1>//"~ charges remaining"
+   MOREP=-1,-1
+   MORE1=10
+ON=@ClientTooltip
+   SRC.ADDCLILOC 1075217,<dMORE1>	//~1_val~ charges remaining
 
 [ITEMDEF 01f15]
 //recall rune
@@ -184,7 +182,7 @@ DUPEITEM=01f14
 DUPEITEM=01f14
 
 [ITEMDEF 01f17]
-//Recall Rune
+//recall rune
 DUPEITEM=01f14
 
 

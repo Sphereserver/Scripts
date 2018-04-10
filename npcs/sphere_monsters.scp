@@ -1,5 +1,5 @@
 ﻿//****************************************************************************
-// SPHERE by : Menasoft ©1997-2017
+// SPHERE by : Menasoft ©1997-2018
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Oct 17, 2017
+// FILE LAST UPDATED: Monday, Apr 9, 2018
 //
 VERSION=0.56d
 
@@ -2295,16 +2295,6 @@ ON=@Create
    RESPOISON={10 20}
 ON=@NPCRestock
    ITEM=loot_slime
-ON=@GetHit
-   //Spawn Creatures Attack (slime)
-   IF !(<R20>) && !(<FINDID.i_removetimer_mem>)
-      SERV.NEWNPC c_slime
-      NEW.P=<SRC.P>
-      NEW.HOME=<SRC.P>
-      NEW.HOMEDIST=7
-      NEW.ATTACK <SRC>
-      NEW.f_NPCRemovalTimer 1200
-   ENDIF
 
 [CHARDEF 034]
 DEFNAME=c_snake
@@ -7846,16 +7836,6 @@ ON=@Create
 ON=@NpcRestock
    ITEM=loot_champ_mephitis
    ITEM=loot_ai_healer
-ON=@GetHit
-   //Spawn Creatures Attack (dread spiders)
-   IF !(<R10>)
-      SERV.NEWNPC c_spider_dread
-      NEW.P=<SRC.P>
-      NEW.HOME=<SRC.P>
-      NEW.HOMEDIST=7
-      NEW.ATTACK <SRC>
-      NEW.f_NPCRemovalTimer 1200
-   ENDIF
 
 [CHARDEF 0ae]
 //FIXME: Reflect magic damage back at male spellcasters
@@ -7987,12 +7967,13 @@ ON=@NpcRestock
    ITEM=loot_champ_lord_oaks
    ITEM=loot_ai_hard
 ON=@GetHit
+   //Spawn Creatures Attack
    IF !(<R20>)
       FOR 4
          SERV.NEWNPC c_pixie
-         NEW.P=<SRC.P>
-         NEW.HOME=<SRC.P>
-         NEW.HOMEDIST=7
+         NEW.P=<P>
+         NEW.HOME=<HOME>
+         NEW.HOMEDIST=<HOMEDIST>
          NEW.ATTACK <SRC>
          NEW.f_NPCRemovalTimer 1200
       ENDFOR
@@ -8050,12 +8031,13 @@ ON=@NpcRestock
    ITEM=loot_champ_silvani
    ITEM=loot_ai_healer
 ON=@GetHit
+   //Spawn Creatures Attack
    IF !(<R20>)
       FOR 4
          SERV.NEWNPC c_pixie
-         NEW.P=<SRC.P>
-         NEW.HOME=<SRC.P>
-         NEW.HOMEDIST=7
+         NEW.P=<P>
+         NEW.HOME=<HOME>
+         NEW.HOMEDIST=<HOMEDIST>
          NEW.ATTACK <SRC>
          NEW.f_NPCRemovalTimer 1200
       ENDFOR
@@ -11750,15 +11732,14 @@ ON=@GetHit
    NEW.P=<P>
    //Spawn Creatures Attack
    IF !(<R10>)
-      DORAND 4
+      DORAND 3
          SERV.NEWNPC c_fetid_essence
          SERV.NEWNPC c_corporeal_brume
-         SERV.NEWNPC c_wisp_crystal
          SERV.NEWNPC c_mantra_effervescent
       ENDDO
-      NEW.P=<SRC.P>
-      NEW.HOME=<SRC.P>
-      NEW.HOMEDIST=7
+      NEW.P=<P>
+      NEW.HOME=<HOME>
+      NEW.HOMEDIST=<HOMEDIST>
       NEW.ATTACK <SRC>
       NEW.f_NPCRemovalTimer 1200
    ENDIF
@@ -13598,29 +13579,6 @@ ON=@Create
 ON=@NpcRestock
    ITEM=loot_bone_demon
    ITEM=loot_ai_hard
-ON=@GetHit
-   //Spawn Creatures Attack
-   IF !(<R10>)
-      DORAND 12
-         SERV.NEWNPC c_lich
-         SERV.NEWNPC c_spectre
-         SERV.NEWNPC c_lich_ancient
-         SERV.NEWNPC c_lich_lord
-         SERV.NEWNPC c_skeleton_knight
-         SERV.NEWNPC c_skeleton_mage
-         SERV.NEWNPC c_mummy
-         SERV.NEWNPC c_rotting_corpse
-         SERV.NEWNPC c_revenant_lion
-         SERV.NEWNPC c_wailing_banshee
-         SERV.NEWNPC c_grim_reaper
-         SERV.NEWNPC c_patchwork_skeleton
-      ENDDO
-      NEW.P=<SRC.P>
-      NEW.HOME=<SRC.P>
-      NEW.HOMEDIST=10
-      NEW.ATTACK <SRC>
-      NEW.f_NPCRemovalTimer 1200
-   ENDIF
 
 [CHARDEF 0135]
 DEFNAME=c_patchwork_skeleton
@@ -14339,29 +14297,6 @@ ON=@GetHit
       IF !(<R5>)
          SRC.DAMAGE <R15,25> <DEF.dam_physical> <UID>
       ENDIF
-   ENDIF
-   //Spawn Creatures Attack
-   IF !(<R20>)
-      SFX {1005 1010}
-      SAY From my blood let a hellspawn arise!
-      DORAND 12
-         SERV.NEWNPC c_demon
-         SERV.NEWNPC c_demon_balron
-         SERV.NEWNPC c_demon_ice
-         SERV.NEWNPC c_succubus
-         SERV.NEWNPC c_devourer_souls
-         SERV.NEWNPC c_demon_bone
-         SERV.NEWNPC c_ravager
-         SERV.NEWNPC c_demon_arcane
-         SERV.NEWNPC c_demon_moloch
-         SERV.NEWNPC c_demon_chaos
-         SERV.NEWNPC c_demon_horde_colored
-      ENDDO
-      NEW.P=<SRC.P>
-      NEW.HOME=<SRC.P>
-      NEW.HOMEDIST=10
-      NEW.ATTACK <SRC>
-      NEW.f_NPCRemovalTimer 1200
    ENDIF
 
 [CHARDEF 013f]
@@ -16650,26 +16585,25 @@ ON=@NPCRestock
    //ITEM=i_map_treasure,1,R32
    ITEM=i_raptor_claw,1,R99
 ON=@NPCSeeNewPlayer
-   //Summon pack
+   //Spawn Creatures Attack
    IF (<FLAGS> & statf_conjured) || (<FLAGS> & statf_pet)
-      RETURN 0
+      return 0
    ENDIF
-   IF (<MANA> >= 25) && (<TAG0.CURFOLLOWER> < 2)
-      MANA -= 25
-      TAG0.CURFOLLOWER += 1
-      SERV.NEWNPC c_raptor
+   IF (<TAG0.Followers> < 2) && !(<TAG0.OwnerUID>)
+      TAG0.Followers ++
+      SERV.NEWNPC <DISPID>
+      NEW.TAG.OwnerUID=<UID>
       NEW.TAMING=0
       NEW.P=<P>
-      NEW.HOME=<SRC.P>
-      NEW.HOMEDIST=7
-      NEW.ATTACK <SRC>
+      NEW.HOME=<HOME>
+      NEW.HOMEDIST=<HOMEDIST>
       NEW.f_NPCRemovalTimer 1200
    ENDIF
 ON=@Death
-   IF (<FINDID.i_summon_mem>)
-      REF1=<FINDID.i_summon_mem.LINK.UID>
-      IF (<REF1.ID>==c_raptor)
-         REF1.TAG0.CURFOLLOWER -= 1
+   REF1=<TAG0.OwnerUID>
+   IF (<REF1>)
+      IF (<REF1.DISPID> == <DISPID>)
+         REF1.TAG0.Followers --
       ENDIF
    ENDIF
 
@@ -16974,40 +16908,6 @@ ON=@Create
    RESENERGY={90 100}
    RESFIRE={30 35}
    RESPOISON={40 45}
-ON=@NpcRestock
-   ITEM=loot_spider_trapdoor
-   //250 - 350 Gold. 8spider silk, 1 - 4magic items
-   //Special: bottle of ichor, spider carapace, tattered scroll. level 2 Treasure Map
-ON=@NPCSeeNewPlayer
-   RETURN 0 // This needs fixing
-   //Summon pack
-   IF (<FLAGS> & statf_conjured) || (<FLAGS> & statf_pet)
-      RETURN 0
-   ENDIF
-   IF (<MANA> >= 25) && (<TAG0.CURFOLLOWER> < 2)
-      SRC.SYSMESSAGELOC color_text,1112367//"You've been ambushed!"
-      MANA -= 25
-      TAG0.CURFOLLOWER += 2
-      SERV.NEWNPC c_spider_trapdoor
-      NEW.P=<P>
-      NEW.HOME=<SRC.P>
-      NEW.HOMEDIST=7
-      NEW.ACTION stealth
-      NEW.f_NPCRemovalTimer 1200
-      SERV.NEWNPC c_spider_trapdoor
-      NEW.P=<P>
-      NEW.HOME=<SRC.P>
-      NEW.HOMEDIST=7
-      NEW.ACTION stealth
-      NEW.f_NPCRemovalTimer 1200
-   ENDIF
-ON=@Death
-   IF (<FINDID.i_summon_mem>)
-      REF1=<FINDID.i_summon_mem.LINK.UID>
-      IF (<REF1.ID>==c_spider_trapdoor)
-         REF1.TAG0.CURFOLLOWER -= 1
-      ENDIF
-   ENDIF
 
 [CHARDEF 02e2]
 //FIXME: Incomplete Stratics data
@@ -17128,32 +17028,27 @@ ON=@Hit
       SRC.EQUIP <NEW>
    ENDIF
 ON=@NPCSeeNewPlayer
-   //Summon pack
+   //Spawn Creatures Attack
    IF (<FLAGS> & statf_conjured) || (<FLAGS> & statf_pet)
-      RETURN 0
+      return 0
    ENDIF
-   IF (<MANA> >= 25) && (<TAG0.CURFOLLOWER> < 2)
-      SRC.SYSMESSAGELOC color_text,1113132//"The leather wolf howls for help"
-      MANA -= 25
-      TAG0.CURFOLLOWER += 2
-      SERV.NEWNPC c_wolf_leather
+   IF (<TAG0.Followers> < 3) && !(<TAG0.OwnerUID>)
+      SAY The leather wolf howls for help
+      SOUND 0e6
+      TAG0.Followers ++
+      SERV.NEWNPC <DISPID>
+      NEW.TAG.OwnerUID=<UID>
+      NEW.TAMING=0
       NEW.P=<P>
-      NEW.HOME=<SRC.P>
-      NEW.HOMEDIST=7
-      NEW.ATTACK <SRC>
-      NEW.f_NPCRemovalTimer 1200
-      SERV.NEWNPC c_wolf_leather
-      NEW.P=<P>
-      NEW.HOME=<SRC.P>
-      NEW.HOMEDIST=7
-      NEW.ATTACK <SRC>
+      NEW.HOME=<HOME>
+      NEW.HOMEDIST=<HOMEDIST>
       NEW.f_NPCRemovalTimer 1200
    ENDIF
 ON=@Death
-   IF (<FINDID.i_summon_mem>)
-      REF1=<FINDID.i_summon_mem.LINK.UID>
-      IF (<REF1.ID>==c_wolf_leather)
-         REF1.TAG0.CURFOLLOWER -= 1
+   REF1=<TAG0.OwnerUID>
+   IF (<REF1>)
+      IF (<REF1.DISPID> == <DISPID>)
+         REF1.TAG0.Followers --
       ENDIF
    ENDIF
 
@@ -18670,12 +18565,13 @@ ON=@ItemStep
       ENDIF
    ENDIF
 ON=@GetHit
-   //Spawn Creatures Attack (plague spawn)
-   IF ( (<DISTANCE>==1) && !(<R5>) )
+   //Spawn Creatures Attack
+   IF !(<R4>)
+      SAY * The plague beast creates another beast from its flesh! *
       SERV.NEWNPC c_plague_spawn
       NEW.P=<P>
-      NEW.HOME=<SRC.P>
-      NEW.HOMEDIST=10
+      NEW.HOME=<HOME>
+      NEW.HOMEDIST=<HOMEDIST>
       NEW.ATTACK <SRC>
       NEW.f_NPCRemovalTimer 1200
    ENDIF
@@ -18900,25 +18796,28 @@ ON=@Create
 ON=@NpcRestock
    ITEM=loot_bog_thing
 ON=@GetHit
-   //Spawn Creatures Attack (bogling)
-   IF !(<R10>)
-      SERV.NEWNPC c_bogling
-      NEW.P=<P>
-      NEW.HOME=<SRC.P>
-      NEW.HOMEDIST=7
-      NEW.ATTACK <SRC>
-      NEW.f_NPCRemovalTimer 1200
-   ENDIF
-   //Eats boglings when badly hurt
-   IF !(<R10>) && (<HITS> < 100)
-      REF11=<UID>
-      FORCHARS 2
-         IF (<ID>==c_bogling)
-            REF11.EMOTE eat a bogling
-            REF11.HITS += <HITS>
-            REMOVE
-         ENDIF
-      END
+   IF (<HITS> > <eval <MAXHITS>/4>)
+      //Spawn Creatures Attack
+      IF !(<R4>)
+         SERV.NEWNPC c_bogling
+         NEW.P=<P>
+         NEW.HOME=<HOME>
+         NEW.HOMEDIST=<HOMEDIST>
+         NEW.ATTACK <SRC>
+         NEW.f_NPCRemovalTimer 1200
+      ENDIF
+   ELSE
+      //Eat boglings when badly hurt
+      IF !(<R4>)
+         REF1=<UID>
+         FORCHARS 2
+            IF (<DISPID> == c_bogling)
+               REF1.SOUND <03b+<R2>>
+               REF1.HITS += <eval <HITS>/2>
+               REMOVE
+            ENDIF
+         ENDFOR
+      ENDIF
    ENDIF
 
 [CHARDEF 030d]
@@ -19047,14 +18946,16 @@ ON=@NpcRestock
    ITEM=loot_solen_queen
 ON=@GetHit
    //Spawn Creatures Attack
-   IF !(<R10>)
+   IF !(<R5>)
+      SAY * The solen queen summons her workers to her aid! *
+      SOUND 0582
       DORAND 2
          SERV.NEWNPC c_solen_worker
          SERV.NEWNPC c_solen_warrior
       ENDDO
       NEW.P=<P>
-      NEW.HOME=<SRC.P>
-      NEW.HOMEDIST=7
+      NEW.HOME=<HOME>
+      NEW.HOMEDIST=<HOMEDIST>
       NEW.ATTACK <SRC>
       NEW.f_NPCRemovalTimer 1200
    ENDIF
@@ -19856,14 +19757,16 @@ ON=@NpcRestock
    ITEM=loot_solen_queen
 ON=@GetHit
    //Spawn Creatures Attack
-   IF !(<R10>)
+   IF !(<R5>)
+      SAY * The solen queen summons her workers to her aid! *
+      SOUND 0582
       DORAND 2
          SERV.NEWNPC c_solen_worker_black
          SERV.NEWNPC c_solen_warrior_black
       ENDDO
       NEW.P=<P>
-      NEW.HOME=<SRC.P>
-      NEW.HOMEDIST=7
+      NEW.HOME=<HOME>
+      NEW.HOMEDIST=<HOMEDIST>
       NEW.ATTACK <SRC>
       NEW.f_NPCRemovalTimer 1200
    ENDIF
@@ -20001,20 +19904,6 @@ ON=@Create
    RESPOISON={45 50}
 ON=@NpcRestock
    ITEM=loot_solen_queen
-ON=@GetHit
-   //Spawn Creatures Attack
-   IF !(<R10>)
-      DORAND 2
-         SERV.NEWNPC c_solen_queen
-         SERV.NEWNPC c_solen_worker
-         SERV.NEWNPC c_solen_warrior
-      ENDDO
-      NEW.P=<P>
-      NEW.HOME=<SRC.P>
-      NEW.HOMEDIST=7
-      NEW.ATTACK <SRC>
-      NEW.f_NPCRemovalTimer 1200
-   ENDIF
 
 [CHARDEF 0328]
 //"The Black Solen Matriarch is the Leader of the Black Solen Race and
@@ -20068,21 +19957,6 @@ ON=@Create
    RESPOISON={45 50}
 ON=@NpcRestock
    ITEM=loot_solen_queen
-ON=@GetHit
-   //Spawn Creatures Attack
-   IF !(<R10>)
-      DORAND 2
-         SERV.NEWNPC c_solen_queen_black
-         SERV.NEWNPC c_solen_worker_black
-         SERV.NEWNPC c_solen_warrior_black
-      ENDDO
-      NEW.P=<P>
-      NEW.HOME=<SRC.P>
-      NEW.HOMEDIST=7
-      NEW.ATTACK <SRC>
-      NEW.f_NPCRemovalTimer 1200
-   ENDIF
-
 
 [CHARDEF 033a]
 //FIXME: Incomplete Stratics data
@@ -20796,12 +20670,12 @@ ON=@Create
 ON=@NpcRestock
    ITEM=loot_charybdis
 ON=@GetHit
-   //Spawn Creatures Attack (Charybdis Tentacle)
-   IF !(<R20>) && !(<FINDID.i_removetimer_mem>)
+   //Spawn Creatures Attack
+   IF !(<R20>)
       SERV.NEWNPC c_charybdis_tentacle
       NEW.P=<SRC.P>
-      NEW.HOME=<SRC.P>
-      NEW.HOMEDIST=7
+      NEW.HOME=<HOME>
+      NEW.HOMEDIST=<HOMEDIST>
       NEW.ATTACK <SRC>
       NEW.f_NPCRemovalTimer 1200
    ENDIF
@@ -22739,12 +22613,13 @@ ON=@ItemStep
       ENDIF
    ENDIF
 ON=@GetHit
-   //Spawn Creatures Attack (plague spawn)
-   IF !(<R10>)
+   //Spawn Creatures Attack
+   IF !(<R4>)
+      SAY * The plague beast creates another beast from its flesh! *
       SERV.NEWNPC c_plague_spawn
       NEW.P=<P>
-      NEW.HOME=<SRC.P>
-      NEW.HOMEDIST=10
+      NEW.HOME=<HOME>
+      NEW.HOMEDIST=<HOMEDIST>
       NEW.ATTACK <SRC>
       NEW.f_NPCRemovalTimer 1200
    ENDIF

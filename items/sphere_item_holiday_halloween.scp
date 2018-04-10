@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2017
+// SPHERE by : Menasoft ©1997-2018
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, Oct 23, 2017
+// FILE LAST UPDATED: Monday, Apr 9, 2018
 //
 VERSION=0.56d
 
@@ -262,6 +262,20 @@ DUPELIST=04a93
 [ITEMDEF 04a93]
 //daemon mask
 DUPEITEM=04a92
+
+
+[ITEMDEF 04a9c]
+DEFNAME=i_shackled_heart
+NAME=shackled heart
+FLIP=1
+CATEGORY=Halloween
+SUBSECTION=Decoration
+DESCRIPTION=Shackled Heart
+DUPELIST=04a9d
+
+[ITEMDEF 04a9d]
+//shackled heart
+DUPEITEM=04a9c
 
 
 [ITEMDEF 04ba5]
@@ -1087,6 +1101,22 @@ SUBSECTION=Decoration
 DESCRIPTION=Pumpkin (plain)
 
 
+////////////
+// Multis //
+////////////
+
+[MULTIDEF m_giant_pumpkin]
+ID=09d2c
+NAME=Giant Pumpkin
+TYPE=t_multi
+CATEGORY=Halloween
+SUBSECTION=Decoration
+DESCRIPTION=Giant Pumpkin (multi)
+MULTIREGION=0,0,0,0
+COMPONENT=09d2b,-2,0
+COMPONENT=09d2d,0,-2
+
+
 //////////////////
 // Custom Items //
 //////////////////
@@ -1112,16 +1142,5 @@ DESCRIPTION=Licorice
 ON=@Create
    MOREM=1
    COLOR=colors_black
-
-[ITEMDEF m_giant_pumpkin]
-ID=09d2c
-NAME=Giant Pumpkin
-TYPE=t_multi
-CATEGORY=Halloween
-SUBSECTION=Multis
-DESCRIPTION=Giant Pumpkin
-MULTIREGION=0,0,0,0
-COMPONENT=09d2b,-2,0
-COMPONENT=09d2d,0,-2
 
 [EOF]
