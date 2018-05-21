@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2017
+// SPHERE by : Menasoft ©1997-2018
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Aug 26, 2017
+// FILE LAST UPDATED: Monday, May 21, 2018
 //
 VERSION=0.56d
 
@@ -102,7 +102,7 @@ i_multi_house_stone_plaster_2story		m_two_story_stone_and_plaster_house
 i_multi_tower					m_tower
 i_multi_keep					m_small_stone_keep
 i_multi_castle					m_castle
-i_multi_shop_blacksmithy_large_2		m_large_house_with_patio_2
+i_multi_shop_blacksmithy_large_2		m_large_house_with_patio
 i_multi_shop_blacksmithy_large			m_large_house_with_patio
 i_multi_house_patio_marble			m_marble_house_with_patio
 i_multi_tower_wizard				m_small_stone_tower
@@ -325,6 +325,47 @@ i_wandering_bank_camp			m_wandering_bank_camp
 i_scaffold_and_trailer			m_scaffold_and_trailer
 i_prisoner_camp					m_prisoner_camp
 
+// Doors
+i_door_elven_bark				i_door_elven_wooden
+i_door_portculis				i_door_portcullis
+i_door_sliding					i_door_sliding_latticed
+i_door_sliding_wide				i_door_sliding_latticed_wide
+i_door_sliding_2				i_door_sliding_cloth
+i_door_sliding_2_wide			i_door_sliding_cloth_wide
+i_door_sliding_3				i_door_sliding_wooden
+i_door_sliding_3_wide			i_door_sliding_wooden_wide
+i_sa_door_ws1					i_door_gargish_progressive
+i_sa_door_ws2					i_door_gargish_celestial
+i_sa_door_ws3					i_door_gargish_traditional
+i_sa_door_gd					i_door_gargish
+i_sa_door_barred				i_door_gargish_folsom
+i_sa_door_qdh					i_door_gargish_queen_huge
+i_sa_door_qd					i_door_queen
+i_sa_door_m1					i_door_gargish_renaissance
+i_sa_door_m2					i_door_gargish_draxinusom
+i_sa_door_m3					i_door_gargish_queen
+i_sa_door_m4					i_door_gargish_bentas
+i_sa_door_rd					i_door_gargish_hovel
+
+// Floors
+i_floor_flagstone_sandstone				i_floor_sandstone
+i_floor_flagstone_sandstone_small		i_floor_sandstone_2
+i_floor_flagstone_sandstone_small_dark	i_floor_sandstone_3
+i_floor_log_gray						i_floor_wood_log
+i_floor_log_green						i_floor_wood_primitive
+i_floor_tile_green						i_floor_marble_3
+i_floor_tile_grey						i_floor_slate_grey
+i_floor_tile_marble						i_floor_marble_4
+i_floor_tile_marble_yellow				i_floor_marble_2
+i_floor_tile_red						i_floor_stone_red
+i_floor_wood_dark						i_floor_wood
+i_floor_wood_light						i_wood_plank
+i_paver_marble							i_floor_marble
+i_sa_floor_m1							i_floor_mosaic_medusa
+i_sa_floor_m2							i_floor_mosaic_medusa_large
+i_sa_floor_rune							i_floor_gargish_rune
+i_sa_floor_sd							i_floor_mosaic_serpent
+
 // Miscellaneous
 i_gate_wood_2					i_fence_wood_3
 i_bow_ruin_o					i_bow_ruin
@@ -365,47 +406,11 @@ i_scroll_blood_oat				i_scroll_blood_oath
 i_scroll_lich_transformation	i_scroll_lich_form
 i_scroll_pain_strike			i_scroll_pain_spike
 i_scroll_strangulation			i_scroll_strangle
-i_door_portculis				i_door_portcullis
 i_axel_and_gears				i_axle_and_gears
 i_axel							i_axle
-i_sa_door_ws1					i_door_ws1
-i_sa_door_ws2					i_door_ws2
-i_sa_door_ws3					i_door_ws3
-i_sa_door_gd					i_door_gargoyle
-i_sa_door_barred				i_door_barred_2
-i_sa_door_qdh					i_door_queen_huge
-i_sa_door_qd					i_door_queen
-i_sa_door_m1					i_door_m1
-i_sa_door_m2					i_door_m2
-i_sa_door_m3					i_door_m3
-i_sa_door_m4					i_door_m4
-i_sa_door_rd					i_door_ruined
 i_reag_volcanic_ash				i_reag_grave_dust
 i_reag_serpent_scale			i_reag_nox_crystal
 i_marble						i_rock_marble
-// i_floor_blue						i_floor_tile_blue
-i_paver_marble					i_floor_marble
-i_floor_tile_grey				i_floor_slate_grey
-i_floor_wood_light				i_wood_plank
-i_floor_wood_dark				i_floor_wood
-i_floor_log_green				i_floor_wood_primitive
-i_floor_tile_red				i_floor_stone_red
-i_floor_flagstone_sandstone		i_floor_sandstone
-i_floor_log_gray				i_floor_wood_log
-i_floor_tile_marble_yellow		i_floor_marble_2
-i_floor_tile_green				i_floor_marble_3
-i_floor_tile_marble				i_floor_marble_4
-i_floor_flagstone_sandstone_small	i_floor_sandstone_2
-i_floor_flagstone_sandstone_small_dark	i_floor_sandstone_3
-// i_tile_stone_sand					i_tile_sandstone
-i_paver_stone_dark				0521
-i_paver_stone_medium			0521
-// i_pond							i_floor_garden_pond
-// i_sand_raked					i_floor_garden_sand
-// i_floor_black					i_floor_tile_dark
-// i_floor_crystal					i_paver_ice
-// i_floor_shadow					i_floor_stone
-// i_sa_floor_green_paver			i_floor_gargish_greenstone
 i_tile_sandstone				01383
 i_wall_wood						i_wall_darkwood
 i_wall_stone_2					i_wall_stone_window

@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2017
+// SPHERE by : Menasoft ©1997-2018
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, Sept 18, 2017
+// FILE LAST UPDATED: Monday, May 21, 2018
 //
 VERSION=0.56d
 
@@ -1197,6 +1197,7 @@ DUPEITEM=0824
 //Iron Gate (tall)
 DUPEITEM=0824
 
+
 [ITEMDEF 0839]
 //FIXME: The open and closed are mixed together
 DEFNAME=i_gate_wood
@@ -1265,6 +1266,7 @@ DUPEITEM=0839
 [ITEMDEF 0848]
 //Wooden Gate
 DUPEITEM=0839
+
 
 [ITEMDEF 084c]
 //FIXME: The open and closed are mixed together
@@ -1335,6 +1337,7 @@ DUPEITEM=084c
 //Iron Gate
 DUPEITEM=084c
 
+
 [ITEMDEF 0866]
 //FIXME: The open and closed are mixed together
 DEFNAME=i_gate_wood_3
@@ -1403,6 +1406,7 @@ DUPEITEM=0866
 [ITEMDEF 0875]
 //Wooden Gate (dark wood)
 DUPEITEM=0866
+
 
 [ITEMDEF 01fed]
 DEFNAME=i_door_metal_bar_2
@@ -1476,6 +1480,7 @@ DUPEITEM=01fed
 //Barred Metal Door (opened)
 DUPEITEM=01fee
 
+
 [ITEMDEF 0241f]
 DEFNAME=i_door_wooden_dark_o
 TYPE=t_door_open
@@ -1508,188 +1513,195 @@ DUPEITEM=0241f
 //Dark Wooden Door (closed)
 DUPEITEM=02420
 
+
 [ITEMDEF 026f4]
 //Note: One of the two tiles this door appears to block is not actually blocked
-DEFNAME=i_door_sliding_wide
+DEFNAME=i_door_sliding_latticed_wide
 TYPE=t_door
 CATEGORY=Buildings - Doors
-SUBSECTION=Sliding Door 1 (double)
+SUBSECTION=Sliding Door (latticed wide)
 DESCRIPTION=@ (closed)
 DUPELIST=02990,0299e
 
+
 [ITEMDEF 026f6]
-//Sliding Door 1 (closed)
+//sliding door (latticed wide)(closed)
 DUPEITEM=026f4
+
 
 [ITEMDEF 02990]
 //Note: One of the two tiles this door appears to block is not actually blocked
-DEFNAME=i_door_sliding_2_wide
+DEFNAME=i_door_sliding_cloth_wide
 TYPE=t_door
 CATEGORY=Buildings - Doors
-SUBSECTION=Sliding Door 2 (double)
+SUBSECTION=Sliding Door (cloth wide)
 DESCRIPTION=@ (closed)
 DUPELIST=02991
 
 [ITEMDEF 02991]
-//Sliding Door 2 (closed)
+//sliding door (cloth wide)(closed)
 DUPEITEM=02990
+
 
 [ITEMDEF 0299e]
 //Note: One of the two tiles this door appears to block is not actually blocked
-DEFNAME=i_door_sliding_3_wide
+DEFNAME=i_door_sliding_wooden_wide
 TYPE=t_door
 CATEGORY=Buildings - Doors
-SUBSECTION=Sliding Door 3 (double)
+SUBSECTION=Sliding Door (wooden wide)
 DESCRIPTION=@ (closed)
 DUPELIST=0299f
 
 [ITEMDEF 0299f]
-//Sliding Door 3 (closed)
+//sliding door (wooden wide)(closed)
 DUPEITEM=0299e
 
+
 [ITEMDEF 02a05]
-DEFNAME=i_door_sliding
+DEFNAME=i_door_sliding_latticed
 TYPE=t_door
 CATEGORY=Buildings - Doors
-SUBSECTION=Sliding Door 1
+SUBSECTION=Sliding Door (latticed)
 DESCRIPTION=@ (closed)
 DUPELIST=02a07,02a09,02a0b
 
 [ITEMDEF 02a06]
-DEFNAME=i_door_sliding_o
+DEFNAME=i_door_sliding_latticed_o
 TYPE=t_door_open
 CATEGORY=Buildings - Doors
-SUBSECTION=Sliding Door 1
+SUBSECTION=Sliding Door (latticed)
 DESCRIPTION=@ (opened)
 DUPELIST=02a08,02a0a,02a0c
 
 [ITEMDEF 02a07]
-//Sliding Door 1 (closed)
+//sliding door (latticed)(closed)
 DUPEITEM=02a05
 
 [ITEMDEF 02a08]
-//Sliding Door 1 (opened)
+//sliding door (latticed)(opened)
 DUPEITEM=02a06
 
 [ITEMDEF 02a09]
-//Sliding Door 1 (closed)
+//sliding door (latticed)(closed)
 DUPEITEM=02a05
 
 [ITEMDEF 02a0a]
-//Sliding Door 1 (opened)
+//sliding door (latticed)(opened)
 DUPEITEM=02a06
 
 [ITEMDEF 02a0b]
-//Sliding Door 1 (closed)
+//sliding door (latticed)(closed)
 DUPEITEM=02a05
 
 [ITEMDEF 02a0c]
-//Sliding Door 1 (opened)
+//sliding door (latticed)(opened)
 DUPEITEM=02a06
 
 [ITEMDEF 02a0d]
-DEFNAME=i_door_sliding_2
+DEFNAME=i_door_sliding_cloth
 TYPE=t_door
 CATEGORY=Buildings - Doors
-SUBSECTION=Sliding Door 2
+SUBSECTION=Sliding Door (cloth)
 DESCRIPTION=@ (closed)
 DUPELIST=02a0f,02a11,02a13
 
 [ITEMDEF 02a0e]
-DEFNAME=i_door_sliding_2_o
+DEFNAME=i_door_sliding_cloth_o
 TYPE=t_door_open
 CATEGORY=Buildings - Doors
-SUBSECTION=Sliding Door 2
+SUBSECTION=Sliding Door (cloth)
 DESCRIPTION=@ (opened)
 DUPELIST=02a10,02a12,02a14
 
 [ITEMDEF 02a0f]
-//Sliding Door 2 (closed)
+//sliding door (cloth)(closed)
 DUPEITEM=02a0d
 
 [ITEMDEF 02a10]
-//Sliding Door 2 (opened)
+//sliding door (cloth)(opened)
 DUPEITEM=02a0e
 
 [ITEMDEF 02a11]
-//Sliding Door 2 (closed)
+//sliding door (cloth)(closed)
 DUPEITEM=02a0d
 
 [ITEMDEF 02a12]
-//Sliding Door 2 (opened)
+//sliding door (cloth)(opened)
 DUPEITEM=02a0e
 
 [ITEMDEF 02a13]
-//Sliding Door 2 (closed)
+//sliding door (cloth)(closed)
 DUPEITEM=02a0d
 
 [ITEMDEF 02a14]
-//Sliding Door 2 (opened)
+//sliding door (cloth)(opened)
 DUPEITEM=02a0e
 
 [ITEMDEF 02a15]
-DEFNAME=i_door_sliding_3
+DEFNAME=i_door_sliding_wooden
 TYPE=t_door
 CATEGORY=Buildings - Doors
-SUBSECTION=Sliding Door 3
+SUBSECTION=Sliding Door (wooden)
 DESCRIPTION=@ (closed)
 DUPELIST=02a17,02a19,02a1b
 
 [ITEMDEF 02a16]
-DEFNAME=i_door_sliding_3_o
+DEFNAME=i_door_sliding_wooden_o
 TYPE=t_door_open
 CATEGORY=Buildings - Doors
-SUBSECTION=Sliding Door 3
+SUBSECTION=Sliding Door (wooden)
 DESCRIPTION=@ (opened)
 DUPELIST=02a18,02a1a,02a1c
 
 [ITEMDEF 02a17]
-//Sliding Door 3 (closed)
+//sliding door (wooden)(closed)
 DUPEITEM=02a15
 
 [ITEMDEF 02a18]
-//Sliding Door 3 (opened)
+//sliding door (wooden)(opened)
 DUPEITEM=02a16
 
 [ITEMDEF 02a19]
-//Sliding Door 3 (closed)
+//sliding door (wooden)(closed)
 DUPEITEM=02a15
 
 [ITEMDEF 02a1a]
-//Sliding Door 3 (opened)
+//sliding door (wooden)(opened)
 DUPEITEM=02a16
 
 [ITEMDEF 02a1b]
-//Sliding Door 3 (closed)
+//sliding door (wooden)(closed)
 DUPEITEM=02a15
 
 [ITEMDEF 02a1c]
-//Sliding Door 3 (opened)
+//sliding door (wooden)(opened)
 DUPEITEM=02a16
 
+
 [ITEMDEF 02d46]
-DEFNAME=i_door_elven_bark
+DEFNAME=i_door_elven_wooden
 TYPE=t_door
 CATEGORY=Buildings - Doors
-SUBSECTION=Elven Bark Door
+SUBSECTION=Elven Wooden Door
 DESCRIPTION=@ (closed)
 DUPELIST=02d48,031ac,031ae
 
 [ITEMDEF 02d47]
-DEFNAME=i_door_elven_bark_o
+DEFNAME=i_door_elven_wooden_o
 TYPE=t_door_open
 CATEGORY=Buildings - Doors
-SUBSECTION=Elven Bark Door
+SUBSECTION=Elven Wooden Door
 DESCRIPTION=@ (opened)
 DUPELIST=02d49,031ad,031af
 
 [ITEMDEF 02d48]
-//Elven Bark Door (closed)
+//Elven Wooden Door (closed)
 DUPEITEM=02d46
 
 [ITEMDEF 02d49]
-//Elven Bark Door (opened)
+//Elven Wooden Door (opened)
 DUPEITEM=02d47
+
 
 [ITEMDEF 02d63]
 DEFNAME=i_door_elven_simple
@@ -1763,6 +1775,7 @@ DUPEITEM=02d6b
 //Elven Plain Door (opened)
 DUPEITEM=02d6c
 
+
 [ITEMDEF 02fe2]
 DEFNAME=i_door_moon
 NAME=moon door
@@ -1788,6 +1801,7 @@ DUPEITEM=02fe2
 [ITEMDEF 02fe5]
 //Moon Door (opened)
 DUPEITEM=02fe3
+
 
 [ITEMDEF 0319c]
 //Moon Door (closed)
@@ -1854,529 +1868,541 @@ DUPEITEM=02d6b
 DUPEITEM=02d6c
 
 [ITEMDEF 031ac]
-//Elven Bark Door (closed)
+//Elven Wooden Door (closed)
 DUPEITEM=02d46
 
 [ITEMDEF 031ad]
-//Elven Bark Door (opened)
+//Elven Wooden Door (opened)
 DUPEITEM=02d47
 
 [ITEMDEF 031ae]
-//Elven Bark Door (closed)
+//Elven Wooden Door (closed)
 DUPEITEM=02d46
 
 [ITEMDEF 031af]
-//Elven Bark Door (opened)
+//Elven Wooden Door (opened)
 DUPEITEM=02d47
 
+
 [ITEMDEF 0409b]
-DEFNAME=i_door_ws3
-NAME=door
+DEFNAME=i_door_gargish_traditional
+NAME=gargish traditional door
 TYPE=t_door
 CATEGORY=Buildings - Doors
-SUBSECTION=SA Set 3
+SUBSECTION=Gargish Traditional Door
 DESCRIPTION=@ (closed)
 DUPELIST=0409d,0409f,040a1
 
 [ITEMDEF 0409c]
-DEFNAME=i_door_ws3_o
-NAME=door
+DEFNAME=i_door_gargish_traditional_o
+NAME=gargish traditional door
 TYPE=t_door_open
 CATEGORY=Buildings - Doors
-SUBSECTION=SA Set 3
+SUBSECTION=Gargish Traditional Door
 DESCRIPTION=@ (opened)
 DUPELIST=0409e,040a0,040a2
 
 [ITEMDEF 0409d]
-//WS3 Door (closed)
+//Gargish Traditional Door (closed)
 DUPEITEM=0409b
 
 [ITEMDEF 0409e]
-//WS3 Door (opened)
+//Gargish Traditional Door (opened)
 DUPEITEM=0409c
 
 [ITEMDEF 0409f]
-//WS3 Door (closed)
+//Gargish Traditional Door (closed)
 DUPEITEM=0409b
 
 [ITEMDEF 040a0]
-//WS3 Door (opened)
+//Gargish Traditional Door (opened)
 DUPEITEM=0409c
 
 [ITEMDEF 040a1]
-//WS3 Door (closed)
+//Gargish Traditional Door (closed)
 DUPEITEM=0409b
 
 [ITEMDEF 040a2]
-//WS3 Door (opened)
+//Gargish Traditional Door (opened)
 DUPEITEM=0409c
 
+
 [ITEMDEF 0410c]
-DEFNAME=i_door_gargoyle
-NAME=door
+DEFNAME=i_door_gargish
+NAME=gargish door
 TYPE=t_door
 CATEGORY=Buildings - Doors
-SUBSECTION=Gargoyle Doors
+SUBSECTION=Gargish Door
 DESCRIPTION=@ (closed)
 DUPELIST=0410e,04110,04112
 
 [ITEMDEF 0410d]
-DEFNAME=i_door_gargoyle_o
-NAME=door
+DEFNAME=i_door_gargish_o
+NAME=gargish door
 TYPE=t_door_open
 CATEGORY=Buildings - Doors
-SUBSECTION=Gargoyle Doors
+SUBSECTION=Gargish Door
 DESCRIPTION=@ (opened)
 DUPELIST=0410f,04111,04113
 
 [ITEMDEF 0410e]
-//Gargoyle Door (closed)
+//Gargish Door (closed)
 DUPEITEM=0410c
 
 [ITEMDEF 0410f]
-//Gargoyle Door (opened)
+//Gargish Door (opened)
 DUPEITEM=0410d
 
 [ITEMDEF 04110]
-//Gargoyle Door (closed)
+//Gargish Door (closed)
 DUPEITEM=0410c
 
 [ITEMDEF 04111]
-//Gargoyle Door (opened)
+//Gargish Door (opened)
 DUPEITEM=0410d
 
 [ITEMDEF 04112]
-//Gargoyle Door (closed)
+//Gargish Door (closed)
 DUPEITEM=0410c
 
 [ITEMDEF 04113]
-//Gargoyle Door (opened)
+//Gargish Door (opened)
 DUPEITEM=0410d
 
+
 [ITEMDEF 041c2]
-DEFNAME=i_door_ws2
-NAME=door
+DEFNAME=i_door_gargish_celestial
+NAME=gargish celestial door
 TYPE=t_door
 CATEGORY=Buildings - Doors
-SUBSECTION=SA Set 2
+SUBSECTION=Gargish Celestial Door
 DESCRIPTION=@ (closed)
 DUPELIST=041c4,041c6,041c8
 
 [ITEMDEF 041c3]
-DEFNAME=i_door_ws2_o
-NAME=door
+DEFNAME=i_door_gargish_celestial_o
+NAME=gargish celestial door
 TYPE=t_door_open
 CATEGORY=Buildings - Doors
-SUBSECTION=SA Set 2
+SUBSECTION=Gargish Celestial Door
 DESCRIPTION=@ (opened)
 DUPELIST=041c5,041c7,041c9
 
 [ITEMDEF 041c4]
-//SA Set 2 Door (closed)
+//Gargish Celestial Door (closed)
 DUPEITEM=041c2
 
 [ITEMDEF 041c5]
-//SA Set 2 Door (opened)
+//Gargish Celestial Door (opened)
 DUPEITEM=041c3
 
 [ITEMDEF 041c6]
-//SA Set 2 Door (closed)
+//Gargish Celestial Door (closed)
 DUPEITEM=041c2
 
 [ITEMDEF 041c7]
-//SA Set 2 Door (opened)
+//Gargish Celestial Door (opened)
 DUPEITEM=041c3
 
 [ITEMDEF 041c8]
-//SA Set 2 Door (closed)
+//Gargish Celestial Door (closed)
 DUPEITEM=041c2
 
 [ITEMDEF 041c9]
-//SA Set 2 Door (opened)
+//Gargish Celestial Door (opened)
 DUPEITEM=041c3
 
+
 [ITEMDEF 041cf]
-DEFNAME=i_door_ws1
+DEFNAME=i_door_gargish_progressive
+NAME=gargish progressive door
 TYPE=t_door
 CATEGORY=Buildings - Doors
-SUBSECTION=SA Set 1
+SUBSECTION=Gargish Progressive Door
 DESCRIPTION=@ (closed)
 DUPELIST=041d1,041d3,041d5
 
 [ITEMDEF 041d0]
-DEFNAME=i_door_ws1_o
+DEFNAME=i_door_gargish_progressive_o
+NAME=gargish progressive door
 TYPE=t_door_open
 CATEGORY=Buildings - Doors
-SUBSECTION=SA Set 1
+SUBSECTION=Gargish Progressive Door
 DESCRIPTION=@ (opened)
 DUPELIST=041d2,041d4,041d6
 
 [ITEMDEF 041d1]
-//SA Set 1 Door (closed)
+//Gargish Progressive Door (closed)
 DUPEITEM=041cf
 
 [ITEMDEF 041d2]
-//SA Set 1 Door (opened)
+//Gargish Progressive Door (opened)
 DUPEITEM=041d0
 
 [ITEMDEF 041d3]
-//SA Set 1 Door (closed)
+//Gargish Progressive Door (closed)
 DUPEITEM=041cf
 
 [ITEMDEF 041d4]
-//SA Set 1 Door (opened)
+//Gargish Progressive Door (opened)
 DUPEITEM=041d0
 
 [ITEMDEF 041d5]
-//SA Set 1 Door (closed)
+//Gargish Progressive Door (closed)
 DUPEITEM=041cf
 
 [ITEMDEF 041d6]
-//SA Set 1 Door (opened)
+//Gargish Progressive Door (opened)
 DUPEITEM=041d0
 
+
 [ITEMDEF 0436e]
-DEFNAME=i_door_m1
-NAME=door
+DEFNAME=i_door_gargish_renaissance
+NAME=gargish renaissance door
 TYPE=t_door
 CATEGORY=Buildings - Doors
-SUBSECTION=SA Misc 1
+SUBSECTION=Gargish Renaissance Door
 DESCRIPTION=@ (closed)
 DUPELIST=04370,04376,04378
 
 [ITEMDEF 0436f]
-DEFNAME=i_door_m1_o
-NAME=door
+DEFNAME=i_door_gargish_renaissance_o
+NAME=gargish renaissance door
 TYPE=t_door_open
 CATEGORY=Buildings - Doors
-SUBSECTION=SA Misc 1
+SUBSECTION=Gargish Renaissance Door
 DESCRIPTION=@ (opened)
 DUPELIST=04371,04377,04379
 
 [ITEMDEF 04370]
-//SA Misc 1 Door (closed)
+//Gargish Renaissance Door (closed)
 DUPEITEM=0436e
 
 [ITEMDEF 04371]
-//SA Misc 1 Door (opened)
+//Gargish Renaissance Door (opened)
 DUPEITEM=0436f
 
 [ITEMDEF 04372]
-DEFNAME=i_door_m2
-NAME=door
+DEFNAME=i_door_gargish_draxinusom
+NAME=gargish draxinusom door
 TYPE=t_door
 CATEGORY=Buildings - Doors
-SUBSECTION=SA Misc 2
+SUBSECTION=Gargish Draxinusom Door
 DESCRIPTION=@ (closed)
 DUPELIST=04374,0437a,0437c
 
 [ITEMDEF 04373]
-DEFNAME=i_door_m2_o
-NAME=door
+DEFNAME=i_door_gargish_draxinusom_o
+NAME=gargish draxinusom door
 TYPE=t_door_open
 CATEGORY=Buildings - Doors
-SUBSECTION=SA Misc 2
+SUBSECTION=Gargish Draxinusom Door
 DESCRIPTION=@ (opened)
 DUPELIST=04375,0437b,0437d
 
 [ITEMDEF 04374]
-//SA Misc 2 Door (closed)
+//Gargish Draxinusom Door (closed)
 DUPEITEM=04372
 
 [ITEMDEF 04375]
-//SA Misc 2 Door (opened)
+//Gargish Draxinusom Door (opened)
 DUPEITEM=04373
 
 [ITEMDEF 04376]
-//SA Misc 1 Door (closed)
+//Gargish Draxinusom Door (closed)
 DUPEITEM=0436e
 
 [ITEMDEF 04377]
-//SA Misc 1 Door (opened)
+//Gargish Draxinusom Door (opened)
 DUPEITEM=0436f
 
 [ITEMDEF 04378]
-//SA Misc 1 Door (closed)
+//Gargish Draxinusom Door (closed)
 DUPEITEM=0436e
 
 [ITEMDEF 04379]
-//SA Misc 1 Door (opened)
+//Gargish Draxinusom Door (opened)
 DUPEITEM=0436f
 
 [ITEMDEF 0437a]
-//SA Misc 2 Door (closed)
+//Gargish Draxinusom Door (closed)
 DUPEITEM=04372
 
 [ITEMDEF 0437b]
-//SA Misc 2 Door (opened)
+//Gargish Draxinusom Door (opened)
 DUPEITEM=04373
 
 [ITEMDEF 0437c]
-//SA Misc 2 Door (closed)
+//Gargish Draxinusom Door (closed)
 DUPEITEM=04372
 
 [ITEMDEF 0437d]
-//SA Misc 2 Door (opened)
+//Gargish Draxinusom Door (opened)
 DUPEITEM=04373
 
+
 [ITEMDEF 046dd]
-DEFNAME=i_door_ruined
-NAME=door
+DEFNAME=i_door_gargish_hovel
+NAME=gargish hovel door
 TYPE=t_door
 CATEGORY=Buildings - Doors
-SUBSECTION=Ruined Door
+SUBSECTION=Gargish Hovel Door
 DESCRIPTION=@ (closed)
 DUPELIST=046df,046e1,046e3
 
 [ITEMDEF 046de]
-DEFNAME=i_door_ruined_o
-NAME=door
+DEFNAME=i_door_gargish_hovel_o
+NAME=gargish hovel door
 TYPE=t_door_open
 CATEGORY=Buildings - Doors
-SUBSECTION=Ruined Door
+SUBSECTION=Gargish Hovel Door
 DESCRIPTION=@ (opened)
 DUPELIST=046e0,046e2,046e4
 
 [ITEMDEF 046df]
-//Ruined Door (closed)
+//Gargish Hovel Door (closed)
 DUPEITEM=046dd
 
 [ITEMDEF 046e0]
-//Ruined Door (opened)
+//Gargish Hovel Door (opened)
 DUPEITEM=046de
 
 [ITEMDEF 046e1]
-//Ruined Door (closed)
+//Gargish Hovel Door (closed)
 DUPEITEM=046dd
 
 [ITEMDEF 046e2]
-//Ruined Door (opened)
+//Gargish Hovel Door (opened)
 DUPEITEM=046de
 
 [ITEMDEF 046e3]
-//Ruined Door (closed)
+//Gargish Hovel Door (closed)
 DUPEITEM=046dd
 
 [ITEMDEF 046e4]
-//Ruined Door (opened)
+//Gargish Hovel Door (opened)
 DUPEITEM=046de
 
+
 [ITEMDEF 04d1a]
-DEFNAME=i_door_queen_huge
-NAME=door
+DEFNAME=i_door_gargish_queen_huge
+NAME=gargish queen's door
 TYPE=t_door
 CATEGORY=Buildings - Doors
-SUBSECTION=Huge Queen Door
+SUBSECTION=Gargish Queen's Door (huge)
 DESCRIPTION=@ (closed)
 DUPELIST=04d1c,04d1e,04d20
 
 [ITEMDEF 04d1b]
-DEFNAME=i_door_queen_huge_o
-NAME=door
+DEFNAME=i_door_gargish_queen_huge_o
+NAME=gargish queen's door
 TYPE=t_door_open
 CATEGORY=Buildings - Doors
-SUBSECTION=Huge Queen Door
+SUBSECTION=Gargish Queen's Door (huge)
 DESCRIPTION=@ (opened)
 DUPELIST=04d1d,04d1f,04d21
 
 [ITEMDEF 04d1c]
-//Huge Queen Door (closed)
+//Gargish Queen's Door (huge)(closed)
 DUPEITEM=04d1a
 
 [ITEMDEF 04d1d]
-//Huge Queen Door (opened)
+//Gargish Queen's Door (huge)(opened)
 DUPEITEM=04d1b
 
 [ITEMDEF 04d1e]
-//Huge Queen Door (closed)
+//Gargish Queen's Door (huge)(closed)
 DUPEITEM=04d1a
 
 [ITEMDEF 04d1f]
-//Huge Queen Door (opened)
+//Gargish Queen's Door (huge)(opened)
 DUPEITEM=04d1b
 
 [ITEMDEF 04d20]
-//Huge Queen Door (closed)
+//Gargish Queen's Door (huge)(closed)
 DUPEITEM=04d1a
 
 [ITEMDEF 04d21]
-//Huge Queen Door (opened)
+//Gargish Queen's Door (huge)(opened)
 DUPEITEM=04d1b
 
 [ITEMDEF 04d22]
 DEFNAME=i_door_queen
-NAME=door
+NAME=queen's door
 TYPE=t_door
 CATEGORY=Buildings - Doors
-SUBSECTION=Queen Door
+SUBSECTION=Queen's Door
 DESCRIPTION=@ (closed)
 DUPELIST=04d24,04d26,04d28
 
 [ITEMDEF 04d23]
 DEFNAME=i_door_queen_o
-NAME=door
+NAME=queen's door
 TYPE=t_door_open
 CATEGORY=Buildings - Doors
-SUBSECTION=Queen Door
+SUBSECTION=Queen's Door
 DESCRIPTION=@ (opened)
 DUPELIST=04d25,04d27,04d29
 
 [ITEMDEF 04d24]
-//Queen Door (closed)
+//Queen's Door (closed)
 DUPEITEM=04d22
 
 [ITEMDEF 04d25]
-//Queen Door (opened)
+//Queen's Door (opened)
 DUPEITEM=04d23
 
 [ITEMDEF 04d26]
-//Queen Door (closed)
+//Queen's Door (closed)
 DUPEITEM=04d22
 
 [ITEMDEF 04d27]
-//Queen Door (opened)
+//Queen's Door (opened)
 DUPEITEM=04d23
 
 [ITEMDEF 04d28]
-//Queen Door (closed)
+//Queen's Door (closed)
 DUPEITEM=04d22
 
 [ITEMDEF 04d29]
-//Queen Door (opened)
+//Queen's Door (opened)
 DUPEITEM=04d23
 
+
 [ITEMDEF 050c8]
-DEFNAME=i_door_m3
-NAME=door
+DEFNAME=i_door_gargish_queen
+NAME=gargish queen's door
 TYPE=t_door
 CATEGORY=Buildings - Doors
-SUBSECTION=SA Misc 3
+SUBSECTION=Gargish Queen's Door
 DESCRIPTION=@ (closed)
 DUPELIST=050ca,050cc,050ce
 
 [ITEMDEF 050c9]
-DEFNAME=i_door_m3_o
-NAME=door
+DEFNAME=i_door_gargish_queen_o
+NAME=gargish queen's door
 TYPE=t_door_open
 CATEGORY=Buildings - Doors
-SUBSECTION=SA Misc 3
+SUBSECTION=Gargish Queen's Door
 DESCRIPTION=@ (opened)
 DUPELIST=050cb,050cd,050cf
 
 [ITEMDEF 050ca]
-//SA Misc 3 Door (closed)
+//Gargish Queen's Door (closed)
 DUPEITEM=050c8
 
 [ITEMDEF 050cb]
-//SA Misc 3 Door (opened)
+//Gargish Queen's Door (opened)
 DUPEITEM=050c9
 
 [ITEMDEF 050cc]
-//SA Misc 3 Door (closed)
+//Gargish Queen's Door (closed)
 DUPEITEM=050c8
 
 [ITEMDEF 050cd]
-//SA Misc 3 Door (opened)
+//Gargish Queen's Door (opened)
 DUPEITEM=050c9
 
 [ITEMDEF 050ce]
-//SA Misc 3 Door (closed)
+//Gargish Queen's Door (closed)
 DUPEITEM=050c8
 
 [ITEMDEF 050cf]
-//SA Misc 3 Door (opened)
+//Gargish Queen's Door (opened)
 DUPEITEM=050c9
 
 [ITEMDEF 050d0]
-DEFNAME=i_door_m4
-NAME=door
+DEFNAME=i_door_gargish_bentas
+NAME=gargish bentas door
 TYPE=t_door
 CATEGORY=Buildings - Doors
-SUBSECTION=SA Misc 4
+SUBSECTION=Gargish Bentas Door
 DESCRIPTION=@ (closed)
 DUPELIST=050d2,050d4,050d6
 
 [ITEMDEF 050d1]
-DEFNAME=i_door_m4_o
-NAME=door
+DEFNAME=i_door_gargish_bentas_o
+NAME=gargish bentas door
 TYPE=t_door_open
 CATEGORY=Buildings - Doors
-SUBSECTION=SA Misc 4
+SUBSECTION=Gargish Bentas Door
 DESCRIPTION=@ (opened)
 DUPELIST=050d3,050d5,050d7
 
 [ITEMDEF 050d2]
-//SA Misc 4 Door (closed)
+//Gargish Bentas Door (closed)
 DUPEITEM=050d0
 
 [ITEMDEF 050d3]
-//SA Misc 4 Door (opened)
+//Gargish Bentas Door (opened)
 DUPEITEM=050d1
 
 [ITEMDEF 050d4]
-//SA Misc 4 Door (closed)
+//Gargish Bentas Door (closed)
 DUPEITEM=050d0
 
 [ITEMDEF 050d5]
-//SA Misc 4 Door (opened)
+//Gargish Bentas Door (opened)
 DUPEITEM=050d1
 
 [ITEMDEF 050d6]
-//SA Misc 4 Door (closed)
+//Gargish Bentas Door (closed)
 DUPEITEM=050d0
 
 [ITEMDEF 050d7]
-//SA Misc 4 Door (opened)
+//Gargish Bentas Door (opened)
 DUPEITEM=050d1
 
+
 [ITEMDEF 05142]
-DEFNAME=i_door_barred_2
-NAME=door
+DEFNAME=i_door_gargish_folsom
+NAME=gargish folsom door
 TYPE=t_door
 CATEGORY=Buildings - Doors
-SUBSECTION=SA Barred Door
+SUBSECTION=Gargish Folsom Door
 DESCRIPTION=@ (closed)
 DUPELIST=05144,05146,05148
 
 [ITEMDEF 05143]
-DEFNAME=i_door_barred_2_o
-NAME=door
+DEFNAME=i_door_gargish_folsom_o
+NAME=gargish folsom door
 TYPE=t_door_open
 CATEGORY=Buildings - Doors
-SUBSECTION=SA Barred Door
+SUBSECTION=Gargish Folsom Door
 DESCRIPTION=@ (opened)
 DUPELIST=05145,05147,05149
 
 [ITEMDEF 05144]
-//SA Barred Door (closed)
+//Gargish Folsom Door (closed)
 DUPEITEM=05142
 
 [ITEMDEF 05145]
-//SA Barred Door (opened)
+//Gargish Folsom Door (opened)
 DUPEITEM=05143
 
 [ITEMDEF 05146]
-//SA Barred Door (closed)
+//Gargish Folsom Door (closed)
 DUPEITEM=05142
 
 [ITEMDEF 05147]
-//SA Barred Door (opened)
+//Gargish Folsom Door (opened)
 DUPEITEM=05143
 
 [ITEMDEF 05148]
-//SA Barred Door (closed)
+//Gargish Folsom Door (closed)
 DUPEITEM=05142
 
 [ITEMDEF 05149]
-//SA Barred Door (opened)
+//Gargish Folsom Door (opened)
 DUPEITEM=05143
+
 
 [ITEMDEF 09ad7]
 DEFNAME=i_door_jungle
 NAME=jungle door
 TYPE=t_door
 CATEGORY=Buildings - Doors
-SUBSECTION=TOL Jungle Door
+SUBSECTION=Jungle Door
 DESCRIPTION=@ (closed)
 DUPELIST=09ad9,09adb,09add,09adf,09ae1,09ae3,09ae5
 
@@ -2385,7 +2411,7 @@ DEFNAME=i_door_jungle_o
 NAME=jungle door
 TYPE=t_door_open
 CATEGORY=Buildings - Doors
-SUBSECTION=TOL Jungle Door
+SUBSECTION=Jungle Door
 DESCRIPTION=@ (opened)
 DUPELIST=09ada,09adc,09ade,09ae0,09ae2,09ae4,09ae6
 
@@ -2445,12 +2471,13 @@ DUPEITEM=09ad7
 //Jungle Door (opened)
 DUPEITEM=09ad8
 
+
 [ITEMDEF 09b3c]
 DEFNAME=i_door_shadowguard
 NAME=shadowguard door
 TYPE=t_door
 CATEGORY=Buildings - Doors
-SUBSECTION=TOL Shadowguard Door
+SUBSECTION=Shadowguard Door
 DESCRIPTION=@ (closed)
 DUPELIST=09b3e,09b40,09b42,09b44,09b46,09b48,09b4a
 
@@ -2459,7 +2486,7 @@ DEFNAME=i_door_shadowguard_o
 NAME=shadowguard door
 TYPE=t_door_open
 CATEGORY=Buildings - Doors
-SUBSECTION=TOL Shadowguard Door
+SUBSECTION=Shadowguard Door
 DESCRIPTION=@ (opened)
 DUPELIST=09b3f,09b41,09b43,09b45,09b47,09b49,09b4b
 

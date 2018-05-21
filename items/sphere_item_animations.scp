@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2017
+// SPHERE by : Menasoft ©1997-2018
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Wednesday, Oct 18, 2017
+// FILE LAST UPDATED: Monday, May 21, 2018
 //
 VERSION=0.56d
 
@@ -2317,8 +2317,6 @@ CATEGORY=Animations
 SUBSECTION=Energy Fields
 DESCRIPTION=Energy Field West/East
 DUPELIST=03947,03948,03949,0394a,0394b,0394c,0394d,0394e,0394f,03950,03951,03952,03953,03954,03955
-ON=@Create
-   MOREZ=1
 
 [ITEMDEF 03947]
 //Energy Field West/East (animation frame)
@@ -2387,8 +2385,6 @@ CATEGORY=Animations
 SUBSECTION=Energy Fields
 DESCRIPTION=Energy Field North/South
 DUPELIST=03957,03958,03959,0395a,0395b,0395c,0395d,0395e,0395f,03960,03961,03962,03963,03964
-ON=@Create
-   MOREZ=1
 
 [ITEMDEF 03957]
 //Energy Field North/South (animation frame)
@@ -2453,8 +2449,6 @@ CATEGORY=Animations
 SUBSECTION=Paralysis Fields
 DESCRIPTION=Field
 DUPELIST=03968,03969,0396a,0396b,0396c,0396d,0396e,0396f,03970,03971,03972,03973,03974,03975,03976,03977,03978,03979,0397a,0397b,0397c,0397d,0397e,0397f,03980,03981,03982,03983,03984,03985,03986,03987,03988,03989,0398a
-ON=@Create
-   MOREZ=1
 
 [ITEMDEF 03968]
 //field of paralysis
@@ -2603,8 +2597,6 @@ CATEGORY=Animations
 SUBSECTION=Fire Fields
 DESCRIPTION=Fire Field West/East
 DUPELIST=0398d,0398e,0398f,03990,03991,03992,03993,03994,03995
-ON=@Create
-   MOREZ=2
 
 [ITEMDEF 0398d]
 //Fire Field West/East (animation frame)
@@ -2649,8 +2641,6 @@ CATEGORY=Animations
 SUBSECTION=Fire Fields
 DESCRIPTION=Fire Field North/South
 DUPELIST=03997,03998,03999,0399a,0399b,0399c,0399d,0399e,0399f
-ON=@Create
-   MOREZ=2
 
 [ITEMDEF 03997]
 //Fire Field North/South (animation frame)
@@ -2739,8 +2729,6 @@ CATEGORY=Animations
 SUBSECTION=Fire Fields
 DESCRIPTION=Fire Field West/East (alternate)
 DUPELIST=03e28,03e29,03e2a,03e2b,03e2c,03e2d,03e2e,03e2f,03e30
-ON=@Create
-   MOREZ=2
 
 [ITEMDEF 03e28]
 //Fire Field West/East (animation frame)
@@ -2785,8 +2773,6 @@ CATEGORY=Animations
 SUBSECTION=Fire Fields
 DESCRIPTION=Fire Field North/South (alternate)
 DUPELIST=03e32,03e33,03e34,03e35,03e36,03e37,03e38,03e39,03e3a
-ON=@Create
-   MOREZ=2
 
 [ITEMDEF 03e32]
 //Fire Field North/South (animation frame)
