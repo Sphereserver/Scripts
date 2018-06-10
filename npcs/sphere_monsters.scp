@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, Apr 9, 2018
+// FILE LAST UPDATED: Sunday, Jun 10, 2018
 //
 VERSION=0.56d
 
@@ -22247,6 +22247,20 @@ FollowerSlots=1
 CATEGORY=Mounts
 SUBSECTION=Ethereal
 DESCRIPTION=Serpentine Dragon
+ON=@Create
+   NPC=brain_animal
+   STR=1
+
+//FIXME: No Stratics data
+[CHARDEF 05a0]
+DEFNAME=c_eowmu
+NAME=Eowmu
+ICON=i_pet_eowmu
+CAN=MT_WALK|MT_RUN
+FollowerSlots=1
+CATEGORY=Mounts
+SUBSECTION=Wild
+DESCRIPTION=Eowmu
 ON=@Create
    NPC=brain_animal
    STR=1

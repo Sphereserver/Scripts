@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2017
+// SPHERE by : Menasoft ©1997-2018
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Oct 17, 2017
+// FILE LAST UPDATED: Sunday, Jun 10, 2018
 //
 VERSION=0.56d
 
@@ -85,6 +85,7 @@ mount_0x57f	i_mt_lasher
 mount_0x580	i_mt_palomino
 mount_0x582	i_mt_windrunner
 mount_0x59a	i_mt_serpentine_dragon_ethereal
+mount_0x5a0	i_mt_eowmu
 
 [DEFNAME hues]
 color_text                   -1
@@ -1533,6 +1534,8 @@ TAT_AS_ARGO   3      // Treat the arguments as ARGO
 [DEFNAME misc_own]
 empty_cliloc      1042971
 empty_cliloc2     1070722
+empty_cliloc3     1114778
+empty_cliloc4     1114779
 
 [DEFNAME los_flags]
 los_nb_local_terrain   00001   // Terrain inside a region I am standing in does not block LOS
@@ -1731,6 +1734,9 @@ bufficon_SakkhraProphylaxis		1175
 bufficon_Sparks					1179
 bufficon_Swarm					1180
 bufficon_BoneBreaker			1181
+bufficon_StatueTransformation	1182
+bufficon_CorasManaRage			1183
+bufficon_VirtueShield			1184
 
 [DEFNAME buff_clilocs]
 buffcliloc_Empty				1070722
@@ -1814,6 +1820,12 @@ buffcliloc_Swarm_1					1157328
 buffcliloc_Swarm_2					1157327
 buffcliloc_BoneBreaker_1			1157318
 buffcliloc_BoneBreaker_2			1157319
+buffcliloc_StatueTransformation_1	1158018
+buffcliloc_StatueTransformation_2	1158017
+buffcliloc_CorasManaRage_1			1158283
+buffcliloc_CorasManaRage_2			1158284
+buffcliloc_VirtueShield_1			1158382
+buffcliloc_VirtueShield_2			1158383
 
 [DEFNAME charheight]
 height_01 28 //DEFNAME=c_ogre

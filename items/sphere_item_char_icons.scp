@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2017
+// SPHERE by : Menasoft ©1997-2018
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Oct 17, 2017
+// FILE LAST UPDATED: Sunday, Jun 10, 2018
 //
 VERSION=0.56d
 
@@ -3904,5 +3904,14 @@ TDATA3=c_serpentine_dragon_ethereal
 CATEGORY=Miscellaneous
 SUBSECTION=Character Icons
 DESCRIPTION=Ethereal Serpentine Dragon
+
+[ITEMDEF 0a0c0]
+DEFNAME=i_pet_eowmu
+NAME=Eowmu
+TYPE=t_figurine
+TDATA3=c_eowmu
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Eowmu
 
 [EOF]
