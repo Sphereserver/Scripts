@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Friday, Mar 2, 2018
+// FILE LAST UPDATED: Friday, Jun 22, 2018
 //
 VERSION=0.56d
 
@@ -16,8 +16,12 @@ VERSION=0.56d
 DEFNAME=i_mask_orc
 TYPE=t_clothing
 FLIP=1
-//LAYER=layer_helm
-//ARMOR=10
+ARMOR=10
+RESPHYSICAL=1
+RESFIRE=1
+RESCOLD=7
+RESPOISON=7
+RESENERGY=8
 VALUE=23
 WEIGHT=4.0
 RESOURCES=2 i_hides_cut,1 i_thread
@@ -31,11 +35,6 @@ SUBSECTION=Masks
 DESCRIPTION=Orc Mask
 ON=@Create
    HITPOINTS={36 48}
-   RESCOLD=7
-   RESENERGY=8
-   RESFIRE=1
-   RESPHYSICAL=1
-   RESPOISON=7
 
 [ITEMDEF 0141c]
 //orc mask
@@ -47,8 +46,8 @@ DEFNAME=i_cape
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_cape
-//ARMOR=5
+ARMOR=5
+RESPHYSICAL=1
 VALUE=64
 WEIGHT=14.1
 RESOURCES=14 i_cloth,1 i_thread
@@ -62,7 +61,6 @@ SUBSECTION=Shirts & Robes
 DESCRIPTION=Cloak, Cape
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 01516]
 DEFNAME=i_skirt_long
@@ -70,8 +68,8 @@ NAME=long skirt
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_skirt
-//ARMOR=4
+ARMOR=4
+RESPHYSICAL=1
 VALUE=42
 WEIGHT=10.1
 RESOURCES=10 i_cloth,1 i_thread
@@ -84,15 +82,14 @@ SUBSECTION=Pants & Skirts
 DESCRIPTION=Long Skirt
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 01517]
 DEFNAME=i_shirt_plain
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_shirt
-//ARMOR=3
+ARMOR=3
+RESPHYSICAL=1
 VALUE=32
 WEIGHT=8.1
 RESOURCES=8 i_cloth,1 i_thread
@@ -106,7 +103,6 @@ SUBSECTION=Shirts & Robes
 DESCRIPTION=Plain Shirt
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 01518]
 //plain shirt
@@ -118,8 +114,8 @@ DEFNAME=i_pants_short
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_pants
-//ARMOR=3
+ARMOR=3
+RESPHYSICAL=1
 VALUE=21
 WEIGHT=6.1
 RESOURCES=6 i_cloth,1 i_thread
@@ -133,7 +129,6 @@ SUBSECTION=Pants & Skirts
 DESCRIPTION=Short Pants
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 0152f]
 //Short Pants
@@ -148,8 +143,8 @@ DEFNAME=i_skirt_short
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_skirt
-//ARMOR=4
+ARMOR=4
+RESPHYSICAL=1
 VALUE=41
 WEIGHT=10.1
 RESOURCES=10 i_cloth,1 i_thread
@@ -162,7 +157,6 @@ SUBSECTION=Pants & Skirts
 DESCRIPTION=Skirt (Tea Length)
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 
 [ITEMDEF 01535]
@@ -189,8 +183,8 @@ DEFNAME=i_kilt
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_skirt
-//ARMOR=3
+ARMOR=3
+RESPHYSICAL=1
 VALUE=32
 WEIGHT=8.1
 RESOURCES=8 i_cloth,1 i_thread
@@ -204,7 +198,6 @@ SUBSECTION=Pants & Skirts
 DESCRIPTION=Kilt
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 01538]
 //Kilt
@@ -215,8 +208,8 @@ DEFNAME=i_pants_long
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_pants
-//ARMOR=3
+ARMOR=3
+RESPHYSICAL=1
 VALUE=32
 WEIGHT=8.1
 RESOURCES=8 i_cloth,1 i_thread
@@ -230,7 +223,6 @@ SUBSECTION=Pants & Skirts
 DESCRIPTION=Long Pants
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 0153a]
 //Long Pants
@@ -241,8 +233,8 @@ DEFNAME=i_apron_half
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_half_apron
-//ARMOR=2
+ARMOR=2
+RESPHYSICAL=1
 VALUE=24
 WEIGHT=6.1
 RESOURCES=6 i_cloth,1 i_thread
@@ -256,7 +248,6 @@ SUBSECTION=Miscellaneous
 DESCRIPTION=Half Apron
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 0153c]
 //Half Apron
@@ -267,8 +258,8 @@ DEFNAME=i_apron_full
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_tunic
-//ARMOR=4
+ARMOR=4
+RESPHYSICAL=1
 VALUE=42
 WEIGHT=10.1
 RESOURCES=10 i_cloth,1 i_thread
@@ -282,7 +273,6 @@ SUBSECTION=Miscellaneous
 DESCRIPTION=Full Apron
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 0153e]
 //Full Apron
@@ -293,8 +283,11 @@ DEFNAME=i_bandana
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_helm
-//ARMOR=1
+ARMOR=1
+RESFIRE=3
+RESCOLD=5
+RESPOISON=8
+RESENERGY=8
 VALUE=8
 WEIGHT=2.1
 RESOURCES=2 i_cloth,1 i_thread
@@ -308,10 +301,6 @@ SUBSECTION=Hats
 DESCRIPTION=Bandana
 ON=@Create
    HITPOINTS={36 48}
-   RESFIRE=3
-   RESCOLD=5
-   RESPOISON=8
-   RESENERGY=8
 
 [ITEMDEF 01540]
 //bandana
@@ -322,8 +311,8 @@ DEFNAME=i_sash
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_tunic
-//ARMOR=1
+ARMOR=1
+RESPHYSICAL=1
 VALUE=14
 WEIGHT=4.1
 RESOURCES=4 i_cloth,1 i_thread
@@ -337,7 +326,6 @@ SUBSECTION=Miscellaneous
 DESCRIPTION=Body Sash
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 01542]
 //body sash
@@ -348,8 +336,11 @@ DEFNAME=i_skull_cap
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_helm
-//ARMOR=1
+ARMOR=1
+RESFIRE=3
+RESCOLD=5
+RESPOISON=8
+RESENERGY=8
 VALUE=8
 WEIGHT=2.1
 RESOURCES=2 i_cloth,1 i_thread
@@ -363,10 +354,6 @@ SUBSECTION=Hats
 DESCRIPTION=Skull Cap
 ON=@Create
    HITPOINTS={36 48}
-   RESFIRE=3
-   RESCOLD=5
-   RESPOISON=8
-   RESENERGY=8
 
 [ITEMDEF 01544]
 //skullcap
@@ -377,8 +364,12 @@ DEFNAME=i_mask_bear
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_helm
-//ARMOR=6
+ARMOR=6
+RESPHYSICAL=5
+RESFIRE=3
+RESCOLD=8
+RESPOISON=4
+RESENERGY=4
 VALUE=14
 WEIGHT=3.1
 RESOURCES=1 i_thread,1 i_fur_dark
@@ -392,11 +383,6 @@ SUBSECTION=Masks
 DESCRIPTION=Bear Mask
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=5
-   RESFIRE=3
-   RESCOLD=8
-   RESPOISON=4
-   RESENERGY=4
 
 [ITEMDEF 01546]
 //bear mask
@@ -407,8 +393,12 @@ DEFNAME=i_mask_deer
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_helm
-//ARMOR=6
+ARMOR=6
+RESPHYSICAL=2
+RESFIRE=6
+RESCOLD=8
+RESPOISON=1
+RESENERGY=7
 VALUE=14
 WEIGHT=3.1
 RESOURCES=1 i_thread,1 i_fur_dark
@@ -422,11 +412,6 @@ SUBSECTION=Masks
 DESCRIPTION=Deer Mask
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=2
-   RESFIRE=6
-   RESCOLD=8
-   RESPOISON=1
-   RESENERGY=7
 
 [ITEMDEF 01548]
 //deer mask
@@ -438,8 +423,11 @@ DEFNAME=i_mask_blue
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_helm
-//ARMOR=5
+ARMOR=5
+RESPHYSICAL=6
+RESFIRE=9
+RESPOISON=4
+RESENERGY=5
 VALUE=15
 WEIGHT=4.4
 RESOURCES=12 i_cloth
@@ -453,11 +441,6 @@ SUBSECTION=Masks
 DESCRIPTION=Tribal Mask (fancy)
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=6
-   RESFIRE=9
-   RESCOLD=0
-   RESPOISON=4
-   RESENERGY=5
 
 [ITEMDEF 0154a]
 //tribal mask
@@ -468,8 +451,12 @@ DEFNAME=i_mask_tribal_red
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_helm
-//ARMOR=5
+ARMOR=5
+RESPHYSICAL=3
+RESFIRE=0
+RESCOLD=6
+RESPOISON=10
+RESENERGY=5
 VALUE=15
 WEIGHT=5.1
 RESOURCES=12 i_cloth
@@ -483,11 +470,6 @@ SUBSECTION=Masks
 DESCRIPTION=Tribal Mask (red)
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=3
-   RESFIRE=0
-   RESCOLD=6
-   RESPOISON=10
-   RESENERGY=5
 
 [ITEMDEF 0154c]
 //tribal mask
@@ -499,8 +481,8 @@ DEFNAME=i_boots_calf
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_shoes
-//ARMOR=7
+ARMOR=7
+RESPHYSICAL=1
 VALUE=57
 WEIGHT=8.1
 RESOURCES=8 i_hides_cut,1 i_thread
@@ -514,7 +496,6 @@ SUBSECTION=Footwear
 DESCRIPTION=Boots
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 0170c]
 //boots
@@ -525,8 +506,8 @@ DEFNAME=i_sandals
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_shoes
-//ARMOR=3
+ARMOR=3
+RESPHYSICAL=1
 VALUE=25
 WEIGHT=4.1
 RESOURCES=4 i_hides_cut,1 i_thread
@@ -540,7 +521,6 @@ SUBSECTION=Footwear
 DESCRIPTION=Sandals
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 0170e]
 //Sandals
@@ -551,8 +531,8 @@ DEFNAME=i_shoes_plain
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_shoes
-//ARMOR=3
+ARMOR=3
+RESPHYSICAL=1
 VALUE=38
 WEIGHT=6.1
 RESOURCES=6 i_hides_cut,1 i_thread
@@ -566,7 +546,6 @@ SUBSECTION=Footwear
 DESCRIPTION=Shoes
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 01710]
 //Shoes
@@ -577,8 +556,8 @@ DEFNAME=i_boots_thigh
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_shoes
-//ARMOR=6
+ARMOR=6
+RESPHYSICAL=1
 VALUE=65
 WEIGHT=10.1
 RESOURCES=10 i_hides_cut,1 i_thread
@@ -592,7 +571,6 @@ SUBSECTION=Footwear
 DESCRIPTION=Thigh Boots
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 01712]
 //Thigh Boots
@@ -602,8 +580,11 @@ DUPEITEM=01711
 DEFNAME=i_hat_floppy
 TYPE=t_clothing
 DYE=1
-//LAYER=layer_helm
-//ARMOR=3
+ARMOR=3
+RESFIRE=5
+RESCOLD=9
+RESPOISON=5
+RESENERGY=5
 VALUE=37
 WEIGHT=11.1
 RESOURCES=11 i_cloth,1 i_thread
@@ -616,17 +597,16 @@ SUBSECTION=Hats
 DESCRIPTION=Floppy Hat
 ON=@Create
    HITPOINTS={36 48}
-   RESFIRE=5
-   RESCOLD=9
-   RESPOISON=5
-   RESENERGY=5
 
 [ITEMDEF 01714]
 DEFNAME=i_hat_wide_brim
 TYPE=t_clothing
 DYE=1
-//LAYER=layer_helm
-//ARMOR=3
+ARMOR=3
+RESFIRE=5
+RESCOLD=9
+RESPOISON=5
+RESENERGY=5
 VALUE=43
 RESOURCES=12 i_cloth
 SKILLMAKE=Tailoring 6.2,t_sewing_kit
@@ -638,17 +618,16 @@ SUBSECTION=Hats
 DESCRIPTION=Wide-Brim Hat
 ON=@Create
    HITPOINTS={36 48}
-   RESFIRE=5
-   RESCOLD=9
-   RESPOISON=5
-   RESENERGY=5
 
 [ITEMDEF 01715]
 DEFNAME=i_cap
 TYPE=t_clothing
 DYE=1
-//LAYER=layer_helm
-//ARMOR=3
+ARMOR=3
+RESFIRE=5
+RESCOLD=9
+RESPOISON=5
+RESENERGY=5
 VALUE=24
 WEIGHT=5.1
 RESOURCES=4 i_cloth,1 i_thread
@@ -661,17 +640,16 @@ SUBSECTION=Hats
 DESCRIPTION=Cap
 ON=@Create
    HITPOINTS={36 48}
-   RESFIRE=5
-   RESCOLD=9
-   RESPOISON=5
-   RESENERGY=5
 
 [ITEMDEF 01716]
 DEFNAME=i_hat_straw_tall
 TYPE=t_clothing
 DYE=1
-//LAYER=layer_helm
-//ARMOR=3
+ARMOR=3
+RESFIRE=5
+RESCOLD=9
+RESPOISON=5
+RESENERGY=5
 VALUE=42
 WEIGHT=13.1
 RESOURCES=13 i_cloth
@@ -684,17 +662,16 @@ SUBSECTION=Hats
 DESCRIPTION=Tall Straw Hat
 ON=@Create
    HITPOINTS={36 48}
-   RESFIRE=5
-   RESCOLD=9
-   RESPOISON=5
-   RESENERGY=5
 
 [ITEMDEF 01717]
 DEFNAME=i_hat_straw
 TYPE=t_clothing
 DYE=1
-//LAYER=layer_helm
-//ARMOR=3
+ARMOR=3
+RESFIRE=5
+RESCOLD=9
+RESPOISON=5
+RESENERGY=5
 VALUE=35
 WEIGHT=11.1
 RESOURCES=10 i_cloth
@@ -707,17 +684,16 @@ SUBSECTION=Hats
 DESCRIPTION=Straw Hat
 ON=@Create
    HITPOINTS={36 48}
-   RESFIRE=5
-   RESCOLD=9
-   RESPOISON=5
-   RESENERGY=5
 
 [ITEMDEF 01718]
 DEFNAME=i_hat_wizards
 TYPE=t_clothing
 DYE=1
-//LAYER=layer_helm
-//ARMOR=3
+ARMOR=3
+RESFIRE=5
+RESCOLD=9
+RESPOISON=5
+RESENERGY=5
 VALUE=34
 WEIGHT=8.1
 RESOURCES=7 i_cloth,1 i_thread
@@ -730,17 +706,16 @@ SUBSECTION=Hats
 DESCRIPTION=Wizards Hat
 ON=@Create
    HITPOINTS={36 48}
-   RESFIRE=5
-   RESCOLD=9
-   RESPOISON=5
-   RESENERGY=5
 
 [ITEMDEF 01719]
 DEFNAME=i_bonnet
 TYPE=t_clothing
 DYE=1
-//LAYER=layer_helm
-//ARMOR=3
+ARMOR=3
+RESFIRE=5
+RESCOLD=9
+RESPOISON=5
+RESENERGY=5
 VALUE=37
 WEIGHT=11.1
 RESOURCES=11 i_cloth,1 i_thread
@@ -753,17 +728,16 @@ SUBSECTION=Hats
 DESCRIPTION=Bonnet
 ON=@Create
    HITPOINTS={36 48}
-   RESFIRE=5
-   RESCOLD=9
-   RESPOISON=5
-   RESENERGY=5
 
 [ITEMDEF 0171a]
 DEFNAME=i_hat_feather
 TYPE=t_clothing
 DYE=1
-//LAYER=layer_helm
-//ARMOR=3
+ARMOR=3
+RESFIRE=5
+RESCOLD=9
+RESPOISON=5
+RESENERGY=5
 VALUE=50
 WEIGHT=12.2
 RESOURCES=12 i_cloth,1 i_feather,1 i_thread
@@ -776,17 +750,16 @@ SUBSECTION=Hats
 DESCRIPTION=Feathered Hat
 ON=@Create
    HITPOINTS={36 48}
-   RESFIRE=5
-   RESCOLD=9
-   RESPOISON=5
-   RESENERGY=5
 
 [ITEMDEF 0171b]
 DEFNAME=i_hat_tricorne
 TYPE=t_clothing
 DYE=1
-//LAYER=layer_helm
-//ARMOR=3
+ARMOR=3
+RESFIRE=5
+RESCOLD=9
+RESPOISON=5
+RESENERGY=5
 VALUE=44
 WEIGHT=12.1
 RESOURCES=12 i_cloth,1 i_thread
@@ -799,17 +772,16 @@ SUBSECTION=Hats
 DESCRIPTION=Tricorne Hat
 ON=@Create
    HITPOINTS={36 48}
-   RESFIRE=5
-   RESCOLD=9
-   RESPOISON=5
-   RESENERGY=5
 
 [ITEMDEF 0171c]
 DEFNAME=i_hat_jester
 TYPE=t_clothing
 DYE=1
-//LAYER=layer_helm
-//ARMOR=3
+ARMOR=3
+RESFIRE=5
+RESCOLD=9
+RESPOISON=5
+RESENERGY=5
 VALUE=64
 WEIGHT=15.1
 RESOURCES=15 i_cloth,1 i_thread
@@ -822,10 +794,6 @@ SUBSECTION=Hats
 DESCRIPTION=Jester Cap
 ON=@Create
    HITPOINTS={36 48}
-   RESFIRE=5
-   RESCOLD=9
-   RESPOISON=5
-   RESENERGY=5
 
 
 [ITEMDEF 0172e]
@@ -834,8 +802,8 @@ DEFNAME=i_hat_beekeeper
 NAME=beekeepers hat
 TYPE=t_clothing
 DYE=1
-//LAYER=layer_helm
-//ARMOR=3
+ARMOR=3
+RESPHYSICAL=1
 VALUE=64
 WEIGHT=15.1
 RESOURCES=15 i_cloth,1 i_thread
@@ -848,7 +816,6 @@ SUBSECTION=Hats
 DESCRIPTION=BeeKeeper Hat (Jester Cap)
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 
 [ITEMDEF 019bc]
@@ -858,8 +825,7 @@ NAME=costume
 TYPE=t_clothing
 FLIP=1
 DYE=1
-//LAYER=layer_hand1
-//ARMOR=3
+ARMOR=3
 VALUE=18
 WEIGHT=0.2
 RESOURCES=1 i_board,1 i_thread,1 i_hides_cut,1 i_ribbon
@@ -883,8 +849,8 @@ DEFNAME=i_shirt_fancy
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_shirt
-//ARMOR=4
+ARMOR=4
+RESPHYSICAL=1
 VALUE=33
 WEIGHT=8.1
 RESOURCES=8 i_cloth,1 i_thread
@@ -897,7 +863,6 @@ SUBSECTION=Shirts & Robes
 CATEGORY=Provisions - Clothes
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 01efe]
 //fancy shirt
@@ -908,8 +873,8 @@ DEFNAME=i_dress_full
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_robe
-//ARMOR=5
+ARMOR=5
+RESPHYSICAL=1
 VALUE=52
 WEIGHT=12.1
 RESOURCES=12 i_cloth,1 i_thread
@@ -922,7 +887,6 @@ SUBSECTION=Shirts & Robes
 DESCRIPTION=Fancy Dress
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 01f00]
 //fancy dress
@@ -933,8 +897,8 @@ DEFNAME=i_dress_plain
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_robe
-//ARMOR=5
+ARMOR=5
+RESPHYSICAL=1
 VALUE=37
 WEIGHT=10.1
 RESOURCES=10 i_cloth,1 i_thread
@@ -947,7 +911,6 @@ SUBSECTION=Shirts & Robes
 DESCRIPTION=Plain Dress
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 01f02]
 //plain dress
@@ -958,8 +921,8 @@ DEFNAME=i_robe
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_robe
-//ARMOR=7
+ARMOR=7
+RESPHYSICAL=1
 VALUE=105
 WEIGHT=16.1
 RESOURCES=16 i_cloth,1 i_thread
@@ -972,7 +935,6 @@ SUBSECTION=Shirts & Robes
 DESCRIPTION=Robe
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 01f04]
 //robe
@@ -984,8 +946,8 @@ DEFNAME=i_doublet
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_tunic
-//ARMOR=3
+ARMOR=3
+RESPHYSICAL=1
 VALUE=32
 WEIGHT=8.1
 RESOURCES=8 i_cloth,1 i_thread
@@ -998,7 +960,6 @@ SUBSECTION=Shirts & Robes
 DESCRIPTION=Doublet
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 01f7c]
 //doublet
@@ -1010,8 +971,8 @@ DEFNAME=i_jester_suit
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_tunic
-//ARMOR=7
+ARMOR=7
+RESPHYSICAL=1
 VALUE=140
 WEIGHT=24.1
 RESOURCES=24 i_cloth,1 i_thread
@@ -1024,7 +985,6 @@ SUBSECTION=Shirts & Robes
 DESCRIPTION=Jester Suit
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 01fa0]
 //Jester Suit
@@ -1035,8 +995,8 @@ DEFNAME=i_tunic
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_tunic
-//ARMOR=3
+ARMOR=3
+RESPHYSICAL=1
 VALUE=41
 WEIGHT=12.1
 RESOURCES=12 i_cloth,1 i_thread
@@ -1049,7 +1009,6 @@ SUBSECTION=Shirts & Robes
 DESCRIPTION=Tunic
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 01fa2]
 //Tunic
@@ -1061,8 +1020,8 @@ DEFNAME=i_surcoat
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_tunic
-//ARMOR=3
+ARMOR=3
+RESPHYSICAL=1
 VALUE=55
 WEIGHT=14.1
 RESOURCES=14 i_cloth,1 i_thread
@@ -1075,7 +1034,6 @@ SUBSECTION=Shirts & Robes
 DESCRIPTION=Surcoat
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 01ffe]
 //surcoat
@@ -1088,8 +1046,11 @@ NAME=flower garland
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_helm
-//ARMOR=5
+ARMOR=5
+RESFIRE=3
+RESCOLD=5
+RESPOISON=8
+RESENERGY=8
 VALUE=26
 WEIGHT=2.0
 RESOURCES=5 i_cloth
@@ -1102,10 +1063,6 @@ SUBSECTION=Hats
 DESCRIPTION=Flower Garland
 ON=@Create
    HITPOINTS={36 48}
-   RESFIRE=3
-   RESCOLD=5
-   RESPOISON=8
-   RESENERGY=8
 
 [ITEMDEF 02306]
 //flower garland
@@ -1116,8 +1073,8 @@ DEFNAME=i_boots_fur
 NAME=fur boots
 TYPE=t_clothing
 FLIP=1
-//LAYER=layer_shoes
-//ARMOR=8
+ARMOR=8
+RESCOLD=1
 VALUE=70
 WEIGHT=9.0
 RESOURCES=4 i_hides_cut,4 i_fur_light
@@ -1130,7 +1087,6 @@ SUBSECTION=Footwear
 DESCRIPTION=Fur Boots
 ON=@Create
    HITPOINTS={36 48}
-   RESCOLD=1
 
 [ITEMDEF 02308]
 //fur boots
@@ -1140,8 +1096,8 @@ DUPEITEM=02307
 DEFNAME=i_cape_fur
 TYPE=t_clothing
 FLIP=1
-//LAYER=layer_cape
-//ARMOR=8
+ARMOR=8
+RESCOLD=1
 VALUE=103
 WEIGHT=10.0
 RESOURCES=7 i_cloth,7 i_fur_light
@@ -1154,7 +1110,6 @@ SUBSECTION=Shirts & Robes
 DESCRIPTION=Fur Cape
 ON=@Create
    HITPOINTS={36 48}
-   RESCOLD=1
 
 [ITEMDEF 0230a]
 //fur cape
@@ -1164,8 +1119,8 @@ DUPEITEM=02309
 DEFNAME=i_sarong_fur
 TYPE=t_clothing
 FLIP=1
-//LAYER=layer_skirt
-//ARMOR=8
+ARMOR=8
+RESCOLD=1
 VALUE=73
 WEIGHT=9.0
 RESOURCES=6 i_cloth,6 i_fur_light
@@ -1178,7 +1133,6 @@ SUBSECTION=Shirts & Robes
 DESCRIPTION=Fur Sarong
 ON=@Create
    HITPOINTS={36 48}
-   RESCOLD=1
 
 [ITEMDEF 0230c]
 //fur sarong
@@ -1189,8 +1143,8 @@ DEFNAME=i_dress_gilded
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_skirt
-//ARMOR=6
+ARMOR=6
+RESPHYSICAL=1
 VALUE=86
 WEIGHT=10.0
 RESOURCES=8 i_cloth
@@ -1203,7 +1157,6 @@ SUBSECTION=Shirts & Robes
 DESCRIPTION=Gilded Dress
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 0230e]
 //gilded dress
@@ -1214,8 +1167,8 @@ DEFNAME=i_shirt_formal
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_tunic
-//ARMOR=4
+ARMOR=4
+RESPHYSICAL=1
 VALUE=78
 WEIGHT=8.1
 RESOURCES=8 i_cloth,2 i_wire_gold
@@ -1228,7 +1181,6 @@ SUBSECTION=Shirts & Robes
 DESCRIPTION=Formal Shirt
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 02310]
 //formal shirt
@@ -1240,8 +1192,8 @@ DEFNAME=i_shirt_checkered
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_shirt
-//ARMOR=5
+ARMOR=5
+RESPHYSICAL=1
 VALUE=52
 WEIGHT=12.1
 RESOURCES=12 i_cloth,1 i_thread
@@ -1254,7 +1206,6 @@ SUBSECTION=Shirts & Robes
 DESCRIPTION=Checkered Shirt
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 025eb]
 //checkered shirt
@@ -1265,8 +1216,8 @@ DEFNAME=i_robe2
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_robe
-//ARMOR=7
+ARMOR=7
+RESPHYSICAL=1
 VALUE=80
 WEIGHT=16.1
 RESOURCES=16 i_cloth,1 i_thread
@@ -1279,7 +1230,6 @@ SUBSECTION=Shirts & Robes
 DESCRIPTION=Robe 2
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 025ed]
 //robe 2
@@ -1291,8 +1241,8 @@ DEFNAME=i_robe3
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_robe
-//ARMOR=7
+ARMOR=7
+RESPHYSICAL=1
 VALUE=80
 WEIGHT=16.1
 RESOURCES=16 i_cloth,1 i_thread
@@ -1306,7 +1256,6 @@ SUBSECTION=Shirts & Robes
 DESCRIPTION=Hooded Robe (unwearable)
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 025ef]
 //hooded robe
@@ -1317,8 +1266,8 @@ NAME=death shroud// (unwearable)
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_robe
-//ARMOR=7
+ARMOR=7
+RESPHYSICAL=1
 VALUE=80
 WEIGHT=16.1
 RESOURCES=16 i_cloth,1 i_thread
@@ -1332,7 +1281,6 @@ SUBSECTION=Shirts & Robes
 DESCRIPTION=Death Shroud (unwearable)
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 025f1]
 //death shroud (unwearable)
@@ -1344,8 +1292,8 @@ DEFNAME=i_skirt_knee_3d
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_skirt
-//ARMOR=4
+ARMOR=4
+RESPHYSICAL=1
 VALUE=42
 WEIGHT=10.1
 RESOURCES=10 i_cloth,1 i_thread
@@ -1359,7 +1307,6 @@ SUBSECTION=Pants & Skirts
 DESCRIPTION=knee Skirt (3d client only)
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 025f3]
 //knee skirt
@@ -1372,8 +1319,8 @@ DEFNAME=i_pants_jester_3d
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_pants
-//ARMOR=3
+ARMOR=3
+RESPHYSICAL=1
 VALUE=33
 WEIGHT=8.1
 RESOURCES=8 i_cloth,1 i_thread
@@ -1386,7 +1333,6 @@ SUBSECTION=Pants & Skirts
 DESCRIPTION=Jester Pants (3d client only)
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 0264a]
 //jester pants
@@ -1399,8 +1345,8 @@ DEFNAME=i_haidate_3d
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_pants
-//ARMOR=3
+ARMOR=3
+RESPHYSICAL=1
 VALUE=33
 WEIGHT=8.1
 RESOURCES=8 i_cloth,1 i_thread
@@ -1413,7 +1359,6 @@ SUBSECTION=Pants & Skirts
 DESCRIPTION=Haidate (3d client only)
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 0264e]
 //haidate
@@ -1425,8 +1370,8 @@ DEFNAME=i_kobakama_3d
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_pants
-//ARMOR=3
+ARMOR=3
+RESPHYSICAL=1
 VALUE=33
 WEIGHT=8.1
 RESOURCES=8 i_cloth,1 i_thread
@@ -1439,7 +1384,6 @@ SUBSECTION=Pants & Skirts
 DESCRIPTION=Kobakama (3d client only)
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 02650]
 //kobakama
@@ -1451,8 +1395,8 @@ DEFNAME=i_pants_ninja_3d
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_pants
-//ARMOR=3
+ARMOR=3
+RESPHYSICAL=1
 VALUE=33
 WEIGHT=8.1
 RESOURCES=8 i_cloth,1 i_thread
@@ -1465,7 +1409,6 @@ SUBSECTION=Pants & Skirts
 DESCRIPTION=Ninja Pants (3d client only)
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 02652]
 //ninja pants
@@ -1478,8 +1421,8 @@ DEFNAME=i_shoes_jester_3d
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_shoes
-//ARMOR=3
+ARMOR=3
+RESPHYSICAL=1
 VALUE=38
 WEIGHT=6.1
 RESOURCES=6 i_hides_cut,1 i_thread
@@ -1492,7 +1435,6 @@ SUBSECTION=Footwear
 DESCRIPTION=Jester Shoes (3d client only)
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 02656]
 //jester shoes
@@ -1505,8 +1447,8 @@ DEFNAME=i_shirt_plain_2_3d
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_shirt
-//ARMOR=3
+ARMOR=3
+RESPHYSICAL=1
 VALUE=32
 WEIGHT=8.1
 RESOURCES=8 i_cloth,1 i_thread
@@ -1519,7 +1461,6 @@ SUBSECTION=Shirts & Robes
 DESCRIPTION=Plain Shirt 2 (3d client only)
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 02660]
 //plain shirt 2
@@ -1531,8 +1472,8 @@ DEFNAME=i_shirt_plain_3_3d
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_shirt
-//ARMOR=3
+ARMOR=3
+RESPHYSICAL=1
 VALUE=32
 WEIGHT=8.1
 RESOURCES=8 i_cloth,1 i_thread
@@ -1545,7 +1486,6 @@ SUBSECTION=Shirts & Robes
 DESCRIPTION=Plain Shirt 3 (3d client only)
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 02662]
 //plain shirt 3
@@ -1557,8 +1497,8 @@ DEFNAME=i_shirt_plain_4_3d
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_shirt
-//ARMOR=3
+ARMOR=3
+RESPHYSICAL=1
 VALUE=32
 WEIGHT=8.1
 RESOURCES=8 i_cloth,1 i_thread
@@ -1571,7 +1511,6 @@ SUBSECTION=Shirts & Robes
 DESCRIPTION=Plain Shirt 4 (3d client only)
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 02664]
 //plain shirt 4
@@ -1583,8 +1522,8 @@ DEFNAME=i_shirt_plain_5_3d
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_shirt
-//ARMOR=3
+ARMOR=3
+RESPHYSICAL=1
 VALUE=32
 WEIGHT=8.1
 RESOURCES=8 i_cloth,1 i_thread
@@ -1597,7 +1536,6 @@ SUBSECTION=Shirts & Robes
 DESCRIPTION=Plain Shirt 5 (3d client only)
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 02666]
 //plain shirt 5
@@ -1609,8 +1547,8 @@ DEFNAME=i_shirt_ninja_3d
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_shirt
-//ARMOR=3
+ARMOR=3
+RESPHYSICAL=1
 VALUE=32
 WEIGHT=8.1
 RESOURCES=8 i_cloth,1 i_thread
@@ -1623,7 +1561,6 @@ SUBSECTION=Shirts & Robes
 DESCRIPTION=Ninja (3d client only)
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 02668]
 //ninja shirt
@@ -1636,8 +1573,8 @@ DEFNAME=i_sleeves_kote1_3d
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_arms
-//ARMOR=3
+ARMOR=3
+RESPHYSICAL=1
 VALUE=25
 WEIGHT=6.1
 RESOURCES=6 i_cloth,1 i_thread
@@ -1650,7 +1587,6 @@ SUBSECTION=Shirts & Robes
 DESCRIPTION=Kote Sleeves 1 (3d client only)
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 0266c]
 //kote sleeves 1
@@ -1662,8 +1598,8 @@ DEFNAME=i_sleeves_kote_2_3d
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_arms
-//ARMOR=3
+ARMOR=3
+RESPHYSICAL=1
 VALUE=25
 WEIGHT=6.1
 RESOURCES=6 i_cloth,1 i_thread
@@ -1676,7 +1612,6 @@ SUBSECTION=Shirts & Robes
 DESCRIPTION=Kote Sleeves 2 (3d client only)
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 0266e]
 //kote sleeves 2
@@ -1689,8 +1624,8 @@ DEFNAME=i_domaru_3d
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_chest
-//ARMOR=3
+ARMOR=3
+RESPHYSICAL=1
 VALUE=32
 WEIGHT=8.1
 RESOURCES=8 i_cloth,1 i_thread
@@ -1703,7 +1638,6 @@ SUBSECTION=Shirts & Robes
 DESCRIPTION=Do-maru (3d client only)
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 02672]
 //do-maru
@@ -1715,8 +1649,8 @@ DEFNAME=i_haramakido_3d
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_chest
-//ARMOR=3
+ARMOR=3
+RESPHYSICAL=1
 VALUE=32
 WEIGHT=8.1
 RESOURCES=8 i_cloth,1 i_thread
@@ -1729,7 +1663,6 @@ SUBSECTION=Shirts & Robes
 DESCRIPTION=Haramaki-do (3d client only)
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 02674]
 //haramaki-do
@@ -1741,8 +1674,8 @@ DEFNAME=i_dress_fancy2
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_robe//actually layer_skirt
-//ARMOR=5
+ARMOR=5
+RESPHYSICAL=1
 VALUE=45
 WEIGHT=12.2
 RESOURCES=12 i_cloth,2 i_thread
@@ -1755,7 +1688,6 @@ SUBSECTION=Shirts & Robes
 DESCRIPTION=Fancy Dress 2
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 0267c]
 //fancy dress 2
@@ -1766,8 +1698,8 @@ DEFNAME=i_dress_fancy3
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_robe
-//ARMOR=5
+ARMOR=5
+RESPHYSICAL=1
 VALUE=45
 WEIGHT=12.2
 RESOURCES=12 i_cloth,2 i_thread
@@ -1780,7 +1712,6 @@ SUBSECTION=Shirts & Robes
 DESCRIPTION=Fancy Dress 3
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 0267e]
 //fancy dress 3
@@ -1791,8 +1722,8 @@ DEFNAME=i_dress_long
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_robe
-//ARMOR=5
+ARMOR=5
+RESPHYSICAL=1
 VALUE=45
 WEIGHT=12.1
 RESOURCES=12 i_cloth,1 i_thread
@@ -1805,7 +1736,6 @@ SUBSECTION=Shirts & Robes
 DESCRIPTION=Long Dress
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 02680]
 //long dress
@@ -1818,8 +1748,8 @@ NAME=female kimono
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_robe
-//ARMOR=5
+ARMOR=5
+RESPHYSICAL=1
 VALUE=45
 WEIGHT=12.1
 RESOURCES=12 i_cloth,1 i_thread
@@ -1832,7 +1762,6 @@ SUBSECTION=Shirts & Robes
 DESCRIPTION=Female Kimono 1 (unwearable)
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 02682]
 //Female Kimono 1 (unwearable)
@@ -1844,8 +1773,8 @@ NAME=hooded shroud
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_robe
-//ARMOR=20
+ARMOR=20
+RESPHYSICAL=1
 VALUE=547
 WEIGHT=12.6
 RESOURCES=10 i_cloth,5 i_gem_diamond,1 i_wire_gold,1 i_thread,1 i_scroll_resurrection
@@ -1858,7 +1787,6 @@ SUBSECTION=Shirts & Robes
 DESCRIPTION=Death Shroud (craftable)
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 02684]
 //hooded shroud
@@ -1870,8 +1798,8 @@ NAME=hooded shroud
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_robe
-//ARMOR=20
+ARMOR=20
+RESPHYSICAL=1
 VALUE=547
 WEIGHT=12.6
 RESOURCES=10 i_cloth,5 i_gem_diamond,1 i_wire_gold,1 i_thread,1 i_scroll_resurrection
@@ -1884,7 +1812,6 @@ SUBSECTION=Shirts & Robes
 DESCRIPTION=Death Shroud (unwearable)
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 02686]
 //death shroud
@@ -1896,8 +1823,8 @@ NAME=hooded shroud
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_robe
-//ARMOR=20
+ARMOR=20
+RESPHYSICAL=1
 VALUE=547
 WEIGHT=12.6
 RESOURCES=10 i_cloth,5 i_gem_diamond,1 i_wire_gold,1 i_thread,1 i_scroll_resurrection
@@ -1909,7 +1836,6 @@ SUBSECTION=Shirts & Robes
 DESCRIPTION=Death Shroud (works)
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 
 [ITEMDEF 0269d]
@@ -1918,7 +1844,11 @@ DEFNAME=i_cap_feathered
 NAME=decorative feathered cap
 TYPE=t_armor_leather
 FLIP=1
-//ARMOR=13
+ARMOR=13
+RESFIRE=5
+RESCOLD=9
+RESPOISON=5
+RESENERGY=5
 VALUE=15
 WEIGHT=2.2
 RESOURCES=2 i_hides_cut,1 i_thread,1 i_feather
@@ -1931,11 +1861,6 @@ SUBSECTION=Leather Armor
 DESCRIPTION=Robin Hood Cap (unwearable)
 ON=@Create
    HITPOINTS={36 48}
-   RESCOLD=9
-   RESENERGY=5
-   RESFIRE=5
-   RESPHYSICAL=0
-   RESPOISON=5
 
 [ITEMDEF 0269e]
 //feathered cap
@@ -1947,8 +1872,12 @@ DUPEITEM=0269d
 DEFNAME=i_mask_feathered
 TYPE=t_clothing
 FLIP=1
-//LAYER=layer_helm
-//ARMOR=5
+ARMOR=5
+RESPHYSICAL=1
+RESFIRE=1
+RESCOLD=4
+RESPOISON=5
+RESENERGY=5
 VALUE=26
 WEIGHT=3.6
 RESOURCES=10 i_cloth
@@ -1961,11 +1890,6 @@ SUBSECTION=Masks
 DESCRIPTION=Feathered Mask (unwearable)
 ON=@Create
    HITPOINTS={36 48}
-   RESCOLD=4
-   RESENERGY=5
-   RESFIRE=1
-   RESPHYSICAL=1
-   RESPOISON=5
 
 [ITEMDEF 026a2]
 //feathered mask
@@ -1977,8 +1901,11 @@ DEFNAME=i_hood_ninja_2
 NAME=ninja hood
 TYPE=t_clothing
 FLIP=1
-//LAYER=layer_helm
-//ARMOR=7
+ARMOR=7
+RESFIRE=5
+RESCOLD=9
+RESPOISON=5
+RESENERGY=5
 VALUE=83
 WEIGHT=14.1
 RESOURCES=14 i_cloth,1 i_thread
@@ -1991,10 +1918,6 @@ SUBSECTION=Masks
 DESCRIPTION=Ninja Hood (unwearable)
 ON=@Create
    HITPOINTS={36 48}
-   RESFIRE=5
-   RESCOLD=9
-   RESPOISON=5
-   RESENERGY=5
 
 [ITEMDEF 026a4]
 //ninja hood
@@ -2007,7 +1930,8 @@ NAME=Arcane Cloak
 TYPE=t_clothing
 WEIGHT=5
 DYE=1
-//ARMOR=5
+ARMOR=5
+RESPHYSICAL=1
 RESOURCES=14 i_cloth,1 i_thread,1 i_gem_arcane
 SKILLMAKE=TAILORING 45.4,t_sewing_kit
 CanUse=can_u_human|can_u_elf
@@ -2017,8 +1941,7 @@ CATEGORY=Provisions - Clothes
 SUBSECTION=Magic
 DESCRIPTION=Arcane Cloak
 ON=@Create
-	HITPOINTS={50 100}
-   RESPHYSICAL=1
+   HITPOINTS={50 100}
    TAG.ArcaneCharges=<R1,24>
 
 [ITEMDEF 026ae]
@@ -2027,7 +1950,8 @@ NAME=Arcane Robe
 TYPE=t_clothing
 WEIGHT=3
 DYE=1
-//ARMOR=7
+ARMOR=7
+RESPHYSICAL=1
 RESOURCES=16 i_cloth,1 i_thread,1 i_gem_arcane
 SKILLMAKE=TAILORING 59.0,t_sewing_kit
 CanUse=can_u_human|can_u_elf
@@ -2037,8 +1961,7 @@ CATEGORY=Provisions - Clothes
 SUBSECTION=Magic
 DESCRIPTION=Arcane Robe
 ON=@Create
-	HITPOINTS={50 100}
-   RESPHYSICAL=1
+   HITPOINTS={50 100}
    TAG.ArcaneCharges=<R1,24>
 
 [ITEMDEF 026af]
@@ -2047,7 +1970,8 @@ NAME=Arcane Thigh Boots
 TYPE=t_clothing
 WEIGHT=5
 DYE=1
-//ARMOR=6
+ARMOR=6
+RESPHYSICAL=1
 RESOURCES=10 i_hides_cut,1 i_thread,1 i_gem_arcane
 SKILLMAKE=TAILORING 25.0,t_sewing_kit
 CanUse=can_u_human|can_u_elf
@@ -2057,8 +1981,7 @@ CATEGORY=Provisions - Clothes
 SUBSECTION=Magic
 DESCRIPTION=Arcane Thigh Boots
 ON=@Create
-	HITPOINTS={50 100}
-   RESPHYSICAL=1
+   HITPOINTS={50 100}
    TAG.ArcaneCharges=<R1,24>
 
 [ITEMDEF 026b0]
@@ -2067,7 +1990,12 @@ NAME=Arcane Leather Gloves
 TYPE=t_armor_leather
 WEIGHT=1.0
 DYE=1
-//ARMOR=13
+ARMOR=13
+RESPHYSICAL=2
+RESFIRE=4
+RESCOLD=3
+RESPOISON=3
+RESENERGY=3
 RESOURCES=3 i_hides_cut,1 i_gem_arcane
 SKILLMAKE=TAILORING 56.8,t_sewing_kit
 CanUse=can_u_human|can_u_elf
@@ -2077,12 +2005,7 @@ CATEGORY=Provisions - Armor
 SUBSECTION=Magic
 DESCRIPTION=Arcane Leather Gloves
 ON=@Create
-	HITPOINTS={50 100}
-   RESCOLD=3
-   RESENERGY=3
-   RESFIRE=4
-   RESPHYSICAL=2
-   RESPOISON=3
+   HITPOINTS={50 100}
    TAG.ArcaneCharges=<R1,24>
 
 
@@ -2092,8 +2015,8 @@ NAME=kimono
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_robe
-//ARMOR=5
+ARMOR=5
+RESPHYSICAL=1
 VALUE=46
 WEIGHT=12.2
 RESOURCES=12 i_cloth,2 i_thread
@@ -2105,7 +2028,6 @@ SUBSECTION=Shirts & Robes
 DESCRIPTION=Male Kimono
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 02783]
 DEFNAME=i_kimono_female2
@@ -2113,8 +2035,8 @@ NAME=female kimono
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_robe
-//ARMOR=5
+ARMOR=5
+RESPHYSICAL=1
 VALUE=46
 WEIGHT=12.2
 RESOURCES=12 i_cloth,2 i_thread
@@ -2127,7 +2049,6 @@ SUBSECTION=Shirts & Robes
 DESCRIPTION=Female Kimono 2
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 
 [ITEMDEF 0278f]
@@ -2136,8 +2057,11 @@ NAME=cloth ninja hood
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_helm
-//ARMOR=10
+ARMOR=10
+RESFIRE=5
+RESCOLD=9
+RESPOISON=5
+RESENERGY=5
 VALUE=61
 WEIGHT=10.1
 RESOURCES=10 i_cloth,1 i_thread
@@ -2150,10 +2074,6 @@ SUBSECTION=Cloth Armor
 DESCRIPTION=Cloth Ninja Hood
 ON=@Create
    HITPOINTS={36 48}
-   RESFIRE=5
-   RESCOLD=9
-   RESPOISON=5
-   RESENERGY=5
 
 
 [ITEMDEF 02794]
@@ -2162,8 +2082,8 @@ NAME=cloth ninja jacket
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_chest
-//ARMOR=10
+ARMOR=10
+RESPHYSICAL=1
 VALUE=59
 WEIGHT=10.1
 RESOURCES=10 i_cloth,1 i_thread
@@ -2176,7 +2096,6 @@ SUBSECTION=Cloth Armor
 DESCRIPTION=Cloth Ninja Jacket
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 02795]
 //unused tile named tabi boots tall
@@ -2190,8 +2109,8 @@ NAME=waraji and tabi
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_shoes
-//ARMOR=6
+ARMOR=6
+RESPHYSICAL=1
 VALUE=35
 WEIGHT=6.1
 RESOURCES=6 i_hides_cut,1 i_thread
@@ -2204,15 +2123,14 @@ SUBSECTION=Footwear
 DESCRIPTION=Waraji and Tabi
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 02797]
 DEFNAME=i_boots_tabi
 NAME=ninja tabi
 TYPE=t_clothing
 FLIP=1
-//LAYER=layer_shoes
-//ARMOR=13
+ARMOR=13
+RESPOISON=1
 VALUE=63
 WEIGHT=10.1
 RESOURCES=10 i_hides_cut,1 i_thread
@@ -2225,15 +2143,17 @@ SUBSECTION=Footwear
 DESCRIPTION=Ninja Tabi
 ON=@Create
    HITPOINTS={36 48}
-   RESPOISON=1
 
 [ITEMDEF 02798]
 DEFNAME=i_hat_kasa
 NAME=kasa
 TYPE=t_clothing
 FLIP=1
-//LAYER=layer_helm
-//ARMOR=3
+ARMOR=3
+RESFIRE=5
+RESCOLD=9
+RESPOISON=5
+RESENERGY=5
 VALUE=10
 WEIGHT=3.0
 RESOURCES=12 i_cloth
@@ -2246,10 +2166,6 @@ SUBSECTION=Hats
 DESCRIPTION=Kasa
 ON=@Create
    HITPOINTS={36 48}
-   RESFIRE=5
-   RESCOLD=9
-   RESPOISON=5
-   RESENERGY=5
 
 [ITEMDEF 02799]
 DEFNAME=i_kamishimo
@@ -2257,8 +2173,8 @@ NAME=kamishimo
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_robe
-//ARMOR=10
+ARMOR=10
+RESPHYSICAL=1
 VALUE=144
 WEIGHT=24.2
 RESOURCES=24 i_cloth,2 i_thread
@@ -2271,7 +2187,6 @@ SUBSECTION=Shirts & Robes
 DESCRIPTION=Kamishimo
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 0279a]
 DEFNAME=i_hakama
@@ -2279,8 +2194,8 @@ NAME=hakama
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_skirt
-//ARMOR=5
+ARMOR=5
+RESPHYSICAL=1
 VALUE=84
 WEIGHT=20.1
 RESOURCES=20 i_cloth,1 i_thread
@@ -2293,7 +2208,6 @@ SUBSECTION=Pants & Skirts
 DESCRIPTION=Hakama
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 0279b]
 DEFNAME=i_hakama_tattsuke
@@ -2301,8 +2215,8 @@ NAME=tattsuke-hakama
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_pants
-//ARMOR=5
+ARMOR=5
+RESPHYSICAL=1
 VALUE=84
 WEIGHT=20.1
 RESOURCES=20 i_cloth,1 i_thread
@@ -2315,7 +2229,6 @@ SUBSECTION=Shirts & Robes
 DESCRIPTION=Tattsuke Hakama
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 0279c]
 DEFNAME=i_hakama_shita
@@ -2323,8 +2236,8 @@ NAME=hakama-shita
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_robe
-//ARMOR=7
+ARMOR=7
+RESPHYSICAL=1
 VALUE=80
 WEIGHT=24.1
 RESOURCES=24 i_cloth,1 i_thread
@@ -2337,7 +2250,6 @@ SUBSECTION=Shirts & Robes
 DESCRIPTION=Hakama-Shita
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 
 [ITEMDEF 027a0]
@@ -2346,8 +2258,8 @@ NAME=obi
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_half_apron
-//ARMOR=3
+ARMOR=3
+RESPHYSICAL=1
 VALUE=22
 WEIGHT=6.1
 RESOURCES=6 i_cloth,1 i_thread
@@ -2360,7 +2272,6 @@ SUBSECTION=Pants & Skirts
 DESCRIPTION=Obi
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 027a1]
 DEFNAME=i_jinbaori
@@ -2368,8 +2279,8 @@ NAME=jin-baori
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_tunic
-//ARMOR=3
+ARMOR=3
+RESPHYSICAL=1
 VALUE=22
 WEIGHT=6.1
 RESOURCES=6 i_cloth,1 i_thread
@@ -2382,7 +2293,6 @@ SUBSECTION=Shirts & Robes
 DESCRIPTION=Jin-Baori
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 
 [ITEMDEF 027cd]
@@ -2440,8 +2350,8 @@ NAME=Cloak of Humility
 TYPE=t_clothing
 //DYE=1
 FLIP=1
-//ARMOR=5
-//LAYER=layer_cape
+ARMOR=5
+RARITY=1
 VALUE=1000
 WEIGHT=15.1
 RESOURCES=15 i_cloth,1 i_thread
@@ -2457,7 +2367,6 @@ ON=@Create
    ATTR=attr_magic
    COLOR=1827//tarnish
    HITPOINTS=255
-   Rarity=1
    TAG.VirtueArmor=1
 
 [ITEMDEF 02b05]
@@ -2470,8 +2379,8 @@ DEFNAME=i_woodland_belt
 NAME=woodland belt
 TYPE=t_clothing
 FLIP=1
-//ARMOR=5
-//LAYER=layer_half_apron
+ARMOR=5
+RESPHYSICAL=1
 VALUE=84
 WEIGHT=4.0
 RESOURCES=10 i_hides_cut
@@ -2485,7 +2394,6 @@ SUBSECTION=Elven
 DESCRIPTION=Woodland Belt
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 
 [ITEMDEF 02fb7]
@@ -2495,7 +2403,9 @@ TYPE=t_clothing
 TDATA2=047
 FLIP=1
 LAYER=layer_tunic
-//ARMOR=8
+ARMOR=8
+RESPHYSICAL=1
+WEIGHTREDUCTION=30
 VALUE=32
 WEIGHT=5.1
 RESOURCES=4 i_hides_cut,1 i_thread,1 i_wire_silver
@@ -2508,8 +2418,6 @@ DESCRIPTION=Elven Quiver
 //FIXME: quiver loading event
 ON=@Create
    HITPOINTS={36 48}
-   //TAG.WeightReduction=30
-   RESPHYSICAL=1
 
 
 [ITEMDEF 02fb9]
@@ -2518,8 +2426,8 @@ NAME=hooded elven robe
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_robe
-//ARMOR=12
+ARMOR=12
+RESPHYSICAL=1
 VALUE=80
 WEIGHT=16.1
 RESOURCES=16 i_cloth,1 i_thread
@@ -2533,7 +2441,6 @@ SUBSECTION=Shirts & Robes
 DESCRIPTION=Elven Male Robe
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 02fba]
 DEFNAME=i_elven_male_robe2
@@ -2541,8 +2448,8 @@ NAME=elven robe
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_robe
-//ARMOR=12
+ARMOR=12
+RESPHYSICAL=1
 VALUE=80
 WEIGHT=16.1
 RESOURCES=16 i_cloth,1 i_thread
@@ -2556,7 +2463,6 @@ SUBSECTION=Shirts & Robes
 DESCRIPTION=Elven Male Robe 2
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 02fbb]
 //elven shirt
@@ -2576,8 +2482,8 @@ NAME=elven shirt
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_shirt
-//ARMOR=4
+ARMOR=4
+RESPHYSICAL=1
 VALUE=34
 WEIGHT=8.1
 RESOURCES=8 i_cloth,1 i_thread
@@ -2590,7 +2496,6 @@ SUBSECTION=Shirts & Robes
 DESCRIPTION=Elven Male Shirt (bad tile)
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 02fbe]
 //i_elven_male_shirt3
@@ -2611,6 +2516,11 @@ DUPEITEM=0317a
 DUPEITEM=02b68
 
 
+[ITEMDEF 03171]
+//elven quiver
+DUPEITEM=02fb7
+
+
 [ITEMDEF 03173]
 //elven male robe
 DUPEITEM=02fb9
@@ -2626,8 +2536,8 @@ TYPE=t_clothing
 NAME=female elven shirt
 DYE=1
 FLIP=1
-//LAYER=layer_shirt
-//ARMOR=4
+ARMOR=4
+RESPHYSICAL=1
 VALUE=33
 WEIGHT=8.1
 RESOURCES=8 i_cloth,1 i_thread
@@ -2641,7 +2551,6 @@ SUBSECTION=Shirts & Robes
 DESCRIPTION=Elven Female Shirt
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 03176]
 DEFNAME=i_elven_shirt
@@ -2649,8 +2558,8 @@ TYPE=t_clothing
 NAME=elven shirt
 DYE=1
 FLIP=1
-//LAYER=layer_shirt
-//ARMOR=4
+ARMOR=4
+RESPHYSICAL=1
 VALUE=33
 WEIGHT=8.1
 RESOURCES=8 i_cloth,1 i_thread
@@ -2664,7 +2573,6 @@ SUBSECTION=Shirts & Robes
 DESCRIPTION=Elven Shirt
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 03177]
 //Elven shirt
@@ -2680,8 +2588,8 @@ NAME=elven pants
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_pants
-//ARMOR=3
+ARMOR=3
+RESPHYSICAL=1
 VALUE=33
 WEIGHT=8.1
 RESOURCES=8 i_cloth,1 i_thread
@@ -2695,7 +2603,6 @@ SUBSECTION=Pants & Skirts
 DESCRIPTION=Elven Pants
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 0317a]
 DEFNAME=i_elven_boots
@@ -2703,8 +2610,8 @@ TYPE=t_clothing
 NAME=elven boots
 DYE=1
 FLIP=1
-//LAYER=layer_shoes
-//ARMOR=7
+ARMOR=7
+RESPHYSICAL=1
 VALUE=57
 WEIGHT=8.1
 RESOURCES=8 i_hides_cut,1 i_thread
@@ -2718,7 +2625,6 @@ SUBSECTION=Footwear
 DESCRIPTION=Elven Boots
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 
 [ITEMDEF 04000]
@@ -2727,8 +2633,8 @@ NAME=Gargish robe
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//ARMOR=7
-//LAYER=layer_robe
+ARMOR=7
+RESPHYSICAL=1
 VALUE=105
 WEIGHT=16.1
 RESOURCES=16 i_cloth,1 i_thread
@@ -2742,7 +2648,6 @@ SUBSECTION=Shirts & Robes
 DESCRIPTION=Gargish Robe
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 04001]
 //Gargish robe
@@ -2754,8 +2659,8 @@ NAME=Gargish fancy robe
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//LAYER=layer_robe
-//ARMOR=7
+ARMOR=7
+RESPHYSICAL=1
 VALUE=105
 WEIGHT=16.1
 RESOURCES=16 i_cloth,1 i_thread
@@ -2769,7 +2674,6 @@ SUBSECTION=Shirts & Robes
 DESCRIPTION=Gargish Fancy Robe
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 04003]
 //Gargish robe fancy
@@ -2782,7 +2686,8 @@ NAME=Gargish cloth wing armor
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//ARMOR=5
+ARMOR=5
+RESPHYSICAL=1
 VALUE=70
 WEIGHT=9.1
 RESOURCES=9 i_cloth,1 i_thread
@@ -2796,7 +2701,6 @@ SUBSECTION=Gargoyle Cloth Armor
 DESCRIPTION=Gargish Cloth Wing Armor
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 045a5]
 //gargoyle cloth wings
@@ -2808,8 +2712,8 @@ DEFNAME=i_gargish_sash_female
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//ARMOR=1
-//LAYER=layer_tunic
+ARMOR=1
+RESPHYSICAL=1
 VALUE=14
 WEIGHT=4.1
 RESOURCES=4 i_cloth,1 i_thread
@@ -2823,7 +2727,6 @@ SUBSECTION=Miscellaneous
 DESCRIPTION=Gargish Female Sash
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 046ab]
 //gargish female sash
@@ -2836,8 +2739,8 @@ NAME=Gargish sash
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//ARMOR=1
-//LAYER=layer_tunic
+ARMOR=1
+RESPHYSICAL=1
 VALUE=14
 WEIGHT=4.1
 RESOURCES=4 i_cloth,1 i_thread
@@ -2852,7 +2755,6 @@ SUBSECTION=Miscellaneous
 DESCRIPTION=Gargish Sash
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 046b5]
 //gargish sash
@@ -2865,8 +2767,8 @@ NAME=Gargish half apron
 TYPE=t_clothing
 DYE=1
 FLIP=1
-//ARMOR=2
-//LAYER=layer_half_apron?
+ARMOR=2
+RESPHYSICAL=1
 VALUE=24
 WEIGHT=6.1
 RESOURCES=6 i_hides_cut,1 i_thread
@@ -2880,7 +2782,6 @@ SUBSECTION=Miscellaneous
 DESCRIPTION=Gargish Half Apron
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=1
 
 [ITEMDEF 050d9]
 //Gargish half apron
@@ -2907,6 +2808,10 @@ DEFNAME=i_hat_chef
 NAME=Chef's Toque
 TYPE=t_clothing
 DYE=1
+RESFIRE=5
+RESCOLD=9
+RESPOISON=5
+RESENERGY=5
 RESOURCES=11 i_cloth
 SKILLMAKE=Tailoring 6.2,t_sewing_kit
 CanUse=can_u_human|can_u_elf
@@ -2916,10 +2821,6 @@ SUBSECTION=Hats
 DESCRIPTION=Chef's Toque
 ON=@Create
    HITPOINTS={20 30}
-   RESFIRE=5
-   RESCOLD=9
-   RESPOISON=5
-   RESENERGY=5
 
 [ITEMDEF 0781b]
 DEFNAME=i_kilt_gilded
