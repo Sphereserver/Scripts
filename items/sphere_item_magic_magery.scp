@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, Apr 9, 2018
+// FILE LAST UPDATED: Friday, Aug 3, 2018
 //
 VERSION=0.56d
 
@@ -160,6 +160,7 @@ DUPEITEM=0e3a
 
 [ITEMDEF 01f14]
 DEFNAME=i_rune_marker
+NAMELOC=1027956		//recall rune
 TYPE=t_rune
 FLIP=1
 VALUE=14
@@ -169,9 +170,10 @@ DESCRIPTION=Recall Rune
 DUPELIST=01f15,01f16,01f17
 ON=@Create
    MOREP=-1,-1
-   MORE1=10
 ON=@ClientTooltip
-   SRC.ADDCLILOC 1075217,<dMORE1>	//~1_val~ charges remaining
+   IF (<MOREX> != -1)
+    SRC.ADDCLILOC 1075217,<dMORE1>	//~1_val~ charges remaining
+   ENDIF
 
 [ITEMDEF 01f15]
 //recall rune

@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2017
+// SPHERE by : Menasoft ©1997-2018
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Friday, Jun 2, 2017
+// FILE LAST UPDATED: Friday, Aug 3, 2018
 //
 VERSION=0.56d
 
@@ -85,8 +85,8 @@ EMOTE_DEF_UNICODE	0
 //animallore_master				"%s is loyal to %s"
 //animallore_master_you  		"you"
 //animallore_result				"%s is a %s"
-//armslore_dam					"Attack [%i]."
-//armslore_def					"Defense [%i]."
+//armslore_dam					"Attack [%d]."
+//armslore_def					"Defense [%d]."
 //armslore_psn_1				"You see no poison."
 //armslore_psn_10				"You see enough poison to kill almost anything."
 //armslore_psn_2				"You detect a tiny amount of poison."
@@ -319,7 +319,6 @@ EMOTE_DEF_UNICODE	0
 //itemuse_pitcher_targ			"Where do you want to use the %s?"
 //itemuse_port_locked			"You can't move the gate."
 //itemuse_potion_fail			"You can't move the item."
-//itemuse_rune_name				"Please enter a description for this marked object."
 //itemuse_scissors_use			"Use scissors on hair or cloth to cut"
 //itemuse_sewkit_promt			"What do you want to use the %s on?"
 //itemuse_sextant				"I am in %s, %s"
@@ -579,9 +578,8 @@ EMOTE_DEF_UNICODE	0
 //msg_region_reddef				"You have %s the red region."
 //msg_region_redenter			"entered"
 //msg_region_redleft			"left"
-//msg_rename_cancel				"%s Renaming Canceled"
-//msg_rename_success			"%s renamed: %s"
-//msg_rename_wname				"%s name %s is not allowed."
+//msg_rename_cancel				"Request cancelled."
+//msg_rename_obscene			"That name isn't very polite."
 //msg_seed_atree				"Already a tree here"
 //msg_seed_nogood				"These seeds are no good"
 //msg_seed_reach				"You can't reach this"
@@ -615,7 +613,7 @@ EMOTE_DEF_UNICODE	0
 //msg_trade_received_plat_gold	"You received %lu platinum and %lu gold from %s."
 //msg_trade_refuse				"%s is refusing all trades."
 //msg_trade_toofar				"You are too far away to trade items"
-//msg_trade_wait				"You should wait %i seconds more before accepting."
+//msg_trade_wait				"You should wait %d seconds more before accepting."
 //msg_unconscious				"You are unconscious and can't move."
 //msg_where_area				"I am in %s (%s)"
 //msg_where_room				"I am in %s in %s (%s)"
@@ -947,13 +945,12 @@ EMOTE_DEF_UNICODE	0
 //tracking_result_disc			" disconnected"
 //tracking_unable				"You cannot locate your target"
 //tracking_end					"You have lost your quarry."
-//rune_to						"a recall rune for"
-//rune_location_unk				"an unknown location"
+//rune_name_marked				"a recall rune for "
+//rune_name_unmarked			"unmarked "
+//rune_rename_prompt			"Please enter a description for this marked object:"
+//rune_rename_success			"The etching on the rune has been changed."
 //key_to						"Key to: "
 //stone_for						"Stone for the "
-//rune_name						"Rune"
-//key_name						"Key"
-//stone_name					"Stone"
 //hl_no_client					"Currently there are no clients online"
 //hl_one_client					"One client is online:"
 //hl_many_clients				"The number of clients online is"
