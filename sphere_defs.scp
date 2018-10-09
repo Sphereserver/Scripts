@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, Jun 10, 2018
+// FILE LAST UPDATED: Tuesday, Oct 9, 2018
 //
 VERSION=0.56d
 
@@ -86,6 +86,7 @@ mount_0x580	i_mt_palomino
 mount_0x582	i_mt_windrunner
 mount_0x59a	i_mt_serpentine_dragon_ethereal
 mount_0x5a0	i_mt_eowmu
+mount_0x5a1	i_mt_skeletal_cat
 
 [DEFNAME hues]
 color_text                   -1
@@ -1628,6 +1629,7 @@ debufficon_Thrust				1168
 debufficon_Sparks				1176
 debufficon_Swarm				1177
 debufficon_BoneBreaker			1178
+debufficon_Feint				1185
 
 [DEFNAME buff_icons]
 bufficon_NoRearm				1002
@@ -1737,6 +1739,8 @@ bufficon_BoneBreaker			1181
 bufficon_StatueTransformation	1182
 bufficon_CorasManaRage			1183
 bufficon_VirtueShield			1184
+bufficon_CaddelliteInfused		1186
+bufficon_PotionOfGloriousFortune	1187
 
 [DEFNAME buff_clilocs]
 buffcliloc_Empty				1070722
@@ -1826,6 +1830,10 @@ buffcliloc_CorasManaRage_1			1158283
 buffcliloc_CorasManaRage_2			1158284
 buffcliloc_VirtueShield_1			1158382
 buffcliloc_VirtueShield_2			1158383
+buffcliloc_CaddelliteInfused_1			1158662
+buffcliloc_CaddelliteInfused_2			1158677
+buffcliloc_PotionOfGloriousFortune_1			1158688
+buffcliloc_PotionOfGloriousFortune_2			1158720
 
 [DEFNAME charheight]
 height_01 28 //DEFNAME=c_ogre

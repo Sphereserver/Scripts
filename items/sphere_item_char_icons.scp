@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, Jun 10, 2018
+// FILE LAST UPDATED: Tuesday, Oct 9, 2018
 //
 VERSION=0.56d
 
@@ -3913,5 +3913,23 @@ TDATA3=c_eowmu
 CATEGORY=Miscellaneous
 SUBSECTION=Character Icons
 DESCRIPTION=Eowmu
+
+[ITEMDEF 0a138]
+DEFNAME=i_pet_skeletal_cat
+NAME=Skeletal Cat
+TYPE=t_figurine
+TDATA3=c_skeletal_cat
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Skeletal Cat
+
+[ITEMDEF 0a1c6]
+DEFNAME=i_pet_khal_ankur
+NAME=Khal Ankur
+TYPE=t_figurine
+TDATA3=c_khal_ankur
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Khal Ankur
 
 [EOF]

@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Feb 13, 2018
+// FILE LAST UPDATED: Tuesday, Oct 9, 2018
 //
 VERSION=0.56d
 
@@ -607,6 +607,185 @@ NAME=table
 NAME=table
 
 
+[ITEMDEF 0a0ca]
+//blanket (east)(multi-part)
+NAME=blanket
+DYE=1
+
+[ITEMDEF 0a0cb]
+//blanket (east)(multi-part)
+NAME=blanket
+DYE=1
+
+[ITEMDEF 0a0cc]
+//blanket (east)(multi-part)
+NAME=blanket
+DYE=1
+
+[ITEMDEF 0a0cd]
+//blanket (east)(multi-part)
+NAME=blanket
+DYE=1
+
+[ITEMDEF 0a0ce]
+//blanket (east)(multi-part)
+NAME=blanket
+DYE=1
+
+[ITEMDEF 0a0cf]
+//blanket (east)(multi-part)
+NAME=blanket
+DYE=1
+
+[ITEMDEF 0a0d0]
+//blanket (south)(multi-part)
+NAME=blanket
+DYE=1
+
+[ITEMDEF 0a0d1]
+//blanket (south)(multi-part)
+NAME=blanket
+DYE=1
+
+[ITEMDEF 0a0d2]
+//blanket (south)(multi-part)
+NAME=blanket
+DYE=1
+
+[ITEMDEF 0a0d3]
+//blanket (south)(multi-part)
+NAME=blanket
+DYE=1
+
+[ITEMDEF 0a0d4]
+//blanket (south)(multi-part)
+NAME=blanket
+DYE=1
+
+[ITEMDEF 0a0d5]
+//blanket (south)(multi-part)
+NAME=blanket
+DYE=1
+
+[ITEMDEF 0a0d6]
+DEFNAME=i_sausage
+NAME=sausage
+TYPE=t_food
+FLIP=1
+DUPELIST=0a0d7
+CATEGORY=Holiday Gifts
+SUBSECTION=Summer
+DESCRIPTION=Sausage
+ON=@Create
+   MOREM=1
+
+[ITEMDEF 0a0d7]
+NAME=sausage
+DUPEITEM=0a0d6
+
+[ITEMDEF 0a0d8]
+DEFNAME=i_hot_dog
+NAME=hot dog
+TYPE=t_food
+FLIP=1
+DUPELIST=0a0d9
+CATEGORY=Holiday Gifts
+SUBSECTION=Summer
+DESCRIPTION=Hot Dog
+ON=@Create
+   MOREM=1
+
+[ITEMDEF 0a0d9]
+NAME=hot dog
+DUPEITEM=0a0d8
+
+[ITEMDEF 0a0da]
+DEFNAME=i_hamburger
+NAME=hamburger
+TYPE=t_food
+CATEGORY=Holiday Gifts
+SUBSECTION=Summer
+DESCRIPTION=Hamburger
+ON=@Create
+   MOREM=1
+
+[ITEMDEF 0a0db]
+DEFNAME=i_enchanted_picnic_basket
+NAME=enchanted picnic basket
+TYPE=t_container
+TDATA2=0108
+FLIP=1
+RESOURCES=2 i_softened_reed,3 i_arrow_shaft
+SKILLMAKE=Tinkering 75.0,t_tinker_tools
+DUPELIST=0a0dc
+CATEGORY=Holiday Gifts
+SUBSECTION=Summer
+DESCRIPTION=Enchanted Picnic Basket
+ON=@Create
+   //SERV.NEWITEM i_deed_picnic_blanket,1,<UID>
+   SERV.NEWITEM i_sausage,3,<UID>
+   SERV.NEWITEM i_hot_dog,3,<UID>
+   SERV.NEWITEM i_hamburger,3,<UID>
+
+[ITEMDEF 0a0dc]
+NAME=enchanted picnic basket
+DUPEITEM=0a0db
+
+
+[ITEMDEF 0a0e6]
+DEFNAME=i_enchanted_wheelbarrow_empty
+NAME=enchanted wheelbarrow
+FLIP=1
+CATEGORY=Holiday Gifts
+SUBSECTION=Spring
+DESCRIPTION=Enchanted Wheelbarrow (empty)
+DUPELIST=0a0e7
+ON=@Create
+   TAG.NextHarvest=<eval <SERV.TIME>+(60*60*24*7)>	//1 week
+   TIMER=3600
+ON=@Timer
+   IF (<SERV.TIME> > <TAG0.NextHarvest>)
+      DISPID=<eval <DISPIDDEC>+2>
+      UPDATEX
+      return 1
+   ELIF !(<ATTR> & attr_decay)
+      TIMER=3600
+      return 1
+   ENDIF
+ON=@DClick
+   SRC.SYSMESSAGE There is nothing to harvest.
+   return 1
+
+[ITEMDEF 0a0e7]
+NAME=enchanted wheelbarrow
+DUPEITEM=0a0e6
+
+[ITEMDEF 0a0e8]
+DEFNAME=i_enchanted_wheelbarrow
+NAME=enchanted wheelbarrow
+FLIP=1
+CATEGORY=Holiday Gifts
+SUBSECTION=Spring
+DESCRIPTION=Enchanted Wheelbarrow
+DUPELIST=0a0e9
+ON=@DClick
+   SRC.MESSAGE *You collect a plant from the wheelbarrow*
+   SERV.NEWITEM {{0a0dd 0a0e5} 1 0a0ed 1 {0a11b 0a12b} 1}
+   IF (5 < <R100>)
+      NEW.COLOR={02 1 0481 1 048e 1 0496 1 04eb 1 0782 1 0a26 1 0aa9 1}
+   ENDIF
+   NEW.BOUNCE
+   DISPID=<eval <DISPIDDEC>-2>
+   TAG.NextHarvest=<eval <SERV.TIME>+(60*60*24*7)>	//1 week
+   TIMER=3600
+   UPDATEX
+   return 1
+
+[ITEMDEF 0a0e9]
+NAME=enchanted wheelbarrow
+DUPEITEM=0a0e8
+
+
 ////////////
 // Multis //
 ////////////
@@ -728,5 +907,33 @@ DESCRIPTION=Ale Table (east)(multi)
 MULTIREGION=0,0,0,0
 COMPONENT=09f58,0,1
 COMPONENT=09f5a,0,-1
+
+[ITEMDEF m_picnic_blanket_e]
+ID=0a0cd
+NAME=Blanket
+TYPE=t_multi
+CATEGORY=Holiday Gifts
+SUBSECTION=Summer
+DESCRIPTION=Picnic Blanket (east)
+MULTIREGION=0,0,0,0
+COMPONENT=0a0ca,1,-1
+COMPONENT=0a0cb,0,-1
+COMPONENT=0a0cc,1,0
+COMPONENT=0a0ce,1,1
+COMPONENT=0a0cf,0,1
+
+[ITEMDEF m_picnic_blanket_s]
+ID=0a0d3
+NAME=Blanket
+TYPE=t_multi
+CATEGORY=Holiday Gifts
+SUBSECTION=Summer
+DESCRIPTION=Picnic Blanket (south)
+MULTIREGION=0,0,0,0
+COMPONENT=0a0d0,-1,1
+COMPONENT=0a0d1,-1,0
+COMPONENT=0a0d2,0,1
+COMPONENT=0a0d4,1,1
+COMPONENT=0a0d5,1,0
 
 [EOF]

@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Feb 13, 2018
+// FILE LAST UPDATED: Tuesday, Oct 9, 2018
 //
 VERSION=0.56d
 
@@ -110,6 +110,10 @@ DUPEITEM=02af9
 DEFNAME=i_shield_dupre
 NAME=Dupre's Shield
 TYPE=t_shield
+BONUSHITS=5
+REGENHITS=1
+RESPHYSICAL=1
+RESENERGY=1
 CATEGORY=Anniversary Gifts
 SUBSECTION=8th Anniversary
 DESCRIPTION=Dupre's Shield
@@ -118,25 +122,22 @@ ReqStr=50
 TEVENTS=t_equipitem
 ON=@Create
    HITPOINTS=255
-   BONUSHITS=5
-   REGENHITS=1
-   RESPHYSICAL=1
-   RESENERGY=1
 
 [ITEMDEF 02b02]
 DEFNAME=i_quiver_infinity
 NAME=Quiver of Infinity
 TYPE=t_clothing
 FLIP=1
+INCREASEDAM=10
+INCREASEDEFCHANCE=5
+//LOWERAMMOCOST=20
+WEIGHTREDUCTION=30
 CATEGORY=Anniversary Gifts
 SUBSECTION=8th Anniversary
 DESCRIPTION=Quiver of Infinity
 DUPELIST=02b03
 ON=@Create
    HITPOINTS=255
-   INCREASEDAM=10
-   INCREASEDEFCHANCE=5
-   //LOWERAMMOCOST=20
 
 [ITEMDEF 02b03]
 //quiver of infinity
@@ -704,7 +705,7 @@ DESCRIPTION=15th Anniversary Cake
 ON=@Create
    MORE2=10
 ON=@ClientTooltip
-   SRC.ADDCLILOC 1153151,<dMORE2>	//Slices: ~1_amt~ 
+   SRC.ADDCLILOC 1153151,<dMORE2>	//Slices: ~1_amt~
 ON=@DClick
    SERV.NEWITEM i_cake_15th_anniversary_slice
    NEW.BOUNCE
@@ -900,6 +901,7 @@ ON=@DClick
     DISPID=i_sign_bar2
    ENDIF
    UPDATE
+   SOUND 02b
    return 1
 
 [ITEMDEF 09a0d]
@@ -1216,46 +1218,46 @@ DESCRIPTION=Platinum Dragon Statue
 DUPELIST=09f5e
 
 [ITEMDEF 09f42]
-//platinum dragon statue (anim)
+//platinum dragon statue (east)(anim)
 
 [ITEMDEF 09f43]
-//platinum dragon statue (anim)
+//platinum dragon statue (east)(anim)
 
 [ITEMDEF 09f44]
-//platinum dragon statue (anim)
+//platinum dragon statue (east)(anim)
 
 [ITEMDEF 09f45]
-//platinum dragon statue (anim)
+//platinum dragon statue (east)(anim)
 
 [ITEMDEF 09f46]
-//platinum dragon statue (anim)
+//platinum dragon statue (east)(anim)
 
 
 [ITEMDEF 09f4a]
-//platinum dragon statue (anim)
+//platinum dragon statue (east)(anim)
 
 [ITEMDEF 09f4b]
-//platinum dragon statue (anim)
+//platinum dragon statue (south)(anim)
 
 
 [ITEMDEF 09f5e]
-//platinum dragon statue
+//platinum dragon statue (south)
 DUPEITEM=09f41
 
 [ITEMDEF 09f5f]
-//platinum dragon statue (anim)
+//platinum dragon statue (south)(anim)
 
 [ITEMDEF 09f60]
-//platinum dragon statue (anim)
+//platinum dragon statue (south)(anim)
 
 [ITEMDEF 09f61]
-//platinum dragon statue (anim)
+//platinum dragon statue (south)(anim)
 
 [ITEMDEF 09f62]
-//platinum dragon statue (anim)
+//platinum dragon statue (south)(anim)
 
 [ITEMDEF 09f63]
-//platinum dragon statue (anim)
+//platinum dragon statue (south)(anim)
 
 
 [ITEMDEF 09f88]
@@ -1320,6 +1322,254 @@ ON=@DClick
    SRC.MESSAGE You fire the cannon!
    EFFECT 2,i_confetti_explosion,16,24
    return 1
+
+
+[ITEMDEF 0a12c]
+DEFNAME=i_telescope
+NAME=telescope
+FLIP=1
+RESOURCES=25 i_ingot_iron, 1 i_workable_glass, 1 i_sextant_parts
+SKILLMAKE=Tinkering 100.0,t_tinker_tools
+CATEGORY=Anniversary Gifts
+SUBSECTION=21th Anniversary
+DESCRIPTION=Telescope
+DUPELIST=0a12d
+ON=@DClick
+   SDIALOG d_telescope
+   return 1
+
+[ITEMDEF 0a12d]
+NAME=telescope
+DUPEITEM=0a12c
+
+[DIALOG d_telescope]		//TO-DO: planets and constellations gumppics are missing
+30,30
+
+IF (<SERV.RTIME.FORMAT %H> == 0)	//Midnight
+   gumppic 0 0 0686
+ELIF (<SERV.RTIME.FORMAT %H> <= 4)	//Middle of the night
+   gumppic 0 0 0680
+ELIF (<SERV.RTIME.FORMAT %H> <= 16)	//Daylight
+   gumppic 0 0 067e
+ELIF (<SERV.RTIME.FORMAT %H> <= 20)	//Evening
+   gumppic 0 0 067f
+ELSE					//Late at night
+   gumppic 0 0 0684
+ENDIF
+
+gumppic 222 597 0694
+button 222 584 0697 0698 1 0 1
+button 222 631 0699 069a 1 0 2
+gumppic 229 600 <eval 058f + (<TAG0.RA> / 10)>
+
+gumppic 256 597 0694
+button 256 584 0697 0698 1 0 3
+button 256 631 0699 069a 1 0 4
+gumppic 263 600 <eval 058f + (<TAG0.RA> % 10)>
+
+gumppic 332 597 0694
+button 332 584 0697 0698 1 0 5
+button 332 631 0699 069a 1 0 6
+gumppic 339 600 <eval 058f + ((<TAG0.DEC> / 10) / 10)>
+
+gumppic 366 597 0694
+button 366 584 0697 0698 1 0 7
+button 366 631 0699 069a 1 0 8
+gumppic 373 600 <eval 058f + ((<TAG0.DEC> / 10) % 10)>
+
+gumppic 400 597 0694
+button 400 584 0697 0698 1 0 9
+button 400 631 0699 069a 1 0 10
+gumppic 407 600 <eval 058f + (<TAG0.DEC> % 10)>
+
+gumppic 397 623 0696
+button 291 597 069b 069c 1 0 11
+dhtmlgump 251 651 30 20 0 0 <DEF.L1>basefont color="#d6d6ad"<DEF.R1>RA<DEF.BFONTE>
+dhtmlgump 371 651 30 20 0 0 <DEF.L1>basefont color="#d6d6ad"<DEF.R1>DEC<DEF.BFONTE>
+
+[DIALOG d_telescope BUTTON]
+ON=1 11
+IF (<ARGN> == 1)
+   IF (<eval <TAG0.RA> + 10> <= 24)
+      TAG0.RA += 10
+   ENDIF
+ELIF (<ARGN> == 2)
+   IF (<eval <TAG0.RA> - 10> >= 0)
+      TAG0.RA -= 10
+   ENDIF
+ELIF (<ARGN> == 3)
+   IF (<eval <TAG0.RA> + 1> <= 24)
+      TAG0.RA += 1
+   ENDIF
+ELIF (<ARGN> == 4)
+   IF (<eval <TAG0.RA> - 1> >= 0)
+      TAG0.RA -= 1
+   ENDIF
+ELIF (<ARGN> == 5)
+   IF (<eval <TAG0.DEC> + 100> <= 900)
+      TAG0.DEC += 100
+   ENDIF
+ELIF (<ARGN> == 6)
+   IF (<eval <TAG0.DEC> - 100> >= 0)
+      TAG0.DEC -= 100
+   ENDIF
+ELIF (<ARGN> == 7)
+   IF (<eval <TAG0.DEC> + 10> <= 900)
+      TAG0.DEC += 10
+   ENDIF
+ELIF (<ARGN> == 8)
+   IF (<eval <TAG0.DEC> - 10> >= 0)
+      TAG0.DEC -= 10
+   ENDIF
+ELIF (<ARGN> == 9)
+   IF (<eval <TAG0.DEC> + 2> <= 900)
+      TAG0.DEC += 2
+   ENDIF
+ELIF (<ARGN> == 10)
+   IF (<eval <TAG0.DEC> - 2> >= 0)
+      TAG0.DEC -= 2
+   ENDIF
+ELIF (<ARGN> == 11)
+   TAG.RA=
+   TAG.DEC=
+ENDIF
+SDIALOG d_telescope
+
+
+[ITEMDEF i_book_telescope]
+ID=0ff0
+CATEGORY=Anniversary Gifts
+SUBSECTION=21th Anniversary
+DESCRIPTION=Book (telescope guide)
+ON=@Create
+   COLOR=012a
+ON=@ClientTooltip
+   SRC.ADDCLILOC 1158515				//Looking to the Heavens: A Primer on Britannian Astronomy
+   SRC.ADDCLILOC 1154760,Willebrord the Astronomer	//By: ~1_NAME~
+ON=@DClick
+   SDIALOG d_book_telescope
+   return 1
+
+[DIALOG d_book_telescope]
+100,100
+gumppic 0 0 0761c
+gumppic 95 40 069e
+xmfhtmltok 115 200 350 400 0 1 1 1158516
+
+
+[ITEMDEF 0a17b]
+//orrery (anim)
+
+[ITEMDEF 0a17c]
+DEFNAME=i_orrery
+NAME=orrery
+CATEGORY=Anniversary Gifts
+SUBSECTION=21th Anniversary
+DESCRIPTION=Orrery
+ON=@DClick
+   IF (<DISPID> == i_orrery)
+      DISPID=0a17b
+      SOUND 01e0
+   ELSE
+      DISPID=i_orrery
+      SOUND 01e2
+   ENDIF
+   UPDATE
+   return 1
+
+[ITEMDEF 0a17d]
+//orrery (anim)
+
+[ITEMDEF 0a17e]
+//orrery (anim)
+
+[ITEMDEF 0a17f]
+//orrery (anim)
+
+[ITEMDEF 0a180]
+//orrery (anim)
+
+[ITEMDEF 0a181]
+//orrery (anim)
+
+[ITEMDEF 0a182]
+//orrery (anim)
+
+[ITEMDEF 0a183]
+//orrery (anim)
+
+[ITEMDEF 0a184]
+//orrery (anim)
+
+[ITEMDEF 0a185]
+//orrery (anim)
+
+[ITEMDEF 0a186]
+//orrery (anim)
+
+[ITEMDEF 0a187]
+//orrery (anim)
+
+[ITEMDEF 0a188]
+//orrery (anim)
+
+[ITEMDEF 0a189]
+//orrery (anim)
+
+[ITEMDEF 0a18a]
+//orrery (anim)
+
+[ITEMDEF 0a18b]
+//orrery (anim)
+
+[ITEMDEF 0a18c]
+//orrery (anim)
+
+[ITEMDEF 0a18d]
+//orrery (anim)
+
+[ITEMDEF 0a18e]
+//orrery (anim)
+
+[ITEMDEF 0a18f]
+//orrery (anim)
+
+[ITEMDEF 0a190]
+//orrery (anim)
+
+[ITEMDEF 0a191]
+//orrery (anim)
+
+[ITEMDEF 0a192]
+//orrery (anim)
+
+[ITEMDEF 0a193]
+//orrery (anim)
+
+[ITEMDEF 0a194]
+//orrery (anim)
+
+[ITEMDEF 0a195]
+//orrery (anim)
+
+[ITEMDEF 0a196]
+//orrery (anim)
+
+[ITEMDEF 0a197]
+//orrery (anim)
+
+
+[ITEMDEF 0a1e4]
+DEFNAME=i_star_chart
+NAME=star chart
+CATEGORY=Anniversary Gifts
+SUBSECTION=21th Anniversary
+DESCRIPTION=Star Chart
+DUPELIST=0a1e5
+
+[ITEMDEF 0a1e5]
+//star chart
+DUPEITEM=0a1e4
 
 
 ////////////

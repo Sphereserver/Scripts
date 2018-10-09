@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, Apr 9, 2018
+// FILE LAST UPDATED: Tuesday, Oct 9, 2018
 //
 VERSION=0.56d
 
@@ -306,12 +306,12 @@ DUPEITEM=04ba7
 
 
 [ITEMDEF 0992d]
-DEFNAME=i_jackolantern_carving_kit
+DEFNAME=i_jack_o_lantern_carving_kit
 NAME=jack o' lantern carving kit
 FLIP=1
 CATEGORY=Halloween
 SUBSECTION=Decoration
-DESCRIPTION=Jack O' Lantern Carving Kit
+DESCRIPTION=Jack o' Lantern Carving Kit
 DUPELIST=0992e
 
 [ITEMDEF 0992e]
@@ -575,34 +575,34 @@ ON=@Create
 //carved pumpkin (spirit)
 
 [ITEMDEF 09951]
-DEFNAME=i_pumpkin_scalele
+DEFNAME=i_pumpkin_swirl
 NAME=carved pumpkin
 TYPE=t_light_out
-TDATA3=i_pumpkin_scalele_lit
+TDATA3=i_pumpkin_swirl_lit
 WEIGHT=25.0
 CATEGORY=Halloween
 SUBSECTION=Lightsources
-DESCRIPTION=Carved Pumpkin (scalele)(unlit)
+DESCRIPTION=Carved Pumpkin (swirl)(unlit)
 ON=@Create
    MOREZ=1
 
 [ITEMDEF 09952]
-DEFNAME=i_pumpkin_scalele_lit
+DEFNAME=i_pumpkin_swirl_lit
 NAME=carved pumpkin
 TYPE=t_light_lit
-TDATA3=i_pumpkin_scalele
+TDATA3=i_pumpkin_swirl
 WEIGHT=25.0
 CATEGORY=Halloween
 SUBSECTION=Lightsources
-DESCRIPTION=Carved Pumpkin (scalele)(lit)
+DESCRIPTION=Carved Pumpkin (swirl)(lit)
 ON=@Create
    MOREZ=1
 
 [ITEMDEF 09953]
-//carved pumpkin (scalele)
+//carved pumpkin (swirl)
 
 [ITEMDEF 09954]
-//carved pumpkin (scalele)
+//carved pumpkin (swirl)
 
 [ITEMDEF 09955]
 DEFNAME=i_head_on_spike_yvette
@@ -787,36 +787,36 @@ SUBSECTION=Decoration
 DESCRIPTION=Carvable Green Pumpkin
 
 [ITEMDEF 09d23]
-DEFNAME=i_green_pumpkin_witch
+DEFNAME=i_green_pumpkin_wizard
 NAME=carved pumpkin
 TYPE=t_light_out
-TDATA3=i_green_pumpkin_witch_lit
+TDATA3=i_green_pumpkin_wizard_lit
 WEIGHT=25.0
 CATEGORY=Halloween
 SUBSECTION=Lightsources
-DESCRIPTION=Carved Green Pumpkin (witch)(unlit)
+DESCRIPTION=Carved Green Pumpkin (wizard)(unlit)
 ON=@Create
    MOREZ=1
 
 [ITEMDEF 09d24]
-DEFNAME=i_green_pumpkin_witch_lit
+DEFNAME=i_green_pumpkin_wizard_lit
 NAME=carved pumpkin
 TYPE=t_light_lit
-TDATA3=i_green_pumpkin_witch
+TDATA3=i_green_pumpkin_wizard
 WEIGHT=25.0
 CATEGORY=Halloween
 SUBSECTION=Lightsources
-DESCRIPTION=Carved Green Pumpkin (witch)(lit)
+DESCRIPTION=Carved Green Pumpkin (wizard)(lit)
 DUPELIST=09d25,09d26
 ON=@Create
    MOREZ=1
 
 [ITEMDEF 09d25]
-//carved green pumpkin (witch)
+//carved green pumpkin (wizard)
 DUPEITEM=09d24
 
 [ITEMDEF 09d26]
-//carved green pumpkin (witch)
+//carved green pumpkin (wizard)
 DUPEITEM=09d24
 
 [ITEMDEF 09d27]
@@ -1099,6 +1099,554 @@ NAME=pumpkin
 CATEGORY=Halloween
 SUBSECTION=Decoration
 DESCRIPTION=Pumpkin (plain)
+
+
+[ITEMDEF 0a139]
+DEFNAME=i_green_pumpkin_bat
+NAME=carved pumpkin
+TYPE=t_light_out
+TDATA3=i_green_pumpkin_bat_lit
+WEIGHT=18.0
+CATEGORY=Halloween
+SUBSECTION=Lightsources
+DESCRIPTION=Carved Pumpkin (bat)(unlit)
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 0a13a]
+DEFNAME=i_green_pumpkin_bat_lit
+NAME=carved pumpkin
+TYPE=t_light_lit
+TDATA3=i_green_pumpkin_bat
+WEIGHT=18.0
+CATEGORY=Halloween
+SUBSECTION=Lightsources
+DESCRIPTION=Carved Pumpkin (bat)(lit)
+DUPELIST=0a13b,0a13c
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 0a13b]
+//carved pumpkin (bat)
+DUPEITEM=0a13a
+
+[ITEMDEF 0a13c]
+//carved pumpkin (bat)
+DUPEITEM=0a13a
+
+[ITEMDEF 0a13d]
+DEFNAME=i_green_pumpkin_cat
+NAME=carved pumpkin
+TYPE=t_light_out
+TDATA3=i_green_pumpkin_cat_lit
+WEIGHT=18.0
+CATEGORY=Halloween
+SUBSECTION=Lightsources
+DESCRIPTION=Carved Pumpkin (cat)(unlit)
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 0a13e]
+DEFNAME=i_green_pumpkin_cat_lit
+NAME=carved pumpkin
+TYPE=t_light_lit
+TDATA3=i_green_pumpkin_cat
+WEIGHT=18.0
+CATEGORY=Halloween
+SUBSECTION=Lightsources
+DESCRIPTION=Carved Pumpkin (cat)(lit)
+DUPELIST=0a13f,0a140
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 0a13f]
+//carved pumpkin (cat)
+DUPEITEM=0a13e
+
+[ITEMDEF 0a140]
+//carved pumpkin (cat)
+DUPEITEM=0a13e
+
+[ITEMDEF 0a141]
+DEFNAME=i_green_pumpkin_daemon
+NAME=carved pumpkin
+TYPE=t_light_out
+TDATA3=i_green_pumpkin_daemon_lit
+WEIGHT=18.0
+CATEGORY=Halloween
+SUBSECTION=Lightsources
+DESCRIPTION=Carved Pumpkin (daemon)(unlit)
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 0a142]
+DEFNAME=i_green_pumpkin_daemon_lit
+NAME=carved pumpkin
+TYPE=t_light_lit
+TDATA3=i_green_pumpkin_daemon
+WEIGHT=18.0
+CATEGORY=Halloween
+SUBSECTION=Lightsources
+DESCRIPTION=Carved Pumpkin (daemon)(lit)
+DUPELIST=0a143,0a144
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 0a143]
+//carved pumpkin (daemon)
+DUPEITEM=0a142
+
+[ITEMDEF 0a144]
+//carved pumpkin (daemon)
+DUPEITEM=0a142
+
+[ITEMDEF 0a145]
+DEFNAME=i_green_pumpkin_spirit
+NAME=carved pumpkin
+TYPE=t_light_out
+TDATA3=i_green_pumpkin_spirit_lit
+WEIGHT=18.0
+CATEGORY=Halloween
+SUBSECTION=Lightsources
+DESCRIPTION=Carved Pumpkin (spirit)(unlit)
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 0a146]
+DEFNAME=i_green_pumpkin_spirit_lit
+NAME=carved pumpkin
+TYPE=t_light_lit
+TDATA3=i_green_pumpkin_spirit
+WEIGHT=18.0
+CATEGORY=Halloween
+SUBSECTION=Lightsources
+DESCRIPTION=Carved Pumpkin (spirit)(lit)
+DUPELIST=0a147,0a148
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 0a147]
+//carved pumpkin (spirit)
+DUPEITEM=0a146
+
+[ITEMDEF 0a148]
+//carved pumpkin (spirit)
+DUPEITEM=0a146
+
+[ITEMDEF 0a149]
+DEFNAME=i_green_pumpkin_ankh
+NAME=carved pumpkin
+TYPE=t_light_out
+TDATA3=i_green_pumpkin_ankh_lit
+WEIGHT=18.0
+CATEGORY=Halloween
+SUBSECTION=Lightsources
+DESCRIPTION=Carved Pumpkin (ankh)(unlit)
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 0a14a]
+DEFNAME=i_green_pumpkin_ankh_lit
+NAME=carved pumpkin
+TYPE=t_light_lit
+TDATA3=i_green_pumpkin_ankh
+WEIGHT=18.0
+CATEGORY=Halloween
+SUBSECTION=Lightsources
+DESCRIPTION=Carved Pumpkin (ankh)(lit)
+DUPELIST=0a14b,0a14c
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 0a14b]
+//carved pumpkin (ankh)
+DUPEITEM=0a14a
+
+[ITEMDEF 0a14c]
+//carved pumpkin (ankh)
+DUPEITEM=0a14a
+
+[ITEMDEF 0a14d]
+DEFNAME=i_green_pumpkin_owl
+NAME=carved pumpkin
+TYPE=t_light_out
+TDATA3=i_green_pumpkin_owl_lit
+WEIGHT=18.0
+CATEGORY=Halloween
+SUBSECTION=Lightsources
+DESCRIPTION=Carved Pumpkin (owl)(unlit)
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 0a14e]
+DEFNAME=i_green_pumpkin_owl_lit
+NAME=carved pumpkin
+TYPE=t_light_lit
+TDATA3=i_green_pumpkin_owl
+WEIGHT=18.0
+CATEGORY=Halloween
+SUBSECTION=Lightsources
+DESCRIPTION=Carved Pumpkin (owl)(lit)
+DUPELIST=0a14f,0a150
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 0a14f]
+//carved pumpkin (owl)
+DUPEITEM=0a14e
+
+[ITEMDEF 0a150]
+//carved pumpkin (owl)
+DUPEITEM=0a14e
+
+[ITEMDEF 0a151]
+DEFNAME=i_green_pumpkin_skull
+NAME=carved pumpkin
+TYPE=t_light_out
+TDATA3=i_green_pumpkin_skull_lit
+WEIGHT=18.0
+CATEGORY=Halloween
+SUBSECTION=Lightsources
+DESCRIPTION=Carved Pumpkin (skull)(unlit)
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 0a152]
+DEFNAME=i_green_pumpkin_skull_lit
+NAME=carved pumpkin
+TYPE=t_light_lit
+TDATA3=i_green_pumpkin_skull
+WEIGHT=18.0
+CATEGORY=Halloween
+SUBSECTION=Lightsources
+DESCRIPTION=Carved Pumpkin (skull)(lit)
+DUPELIST=0a153,0a154
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 0a153]
+//carved pumpkin (skull)
+DUPEITEM=0a152
+
+[ITEMDEF 0a154]
+//carved pumpkin (skull)
+DUPEITEM=0a152
+
+[ITEMDEF 0a155]
+DEFNAME=i_green_pumpkin_spider
+NAME=carved pumpkin
+TYPE=t_light_out
+TDATA3=i_green_pumpkin_spider_lit
+WEIGHT=18.0
+CATEGORY=Halloween
+SUBSECTION=Lightsources
+DESCRIPTION=Carved Pumpkin (spider)(unlit)
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 0a156]
+DEFNAME=i_green_pumpkin_spider_lit
+NAME=carved pumpkin
+TYPE=t_light_lit
+TDATA3=i_green_pumpkin_spider
+WEIGHT=18.0
+CATEGORY=Halloween
+SUBSECTION=Lightsources
+DESCRIPTION=Carved Pumpkin (spider)(lit)
+DUPELIST=0a157,0a158
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 0a157]
+//carved pumpkin (spider)
+DUPEITEM=0a156
+
+[ITEMDEF 0a158]
+//carved pumpkin (spider)
+DUPEITEM=0a156
+
+[ITEMDEF 0a159]
+DEFNAME=i_green_pumpkin_swirl
+NAME=carved pumpkin
+TYPE=t_light_out
+TDATA3=i_green_pumpkin_swirl_lit
+WEIGHT=18.0
+CATEGORY=Halloween
+SUBSECTION=Lightsources
+DESCRIPTION=Carved Pumpkin (swirl)(unlit)
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 0a15a]
+DEFNAME=i_green_pumpkin_swirl_lit
+NAME=carved pumpkin
+TYPE=t_light_lit
+TDATA3=i_green_pumpkin_swirl
+WEIGHT=18.0
+CATEGORY=Halloween
+SUBSECTION=Lightsources
+DESCRIPTION=Carved Pumpkin (swirl)(lit)
+DUPELIST=0a15b,0a15c
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 0a15b]
+//carved pumpkin (swirl)
+DUPEITEM=0a15a
+
+[ITEMDEF 0a15c]
+//carved pumpkin (swirl)
+DUPEITEM=0a15a
+
+[ITEMDEF 0a15d]
+DEFNAME=i_green_pumpkin_uo
+NAME=carved pumpkin
+TYPE=t_light_out
+TDATA3=i_green_pumpkin_uo_lit
+WEIGHT=18.0
+CATEGORY=Halloween
+SUBSECTION=Lightsources
+DESCRIPTION=Carved Pumpkin (UO)(unlit)
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 0a15e]
+DEFNAME=i_green_pumpkin_uo_lit
+NAME=carved pumpkin
+TYPE=t_light_lit
+TDATA3=i_green_pumpkin_uo
+WEIGHT=18.0
+CATEGORY=Halloween
+SUBSECTION=Lightsources
+DESCRIPTION=Carved Pumpkin (UO)(lit)
+DUPELIST=0a15f,0a160
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 0a15f]
+//carved pumpkin (UO)
+DUPEITEM=0a15e
+
+[ITEMDEF 0a160]
+//carved pumpkin (UO)
+DUPEITEM=0a15e
+
+[ITEMDEF 0a161]
+DEFNAME=i_green_pumpkin_witch
+NAME=carved pumpkin
+TYPE=t_light_out
+TDATA3=i_green_pumpkin_witch_lit
+WEIGHT=18.0
+CATEGORY=Halloween
+SUBSECTION=Lightsources
+DESCRIPTION=Carved Pumpkin (witch)(unlit)
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 0a162]
+DEFNAME=i_green_pumpkin_witch_lit
+NAME=carved pumpkin
+TYPE=t_light_lit
+TDATA3=i_green_pumpkin_witch
+WEIGHT=18.0
+CATEGORY=Halloween
+SUBSECTION=Lightsources
+DESCRIPTION=Carved Pumpkin (witch)(lit)
+DUPELIST=0a163,0a164
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 0a163]
+//carved pumpkin (witch)
+DUPEITEM=0a162
+
+[ITEMDEF 0a164]
+//carved pumpkin (witch)
+DUPEITEM=0a162
+
+[ITEMDEF 0a165]
+DEFNAME=i_pumpkin_skull2
+NAME=carved pumpkin
+TYPE=t_light_out
+TDATA3=i_pumpkin_skull2_lit
+WEIGHT=18.0
+CATEGORY=Halloween
+SUBSECTION=Lightsources
+DESCRIPTION=Carved Pumpkin (skull2)(unlit)
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 0a166]
+DEFNAME=i_pumpkin_skull2_lit
+NAME=carved pumpkin
+TYPE=t_light_lit
+TDATA3=i_pumpkin_skull2
+WEIGHT=18.0
+CATEGORY=Halloween
+SUBSECTION=Lightsources
+DESCRIPTION=Carved Pumpkin (skull2)(lit)
+DUPELIST=0a167,0a168
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 0a167]
+//carved pumpkin (skull2)
+DUPEITEM=0a166
+
+[ITEMDEF 0a168]
+//carved pumpkin (skull2)
+DUPEITEM=0a166
+
+[ITEMDEF 0a169]
+DEFNAME=i_pumpkin_tongue
+NAME=carved pumpkin
+TYPE=t_light_out
+TDATA3=i_pumpkin_tongue_lit
+WEIGHT=18.0
+CATEGORY=Halloween
+SUBSECTION=Lightsources
+DESCRIPTION=Carved Pumpkin (tongue)(unlit)
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 0a16a]
+DEFNAME=i_pumpkin_tongue_lit
+NAME=carved pumpkin
+TYPE=t_light_lit
+TDATA3=i_pumpkin_tongue
+WEIGHT=18.0
+CATEGORY=Halloween
+SUBSECTION=Lightsources
+DESCRIPTION=Carved Pumpkin (tongue)(lit)
+DUPELIST=0a16b,0a16c
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 0a16b]
+//carved pumpkin (tongue)
+DUPEITEM=0a16a
+
+[ITEMDEF 0a16c]
+//carved pumpkin (tongue)
+DUPEITEM=0a16a
+
+[ITEMDEF 0a16d]
+DEFNAME=i_pumpkin_twoface
+NAME=carved pumpkin
+TYPE=t_light_out
+TDATA3=i_pumpkin_twoface_lit
+WEIGHT=18.0
+CATEGORY=Halloween
+SUBSECTION=Lightsources
+DESCRIPTION=Carved Pumpkin (twoface)(unlit)
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 0a16e]
+DEFNAME=i_pumpkin_twoface_lit
+NAME=carved pumpkin
+TYPE=t_light_lit
+TDATA3=i_pumpkin_twoface
+WEIGHT=18.0
+CATEGORY=Halloween
+SUBSECTION=Lightsources
+DESCRIPTION=Carved Pumpkin (twoface)(lit)
+DUPELIST=0a16f,0a170
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 0a16f]
+//carved pumpkin (twoface)
+DUPEITEM=0a16e
+
+[ITEMDEF 0a170]
+//carved pumpkin (twoface)
+DUPEITEM=0a16e
+
+
+[ITEMDEF 0a177]
+DEFNAME=i_skull_crystal_sabertooth
+NAME=crystal skull
+FLIP=1
+CATEGORY=Halloween
+SUBSECTION=Decoration
+DESCRIPTION=Crystal Skull (Sabertooth)
+DUPELIST=0a178
+
+[ITEMDEF 0a178]
+//crystal skull (sabertooth)
+DUPEITEM=0a177
+
+[ITEMDEF 0a179]
+DEFNAME=i_skull_crystal_trex
+NAME=crystal skull
+FLIP=1
+CATEGORY=Halloween
+SUBSECTION=Decoration
+DESCRIPTION=Crystal Skull (T-Rex)
+DUPELIST=0a17a
+
+[ITEMDEF 0a17a]
+//crystal skull (t-rex)
+DUPEITEM=0a179
+
+
+[ITEMDEF 0a198]
+DEFNAME=i_giant_pumpkin_dragon
+NAME=giant pumpkin
+TYPE=t_light_out
+TDATA3=i_giant_pumpkin_dragon_lit
+CATEGORY=Halloween
+SUBSECTION=Lightsources
+DESCRIPTION=Giant Pumpkin (dragon)(unlit)
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 0a199]
+DEFNAME=i_giant_pumpkin_dragon_lit
+NAME=giant pumpkin
+TYPE=t_light_lit
+TDATA3=i_giant_pumpkin_dragon
+CATEGORY=Halloween
+SUBSECTION=Lightsources
+DESCRIPTION=Giant Pumpkin (dragon)(lit)
+DUPELIST=0a19a,0a19b,0a19c,0a19d
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 0a19a]
+//giant pumpkin (dragon)
+NAME=giant pumpkin
+DUPEITEM=0a199
+
+[ITEMDEF 0a19b]
+//giant pumpkin (dragon)
+NAME=giant pumpkin
+DUPEITEM=0a199
+
+[ITEMDEF 0a19c]
+//giant pumpkin (dragon)
+NAME=giant pumpkin
+DUPEITEM=0a199
+
+[ITEMDEF 0a19d]
+//giant pumpkin (dragon)
+NAME=giant pumpkin
+DUPEITEM=0a199
+
+[ITEMDEF 0a19e]
+DEFNAME=i_giant_pumpkin_dragon_vines_south
+NAME=giant pumpkin
+CATEGORY=Halloween
+SUBSECTION=Lightsources
+DESCRIPTION=Giant Pumpkin (dragon)(vines)(south)
+
+[ITEMDEF 0a19f]
+DEFNAME=i_giant_pumpkin_dragon_vines_east
+NAME=giant pumpkin
+CATEGORY=Halloween
+SUBSECTION=Lightsources
+DESCRIPTION=Giant Pumpkin (dragon)(vines)(east)
 
 
 ////////////

@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2017
+// SPHERE by : Menasoft ©1997-2018
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, Nov 5, 2017
+// FILE LAST UPDATED: Tuesday, Oct 9, 2018
 //
 VERSION=0.56d
 
@@ -709,7 +709,7 @@ DEFNAME=i_flower_campion_2
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Plants and Flowers
-DESCRIPTION=campion Flowers
+DESCRIPTION=Campion Flowers
 
 [ITEMDEF 0c88]
 //snowdrops
@@ -4214,43 +4214,51 @@ CATEGORY=Quest
 SUBSECTION=Unknown
 DESCRIPTION=Plant Bowl
 
+
 [ITEMDEF 026ed]
-DEFNAME=i_tree_trunk_plum
+DEFNAME=i_tree_cherry_blossom
+NAME=cherry blossom tree
 TYPE=t_tree
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Trees
-DESCRIPTION=Plum Tree
+DESCRIPTION=Cherry Blossom Tree (trunk)
 DUPELIST=026ee
 
 [ITEMDEF 026ee]
-//plum tree trunk
+//cherry blossom tree (trunk)
 DUPEITEM=026ed
 
 [ITEMDEF 026ef]
-DEFNAME=i_blossoms_plum
+DEFNAME=i_foliage_cherry_blossom
+NAME=cherry blossom tree
 TYPE=t_foliage
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Trees
-DESCRIPTION=plum Blossoms
+DESCRIPTION=Cherry Blossom Tree (foliage)
 DUPELIST=026f0,026f1,026f2,026f3
 
 [ITEMDEF 026f0]
-//plum blossoms
+//cherry blossom tree (foliage)
+NAME=cherry blossom tree
 DUPEITEM=026ef
 
 [ITEMDEF 026f1]
-//plum blossoms
+//cherry blossom tree (foliage)
+NAME=cherry blossom tree
 DUPEITEM=026ef
 
 [ITEMDEF 026f2]
-//plum blossoms
+//cherry blossom tree (foliage)
+NAME=cherry blossom tree
 DUPEITEM=026ef
 
 [ITEMDEF 026f3]
-//plum blossoms
+//cherry blossom tree (foliage)
+NAME=cherry blossom tree
 DUPEITEM=026ef
+
 
 [ITEMDEF 028dc]
 DEFNAME=i_bonsai_common_green
@@ -5407,7 +5415,7 @@ NAME=plum tree
 TYPE=t_tree
 CATEGORY=Vegetation
 SUBSECTION=Trees
-DESCRIPTION=Plum Tree
+DESCRIPTION=Plum Tree (trunk)
 
 [ITEMDEF 09e39]
 DEFNAME=i_foliage_plum
@@ -5415,6 +5423,237 @@ NAME=plum tree
 TYPE=t_foliage
 CATEGORY=Vegetation
 SUBSECTION=Trees
-DESCRIPTION=Plum Leaves
+DESCRIPTION=Plum Tree (foliage)
+
+
+[ITEMDEF 0a0dd]
+DEFNAME=i_flower_white_decorative
+NAME=decorative plant
+DYE=1
+FLIP=1
+CATEGORY=Vegetation
+SUBSECTION=Plants and Flowers
+DESCRIPTION=White Flowers (decorative)
+DUPELIST=0a0de
+
+[ITEMDEF 0a0de]
+NAME=decorative plant
+DYE=1
+DUPEITEM=0a0dd
+
+[ITEMDEF 0a0df]
+DEFNAME=i_decorative_vines_decorative
+NAME=decorative plant
+DYE=1
+FLIP=1
+CATEGORY=Vegetation
+SUBSECTION=Decorative
+DESCRIPTION=Decorative Vines (decorative)
+DUPELIST=0a0e0
+
+[ITEMDEF 0a0e0]
+NAME=decorative plant
+DYE=1
+DUPEITEM=0a0df
+
+[ITEMDEF 0a0e1]
+DEFNAME=i_flower_campion_decorative
+NAME=decorative plant
+DYE=1
+CATEGORY=Vegetation
+SUBSECTION=Plants and Flowers
+DESCRIPTION=Campion Flowers (decorative)
+
+[ITEMDEF 0a0e2]
+DEFNAME=i_flower_redpoppies_decorative
+NAME=decorative plant
+DYE=1
+CATEGORY=Vegetation
+SUBSECTION=Plants and Flowers
+DESCRIPTION=Red Poppies (decorative)
+
+[ITEMDEF 0a0e3]
+DEFNAME=i_flower_foxglove_2_decorative
+NAME=decorative plant
+DYE=1
+CATEGORY=Vegetation
+SUBSECTION=Plants and Flowers
+DESCRIPTION=Foxglove Flowers (decorative)
+
+[ITEMDEF 0a0e4]
+DEFNAME=i_flower_orfluer_3_decorative
+NAME=decorative plant
+DYE=1
+CATEGORY=Vegetation
+SUBSECTION=Plants and Flowers
+DESCRIPTION=Orfluer Flowers (decorative)
+
+[ITEMDEF 0a0e5]
+DEFNAME=i_plant_round_decorative
+NAME=decorative plant
+DYE=1
+CATEGORY=Vegetation
+SUBSECTION=Plants and Flowers
+DESCRIPTION=Round Plant (decorative)
+
+
+[ITEMDEF 0a0eb]
+DEFNAME=i_potted_cattail_red
+NAME=potted plant
+CATEGORY=Decoration - Potted Plants & Vases
+SUBSECTION=Potted Plants
+DESCRIPTION=Potted Cattail (red)
+
+[ITEMDEF 0a0ec]
+DEFNAME=i_potted_cattail_blue
+NAME=potted plant
+CATEGORY=Decoration - Potted Plants & Vases
+SUBSECTION=Potted Plants
+DESCRIPTION=Potted Cattail (blue)
+
+[ITEMDEF 0a0ed]
+DEFNAME=i_flower_snowdrops_2_decorative
+NAME=decorative plant
+DYE=1
+CATEGORY=Vegetation
+SUBSECTION=Plants and Flowers
+DESCRIPTION=Snowdrops (decorative)
+
+
+[ITEMDEF 0a11b]
+DEFNAME=i_plant_cactus_decorative
+NAME=decorative plant
+DYE=1
+CATEGORY=Vegetation
+SUBSECTION=Plants and Flowers
+DESCRIPTION=Cactus (decorative)
+
+[ITEMDEF 0a11c]
+DEFNAME=i_plant_century_decorative
+NAME=decorative plant
+DYE=1
+CATEGORY=Vegetation
+SUBSECTION=Plants and Flowers
+DESCRIPTION=Century Plant (decorative)
+
+[ITEMDEF 0a11d]
+DEFNAME=i_crop_flax1_decorative
+NAME=decorative plant
+DYE=1
+CATEGORY=Vegetation
+SUBSECTION=Plants and Flowers
+DESCRIPTION=Flax (decorative)
+DUPELIST=0a11e
+
+[ITEMDEF 0a11e]
+NAME=decorative plant
+DYE=1
+DUPEITEM=0a11d
+
+[ITEMDEF 0a11f]
+DEFNAME=i_crop_flax_decorative
+NAME=decorative plant
+DYE=1
+CATEGORY=Vegetation
+SUBSECTION=Plants and Flowers
+DESCRIPTION=Flax (decorative)
+
+[ITEMDEF 0a120]
+DEFNAME=i_crop_vanilla_decorative
+NAME=decorative plant
+DYE=1
+CATEGORY=Vegetation
+SUBSECTION=Plants and Flowers
+DESCRIPTION=Vanilla Plant (mature)(decorative)
+
+[ITEMDEF 0a121]
+DEFNAME=i_flower_campion_2_decorative
+NAME=decorative plant
+DYE=1
+CATEGORY=Vegetation
+SUBSECTION=Plants and Flowers
+DESCRIPTION=Campion Flowers (decorative)
+
+[ITEMDEF 0a122]
+DEFNAME=i_flower_snowdrops_decorative
+NAME=decorative plant
+DYE=1
+CATEGORY=Vegetation
+SUBSECTION=Plants and Flowers
+DESCRIPTION=Snowdrops (decorative)
+
+[ITEMDEF 0a123]
+DEFNAME=i_flower_campion_3_decorative
+NAME=decorative plant
+DYE=1
+CATEGORY=Vegetation
+SUBSECTION=Plants and Flowers
+DESCRIPTION=Campion Flowers (decorative)
+
+[ITEMDEF 0a124]
+DEFNAME=i_plant_bulrushes_decorative
+NAME=decorative plant
+DYE=1
+CATEGORY=Vegetation
+SUBSECTION=Plants and Flowers
+DESCRIPTION=Bulrushes (decorative)
+
+[ITEMDEF 0a125]
+DEFNAME=i_plant_pampasgrass_decorative
+NAME=decorative plant
+DYE=1
+CATEGORY=Vegetation
+SUBSECTION=Plants and Flowers
+DESCRIPTION=Pampas Grass (decorative)
+
+[ITEMDEF 0a126]
+DEFNAME=i_plant_poppies_decorative
+NAME=decorative plant
+DYE=1
+CATEGORY=Vegetation
+SUBSECTION=Plants and Flowers
+DESCRIPTION=Poppies (decorative)
+
+[ITEMDEF 0a127]
+DEFNAME=i_plant_poppies_2_decorative
+NAME=decorative plant
+DYE=1
+CATEGORY=Vegetation
+SUBSECTION=Plants and Flowers
+DESCRIPTION=Poppies (decorative)
+
+[ITEMDEF 0a128]
+DEFNAME=i_flower_orfluer_2_decorative
+NAME=decorative plant
+DYE=1
+CATEGORY=Vegetation
+SUBSECTION=Plants and Flowers
+DESCRIPTION=Orfluer Flowers (decorative)
+
+[ITEMDEF 0a129]
+DEFNAME=i_plant_lilypad_10_decorative
+NAME=decorative plant
+DYE=1
+CATEGORY=Vegetation
+SUBSECTION=Plants and Flowers
+DESCRIPTION=Water Lily (decorative)
+DUPELIST=0a12a
+
+[ITEMDEF 0a12a]
+DEFNAME=i_plant_lilypad_3_decorative
+NAME=decorative plant
+DYE=1
+CATEGORY=Vegetation
+SUBSECTION=Plants and Flowers
+DESCRIPTION=Lilypad (decorative)
+DUPEITEM=0a129
+
+[ITEMDEF 0a12b]
+DEFNAME=i_crop_vanilla2_decorative
+NAME=decorative plant
+DYE=1
+CATEGORY=Vegetation
+SUBSECTION=Plants and Flowers
+DESCRIPTION=Vanilla Plant (immature)(decorative)
 
 [EOF]
