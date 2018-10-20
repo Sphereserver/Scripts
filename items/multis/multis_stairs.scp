@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2017
+// SPHERE by : Menasoft ©1997-2018
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, May 22, 2017
+// FILE LAST UPDATED: Saturday, Oct 20, 2018
 //
 VERSION=0.56d
 
@@ -621,6 +621,78 @@ TYPE=t_multi
 CATEGORY=Multis
 SUBSECTION=Stairs
 DESCRIPTION=Batten Stairs (e->w)
+MULTIREGION=-3,0,0,0
+
+[MULTIDEF 01df4]
+DEFNAME=m_jungle_stairs_sn
+NAME=jungle stairs
+TYPE=t_multi
+CATEGORY=Multis
+SUBSECTION=Stairs
+DESCRIPTION=Jungle Stairs (s->n)
+MULTIREGION=0,-3,0,0
+
+[MULTIDEF 01df5]
+DEFNAME=m_jungle_stairs_we
+NAME=jungle stairs
+TYPE=t_multi
+CATEGORY=Multis
+SUBSECTION=Stairs
+DESCRIPTION=Jungle Stairs (w->e)
+MULTIREGION=0,0,3,0
+
+[MULTIDEF 01df6]
+DEFNAME=m_jungle_stairs_ns
+NAME=jungle stairs
+TYPE=t_multi
+CATEGORY=Multis
+SUBSECTION=Stairs
+DESCRIPTION=Jungle Stairs (n->s)
+MULTIREGION=0,0,0,3
+
+[MULTIDEF 01df7]
+DEFNAME=m_jungle_stairs_ew
+NAME=jungle stairs
+TYPE=t_multi
+CATEGORY=Multis
+SUBSECTION=Stairs
+DESCRIPTION=Jungle Stairs (e->w)
+MULTIREGION=-3,0,0,0
+
+[MULTIDEF 01df8]
+DEFNAME=m_shadowguard_stairs_sn
+NAME=shadowguard stairs
+TYPE=t_multi
+CATEGORY=Multis
+SUBSECTION=Stairs
+DESCRIPTION=Shadowguard Stairs (s->n)
+MULTIREGION=0,-3,0,0
+
+[MULTIDEF 01df9]
+DEFNAME=m_shadowguard_stairs_we
+NAME=shadowguard stairs
+TYPE=t_multi
+CATEGORY=Multis
+SUBSECTION=Stairs
+DESCRIPTION=Shadowguard Stairs (w->e)
+MULTIREGION=0,0,3,0
+
+[MULTIDEF 01dfa]
+DEFNAME=m_shadowguard_stairs_ns
+NAME=shadowguard stairs
+TYPE=t_multi
+CATEGORY=Multis
+SUBSECTION=Stairs
+DESCRIPTION=Shadowguard Stairs (n->s)
+MULTIREGION=0,0,0,3
+
+[MULTIDEF 01dfb]
+DEFNAME=m_shadowguard_stairs_ew
+NAME=shadowguard stairs
+TYPE=t_multi
+CATEGORY=Multis
+SUBSECTION=Stairs
+DESCRIPTION=Shadowguard Stairs (e->w)
 MULTIREGION=-3,0,0,0
 
 [EOF]

@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2017
+// SPHERE by : Menasoft ©1997-2018
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Sept 9, 2017
+// FILE LAST UPDATED: Saturday, Oct 20, 2018
 //
 VERSION=0.56d
 
@@ -123,7 +123,6 @@ DUPEITEM=01085
 DEFNAME=i_bracelet_silver
 NAME=silver bracelet
 TYPE=t_jewelry
-//LAYER=layer_wrist
 VALUE=30
 WEIGHT=1.0
 RESOURCES=3 i_ingot_silver
@@ -137,7 +136,6 @@ TEVENTS=t_equipitem
 DEFNAME=i_earrings_silver
 NAME=silver earrings
 TYPE=t_jewelry
-//LAYER=layer_ears
 VALUE=15
 WEIGHT=1.0
 RESOURCES=1 i_ingot_silver
@@ -151,7 +149,6 @@ TEVENTS=t_equipitem
 DEFNAME=i_necklace_silver
 NAME=silver necklace
 TYPE=t_jewelry
-//LAYER=layer_collar
 VALUE=22
 WEIGHT=2.0
 RESOURCES=2 i_ingot_silver
@@ -165,7 +162,6 @@ TEVENTS=t_equipitem
 DEFNAME=i_ring_silver
 NAME=silver ring
 TYPE=t_jewelry
-//LAYER=layer_ring
 VALUE=15
 WEIGHT=1.0
 RESOURCES=1 i_ingot_silver
@@ -179,7 +175,6 @@ TEVENTS=t_equipitem
 DEFNAME=i_necklace_silver_beads
 NAME=silver bead necklace
 TYPE=t_jewelry
-//LAYER=layer_collar
 VALUE=63
 WEIGHT=2.1
 RESOURCES=2 i_ingot_silver,1 i_beads
@@ -244,6 +239,11 @@ DEFNAME=i_elven_glasses
 NAME=elven glasses
 TYPE=t_jewelry
 FLIP=1
+RESPHYSICAL=2
+RESFIRE=4
+RESCOLD=4
+RESPOISON=3
+RESENERGY=2
 CATEGORY=Provisions - Jewels and Jewelry
 SUBSECTION=Glasses
 DESCRIPTION=Elven Glasses
@@ -251,11 +251,6 @@ REQSTR=45
 DUPELIST=03172
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=2
-   RESFIRE=4
-   RESCOLD=4
-   RESPOISON=3
-   RESENERGY=2
 
 
 [ITEMDEF 03172]
@@ -280,6 +275,11 @@ DESCRIPTION=Ankh Pendant
 DEFNAME=i_necklace_gargoyle
 NAME=Gargish necklace
 TYPE=t_armor
+RESPHYSICAL=1
+RESFIRE=2
+RESCOLD=2
+RESPOISON=2
+RESENERGY=3
 RESOURCES=3 i_ingot_gold
 SKILLMAKE=Tinkering 60.0,t_tinker_tools
 CATEGORY=Provisions - Jewels and Jewelry
@@ -289,11 +289,6 @@ canuse=can_u_gargoyle
 TEVENTS=t_equipitem
 ON=@Create
    HITPOINTS={30 40}
-   RESPHYSICAL=1
-   RESFIRE=2
-   RESCOLD=2
-   RESPOISON=2
-   RESENERGY=3
 
 [ITEMDEF 04211]
 DEFNAME=i_bracelet_gargoyle
@@ -323,6 +318,11 @@ TEVENTS=t_equipitem
 DEFNAME=i_earrings_gargoyle
 NAME=Gargish earrings
 TYPE=t_armor
+RESPHYSICAL=1
+RESFIRE=2
+RESCOLD=2
+RESPOISON=2
+RESENERGY=3
 RESOURCES=3 i_ingot_gold
 SKILLMAKE=Tinkering 55.0,t_tinker_tools
 CATEGORY=Provisions - Jewels and Jewelry
@@ -332,11 +332,6 @@ canuse=can_u_gargoyle
 TEVENTS=t_equipitem
 ON=@Create
    HITPOINTS={30 40}
-   RESPHYSICAL=1
-   RESFIRE=2
-   RESCOLD=2
-   RESPOISON=2
-   RESENERGY=3
 
 
 [ITEMDEF 045b1]
@@ -344,6 +339,11 @@ DEFNAME=i_gargish_glasses_female
 NAME=Gargish female glasses
 TYPE=t_jewelry
 FLIP=1
+RESPHYSICAL=2
+RESFIRE=4
+RESCOLD=4
+RESPOISON=3
+RESENERGY=2
 CATEGORY=Provisions - Jewels and Jewelry
 SUBSECTION=Glasses
 DESCRIPTION=Gargish Female Glasses
@@ -353,11 +353,6 @@ TEVENTS=t_equipitem
 DUPELIST=045b3
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=2
-   RESFIRE=4
-   RESCOLD=4
-   RESPOISON=3
-   RESENERGY=2
 
 
 [ITEMDEF 045b3]
@@ -370,6 +365,11 @@ DEFNAME=i_gargish_glasses
 NAME=Gargish glasses
 TYPE=t_jewelry
 FLIP=1
+RESPHYSICAL=2
+RESFIRE=4
+RESCOLD=4
+RESPOISON=3
+RESENERGY=2
 CATEGORY=Provisions - Jewels and Jewelry
 SUBSECTION=Glasses
 DESCRIPTION=Gargish Glasses
@@ -380,11 +380,6 @@ TEVENTS=t_equipitem
 DUPELIST=04645
 ON=@Create
    HITPOINTS={36 48}
-   RESPHYSICAL=2
-   RESFIRE=4
-   RESCOLD=4
-   RESPOISON=3
-   RESENERGY=2
 
 [ITEMDEF 04645]
 //gargish glasses
@@ -395,6 +390,11 @@ DUPEITEM=04644
 DEFNAME=i_gargish_stone_amulet
 NAME=gargish stone amulet
 TYPE=t_armor
+RESPHYSICAL=1
+RESFIRE=2
+RESCOLD=2
+RESPOISON=2
+RESENERGY=3
 REQSTR=40
 RESOURCES=3 i_rock_granite
 SKILLMAKE=Carpentry 60.0,t_masonry_tool
@@ -406,16 +406,16 @@ TEVENTS=t_equipitem
 ON=@Create
    COLOR=09c4
    HITPOINTS={30 40}
-   RESPHYSICAL=1
-   RESFIRE=2
-   RESCOLD=2
-   RESPOISON=2
-   RESENERGY=3
 
 [ITEMDEF 04d0b]
 DEFNAME=i_gargish_amulet
 NAME=gargish amulet
 TYPE=t_armor
+RESPHYSICAL=1
+RESFIRE=2
+RESCOLD=2
+RESPOISON=2
+RESENERGY=3
 RESOURCES=3 i_ingot_iron
 SKILLMAKE=Blacksmithing 60.0
 CATEGORY=Provisions - Jewels and Jewelry
@@ -425,11 +425,6 @@ canuse=can_u_gargoyle
 TEVENTS=t_equipitem
 ON=@Create
    HITPOINTS={30 40}
-   RESPHYSICAL=1
-   RESFIRE=2
-   RESCOLD=2
-   RESPOISON=2
-   RESENERGY=3
 
 
 [ITEMDEF 09e25]

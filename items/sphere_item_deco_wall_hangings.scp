@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Mar 24, 2018
+// FILE LAST UPDATED: Saturday, Oct 20, 2018
 //
 VERSION=0.56d
 
@@ -3555,29 +3555,29 @@ DUPEITEM=09d5d
 
 
 [ITEMDEF 09da4]
-DEFNAME=i_trophy_tigerhead
-NAME=tiger trophy
+DEFNAME=i_trophy_wild_tigerhead
+NAME=wild tiger trophy
 FLIP=1
 CATEGORY=Decoration - Miscellaneous
 SUBSECTION=Trophies
-DESCRIPTION=Tiger
+DESCRIPTION=Wild Tiger
 DUPELIST=09da5
 
 [ITEMDEF 09da5]
-//trophy tigerhead
+//trophy wild tigerhead
 DUPEITEM=09da4
 
 [ITEMDEF 09da6]
-DEFNAME=i_trophy_myrmidexhead
-NAME=myrmidex trophy
+DEFNAME=i_trophy_myrmidex_dronehead
+NAME=myrmidex drone trophy
 FLIP=1
 CATEGORY=Decoration - Miscellaneous
 SUBSECTION=Trophies
-DESCRIPTION=Myrmidex
+DESCRIPTION=Myrmidex Drone
 DUPELIST=09da7
 
 [ITEMDEF 09da7]
-//trophy myrmidexhead
+//trophy myrmidex dronehead
 DUPEITEM=09da6
 
 [ITEMDEF 09da8]
@@ -3637,16 +3637,81 @@ DUPELIST=09f30
 DUPEITEM=09f2f
 
 [ITEMDEF 09f31]
-DEFNAME=i_trophy_blacktigerhead
+DEFNAME=i_trophy_tigerhead
 NAME=tiger trophy
 FLIP=1
 CATEGORY=Decoration - Miscellaneous
 SUBSECTION=Trophies
-DESCRIPTION=Tiger (black)
+DESCRIPTION=Tiger
 DUPELIST=09f32
 
 [ITEMDEF 09f32]
-//trophy blacktigerhead
+//trophy tigerhead
 DUPEITEM=09f31
+
+
+[ITEMDEF 0a1a0]
+DEFNAME=i_trophy_barracuda
+NAME=fish
+FLIP=1
+RESOURCES=1 i_trophy_mountboard_lg,1 i_fish_barracuda
+SKILLMAKE=Carpentry 72.0,Tailoring 60.0,t_carpentry,t_sewing_kit
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Barracuda
+DUPELIST=0a1a1
+
+[ITEMDEF 0a1a1]
+//fish
+DUPEITEM=0a1a0
+
+[ITEMDEF 0a1a2]
+DEFNAME=i_trophy_salmon
+NAME=fish
+FLIP=1
+RESOURCES=1 i_trophy_mountboard_lg,1 i_fish_salmon
+SKILLMAKE=Carpentry 72.0,Tailoring 60.0,t_carpentry,t_sewing_kit
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Salmon
+DUPELIST=0a1a3
+
+[ITEMDEF 0a1a3]
+//fish
+DUPEITEM=0a1a2
+
+
+[ITEMDEF 0a20c]
+DEFNAME=i_trophy_sea_serpent
+NAME=sea serpent trophy
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Sea Serpent Trophy
+
+[ITEMDEF 0a20d]
+DEFNAME=i_trophy_raptor
+NAME=raptor trophy
+FLIP=1
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Raptor
+DUPELIST=0a20e
+
+[ITEMDEF 0a20e]
+//trophy raptor
+DUPEITEM=0a20d
+
+[ITEMDEF 0a20f]
+DEFNAME=i_trophy_scorpion
+NAME=scorpion trophy
+FLIP=1
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Scorpion
+DUPELIST=0a210
+
+[ITEMDEF 0a210]
+//trophy scorpion
+DUPEITEM=0a20f
 
 [EOF]

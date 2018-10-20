@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2017
+// SPHERE by : Menasoft ©1997-2018
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Wednesday, Dec 20, 2017
+// FILE LAST UPDATED: Saturday, Oct 20, 2018
 //
 VERSION=0.56d
 
@@ -4112,16 +4112,6 @@ DUPEITEM=01da3
 DUPEITEM=01da4
 
 
-[ITEMDEF 0207c]
-//This statue is duplicated from 01226/0139b, but used on Twisted Weald
-//as container to drop dungeon keys and receive the Essence of the Wind
-DEFNAME=i_statue_faie
-NAME=statue of the faie
-CATEGORY=Decoration - Dungeons and The Dead
-SUBSECTION=Twisted Weald
-DESCRIPTION=Statue of the Faie
-
-
 [ITEMDEF 021fc]
 DEFNAME=i_skull_spikes
 NAME=skull spikes
@@ -4444,5 +4434,34 @@ NAME=kotl sacrificial altar
 [ITEMDEF 09d66]
 //kotl sacrificial altar (multi-part)(east)
 NAME=kotl sacrificial altar
+
+
+////////////
+// Multis //
+////////////
+
+[ITEMDEF m_kotl_sacrificial_altar_s]
+ID=09d5f
+NAME=Kotl Sacrificial Altar
+TYPE=t_multi
+CATEGORY=Multis
+SUBSECTION=Kotl City
+DESCRIPTION=Kotl Sacrificial Altar (South)
+MULTIREGION=0,0,0,0
+COMPONENT=09d60,0,1
+COMPONENT=09d61,1,0
+COMPONENT=09d62,1,1
+
+[ITEMDEF m_kotl_sacrificial_altar_e]
+ID=09d63
+NAME=Kotl Sacrificial Altar
+TYPE=t_multi
+CATEGORY=Multis
+SUBSECTION=Kotl City
+DESCRIPTION=Kotl Sacrificial Altar (East)
+MULTIREGION=0,0,0,0
+COMPONENT=09d64,1,0
+COMPONENT=09d65,0,1
+COMPONENT=09d66,1,1
 
 [EOF]
