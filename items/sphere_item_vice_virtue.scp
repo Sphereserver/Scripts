@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2017
+// SPHERE by : Menasoft ©1997-2018
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,9 +7,58 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Wednesday, Oct 18, 2017
+// FILE LAST UPDATED: Sunday, Oct 21, 2018
 //
 VERSION=0.56d
+
+
+[ITEMDEF 07817]
+DEFNAME=i_shield_vice
+NAME=vice shield
+TYPE=t_shield
+//ARMOR=8
+RESPHYSICAL=8
+RESFIRE=8
+RESCOLD=8
+RESPOISON=8
+RESENERGY=8
+IncreaseDefChance=10
+SpellChanneling=1
+CATEGORY=Vice vs Virtue
+SUBSECTION=Shields
+DESCRIPTION=Vice Shield
+REQSTR=35
+TEVENTS=t_equipitem
+ON=@Create
+   HITPOINTS=255
+//ON=@Equip
+//   SRC.ADDBUFF <DEF0.bufficon_VirtueShield>,<DEF0.buffcliloc_VirtueShield_1>,<DEF0.buffcliloc_VirtueShield_2>,0,20
+//ON=@Unequip
+//   SRC.REMOVEBUFF <DEF0.bufficon_VirtueShield>
+
+[ITEMDEF 07818]
+DEFNAME=i_shield_virtue
+NAME=virtue shield
+TYPE=t_shield
+//ARMOR=8
+RESPHYSICAL=8
+RESFIRE=8
+RESCOLD=8
+RESPOISON=8
+RESENERGY=8
+IncreaseDefChance=10
+SpellChanneling=1
+CATEGORY=Vice vs Virtue
+SUBSECTION=Shields
+DESCRIPTION=Virtue Shield
+REQSTR=35
+TEVENTS=t_equipitem
+ON=@Create
+   HITPOINTS=255
+//ON=@Equip
+//   SRC.ADDBUFF <DEF0.bufficon_VirtueShield>,<DEF0.buffcliloc_VirtueShield_1>,<DEF0.buffcliloc_VirtueShield_2>,0,20
+//ON=@Unequip
+//   SRC.REMOVEBUFF <DEF0.bufficon_VirtueShield>
 
 
 [ITEMDEF 099a7]
@@ -1070,5 +1119,426 @@ DUPELIST=0a0aa
 [ITEMDEF 0a0aa]
 //painting (wrong)
 DUPEITEM=0a0a9
+
+
+[ITEMDEF 0a222]
+DEFNAME=i_lantern_virtue_spirituality_s
+NAME=lantern
+TYPE=t_light_out
+TDATA3=i_lantern_virtue_spirituality_s_lit
+CATEGORY=Vice vs Virtue
+SUBSECTION=Lanterns
+DESCRIPTION=Virtue - Spirituality (unlit)
+ON=@Create
+   MOREZ=220
+
+[ITEMDEF 0a223]
+DEFNAME=i_lantern_virtue_spirituality_s_lit
+NAME=lantern
+TYPE=t_light_lit
+TDATA3=i_lantern_virtue_spirituality_s
+CATEGORY=Vice vs Virtue
+SUBSECTION=Lanterns
+DESCRIPTION=Virtue - Spirituality (lit)
+ON=@Create
+   MOREZ=220
+
+[ITEMDEF 0a224]
+//lantern (spirituality)(anim)
+
+[ITEMDEF 0a225]
+//lantern (spirituality)(anim)
+
+[ITEMDEF 0a226]
+DEFNAME=i_lantern_virtue_spirituality_e
+NAME=lantern
+TYPE=t_light_out
+TDATA3=i_lantern_virtue_spirituality_e_lit
+CATEGORY=Vice vs Virtue
+SUBSECTION=Lanterns
+DESCRIPTION=Virtue - Spirituality (unlit)
+ON=@Create
+   MOREZ=220
+
+[ITEMDEF 0a227]
+DEFNAME=i_lantern_virtue_spirituality_e_lit
+NAME=lantern
+TYPE=t_light_lit
+TDATA3=i_lantern_virtue_spirituality_e
+CATEGORY=Vice vs Virtue
+SUBSECTION=Lanterns
+DESCRIPTION=Virtue - Spirituality (lit)
+ON=@Create
+   MOREZ=220
+
+[ITEMDEF 0a228]
+//lantern (spirituality)(anim)
+
+[ITEMDEF 0a229]
+//lantern (spirituality)(anim)
+
+[ITEMDEF 0a22a]
+DEFNAME=i_lantern_vice_despise_s
+NAME=lantern
+TYPE=t_light_out
+TDATA3=i_lantern_vice_despise_s_lit
+CATEGORY=Vice vs Virtue
+SUBSECTION=Lanterns
+DESCRIPTION=Vice - Despise (unlit)
+ON=@Create
+   MOREZ=240
+
+[ITEMDEF 0a22b]
+DEFNAME=i_lantern_vice_despise_s_lit
+NAME=lantern
+TYPE=t_light_lit
+TDATA3=i_lantern_vice_despise_s
+CATEGORY=Vice vs Virtue
+SUBSECTION=Lanterns
+DESCRIPTION=Vice - Despise (lit)
+ON=@Create
+   MOREZ=240
+
+[ITEMDEF 0a22c]
+//lantern (despise)(anim)
+
+[ITEMDEF 0a22d]
+//lantern (despise)(anim)
+
+[ITEMDEF 0a22e]
+DEFNAME=i_lantern_vice_despise_e
+NAME=lantern
+TYPE=t_light_out
+TDATA3=i_lantern_vice_despise_e_lit
+CATEGORY=Vice vs Virtue
+SUBSECTION=Lanterns
+DESCRIPTION=Vice - Despise (unlit)
+ON=@Create
+   MOREZ=240
+
+[ITEMDEF 0a22f]
+DEFNAME=i_lantern_vice_despise_e_lit
+NAME=lantern
+TYPE=t_light_lit
+TDATA3=i_lantern_vice_despise_e
+CATEGORY=Vice vs Virtue
+SUBSECTION=Lanterns
+DESCRIPTION=Vice - Despise (lit)
+ON=@Create
+   MOREZ=240
+
+[ITEMDEF 0a230]
+//lantern (despise)(anim)
+
+[ITEMDEF 0a231]
+//lantern (despise)(anim)
+
+[ITEMDEF 0a232]
+DEFNAME=i_lantern_virtue_valor_s
+NAME=lantern
+TYPE=t_light_out
+TDATA3=i_lantern_virtue_valor_s_lit
+CATEGORY=Vice vs Virtue
+SUBSECTION=Lanterns
+DESCRIPTION=Virtue - Valor (unlit)
+ON=@Create
+   MOREZ=220
+
+[ITEMDEF 0a233]
+DEFNAME=i_lantern_virtue_valor_s_lit
+NAME=lantern
+TYPE=t_light_lit
+TDATA3=i_lantern_virtue_valor_s
+CATEGORY=Vice vs Virtue
+SUBSECTION=Lanterns
+DESCRIPTION=Virtue - Valor (lit)
+ON=@Create
+   MOREZ=220
+
+[ITEMDEF 0a234]
+//lantern (valor)(anim)
+
+[ITEMDEF 0a235]
+//lantern (valor)(anim)
+
+[ITEMDEF 0a236]
+DEFNAME=i_lantern_virtue_valor_e
+NAME=lantern
+TYPE=t_light_out
+TDATA3=i_lantern_virtue_valor_e_lit
+CATEGORY=Vice vs Virtue
+SUBSECTION=Lanterns
+DESCRIPTION=Virtue - Valor (unlit)
+ON=@Create
+   MOREZ=220
+
+[ITEMDEF 0a237]
+DEFNAME=i_lantern_virtue_valor_e_lit
+NAME=lantern
+TYPE=t_light_lit
+TDATA3=i_lantern_virtue_valor_e
+CATEGORY=Vice vs Virtue
+SUBSECTION=Lanterns
+DESCRIPTION=Virtue - Valor (lit)
+ON=@Create
+   MOREZ=220
+
+[ITEMDEF 0a238]
+//lantern (valor)(anim)
+
+[ITEMDEF 0a239]
+//lantern (valor)(anim)
+
+[ITEMDEF 0a23a]
+DEFNAME=i_lantern_vice_deceit_s
+NAME=lantern
+TYPE=t_light_out
+TDATA3=i_lantern_vice_deceit_s_lit
+CATEGORY=Vice vs Virtue
+SUBSECTION=Lanterns
+DESCRIPTION=Vice - Deceit (unlit)
+ON=@Create
+   MOREZ=240
+
+[ITEMDEF 0a23b]
+DEFNAME=i_lantern_vice_deceit_s_lit
+NAME=lantern
+TYPE=t_light_lit
+TDATA3=i_lantern_vice_deceit_s
+CATEGORY=Vice vs Virtue
+SUBSECTION=Lanterns
+DESCRIPTION=Vice - Deceit (lit)
+ON=@Create
+   MOREZ=240
+
+[ITEMDEF 0a23c]
+//lantern (deceit)(anim)
+
+[ITEMDEF 0a23d]
+//lantern (deceit)(anim)
+
+[ITEMDEF 0a23e]
+DEFNAME=i_lantern_vice_deceit_e
+NAME=lantern
+TYPE=t_light_out
+TDATA3=i_lantern_vice_deceit_e_lit
+CATEGORY=Vice vs Virtue
+SUBSECTION=Lanterns
+DESCRIPTION=Vice - Deceit (unlit)
+ON=@Create
+   MOREZ=240
+
+[ITEMDEF 0a23f]
+DEFNAME=i_lantern_vice_deceit_e_lit
+NAME=lantern
+TYPE=t_light_lit
+TDATA3=i_lantern_vice_deceit_e
+CATEGORY=Vice vs Virtue
+SUBSECTION=Lanterns
+DESCRIPTION=Vice - Deceit (lit)
+ON=@Create
+   MOREZ=240
+
+[ITEMDEF 0a240]
+//lantern (deceit)(anim)
+
+[ITEMDEF 0a241]
+//lantern (deceit)(anim)
+
+[ITEMDEF 0a242]
+DEFNAME=i_painting_vice_hythloth
+NAME=painting
+FLIP=1
+CATEGORY=Vice vs Virtue
+SUBSECTION=Paintings
+DESCRIPTION=Vice - Hythloth
+DUPELIST=0a243
+
+[ITEMDEF 0a243]
+//painting (hythloth)
+DUPEITEM=0a242
+
+[ITEMDEF 0a244]
+DEFNAME=i_painting_vice_destard
+NAME=painting
+FLIP=1
+CATEGORY=Vice vs Virtue
+SUBSECTION=Paintings
+DESCRIPTION=Vice - Destard
+DUPELIST=0a245
+
+[ITEMDEF 0a245]
+//painting (destard)
+DUPEITEM=0a244
+
+[ITEMDEF 0a246]
+DEFNAME=i_painting_virtue_sacrifice
+NAME=painting
+FLIP=1
+CATEGORY=Vice vs Virtue
+SUBSECTION=Paintings
+DESCRIPTION=Virtue - Sacrifice
+DUPELIST=0a247
+
+[ITEMDEF 0a247]
+//painting (sacrifice)
+DUPEITEM=0a246
+
+[ITEMDEF 0a248]
+DEFNAME=i_painting_virtue_honor
+NAME=painting
+FLIP=1
+CATEGORY=Vice vs Virtue
+SUBSECTION=Paintings
+DESCRIPTION=Virtue - Honor
+DUPELIST=0a249
+
+[ITEMDEF 0a249]
+//painting (honor)
+DUPEITEM=0a248
+
+[ITEMDEF 0a24a]
+DEFNAME=i_pillow_virtue_humility
+NAME=pillow
+FLIP=1
+CATEGORY=Vice vs Virtue
+SUBSECTION=Pillows
+DESCRIPTION=Virtue - Humility
+DUPELIST=0a24b
+
+[ITEMDEF 0a24b]
+//pillow (humility)
+DUPEITEM=0a24a
+
+[ITEMDEF 0a24c]
+DEFNAME=i_pillow_virtue_justice
+NAME=pillow
+FLIP=1
+CATEGORY=Vice vs Virtue
+SUBSECTION=Pillows
+DESCRIPTION=Virtue - Justice
+DUPELIST=0a24d
+
+[ITEMDEF 0a24d]
+//pillow (justice)
+DUPEITEM=0a24c
+
+[ITEMDEF 0a24e]
+DEFNAME=i_pillow_vice_pride
+NAME=pillow
+FLIP=1
+CATEGORY=Vice vs Virtue
+SUBSECTION=Pillows
+DESCRIPTION=Vice - Pride
+DUPELIST=0a24f
+
+[ITEMDEF 0a24f]
+//pillow (pride)
+DUPEITEM=0a24e
+
+[ITEMDEF 0a250]
+DEFNAME=i_pillow_vice_covetous
+NAME=pillow
+FLIP=1
+CATEGORY=Vice vs Virtue
+SUBSECTION=Pillows
+DESCRIPTION=Vice - Covetous
+DUPELIST=0a251
+
+[ITEMDEF 0a251]
+//pillow (covetous)
+DUPEITEM=0a250
+
+[ITEMDEF 0a252]
+DEFNAME=i_sculpture_virtue_honesty
+NAME=sculpture
+CATEGORY=Vice vs Virtue
+SUBSECTION=Sculptures
+DESCRIPTION=Virtue - Honesty
+ON=@DClick
+   DISPID=<QVAL (<DISPID>==i_sculpture_virtue_honesty)? 0a253 : i_sculpture_virtue_honesty>
+   UPDATE
+   return 1
+
+[ITEMDEF 0a253]
+//sculpture (honesty)(anim)
+
+[ITEMDEF 0a254]
+//sculpture (honesty)(anim)
+
+[ITEMDEF 0a255]
+//sculpture (honesty)(anim)
+
+[ITEMDEF 0a256]
+//sculpture (honesty)(anim)
+
+[ITEMDEF 0a257]
+DEFNAME=i_sculpture_virtue_compassion
+NAME=sculpture
+CATEGORY=Vice vs Virtue
+SUBSECTION=Sculptures
+DESCRIPTION=Virtue - Compassion
+ON=@DClick
+   DISPID=<QVAL (<DISPID>==i_sculpture_virtue_compassion)? 0a258 : i_sculpture_virtue_compassion>
+   UPDATE
+   return 1
+
+[ITEMDEF 0a258]
+//sculpture (compassion)(anim)
+
+[ITEMDEF 0a259]
+//sculpture (compassion)(anim)
+
+[ITEMDEF 0a25a]
+//sculpture (compassion)(anim)
+
+[ITEMDEF 0a25b]
+//sculpture (compassion)(anim)
+
+[ITEMDEF 0a25c]
+DEFNAME=i_sculpture_vice_wrong
+NAME=sculpture
+CATEGORY=Vice vs Virtue
+SUBSECTION=Sculptures
+DESCRIPTION=Vice - Wrong
+ON=@DClick
+   DISPID=<QVAL (<DISPID>==i_sculpture_vice_wrong)? 0a25d : i_sculpture_vice_wrong>
+   UPDATE
+   return 1
+
+[ITEMDEF 0a25d]
+//sculpture (wrong)(anim)
+
+[ITEMDEF 0a25e]
+//sculpture (wrong)(anim)
+
+[ITEMDEF 0a25f]
+//sculpture (wrong)(anim)
+
+[ITEMDEF 0a260]
+//sculpture (wrong)(anim)
+
+[ITEMDEF 0a261]
+DEFNAME=i_sculpture_vice_shame
+NAME=sculpture
+CATEGORY=Vice vs Virtue
+SUBSECTION=Sculptures
+DESCRIPTION=Vice - Shame
+ON=@DClick
+   DISPID=<QVAL (<DISPID>==i_sculpture_vice_shame)? 0a262 : i_sculpture_vice_shame>
+   UPDATE
+   return 1
+
+[ITEMDEF 0a262]
+//sculpture (shame)(anim)
+
+[ITEMDEF 0a263]
+//sculpture (shame)(anim)
+
+[ITEMDEF 0a264]
+//sculpture (shame)(anim)
+
+[ITEMDEF 0a265]
+//sculpture (shame)(anim)
 
 [EOF]

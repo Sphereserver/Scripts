@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2017
+// SPHERE by : Menasoft ©1997-2018
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Friday, Feb 10, 2017
+// FILE LAST UPDATED: Sunday, Oct 21, 2018
 //
 VERSION=0.56d
 
@@ -190,7 +190,6 @@ SKILLMAKE=Carpentry 50.0,t_carpentry
 CATEGORY=Items by Professions
 SUBSECTION=Tailor
 DESCRIPTION=Dying Tub
-//TEVENTS=t_dye_tub_limited
 
 
 [ITEMDEF 01015]
@@ -245,7 +244,6 @@ DUPEITEM=0df8
 
 [ITEMDEF 01049]
 DEFNAME=i_bench_loom
-TYPE=t_chair
 FLIP=1
 VALUE=22
 WEIGHT=18.1
@@ -603,8 +601,8 @@ TYPE=t_spinwheel
 FLIP=1
 VALUE=73
 WEIGHT=21.3
-RESOURCES=10 i_board,1 i_wire_iron,1 i_hinge,1 i_axle,1 i_gears
-SKILLMAKE=Carpentry 73.6,Tailoring 65.0,t_carpentry
+RESOURCES=10 i_board,40 i_cloth
+SKILLMAKE=Carpentry 75.0,Tailoring 65.0,t_carpentry
 CATEGORY=Items by Professions
 SUBSECTION=Weaver
 DESCRIPTION=Elven Spinning Wheel
@@ -613,6 +611,7 @@ DUPELIST=02dda,02e3c,02e3d,02e3e,02e3f
 [ITEMDEF 02dda]
 //elven spinning wheel
 DUPEITEM=02dd9
+
 
 [ITEMDEF 02e3c]
 //elven spinning wheel

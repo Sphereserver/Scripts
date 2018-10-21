@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2017
+// SPHERE by : Menasoft ©1997-2018
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Sept 19, 2017
+// FILE LAST UPDATED: Sunday, Oct 21, 2018
 //
 VERSION=0.56d
 
@@ -299,7 +299,7 @@ RESOURCES=i_reag_garlic,i_reag_ginseng,i_reag_sulfur_ash
 RUNE_ITEM=i_rune_protection
 SCROLL_ITEM=i_scroll_protection
 FLAGS=spellflag_dir_anim|spellflag_targ_char|spellflag_fx_targ|spellflag_good|spellflag_playeronly|spellflag_bless
-EFFECT_ID=i_fx_bless_effect
+EFFECT_ID=i_fx_sparkle
 EFFECT=5,35
 LAYER=layer_spell_protection
 DURATION=3*60.0,5*60.0
@@ -415,7 +415,7 @@ SKILLREQ=MAGERY 30.0
 INTERRUPT=100.0,100.0
 
 [SPELL 22]
-// NOTE: Teleport sound/effect_id is handled by Sphere.ini settings
+// NOTE: Teleport sound/effect_id is handled by sphere.ini settings
 DEFNAME=s_teleport
 NAME=Teleport
 SOUND=0
@@ -458,7 +458,7 @@ CAST_TIME=1.0
 RESOURCES=i_reag_blood_moss,i_reag_garlic
 RUNE_ITEM=i_rune_wall_of_stone
 SCROLL_ITEM=i_scroll_wall_of_stone
-FLAGS=spellflag_dir_anim|spellflag_targ_xyz|spellflag_harm|spellflag_damage|spellflag_fx_targ|spellflag_field|spellflag_playeronly
+FLAGS=spellflag_dir_anim|spellflag_targ_xyz|spellflag_harm|spellflag_fx_targ|spellflag_field|spellflag_playeronly
 EFFECT_ID=0
 EFFECT=0
 DURATION=2*60.0,4*60.0
@@ -647,7 +647,7 @@ RESOURCES=i_reag_black_pearl,i_reag_garlic,i_reag_spider_silk,i_reag_sulfur_ash
 RUNE_ITEM=i_rune_dispel_field
 SCROLL_ITEM=i_scroll_dispel_field
 FLAGS=spellflag_dir_anim|spellflag_targ_item|spellflag_playeronly
-EFFECT_ID=0
+EFFECT_ID=i_fx_heal_effect
 EFFECT=0
 DURATION=0.0
 MANAUSE=14
@@ -655,7 +655,6 @@ SKILLREQ=MAGERY 50.0
 INTERRUPT=100.0,100.0
 
 [SPELL 35]
-// NOTE: This spell is used primarily for roleplaying purposes or for avoiding being killed if red. The longer duration would not unbalance gameplay in any way I could see.
 DEFNAME=s_incognito
 NAME=Incognito
 SOUND=snd_spell_incognito
@@ -674,7 +673,6 @@ SKILLREQ=MAGERY 50.0
 INTERRUPT=100.0,100.0
 
 [SPELL 36]
-// NOTE: This is a proactive type of protection that no one wants to see run out. Because of it's level and the amount of reagents I would think this spell last a bit longer in light of it only being a one time reflect as opposed to Reactive and protection. Should it have a duration at all or remain until dispel'ed or hit ???
 DEFNAME=s_magic_reflection
 NAME=Magic Reflection
 SOUND=snd_spell_magic_reflection
@@ -779,7 +777,7 @@ RESOURCES=i_reag_garlic,i_reag_mandrake_root,i_reag_sulfur_ash
 RUNE_ITEM=i_rune_dispel
 SCROLL_ITEM=i_scroll_dispel
 FLAGS=spellflag_dir_anim|spellflag_targ_char
-EFFECT_ID=0
+EFFECT_ID=i_fx_smoke
 EFFECT=0
 DURATION=0.0
 MANAUSE=20
@@ -825,7 +823,6 @@ ON=@Effect
    LOCAL.DAMAGETYPE=(<DEF.dam_general>|<DEF.dam_magic>)
 
 [SPELL 44]
-// NOTE: Used primarily to regain mana while fighting or cast helpful spells without incurring attack. Duration should reflect the non-offensive use of this spell
 DEFNAME=s_invisibility
 NAME=Invisibility
 SOUND=snd_spell_invisibility
@@ -842,8 +839,6 @@ DURATION=3*60.0,5*60.0
 MANAUSE=20
 SKILLREQ=MAGERY 60.0
 INTERRUPT=100.0,100.0
-ON=@Effect
-   FLAGS &= ~statf_hidden
 
 [SPELL 45]
 DEFNAME=s_mark
@@ -861,6 +856,20 @@ DURATION=0.0
 MANAUSE=20
 SKILLREQ=MAGERY 60.0
 INTERRUPT=100.0,100.0
+ON=@Effect
+   REF1=<TOPOBJ>
+   LOCAL.InsideHouse=<QVAL (<ISEMPTY <REGION.TYPE>>)? 0:1>
+   IF (<REF1.P.M> == 0)		// Felucca
+      COLOR=<QVAL (<LOCAL.InsideHouse>)? 066d:0>
+   ELIF (<REF1.P.M> == 1)	// Trammel
+      COLOR=<QVAL (<LOCAL.InsideHouse>)? 047f:032>
+   ELIF (<REF1.P.M> == 3)	// Malas
+      COLOR=<QVAL (<LOCAL.InsideHouse>)? 055f:044e>
+   ELIF (<REF1.P.M> == 4)	// Tokuno Islands
+      COLOR=<QVAL (<LOCAL.InsideHouse>)? 047f:0482>
+   ELIF (<REF1.P.M> == 5)	// Ter Mur
+      COLOR=048a
+   ENDIF
 
 [SPELL 46]
 DEFNAME=s_mass_curse
@@ -891,7 +900,7 @@ CAST_TIME=1.8
 RESOURCES=i_reag_black_pearl,i_reag_ginseng,i_reag_spider_silk
 RUNE_ITEM=i_rune_paralyze_field
 SCROLL_ITEM=i_scroll_paralyze_field
-FLAGS=spellflag_dir_anim|spellflag_targ_xyz|spellflag_harm|spellflag_damage|spellflag_fx_targ|spellflag_field|spellflag_playeronly|spellflag_nounparalyze
+FLAGS=spellflag_dir_anim|spellflag_targ_xyz|spellflag_harm|spellflag_fx_targ|spellflag_field|spellflag_playeronly|spellflag_nounparalyze
 EFFECT_ID=i_fx_curse
 EFFECT=0
 LAYER=layer_spell_paralyze
@@ -901,8 +910,6 @@ SKILLREQ=MAGERY 60.0
 INTERRUPT=100.0,100.0
 ON=@Success
    LOCAL.FieldWidth=3
-ON=@Effect
-   LOCAL.DAMAGETYPE=(<DEF.dam_general>|<DEF.dam_magic>)
 
 [SPELL 48]
 DEFNAME=s_reveal
@@ -913,8 +920,8 @@ CAST_TIME=1.8
 RESOURCES=i_reag_blood_moss,i_reag_sulfur_ash
 RUNE_ITEM=i_rune_reveal
 SCROLL_ITEM=i_scroll_reveal
-FLAGS=spellflag_area
-EFFECT_ID=0
+FLAGS=spellflag_area|spellflag_fx_targ
+EFFECT_ID=i_fx_sparkle
 EFFECT=0
 DURATION=0.0
 MANAUSE=20
@@ -953,7 +960,7 @@ CAST_TIME=2.0
 RESOURCES=i_reag_black_pearl,i_reag_mandrake_root,i_reag_spider_silk,i_reag_sulfur_ash
 RUNE_ITEM=i_rune_energy_field
 SCROLL_ITEM=i_scroll_energy_field
-FLAGS=spellflag_dir_anim|spellflag_targ_xyz|spellflag_harm|spellflag_damage|spellflag_fx_targ|spellflag_field|spellflag_playeronly
+FLAGS=spellflag_dir_anim|spellflag_targ_xyz|spellflag_harm|spellflag_fx_targ|spellflag_field|spellflag_playeronly
 EFFECT_ID=0
 EFFECT=0
 DURATION=2*60.0,3*60.0
@@ -962,8 +969,6 @@ SKILLREQ=MAGERY 70.0
 INTERRUPT=100.0,100.0
 ON=@Success
    LOCAL.FieldWidth=3
-ON=@Effect
-   LOCAL.DAMAGETYPE=(<DEF.dam_energy>|<DEF.dam_magic>)
 
 [SPELL 51]
 DEFNAME=s_flamestrike
@@ -994,7 +999,7 @@ RESOURCES=i_reag_black_pearl,i_reag_mandrake_root,i_reag_sulfur_ash
 RUNE_ITEM=i_rune_gate_travel
 SCROLL_ITEM=i_scroll_gate_travel
 FLAGS=spellflag_targ_item|spellflag_playeronly
-EFFECT_ID=i_moongate_blue
+EFFECT_ID=0
 EFFECT=0
 DURATION=60.0
 MANAUSE=40
@@ -1028,7 +1033,7 @@ RESOURCES=i_reag_black_pearl,i_reag_garlic,i_reag_mandrake_root,i_reag_sulfur_as
 RUNE_ITEM=i_rune_mass_dispel
 SCROLL_ITEM=i_scroll_mass_dispel
 FLAGS=spellflag_fx_targ|spellflag_area
-EFFECT_ID=i_fx_sparkle_2
+EFFECT_ID=i_fx_smoke
 EFFECT=0
 DURATION=0.0
 MANAUSE=40
@@ -1046,8 +1051,8 @@ CAST_TIME=2.0
 RESOURCES=i_reag_blood_moss,i_reag_mandrake_root,i_reag_spider_silk,i_reag_sulfur_ash
 RUNE_ITEM=i_rune_meteor_swarm
 SCROLL_ITEM=i_scroll_meteor_swarm
-FLAGS=spellflag_dir_anim|spellflag_targ_xyz|spellflag_harm|spellflag_damage|spellflag_area|spellflag_fx_targ|spellflag_resist|spellflag_playeronly
-EFFECT_ID=0
+FLAGS=spellflag_dir_anim|spellflag_targ_xyz|spellflag_harm|spellflag_damage|spellflag_area|spellflag_fx_bolt|spellflag_resist|spellflag_playeronly
+EFFECT_ID=i_fx_fireball
 EFFECT=35,50
 DURATION=0.0
 MANAUSE=40
@@ -1101,7 +1106,6 @@ EFFECT=30,45
 DURATION=30.0
 MANAUSE=50
 SKILLREQ=MAGERY 80.0
-// NOTE: does Earthquake use a duration?? IF so, no more then 30secs. This spell is more like an irradiating wave thus should have a set distance/time it can be effective
 INTERRUPT=100.0,100.0
 ON=@Success
    LOCAL.AREARADIUS=<eval 1+(<MAGERY>/150)>
