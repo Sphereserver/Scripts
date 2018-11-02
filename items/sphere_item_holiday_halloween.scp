@@ -7,9 +7,83 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Oct 9, 2018
+// FILE LAST UPDATED: Thursday, Nov 1, 2018
 //
 VERSION=0.56d
+
+
+[ITEMDEF 019bc]
+//This is the halloween costume empty template. To enable its polymorph functionality, create another item using
+//ID=i_halloween_costume, TEVENTS=t_halloween_costume and TAG.PolymorphID=c_chardef set (as the example items below)
+DEFNAME=i_halloween_costume
+TYPE=t_clothing
+REQSTR=10
+FLIP=1
+DUPELIST=019bd
+
+[ITEMDEF 019bd]
+//halloween costume
+DUPEITEM=019bc
+
+[TYPEDEF t_halloween_costume]
+ON=@EquipTest
+   IF (<SRC.FLAGS> & statf_onhorse|statf_hovering)
+      SRC.SYSMESSAGE You cannot use this while mounted or flying. 
+      return 1
+   ELIF (<SRC.BODY> != <SRC.OBODY>)
+      SRC.SYSMESSAGE You cannot use that item in this form.
+      return 1
+   ENDIF
+ON=@Equip
+   SRC.EVENTS +e_halloween_costume
+   SRC.COLOR=0
+   SRC.BODY=<TAG.PolymorphID>
+ON=@Unequip
+   SRC.EVENTS -e_halloween_costume
+   SRC.COLOR=<SRC.OSKIN>
+   SRC.BODY=<SRC.OBODY>
+   SRC.EFFECT 3,i_fx_smoke,1,13
+   SRC.SOUND 0fa
+ON=@Damage
+   return 1
+
+[EVENTS e_halloween_costume]
+ON=@Death
+   REF1=<FINDLAYER.layer_hand1>
+   IF (<REF1.ISTEVENT.t_halloween_costume>)
+      REF1.UNEQUIP
+   ENDIF
+
+
+[ITEMDEF i_halloween_costume_skeleton]
+ID=i_halloween_costume
+NAME=skeleton costume
+TEVENTS=t_halloween_costume
+TAG.PolymorphID=c_skeleton
+SPELLCHANNELING=1
+CATEGORY=Halloween
+SUBSECTION=Costumes
+DESCRIPTION=Skeleton
+
+[ITEMDEF i_halloween_costume_bloodworm]
+ID=i_halloween_costume
+NAME=bloodworm costume
+TEVENTS=t_halloween_costume
+TAG.PolymorphID=c_bloodworm
+SPELLCHANNELING=1
+CATEGORY=Halloween
+SUBSECTION=Costumes
+DESCRIPTION=Bloodworm
+
+[ITEMDEF i_halloween_costume_dream_wraith]
+ID=i_halloween_costume
+NAME=dream wraith costume
+TEVENTS=t_halloween_costume
+TAG.PolymorphID=c_dream_wraith
+SPELLCHANNELING=1
+CATEGORY=Halloween
+SUBSECTION=Costumes
+DESCRIPTION=Dream Wraith
 
 
 [ITEMDEF 042b5]
@@ -112,17 +186,22 @@ ON=@Create
    MOREM=1
 
 [ITEMDEF 04691]
-DEFNAME=i_jackolantern_lit
-NAME=jack-o-lantern
+DEFNAME=i_jack_o_lantern_lit
+NAME=jack o' lantern
 TYPE=t_light_lit
-TDATA3=i_jackolantern
+TDATA3=i_jack_o_lantern
 WEIGHT=25.0
 CATEGORY=Halloween
 SUBSECTION=Lightsources
-DESCRIPTION=Jack-o-lantern (menancing)(lit)
+DESCRIPTION=Jack o' Lantern (menancing)(lit)
 DUPELIST=04692,04693
 ON=@Create
    MOREZ=2
+ON=@ClientTooltip
+   SRC.ADDCLILOC 1113985	//lit
+ON=@DClick
+   SRC.SYSMESSAGE You extinguish the Jack-O-Lantern
+   SOUND 03be
 
 [ITEMDEF 04692]
 //jack-o-lantern (menancing)
@@ -133,29 +212,39 @@ DUPEITEM=04691
 DUPEITEM=04691
 
 [ITEMDEF 04694]
-DEFNAME=i_jackolantern
-NAME=jack-o-lantern
+DEFNAME=i_jack_o_lantern
+NAME=jack o' lantern
 TYPE=t_light_out
-TDATA3=i_jackolantern_lit
+TDATA3=i_jack_o_lantern_lit
 WEIGHT=25.0
 CATEGORY=Halloween
 SUBSECTION=Lightsources
-DESCRIPTION=Jack-o-lantern (menancing)(unlit)
+DESCRIPTION=Jack o' Lantern (menancing)(unlit)
 ON=@Create
    MOREZ=2
+ON=@ClientTooltip
+   SRC.ADDCLILOC 1113986	//not lit
+ON=@DClick
+   SRC.SYSMESSAGE You light the Jack-O-Lantern
+   SOUND 047
 
 [ITEMDEF 04695]
-DEFNAME=i_jackolantern2_lit
-NAME=jack-o-lantern
+DEFNAME=i_jack_o_lantern2_lit
+NAME=jack o' lantern
 TYPE=t_light_lit
-TDATA3=i_jackolantern2
+TDATA3=i_jack_o_lantern2
 WEIGHT=25.0
 CATEGORY=Halloween
 SUBSECTION=Lightsources
-DESCRIPTION=Jack-o-lantern (leering)(lit)
+DESCRIPTION=Jack o' Lantern (leering)(lit)
 DUPELIST=04696,04697
 ON=@Create
    MOREZ=2
+ON=@ClientTooltip
+   SRC.ADDCLILOC 1113985	//lit
+ON=@DClick
+   SRC.SYSMESSAGE You extinguish the Jack-O-Lantern
+   SOUND 03be
 
 [ITEMDEF 04696]
 //jack-o-lantern (leering)
@@ -166,16 +255,21 @@ DUPEITEM=04695
 DUPEITEM=04695
 
 [ITEMDEF 04698]
-DEFNAME=i_jackolantern2
-NAME=jack-o-lantern
+DEFNAME=i_jack_o_lantern2
+NAME=jack o' lantern
 TYPE=t_light_out
-TDATA3=i_jackolantern2_lit
+TDATA3=i_jack_o_lantern2_lit
 WEIGHT=25.0
 CATEGORY=Halloween
 SUBSECTION=Lightsources
-DESCRIPTION=Jack-o-lantern (leering)(unlit)
+DESCRIPTION=Jack o' Lantern (leering)(unlit)
 ON=@Create
    MOREZ=2
+ON=@ClientTooltip
+   SRC.ADDCLILOC 1113986	//not lit
+ON=@DClick
+   SRC.SYSMESSAGE You light the Jack-O-Lantern
+   SOUND 047
 
 [ITEMDEF 04699]
 DEFNAME=i_tapestry_ruined

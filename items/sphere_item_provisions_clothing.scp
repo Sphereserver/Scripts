@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Friday, Jun 22, 2018
+// FILE LAST UPDATED: Thursday, Nov 1, 2018
 //
 VERSION=0.56d
 
@@ -816,32 +816,6 @@ SUBSECTION=Hats
 DESCRIPTION=BeeKeeper Hat (Jester Cap)
 ON=@Create
    HITPOINTS={36 48}
-
-
-[ITEMDEF 019bc]
-//FIXME: When held, the bearer gets the appearance of a monster.
-DEFNAME=i_costume
-NAME=costume
-TYPE=t_clothing
-FLIP=1
-DYE=1
-ARMOR=3
-VALUE=18
-WEIGHT=0.2
-RESOURCES=1 i_board,1 i_thread,1 i_hides_cut,1 i_ribbon
-SKILLMAKE=Tailoring 100.0,t_sewing_kit
-ReqStr=0
-SpellChanneling=1
-DUPELIST=019bd
-CATEGORY=Provisions - Clothes
-SUBSECTION=Masks
-DESCRIPTION=Costume
-ON=@Create
-   HITPOINTS={36 48}
-
-[ITEMDEF 019bd]
-//Costume
-DUPEITEM=019bc
 
 
 [ITEMDEF 01efd]

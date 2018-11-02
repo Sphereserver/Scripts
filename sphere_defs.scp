@@ -7,9 +7,10 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Oct 9, 2018
+// FILE LAST UPDATED: Thursday, Nov 1, 2018
 //
 VERSION=0.56d
+
 
 [DEFNAME HARDCODED]
 defaultitem	i_gold  // If we cannot create the item, make it this.
@@ -1193,7 +1194,7 @@ t_cartography           195   // cartography tool
 t_cooking               196   // cooking tool
 t_pilot                 197   // t_pilot (PacketWheelBoatMove)
 t_rope                  198   // almost the same as a ship plank, but not lockable by default.
-t_healing_stone         199
+t_weapon_whip           199
 
 //Add custom types after 500 to leave room for future hardcoded types
 t_forest                500   // Forest Tiles
@@ -1630,6 +1631,7 @@ debufficon_Sparks				1176
 debufficon_Swarm				1177
 debufficon_BoneBreaker			1178
 debufficon_Feint				1185
+debufficon_Discordance			1189
 
 [DEFNAME buff_icons]
 bufficon_NoRearm				1002
@@ -1741,6 +1743,7 @@ bufficon_CorasManaRage			1183
 bufficon_VirtueShield			1184
 bufficon_CaddelliteInfused		1186
 bufficon_PotionOfGloriousFortune	1187
+bufficon_MysticalPolymorphTotem		1188
 
 [DEFNAME buff_clilocs]
 buffcliloc_Empty				1070722
@@ -1834,6 +1837,10 @@ buffcliloc_CaddelliteInfused_1			1158662
 buffcliloc_CaddelliteInfused_2			1158677
 buffcliloc_PotionOfGloriousFortune_1			1158688
 buffcliloc_PotionOfGloriousFortune_2			1158720
+buffcliloc_MysticalPolymorphTotem_1	1158780
+buffcliloc_MysticalPolymorphTotem_2	1158017
+buffcliloc_Discordance_1			1044075
+buffcliloc_Discordance_2			1158786
 
 [DEFNAME charheight]
 height_01 28 //DEFNAME=c_ogre

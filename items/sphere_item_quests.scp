@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Mar 24, 2018
+// FILE LAST UPDATED: Thursday, Nov 1, 2018
 //
 VERSION=0.56d
 
@@ -358,5 +358,175 @@ TDATA2=09be9
 CATEGORY=Quests
 SUBSECTION=Shattered Obelisk
 DESCRIPTION=Card (Hydros)
+
+
+///////////////////////
+// Krampus Encounter //
+///////////////////////
+
+[ITEMDEF 0a289]
+DEFNAME=i_whip_barbed
+NAME=Barbed Whip
+TYPE=t_weapon_whip
+SKILL=Macefighting
+DAM=13,17
+SPEED=41
+//TAG.OVERRIDE.SPEED=32		//3.25
+REQSTR=20
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Krampus Encounter
+DESCRIPTION=Barbed Whip
+DUPELIST=0a291
+ON=@Create
+   HITPOINTS={36 53}
+
+[ITEMDEF 0a28a]
+DEFNAME=i_whip_spiked
+NAME=Spiked Whip
+TYPE=t_weapon_whip
+SKILL=Fencing
+DAM=13,17
+SPEED=41
+//TAG.OVERRIDE.SPEED=32		//3.25
+REQSTR=20
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Krampus Encounter
+DESCRIPTION=Spiked Whip
+DUPELIST=0a292
+ON=@Create
+   HITPOINTS={36 53}
+
+[ITEMDEF 0a28b]
+DEFNAME=i_whip_bladed
+NAME=Bladed Whip
+TYPE=t_weapon_whip
+SKILL=Swordsmanship
+DAM=13,17
+SPEED=41
+//TAG.OVERRIDE.SPEED=32		//3.25
+REQSTR=20
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Krampus Encounter
+DESCRIPTION=Bladed Whip
+DUPELIST=0a293
+ON=@Create
+   HITPOINTS={36 53}
+
+
+[ITEMDEF 0a28d]
+DEFNAME=i_boots_krampus_minion
+NAME=krampus minion boots
+TYPE=t_clothing
+FLIP=1
+REQSTR=10
+RESOURCES=6 i_hides_cut,4 i_cloth
+SKILLMAKE=Tailoring 100.0,t_sewing_kit
+CanUse=can_u_human|can_u_elf
+TEVENTS=t_equipitem
+CATEGORY=Quests
+SUBSECTION=Krampus Encounter
+DESCRIPTION=Krampus Minion Boots
+DUPELIST=0a28e
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 0a28e]
+//krampus minion boots
+DUPEITEM=0a28d
+
+[ITEMDEF 0a28f]
+DEFNAME=i_hat_krampus_minion
+NAME=krampus minion hat
+TYPE=t_clothing
+FLIP=1
+REQSTR=10
+RESPHYSICAL=3
+RESFIRE=9
+RESCOLD=12
+RESPOISON=8
+RESENERGY=8
+RESOURCES=8 i_cloth
+SKILLMAKE=Tailoring 100.0,t_sewing_kit
+CanUse=can_u_human|can_u_elf
+TEVENTS=t_equipitem
+CATEGORY=Quests
+SUBSECTION=Krampus Encounter
+DESCRIPTION=Krampus Minion Hat
+DUPELIST=0a290
+ON=@Create
+   HITPOINTS={20 30}
+
+[ITEMDEF 0a290]
+//krampus minion hat
+DUPEITEM=0a28f
+
+[ITEMDEF 0a291]
+//barbed whip
+DUPEITEM=0a289
+
+[ITEMDEF 0a292]
+//spiked whip
+DUPEITEM=0a28a
+
+[ITEMDEF 0a293]
+//bladed whip
+DUPEITEM=0a28b
+
+[ITEMDEF 0a294]
+DEFNAME=i_talons_krampus_minion
+NAME=krampus minion talons
+TYPE=t_clothing
+FLIP=1
+REQSTR=10
+RESOURCES=6 i_hides_cut,4 i_cloth
+SKILLMAKE=Tailoring 100.0,t_sewing_kit
+CanUse=can_u_gargoyle
+TEVENTS=t_equipitem
+CATEGORY=Quests
+SUBSECTION=Krampus Encounter
+DESCRIPTION=Krampus Minion Talons
+DUPELIST=0a296
+ON=@Create
+   HITPOINTS={36 48}
+   COLOR=0481
+
+[ITEMDEF 0a295]
+DEFNAME=i_earrings_krampus_minion
+NAME=krampus minion earrings
+TYPE=t_jewelry
+FLIP=1
+RESPHYSICAL=4
+RESFIRE=4
+RESCOLD=6
+RESPOISON=6
+RESENERGY=6
+RESOURCES=3 i_ingot_iron
+SKILLMAKE=Tinkering 100.0,t_tinker_tools
+CanUse=can_u_gargoyle
+TEVENTS=t_equipitem
+CATEGORY=Quests
+SUBSECTION=Krampus Encounter
+DESCRIPTION=Krampus Minion Earrings
+ON=@Create
+   HITPOINTS={40 50}
+
+[ITEMDEF 0a296]
+//krampus minion talons
+DUPEITEM=0a294
+
+
+[ITEMDEF i_town_cryer_krampus_encounter]
+ID=i_town_cryer
+TYPE=t_town_cryer
+TAG.Title="Bewildering Encounters on Trade Routes, Guards Move to Quell Fear"
+TAG.Author="Rita Radcliffe"
+TAG.TextCliloc=1158806
+TAG.GumpID=06d8
+CATEGORY=Quests
+SUBSECTION=Krampus Encounter
+DESCRIPTION=The Town Cryer
 
 [EOF]
