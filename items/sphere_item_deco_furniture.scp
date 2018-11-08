@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2017
+// SPHERE by : Menasoft ©1997-2018
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Dec 5, 2017
+// FILE LAST UPDATED: Thursday, Nov 8, 2018
 //
 VERSION=0.56d
 
@@ -1605,30 +1605,30 @@ DUPELIST=0c25
 DUPEITEM=0c24
 
 [ITEMDEF 0c26]
-NAME=ruined bed
+DEFNAME=i_bed_large_ruined
 CATEGORY=Decoration - Furniture
 SUBSECTION=Broken Furniture
-DESCRIPTION=Ruined Large Bed (flawed graphics)
+DESCRIPTION=Ruined Bed (large)
 DUPELIST=0c27,0c28,0c29,0c2a,0c2b
 
 [ITEMDEF 0c27]
-//Bed (flawed graphics)
+//ruined bed (east)
 DUPEITEM=0c26
 
 [ITEMDEF 0c28]
-//Bed (flawed graphics)
+//ruined bed (east)
 DUPEITEM=0c26
 
 [ITEMDEF 0c29]
-//Bed (flawed graphics)
+//ruined bed (south)
 DUPEITEM=0c26
 
 [ITEMDEF 0c2a]
-//Bed (flawed graphics)
+//ruined bed (south)
 DUPEITEM=0c26
 
 [ITEMDEF 0c2b]
-//Bed (flawed graphics)
+//ruined bed (south)
 DUPEITEM=0c26
 
 [ITEMDEF 0c2c]
@@ -2275,43 +2275,36 @@ DUPEITEM=01667
 
 
 [ITEMDEF 01894]
-DEFNAME=i_bed_ruined_7
-TDATA1=0
-FLIP=1
-WEIGHT=149.5
-RESOURCES=120 i_board,15 i_cloth,20 i_nails,2 i_bedroll
-CATEGORY=Decoration - Furniture
-SUBSECTION=Broken Furniture
-DESCRIPTION=Ruined Bed
-DUPELIST=01895,01896,01897,01898,01899,0189a,0189b
+//ruined bed (east)(duplicated from 0c26, but uses 4 tiles instead 3)
+NAME=ruined bed
 
 [ITEMDEF 01895]
-//ruined bed
-DUPEITEM=01894
+//ruined bed (east)(duplicated from 0c26, but uses 4 tiles instead 3)
+NAME=ruined bed
 
 [ITEMDEF 01896]
-//ruined bed
-DUPEITEM=01894
+//ruined bed (east)(duplicated from 0c26, but uses 4 tiles instead 3)
+NAME=ruined bed
 
 [ITEMDEF 01897]
-//ruined bed
-DUPEITEM=01894
+//ruined bed (east)(duplicated from 0c26, but uses 4 tiles instead 3)
+NAME=ruined bed
 
 [ITEMDEF 01898]
-//ruined bed
-DUPEITEM=01894
+//ruined bed (south)(duplicated from 0c26, but uses 4 tiles instead 3)
+NAME=ruined bed
 
 [ITEMDEF 01899]
-//ruined bed
-DUPEITEM=01894
+//ruined bed (south)(duplicated from 0c26, but uses 4 tiles instead 3)
+NAME=ruined bed
 
 [ITEMDEF 0189a]
-//ruined bed
-DUPEITEM=01894
+//ruined bed (south)(duplicated from 0c26, but uses 4 tiles instead 3)
+NAME=ruined bed
 
 [ITEMDEF 0189b]
-//ruined bed
-DUPEITEM=01894
+//ruined bed (south)(duplicated from 0c26, but uses 4 tiles instead 3)
+NAME=ruined bed
 
 
 [ITEMDEF 0190e]
@@ -3273,13 +3266,12 @@ DUPELIST=02df0,03084,03085,03086,03087
 DUPEITEM=02def
 
 [ITEMDEF 02df5]
-DEFNAME=i_chair_reading
+DEFNAME=i_elven_chair_reading
 NAME=elven reading chair
 FLIP=1
-VALUE=75
-WEIGHT=33.4
-RESOURCES=16 i_board,4 i_nails,1 i_wire_silver
-SKILLMAKE=Carpentry 86.0,t_carpentry
+WEIGHT=1.0
+RESOURCES=30 i_board
+SKILLMAKE=Carpentry 80.0,t_carpentry
 CATEGORY=Decoration - Furniture
 SUBSECTION=Chairs
 DESCRIPTION=Elven Reading Chair
@@ -3560,42 +3552,38 @@ DUPEITEM=030e3
 
 
 [ITEMDEF 03d8a]
-DEFNAME=i_bed_ruined_dupe // looks identical to i_bed_ruined
+//ruined bed (east)(duplicated from 0c26, but uses 4 tiles instead 3)
 NAME=ruined bed
-WEIGHT=149.5
-RESOURCES=120 i_board,15 i_cloth,20 i_nails,2 i_bedroll
-CATEGORY=Decoration - Furniture
-SUBSECTION=Broken Furniture
-DESCRIPTION=Ruined Large Bed
-DUPELIST=03d8b,03d8c,03d8d,03d90,03d91,03d92,03d93
 
 [ITEMDEF 03d8b]
-//Ruined Large Bed
-DUPEITEM=03d8a
+//ruined bed (east)(duplicated from 0c26, but uses 4 tiles instead 3)
+NAME=ruined bed
 
 [ITEMDEF 03d8c]
-//Ruined Large Bed
-DUPEITEM=03d8a
+//ruined bed (east)(duplicated from 0c26, but uses 4 tiles instead 3)
+NAME=ruined bed
 
 [ITEMDEF 03d8d]
-//Ruined Large Bed
-DUPEITEM=03d8a
+//ruined bed (east)(duplicated from 0c26, but uses 4 tiles instead 3)
+NAME=ruined bed
+
 
 [ITEMDEF 03d90]
-//Ruined Large Bed
-DUPEITEM=03d8a
+//ruined bed (south)(duplicated from 0c29, but uses 4 tiles instead 3)
+NAME=ruined bed
 
 [ITEMDEF 03d91]
-//Ruined Large Bed
-DUPEITEM=03d8a
+//ruined bed (south)(duplicated from 0c29, but uses 4 tiles instead 3)
+NAME=ruined bed
 
 [ITEMDEF 03d92]
-//Ruined Large Bed
-DUPEITEM=03d8a
+//ruined bed (south)(duplicated from 0c29, but uses 4 tiles instead 3)
+NAME=ruined bed
 
 [ITEMDEF 03d93]
-//Ruined Large Bed
-DUPEITEM=03d8a
+//ruined bed (south)(duplicated from 0c29, but uses 4 tiles instead 3)
+NAME=ruined bed
+
 
 [ITEMDEF 03dff]
 DEFNAME=i_bench_stone

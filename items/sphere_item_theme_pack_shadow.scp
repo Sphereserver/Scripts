@@ -1,4 +1,4 @@
-//****************************************************************************
+﻿//****************************************************************************
 // SPHERE by : Menasoft ©1997-2018
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Ago 28, 2018
+// FILE LAST UPDATED: Tuesday, Aug 28, 2018
 //
 VERSION=0.56d
 
@@ -298,6 +298,7 @@ DUPEITEM=0360e
 [ITEMDEF 0363f]
 //shadow wall (window)
 DUPEITEM=0360e
+
 
 [ITEMDEF 03647]
 //shadow wall (tattered)

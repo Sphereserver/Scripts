@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Oct 9, 2018
+// FILE LAST UPDATED: Thursday, Nov 8, 2018
 //
 VERSION=0.56d
 
@@ -260,6 +260,12 @@ ID=03e95
 TYPE=t_eq_horse
 LAYER=layer_horse
 TDATA3=c_beetle_fire
+WEIGHT=0
+
+[ITEMDEF i_memory_ship_pilot]
+ID=03e96
+TYPE=t_eq_horse
+LAYER=layer_horse
 WEIGHT=0
 
 [ITEMDEF i_mt_giant_beetle_ethereal]
