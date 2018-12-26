@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Thursday, Nov 1, 2018
+// FILE LAST UPDATED: Wednesday, Dec 26, 2018
 //
 VERSION=0.56d
 
@@ -360,6 +360,159 @@ SUBSECTION=Shattered Obelisk
 DESCRIPTION=Card (Hydros)
 
 
+//////////////////////////
+// Treasures of Khaldun //
+//////////////////////////
+
+[ITEMDEF 0a1ce]
+DEFNAME=i_polished_meteorite
+NAME=polished meteorite
+CATEGORY=Quests
+SUBSECTION=Treasures of Khaldun
+DESCRIPTION=Polished Meteorite
+
+[ITEMDEF 0a1cf]
+DEFNAME=i_polished_meteorite_2
+NAME=polished meteorite
+CATEGORY=Quests
+SUBSECTION=Treasures of Khaldun
+DESCRIPTION=Polished Meteorite (2)
+
+[ITEMDEF 0a1d0]
+DEFNAME=i_polished_meteorite_3
+NAME=polished meteorite
+CATEGORY=Quests
+SUBSECTION=Treasures of Khaldun
+DESCRIPTION=Polished Meteorite (3)
+
+[ITEMDEF 0a1d1]
+DEFNAME=i_polished_meteorite_4
+NAME=polished meteorite
+CATEGORY=Quests
+SUBSECTION=Treasures of Khaldun
+DESCRIPTION=Polished Meteorite (4)
+
+[ITEMDEF 0a1d2]
+DEFNAME=i_polished_meteorite_5
+NAME=polished meteorite
+CATEGORY=Quests
+SUBSECTION=Treasures of Khaldun
+DESCRIPTION=Polished Meteorite (5)
+
+[ITEMDEF 0a1d3]
+DEFNAME=i_polished_meteorite_6
+NAME=polished meteorite
+CATEGORY=Quests
+SUBSECTION=Treasures of Khaldun
+DESCRIPTION=Polished Meteorite (6)
+
+[ITEMDEF 0a1d4]
+DEFNAME=i_polished_meteorite_7
+NAME=polished meteorite
+CATEGORY=Quests
+SUBSECTION=Treasures of Khaldun
+DESCRIPTION=Polished Meteorite (7)
+
+[ITEMDEF 0a1d5]
+DEFNAME=i_polished_meteorite_8
+NAME=polished meteorite
+CATEGORY=Quests
+SUBSECTION=Treasures of Khaldun
+DESCRIPTION=Polished Meteorite (8)
+
+[ITEMDEF 0a1d6]
+DEFNAME=i_polished_meteorite_9
+NAME=polished meteorite
+CATEGORY=Quests
+SUBSECTION=Treasures of Khaldun
+DESCRIPTION=Polished Meteorite (9)
+
+[ITEMDEF 0a1d7]
+DEFNAME=i_polished_meteorite_10
+NAME=polished meteorite
+CATEGORY=Quests
+SUBSECTION=Treasures of Khaldun
+DESCRIPTION=Polished Meteorite (10)
+
+[ITEMDEF 0a1d8]
+DEFNAME=i_polished_meteorite_11
+NAME=polished meteorite
+CATEGORY=Quests
+SUBSECTION=Treasures of Khaldun
+DESCRIPTION=Polished Meteorite (11)
+
+[ITEMDEF 0a1d9]
+DEFNAME=i_polished_meteorite_12
+NAME=polished meteorite
+CATEGORY=Quests
+SUBSECTION=Treasures of Khaldun
+DESCRIPTION=Polished Meteorite (12)
+
+[ITEMDEF 0a1da]
+DEFNAME=i_relic_hydros
+NAME=relic of hydros
+CATEGORY=Quests
+SUBSECTION=Treasures of Khaldun
+DESCRIPTION=Relic of Hydros
+
+[ITEMDEF 0a1db]
+DEFNAME=i_relic_pyros
+NAME=relic of pyros
+CATEGORY=Quests
+SUBSECTION=Treasures of Khaldun
+DESCRIPTION=Relic of Pyros
+
+[ITEMDEF 0a1dc]
+DEFNAME=i_relic_stratos
+NAME=relic of stratos
+CATEGORY=Quests
+SUBSECTION=Treasures of Khaldun
+DESCRIPTION=Relic of Stratos
+
+[ITEMDEF 0a1dd]
+DEFNAME=i_relic_lithos
+NAME=relic of lithos
+CATEGORY=Quests
+SUBSECTION=Treasures of Khaldun
+DESCRIPTION=Relic of Lithos
+
+[ITEMDEF 0a1de]
+DEFNAME=i_painting_khaldun
+NAME=painting
+CATEGORY=Quests
+SUBSECTION=Treasures of Khaldun
+DESCRIPTION=Painting
+DUPELIST=0a1df
+
+[ITEMDEF 0a1df]
+//painting
+DUPEITEM=0a1de
+
+[ITEMDEF 0a1e0]
+DEFNAME=i_painting_khaldun_2
+NAME=painting
+CATEGORY=Quests
+SUBSECTION=Treasures of Khaldun
+DESCRIPTION=Painting (2)
+DUPELIST=0a1e1
+
+[ITEMDEF 0a1e1]
+//painting
+DUPEITEM=0a1e0
+
+[ITEMDEF 0a1e2]
+DEFNAME=i_painting_khaldun_3
+NAME=painting
+CATEGORY=Quests
+SUBSECTION=Treasures of Khaldun
+DESCRIPTION=Painting (3)
+DUPELIST=0a1e3
+
+[ITEMDEF 0a1e3]
+//painting
+DUPEITEM=0a1e2
+
+
 ///////////////////////
 // Krampus Encounter //
 ///////////////////////
@@ -421,6 +574,7 @@ DEFNAME=i_boots_krampus_minion
 NAME=krampus minion boots
 TYPE=t_clothing
 FLIP=1
+DYE=1
 REQSTR=10
 RESOURCES=6 i_hides_cut,4 i_cloth
 SKILLMAKE=Tailoring 100.0,t_sewing_kit
@@ -442,6 +596,7 @@ DEFNAME=i_hat_krampus_minion
 NAME=krampus minion hat
 TYPE=t_clothing
 FLIP=1
+DYE=1
 REQSTR=10
 RESPHYSICAL=3
 RESFIRE=9
@@ -510,8 +665,6 @@ TEVENTS=t_equipitem
 CATEGORY=Quests
 SUBSECTION=Krampus Encounter
 DESCRIPTION=Krampus Minion Earrings
-ON=@Create
-   HITPOINTS={40 50}
 
 [ITEMDEF 0a296]
 //krampus minion talons

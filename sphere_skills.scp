@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft Â©1997-2016
+// SPHERE by : Menasoft ©1997-2018
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Jun 28, 2016
+// FILE LAST UPDATED: Wednesday, Dec 26, 2018
 //
 VERSION=0.56d
 
@@ -439,8 +439,8 @@ VALUES=1,30,200
 RANGE=4
 
 ON=@PreStart
-	IF (<SRC.FINDLAYER.layer_horse>)
-		SRC.SYSMESSAGE You can't fish while riding!
+	IF (<SRC.FLAGS> & statf_onhorse|statf_hovering)
+		SRC.SYSMESSAGE You can't fish while riding or flying!
 		return 1
 	ENDIF
 
@@ -460,18 +460,10 @@ ON=@Abort
 	SRC.SYSMESSAGE You pull your line back in and stop fishing.
 
 ON=@Stroke
-	IF (<SRC.FINDLAYER.layer_horse>)
-		SRC.SYSMESSAGE You can't fish while riding!
+	IF (<SRC.FLAGS> & statf_onhorse|statf_hovering)
+		SRC.SYSMESSAGE You can't fish while riding or flying!
 		return 1
 	ENDIF
-	// Damage for Fishing Poles was never active, I add it here anyway.
-	//IF ( <SERV.EXPERIMENTAL>&00002000)		// EF_DamageTools
-	//	IF (<SRC.FINDLAYER.2.HITS> > 0)
-	//		SRC.FINDLAYER.2.DAMAGE <eval <maxhits>*2>,DAM_PHYSICAL,<SRC>
-	//	ELSE
-	//		SRC.FINDLAYER.2.DESTROY
-	//	ENDIF
-	//ENDIF
 
 [ITEMDEF i_memory_fishing_splash]
 ID=i_memory
@@ -529,7 +521,6 @@ ON=@Fail
 
 ON=@Abort
 	SRC.SYSMESSAGE You give up trying to persuade that to move.
-
 
 [SKILL 21]
 DEFNAME=Skill_Hiding
@@ -881,7 +872,7 @@ ADV_RATE=2.5,50.0,200.0
 
 ON=@PreStart
 	IF !(<SRC.ISPLAYER>)
-	 return 1
+		return 1
 	ENDIF
 
 ON=@Stroke
@@ -915,7 +906,7 @@ ON=@Fail
 
 ON=@Abort
 	SRC.SYSMESSAGE You stop applying the bandages.
-	
+
 [SKILL 40]
 DEFNAME=Skill_Swordsmanship
 KEY=Swordsmanship
@@ -989,16 +980,12 @@ ADV_RATE=2.5,50.0,200.0
 VALUES=1,10,50
 RANGE=2
 
-ON=@PreStart
-	IF (<SRC.WEAPON.USESCUR>< 1)
-		SRC.SYSMESSAGE The tool is out of charges.
-		return 1
-	ENDIF
-
 ON=@Success
-	SRC.WEAPON.USESCUR --
-	IF (<SRC.WEAPON.USESCUR>==0)
-		SRC.WEAPON.DESTROY 1
+	IF (<SRC.WEAPON.USESCUR> > 0)
+		SRC.WEAPON.USESCUR --
+		IF (<SRC.WEAPON.USESCUR> < 1)
+			SRC.WEAPON.DESTROY 1
+		ENDIF
 	ENDIF
 
 	
@@ -1007,15 +994,6 @@ ON=@Fail
 
 ON=@Abort
 	SRC.SYSMESSAGE You decide not to chop wood for now.
-
-ON=@Stroke
-	IF ( <SERV.EXPERIMENTAL>&00002000)		// EF_DamageTools
-		IF (<SRC.WEAPON.HITS> > 0)
-			SRC.WEAPON.DAMAGE <eval <maxhits>*2>,DAM_PHYSICAL,<SRC>
-		ELSE
-			SRC.WEAPON.DESTROY 1
-		ENDIF
-	ENDIF
 
 [SKILL 45]
 DEFNAME=Skill_Mining
@@ -1036,22 +1014,22 @@ VALUES=1,10,80
 RANGE=2
 
 ON=@PreStart
-	IF (<SRC.FINDLAYER.layer_horse>)
-		SRC.SYSMESSAGE You can't mine while riding.
+	IF (<SRC.FLAGS> & statf_onhorse|statf_hovering)
+		SRC.SYSMESSAGE You can't dig while riding or flying.
 		return 1
-	ENDIF
-	IF (<SRC.WEAPON.USESCUR>< 1)
-		SRC.SYSMESSAGE The tool is out of charges.
+	ELIF (<SRC.FLAGS> & statf_polymorph)
+		SRC.SYSMESSAGE You can't dig while polymorphed.
 		return 1
 	ENDIF
 
 ON=@Success
-	SRC.WEAPON.USESCUR --
-	IF (<SRC.WEAPON.USESCUR>==0)
-		SRC.WEAPON.DESTROY 1
+	IF (<SRC.WEAPON.USESCUR> > 0)
+		SRC.WEAPON.USESCUR --
+		IF (<SRC.WEAPON.USESCUR> < 1)
+			SRC.WEAPON.DESTROY 1
+		ENDIF
 	ENDIF
 
-	
 ON=@Fail
 	SRC.SYSMESSAGE You loosen some rocks but fail to find any useable ore.
 
@@ -1059,18 +1037,14 @@ ON=@Abort
 	SRC.SYSMESSAGE You decide not to mine for now.
 
 ON=@Stroke
-	IF (<SRC.FINDLAYER.layer_horse>)
-		SRC.SYSMESSAGE You can't mine while riding.
+	IF (<SRC.FLAGS> & statf_onhorse|statf_hovering)
+		SRC.SYSMESSAGE You can't dig while riding or flying.
+		return 1
+	ELIF (<SRC.FLAGS> & statf_polymorph)
+		SRC.SYSMESSAGE You can't dig while polymorphed.
 		return 1
 	ENDIF
-	IF ( <SERV.EXPERIMENTAL>&00002000)		// EF_DamageTools
-		IF (<SRC.WEAPON.HITS> > 0)
-			SRC.WEAPON.DAMAGE <eval <maxhits>*2>,DAM_PHYSICAL,<SRC>	// 2 of 16 chances to receive damage.
-		ELSE
-			SRC.WEAPON.DESTROY
-		ENDIF
-	ENDIF
-	
+
 [SKILL 46]
 DEFNAME=Skill_Meditation
 KEY=Meditation
@@ -1099,25 +1073,24 @@ ON=@Start
 ON=@Success
 	//SRC.f_meditation_setup
 
-
-[function f_meditation_setup]
+[FUNCTION f_meditation_setup]
 // This enables OSI meditation, providing a passive boost to RegenMana everytime and increasing it when the skill is active instead of the old regen-when-active.
-if (<tag0.MeditBonus>)
-	RegenMana -=<tag.MeditBonus>	// Removing old bonus before applying new one.
-endif
-tag.MeditBonus
-if (<tag0.MeditPenalty>)			// No Bonus when wearing plate armor
+IF (<TAG0.MeditBonus>)
+	REGENMANA -= <TAG0.MeditBonus>	// remove old bonus before apply new one
+	TAG.MeditBonus=
+ENDIF
+IF (<TAG0.MeditPenalty>)			// no bonus when wearing plate armor
 	return 0
-endif
-local.baseBonus=<eval ((<Meditation>/10) * 3) + <int>>	// Bonus given by meditation and int
-if (<Meditation> >= 1000)	// GM medit gets a +10% bonus 
-	local.baseBonus += <muldiv <dlocal.baseBonus>,10,100>
-endif
-tag.MeditBonus=<eval 2 + <local.baseBonus> / 40>	// This is the value applied to RegenMana
-if (<action>==Meditation)	// If we are meditating the bonus gets doubled.
-	tag.MeditBonus *=2
-endif
-RegenMana += <tag.MeditBonus>
+ENDIF
+LOCAL.Bonus = <eval ((<MEDITATION> / 10) * 3) + <INT>>
+IF (<MEDITATION> >= 1000)
+	LOCAL.Bonus += <MULDIV <LOCAL.Bonus>,10,100>
+ENDIF
+TAG.MeditBonus = <eval 2 + <LOCAL.Bonus> / 40>
+IF (<ACTION> == skill_meditation)	// double bonus if already meditating
+	TAG.MeditBonus *= 2
+ENDIF
+REGENMANA += <TAG0.MeditBonus>
 
 [SKILL 47]
 DEFNAME=Skill_Stealth
@@ -1136,6 +1109,9 @@ ADV_RATE=10.0,200.0,800.0
 ON=@PreStart
 	IF !(<FLAGS> & statf_invisible|statf_hidden)
 		SYSMESSAGE You must hide first
+		return 1
+	ELIF (<FLAGS> & statf_hovering)
+		SRC.SYSMESSAGE You cannot use this ability while flying.
 		return 1
 	ELIF (<HIDING> < 80.0)
 		SYSMESSAGE You are not hidden well enough.  Become better at hiding.
@@ -1255,7 +1231,7 @@ ON=@Fail
 
 ON=@Abort
 	SRC.SYSMESSAGE You stop casting the spell.
-	
+
 [SKILL 50]
 DEFNAME=Skill_Focus
 KEY=Focus
@@ -1439,17 +1415,16 @@ Mysticism=100.0
 Imbuing=100.0
 Throwing=100.0
 
-
 ON=@ItemEquip
-if (<act.type>==t_armor && !<act.MageArmor>)
-	tag0.MeditPenalty ++
+IF (<ACT.TYPE> == t_armor) && !(<ACT.MageArmor>)
+	TAG0.MeditPenalty ++
 	f_meditation_setup
-endif
+ENDIF
 
-ON=@ItemUnEquip
-if (<act.type>==t_armor && !<act.MageArmor>)
-	tag0.MeditPenalty --
+ON=@ItemUnequip
+IF (<ACT.TYPE> == t_armor) && !(<ACT.MageArmor>)
+	TAG0.MeditPenalty --
 	f_meditation_setup
-endif
+ENDIF
 	
 [EOF]

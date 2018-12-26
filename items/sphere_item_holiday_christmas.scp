@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2017
+// SPHERE by : Menasoft ©1997-2018
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Oct 17, 2017
+// FILE LAST UPDATED: Wednesday, Dec 26, 2018
 //
 VERSION=0.56d
 
@@ -37,9 +37,8 @@ CATEGORY=Christmas
 SUBSECTION=Containers
 DESCRIPTION=Gift Box
 DUPELIST=0232b
-
 ON=@Create
-COLOR=colors_all
+   COLOR=colors_all
 
 [ITEMDEF 0232b]
 //gift box
@@ -275,15 +274,15 @@ ON=@Create
    MOREM=1
 ON=@DClick
    IF !(<MORE2>)
-    MESSAGE Noooo!
-    MESSAGE Please don't eat me... *whimper*
-    MESSAGE Not the face!
-    MESSAGE Ahhhhhh! My foot’s gone!
-    MESSAGE Please. No! I have gingerkids!
-    MESSAGE No, no! I’m really made of poison. Really.
-    MESSAGE Run, run as fast as you can! You can't catch me! I'm the gingerbread man!
-    MORE2=1
-    return 1
+      MESSAGE Noooo!
+      MESSAGE Please don't eat me... *whimper*
+      MESSAGE Not the face!
+      MESSAGE Ahhhhhh! My foot’s gone!
+      MESSAGE Please. No! I have gingerkids!
+      MESSAGE No, no! I’m really made of poison. Really.
+      MESSAGE Run, run as fast as you can! You can't catch me! I'm the gingerbread man!
+      MORE2=1
+      return 1
    ENDIF
 
 [ITEMDEF 02be2]
@@ -902,7 +901,7 @@ NAME=santa statue
 TYPE=t_light_out
 TDATA3=i_statue_santa_east_lit
 CATEGORY=Christmas
-SUBSECTION=Lightsources
+SUBSECTION=Decoration
 DESCRIPTION=Santa Statue (unlit)
 ON=@Create
    MOREZ=29
@@ -915,7 +914,7 @@ NAME=santa statue
 TYPE=t_light_out
 TDATA3=i_statue_santa_south_lit
 CATEGORY=Christmas
-SUBSECTION=Lightsources
+SUBSECTION=Decoration
 DESCRIPTION=Santa Statue (unlit)
 ON=@Create
    MOREZ=29
@@ -928,7 +927,7 @@ NAME=santa statue
 TYPE=t_light_lit
 TDATA3=i_statue_santa_east
 CATEGORY=Christmas
-SUBSECTION=Lightsources
+SUBSECTION=Decoration
 DESCRIPTION=Santa Statue (lit)
 ON=@Create
    MOREZ=29
@@ -941,7 +940,7 @@ NAME=santa statue
 TYPE=t_light_lit
 TDATA3=i_statue_santa_south
 CATEGORY=Christmas
-SUBSECTION=Lightsources
+SUBSECTION=Decoration
 DESCRIPTION=Santa Statue (lit)
 ON=@Create
    MOREZ=29
@@ -1060,7 +1059,7 @@ TDATA3=i_candle_tray_east_lit
 FLIP=1
 CATEGORY=Christmas
 SUBSECTION=Lightsources
-DESCRIPTION=Candle Tray (east)
+DESCRIPTION=Candle Tray (east)(unlit)
 ON=@Create
    MOREZ=2
 
@@ -1093,7 +1092,7 @@ TDATA3=i_candle_tray_south_lit
 FLIP=1
 CATEGORY=Christmas
 SUBSECTION=Lightsources
-DESCRIPTION=Candle Tray (south)
+DESCRIPTION=Candle Tray (south)(unlit)
 ON=@Create
    MOREZ=2
 
@@ -1575,8 +1574,8 @@ DESCRIPTION=Chocolate Nutcracker (wrapped)
 DUPELIST=09c11
 ON=@DClick
    IF (<TOPOBJ> != <SRC>)
-    SRC.SYSMESSAGE You must have the object in your backpack to use it.
-    return 1
+      SRC.SYSMESSAGE You must have the object in your backpack to use it.
+      return 1
    ENDIF
    SRC.EMOTE carefully peel back the wrapper...
    SERV.NEWITEM <eval <DISPIDDEC>+2>
@@ -1879,6 +1878,130 @@ NAME=holiday gift token
 CATEGORY=Christmas
 SUBSECTION=Misc
 DESCRIPTION=Holiday Gift Token
+
+
+[ITEMDEF 0a12e]
+DEFNAME=i_wreath2
+NAME=wreath
+DYE=1
+FLIP=1
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Wreath (2)
+DUPELIST=0a12f
+ON=@Create
+   COLOR=colors_all
+
+[ITEMDEF 0a12f]
+//wreath
+DUPEITEM=0a12e
+
+[ITEMDEF 0a130]
+DEFNAME=i_candlelit_holiday_sign_east
+NAME=candlelit holiday sign
+TYPE=t_light_out
+TEVENTS=e_candlelit_holiday_sign
+DYE=1
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Candlelit Holiday Sign (east)(unlit)
+
+[ITEMDEF 0a131]
+DEFNAME=i_candlelit_holiday_sign_east_lit
+NAME=candlelit holiday sign
+TYPE=t_light_lit
+TEVENTS=e_candlelit_holiday_sign
+DYE=1
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Candlelit Holiday Sign (east)(lit)
+
+[ITEMDEF 0a132]
+//candlelit holiday sign (east)(anim)
+
+[ITEMDEF 0a133]
+//candlelit holiday sign (east)(anim)
+
+[ITEMDEF 0a134]
+DEFNAME=i_candlelit_holiday_sign_south
+NAME=candlelit holiday sign
+TYPE=t_light_out
+TEVENTS=e_candlelit_holiday_sign
+DYE=1
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Candlelit Holiday Sign (south)(unlit)
+
+[ITEMDEF 0a135]
+DEFNAME=i_candlelit_holiday_sign_south_lit
+NAME=candlelit holiday sign
+TYPE=t_light_lit
+TEVENTS=e_candlelit_holiday_sign
+DYE=1
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Candlelit Holiday Sign (south)(lit)
+
+[ITEMDEF 0a136]
+//candlelit holiday sign (south)(anim)
+
+[ITEMDEF 0a137]
+//candlelit holiday sign (south)(anim)
+
+[TYPEDEF e_candlelit_holiday_sign]
+ON=@Create
+   TAG.GumpID=0689
+   MOREZ=1
+ON=@ContextMenuRequest
+   SRC.AddContextEntry 101,1158829	//Change Sign Text
+   SRC.AddContextEntry 102,1155742	//Toggle: On/Off
+ON=@ContextMenuSelect
+   IF (<ARGN> == 101)
+      TAG0.GumpID ++
+      IF (<TAG0.GumpID> > 068c)
+         TAG.GumpID=0689
+      ENDIF
+      IF (<TAG0.GumpID> == 0689)
+         ARGS="Happy Holidays"
+      ELIF (<TAG0.GumpID> == 068a)
+         ARGS="Merry Christmas"
+      ELIF (<TAG0.GumpID> == 068b)
+         ARGS="Season's Greetings"
+      ELIF (<TAG0.GumpID> == 068c)
+         ARGS="Happy Hanukkah"
+      ENDIF
+      SRC.SYSMESSAGE The sign text has been set to: <ARGS>
+   ELIF (<ARGN> == 102)
+      IF (<DISPID> == i_candlelit_holiday_sign_east)
+         DISPID=i_candlelit_holiday_sign_east_lit
+      ELIF (<DISPID> == i_candlelit_holiday_sign_east_lit)
+         DISPID=i_candlelit_holiday_sign_east
+      ELIF (<DISPID> == i_candlelit_holiday_sign_south)
+         DISPID=i_candlelit_holiday_sign_south_lit
+      ELIF (<DISPID> == i_candlelit_holiday_sign_south_lit)
+         DISPID=i_candlelit_holiday_sign_south
+      ENDIF
+      UPDATE
+   ENDIF
+ON=@DClick
+   // This packet just open an generic gump, exactly the same as t_sign_gump. But t_sign_gump can only send
+   // static TDATA2 gump set on ITEMDEF, so to deal with dynamic values the packet must be sent manually
+   SRC.SENDPACKET 08b W13 D<UID> W<TAG0.GumpID> W0 W0
+   return 1
+
+
+[ITEMDEF 0a266]
+DEFNAME=i_book_recipe
+NAME=recipe book
+FLIP=1
+CATEGORY=Christmas
+SUBSECTION=Misc
+DESCRIPTION=Recipe Book
+DUPELIST=0a267
+
+[ITEMDEF 0a267]
+//recipe book
+DUPEITEM=0a266
 
 
 //////////////////
@@ -2216,6 +2339,17 @@ SUBSECTION=Misc
 DESCRIPTION=Card of Semidar (Minax the Enchantress)
 ON=@ClientTooltip
    SRC.ADDCLILOC 1156981	//Minax the Enchantress
+
+[ITEMDEF i_card_semidar_krampus]
+ID=09c14
+NAME=Card of Semidar
+TYPE=t_sign_gump
+TDATA2=09bea
+CATEGORY=Christmas
+SUBSECTION=Misc
+DESCRIPTION=Card of Semidar (Krampus)
+ON=@ClientTooltip
+   SRC.ADDCLILOC 1158799	//Krampus
 
 [ITEMDEF m_sleigh_reindeer_n]
 ID=09dc6

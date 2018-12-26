@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, Oct 21, 2018
+// FILE LAST UPDATED: Wednesday, Dec 26, 2018
 //
 VERSION=0.56d
 
@@ -348,11 +348,7 @@ ON=@Create
 
 
 [ITEMDEF 09dee]
-DEFNAME=i_sculpture_virtue_valor
-NAME=sculpture
-CATEGORY=Vice vs Virtue
-SUBSECTION=Sculptures
-DESCRIPTION=Virtue - Valor
+//sculpture (valor)(anim)
 
 [ITEMDEF 09def]
 //sculpture (valor)(anim)
@@ -364,11 +360,7 @@ DESCRIPTION=Virtue - Valor
 //sculpture (valor)(anim)
 
 [ITEMDEF 09df2]
-DEFNAME=i_sculpture_vice_despise
-NAME=sculpture
-CATEGORY=Vice vs Virtue
-SUBSECTION=Sculptures
-DESCRIPTION=Vice - Despise
+//sculpture (despise)(anim)
 
 [ITEMDEF 09df3]
 //sculpture (despise)(anim)
@@ -380,11 +372,7 @@ DESCRIPTION=Vice - Despise
 //sculpture (despise)(anim)
 
 [ITEMDEF 09df6]
-DEFNAME=i_sculpture_virtue_spirituality
-NAME=sculpture
-CATEGORY=Vice vs Virtue
-SUBSECTION=Sculptures
-DESCRIPTION=Virtue - Spirituality
+//sculpture (spirituality)(anim)
 
 [ITEMDEF 09df7]
 //sculpture (spirituality)(anim)
@@ -396,11 +384,7 @@ DESCRIPTION=Virtue - Spirituality
 //sculpture (spirituality)(anim)
 
 [ITEMDEF 09dfa]
-DEFNAME=i_sculpture_vice_deceit
-NAME=sculpture
-CATEGORY=Vice vs Virtue
-SUBSECTION=Sculptures
-DESCRIPTION=Vice - Deceit
+//sculpture (deceit)(anim)
 
 [ITEMDEF 09dfb]
 //sculpture (deceit)(anim)
@@ -698,6 +682,75 @@ DUPELIST=09e34
 DUPEITEM=09e33
 
 
+[ITEMDEF 09e80]
+DEFNAME=i_sculpture_virtue_valor
+NAME=sculpture
+CATEGORY=Vice vs Virtue
+SUBSECTION=Sculptures
+DESCRIPTION=Virtue - Valor
+ON=@DClick
+   IF (<DISPID> == i_sculpture_virtue_valor)
+      DISPID=09dee
+      SOUND 01e0
+   ELSE
+      DISPID=i_sculpture_virtue_valor
+      SOUND 01e2
+   ENDIF
+   UPDATE
+   return 1
+
+[ITEMDEF 09e81]
+DEFNAME=i_sculpture_vice_despise
+NAME=sculpture
+CATEGORY=Vice vs Virtue
+SUBSECTION=Sculptures
+DESCRIPTION=Vice - Despise
+ON=@DClick
+   IF (<DISPID> == i_sculpture_vice_despise)
+      DISPID=09df2
+      SOUND 01e0
+   ELSE
+      DISPID=i_sculpture_vice_despise
+      SOUND 01e2
+   ENDIF
+   UPDATE
+   return 1
+
+[ITEMDEF 09e82]
+DEFNAME=i_sculpture_virtue_spirituality
+NAME=sculpture
+CATEGORY=Vice vs Virtue
+SUBSECTION=Sculptures
+DESCRIPTION=Virtue - Spirituality
+ON=@DClick
+   IF (<DISPID> == i_sculpture_virtue_spirituality)
+      DISPID=09df6
+      SOUND 01e0
+   ELSE
+      DISPID=i_sculpture_virtue_spirituality
+      SOUND 01e2
+   ENDIF
+   UPDATE
+   return 1
+
+[ITEMDEF 09e83]
+DEFNAME=i_sculpture_vice_deceit
+NAME=sculpture
+CATEGORY=Vice vs Virtue
+SUBSECTION=Sculptures
+DESCRIPTION=Vice - Deceit
+ON=@DClick
+   IF (<DISPID> == i_sculpture_vice_deceit)
+      DISPID=09dfa
+      SOUND 01e0
+   ELSE
+      DISPID=i_sculpture_vice_deceit
+      SOUND 01e2
+   ENDIF
+   UPDATE
+   return 1
+
+
 [ITEMDEF 0a060]
 DEFNAME=i_sculpture_vice_hythloth
 NAME=sculpture
@@ -705,7 +758,13 @@ CATEGORY=Vice vs Virtue
 SUBSECTION=Sculptures
 DESCRIPTION=Vice - Hythloth
 ON=@DClick
-   DISPID=<QVAL (<DISPID>==i_sculpture_vice_hythloth)? 0a061 : i_sculpture_vice_hythloth>
+   IF (<DISPID> == i_sculpture_vice_hythloth)
+      DISPID=0a061
+      SOUND 01e0
+   ELSE
+      DISPID=i_sculpture_vice_hythloth
+      SOUND 01e2
+   ENDIF
    UPDATE
    return 1
 
@@ -728,7 +787,13 @@ CATEGORY=Vice vs Virtue
 SUBSECTION=Sculptures
 DESCRIPTION=Virtue - Honor
 ON=@DClick
-   DISPID=<QVAL (<DISPID>==i_sculpture_virtue_honor)? 0a066 : i_sculpture_virtue_honor>
+   IF (<DISPID> == i_sculpture_virtue_honor)
+      DISPID=0a066
+      SOUND 01e0
+   ELSE
+      DISPID=i_sculpture_virtue_honor
+      SOUND 01e2
+   ENDIF
    UPDATE
    return 1
 
@@ -751,7 +816,13 @@ CATEGORY=Vice vs Virtue
 SUBSECTION=Sculptures
 DESCRIPTION=Vice - Destard
 ON=@DClick
-   DISPID=<QVAL (<DISPID>==i_sculpture_vice_destard)? 0a06b : i_sculpture_vice_destard>
+   IF (<DISPID> == i_sculpture_vice_destard)
+      DISPID=0a06b
+      SOUND 01e0
+   ELSE
+      DISPID=i_sculpture_vice_destard
+      SOUND 01e2
+   ENDIF
    UPDATE
    return 1
 
@@ -774,7 +845,13 @@ CATEGORY=Vice vs Virtue
 SUBSECTION=Sculptures
 DESCRIPTION=Virtue - Sacrifice
 ON=@DClick
-   DISPID=<QVAL (<DISPID>==i_sculpture_virtue_sacrifice)? 0a070 : i_sculpture_virtue_sacrifice>
+   IF (<DISPID> == i_sculpture_virtue_sacrifice)
+      DISPID=0a070
+      SOUND 01e0
+   ELSE
+      DISPID=i_sculpture_virtue_sacrifice
+      SOUND 01e2
+   ENDIF
    UPDATE
    return 1
 
@@ -1456,7 +1533,13 @@ CATEGORY=Vice vs Virtue
 SUBSECTION=Sculptures
 DESCRIPTION=Virtue - Honesty
 ON=@DClick
-   DISPID=<QVAL (<DISPID>==i_sculpture_virtue_honesty)? 0a253 : i_sculpture_virtue_honesty>
+   IF (<DISPID> == i_sculpture_virtue_honesty)
+      DISPID=0a253
+      SOUND 01e0
+   ELSE
+      DISPID=i_sculpture_virtue_honesty
+      SOUND 01e2
+   ENDIF
    UPDATE
    return 1
 
@@ -1479,7 +1562,13 @@ CATEGORY=Vice vs Virtue
 SUBSECTION=Sculptures
 DESCRIPTION=Virtue - Compassion
 ON=@DClick
-   DISPID=<QVAL (<DISPID>==i_sculpture_virtue_compassion)? 0a258 : i_sculpture_virtue_compassion>
+   IF (<DISPID> == i_sculpture_virtue_compassion)
+      DISPID=0a258
+      SOUND 01e0
+   ELSE
+      DISPID=i_sculpture_virtue_compassion
+      SOUND 01e2
+   ENDIF
    UPDATE
    return 1
 
@@ -1502,7 +1591,13 @@ CATEGORY=Vice vs Virtue
 SUBSECTION=Sculptures
 DESCRIPTION=Vice - Wrong
 ON=@DClick
-   DISPID=<QVAL (<DISPID>==i_sculpture_vice_wrong)? 0a25d : i_sculpture_vice_wrong>
+   IF (<DISPID> == i_sculpture_vice_wrong)
+      DISPID=0a25d
+      SOUND 01e0
+   ELSE
+      DISPID=i_sculpture_vice_wrong
+      SOUND 01e2
+   ENDIF
    UPDATE
    return 1
 
@@ -1525,7 +1620,13 @@ CATEGORY=Vice vs Virtue
 SUBSECTION=Sculptures
 DESCRIPTION=Vice - Shame
 ON=@DClick
-   DISPID=<QVAL (<DISPID>==i_sculpture_vice_shame)? 0a262 : i_sculpture_vice_shame>
+   IF (<DISPID> == i_sculpture_vice_shame)
+      DISPID=0a262
+      SOUND 01e0
+   ELSE
+      DISPID=i_sculpture_vice_shame
+      SOUND 01e2
+   ENDIF
    UPDATE
    return 1
 
