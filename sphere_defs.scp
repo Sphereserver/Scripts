@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Thursday, Nov 1, 2018
+// FILE LAST UPDATED: Saturday, Dec 29, 2018
 //
 VERSION=0.56d
 
@@ -771,33 +771,28 @@ statf_onhorse           080000000   // mounted on horseback.
 
 [DEFNAME attr_flags]
 // apply to items
-attr_identified		00001   // this is the identified name. ???
-attr_decay			00002   // timer currently set to decay.
-attr_newbie			00004   // not lost on death or sellable ?
-attr_move_always	00008   // always movable (else default as stored in client) (even if mul says not movable) never decays !
-attr_move_never		00010   // never movable (else default as stored in client) never decays !
-attr_magic			00020   // don't set this while worn! this item is magic as apposed to marked or markable.
-attr_owned			00040   // this is owned by the town. you need to steal it. never decays !
-attr_invis			00080   // gray hidden item (to gm's or owners?)
-attr_cursed			00100
-attr_cursed2		00200   // cursed damned unholy
-attr_blessed		00400
-attr_blessed2		00800   // blessed sacred holy
-attr_forsale		01000   // for sale on a vendor.
-attr_stolen			02000   // the item is hot. m_uidlink = previous owner.
-attr_can_decay		04000   // this item can decay. but it would seem that it would not (attr_move_never etc)
-attr_static			08000   // worldforge merge marker. (not used)
-attr_exceptional	010000		// is exceptional
-attr_enchanted		020000		// is enchanted
-attr_imbued			040000		// is imbued
-attr_questitem		080000	// is quest item
-attr_insured		0100000	// Is insured
-attr_nodroptrade	0200000	// no-drop/trade
-attr_artifact		0400000	// artifact
-attr_lockeddown		0800000	// locked down
-attr_secure			01000000	// secured
-attr_reforged		02000000	// Is Runic Reforged.
-attr_opened			04000000	// Is Door Opened (only used when DOOROPENID is set on the door)
+attr_identified          00000001   // Item got identified by ItemID skill and will reveal its magic properties on name (obsolete, only used when client tooltip feature is disabled)
+attr_decay               00000002   // Item dropped on ground will decay after some time
+attr_newbie              00000004   // Item will stay on character body when die (same as attr_blessed)
+attr_move_always         00000008   // Will turn static item into movable item
+attr_move_never          00000010   // Will turn movable item into static item
+attr_magic               00000020   // Item might have some magic effects when equipped (eg: spell memories, armors, weapons). DON'T SET THIS WHILE WORN!
+attr_owned               00000040   // Item is owned by someone (item LINK = owner UID)
+attr_invis               00000080   // Item is invisible (can be only seen by GMs and chars specified on TAG.SeenBy_[CharUID])
+attr_cursed              00000100   // Item will fall to character corpse when die (can't be blessed/insured)
+attr_blessed             00000400   // Item will stay on character body when die
+attr_static              00008000   // Item will be locked on ground and must be saved separately on world static save (WorldForge merge marker)
+attr_exceptional         00010000   // Item is exceptional
+attr_enchanted           00020000   // Item is enchanted
+attr_imbued              00040000   // Item is imbued
+attr_questitem           00080000   // Item is used on quests
+attr_insured             00100000   // Item is insured (same as attr_blessed, but the effect only lasts for a single death)
+attr_nodroptrade         00200000   // Item can't be dropped on ground or trade window
+attr_norepair            00400000   // Item can't be repaired
+attr_lockeddown          00800000   // Item is locked down on house
+attr_secure              01000000   // Item is locked down and secured on house
+attr_reforged            02000000   // Item is runic reforged
+attr_opened              04000000   // Door is opened (only used when DOOROPENID is set on the door)
 
 [DEFNAME can_flags]
 // monster "can" type flags.
