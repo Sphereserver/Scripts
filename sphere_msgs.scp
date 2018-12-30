@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Dec 18, 2018
+// FILE LAST UPDATED: Sunday, Dec 30, 2018
 //
 VERSION=0.56d
 
@@ -222,6 +222,7 @@ EMOTE_DEF_UNICODE	0
 //hiding_success				"You have hidden yourself well"
 //hiding_toolit					"You are too well lit to hide"
 //inscription_fail				"You have no blank scrolls"
+//item_cantdroptrade			"That item cannot be dropped or traded."
 //item_magic					" It is magical."
 //item_newbie					" It has a slight magical aura."
 //item_repair					" It is not repairable."
@@ -797,20 +798,15 @@ EMOTE_DEF_UNICODE	0
 //reach_unable					"You can't use this where it is."
 //removetraps_reach				"You can't reach it."
 //removetraps_witem				"You should use this skill to disable traps"
-//repair_1						"repair"
-//repair_2						"really damage"
-//repair_3						"slightly damage"
-//repair_4						"fail to repair"
-//repair_5						"destroy"
-//repair_anvil					"You must be near an anvil to repair"
-//repair_full					"The item is already in full repair."
+//repair_anvil					"You must be near an anvil"
+//repair_backpack				"The item must be in your backpack to repair it."
+//repair_break					"That item has been repaired many times, and will break if repairs are attempted again."
+//repair_fail					"You fail to repair the item."
+//repair_full					"That item is in full repair"
 //repair_lack_1					"You lack %s to repair this."
 //repair_lack_2					"components"
-//repair_msg					"%s the %s"
-//repair_not					"The item is not repairable"
-//repair_reach					"Can't repair this where it is !"
-//repair_unk					"You have trouble figuring out the item."
-//repair_worn					"Can't repair an item being worn !"
+//repair_not					"That item cannot be repaired."
+//repair_success				"You repair the item."
 //resistmagic					"You feel yourself resisting magical energy."
 //server_resync_failed			"Resync FAILED!"
 //server_resync_start			"Server is being PAUSED for Resync"
