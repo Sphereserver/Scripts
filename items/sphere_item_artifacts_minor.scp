@@ -1,5 +1,5 @@
 ﻿//****************************************************************************
-// SPHERE by : Menasoft ©1997-2017
+// SPHERE by : Menasoft ©1997-2018
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, May 8, 2017
+// FILE LAST UPDATED: Monday, Dec 31, 2018
 //
 VERSION=0.56d
 
@@ -26,13 +26,12 @@ SUBSECTION=Minor Artifacts
 DESCRIPTION=Alchemist's Bauble
 ON=@Create
    COLOR=0290
-   ATTR=attr_magic|attr_identified
 
 [ITEMDEF i_arctic_death_dealer]
 ID=i_mace_war
 NAME=Arctic Death Dealer
 HitHarm=33
-HitLowerAtk=40
+//HitLowerAtk=40
 IncreaseSwingSpeed=20
 IncreaseDam=40
 RESCOLD=10
@@ -44,7 +43,6 @@ SUBSECTION=Minor Artifacts
 DESCRIPTION=Arctic Death Dealer
 ON=@Create
    COLOR=0480
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_blaze_death]
@@ -64,7 +62,6 @@ SUBSECTION=Minor Artifacts
 DESCRIPTION=Blaze of Death
 ON=@Create
    COLOR=0501
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_bow_juka_king]
@@ -81,7 +78,6 @@ SUBSECTION=Minor Artifacts
 DESCRIPTION=Bow of the Juka King
 ON=@Create
    COLOR=0460
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_burglar_bandana]
@@ -105,20 +101,14 @@ SUBSECTION=Minor Artifacts
 DESCRIPTION=Burglar's Bandana
 ON=@Create
    COLOR={010 1 058c 1}
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_candelabra_souls]
 ID=i_candelabra2_lit
-TYPE=t_normal
 NAME=Candelabra of Souls
 CATEGORY=Artifacts
 SUBSECTION=Minor Artifacts
 DESCRIPTION=Candelabra of Souls
-ON=@Create
-   ATTR=attr_magic|attr_identified
-ON=@ClientTooltip
-   SRC.ADDCLILOC 1061078,<INSTANCES>
 
 [ITEMDEF i_captain_quacklebush_cutlass]
 ID=i_cutlass
@@ -135,7 +125,6 @@ SUBSECTION=Minor Artifacts
 DESCRIPTION=Captain Quacklebush's Cutlass
 ON=@Create
    COLOR=066c
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_cavorting_club]
@@ -156,7 +145,6 @@ SUBSECTION=Minor Artifacts
 DESCRIPTION=Cavorting Club
 ON=@Create
    COLOR=0593
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_cold_blood]
@@ -173,7 +161,6 @@ SUBSECTION=Minor Artifacts
 DESCRIPTION=Cold Blood
 ON=@Create
    COLOR=04f2
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_dread_pirate_hat]
@@ -186,14 +173,12 @@ RESFIRE=5
 RESCOLD=14
 RESPOISON=10
 RESENERGY=5
-TAG.NotElf=1
 TEVENTS=t_equipitem
 CATEGORY=Artifacts
 SUBSECTION=Minor Artifacts
 DESCRIPTION=Dread Pirate Hat
 ON=@Create
    COLOR=0497
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
    DORAND 5
       BonusSkill1=Archery
@@ -208,7 +193,7 @@ ON=@Create
 ID=i_spear_short
 NAME=Enchanted Titan Leg Bone
 HitLightning=40
-HitLowerDef=40
+//HitLowerDef=40
 IncreaseHitChance=10
 IncreaseDam=20
 RESPHYSICAL=10
@@ -219,7 +204,6 @@ SUBSECTION=Minor Artifacts
 DESCRIPTION=Enchanted Titan Leg Bone
 ON=@Create
    COLOR=08a5
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_ghost_ship_anchor]
@@ -230,9 +214,6 @@ SUBSECTION=Minor Artifacts
 DESCRIPTION=Ghost Ship Anchor
 ON=@Create
    COLOR=047e
-   ATTR=attr_magic|attr_identified
-ON=@ClientTooltip
-   SRC.ADDCLILOC 1061078,<INSTANCES>
 
 [ITEMDEF i_gloves_pugilist]
 ID=i_leather_gloves
@@ -252,37 +233,23 @@ SUBSECTION=Minor Artifacts
 DESCRIPTION=Gloves of the Pugilist
 ON=@Create
    COLOR=06d1
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_gold_bricks]
 ID=01beb
 NAME=gold bricks
-TYPE=t_normal
 CATEGORY=Artifacts
 SUBSECTION=Minor Artifacts
 DESCRIPTION=Gold Bricks
-ON=@Create
-   ATTR=attr_magic|attr_identified
-ON=@ClientTooltip
-   SRC.ADDCLILOC 1061078,<INSTANCES>
 
 [ITEMDEF i_gwennos_harp]
 ID=i_harp_large
 NAME=Gwenno's Harp
-TAG.SlayerGroup=REPOND,REPTILE
 CATEGORY=Artifacts
 SUBSECTION=Minor Artifacts
 DESCRIPTION=Gwenno's Harp
 ON=@Create
    COLOR=047e
-   ATTR=attr_magic|attr_identified
-ON=@ClientToolTip
-   SRC.ADDCLILOC 1061078,<INSTANCES>
-   IF (<ATTR>&attr_identified)
-      SRC.ADDCLILOC 1060472
-      SRC.ADDCLILOC 1060473
-   ENDIF
 
 [ITEMDEF i_helm_swiftness]
 ID=i_helm_winged
@@ -303,7 +270,6 @@ SUBSECTION=Minor Artifacts
 DESCRIPTION=Helm of Swiftness
 ON=@Create
    COLOR=0592
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_heart_lion]
@@ -324,25 +290,16 @@ SUBSECTION=Minor Artifacts
 DESCRIPTION=Heart of the Lion
 ON=@Create
    COLOR=0501
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_iolos_lute]
 ID=i_lute
 NAME=Iolo's Lute
-TAG.SlayerGroup=DEMON,UNDEAD
 CATEGORY=Artifacts
 SUBSECTION=Minor Artifacts
 DESCRIPTION=Iolo's Lute
 ON=@Create
    COLOR=047e
-   ATTR=attr_magic|attr_identified
-ON=@ClientToolTip
-   SRC.ADDCLILOC 1061078,<INSTANCES>
-   IF (<ATTR> & attr_identified)
-      SRC.ADDCLILOC 1060479
-      SRC.ADDCLILOC 1060460
-   ENDIF
 
 [ITEMDEF i_luna_lance]
 ID=i_lance
@@ -360,7 +317,6 @@ SUBSECTION=Minor Artifacts
 DESCRIPTION=Luna Lance
 ON=@Create
    COLOR=047e
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_night_kiss]
@@ -377,7 +333,6 @@ SUBSECTION=Minor Artifacts
 DESCRIPTION=Night's Kiss
 ON=@Create
    COLOR=0455
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_nox_ranger_heavy_crossbow]
@@ -396,7 +351,6 @@ SUBSECTION=Minor Artifacts
 DESCRIPTION=Nox Ranger's Heavy Crossbow
 ON=@Create
    COLOR=058c
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_orcish_visage]
@@ -410,14 +364,12 @@ RESFIRE=5
 RESCOLD=3
 RESPOISON=3
 RESENERGY=5
-TAG.NotElf=1
 TEVENTS=t_equipitem
 CATEGORY=Artifacts
 SUBSECTION=Minor Artifacts
 DESCRIPTION=Orcish Visage
 ON=@Create
    COLOR=0592
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_pads_of_cu_sidhe]
@@ -431,20 +383,14 @@ TEVENTS=t_equipitem
 ReqStr=10
 ON=@Create
    COLOR=047e
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_phillip_wooden_steed]
 ID=03ffe
 NAME=Phillip's Wooden Steed
-TYPE=t_normal
 CATEGORY=Artifacts
 SUBSECTION=Minor Artifacts
 DESCRIPTION=Phillip's Wooden Steed
-ON=@Create
-   ATTR=attr_magic|attr_identified
-ON=@ClientToolTip
-   SRC.ADDCLILOC 1061078,<INSTANCES>
 
 [ITEMDEF i_pixie_swatter]
 ID=i_scepter
@@ -462,7 +408,6 @@ SUBSECTION=Minor Artifacts
 DESCRIPTION=Pixie Swatter
 ON=@Create
    COLOR=08a
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_polar_bear_mask]
@@ -476,28 +421,22 @@ RESFIRE=3
 RESCOLD=21
 RESPOISON=4
 RESENERGY=4
-TAG.NotElf=1
 TEVENTS=t_equipitem
 CATEGORY=Artifacts
 SUBSECTION=Minor Artifacts
 DESCRIPTION=Polar Bear Mask
 ON=@Create
    COLOR={047e 1 0481 1}
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_seahorse_statuette]
 ID=i_seahorse
 NAME=Seahorse Statuette
-TYPE=t_normal
 CATEGORY=Artifacts
 SUBSECTION=Minor Artifacts
 DESCRIPTION=Seahorse Statuette
 ON=@Create
    COLOR={0 1 0482 1 0489 1 0495 1 04f2 1}
-   ATTR=attr_magic|attr_identified
-ON=@ClientToolTip
-   SRC.ADDCLILOC 1061078,<INSTANCES>
 
 [ITEMDEF i_art_shield_invul]
 ID=i_shield_order
@@ -513,21 +452,16 @@ SUBSECTION=Minor Artifacts
 DESCRIPTION=Shield of Invulnerability
 ON=@Create
    COLOR=04f2
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_ship_model_hmscape]
 ID=i_model_ship
 NAME=Ship Model of the H.M.S. Cape
-TYPE=t_normal
 CATEGORY=Artifacts
 SUBSECTION=Minor Artifacts
 DESCRIPTION=Ship Model of the H.M.S. Cape
 ON=@Create
    COLOR=037b
-   ATTR=attr_magic|attr_identified
-ON=@ClientToolTip
-   SRC.ADDCLILOC 1061078,<INSTANCES>
 
 [ITEMDEF i_staff_of_power]
 ID=i_staff_black
@@ -544,21 +478,16 @@ SUBSECTION=Minor Artifacts
 DESCRIPTION=Staff of Power
 ON=@Create
    COLOR={04f2 1 04ef 1}
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_admirals_hearty_rum]
 ID=i_bottle_liquor
 NAME=The Admiral's Hearty Rum
-TYPE=t_normal
 CATEGORY=Artifacts
 SUBSECTION=Minor Artifacts
 DESCRIPTION=The Admiral's Hearty Rum
 ON=@Create
    COLOR=066c
-   ATTR=attr_magic|attr_identified
-ON=@ClientToolTip
-   SRC.ADDCLILOC 1061078,<INSTANCES>
 
 [ITEMDEF i_violet_courage]
 ID=i_armor_female_plate
@@ -578,7 +507,6 @@ SUBSECTION=Minor Artifacts
 DESCRIPTION=Staff of Power
 ON=@Create
    COLOR={0486 1 0490 1}
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 ON=@EquipTest
    IF <f_isfemale>
@@ -600,7 +528,6 @@ SUBSECTION=Minor Artifacts
 DESCRIPTION=Wrath of the Dryad
 ON=@Create
    COLOR=029c
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_fire_horn]
@@ -616,7 +543,6 @@ SUBSECTION=Minor Artifacts
 DESCRIPTION=Fire Horn
 ON=@Create
    COLOR=0466
-   ATTR=attr_magic|attr_identified
 ON=@DClick
    IF (<CONT>)
       IF (<TOPOBJ.UID>==<SRC>)
@@ -631,7 +557,7 @@ ON=@DClick
                            DAMAGE <EVAL ((<SRC.Musicianship> / <LOCAL.DIV>) + (<SRC.Provocation> / <LOCAL.DIV>) + (<SRC.Peacemaking> / <LOCAL.DIV>) + (<SRC.Enticement> / <LOCAL.DIV>)) - 5> <DEF.dam_fire> <SRC>
                         ENDIF
                      ENDIF
-                  END
+                  ENDFOR
                   SERV.NEWITEM=i_fire_horn_timer
                   NEW.CONT=<SRC>
                   NEW.TIMER=7
@@ -671,7 +597,6 @@ SUBSECTION=Minor Artifacts
 DESCRIPTION=Aegis Of Grace
 ON=@Create
    COLOR=047e
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_boomstick]
@@ -687,7 +612,6 @@ SUBSECTION=Minor Artifacts
 DESCRIPTION=Boomstick
 ON=@Create
    COLOR=025
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_bonesmasher]
@@ -702,7 +626,6 @@ SUBSECTION=Minor Artifacts
 DESCRIPTION=Bonesmasher
 ON=@Create
    COLOR=0482
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_raeds_glory]
@@ -718,7 +641,6 @@ SUBSECTION=Minor Artifacts
 DESCRIPTION=Raed's Glory
 ON=@Create
    COLOR=01e6
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_wildfire_bow]
@@ -733,7 +655,6 @@ SUBSECTION=Minor Artifacts
 DESCRIPTION=Wildfire Bow
 ON=@Create
    COLOR=0489
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_windsong]
@@ -747,7 +668,6 @@ SUBSECTION=Minor Artifacts
 DESCRIPTION=Windsong
 ON=@Create
    COLOR=0f7
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_talon_bite]
@@ -763,7 +683,6 @@ SUBSECTION=Minor Artifacts
 DESCRIPTION=Talon Bite
 ON=@Create
    COLOR=047e
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_soul_seeker]
@@ -780,7 +699,6 @@ SUBSECTION=Minor Artifacts
 DESCRIPTION=Soul Seeker
 ON=@Create
    COLOR=038c
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_blade_dance]
@@ -795,7 +713,6 @@ SUBSECTION=Minor Artifacts
 DESCRIPTION=Blade Dance
 ON=@Create
    COLOR=066c
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_dreads_revenge]
@@ -809,7 +726,6 @@ SUBSECTION=Minor Artifacts
 DESCRIPTION=Dread's Revenge
 ON=@Create
    COLOR=03a
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_flesh_ripper]
@@ -826,7 +742,6 @@ SUBSECTION=Minor Artifacts
 DESCRIPTION=Flesh Ripper
 ON=@Create
    COLOR=0341
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_robe_equinox]
@@ -840,10 +755,7 @@ SUBSECTION=Minor Artifacts
 DESCRIPTION=Robe of the Equinox
 ON=@Create
    COLOR=0d6
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
-ON=@ClientToolTip
-   SRC.ADDCLILOC 1075086
 
 [ITEMDEF i_robe_eclipse]
 ID=i_robe
@@ -855,7 +767,6 @@ SUBSECTION=Minor Artifacts
 DESCRIPTION=Robe of the Eclipse
 ON=@Create
    COLOR=0486
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_righteous_anger]
@@ -870,7 +781,6 @@ SUBSECTION=Minor Artifacts
 DESCRIPTION=Righteous Anger
 ON=@Create
    COLOR=0284
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_bloodwood_spirit]
@@ -885,7 +795,6 @@ SUBSECTION=Minor Artifacts
 DESCRIPTION=Bloodwood Spirit
 ON=@Create
    COLOR=027
-   ATTR=attr_magic|attr_identified
 
 [ITEMDEF i_brightsight_lenses]
 ID=i_elven_glasses
@@ -898,7 +807,6 @@ SUBSECTION=Minor Artifacts
 DESCRIPTION=Brightsight Lenses
 ON=@Create
    COLOR=0501
-   ATTR=attr_magic|attr_identified
 
 [ITEMDEF i_crimson_cincture]
 ID=i_talisman4
@@ -911,7 +819,6 @@ SUBSECTION=Minor Artifacts
 DESCRIPTION=Crimson Cincture
 ON=@Create
    COLOR=0485
-   ATTR=attr_magic|attr_identified
 
 [ITEMDEF i_fey_leggings]
 ID=i_chainmail_leggings
@@ -924,10 +831,7 @@ CATEGORY=Artifacts
 SUBSECTION=Minor Artifacts
 DESCRIPTION=Fey Leggings
 ON=@Create
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
-ON=@ClientToolTip
-   SRC.ADDCLILOC 1075086
 
 [ITEMDEF i_totem_of_void]
 ID=i_talisman4
@@ -940,13 +844,12 @@ SUBSECTION=Minor Artifacts
 DESCRIPTION=Totem of the Void
 ON=@Create
    COLOR=02d0
-   ATTR=attr_magic|attr_identified
    DORAND 5
-      RESCOLD=2
-      RESENERGY=2
-      RESFIRE=2
       RESPHYSICAL=2
+      RESFIRE=2
+      RESCOLD=2
       RESPOISON=2
+      RESENERGY=2
    ENDDO
 
 [EOF]

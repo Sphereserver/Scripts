@@ -1,5 +1,5 @@
 ﻿//****************************************************************************
-// SPHERE by : Menasoft ©1997-2017
+// SPHERE by : Menasoft ©1997-2018
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, May 8, 2017
+// FILE LAST UPDATED: Monday, Dec 31, 2018
 //
 VERSION=0.56d
 
@@ -19,45 +19,44 @@ CATEGORY=Artifacts
 SUBSECTION=Lesser Treasures of Tokuno
 DESCRIPTION=Ancient Urn
 ON=@Create
-   ATTR=attr_magic|attr_identified
    DORAND 35
-      NAME=Akira
-      NAME=Avaniaga
-      NAME=Aya
-      NAME=Chie
-      NAME=Emiko
-      NAME=Fumiyo
-      NAME=Gennai
-      NAME=Gennosuke
-      NAME=Genjo
-      NAME=Hamato
-      NAME=Harumi
-      NAME=Ikuyo
-      NAME=Juri
-      NAME=Kaori
-      NAME=Kaoru
-      NAME=Kiyomori
-      NAME=Mayako
-      NAME=Motoki
-      NAME=Musashi
-      NAME=Nami
-      NAME=Nobukazu
-      NAME=Roku
-      NAME=Romi
-      NAME=Ryo
-      NAME=Sanzo
-      NAME=Sakamae
-      NAME=Satoshi
-      NAME=Takamori
-      NAME=Takuro
-      NAME=Teruyo
-      NAME=Toshiro
-      NAME=Yago
-      NAME=Yeijiro
-      NAME=Yoshi
-      NAME=Zeshin
+      ARGS=Akira
+      ARGS=Avaniaga
+      ARGS=Aya
+      ARGS=Chie
+      ARGS=Emiko
+      ARGS=Fumiyo
+      ARGS=Gennai
+      ARGS=Gennosuke
+      ARGS=Genjo
+      ARGS=Hamato
+      ARGS=Harumi
+      ARGS=Ikuyo
+      ARGS=Juri
+      ARGS=Kaori
+      ARGS=Kaoru
+      ARGS=Kiyomori
+      ARGS=Mayako
+      ARGS=Motoki
+      ARGS=Musashi
+      ARGS=Nami
+      ARGS=Nobukazu
+      ARGS=Roku
+      ARGS=Romi
+      ARGS=Ryo
+      ARGS=Sanzo
+      ARGS=Sakamae
+      ARGS=Satoshi
+      ARGS=Takamori
+      ARGS=Takuro
+      ARGS=Teruyo
+      ARGS=Toshiro
+      ARGS=Yago
+      ARGS=Yeijiro
+      ARGS=Yoshi
+      ARGS=Zeshin
    ENDDO
-   NAME=Ancient Urn of <NAME>
+   NAME .= " of <ARGS>"
 
 [ITEMDEF i_chest_of_heirlooms]
 ID=i_wooden_foot_locker
@@ -67,8 +66,6 @@ TDATA1=010b
 CATEGORY=Artifacts
 SUBSECTION=Lesser Treasures of Tokuno
 DESCRIPTION=Chest of Heirlooms
-ON=@Create
-   ATTR=attr_magic|attr_identified
 
 [ITEMDEF i_honorable_swords]
 ID=i_display_swords_black
@@ -76,8 +73,6 @@ NAME=Honorable Swords
 CATEGORY=Artifacts
 SUBSECTION=Lesser Treasures of Tokuno
 DESCRIPTION=Honorable Swords
-ON=@Create
-   ATTR=attr_magic|attr_identified
 
 [ITEMDEF i_lesser_pigments_of_tokuno]
 ID=0eff
@@ -88,7 +83,6 @@ DESCRIPTION=Pigments of Tokuno (Lesser)
 ON=@ClientTooltip
    SRC.ADDCLILOC 1060584,<dMORE1>	//uses remaining: ~1_val~
 ON=@Create
-   ATTR=attr_magic|attr_identified
    MORE1=1
    DORAND 10
       COLOR=05		//Chaos Blue
@@ -135,7 +129,6 @@ DESCRIPTION=Pigments of Tokuno (Greater)
 ON=@ClientTooltip
    SRC.ADDCLILOC 1060584,<dMORE1>	//uses remaining: ~1_val~
 ON=@Create
-   ATTR=attr_magic|attr_identified
    MORE1=1
    DORAND 19
       COLOR=021		//Berserker Red
@@ -194,13 +187,11 @@ BonusStam=5
 RegenStam=5
 BonusSkill1=AnimalLore
 BonusSkill1Amt=5.0
-TAG.NotElf=1
 TEVENTS=t_equipitem
 CATEGORY=Artifacts
 SUBSECTION=Lesser Treasures of Tokuno
 DESCRIPTION=Ancient Farmer Kasa
 ON=@Create
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_ancient_samurai_do]
@@ -219,7 +210,6 @@ CATEGORY=Artifacts
 SUBSECTION=Lesser Treasures of Tokuno
 DESCRIPTION=Ancient Samurai Do
 ON=@Create
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_arms_of_tactical_excellence]
@@ -238,7 +228,6 @@ CATEGORY=Artifacts
 SUBSECTION=Lesser Treasures of Tokuno
 DESCRIPTION=Arms of Tactical Excellence
 ON=@Create
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_black_lotus_hood]
@@ -251,23 +240,21 @@ RESPOISON=11
 RESENERGY=11
 IncreaseHitChance=6
 LowerManaCost=6
-TAG.NotElf=1
 TEVENTS=t_equipitem
 CATEGORY=Artifacts
 SUBSECTION=Lesser Treasures of Tokuno
 DESCRIPTION=Black Lotus Hood
 ON=@Create
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_daimyo_helm]
 ID=i_helm_kabuto
 NAME=Daimyo's Helm
+RESPHYSICAL=6
 RESFIRE=2
 RESCOLD=10
 RESPOISON=2
 RESENERGY=3
-TAG.PhysicalResist=6
 IncreaseSwingSpeed=10
 SelfRepair=3
 MageArmor=1
@@ -276,7 +263,6 @@ CATEGORY=Artifacts
 SUBSECTION=Lesser Treasures of Tokuno
 DESCRIPTION=Daimyo's Helm
 ON=@Create
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_darkened_sky]
@@ -292,7 +278,6 @@ CATEGORY=Artifacts
 SUBSECTION=Greater Treasures of Tokuno
 DESCRIPTION=Darkened Sky
 ON=@Create
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_demon_forks]
@@ -309,7 +294,6 @@ CATEGORY=Artifacts
 SUBSECTION=Lesser Treasures of Tokuno
 DESCRIPTION=Demon Forks
 ON=@Create
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_dragon_nunchaku]
@@ -326,7 +310,6 @@ CATEGORY=Artifacts
 SUBSECTION=Lesser Treasures of Tokuno
 DESCRIPTION=Dragon Nunchaku
 ON=@Create
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_exiler]
@@ -342,7 +325,6 @@ CATEGORY=Artifacts
 SUBSECTION=Lesser Treasures of Tokuno
 DESCRIPTION=Exiler
 ON=@Create
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_flute_renewal]
@@ -352,7 +334,6 @@ CATEGORY=Artifacts
 SUBSECTION=Lesser Treasures of Tokuno
 DESCRIPTION=Flute of Renewal
 ON=@Create
-   ATTR=attr_magic|attr_identified
    DORAND 24
       TAG.SlayerGroup=REPOND
       TAG.SlayerGroup=OGRE
@@ -400,7 +381,6 @@ CATEGORY=Artifacts
 SUBSECTION=Lesser Treasures of Tokuno
 DESCRIPTION=Gloves of the Sun
 ON=@Create
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_hanzos_bow]
@@ -417,7 +397,6 @@ CATEGORY=Artifacts
 SUBSECTION=Lesser Treasures of Tokuno
 DESCRIPTION=Hanzo's Bow
 ON=@Create
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_kasa_of_the_rajin]
@@ -429,13 +408,11 @@ RESFIRE=17
 RESCOLD=21
 RESPOISON=17
 RESENERGY=17
-TAG.NotElf=1
 TEVENTS=t_equipitem
 CATEGORY=Artifacts
 SUBSECTION=Greater Treasures of Tokuno
 DESCRIPTION=Kasa of the Raj-In
 ON=@Create
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_legs_of_stability]
@@ -455,7 +432,6 @@ CATEGORY=Artifacts
 SUBSECTION=Lesser Treasures of Tokuno
 DESCRIPTION=Legs of Stability
 ON=@Create
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_peasant_bokuto]
@@ -463,7 +439,7 @@ ID=i_bokuto
 NAME=Peasant's Bokuto
 SelfRepair=3
 TAG.SlayerGroup=SNAKE
-HitLowerDef=30
+//HitLowerDef=30
 IncreaseSwingSpeed=10
 IncreaseDam=35
 DamPhysical=100
@@ -472,7 +448,6 @@ CATEGORY=Artifacts
 SUBSECTION=Lesser Treasures of Tokuno
 DESCRIPTION=Peasant's Bokuto
 ON=@Create
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_pilfered_dancer_fans]
@@ -490,7 +465,6 @@ CATEGORY=Artifacts
 SUBSECTION=Lesser Treasures of Tokuno
 DESCRIPTION=Pilfered Dancer Fans
 ON=@Create
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_rune_beetle_carapace]
@@ -511,13 +485,12 @@ CATEGORY=Artifacts
 SUBSECTION=Greater Treasures of Tokuno
 DESCRIPTION=Rune Beetle Carapace
 ON=@Create
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_stormgrip]
 ID=i_ringmail_gloves
 NAME=Stormgrip
-BonusINT=8
+BonusInt=8
 LUCK=125
 IncreaseDam=25
 RESPHYSICAL=10
@@ -530,7 +503,6 @@ CATEGORY=Artifacts
 SUBSECTION=Greater Treasures of Tokuno
 DESCRIPTION=Stormgrip
 ON=@Create
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_sword_of_the_stampede]
@@ -545,7 +517,6 @@ CATEGORY=Artifacts
 SUBSECTION=Greater Treasures of Tokuno
 DESCRIPTION=Sword of the Stampede
 ON=@Create
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_swords_of_prosperity]
@@ -564,15 +535,15 @@ ON=@Create
    DORAND 3
       BEGIN
          MageWeapon=<FVAL <R150,300>> Magery
-         TAG.OVERRIDE_SKILL=26
+         TAG.OVERRIDE_SKILL=26	//Magic Resistance
       END
       BEGIN
          MageWeapon=<FVAL <R150,300>> Necromancy
-         TAG.OVERRIDE_SKILL=50
+         TAG.OVERRIDE_SKILL=50	//Focus
       END
       BEGIN
          MageWeapon=<FVAL <R150,300>> Spellweaving
-         TAG.OVERRIDE_SKILL=55
+         TAG.OVERRIDE_SKILL=55	//Mysticism
       END
    ENDDO
 
@@ -589,7 +560,6 @@ CATEGORY=Artifacts
 SUBSECTION=Lesser Treasures of Tokuno
 DESCRIPTION=The Destroyer
 ON=@Create
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_the_horselord]
@@ -606,13 +576,12 @@ CATEGORY=Artifacts
 SUBSECTION=Greater Treasures of Tokuno
 DESCRIPTION=The Horselord
 ON=@Create
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [ITEMDEF i_tome_enlightenment]
 ID=i_spellbook
 NAME=Tome of Enlightenment
-BonusINT=5
+BonusInt=5
 IncreaseSpellDam=10
 FasterCasting=1
 TEVENTS=t_equipitem
@@ -621,12 +590,11 @@ SUBSECTION=Lesser Treasures of Tokuno
 DESCRIPTION=Tome of Enlightenment
 ON=@Create
    COLOR=0455
-   ATTR=attr_magic|attr_identified
 
 [ITEMDEF i_tome_of_lost_knowledge]
 ID=i_spellbook
 NAME=Tome of Lost Knowledge
-BonusINT=8
+BonusInt=8
 IncreaseSpellDam=15
 LowerManaCost=15
 BonusSkill1=Magery
@@ -637,7 +605,6 @@ SUBSECTION=Greater Treasures of Tokuno
 DESCRIPTION=Tome of Lost Knowledge
 ON=@Create
    COLOR=0530
-   ATTR=attr_magic|attr_identified
 
 [ITEMDEF i_winds_edge]
 ID=i_tessen
@@ -652,7 +619,6 @@ CATEGORY=Artifacts
 SUBSECTION=Greater Treasures of Tokuno
 DESCRIPTION=Wind's Edge
 ON=@Create
-   ATTR=attr_magic|attr_identified
    HITPOINTS=255
 
 [EOF]

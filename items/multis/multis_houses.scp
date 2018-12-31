@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2017
+// SPHERE by : Menasoft ©1997-2018
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Dec 12, 2017
+// FILE LAST UPDATED: Monday, Dec 31, 2018
 //
 VERSION=0.56d
 
@@ -409,5 +409,351 @@ DESCRIPTION=Small Marble Workshop
 MULTIREGION=-3,-3,3,4
 COMPONENT=067b,-2,0,24	//metal door
 COMPONENT=i_sign_brass_2,3,4,5
+
+[MULTIDEF 0147e]
+DEFNAME=m_trinsic_keep_est
+NAME=The Trinsic Keep Est.
+NAMELOC=1158748	//The Trinsic Keep Est.
+TYPE=t_multi
+VALUE=1317500
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=Houses
+DESCRIPTION=The Trinsic Keep Est.
+MULTIREGION=-11,-11,12,12
+COMPONENT=0677,1,10,7		//metal door
+COMPONENT=i_door_metal,0,10,7
+COMPONENT=0677,-5,5,7		//metal door
+COMPONENT=i_door_metal,-6,5,7
+COMPONENT=0677,7,5,7		//metal door
+COMPONENT=i_door_metal,6,5,7
+COMPONENT=0683,-9,0,7		//metal door
+COMPONENT=0681,-9,1,7		//metal door
+COMPONENT=067f,10,0,7		//metal door
+COMPONENT=067d,10,1,7		//metal door
+COMPONENT=i_door_metal,0,-2,47
+COMPONENT=0677,1,-2,47		//metal door
+COMPONENT=0677,-6,-2,47		//metal door
+COMPONENT=0677,-7,4,47		//metal door
+COMPONENT=0677,8,-2,47		//metal door
+COMPONENT=0677,8,4,47		//metal door
+COMPONENT=0181f,-10,-6,67	//alchemical symbol
+COMPONENT=0ba0,-11,13,7		//metal signpost
+COMPONENT=i_sign_brass_2,-11,13,7
+
+[MULTIDEF 0147f]
+DEFNAME=m_gothic_rose_castle
+NAME=The Gothic Rose Castle
+NAMELOC=1158749	//The Gothic Rose Castle
+TYPE=t_multi
+VALUE=1991500
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=Houses
+DESCRIPTION=The Gothic Rose Castle
+MULTIREGION=-15,-15,15,16
+COMPONENT=i_door_gargish_progressive,0,15,7
+COMPONENT=041d1,2,15,7		//gargish progressive door
+COMPONENT=02fde,4,10,47		//tall ladder
+COMPONENT=0b9e,-15,16,7		//metal signpost
+COMPONENT=i_sign_brass_2,-15,16,7
+
+[MULTIDEF 01480]
+DEFNAME=m_elsa_castle
+NAME=The Elsa Castle
+NAMELOC=1158750	//The Elsa Castle
+TYPE=t_multi
+VALUE=2020000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=Houses
+DESCRIPTION=The Elsa Castle
+MULTIREGION=-15,-15,15,16
+COMPONENT=031a2,-8,-11,7	//elven door
+COMPONENT=i_door_elven_simple,-8,-10,7
+COMPONENT=031a2,6,-11,7		//elven door
+COMPONENT=i_door_elven_simple,6,-10,7
+COMPONENT=031a2,-8,5,7		//elven door
+COMPONENT=i_door_elven_simple,-8,6,7
+COMPONENT=031a2,6,5,7		//elven door
+COMPONENT=i_door_elven_simple,6,6,7
+COMPONENT=031a0,-13,9,7		//elven door
+COMPONENT=031a0,14,9,7		//elven door
+COMPONENT=01ff7,-12,14,7	//barred metal door
+COMPONENT=01ff7,12,14,7		//barred metal door
+COMPONENT=0858,-3,14,7		//iron gate
+COMPONENT=0858,4,14,7		//iron gate
+COMPONENT=02d65,-7,-1,27	//elven door
+COMPONENT=031a0,-6,-1,27	//elven door
+COMPONENT=02d65,8,-1,27		//elven door
+COMPONENT=031a0,9,-1,27		//elven door
+COMPONENT=02d65,0,9,27		//elven door
+COMPONENT=031a0,1,9,27		//elven door
+COMPONENT=02d65,-13,9,27	//elven door
+COMPONENT=02d65,14,9,27		//elven door
+COMPONENT=i_door_metal_bar_2,2,-13,47
+COMPONENT=0b98,-15,16,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-15,16,7
+
+[MULTIDEF 01481]
+DEFNAME=m_spires
+NAME=The Spires
+NAMELOC=1158761	//The Spires
+TYPE=t_multi
+VALUE=2090000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=Houses
+DESCRIPTION=The Spires
+MULTIREGION=-15,-15,15,16
+COMPONENT=06e9,0,12,7		//wooden door
+COMPONENT=06eb,1,12,7		//wooden door
+COMPONENT=067f,7,6,27		//metal door
+COMPONENT=067d,7,7,27		//metal door
+COMPONENT=i_door_metal,13,1,27
+COMPONENT=0677,14,1,27		//metal door
+COMPONENT=067d,-7-,13,27	//metal door
+COMPONENT=067f,7,-4,47		//metal door
+COMPONENT=067d,7,-3,47		//metal door
+COMPONENT=0326,-13,-12,47	//stone wall (secret door)
+COMPONENT=032a,-13,-2,47	//stone wall (secret door)
+COMPONENT=0326,-13,1,47		//stone wall (secret door)
+COMPONENT=032a,-13,12,47	//stone wall (secret door)
+COMPONENT=0332,-7,-13,47	//stone wall (secret door)
+COMPONENT=0332,4,-13,47		//stone wall (secret door)
+COMPONENT=0b98,-15,16,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-15,16,7
+
+[MULTIDEF 01482]
+DEFNAME=m_castle_oceania
+NAME=The Castle of Oceania
+NAMELOC=1158760	//The Castle of Oceania
+TYPE=t_multi
+VALUE=2176500
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=Houses
+DESCRIPTION=The Castle of Oceania
+MULTIREGION=-15,-15,15,16
+COMPONENT=i_door_gargish_queen,0,10,7
+COMPONENT=050ca,1,10,7		//gargish queen's door
+COMPONENT=05148,-10,-13,7	//gargish folsom door
+COMPONENT=05146,-10,-12,7	//gargish folsom door
+COMPONENT=05148,9,-13,7		//gargish folsom door
+COMPONENT=05146,9,-12,7		//gargish folsom door
+COMPONENT=031a8,-8,-11,27	//elven door
+COMPONENT=i_door_elven_plain,-8,-10,27
+COMPONENT=031a8,-8,-5,27	//elven door
+COMPONENT=i_door_elven_plain,-8,-4,27
+COMPONENT=031a8,-8,0,27		//elven door
+COMPONENT=i_door_elven_plain,-8,1,27
+COMPONENT=031a8,7,-8,27		//elven door
+COMPONENT=i_door_elven_plain,7,-7,27
+COMPONENT=031a8,7,-2,27		//elven door
+COMPONENT=i_door_elven_plain,7,-1,27
+COMPONENT=02d6d,10,-5,27	//elven door
+COMPONENT=031aa,11,-5,27	//elven door
+COMPONENT=02d6d,-11,-7,27	//elven door
+COMPONENT=031aa,-11,3,27	//elven door
+COMPONENT=031aa,11,3,27		//elven door
+COMPONENT=i_door_elven_plain,-6,-10,47
+COMPONENT=i_door_elven_plain,-6,-5,47
+COMPONENT=i_door_elven_plain,-6,0,47
+COMPONENT=031a8,1,-10,47	//elven door
+COMPONENT=031a8,1,-1,47		//elven door
+COMPONENT=031a8,5,-6,47		//elven door
+COMPONENT=i_door_elven_plain,5,-5,47
+COMPONENT=0ba0,-15,16,7		//metal signpost
+COMPONENT=i_sign_brass_2,-15,16,7
+
+[MULTIDEF 01483]
+DEFNAME=m_feudal_castle
+NAME=The Feudal Castle
+NAMELOC=1158762	//The Feudal Castle
+TYPE=t_multi
+VALUE=1213000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=Houses
+DESCRIPTION=The Feudal Castle
+MULTIREGION=-15,-15,15,16
+COMPONENT=02a0f,-5,-1,7		//sliding door
+COMPONENT=i_door_sliding_cloth,-4,-1,7
+COMPONENT=i_door_sliding_cloth,-12,-1,7
+COMPONENT=i_door_sliding_cloth,4,-7,7
+COMPONENT=i_door_sliding_cloth,7,-7,7
+COMPONENT=02a0f,-11,-1,27	//sliding door
+COMPONENT=i_door_sliding_cloth,-10,-1,27
+COMPONENT=02a11,4,-12,27	//sliding door
+COMPONENT=02a13,4,-9,47		//sliding door
+COMPONENT=09,-15,15,7		//wooden post
+COMPONENT=0b9e,-15,16,7		//metal signpost
+COMPONENT=i_sign_brass_2,-15,16,7
+
+[MULTIDEF 01484]
+DEFNAME=m_robins_nest
+NAME=The Robin's Nest
+NAMELOC=1158850	//The Robin's Nest
+TYPE=t_multi
+VALUE=1124500
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=Houses
+DESCRIPTION=The Robin's Nest
+MULTIREGION=-11,-11,12,12
+COMPONENT=06e9,-3,11,7		//wooden door
+COMPONENT=06eb,-2,11,7		//wooden door
+COMPONENT=06e9,8,5,7		//wooden door
+COMPONENT=06eb,9,5,7		//wooden door
+COMPONENT=06f1,10,-2,7		//wooden door
+COMPONENT=06f3,10,-3,7		//wooden door
+COMPONENT=0521,4,10,7		//stone pavers
+COMPONENT=06e9,-3,5,27		//wooden door
+COMPONENT=06eb,-2,5,27		//wooden door
+COMPONENT=0521,9,3,27		//stone pavers
+COMPONENT=0521,9,4,27		//stone pavers
+COMPONENT=06f1,5,3,47		//wooden door
+COMPONENT=06f3,5,2,47		//wooden door
+COMPONENT=0521,4,3,47		//stone pavers
+COMPONENT=0521,4,4,47		//stone pavers
+COMPONENT=0521,11,-10,67	//stone pavers
+COMPONENT=0ba0,-11,13,7		//metal signpost
+COMPONENT=i_sign_brass_2,-11,13,7
+
+[MULTIDEF 01485]
+DEFNAME=m_traditional_keep
+NAME=The Traditional Keep
+NAMELOC=1158851	//The Traditional Keep
+TYPE=t_multi
+VALUE=1186000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=Houses
+DESCRIPTION=The Traditional Keep
+MULTIREGION=-11,-11,12,12
+COMPONENT=0328,-9,12,7		//stone wall (secret door)
+COMPONENT=032a,11,12,7		//stone wall (secret door)
+COMPONENT=0326,-10,-4,7		//stone wall (secret door)
+COMPONENT=0332,-7,-3,7		//stone wall (secret door)
+COMPONENT=032c,-5,-10,7		//stone wall (secret door)
+COMPONENT=0324,11,-4,7		//stone wall (secret door)
+COMPONENT=0679,0,10,7		//wooden door
+COMPONENT=067b,1,10,7		//wooden door
+COMPONENT=0b9c,-11,13,7		//metal signpost
+COMPONENT=i_sign_brass_2,-11,13,7
+
+[MULTIDEF 01486]
+DEFNAME=m_villa_crowley
+NAME=The Villa Crowley
+NAMELOC=1158852	//The Villa Crowley
+TYPE=t_multi
+VALUE=969500
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=Houses
+DESCRIPTION=The Villa Crowley
+MULTIREGION=-11,-11,12,12
+COMPONENT=06a9,0,4,7		//wooden door
+COMPONENT=06ab,1,4,7		//wooden door
+COMPONENT=06a5,-10,4,7		//wooden door
+COMPONENT=06b1,3,-6,27		//wooden door
+COMPONENT=06ab,-6,-4,47		//wooden door
+COMPONENT=06ab,1,-9,47		//wooden door
+COMPONENT=06ab,8,-9,47		//wooden door
+COMPONENT=06af,-3,1,47		//wooden door
+COMPONENT=06a5,1,-3,47		//wooden door
+COMPONENT=01d,-11,12,7		//stone wall
+COMPONENT=0b9e,-11,13,7		//metal signpost
+COMPONENT=0bd0,-11,13,7		//wooden sign
+
+[MULTIDEF 01487]
+DEFNAME=m_darkthorn_keep
+NAME=The Darkthorn Keep
+NAMELOC=1158853	//The Darkthorn Keep
+TYPE=t_multi
+VALUE=1244000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=Houses
+DESCRIPTION=The Darkthorn Keep
+MULTIREGION=-11,-11,12,12
+COMPONENT=041cf,0,10,7		//gargish progressive door
+COMPONENT=041d1,1,10,7		//gargish progressive door
+COMPONENT=041cf,0,6,27		//gargish progressive door
+COMPONENT=041d1,1,6,27		//gargish progressive door
+COMPONENT=0b98,-11,13,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-11,13,7
+
+[MULTIDEF 01488]
+DEFNAME=m_sandalwood_keep
+NAME=The Sandalwood Keep
+NAMELOC=1158854	//The Sandalwood Keep
+TYPE=t_multi
+VALUE=1042500
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=Houses
+DESCRIPTION=The Sandalwood Keep
+MULTIREGION=-11,-11,12,12
+COMPONENT=086a,-6,12,7		//wooden gate
+COMPONENT=086c,-5,12,7		//wooden gate
+COMPONENT=086a,7,12,7		//wooden gate
+COMPONENT=086c,8,12,7		//wooden gate
+COMPONENT=086c,11,6,7		//wooden gate
+COMPONENT=086c,11,-6,7		//wooden gate
+COMPONENT=09b40,1,6,7		//shadowguard door
+COMPONENT=09b42,2,6,7		//shadowguard door
+COMPONENT=09b48,10,1,7		//shadowguard door
+COMPONENT=09b4a,10,0,7		//shadowguard door
+COMPONENT=09b48,-6,-8,7		//shadowguard door
+COMPONENT=09b4a,-6,-9,7		//shadowguard door
+COMPONENT=09b48,8,-8,7		//shadowguard door
+COMPONENT=09b4a,8,-9,7		//shadowguard door
+COMPONENT=049e,8,5,7		//sandstone paver
+COMPONENT=049e,9,3,7		//sandstone paver
+COMPONENT=049e,9,4,7		//sandstone paver
+COMPONENT=049e,9,5,7		//sandstone paver
+COMPONENT=09b40,-10,2,27	//shadowguard door
+COMPONENT=09b42,-9,2,27		//shadowguard door
+COMPONENT=09b42,1,3,47		//shadowguard door
+COMPONENT=0161,-11,12,7		//sandstone post
+COMPONENT=0b9c,-11,13,7		//metal signpost
+COMPONENT=i_sign_brass_2,-11,13,7
+
+[MULTIDEF 01489]
+DEFNAME=m_casa_maya
+NAME=The Casa Maya
+NAMELOC=1158855	//The Casa Maya
+TYPE=t_multi
+VALUE=1169500
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=Houses
+DESCRIPTION=The Casa Maya
+MULTIREGION=-11,-11,12,12
+COMPONENT=06d5,0,8,7		//wooden door
+COMPONENT=06d7,1,8,7		//wooden door
+COMPONENT=06df,-2,5,7		//wooden door
+COMPONENT=06dd,-2,-7,7		//wooden door
+COMPONENT=06df,-2,-8,7		//wooden door
+COMPONENT=06e1,3,-7,7		//wooden door
+COMPONENT=06e3,3,-8,7		//wooden door
+COMPONENT=052b,-1,9,7		//sandstone floor
+COMPONENT=0503,4,-9,7		//flagstones
+COMPONENT=049e,-2,-9,27		//sandstone paver
+COMPONENT=0b9e,-11,13,7		//metal signpost
+COMPONENT=i_sign_brass_2,-11,13,7
 
 [EOF]
