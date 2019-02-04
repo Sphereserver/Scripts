@@ -1,5 +1,5 @@
-﻿//****************************************************************************
-// SPHERE by : Menasoft ©1997-2018
+//****************************************************************************
+// SPHERE by : Menasoft �1997-2019
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,9 +7,10 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Aug 28, 2018
+// FILE LAST UPDATED: Monday, Feb 4, 2019
 //
 VERSION=0.56d
+
 
 [ITEMDEF 03609]
 DEFNAME=i_stairs_shadow
@@ -540,78 +541,120 @@ ON=@Create
 
 
 [ITEMDEF 0368b]
-DEFNAME=i_door_shadow
+DEFNAME=i_door_shadow_south_left
 NAME=shadow door
 TYPE=t_door
+TDATA1=00ec03e7
+TDATA2=0368c
+TDATA3=-1
+TDATA4=1
 CATEGORY=Buildings - Doors
 SUBSECTION=Shadow Door
-DESCRIPTION=@ (closed)
-DUPELIST=0368d,0368f,03691,03693,03695,03697,03699
+DESCRIPTION=South (left)
 
 [ITEMDEF 0368c]
-DEFNAME=i_door_shadow_o
-NAME=shadow door
-TYPE=t_door_open
-CATEGORY=Buildings - Doors
-SUBSECTION=Shadow Door
-DESCRIPTION=@ (opened)
-DUPELIST=0368e,03690,03692,03694,03696,03698,0369a
+//shadow door (south)(left)(opened)
 
 [ITEMDEF 0368d]
-//shadow door (closed)
-DUPEITEM=0368b
+DEFNAME=i_door_shadow_south_right
+NAME=shadow door
+TYPE=t_door
+TDATA1=00ec03e7
+TDATA2=0368e
+TDATA3=1
+TDATA4=1
+CATEGORY=Buildings - Doors
+SUBSECTION=Shadow Door
+DESCRIPTION=South (right)
 
 [ITEMDEF 0368e]
-//shadow door (opened)
-DUPEITEM=0368c
+//shadow door (south)(right)(opened)
 
 [ITEMDEF 0368f]
-//shadow door (closed)
-DUPEITEM=0368b
+DEFNAME=i_door_shadow_north_left
+NAME=shadow door
+TYPE=t_door
+TDATA1=00ec03e7
+TDATA2=03690
+TDATA3=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Shadow Door
+DESCRIPTION=North (left)
 
 [ITEMDEF 03690]
-//shadow door (opened)
-DUPEITEM=0368c
+//shadow door (north)(left)(opened)
 
 [ITEMDEF 03691]
-//shadow door (closed)
-DUPEITEM=0368b
+DEFNAME=i_door_shadow_north_right
+NAME=shadow door
+TYPE=t_door
+TDATA1=00ec03e7
+TDATA2=03692
+TDATA3=1
+TDATA4=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Shadow Door
+DESCRIPTION=North (right)
 
 [ITEMDEF 03692]
-//shadow door (opened)
-DUPEITEM=0368c
+//shadow door (north)(right)(opened)
 
 [ITEMDEF 03693]
-//shadow door (closed)
-DUPEITEM=0368b
+DEFNAME=i_door_shadow_east_left
+NAME=shadow door
+TYPE=t_door
+TDATA1=00ec03e7
+TDATA2=03694
+TDATA3=1
+TDATA4=1
+CATEGORY=Buildings - Doors
+SUBSECTION=Shadow Door
+DESCRIPTION=East (left)
 
 [ITEMDEF 03694]
-//shadow door (opened)
-DUPEITEM=0368c
+//shadow door (east)(left)(opened)
 
 [ITEMDEF 03695]
-//shadow door (closed)
-DUPEITEM=0368b
+DEFNAME=i_door_shadow_east_right
+NAME=shadow door
+TYPE=t_door
+TDATA1=00ec03e7
+TDATA2=03696
+TDATA3=1
+TDATA4=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Shadow Door
+DESCRIPTION=East (right)
 
 [ITEMDEF 03696]
-//shadow door (opened)
-DUPEITEM=0368c
+//shadow door (east)(right)(opened)
 
 [ITEMDEF 03697]
-//shadow door (closed)
-DUPEITEM=0368b
+DEFNAME=i_door_shadow_west_left
+NAME=shadow door
+TYPE=t_door
+TDATA1=00ec03e7
+TDATA2=03698
+CATEGORY=Buildings - Doors
+SUBSECTION=Shadow Door
+DESCRIPTION=West (left)
 
 [ITEMDEF 03698]
-//shadow door (opened)
-DUPEITEM=0368c
+//shadow door (west)(left)(opened)
 
 [ITEMDEF 03699]
-//shadow door (closed)
-DUPEITEM=0368b
+DEFNAME=i_door_shadow_west_right
+NAME=shadow door
+TYPE=t_door
+TDATA1=00ec03e7
+TDATA2=0369a
+TDATA4=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Shadow Door
+DESCRIPTION=West (right)
 
 [ITEMDEF 0369a]
-//shadow door (opened)
-DUPEITEM=0368c
+//shadow door (west)(right)(opened)
 
 [ITEMDEF 0369b]
 //fire demon statue

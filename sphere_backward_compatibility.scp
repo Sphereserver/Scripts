@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2018
+// SPHERE by : Menasoft ©1997-2019
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, May 21, 2018
+// FILE LAST UPDATED: Monday, Feb 4, 2019
 //
 VERSION=0.56d
 
@@ -326,26 +326,35 @@ i_scaffold_and_trailer			m_scaffold_and_trailer
 i_prisoner_camp					m_prisoner_camp
 
 // Doors
-i_door_elven_bark				i_door_elven_wooden
+i_door_crystal					i_door_crystal_south_left
+i_door_elven_bark				i_door_tanglewood_east_right
+i_door_elven_ornate				i_door_heartwood_east_left
+i_door_elven_plain				i_door_kiawood_east_left
+i_door_elven_simple				i_door_whitewood_east_left
+i_door_jungle					i_door_jungle_south_left
+i_door_moon						i_door_moon_east_left
 i_door_portculis				i_door_portcullis
-i_door_sliding					i_door_sliding_latticed
-i_door_sliding_wide				i_door_sliding_latticed_wide
-i_door_sliding_2				i_door_sliding_cloth
-i_door_sliding_2_wide			i_door_sliding_cloth_wide
-i_door_sliding_3				i_door_sliding_wooden
-i_door_sliding_3_wide			i_door_sliding_wooden_wide
-i_sa_door_ws1					i_door_gargish_progressive
-i_sa_door_ws2					i_door_gargish_celestial
-i_sa_door_ws3					i_door_gargish_traditional
-i_sa_door_gd					i_door_gargish
-i_sa_door_barred				i_door_gargish_folsom
-i_sa_door_qdh					i_door_gargish_queen_huge
-i_sa_door_qd					i_door_queen
-i_sa_door_m1					i_door_gargish_renaissance
-i_sa_door_m2					i_door_gargish_draxinusom
-i_sa_door_m3					i_door_gargish_queen
-i_sa_door_m4					i_door_gargish_bentas
-i_sa_door_rd					i_door_gargish_hovel
+i_door_shadow					i_door_shadow_south_left
+i_door_shadowguard				i_door_shadowguard_south_left
+i_door_sliding					i_door_sliding_latticed_south_left
+i_door_sliding_wide				i_door_sliding_latticed_revolver_south
+i_door_sliding_2				i_door_sliding_cloth_south_left
+i_door_sliding_2_wide			i_door_sliding_cloth_revolver_south
+i_door_sliding_3				i_door_sliding_wooden_south_left
+i_door_sliding_3_wide			i_door_sliding_wooden_revolver_south
+i_door_wooden_dark				i_door_wooden_dark_east
+i_sa_door_barred				i_door_gargish_folsom_south_left
+i_sa_door_gd					i_door_gargish_south_left
+i_sa_door_m1					i_door_gargish_renaissance_south_left
+i_sa_door_m2					i_door_gargish_draxinusom_south_left
+i_sa_door_m3					i_door_gargish_queen_south_left
+i_sa_door_m4					i_door_gargish_bentas_south_left
+i_sa_door_qd					i_door_queen_south_left
+i_sa_door_qdh					i_door_gargish_queen_tall_south_left
+i_sa_door_rd					i_door_gargish_hovel_south_left
+i_sa_door_ws1					i_door_gargish_progressive_south_left
+i_sa_door_ws2					i_door_gargish_celestial_south_left
+i_sa_door_ws3					i_door_gargish_traditional_south_left
 
 // Floors
 i_floor_flagstone_sandstone				i_floor_sandstone
