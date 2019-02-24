@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2017
+// SPHERE by : Menasoft ©1997-2019
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Dec 12, 2017
+// FILE LAST UPDATED: Saturday, Feb 23, 2019
 //
 VERSION=0.56d
 
@@ -2612,5 +2612,32 @@ COMPONENT=0628f,7,-3
 COMPONENT=06291,7,3
 COMPONENT=062a6,13,0
 COMPONENT=062a7,16,0
+
+[MULTIDEF 0212a]
+DEFNAME=m_plunderbeacon
+NAME=Plunderbeacon
+TYPE=t_ship
+REGIONFLAGS=region_flag_nobuilding|region_flag_ship
+CATEGORY=Multis
+SUBSECTION=Ships
+DESCRIPTION=Plunderbeacon (stationary)
+MULTIREGION=-9,-5,2,6
+COMPONENT=04724,-2,1,9		//lighthouse
+COMPONENT=0472f,-3,1,9		//lighthouse
+COMPONENT=04730,-4,1,9		//lighthouse
+COMPONENT=04217,-5,-2,10	//culverin
+COMPONENT=04217,-5,0,10		//culverin
+COMPONENT=04217,-5,2,10		//culverin
+COMPONENT=04219,-1,-2,9		//culverin
+COMPONENT=04219,-1,0,9		//culverin
+COMPONENT=04219,-1,2,9		//culverin
+COMPONENT=0a2c0,-6,5,3		//blundercannon
+COMPONENT=0a2c0,-4,5,3		//blundercannon
+COMPONENT=0a2c0,-2,5,3		//blundercannon
+COMPONENT=0a2c0,0,5,3		//blundercannon
+COMPONENT=0a2c2,-6,-4,3		//blundercannon
+COMPONENT=0a2c2,-4,-4,3		//blundercannon
+COMPONENT=0a2c2,-2,-4,3		//blundercannon
+COMPONENT=0a2c2,0,-4,3		//blundercannon
 
 [EOF]
