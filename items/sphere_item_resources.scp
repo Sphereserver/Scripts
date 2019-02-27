@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2018
+// SPHERE by : Menasoft ©1997-2019
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Mar 24, 2018
+// FILE LAST UPDATED: Wednesday, Feb 27, 2019
 //
 VERSION=0.56d
 
@@ -29,8 +29,6 @@ CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Coins
 DESCRIPTION=Copper Coin
 DUPELIST=0eeb,0eec
-ON=@Create
-   ATTR=attr_identified
 
 [ITEMDEF 0eeb]
 //copper coins
@@ -49,8 +47,6 @@ CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Coins
 DESCRIPTION=Gold Coin
 DUPELIST=0eee,0eef
-ON=@Create
-   ATTR=attr_identified
 
 [ITEMDEF 0eee]
 //gold coins
@@ -69,8 +65,6 @@ CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Coins
 DESCRIPTION=Silver Coin
 DUPELIST=0ef1,0ef2
-ON=@Create
-   ATTR=attr_identified
 
 [ITEMDEF 0ef1]
 //silver coins

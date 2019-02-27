@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2018
+// SPHERE by : Menasoft ©1997-2019
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Friday, Mar 2, 2018
+// FILE LAST UPDATED: Wednesday, Feb 27, 2019
 //
 VERSION=0.56d
 
@@ -483,5 +483,38 @@ DUPELIST=0a0a2
 [ITEMDEF 0a0a2]
 //pillow
 DUPEITEM=0a0a1
+
+
+[ITEMDEF 0a285]
+DEFNAME=i_lillypad_candle
+NAME=lilly pad
+TYPE=t_light_out
+TDATA3=i_lillypad_candle_lit
+WEIGHT=1.0
+CATEGORY=Valentine's Day
+SUBSECTION=Decoration
+DESCRIPTION=Lilly Pad (unlit)
+ON=@Create
+   ATTR=attr_move_always
+   MOREZ=29
+
+[ITEMDEF 0a286]
+DEFNAME=i_lillypad_candle_lit
+NAME=lilly pad
+TYPE=t_light_lit
+TDATA3=i_lillypad_candle
+WEIGHT=1.0
+CATEGORY=Valentine's Day
+SUBSECTION=Decoration
+DESCRIPTION=Lilly Pad (lit)
+ON=@Create
+   ATTR=attr_move_always
+   MOREZ=29
+
+[ITEMDEF 0a287]
+//lilly pad (lit)(anim)
+
+[ITEMDEF 0a288]
+//lilly pad (lit)(anim)
 
 [EOF]

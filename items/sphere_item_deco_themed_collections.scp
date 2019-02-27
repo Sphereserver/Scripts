@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2017
+// SPHERE by : Menasoft ©1997-2019
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Oct 28, 2017
+// FILE LAST UPDATED: Wednesday, Feb 27, 2019
 //
 VERSION=0.56d
 
@@ -186,15 +186,15 @@ DUPELIST=02a61
 ON=@Create
    TIMER=180
 ON=@Timer
-   IF !(<ATTR> & attr_can_decay|attr_decay)
-    IF (<DISPIDDEC> < 02a61)
-     DISPID=<R02a5d,02a60>
-    ELSE
-     DISPID=<R02a61,02a64>
-    ENDIF
-    UPDATE
-    TIMER=180
-    return 1
+   IF !(<ATTR> & attr_decay)
+      IF (<DISPIDDEC> < 02a61)
+         DISPID=<R02a5d,02a60>
+      ELSE
+         DISPID=<R02a61,02a64>
+      ENDIF
+      UPDATE
+      TIMER=180
+      return 1
    ENDIF
 ON=@DClick
    SRC.SOUND <R0567,0568>
@@ -240,15 +240,15 @@ DUPELIST=02a67
 ON=@Create
    TIMER=180
 ON=@Timer
-   IF !(<ATTR> & attr_can_decay|attr_decay)
-    IF (<DISPIDDEC> == 02a65) || (<DISPIDDEC> == 02a67)
-     DISPID=<eval <DISPIDDEC>+1>
-    ELIF (<DISPIDDEC> == 02a66) || (<DISPIDDEC> == 02a68)
-     DISPID=<eval <DISPIDDEC>-1>
-    ENDIF
-    UPDATE
-    TIMER=180
-    return 1
+   IF !(<ATTR> & attr_decay)
+      IF (<DISPIDDEC> == 02a65) || (<DISPIDDEC> == 02a67)
+         DISPID=<eval <DISPIDDEC>+1>
+      ELIF (<DISPIDDEC> == 02a66) || (<DISPIDDEC> == 02a68)
+         DISPID=<eval <DISPIDDEC>-1>
+      ENDIF
+      UPDATE
+      TIMER=180
+      return 1
    ENDIF
 ON=@DClick
    SRC.SOUND <R0567,0568>
@@ -278,15 +278,15 @@ DUPELIST=02a6d
 ON=@Create
    TIMER=180
 ON=@Timer
-   IF !(<ATTR> & attr_can_decay|attr_decay)
-    IF (<DISPIDDEC> < 02a6d)
-     DISPID=<R02a69,02a6c>
-    ELSE
-     DISPID=<R02a6d,02a70>
-    ENDIF
-    UPDATE
-    TIMER=180
-    return 1
+   IF !(<ATTR> & attr_decay)
+      IF (<DISPIDDEC> < 02a6d)
+         DISPID=<R02a69,02a6c>
+      ELSE
+         DISPID=<R02a6d,02a70>
+      ENDIF
+      UPDATE
+      TIMER=180
+      return 1
    ENDIF
 ON=@DClick
    SRC.SOUND <R0567,0568>
@@ -416,13 +416,13 @@ DESCRIPTION=Haunted Mirror
 DUPELIST=02a7d
 ON=@Step
    IF !(<ARGN>) && !(<TAG0.Anim>)
-    TAG.Anim=1
-    SOUND <R0551,0553>
-    DISPID=<eval <DISPIDDEC>+1>
-    UPDATE
-    TIMERF 5,TAG.Anim=
-    TIMERF 5,DISPID=<eval <DISPIDDEC>-1>
-    TIMERF 5,UPDATE
+      TAG.Anim=1
+      SOUND <R0551,0553>
+      DISPID=<eval <DISPIDDEC>+1>
+      UPDATE
+      TIMERF 5,TAG.Anim=
+      TIMERF 5,DISPID=<eval <DISPIDDEC>-1>
+      TIMERF 5,UPDATE
    ENDIF
 
 [ITEMDEF 02a7c]
@@ -531,13 +531,13 @@ TYPE=t_bed_nails
 [TYPEDEF t_bed_nails]
 ON=@Step
    IF !(<ARGN>)
-    SRC.SOUND <SRC.SEX <R053e,0540>/<R053b,053d>>
-    FOR <R7>
-     SERV.NEWITEM {0122c 0122f}
-     NEW.ATTR=attr_move_never|attr_decay
-     NEW.MOVENEAR <UID> 1
-     NEW.TIMER=<R4,8>
-    ENDFOR
+      SRC.SOUND <SRC.SEX <R053e,0540>/<R053b,053d>>
+      FOR <R7>
+         SERV.NEWITEM {0122c 0122f}
+         NEW.ATTR=attr_move_never|attr_decay
+         NEW.MOVENEAR <UID> 1
+         NEW.TIMER=<R4,8>
+      ENDFOR
    ENDIF
 
 
