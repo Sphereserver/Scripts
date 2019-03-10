@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Wednesday, Feb 27, 2019
+// FILE LAST UPDATED: Saturday, Mar 9, 2019
 //
 VERSION=0.56d
 
@@ -693,21 +693,16 @@ EMOTE_DEF_UNICODE	0
 //npc_stablemaster_claim		"Here you go... and good day to you!"
 //npc_stablemaster_claim_nopets	"But I have no animals stabled with me at the moment!"
 //npc_stablemaster_claim_follower	"%s remained in the stables because you have too many followers."
-//npc_trainer_dunno_1			"I know nothing about that"
-//npc_trainer_dunno_2			"I know nothing about %s"
-//npc_trainer_dunno_3			"You know more about %s than I do"
-//npc_trainer_dunno_4			"You already know as much as I can teach of %s"
-//npc_trainer_enemy				"I would never train the likes of you. "
-//npc_trainer_forgot			"I can't remember what I was supposed to teach you "
-//npc_trainer_price				"For %d gold I will train you in all I know of %s. For less gold I will teach you less"
-//npc_trainer_price_1			"For a fee I can teach thee of "
-//npc_trainer_price_2			"more"
-//npc_trainer_price_3			", "
-//npc_trainer_success			"Let me show you something of how this is done"
-//npc_trainer_thatsall_1		"That is all I can teach."
-//npc_trainer_thatsall_2		"I wish I could teach more but I cannot."
-//npc_trainer_thatsall_3		"There is nothing that I can teach you."
-//npc_trainer_thatsall_4		" and "
+//npc_trainer_alreadyknow		"I cannot teach thee, for thou knowest all I can teach!"
+//npc_trainer_cantteach			"'Tis not something I can teach thee of."
+//npc_trainer_enemy				"I wouldn't presume to teach thee anything!"
+//npc_trainer_nothing			"Alas, I cannot teach thee anything."
+//npc_trainer_price_full		"I will teach thee all I know, if paid the amount in full.  The price is: %d"
+//npc_trainer_price_less		"For less I shall teach thee less."
+//npc_trainer_skillcap			"@021 If you are near the skill cap (%d points) you may need to lose some points in another skill first."
+//npc_trainer_skillraise		"@021 Make sure this skill is marked to raise."
+//npc_trainer_success			"Let me show you something of how this is done."
+//npc_trainer_teach				"I can train the following: %s"
 //npc_vendor_setprice_1			"Setting price of %s to %d"
 //npc_vendor_setprice_2			"What do you want the price to be?"
 //npc_vendor_stat_gold_1		"I have %d gold on hand. "
