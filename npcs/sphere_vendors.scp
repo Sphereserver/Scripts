@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Feb 5, 2019
+// FILE LAST UPDATED: Sunday, Mar 17, 2019
 //
 VERSION=0.56d
 
@@ -120,6 +120,7 @@ DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_default
 TSPEECH=spk_shopkeep
+TSPEECH=spk_animaltrainer
 CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Animal Trainer (human male)
@@ -169,6 +170,7 @@ DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_default
 TSPEECH=spk_shopkeep
+TSPEECH=spk_animaltrainer
 CATEGORY=Civilized
 SUBSECTION=Tradesmen
 DESCRIPTION=Animal Trainer (human female)

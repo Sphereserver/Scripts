@@ -1,26 +1,27 @@
 //****************************************************************************
-//SPHERE by : Menasoft ©1997-2018
-//www.sphereserver.net
+// SPHERE by : Menasoft ©1997-2019
+// www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
 // in whole or in part, in any format without express written permission from
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Friday, April 28, 2018
+// FILE LAST UPDATED: Sunday, Mar 17, 2019
+//
+VERSION=0.56d
 
 [SPEECH spk_human_default]
 // Default responses to things as most humans would do
 ON=*train*
 	IF (<NPC> >= brain_human) && (<NPC> <= brain_animal_trainer) && (<NPC> != brain_guard)
-		TRAIN <ARGS>
-		return 1	// process no more
+		TRAIN <STRSUB <eval <STRPOS 0 train <ARGS>>+6> 0 <ARGS>>
+		return 1
 	ENDIF
 
 ON=*hire*
-	IF (<HIREDAYWAGE>)	//<TYPEDEF.HIREDAYWAGE>
+	IF (<HIREDAYWAGE>)
 		HIRE
-		return 1
 	ENDIF
 
 [EOF]

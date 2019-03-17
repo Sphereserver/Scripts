@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2018
+// SPHERE by : Menasoft ©1997-2019
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Friday, Dec 7, 2018
+// FILE LAST UPDATED: Sunday, Mar 17, 2019
 //
 VERSION=0.56d
 
@@ -36,7 +36,7 @@ ON=*check*
 	IF !(<DEF0.i_bank_check>) || (<SERV.FeatureTOL> & 02)	//FEATURE_TOL_VIRTUALGOLD
 		return 1
 	ENDIF
-	ARGS=<dSTRARG <STREAT <ARGS>>>
+	ARGS=<dSTRSUB <eval <STRPOS 0 check <ARGS>>+6> 0 <ARGS>>
 	IF (<ARGS> < 5000)
 		SAY We cannot create checks for such a paltry amount of gold!
 		return 1
@@ -54,7 +54,7 @@ ON=*check*
 	SAY Into your bank box I have placed a check in the amount of: <ARGS>
 
 ON=*withdraw*
-	ARGS=<dSTRARG <STREAT <ARGS>>>
+	ARGS=<dSTRSUB <eval <STRPOS 0 withdraw <ARGS>>+9> 0 <ARGS>>
 	IF (<ARGS> <= 0)
 		SAY Thou must tell me how much thou wishest to withdraw.
 		return 1
@@ -76,6 +76,15 @@ ON=*withdraw*
 	ENDIF
 	SRC.NEWGOLD <ARGS>
 	SAY Thou hast withdrawn gold from thy account.
+
+
+[SPEECH spk_animaltrainer]
+ON=*stable*
+	PETSTABLE
+
+ON=*claim*
+ON=*retrieve*
+	PETRETRIEVE
 
 
 [SPEECH spk_bodysculptor]
