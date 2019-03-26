@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Mar 12, 2019
+// FILE LAST UPDATED: Tuesday, Mar 26, 2019
 //
 VERSION=0.56d
 
@@ -1165,6 +1165,136 @@ ON=20
 	TRYP 4 INPDLG=LINK 8
 
 
+[FUNCTION HelpPage]
+// This function is called when client press "Help" button on paperdoll
+SDIALOG d_helppage
+
+
+[DIALOG d_helppage]
+50,25
+
+resizepic 0 0 0a28 540 345
+dhtmlgump 100 25 360 20 0 0 <DEF.CENTER><DEF.U>Ultima Online Help Menu<DEF.UE><DEF.CENTERE>
+button 400 308 0819 0818 1 0 0
+
+button 30 50 015a4 015a5 1 0 1
+dhtmlgump 60 50 450 60 1 1 <DEF.U>General question about Ultima Online<DEF.UE>: Select this option if you are having difficulties learning to use a skill, if you have a general gameplay question, or you would like to search the UO Knowledge Base.
+
+button 30 115 015a4 015a5 1 0 2
+dhtmlgump 60 115 450 60 1 1 <DEF.U>My character is physically stuck<DEF.UE>: This choice only covers cases where your character is physically stuck in a location they cannot move out of.
+
+button 30 180 015a4 015a5 1 0 3
+dhtmlgump 60 180 450 60 1 1 <DEF.U>Other<DEF.UE>: If you are experiencing a problem in the game that does not fall into one of the other categories or is not addressed on the Support web page (located at <DEF.A>href="<SERV.URL>"><SERV.URL><DEF.AE>) and requires in-game assistance please use this option.
+
+button 30 245 015a4 015a5 1 0 4
+dhtmlgump 60 245 450 60 1 1 <DEF.U>Cancel pending request<DEF.UE>: Remove my pending help request from the queue.
+
+[DIALOG d_helppage BUTTON]
+ON=0
+SYSMESSAGE @035 Help request aborted.
+
+ON=1
+WEBLINK www.uo.com/wiki/ultima-online-wiki/
+
+ON=2
+REF1=<FINDID.i_memory_helppage_stuck>
+IF (<REF1>)
+ SYSMESSAGE You choose not to go to any city.
+ REF1.REMOVE
+ELSE
+ SYSMESSAGE Please choose your destination.
+ CAN |= mt_nonmover
+ SDIALOG d_helppage_stuck
+ENDIF
+
+ON=3
+SDIALOG d_helppage_gmpage
+
+ON=4
+SYSMESSAGE @035 Removed help request.
+IF (<SERV.GMPAGES>)
+ FOR 0 <eval <SERV.GMPAGES> - 1>
+  IF !STRCMP("<SERV.GMPAGE.<LOCAL._FOR>.ACCOUNT>","<ACCOUNT>")
+   GMPAGE.<LOCAL._FOR>.DELETE
+   return 1
+  ENDIF
+ ENDFOR
+ENDIF
+
+
+[DIALOG d_helppage_stuck]
+150,50
+nomove
+noclose
+nodispose
+
+resizepic 0 0 0a28 270 320
+dhtmlgump 50 20 250 35 0 0 Choose a town:
+FOR 1 6
+ ARGS=<DEF.HelpPage.Teleport.<dLOCAL._FOR>>
+ button 50 <eval 20+(<LOCAL._FOR>*35)> 208 209 1 0 <LOCAL._FOR>
+ dhtmlgump 75 <eval 20+(<LOCAL._FOR>*35)> 145 20 0 0 <SERV.MAP(<dARGV[0]>,<dARGV[1]>,<dARGV[3]>).REGION.NAME>
+ENDFOR
+button 55 263 0fa5 0fa7 1 0 0
+dhtmlgump 90 265 200 20 0 0 CANCEL
+
+[DIALOG d_helppage_stuck BUTTON]
+ON=0
+SYSMESSAGE You choose not to go to any city.
+CAN &= ~mt_nonmover
+
+ON=1 6
+IF (<HOUSEDESIGN>) || (<STONE>) || (<ACCOUNT.JAIL>)
+ CAN &= ~mt_nonmover
+ return 1
+ENDIF
+SYSMESSAGE You will be teleported within the next two minutes.
+SERV.NEWITEM i_memory_helppage_stuck
+NEW.MOREP=<DEF.HelpPage.Teleport.<ARGN>>
+NEW.TIMER=<eval 10 + <R110>>
+NEW.EQUIP
+
+[DEFNAME HelpPageTeleports]
+HelpPage.Teleport.1	1519,1619,10	//Britain
+HelpPage.Teleport.2	1993,2827	//Trinsic
+HelpPage.Teleport.3	2910,727	//Vesper
+HelpPage.Teleport.4	2433,541	//Minoc
+HelpPage.Teleport.5	536,979		//Yew
+HelpPage.Teleport.6	2247,1194	//Cove
+
+[ITEMDEF i_memory_helppage_stuck]
+ID=i_memory
+NAME=HelpPage stuck teleport
+TYPE=t_eq_script
+ON=@Equip
+ SRC.CAN |= mt_nonmover
+ON=@Unequip
+ SRC.CAN &= ~mt_nonmover
+ON=@Timer
+ CONT.GO <MOREP>
+ REMOVE
+ return 1
+
+
+[DIALOG d_helppage_gmpage]
+50,50
+
+resizepic 0 0 0a28 540 350
+dhtmlgump 214 30 150 20 0 0 Enter Description
+dhtmlgump 70 58 400 40 0 0 Please enter a brief description (up to 240 characters) of your problem:
+resizepic 50 98 0dac 440 200
+dtextentrylimited 70 118 400 200 0 0 240
+button 125 305 081c 081b 1 0 1
+button 355 305 0819 0818 1 0 0
+
+[DIALOG d_helppage_gmpage BUTTON]
+ON=0
+SYSMESSAGE @035 Help request aborted.
+
+ON=1
+GMPAGE ADD <ARGTXT[0]>
+
+
 [DIALOG d_pet_release]
 50,50
 
@@ -1464,290 +1594,5 @@ Hair.Dye.Bright.5		62, 71		//Green
 Hair.Dye.Bright.6		81, 82		//Light Green
 Hair.Dye.Bright.7		89, 90		//Blue
 Hair.Dye.Bright.8		1153, 1154	//White
-
-
-[DIALOG d_HELPGM]	// 12
-// Put up a help system dialog that lists ingame commands etc.
-0, 0	// location on the screen.
-resizepic 0 0 3600 600 450
-page 0
-gumppic 285 178 1418
-gumppic 15 50 1800
-gumppic 37 63 50468
-gumppic 15 50 1889
-gumppic 15 50 1883
-gumppic 15 50 1811
-gumppic 15 50 1812
-gumppic 15 50 1891
-gumppic 37 63 50409
-gumppic 130 91 50628
-gumppic 29 76 50984
-text 220 17 995 0
-button 250 300 243 241 1 0 0
-page 1
-text 240 40 995 1
-text 240 55 995 2
-text 240 70 995 3
-text 240 95 995 4
-button 250 115 210 211 1 0 1
-text 300 115 995 5
-button 250 140 210 211 1 0 2
-text 300 140 995 6
-button 250 165 210 211 1 0 3
-text 300 165 995 7
-button 250 190 210 211 1 0 4
-text 300 190 995 8
-button 250 215 210 211 1 0 5
-text 300 215 995 9
-button 250 240 210 211 1 0 6
-text 300 240 995 10
-button 250 265 210 211 1 0 7
-text 300 265 995 11
-
-[DIALOG d_HELPGM TEXT]
-SPHERE Help System
-Hail! Welcome to the SPHERE command help
-system. Pick the catagory of the command from
-the list below.
-Select     Category
-Administrator
-Game Master
-Counselor
-Player
-Triggers and Events
-Properties and Methods
-SPHERE FAQ
-
-[DIALOG d_HELPGM BUTTON]
-
-ON=1
-
-ON=2
-
-ON=3
-
-ON=4
-
-ON=5
-
-ON=6
-
-ON=7
-
-[DIALOG d_Travel]
-// a travel dialog
-0, 0	// this is always the size.
-resizepic 0 0 3600 229 173
-page 0
-text 40 17 0 0
-text 40 37 1152 1
-text 40 57 1152 2
-text 40 77 1152 3
-button 20 40 1209 1210 1 0 1
-button 20 60 1209 1210 1 0 2
-button 20 80 1209 1210 1 0 3
-
-[DIALOG d_Travel TEXT]
-Welcome <SRC.NAME>
-Towns
-Dungeons
-Special Places
-
-[DIALOG d_Travel BUTTON]
-
-ON=0
-	SYSMESSAGE=You've decided not to travel.
-
-ON=1 //TOWNS
-	SRC.DIALOG d_TravelTown
-
-ON=2 //DUNGEONS
-	SRC.DIALOG d_TravelDung
-
-ON=3  //SPECIAL PLACES
-	SRC.DIALOG d_TravelSpec 
-
-[DIALOG d_TravelTown]                 //TOWNS //TOWNS  //TOWNS   //TOWNS  //TOWNS  //TOWNS //TOWNS
-0, 0	// this is always the size.
-resizepic 0 0 3600 215 200
-page 0
-text 40 17 0 0
-text 40 37 1152 1
-text 40 57 1152 2
-text 40 77 1152 3
-text 40 97 1152 4
-text 40 117 1152 5
-text 40 137 1152 6
-text 40 157 0 7
-button 20 40 1209 1210 1 0 1
-button 20 60 1209 1210 1 0 2
-button 20 80 1209 1210 1 0 3
-button 20 100 1209 1210 1 0 4
-button 20 120 1209 1210 1 0 5
-button 20 140 1209 1210 1 0 7
-button 20 160 1209 1210 1 0 6
-
-[DIALOG d_TravelTown TEXT]
-Which Town?
-Britain
-Serpent's Hold
-Cove
-Vesper
-Bucaneer's Den
-Papua
-Previous
-
-[DIALOG d_TravelTown BUTTON]
-
-ON=0
-	SYSMESSAGE=Menu Aborted
-
-ON=1 //BRITAIN
-	SRC.GO 1427,1697,0
-
-ON=2 //SERPENTS HOLD
-	SRC.GO 3009,3363,15
-
-ON=3 //COVE
-	SRC.GO 2264,1202,0
-
-ON=4 //VESPER
-	SRC.GO 2892,686,0
-
-ON=5 //BUCANEER'S DEN
-	SRC.GO 2733,2160,0
-
-ON=6//PREVIOUS
-	SRC.DIALOG d_Travel
-
-ON=7//PAPUA
-	SRC.GO=5726,3205,-3
-
-[DIALOG d_TravelDung]               //DUNGEONS//DUNGEONS//DUNGEONS//NGEONS//DUNGEONS//DUNGEONS
-0, 0	// this is always the size.
-resizepic 0 0 3600 215 165
-page 0
-text 40 17 0 0
-text 40 37 1152 1
-text 40 57 1152 2
-text 40 77 1152 3
-text 40 97 1152 4
-text 40 117 0 5
-button 20 40 1209 1210 1 0 1
-button 20 60 1209 1210 1 0 2
-button 20 80 1209 1210 1 0 3
-button 20 100 1209 1210 1 0 4
-button 20 120 1209 1210 1 0 5
-
-[DIALOG d_TravelDung TEXT]
-Which Dungeon?
-Destard
-Despise
-Deceit
-Wrong
-Previous
-
-[DIALOG d_TravelDung BUTTON]
-
-ON=0
-	SYSMESSAGE=Menu Aborted
-
-ON=1 //DESTARD
-	SRC.GO=1182,2639,0
-
-ON=2 //DESPISE
-	SRC.GO=1300,1075,0
-
-ON=3 //DECEIT
-	SRC.GO=4115,433,5
-
-ON=4 //WRONG
-	SRC.GO=2049,238,10
-
-ON=5 //PREVIOUS
-	SRC.DIALOG d_Travel
-
-[DIALOG d_TravelSpec]              //SPECIAL PLACES
-0, 0	// this is always the size.
-resizepic 0 0 3600 205 225
-page 0
-text 40 17 0 0   
-text 40 37 1152 1
-text 40 57 1152 2
-text 40 77 1152 3
-text 40 97 1152 4
-text 40 117 1152 5
-text 40 137 1152 6
-text 40 157 1152 7
-text 40 177 0 8
-button 20 40 1209 1210 1 0 1
-button 20 60 1209 1210 1 0 2
-button 20 80 1209 1210 1 0 3
-button 20 100 1209 1210 1 0 4
-button 20 120 1209 1210 1 0 5
-button 20 140 1209 1210 1 0 6
-button 20 160 1209 1210 1 0 7
-button 20 180 1209 1210 1 0 8
-
-[DIALOG d_TravelSpec TEXT]
-Which Special Place?
-Fight Night
-Green Acres
-Britain Graveyard
-Britain Mines
-Battle Arena
-Special People
-Star Chamber
-Previous
-
-[DIALOG d_TravelSpec BUTTON]
-
-ON=0
-	SYSMESSAGE=Menu Aborted
-
-ON=1 //Fight Night
-	SRC.GO=1971,811,25
-
-ON=2 //Green Acres
-	SRC.GO 5434,1099,0
-
-ON=3 //Britain Graveyard
-	SRC.GO=1384,1497,10
-
-ON=4 //Britain Mines
-	SRC.GO=1264,1256,0
-
-ON=5 //BATTLE ARENA
-	SRC.GO=5193,1180,0
-
-ON=6 //SPECIAL PEOPLE
-	SRC.GO=5187,1532,0
-
-ON=7 //STAR CHAMBER
-	SRC.GO=5146,1774,0
-
-ON=8 //PREVIOUS
-	SRC.DIALOG d_Travel
-
-[DIALOG d_TravelSupply]             //SUPPLY HALL
-// Sample dialog to travel to the supply hall.
-0, 0	// this is always the size.
-resizepic 0 0 3600 225 100
-page 0
-text 40 17 0 0
-text 40 37 1152 1
-button 20 40 1209 1210 1 0 1
-
-[DIALOG d_TravelSupply TEXT]
-Where to?
-Supply Room
-
-[DIALOG d_TravelSupply BUTTON]
-
-ON=0
-	SYSMESSAGE=Menu Aborted
-
-ON=1 //Supply Room
-	SRC.GO=5271,1234,5
 
 [EOF]
