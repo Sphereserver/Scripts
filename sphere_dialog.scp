@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Mar 26, 2019
+// FILE LAST UPDATED: Friday, Apr 12, 2019
 //
 VERSION=0.56d
 
@@ -1173,20 +1173,20 @@ SDIALOG d_helppage
 [DIALOG d_helppage]
 50,25
 
-resizepic 0 0 0a28 540 345
-dhtmlgump 100 25 360 20 0 0 <DEF.CENTER><DEF.U>Ultima Online Help Menu<DEF.UE><DEF.CENTERE>
-button 400 308 0819 0818 1 0 0
+resizepic 0 0 2600 540 345
+dhtmlgump 90 25 360 20 0 0 <DEF.CENTER><DEF.U>Ultima Online Help Menu<DEF.UE><DEF.CENTERE>
+button 400 308 2073 2072 1 0 0
 
-button 30 50 015a4 015a5 1 0 1
+button 30 50 5540 5541 1 0 1
 dhtmlgump 60 50 450 60 1 1 <DEF.U>General question about Ultima Online<DEF.UE>: Select this option if you are having difficulties learning to use a skill, if you have a general gameplay question, or you would like to search the UO Knowledge Base.
 
-button 30 115 015a4 015a5 1 0 2
+button 30 115 5540 5541 1 0 2
 dhtmlgump 60 115 450 60 1 1 <DEF.U>My character is physically stuck<DEF.UE>: This choice only covers cases where your character is physically stuck in a location they cannot move out of.
 
-button 30 180 015a4 015a5 1 0 3
+button 30 180 5540 5541 1 0 3
 dhtmlgump 60 180 450 60 1 1 <DEF.U>Other<DEF.UE>: If you are experiencing a problem in the game that does not fall into one of the other categories or is not addressed on the Support web page (located at <DEF.A>href="<SERV.URL>"><SERV.URL><DEF.AE>) and requires in-game assistance please use this option.
 
-button 30 245 015a4 015a5 1 0 4
+button 30 245 5540 5541 1 0 4
 dhtmlgump 60 245 450 60 1 1 <DEF.U>Cancel pending request<DEF.UE>: Remove my pending help request from the queue.
 
 [DIALOG d_helppage BUTTON]
@@ -1208,14 +1208,14 @@ ELSE
 ENDIF
 
 ON=3
-SDIALOG d_helppage_gmpage
+SDIALOG d_gmpage_prompt
 
 ON=4
 SYSMESSAGE @035 Removed help request.
 IF (<SERV.GMPAGES>)
- FOR 0 <eval <SERV.GMPAGES> - 1>
+ FOR 0 <eval <SERV.GMPAGES>-1>
   IF !STRCMP("<SERV.GMPAGE.<LOCAL._FOR>.ACCOUNT>","<ACCOUNT>")
-   GMPAGE.<LOCAL._FOR>.DELETE
+   GMPageDelete <LOCAL._FOR>
    return 1
   ENDIF
  ENDFOR
@@ -1228,14 +1228,14 @@ nomove
 noclose
 nodispose
 
-resizepic 0 0 0a28 270 320
+resizepic 0 0 2600 270 320
 dhtmlgump 50 20 250 35 0 0 Choose a town:
 FOR 1 6
  ARGS=<DEF.HelpPage.Teleport.<dLOCAL._FOR>>
  button 50 <eval 20+(<LOCAL._FOR>*35)> 208 209 1 0 <LOCAL._FOR>
  dhtmlgump 75 <eval 20+(<LOCAL._FOR>*35)> 145 20 0 0 <SERV.MAP(<dARGV[0]>,<dARGV[1]>,<dARGV[3]>).REGION.NAME>
 ENDFOR
-button 55 263 0fa5 0fa7 1 0 0
+button 55 263 4005 4007 1 0 0
 dhtmlgump 90 265 200 20 0 0 CANCEL
 
 [DIALOG d_helppage_stuck BUTTON]
@@ -1251,7 +1251,7 @@ ENDIF
 SYSMESSAGE You will be teleported within the next two minutes.
 SERV.NEWITEM i_memory_helppage_stuck
 NEW.MOREP=<DEF.HelpPage.Teleport.<ARGN>>
-NEW.TIMER=<eval 10 + <R110>>
+NEW.TIMER=<eval 10+<R110>>
 NEW.EQUIP
 
 [DEFNAME HelpPageTeleports]
@@ -1276,18 +1276,18 @@ ON=@Timer
  return 1
 
 
-[DIALOG d_helppage_gmpage]
+[DIALOG d_gmpage_prompt]
 50,50
 
-resizepic 0 0 0a28 540 350
+resizepic 0 0 2600 540 350
 dhtmlgump 214 30 150 20 0 0 Enter Description
 dhtmlgump 70 58 400 40 0 0 Please enter a brief description (up to 240 characters) of your problem:
-resizepic 50 98 0dac 440 200
+resizepic 50 98 3500 440 200
 dtextentrylimited 70 118 400 200 0 0 240
-button 125 305 081c 081b 1 0 1
-button 355 305 0819 0818 1 0 0
+button 125 305 2076 2075 1 0 1
+button 355 305 2073 2072 1 0 0
 
-[DIALOG d_helppage_gmpage BUTTON]
+[DIALOG d_gmpage_prompt BUTTON]
 ON=0
 SYSMESSAGE @035 Help request aborted.
 
@@ -1295,11 +1295,185 @@ ON=1
 GMPAGE ADD <ARGTXT[0]>
 
 
+[FUNCTION page]
+SDIALOG d_gmpage_queue
+
+
+[DIALOG d_gmpage_queue]
+50,25
+
+page 0
+resizepic 0 0 2600 540 410
+dhtmlgump 90 25 360 20 0 0 <DEF.CENTER><DEF.U>GM Page Menu<DEF.UE><DEF.CENTERE>
+
+page 1
+LOCAL.Max=<SERV.GMPAGES>
+IF (<LOCAL.Max> > 30)	// dialog can't be too huge or client will crash
+ LOCAL.Max=30
+ENDIF
+IF (<LOCAL.Max>)
+ LOCAL.Page=1
+ FOR 0 <eval <LOCAL.Max>-1>
+  IF (<LOCAL._FOR> > 0) && !(<eval <LOCAL._FOR>%5>)
+   LOCAL.Page ++
+   button 300 373 5540 5541 0 <LOCAL.Page> 0
+   page <LOCAL.Page>
+   button 220 373 5537 5538 0 <eval <LOCAL.Page>-1> 0
+  ENDIF
+  REF1=<SERV.GMPAGE.<LOCAL._FOR>.CHARUID>
+  button 30 <eval 50+((<LOCAL._FOR>%5)*65)> 5540 5541 1 0 <eval <LOCAL._FOR>+1>
+  dhtmlgump 60 <eval 50+((<LOCAL._FOR>%5)*65)> 450 60 1 1 <DEF.U><REF1.NAME><DEF.UE> <QVAL (<REF1.ISONLINE>)? <DEF.BFONT_DGREEN>(online):<DEF.BFONT_DRED>(offline)><DEF.BFONT_BLACK>: <SERV.GMPAGE.<LOCAL._FOR>.REASON>
+ ENDFOR
+ELSE
+ dhtmlgump 60 50 450 20 0 0 GM page queue is empty
+ENDIF
+
+[DIALOG d_gmpage_queue BUTTON]
+ON=1 50
+REF1=<SERV.GMPAGE.<eval <ARGN>-1>.CHARUID>
+IF (<REF1>)
+ SRC.CTAG.Dialog.GMPage.Selected=<eval <ARGN>-1>
+ REF1.DIALOG d_gmpage_info
+ENDIF
+
+
+[DIALOG d_gmpage_info]
+50,25
+
+resizepic 0 0 2600 540 410
+dhtmlgump 90 25 360 20 0 0 <DEF.CENTER><DEF.U>GM Page Menu<DEF.UE><DEF.CENTERE>
+
+dtext 65 50 0 Sent:
+dtext 160 50 0 <FormatMinutes <eval <SERV.GMPAGE.<SRC.CTAG0.Dialog.GMPage.Selected>.TIME>/60>> ago
+
+button 30 70 4005 4007 1 0 1
+dtext 65 70 0 Player:
+dtext 160 70 0 <NAME> (<QVAL (<ISONLINE>)? online:offline>)
+
+ARGS=<SERV.GMPAGE.<SRC.CTAG0.Dialog.GMPage.Selected>.P>
+button 30 90 4005 4007 1 0 2
+dtext 65 90 0 Location:
+dtext 160 90 0 <ARGS> (<SERV.MAP(<ARGV0>,<ARGV1>,<ARGV3>).REGION.REGION.NAME>)
+
+REF1=<SERV.GMPAGE.<SRC.CTAG0.Dialog.GMPage.Selected>.HANDLED>
+button 30 110 <QVAL ((<REF1>) && (<REF1> != <SRC>))? 4020 4022 0 0 0 : <QVAL (<REF1>)? 4002 4004 1 0 3 : 4008 4010 1 0 3>>
+dtext 65 110 0 Handler:
+dtext 160 110 0 <QVAL (<REF1>)? <REF1.NAME>:---->
+
+button 30 130 <QVAL ((<REF1>) && (<REF1> != <SRC>))? 4020 4022 0 0 0 : 4017 4019 1 0 4>
+dtext 65 130 0 Delete
+
+dtext 65 150 0 Message:
+dhtmlgump 160 150 350 100 1 1 <SERV.GMPAGE.<SRC.CTAG0.Dialog.GMPage.Selected>.REASON>
+
+dtext 65 255 0 Response:
+resizepic 160 255 3000 335 100
+dtextentry 165 260 320 90 0 0 <SRC.CTAG.Dialog.GMPage.Response>
+SRC.CTAG.Dialog.GMPage.Response=
+
+button 247 373 <QVAL ((<REF1>) && (<REF1> != <SRC>))? 2074 2074 0 0 0 : 2076 2075 1 0 5>
+
+[DIALOG d_gmpage_info BUTTON]
+ON=0
+SRC.SDIALOG d_gmpage_queue <eval 1+(<SRC.CTAG.Dialog.GMPage.Selected>/5)>
+SRC.CTAG.Dialog.GMPage.Selected=
+
+ON=1
+SRC.GO <P>
+SRC.CTAG.Dialog.GMPage.Response=""<ARGTXT[0]>""
+SDIALOG d_gmpage_info
+
+ON=2
+SRC.GO <SERV.GMPAGE.<SRC.CTAG0.Dialog.GMPage.Selected>.P>
+SRC.CTAG.Dialog.GMPage.Response=""<ARGTXT[0]>""
+SDIALOG d_gmpage_info
+
+ON=3
+REF1=<SERV.GMPAGE.<SRC.CTAG0.Dialog.GMPage.Selected>.HANDLED>
+IF (<REF1> == <SRC>)
+ SERV.GMPAGE.<SRC.CTAG0.Dialog.GMPage.Selected>.HANDLED 0
+ELIF (<SRC.GMPAGEP>)
+ SRC.SYSMESSAGE @035 You are already handling another GM page.
+ELIF !(<REF1>)
+ SERV.GMPAGE.<SRC.CTAG0.Dialog.GMPage.Selected>.HANDLED <SRC>
+ENDIF
+SRC.CTAG.Dialog.GMPage.Response=""<ARGTXT[0]>""
+SDIALOG d_gmpage_info
+
+ON=4
+REF1=<SERV.GMPAGE.<SRC.CTAG0.Dialog.GMPage.Selected>.HANDLED>
+IF (<REF1>) && (<REF1> != <SRC>)
+ SRC.CTAG.Dialog.GMPage.Response=""<ARGTXT[0]>""
+ SDIALOG d_gmpage_info
+ return 1
+ENDIF
+SRC.GMPageDelete <SRC.CTAG0.Dialog.GMPage.Selected>
+SRC.SDIALOG d_gmpage_queue
+
+ON=5
+REF1=<SERV.GMPAGE.<SRC.CTAG0.Dialog.GMPage.Selected>.HANDLED>
+IF (<REF1>) && (<REF1> != <SRC>)
+ SRC.CTAG.Dialog.GMPage.Response=""<ARGTXT[0]>""
+ SDIALOG d_gmpage_info
+ return 1
+ENDIF
+ACCOUNT.TAG.GMPage.Response=""<ARGTXT[0]>""
+IF (<ISONLINE>)
+ DIALOGCLOSE d_gmpage_response
+ SDIALOG d_gmpage_response
+ENDIF
+SRC.GMPageDelete <SRC.CTAG0.Dialog.GMPage.Selected>
+SRC.SDIALOG d_gmpage_queue
+
+[FUNCTION GMPageDelete]
+SERV.GMPAGE.<ARGS>.DELETE
+CTAG.Dialog.GMPage.Selected=
+IF (<SERV.CLIENTS>)
+ FOR 0 <eval <SERV.CLIENTS>-1>
+  REF1=<SERV.CLIENT.<LOCAL._FOR>.UID>
+  IF !(<isempty <REF1.CTAG.Dialog.GMPage.Selected>>)
+   IF (<REF1.CTAG0.Dialog.GMPage.Selected> > <ARGS>)
+    REF1.CTAG0.Dialog.GMPage.Selected --
+   ELIF (<REF1.CTAG0.Dialog.GMPage.Selected> == <ARGS>)
+    REF1.SYSMESSAGE @035 GM page cleared from queue
+    REF1.CTAG.Dialog.GMPage.Selected=
+    REF1.SDIALOG d_gmpage_queue
+   ENDIF
+  ELIF (<REF1.ISDIALOGOPEN.d_gmpage_queue>)
+   REF1.DIALOGCLOSE d_gmpage_queue
+   REF1.SDIALOG d_gmpage_queue
+  ENDIF
+ ENDFOR
+ENDIF
+
+
+[DIALOG d_gmpage_response]
+0,0
+noclose
+nodispose
+
+page 1
+button 23 40 2117 2118 0 2 0
+dtext 0 50 43 Message 
+
+page 2
+resizepic 50 25 2600 540 430
+dhtmlgump 140 50 360 20 0 0 <DEF.CENTER><DEF.U>Ultima Online Help Response<DEF.UE><DEF.CENTERE>
+dhtmlgump 80 90 480 290 1 1 GM tells <NAME>: <ACCOUNT.TAG.GMPage.Response>
+dhtmlgump 80 390 480 20 0 0 Clicking the OKAY button will remove the response you have received.
+button 400 417 2076 2075 1 0 1
+button 475 417 2073 2072 0 1 0
+
+[DIALOG d_gmpage_response BUTTON]
+ON=1
+ACCOUNT.TAG.GMPage.Response=
+
+
 [DIALOG d_pet_release]
 50,50
 
-resizepic 0 0 013be 270 120
-resizepic 10 10 0bb8 250 100
+resizepic 0 0 5054 270 120
+resizepic 10 10 3000 250 100
 dhtmlgump 20 15 230 60 1 1 Are you sure you want to release your pet? Summoned Pets will vanish permanently!
 
 button 20 80 4005 4007 1 0 1

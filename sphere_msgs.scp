@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Mar 9, 2019
+// FILE LAST UPDATED: Friday, Apr 12, 2019
 //
 VERSION=0.56d
 
@@ -190,7 +190,13 @@ EMOTE_DEF_UNICODE	0
 //forensics_timer				"This is %s and it is %lld seconds old. "
 //gargoyle_fly_cantcurrentform	"You can't fly in your current form!"
 //gargoyle_fly_cantdead			"You may not fly while dead."
-//gmpage_prompt					"Describe your comment or problem"
+//gmpage_pending				"There are %d GM page(s) pending. Use %cPAGE command to view."
+//gmpage_prompt					"Please enter a brief description of your problem:"
+//gmpage_prompt_cancel			"Request aborted."
+//gmpage_queue					"Thank you for paging. Queue status : %d"
+//gmpage_received				"GM page from %s [0%lx] @ %s: %s"
+//gmpage_sent					"@035 The next available Game Master will respond as soon as possible. Please check your Journal for messages every few minutes."
+//gmpage_updated				"@035 Your existing GM page has been updated."
 //grandmaster_mark				"%s crafted by %s"
 //healing_am					"Your resurrection attempt is blocked by antimagic."
 //healing_attempt				"%s is attempting to apply bandages to %s"
@@ -456,15 +462,6 @@ EMOTE_DEF_UNICODE	0
 //msg_food_lvl_self				"You are %s"
 //msg_forgiven					"You have been forgiven"
 //msg_frozen					"You are frozen and can not move."
-//msg_gmpage_canceled			"Game Master Page Cancelled."
-//msg_gmpage_notified			"Available Game Masters have been notified of your request."
-//msg_gmpage_qnum				"There are %d messages queued ahead of you"
-//msg_gmpage_qued				"There is no Game Master available to take your call. Your message has been queued."
-//msg_gmpage_rec				"GM Page from %s [0%lx] @ %d,%d,%d,%d : %s"
-//msg_gmpage_update				"You have an existing page. It has been updated."
-//msg_gmpages					"There are %d GM pages pending. Use %cPAGE command."
-//msg_gmpages_none				"No GM pages queued. Use .page ?"
-//msg_gmpages_current			"Current GM .PAGE Account=%s (%s) Reason='%s' Time=%lld."
 //msg_guards					"Guards can now be called on you!"
 //msg_guards_nolonger			"Guards can no longer be called on you."
 //msg_guest						"Your guest curse prevents you from taking this action"
