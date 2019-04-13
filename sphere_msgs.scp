@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Friday, Apr 12, 2019
+// FILE LAST UPDATED: Saturday, Apr 13, 2019
 //
 VERSION=0.56d
 
@@ -119,7 +119,9 @@ EMOTE_DEF_UNICODE	0
 //carve_corpse_scales			"You cut away some scales, but they remain on the corpse."
 //carve_corpse_wool				"You shear it, and the wool is now on the corpse."
 //cmd_invalid					"Not a valid command or format"
-//cmd_remove_player				"Can't remove players this way, Try 'kill','kick' or 'remove 1'"
+//cmd_remove_player				"Can't remove players this way, use 'kick' or 'remove 1'"
+//cmd_toggle_off				"OFF"
+//cmd_toggle_on					"ON"
 //cmdafk_enter					"You go into AFK mode"
 //cmdafk_leave					"You leave AFK mode"
 //cooking_fire_source			"You must be near a fire source to cook."
@@ -359,8 +361,6 @@ EMOTE_DEF_UNICODE	0
 //lockpicking_reach				"You can't reach that."
 //lockpicking_witem				"Use the lock pick on a lockable item."
 //login_lastlogged				"Last logged: %s"
-//login_player					"There is 1 other player here."
-//login_players					"There are %d other players here."
 //lumberjacking_close			"You cannot chop so close to yourself."
 //lumberjacking_kindling_success	"You put some kindling into your backpack."
 //lumberjacking_kindling_axe	"An axe would probably get you more wood."
@@ -414,7 +414,6 @@ EMOTE_DEF_UNICODE	0
 //msg_bounce_pack				"in your pack"
 //msg_cantpush					"You are not strong enough to push %s out of the way."
 //msg_cantsleep					"Can't sleep here"
-//msg_cmd_lackpriv				"You lack privilege to do this."
 //msg_corpse_npc				"%s corpse"
 //msg_corpse_player				"corpse of %s"
 //msg_coward_1					"You have retreated from the battle with %s"
@@ -467,10 +466,6 @@ EMOTE_DEF_UNICODE	0
 //msg_guest						"Your guest curse prevents you from taking this action"
 //msg_heavy						"That is too heavy. You can't move that."		
 //msg_hunger					"You are %s"
-//msg_invis_off					"Invis OFF"
-//msg_invis_on					"Invis ON"
-//msg_invul_off					"Invulnerability OFF"
-//msg_invul_on					"Invulnerability ON"
 //msg_itemplace					"You put the %s %s."
 //msg_jailed					"You have been jailed"
 //msg_key_blanks				"Both keys are blank."
@@ -538,11 +533,9 @@ EMOTE_DEF_UNICODE	0
 //msg_pet_happy_8				"full"
 //msg_push						"You shove %s out of the way."
 //msg_region_enter				"You have entered %s"
-//msg_region_guard_art			"the"
-//msg_region_guards_1			"You are now under the protection of %s guards"
-//msg_region_guards_2			"You have left the protection of %s guards"
-//msg_region_guardsp			"You are under the protection of %s guards"
-//msg_region_guardspt			"the"
+//msg_region_guard_art			"the town"
+//msg_region_guards_1			"You are now under the protection of %s guards."
+//msg_region_guards_2			"You have left the protection of %s guards."
 //msg_region_pvpnot				"You lose your safety from other players."
 //msg_region_pvpsafe			"You are safe from other players here."
 //msg_region_safetyget			"You have a feeling of complete safety"
@@ -1128,7 +1121,7 @@ EMOTE_DEF_UNICODE	0
 //itemstatus_wellworn			"well worn"
 //itemstatus_badly				"badly damaged"
 //itemstatus_fall_apart			"about to fall apart"
-//web_browser_start				"Please wait for your web browser to start..."
+//web_browser_start				"@035 Please wait for your web browser to start..."
 //web_noeffect					"You have no effect on the web"
 //web_destroy					"You destroy the web"
 //web_weaken					"You weaken the web"
