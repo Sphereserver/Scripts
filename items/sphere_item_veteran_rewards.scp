@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2018
+// SPHERE by : Menasoft ©1997-2019
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Mar 24, 2018
+// FILE LAST UPDATED: Wednesday, Jun 12, 2019
 //
 VERSION=0.56d
 
@@ -30,6 +30,95 @@ SUBSECTION=Year 6
 DESCRIPTION=Character Statue Maker (plinth)
 ON=@Create
    COLOR={0b8f 0b9a}
+
+
+[ITEMDEF 032f8]
+DEFNAME=i_weapon_engraving_tool
+NAME=weapon engraving tool
+TAG.EventName=e_engraved
+TAG.DialogTitleCliloc=1072359	//<CENTER>Engraving Tool</CENTER>
+TAG.DialogMsgSuccess="You engraved the object."
+TAG.DialogMsgRemove="You remove the engraving from the object."
+TAG.DialogMsgFailed="The engraving failed."
+CATEGORY=Veteran Rewards
+SUBSECTION=Year 8
+DESCRIPTION=Weapon Engraving Tool
+ON=@Create
+   ATTR=attr_newbie
+   USESMAX=10
+ON=@ClientTooltip
+   SRC.ADDCLILOC 1076224	//8th Year Veteran Reward
+ON=@DClick
+   IF (<TOPOBJ> != <SRC>)
+      SRC.SYSMESSAGE This item must be in your backpack to be used.
+   ELIF (<USESCUR> <= 0)
+      SRC.SYSMESSAGE There are no charges left on this engraving tool.
+   ELSE
+      TARGET Select an object to engrave.
+   ENDIF
+   return 1
+ON=@TargOn_Item
+   IF (<ARGO.TOPOBJ> != <SRC>)
+      SRC.SYSMESSAGE The selected item is not accessible to engrave.
+   ELIF !(<ARGO.ISWEAPON>)
+      SRC.SYSMESSAGE The selected item cannot be engraved by this engraving tool.
+   ELSE
+      SRC.TAG.EngravingTool.UID=<UID>
+      ARGO.SDIALOG d_engraving_tool
+   ENDIF
+   return 1
+ON=@TargOn_Char
+   SRC.SYSMESSAGE The selected item cannot be engraved by this engraving tool.
+   return 1
+
+[TYPEDEF e_engraved]
+ON=@ClientTooltip
+   SRC.ADDCLILOC 1062613,<TAG.Engraved>	//"~1_NAME~"
+
+[DIALOG d_engraving_tool]
+0,0
+REF1=<SRC.TAG.EngravingTool.UID>
+resizepic 50 50 0a28 400 300
+xmfhtmlgumpcolor 50 70 400 20 <REF1.TAG0.DialogTitleCliloc> 0 0 0
+xmfhtmlgumpcolor 75 95 350 145 1072360 1 1 0	//Please enter the text to add to the selected object.  Leave the text area blank to remove the text from the object without using up the tool.
+button 125 300 081a 081b 1 0 1
+button 320 300 0819 0818 1 0 0
+gumppictiled 75 245 350 40 0db0
+gumppictiled 76 245 350 2 023c5
+gumppictiled 75 245 2 40 023c3
+gumppictiled 75 285 350 2 023c5
+gumppictiled 425 245 2 42 023c3
+dtextentrylimited 78 246 344 38 0 1 64
+
+[DIALOG d_engraving_tool BUTTON]
+ON=0
+SRC.TAG.EngravingTool.UID=
+
+ON=1
+REF1=<SRC.TAG.EngravingTool.UID>
+SRC.TAG.EngravingTool.UID=
+IF (<REF1.USESCUR> <= 0) || (<REF1.TOPOBJ> != <SRC>) || (<TOPOBJ> != <SRC>)
+   SRC.SYSMESSAGE <REF1.TAG.DialogMsgFailed>
+   return 1
+ELIF (<isempty <ARGTXT[1]>>)
+   TAG.Engraved=
+   EVENTS=-<REF1.TAG.EventName>
+   SRC.SYSMESSAGE <REF1.TAG.DialogMsgRemove>
+ELSE
+   REF1.USESCUR --
+   TAG.Engraved=<STRSUB 0 64 <ARGTXT[1]>>
+   EVENTS=+<REF1.TAG.EventName>
+   SRC.SYSMESSAGE <REF1.TAG.DialogMsgSuccess>
+ENDIF
+RESENDTOOLTIP
+
+
+[ITEMDEF 042c6]
+DEFNAME=i_retouching_tool
+NAME=retouching tool
+CATEGORY=Veteran Rewards
+SUBSECTION=Year 11
+DESCRIPTION=Retouching Tool
 
 
 [ITEMDEF 042cb]
@@ -539,52 +628,52 @@ NAME=gadgetry table
 
 
 [ITEMDEF 09a38]
-//sewing machine (anim)
+//sewing machine (east)(anim)
 
 [ITEMDEF 09a39]
-//sewing machine (anim)
+//sewing machine (east)(anim)
 
 [ITEMDEF 09a3a]
-//sewing machine (anim)
+//sewing machine (east)(anim)
 
 [ITEMDEF 09a3b]
-//sewing machine (anim)
+//sewing machine (east)(anim)
 
 [ITEMDEF 09a3c]
-//sewing machine (anim)
+//sewing machine (east)(anim)
 
 [ITEMDEF 09a3d]
-//sewing machine (anim)
+//sewing machine (east)(anim)
 
 [ITEMDEF 09a3e]
-//sewing machine (anim)
+//sewing machine (east)(anim)
 
 [ITEMDEF 09a3f]
-//sewing machine (anim)
+//sewing machine (east)(anim)
 
 [ITEMDEF 09a40]
-//sewing machine (anim)
+//sewing machine (south)(anim)
 
 [ITEMDEF 09a41]
-//sewing machine (anim)
+//sewing machine (south)(anim)
 
 [ITEMDEF 09a42]
-//sewing machine (anim)
+//sewing machine (south)(anim)
 
 [ITEMDEF 09a43]
-//sewing machine (anim)
+//sewing machine (south)(anim)
 
 [ITEMDEF 09a44]
-//sewing machine (anim)
+//sewing machine (south)(anim)
 
 [ITEMDEF 09a45]
-//sewing machine (anim)
+//sewing machine (south)(anim)
 
 [ITEMDEF 09a46]
-//sewing machine (anim)
+//sewing machine (south)(anim)
 
 [ITEMDEF 09a47]
-//sewing machine (anim)
+//sewing machine (south)(anim)
 
 [ITEMDEF 09a48]
 DEFNAME=i_sewing_machine
@@ -594,6 +683,21 @@ CATEGORY=Veteran Rewards
 SUBSECTION=Year 7
 DESCRIPTION=Sewing Machine
 DUPELIST=09a49
+ON=@ContextMenuRequest
+   SRC.AddContextEntry 101,1155742	//Toggle: On/Off
+ON=@ContextMenuSelect
+   IF (<ARGN> == 101)
+      IF (<DISPID> == 09a38)
+         DISPID=09a48
+      ELIF (<DISPID> == 09a40)
+         DISPID=09a49
+      ELIF (<DISPID> == 09a48)
+         DISPID=09a38
+      ELIF (<DISPID> == 09a49)
+         DISPID=09a40
+      ENDIF
+      UPDATE
+   ENDIF
 
 [ITEMDEF 09a49]
 //sewing machine
@@ -601,74 +705,97 @@ DUPEITEM=09a48
 
 [ITEMDEF 09a4a]
 DEFNAME=i_sewing_machine_stool
+NAME=stool
+TYPE=t_power_tool
+USESMAX=5000
 CATEGORY=Veteran Rewards
 SUBSECTION=Year 7
-DESCRIPTION=Sewing Machine Stool
+DESCRIPTION=Sewing Machine (stool)
+ON=@DropOn_Self
+   IF (<ARGO.TYPE> != t_sewing_kit)
+      SRC.SYSMESSAGE The container cannot hold that type of object.
+   ENDIF
+
+[TYPEDEF t_power_tool]
+ON=@DropOn_Self
+   IF (<USESCUR> >= <USESMAX>)
+      SRC.SYSMESSAGE Adding this to the power tool would put it over the max number of charges the tool can hold.
+   ELSE
+      LOCAL.Charges=<eval <USESMAX> - <USESCUR>>
+      IF (<LOCAL.Charges> > <ARGO.USESCUR>)
+         LOCAL.Charges=<ARGO.USESCUR>
+      ENDIF
+      USESCUR += <LOCAL.Charges>
+      ARGO.USESCUR -= <LOCAL.Charges>
+      IF (<ARGO.USESCUR> < 1)
+         ARGO.REMOVE
+      ENDIF
+      SOUND 042
+      SRC.SYSMESSAGE Charges have been added to the power tool.
+   ENDIF
+   return 1
 
 
 [ITEMDEF 09a81]
-DEFNAME=i_smithing_press
-NAME=smithing press
-FLIP=1
-CATEGORY=Veteran Rewards
-SUBSECTION=Year 7
-DESCRIPTION=Smithing Press
-DUPELIST=09a89
+//smithing press (east)(anim)
 
 [ITEMDEF 09a82]
-//smithing press (anim)
+//smithing press (east)(anim)
 
 [ITEMDEF 09a83]
-//smithing press (anim)
+//smithing press (east)(anim)
 
 [ITEMDEF 09a84]
-//smithing press (anim)
+//smithing press (east)(anim)
 
 [ITEMDEF 09a85]
-//smithing press (anim)
+//smithing press (east)(anim)
 
 [ITEMDEF 09a86]
-//smithing press (anim)
+//smithing press (east)(anim)
 
 [ITEMDEF 09a87]
-//smithing press (anim)
+//smithing press (east)(anim)
 
 [ITEMDEF 09a88]
-//smithing press (anim)
+//smithing press (east)(anim)
 
 [ITEMDEF 09a89]
-//smithing press
-DUPEITEM=09a81
+//smithing press (south)(anim)
 
 [ITEMDEF 09a8a]
-//smithing press (anim)
+//smithing press (south)(anim)
 
 [ITEMDEF 09a8b]
-//smithing press (anim)
+//smithing press (south)(anim)
 
 [ITEMDEF 09a8c]
-//smithing press (anim)
+//smithing press (south)(anim)
 
 [ITEMDEF 09a8d]
-//smithing press (anim)
+//smithing press (south)(anim)
 
 [ITEMDEF 09a8e]
-//smithing press (anim)
+//smithing press (south)(anim)
 
 [ITEMDEF 09a8f]
-//smithing press (anim)
+//smithing press (south)(anim)
 
 [ITEMDEF 09a90]
-//smithing press (anim)
+//smithing press (south)(anim)
 
 [ITEMDEF 09a91]
 DEFNAME=i_smithing_press_cont
 NAME=smithing press
-TYPE=t_container
-TDATA2=044
+TYPE=t_power_tool
+USESMAX=5000
 CATEGORY=Veteran Rewards
 SUBSECTION=Year 7
 DESCRIPTION=Smithing Press (container)
+ON=@DropOn_Self
+   IF (<ARGO.TYPE> != t_weapon_mace_smith)
+      SRC.SYSMESSAGE The container cannot hold that type of object.
+   ENDIF
 
 
 [ITEMDEF 09a9b]
@@ -715,9 +842,42 @@ DUPELIST=09aa6
 DUPEITEM=09aa5
 
 
+[ITEMDEF 09aa8]
+DEFNAME=i_smithing_press
+NAME=smithing press
+FLIP=1
+CATEGORY=Veteran Rewards
+SUBSECTION=Year 7
+DESCRIPTION=Smithing Press
+DUPELIST=09aa9
+ON=@ContextMenuRequest
+   SRC.AddContextEntry 101,1155742	//Toggle: On/Off
+ON=@ContextMenuSelect
+   IF (<ARGN> == 101)
+      IF (<DISPID> == 09a81)
+         DISPID=09aa8
+      ELIF (<DISPID> == 09a89)
+         DISPID=09aa9
+      ELIF (<DISPID> == 09aa8)
+         DISPID=09a81
+      ELIF (<DISPID> == 09aa9)
+         DISPID=09a89
+      ENDIF
+      UPDATE
+   ENDIF
+
+[ITEMDEF 09aa9]
+//smithing press (south)
+DUPEITEM=09aa8
+
+
 [ITEMDEF 09c18]
+// Although UO files consider this item an default container, OSI use
+// it as Auction Safe system where players can create auctions.
 DEFNAME=i_auction_safe
 NAME=auction safe
+TYPE=t_container
+TDATA2=09bf2
 FLIP=1
 CATEGORY=Veteran Rewards
 SUBSECTION=Year 1
@@ -736,61 +896,76 @@ CATEGORY=Veteran Rewards
 SUBSECTION=Year 7
 DESCRIPTION=Spinning Lathe
 DUPELIST=09c24
+ON=@ContextMenuRequest
+   SRC.AddContextEntry 101,1155742	//Toggle: On/Off
+ON=@ContextMenuSelect
+   IF (<ARGN> == 101)
+      IF (<DISPID> == 09c1a)
+         DISPID=09c1b
+      ELIF (<DISPID> == 09c1b)
+         DISPID=09c1a
+      ELIF (<DISPID> == 09c24)
+         DISPID=09c25
+      ELIF (<DISPID> == 09c25)
+         DISPID=09c24
+      ENDIF
+      UPDATE
+   ENDIF
 
 [ITEMDEF 09c1b]
-//spinning lathe (anim)
+//spinning lathe (south)(anim)
 
 [ITEMDEF 09c1c]
-//spinning lathe (anim)
+//spinning lathe (south)(anim)
 
 [ITEMDEF 09c1d]
-//spinning lathe (anim)
+//spinning lathe (south)(anim)
 
 [ITEMDEF 09c1e]
-//spinning lathe (anim)
+//spinning lathe (south)(anim)
 
 [ITEMDEF 09c1f]
-//spinning lathe (anim)
+//spinning lathe (south)(anim)
 
 [ITEMDEF 09c20]
-//spinning lathe (anim)
+//spinning lathe (south)(anim)
 
 [ITEMDEF 09c21]
-//spinning lathe (anim)
+//spinning lathe (south)(anim)
 
 [ITEMDEF 09c22]
-//spinning lathe (anim)
+//spinning lathe (south)(anim)
 
 [ITEMDEF 09c23]
-//spinning lathe (anim)
+//spinning lathe (south)(anim)
 
 [ITEMDEF 09c24]
-//spinning lathe
+//spinning lathe (east)
 DUPEITEM=09c1a
 
 [ITEMDEF 09c25]
-//spinning lathe (anim)
+//spinning lathe (east)(anim)
 
 [ITEMDEF 09c26]
-//spinning lathe (anim)
+//spinning lathe (east)(anim)
 
 [ITEMDEF 09c27]
-//spinning lathe (anim)
+//spinning lathe (east)(anim)
 
 [ITEMDEF 09c28]
-//spinning lathe (anim)
+//spinning lathe (east)(anim)
 
 [ITEMDEF 09c29]
-//spinning lathe (anim)
+//spinning lathe (east)(anim)
 
 [ITEMDEF 09c2a]
-//spinning lathe (anim)
+//spinning lathe (east)(anim)
 
 [ITEMDEF 09c2b]
-//spinning lathe (anim)
+//spinning lathe (east)(anim)
 
 [ITEMDEF 09c2c]
-//spinning lathe (anim)
+//spinning lathe (east)(anim)
 
 [ITEMDEF 09c2d]
 //spinning lathe (anim)
@@ -803,64 +978,118 @@ CATEGORY=Veteran Rewards
 SUBSECTION=Year 7
 DESCRIPTION=Fletching Station
 DUPELIST=09c38
+ON=@ContextMenuRequest
+   SRC.AddContextEntry 101,1155742	//Toggle: On/Off
+ON=@ContextMenuSelect
+   IF (<ARGN> == 101)
+      IF (<DISPID> == 09c2e)
+         DISPID=09c2f
+      ELIF (<DISPID> == 09c2f)
+         DISPID=09c2e
+      ELIF (<DISPID> == 09c38)
+         DISPID=09c39
+      ELIF (<DISPID> == 09c39)
+         DISPID=09c38
+      ENDIF
+      UPDATE
+   ENDIF
 
 [ITEMDEF 09c2f]
-//fletching station (anim)
+//fletching station (south)(anim)
 
 [ITEMDEF 09c30]
-//fletching station (anim)
+//fletching station (south)(anim)
 
 [ITEMDEF 09c31]
-//fletching station (anim)
+//fletching station (south)(anim)
 
 [ITEMDEF 09c32]
-//fletching station (anim)
+//fletching station (south)(anim)
 
 [ITEMDEF 09c33]
-//fletching station (anim)
+//fletching station (south)(anim)
 
 [ITEMDEF 09c34]
-//fletching station (anim)
+//fletching station (south)(anim)
 
 [ITEMDEF 09c35]
-//fletching station (anim)
+//fletching station (south)(anim)
 
 [ITEMDEF 09c36]
-//fletching station (anim)
+//fletching station (south)(anim)
 
 [ITEMDEF 09c37]
-//fletching station (anim)
+//fletching station (south)(anim)
 
 [ITEMDEF 09c38]
-//fletching station
+//fletching station (east)
 DUPEITEM=09c2e
 
 [ITEMDEF 09c39]
-//fletching station (anim)
+//fletching station (east)(anim)
 
 [ITEMDEF 09c3a]
-//fletching station (anim)
+//fletching station (east)(anim)
 
 [ITEMDEF 09c3b]
-//fletching station (anim)
+//fletching station (east)(anim)
 
 [ITEMDEF 09c3c]
-//fletching station (anim)
+//fletching station (east)(anim)
 
 [ITEMDEF 09c3d]
-//fletching station (anim)
+//fletching station (east)(anim)
 
 [ITEMDEF 09c3e]
-//fletching station (anim)
+//fletching station (east)(anim)
 
 [ITEMDEF 09c3f]
-//fletching station (anim)
+//fletching station (east)(anim)
 
 [ITEMDEF 09c40]
-//fletching station (anim)
+//fletching station (east)(anim)
 
 [ITEMDEF 09c41]
-//fletching station (anim)
+//fletching station (east)(anim)
+
+
+[ITEMDEF 09c43]
+DEFNAME=i_fletching_station_rack
+NAME=rack
+TYPE=t_power_tool
+FLIP=1
+USESMAX=5000
+CATEGORY=Veteran Rewards
+SUBSECTION=Year 7
+DESCRIPTION=Fletching Station (rack)
+DUPELIST=09c44
+ON=@DropOn_Self
+   IF (<ARGO.BASEID> != i_arrow_fletching)	//fletcher's tools
+      SRC.SYSMESSAGE The container cannot hold that type of object.
+   ENDIF
+
+[ITEMDEF 09c44]
+//fletching station (rack)
+DUPEITEM=09c43
+
+
+[ITEMDEF 09c46]
+DEFNAME=i_spinning_lathe_bucket
+NAME=bucket
+TYPE=t_power_tool
+FLIP=1
+CATEGORY=Veteran Rewards
+SUBSECTION=Year 7
+DESCRIPTION=Spinning Lathe (bucket)
+DUPELIST=09c47
+ON=@DropOn_Self
+   IF (<ARGO.TYPE> != t_carpentry)
+      SRC.SYSMESSAGE The container cannot hold that type of object.
+   ENDIF
+
+[ITEMDEF 09c47]
+//spinning lathe (bucket)
+DUPEITEM=09c46
 
 
 [ITEMDEF 09d83]
@@ -871,73 +1100,92 @@ CATEGORY=Veteran Rewards
 SUBSECTION=Year 7
 DESCRIPTION=Alchemy Station
 DUPELIST=09d8e
+ON=@ContextMenuRequest
+   SRC.AddContextEntry 101,1155742	//Toggle: On/Off
+ON=@ContextMenuSelect
+   IF (<ARGN> == 101)
+      IF (<DISPID> == 09d83)
+         DISPID=09d84
+      ELIF (<DISPID> == 09d84)
+         DISPID=09d83
+      ELIF (<DISPID> == 09d8e)
+         DISPID=09d8f
+      ELIF (<DISPID> == 09d8f)
+         DISPID=09d8e
+      ENDIF
+      UPDATE
+   ENDIF
 
 [ITEMDEF 09d84]
-//alchemy station (anim)
+//alchemy station (south)(anim)
 
 [ITEMDEF 09d85]
-//alchemy station (anim)
+//alchemy station (south)(anim)
 
 [ITEMDEF 09d86]
-//alchemy station (anim)
+//alchemy station (south)(anim)
 
 [ITEMDEF 09d87]
-//alchemy station (anim)
+//alchemy station (south)(anim)
 
 [ITEMDEF 09d88]
-//alchemy station (anim)
+//alchemy station (south)(anim)
 
 [ITEMDEF 09d89]
-//alchemy station (anim)
+//alchemy station (south)(anim)
 
 [ITEMDEF 09d8a]
-//alchemy station (anim)
+//alchemy station (south)(anim)
 
 [ITEMDEF 09d8b]
-//alchemy station (anim)
+//alchemy station (south)(anim)
 
 [ITEMDEF 09d8c]
 DEFNAME=i_alchemy_station_cont
 NAME=alchemy station
+TYPE=t_power_tool
+USESMAX=5000
 FLIP=1
-TYPE=t_container
-TDATA2=051
 CATEGORY=Veteran Rewards
 SUBSECTION=Year 7
 DESCRIPTION=Alchemy Station (container)
 DUPELIST=09d97
+ON=@DropOn_Self
+   IF (<ARGO.TYPE> != t_mortar)
+      SRC.SYSMESSAGE The container cannot hold that type of object.
+   ENDIF
 
 
 [ITEMDEF 09d8e]
-//alchemy station
+//alchemy station (east)
 DUPEITEM=09d83
 
 [ITEMDEF 09d8f]
-//alchemy station (anim)
+//alchemy station (east)(anim)
 
 [ITEMDEF 09d90]
-//alchemy station (anim)
+//alchemy station (east)(anim)
 
 [ITEMDEF 09d91]
-//alchemy station (anim)
+//alchemy station (east)(anim)
 
 [ITEMDEF 09d92]
-//alchemy station (anim)
+//alchemy station (east)(anim)
 
 [ITEMDEF 09d93]
-//alchemy station (anim)
+//alchemy station (east)(anim)
 
 [ITEMDEF 09d94]
-//alchemy station (anim)
+//alchemy station (east)(anim)
 
 [ITEMDEF 09d95]
-//alchemy station (anim)
+//alchemy station (east)(anim)
 
 [ITEMDEF 09d96]
-//alchemy station (anim)
+//alchemy station (east)(anim)
 
 [ITEMDEF 09d97]
-//alchemy station (container)
+//alchemy station (east)(container)
 DUPEITEM=09d8c
 
 [ITEMDEF 09d98]
@@ -948,76 +1196,99 @@ CATEGORY=Veteran Rewards
 SUBSECTION=Year 7
 DESCRIPTION=BBQ Smoker
 DUPELIST=09d9e
+ON=@ContextMenuRequest
+   SRC.AddContextEntry 101,1155742	//Toggle: On/Off
+ON=@ContextMenuSelect
+   IF (<ARGN> == 101)
+      IF (<DISPID> == 09d98)
+         DISPID=09d99
+      ELIF (<DISPID> == 09d99)
+         DISPID=09d98
+      ELIF (<DISPID> == 09d9e)
+         DISPID=09d9f
+      ELIF (<DISPID> == 09d9f)
+         DISPID=09d9e
+      ENDIF
+      UPDATE
+   ENDIF
 
 [ITEMDEF 09d99]
-//BBQ smoker (anim)
+//BBQ smoker (south)(anim)
 
 [ITEMDEF 09d9a]
-//BBQ smoker (anim)
+//BBQ smoker (south)(anim)
 
 [ITEMDEF 09d9b]
-//BBQ smoker (anim)
+//BBQ smoker (south)(anim)
 
 [ITEMDEF 09d9c]
-//BBQ smoker (anim)
+//BBQ smoker (south)(anim)
 
 [ITEMDEF 09d9d]
 DEFNAME=i_bbq_smoker_cont
 NAME=BBQ smoker
+TYPE=t_power_tool
+USESMAX=5000
 FLIP=1
-TYPE=t_container
-//TDATA2=
 CATEGORY=Veteran Rewards
 SUBSECTION=Year 7
 DESCRIPTION=BBQ Smoker (container)
 DUPELIST=09da3
+ON=@DropOn_Self
+   IF (<ARGO.TYPE> != t_cooking)
+      SRC.SYSMESSAGE The container cannot hold that type of object.
+   ENDIF
 
 [ITEMDEF 09d9e]
-//BBQ smoker
+//BBQ smoker (east)
 DUPEITEM=09d98
 
 [ITEMDEF 09d9f]
-//BBQ smoker (anim)
+//BBQ smoker (east)(anim)
 
 [ITEMDEF 09da0]
-//BBQ smoker (anim)
+//BBQ smoker (east)(anim)
 
 [ITEMDEF 09da1]
-//BBQ smoker (anim)
+//BBQ smoker (east)(anim)
 
 [ITEMDEF 09da2]
-//BBQ smoker (anim)
+//BBQ smoker (east)(anim)
 
 [ITEMDEF 09da3]
-//BBQ smoker (container)
+//BBQ smoker (east)(container)
 DUPEITEM=09d9d
 
 
 [ITEMDEF 09fea]
-DEFNAME=i_enchanted_writing_desk_south
+DEFNAME=i_enchanted_writing_desk
 NAME=enchanted writing desk
-TYPE=t_light_out
-TDATA3=i_enchanted_writing_desk_south_lit
+FLIP=1
 CATEGORY=Veteran Rewards
 SUBSECTION=Year 7
-DESCRIPTION=Enchanted Writing Desk (unlit)
+DESCRIPTION=Enchanted Writing Desk
+DUPELIST=09ff1
 ON=@Create
    MOREZ=29
-ON=@ClientTooltip
-   SRC.ADDCLILOC 502696	//turned off
+ON=@ContextMenuRequest
+   SRC.AddContextEntry 101,1155742	//Toggle: On/Off
+ON=@ContextMenuSelect
+   IF (<ARGN> == 101)
+      IF (<DISPID> == 09fea)
+         DISPID=09feb
+      ELIF (<DISPID> == 09feb)
+         DISPID=09fea
+      ELIF (<DISPID> == 09ff1)
+         DISPID=09ff2
+      ELIF (<DISPID> == 09ff2)
+         DISPID=09ff1
+      ENDIF
+      UPDATE
+   ENDIF
 
 [ITEMDEF 09feb]
-DEFNAME=i_enchanted_writing_desk_south_lit
-NAME=enchanted writing desk
-TYPE=t_light_lit
-TDATA3=i_enchanted_writing_desk_south
-CATEGORY=Veteran Rewards
-SUBSECTION=Year 7
-DESCRIPTION=Enchanted Writing Desk (lit)
-ON=@Create
-   MOREZ=29
-ON=@ClientTooltip
-   SRC.ADDCLILOC 502695	//turned on
+//enchanted writing desk (south)(anim)
+CAN=can_i_light
 
 [ITEMDEF 09fec]
 //enchanted writing desk (south)(anim)
@@ -1035,30 +1306,12 @@ ON=@ClientTooltip
 //enchanted writing desk (south)(anim)
 
 [ITEMDEF 09ff1]
-DEFNAME=i_enchanted_writing_desk_east
-NAME=enchanted writing desk
-TYPE=t_light_out
-TDATA3=i_enchanted_writing_desk_east_lit
-CATEGORY=Veteran Rewards
-SUBSECTION=Year 7
-DESCRIPTION=Enchanted Writing Desk (unlit)
-ON=@Create
-   MOREZ=29
-ON=@ClientTooltip
-   SRC.ADDCLILOC 502696	//turned off
+//enchanted writing desk (east)
+DUPEITEM=09fea
 
 [ITEMDEF 09ff2]
-DEFNAME=i_enchanted_writing_desk_east_lit
-NAME=enchanted writing desk
-TYPE=t_light_lit
-TDATA3=i_enchanted_writing_desk_east
-CATEGORY=Veteran Rewards
-SUBSECTION=Year 7
-DESCRIPTION=Enchanted Writing Desk (lit)
-ON=@Create
-   MOREZ=29
-ON=@ClientTooltip
-   SRC.ADDCLILOC 502695	//turned on
+//enchanted writing desk (east)(anim)
+CAN=can_i_light
 
 [ITEMDEF 09ff3]
 //enchanted writing desk (east)(anim)
@@ -1078,13 +1331,17 @@ ON=@ClientTooltip
 [ITEMDEF 09ff8]
 DEFNAME=i_enchanted_writing_desk_container
 NAME=wooden chest
-TYPE=t_container
-TDATA2=09cd9
+TYPE=t_power_tool
+USESMAX=5000
 FLIP=1
 CATEGORY=Veteran Rewards
 SUBSECTION=Year 7
 DESCRIPTION=Enchanted Writing Desk (wooden chest)
 DUPELIST=09ff9
+ON=@DropOn_Self
+   IF (<ARGO.BASEID> != i_pen_and_ink)
+      SRC.SYSMESSAGE The container cannot hold that type of object.
+   ENDIF
 
 [ITEMDEF 09ff9]
 //wooden chest
@@ -1093,303 +1350,601 @@ DUPEITEM=09ff8
 
 [ITEMDEF 0a011]
 //koi pond (multi-part)(small)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a012]
 //koi pond (multi-part)(small)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a013]
 //koi pond (multi-part)(small)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a014]
 //koi pond (multi-part)(small)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a015]
 //koi pond (multi-part)(small)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a016]
 //koi pond (multi-part)(small)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a017]
 //koi pond (multi-part)(small)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a018]
 //koi pond (multi-part)(small)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a019]
 //koi pond (multi-part)(small)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a01a]
 //koi pond (multi-part)(small)(anim)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a01b]
 //koi pond (multi-part)(small)(anim)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a01c]
 //koi pond (multi-part)(small)(anim)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a01d]
 //koi pond (multi-part)(small)(anim)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a01e]
 //koi pond (multi-part)(small)(anim)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a01f]
 //koi pond (multi-part)(medium)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a020]
 //koi pond (multi-part)(medium)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a021]
 //koi pond (multi-part)(medium)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a022]
 //koi pond (multi-part)(medium)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a023]
 //koi pond (multi-part)(medium)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a024]
 //koi pond (multi-part)(medium)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a025]
 //koi pond (multi-part)(medium)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a026]
 //koi pond (multi-part)(medium)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a027]
 //koi pond (multi-part)(medium)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a028]
 //koi pond (multi-part)(medium)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a029]
 //koi pond (multi-part)(medium)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a02a]
 //koi pond (multi-part)(medium)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a02b]
 //koi pond (multi-part)(medium)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a02c]
 //koi pond (multi-part)(medium)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a02d]
 //koi pond (multi-part)(medium)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a02e]
 //koi pond (multi-part)(medium)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a02f]
 //koi pond (multi-part)(medium)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a030]
 //koi pond (multi-part)(medium)(anim)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a031]
 //koi pond (multi-part)(medium)(anim)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a032]
 //koi pond (multi-part)(medium)(anim)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a033]
 //koi pond (multi-part)(medium)(anim)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a034]
 //koi pond (multi-part)(medium)(anim)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a035]
 //koi pond (multi-part)(medium)(anim)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a036]
 //koi pond (multi-part)(medium)(anim)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a037]
 //koi pond (multi-part)(medium)(anim)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a038]
 //koi pond (multi-part)(large)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a039]
 //koi pond (multi-part)(large)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a03a]
 //koi pond (multi-part)(large)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a03b]
 //koi pond (multi-part)(large)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a03c]
 //koi pond (multi-part)(large)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a03d]
 //koi pond (multi-part)(large)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a03e]
 //koi pond (multi-part)(large)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a03f]
 //koi pond (multi-part)(large)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a040]
 //koi pond (multi-part)(large)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a041]
 //koi pond (multi-part)(large)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a042]
 //koi pond (multi-part)(large)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a043]
 //koi pond (multi-part)(large)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a044]
 //koi pond (multi-part)(large)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a045]
 //koi pond (multi-part)(large)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a046]
 //koi pond (multi-part)(large)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a047]
 //koi pond (multi-part)(large)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a048]
 //koi pond (multi-part)(large)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a049]
 //koi pond (multi-part)(large)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a04a]
 //koi pond (multi-part)(large)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a04b]
 //koi pond (multi-part)(large)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a04c]
 //koi pond (multi-part)(large)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a04d]
 //koi pond (multi-part)(large)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a04e]
 //koi pond (multi-part)(large)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a04f]
 //koi pond (multi-part)(large)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a050]
 //koi pond (multi-part)(large)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a051]
 //koi pond (multi-part)(large)(anim)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a052]
 //koi pond (multi-part)(large)(anim)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a053]
 //koi pond (multi-part)(large)(anim)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a054]
 //koi pond (multi-part)(large)(anim)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a055]
 //koi pond (multi-part)(large)(anim)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a056]
 //koi pond (multi-part)(large)(anim)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a057]
 //koi pond (multi-part)(large)(anim)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a058]
 //koi pond (multi-part)(large)(anim)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a059]
 //koi pond (multi-part)(large)(anim)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a05a]
 //koi pond (multi-part)(large)(anim)
-NAME=koi pond
+NAME=pond
 
 [ITEMDEF 0a05b]
 //koi pond (multi-part)(large)(anim)
-NAME=koi pond
+NAME=pond
+
+
+[ITEMDEF 0a0ee]
+DEFNAME=i_water_wheel_east
+NAME=water wheel
+TYPE=t_water
+CATEGORY=Veteran Rewards
+SUBSECTION=Year 10
+DESCRIPTION=Water Wheel (east)
+DUPELIST=0a0f8
+
+[ITEMDEF 0a0ef]
+//water wheel (east)(anim)
+
+[ITEMDEF 0a0f0]
+//water wheel (east)(anim)
+
+[ITEMDEF 0a0f1]
+//water wheel (east)(anim)
+
+[ITEMDEF 0a0f2]
+//water wheel (east)(anim)
+
+[ITEMDEF 0a0f3]
+//water wheel (east)(anim)
+
+[ITEMDEF 0a0f4]
+//water wheel (east)(anim)
+
+[ITEMDEF 0a0f5]
+//water wheel (east)(anim)
+
+[ITEMDEF 0a0f6]
+//water wheel (east)(anim)
+
+[ITEMDEF 0a0f7]
+//water wheel (east)(anim)
+
+[ITEMDEF 0a0f8]
+DEFNAME=i_water_wheel_south
+NAME=water wheel
+TYPE=t_water
+CATEGORY=Veteran Rewards
+SUBSECTION=Year 10
+DESCRIPTION=Water Wheel (south)
+DUPEITEM=0a0ee
+
+[ITEMDEF 0a0f9]
+//water wheel (south)(anim)
+
+[ITEMDEF 0a0fa]
+//water wheel (south)(anim)
+
+[ITEMDEF 0a0fb]
+//water wheel (south)(anim)
+
+[ITEMDEF 0a0fc]
+//water wheel (south)(anim)
+
+[ITEMDEF 0a0fd]
+//water wheel (south)(anim)
+
+[ITEMDEF 0a0fe]
+//water wheel (south)(anim)
+
+[ITEMDEF 0a0ff]
+//water wheel (south)(anim)
+
+[ITEMDEF 0a100]
+//water wheel (south)(anim)
+
+[ITEMDEF 0a101]
+//water wheel (south)(anim)
+
+
+[ITEMDEF 0a20a]
+DEFNAME=i_embroidery_tool
+TAG.EventName=e_embroidered
+TAG.DialogTitleCliloc=1158846	//<CENTER>Embroidery Tool</CENTER>
+TAG.DialogMsgSuccess="You embroider the object."
+TAG.DialogMsgRemove="You remove the embroidery from the object."
+TAG.DialogMsgFailed="The embroidery failed."
+CATEGORY=Veteran Rewards
+SUBSECTION=Year 4
+DESCRIPTION=Embroidery Tool
+ON=@Create
+   ATTR=attr_newbie
+   USESMAX=10
+ON=@ClientTooltip
+   SRC.ADDCLILOC 1076220	//4th Year Veteran Reward
+ON=@DClick
+   IF (<TOPOBJ> != <SRC>)
+      SRC.SYSMESSAGE This item must be in your backpack to be used.
+   ELIF (<USESCUR> <= 0)
+      SRC.SYSMESSAGE There are no charges left on this embroidery tool.
+   ELSE
+      TARGET Select an object to embroider
+   ENDIF
+   return 1
+ON=@TargOn_Item
+   IF (<ARGO.TOPOBJ> != <SRC>)
+      SRC.SYSMESSAGE The selected item is not accessible to engrave.
+   ELIF (<ARGO.TYPE> != t_clothing)
+      SRC.SYSMESSAGE The selected item cannot be embroidered by this tool.
+   ELSE
+      SRC.TAG.EngravingTool.UID=<UID>
+      ARGO.SDIALOG d_engraving_tool
+   ENDIF
+   return 1
+ON=@TargOn_Char
+   SRC.SYSMESSAGE The selected item cannot be embroidered by this tool.
+   return 1
+
+[TYPEDEF e_embroidered]
+ON=@ClientTooltip
+   SRC.ADDCLILOC 1158847,<TAG.Engraved>	//Embroidered: ~1_MESSAGE~
+
+
+[ITEMDEF 0a211]
+DEFNAME=i_tinker_bench_stool
+NAME=stool
+TYPE=t_power_tool
+USESMAX=5000
+CATEGORY=Veteran Rewards
+SUBSECTION=Year 7
+DESCRIPTION=Tinker Bench (stool)
+ON=@DropOn_Self
+   IF (<ARGO.TYPE> != t_tinker_tools)
+      SRC.SYSMESSAGE The container cannot hold that type of object.
+   ENDIF
+
+[ITEMDEF 0a212]
+DEFNAME=i_tinker_bench
+NAME=tinker bench
+FLIP=1
+CATEGORY=Veteran Rewards
+SUBSECTION=Year 7
+DESCRIPTION=Tinker Bench
+DUPELIST=0a21a
+ON=@ContextMenuRequest
+   SRC.AddContextEntry 101,1155742	//Toggle: On/Off
+ON=@ContextMenuSelect
+   IF (<ARGN> == 101)
+      IF (<DISPID> == 0a212)
+         DISPID=0a213
+         MESSAGE @047e,,1 *You ignite the fire*
+      ELIF (<DISPID> == 0a213)
+         DISPID=0a212
+         MESSAGE @047e,,1 *You douse the fire*
+      ELIF (<DISPID> == 0a21a)
+         DISPID=0a21b
+         MESSAGE @047e,,1 *You ignite the fire*
+      ELIF (<DISPID> == 0a21b)
+         DISPID=0a21a
+         MESSAGE @047e,,1 *You douse the fire*
+      ENDIF
+      UPDATE
+   ENDIF
+
+[ITEMDEF 0a213]
+//tinker bench (south)(anim)
+
+[ITEMDEF 0a214]
+//tinker bench (south)(anim)
+
+[ITEMDEF 0a215]
+//tinker bench (south)(anim)
+
+[ITEMDEF 0a216]
+//tinker bench (south)(anim)
+
+[ITEMDEF 0a217]
+//tinker bench (south)(anim)
+
+[ITEMDEF 0a218]
+//tinker bench (south)(anim)
+
+[ITEMDEF 0a219]
+//tinker bench (south)(anim)
+
+[ITEMDEF 0a21a]
+//tinker bench (east)
+DUPEITEM=0a212
+
+[ITEMDEF 0a21b]
+//tinker bench (east)(anim)
+
+[ITEMDEF 0a21c]
+//tinker bench (east)(anim)
+
+[ITEMDEF 0a21d]
+//tinker bench (east)(anim)
+
+[ITEMDEF 0a21e]
+//tinker bench (east)(anim)
+
+[ITEMDEF 0a21f]
+//tinker bench (east)(anim)
+
+[ITEMDEF 0a220]
+//tinker bench (east)(anim)
+
+[ITEMDEF 0a221]
+//tinker bench (east)(anim)
+
+
+[ITEMDEF 0a277]
+DEFNAME=i_repair_bench
+NAME=repair bench
+FLIP=1
+CATEGORY=Veteran Rewards
+SUBSECTION=Year 5
+DESCRIPTION=Repair Bench
+DUPELIST=0a27e
+
+[ITEMDEF 0a278]
+//repair bench (south)(anim)
+
+[ITEMDEF 0a279]
+//repair bench (south)(anim)
+
+[ITEMDEF 0a27a]
+//repair bench (south)(anim)
+
+[ITEMDEF 0a27b]
+//repair bench (south)(anim)
+
+[ITEMDEF 0a27c]
+//repair bench (south)(anim)
+
+[ITEMDEF 0a27d]
+//repair bench (south)(anim)
+
+[ITEMDEF 0a27e]
+//repair bench (east)
+DUPEITEM=0a277
+
+[ITEMDEF 0a27f]
+//repair bench (east)(anim)
+
+[ITEMDEF 0a280]
+//repair bench (east)(anim)
+
+[ITEMDEF 0a281]
+//repair bench (east)(anim)
+
+[ITEMDEF 0a282]
+//repair bench (east)(anim)
+
+[ITEMDEF 0a283]
+//repair bench (east)(anim)
+
+[ITEMDEF 0a284]
+//repair bench (east)(anim)
+
+
+[DIALOG d_repair_bench]
+100,100
+
+resizepic 0 0 06db 370 470
+gumppic 82 0 06e4
+xmfhtmltok 10 10 350 18 0 0 0 1114513 @#1158860		//<div align=center>Repair Bench</div>
+xmfhtmlgumpcolor 118 57 190 20 1158878 0 0 32736	//Skill
+xmfhtmlgumpcolor 213 57 190 20 1158879 0 0 32736	//Charges
+
+FOR 0 6
+   ARGS=<DEF.RepairBenchDialog.<dLOCAL._FOR>>
+   tilepic 20 <eval 80+(<LOCAL._FOR>*45)> <ARGV0>
+   tooltip <ARGV1>
+   button 70 <eval 97+(<LOCAL._FOR>*40)> 015e1 015e5 1 0 <eval 100+<LOCAL._FOR>>
+   dtext 113 <eval 97+(<LOCAL._FOR>*40)> 05f <fval <TAG0.<ARGV2>.Skill>>
+   dtext 218 <eval 97+(<LOCAL._FOR>*40)> 05f <TAG0.<ARGV2>.Charges>
+   button 318 <eval 97+(<LOCAL._FOR>*40)> 02716 02716 1 0 <eval 200+<LOCAL._FOR>>
+ENDFOR
+
+button 70 407 5601 5605 1 0 1
+xmfhtmlgumpcolor 95 407 200 30 1153100 0 0 32767	//Add Charges
+
+//TO-DO: Add missing functionality
+[DIALOG d_repair_bench BUTTON]
+ON=1
+TARGET Which repair deed or container of repair deeds do you wish to add to the repair bench?
+
+ON=100 106
+TARGET Select item to repair.
+
+ON=200 206
+ARGS=<DEF.RepairBenchDialog.<eval <ARGN>-200>>
+SRC.SYSMESSAGE You clear all the <ARGV2> charges from the bench.
+
+[DEFNAME RepairBenchDialogEntries]
+RepairBenchDialog.0	01eb8, 1044097, Tinkering
+RepairBenchDialog.1	00fb4, 1044067, Blacksmithing
+RepairBenchDialog.2	01034, 1044071, Carpentry
+RepairBenchDialog.3	00f9d, 1044094, Tailoring
+RepairBenchDialog.4	012b3, 1072392, Masonry
+RepairBenchDialog.5	04516, 1072393, Glassblowing
+RepairBenchDialog.6	01022, 1015156, Fletching
 
 
 ////////////
@@ -1490,7 +2045,7 @@ COMPONENT=04ced,0,1
 
 [MULTIDEF m_koi_pond_small]
 ID=0a019
-NAME=Koi Pond
+NAME=pond
 TYPE=t_multi
 CATEGORY=Veteran Rewards
 SUBSECTION=Year 10
@@ -1507,7 +2062,7 @@ COMPONENT=0a018,0,-1
 
 [MULTIDEF m_koi_pond_medium]
 ID=0a02f
-NAME=Koi Pond
+NAME=pond
 TYPE=t_multi
 CATEGORY=Veteran Rewards
 SUBSECTION=Year 10
@@ -1532,7 +2087,7 @@ COMPONENT=0a02e,0,-1
 
 [MULTIDEF m_koi_pond_large]
 ID=0a050
-NAME=Koi Pond
+NAME=pond
 TYPE=t_multi
 CATEGORY=Veteran Rewards
 SUBSECTION=Year 10

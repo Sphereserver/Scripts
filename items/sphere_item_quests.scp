@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2018
+// SPHERE by : Menasoft ©1997-2019
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Wednesday, Dec 26, 2018
+// FILE LAST UPDATED: Wednesday, Jun 12, 2019
 //
 VERSION=0.56d
 
@@ -261,7 +261,7 @@ ON=@DClick
 [DIALOG d_town_cryer]
 50,50
 resizepic 0 0 9390 655 900
-gumppic 60 40 0eff7
+gumppic 60 40 0266c
 gumppic 40 205 <TAG0.GumpID>
 dhtmlgump 40 140 580 20 0 0 <DEF.CENTER><TAG.Title><DEF.CENTERE>
 dhtmlgump 40 167 580 20 0 0 <DEF.CENTER><TAG.Author><DEF.CENTERE>
@@ -358,6 +358,87 @@ TDATA2=09be9
 CATEGORY=Quests
 SUBSECTION=Shattered Obelisk
 DESCRIPTION=Card (Hydros)
+
+
+[MULTIDEF 02120]
+DEFNAME=m_caravan_ambushed_trade
+TYPE=t_multi
+CATEGORY=Quests
+SUBSECTION=Shattered Obelisk
+DESCRIPTION=Caravan (multi)(ambushed trade)
+MULTIREGION=-4,-4,5,5
+
+[MULTIDEF 02121]
+DEFNAME=m_caravan_moonglow
+TYPE=t_multi
+CATEGORY=Quests
+SUBSECTION=Shattered Obelisk
+DESCRIPTION=Caravan (multi)(moonglow)
+MULTIREGION=-3,-3,1,4
+
+[MULTIDEF 02122]
+DEFNAME=m_caravan_minoc
+TYPE=t_multi
+CATEGORY=Quests
+SUBSECTION=Shattered Obelisk
+DESCRIPTION=Caravan (multi)(minoc)
+MULTIREGION=-5,-5,2,0
+
+[MULTIDEF 02123]
+DEFNAME=m_caravan_skarabrae
+TYPE=t_multi
+CATEGORY=Quests
+SUBSECTION=Shattered Obelisk
+DESCRIPTION=Caravan (multi)(skarabrae)
+MULTIREGION=-4,-4,0,3
+
+[MULTIDEF 02124]
+DEFNAME=m_caravan_jhelom
+TYPE=t_multi
+CATEGORY=Quests
+SUBSECTION=Shattered Obelisk
+DESCRIPTION=Caravan (multi)(jhelom)
+MULTIREGION=-5,-5,2,0
+
+[MULTIDEF 02125]
+DEFNAME=m_caravan_trinsic
+TYPE=t_multi
+CATEGORY=Quests
+SUBSECTION=Shattered Obelisk
+DESCRIPTION=Caravan (multi)(trinsic)
+MULTIREGION=-4,-4,0,4
+
+[MULTIDEF 02126]
+DEFNAME=m_caravan_sosaria
+TYPE=t_multi
+CATEGORY=Quests
+SUBSECTION=Shattered Obelisk
+DESCRIPTION=Caravan (multi)(sosaria)
+MULTIREGION=-5,-5,3,0
+
+[MULTIDEF 02127]
+DEFNAME=m_caravan_magincia
+TYPE=t_multi
+CATEGORY=Quests
+SUBSECTION=Shattered Obelisk
+DESCRIPTION=Caravan (multi)(magincia)
+MULTIREGION=-5,-5,0,2
+
+[MULTIDEF 02128]
+DEFNAME=m_caravan_city
+TYPE=t_multi
+CATEGORY=Quests
+SUBSECTION=Shattered Obelisk
+DESCRIPTION=Caravan (multi)(city)
+MULTIREGION=-3,-3,4,0
+
+[MULTIDEF 02129]
+DEFNAME=m_caravan_yew
+TYPE=t_multi
+CATEGORY=Quests
+SUBSECTION=Shattered Obelisk
+DESCRIPTION=Caravan (multi)(yew)
+MULTIREGION=-5,-5,2,0
 
 
 //////////////////////////
@@ -681,5 +762,265 @@ TAG.GumpID=06d8
 CATEGORY=Quests
 SUBSECTION=Krampus Encounter
 DESCRIPTION=The Town Cryer
+
+
+/////////////////
+// Rising Tide //
+/////////////////
+
+[ITEMDEF 0418f]
+//dragon cannon (multi-part)(west)
+NAME=dragon cannon
+
+
+[ITEMDEF 04220]
+//dragon cannon (multi-part)(south)
+NAME=dragon cannon
+
+[ITEMDEF 04221]
+//dragon cannon (multi-part)(south)
+NAME=dragon cannon
+
+[ITEMDEF 04222]
+//dragon cannon (multi-part)(south)
+NAME=dragon cannon
+
+[ITEMDEF 04223]
+//dragon cannon (multi-part)(west)
+NAME=dragon cannon
+
+
+[ITEMDEF 0424a]
+//dragon cannon (multi-part)(west)
+NAME=dragon cannon
+
+
+[ITEMDEF 044f3]
+//dragon cannon (multi-part)(north)
+NAME=dragon cannon
+
+[ITEMDEF 044f4]
+//dragon cannon (multi-part)(north)
+NAME=dragon cannon
+
+[ITEMDEF 044f5]
+//dragon cannon (multi-part)(north)
+NAME=dragon cannon
+
+[ITEMDEF 044f6]
+//dragon cannon (multi-part)(east)
+NAME=dragon cannon
+
+[ITEMDEF 044f7]
+//dragon cannon (multi-part)(east)
+NAME=dragon cannon
+
+[ITEMDEF 044f8]
+//dragon cannon (multi-part)(east)
+NAME=dragon cannon
+
+
+[ITEMDEF 0a2c0]
+DEFNAME=i_shipcannon_blundercannon
+NAME=blundercannon
+TYPE=t_container
+TDATA2=09ce7
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Rising Tide
+DESCRIPTION=Blundercannon
+DUPELIST=0a2c1,0a2c2,0a2c3
+
+[ITEMDEF 0a2c1]
+//blundercannon (west)
+DUPEITEM=0a2c0
+
+[ITEMDEF 0a2c2]
+//blundercannon (north)
+DUPEITEM=0a2c0
+
+[ITEMDEF 0a2c3]
+//blundercannon (east)
+DUPEITEM=0a2c0
+
+[ITEMDEF 0a2c4]
+DEFNAME=i_maritime_trade_cargo
+NAME=Maritime Trade Cargo
+CATEGORY=Quests
+SUBSECTION=Rising Tide
+DESCRIPTION=Maritime Trade Cargo
+DUPELIST=0a2c5
+
+[ITEMDEF 0a2c5]
+//maritime trade cargo
+DUPEITEM=0a2c4
+
+[ITEMDEF 0a2c6]
+DEFNAME=i_mysterious_statue
+NAME=Mysterious Statue
+WEIGHT=5.0
+CATEGORY=Quests
+SUBSECTION=Rising Tide
+DESCRIPTION=Mysterious Statue
+DUPELIST=0a2c7
+
+[ITEMDEF 0a2c7]
+//mysterious statue
+DUPEITEM=0a2c6
+
+[ITEMDEF 0a2c8]
+DEFNAME=i_pirate_wall_map
+NAME=Pirate Wall Map
+TYPE=t_sign_gump
+TDATA2=09ce9
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Rising Tide
+DESCRIPTION=Pirate Wall Map
+DUPELIST=0a2c9
+
+[ITEMDEF 0a2c9]
+//pirate wall map
+DUPEITEM=0a2c8
+
+[ITEMDEF 0a2ca]
+DEFNAME=i_shoulder_parrot
+NAME=Parrot
+TYPE=t_armor
+REQSTR=10
+DYE=1
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Rising Tide
+DESCRIPTION=Parrot
+DUPELIST=0a2cb
+ON=@Create
+   ATTR=attr_newbie
+ON=@DClick
+   IF (<CONT> != <SRC>)
+      SRC.SYSMESSAGE This item must be equipped to be used.
+      return 1
+   ELIF (<SRC.CTAG0.ShoulderParrot.Cooldown> > <SERV.TIME>)
+      SRC.SYSMESSAGE Your parrot is too tired to fly right now.
+      return 1
+   ELIF (<SRC.FLAGS> & statf_hovering)
+      SRC.SYSMESSAGE Your parrot can't fly here.
+      return 1
+   ENDIF
+   EFFECT 3,0a2cc,0,52
+   SRC.CTAG.ShoulderParrot.Cooldown = <eval <SERV.TIME>+300>
+   return 1
+
+[ITEMDEF 0a2cb]
+//shoulder parrot
+DUPEITEM=0a2ca
+
+[ITEMDEF 0a2cc]
+//shoulder parrot (anim)
+
+[ITEMDEF 0a2cd]
+//shoulder parrot (anim)
+
+[ITEMDEF 0a2ce]
+//shoulder parrot (anim)
+
+[ITEMDEF 0a2cf]
+//shoulder parrot (anim)
+
+[ITEMDEF 0a2d0]
+//shoulder parrot (anim)
+
+[ITEMDEF 0a2d1]
+//shoulder parrot (anim)
+
+[ITEMDEF 0a2d2]
+//shoulder parrot (anim)
+
+[ITEMDEF 0a2d3]
+//shoulder parrot (anim)
+
+[ITEMDEF 0a2d4]
+//shoulder parrot (anim)
+
+[ITEMDEF 0a2d5]
+//shoulder parrot (anim)
+
+[ITEMDEF 0a2d6]
+//shoulder parrot (anim)
+
+[ITEMDEF 0a2d7]
+//shoulder parrot (anim)
+
+
+[MULTIDEF m_cannon_dragon_south]
+ID=04221
+TYPE=t_multi
+NAME=Dragon Cannon
+CATEGORY=Quests
+SUBSECTION=Rising Tide
+DESCRIPTION=Dragon Cannon (multi)(decorative)(south)
+MULTIREGION=0,0,0,0
+COMPONENT=04220,0,-1
+COMPONENT=04222,0,1
+
+[MULTIDEF m_cannon_dragon_west]
+ID=0424a
+TYPE=t_multi
+NAME=Dragon Cannon
+CATEGORY=Quests
+SUBSECTION=Rising Tide
+DESCRIPTION=Dragon Cannon (multi)(decorative)(west)
+MULTIREGION=0,0,0,0
+COMPONENT=0418f,-1,0
+COMPONENT=04223,1,0
+
+[MULTIDEF m_cannon_dragon_north]
+ID=044f4
+TYPE=t_multi
+NAME=Dragon Cannon
+CATEGORY=Quests
+SUBSECTION=Rising Tide
+DESCRIPTION=Dragon Cannon (multi)(decorative)(north)
+MULTIREGION=0,0,0,0
+COMPONENT=044f3,0,1
+COMPONENT=044f5,0,-1
+
+[MULTIDEF m_cannon_dragon_east]
+ID=044f7
+TYPE=t_multi
+NAME=Dragon Cannon
+CATEGORY=Quests
+SUBSECTION=Rising Tide
+DESCRIPTION=Dragon Cannon (multi)(decorative)(east)
+MULTIREGION=0,0,0,0
+COMPONENT=044f6,1,0
+COMPONENT=044f8,-1,0
+
+[MULTIDEF 0212a]
+DEFNAME=m_plunderbeacon
+NAME=Plunderbeacon
+TYPE=t_ship
+REGIONFLAGS=region_flag_nobuilding|region_flag_ship
+CATEGORY=Quests
+SUBSECTION=Rising Tide
+DESCRIPTION=Plunderbeacon (multi)
+MULTIREGION=-9,-5,2,6
+COMPONENT=04724,-2,1,9		//lighthouse
+COMPONENT=0472f,-3,1,9		//lighthouse
+COMPONENT=04730,-4,1,9		//lighthouse
+COMPONENT=04217,-5,-2,10	//culverin
+COMPONENT=04217,-5,0,10		//culverin
+COMPONENT=04217,-5,2,10		//culverin
+COMPONENT=04219,-1,-2,9		//culverin
+COMPONENT=04219,-1,0,9		//culverin
+COMPONENT=04219,-1,2,9		//culverin
+COMPONENT=0a2c0,-6,5,3		//blundercannon
+COMPONENT=0a2c0,-4,5,3		//blundercannon
+COMPONENT=0a2c0,-2,5,3		//blundercannon
+COMPONENT=0a2c0,0,5,3		//blundercannon
+COMPONENT=0a2c2,-6,-4,3		//blundercannon
+COMPONENT=0a2c2,-4,-4,3		//blundercannon
+COMPONENT=0a2c2,-2,-4,3		//blundercannon
+COMPONENT=0a2c2,0,-4,3		//blundercannon
 
 [EOF]
