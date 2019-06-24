@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Apr 13, 2019
+// FILE LAST UPDATED: Monday, Jun 24, 2019
 //
 VERSION=0.56d
 
@@ -538,10 +538,8 @@ ELIF (<ACTION> == 112)
 ELIF (<ACTION> == 113)
  return <DEFMSG.skillact_training>
 ELIF (<ACTION> == 114)
- return <DEFMSG.skillact_napping>
-ELIF (<ACTION> == 115)
  return <DEFMSG.skillact_searchingfood>
-ELIF (<ACTION> == 116)
+ELIF (<ACTION> == 115)
  return <DEFMSG.skillact_runningto>
 ELSE
  return <DEFMSG.skillact_idling>

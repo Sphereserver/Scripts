@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2018
+// SPHERE by : Menasoft ©1997-2019
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Dec 29, 2018
+// FILE LAST UPDATED: Monday, Jun 24, 2019
 //
 VERSION=0.56d
 
@@ -741,7 +741,6 @@ statf_invul             000000001   // invulnerability
 statf_dead              000000002
 statf_freeze            000000004   // paralyzed. (spell)
 statf_invisible         000000008   // invisible (spell).
-statf_sleeping          000000010   // you look like a corpse ?
 statf_war               000000020   // war mode on ?
 statf_reactive          000000040   // have reactive armor on.
 statf_poisoned          000000080   // poison level is in the poison object

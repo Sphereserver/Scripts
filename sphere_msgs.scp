@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Wednesday, May 15, 2019
+// FILE LAST UPDATED: Monday, Jun 24, 2019
 //
 VERSION=0.56d
 
@@ -122,8 +122,6 @@ EMOTE_DEF_UNICODE	0
 //cmd_remove_player				"Can't remove players this way, use 'kick' or 'remove 1'"
 //cmd_toggle_off				"OFF"
 //cmd_toggle_on					"ON"
-//cmdafk_enter					"You go into AFK mode"
-//cmdafk_leave					"You leave AFK mode"
 //cooking_fire_source			"You must be near a fire source to cook."
 //combat_arch_noammo			"You have no ammunition."
 //combat_arch_tooclose			"You are too close."
@@ -182,7 +180,6 @@ EMOTE_DEF_UNICODE	0
 //food_full_5					"You feel quite full after consuming the food."
 //food_full_6					"You are stuffed!"
 //food_rcanteat					"You can't really eat this."
-//forensics_alive				"%s is unconscious but alive."
 //forensics_carve_1				"This is the corpse of %s and it has been carved up. "
 //forensics_carve_2				"It looks to have been carved by %s"
 //forensics_corpse				"Forensics must be used on a corpse."
@@ -413,7 +410,6 @@ EMOTE_DEF_UNICODE	0
 //msg_arrdep_3					"departed from"
 //msg_bounce_pack				"in your pack"
 //msg_cantpush					"You are not strong enough to push %s out of the way."
-//msg_cantsleep					"Can't sleep here"
 //msg_corpse_npc				"%s corpse"
 //msg_corpse_player				"corpse of %s"
 //msg_coward_1					"You have retreated from the battle with %s"
@@ -559,7 +555,6 @@ EMOTE_DEF_UNICODE	0
 //msg_serv_shutdown_soon		"WARNING: The system is scheduled to shutdown soon"
 //msg_shipname_promt			"What dost thou wish to name thy ship?"
 //msg_steal						"That is not yours. You will have to steal the item"
-//msg_stepon_body				"You step on the body of %s."
 //msg_targ_link					"First object must be a dynamic item, try again."
 //msg_targ_link_same			"That's the same object. Link cancelled."
 //msg_targ_link2				"What do you want to link it to ?"
@@ -1061,10 +1056,8 @@ EMOTE_DEF_UNICODE	0
 //charinfo_stone				" [stone]"
 //charinfo_frozen				" [frozen]"
 //charinfo_hidden				" [hidden]"
-//charinfo_sleeping				" [sleeping]"
 //charinfo_hallu				" [hallu]"
 //charinfo_spawn				" [spawn]"
-//charinfo_afk					" [afk]"
 //charinfo_guest				" [guest]"
 //charinfo_jailed				" [jailed]"
 //charinfo_logout				" [logout]"
@@ -1104,7 +1097,6 @@ EMOTE_DEF_UNICODE	0
 //skillact_guarding				"Guarding"
 //skillact_idling				"Idling"
 //skillact_looking				"Looking"
-//skillact_napping				"Napping"
 //skillact_ridden				"Ridden"
 //skillact_runningto			"Running To"
 //skillact_searchingfood		"Searching for Food"
