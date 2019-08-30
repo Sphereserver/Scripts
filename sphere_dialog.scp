@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, Jun 24, 2019
+// FILE LAST UPDATED: Thursday, Aug 29, 2019
 //
 VERSION=0.56d
 
@@ -77,6 +77,8 @@ button 490 160 4026 4028 0 2 0
 dtext 525 160 1000 STATS
 button 490 180 4011 4013 0 3 0
 dtext 525 180 1000 SKILLS
+button 490 200 4029 4031 0 4 0
+dtext 525 200 1000 FLAGS
 
 button 10 35 4020 4022 0 0 0
 dtext 45 35 2048 Action
@@ -229,6 +231,8 @@ button 490 160 4026 4028 0 0 0
 dtext 525 160 193 STATS
 button 490 180 4011 4013 0 3 0
 dtext 525 180 1000 SKILLS
+button 490 200 4029 4031 0 4 0
+dtext 525 200 1000 FLAGS
 
 button 10 35 4005 4007 1 0 200
 dtext 45 35 333 STR
@@ -341,6 +345,8 @@ button 490 160 4026 4028 0 2 0
 dtext 525 160 1000 STATS
 button 490 180 4011 4013 0 0 0
 dtext 525 180 193 SKILLS
+button 490 200 4029 4031 0 4 0
+dtext 525 200 1000 FLAGS
 
 FOR 0 57
  IF (<SERV.SKILL.<LOCAL._FOR>>)
@@ -354,7 +360,36 @@ button 330 415 4005 4007 1 0 360
 dtext 365 415 2048 All Skills
 dcroppedtext 440 415 45 20 1000 <fval <SKILLTOTAL>>
 
+page 4
+button 490 140 4008 4010 0 1 0
+dtext 525 140 1000 GENERAL
+button 490 160 4026 4028 0 2 0
+dtext 525 160 1000 STATS
+button 490 180 4011 4013 0 3 0
+dtext 525 180 1000 SKILLS
+button 490 200 4029 4031 0 0 0
+dtext 525 200 193 FLAGS
+
+LOCAL.Flag=01
+FOR 0 38
+ IF !(<isempty <DEF.CharFlag.<eval <LOCAL._FOR>+1>>>)
+  checkbox <eval 10+((<LOCAL._FOR>/20)*240)> <eval 35+((<LOCAL._FOR>%20)*20)> 210 211 <hval (<FLAGS> & <LOCAL.Flag>)> <eval 400+<LOCAL._FOR>>
+  dtext <eval 35+((<LOCAL._FOR>/20)*240)> <eval 35+((<LOCAL._FOR>%20)*20)> 1000 <DEF0.CharFlag.<eval <LOCAL._FOR>+1>>
+ ENDIF
+ // Workaround: LOCAL.Flag=<hval <LOCAL.Flag> << 1> doesn't evaluate << correctly
+ LOCAL.Flag="<LOCAL.Flag> << 1"
+ LOCAL.Flag=<hval <LOCAL.Flag>>
+ENDFOR
+
+button 250 415 4005 4006 1 0 400
+dtext 285 415 2048 Set flags
+
 [DIALOG d_charprop1 BUTTON]
+ON=0
+IF (<SRC.CTAG0.Dialog.Admin.Clients>)
+ DIALOG d_admin_player_tweak
+ENDIF
+
 ON=100
 TRYP 4 INPDLG BODY 30
 
@@ -492,6 +527,55 @@ TRYP 4 INPDLG <SERV.SKILL.<eval <ARGN>-300>.KEY> 5
 
 ON=360
 TRYP 4 INPDLG ALLSKILLS 5
+
+ON=400
+LOCAL.Flag=01
+FOR 0 38
+ IF !(<isempty <DEF.CharFlag.<eval <LOCAL._FOR>+1>>>)
+  IF (<ARGCHK[<eval <LOCAL._FOR>+400>]>)
+   FLAGS |= <LOCAL.Flag>
+  ELSE
+   FLAGS &= ~<LOCAL.Flag>
+  ENDIF
+ ENDIF
+ // Workaround: LOCAL.Flag=<hval <LOCAL.Flag> << 1> doesn't evaluate << correctly
+ LOCAL.Flag="<LOCAL.Flag> << 1"
+ LOCAL.Flag=<hval <LOCAL.Flag>>
+ENDFOR
+DIALOG d_charprop1 4
+SRC.SYSMESSAGE Flags modified
+
+[DEFNAME CharFlagNames]
+CharFlag.1	"Invulnerable"
+CharFlag.2	"Dead"
+CharFlag.3	"Frozen"
+CharFlag.4	"Invisible"
+CharFlag.6	"Warmode"
+CharFlag.7	"Reactive Armor"
+CharFlag.8	"Poisoned"
+CharFlag.9	"Nightsight"
+CharFlag.10	"Magic Reflect"
+CharFlag.11	"Polymorphed"
+CharFlag.12	"Incognito"
+CharFlag.13	"Spirit Speak"
+CharFlag.14	"Insubstantial"
+CharFlag.15	"Emote actions"
+CharFlag.16	"Communication crystal"
+CharFlag.17	"Has shield"
+CharFlag.18	"Can move with bow"
+CharFlag.19	"Stoned"
+CharFlag.20	"Hovering"
+CharFlag.21	"Flying"
+CharFlag.23	"Hallucinated"
+CharFlag.24	"Hidden"
+CharFlag.25	"Indoors"
+CharFlag.26	"Criminal"
+CharFlag.27	"Summoned"
+CharFlag.28	"Pet"
+CharFlag.29	"Spawned"
+CharFlag.30	"Save parity"
+CharFlag.31	"Ridden"
+CharFlag.32	"Mounted on horseback"
 
 [DEFNAME NPCBrainNames]
 NPCBrain.0	brain_none
@@ -1069,8 +1153,8 @@ IF (<REF1>) && (<REF1> != <SRC>)
 ENDIF
 ACCOUNT.TAG.GMPage.Response=""<ARGTXT[0]>""
 IF (<ISONLINE>)
- DIALOGCLOSE d_gmpage_response
- SDIALOG d_gmpage_response
+ TRYSRC <UID> DIALOGCLOSE d_gmpage_response
+ TRYSRC <UID> SDIALOG d_gmpage_response
 ENDIF
 SRC.GMPageDelete <SRC.CTAG0.Dialog.GMPage.Selected>
 SRC.SDIALOG d_gmpage_queue
