@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Thursday, Aug 29, 2019
+// FILE LAST UPDATED: Monday, Sept 2, 2019
 //
 VERSION=0.56d
 
@@ -93,14 +93,14 @@ ON=0
 CLEARCTAGS Dialog.Admin
 
 ON=1
-IF (<CTAG0.Dialog.Admin.Page> < <CTAG0.Dialog.Admin.MaxPage>)
- CTAG0.Dialog.Admin.Page ++
+IF (<CTAG0.Dialog.Admin.Page> > 1)
+ CTAG0.Dialog.Admin.Page --
 ENDIF
 DIALOG d_admin
 
 ON=2
-IF (<CTAG0.Dialog.Admin.Page> > 1)
- CTAG0.Dialog.Admin.Page --
+IF (<CTAG0.Dialog.Admin.Page> < <CTAG0.Dialog.Admin.MaxPage>)
+ CTAG0.Dialog.Admin.Page ++
 ENDIF
 DIALOG d_admin
 
@@ -220,13 +220,13 @@ button 10 155 4005 4006 1 0 7
 dtext 45 155 2048 Summon (cage)
 
 button 10 300 4005 4006 1 0 8
-dtext 45 300 137 <QVAL (<ACCOUNT.BLOCK>)? Unban:Ban> account
+dtext 45 300 <QVAL (<ACCOUNT.BLOCK>)? 2048 Unban : 137 Ban> account
 button 10 320 4005 4006 1 0 9
 dtext 45 320 137 Disconnect
 button 10 340 4005 4006 1 0 10
-dtext 45 340 137 <QVAL (<ACCOUNT.JAIL>)? Forgive:Jail>
+dtext 45 340 <QVAL (<ACCOUNT.JAIL>)? 2048 Forgive : 137 Jail>
 button 10 360 4005 4006 1 0 11
-dtext 45 360 137 <QVAL (<FLAGS> & statf_dead)? Resurrect:Kill>
+dtext 45 360 <QVAL (<FLAGS> & statf_dead)? 2048 Resurrect : 137 Kill>
 
 dtext 160 35 2048 Account
 dtext 260 35 1000 <ACCOUNT>
@@ -398,7 +398,7 @@ IF (<ACCOUNT.TAG0.NumNotes> < <DEF0.Admin.MaxAccountNotes>)
  ELIF !(<isempty <ARGTXT[0]>>)
   ACCOUNT.TAG0.NumNotes ++
   ACCOUNT.TAG.Note_<dACCOUNT.TAG0.NumNotes>=""<ARGTXT[0]>""
-  ACCOUNT.TAG.Note_<dACCOUNT.TAG0.NumNotes>_By=<NAME>
+  ACCOUNT.TAG.Note_<dACCOUNT.TAG0.NumNotes>_By=<SRC.NAME>
   ACCOUNT.TAG.Note_<dACCOUNT.TAG0.NumNotes>_Time=<SERV.RTIME>
   SRC.SYSMESSAGE Note added
  ENDIF

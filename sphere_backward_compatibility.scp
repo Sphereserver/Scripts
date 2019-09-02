@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, Feb 4, 2019
+// FILE LAST UPDATED: Monday, Sept 2, 2019
 //
 VERSION=0.56d
 
@@ -479,7 +479,6 @@ i_wall_latticed_plaster			i_wall_cloth_framed
 i_fruit_cantelope				i_fruit_cantaloupe
 i_fruit_gourd1					i_fruit_gourd_yellow
 i_fruit_gourd2					i_fruit_gourd_green
-i_hair_afro						i_hair_curly
 i_hair_krisna					i_hair_topknot
 i_hair_lf						i_hair_long_feather
 i_hair_elven_long2				i_hair_elven_long
@@ -498,10 +497,9 @@ i_armoire_japanese3				i_armoire_maple
 i_armoire_japanese4				i_armoire_cherry
 i_table_elven_ornate_2			i_table_hardwood
 i_table_elven_storage			i_chest_ornate_elven
-//i_chest_ornate_elven			i_chest_rarewood  // the old defname is now used by a new item
+i_chest_combination				i_chest_secret
 i_chest_ornate_elven_2			i_box_decorative
 i_chest_gargoyle				i_chest_gargish
-
 i_fx_bee_swarm					i_bee_swar
 i_fx_magical_sparkles			i_magical_sparkles
 i_fx_moongate_red				i_moongate_red_fx
@@ -520,40 +518,13 @@ i_fx_heal						i_fx_heal_effect
 i_fx_poison_field_EW			i_fx_poison_field_ALT
 fx_fireball_yellow				i_fx_fireball_yellow
 i_rug_worn_2					i_rug_2_worn
-i_statue_stone_sm_10			i_statue_stone_sm_2
-i_statue_stone_sm_7				i_statue_stone_sm_3
-i_statue_stone_sm_8				i_statue_stone_sm_4
-i_statue_stone_sm_9				i_statue_stone_sm_5
-i_acorn_replica_giant			i_acorn_decor
 i_grave_dirt					0ed3
 i_gravestone_damaged			i_grave_stone_damaged
-//i_gravestone_2					i_grave_stone_2 // not enabled by default, needed only to update from some specific script packs.
-//i_gravestone_3					i_grave_stone_3
-//i_gravestone_4					i_grave_stone_4
-//i_gravestone_5					i_gravestone
-//i_gravestone_6					i_gravestone_2
-//i_gravestone_7					i_gravestone_3
-//i_gravestone_8					i_gravestone_4
-//i_gravestone_9					i_gravestone_5
-//i_gravestone_10					i_gravestone_6
-//i_gravestone_11					i_gravestone_7
-//i_gravestone_12					i_gravestone_8
-//i_gravestone_13					i_gravestone_9
-//i_gravestone_14					i_gravestone_10
-//i_gravestone_15					i_gravestone_11
-//i_gravestone_16					i_gravestone_12
-//i_gravestone_17					i_gravestone_13
-//i_gravestone_18					i_gravestone_14
-//i_gravestone_19					i_gravestone_15
-//i_gravestone_20					i_gravestone_16
-//i_gravestone_21					i_gravestone_17
-//i_gravestone_22					i_gravestone_18
 i_memorial						i_gravestone_19
 i_trap_spike_floor_2			i_trap_spike_4
 i_pole_shackles_broken			i_pole_single_shackles
 i_floorswitch_stone				01bbf
 i_body_shrouded_2				i_body_shrouded_parts
-
 i_bed_1							i_bed_small_unmade
 i_bed_3							i_bed_small_sheet
 i_bed_4							0a60
@@ -578,12 +549,6 @@ i_bed_29						0a81
 i_bed_30						i_bed_large_sheet
 i_bed_31						0db0
 i_sheet_rich					0a94
-i_bed_ruined					0c26
-i_bed_ruined_2					0c27
-i_bed_ruined_3					0c28
-i_bed_ruined_4					0c29
-i_bed_ruined_5					0c2a
-i_bed_ruined_6					0c2b
 i_bed_double_2					011d2
 i_cot_sw						i_cot
 i_map							i_map_blank
