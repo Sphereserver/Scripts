@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, Jun 24, 2019
+// FILE LAST UPDATED: Monday, Sept 9, 2019
 //
 VERSION=0.56d
 
@@ -645,6 +645,9 @@ EMOTE_DEF_UNICODE	0
 //npc_pet_not_enough			"Sorry thats not enough for a days wage."
 //npc_pet_not_for_hire			"Sorry I am not available for hire."
 //npc_pet_not_work				"I will not work for you."
+//npc_pet_rename_prompt			"Enter a new name for your pet."
+//npc_pet_rename_success1		"Pet name changed."
+//npc_pet_rename_success2		"Pet %s renamed to %s."
 //npc_pet_sell					"I will attempt to sell this item for you."
 //npc_pet_setprice				"What item would you like to set the price of?"
 //npc_pet_success				"Yes Master"
