@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2017
+// SPHERE by : Menasoft Â©1997-2017
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, Dec 10, 2017
+// FILE LAST UPDATED: Thursday, SEp 12, 2019
 //
 VERSION=0.56d
 
@@ -852,7 +852,6 @@ DESCRIPTION=Round Paper Lantern (unlit)
 ON=@Create
    MOREZ=2
 
-
 [ITEMDEF 02cfd]
 DEFNAME=i_large_glowing_lady_bug_south
 NAME=large glowing lady bug
@@ -869,7 +868,7 @@ ON=@Create
 DEFNAME=i_large_glowing_lady_bug_south_lit
 NAME=large glowing lady bug
 TYPE=t_light_lit
-TDATA3=i_large_glowing_lady_south_bug
+TDATA3=i_large_glowing_lady_bug_south
 WEIGHT=1.0
 CATEGORY=Decoration - Lightsources
 SUBSECTION=Natural
