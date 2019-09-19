@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Friday, Apr 12, 2019
+// FILE LAST UPDATED: Thursday, Sept 29, 2019
 //
 VERSION=0.56d
 
@@ -805,6 +805,7 @@ BONUS_DEX=10
 BONUS_INT=60
 BONUS_STATS=20
 ADV_RATE=10.0,200.0,800.0
+RANGE=7
 
 ON=@Fail
 	SRC.SYSMESSAGE You fail to tame the creature.
