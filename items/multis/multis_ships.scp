@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Saturday, Feb 23, 2019
+// FILE LAST UPDATED: Thursday, Sept 26, 2019
 //
 VERSION=0.56d
 
@@ -2150,7 +2150,6 @@ CATEGORY=Multis
 SUBSECTION=Ships
 DESCRIPTION=Rowboat
 MULTIREGION=-1,-3,1,4
-COMPONENT=01,0,0
 COMPONENT=014f8,0,-2,5
 COMPONENT=03ebd,1,3
 COMPONENT=03ebc,0,4
@@ -2172,7 +2171,6 @@ CATEGORY=Multis
 SUBSECTION=Ships
 DESCRIPTION=Rowboat
 MULTIREGION=-4,-1,3,1
-COMPONENT=01,0,0
 COMPONENT=014f8,2,0,5
 COMPONENT=03e62,-3,0
 COMPONENT=03e63,-4,0
@@ -2194,7 +2192,6 @@ CATEGORY=Multis
 SUBSECTION=Ships
 DESCRIPTION=Rowboat
 MULTIREGION=-1,-4,1,3
-COMPONENT=01,0,0
 COMPONENT=014f8,0,2,5
 COMPONENT=03ec3,0,-3
 COMPONENT=03ec4,0,-4
@@ -2216,7 +2213,6 @@ CATEGORY=Multis
 SUBSECTION=Ships
 DESCRIPTION=Rowboat
 MULTIREGION=-3,-1,4,1
-COMPONENT=01,0,0
 COMPONENT=014f8,-2,0,5
 COMPONENT=03e77,3,1
 COMPONENT=03e76,4,0
@@ -2612,32 +2608,5 @@ COMPONENT=0628f,7,-3
 COMPONENT=06291,7,3
 COMPONENT=062a6,13,0
 COMPONENT=062a7,16,0
-
-[MULTIDEF 0212a]
-DEFNAME=m_plunderbeacon
-NAME=Plunderbeacon
-TYPE=t_ship
-REGIONFLAGS=region_flag_nobuilding|region_flag_ship
-CATEGORY=Multis
-SUBSECTION=Ships
-DESCRIPTION=Plunderbeacon (stationary)
-MULTIREGION=-9,-5,2,6
-COMPONENT=04724,-2,1,9		//lighthouse
-COMPONENT=0472f,-3,1,9		//lighthouse
-COMPONENT=04730,-4,1,9		//lighthouse
-COMPONENT=04217,-5,-2,10	//culverin
-COMPONENT=04217,-5,0,10		//culverin
-COMPONENT=04217,-5,2,10		//culverin
-COMPONENT=04219,-1,-2,9		//culverin
-COMPONENT=04219,-1,0,9		//culverin
-COMPONENT=04219,-1,2,9		//culverin
-COMPONENT=0a2c0,-6,5,3		//blundercannon
-COMPONENT=0a2c0,-4,5,3		//blundercannon
-COMPONENT=0a2c0,-2,5,3		//blundercannon
-COMPONENT=0a2c0,0,5,3		//blundercannon
-COMPONENT=0a2c2,-6,-4,3		//blundercannon
-COMPONENT=0a2c2,-4,-4,3		//blundercannon
-COMPONENT=0a2c2,-2,-4,3		//blundercannon
-COMPONENT=0a2c2,0,-4,3		//blundercannon
 
 [EOF]

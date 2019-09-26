@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2018
+// SPHERE by : Menasoft ©1997-2019
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Thursday, Nov 1, 2018
+// FILE LAST UPDATED: Thursday, Sept 26, 2019
 //
 VERSION=0.56d
 
@@ -1741,6 +1741,132 @@ NAME=giant pumpkin
 CATEGORY=Halloween
 SUBSECTION=Lightsources
 DESCRIPTION=Giant Pumpkin (dragon)(vines)(east)
+
+
+[ITEMDEF 0a396]
+DEFNAME=i_pumpkin_octopus
+NAME=carved pumpkin
+TYPE=t_light_out
+TDATA3=i_pumpkin_octopus_lit
+WEIGHT=25.0
+CATEGORY=Halloween
+SUBSECTION=Lightsources
+DESCRIPTION=Carved Pumpkin (octopus)(unlit)
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 0a397]
+DEFNAME=i_pumpkin_octopus_lit
+NAME=carved pumpkin
+TYPE=t_light_lit
+TDATA3=i_pumpkin_octopus
+WEIGHT=25.0
+CATEGORY=Halloween
+SUBSECTION=Lightsources
+DESCRIPTION=Carved Pumpkin (octopus)(lit)
+DUPELIST=0a398,0a399
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 0a398]
+//carved pumpkin (octopus)
+DUPEITEM=0a397
+
+[ITEMDEF 0a399]
+//carved pumpkin (octopus)
+DUPEITEM=0a397
+
+[ITEMDEF 0a39a]
+DEFNAME=i_pumpkin_tree
+NAME=carved pumpkin
+TYPE=t_light_out
+TDATA3=i_pumpkin_tree_lit
+WEIGHT=25.0
+CATEGORY=Halloween
+SUBSECTION=Lightsources
+DESCRIPTION=Carved Pumpkin (tree)(unlit)
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 0a39b]
+DEFNAME=i_pumpkin_tree_lit
+NAME=carved pumpkin
+TYPE=t_light_lit
+TDATA3=i_pumpkin_tree
+WEIGHT=25.0
+CATEGORY=Halloween
+SUBSECTION=Lightsources
+DESCRIPTION=Carved Pumpkin (tree)(lit)
+DUPELIST=0a39c,0a39d
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 0a39c]
+//carved pumpkin (tree)
+DUPEITEM=0a39b
+
+[ITEMDEF 0a39d]
+//carved pumpkin (tree)
+DUPEITEM=0a39b
+
+[ITEMDEF 0a39e]
+DEFNAME=i_pumpkin_fairy
+NAME=carved pumpkin
+TYPE=t_light_out
+TDATA3=i_pumpkin_fairy_lit
+WEIGHT=25.0
+CATEGORY=Halloween
+SUBSECTION=Lightsources
+DESCRIPTION=Carved Pumpkin (fairy)(unlit)
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 0a39f]
+DEFNAME=i_pumpkin_fairy_lit
+NAME=carved pumpkin
+TYPE=t_light_lit
+TDATA3=i_pumpkin_fairy
+WEIGHT=25.0
+CATEGORY=Halloween
+SUBSECTION=Lightsources
+DESCRIPTION=Carved Pumpkin (fairy)(lit)
+DUPELIST=0a3a0,0a3a1
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 0a3a0]
+//carved pumpkin (fairy)
+DUPEITEM=0a39f
+
+[ITEMDEF 0a3a1]
+//carved pumpkin (fairy)
+DUPEITEM=0a39f
+
+[ITEMDEF 0a3a2]
+DEFNAME=i_skull_crystal_sphinx
+NAME=crystal skull
+FLIP=1
+CATEGORY=Halloween
+SUBSECTION=Decoration
+DESCRIPTION=Crystal Skull (Sphinx)
+DUPELIST=0a3a3
+
+[ITEMDEF 0a3a3]
+//crystal skull (sphinx)
+DUPEITEM=0a3a2
+
+[ITEMDEF 0a3a4]
+DEFNAME=i_skull_crystal_elemental
+NAME=crystal skull
+FLIP=1
+CATEGORY=Halloween
+SUBSECTION=Decoration
+DESCRIPTION=Crystal Skull (Elemental)
+DUPELIST=0a3a5
+
+[ITEMDEF 0a3a5]
+//crystal skull (elemental)
+DUPEITEM=0a3a4
 
 
 ////////////

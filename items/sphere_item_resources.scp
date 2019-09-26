@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Wednesday, Feb 27, 2019
+// FILE LAST UPDATED: Thursday, Sept 26, 2019
 //
 VERSION=0.56d
 
@@ -991,6 +991,24 @@ DUPELIST=09bcf
 [ITEMDEF 09bcf]
 //Dragon Turtle Scute
 DUPEITEM=09bce
+
+
+[ITEMDEF 0a3e9]
+DEFNAME=i_live_rock
+NAME=live rock
+CATEGORY=Resources
+SUBSECTION=Mineral
+DESCRIPTION=Live Rock
+
+
+[ITEMDEF 0a414]
+DEFNAME=i_ocean_sapphire
+NAME=ocean sapphire
+CATEGORY=Resources
+SUBSECTION=Mineral
+DESCRIPTION=Ocean Sapphire
+ON=@Create
+   COLOR=077d
 
 
 ///////////////////////////

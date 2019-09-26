@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2018
+// SPHERE by : Menasoft ©1997-2019
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Thursday, Nov 8, 2018
+// FILE LAST UPDATED: Thursday, Sept 26, 2019
 //
 VERSION=0.56d
 
@@ -43,6 +43,7 @@ DUPELIST=045c
 [ITEMDEF 045c]
 //Bench (Sandstone)
 DUPEITEM=045b
+
 
 [ITEMDEF 0a2a]
 DEFNAME=i_chair_stool_bar
@@ -3961,5 +3962,592 @@ DESCRIPTION=Lord Blackthorn's Throne (east)
 MULTIREGION=0,0,0,0
 COMPONENT=04c1d,0,-1
 COMPONENT=04c1f,0,1
+
+
+[ITEMDEF 0a1f5]
+//mailbox (barrel)(south)
+
+
+[ITEMDEF 0a1f7]
+DEFNAME=i_mailbox_barrel_s
+NAME=mailbox
+TYPE=t_container
+TDATA2=06d5
+CATEGORY=Decoration - Furniture
+SUBSECTION=Mailboxes
+DESCRIPTION=Mailbox (barrel)(south)
+ON=@DropOn_Self
+   IF (<DISPID> != 0a1f5)
+    DISPID=0a1f5
+    UPDATE
+   ENDIF
+ON=@PickUp_Self
+   IF (<DISPID> != 0a1f7) && (<RESCOUNT> < 2)
+    DISPID=0a1f7
+    UPDATE
+   ENDIF
+
+[ITEMDEF 0a1f8]
+//mailbox (barrel)(east)
+
+[ITEMDEF 0a1f9]
+DEFNAME=i_mailbox_barrel_e
+NAME=mailbox
+TYPE=t_container
+TDATA2=06d5
+CATEGORY=Decoration - Furniture
+SUBSECTION=Mailboxes
+DESCRIPTION=Mailbox (barrel)(east)
+ON=@DropOn_Self
+   IF (<DISPID> != 0a1f8)
+    DISPID=0a1f8
+    UPDATE
+   ENDIF
+ON=@PickUp_Self
+   IF (<DISPID> != 0a1f9) && (<RESCOUNT> < 2)
+    DISPID=0a1f9
+    UPDATE
+   ENDIF
+
+
+[ITEMDEF 0a202]
+//mailbox (dolphin)(south)
+
+[ITEMDEF 0a203]
+DEFNAME=i_mailbox_dolphin_s
+NAME=mailbox
+TYPE=t_container
+TDATA2=06d3
+CATEGORY=Decoration - Furniture
+SUBSECTION=Mailboxes
+DESCRIPTION=Mailbox (dolphin)(south)
+ON=@DropOn_Self
+   IF (<DISPID> != 0a202)
+    DISPID=0a202
+    UPDATE
+   ENDIF
+ON=@PickUp_Self
+   IF (<DISPID> != 0a203) && (<RESCOUNT> < 2)
+    DISPID=0a203
+    UPDATE
+   ENDIF
+
+[ITEMDEF 0a204]
+//mailbox (dolphin)(east)
+
+[ITEMDEF 0a205]
+DEFNAME=i_mailbox_dolphin_e
+NAME=mailbox
+TYPE=t_container
+TDATA2=06d3
+CATEGORY=Decoration - Furniture
+SUBSECTION=Mailboxes
+DESCRIPTION=Mailbox (dolphin)(east)
+ON=@DropOn_Self
+   IF (<DISPID> != 0a204)
+    DISPID=0a204
+    UPDATE
+   ENDIF
+ON=@PickUp_Self
+   IF (<DISPID> != 0a205) && (<RESCOUNT> < 2)
+    DISPID=0a205
+    UPDATE
+   ENDIF
+
+[ITEMDEF 0a206]
+//mailbox (squirrel)(south)
+
+[ITEMDEF 0a207]
+DEFNAME=i_mailbox_squirrel_s
+NAME=mailbox
+TYPE=t_container
+TDATA2=06d4
+CATEGORY=Decoration - Furniture
+SUBSECTION=Mailboxes
+DESCRIPTION=Mailbox (squirrel)(south)
+ON=@DropOn_Self
+   IF (<DISPID> != 0a206)
+    DISPID=0a206
+    UPDATE
+   ENDIF
+ON=@PickUp_Self
+   IF (<DISPID> != 0a207) && (<RESCOUNT> < 2)
+    DISPID=0a207
+    UPDATE
+   ENDIF
+
+[ITEMDEF 0a208]
+//mailbox (squirrel)(east)
+
+[ITEMDEF 0a209]
+DEFNAME=i_mailbox_squirrel_e
+NAME=mailbox
+TYPE=t_container
+TDATA2=06d4
+CATEGORY=Decoration - Furniture
+SUBSECTION=Mailboxes
+DESCRIPTION=Mailbox (squirrel)(east)
+ON=@DropOn_Self
+   IF (<DISPID> != 0a208)
+    DISPID=0a208
+    UPDATE
+   ENDIF
+ON=@PickUp_Self
+   IF (<DISPID> != 0a209) && (<RESCOUNT> < 2)
+    DISPID=0a209
+    UPDATE
+   ENDIF
+
+
+[ITEMDEF 0a268]
+DEFNAME=i_mailbox_lantern_s
+NAME=mailbox
+TYPE=t_container
+TDATA2=06d6
+CAN=can_i_light
+CATEGORY=Decoration - Furniture
+SUBSECTION=Mailboxes
+DESCRIPTION=Mailbox (lantern)(south)
+ON=@Create
+   MOREZ=29
+ON=@DropOn_Self
+   IF (<DISPID> != 0a269)
+    DISPID=0a269
+    UPDATE
+   ENDIF
+ON=@PickUp_Self
+   IF (<DISPID> != 0a268) && (<RESCOUNT> < 2)
+    DISPID=0a268
+    UPDATE
+   ENDIF
+
+[ITEMDEF 0a269]
+//mailbox (lantern)(south)
+CAN=can_i_light
+ON=@Create
+   MOREZ=29
+
+[ITEMDEF 0a26a]
+//mailbox (lantern)(south)(anim)
+
+[ITEMDEF 0a26b]
+//mailbox (lantern)(south)(anim)
+
+[ITEMDEF 0a26c]
+DEFNAME=i_mailbox_lantern_e
+NAME=mailbox
+TYPE=t_container
+TDATA2=06d6
+CAN=can_i_light
+CATEGORY=Decoration - Furniture
+SUBSECTION=Mailboxes
+DESCRIPTION=Mailbox (lantern)(east)
+ON=@Create
+   MOREZ=29
+ON=@DropOn_Self
+   IF (<DISPID> != 0a26d)
+    DISPID=0a26d
+    UPDATE
+   ENDIF
+ON=@PickUp_Self
+   IF (<DISPID> != 0a26c) && (<RESCOUNT> < 2)
+    DISPID=0a26c
+    UPDATE
+   ENDIF
+
+[ITEMDEF 0a26d]
+//mailbox (lantern)(east)
+CAN=can_i_light
+ON=@Create
+   MOREZ=29
+
+[ITEMDEF 0a26e]
+//mailbox (lantern)(east)(anim)
+
+[ITEMDEF 0a26f]
+//mailbox (lantern)(east)(anim)
+
+
+[ITEMDEF 0a29b]
+DEFNAME=i_pie_safe
+NAME=pie safe
+TYPE=t_container
+TDATA2=04f
+FLIP=1
+CATEGORY=Decoration - Furniture
+SUBSECTION=Kitchen Set
+DESCRIPTION=Pie Safe
+DUPELIST=0a29d
+ON=@Create
+   COLOR=01c0
+ON=@DClick
+   IF (<DISPID> == i_pie_safe)
+      DISPID=0a29c
+   ELIF (<DISPID> == 0a29c)
+      DISPID=i_pie_safe
+   ELIF (<DISPID> == 0a29d)
+      DISPID=0a29e
+   ELIF (<DISPID> == 0a29e)
+      DISPID=0a29d
+   ENDIF
+   UPDATE
+
+[ITEMDEF 0a29c]
+//pie safe (south)(open)
+
+[ITEMDEF 0a29d]
+//pie safe (east)
+DUPEITEM=0a29b
+
+[ITEMDEF 0a29e]
+//pie safe (east)(open)
+
+[ITEMDEF 0a29f]
+DEFNAME=i_china_cabinet
+NAME=china cabinet
+TYPE=t_container
+TDATA2=04f
+FLIP=1
+CATEGORY=Decoration - Furniture
+SUBSECTION=Kitchen Set
+DESCRIPTION=China Cabinet
+DUPELIST=0a2a1
+ON=@Create
+   COLOR=01c0
+ON=@DClick
+   IF (<DISPID> == i_china_cabinet)
+      DISPID=0a2a0
+   ELIF (<DISPID> == 0a2a0)
+      DISPID=i_china_cabinet
+   ELIF (<DISPID> == 0a2a1)
+      DISPID=0a2a2
+   ELIF (<DISPID> == 0a2a2)
+      DISPID=0a2a1
+   ENDIF
+   UPDATE
+
+[ITEMDEF 0a2a0]
+//china cabinet (south)(open)
+
+[ITEMDEF 0a2a1]
+//china cabinet (east)
+DUPEITEM=0a29f
+
+[ITEMDEF 0a2a2]
+//china cabinet (east)(open)
+
+[ITEMDEF 0a2a3]
+DEFNAME=i_butcher_block
+NAME=butcher block
+CATEGORY=Decoration - Furniture
+SUBSECTION=Kitchen Set
+DESCRIPTION=Butcher Block
+
+[ITEMDEF 0a2a4]
+DEFNAME=i_wood_stove_east
+NAME=wood stove
+TYPE=t_fire
+CAN=can_i_light
+CATEGORY=Decoration - Furniture
+SUBSECTION=Kitchen Set
+DESCRIPTION=Wood Stove (east)
+ON=@Create
+   MOREZ=2
+ON=@DClick
+   SOUND 03be
+   DISPID=<QVAL (<DISPID> == i_wood_stove_east)? 0a2a5 : i_wood_stove_east>
+   UPDATE
+   return 1
+
+[ITEMDEF 0a2a5]
+//wood stove (east)(lit)
+
+[ITEMDEF 0a2a6]
+//wood stove (east)(lit)(anim)
+
+[ITEMDEF 0a2a7]
+//wood stove (east)(lit)(anim)
+
+[ITEMDEF 0a2a8]
+DEFNAME=i_wood_stove_south
+NAME=wood stove
+TYPE=t_fire
+CAN=can_i_light
+CATEGORY=Decoration - Furniture
+SUBSECTION=Kitchen Set
+DESCRIPTION=Wood Stove (south)
+ON=@Create
+   MOREZ=2
+ON=@DClick
+   SOUND 03be
+   DISPID=<QVAL (<DISPID> == i_wood_stove_south)? 0a2a9 : i_wood_stove_south>
+   UPDATE
+   return 1
+
+[ITEMDEF 0a2a9]
+//wood stove (south)(lit)
+
+[ITEMDEF 0a2aa]
+//wood stove (south)(lit)(anim)
+
+[ITEMDEF 0a2ab]
+//wood stove (south)(lit)(anim)
+
+[ITEMDEF 0a2ac]
+//wash basin (multi-part)(south)
+NAME=wash basin
+
+[ITEMDEF 0a2ad]
+//wash basin (multi-part)(south)
+NAME=wash basin
+
+[ITEMDEF 0a2ae]
+//wash basin (multi-part)(south)
+NAME=wash basin
+
+[ITEMDEF 0a2af]
+//wash basin (multi-part)(south)
+NAME=wash basin
+
+[ITEMDEF 0a2b0]
+//wash basin (multi-part)(south)(anim)
+
+[ITEMDEF 0a2b1]
+//wash basin (multi-part)(south)(anim)
+
+[ITEMDEF 0a2b2]
+//wash basin (multi-part)(south)(anim)
+
+[MULTIDEF m_wash_basin_south]
+ID=0a2ad
+NAME=wash basin
+TYPE=t_multi
+CATEGORY=Decoration - Furniture
+SUBSECTION=Kitchen Set
+DESCRIPTION=Wash Basin (multi)(south)
+MULTIREGION=0,0,0,0
+COMPONENT=0a2ac,-1,0
+COMPONENT=0a2ae,1,0
+
+[ITEMDEF 0a2b3]
+//wash basin (multi-part)(east)
+NAME=wash basin
+
+[ITEMDEF 0a2b4]
+//wash basin (multi-part)(east)
+NAME=wash basin
+
+[ITEMDEF 0a2b5]
+//wash basin (multi-part)(east)
+NAME=wash basin
+
+[ITEMDEF 0a2b6]
+//wash basin (multi-part)(east)
+NAME=wash basin
+
+[ITEMDEF 0a2b7]
+//wash basin (multi-part)(east)(anim)
+
+[ITEMDEF 0a2b8]
+//wash basin (multi-part)(east)(anim)
+
+[ITEMDEF 0a2b9]
+//wash basin (multi-part)(east)(anim)
+
+[MULTIDEF m_wash_basin_east]
+ID=0a2b4
+NAME=wash basin
+TYPE=t_multi
+CATEGORY=Decoration - Furniture
+SUBSECTION=Kitchen Set
+DESCRIPTION=Wash Basin (multi)(east)
+MULTIREGION=0,0,0,0
+COMPONENT=0a2b5,0,-1
+COMPONENT=0a2b3,0,1
+
+
+[ITEMDEF 0a2da]
+DEFNAME=i_wash_basin_countertop
+NAME=countertop
+CATEGORY=Decoration - Furniture
+SUBSECTION=Kitchen Set
+DESCRIPTION=Wash Basin (countertop)
+
+
+[ITEMDEF 0a3eb]
+DEFNAME=i_mailbox_sitting_kitten_s
+NAME=mailbox
+TYPE=t_container
+TDATA2=09d37
+CATEGORY=Decoration - Furniture
+SUBSECTION=Mailboxes
+DESCRIPTION=Mailbox (sitting kitten)(south)
+ON=@DropOn_Self
+   IF (<DISPID> != 0a3ec)
+    DISPID=0a3ec
+    UPDATE
+   ENDIF
+ON=@PickUp_Self
+   IF (<DISPID> != 0a3eb) && (<RESCOUNT> < 2)
+    DISPID=0a3eb
+    UPDATE
+   ENDIF
+
+[ITEMDEF 0a3ec]
+//mailbox (sitting kitten)(south)
+
+[ITEMDEF 0a3ed]
+DEFNAME=i_mailbox_sitting_kitten_e
+NAME=mailbox
+TYPE=t_container
+TDATA2=09d37
+CATEGORY=Decoration - Furniture
+SUBSECTION=Mailboxes
+DESCRIPTION=Mailbox (sitting kitten)(east)
+ON=@DropOn_Self
+   IF (<DISPID> != 0a3ee)
+    DISPID=0a3ee
+    UPDATE
+   ENDIF
+ON=@PickUp_Self
+   IF (<DISPID> != 0a3ed) && (<RESCOUNT> < 2)
+    DISPID=0a3ed
+    UPDATE
+   ENDIF
+
+[ITEMDEF 0a3ee]
+//mailbox (sitting kitten)(east)
+
+[ITEMDEF 0a3ef]
+DEFNAME=i_mailbox_standing_kitten_s
+NAME=mailbox
+TYPE=t_container
+TDATA2=09d38
+CATEGORY=Decoration - Furniture
+SUBSECTION=Mailboxes
+DESCRIPTION=Mailbox (standing kitten)(south)
+ON=@DropOn_Self
+   IF (<DISPID> != 0a3f0)
+    DISPID=0a3f0
+    UPDATE
+   ENDIF
+ON=@PickUp_Self
+   IF (<DISPID> != 0a3ef) && (<RESCOUNT> < 2)
+    DISPID=0a3ef
+    UPDATE
+   ENDIF
+
+[ITEMDEF 0a3f0]
+//mailbox (standing kitten)(south)
+
+[ITEMDEF 0a3f1]
+DEFNAME=i_mailbox_standing_kitten_e
+NAME=mailbox
+TYPE=t_container
+TDATA2=09d38
+CATEGORY=Decoration - Furniture
+SUBSECTION=Mailboxes
+DESCRIPTION=Mailbox (standing kitten)(east)
+ON=@DropOn_Self
+   IF (<DISPID> != 0a3f2)
+    DISPID=0a3f2
+    UPDATE
+   ENDIF
+ON=@PickUp_Self
+   IF (<DISPID> != 0a3f1) && (<RESCOUNT> < 2)
+    DISPID=0a3f1
+    UPDATE
+   ENDIF
+
+[ITEMDEF 0a3f2]
+//mailbox (standing kitten)(east)
+
+[ITEMDEF 0a3f3]
+DEFNAME=i_mailbox_scarecrow_s
+NAME=mailbox
+TYPE=t_container
+TDATA2=09d39
+CATEGORY=Decoration - Furniture
+SUBSECTION=Mailboxes
+DESCRIPTION=Mailbox (scarecrow)(south)
+ON=@DropOn_Self
+   IF (<DISPID> != 0a3f4)
+    DISPID=0a3f4
+    UPDATE
+   ENDIF
+ON=@PickUp_Self
+   IF (<DISPID> != 0a3f3) && (<RESCOUNT> < 2)
+    DISPID=0a3f3
+    UPDATE
+   ENDIF
+
+[ITEMDEF 0a3f4]
+//mailbox (scarecrow)(south)
+
+[ITEMDEF 0a3f5]
+DEFNAME=i_mailbox_scarecrow_e
+NAME=mailbox
+TYPE=t_container
+TDATA2=09d39
+CATEGORY=Decoration - Furniture
+SUBSECTION=Mailboxes
+DESCRIPTION=Mailbox (scarecrow)(east)
+ON=@DropOn_Self
+   IF (<DISPID> != 0a3f6)
+    DISPID=0a3f6
+    UPDATE
+   ENDIF
+ON=@PickUp_Self
+   IF (<DISPID> != 0a3f5) && (<RESCOUNT> < 2)
+    DISPID=0a3f5
+    UPDATE
+   ENDIF
+
+[ITEMDEF 0a3f6]
+//mailbox (scarecrow)(east)
+
+[ITEMDEF 0a3f7]
+DEFNAME=i_mailbox_lion_s
+NAME=mailbox
+TYPE=t_container
+TDATA2=09d3a
+CATEGORY=Decoration - Furniture
+SUBSECTION=Mailboxes
+DESCRIPTION=Mailbox (lion)(south)
+ON=@DropOn_Self
+   IF (<DISPID> != 0a3f8)
+    DISPID=0a3f8
+    UPDATE
+   ENDIF
+ON=@PickUp_Self
+   IF (<DISPID> != 0a3f7) && (<RESCOUNT> < 2)
+    DISPID=0a3f7
+    UPDATE
+   ENDIF
+
+[ITEMDEF 0a3f8]
+//mailbox (lion)(south)
+
+[ITEMDEF 0a3f9]
+DEFNAME=i_mailbox_lion_e
+NAME=mailbox
+TYPE=t_container
+TDATA2=09d3a
+CATEGORY=Decoration - Furniture
+SUBSECTION=Mailboxes
+DESCRIPTION=Mailbox (lion)(east)
+ON=@DropOn_Self
+   IF (<DISPID> != 0a3fa)
+    DISPID=0a3fa
+    UPDATE
+   ENDIF
+ON=@PickUp_Self
+   IF (<DISPID> != 0a3f9) && (<RESCOUNT> < 2)
+    DISPID=0a3f9
+    UPDATE
+   ENDIF
+
+[ITEMDEF 0a3fa]
+//mailbox (lion)(east)
 
 [EOF]

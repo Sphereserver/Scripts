@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2017
+// SPHERE by : Menasoft ©1997-2019
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Dec 5, 2017
+// FILE LAST UPDATED: Thursday, Sept 26, 2019
 //
 VERSION=0.56d
 
@@ -73,7 +73,7 @@ NAME=speckled crab
 TAG.AquariumCreature=1
 CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Aquarium
-DESCRIPTION=Speckled Crab
+DESCRIPTION=Crab (Speckled Crab)
 
 [ITEMDEF 03afd]
 DEFNAME=i_aquarium_makoto_courtesan_fish
@@ -81,7 +81,7 @@ NAME=makoto courtesan fish
 TAG.AquariumCreature=1
 CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Aquarium
-DESCRIPTION=Makoto Courtesan Fish
+DESCRIPTION=Fish (Makoto Courtesan Fish)
 
 [ITEMDEF 03afe]
 DEFNAME=i_aquarium_minoc_blue_fish
@@ -89,7 +89,7 @@ NAME=Minoc blue fish
 TAG.AquariumCreature=1
 CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Aquarium
-DESCRIPTION=Minoc Blue Fish
+DESCRIPTION=Fish (Minoc Blue Fish)
 
 [ITEMDEF 03aff]
 DEFNAME=i_aquarium_britain_crown_fish
@@ -97,7 +97,7 @@ NAME=Britain crown fish
 TAG.AquariumCreature=1
 CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Aquarium
-DESCRIPTION=Britain Crown Fish
+DESCRIPTION=Fish (Britain Crown Fish)
 
 [ITEMDEF 03b00]
 DEFNAME=i_aquarium_red_dart_fish
@@ -105,7 +105,7 @@ NAME=red dart fish
 TAG.AquariumCreature=1
 CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Aquarium
-DESCRIPTION=Red Dart Fish
+DESCRIPTION=Fish (Red Dart Fish)
 
 [ITEMDEF 03b01]
 DEFNAME=i_aquarium_small_mouth_sucker_fin
@@ -113,7 +113,7 @@ NAME=small mouth sucker fin
 TAG.AquariumCreature=1
 CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Aquarium
-DESCRIPTION=Small Mouth Sucker Fin
+DESCRIPTION=Fish (Small Mouth Sucker Fin)
 
 [ITEMDEF 03b02]
 DEFNAME=i_aquarium_fandancer_fish
@@ -121,7 +121,7 @@ NAME=fandancer fish
 TAG.AquariumCreature=1
 CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Aquarium
-DESCRIPTION=Fandancer Fish
+DESCRIPTION=Fish (Fandancer Fish)
 
 [ITEMDEF 03b03]
 DEFNAME=i_aquarium_golden_broadtail
@@ -129,7 +129,7 @@ NAME=golden broadtail
 TAG.AquariumCreature=1
 CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Aquarium
-DESCRIPTION=Golden Broadtail
+DESCRIPTION=Fish (Golden Broadtail)
 
 [ITEMDEF 03b04]
 DEFNAME=i_aquarium_albino_courtesan_fish
@@ -137,7 +137,7 @@ NAME=albino courtesan fish
 TAG.AquariumCreature=1
 CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Aquarium
-DESCRIPTION=Albino Courtesan Fish
+DESCRIPTION=Fish (Albino Courtesan Fish)
 
 [ITEMDEF 03b05]
 DEFNAME=i_aquarium_spined_scratcher_fish
@@ -145,7 +145,7 @@ NAME=spined scratcher fish
 TAG.AquariumCreature=1
 CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Aquarium
-DESCRIPTION=Spined Scratcher Fish
+DESCRIPTION=Fish (Spined Scratcher Fish)
 
 [ITEMDEF 03b06]
 DEFNAME=i_aquarium_nujelm_honey_fish
@@ -153,7 +153,7 @@ NAME=Nujel'm honey fish
 TAG.AquariumCreature=1
 CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Aquarium
-DESCRIPTION=Nujel'm Honey Fish
+DESCRIPTION=Fish (Nujel'm Honey Fish)
 
 [ITEMDEF 03b07]
 DEFNAME=i_aquarium_yellow_fin_bluebelly
@@ -161,7 +161,7 @@ NAME=yellow fin bluebelly
 TAG.AquariumCreature=1
 CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Aquarium
-DESCRIPTION=Yellow Fin Bluebelly
+DESCRIPTION=Fish (Yellow Fin Bluebelly)
 
 [ITEMDEF 03b08]
 DEFNAME=i_aquarium_vesper_reef_tiger
@@ -169,7 +169,7 @@ NAME=Vesper reef tiger
 TAG.AquariumCreature=1
 CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Aquarium
-DESCRIPTION=Vesper Reef Tiger
+DESCRIPTION=Fish (Vesper Reef Tiger)
 
 [ITEMDEF 03b09]
 DEFNAME=i_aquarium_spotted_buccaneer
@@ -177,7 +177,7 @@ NAME=spotted buccaneer
 TAG.AquariumCreature=1
 CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Aquarium
-DESCRIPTION=Spotted Buccaneer
+DESCRIPTION=Fish (Spotted Buccaneer)
 
 [ITEMDEF 03b0a]
 DEFNAME=i_aquarium_stripped_flake_fish
@@ -185,7 +185,7 @@ NAME=stripped flake fish
 TAG.AquariumCreature=1
 CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Aquarium
-DESCRIPTION=Stripped Flake Fish
+DESCRIPTION=Fish (Stripped Flake Fish)
 
 [ITEMDEF 03b0b]
 //fish (unused)
@@ -204,7 +204,7 @@ NAME=killer frog
 TAG.AquariumCreature=1
 CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Aquarium
-DESCRIPTION=Killer Frog
+DESCRIPTION=Sea Creature (Killer Frog)
 
 [ITEMDEF 03b0e]
 DEFNAME=i_aquarium_jellyfish
@@ -212,7 +212,7 @@ NAME=jellyfish
 TAG.AquariumCreature=1
 CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Aquarium
-DESCRIPTION=Jellyfish
+DESCRIPTION=Sea Creature (Jellyfish)
 
 [ITEMDEF 03b0f]
 DEFNAME=i_aquarium_island_statue
@@ -228,7 +228,7 @@ NAME=sea horse
 TAG.AquariumCreature=1
 CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Aquarium
-DESCRIPTION=Sea Horse
+DESCRIPTION=Sea Creature (Sea Horse)
 
 [ITEMDEF 03b11]
 DEFNAME=i_aquarium_brine_shrimp
@@ -236,7 +236,7 @@ NAME=brine shrimp
 TAG.AquariumCreature=1
 CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Aquarium
-DESCRIPTION=Brine Shrimp
+DESCRIPTION=Fish (Brine Shrimp)
 
 [ITEMDEF 03b12]
 DEFNAME=i_aquarium_shell
@@ -260,7 +260,7 @@ NAME=shrimp
 TAG.AquariumCreature=1
 CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Aquarium
-DESCRIPTION=Shrimp
+DESCRIPTION=Fish (Shrimp)
 
 [ITEMDEF 03b15]
 DEFNAME=i_aquarium_full_moon_fish
@@ -268,7 +268,7 @@ NAME=full moon fish
 TAG.AquariumCreature=1
 CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Aquarium
-DESCRIPTION=Full Moon Fish
+DESCRIPTION=Fish (Full Moon Fish)
 
 
 [ITEMDEF 04c2a]
@@ -304,6 +304,643 @@ SUBSECTION=Aquarium
 DESCRIPTION=Coral (7)
 
 
+[ITEMDEF 0a35f]
+DEFNAME=i_aquarium_moorish_idol
+NAME=moorish idol
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Fish (Moorish Idol)
+
+[ITEMDEF 0a360]
+DEFNAME=i_aquarium_sergeant_major
+NAME=sergeant major
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Fish (Sergeant Major)
+
+[ITEMDEF 0a361]
+DEFNAME=i_aquarium_queen_triggerfish
+NAME=queen triggerfish
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Fish (Queen Triggerfish)
+
+[ITEMDEF 0a362]
+DEFNAME=i_aquarium_clownfish
+NAME=clownfish
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Fish (Clownfish)
+
+[ITEMDEF 0a363]
+DEFNAME=i_aquarium_humpback_grouper
+NAME=Humpback Grouper
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Fish (Humpback Grouper)
+
+[ITEMDEF 0a364]
+DEFNAME=i_aquarium_spotted_parrotfish
+NAME=spotted parrotfish
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Fish (Spotted Parrotfish)
+
+[ITEMDEF 0a365]
+DEFNAME=i_aquarium_squirrelfish
+NAME=squirrelfish
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Fish (Squirrelfish)
+
+[ITEMDEF 0a366]
+DEFNAME=i_aquarium_pajama_cardinalfish
+NAME=pajama cardinalfish
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Fish (Pajama Cardinalfish)
+
+[ITEMDEF 0a367]
+DEFNAME=i_aquarium_banggai_cardinalfish
+NAME=banggai cardinalfish
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Fish (Banggai Cardinalfish)
+
+[ITEMDEF 0a368]
+DEFNAME=i_aquarium_magnificent_shrimpgoby
+NAME=magnificent shrimpgoby
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Fish (Magnificent Shrimpgoby)
+
+[ITEMDEF 0a369]
+DEFNAME=i_aquarium_mandarinfish
+NAME=mandarinfish
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Fish (Mandarinfish)
+
+[ITEMDEF 0a36a]
+DEFNAME=i_aquarium_frogfish
+NAME=frogfish
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Fish (Frogfish)
+
+[ITEMDEF 0a36b]
+DEFNAME=i_aquarium_scorpionfish
+NAME=scorpionfish
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Fish (Scorpionfish)
+
+[ITEMDEF 0a36c]
+DEFNAME=i_aquarium_clown_triggerfish
+NAME=clown triggerfish
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Fish (Clown Triggerfish)
+
+[ITEMDEF 0a36d]
+DEFNAME=i_aquarium_black_durgeon
+NAME=black durgeon
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Fish (Black Durgeon)
+
+[ITEMDEF 0a36e]
+DEFNAME=i_aquarium_picasso_triggerfish
+NAME=picasso triggerfish
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Fish (Picasso Triggerfish)
+
+[ITEMDEF 0a36f]
+DEFNAME=i_aquarium_filefish
+NAME=filefish
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Fish (Filefish)
+
+[ITEMDEF 0a370]
+DEFNAME=i_aquarium_porcupinefish
+NAME=porcupinefish
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Fish (Porcupinefish)
+
+[ITEMDEF 0a371]
+DEFNAME=i_aquarium_yellow_boxfish
+NAME=yellow boxfish
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Fish (Yellow Boxfish)
+
+[ITEMDEF 0a372]
+DEFNAME=i_aquarium_pygmy_seahorse
+NAME=pygmy seahorse
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Sea Creature (Pygmy Seahorse)
+
+[ITEMDEF 0a373]
+DEFNAME=i_aquarium_eagle_ray
+NAME=eagle ray
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Sea Creature (Eagle Ray)
+
+[ITEMDEF 0a374]
+DEFNAME=i_aquarium_spotted_blue_ray
+NAME=spotted blue ray
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Sea Creature (Spotted Blue Ray)
+
+[ITEMDEF 0a375]
+DEFNAME=i_aquarium_gray_angelfish
+NAME=gray angelfish
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Fish (Gray Angelfish)
+
+[ITEMDEF 0a376]
+DEFNAME=i_aquarium_rock_beauty
+NAME=rock beauty
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Fish (Rock Beauty)
+
+[ITEMDEF 0a377]
+DEFNAME=i_aquarium_french_angelfish
+NAME=french angelfish
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Fish (French Angelfish)
+
+[ITEMDEF 0a378]
+DEFNAME=i_aquarium_beaugregory
+NAME=beaugregory
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Fish (Beaugregory)
+
+[ITEMDEF 0a379]
+DEFNAME=i_aquarium_spadefish
+NAME=spadefish
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Fish (Spadefish)
+
+[ITEMDEF 0a37a]
+DEFNAME=i_aquarium_spiny_lobster
+NAME=spiny lobster
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Sea Creature (Spiny Lobster)
+
+[ITEMDEF 0a37b]
+DEFNAME=i_aquarium_banded_coral_shrimp
+NAME=banded coral shrimp
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Sea Creature (Banded Coral Shrimp)
+
+[ITEMDEF 0a37c]
+DEFNAME=i_aquarium_cleaner_shrimp
+NAME=cleaner shrimp
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Sea Creature (Cleaner Shrimp)
+
+[ITEMDEF 0a37d]
+DEFNAME=i_aquarium_mantis_shrimp
+NAME=mantis shrimp
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Sea Creature (Mantis Shrimp)
+
+[ITEMDEF 0a37e]
+DEFNAME=i_aquarium_arrow_crab
+NAME=arrow crab
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Sea Creature (Arrow Crab)
+
+[ITEMDEF 0a37f]
+DEFNAME=i_aquarium_blue_hermit_crab
+NAME=blue hermit crab
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Sea Creature (Blue Hermit Crab)
+
+[ITEMDEF 0a380]
+DEFNAME=i_aquarium_horseshoe_crab
+NAME=horseshoe crab
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Sea Creature (Horseshoe Crab)
+
+[ITEMDEF 0a381]
+DEFNAME=i_aquarium_feather_duster
+NAME=feather duster
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Sea Creature (Feather Duster)
+
+[ITEMDEF 0a382]
+DEFNAME=i_aquarium_flamingo_tongue
+NAME=flamingo tongue
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Sea Creature (Flamingo Tongue)
+
+[ITEMDEF 0a383]
+DEFNAME=i_aquarium_squid
+NAME=squid
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Sea Creature (Squid)
+
+[ITEMDEF 0a384]
+DEFNAME=i_aquarium_octopus
+NAME=octopus
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Sea Creature (Octopus)
+
+[ITEMDEF 0a385]
+DEFNAME=i_aquarium_fire_clam
+NAME=fire clam
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Sea Creature (Fire Clam)
+
+[ITEMDEF 0a386]
+DEFNAME=i_aquarium_giant_anemone
+NAME=giant anemone
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Sea Creature (Giant Anemone)
+
+[ITEMDEF 0a387]
+DEFNAME=i_aquarium_lions_mane_jelly
+NAME=lion's mane jelly
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Sea Creature (Lion's Mane Jelly)
+
+[ITEMDEF 0a388]
+DEFNAME=i_aquarium_sea_urchin
+NAME=sea urchin
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Sea Creature (Sea Urchin)
+
+[ITEMDEF 0a389]
+DEFNAME=i_aquarium_orange_elephant_ear_sponge
+NAME=orange elephant ear sponge
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Sea Creature (Orange Elephant Ear Sponge)
+
+[ITEMDEF 0a38a]
+DEFNAME=i_aquarium_barrel_sponge
+NAME=barrel sponge
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Sea Creature (Barrel Sponge)
+
+[ITEMDEF 0a38b]
+DEFNAME=i_aquarium_fire_coral
+NAME=fire coral
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Sea Creature (Fire Coral)
+
+[ITEMDEF 0a38c]
+DEFNAME=i_aquarium_sea_fan
+NAME=sea fan
+TAG.AquariumDecoration=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Coral (Sea Fan)
+
+[ITEMDEF 0a38d]
+DEFNAME=i_aquarium_staghorn_coral
+NAME=staghorn coral
+TAG.AquariumDecoration=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Coral (Staghorn Coral)
+
+[ITEMDEF 0a38e]
+DEFNAME=i_aquarium_elkhorn_coral
+NAME=elkhorn coral
+TAG.AquariumDecoration=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Coral (Elkhorn Coral)
+
+[ITEMDEF 0a38f]
+DEFNAME=i_aquarium_tree_coral
+NAME=tree coral
+TAG.AquariumDecoration=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Coral (Tree Coral)
+
+[ITEMDEF 0a390]
+DEFNAME=i_aquarium_leafy_sea_dragon
+NAME=leafy sea dragon
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Sea Creature (Leafy Sea Dragon)
+
+[ITEMDEF 0a391]
+DEFNAME=i_aquarium_hippo_tang
+NAME=hippo tang
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Fish (Hippo Tang)
+
+[ITEMDEF 0a392]
+DEFNAME=i_aquarium_chironex_jelly
+NAME=chironex jelly
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Sea Creature (Chironex Jelly)
+
+
+[ITEMDEF 0a395]
+DEFNAME=i_aquarium_chocolate_chip_seastar
+NAME=chocolate chip seastar
+TAG.AquariumCreature=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Sea Creature (Chocolate Chip Seastar)
+
+
+[ITEMDEF 0a3a6]
+DEFNAME=i_aquarium_elegant_small
+NAME=aquarium
+FLIP=1
+TYPE=t_container
+TEVENTS=t_aquarium
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Aquarium (small elegant)
+DUPELIST=0a3ab
+
+[ITEMDEF 0a3a7]
+//aquarium (multi-part)(small elegant)(south)(anim)
+
+[ITEMDEF 0a3a8]
+//aquarium (multi-part)(small elegant)(south)(anim)
+
+[ITEMDEF 0a3a9]
+//aquarium (multi-part)(small elegant)(south)(anim)
+
+[ITEMDEF 0a3aa]
+//aquarium (multi-part)(small elegant)(south)(anim)
+
+[ITEMDEF 0a3ab]
+//aquarium (multi-part)(small elegant)(east)
+NAME=aquarium
+TYPE=t_container
+TEVENTS=t_aquarium
+DUPEITEM=0a3a6
+
+[ITEMDEF 0a3ac]
+//aquarium (multi-part)(small elegant)(east)(anim)
+
+[ITEMDEF 0a3ad]
+//aquarium (multi-part)(small elegant)(east)(anim)
+
+[ITEMDEF 0a3ae]
+//aquarium (multi-part)(small elegant)(east)(anim)
+
+[ITEMDEF 0a3af]
+//aquarium (multi-part)(small elegant)(east)(anim)
+
+[ITEMDEF 0a3b0]
+//aquarium (multi-part)(wall elegant)(south)
+NAME=aquarium
+TYPE=t_container
+TEVENTS=t_aquarium
+
+[ITEMDEF 0a3b1]
+//aquarium (multi-part)(wall mounted)(south)(anim)
+
+[ITEMDEF 0a3b2]
+//aquarium (multi-part)(wall mounted)(south)(anim)
+
+[ITEMDEF 0a3b3]
+//aquarium (multi-part)(wall mounted)(south)(anim)
+
+[ITEMDEF 0a3b4]
+//aquarium (multi-part)(wall mounted)(south)(anim)
+
+[ITEMDEF 0a3b5]
+//aquarium (multi-part)(wall mounted)(south)
+NAME=aquarium
+TYPE=t_container
+TEVENTS=t_aquarium
+
+[ITEMDEF 0a3b6]
+//aquarium (multi-part)(wall mounted)(south)(anim)
+
+[ITEMDEF 0a3b7]
+//aquarium (multi-part)(wall mounted)(south)(anim)
+
+[ITEMDEF 0a3b8]
+//aquarium (multi-part)(wall mounted)(south)(anim)
+
+[ITEMDEF 0a3b9]
+//aquarium (multi-part)(wall mounted)(south)(anim)
+
+[ITEMDEF 0a3ba]
+//aquarium (multi-part)(wall mounted)(south)
+NAME=aquarium
+TYPE=t_container
+TEVENTS=t_aquarium
+
+[ITEMDEF 0a3bb]
+//aquarium (multi-part)(wall mounted)(south)(anim)
+
+[ITEMDEF 0a3bc]
+//aquarium (multi-part)(wall mounted)(south)(anim)
+
+[ITEMDEF 0a3bd]
+//aquarium (multi-part)(wall mounted)(south)(anim)
+
+[ITEMDEF 0a3be]
+//aquarium (multi-part)(wall mounted)(south)(anim)
+
+[ITEMDEF 0a3bf]
+//aquarium (multi-part)(wall mounted)(east)
+NAME=aquarium
+TYPE=t_container
+TEVENTS=t_aquarium
+
+[ITEMDEF 0a3c0]
+//aquarium (multi-part)(wall mounted)(east)(anim)
+
+[ITEMDEF 0a3c1]
+//aquarium (multi-part)(wall mounted)(east)(anim)
+
+[ITEMDEF 0a3c2]
+//aquarium (multi-part)(wall mounted)(east)(anim)
+
+[ITEMDEF 0a3c3]
+//aquarium (multi-part)(wall mounted)(east)(anim)
+
+[ITEMDEF 0a3c4]
+//aquarium (multi-part)(wall mounted)(east)
+NAME=aquarium
+TYPE=t_container
+TEVENTS=t_aquarium
+
+[ITEMDEF 0a3c5]
+//aquarium (multi-part)(wall mounted)(east)(anim)
+
+[ITEMDEF 0a3c6]
+//aquarium (multi-part)(wall mounted)(east)(anim)
+
+[ITEMDEF 0a3c7]
+//aquarium (multi-part)(wall mounted)(east)(anim)
+
+[ITEMDEF 0a3c8]
+//aquarium (multi-part)(wall mounted)(east)(anim)
+
+[ITEMDEF 0a3c9]
+//aquarium (multi-part)(wall mounted)(east)
+NAME=aquarium
+TYPE=t_container
+TEVENTS=t_aquarium
+
+[ITEMDEF 0a3ca]
+//aquarium (multi-part)(wall mounted)(east)(anim)
+
+[ITEMDEF 0a3cb]
+//aquarium (multi-part)(wall mounted)(east)(anim)
+
+[ITEMDEF 0a3cc]
+//aquarium (multi-part)(wall mounted)(east)(anim)
+
+[ITEMDEF 0a3cd]
+//aquarium (multi-part)(wall mounted)(east)(anim)
+
+[ITEMDEF 0a3ce]
+//aquarium (multi-part)(large elegant)(south)
+NAME=aquarium
+TYPE=t_container
+TEVENTS=t_aquarium
+
+[ITEMDEF 0a3cf]
+//aquarium (multi-part)(large elegant)(south)(anim)
+
+[ITEMDEF 0a3d0]
+//aquarium (multi-part)(large elegant)(south)(anim)
+
+[ITEMDEF 0a3d1]
+//aquarium (multi-part)(large elegant)(south)(anim)
+
+[ITEMDEF 0a3d2]
+//aquarium (multi-part)(large elegant)(south)(anim)
+
+[ITEMDEF 0a3d3]
+//aquarium (multi-part)(large elegant)(south)
+NAME=aquarium
+
+[ITEMDEF 0a3d4]
+//aquarium (multi-part)(large elegant)(south)
+NAME=aquarium
+
+[ITEMDEF 0a3d5]
+//aquarium (multi-part)(large elegant)(south)
+NAME=aquarium
+
+[ITEMDEF 0a3d6]
+//aquarium (multi-part)(large elegant)(east)
+NAME=aquarium
+TYPE=t_container
+TEVENTS=t_aquarium
+
+[ITEMDEF 0a3d7]
+//aquarium (multi-part)(large elegant)(east)(anim)
+
+[ITEMDEF 0a3d8]
+//aquarium (multi-part)(large elegant)(east)(anim)
+
+[ITEMDEF 0a3d9]
+//aquarium (multi-part)(large elegant)(east)(anim)
+
+[ITEMDEF 0a3da]
+//aquarium (multi-part)(large elegant)(east)(anim)
+
+[ITEMDEF 0a3db]
+//aquarium (multi-part)(large elegant)(east)
+NAME=aquarium
+
+[ITEMDEF 0a3dc]
+//aquarium (multi-part)(large elegant)(east)
+NAME=aquarium
+
+[ITEMDEF 0a3dd]
+//aquarium (multi-part)(large elegant)(east)
+NAME=aquarium
+
+
 ////////////
 // Multis //
 ////////////
@@ -314,7 +951,7 @@ NAME=Aquarium
 TYPE=t_multi
 CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Aquarium
-DESCRIPTION=Aquarium (south)
+DESCRIPTION=Aquarium (south)(multi)
 MULTIREGION=0,0,0,0
 COMPONENT=03060,1,0
 
@@ -324,9 +961,55 @@ NAME=Aquarium
 TYPE=t_multi
 CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Aquarium
-DESCRIPTION=Aquarium (east)
+DESCRIPTION=Aquarium (east)(multi)
 MULTIREGION=0,0,0,0
 COMPONENT=03062,0,1
+
+[ITEMDEF m_aquarium_wall_mounted_south]
+ID=0a3b5
+NAME=Aquarium
+TYPE=t_multi
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Aquarium (wall mounted)(south)(multi)
+MULTIREGION=0,0,0,0
+COMPONENT=0a3ba,-1,0
+COMPONENT=0a3b0,1,0
+
+[ITEMDEF m_aquarium_wall_mounted_east]
+ID=0a3c4
+NAME=Aquarium
+TYPE=t_multi
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Aquarium (wall mounted)(east)(multi)
+MULTIREGION=0,0,0,0
+COMPONENT=0a3c9,0,-1
+COMPONENT=0a3bf,0,1
+
+[ITEMDEF m_aquarium_elegant_large_south]
+ID=0a3d4
+NAME=Aquarium
+TYPE=t_multi
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Aquarium (large elegant)(south)(multi)
+MULTIREGION=0,0,0,0
+COMPONENT=0a3ce,1,0
+COMPONENT=0a3d3,1,-1
+COMPONENT=0a3d5,-1,0
+
+[ITEMDEF m_aquarium_elegant_large_east]
+ID=0a3dc
+NAME=Aquarium
+TYPE=t_multi
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Aquarium (large elegant)(east)(multi)
+MULTIREGION=0,0,0,0
+COMPONENT=0a3d6,0,1
+COMPONENT=0a3db,-1,1
+COMPONENT=0a3dd,0,-1
 
 
 ////////////
@@ -335,36 +1018,36 @@ COMPONENT=03062,0,1
 
 [TYPEDEF t_aquarium]
 ON=@DClick
-   SDIALOG d_aquarium
-   SOUND 05a4
-   return 1
+SDIALOG d_aquarium
+SOUND 05a4
+return 1
 
 ON=@ClientTooltip
-   SRC.ADDCLILOC 1074247,<dTAG0.LiveCreatures>,30	//Live Creatures: ~1_NUM~ / ~2_MAX~
-   IF (<TAG0.Decorations>)
-      SRC.ADDCLILOC 1074249,<dTAG0.Decorations>		//Decorations: ~1_NUM~
-   ENDIF
+SRC.ADDCLILOC 1074247,<dTAG0.LiveCreatures>,30	//Live Creatures: ~1_NUM~ / ~2_MAX~
+IF (<TAG0.Decorations>)
+   SRC.ADDCLILOC 1074249,<dTAG0.Decorations>	//Decorations: ~1_NUM~
+ENDIF
 
 ON=@DropOn_Self
-   IF (<ARGO.TAG0.AquariumCreature>)
-      IF (<TAG0.LiveCreatures> >= 30)
-         SRC.SYSMESSAGE The aquarium can not hold the creature.
-         return 1
-      ENDIF
-      SRC.SYSMESSAGE You add the following creature to your aquarium: <ARGO.NAME>
-      TAG0.LiveCreatures ++
-   ELSE
-      IF !(<ARGO.TAG0.AquariumDecoration>)
-         SRC.SYSMESSAGE The aquarium can not hold that item.
-         return 1
-      ELIF (<RESCOUNT> >= 125)
-         SRC.SYSMESSAGE The decoration will not fit in the aquarium.
-         return 1
-      ENDIF
-      SRC.SYSMESSAGE You add the following decoration to your aquarium: <ARGO.NAME>
-      TAG0.Decorations ++
+IF (<ARGO.TAG0.AquariumCreature>)
+   IF (<TAG0.LiveCreatures> >= 30)
+      SRC.SYSMESSAGE The aquarium can not hold the creature.
+      return 1
    ENDIF
-   TIMERF 1,RESENDTOOLTIP
+   SRC.SYSMESSAGE You add the following creature to your aquarium: <ARGO.NAME>
+   TAG0.LiveCreatures ++
+ELSE
+   IF !(<ARGO.TAG0.AquariumDecoration>)
+      SRC.SYSMESSAGE The aquarium can not hold that item.
+      return 1
+   ELIF (<RESCOUNT> >= 125)
+      SRC.SYSMESSAGE The decoration will not fit in the aquarium.
+      return 1
+   ENDIF
+   SRC.SYSMESSAGE You add the following decoration to your aquarium: <ARGO.NAME>
+   TAG0.Decorations ++
+ENDIF
+TIMERF 1,RESENDTOOLTIP
 
 
 /////////////
@@ -376,7 +1059,7 @@ ON=@DropOn_Self
 
 page 0
 resizepic 0 0 0e10 350 323
-gumppic 0 0 02c96
+gumppic 0 0 <QVAL (<DISPIDDEC> >= 41894)? 09d36 : 02c96>
 
 IF (<RESCOUNT>)
    FOR 1 <RESCOUNT>
