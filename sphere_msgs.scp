@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Wednesday, Oct 16, 2019
+// FILE LAST UPDATED: Thursday, Oct 24, 2019
 //
 VERSION=0.56d
 
@@ -396,8 +396,6 @@ EMOTE_DEF_UNICODE	0
 //msg_acc_kick					"A'%s' was %sed by '%s'"
 //msg_acc_priv					"You are not privileged to do that"
 //msg_acc_unk					"Unknown account name '%s'. Try using a 'guest' account."
-//msg_acc_passclear				"Password has been cleared."
-//msg_acc_passclear_relog		"Log out, then back in to set the new password."
 //msg_acc_acceptpass			"Password has been set."
 //msg_acc_invalidpass			"Invalid password."
 //msg_acc_guesthit				"The guest curse strikes you."
