@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, Nov 18, 2019
+// FILE LAST UPDATED: Tuesday, Nov 26, 2019
 //
 VERSION=0.56d
 
@@ -405,13 +405,10 @@ EMOTE_DEF_UNICODE	0
 //msg_acc_block					"Account '%s' blocked"
 //msg_acc_blocked				"Account blocked. Send email to admin %s."
 //msg_acc_denied				"Sorry, but your access has been denied."
-//msg_acc_gused					"All guest accounts are currently used."
 //msg_acc_kick					"A'%s' was %sed by '%s'"
 //msg_acc_priv					"You are not privileged to do that"
-//msg_acc_unk					"Unknown account name '%s'. Try using a 'guest' account."
 //msg_acc_acceptpass			"Password has been set."
 //msg_acc_invalidpass			"Invalid password."
-//msg_acc_guesthit				"The guest curse strikes you."
 //msg_alreadyonline				"Already online"
 //msg_arrdep_1					"%s has %s %s."
 //msg_arrdep_2					"arrived in"
@@ -467,7 +464,6 @@ EMOTE_DEF_UNICODE	0
 //msg_frozen					"You are frozen and can not move."
 //msg_guards					"Guards can now be called on you!"
 //msg_guards_nolonger			"Guards can no longer be called on you."
-//msg_guest						"Your guest curse prevents you from taking this action"
 //msg_heavy						"That is too heavy. You can't move that."		
 //msg_hunger					"You are %s"
 //msg_itemplace					"You put the %s %s."
@@ -497,7 +493,6 @@ EMOTE_DEF_UNICODE	0
 //msg_killed_by					"%c'%s' was killed by "
 //msg_mailbag_drop_1			"Drop mail on other players"
 //msg_mailbag_drop_2			"'%s' has dropped mail on you."
-//msg_maxchars					"You already have %d character(s)."
 //msg_summon_ceiling			"The ceiling is too low for the summoned creature!"
 //msg_summon_invalidtarg 		"The creature cannot be summoned at this location."
 //msg_mount_ceiling				"The ceiling is too low for you!"
@@ -1060,7 +1055,6 @@ EMOTE_DEF_UNICODE	0
 //charinfo_hidden				" [hidden]"
 //charinfo_hallu				" [hallu]"
 //charinfo_spawn				" [spawn]"
-//charinfo_guest				" [guest]"
 //charinfo_jailed				" [jailed]"
 //charinfo_logout				" [logout]"
 //charinfo_criminal				" [criminal]"
