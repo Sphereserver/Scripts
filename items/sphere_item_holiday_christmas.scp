@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2018
+// SPHERE by : Menasoft ©1997-2019
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Wednesday, Dec 26, 2018
+// FILE LAST UPDATED: Tuesday, Dec 10, 2019
 //
 VERSION=0.56d
 
@@ -2002,6 +2002,214 @@ DUPELIST=0a267
 [ITEMDEF 0a267]
 //recipe book
 DUPEITEM=0a266
+
+
+[ITEMDEF 0a4ad]
+DEFNAME=i_glass_tree_1_s
+NAME=glass tree
+TYPE=t_light_out
+TDATA3=i_glass_tree_1_s_lit
+WEIGHT=1.0
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Glass Tree 1 (south)(unlit)
+ON=@Create
+   MOREZ=240
+
+[ITEMDEF 0a4ae]
+DEFNAME=i_glass_tree_1_s_lit
+NAME=glass tree
+TYPE=t_light_out
+TDATA3=i_glass_tree_1_s
+WEIGHT=1.0
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Glass Tree 1 (south)(lit)
+ON=@Create
+   MOREZ=240
+
+[ITEMDEF 0a4af]
+DEFNAME=i_glass_tree_1_e
+NAME=glass tree
+TYPE=t_light_out
+TDATA3=i_glass_tree_1_e_lit
+WEIGHT=1.0
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Glass Tree 1 (east)(unlit)
+ON=@Create
+   MOREZ=240
+
+[ITEMDEF 0a4b0]
+DEFNAME=i_glass_tree_1_e_lit
+NAME=glass tree
+TYPE=t_light_out
+TDATA3=i_glass_tree_1_e
+WEIGHT=1.0
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Glass Tree 1 (east)(lit)
+ON=@Create
+   MOREZ=240
+
+[ITEMDEF 0a4b1]
+DEFNAME=i_dove_cage
+NAME=cage
+DYE=1
+WEIGHT=1.0
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Cage
+DUPELIST=0a4b2
+ON=@DClick
+   SOUND 067f
+
+[ITEMDEF 0a4b2]
+//cage
+DUPEITEM=0a4b1
+
+[ITEMDEF 0a4b3]
+DEFNAME=i_glass_tree_2_s
+NAME=glass tree
+TYPE=t_light_out
+TDATA3=i_glass_tree_2_s_lit
+WEIGHT=1.0
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Glass Tree 2 (south)(unlit)
+ON=@Create
+   MOREZ=210
+
+[ITEMDEF 0a4b4]
+DEFNAME=i_glass_tree_2_s_lit
+NAME=glass tree
+TYPE=t_light_out
+TDATA3=i_glass_tree_2_s
+WEIGHT=1.0
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Glass Tree 2 (south)(lit)
+ON=@Create
+   MOREZ=210
+
+[ITEMDEF 0a4b5]
+DEFNAME=i_glass_tree_2_e
+NAME=glass tree
+TYPE=t_light_out
+TDATA3=i_glass_tree_2_e_lit
+WEIGHT=1.0
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Glass Tree 2 (east)(unlit)
+ON=@Create
+   MOREZ=210
+
+[ITEMDEF 0a4b6]
+DEFNAME=i_glass_tree_2_e_lit
+NAME=glass tree
+TYPE=t_light_out
+TDATA3=i_glass_tree_2_e
+WEIGHT=1.0
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Glass Tree 2 (east)(lit)
+ON=@Create
+   MOREZ=210
+
+[ITEMDEF 0a4b7]
+DEFNAME=i_glass_tree_3_s
+NAME=glass tree
+TYPE=t_light_out
+TDATA3=i_glass_tree_3_s_lit
+WEIGHT=1.0
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Glass Tree 3 (south)(unlit)
+ON=@Create
+   MOREZ=210
+
+[ITEMDEF 0a4b8]
+DEFNAME=i_glass_tree_3_s_lit
+NAME=glass tree
+TYPE=t_light_out
+TDATA3=i_glass_tree_3_s
+WEIGHT=1.0
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Glass Tree 3 (south)(lit)
+ON=@Create
+   MOREZ=210
+
+[ITEMDEF 0a4b9]
+DEFNAME=i_glass_tree_3_e
+NAME=glass tree
+TYPE=t_light_out
+TDATA3=i_glass_tree_3_e_lit
+WEIGHT=1.0
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Glass Tree 3 (east)(unlit)
+ON=@Create
+   MOREZ=210
+
+[ITEMDEF 0a4ba]
+DEFNAME=i_glass_tree_3_e_lit
+NAME=glass tree
+TYPE=t_light_out
+TDATA3=i_glass_tree_3_e
+WEIGHT=1.0
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Glass Tree 3 (east)(lit)
+ON=@Create
+   MOREZ=210
+
+
+[ITEMDEF 0a4cf]
+DEFNAME=i_holiday_tree_jolly
+NAME=Holiday Tree
+DYE=1
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Jolly Holiday Tree
+ON=@DClick
+   IF (<DISPID> == i_holiday_tree_jolly)
+      DISPID=0a4d0
+   ELSE
+      DISPID=i_holiday_tree_jolly
+   ENDIF
+   UPDATE
+   return 1
+
+[ITEMDEF 0a4d0]
+//holiday tree (anim)
+
+[ITEMDEF 0a4d1]
+//holiday tree (anim)
+
+[ITEMDEF 0a4d2]
+//holiday tree (anim)
+
+[ITEMDEF 0a4d3]
+//holiday tree (anim)
+
+[ITEMDEF 0a4d4]
+//holiday tree (anim)
+
+[ITEMDEF 0a4d5]
+//holiday tree (anim)
+
+[ITEMDEF 0a4d6]
+//holiday tree (anim)
+
+[ITEMDEF 0a4d7]
+//holiday tree (anim)
+
+[ITEMDEF 0a4d8]
+//holiday tree (anim)
+
+[ITEMDEF 0a4d9]
+//holiday tree (anim)
 
 
 //////////////////

@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Wednesday, Feb 27, 2019
+// FILE LAST UPDATED: Tuesday, Dec 10, 2019
 //
 VERSION=0.56d
 
@@ -516,5 +516,20 @@ ON=@Create
 
 [ITEMDEF 0a288]
 //lilly pad (lit)(anim)
+
+
+[ITEMDEF 0a515]
+DEFNAME=i_teddybear
+NAME=bear
+WEIGHT=1.0
+FLIP=1
+CATEGORY=Valentine's Day
+SUBSECTION=Decoration
+DESCRIPTION=Teddy Bear
+DUPELIST=0a516
+
+[ITEMDEF 0a516]
+//teddy bear
+DUPEITEM=0a515
 
 [EOF]

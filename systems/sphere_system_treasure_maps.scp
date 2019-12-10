@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2017
+// SPHERE by : Menasoft ©1997-2019
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, May 29, 2017
+// FILE LAST UPDATED: Tuesday, Dec 10, 2019
 //
 VERSION=0.56d
 
@@ -231,8 +231,18 @@ TYPE=t_map
 NAME=<STREAT <NAME>>
 RESENDTOOLTIP
 LOCAL.Radius=<eval <TreasureMap_GetFacetRadius>/2>
-MORE1=<eval ((<MOREX>-<LOCAL.Radius>)*010000)+(<MOREY>-<LOCAL.Radius>)>
-MORE2=<eval ((<MOREX>+<LOCAL.Radius>)*010000)+(<MOREY>+<LOCAL.Radius>)>
+LOCAL.MinX=<eval <MOREX>-<LOCAL.Radius>>
+LOCAL.MinY=<eval <MOREY>-<LOCAL.Radius>>
+LOCAL.MaxX=<eval <MOREX>+<LOCAL.Radius>>
+LOCAL.MaxY=<eval <MOREY>+<LOCAL.Radius>>
+IF (<LOCAL.MinX> < 0)
+ LOCAL.MinX=0
+ENDIF
+IF (<LOCAL.MinY> < 0)
+ LOCAL.MinY=0
+ENDIF
+MORE1=<eval (<LOCAL.MinX>*010000)+<LOCAL.MinY>>
+MORE2=<eval (<LOCAL.MaxX>*010000)+<LOCAL.MaxY>>
 PIN=<eval <TDATA1>/2>,<eval <TDATA2>/2>   //add pin on map center
 
 [FUNCTION TreasureMap_CanDig]
@@ -241,6 +251,9 @@ IF (<TAG0.DirtPatch1>)
  return 0
 ELIF (<SRC.CARTOGRAPHY> < <DEF0.TreasureMap_L<TDATA3>_Cartography>)
  SRC.SYSMESSAGE You did not decode this map and have no clue where to look for the treasure.
+ return 0
+ELIF (<SRC.FLAGS> & statf_hovering)
+ SRC.SYSMESSAGE You cannot dig for treasure while flying!
  return 0
 ELIF (<SRC.DISTANCE <MOREX>,<MOREY>> > <SRC.TreasureMap_GetDigDistance>)
  SRC.SYSMESSAGE You dig and dig but no treasure seems to be here.
