@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Thursday, Aug 29, 2019
+// FILE LAST UPDATED: Tuesday, Dec 10, 2019
 //
 VERSION=0.56d
 
@@ -28,10 +28,11 @@ resizepic x,y,gump,width,height     // Add resized background gump
 checkertrans x,y,width,height       // Add transparency layer (required client >= 4.0.0)
 
 PICTURES
-gumppic x,y,gump,hue                // Add gump picture (required client >= 3.0.0 to use 'hue' value)
-gumppictiled x,y,width,height,gump  // Add repeated gump pictures to fill the given area
-tilepic x,y,itemid                  // Add item picture from tiledata.mul
-tilepichue x,y,itemid,hue           // Add hued item picture from tiledata.mul
+gumppic x,y,gump,hue                            // Add gump picture (required client >= 3.0.0 to use 'hue' value)
+gumppictiled x,y,width,height,gump              // Add repeated gump pictures to fill the given area
+picinpic x,y,gump,spritex,spritey,width,height  // Add sprite picture (required client >= 7.0.80.0)
+tilepic x,y,itemid                              // Add item picture from tiledata.mul
+tilepichue x,y,itemid,hue                       // Add hued item picture from tiledata.mul
 
 TEXTS
 text x,y,color,index (OBSOLETE)                                               // Add text (index-based)
@@ -1165,17 +1166,19 @@ CTAG.Dialog.GMPage.Selected=
 IF (<SERV.CLIENTS>)
  FOR 0 <eval <SERV.CLIENTS>-1>
   REF1=<SERV.CLIENT.<LOCAL._FOR>.UID>
-  IF !(<isempty <REF1.CTAG.Dialog.GMPage.Selected>>)
-   IF (<REF1.CTAG0.Dialog.GMPage.Selected> > <ARGS>)
-    REF1.CTAG0.Dialog.GMPage.Selected --
-   ELIF (<REF1.CTAG0.Dialog.GMPage.Selected> == <ARGS>)
-    REF1.SYSMESSAGE @035 GM page cleared from queue
-    REF1.CTAG.Dialog.GMPage.Selected=
+  IF (<REF1>)
+   IF !(<isempty <REF1.CTAG.Dialog.GMPage.Selected>>)
+    IF (<REF1.CTAG0.Dialog.GMPage.Selected> > <ARGS>)
+     REF1.CTAG0.Dialog.GMPage.Selected --
+    ELIF (<REF1.CTAG0.Dialog.GMPage.Selected> == <ARGS>)
+     REF1.SYSMESSAGE @035 GM page cleared from queue
+     REF1.CTAG.Dialog.GMPage.Selected=
+     REF1.SDIALOG d_gmpage_queue
+    ENDIF
+   ELIF (<REF1.ISDIALOGOPEN.d_gmpage_queue>)
+    REF1.DIALOGCLOSE d_gmpage_queue
     REF1.SDIALOG d_gmpage_queue
    ENDIF
-  ELIF (<REF1.ISDIALOGOPEN.d_gmpage_queue>)
-   REF1.DIALOGCLOSE d_gmpage_queue
-   REF1.SDIALOG d_gmpage_queue
   ENDIF
  ENDFOR
 ENDIF

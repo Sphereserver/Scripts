@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Thursday, Sept 26, 2019
+// FILE LAST UPDATED: Tuesday, Dec 10, 2019
 //
 VERSION=0.56d
 
@@ -252,7 +252,7 @@ NAME=The Town Cryer
 
 [TYPEDEF t_town_cryer]
 ON=@ClientTooltip
-   SRC.ADDCLILOC 1042971,"<TAG.Title>"	//~1_NOTHING~
+   SRC.ADDCLILOC 1042971,<TAG.Title>	//~1_NOTHING~
    SRC.ADDCLILOC 1154760,<TAG.Author>	//By: ~1_NAME~
 ON=@DClick
    SDIALOG d_town_cryer
@@ -608,6 +608,8 @@ SPEED=41
 //TAG.OVERRIDE.SPEED=32		//3.25
 REQSTR=20
 FLIP=1
+RESOURCES=5 i_ingot_iron,10 i_hides_cut
+SKILLMAKE=Tinkering 100.0,t_tinker_tools
 CATEGORY=Quests
 SUBSECTION=Krampus Encounter
 DESCRIPTION=Barbed Whip
@@ -625,6 +627,8 @@ SPEED=41
 //TAG.OVERRIDE.SPEED=32		//3.25
 REQSTR=20
 FLIP=1
+RESOURCES=5 i_ingot_iron,10 i_hides_cut
+SKILLMAKE=Tinkering 100.0,t_tinker_tools
 CATEGORY=Quests
 SUBSECTION=Krampus Encounter
 DESCRIPTION=Spiked Whip
@@ -642,6 +646,8 @@ SPEED=41
 //TAG.OVERRIDE.SPEED=32		//3.25
 REQSTR=20
 FLIP=1
+RESOURCES=5 i_ingot_iron,10 i_hides_cut
+SKILLMAKE=Tinkering 100.0,t_tinker_tools
 CATEGORY=Quests
 SUBSECTION=Krampus Encounter
 DESCRIPTION=Bladed Whip
@@ -2000,5 +2006,190 @@ DESCRIPTION=Fellowship Medallion
 
 [ITEMDEF 0a42a]
 //necklace (unused, seems to be duplicated from 0a429)
+
+
+/////////////////
+// Jolly Roger //
+/////////////////
+
+[ITEMDEF 0a412]
+//Also known as 'Tabard of Virtue'
+DEFNAME=i_tabard
+NAME=tabard
+TYPE=t_clothing
+DYE=1
+CATEGORY=Quests
+SUBSECTION=Jolly Roger
+DESCRIPTION=Tabard
+
+[ITEMDEF 0a413]
+//Also known as 'Cloak of the Virtuous'
+DEFNAME=i_cloak_elegant_quarter
+NAME=elegant quarter cloak
+TYPE=t_clothing
+DYE=1
+REQSTR=10
+CANUSE=can_u_human|can_u_elf
+TEVENTS=t_equipitem
+CATEGORY=Quests
+SUBSECTION=Jolly Roger
+DESCRIPTION=Elegant quarter cloak
+
+
+[ITEMDEF 0a517]
+DEFNAME=i_rune_virtue_spirituality
+NAME=rune
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Jolly Roger
+DESCRIPTION=Rune (spirituality)
+DUPELIST=0a518
+
+[ITEMDEF 0a518]
+//rune (spirituality)
+DUPEITEM=0a517
+
+[ITEMDEF 0a519]
+DEFNAME=i_rune_virtue_honesty
+NAME=rune
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Jolly Roger
+DESCRIPTION=Rune (honesty)
+DUPELIST=0a51a
+
+[ITEMDEF 0a51a]
+//rune (honesty)
+DUPEITEM=0a519
+
+[ITEMDEF 0a51b]
+DEFNAME=i_rune_virtue_compassion
+NAME=rune
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Jolly Roger
+DESCRIPTION=Rune (compassion)
+DUPELIST=0a51c
+
+[ITEMDEF 0a51c]
+//rune (compassion)
+DUPEITEM=0a51b
+
+[ITEMDEF 0a51d]
+DEFNAME=i_rune_virtue_honor
+NAME=rune
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Jolly Roger
+DESCRIPTION=Rune (honor)
+DUPELIST=0a51e
+
+[ITEMDEF 0a51e]
+//rune (honor)
+DUPEITEM=0a51d
+
+[ITEMDEF 0a51f]
+DEFNAME=i_rune_virtue_justice
+NAME=rune
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Jolly Roger
+DESCRIPTION=Rune (justice)
+DUPELIST=0a520
+
+[ITEMDEF 0a520]
+//rune (justice)
+DUPEITEM=0a51f
+
+[ITEMDEF 0a521]
+DEFNAME=i_rune_virtue_humility
+NAME=rune
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Jolly Roger
+DESCRIPTION=Rune (humility)
+DUPELIST=0a522
+
+[ITEMDEF 0a522]
+//rune (humility)
+DUPEITEM=0a521
+
+[ITEMDEF 0a523]
+DEFNAME=i_rune_virtue_sacrifice
+NAME=rune
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Jolly Roger
+DESCRIPTION=Rune (sacrifice)
+DUPELIST=0a524
+
+[ITEMDEF 0a524]
+//rune (sacrifice)
+DUPEITEM=0a523
+
+[ITEMDEF 0a525]
+DEFNAME=i_rune_virtue_valor
+NAME=rune
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Jolly Roger
+DESCRIPTION=Rune (valor)
+DUPELIST=0a526
+
+[ITEMDEF 0a526]
+//rune (valor)
+DUPEITEM=0a525
+
+[ITEMDEF 0a527]
+DEFNAME=i_frozen_corpse_orc
+NAME=frozen corpse
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Jolly Roger
+DESCRIPTION=Frozen corpse (orc)
+DUPELIST=0a528
+
+[ITEMDEF 0a528]
+//frozen corpse (orc)
+DUPEITEM=0a527
+
+[ITEMDEF 0a529]
+DEFNAME=i_frozen_corpse_orc_skull
+NAME=frozen corpse
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Jolly Roger
+DESCRIPTION=Frozen corpse (orc)(skull)
+DUPELIST=0a52a
+
+[ITEMDEF 0a52a]
+//frozen corpse (orc)(skull)
+DUPEITEM=0a529
+
+[ITEMDEF 0a52b]
+DEFNAME=i_frozen_corpse_jack
+NAME=frozen corpse
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Jolly Roger
+DESCRIPTION=Frozen corpse (jack)
+DUPELIST=0a52c
+
+[ITEMDEF 0a52c]
+//frozen corpse (jack)
+DUPEITEM=0a52b
+
+
+[ITEMDEF i_lute_stones]
+ID=i_lute
+NAME=Lute tuned to Stones
+TYPE=t_musical
+TDATA1=0682
+TDATA2=04d
+CATEGORY=Quests
+SUBSECTION=Jolly Roger
+DESCRIPTION=Lute tuned to Stones
+ON=@Create
+   UsesMax={350 450}
 
 [EOF]

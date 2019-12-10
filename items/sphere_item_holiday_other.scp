@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2018
+// SPHERE by : Menasoft ©1997-2019
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Oct 9, 2018
+// FILE LAST UPDATED: Tuesday, Dec 10, 2019
 //
 VERSION=0.56d
 
@@ -672,10 +672,12 @@ DEFNAME=i_sausage
 NAME=sausage
 TYPE=t_food
 FLIP=1
-DUPELIST=0a0d7
+RESOURCES=1 i_ham,1 i_dried_herbs
+SKILLMAKE=Cooking 45.0,t_cooking
 CATEGORY=Holiday Gifts
 SUBSECTION=Summer
 DESCRIPTION=Sausage
+DUPELIST=0a0d7
 ON=@Create
    MOREM=1
 
@@ -688,10 +690,12 @@ DEFNAME=i_hot_dog
 NAME=hot dog
 TYPE=t_food
 FLIP=1
-DUPELIST=0a0d9
+RESOURCES=1 i_bread_french,1 i_sausage
+SKILLMAKE=Cooking 45.0,t_cooking
 CATEGORY=Holiday Gifts
 SUBSECTION=Summer
 DESCRIPTION=Hot Dog
+DUPELIST=0a0d9
 ON=@Create
    MOREM=1
 
@@ -703,6 +707,8 @@ DUPEITEM=0a0d8
 DEFNAME=i_hamburger
 NAME=hamburger
 TYPE=t_food
+RESOURCES=1 i_bread_loaf,1 i_ribs_raw,1 i_fruit_lettuce
+SKILLMAKE=Cooking 45.0,t_cooking
 CATEGORY=Holiday Gifts
 SUBSECTION=Summer
 DESCRIPTION=Hamburger
@@ -717,10 +723,10 @@ TDATA2=0108
 FLIP=1
 RESOURCES=2 i_softened_reed,3 i_arrow_shaft
 SKILLMAKE=Tinkering 75.0,t_tinker_tools
-DUPELIST=0a0dc
 CATEGORY=Holiday Gifts
 SUBSECTION=Summer
 DESCRIPTION=Enchanted Picnic Basket
+DUPELIST=0a0dc
 ON=@Create
    //SERV.NEWITEM i_deed_picnic_blanket,1,<UID>
    SERV.NEWITEM i_sausage,3,<UID>
@@ -784,6 +790,44 @@ ON=@DClick
 [ITEMDEF 0a0e9]
 NAME=enchanted wheelbarrow
 DUPEITEM=0a0e8
+
+
+[ITEMDEF 0a2f6]
+DEFNAME=i_bonfire
+NAME=bonfire
+TYPE=t_light_out
+TDATA3=i_bonfire_lit
+CATEGORY=Holiday Gifts
+SUBSECTION=Summer
+DESCRIPTION=Bonfire (unlit)
+ON=@Create
+   MOREM=2
+
+[ITEMDEF 0a2f7]
+DEFNAME=i_bonfire_lit
+NAME=bonfire
+TYPE=t_light_lit
+TDATA3=i_bonfire
+CATEGORY=Holiday Gifts
+SUBSECTION=Summer
+DESCRIPTION=Bonfire (lit)
+ON=@Create
+   MOREM=2
+
+[ITEMDEF 0a2f8]
+//bonfire (lit)(anim)
+
+[ITEMDEF 0a2f9]
+//bonfire (lit)(anim)
+
+[ITEMDEF 0a2fa]
+//bonfire (lit)(anim)
+
+[ITEMDEF 0a2fb]
+//bonfire (lit)(anim)
+
+[ITEMDEF 0a2fc]
+//bonfire (lit)(anim)
 
 
 ////////////
