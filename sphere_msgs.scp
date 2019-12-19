@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Nov 26, 2019
+// FILE LAST UPDATED: Thursday, Dec 19, 2019
 //
 VERSION=0.56d
 
@@ -410,9 +410,6 @@ EMOTE_DEF_UNICODE	0
 //msg_acc_acceptpass			"Password has been set."
 //msg_acc_invalidpass			"Invalid password."
 //msg_alreadyonline				"Already online"
-//msg_arrdep_1					"%s has %s %s."
-//msg_arrdep_2					"arrived in"
-//msg_arrdep_3					"departed from"
 //msg_bounce_pack				"in your pack"
 //msg_cantpush					"You are not strong enough to push %s out of the way."
 //msg_corpse_npc				"%s corpse"
@@ -541,7 +538,6 @@ EMOTE_DEF_UNICODE	0
 //msg_serv_shutdown_cancel 		"Shutdown has been interrupted."
 //msg_serv_shutdown_soon		"WARNING: The system is scheduled to shutdown soon"
 //msg_shipname_promt			"What dost thou wish to name thy ship?"
-//msg_steal						"That is not yours. You will have to steal the item"
 //msg_targ_link					"First object must be a dynamic item, try again."
 //msg_targ_link_same			"That's the same object. Link cancelled."
 //msg_targ_link2				"What do you want to link it to ?"
