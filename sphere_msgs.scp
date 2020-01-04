@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Thursday, Dec 19, 2019
+// FILE LAST UPDATED: Thursday, Jan 04, 2020
 //
 VERSION=0.56d
 
@@ -196,7 +196,7 @@ EMOTE_DEF_UNICODE	0
 //food_full_5					"You feel quite full after consuming the food."
 //food_full_6					"You are stuffed!"
 //food_rcanteat					"You can't really eat this."
-//forensics_carbedby			"This body has been disturbed by %s."
+//forensics_carvedby			"This body has been disturbed by %s."
 //forensics_killedby			"It was killed by %s."
 //forensics_noone				"no one"
 //forensics_notcarved			"This corpse has not been desecrated."
@@ -725,7 +725,6 @@ EMOTE_DEF_UNICODE	0
 //party_targ_add_wait			"You must wait a bit before inviting someone else!"
 //party_targ_remove				"Who would you like to remove from your party?"
 //party_targ_remove_success		"%s has been removed from your party."
-//party_add_too_fast			"You must wait a bit before inviting someone else!"
 //poisoning_select_1			"What poison do you want to use?"
 //poisoning_success				"You apply the poison."
 //poisoning_witem				"You can only poison food or piercing weapons."
