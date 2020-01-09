@@ -196,7 +196,7 @@ EMOTE_DEF_UNICODE	0
 //food_full_5					"You feel quite full after consuming the food."
 //food_full_6					"You are stuffed!"
 //food_rcanteat					"You can't really eat this."
-//forensics_carbedby			"This body has been disturbed by %s."
+//forensics_carvedby			"This body has been disturbed by %s."
 //forensics_killedby			"It was killed by %s."
 //forensics_noone				"no one"
 //forensics_notcarved			"This corpse has not been desecrated."
