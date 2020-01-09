@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2019
+// SPHERE by : Menasoft ©1997-2020
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Thursday, Jan 04, 2020
+// FILE LAST UPDATED: Wednesday, Jan 8, 2020
 //
 VERSION=0.56d
 
@@ -196,7 +196,7 @@ EMOTE_DEF_UNICODE	0
 //food_full_5					"You feel quite full after consuming the food."
 //food_full_6					"You are stuffed!"
 //food_rcanteat					"You can't really eat this."
-//forensics_carvedby			"This body has been disturbed by %s."
+//forensics_carbedby			"This body has been disturbed by %s."
 //forensics_killedby			"It was killed by %s."
 //forensics_noone				"no one"
 //forensics_notcarved			"This corpse has not been desecrated."
@@ -382,7 +382,7 @@ EMOTE_DEF_UNICODE	0
 //magery_2						"You cannot target a character with this spell."
 //magery_3						"You cannot target yourself with this spell."
 //magery_4						"You must target the ground with this spell."
-//magery_5						"You have not yet finished preparing the spell."
+//magery_5						"You are already casting a spell."
 //magery_6						"An anti-magic field disturbs the spell."
 //magery_7						"You cannot target a player with this spell."
 //magery_8						"You cannot target an NPC with this spell."
@@ -458,7 +458,7 @@ EMOTE_DEF_UNICODE	0
 //msg_food_lvl_other			"%s looks %s"
 //msg_food_lvl_self				"You are %s"
 //msg_forgiven					"You have been forgiven"
-//msg_frozen					"You are frozen and can not move."
+//msg_frozen					"You are frozen and cannot move."
 //msg_guards					"Guards can now be called on you!"
 //msg_guards_nolonger			"Guards can no longer be called on you."
 //msg_heavy						"That is too heavy. You can't move that."		
@@ -608,7 +608,6 @@ EMOTE_DEF_UNICODE	0
 //npc_pet_confused				"*looks confused*"
 //npc_pet_days_left				"I have been paid to work for %d more days."
 //npc_pet_decide_master			"%s appears to have decided that it is better off without a master!"
-//npc_pet_deserted				"You sense that %s has deserted you."
 //npc_pet_employed				"Sorry I am already employed."
 //npc_pet_failure				"Sorry"
 //npc_pet_food_no				"No thank you."
@@ -886,7 +885,6 @@ EMOTE_DEF_UNICODE	0
 //key_to						"Key to: "
 //stone_for						"Stone for the "
 //hl_no_client					"Currently there are no clients online"
-//hl_one_client					"One client is online:"
 //hl_many_clients				"The number of clients online is"
 //skilltitle_neophyte			"Neophyte"
 //skilltitle_novice				"Novice"
