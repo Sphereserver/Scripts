@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2019
+// SPHERE by : Menasoft ©1997-2020
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Dec 10, 2019
+// FILE LAST UPDATED: Sunday, Jan 12, 2020
 //
 VERSION=0.56d
 
@@ -551,6 +551,7 @@ CharFlag.1	"Invulnerable"
 CharFlag.2	"Dead"
 CharFlag.3	"Frozen"
 CharFlag.4	"Invisible"
+CharFlag.5	"Freeze cast"
 CharFlag.6	"Warmode"
 CharFlag.7	"Reactive Armor"
 CharFlag.8	"Poisoned"
