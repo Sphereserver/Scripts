@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Wednesday, Jan 8, 2020
+// FILE LAST UPDATED: Saturday, Mar 7, 2020
 //
 VERSION=0.56d
 
@@ -159,9 +159,8 @@ EMOTE_DEF_UNICODE	0
 //combat_outsideship			"You cannot hit characters outside the ship."
 //combat_parry					"Your attack was parried!"
 //cont_items					" (%d items, %d stones)"
-//cont_full						"Too many items in that container"
-//cont_magic					"The item bounces out of the magic container"
-//cont_toosmall					"The container is too small for that"
+//cont_full_items				"That container cannot hold more items."
+//cont_full_weight				"That container cannot hold more weight."
 //corpse_name					"%s of %s"
 //detecthidden_succ				"You find %s"
 //drink_cantmove				"You can't move the item."
@@ -443,6 +442,7 @@ EMOTE_DEF_UNICODE	0
 //msg_exp_lvlchange_gain		"gained"
 //msg_exp_lvlchange_lost		"lost"
 //msg_fatigue					"You are too fatigued to move."
+//msg_fatigue_weight			"You are too fatigued to move, because you are carrying too much weight!"
 //msg_feet						"at your feet. It is too heavy."
 //msg_figurine_notyours			"This figurine is not yours"
 //msg_follow_arrow				"Follow the Arrow"
@@ -461,7 +461,6 @@ EMOTE_DEF_UNICODE	0
 //msg_frozen					"You are frozen and cannot move."
 //msg_guards					"Guards can now be called on you!"
 //msg_guards_nolonger			"Guards can no longer be called on you."
-//msg_heavy						"That is too heavy. You can't move that."		
 //msg_hunger					"You are %s"
 //msg_itemplace					"You put the %s %s."
 //msg_jailed					"You have been jailed"
@@ -510,7 +509,6 @@ EMOTE_DEF_UNICODE	0
 //msg_noto_change_gain			"gained"
 //msg_noto_change_lost			"lost"
 //msg_noto_gettitle				"You are now %s"
-//msg_overload					"You are too overloaded to move."
 //msg_push						"You shove %s out of the way."
 //msg_region_enter				"You have entered %s"
 //msg_region_guard_art			"the town"
