@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2019
+// SPHERE by : Menasoft ©1997-2020
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, Sept 2, 2019
+// FILE LAST UPDATED: Wednesday, Jan 8, 2020
 //
 VERSION=0.56d
 
@@ -648,20 +648,28 @@ bufficon_disguised				passivebufficon_disguised
 bufficon_polymorph				passivebufficon_polymorph
 bufficon_gargoylefly			passivebufficon_gargoylefly
 
-NAMES_SAVAGE={ NAMES_SAVAGE_MALE 1 NAMES_SAVAGE_FEMALE 1 }
 
 [FUNCTION addnpc]
-ARGS=<QVAL (<isnum <ARGS>>)? <ARGS>|08c000000 : <DEF.<ARGS>>>
-IF (<SERV.CHARDEF.<dARGS>>)
- ADD <ARGS>
- return 1
+LOCAL.ID=<STRARG <ARGS>>
+LOCAL.Amount=<STREAT <ARGS>>
+IF (<ISNUM <LOCAL.ID>>)
+ LOCAL.ID |= 08c000000
+ELIF !(<DEF0.<LOCAL.ID>>)
+ LOCAL.ID=0
 ENDIF
-SYSMESSAGE <DEFMSG.cmd_invalid>
+IF (<LOCAL.Amount> < 1)
+ LOCAL.Amount=1
+ENDIF
+IF (<SERV.CHARDEF.<LOCAL.ID>>)
+ ADD <LOCAL.ID> <LOCAL.Amount>
+ELSE
+ SYSMESSAGE <DEFMSG.cmd_invalid>
+ENDIF
 
 [FUNCTION tweak]
 INFO
 
-[FUNCTION brain] //by Darkandus
+[FUNCTION brain]	//by Darkandus
 IF (<ARGN>)
  NPC=<ARGN>
 ELSE
@@ -677,18 +685,27 @@ INVUL <ARGS>
 [FUNCTION invisible]
 INVIS <ARGS>
 
-[FUNCTION static] //by Thomas20198701
-ARGS=<DEF0.<ARGS>>
-IF (<SERV.ITEMDEF.<dARGS>>)
- TARGETFG static_ <ARGS>
- SYSMESSAGE <DEFMSG.where_to_place> <SERV.ITEMDEF.<ARGS>.NAME>?
- return 1
+[FUNCTION static]
+LOCAL.ID=<STRARG <ARGS>>
+LOCAL.Amount=<STREAT <ARGS>>
+IF (<ISNUM <LOCAL.ID>>)
+ LOCAL.ID |= 09c000000
+ELIF !(<DEF0.<LOCAL.ID>>)
+ LOCAL.ID=0
 ENDIF
-SYSMESSAGE <DEFMSG.cmd_invalid>
+IF (<LOCAL.Amount> < 1)
+ LOCAL.Amount=1
+ENDIF
+IF (<SERV.ITEMDEF.<LOCAL.ID>>)
+ TARGETFG static_callback <LOCAL.ID>,<LOCAL.Amount>
+ SYSMESSAGE <DEFMSG.where_to_place> <SERV.ITEMDEF.<LOCAL.ID>.NAME>?
+ELSE
+ SYSMESSAGE <DEFMSG.cmd_invalid>
+ENDIF
 
-[FUNCTION static_]
+[FUNCTION static_callback]
 SERV.NEWITEM <ARGS>
-NEW.ATTR |= 010
+NEW.ATTR |= attr_move_never
 NEW.TIMER=-1
 NEW.P=<SRC.TARGP>
 ACT=<NEW>

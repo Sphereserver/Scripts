@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2019
+// SPHERE by : Menasoft ©1997-2020
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Thursday, Dec 19, 2019
+// FILE LAST UPDATED: Saturday, Mar 7, 2020
 //
 VERSION=0.56d
 
@@ -159,9 +159,8 @@ EMOTE_DEF_UNICODE	0
 //combat_outsideship			"You cannot hit characters outside the ship."
 //combat_parry					"Your attack was parried!"
 //cont_items					" (%d items, %d stones)"
-//cont_full						"Too many items in that container"
-//cont_magic					"The item bounces out of the magic container"
-//cont_toosmall					"The container is too small for that"
+//cont_full_items				"That container cannot hold more items."
+//cont_full_weight				"That container cannot hold more weight."
 //corpse_name					"%s of %s"
 //detecthidden_succ				"You find %s"
 //drink_cantmove				"You can't move the item."
@@ -196,7 +195,7 @@ EMOTE_DEF_UNICODE	0
 //food_full_5					"You feel quite full after consuming the food."
 //food_full_6					"You are stuffed!"
 //food_rcanteat					"You can't really eat this."
-//forensics_carbedby			"This body has been disturbed by %s."
+//forensics_carvedby			"This body has been disturbed by %s."
 //forensics_killedby			"It was killed by %s."
 //forensics_noone				"no one"
 //forensics_notcarved			"This corpse has not been desecrated."
@@ -382,7 +381,7 @@ EMOTE_DEF_UNICODE	0
 //magery_2						"You cannot target a character with this spell."
 //magery_3						"You cannot target yourself with this spell."
 //magery_4						"You must target the ground with this spell."
-//magery_5						"You have not yet finished preparing the spell."
+//magery_5						"You are already casting a spell."
 //magery_6						"An anti-magic field disturbs the spell."
 //magery_7						"You cannot target a player with this spell."
 //magery_8						"You cannot target an NPC with this spell."
@@ -443,6 +442,7 @@ EMOTE_DEF_UNICODE	0
 //msg_exp_lvlchange_gain		"gained"
 //msg_exp_lvlchange_lost		"lost"
 //msg_fatigue					"You are too fatigued to move."
+//msg_fatigue_weight			"You are too fatigued to move, because you are carrying too much weight!"
 //msg_feet						"at your feet. It is too heavy."
 //msg_figurine_notyours			"This figurine is not yours"
 //msg_follow_arrow				"Follow the Arrow"
@@ -458,10 +458,9 @@ EMOTE_DEF_UNICODE	0
 //msg_food_lvl_other			"%s looks %s"
 //msg_food_lvl_self				"You are %s"
 //msg_forgiven					"You have been forgiven"
-//msg_frozen					"You are frozen and can not move."
+//msg_frozen					"You are frozen and cannot move."
 //msg_guards					"Guards can now be called on you!"
 //msg_guards_nolonger			"Guards can no longer be called on you."
-//msg_heavy						"That is too heavy. You can't move that."		
 //msg_hunger					"You are %s"
 //msg_itemplace					"You put the %s %s."
 //msg_jailed					"You have been jailed"
@@ -510,7 +509,6 @@ EMOTE_DEF_UNICODE	0
 //msg_noto_change_gain			"gained"
 //msg_noto_change_lost			"lost"
 //msg_noto_gettitle				"You are now %s"
-//msg_overload					"You are too overloaded to move."
 //msg_push						"You shove %s out of the way."
 //msg_region_enter				"You have entered %s"
 //msg_region_guard_art			"the town"
@@ -608,7 +606,6 @@ EMOTE_DEF_UNICODE	0
 //npc_pet_confused				"*looks confused*"
 //npc_pet_days_left				"I have been paid to work for %d more days."
 //npc_pet_decide_master			"%s appears to have decided that it is better off without a master!"
-//npc_pet_deserted				"You sense that %s has deserted you."
 //npc_pet_employed				"Sorry I am already employed."
 //npc_pet_failure				"Sorry"
 //npc_pet_food_no				"No thank you."
@@ -725,7 +722,6 @@ EMOTE_DEF_UNICODE	0
 //party_targ_add_wait			"You must wait a bit before inviting someone else!"
 //party_targ_remove				"Who would you like to remove from your party?"
 //party_targ_remove_success		"%s has been removed from your party."
-//party_add_too_fast			"You must wait a bit before inviting someone else!"
 //poisoning_select_1			"What poison do you want to use?"
 //poisoning_success				"You apply the poison."
 //poisoning_witem				"You can only poison food or piercing weapons."
@@ -887,7 +883,6 @@ EMOTE_DEF_UNICODE	0
 //key_to						"Key to: "
 //stone_for						"Stone for the "
 //hl_no_client					"Currently there are no clients online"
-//hl_one_client					"One client is online:"
 //hl_many_clients				"The number of clients online is"
 //skilltitle_neophyte			"Neophyte"
 //skilltitle_novice				"Novice"

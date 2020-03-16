@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2018
+// SPHERE by : Menasoft ©1997-2020
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, Oct 21, 2018
+// FILE LAST UPDATED: Wednesday, Jan 8, 2020
 //
 VERSION=0.56d
 
@@ -544,7 +544,7 @@ MANAUSE=11
 SKILLREQ=MAGERY 40.0
 INTERRUPT=100.0,100.0
 ON=@Success
-   LOCAL.FieldWidth=3
+   LOCAL.FieldWidth=5
 ON=@Effect
    LOCAL.DAMAGETYPE=(<DEF.dam_fire>|<DEF.dam_magic>)
 
@@ -745,7 +745,7 @@ MANAUSE=14
 SKILLREQ=MAGERY 50.0
 INTERRUPT=100.0,100.0
 ON=@Success
-   LOCAL.FieldWidth=3
+   LOCAL.FieldWidth=5
 ON=@Effect
    LOCAL.DAMAGETYPE=(<DEF.dam_poison>|<DEF.dam_magic>)
 
@@ -909,7 +909,7 @@ MANAUSE=20
 SKILLREQ=MAGERY 60.0
 INTERRUPT=100.0,100.0
 ON=@Success
-   LOCAL.FieldWidth=3
+   LOCAL.FieldWidth=5
 
 [SPELL 48]
 DEFNAME=s_reveal
@@ -968,7 +968,7 @@ MANAUSE=40
 SKILLREQ=MAGERY 70.0
 INTERRUPT=100.0,100.0
 ON=@Success
-   LOCAL.FieldWidth=3
+   LOCAL.FieldWidth=5
 
 [SPELL 51]
 DEFNAME=s_flamestrike
