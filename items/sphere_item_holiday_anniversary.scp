@@ -162,7 +162,7 @@ FLIP=1
 CATEGORY=Anniversary Gifts
 SUBSECTION=10th Anniversary
 DESCRIPTION=10th Anniversary Sculpture
-DUPELIST=033b4
+DUPELIST=03bb4
 
 [ITEMDEF 03bb4]
 //10th anniversary sculpture
