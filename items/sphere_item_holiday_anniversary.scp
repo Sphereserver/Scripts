@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2018
+// SPHERE by : Menasoft ©1997-2020
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Oct 9, 2018
+// FILE LAST UPDATED: Sunday, Apr 20, 2020
 //
 VERSION=0.56d
 
@@ -337,7 +337,7 @@ ON=@PickUp_Self
    ENDIF
 
 [ITEMDEF 04143]
-//mailbox (west)
+//mailbox (east)
 
 [ITEMDEF 04144]
 DEFNAME=i_mailbox_e
@@ -828,7 +828,7 @@ DUPEITEM=09964
 DEFNAME=i_enormous_venus_flytrap
 NAME=enormous venus flytrap
 TYPE=t_trash_can
-TDATA2=0107
+TDATA2=09
 FLIP=1
 CATEGORY=Anniversary Gifts
 SUBSECTION=16th Anniversary
@@ -1316,8 +1316,8 @@ SUBSECTION=20th Anniversary
 DESCRIPTION=Confetti Cannon
 ON=@DClick
    IF (<CONT>)
-    SRC.SYSMESSAGE You cannot use this while it's inside a container.
-    return 1
+      SRC.SYSMESSAGE You cannot use this while it's inside a container.
+      return 1
    ENDIF
    SRC.MESSAGE You fire the cannon!
    EFFECT 2,i_confetti_explosion,16,24
@@ -1342,7 +1342,7 @@ ON=@DClick
 NAME=telescope
 DUPEITEM=0a12c
 
-[DIALOG d_telescope]		//TO-DO: planets and constellations gumppics are missing
+[DIALOG d_telescope]
 30,30
 
 IF (<SERV.RTIME.FORMAT %H> == 0)	//Midnight
@@ -1351,6 +1351,7 @@ ELIF (<SERV.RTIME.FORMAT %H> <= 4)	//Middle of the night
    gumppic 0 0 0680
 ELIF (<SERV.RTIME.FORMAT %H> <= 16)	//Daylight
    gumppic 0 0 067e
+   LOCAL.Daylight=1
 ELIF (<SERV.RTIME.FORMAT %H> <= 20)	//Evening
    gumppic 0 0 067f
 ELSE					//Late at night
@@ -1386,6 +1387,38 @@ gumppic 397 623 0696
 button 291 597 069b 069c 1 0 11
 dhtmlgump 251 651 30 20 0 0 <DEF.L1>basefont color="#d6d6ad"<DEF.R1>RA<DEF.BFONTE>
 dhtmlgump 371 651 30 20 0 0 <DEF.L1>basefont color="#d6d6ad"<DEF.R1>DEC<DEF.BFONTE>
+
+//TO-DO: Add all missing coords
+IF (<LOCAL.Daylight>)
+   SRC.SYSMESSAGE You won't have much luck seeing the night sky during the day...
+ELIF ((<TAG0.RA> == 5) && (<TAG0.DEC> == 488))
+   gumppic 260 260 <R068d,0693>
+   SRC.SYSMESSAGE You peer into the heavens and see...a comet!
+ELIF ((<TAG0.RA> == 8) && (<TAG0.DEC> == 312))
+   gumppic 180 180 <R069f,06a6>
+   SRC.SYSMESSAGE You peer into the heavens and see...Felucca!
+ELIF ((<TAG0.RA> == 11) && (<TAG0.DEC> == 466))
+   gumppic 180 160 <R06bd,06cd>
+   SRC.SYSMESSAGE You peer into the heavens and see...a planet!
+   return 0
+ELIF ((<TAG0.RA> == 14) && (<TAG0.DEC> == 664))
+   gumppic 150 130 <R06af,06bc>
+   SRC.SYSMESSAGE You peer into the heavens and see...a galaxy!
+ELIF ((<TAG0.RA> == 15) && (<TAG0.DEC> == 790))
+   FOR 10
+      gumppic <R150,450> <R150,450> <R0668,067d>
+   ENDFOR
+   SRC.SYSMESSAGE You peer into the heavens and see...a constellation!
+ELIF ((<TAG0.RA> == 16) && (<TAG0.DEC> == 624))
+   gumppic 180 180 <R06a7,06ae>
+   SRC.SYSMESSAGE You peer into the heavens and see...Trammel!
+ELIF ((<TAG0.RA> == 20) && (<TAG0.DEC> == 332) && (<SERV.RTIME.FORMAT %m> == 12))
+   // OSI easter egg: Santa Claus can be seen here at Christmas (december)
+   gumppic 100 260 06d7
+   SRC.SYSMESSAGE You peer into the heavens and see...something very odd in a far away realm!
+ELSE
+   SRC.SYSMESSAGE You peer into the heavens and see...only empty space...
+ENDIF
 
 [DIALOG d_telescope BUTTON]
 ON=1 11
@@ -1572,6 +1605,85 @@ DUPELIST=0a1e5
 DUPEITEM=0a1e4
 
 
+[ITEMDEF 0a35d]
+DEFNAME=i_copper_flower_pot
+NAME=copper flower pot
+FLIP=1
+CATEGORY=Anniversary Gifts
+SUBSECTION=22th Anniversary
+DESCRIPTION=Copper Flower Pot
+DUPELIST=0a35e
+ON=@Create
+   ATTR=attr_move_always
+
+[ITEMDEF 0a35e]
+//copper flower pot
+DUPEITEM=0a35d
+
+
+[ITEMDEF 0a3de]
+DEFNAME=i_copper_wings
+NAME=copper wings
+FLIP=1
+CATEGORY=Anniversary Gifts
+SUBSECTION=22th Anniversary
+DESCRIPTION=Copper Wings
+DUPELIST=0a3df
+ON=@Create
+   ATTR=attr_move_always
+
+[ITEMDEF 0a3df]
+//copper wings
+DUPEITEM=0a3de
+
+
+[ITEMDEF 0a3e0]
+DEFNAME=i_copper_portrait_1
+NAME=copper portrait
+FLIP=1
+CATEGORY=Anniversary Gifts
+SUBSECTION=22th Anniversary
+DESCRIPTION=Copper Portrait 1
+DUPELIST=0a3e4
+ON=@Create
+   ATTR=attr_move_always
+
+[ITEMDEF 0a3e1]
+//copper ship relief (multi-part)(south)
+NAME=copper ship relief
+
+[ITEMDEF 0a3e2]
+//copper ship relief (multi-part)(south)
+NAME=copper ship relief
+
+[ITEMDEF 0a3e3]
+DEFNAME=i_copper_portrait_2
+NAME=copper portrait
+FLIP=1
+CATEGORY=Anniversary Gifts
+SUBSECTION=22th Anniversary
+DESCRIPTION=Copper Portrait 2
+DUPELIST=0a3e7
+ON=@Create
+   ATTR=attr_move_always
+
+[ITEMDEF 0a3e4]
+//copper portrait
+DUPEITEM=0a3e0
+
+[ITEMDEF 0a3e5]
+//copper ship relief (multi-part)(east)
+NAME=copper ship relief
+
+[ITEMDEF 0a3e6]
+//copper ship relief (multi-part)(east)
+NAME=copper ship relief
+
+[ITEMDEF 0a3e7]
+//copper portrait
+DUPEITEM=0a3e3
+
+
 ////////////
 // Multis //
 ////////////
@@ -1649,6 +1761,26 @@ COMPONENT=063c6,0,-1
 COMPONENT=063c7,-1,0
 COMPONENT=063c8,-1,-1
 COMPONENT=063c9,-2,-1
+
+[MULTIDEF m_ship_relief_south]
+ID=0a3e1
+NAME=Copper Ship Relief
+TYPE=t_multi
+CATEGORY=Anniversary Gifts
+SUBSECTION=22th Anniversary
+DESCRIPTION=Copper Ship Relief (south)(multi)
+MULTIREGION=0,0,0,0
+COMPONENT=0a3e2,-2,0
+
+[MULTIDEF m_ship_relief_east]
+ID=0a3e5
+NAME=Copper Ship Relief
+TYPE=t_multi
+CATEGORY=Anniversary Gifts
+SUBSECTION=22th Anniversary
+DESCRIPTION=Copper Ship Relief (east)(multi)
+MULTIREGION=0,0,0,0
+COMPONENT=0a3e6,0,-2
 
 
 //////////////////

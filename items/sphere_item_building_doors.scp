@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2019
+// SPHERE by : Menasoft ©1997-2020
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, Feb 4, 2019
+// FILE LAST UPDATED: Sunday, Apr 20, 2020
 //
 VERSION=0.56d
 
@@ -93,42 +93,16 @@ DUPEITEM=0e9
 
 
 [ITEMDEF 022c]
-TYPE=t_custom_door
-TDATA1=0435//ID when opened
-TDATA2=022c//ID when closed
-//CAN=can_i_block|can_i_blocklos
-CATEGORY=Buildings - Doors
-SUBSECTION=Palisade Door
-DESCRIPTION=Door 1 (closed)
+//tent door (static)
 
 [ITEMDEF 022d]
-DEFNAME=i_door_tent2
-//FIXME: Cant find the closed ITEMDEF
-//TYPE=t_custom_door
-//TDATA1=022d//ID when opened
-//TDATA2=????//ID when closed
-CATEGORY=Buildings - Doors
-SUBSECTION=Palisade Door
-DESCRIPTION=Door 2 (opened)
+//tent door (static)
 
 [ITEMDEF 022e]
-DEFNAME=i_door_tent3
-//FIXME: Cant find the closed ITEMDEF
-//TYPE=t_custom_door
-//TDATA1=022e//ID when opened
-//TDATA2=????//ID when closed
-CATEGORY=Buildings - Doors
-SUBSECTION=Palisade Door
-DESCRIPTION=Door 3 (opened)
+//tent door (static)
 
 [ITEMDEF 022f]
-TYPE=t_custom_door
-TDATA1=0432//ID when opened
-TDATA2=022f//ID when closed
-//CAN=can_i_block|can_i_blocklos
-CATEGORY=Buildings - Doors
-SUBSECTION=Palisade Door
-DESCRIPTION=Door 4 (closed)
+//tent door (static)
 
 
 [ITEMDEF 0314]
@@ -493,34 +467,17 @@ DUPEITEM=0355
 
 
 [ITEMDEF 0432]
-DEFNAME=i_door_tent4
-TYPE=t_custom_door
-TDATA1=0432//ID when opened
-TDATA2=022f//ID when closed
-CATEGORY=Buildings - Doors
-SUBSECTION=Palisade Door
-DESCRIPTION=Door 4 (opened)
+//curtain
 
 [ITEMDEF 0433]
-DEFNAME=i_curtainrod
-WEIGHT=1.0
-CATEGORY=Buildings - Doors
-SUBSECTION=Palisade Door
-DESCRIPTION=Curtain Rod
-DUPELIST=0434
+//curtain rod
 
 [ITEMDEF 0434]
 //curtain rod
 DUPEITEM=0433
 
 [ITEMDEF 0435]
-DEFNAME=i_door_tent1
-TYPE=t_custom_door
-TDATA1=0435//ID when closed
-TDATA2=022c//ID when open
-CATEGORY=Buildings - Doors
-SUBSECTION=Palisade Door
-DESCRIPTION=Door 1 (opened)
+//curtain
 
 
 [ITEMDEF 0675]

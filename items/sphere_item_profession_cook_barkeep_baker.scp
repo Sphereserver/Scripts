@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2017
+// SPHERE by : Menasoft ©1997-2020
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Dec 5, 2017
+// FILE LAST UPDATED: Sunday, Apr 20, 2020
 //
 VERSION=0.56d
 
@@ -2464,29 +2464,26 @@ ON=@Create
 
 
 [ITEMDEF 02db9]
-DEFNAME=i_wormmeat_raw
-NAME=raw worm meat
+DEFNAME=i_rotworm_meat_raw
+NAME=raw rotworm meat
 TYPE=t_meat_raw
-TDATA1=i_fish_cut_cooked
-VALUE=3
-WEIGHT=1.0
+WEIGHT=0.1
 CATEGORY=Provisions - Food
 SUBSECTION=Meat
-DESCRIPTION=Worm Meat (Raw)
+DESCRIPTION=Rotworm Meat (raw)
 
 [ITEMDEF 02dba]
 DEFNAME=i_bowl_stew_rotworm
 NAME=bowl of rotworm stew
 TYPE=t_food
-VALUE=46
-WEIGHT=5.0
-RESOURCES=1 i_bowl_wood_lg,1 i_pitcher_water,1 i_flour_bowl,1 i_wormmeat_raw
-SKILLMAKE=Cooking 40.0, t_cooking
+WEIGHT=2.0
+RESOURCES=1 i_rotworm_meat_raw
+SKILLMAKE=Cooking 0.0, t_cooking
 CATEGORY=Provisions - Food
 SUBSECTION=Assembled
 DESCRIPTION=Bowl of Rotworm Stew
 ON=@Create
-   MOREM=3
+   MOREM=1
 
 
 [ITEMDEF 02ddb]
@@ -2757,6 +2754,8 @@ DUPEITEM=0495e
 [ITEMDEF 09e36]
 DEFNAME=i_fermentation_barrel
 NAME=fermentation barrel
+TYPE=t_container
+TDATA2=03e
 FLIP=1
 CATEGORY=Items by Professions
 SUBSECTION=Cook
@@ -2766,6 +2765,69 @@ DUPELIST=09e37
 [ITEMDEF 09e37]
 //fermentation barrel
 DUPEITEM=09e36
+
+
+[ITEMDEF 09c48]
+DEFNAME=i_foil_sheet
+NAME=foil sheet
+CATEGORY=Items by Professions
+SUBSECTION=Cook
+DESCRIPTION=Foil Sheet
+ON=@Create
+   COLOR=0501
+
+
+[ITEMDEF 0a421]
+DEFNAME=i_serpent_steak_raw
+NAME=raw serpent steak
+FLIP=1
+CATEGORY=Items by Professions
+SUBSECTION=Cook
+DESCRIPTION=Serpent Steak (raw)
+DUPELIST=0a423
+
+[ITEMDEF 0a422]
+DEFNAME=i_serpent_steak_grilled
+NAME=grilled serpent steak
+FLIP=1
+RESOURCES=1 i_serpent_steak_raw	
+SKILLMAKE=Cooking 45.0, t_cooking
+CATEGORY=Items by Professions
+SUBSECTION=Cook
+DESCRIPTION=Serpent Steak (grilled)
+DUPELIST=0a424
+
+[ITEMDEF 0a423]
+//raw serpent steak
+DUPEITEM=0a421
+
+[ITEMDEF 0a424]
+//grilled serpent steak
+DUPEITEM=0a422
+
+[ITEMDEF 0a425]
+NAME=raw dino ribs
+FLIP=1
+DUPELIST=0a427
+
+[ITEMDEF 0a426]
+DEFNAME=i_bbq_dino_ribs
+NAME=BBQ dino ribs
+FLIP=1
+//RESOURCES=
+SKILLMAKE=Cooking 45.0, t_cooking
+CATEGORY=Items by Professions
+SUBSECTION=Cook
+DESCRIPTION=BBQ Dino Ribs (cooked)
+DUPELIST=0a428
+
+[ITEMDEF 0a427]
+//raw dino ribs
+DUPEITEM=0a425
+
+[ITEMDEF 0a428]
+//bbq dino ribs
+DUPEITEM=0a426
 
 
 //////////////////

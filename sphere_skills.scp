@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2019
+// SPHERE by : Menasoft ©1997-2020
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Thursday, Sept 29, 2019
+// FILE LAST UPDATED: Sunday, Apr 20, 2020
 //
 VERSION=0.56d
 
@@ -65,7 +65,7 @@ DEFNAME=Skill_Anatomy
 KEY=Anatomy
 TITLE=Biologist
 PROMPT_MSG=Whom shall I examine?
-DELAY=3.0,1.0
+DELAY=1.0
 STAT_STR=15
 STAT_DEX=15
 STAT_INT=70
@@ -74,9 +74,10 @@ BONUS_DEX=0
 BONUS_INT=100
 BONUS_STATS=50
 ADV_RATE=2.5,50.0,200.0
+RANGE=8
 
 ON=@Fail
-	SRC.SYSMESSAGE You can't think of anything about this creature
+	SRC.SYSMESSAGE You cannot quite get a sense of their physical characteristics.
 
 ON=@Abort
 	SRC.SYSMESSAGE You fail to examine the creature fully.
@@ -86,7 +87,7 @@ DEFNAME=Skill_Animal_Lore
 KEY=AnimalLore
 TITLE=Naturalist
 PROMPT_MSG=What animal should I look at?
-DELAY=3.0,1.0
+DELAY=1.0
 STAT_STR=0
 STAT_DEX=0
 STAT_INT=70
@@ -95,9 +96,10 @@ BONUS_DEX=0
 BONUS_INT=100
 BONUS_STATS=50
 ADV_RATE=2.5,50.0,200.0
+RANGE=12
 
 ON=@Fail
-	SRC.SYSMESSAGE You can't think of anything off hand
+	SRC.SYSMESSAGE You can't think of anything you know offhand.
 
 ON=@Abort
 	SRC.SYSMESSAGE You stop trying to understand the creature.
@@ -116,18 +118,19 @@ BONUS_DEX=0
 BONUS_INT=100
 BONUS_STATS=25
 ADV_RATE=2.5,50.0,200.0
+RANGE=3
 
 ON=@Fail
-	SRC.SYSMESSAGE You can't think of anything off hand
+	SRC.SYSMESSAGE You have no idea how much it might be worth.
 
 ON=@Abort
-	SRC.SYSMESSAGE You stop trying to appraise the item.
+	SRC.SYSMESSAGE You can't concentrate enough to come up with a good estimate.
 
 [SKILL 4]
 DEFNAME=Skill_ArmsLore
 KEY=ArmsLore
 TITLE=Weapon Master
-PROMPT_MSG=What would you like to evaluate?
+PROMPT_MSG=What item do you wish to get information about?
 DELAY=1.0
 STAT_STR=10
 STAT_DEX=15
@@ -137,9 +140,10 @@ BONUS_DEX=33
 BONUS_INT=34
 BONUS_STATS=25
 ADV_RATE=2.5,50.0,200.0
+RANGE=3
 
 ON=@Fail
-	SRC.SYSMESSAGE You are uncertain about this item 
+	SRC.SYSMESSAGE You are not certain...
 
 ON=@Abort
 	SRC.SYSMESSAGE You stop trying to evaluate the item.
@@ -381,7 +385,7 @@ ON=@Abort
 DEFNAME=Skill_EvalInt
 KEY=EvaluatingIntel
 TITLE=Scholar
-PROMPT_MSG=Select char to inspect.
+PROMPT_MSG=What would you like to evaluate?
 DELAY=1.0
 STAT_STR=5
 STAT_DEX=10
@@ -391,9 +395,10 @@ BONUS_DEX=0
 BONUS_INT=100
 BONUS_STATS=50
 ADV_RATE=2.5,50.0,200.0
+RANGE=8
 
 ON=@Fail
-	SRC.SYSMESSAGE You cannot seem to judge the creature correctly.
+	SRC.SYSMESSAGE You cannot quite judge its mental abilities.
 
 ON=@Abort
 	SRC.SYSMESSAGE You fail to inspect the creature completely.
@@ -451,7 +456,16 @@ ON=@Start
 	NEW.P=<ACT.P>
 
 ON=@Success
-	ACTARG2=1		// 1 will pack the resource, 0 place it on the ground.
+	ACTARG2=1	// location to drop the created item (0 = ground / 1 = backpack)
+	REF1=<SRC.FINDLAYER.layer_hand2>
+	IF (<REF1>)
+		IF (<REF1.USESCUR> > 0)
+			REF1.USESCUR --
+			IF (<REF1.USESCUR> < 1)
+				REF1.DESTROY 1
+			ENDIF
+		ENDIF
+	ENDIF
 
 ON=@Fail
 	SRC.SYSMESSAGE You fish a while, but fail to catch anything.
@@ -467,25 +481,23 @@ ON=@Stroke
 
 [ITEMDEF i_memory_fishing_splash]
 ID=i_memory
-
 ON=@Create
-ATTR=attr_move_never|attr_decay
-TIMERD=15
-IF (<TIMERD> > <SERV.SKILL.FISHING.DELAY>)	// We don't want to fire the splash after the fish success so a check for skill's delay is needed.
- TIMERD=<eval <SERV.SKILL.FISHING.DELAY>/2>
-ENDIF
-
+	ATTR=attr_move_never|attr_decay
+	TIMERD=15
+	IF (<TIMERD> > <SERV.SKILL.FISHING.DELAY>)
+		TIMERD=<eval <SERV.SKILL.FISHING.DELAY> / 2>
+	ENDIF
 ON=@Timer
-IF (<LINK.ACTION> == skill_fishing)		// Check out if cont is still fishing, otherwise we don't want the effect.
- EFFECT 2,0352D,4,16
- SOUND 0364
-ENDIF
+	IF (<LINK.ACTION> == skill_fishing)
+		EFFECT 2,0352d,4,16
+		SOUND 0364
+	ENDIF
 
 [SKILL 19]
 DEFNAME=Skill_Forensics
 KEY=Forensics
 TITLE=Detective
-PROMPT_MSG=What corpse would you like to examine?
+PROMPT_MSG=Select what you want to examine.
 DELAY=1.0
 STAT_STR=10
 STAT_DEX=25
@@ -495,9 +507,10 @@ BONUS_DEX=0
 BONUS_INT=100
 BONUS_STATS=25
 ADV_RATE=2.5,50.0,200.0
+RANGE=12
 
 ON=@Fail
-	SRC.SYSMESSAGE You can tell nothing about the corpse.
+	SRC.SYSMESSAGE You cannot determine anything useful.
 
 ON=@Abort
 	SRC.SYSMESSAGE You decide you'd rather not look at that.
@@ -827,6 +840,7 @@ BONUS_DEX=0
 BONUS_INT=80
 BONUS_STATS=50
 ADV_RATE=2.5,50.0,200.0
+RANGE=1
 
 ON=@Fail
 	SRC.SYSMESSAGE You cannot discern anything about this substance.
@@ -982,13 +996,16 @@ VALUES=1,10,50
 RANGE=2
 
 ON=@Success
-	IF (<SRC.WEAPON.USESCUR> > 0)
-		SRC.WEAPON.USESCUR --
-		IF (<SRC.WEAPON.USESCUR> < 1)
-			SRC.WEAPON.DESTROY 1
+	ACTARG2=1	// location to drop the created item (0 = ground / 1 = backpack)
+	REF1=<SRC.WEAPON>
+	IF (<REF1>)
+		IF (<REF1.USESCUR> > 0)
+			REF1.USESCUR --
+			IF (<REF1.USESCUR> < 1)
+				REF1.DESTROY 1
+			ENDIF
 		ENDIF
 	ENDIF
-
 	
 ON=@Fail
 	SRC.SYSMESSAGE You hack at the tree for a while, but fail to produce any useable wood.
@@ -1000,7 +1017,7 @@ ON=@Abort
 DEFNAME=Skill_Mining
 KEY=Mining
 TITLE=Miner
-PROMPT_MSG=Where would you like to mine?
+PROMPT_MSG=Where do you wish to dig?
 FLAGS=skf_gather
 DELAY=1.6
 STAT_STR=85
@@ -1024,10 +1041,14 @@ ON=@PreStart
 	ENDIF
 
 ON=@Success
-	IF (<SRC.WEAPON.USESCUR> > 0)
-		SRC.WEAPON.USESCUR --
-		IF (<SRC.WEAPON.USESCUR> < 1)
-			SRC.WEAPON.DESTROY 1
+	ACTARG2=1	// location to drop the created item (0 = ground / 1 = backpack)
+	REF1=<SRC.WEAPON>
+	IF (<REF1>)
+		IF (<REF1.USESCUR> > 0)
+			REF1.USESCUR --
+			IF (<REF1.USESCUR> < 1)
+				REF1.DESTROY 1
+			ENDIF
 		ENDIF
 	ENDIF
 

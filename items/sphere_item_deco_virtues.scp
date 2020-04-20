@@ -1,5 +1,5 @@
 ﻿//****************************************************************************
-// SPHERE by : Menasoft ©1997-2018
+// SPHERE by : Menasoft ©1997-2020
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, May 21, 2018
+// FILE LAST UPDATED: Sunday, Apr 20, 2020
 //
 VERSION=0.56d
 
@@ -619,34 +619,36 @@ DESCRIPTION=Bell of Courage
 
 [ITEMDEF 01c13]
 DEFNAME=i_book_of_truth
-TYPE=T_BOOK
 RESOURCES=1 i_book_sm
 WEIGHT=5
 VALUE=500
 CATEGORY=Decoration - Virtues
 SUBSECTION=Virtue Items
 DESCRIPTION=Book of Truth
-ON=@Create
-	MORE1=b_sphere
 
 [ITEMDEF 01c14]
-// cannot be unlit.
-DEFNAME=i_candle_of_love
+DEFNAME=i_candle_of_love_lit
 TYPE=t_light_lit
-WEIGHT=5
-RESOURCES=i_candle,i_ingot_gold
+TDATA3=i_candle_of_love
 CATEGORY=Decoration - Virtues
 SUBSECTION=Virtue Items
-DESCRIPTION=Candle of Love
-DUPELIST=01c15,01c16
+DESCRIPTION=Candle of Love (lit)
+ON=@Create
+   MOREZ=2
 
 [ITEMDEF 01c15]
-//Candle of Love
+//candle of love (anim)
 DUPEITEM=01c14
 
 [ITEMDEF 01c16]
-//Candle of Love
-DUPEITEM=01c14
+DEFNAME=i_candle_of_love
+TYPE=t_light_out
+TDATA3=i_candle_of_love_lit
+CATEGORY=Decoration - Virtues
+SUBSECTION=Virtue Items
+DESCRIPTION=Candle of Love
+ON=@Create
+   MOREZ=2
 
 
 [ITEMDEF 01d97]
