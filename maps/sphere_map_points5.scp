@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2017
+// SPHERE by : Menasoft ©1997-2020
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,13 +7,21 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, May 28, 2017
+// FILE LAST UPDATED: Tuesday, Oct 6, 2020
 //
 VERSION=0.56d
 
+[STARTS]
+// Starting locations to show on client character creation menu
+// Syntax: CityName, LocationName, Coords, DescriptionCliloc
+// NOTE: DescriptionCliloc is only used by clients >= 7.0.13
+Royal City
+Ter Mur Royal City Inn
+738,3486,-19,5
+1150169
+
 [MoonGates]
-851,3526,-38,5=mg_royal_city
-926,3989,-36,5=mg_holy_city
+850,3525,-38,5=mg_royal_city
 
 [Teleporters]
 843,287,22,5=436,167,-8,5=tp_GreatStygianAbyss_StygianDragonsLair1

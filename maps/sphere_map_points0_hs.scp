@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2017
+// SPHERE by : Menasoft ©1997-2020
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Wednesday, April 12, 2017
+// FILE LAST UPDATED: Tuesday, Oct 6, 2020
 //
 VERSION=0.56d
 
@@ -23,11 +23,11 @@ VERSION=0.56d
 6438,2681,17,0=1518,1420,13,0=tp_CastleBlackthornDungeon_LordBlackthornCastle5
 6438,2682,17,0=1518,1420,13,0=tp_CastleBlackthornDungeon_LordBlackthornCastle6
 
-6321,1710,-35,0=6447,1742,0,0=tp_WreckOfTheAraratOutsideShip_WreckOfTheAraratInsideShip1
-6321,1711,-35,0=6447,1743,0,0=tp_WreckOfTheAraratOutsideShip_WreckOfTheAraratInsideShip2
-6448,1741,0,0=6322,1710,-35,0=tp_WreckOfTheAraratInsideShip_WreckOfTheAraratOutsideShip1
-6448,1742,0,0=6322,1710,-35,0=tp_WreckOfTheAraratInsideShip_WreckOfTheAraratOutsideShip2
-6448,1743,0,0=6322,1711,-35,0=tp_WreckOfTheAraratInsideShip_WreckOfTheAraratOutsideShip3
-6448,1744,0,0=6322,1711,-35,0=tp_WreckOfTheAraratInsideShip_WreckOfTheAraratOutsideShip4
+6321,1710,-35,0=6447,1742,0,0=tp_UnderwaterWorldOutsideShip_UnderwaterWorldInsideShip1
+6321,1711,-35,0=6447,1743,0,0=tp_UnderwaterWorldOutsideShip_UnderwaterWorldInsideShip2
+6448,1741,0,0=6322,1710,-35,0=tp_UnderwaterWorldInsideShip_UnderwaterWorldOutsideShip1
+6448,1742,0,0=6322,1710,-35,0=tp_UnderwaterWorldInsideShip_UnderwaterWorldOutsideShip2
+6448,1743,0,0=6322,1711,-35,0=tp_UnderwaterWorldInsideShip_UnderwaterWorldOutsideShip3
+6448,1744,0,0=6322,1711,-35,0=tp_UnderwaterWorldInsideShip_UnderwaterWorldOutsideShip4
 
 [EOF]
