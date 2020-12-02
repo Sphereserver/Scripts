@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2019
+// SPHERE by : Menasoft ©1997-2020
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Monday, Sept 2, 2019
+// FILE LAST UPDATED: Wednesday, Dec 2, 2020
 //
 VERSION=0.56d
 
@@ -382,7 +382,7 @@ IF (<ACCOUNT.TAG0.NumNotes>)
    button 10 362 4014 4015 0 <eval <LOCAL.Page>-1> 0
    dhtmlgump 40 362 525 20 0 0 <DEF.BFONT_WHITE><DEF.CENTER>Page <dLOCAL.Page> / <eval 1+((<ACCOUNT.TAG0.NumNotes>-1)/4)><DEF.CENTERE><DEF.BFONTE>
   ENDIF
-  dhtmlgump 15 <eval 40+((<LOCAL._FOR>%4)*60)> 540 60 1 1 [<ACCOUNT.TAG0.Note_<eval <LOCAL._FOR>+1>_Time>] <DEF.U><ACCOUNT.TAG0.Note_<eval <LOCAL._FOR>+1>_By><DEF.UE>: <ACCOUNT.TAG0.Note_<eval <LOCAL._FOR>+1>>
+  dhtmlgump 15 <eval 40+((<LOCAL._FOR>%4)*60)> 540 60 1 1 [<ACCOUNT.TAG.Note_<eval <LOCAL._FOR>+1>_Time>] <DEF.U><ACCOUNT.TAG.Note_<eval <LOCAL._FOR>+1>_By><DEF.UE>: <ACCOUNT.TAG.Note_<eval <LOCAL._FOR>+1>>
   button 560 <eval 60+((<LOCAL._FOR>%4)*60)> 4017 4019 1 0 <eval <LOCAL._FOR>+10>
  ENDFOR
 ENDIF
@@ -397,7 +397,7 @@ IF (<ACCOUNT.TAG0.NumNotes> < <DEF0.Admin.MaxAccountNotes>)
   SRC.SYSMESSAGE <DEFMSG.msg_acc_priv>
  ELIF !(<isempty <ARGTXT[0]>>)
   ACCOUNT.TAG0.NumNotes ++
-  ACCOUNT.TAG.Note_<dACCOUNT.TAG0.NumNotes>=""<ARGTXT[0]>""
+  ACCOUNT.TAG.Note_<dACCOUNT.TAG0.NumNotes>="<ARGTXT[0]>"
   ACCOUNT.TAG.Note_<dACCOUNT.TAG0.NumNotes>_By=<SRC.NAME>
   ACCOUNT.TAG.Note_<dACCOUNT.TAG0.NumNotes>_Time=<SERV.RTIME>
   SRC.SYSMESSAGE Note added
@@ -414,7 +414,7 @@ ELSE
  ACCOUNT.TAG.Note_<dLOCAL.Note>_By=
  ACCOUNT.TAG.Note_<dLOCAL.Note>_Time=
  FOR <LOCAL.Note> <ACCOUNT.TAG0.NumNotes>
-  ACCOUNT.TAG.Note_<dLOCAL._FOR>=""<ACCOUNT.TAG.Note_<eval <LOCAL._FOR>+1>>""
+  ACCOUNT.TAG.Note_<dLOCAL._FOR>="<ACCOUNT.TAG.Note_<eval <LOCAL._FOR>+1>>"
   ACCOUNT.TAG.Note_<dLOCAL._FOR>_By=<ACCOUNT.TAG.Note_<eval <LOCAL._FOR>+1>_By>
   ACCOUNT.TAG.Note_<dLOCAL._FOR>_Time=<ACCOUNT.TAG.Note_<eval <LOCAL._FOR>+1>_Time>
  ENDFOR

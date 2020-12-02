@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Sunday, Jan 12, 2020
+// FILE LAST UPDATED: Wednesday, Dec 2, 2020
 //
 VERSION=0.56d
 
@@ -1116,12 +1116,12 @@ SRC.CTAG.Dialog.GMPage.Selected=
 
 ON=1
 SRC.GO <P>
-SRC.CTAG.Dialog.GMPage.Response=""<ARGTXT[0]>""
+SRC.CTAG.Dialog.GMPage.Response="<ARGTXT[0]>"
 SDIALOG d_gmpage_info
 
 ON=2
 SRC.GO <SERV.GMPAGE.<SRC.CTAG0.Dialog.GMPage.Selected>.P>
-SRC.CTAG.Dialog.GMPage.Response=""<ARGTXT[0]>""
+SRC.CTAG.Dialog.GMPage.Response="<ARGTXT[0]>"
 SDIALOG d_gmpage_info
 
 ON=3
@@ -1133,13 +1133,13 @@ ELIF (<SRC.GMPAGEP>)
 ELIF !(<REF1>)
  SERV.GMPAGE.<SRC.CTAG0.Dialog.GMPage.Selected>.HANDLED <SRC>
 ENDIF
-SRC.CTAG.Dialog.GMPage.Response=""<ARGTXT[0]>""
+SRC.CTAG.Dialog.GMPage.Response="<ARGTXT[0]>"
 SDIALOG d_gmpage_info
 
 ON=4
 REF1=<SERV.GMPAGE.<SRC.CTAG0.Dialog.GMPage.Selected>.HANDLED>
 IF (<REF1>) && (<REF1> != <SRC>)
- SRC.CTAG.Dialog.GMPage.Response=""<ARGTXT[0]>""
+ SRC.CTAG.Dialog.GMPage.Response="<ARGTXT[0]>"
  SDIALOG d_gmpage_info
  return 1
 ENDIF
@@ -1149,11 +1149,11 @@ SRC.SDIALOG d_gmpage_queue
 ON=5
 REF1=<SERV.GMPAGE.<SRC.CTAG0.Dialog.GMPage.Selected>.HANDLED>
 IF (<REF1>) && (<REF1> != <SRC>)
- SRC.CTAG.Dialog.GMPage.Response=""<ARGTXT[0]>""
+ SRC.CTAG.Dialog.GMPage.Response="<ARGTXT[0]>"
  SDIALOG d_gmpage_info
  return 1
 ENDIF
-ACCOUNT.TAG.GMPage.Response=""<ARGTXT[0]>""
+ACCOUNT.TAG.GMPage.Response="<ARGTXT[0]>"
 IF (<ISONLINE>)
  TRYSRC <UID> DIALOGCLOSE d_gmpage_response
  TRYSRC <UID> SDIALOG d_gmpage_response
@@ -1211,14 +1211,20 @@ ACCOUNT.TAG.GMPage.Response=
 50,50
 
 resizepic 0 0 5054 270 120
-resizepic 10 10 3000 250 100
-dhtmlgump 20 15 230 60 1 1 Are you sure you want to release your pet? Summoned Pets will vanish permanently!
-
-button 20 80 4005 4007 1 0 1
-dhtmlgump 55 80 75 20 0 0 CONTINUE
-
-button 135 80 4005 4007 1 0 0
-dhtmlgump 170 80 75 20 0 0 CANCEL
+IF (<FLAGS> & statf_dead)
+ dhtmlgump 10 10 250 75 1 0 <DEF.CENTER>Releasing a ghost pet will destroy it, with no chance of recovery.  Do you wish to continue?<DEF.CENTERE>
+ button 20 90 4005 4007 1 0 1
+ dhtmlgump 55 90 75 20 0 0 OKAY
+ button 135 90 4005 4007 1 0 0
+ dhtmlgump 170 90 75 20 0 0 CANCEL
+ELSE
+ resizepic 10 10 3000 250 100
+ dhtmlgump 20 15 230 60 1 1 Are you sure you want to release your pet? Summoned Pets will vanish permanently!
+ button 20 80 4005 4007 1 0 1
+ dhtmlgump 55 80 75 20 0 0 OKAY
+ button 135 80 4005 4007 1 0 0
+ dhtmlgump 170 80 75 20 0 0 CANCEL
+ENDIF
 
 [DIALOG d_pet_release BUTTON]
 ON=1
