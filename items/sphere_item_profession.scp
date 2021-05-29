@@ -2341,13 +2341,6 @@ SUBSECTION=Scribe
 DESCRIPTION=Stack of Books 2
 
 
-[ITEMDEF 01e2c]
-//pickpocket dip
-
-[ITEMDEF 01e2d]
-//pickpocket dip
-
-
 [ITEMDEF 01e34]
 DEFNAME=i_scarecrow
 FLIP=1
@@ -2654,7 +2647,7 @@ DESCRIPTION=Sheaf of Wheat
 
 
 [ITEMDEF 01ec0]
-DEFNAME=i_pickpocket_dip
+DEFNAME=i_pickpocket_dip //Blue
 TYPE=t_train_pickpocket
 FLIP=1
 RESOURCES=65 i_log,60 i_cloth
@@ -2662,7 +2655,7 @@ SKILLMAKE=Carpentry 73.6,Tailoring 50.0,t_carpentry
 CATEGORY=Items by Professions
 SUBSECTION=Thief
 DESCRIPTION=Pickpocket Dip
-DUPELIST=01ec1,01ec2
+DUPELIST=01ec1,01ec2,01e2c
 
 [ITEMDEF 01ec1]
 //pickpocket dip
@@ -2672,8 +2665,12 @@ DUPEITEM=01ec0
 //pickpocket dip
 DUPEITEM=01ec0
 
+[ITEMDEF 01e2c]
+//pickpocket dip
+DUPEITEM=01ec0
+
 [ITEMDEF 01ec3]
-DEFNAME=i_pickpocket_dip2
+DEFNAME=i_pickpocket_dip2 //Yellow
 TYPE=t_train_pickpocket
 FLIP=1
 RESOURCES=65 i_log,60 i_cloth
@@ -2681,13 +2678,17 @@ SKILLMAKE=Carpentry 73.6,Tailoring 50.0,t_carpentry
 CATEGORY=Items by Professions
 SUBSECTION=Thief
 DESCRIPTION=Pickpocket Dip
-DUPELIST=01ec4,01ec5
+DUPELIST=01ec4,01ec5,01e2d
 
 [ITEMDEF 01ec4]
 //pickpocket dip
 DUPEITEM=01ec3
 
 [ITEMDEF 01ec5]
+//pickpocket dip
+DUPEITEM=01ec3
+
+[ITEMDEF 01e2d]
 //pickpocket dip
 DUPEITEM=01ec3
 
