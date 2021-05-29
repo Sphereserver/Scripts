@@ -222,7 +222,7 @@ ENDIF
 ///////////////
 
 [FUNCTION TreasureMap_Decode]
-IF (<SRC.CARTOGRAPHY> < <DEF0.TreasureMap_L<TDATA3>_Cartography>)
+IF (<SRC.CARTOGRAPHY> < <DEF0.TreasureMap_L<EVAL <TDATA3>>_Cartography>)
  SRC.MESSAGE The map is too difficult to attempt to decode.
  return 1
 ENDIF
@@ -249,7 +249,7 @@ PIN=<eval <TDATA1>/2>,<eval <TDATA2>/2>   //add pin on map center
 IF (<TAG0.DirtPatch1>)
  SRC.SYSMESSAGE You are already digging treasure.
  return 0
-ELIF (<SRC.CARTOGRAPHY> < <DEF0.TreasureMap_L<TDATA3>_Cartography>)
+ELIF (<SRC.CARTOGRAPHY> < <DEF0.TreasureMap_L<EVAL <TDATA3>>_Cartography>)
  SRC.SYSMESSAGE You did not decode this map and have no clue where to look for the treasure.
  return 0
 ELIF (<SRC.FLAGS> & statf_hovering)
@@ -318,7 +318,7 @@ ELIF (<REF1.MORE1> == 20)
  SERV.NEWITEM i_chest_treasure
  NEW.ATTR=attr_move_never|attr_decay
  NEW.TYPE=t_container_locked
- NEW.MORE2=<DEF0.TreasureMap_L<TDATA3>_Lockpicking>
+ NEW.MORE2=<DEF0.TreasureMap_L<EVAL <TDATA3>>_Lockpicking>
  NEW.TIMER=3600
  NEW.P=<MOREX>,<MOREY>,<eval <MOREZ>-5>,<MOREM>
  NEW.TAG.Level=<TDATA3>
