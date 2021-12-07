@@ -1,0 +1,607 @@
+﻿//****************************************************************************
+// SPHERE by : Menasoft ©1997-2018
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Thursday, Nov 8, 2018
+//
+VERSION=0.56d
+
+
+[ITEMDEF 01964]
+DEFNAME=i_region_caves
+
+[ITEMDEF 01965]
+DEFNAME=i_region_forest
+
+[ITEMDEF 01966]
+DEFNAME=i_region_grass
+
+[ITEMDEF 01967]
+DEFNAME=i_region_jungle
+
+[ITEMDEF 01968]
+DEFNAME=i_region_mountain
+
+[ITEMDEF 01969]
+DEFNAME=i_region_sand
+
+[ITEMDEF 0196a]
+DEFNAME=i_region_snow
+
+[ITEMDEF 0196b]
+DEFNAME=i_region_swamp
+
+[ITEMDEF 0196c]
+DEFNAME=i_region_water
+
+[ITEMDEF 0196d]
+DEFNAME=i_gate_blue
+
+[ITEMDEF 0196e]
+DEFNAME=i_gate_red
+
+[ITEMDEF 0196f]
+//map (detailed)
+DEFNAME=i_mapadd1
+
+[ITEMDEF 01970]
+//map (regional)
+DEFNAME=i_mapadd2
+
+[ITEMDEF 01971]
+//map (sea chart)
+DEFNAME=i_mapadd3
+
+[ITEMDEF 01972]
+//map (full world)
+DEFNAME=i_mapadd4
+
+[ITEMDEF 01973]
+//quest egg
+DEFNAME=i_quest
+
+[ITEMDEF 01977]
+DEFNAME=i_region_dirt
+
+[ITEMDEF 01978]
+DEFNAME=i_region_furrows
+
+[ITEMDEF 01979]
+DEFNAME=i_region_lava
+
+
+[ITEMDEF 02007]
+//Used as the default memory object
+DEFNAME=i_memory
+TYPE=t_eq_memory_obj
+LAYER=layer_special
+CATEGORY=Miscellaneous
+SUBSECTION=Special Tiles
+DESCRIPTION=NonGen (Memory) Object
+
+
+[ITEMDEF 02008]
+DEFNAME=i_character_peasant
+
+[ITEMDEF 02009]
+DEFNAME=i_character_noble
+
+[ITEMDEF 0200a]
+DEFNAME=i_character_armourer
+
+[ITEMDEF 0200b]
+DEFNAME=i_character_baker
+
+[ITEMDEF 0200c]
+DEFNAME=i_character_bowyer
+
+[ITEMDEF 0200d]
+DEFNAME=i_character_butcher
+
+[ITEMDEF 0200e]
+DEFNAME=i_character_guard
+
+[ITEMDEF 0200f]
+DEFNAME=i_character_healer
+
+[ITEMDEF 02010]
+DEFNAME=i_character_innkeeper
+
+[ITEMDEF 02011]
+DEFNAME=i_character_jailer
+
+[ITEMDEF 02012]
+DEFNAME=i_character_jeweler
+
+[ITEMDEF 02013]
+DEFNAME=i_character_leatherworker
+
+[ITEMDEF 02014]
+DEFNAME=i_character_mage
+
+[ITEMDEF 02015]
+DEFNAME=i_character_pirate
+
+[ITEMDEF 02016]
+DEFNAME=i_character_provisioner
+
+[ITEMDEF 02017]
+DEFNAME=i_character_sailor
+
+[ITEMDEF 02018]
+DEFNAME=i_character_shipwright
+
+[ITEMDEF 02019]
+DEFNAME=i_character_tailor
+
+[ITEMDEF 0201a]
+DEFNAME=i_character_spinner
+
+[ITEMDEF 0201b]
+DEFNAME=i_character_tavernkeeper
+
+[ITEMDEF 0201c]
+DEFNAME=i_character_thief
+
+[ITEMDEF 0201d]
+DEFNAME=i_character_tinker
+
+[ITEMDEF 0201e]
+DEFNAME=i_character_weapontrainer
+
+[ITEMDEF 0201f]
+DEFNAME=i_character_weaponsmith
+
+[ITEMDEF 02020]
+DEFNAME=i_character_woodworker
+
+[ITEMDEF 02021]
+DEFNAME=i_character_sculptor
+
+[ITEMDEF 02022]
+DEFNAME=i_character_artist
+
+[ITEMDEF 02023]
+DEFNAME=i_character_alchemist
+
+[ITEMDEF 02024]
+DEFNAME=i_character_glassblower
+
+[ITEMDEF 02025]
+DEFNAME=i_character_musician
+
+[ITEMDEF 02026]
+DEFNAME=i_character_fisherman
+
+[ITEMDEF 02027]
+DEFNAME=i_character_waiter
+
+[ITEMDEF 02028]
+DEFNAME=i_character_animaltrainer
+
+[ITEMDEF 02029]
+DEFNAME=i_character_rancher
+
+[ITEMDEF 0202a]
+DEFNAME=i_character_cobbler
+
+[ITEMDEF 0202b]
+DEFNAME=i_character_beggar
+
+[ITEMDEF 0202c]
+DEFNAME=i_character_scribe
+
+[ITEMDEF 0202d]
+DEFNAME=i_character_miner
+
+[ITEMDEF 0202e]
+DEFNAME=i_character_mayor
+
+[ITEMDEF 0202f]
+DEFNAME=i_character_gambler
+
+[ITEMDEF 02030]
+DEFNAME=i_character_brigand
+
+[ITEMDEF 02031]
+DEFNAME=i_character_architect
+
+[ITEMDEF 02032]
+DEFNAME=i_character_cartographer
+
+[ITEMDEF 02033]
+DEFNAME=i_character_gypsy
+
+[ITEMDEF 02034]
+DEFNAME=i_character_herbalist
+
+[ITEMDEF 02035]
+DEFNAME=i_character_judge
+
+[ITEMDEF 02036]
+DEFNAME=i_character_cook
+
+
+[ITEMDEF i_mt_reptalon]
+ID=03e90
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_reptalon
+WEIGHT=0
+
+[ITEMDEF i_mt_cu_sidhe]
+ID=03e91
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_cu_sidhe
+WEIGHT=0
+
+[ITEMDEF i_mt_armor_steed]
+ID=03e92
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_armor_steed
+WEIGHT=0
+
+[ITEMDEF i_mt_hiryu]
+ID=03e94
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_hiryu
+WEIGHT=0
+
+[ITEMDEF i_mt_beetle_fire]
+ID=03e95
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_beetle_fire
+WEIGHT=0
+
+[ITEMDEF i_memory_ship_pilot]
+ID=03e96
+TYPE=t_eq_horse
+LAYER=layer_horse
+WEIGHT=0
+
+[ITEMDEF i_mt_giant_beetle_ethereal]
+ID=03e97
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_giant_beetle_ethereal
+WEIGHT=0
+
+[ITEMDEF i_mt_swamp_dragon_ethereal]
+ID=03e98
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_swamp_dragon_ethereal
+WEIGHT=0
+
+[ITEMDEF i_mt_ridgeback_ethereal]
+ID=03e9a
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_ridgeback_ethereal
+WEIGHT=0
+
+[ITEMDEF i_mt_unicorn_ethereal]
+ID=03e9b
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_unicorn_ethereal
+WEIGHT=0
+
+[ITEMDEF i_mt_kirin_ethereal]
+ID=03e9c
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_kirin_ethereal
+WEIGHT=0
+
+[ITEMDEF i_mt_steed_fire]
+ID=03e9e
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_steed_fire
+WEIGHT=0
+
+[ITEMDEF i_mt_horse_tan]
+ID=03e9f
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_horse_tan
+WEIGHT=0
+
+[ITEMDEF i_mt_horse_gray]
+ID=03ea0
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_horse_gray
+WEIGHT=0
+
+[ITEMDEF i_mt_horse_brown_lt]
+ID=03ea1
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_horse_brown_lt
+WEIGHT=0
+
+[ITEMDEF i_mt_horse_brown_dk]
+ID=03ea2
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_horse_brown_dk
+WEIGHT=0
+
+[ITEMDEF i_mt_ostard_desert]
+ID=03ea3
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_ostard_desert
+WEIGHT=0
+
+[ITEMDEF i_mt_ostard_frenzied]
+ID=03ea4
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_ostard_frenzied
+WEIGHT=0
+
+[ITEMDEF i_mt_ostard_forest]
+ID=03ea5
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_ostard_forest
+WEIGHT=0
+
+[ITEMDEF i_mt_llama]
+ID=03ea6
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_llama
+WEIGHT=0
+
+[ITEMDEF i_mt_nightmare]
+ID=03ea7
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_nightmare
+WEIGHT=0
+
+[ITEMDEF i_mt_steed_silver]
+ID=03ea8
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_steed_silver
+WEIGHT=0
+
+[ITEMDEF i_mt_steed_dark]
+ID=03ea9
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_steed_dark
+WEIGHT=0
+
+[ITEMDEF i_mt_steed_ethereal]
+ID=03eaa
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_steed_ethereal
+WEIGHT=0
+
+[ITEMDEF i_mt_llama_ethereal]
+ID=03eab
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_llama_ethereal
+WEIGHT=0
+
+[ITEMDEF i_mt_ostard_ethereal]
+ID=03eac
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_ostard_ethereal
+WEIGHT=0
+
+[ITEMDEF i_mt_kirin]
+ID=03ead
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_kirin
+WEIGHT=0
+
+[ITEMDEF i_mt_warhorse_minax]
+ID=03eaf
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_warhorse_minax
+WEIGHT=0
+
+[ITEMDEF i_mt_warhorse_shadowlords]
+ID=03eb0
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_warhorse_shadowlords
+WEIGHT=0
+
+[ITEMDEF i_mt_warhorse_magecouncil]
+ID=03eb1
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_warhorse_magecouncil
+WEIGHT=0
+
+[ITEMDEF i_mt_warhorse_truebritannians]
+ID=03eb2
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_warhorse_truebritannians
+WEIGHT=0
+
+[ITEMDEF i_mt_sea_horse]
+ID=03eb3
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_horse_sea
+WEIGHT=0
+
+[ITEMDEF i_mt_unicorn]
+ID=03eb4
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_unicorn
+WEIGHT=0
+
+[ITEMDEF i_mt_warhorse_dread]
+ID=03eb5
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_warhorse_dread
+WEIGHT=0
+
+[ITEMDEF i_mt_unknown_mare]
+ID=03eb6
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=0b2
+WEIGHT=0
+
+[ITEMDEF i_mt_unknown_mare2]
+ID=03eb7
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=0b3
+WEIGHT=0
+
+[ITEMDEF i_mt_savage_ridgeback]
+ID=03eb8
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_savage_ridgeback
+WEIGHT=0
+
+[ITEMDEF i_mt_ridgeback]
+ID=03eba
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_ridgeback
+WEIGHT=0
+
+[ITEMDEF i_mt_skeletal_mount]
+ID=03ebb
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_skeletal_mount
+WEIGHT=0
+
+[ITEMDEF i_mt_giant_beetle]
+ID=03ebc
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_giant_beetle
+WEIGHT=0
+
+[ITEMDEF i_mt_swamp_dragon]
+ID=03ebd
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_swamp_dragon
+WEIGHT=0
+
+[ITEMDEF i_mt_armored_swamp_dragon]
+ID=03ebe
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_armored_swamp_dragon
+WEIGHT=0
+
+[ITEMDEF i_mt_bear_polar]
+ID=03ec5
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_bear_polar
+WEIGHT=0
+
+[ITEMDEF i_mt_boura_armoured]
+ID=03ec6
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_boura_armoured
+WEIGHT=0
+
+[ITEMDEF i_mt_wild_tiger]
+ID=03ec7
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_wild_tiger
+WEIGHT=0
+
+[ITEMDEF i_mt_tiger_ethereal]
+ID=03ec8
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_tiger_ethereal
+WEIGHT=0
+
+[ITEMDEF i_mt_hellhound_ancient]
+ID=03ec9
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_hellhound_ancient
+WEIGHT=0
+
+[ITEMDEF i_mt_tarantula]
+ID=03eca
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_tarantula
+WEIGHT=0
+
+[ITEMDEF i_mt_lasher]
+ID=03ecb
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_lasher
+WEIGHT=0
+
+[ITEMDEF i_mt_windrunner]
+ID=03ecc
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_windrunner
+WEIGHT=0
+
+[ITEMDEF i_mt_palomino]
+ID=03ecd
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_palomino
+WEIGHT=0
+
+[ITEMDEF i_mt_serpentine_dragon_ethereal]
+ID=03ece
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_serpentine_dragon_ethereal
+WEIGHT=0
+
+[ITEMDEF i_mt_eowmu]
+ID=03ecf
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_eowmu
+WEIGHT=0
+
+[ITEMDEF i_mt_skeletal_cat]
+ID=03ed0
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_skeletal_cat
+WEIGHT=0
+
+[EOF]

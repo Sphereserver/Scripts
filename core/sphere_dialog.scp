@@ -1,0 +1,1516 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2020
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Wednesday, Dec 2, 2020
+//
+VERSION=0.56d
+
+
+[COMMENT dialog_help_section]
+FLAGS
+noclose                             // Dialog can't be closed with right click
+nodispose                           // Dialog can't be closed with closegump macro
+nomove                              // Dialog can't be moved
+
+GENERAL
+page id                             // Set dialog page id to switch between pages
+dorigin x,y                         // Set X,Y origin point to be able to use relative X,Y values on dialog objects (eg: +10 -5 will turn into originX+10, originY-5)
+tooltip clilocid                    // Add mouse-over tooltip on dialog object (required client >= 4.0.0)
+
+BACKGROUNDS
+resizepic x,y,gump,width,height     // Add resized background gump
+checkertrans x,y,width,height       // Add transparency layer (required client >= 4.0.0)
+
+PICTURES
+gumppic x,y,gump,hue                            // Add gump picture (required client >= 3.0.0 to use 'hue' value)
+gumppictiled x,y,width,height,gump              // Add repeated gump pictures to fill the given area
+picinpic x,y,gump,spritex,spritey,width,height  // Add sprite picture (required client >= 7.0.80.0)
+tilepic x,y,itemid                              // Add item picture from tiledata.mul
+tilepichue x,y,itemid,hue                       // Add hued item picture from tiledata.mul
+
+TEXTS
+text x,y,color,index (OBSOLETE)                                               // Add text (index-based)
+dtext x,y,color,text                                                          // Add text
+croppedtext x,y,width,height,color,index (OBSOLETE)                           // Add text which will be cropped if it exceed given area (index-based)
+dcroppedtext x,y,width,height,color,text                                      // Add text which will be cropped if it exceed given area
+textentry x,y,width,height,color,id,index (OBSOLETE)                          // Add text entry area (index-based)
+dtextentry x,y,width,height,color,id,text                                     // Add text entry area
+textentrylimited x,y,width,height,color,id,limit,index (OBSOLETE)             // Add text entry area limited to N chars (required client >= 5.0.0)(index-based)
+dtextentrylimited x,y,width,height,color,id,limit,text                        // Add text entry area limited to N chars (required client >= 5.0.0)
+htmlgump x,y,width,height,hasbackground,hasscrollbar,index (OBSOLETE)         // Add text using HTML format (index-based)
+dhtmlgump x,y,width,height,hasbackground,hasscrollbar,text                    // Add text using HTML format
+xmfhtmlgump x,y,width,height,clilocid,hasbackground,hasscrollbar              // Add cliloc text
+xmfhtmlgumpcolor x,y,width,height,clilocid,hasbackground,hasscrollbar,color   // Add hued cliloc text (color should be RGB decimal value)
+xmfhtmltok x,y,width,height,hasbackground,hasscrollbar,color,clilocid,@args@  // Add hued cliloc text with arguments (args seperator should be '@', eg: @arg1@arg2@)
+
+BUTTONS
+button x,y,unpressed_gump,pressed_gump,ispressable,destpage,id                                    // Add button
+buttontileart x,y,unpressed_gump,pressed_gump,ispressable,destpage,id,tileid,tilehue,tilex,tiley  // Add button with tilepic on top
+radio x,y,unchecked_gump,checked_gump,ispressed,id                                                // Add radio button
+checkbox x,y,unchecked_gump,checked_gump,ispressed,checkid                                        // Add checkbox button
+group id                                                                                          // Group a bunch of radios/checkboxes
+//NOTE: ID 0 on buttons is reserved for CANCEL (close dialog) command
+
+
+[DIALOG d_charprop1]
+50,50
+
+page 0
+resizepic 0 0 5054 605 445
+gumppictiled 10 10 585 20 2624
+gumppictiled 10 35 480 400 2624
+gumppictiled 495 35 100 100 2624
+gumppictiled 490 140 105 295 2624
+checkertrans 10 10 585 425
+dhtmlgump 10 11 585 20 0 0 <DEF.BFONT_WHITE><DEF.CENTER>CHARACTER PROPERTIES<DEF.CENTERE><DEF.BFONTE>
+tilepichue 525 60 <DISPIDDEC> <eval <COLOR> &~ 08000|04000>
+
+page 1
+button 490 140 4008 4010 0 0 0
+dtext 525 140 193 GENERAL
+button 490 160 4026 4028 0 2 0
+dtext 525 160 1000 STATS
+button 490 180 4011 4013 0 3 0
+dtext 525 180 1000 SKILLS
+button 490 200 4029 4031 0 4 0
+dtext 525 200 1000 FLAGS
+
+button 10 35 4020 4022 0 0 0
+dtext 45 35 2048 Action
+dcroppedtext 120 35 125 20 1000 <ACTION> (<GetCharActionName>)
+
+button 10 55 4005 4007 1 0 100
+dtext 45 55 2048 Body
+dcroppedtext 120 55 125 20 1000 <BODY>
+
+button 10 75 4005 4007 1 0 101
+dtext 45 75 2048 Color
+dcroppedtext 120 75 125 20 1000 <COLOR>
+
+button 10 95 4020 4022 0 0 0
+dtext 45 95 2048 Created
+dcroppedtext 120 95 125 20 1000 <FormatMinutes <eval <CREATE>/60>> ago
+
+button 10 115 4005 4007 1 0 102
+dtext 45 115 2048 Flags
+dcroppedtext 120 115 125 20 1000 <FLAGS>
+
+button 10 135 4005 4007 1 0 103
+dtext 45 135 2048 Food
+dcroppedtext 120 135 125 20 1000 <FOOD> (<FOOD>/<MAXFOOD>)
+
+button 10 155 4005 4007 1 0 104
+dtext 45 155 2048 Name
+dcroppedtext 120 155 125 20 1000 <NAME>
+
+button 10 175 4005 4007 1 0 105
+dtext 45 175 2048 P
+dcroppedtext 120 175 125 20 1000 <P>
+
+button 10 195 4005 4007 1 0 106
+dtext 45 195 2048 Title
+dcroppedtext 120 195 125 20 1000 <TITLE>
+
+button 10 215 4020 4022 0 0 0
+dtext 45 215 2048 UID
+dcroppedtext 120 215 125 20 1000 <UID>
+
+button 10 235 4020 4022 0 0 0
+dtext 45 235 2048 Weight
+dcroppedtext 120 235 125 20 1000 <fval <WEIGHT>>/<fval <MAXWEIGHT>>
+
+button 10 275 4005 4007 1 0 107
+dtext 45 275 2048 Fame
+dcroppedtext 120 275 125 20 1000 <FAME>
+
+button 10 295 4005 4007 1 0 108
+dtext 45 295 2048 Karma
+dcroppedtext 120 295 125 20 1000 <KARMA>
+
+IF (<SERV.ExperienceSystem>)
+ button 10 335 4005 4007 1 0 109
+ dtext 45 335 2048 Exp
+ dcroppedtext 120 335 125 20 1000 <EXP>
+ENDIF
+
+IF (<SERV.LevelSystem>)
+ button 10 355 4005 4007 1 0 110
+ dtext 45 355 2048 Level
+ dcroppedtext 120 355 125 20 1000 <LEVEL>
+ENDIF
+
+IF (<ISPLAYER>)
+ dtext 250 35 193 Player properties
+
+ button 250 55 4020 4022 0 0 0
+ dtext 285 55 2048 Account
+ dcroppedtext 360 55 125 20 1000 <ACCOUNT>
+
+ button 250 75 4020 4022 0 0 0
+ dtext 285 75 2048 LastUsed
+ dcroppedtext 360 75 125 20 1000 <FormatMinutes <eval <LASTUSED>/60>> ago
+
+ button 250 115 4020 4022 0 0 0
+ dtext 285 115 2048 Gold
+ dcroppedtext 360 115 125 20 1000 <QVAL (<SERV.FeatureTOL> & 02)? <VIRTUALGOLD> : <GOLD>>	//FEATURE_TOL_VIRTUALGOLD
+
+ button 250 135 4020 4022 0 0 0
+ dtext 285 135 2048 Guild
+ IF (<GUILD>)
+  dcroppedtext 360 135 125 20 1000 <GUILD> (<GUILDABBREV>)
+ ENDIF
+
+ button 250 155 4005 4007 1 0 120
+ dtext 285 155 2048 Profile
+ dcroppedtext 360 155 125 20 1000 <PROFILE>
+
+ button 250 175 4005 4007 1 0 121
+ dtext 285 175 2048 RefuseTrade
+ dcroppedtext 360 175 125 20 1000 <REFUSETRADES>
+
+ button 250 215 4005 4007 1 0 122
+ dtext 285 215 2048 Kills
+ dcroppedtext 360 215 125 20 1000 <KILLS>
+
+ button 250 235 4005 4007 1 0 123
+ dtext 285 235 2048 Deaths
+ dcroppedtext 360 235 125 20 1000 <DEATHS>
+
+ IF (<SERV.OptionFlags> & 010)	//OF_PetSlots
+  button 250 275 4020 4022 0 0 0
+  dtext 285 275 2048 Followers
+  dcroppedtext 360 275 125 20 1000 <CURFOLLOWER>/<MAXFOLLOWER>
+ ENDIF
+ELSE
+ dtext 250 35 193 NPC properties
+
+ button 250 55 4005 4007 1 0 130
+ dtext 285 55 2048 Brain
+ dcroppedtext 360 55 125 20 1000 <NPC> (<DEF.NPCBrain.<NPC>>)
+
+ button 250 75 4005 4007 1 0 131
+ dtext 285 75 2048 Home
+ dcroppedtext 360 75 125 20 1000 <HOME>
+
+ button 250 95 4005 4007 1 0 132
+ dtext 285 95 2048 HomeDist
+ dcroppedtext 360 95 125 20 1000 <HOMEDIST>
+
+ button 250 115 4020 4022 0 0 0
+ dtext 285 115 2048 Owner
+ IF (<OWNER>)
+  dcroppedtext 360 115 125 20 1000 <OWNER> (<OWNER.NAME>)
+ ENDIF
+
+ button 250 135 4020 4022 0 0 0
+ dtext 285 135 2048 SpawnItem
+ IF (<FLAGS> & statf_spawned)
+  dcroppedtext 360 135 125 20 1000 <SPAWNITEM>
+ ENDIF
+
+ button 250 175 4005 4007 1 0 133
+ dtext 285 175 2048 Bonded
+ dcroppedtext 360 175 125 20 1000 <BONDED>
+
+ IF (<SERV.OptionFlags> & 010)	//OF_PetSlots
+  button 250 195 4005 4007 1 0 134
+  dtext 285 195 2048 FollowerSlot
+  dcroppedtext 360 195 125 20 1000 <FOLLOWERSLOTS>
+ ENDIF
+ENDIF
+
+page 2
+button 490 140 4008 4010 0 1 0
+dtext 525 140 1000 GENERAL
+button 490 160 4026 4028 0 0 0
+dtext 525 160 193 STATS
+button 490 180 4011 4013 0 3 0
+dtext 525 180 1000 SKILLS
+button 490 200 4029 4031 0 4 0
+dtext 525 200 1000 FLAGS
+
+button 10 35 4005 4007 1 0 200
+dtext 45 35 333 STR
+dcroppedtext 120 35 125 20 1000 <STR>
+
+button 10 55 4005 4007 1 0 201
+dtext 45 55 353 DEX
+dcroppedtext 120 55 125 20 1000 <DEX>
+
+button 10 75 4005 4007 1 0 202
+dtext 45 75 393 INT
+dcroppedtext 120 75 125 20 1000 <INT>
+
+button 10 115 4005 4007 1 0 203
+dtext 45 115 333 Hits
+dcroppedtext 120 115 125 20 1000 <HITS>
+
+button 10 135 4005 4007 1 0 204
+dtext 45 135 353 Stam
+dcroppedtext 120 135 125 20 1000 <STAM>
+
+button 10 155 4005 4007 1 0 205
+dtext 45 155 393 Mana
+dcroppedtext 120 155 125 20 1000 <MANA>
+
+button 10 195 4005 4007 1 0 206
+dtext 45 195 2048 Dam
+dcroppedtext 120 195 125 20 1000 <DAM>
+
+IF (<SERV.CombatFlags> & 08)	//COMBATF_ELEMENTAL_ENGINE
+ button 10 215 4005 4007 1 0 207
+ dtext 45 215 903 DamPhysical
+ dcroppedtext 120 215 125 20 1000 <DAMPHYSICAL>%
+
+ button 10 235 4005 4007 1 0 208
+ dtext 45 235 333 DamFire
+ dcroppedtext 120 235 125 20 1000 <DAMFIRE>%
+
+ button 10 255 4005 4007 1 0 209
+ dtext 45 255 393 DamCold
+ dcroppedtext 120 255 125 20 1000 <DAMCOLD>%
+
+ button 10 275 4005 4007 1 0 210
+ dtext 45 275 363 DamPoison
+ dcroppedtext 120 275 125 20 1000 <DAMPOISON>%
+
+ button 10 295 4005 4007 1 0 211
+ dtext 45 295 323 DamEnergy
+ dcroppedtext 120 295 125 20 1000 <DAMENERGY>%
+ENDIF
+
+button 250 35 4005 4007 1 0 212
+dtext 285 35 333 ModSTR
+dcroppedtext 360 35 125 20 1000 <MODSTR>
+
+button 250 55 4005 4007 1 0 213
+dtext 285 55 353 ModDEX
+dcroppedtext 360 55 125 20 1000 <MODDEX>
+
+button 250 75 4005 4007 1 0 214
+dtext 285 75 393 ModINT
+dcroppedtext 360 75 125 20 1000 <MODINT>
+
+button 250 115 4005 4007 1 0 215
+dtext 285 115 333 MaxHits
+dcroppedtext 360 115 125 20 1000 <MAXHITS>
+
+button 250 135 4005 4007 1 0 216
+dtext 285 135 353 MaxStam
+dcroppedtext 360 135 125 20 1000 <MAXSTAM>
+
+button 250 155 4005 4007 1 0 217
+dtext 285 155 393 MaxMana
+dcroppedtext 360 155 125 20 1000 <MAXMANA>
+
+IF (<SERV.CombatFlags> & 08)	//COMBATF_ELEMENTAL_ENGINE
+ button 250 215 4005 4007 1 0 218
+ dtext 285 215 903 ResPhysical
+ dcroppedtext 360 215 125 20 1000 <RESPHYSICAL>%
+
+ button 250 235 4005 4007 1 0 219
+ dtext 285 235 333 ResFire
+ dcroppedtext 360 235 125 20 1000 <RESFIRE>%
+
+ button 250 255 4005 4007 1 0 220
+ dtext 285 255 393 ResCold
+ dcroppedtext 360 255 125 20 1000 <RESCOLD>%
+
+ button 250 275 4005 4007 1 0 221
+ dtext 285 275 363 ResPoison
+ dcroppedtext 360 275 125 20 1000 <RESPOISON>%
+
+ button 250 295 4005 4007 1 0 222
+ dtext 285 295 323 ResEnergy
+ dcroppedtext 360 295 125 20 1000 <RESENERGY>%
+ELSE
+ button 250 195 4020 4022 0 0 0
+ dtext 285 195 2048 AR
+ dcroppedtext 360 195 125 20 1000 <AR>
+
+ button 250 215 4005 4007 1 0 223
+ dtext 285 215 2048 ModAR
+ dcroppedtext 360 215 125 20 1000 <MODAR>
+ENDIF
+
+page 3
+button 490 140 4008 4010 0 1 0
+dtext 525 140 1000 GENERAL
+button 490 160 4026 4028 0 2 0
+dtext 525 160 1000 STATS
+button 490 180 4011 4013 0 0 0
+dtext 525 180 193 SKILLS
+button 490 200 4029 4031 0 4 0
+dtext 525 200 1000 FLAGS
+
+FOR 0 57
+ IF (<SERV.SKILL.<LOCAL._FOR>>)
+  button <eval 10+((<LOCAL._FOR>/20)*160)> <eval 35+((<LOCAL._FOR>%20)*20)> 4005 4007 1 0 <eval 300+<LOCAL._FOR>>
+  dcroppedtext <eval 45+((<LOCAL._FOR>/20)*160)> <eval 35+((<LOCAL._FOR>%20)*20)> 70 20 2048 <SERV.SKILL.<LOCAL._FOR>.KEY>
+  dcroppedtext <eval 120+((<LOCAL._FOR>/20)*160)> <eval 35+((<LOCAL._FOR>%20)*20)> 45 20 1000 <I.<LOCAL._FOR>>
+ ENDIF
+ENDFOR
+
+button 330 415 4005 4007 1 0 360
+dtext 365 415 2048 All Skills
+dcroppedtext 440 415 45 20 1000 <fval <SKILLTOTAL>>
+
+page 4
+button 490 140 4008 4010 0 1 0
+dtext 525 140 1000 GENERAL
+button 490 160 4026 4028 0 2 0
+dtext 525 160 1000 STATS
+button 490 180 4011 4013 0 3 0
+dtext 525 180 1000 SKILLS
+button 490 200 4029 4031 0 0 0
+dtext 525 200 193 FLAGS
+
+LOCAL.Flag=01
+FOR 0 38
+ IF !(<isempty <DEF.CharFlag.<eval <LOCAL._FOR>+1>>>)
+  checkbox <eval 10+((<LOCAL._FOR>/20)*240)> <eval 35+((<LOCAL._FOR>%20)*20)> 210 211 <hval (<FLAGS> & <LOCAL.Flag>)> <eval 400+<LOCAL._FOR>>
+  dtext <eval 35+((<LOCAL._FOR>/20)*240)> <eval 35+((<LOCAL._FOR>%20)*20)> 1000 <DEF0.CharFlag.<eval <LOCAL._FOR>+1>>
+ ENDIF
+ // Workaround: LOCAL.Flag=<hval <LOCAL.Flag> << 1> doesn't evaluate << correctly
+ LOCAL.Flag="<LOCAL.Flag> << 1"
+ LOCAL.Flag=<hval <LOCAL.Flag>>
+ENDFOR
+
+button 250 415 4005 4006 1 0 400
+dtext 285 415 2048 Set flags
+
+[DIALOG d_charprop1 BUTTON]
+ON=0
+IF (<SRC.CTAG0.Dialog.Admin.Clients>)
+ DIALOG d_admin_player_tweak
+ENDIF
+
+ON=100
+TRYP 4 INPDLG BODY 30
+
+ON=101
+TRYP 4 INPDLG COLOR 16
+
+ON=102
+TRYP 4 INPDLG FLAGS 9
+
+ON=103
+TRYP 3 INPDLG FOOD 4
+
+ON=104
+TRYP 3 INPDLG NAME 30
+
+ON=105
+TRYP 3 INPDLG P 16
+
+ON=106
+TRYP 4 INPDLG TITLE 30
+
+ON=107
+TRYP 4 INPDLG FAME 6
+
+ON=108
+TRYP 4 INPDLG KARMA 6
+
+ON=109
+TRYP 4 INPDLG EXP 10
+
+ON=110
+TRYP 4 INPDLG LEVEL 10
+
+ON=120
+TRYP 4 INPDLG PROFILE 4096
+
+ON=121
+TRYP 3 INPDLG REFUSETRADES 1
+
+ON=122
+TRYP 4 INPDLG KILLS 5
+
+ON=123
+TRYP 4 INPDLG DEATHS 5
+
+ON=130
+TRYP 4 INPDLG NPC 20
+
+ON=131
+TRYP 3 INPDLG HOME 16
+
+ON=132
+TRYP 3 INPDLG HOMEDIST 16
+
+ON=133
+TRYP 4 INPDLG BONDED 1
+
+ON=134
+TRYP 4 INPDLG FOLLOWERSLOTS 1
+
+ON=200
+TRYP 4 INPDLG STR 5
+
+ON=201
+TRYP 4 INPDLG DEX 5
+
+ON=202
+TRYP 4 INPDLG INT 5
+
+ON=203
+TRYP 4 INPDLG HITS 5
+
+ON=204
+TRYP 4 INPDLG STAM 5
+
+ON=205
+TRYP 4 INPDLG MANA 5
+
+ON=206
+TRYP 4 INPDLG DAM 9
+
+ON=207
+TRYP 4 INPDLG DAMPHYSICAL 4
+
+ON=208
+TRYP 4 INPDLG DAMFIRE 4
+
+ON=209
+TRYP 4 INPDLG DAMCOLD 4
+
+ON=210
+TRYP 4 INPDLG DAMPOISON 4
+
+ON=211
+TRYP 4 INPDLG DAMENERGY 4
+
+ON=212
+TRYP 4 INPDLG MODSTR 5
+
+ON=213
+TRYP 4 INPDLG MODDEX 5
+
+ON=214
+TRYP 4 INPDLG MODINT 5
+
+ON=215
+TRYP 4 INPDLG MAXHITS 5
+
+ON=216
+TRYP 4 INPDLG MAXSTAM 5
+
+ON=217
+TRYP 4 INPDLG MAXMANA 5
+
+ON=218
+TRYP 4 INPDLG RESPHYSICAL 4
+
+ON=219
+TRYP 4 INPDLG RESFIRE 4
+
+ON=220
+TRYP 4 INPDLG RESCOLD 4
+
+ON=221
+TRYP 4 INPDLG RESPOISON 4
+
+ON=222
+TRYP 4 INPDLG RESENERGY 4
+
+ON=223
+TRYP 4 INPDLG MODAR 3
+
+ON=300 357
+TRYP 4 INPDLG <SERV.SKILL.<eval <ARGN>-300>.KEY> 5
+
+ON=360
+TRYP 4 INPDLG ALLSKILLS 5
+
+ON=400
+LOCAL.Flag=01
+FOR 0 38
+ IF !(<isempty <DEF.CharFlag.<eval <LOCAL._FOR>+1>>>)
+  IF (<ARGCHK[<eval <LOCAL._FOR>+400>]>)
+   FLAGS |= <LOCAL.Flag>
+  ELSE
+   FLAGS &= ~<LOCAL.Flag>
+  ENDIF
+ ENDIF
+ // Workaround: LOCAL.Flag=<hval <LOCAL.Flag> << 1> doesn't evaluate << correctly
+ LOCAL.Flag="<LOCAL.Flag> << 1"
+ LOCAL.Flag=<hval <LOCAL.Flag>>
+ENDFOR
+DIALOG d_charprop1 4
+SRC.SYSMESSAGE Flags modified
+
+[DEFNAME CharFlagNames]
+CharFlag.1	"Invulnerable"
+CharFlag.2	"Dead"
+CharFlag.3	"Frozen"
+CharFlag.4	"Invisible"
+CharFlag.5	"Freeze cast"
+CharFlag.6	"Warmode"
+CharFlag.7	"Reactive Armor"
+CharFlag.8	"Poisoned"
+CharFlag.9	"Nightsight"
+CharFlag.10	"Magic Reflect"
+CharFlag.11	"Polymorphed"
+CharFlag.12	"Incognito"
+CharFlag.13	"Spirit Speak"
+CharFlag.14	"Insubstantial"
+CharFlag.15	"Emote actions"
+CharFlag.16	"Communication crystal"
+CharFlag.17	"Has shield"
+CharFlag.18	"Can move with bow"
+CharFlag.19	"Stoned"
+CharFlag.20	"Hovering"
+CharFlag.21	"Flying"
+CharFlag.23	"Hallucinated"
+CharFlag.24	"Hidden"
+CharFlag.25	"Indoors"
+CharFlag.26	"Criminal"
+CharFlag.27	"Summoned"
+CharFlag.28	"Pet"
+CharFlag.29	"Spawned"
+CharFlag.30	"Save parity"
+CharFlag.31	"Ridden"
+CharFlag.32	"Mounted on horseback"
+
+[DEFNAME NPCBrainNames]
+NPCBrain.0	brain_none
+NPCBrain.1	brain_animal
+NPCBrain.2	brain_human
+NPCBrain.3	brain_healer
+NPCBrain.4	brain_guard
+NPCBrain.5	brain_banker
+NPCBrain.6	brain_vendor
+NPCBrain.7	brain_animal_trainer
+NPCBrain.8	brain_monster
+NPCBrain.9	brain_berserk
+NPCBrain.10	brain_dragon
+
+[FUNCTION GetCharActionName]
+IF ((<ACTION> >= skill_anatomy) && (<ACTION> <= skill_throwing))	//1 ~ 57
+ return <DEFMSG.skillact_using> <SERV.SKILL.<eval <ACTION> & 0ff>.KEY>
+ELIF (<ACTION> == 100)
+ return <DEFMSG.skillact_following>
+ELIF (<ACTION> == 101)
+ return <DEFMSG.skillact_staying>
+ELIF (<ACTION> == 102)
+ return <DEFMSG.skillact_goingto>
+ELIF (<ACTION> == 103)
+ return <DEFMSG.skillact_wandering>
+ELIF (<ACTION> == 104)
+ return <DEFMSG.skillact_looking>
+ELIF (<ACTION> == 105)
+ return <DEFMSG.skillact_fleeing>
+ELIF (<ACTION> == 106)
+ return <DEFMSG.skillact_talking>
+ELIF (<ACTION> == 107)
+ return <DEFMSG.skillact_talkfollow>
+ELIF (<ACTION> == 108)
+ return <DEFMSG.skillact_guarding>
+ELIF (<ACTION> == 109)
+ return <DEFMSG.skillact_goinghome>
+ELIF (<ACTION> == 110)
+ return <DEFMSG.skillact_breathing>
+ELIF (<ACTION> == 111)
+ return <DEFMSG.skillact_ridden>
+ELIF (<ACTION> == 112)
+ return <DEFMSG.skillact_throwing>
+ELIF (<ACTION> == 113)
+ return <DEFMSG.skillact_training>
+ELIF (<ACTION> == 114)
+ return <DEFMSG.skillact_searchingfood>
+ELIF (<ACTION> == 115)
+ return <DEFMSG.skillact_runningto>
+ELSE
+ return <DEFMSG.skillact_idling>
+ENDIF
+
+[FUNCTION FormatMinutes]
+IF (<ARGN1> >= 518400)
+ return <eval <ARGN1> / 518400>y <eval (<ARGN1> % 518400) / 43200>m <eval ((<ARGN1> % 518400) % 43200) / 1440>d <eval (((<ARGN1> % 518400) % 43200) % 1440) / 60>h <eval (((<ARGN1> % 518400) % 43200) % 1440) % 60>m
+ELIF (<ARGN1> >= 43200)
+ return <eval <ARGN1> / 43200>m <eval (<ARGN1> % 43200) / 1440>d <eval ((<ARGN1> % 43200) % 1440) / 60>h <eval ((<ARGN1> % 43200) % 1440) % 60>m
+ELIF (<ARGN1> >= 1440)
+ return <eval <ARGN1> / 1440>d <eval (<ARGN1> % 1440) / 60>h <eval (<ARGN1> % 1440) % 60>m
+ELIF (<ARGN1> >= 60)
+ return <eval <ARGN1> / 60>h <eval <ARGN1> % 60>m
+ELSE
+ return <ARGN1>m
+ENDIF
+
+
+[DIALOG d_itemprop1]
+50,50
+
+page 0
+resizepic 0 0 5054 605 345
+gumppictiled 10 10 585 20 2624
+gumppictiled 10 35 480 300 2624
+gumppictiled 495 35 100 100 2624
+gumppictiled 490 140 105 195 2624
+checkertrans 10 10 585 325
+dhtmlgump 10 11 585 20 0 0 <DEF.BFONT_WHITE><DEF.CENTER>ITEM PROPERTIES<DEF.CENTERE><DEF.BFONTE>
+tilepichue 525 70 <DISPIDDEC> <dCOLOR>
+
+button 490 140 4017 4019 1 0 1
+dtext 525 140 137 DELETE
+
+page 1
+button 10 35 4005 4007 1 0 100
+dtext 45 35 2048 Amount
+dcroppedtext 120 35 125 20 1000 <AMOUNT>
+
+button 10 55 4005 4007 1 0 101
+dtext 45 55 2048 Attr
+dcroppedtext 120 55 125 20 1000 <ATTR>
+
+button 10 75 4005 4007 1 0 102
+dtext 45 75 2048 BaseID
+dcroppedtext 120 75 125 20 1000 <BASEID>
+
+button 10 95 4005 4007 1 0 103
+dtext 45 95 2048 Color
+dcroppedtext 120 95 125 20 1000 <COLOR>
+
+button 10 115 4005 4007 1 0 104
+dtext 45 115 2048 DispID
+dcroppedtext 120 115 125 20 1000 <DISPID>
+
+button 10 135 4020 4022 0 0 0
+dtext 45 135 2048 Dye
+dcroppedtext 120 135 125 20 1000 <DYE>
+
+button 10 155 4020 4022 0 0 0
+dtext 45 155 2048 Instances
+dcroppedtext 120 155 125 20 1000 <INSTANCES>
+
+button 10 175 4020 4022 0 0 0
+dtext 45 175 2048 Layer
+dcroppedtext 120 175 125 20 1000 <LAYER>
+
+button 10 195 4005 4007 1 0 105
+dtext 45 195 2048 Link
+dcroppedtext 120 195 125 20 1000 <LINK> <QVAL (<LINK.UID>)? (<LINK.NAME>):>
+
+button 10 215 4005 4007 1 0 106
+dtext 45 215 2048 More1
+dcroppedtext 120 215 125 20 1000 <MORE1> <QVAL (<MORE1>)? (<MORE1L>/<MORE1H>):>
+
+button 10 235 4005 4007 1 0 107
+dtext 45 235 2048 More2
+dcroppedtext 120 235 125 20 1000 <MORE2> <QVAL (<MORE2>)? (<MORE2L>/<MORE2H>):>
+
+button 10 255 4005 4007 1 0 108
+dtext 45 255 2048 MoreP
+dcroppedtext 120 255 125 20 1000 <MOREP>
+
+button 10 275 4005 4007 1 0 109
+dtext 45 275 2048 Name
+dcroppedtext 120 275 125 20 1000 <NAME>
+
+button 10 295 <QVAL (<CONT>)? 4020 4022 0 0 0 : 4005 4007 1 0 110>
+dtext 45 295 2048 P
+dcroppedtext 120 295 125 20 1000 <QVAL (<CONT>)? <TOPOBJ.P> : <P>>
+
+button 10 315 4005 4007 1 0 111
+dtext 45 315 2048 Timer
+dcroppedtext 120 315 125 20 1000 <TIMER>
+
+button 250 35 4005 4007 1 0 112
+dtext 285 35 2048 Type
+dcroppedtext 360 35 125 20 1000 <TYPE>
+
+button 250 55 4020 4022 0 0 0
+dtext 285 55 2048 UID
+dcroppedtext 360 55 125 20 1000 <UID>
+
+button 250 75 4020 4022 0 0 0
+dtext 285 75 2048 Value
+dcroppedtext 360 75 125 20 1000 <VALUE>
+
+button 250 95 4020 4022 0 0 0
+dtext 285 95 2048 Weight
+IF (<AMOUNT> > 1)
+ ARGS = "(<fval <BASEWEIGHT>> x <AMOUNT>)"
+ELIF (<WEIGHT> != <BASEWEIGHT>)
+ ARGS = "(<fval <BASEWEIGHT>> + <fval <WEIGHT>-<BASEWEIGHT>>)"
+ENDIF
+dcroppedtext 360 95 125 20 1000 <fval <WEIGHT>> <ARGS>
+
+IF (<ISARMOR>)
+ dtext 250 135 193 Armor properties
+
+ IF (<SERV.CombatFlags> & 08)	//COMBATF_ELEMENTAL_ENGINE
+  button 250 155 4005 4007 1 0 120
+  dtext 285 155 903 ResPhysical
+  dcroppedtext 360 155 125 20 1000 <RESPHYSICAL>%
+
+  button 250 175 4005 4007 1 0 121
+  dtext 285 175 333 ResFire
+  dcroppedtext 360 175 125 20 1000 <RESFIRE>%
+
+  button 250 195 4005 4007 1 0 122
+  dtext 285 195 393 ResCold
+  dcroppedtext 360 195 125 20 1000 <RESCOLD>%
+
+  button 250 215 4005 4007 1 0 123
+  dtext 285 215 363 ResPoison
+  dcroppedtext 360 215 125 20 1000 <RESPOISON>%
+
+  button 250 235 4005 4007 1 0 124
+  dtext 285 235 323 ResEnergy
+  dcroppedtext 360 235 125 20 1000 <RESENERGY>%
+ ELSE
+  button 250 155 4005 4007 1 0 125
+  dtext 285 155 2048 Armor
+  dcroppedtext 360 155 125 20 1000 <ARMOR>
+
+  button 250 175 4005 4007 1 0 126
+  dtext 285 175 2048 ModAR
+  dcroppedtext 360 175 125 20 1000 <MODAR>
+ ENDIF
+ELIF (<ISWEAPON>)
+ dtext 250 135 193 Weapon properties
+
+ button 250 155 4005 4007 1 0 130
+ dtext 285 155 2048 Range
+ dcroppedtext 360 155 125 20 1000 <RANGE>
+
+ button 250 175 4020 4022 0 0 0
+ dtext 285 175 2048 Speed
+ dcroppedtext 360 175 125 20 1000 <SPEED>
+
+ button 250 195 4005 4007 1 0 131
+ dtext 285 195 2048 Dam
+ dcroppedtext 360 195 125 20 1000 <DAM>
+
+ IF (<SERV.CombatFlags> & 08)	//COMBATF_ELEMENTAL_ENGINE
+  button 250 215 4005 4007 1 0 132
+  dtext 285 215 903 DamPhysical
+  dcroppedtext 360 215 125 20 1000 <DAMPHYSICAL>%
+
+  button 250 235 4005 4007 1 0 133
+  dtext 285 235 333 DamFire
+  dcroppedtext 360 235 125 20 1000 <DAMFIRE>%
+
+  button 250 255 4005 4007 1 0 134
+  dtext 285 255 393 DamCold
+  dcroppedtext 360 255 125 20 1000 <DAMCOLD>%
+
+  button 250 275 4005 4007 1 0 135
+  dtext 285 275 363 DamPoison
+  dcroppedtext 360 275 125 20 1000 <DAMPOISON>%
+
+  button 250 295 4005 4007 1 0 136
+  dtext 285 295 323 DamEnergy
+  dcroppedtext 360 295 125 20 1000 <DAMENERGY>%
+ ENDIF
+ENDIF
+
+[DIALOG d_itemprop1 BUTTON]
+ON=1
+TRYP 4 REMOVE
+
+ON=100
+TRYP 4 INPDLG AMOUNT 5
+
+ON=101
+TRYP 4 INPDLG ATTR 9
+
+ON=102
+TRYP 4 INPDLG ID 30
+
+ON=103
+TRYP 4 INPDLG COLOR 16
+
+ON=104
+TRYP 4 INPDLG DISPID 30
+
+ON=105
+TRYP 4 INPDLG LINK 10
+
+ON=106
+TRYP 4 INPDLG MORE1 32
+
+ON=107
+TRYP 4 INPDLG MORE2 32
+
+ON=108
+TRYP 4 INPDLG MOREP 16
+
+ON=109
+TRYP 4 INPDLG NAME 30
+
+ON=110
+IF !(<CONT>)
+ TRYP 4 INPDLG P 16
+ENDIF
+
+ON=111
+TRYP 4 INPDLG TIMER 9
+
+ON=112
+TRYP 4 INPDLG TYPE 30
+
+ON=120
+TRYP 4 INPDLG RESPHYSICAL 4
+
+ON=121
+TRYP 4 INPDLG RESFIRE 4
+
+ON=122
+TRYP 4 INPDLG RESCOLD 4
+
+ON=123
+TRYP 4 INPDLG RESPOISON 4
+
+ON=124
+TRYP 4 INPDLG RESENERGY 4
+
+ON=125
+TRYP 4 INPDLG ARMOR 9
+
+ON=126
+TRYP 4 INPDLG MODAR 3
+
+ON=130
+TRYP 4 INPDLG RANGE 2
+
+ON=131
+TRYP 4 INPDLG DAM 9
+
+ON=132
+TRYP 4 INPDLG DAMPHYSICAL 4
+
+ON=133
+TRYP 4 INPDLG DAMFIRE 4
+
+ON=134
+TRYP 4 INPDLG DAMCOLD 4
+
+ON=135
+TRYP 4 INPDLG DAMPOISON 4
+
+ON=136
+TRYP 4 INPDLG DAMENERGY 4
+
+
+[FUNCTION HelpPage]
+// This function is called when client press "Help" button on paperdoll
+SDIALOG d_helppage
+
+
+[DIALOG d_helppage]
+50,25
+
+resizepic 0 0 2600 540 345
+dhtmlgump 90 25 360 20 0 0 <DEF.CENTER><DEF.U>Ultima Online Help Menu<DEF.UE><DEF.CENTERE>
+button 400 308 2073 2072 1 0 0
+
+button 30 50 5540 5541 1 0 1
+dhtmlgump 60 50 450 60 1 1 <DEF.U>General question about Ultima Online<DEF.UE>: Select this option if you are having difficulties learning to use a skill, if you have a general gameplay question, or you would like to search the UO Knowledge Base.
+
+button 30 115 5540 5541 1 0 2
+dhtmlgump 60 115 450 60 1 1 <DEF.U>My character is physically stuck<DEF.UE>: This choice only covers cases where your character is physically stuck in a location they cannot move out of.
+
+button 30 180 5540 5541 1 0 3
+dhtmlgump 60 180 450 60 1 1 <DEF.U>Other<DEF.UE>: If you are experiencing a problem in the game that does not fall into one of the other categories or is not addressed on the Support web page (located at <DEF.A>href="<SERV.URL>"><SERV.URL><DEF.AE>) and requires in-game assistance please use this option.
+
+button 30 245 5540 5541 1 0 4
+dhtmlgump 60 245 450 60 1 1 <DEF.U>Cancel pending request<DEF.UE>: Remove my pending help request from the queue.
+
+[DIALOG d_helppage BUTTON]
+ON=0
+SYSMESSAGE @035 Help request aborted.
+
+ON=1
+WEBLINK www.uo.com/wiki/ultima-online-wiki/
+
+ON=2
+REF1=<FINDID.i_memory_helppage_stuck>
+IF (<REF1>)
+ SYSMESSAGE You choose not to go to any city.
+ REF1.REMOVE
+ELSE
+ SYSMESSAGE Please choose your destination.
+ CAN |= mt_nonmover
+ SDIALOG d_helppage_stuck
+ENDIF
+
+ON=3
+SDIALOG d_gmpage_prompt
+
+ON=4
+SYSMESSAGE @035 Removed help request.
+IF (<SERV.GMPAGES>)
+ FOR 0 <eval <SERV.GMPAGES>-1>
+  IF !STRCMP("<SERV.GMPAGE.<LOCAL._FOR>.ACCOUNT>","<ACCOUNT>")
+   GMPageDelete <LOCAL._FOR>
+   return 1
+  ENDIF
+ ENDFOR
+ENDIF
+
+
+[DIALOG d_helppage_stuck]
+150,50
+nomove
+noclose
+nodispose
+
+resizepic 0 0 2600 270 320
+dhtmlgump 50 20 250 35 0 0 Choose a town:
+FOR 1 6
+ ARGS=<DEF.HelpPage.Teleport.<dLOCAL._FOR>>
+ button 50 <eval 20+(<LOCAL._FOR>*35)> 208 209 1 0 <LOCAL._FOR>
+ dhtmlgump 75 <eval 20+(<LOCAL._FOR>*35)> 145 20 0 0 <SERV.MAP(<dARGV[0]>,<dARGV[1]>,<dARGV[3]>).REGION.NAME>
+ENDFOR
+button 55 263 4005 4007 1 0 0
+dhtmlgump 90 265 200 20 0 0 CANCEL
+
+[DIALOG d_helppage_stuck BUTTON]
+ON=0
+SYSMESSAGE You choose not to go to any city.
+CAN &= ~mt_nonmover
+
+ON=1 6
+IF (<HOUSEDESIGN>) || (<STONE>) || (<ACCOUNT.JAIL>)
+ CAN &= ~mt_nonmover
+ return 1
+ENDIF
+SYSMESSAGE You will be teleported within the next two minutes.
+SERV.NEWITEM i_memory_helppage_stuck
+NEW.MOREP=<DEF.HelpPage.Teleport.<ARGN>>
+NEW.TIMER=<eval 10+<R110>>
+NEW.EQUIP
+
+[DEFNAME HelpPageTeleports]
+HelpPage.Teleport.1	1519,1619,10	//Britain
+HelpPage.Teleport.2	1993,2827	//Trinsic
+HelpPage.Teleport.3	2910,727	//Vesper
+HelpPage.Teleport.4	2433,541	//Minoc
+HelpPage.Teleport.5	536,979		//Yew
+HelpPage.Teleport.6	2247,1194	//Cove
+
+[ITEMDEF i_memory_helppage_stuck]
+ID=i_memory
+NAME=HelpPage stuck teleport
+TYPE=t_eq_script
+ON=@Equip
+ SRC.CAN |= mt_nonmover
+ON=@Unequip
+ SRC.CAN &= ~mt_nonmover
+ON=@Timer
+ CONT.GO <MOREP>
+ REMOVE
+ return 1
+
+
+[DIALOG d_gmpage_prompt]
+50,50
+
+resizepic 0 0 2600 540 350
+dhtmlgump 214 30 150 20 0 0 Enter Description
+dhtmlgump 70 58 400 40 0 0 Please enter a brief description (up to 240 characters) of your problem:
+resizepic 50 98 3500 440 200
+dtextentrylimited 70 118 400 200 0 0 240
+button 125 305 2076 2075 1 0 1
+button 355 305 2073 2072 1 0 0
+
+[DIALOG d_gmpage_prompt BUTTON]
+ON=0
+SYSMESSAGE @035 Help request aborted.
+
+ON=1
+GMPAGE ADD <ARGTXT[0]>
+
+
+[FUNCTION Page]
+SDIALOG d_gmpage_queue
+
+
+[DIALOG d_gmpage_queue]
+50,25
+
+page 0
+resizepic 0 0 2600 540 410
+dhtmlgump 90 25 360 20 0 0 <DEF.CENTER><DEF.U>GM Page Menu<DEF.UE><DEF.CENTERE>
+
+page 1
+LOCAL.Max=<SERV.GMPAGES>
+IF (<LOCAL.Max> > 30)	// dialog can't be too huge or client will crash
+ LOCAL.Max=30
+ENDIF
+IF (<LOCAL.Max>)
+ LOCAL.Page=1
+ FOR 0 <eval <LOCAL.Max>-1>
+  IF (<LOCAL._FOR> > 0) && !(<eval <LOCAL._FOR>%5>)
+   LOCAL.Page ++
+   button 300 373 5540 5541 0 <LOCAL.Page> 0
+   page <LOCAL.Page>
+   button 220 373 5537 5538 0 <eval <LOCAL.Page>-1> 0
+  ENDIF
+  REF1=<SERV.GMPAGE.<LOCAL._FOR>.CHARUID>
+  button 30 <eval 50+((<LOCAL._FOR>%5)*65)> 5540 5541 1 0 <eval <LOCAL._FOR>+1>
+  dhtmlgump 60 <eval 50+((<LOCAL._FOR>%5)*65)> 450 60 1 1 <DEF.U><REF1.NAME><DEF.UE> <QVAL (<REF1.ISONLINE>)? <DEF.BFONT_DGREEN>(online):<DEF.BFONT_DRED>(offline)><DEF.BFONT_BLACK>: <SERV.GMPAGE.<LOCAL._FOR>.REASON>
+ ENDFOR
+ELSE
+ dhtmlgump 60 50 450 20 0 0 GM page queue is empty
+ENDIF
+
+[DIALOG d_gmpage_queue BUTTON]
+ON=1 50
+REF1=<SERV.GMPAGE.<eval <ARGN>-1>.CHARUID>
+IF (<REF1>)
+ SRC.CTAG.Dialog.GMPage.Selected=<eval <ARGN>-1>
+ REF1.DIALOG d_gmpage_info
+ENDIF
+
+
+[DIALOG d_gmpage_info]
+50,25
+
+resizepic 0 0 2600 540 410
+dhtmlgump 90 25 360 20 0 0 <DEF.CENTER><DEF.U>GM Page Menu<DEF.UE><DEF.CENTERE>
+
+dtext 65 50 0 Sent:
+dtext 160 50 0 <FormatMinutes <eval <SERV.GMPAGE.<SRC.CTAG0.Dialog.GMPage.Selected>.TIME>/60>> ago
+
+button 30 70 4005 4007 1 0 1
+dtext 65 70 0 Player:
+dtext 160 70 0 <NAME> (<QVAL (<ISONLINE>)? online:offline>)
+
+ARGS=<SERV.GMPAGE.<SRC.CTAG0.Dialog.GMPage.Selected>.P>
+button 30 90 4005 4007 1 0 2
+dtext 65 90 0 Location:
+dtext 160 90 0 <ARGS> (<SERV.MAP(<ARGV0>,<ARGV1>,<ARGV3>).REGION.REGION.NAME>)
+
+REF1=<SERV.GMPAGE.<SRC.CTAG0.Dialog.GMPage.Selected>.HANDLED>
+button 30 110 <QVAL ((<REF1>) && (<REF1> != <SRC>))? 4020 4022 0 0 0 : <QVAL (<REF1>)? 4002 4004 1 0 3 : 4008 4010 1 0 3>>
+dtext 65 110 0 Handler:
+dtext 160 110 0 <QVAL (<REF1>)? <REF1.NAME>:---->
+
+button 30 130 <QVAL ((<REF1>) && (<REF1> != <SRC>))? 4020 4022 0 0 0 : 4017 4019 1 0 4>
+dtext 65 130 0 Delete
+
+dtext 65 150 0 Message:
+dhtmlgump 160 150 350 100 1 1 <SERV.GMPAGE.<SRC.CTAG0.Dialog.GMPage.Selected>.REASON>
+
+dtext 65 255 0 Response:
+resizepic 160 255 3000 335 100
+dtextentry 165 260 320 90 0 0 <SRC.CTAG.Dialog.GMPage.Response>
+SRC.CTAG.Dialog.GMPage.Response=
+
+button 247 373 <QVAL ((<REF1>) && (<REF1> != <SRC>))? 2074 2074 0 0 0 : 2076 2075 1 0 5>
+
+[DIALOG d_gmpage_info BUTTON]
+ON=0
+SRC.SDIALOG d_gmpage_queue <eval 1+(<SRC.CTAG.Dialog.GMPage.Selected>/5)>
+SRC.CTAG.Dialog.GMPage.Selected=
+
+ON=1
+SRC.GO <P>
+SRC.CTAG.Dialog.GMPage.Response="<ARGTXT[0]>"
+SDIALOG d_gmpage_info
+
+ON=2
+SRC.GO <SERV.GMPAGE.<SRC.CTAG0.Dialog.GMPage.Selected>.P>
+SRC.CTAG.Dialog.GMPage.Response="<ARGTXT[0]>"
+SDIALOG d_gmpage_info
+
+ON=3
+REF1=<SERV.GMPAGE.<SRC.CTAG0.Dialog.GMPage.Selected>.HANDLED>
+IF (<REF1> == <SRC>)
+ SERV.GMPAGE.<SRC.CTAG0.Dialog.GMPage.Selected>.HANDLED 0
+ELIF (<SRC.GMPAGEP>)
+ SRC.SYSMESSAGE @035 You are already handling another GM page.
+ELIF !(<REF1>)
+ SERV.GMPAGE.<SRC.CTAG0.Dialog.GMPage.Selected>.HANDLED <SRC>
+ENDIF
+SRC.CTAG.Dialog.GMPage.Response="<ARGTXT[0]>"
+SDIALOG d_gmpage_info
+
+ON=4
+REF1=<SERV.GMPAGE.<SRC.CTAG0.Dialog.GMPage.Selected>.HANDLED>
+IF (<REF1>) && (<REF1> != <SRC>)
+ SRC.CTAG.Dialog.GMPage.Response="<ARGTXT[0]>"
+ SDIALOG d_gmpage_info
+ return 1
+ENDIF
+SRC.GMPageDelete <SRC.CTAG0.Dialog.GMPage.Selected>
+SRC.SDIALOG d_gmpage_queue
+
+ON=5
+REF1=<SERV.GMPAGE.<SRC.CTAG0.Dialog.GMPage.Selected>.HANDLED>
+IF (<REF1>) && (<REF1> != <SRC>)
+ SRC.CTAG.Dialog.GMPage.Response="<ARGTXT[0]>"
+ SDIALOG d_gmpage_info
+ return 1
+ENDIF
+ACCOUNT.TAG.GMPage.Response="<ARGTXT[0]>"
+IF (<ISONLINE>)
+ TRYSRC <UID> DIALOGCLOSE d_gmpage_response
+ TRYSRC <UID> SDIALOG d_gmpage_response
+ENDIF
+SRC.GMPageDelete <SRC.CTAG0.Dialog.GMPage.Selected>
+SRC.SDIALOG d_gmpage_queue
+
+[FUNCTION GMPageDelete]
+SERV.GMPAGE.<ARGS>.DELETE
+CTAG.Dialog.GMPage.Selected=
+IF (<SERV.CLIENTS>)
+ FOR 0 <eval <SERV.CLIENTS>-1>
+  REF1=<SERV.CLIENT.<LOCAL._FOR>.UID>
+  IF (<REF1>)
+   IF !(<isempty <REF1.CTAG.Dialog.GMPage.Selected>>)
+    IF (<REF1.CTAG0.Dialog.GMPage.Selected> > <ARGS>)
+     REF1.CTAG0.Dialog.GMPage.Selected --
+    ELIF (<REF1.CTAG0.Dialog.GMPage.Selected> == <ARGS>)
+     REF1.SYSMESSAGE @035 GM page cleared from queue
+     REF1.CTAG.Dialog.GMPage.Selected=
+     REF1.SDIALOG d_gmpage_queue
+    ENDIF
+   ELIF (<REF1.ISDIALOGOPEN.d_gmpage_queue>)
+    REF1.DIALOGCLOSE d_gmpage_queue
+    REF1.SDIALOG d_gmpage_queue
+   ENDIF
+  ENDIF
+ ENDFOR
+ENDIF
+
+
+[DIALOG d_gmpage_response]
+0,0
+noclose
+nodispose
+
+page 1
+button 23 40 2117 2118 0 2 0
+dtext 0 50 43 Message 
+
+page 2
+resizepic 50 25 2600 540 430
+dhtmlgump 140 50 360 20 0 0 <DEF.CENTER><DEF.U>Ultima Online Help Response<DEF.UE><DEF.CENTERE>
+dhtmlgump 80 90 480 290 1 1 GM tells <NAME>: <ACCOUNT.TAG.GMPage.Response>
+dhtmlgump 80 390 480 20 0 0 Clicking the OKAY button will remove the response you have received.
+button 400 417 2076 2075 1 0 1
+button 475 417 2073 2072 0 1 0
+
+[DIALOG d_gmpage_response BUTTON]
+ON=1
+ACCOUNT.TAG.GMPage.Response=
+
+
+[DIALOG d_pet_release]
+50,50
+
+resizepic 0 0 5054 270 120
+IF (<FLAGS> & statf_dead)
+ dhtmlgump 10 10 250 75 1 0 <DEF.CENTER>Releasing a ghost pet will destroy it, with no chance of recovery.  Do you wish to continue?<DEF.CENTERE>
+ button 20 90 4005 4007 1 0 1
+ dhtmlgump 55 90 75 20 0 0 OKAY
+ button 135 90 4005 4007 1 0 0
+ dhtmlgump 170 90 75 20 0 0 CANCEL
+ELSE
+ resizepic 10 10 3000 250 100
+ dhtmlgump 20 15 230 60 1 1 Are you sure you want to release your pet? Summoned Pets will vanish permanently!
+ button 20 80 4005 4007 1 0 1
+ dhtmlgump 55 80 75 20 0 0 OKAY
+ button 135 80 4005 4007 1 0 0
+ dhtmlgump 170 80 75 20 0 0 CANCEL
+ENDIF
+
+[DIALOG d_pet_release BUTTON]
+ON=1
+IF !(<SRC.CANSEELOS <UID>>) || !(<ISMYPET>)
+ return 1
+ENDIF
+RELEASE
+
+
+[DIALOG d_body_sculptor]
+50,50
+
+resizepic 50 10 2600 450 125
+dhtmlgump 100 40 350 20 0 0 Choose your body modification:
+
+button 100 75 4005 4007 1 0 1
+dhtmlgump 140 75 300 20 0 0 New face style
+
+[DIALOG d_body_sculptor BUTTON]
+ON=1
+IF !(<SRC.CANSEELOS <UID>>)
+ return 1
+ENDIF
+SRC.CHANGEFACE
+
+
+[DIALOG d_hairstylist]
+50,50
+
+ARGS=<QVAL ((<SRC.f_ishuman>) && !(<SRC.f_isfemale>))? "1,2,3,4,5,6,7,8" : "1,3,4">
+LOCAL.Entries=<ARGS>
+
+resizepic 50 10 2600 450 <eval 100+(<ARGV>*25)>
+dhtmlgump 100 40 350 20 0 0 Choose your hairstyle change:
+FOR <ARGV>
+ ARGS=<DEF.HairStylist.Menu.<dSTRARG <LOCAL.Entries>>>
+ button 100 <eval 75+((<LOCAL._FOR>-1)*25)> 4005 4007 1 0 <dSTRARG <LOCAL.Entries>>
+ dhtmlgump 140 <eval 75+((<LOCAL._FOR>-1)*25)> 300 20 0 0 <ARGV[0]> (<ARGV[1]> gold)
+ LOCAL.Entries=<STREAT <LOCAL.Entries>>
+ENDFOR
+
+[DIALOG d_hairstylist BUTTON]
+ON=1 8
+IF !(<SRC.CANSEELOS <UID>>)
+ return 1
+ELIF !((<SRC.f_ishuman>) && !(<SRC.f_isfemale>)) && !((<ARGN>==1) || (<ARGN>==3) || (<ARGN>==4))
+ return 1
+ENDIF
+SRC.CTAG.Hairstylist.Dye.Palette=<QVAL ((<ARGN>==4) || (<ARGN>==7) || (<ARGN>==8))? "Bright" : "Normal">
+ARGS=<DEF.HairStylist.Menu.<ARGN>>
+SRC.CTAG.Hairstylist.Price=<ARGV[1]>
+SRC.CTAG.Hairstylist.Dye.Hair=<ARGV[3]>
+SRC.CTAG.Hairstylist.Dye.Beard=<ARGV[4]>
+SDIALOG <ARGV[2]>
+
+[DEFNAME HairStylistMenu]
+HairStylist.Menu.1		New Hair,		50000,	d_hair_style
+HairStylist.Menu.2		New Beard,		50000,	d_beard_style
+HairStylist.Menu.3		Normal Hair Dye,	50,	d_hair_dye, 1, 1
+HairStylist.Menu.4		Bright Hair Dye,	500000,	d_hair_dye, 1, 1
+HairStylist.Menu.5		Hair Only Dye,		30000,	d_hair_dye, 1, 0
+HairStylist.Menu.6		Beard Only Dye,		30000,	d_hair_dye, 0, 1
+HairStylist.Menu.7		Bright Hair Only Dye,	500000,	d_hair_dye, 1, 0
+HairStylist.Menu.8		Bright Beard Only Dye,	500000,	d_hair_dye, 0, 1
+
+
+[DIALOG d_hair_style]
+50,50
+
+resizepic 0 0 2600 450 350
+dhtmlgump 50 15 350 20 0 0 <DEF.CENTER>New Hairstyle<DEF.CENTERE>
+button 45 290 4005 4007 1 0 1
+dhtmlgump 77 290 300 20 0 0 OK
+button 270 290 4005 4007 1 0 0
+dhtmlgump 302 290 300 20 0 0 Cancel
+
+LOCAL.Race=<QVAL (<SRC.f_iself>)? "Elf" : "Human">
+LOCAL.Gender=<QVAL (<SRC.f_isfemale>)? "Female" : "Male">
+FOR 9
+ LOCAL.X=<eval ((<LOCAL._FOR>-1)%3)*123>
+ LOCAL.Y=<eval ((<LOCAL._FOR>-1)/3)*65>
+ ARGS=<DEF.Hair.Style.<LOCAL.Race>.<dLOCAL._FOR>.<LOCAL.Gender>>
+ IF !(<isempty <ARGS>>)
+  radio <eval 40+<LOCAL.X>> <eval 70+<LOCAL.Y>> 208 209 0 <LOCAL._FOR>
+  resizepic <eval 87+<LOCAL.X>> <eval 50+<LOCAL.Y>> 2620 50 50
+  gumppic <eval 87+<LOCAL.X>+<ARGV[2]>> <eval 50+<LOCAL.Y>+<ARGV[3]>> <ARGV[1]>
+ ENDIF
+ENDFOR
+radio 40 240 208 209 0 10
+dhtmlgump 85 240 180 35 0 0 Bald (You will lose your hair color.)
+
+[DIALOG d_hair_style BUTTON]
+ON=1 10
+IF !(<SRC.CANSEELOS <UID>>)
+ return 1
+ELIF !(<SRC.ISGM>)
+ IF (<SRC.GOLD> < <SRC.CTAG0.Hairstylist.Price>)
+  SAY You cannot afford my services for that style.
+  return 1
+ ENDIF
+ SRC.GOLD -= <SRC.CTAG0.Hairstylist.Price>
+ SRC.SYSMESSAGE <dSRC.CTAG0.Hairstylist.Price> gold has been removed from your bank box.
+ENDIF
+
+LOCAL.Race=<QVAL (<SRC.f_iself>)? "Elf" : "Human">
+LOCAL.Gender=<QVAL (<SRC.f_isfemale>)? "Female" : "Male">
+ARGS=<DEF.Hair.Style.<LOCAL.Race>.<ARGCHKID>.<LOCAL.Gender>>
+REF1=<SRC.FINDLAYER.layer_hair>
+IF (<REF1>)
+ LOCAL.Color=<REF1.COLOR>
+ REF1.REMOVE
+ENDIF
+IF !(<isempty <ARGV[0]>>)
+ SERV.NEWITEM <ARGV[0]>
+ NEW.COLOR=<LOCAL.Color>
+ NEW.EQUIP <SRC>
+ENDIF
+
+[DEFNAME HairStyles]
+Hair.Style.Human.1.Male		i_hair_short,		0c60c,	-67,	-40
+Hair.Style.Human.1.Female	i_hair_short,		0ed1c,	-67,	-40
+Hair.Style.Human.2.Male		i_hair_pageboy,		0ed26,	-67,	-42
+Hair.Style.Human.2.Female	i_hair_pageboy,		0ed26,	-67,	-42
+Hair.Style.Human.3.Male		i_hair_mohawk,		0c60f,	-67,	-35
+Hair.Style.Human.3.Female	i_hair_mohawk,		0ed27,	-67,	-35
+Hair.Style.Human.4.Male		i_hair_long,		0c60d,	-67,	-50
+Hair.Style.Human.4.Female	i_hair_long,		0ed1d,	-67,	-50
+Hair.Style.Human.5.Male		i_hair_curly,		0c618,	-67,	-40
+Hair.Style.Human.5.Female	i_hair_curly,		0ed25,	-67,	-40
+Hair.Style.Human.6.Male		i_hair_topknot,		0ed29,	-63,	-40
+Hair.Style.Human.6.Female	i_hair_topknot,		0ed29,	-63,	-40
+Hair.Style.Human.7.Male		i_hair_ponytail,	0c60e,	-67,	-50
+Hair.Style.Human.7.Female	i_hair_ponytail,	0ed1e,	-67,	-50
+Hair.Style.Human.8.Male		i_hair_2_pigtails,	0c612,	-67,	-50
+Hair.Style.Human.8.Female	i_hair_2_pigtails,	0ede6,	-67,	-50
+Hair.Style.Human.9.Male		i_hair_receding,	0ede5,	-68,	-40
+Hair.Style.Human.9.Female	i_hair_buns,		0ed28,	-68,	-40
+
+Hair.Style.Elf.1.Male		i_hair_long_feather,	0c6e5,	-67,	-42
+Hair.Style.Elf.1.Female		i_hair_long_feather,	0edf5,	-65,	-42
+Hair.Style.Elf.2.Male		i_hair_short1,		0c6e6,	-67,	-40
+Hair.Style.Elf.2.Female		i_hair_short1,		0edf6,	-67,	-42
+Hair.Style.Elf.3.Male		i_hair_elven_mullet,	0c6e7,	-67,	-42
+Hair.Style.Elf.3.Female		i_hair_elven_mullet,	0edf7,	-67,	-45
+Hair.Style.Elf.4.Male		i_hair_elven_topknot,	0c6cc,	-67,	-40
+Hair.Style.Elf.4.Female		i_hair_elven_topknot,	0eddc,	-67,	-42
+Hair.Style.Elf.5.Male		i_hair_elven_braid,	0c6cd,	-67,	-42
+Hair.Style.Elf.5.Female		i_hair_elven_braid,	0eddd,	-67,	-45
+Hair.Style.Elf.6.Male		i_hair_elven_spike,	0c6cf,	-67,	-40
+Hair.Style.Elf.6.Female		i_hair_elven_spike,	0eddf,	-65,	-40
+Hair.Style.Elf.7.Male		i_hair_elven_ml,	0c6e4,	-67,	-42
+Hair.Style.Elf.7.Female		i_hair_elven_flower,	0edda,	-65,	-45
+Hair.Style.Elf.8.Male		i_hair_elven_long,	0c6cb,	-67,	-45
+Hair.Style.Elf.8.Female		i_hair_elven_buns,	0edde,	-65,	-45
+
+
+[DIALOG d_beard_style]
+50,50
+
+resizepic 0 0 2600 310 390
+dhtmlgump 55 15 200 20 0 0 <DEF.CENTER>New Beard<DEF.CENTERE>
+button 45 340 4005 4007 1 0 1
+dhtmlgump 77 340 300 20 0 0 OK
+button 170 340 4005 4007 1 0 0
+dhtmlgump 202 340 300 20 0 0 Cancel
+
+FOR 8
+ LOCAL.X=<eval ((<LOCAL._FOR>-1)%2)*123>
+ LOCAL.Y=<eval ((<LOCAL._FOR>-1)/2)*70>
+ ARGS=<DEF.Beard.Style.Human.<dLOCAL._FOR>>
+ radio <eval 40+<LOCAL.X>> <eval 90+<LOCAL.Y>> 208 209 0 <LOCAL._FOR>
+ IF !(<isempty <ARGS>>)
+  resizepic <eval 87+<LOCAL.X>> <eval 70+<LOCAL.Y>> 2620 50 50
+  gumppic <eval 87+<LOCAL.X>+<ARGV[2]>> <eval 70+<LOCAL.Y>+<ARGV[3]>> <ARGV[1]>
+ ENDIF
+ENDFOR
+
+[DIALOG d_beard_style BUTTON]
+ON=1 8
+IF !(<SRC.CANSEELOS <UID>>)
+ return 1
+ELIF !(<SRC.ISGM>)
+ IF (<SRC.GOLD> < <SRC.CTAG0.Hairstylist.Price>)
+  SAY You cannot afford my services for that style.
+  return 1
+ ENDIF
+ SRC.GOLD -= <SRC.CTAG0.Hairstylist.Price>
+ SRC.SYSMESSAGE <dSRC.CTAG0.Hairstylist.Price> gold has been removed from your bank box.
+ENDIF
+
+ARGS=<DEF.Beard.Style.Human.<ARGCHKID>>
+REF1=<SRC.FINDLAYER.layer_beard>
+IF (<REF1>)
+ LOCAL.Color=<REF1.COLOR>
+ REF1.REMOVE
+ENDIF
+IF !(<isempty <ARGV[0]>>)
+ SERV.NEWITEM <ARGV[0]>
+ NEW.COLOR=<LOCAL.Color>
+ NEW.EQUIP <SRC>
+ENDIF
+
+[DEFNAME BeardStyles]
+Beard.Style.Human.1		i_beard_goatee,		0c670,	-67,	-50
+Beard.Style.Human.2		i_beard_short_med,	0c6d8,	-67,	-47
+Beard.Style.Human.3		i_beard_vandyke,	0c6da,	-67,	-50
+Beard.Style.Human.4		i_beard_long,		0c671,	-67,	-55
+Beard.Style.Human.5		i_beard_short,		0c672,	-67,	-47
+Beard.Style.Human.6		i_beard_long_med,	0c6d9,	-67,	-55
+Beard.Style.Human.7		i_beard_mustache,	0c678,	-67,	-48
+
+
+[DIALOG d_hair_dye]
+50,50
+
+page 0
+resizepic 100 10 2600 350 355
+resizepic 120 54 5100 110 270
+dhtmlgump 70 25 400 35 0 0 <DEF.CENTER>Hair Color Selection Menu<DEF.CENTERE>
+button 149 328 4005 4007 1 0 1
+dhtmlgump 185 329 250 35 0 0 Dye my hair this color!
+
+WHILE !(<isempty <DEF.Hair.Dye.<SRC.CTAG0.Hairstylist.Dye.Palette>.<eval <LOCAL._WHILE>+1>>>)
+ ARGS=<DEF.Hair.Dye.<SRC.CTAG0.Hairstylist.Dye.Palette>.<eval <LOCAL._WHILE>+1>>
+ dtext 130 <eval 59+(<LOCAL._WHILE>*22)> <eval <ARGV0>-1> *****
+ button 207 <eval 60+(<LOCAL._WHILE>*22)> 5224 5224 0 <eval <LOCAL._WHILE>+1> 0
+ENDWHILE
+
+WHILE !(<isempty <DEF.Hair.Dye.<SRC.CTAG0.Hairstylist.Dye.Palette>.<eval <LOCAL._WHILE>+1>>>)
+ ARGS=<DEF.Hair.Dye.<SRC.CTAG0.Hairstylist.Dye.Palette>.<eval <LOCAL._WHILE>+1>>
+ page <eval <LOCAL._WHILE>+1>
+ LOCAL.N=0
+ FOR <ARGV0> <ARGV1>
+  dtext <eval 278+((<LOCAL.N>/16)*80)> <eval 52+((<LOCAL.N>%16)*17)> <eval <LOCAL._FOR>-1> *****
+  radio <eval 260+((<LOCAL.N>/16)*80)> <eval 52+((<LOCAL.N>%16)*17)> 210 211 0 <LOCAL._FOR>
+  LOCAL.N ++
+ ENDFOR
+ENDWHILE
+
+[DIALOG d_hair_dye BUTTON]
+ON=1 2500
+IF !(<SRC.CANSEELOS <UID>>)
+ return 1
+ELIF !(<SRC.ISGM>)
+ IF (<SRC.GOLD> < <SRC.CTAG0.Hairstylist.Price>)
+  SAY You cannot afford my services for that style.
+  return 1
+ ENDIF
+ SRC.GOLD -= <SRC.CTAG0.Hairstylist.Price>
+ SRC.SYSMESSAGE <dSRC.CTAG0.Hairstylist.Price> gold has been removed from your bank box.
+ENDIF
+
+WHILE !(<isempty <DEF.Hair.Dye.<SRC.CTAG0.Hairstylist.Dye.Palette>.<eval <LOCAL._WHILE>+1>>>)
+ ARGS=<DEF.Hair.Dye.<SRC.CTAG0.Hairstylist.Dye.Palette>.<eval <LOCAL._WHILE>+1>>
+ IF (<ARGCHKID> >= <ARGV0>) && (<ARGCHKID> <= <ARGV1>)
+  IF (<SRC.CTAG0.Hairstylist.Dye.Hair>)
+   SRC.FINDLAYER.layer_hair.COLOR=<ARGCHKID>
+  ENDIF
+  IF (<SRC.CTAG0.Hairstylist.Dye.Beard>)
+   SRC.FINDLAYER.layer_beard.COLOR=<ARGCHKID>
+  ENDIF
+  return 1
+ ENDIF
+ENDWHILE
+
+[DEFNAME HairDyes]
+Hair.Dye.Normal.1		1602, 1627	//Brown
+Hair.Dye.Normal.2		1628, 1654	//Chestnut
+Hair.Dye.Normal.3		1502, 1533	//Auburn
+Hair.Dye.Normal.4		1302, 1333	//Blue
+Hair.Dye.Normal.5		1402, 1433	//Green
+Hair.Dye.Normal.6		1202, 1225	//Red
+Hair.Dye.Normal.7		2402, 2430	//Light
+Hair.Dye.Normal.8		2213, 2218	//Blonde
+Hair.Dye.Normal.9		1102, 1109	//Black
+Hair.Dye.Normal.10		1110, 1117	//Beige
+Hair.Dye.Normal.11		1118, 1133	//Golden
+Hair.Dye.Normal.12		1134, 1149	//Dark Brown
+
+Hair.Dye.Bright.1		12, 21		//Purple
+Hair.Dye.Bright.2		32, 36		//Red
+Hair.Dye.Bright.3		38, 45		//Orange
+Hair.Dye.Bright.4		54, 56		//Yellow
+Hair.Dye.Bright.5		62, 71		//Green
+Hair.Dye.Bright.6		81, 82		//Light Green
+Hair.Dye.Bright.7		89, 90		//Blue
+Hair.Dye.Bright.8		1153, 1154	//White
+
+[EOF]

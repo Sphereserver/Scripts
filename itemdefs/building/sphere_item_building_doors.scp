@@ -1,0 +1,2822 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2020
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Sunday, Apr 20, 2020
+//
+VERSION=0.56d
+
+
+[COMMENT sphere_item_building_doors]
+Doors should have a direction towards which they open.
+Pre-SE doors have their item ID following the same sequence so they can get open/close ID
+automatically using an simple formula. But SE+ doors doesn't follow the same sequence, so
+their open/close ID must be set on scripts.
+
+
+[ITEMDEF 0e8]
+DEFNAME=i_door_secret_stone_1
+TYPE=t_door
+CATEGORY=Buildings - Doors
+SUBSECTION=Secret Door (blue stone dungeon)
+DESCRIPTION=@ (closed)
+DUPELIST=0ea,0ec,0ee,0f0,0f2,0f4,0f6
+
+[ITEMDEF 0e9]
+DEFNAME=i_door_secret_stone_1_o
+TYPE=t_door_open
+CATEGORY=Buildings - Doors
+SUBSECTION=Secret Door (blue stone dungeon)
+DESCRIPTION=@ (opened)
+DUPELIST=0eb,0ed,0ef,0f1,0f3,0f5,0f7
+
+[ITEMDEF 0ea]
+//Secret Door (blue stone dungeon)
+DUPEITEM=0e8
+
+[ITEMDEF 0eb]
+//Secret Door (blue stone dungeon)
+DUPEITEM=0e9
+
+[ITEMDEF 0ec]
+//Secret Door (blue stone dungeon)
+DUPEITEM=0e8
+
+[ITEMDEF 0ed]
+//Secret Door (blue stone dungeon)
+DUPEITEM=0e9
+
+[ITEMDEF 0ee]
+//Secret Door (blue stone dungeon)
+DUPEITEM=0e8
+
+[ITEMDEF 0ef]
+//Secret Door (blue stone dungeon)
+DUPEITEM=0e9
+
+[ITEMDEF 0f0]
+//Secret Door (blue stone dungeon)
+DUPEITEM=0e8
+
+[ITEMDEF 0f1]
+//Secret Door (blue stone dungeon)
+DUPEITEM=0e9
+
+[ITEMDEF 0f2]
+//Secret Door (blue stone dungeon)
+DUPEITEM=0e8
+
+[ITEMDEF 0f3]
+//Secret Door (blue stone dungeon)
+DUPEITEM=0e9
+
+[ITEMDEF 0f4]
+//Secret Door (blue stone dungeon)
+DUPEITEM=0e8
+
+[ITEMDEF 0f5]
+//Secret Door (blue stone dungeon)
+DUPEITEM=0e9
+
+[ITEMDEF 0f6]
+//Secret Door (blue stone dungeon)
+DUPEITEM=0e8
+
+[ITEMDEF 0f7]
+//Secret Door (blue stone dungeon)
+DUPEITEM=0e9
+
+
+[ITEMDEF 022c]
+//tent door (static)
+
+[ITEMDEF 022d]
+//tent door (static)
+
+[ITEMDEF 022e]
+//tent door (static)
+
+[ITEMDEF 022f]
+//tent door (static)
+
+
+[ITEMDEF 0314]
+DEFNAME=i_door_secret_stone_2
+TYPE=t_door
+CATEGORY=Buildings - Doors
+SUBSECTION=Secret Door (brick dungeon)
+DESCRIPTION=@ (closed)
+DUPELIST=0316,0318,031a,031c,031e,0320,0322
+
+[ITEMDEF 0315]
+DEFNAME=i_door_secret_stone_2_o
+TYPE=t_door_open
+CATEGORY=Buildings - Doors
+SUBSECTION=Secret Door (brick dungeon)
+DESCRIPTION=@ (opened)
+DUPELIST=0317,0319,031b,031d,031f,0321,0323
+
+[ITEMDEF 0316]
+//Secret Door (brick dungeon)
+DUPEITEM=0314
+
+[ITEMDEF 0317]
+//Secret Door (brick dungeon)
+DUPEITEM=0315
+
+[ITEMDEF 0318]
+//Secret Door (brick dungeon)
+DUPEITEM=0314
+
+[ITEMDEF 0319]
+//Secret Door (brick dungeon)
+DUPEITEM=0315
+
+[ITEMDEF 031a]
+//Secret Door (brick dungeon)
+DUPEITEM=0314
+
+[ITEMDEF 031b]
+//Secret Door (brick dungeon)
+DUPEITEM=0315
+
+[ITEMDEF 031c]
+//Secret Door (brick dungeon)
+DUPEITEM=0314
+
+[ITEMDEF 031d]
+//Secret Door (brick dungeon)
+DUPEITEM=0315
+
+[ITEMDEF 031e]
+//Secret Door (brick dungeon)
+DUPEITEM=0314
+
+[ITEMDEF 031f]
+//Secret Door (brick dungeon)
+DUPEITEM=0315
+
+[ITEMDEF 0320]
+//Secret Door (brick dungeon)
+DUPEITEM=0314
+
+[ITEMDEF 0321]
+//Secret Door (brick dungeon)
+DUPEITEM=0315
+
+[ITEMDEF 0322]
+//Secret Door (brick dungeon)
+DUPEITEM=0314
+
+[ITEMDEF 0323]
+//Secret Door (brick dungeon)
+DUPEITEM=0315
+
+[ITEMDEF 0324]
+DEFNAME=i_door_secret_stone_3
+TYPE=t_door
+CATEGORY=Buildings - Doors
+SUBSECTION=Secret Door (brown stone dungeon)
+DESCRIPTION=@ (closed)
+DUPELIST=0326,0328,032a,032c,032e,0330,0332
+
+[ITEMDEF 0325]
+DEFNAME=i_door_secret_stone_3_o
+TYPE=t_door_open
+CATEGORY=Buildings - Doors
+SUBSECTION=Secret Door (brown stone dungeon)
+DESCRIPTION=@ (opened)
+DUPELIST=0327,0329,032b,032d,032f,0331,0333
+
+[ITEMDEF 0326]
+//Secret Door (brown stone dungeon)
+DUPEITEM=0324
+
+[ITEMDEF 0327]
+//Secret Door (brown stone dungeon)
+DUPEITEM=0325
+
+[ITEMDEF 0328]
+//Secret Door (brown stone dungeon)
+DUPEITEM=0324
+
+[ITEMDEF 0329]
+//Secret Door (brown stone dungeon)
+DUPEITEM=0325
+
+[ITEMDEF 032a]
+//Secret Door (brown stone dungeon)
+DUPEITEM=0324
+
+[ITEMDEF 032b]
+//Secret Door (brown stone dungeon)
+DUPEITEM=0325
+
+[ITEMDEF 032c]
+//Secret Door (brown stone dungeon)
+DUPEITEM=0324
+
+[ITEMDEF 032d]
+//Secret Door (brown stone dungeon)
+DUPEITEM=0325
+
+[ITEMDEF 032e]
+//Secret Door (brown stone dungeon)
+DUPEITEM=0324
+
+[ITEMDEF 032f]
+//Secret Door (brown stone dungeon)
+DUPEITEM=0325
+
+[ITEMDEF 0330]
+//Secret Door (brown stone dungeon)
+DUPEITEM=0324
+
+[ITEMDEF 0331]
+//Secret Door (brown stone dungeon)
+DUPEITEM=0325
+
+[ITEMDEF 0332]
+//Secret Door (brown stone dungeon)
+DUPEITEM=0324
+
+[ITEMDEF 0333]
+//Secret Door (brown stone dungeon)
+DUPEITEM=0325
+
+[ITEMDEF 0334]
+DEFNAME=i_door_secret_wood_1
+TYPE=t_door
+CATEGORY=Buildings - Doors
+SUBSECTION=Secret Door (dark wood)
+DESCRIPTION=@ (closed)
+DUPELIST=0336,0338,033a,033c,033e,0340,0342
+
+[ITEMDEF 0335]
+DEFNAME=i_door_secret_wood_1_o
+TYPE=t_door_open
+CATEGORY=Buildings - Doors
+SUBSECTION=Secret Door (dark wood)
+DESCRIPTION=@ (opened)
+DUPELIST=0337,0339,033b,033d,033f,0341,0343
+
+[ITEMDEF 0336]
+//Secret Door (dark wood)
+DUPEITEM=0334
+
+[ITEMDEF 0337]
+//Secret Door (dark wood)
+DUPEITEM=0335
+
+[ITEMDEF 0338]
+//Secret Door (dark wood)
+DUPEITEM=0334
+
+[ITEMDEF 0339]
+//Secret Door (dark wood)
+DUPEITEM=0335
+
+[ITEMDEF 033a]
+//Secret Door (dark wood)
+DUPEITEM=0334
+
+[ITEMDEF 033b]
+//Secret Door (dark wood)
+DUPEITEM=0335
+
+[ITEMDEF 033c]
+//Secret Door (dark wood)
+DUPEITEM=0334
+
+[ITEMDEF 033d]
+//Secret Door (dark wood)
+DUPEITEM=0335
+
+[ITEMDEF 033e]
+//Secret Door (dark wood)
+DUPEITEM=0334
+
+[ITEMDEF 033f]
+//Secret Door (dark wood)
+DUPEITEM=0335
+
+[ITEMDEF 0340]
+//Secret Door (dark wood)
+DUPEITEM=0334
+
+[ITEMDEF 0341]
+//Secret Door (dark wood)
+DUPEITEM=0335
+
+[ITEMDEF 0342]
+//Secret Door (dark wood)
+DUPEITEM=0334
+
+[ITEMDEF 0343]
+//Secret Door (dark wood)
+DUPEITEM=0335
+
+[ITEMDEF 0344]
+DEFNAME=i_door_secret_wood_2
+TYPE=t_door
+CATEGORY=Buildings - Doors
+SUBSECTION=Secret Door (light wood)
+DESCRIPTION=@ (closed)
+DUPELIST=0346,0348,034a,034c,034e,0350,0352
+
+[ITEMDEF 0345]
+DEFNAME=i_door_secret_wood_2_o
+TYPE=t_door_open
+CATEGORY=Buildings - Doors
+SUBSECTION=Secret Door (light wood)
+DESCRIPTION=@ (opened)
+DUPELIST=0347,0349,034b,034d,034f,0351,0353
+
+[ITEMDEF 0346]
+//Secret Door (light wood)
+DUPEITEM=0344
+
+[ITEMDEF 0347]
+//Secret Door (light wood)
+DUPEITEM=0345
+
+[ITEMDEF 0348]
+//Secret Door (light wood)
+DUPEITEM=0344
+
+[ITEMDEF 0349]
+//Secret Door (light wood)
+DUPEITEM=0345
+
+[ITEMDEF 034a]
+//Secret Door (light wood)
+DUPEITEM=0344
+
+[ITEMDEF 034b]
+//Secret Door (light wood)
+DUPEITEM=0345
+
+[ITEMDEF 034c]
+//Secret Door (light wood)
+DUPEITEM=0344
+
+[ITEMDEF 034d]
+//Secret Door (light wood)
+DUPEITEM=0345
+
+[ITEMDEF 034e]
+//Secret Door (light wood)
+DUPEITEM=0344
+
+[ITEMDEF 034f]
+//Secret Door (light wood)
+DUPEITEM=0345
+
+[ITEMDEF 0350]
+//Secret Door (light wood)
+DUPEITEM=0344
+
+[ITEMDEF 0351]
+//Secret Door (light wood)
+DUPEITEM=0345
+
+[ITEMDEF 0352]
+//Secret Door (light wood)
+DUPEITEM=0344
+
+[ITEMDEF 0353]
+//Secret Door (light wood)
+DUPEITEM=0345
+
+[ITEMDEF 0354]
+DEFNAME=i_door_secret_stone_4
+TYPE=t_door
+CATEGORY=Buildings - Doors
+SUBSECTION=Secret Door (gray stone dungeon)
+DESCRIPTION=@ (closed)
+DUPELIST=0356,0358,035a,035c,035e,0360,0362
+
+[ITEMDEF 0355]
+DEFNAME=i_door_secret_stone_4_o
+TYPE=t_door_open
+CATEGORY=Buildings - Doors
+SUBSECTION=Secret Door (gray stone dungeon)
+DESCRIPTION=@ (opened)
+DUPELIST=0357,0359,035b,035d,035f,0361,0363
+
+[ITEMDEF 0356]
+//Secret Door (gray stone dungeon)
+DUPEITEM=0354
+
+[ITEMDEF 0357]
+//Secret Door (gray stone dungeon)
+DUPEITEM=0355
+
+[ITEMDEF 0358]
+//Secret Door (gray stone dungeon)
+DUPEITEM=0354
+
+[ITEMDEF 0359]
+//Secret Door (gray stone dungeon)
+DUPEITEM=0355
+
+[ITEMDEF 035a]
+//Secret Door (gray stone dungeon)
+DUPEITEM=0354
+
+[ITEMDEF 035b]
+//Secret Door (gray stone dungeon)
+DUPEITEM=0355
+
+[ITEMDEF 035c]
+//Secret Door (gray stone dungeon)
+DUPEITEM=0354
+
+[ITEMDEF 035d]
+//Secret Door (gray stone dungeon)
+DUPEITEM=0355
+
+[ITEMDEF 035e]
+//Secret Door (gray stone dungeon)
+DUPEITEM=0354
+
+[ITEMDEF 035f]
+//Secret Door (gray stone dungeon)
+DUPEITEM=0355
+
+[ITEMDEF 0360]
+//Secret Door (gray stone dungeon)
+DUPEITEM=0354
+
+[ITEMDEF 0361]
+//Secret Door (gray stone dungeon)
+DUPEITEM=0355
+
+[ITEMDEF 0362]
+//Secret Door (gray stone dungeon)
+DUPEITEM=0354
+
+[ITEMDEF 0363]
+//Secret Door (gray stone dungeon)
+DUPEITEM=0355
+
+
+[ITEMDEF 0432]
+//curtain
+
+[ITEMDEF 0433]
+//curtain rod
+
+[ITEMDEF 0434]
+//curtain rod
+DUPEITEM=0433
+
+[ITEMDEF 0435]
+//curtain
+
+
+[ITEMDEF 0675]
+DEFNAME=i_door_metal
+TYPE=t_door
+CATEGORY=Buildings - Doors
+SUBSECTION=Metal Door
+DESCRIPTION=@ (closed)
+DUPELIST=0677,0679,067b,067d,067f,0681,0683
+
+[ITEMDEF 0676]
+DEFNAME=i_door_metal_o
+TYPE=t_door_open
+CATEGORY=Buildings - Doors
+SUBSECTION=Metal Door
+DESCRIPTION=@ (opened)
+DUPELIST=0678,067a,067c,067e,0680,0682,0684
+
+[ITEMDEF 0677]
+//Metal Door (closed)
+DUPEITEM=0675
+
+[ITEMDEF 0678]
+//Metal Door (opened)
+DUPEITEM=0676
+
+[ITEMDEF 0679]
+//Metal Door (closed)
+DUPEITEM=0675
+
+[ITEMDEF 067a]
+//Metal Door (opened)
+DUPEITEM=0676
+
+[ITEMDEF 067b]
+//Metal Door (closed)
+DUPEITEM=0675
+
+[ITEMDEF 067c]
+//Metal Door (opened)
+DUPEITEM=0676
+
+[ITEMDEF 067d]
+//Metal Door (closed)
+DUPEITEM=0675
+
+[ITEMDEF 067e]
+//Metal Door (opened)
+DUPEITEM=0676
+
+[ITEMDEF 067f]
+//Metal Door (closed)
+DUPEITEM=0675
+
+[ITEMDEF 0680]
+//Metal Door (opened)
+DUPEITEM=0676
+
+[ITEMDEF 0681]
+//Metal Door (closed)
+DUPEITEM=0675
+
+[ITEMDEF 0682]
+//Metal Door (opened)
+DUPEITEM=0676
+
+[ITEMDEF 0683]
+//Metal Door (closed)
+DUPEITEM=0675
+
+[ITEMDEF 0684]
+//Metal Door (opened)
+DUPEITEM=0676
+
+[ITEMDEF 0685]
+DEFNAME=i_door_metal_bar
+TYPE=t_door
+CATEGORY=Buildings - Doors
+SUBSECTION=Barred Metal Door (tall)
+DESCRIPTION=@ (closed)
+DUPELIST=0687,0689,068b,068d,068f,0691,0693
+
+[ITEMDEF 0686]
+DEFNAME=i_door_metal_bar_o
+TYPE=t_door_open
+CATEGORY=Buildings - Doors
+SUBSECTION=Barred Metal Door (tall)
+DESCRIPTION=@ (opened)
+DUPELIST=0688,068a,068c,068e,0690,0692,0694
+
+[ITEMDEF 0687]
+//Barred Metal Door (tall) (closed)
+DUPEITEM=0685
+
+[ITEMDEF 0688]
+//Barred Metal Door (tall) (opened)
+DUPEITEM=0686
+
+[ITEMDEF 0689]
+//Barred Metal Door (tall) (closed)
+DUPEITEM=0685
+
+[ITEMDEF 068a]
+//Barred Metal Door (tall) (opened)
+DUPEITEM=0686
+
+[ITEMDEF 068b]
+//Barred Metal Door (tall) (closed)
+DUPEITEM=0685
+
+[ITEMDEF 068c]
+//Barred Metal Door (tall) (opened)
+DUPEITEM=0686
+
+[ITEMDEF 068d]
+//Barred Metal Door (tall) (closed)
+DUPEITEM=0685
+
+[ITEMDEF 068e]
+//Barred Metal Door (tall) (opened)
+DUPEITEM=0686
+
+[ITEMDEF 068f]
+//Barred Metal Door (tall) (closed)
+DUPEITEM=0685
+
+[ITEMDEF 0690]
+//Barred Metal Door (tall) (opened)
+DUPEITEM=0686
+
+[ITEMDEF 0691]
+//Barred Metal Door (tall) (closed)
+DUPEITEM=0685
+
+[ITEMDEF 0692]
+//Barred Metal Door (tall) (opened)
+DUPEITEM=0686
+
+[ITEMDEF 0693]
+//Barred Metal Door (tall) (closed)
+DUPEITEM=0685
+
+[ITEMDEF 0694]
+//Barred Metal Door (tall) (opened)
+DUPEITEM=0686
+
+[ITEMDEF 0695]
+DEFNAME=i_door_rattan
+TYPE=t_door
+CATEGORY=Buildings - Doors
+SUBSECTION=Rattan Door
+DESCRIPTION=@ (closed)
+DUPELIST=0697,0699,069b,069d,069f,06a1,06a3
+
+[ITEMDEF 0696]
+DEFNAME=i_door_rattan_o
+TYPE=t_door_open
+CATEGORY=Buildings - Doors
+SUBSECTION=Rattan Door
+DESCRIPTION=@ (opened)
+DUPELIST=0698,069a,069c,069e,06a0,06a2,06a4
+
+[ITEMDEF 0697]
+//Rattan Door (closed)
+DUPEITEM=0695
+
+[ITEMDEF 0698]
+//Rattan Door (opened)
+DUPEITEM=0696
+
+[ITEMDEF 0699]
+//Rattan Door (closed)
+DUPEITEM=0695
+
+[ITEMDEF 069a]
+//Rattan Door (opened)
+DUPEITEM=0696
+
+[ITEMDEF 069b]
+//Rattan Door (closed)
+DUPEITEM=0695
+
+[ITEMDEF 069c]
+//Rattan Door (opened)
+DUPEITEM=0696
+
+[ITEMDEF 069d]
+//Rattan Door (closed)
+DUPEITEM=0695
+
+[ITEMDEF 069e]
+//Rattan Door (opened)
+DUPEITEM=0696
+
+[ITEMDEF 069f]
+//Rattan Door (closed)
+DUPEITEM=0695
+
+[ITEMDEF 06a0]
+//Rattan Door (opened)
+DUPEITEM=0696
+
+[ITEMDEF 06a1]
+//Rattan Door (closed)
+DUPEITEM=0695
+
+[ITEMDEF 06a2]
+//Rattan Door (opened)
+DUPEITEM=0696
+
+[ITEMDEF 06a3]
+//Rattan Door (closed)
+DUPEITEM=0695
+
+[ITEMDEF 06a4]
+//Rattan Door (opened)
+DUPEITEM=0696
+
+[ITEMDEF 06a5]
+DEFNAME=i_door_wood
+TYPE=t_door
+CATEGORY=Buildings - Doors
+SUBSECTION=Wooden Door (dark wood)
+DESCRIPTION=@ (closed)
+DUPELIST=06a7,06a9,06ab,06ad,06af,06b1,06b3
+
+[ITEMDEF 06a6]
+DEFNAME=i_door_wood_o
+TYPE=t_door_open
+CATEGORY=Buildings - Doors
+SUBSECTION=Wooden Door (dark wood)
+DESCRIPTION=@ (opened)
+DUPELIST=06a8,06aa,06ac,06ae,06b0,06b2,06b4
+
+[ITEMDEF 06a7]
+//Wooden Door (dark wood)
+DUPEITEM=06a5
+
+[ITEMDEF 06a8]
+//Wooden Door (dark wood)
+DUPEITEM=06a6
+
+[ITEMDEF 06a9]
+//Wooden Door (dark wood)
+DUPEITEM=06a5
+
+[ITEMDEF 06aa]
+//Wooden Door (dark wood)
+DUPEITEM=06a6
+
+[ITEMDEF 06ab]
+//Wooden Door (dark wood)
+DUPEITEM=06a5
+
+[ITEMDEF 06ac]
+//Wooden Door (dark wood)
+DUPEITEM=06a6
+
+[ITEMDEF 06ad]
+//Wooden Door (dark wood)
+DUPEITEM=06a5
+
+[ITEMDEF 06ae]
+//Wooden Door (dark wood)
+DUPEITEM=06a6
+
+[ITEMDEF 06af]
+//Wooden Door (dark wood)
+DUPEITEM=06a5
+
+[ITEMDEF 06b0]
+//Wooden Door (dark wood)
+DUPEITEM=06a6
+
+[ITEMDEF 06b1]
+//Wooden Door (dark wood)
+DUPEITEM=06a5
+
+[ITEMDEF 06b2]
+//Wooden Door (dark wood)
+DUPEITEM=06a6
+
+[ITEMDEF 06b3]
+//Wooden Door (dark wood)
+DUPEITEM=06a5
+
+[ITEMDEF 06b4]
+//Wooden Door (dark wood)
+DUPEITEM=06a6
+
+[ITEMDEF 06b5]
+DEFNAME=i_door_wood_4
+TYPE=t_door
+CATEGORY=Buildings - Doors
+SUBSECTION=Wooden Door (dark wood tall)
+DESCRIPTION=@ (closed)
+DUPELIST=06b7,06b9,06bb,06bd,06bf,06c1,06c3
+
+[ITEMDEF 06b6]
+DEFNAME=i_door_wood_4_o
+TYPE=t_door_open
+CATEGORY=Buildings - Doors
+SUBSECTION=Wooden Door (dark wood tall)
+DESCRIPTION=@ (opened)
+DUPELIST=06b8,06ba,06bc,06be,06c0,06c2,06c4
+
+[ITEMDEF 06b7]
+//Wooden Door (dark wood tall)
+DUPEITEM=06b5
+
+[ITEMDEF 06b8]
+//Wooden Door (dark wood tall)
+DUPEITEM=06b6
+
+[ITEMDEF 06b9]
+//Wooden Door (dark wood tall)
+DUPEITEM=06b5
+
+[ITEMDEF 06ba]
+//Wooden Door (dark wood tall)
+DUPEITEM=06b6
+
+[ITEMDEF 06bb]
+//Wooden Door (dark wood tall)
+DUPEITEM=06b5
+
+[ITEMDEF 06bc]
+//Wooden Door (dark wood tall)
+DUPEITEM=06b6
+
+[ITEMDEF 06bd]
+//Wooden Door (dark wood tall)
+DUPEITEM=06b5
+
+[ITEMDEF 06be]
+//Wooden Door (dark wood tall)
+DUPEITEM=06b6
+
+[ITEMDEF 06bf]
+//Wooden Door (dark wood tall)
+DUPEITEM=06b5
+
+[ITEMDEF 06c0]
+//Wooden Door (dark wood tall)
+DUPEITEM=06b6
+
+[ITEMDEF 06c1]
+//Wooden Door (dark wood tall)
+DUPEITEM=06b5
+
+[ITEMDEF 06c2]
+//Wooden Door (dark wood tall)
+DUPEITEM=06b6
+
+[ITEMDEF 06c3]
+//Wooden Door (dark wood tall)
+DUPEITEM=06b5
+
+[ITEMDEF 06c4]
+//Wooden Door (dark wood tall)
+DUPEITEM=06b6
+
+[ITEMDEF 06c5]
+DEFNAME=i_door_metal_2
+TYPE=t_door
+CATEGORY=Buildings - Doors
+SUBSECTION=Metal Door (tall)
+DESCRIPTION=@ (closed)
+DUPELIST=06c7,06c9,06cb,06cd,06cf,06d1,06d3
+
+[ITEMDEF 06c6]
+DEFNAME=i_door_metal_2_o
+TYPE=t_door_open
+CATEGORY=Buildings - Doors
+SUBSECTION=Metal Door (tall)
+DESCRIPTION=@ (opened)
+DUPELIST=06c8,06ca,06cc,06ce,06d0,06d2,06d4
+
+[ITEMDEF 06c7]
+//Metal Door (tall)
+DUPEITEM=06c5
+
+[ITEMDEF 06c8]
+//Metal Door (tall)
+DUPEITEM=06c6
+
+[ITEMDEF 06c9]
+//Metal Door (tall)
+DUPEITEM=06c5
+
+[ITEMDEF 06ca]
+//Metal Door (tall)
+DUPEITEM=06c6
+
+[ITEMDEF 06cb]
+//Metal Door (tall)
+DUPEITEM=06c5
+
+[ITEMDEF 06cc]
+//Metal Door (tall)
+DUPEITEM=06c6
+
+[ITEMDEF 06cd]
+//Metal Door (tall)
+DUPEITEM=06c5
+
+[ITEMDEF 06ce]
+//Metal Door (tall)
+DUPEITEM=06c6
+
+[ITEMDEF 06cf]
+//Metal Door (tall)
+DUPEITEM=06c5
+
+[ITEMDEF 06d0]
+//Metal Door (tall)
+DUPEITEM=06c6
+
+[ITEMDEF 06d1]
+//Metal Door (tall)
+DUPEITEM=06c5
+
+[ITEMDEF 06d2]
+//Metal Door (tall)
+DUPEITEM=06c6
+
+[ITEMDEF 06d3]
+//Metal Door (tall)
+DUPEITEM=06c5
+
+[ITEMDEF 06d4]
+//Metal Door (tall)
+DUPEITEM=06c6
+
+[ITEMDEF 06d5]
+DEFNAME=i_door_wood_2
+TYPE=t_door
+CATEGORY=Buildings - Doors
+SUBSECTION=Wooden Door (light wood)
+DESCRIPTION=@ (closed)
+DUPELIST=06d7,06d9,06db,06dd,06df,06e1,06e3
+
+[ITEMDEF 06d6]
+DEFNAME=i_door_wood_2_o
+TYPE=t_door_open
+CATEGORY=Buildings - Doors
+SUBSECTION=Wooden Door (light wood)
+DESCRIPTION=@ (opened)
+DUPELIST=06d8,06da,06dc,06de,06e0,06e2,06e4
+
+[ITEMDEF 06d7]
+//Wooden Door (light wood)
+DUPEITEM=06d5
+
+[ITEMDEF 06d8]
+//Wooden Door (light wood)
+DUPEITEM=06d6
+
+[ITEMDEF 06d9]
+//Wooden Door (light wood)
+DUPEITEM=06d5
+
+[ITEMDEF 06da]
+//Wooden Door (light wood)
+DUPEITEM=06d6
+
+[ITEMDEF 06db]
+//Wooden Door (light wood)
+DUPEITEM=06d5
+
+[ITEMDEF 06dc]
+//Wooden Door (light wood)
+DUPEITEM=06d6
+
+[ITEMDEF 06dd]
+//Wooden Door (light wood)
+DUPEITEM=06d5
+
+[ITEMDEF 06de]
+//Wooden Door (light wood)
+DUPEITEM=06d6
+
+[ITEMDEF 06df]
+//Wooden Door (light wood)
+DUPEITEM=06d5
+
+[ITEMDEF 06e0]
+//Wooden Door (light wood)
+DUPEITEM=06d6
+
+[ITEMDEF 06e1]
+//Wooden Door (light wood)
+DUPEITEM=06d5
+
+[ITEMDEF 06e2]
+//Wooden Door (light wood)
+DUPEITEM=06d6
+
+[ITEMDEF 06e3]
+//Wooden Door (light wood)
+DUPEITEM=06d5
+
+[ITEMDEF 06e4]
+//Wooden Door (light wood)
+DUPEITEM=06d6
+
+[ITEMDEF 06e5]
+DEFNAME=i_door_wood_3
+TYPE=t_door
+CATEGORY=Buildings - Doors
+SUBSECTION=Heavy Wooden Door (dark wood)
+DESCRIPTION=@ (closed)
+DUPELIST=06e7,06e9,06eb,06ed,06ef,06f1,06f3
+
+[ITEMDEF 06e6]
+DEFNAME=i_door_wood_3_o
+TYPE=t_door_open
+CATEGORY=Buildings - Doors
+SUBSECTION=Heavy Wooden Door (dark wood)
+DESCRIPTION=@ (opened)
+DUPELIST=06e8,06ea,06ec,06ee,06f0,06f2,06f4
+
+[ITEMDEF 06e7]
+//Heavy Wooden Door (dark wood)
+DUPEITEM=06e5
+
+[ITEMDEF 06e8]
+//Heavy Wooden Door (dark wood)
+DUPEITEM=06e6
+
+[ITEMDEF 06e9]
+//Heavy Wooden Door (dark wood)
+DUPEITEM=06e5
+
+[ITEMDEF 06ea]
+//Heavy Wooden Door (dark wood)
+DUPEITEM=06e6
+
+[ITEMDEF 06eb]
+//Heavy Wooden Door (dark wood)
+DUPEITEM=06e5
+
+[ITEMDEF 06ec]
+//Heavy Wooden Door (dark wood)
+DUPEITEM=06e6
+
+[ITEMDEF 06ed]
+//Heavy Wooden Door (dark wood)
+DUPEITEM=06e5
+
+[ITEMDEF 06ee]
+//Heavy Wooden Door (dark wood)
+DUPEITEM=06e6
+
+[ITEMDEF 06ef]
+//Heavy Wooden Door (dark wood)
+DUPEITEM=06e5
+
+[ITEMDEF 06f0]
+//Heavy Wooden Door (dark wood)
+DUPEITEM=06e6
+
+[ITEMDEF 06f1]
+//Heavy Wooden Door (dark wood)
+DUPEITEM=06e5
+
+[ITEMDEF 06f2]
+//Heavy Wooden Door (dark wood)
+DUPEITEM=06e6
+
+[ITEMDEF 06f3]
+//Heavy Wooden Door (dark wood)
+DUPEITEM=06e5
+
+[ITEMDEF 06f4]
+//Heavy Wooden Door (dark wood)
+DUPEITEM=06e6
+
+[ITEMDEF 06f5]
+DEFNAME=i_door_portcullis
+TYPE=t_portculis
+CATEGORY=Buildings - Doors
+SUBSECTION=Portcullis
+DESCRIPTION=@
+DUPELIST=06f6
+
+[ITEMDEF 06f6]
+//portcullis
+DUPEITEM=06f5
+
+[ITEMDEF 0824]
+//FIXME: The open and closed are mixed together
+DEFNAME=i_gate_iron
+TYPE=t_door
+CATEGORY=Buildings - Doors
+SUBSECTION=Iron Gate (tall)
+DESCRIPTION=@
+DUPELIST=0825,0826,0827,0828,0829,082a,082b,082c,082d,082e,082f,0830,0831,0832,0833
+
+[ITEMDEF 0825]
+//Iron Gate (tall)
+DUPEITEM=0824
+
+[ITEMDEF 0826]
+//Iron Gate (tall)
+DUPEITEM=0824
+
+[ITEMDEF 0827]
+//Iron Gate (tall)
+DUPEITEM=0824
+
+[ITEMDEF 0828]
+//Iron Gate (tall)
+DUPEITEM=0824
+
+[ITEMDEF 0829]
+//Iron Gate (tall)
+DUPEITEM=0824
+
+[ITEMDEF 082a]
+//Iron Gate (tall)
+DUPEITEM=0824
+
+[ITEMDEF 082b]
+//Iron Gate (tall)
+DUPEITEM=0824
+
+[ITEMDEF 082c]
+//Iron Gate (tall)
+DUPEITEM=0824
+
+[ITEMDEF 082d]
+//Iron Gate (tall)
+DUPEITEM=0824
+
+[ITEMDEF 082e]
+//Iron Gate (tall)
+DUPEITEM=0824
+
+[ITEMDEF 082f]
+//Iron Gate (tall)
+DUPEITEM=0824
+
+[ITEMDEF 0830]
+//Iron Gate (tall)
+DUPEITEM=0824
+
+[ITEMDEF 0831]
+//Iron Gate (tall)
+DUPEITEM=0824
+
+[ITEMDEF 0832]
+//Iron Gate (tall)
+DUPEITEM=0824
+
+[ITEMDEF 0833]
+//Iron Gate (tall)
+DUPEITEM=0824
+
+
+[ITEMDEF 0839]
+//FIXME: The open and closed are mixed together
+DEFNAME=i_gate_wood
+TYPE=t_door
+CATEGORY=Buildings - Doors
+SUBSECTION=Wooden Gate
+DESCRIPTION=@
+DUPELIST=083a,083b,083c,083d,083e,083f,0840,0841,0842,0843,0844,0845,0846,0847,0848
+
+[ITEMDEF 083a]
+//Wooden Gate
+DUPEITEM=0839
+
+[ITEMDEF 083b]
+//Wooden Gate
+DUPEITEM=0839
+
+[ITEMDEF 083c]
+//Wooden Gate
+DUPEITEM=0839
+
+[ITEMDEF 083d]
+//Wooden Gate
+DUPEITEM=0839
+
+[ITEMDEF 083e]
+//Wooden Gate
+DUPEITEM=0839
+
+[ITEMDEF 083f]
+//Wooden Gate
+DUPEITEM=0839
+
+[ITEMDEF 0840]
+//Wooden Gate
+DUPEITEM=0839
+
+[ITEMDEF 0841]
+//Wooden Gate
+DUPEITEM=0839
+
+[ITEMDEF 0842]
+//Wooden Gate
+DUPEITEM=0839
+
+[ITEMDEF 0843]
+//Wooden Gate
+DUPEITEM=0839
+
+[ITEMDEF 0844]
+//Wooden Gate
+DUPEITEM=0839
+
+[ITEMDEF 0845]
+//Wooden Gate
+DUPEITEM=0839
+
+[ITEMDEF 0846]
+//Wooden Gate
+DUPEITEM=0839
+
+[ITEMDEF 0847]
+//Wooden Gate
+DUPEITEM=0839
+
+[ITEMDEF 0848]
+//Wooden Gate
+DUPEITEM=0839
+
+
+[ITEMDEF 084c]
+//FIXME: The open and closed are mixed together
+DEFNAME=i_gate_iron_2
+TYPE=t_door
+CATEGORY=Buildings - Doors
+SUBSECTION=Iron Gate
+DESCRIPTION=@
+DUPELIST=084d,084e,084f,0850,0851,0852,0853,0854,0855,0856,0857,0858,0859,085a,085b
+
+[ITEMDEF 084d]
+//Iron Gate
+DUPEITEM=084c
+
+[ITEMDEF 084e]
+//Iron Gate
+DUPEITEM=084c
+
+[ITEMDEF 084f]
+//Iron Gate
+DUPEITEM=084c
+
+[ITEMDEF 0850]
+//Iron Gate
+DUPEITEM=084c
+
+[ITEMDEF 0851]
+//Iron Gate
+DUPEITEM=084c
+
+[ITEMDEF 0852]
+//Iron Gate
+DUPEITEM=084c
+
+[ITEMDEF 0853]
+//Iron Gate
+DUPEITEM=084c
+
+[ITEMDEF 0854]
+//Iron Gate
+DUPEITEM=084c
+
+[ITEMDEF 0855]
+//Iron Gate
+DUPEITEM=084c
+
+[ITEMDEF 0856]
+//Iron Gate
+DUPEITEM=084c
+
+[ITEMDEF 0857]
+//Iron Gate
+DUPEITEM=084c
+
+[ITEMDEF 0858]
+//Iron Gate
+DUPEITEM=084c
+
+[ITEMDEF 0859]
+//Iron Gate
+DUPEITEM=084c
+
+[ITEMDEF 085a]
+//Iron Gate
+DUPEITEM=084c
+
+[ITEMDEF 085b]
+//Iron Gate
+DUPEITEM=084c
+
+
+[ITEMDEF 0866]
+//FIXME: The open and closed are mixed together
+DEFNAME=i_gate_wood_3
+TYPE=t_door
+CATEGORY=Buildings - Doors
+SUBSECTION=Wooden Gate (dark wood)
+DESCRIPTION=@
+DUPELIST=0867,0868,0869,086a,086b,086c,086d,086e,086f,0870,0871,0872,0873,0874,0875
+
+[ITEMDEF 0867]
+//Wooden Gate (dark wood)
+DUPEITEM=0866
+
+[ITEMDEF 0868]
+//Wooden Gate (dark wood)
+DUPEITEM=0866
+
+[ITEMDEF 0869]
+//Wooden Gate (dark wood)
+DUPEITEM=0866
+
+[ITEMDEF 086a]
+//Wooden Gate (dark wood)
+DUPEITEM=0866
+
+[ITEMDEF 086b]
+//Wooden Gate (dark wood)
+DUPEITEM=0866
+
+[ITEMDEF 086c]
+//Wooden Gate (dark wood)
+DUPEITEM=0866
+
+[ITEMDEF 086d]
+//Wooden Gate (dark wood)
+DUPEITEM=0866
+
+[ITEMDEF 086e]
+//Wooden Gate (dark wood)
+DUPEITEM=0866
+
+[ITEMDEF 086f]
+//Wooden Gate (dark wood)
+DUPEITEM=0866
+
+[ITEMDEF 0870]
+//Wooden Gate (dark wood)
+DUPEITEM=0866
+
+[ITEMDEF 0871]
+//Wooden Gate (dark wood)
+DUPEITEM=0866
+
+[ITEMDEF 0872]
+//Wooden Gate (dark wood)
+DUPEITEM=0866
+
+[ITEMDEF 0873]
+//Wooden Gate (dark wood)
+DUPEITEM=0866
+
+[ITEMDEF 0874]
+//Wooden Gate (dark wood)
+DUPEITEM=0866
+
+[ITEMDEF 0875]
+//Wooden Gate (dark wood)
+DUPEITEM=0866
+
+
+[ITEMDEF 01fed]
+DEFNAME=i_door_metal_bar_2
+TYPE=t_door
+CATEGORY=Buildings - Doors
+SUBSECTION=Barred Metal Door
+DESCRIPTION=@ (closed)
+DUPELIST=01fef,01ff1,01ff3,01ff5,01ff7,01ff9,01ffb
+
+[ITEMDEF 01fee]
+DEFNAME=i_door_metal_bar_2_o
+TYPE=t_door_open
+CATEGORY=Buildings - Doors
+SUBSECTION=Barred Metal Door
+DESCRIPTION=@ (opened)
+DUPELIST=01ff0,01ff2,01ff4,01ff6,01ff8,01ffa,01ffc
+
+[ITEMDEF 01fef]
+//Barred Metal Door (closed)
+DUPEITEM=01fed
+
+[ITEMDEF 01ff0]
+//Barred Metal Door (opened)
+DUPEITEM=01fee
+
+[ITEMDEF 01ff1]
+//Barred Metal Door (closed)
+DUPEITEM=01fed
+
+[ITEMDEF 01ff2]
+//Barred Metal Door (opened)
+DUPEITEM=01fee
+
+[ITEMDEF 01ff3]
+//Barred Metal Door (closed)
+DUPEITEM=01fed
+
+[ITEMDEF 01ff4]
+//Barred Metal Door (opened)
+DUPEITEM=01fee
+
+[ITEMDEF 01ff5]
+//Barred Metal Door (closed)
+DUPEITEM=01fed
+
+[ITEMDEF 01ff6]
+//Barred Metal Door (opened)
+DUPEITEM=01fee
+
+[ITEMDEF 01ff7]
+//Barred Metal Door (closed)
+DUPEITEM=01fed
+
+[ITEMDEF 01ff8]
+//Barred Metal Door (opened)
+DUPEITEM=01fee
+
+[ITEMDEF 01ff9]
+//Barred Metal Door (closed)
+DUPEITEM=01fed
+
+[ITEMDEF 01ffa]
+//Barred Metal Door (opened)
+DUPEITEM=01fee
+
+[ITEMDEF 01ffb]
+//Barred Metal Door (closed)
+DUPEITEM=01fed
+
+[ITEMDEF 01ffc]
+//Barred Metal Door (opened)
+DUPEITEM=01fee
+
+
+[ITEMDEF 0241f]
+DEFNAME=i_door_wooden_dark_east
+NAME=wooden door
+TYPE=t_door
+TDATA2=02420
+TDATA3=1
+TDATA4=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Wooden Door (dark)
+DESCRIPTION=East
+
+[ITEMDEF 02420]
+//wooden door (dark)(east)(opened)
+
+[ITEMDEF 02421]
+DEFNAME=i_door_wooden_squared_south
+NAME=wooden door
+TYPE=t_door
+TDATA2=02422
+TDATA3=-1
+TDATA4=1
+CATEGORY=Buildings - Doors
+SUBSECTION=Wooden Door (squared)
+DESCRIPTION=South
+
+[ITEMDEF 02422]
+//wooden door (squared)(east)(opened)
+
+[ITEMDEF 02423]
+DEFNAME=i_door_wooden_dark_south
+NAME=wooden door
+TYPE=t_door
+TDATA2=02424
+TDATA3=-1
+TDATA4=1
+CATEGORY=Buildings - Doors
+SUBSECTION=Wooden Door (dark)
+DESCRIPTION=South
+
+[ITEMDEF 02424]
+//wooden door (dark)(south)(opened)
+
+
+[ITEMDEF 026f4]
+DEFNAME=i_door_sliding_latticed_revolver_south
+NAME=sliding door
+TYPE=t_door
+TDATA1=05390539
+TDATA2=026f6
+TDATA3=-1
+TDATA4=1
+CATEGORY=Buildings - Doors
+SUBSECTION=Sliding Door (latticed)(revolver)
+DESCRIPTION=South
+
+
+[ITEMDEF 026f6]
+DEFNAME=i_door_sliding_latticed_revolver_east
+NAME=sliding door
+TYPE=t_door
+TDATA1=05390539
+TDATA2=026f4
+TDATA3=1
+TDATA4=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Sliding Door (latticed)(revolver)
+DESCRIPTION=East
+
+
+[ITEMDEF 02990]
+DEFNAME=i_door_sliding_cloth_revolver_south
+TYPE=t_door
+TDATA1=05390539
+TDATA2=02991
+TDATA3=-1
+TDATA4=1
+CATEGORY=Buildings - Doors
+SUBSECTION=Sliding Door (cloth)(revolver)
+DESCRIPTION=South
+
+[ITEMDEF 02991]
+DEFNAME=i_door_sliding_cloth_revolver_east
+TYPE=t_door
+TDATA1=05390539
+TDATA2=02990
+TDATA3=1
+TDATA4=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Sliding Door (cloth)(revolver)
+DESCRIPTION=East
+
+
+[ITEMDEF 0299e]
+DEFNAME=i_door_sliding_wooden_revolver_south
+TYPE=t_door
+TDATA1=05390539
+TDATA2=0299f
+TDATA3=-1
+TDATA4=1
+CATEGORY=Buildings - Doors
+SUBSECTION=Sliding Door (wooden)(revolver)
+DESCRIPTION=South
+
+[ITEMDEF 0299f]
+DEFNAME=i_door_sliding_wooden_revolver_east
+TYPE=t_door
+TDATA1=05390539
+TDATA2=0299e
+TDATA3=1
+TDATA4=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Sliding Door (wooden)(revolver)
+DESCRIPTION=East
+
+
+[ITEMDEF 02a05]
+DEFNAME=i_door_sliding_latticed_south_left
+TYPE=t_door
+TDATA1=05390539
+TDATA2=02a06
+CATEGORY=Buildings - Doors
+SUBSECTION=Sliding Door (latticed)
+DESCRIPTION=South (left)
+
+[ITEMDEF 02a06]
+//sliding door (latticed)(south)(left)(opened)
+
+[ITEMDEF 02a07]
+DEFNAME=i_door_sliding_latticed_south_right
+TYPE=t_door
+TDATA1=05390539
+TDATA2=02a08
+CATEGORY=Buildings - Doors
+SUBSECTION=Sliding Door (latticed)
+DESCRIPTION=South (right)
+
+[ITEMDEF 02a08]
+//sliding door (latticed)(south)(right)(opened)
+
+[ITEMDEF 02a09]
+DEFNAME=i_door_sliding_latticed_east_left
+TYPE=t_door
+TDATA1=05390539
+TDATA2=02a0a
+CATEGORY=Buildings - Doors
+SUBSECTION=Sliding Door (latticed)
+DESCRIPTION=East (left)
+
+[ITEMDEF 02a0a]
+//sliding door (latticed)(east)(left)(opened)
+
+[ITEMDEF 02a0b]
+DEFNAME=i_door_sliding_latticed_east_right
+TYPE=t_door
+TDATA1=05390539
+TDATA2=02a0c
+CATEGORY=Buildings - Doors
+SUBSECTION=Sliding Door (latticed)
+DESCRIPTION=East (right)
+
+[ITEMDEF 02a0c]
+//sliding door (latticed)(east)(right)(opened)
+
+[ITEMDEF 02a0d]
+DEFNAME=i_door_sliding_cloth_south_left
+TYPE=t_door
+TDATA1=05390539
+TDATA2=02a0e
+CATEGORY=Buildings - Doors
+SUBSECTION=Sliding Door (cloth)
+DESCRIPTION=South (left)
+
+[ITEMDEF 02a0e]
+//sliding door (cloth)(south)(left)(opened)
+
+[ITEMDEF 02a0f]
+DEFNAME=i_door_sliding_cloth_south_right
+TYPE=t_door
+TDATA1=05390539
+TDATA2=02a10
+CATEGORY=Buildings - Doors
+SUBSECTION=Sliding Door (cloth)
+DESCRIPTION=South (right)
+
+[ITEMDEF 02a10]
+//sliding door (cloth)(south)(right)(opened)
+
+[ITEMDEF 02a11]
+DEFNAME=i_door_sliding_cloth_east_left
+TYPE=t_door
+TDATA1=05390539
+TDATA2=02a12
+CATEGORY=Buildings - Doors
+SUBSECTION=Sliding Door (cloth)
+DESCRIPTION=East (left)
+
+[ITEMDEF 02a12]
+//sliding door (cloth)(east)(left)(opened)
+
+[ITEMDEF 02a13]
+DEFNAME=i_door_sliding_cloth_east_right
+TYPE=t_door
+TDATA1=05390539
+TDATA2=02a14
+CATEGORY=Buildings - Doors
+SUBSECTION=Sliding Door (cloth)
+DESCRIPTION=East (right)
+
+[ITEMDEF 02a14]
+//sliding door (cloth)(east)(right)(opened)
+
+[ITEMDEF 02a15]
+DEFNAME=i_door_sliding_wooden_south_left
+TYPE=t_door
+TDATA1=05390539
+TDATA2=02a16
+CATEGORY=Buildings - Doors
+SUBSECTION=Sliding Door (wooden)
+DESCRIPTION=South (left)
+
+[ITEMDEF 02a16]
+//sliding door (wooden)(south)(left)(opened)
+
+[ITEMDEF 02a17]
+DEFNAME=i_door_sliding_wooden_south_right
+TYPE=t_door
+TDATA1=05390539
+TDATA2=02a18
+CATEGORY=Buildings - Doors
+SUBSECTION=Sliding Door (wooden)
+DESCRIPTION=South (right)
+
+[ITEMDEF 02a18]
+//sliding door (wooden)(south)(right)(opened)
+
+[ITEMDEF 02a19]
+DEFNAME=i_door_sliding_wooden_east_left
+TYPE=t_door
+TDATA1=05390539
+TDATA2=02a1a
+CATEGORY=Buildings - Doors
+SUBSECTION=Sliding Door (wooden)
+DESCRIPTION=East (left)
+
+[ITEMDEF 02a1a]
+//sliding door (wooden)(east)(left)(opened)
+
+[ITEMDEF 02a1b]
+DEFNAME=i_door_sliding_wooden_east_right
+TYPE=t_door
+TDATA1=05390539
+TDATA2=02a1c
+CATEGORY=Buildings - Doors
+SUBSECTION=Sliding Door (wooden)
+DESCRIPTION=East (right)
+
+[ITEMDEF 02a1c]
+//sliding door (wooden)(east)(right)(opened)
+
+
+[ITEMDEF 02d46]
+DEFNAME=i_door_tanglewood_east_right
+NAME=tanglewood door
+TYPE=t_door
+TDATA2=02d47
+TDATA4=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Tanglewood Door
+DESCRIPTION=East (right)
+
+[ITEMDEF 02d47]
+//tanglewood door (east)(right)(opened)
+
+[ITEMDEF 02d48]
+DEFNAME=i_door_tanglewood_east_left
+NAME=tanglewood door
+TYPE=t_door
+TDATA2=02d49
+CATEGORY=Buildings - Doors
+SUBSECTION=Tanglewood Door
+DESCRIPTION=East (left)
+
+[ITEMDEF 02d49]
+//tanglewood door (east)(left)(opened)
+
+
+[ITEMDEF 02d63]
+DEFNAME=i_door_whitewood_east_left
+NAME=whitewood door
+TYPE=t_door
+TDATA2=02d64
+CATEGORY=Buildings - Doors
+SUBSECTION=Whitewood Door
+DESCRIPTION=East (left)
+
+[ITEMDEF 02d64]
+//whitewood door (east)(left)(opened)
+
+[ITEMDEF 02d65]
+DEFNAME=i_door_whitewood_south_left
+NAME=whitewood door
+TYPE=t_door
+TDATA2=02d66
+TDATA3=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Whitewood Door
+DESCRIPTION=South (left)
+
+[ITEMDEF 02d66]
+//whitewood door (south)(left)(opened)
+
+[ITEMDEF 02d67]
+DEFNAME=i_door_heartwood_east_left
+NAME=heartwood door
+TYPE=t_door
+TDATA2=02d68
+CATEGORY=Buildings - Doors
+SUBSECTION=Heartwood Door
+DESCRIPTION=East (left)
+
+[ITEMDEF 02d68]
+//heartwood door (east)(left)(opened)
+
+[ITEMDEF 02d69]
+DEFNAME=i_door_heartwood_south_left
+NAME=heartwood door
+TYPE=t_door
+TDATA2=02d6a
+TDATA3=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Heartwood Door
+DESCRIPTION=South (left)
+
+[ITEMDEF 02d6a]
+//heartwood door (south)(left)(opened)
+
+[ITEMDEF 02d6b]
+DEFNAME=i_door_kiawood_east_left
+NAME=kiawood door
+TYPE=t_door
+TDATA2=02d6c
+CATEGORY=Buildings - Doors
+SUBSECTION=Kiawood Door
+DESCRIPTION=East (left)
+
+[ITEMDEF 02d6c]
+//kiawood door (east)(left)(opened)
+
+[ITEMDEF 02d6d]
+DEFNAME=i_door_kiawood_south_left
+NAME=kiawood door
+TYPE=t_door
+TDATA2=02d6e
+TDATA3=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Kiawood Door
+DESCRIPTION=South (left)
+
+[ITEMDEF 02d6e]
+//kiawood door (south)(left)(opened)
+
+
+[ITEMDEF 02fe2]
+DEFNAME=i_door_moon_east_left
+NAME=moon door
+TYPE=t_door
+TDATA2=02fe3
+CATEGORY=Buildings - Doors
+SUBSECTION=Moon Door
+DESCRIPTION=East (left)
+
+[ITEMDEF 02fe3]
+//moon door (east)(left)(opened)
+
+[ITEMDEF 02fe4]
+DEFNAME=i_door_moon_south_left
+NAME=moon door
+TYPE=t_door
+TDATA2=02fe5
+TDATA3=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Moon Door
+DESCRIPTION=South (left)
+
+[ITEMDEF 02fe5]
+//moon door (south)(left)(opened)
+
+
+[ITEMDEF 0319c]
+DEFNAME=i_door_moon_south_right
+NAME=moon door
+TYPE=t_door
+TDATA2=0319d
+TDATA3=1
+TDATA4=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Moon Door
+DESCRIPTION=South (right)
+
+[ITEMDEF 0319d]
+//moon door (south)(right)(opened)
+
+[ITEMDEF 0319e]
+DEFNAME=i_door_moon_east_right
+NAME=moon door
+TYPE=t_door
+TDATA2=0319f
+TDATA4=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Moon Door
+DESCRIPTION=East (right)
+
+[ITEMDEF 0319f]
+//moon door (east)(right)(opened)
+
+[ITEMDEF 031a0]
+DEFNAME=i_door_whitewood_south_right
+NAME=whitewood door
+TYPE=t_door
+TDATA2=031a1
+TDATA3=1
+TDATA4=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Whitewood Door
+DESCRIPTION=South (right)
+
+[ITEMDEF 031a1]
+//whitewood door (south)(right)(opened)
+
+[ITEMDEF 031a2]
+DEFNAME=i_door_whitewood_east_right
+NAME=whitewood door
+TYPE=t_door
+TDATA2=031a3
+TDATA4=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Whitewood Door
+DESCRIPTION=East (right)
+
+[ITEMDEF 031a3]
+//whitewood door (east)(right)(opened)
+
+[ITEMDEF 031a4]
+DEFNAME=i_door_heartwood_south_right
+NAME=heartwood door
+TYPE=t_door
+TDATA2=031a5
+TDATA3=1
+TDATA4=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Heartwood Door
+DESCRIPTION=South (right)
+
+[ITEMDEF 031a5]
+//heartwood door (south)(right)(opened)
+
+[ITEMDEF 031a6]
+DEFNAME=i_door_heartwood_east_right
+NAME=heartwood door
+TYPE=t_door
+TDATA2=031a7
+TDATA4=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Heartwood Door
+DESCRIPTION=East (right)
+
+[ITEMDEF 031a7]
+//heartwood door (east)(right)(opened)
+
+[ITEMDEF 031a8]
+DEFNAME=i_door_kiawood_east_right
+NAME=kiawood door
+TYPE=t_door
+TDATA2=031a9
+TDATA4=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Kiawood Door
+DESCRIPTION=East (right)
+
+[ITEMDEF 031a9]
+//kiawood door (east)(right)(opened)
+
+[ITEMDEF 031aa]
+DEFNAME=i_door_kiawood_south_right
+NAME=kiawood door
+TYPE=t_door
+TDATA2=031ab
+TDATA3=1
+TDATA4=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Kiawood Door
+DESCRIPTION=South (right)
+
+[ITEMDEF 031ab]
+//kiawood door (south)(right)(opened)
+
+[ITEMDEF 031ac]
+DEFNAME=i_door_tanglewood_south_right
+NAME=tanglewood door
+TYPE=t_door
+TDATA2=031ad
+TDATA3=1
+TDATA4=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Tanglewood Door
+DESCRIPTION=South (right)
+
+[ITEMDEF 031ad]
+//tanglewood door (south)(right)(opened)
+
+[ITEMDEF 031ae]
+DEFNAME=i_door_tanglewood_south_left
+NAME=tanglewood door
+TYPE=t_door
+TDATA2=031af
+TDATA3=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Tanglewood Door
+DESCRIPTION=South (left)
+
+[ITEMDEF 031af]
+//tanglewood door (south)(left)(opened)
+
+
+[ITEMDEF 0409b]
+DEFNAME=i_door_gargish_traditional_south_left
+NAME=gargish traditional door
+TYPE=t_door
+TDATA2=0409c
+TDATA3=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Gargish Traditional Door
+DESCRIPTION=South (left)
+
+[ITEMDEF 0409c]
+//gargish traditional door (south)(left)(opened)
+
+[ITEMDEF 0409d]
+DEFNAME=i_door_gargish_traditional_south_right
+NAME=gargish traditional door
+TYPE=t_door
+TDATA2=0409e
+TDATA3=1
+TDATA4=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Gargish Traditional Door
+DESCRIPTION=South (right)
+
+[ITEMDEF 0409e]
+//gargish traditional door (south)(right)(opened)
+
+[ITEMDEF 0409f]
+DEFNAME=i_door_gargish_traditional_east_left
+NAME=gargish traditional door
+TYPE=t_door
+TDATA2=040a0
+CATEGORY=Buildings - Doors
+SUBSECTION=Gargish Traditional Door
+DESCRIPTION=East (left)
+
+[ITEMDEF 040a0]
+//gargish traditional door (east)(left)(opened)
+
+[ITEMDEF 040a1]
+DEFNAME=i_door_gargish_traditional_east_right
+NAME=gargish traditional door
+TYPE=t_door
+TDATA2=040a2
+TDATA4=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Gargish Traditional Door
+DESCRIPTION=East (right)
+
+[ITEMDEF 040a2]
+//gargish traditional door (east)(right)(opened)
+
+
+[ITEMDEF 0410c]
+DEFNAME=i_door_gargish_south_left
+NAME=gargish door
+TYPE=t_door
+TDATA2=0410d
+TDATA3=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Gargish Door
+DESCRIPTION=South (left)
+
+[ITEMDEF 0410d]
+//gargish door (south)(left)(opened)
+
+[ITEMDEF 0410e]
+DEFNAME=i_door_gargish_south_right
+NAME=gargish door
+TYPE=t_door
+TDATA2=0410f
+TDATA3=1
+TDATA4=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Gargish Door
+DESCRIPTION=South (right)
+
+[ITEMDEF 0410f]
+//gargish door (south)(right)(opened)
+
+[ITEMDEF 04110]
+DEFNAME=i_door_gargish_east_left
+NAME=gargish door
+TYPE=t_door
+TDATA2=04111
+CATEGORY=Buildings - Doors
+SUBSECTION=Gargish Door
+DESCRIPTION=East (left)
+
+[ITEMDEF 04111]
+//gargish door (east)(left)(opened)
+
+[ITEMDEF 04112]
+DEFNAME=i_door_gargish_east_right
+NAME=gargish door
+TYPE=t_door
+TDATA2=04113
+TDATA4=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Gargish Door
+DESCRIPTION=East (right)
+
+[ITEMDEF 04113]
+//gargish door (east)(right)(opened)
+
+
+[ITEMDEF 041c2]
+DEFNAME=i_door_gargish_celestial_south_left
+NAME=gargish celestial door
+TYPE=t_door
+TDATA2=041c3
+TDATA3=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Gargish Celestial Door
+DESCRIPTION=South (left)
+
+[ITEMDEF 041c3]
+//gargish celestial door (south)(left)(opened)
+
+[ITEMDEF 041c4]
+DEFNAME=i_door_gargish_celestial_south_right
+NAME=gargish celestial door
+TYPE=t_door
+TDATA2=041c5
+TDATA3=1
+TDATA4=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Gargish Celestial Door
+DESCRIPTION=South (right)
+
+[ITEMDEF 041c5]
+//gargish celestial door (south)(right)(opened)
+
+[ITEMDEF 041c6]
+DEFNAME=i_door_gargish_celestial_east_left
+NAME=gargish celestial door
+TYPE=t_door
+TDATA2=041c7
+CATEGORY=Buildings - Doors
+SUBSECTION=Gargish Celestial Door
+DESCRIPTION=East (left)
+
+[ITEMDEF 041c7]
+//gargish celestial door (east)(left)(opened)
+
+[ITEMDEF 041c8]
+DEFNAME=i_door_gargish_celestial_east_right
+NAME=gargish celestial door
+TYPE=t_door
+TDATA2=041c9
+TDATA4=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Gargish Celestial Door
+DESCRIPTION=East (right)
+
+[ITEMDEF 041c9]
+//gargish celestial door (east)(right)(opened)
+
+
+[ITEMDEF 041cf]
+DEFNAME=i_door_gargish_progressive_south_left
+NAME=gargish progressive door
+TYPE=t_door
+TDATA2=041d0
+TDATA3=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Gargish Progressive Door
+DESCRIPTION=South (left)
+
+[ITEMDEF 041d0]
+//gargish progressive door (south)(left)(opened)
+
+[ITEMDEF 041d1]
+DEFNAME=i_door_gargish_progressive_south_right
+NAME=gargish progressive door
+TYPE=t_door
+TDATA2=041d2
+TDATA3=1
+TDATA4=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Gargish Progressive Door
+DESCRIPTION=South (right)
+
+[ITEMDEF 041d2]
+//gargish progressive door (south)(right)(opened)
+
+[ITEMDEF 041d3]
+DEFNAME=i_door_gargish_progressive_east_left
+NAME=gargish progressive door
+TYPE=t_door
+TDATA2=041d4
+CATEGORY=Buildings - Doors
+SUBSECTION=Gargish Progressive Door
+DESCRIPTION=East (left)
+
+[ITEMDEF 041d4]
+//gargish progressive door (east)(left)(opened)
+
+[ITEMDEF 041d5]
+DEFNAME=i_door_gargish_progressive_east_right
+NAME=gargish progressive door
+TYPE=t_door
+TDATA2=041d6
+TDATA4=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Gargish Progressive Door
+DESCRIPTION=East (right)
+
+[ITEMDEF 041d6]
+//gargish progressive door (east)(right)(opened)
+
+
+[ITEMDEF 0436e]
+DEFNAME=i_door_gargish_renaissance_south_left
+NAME=gargish renaissance door
+TYPE=t_door
+TDATA2=0436f
+TDATA3=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Gargish Renaissance Door
+DESCRIPTION=South (left)
+
+[ITEMDEF 0436f]
+//gargish renaissance door (south)(left)(opened)
+
+[ITEMDEF 04370]
+DEFNAME=i_door_gargish_renaissance_south_right
+NAME=gargish renaissance door
+TYPE=t_door
+TDATA2=04371
+TDATA3=1
+TDATA4=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Gargish Renaissance Door
+DESCRIPTION=South (right)
+
+[ITEMDEF 04371]
+//gargish renaissance door (south)(right)(opened)
+
+[ITEMDEF 04372]
+DEFNAME=i_door_gargish_draxinusom_south_left
+NAME=gargish draxinusom door
+TYPE=t_door
+TDATA2=04373
+TDATA3=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Gargish Draxinusom Door
+DESCRIPTION=South (left)
+
+[ITEMDEF 04373]
+//gargish draxinusom door (south)(left)(opened)
+
+[ITEMDEF 04374]
+DEFNAME=i_door_gargish_draxinusom_south_right
+NAME=gargish draxinusom door
+TYPE=t_door
+TDATA2=04375
+TDATA3=1
+TDATA4=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Gargish Draxinusom Door
+DESCRIPTION=South (right)
+
+[ITEMDEF 04375]
+//gargish draxinusom door (south)(right)(opened)
+
+[ITEMDEF 04376]
+DEFNAME=i_door_gargish_renaissance_east_left
+NAME=gargish renaissance door
+TYPE=t_door
+TDATA2=04377
+CATEGORY=Buildings - Doors
+SUBSECTION=Gargish Renaissance Door
+DESCRIPTION=East (left)
+
+[ITEMDEF 04377]
+//gargish renaissance door (east)(left)(opened)
+
+[ITEMDEF 04378]
+DEFNAME=i_door_gargish_renaissance_east_right
+NAME=gargish renaissance door
+TYPE=t_door
+TDATA2=04379
+TDATA4=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Gargish Renaissance Door
+DESCRIPTION=East (right)
+
+[ITEMDEF 04379]
+//gargish renaissance door (east)(right)(opened)
+
+[ITEMDEF 0437a]
+DEFNAME=i_door_gargish_draxinusom_east_left
+NAME=gargish draxinusom door
+TYPE=t_door
+TDATA2=0437b
+CATEGORY=Buildings - Doors
+SUBSECTION=Gargish Draxinusom Door
+DESCRIPTION=East (left)
+
+[ITEMDEF 0437b]
+//gargish draxinusom door (east)(left)(opened)
+
+[ITEMDEF 0437c]
+DEFNAME=i_door_gargish_draxinusom_east_right
+NAME=gargish draxinusom door
+TYPE=t_door
+TDATA2=0437d
+TDATA4=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Gargish Draxinusom Door
+DESCRIPTION=East (right)
+
+[ITEMDEF 0437d]
+//gargish draxinusom door (east)(right)(opened)
+
+
+[ITEMDEF 046dd]
+DEFNAME=i_door_gargish_hovel_south_left
+NAME=gargish hovel door
+TYPE=t_door
+TDATA1=00EB00F2
+TDATA2=046de
+TDATA3=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Gargish Hovel Door
+DESCRIPTION=South (left)
+
+[ITEMDEF 046de]
+//gargish hovel door (south)(left)(opened)
+
+[ITEMDEF 046df]
+DEFNAME=i_door_gargish_hovel_south_right
+NAME=gargish hovel door
+TYPE=t_door
+TDATA1=00EB00F2
+TDATA2=046e0
+TDATA3=1
+TDATA4=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Gargish Hovel Door
+DESCRIPTION=South (right)
+
+[ITEMDEF 046e0]
+//gargish hovel door (south)(right)(opened)
+
+[ITEMDEF 046e1]
+DEFNAME=i_door_gargish_hovel_east_left
+NAME=gargish hovel door
+TYPE=t_door
+TDATA1=00EB00F2
+TDATA2=046e2
+CATEGORY=Buildings - Doors
+SUBSECTION=Gargish Hovel Door
+DESCRIPTION=East (left)
+
+[ITEMDEF 046e2]
+//gargish hovel door (east)(left)(opened)
+
+[ITEMDEF 046e3]
+DEFNAME=i_door_gargish_hovel_east_right
+NAME=gargish hovel door
+TYPE=t_door
+TDATA1=00EB00F2
+TDATA2=046e4
+TDATA4=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Gargish Hovel Door
+DESCRIPTION=East (right)
+
+[ITEMDEF 046e4]
+//gargish hovel door (east)(right)(opened)
+
+
+[ITEMDEF 04d1a]
+DEFNAME=i_door_gargish_queen_tall_south_left
+NAME=gargish queen's door
+TYPE=t_door
+TDATA2=04d1b
+TDATA3=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Gargish Queen's Door (tall)
+DESCRIPTION=South (left)
+
+[ITEMDEF 04d1b]
+//gargish queen's door (tall)(south)(left)(opened)
+
+[ITEMDEF 04d1c]
+DEFNAME=i_door_gargish_queen_tall_south_right
+NAME=gargish queen's door
+TYPE=t_door
+TDATA2=04d1d
+TDATA3=1
+TDATA4=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Gargish Queen's Door (tall)
+DESCRIPTION=South (right)
+
+[ITEMDEF 04d1d]
+//gargish queen's door (tall)(south)(right)(opened)
+
+[ITEMDEF 04d1e]
+DEFNAME=i_door_gargish_queen_tall_east_left
+NAME=gargish queen's door
+TYPE=t_door
+TDATA2=04d1f
+CATEGORY=Buildings - Doors
+SUBSECTION=Gargish Queen's Door (tall)
+DESCRIPTION=East (left)
+
+[ITEMDEF 04d1f]
+//gargish queen's door (tall)(east)(left)(opened)
+
+[ITEMDEF 04d20]
+DEFNAME=i_door_gargish_queen_tall_east_right
+NAME=gargish queen's door
+TYPE=t_door
+TDATA2=04d21
+TDATA4=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Gargish Queen's Door (tall)
+DESCRIPTION=East (right)
+
+[ITEMDEF 04d21]
+//gargish queen's door (tall)(east)(right)(opened)
+
+[ITEMDEF 04d22]
+DEFNAME=i_door_queen_south_left
+NAME=queen's door
+TYPE=t_door
+TDATA2=04d23
+TDATA3=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Queen's Door
+DESCRIPTION=South (left)
+
+[ITEMDEF 04d23]
+//queen's door (south)(left)(opened)
+
+[ITEMDEF 04d24]
+DEFNAME=i_door_queen_south_right
+NAME=queen's door
+TYPE=t_door
+TDATA2=04d25
+TDATA3=1
+TDATA4=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Queen's Door
+DESCRIPTION=South (right)
+
+[ITEMDEF 04d25]
+//queen's door (south)(right)(opened)
+
+[ITEMDEF 04d26]
+DEFNAME=i_door_queen_east_left
+NAME=queen's door
+TYPE=t_door
+TDATA2=04d27
+CATEGORY=Buildings - Doors
+SUBSECTION=Queen's Door
+DESCRIPTION=East (left)
+
+[ITEMDEF 04d27]
+//queen's door (east)(left)(opened)
+
+[ITEMDEF 04d28]
+DEFNAME=i_door_queen_east_right
+NAME=queen's door
+TYPE=t_door
+TDATA2=04d29
+TDATA4=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Queen's Door
+DESCRIPTION=East (right)
+
+[ITEMDEF 04d29]
+//queen's door (east)(right)(opened)
+
+
+[ITEMDEF 050c8]
+DEFNAME=i_door_gargish_queen_south_left
+NAME=gargish queen's door
+TYPE=t_door
+TDATA2=050c9
+TDATA3=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Gargish Queen's Door
+DESCRIPTION=South (left)
+
+[ITEMDEF 050c9]
+//gargish queen's door (south)(left)(opened)
+
+[ITEMDEF 050ca]
+DEFNAME=i_door_gargish_queen_south_right
+NAME=gargish queen's door
+TYPE=t_door
+TDATA2=050cb
+TDATA3=1
+TDATA4=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Gargish Queen's Door
+DESCRIPTION=South (right)
+
+[ITEMDEF 050cb]
+//gargish queen's door (south)(right)(opened)
+
+[ITEMDEF 050cc]
+DEFNAME=i_door_gargish_queen_east_left
+NAME=gargish queen's door
+TYPE=t_door
+TDATA2=050cd
+CATEGORY=Buildings - Doors
+SUBSECTION=Gargish Queen's Door
+DESCRIPTION=East (left)
+
+[ITEMDEF 050cd]
+//gargish queen's door (east)(left)(opened)
+
+[ITEMDEF 050ce]
+DEFNAME=i_door_gargish_queen_east_right
+NAME=gargish queen's door
+TYPE=t_door
+TDATA2=050cf
+TDATA4=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Gargish Queen's Door
+DESCRIPTION=East (right)
+
+[ITEMDEF 050cf]
+//gargish queen's door (east)(right)(opened)
+
+[ITEMDEF 050d0]
+DEFNAME=i_door_gargish_bentas_south_left
+NAME=gargish bentas door
+TYPE=t_door
+TDATA2=050d1
+TDATA3=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Gargish Bentas Door
+DESCRIPTION=South (left)
+
+[ITEMDEF 050d1]
+//gargish bentas door (south)(left)(opened)
+
+[ITEMDEF 050d2]
+DEFNAME=i_door_gargish_bentas_south_right
+NAME=gargish bentas door
+TYPE=t_door
+TDATA2=050d3
+TDATA3=1
+TDATA4=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Gargish Bentas Door
+DESCRIPTION=South (right)
+
+[ITEMDEF 050d3]
+//gargish bentas door (south)(right)(opened)
+
+[ITEMDEF 050d4]
+DEFNAME=i_door_gargish_bentas_east_left
+NAME=gargish bentas door
+TYPE=t_door
+TDATA2=050d5
+CATEGORY=Buildings - Doors
+SUBSECTION=Gargish Bentas Door
+DESCRIPTION=East (left)
+
+[ITEMDEF 050d5]
+//gargish bentas door (east)(left)(opened)
+
+[ITEMDEF 050d6]
+DEFNAME=i_door_gargish_bentas_east_right
+NAME=gargish bentas door
+TYPE=t_door
+TDATA2=050d7
+TDATA4=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Gargish Bentas Door
+DESCRIPTION=East (right)
+
+[ITEMDEF 050d7]
+//gargish bentas door (east)(right)(opened)
+
+
+[ITEMDEF 05142]
+DEFNAME=i_door_gargish_folsom_south_left
+NAME=gargish folsom door
+TYPE=t_door
+TDATA1=00f000ef
+TDATA2=05143
+TDATA3=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Gargish Folsom Door
+DESCRIPTION=South (left)
+
+[ITEMDEF 05143]
+//gargish folsom door (south)(left)(opened)
+
+[ITEMDEF 05144]
+DEFNAME=i_door_gargish_folsom_south_right
+NAME=gargish folsom door
+TYPE=t_door
+TDATA1=00f000ef
+TDATA2=05145
+TDATA3=1
+TDATA4=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Gargish Folsom Door
+DESCRIPTION=South (right)
+
+[ITEMDEF 05145]
+//gargish folsom door (south)(right)(opened)
+
+[ITEMDEF 05146]
+DEFNAME=i_door_gargish_folsom_east_left
+NAME=gargish folsom door
+TYPE=t_door
+TDATA1=00f000ef
+TDATA2=05147
+CATEGORY=Buildings - Doors
+SUBSECTION=Gargish Folsom Door
+DESCRIPTION=East (left)
+
+[ITEMDEF 05147]
+//gargish folsom door (east)(left)(opened)
+
+[ITEMDEF 05148]
+DEFNAME=i_door_gargish_folsom_east_right
+NAME=gargish folsom door
+TYPE=t_door
+TDATA1=00f000ef
+TDATA2=05149
+TDATA4=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Gargish Folsom Door
+DESCRIPTION=East (right)
+
+[ITEMDEF 05149]
+//gargish folsom door (east)(right)(opened)
+
+
+[ITEMDEF 09ad7]
+DEFNAME=i_door_jungle_south_left
+NAME=jungle door
+TYPE=t_door
+TDATA1=00ed00f4
+TDATA2=09ad8
+TDATA3=-1
+TDATA4=1
+CATEGORY=Buildings - Doors
+SUBSECTION=Jungle Door
+DESCRIPTION=South (left)
+
+[ITEMDEF 09ad8]
+//jungle door (south)(left)(opened)
+
+[ITEMDEF 09ad9]
+DEFNAME=i_door_jungle_south_right
+NAME=jungle door
+TYPE=t_door
+TDATA1=00ed00f4
+TDATA2=09ada
+TDATA3=1
+TDATA4=1
+CATEGORY=Buildings - Doors
+SUBSECTION=Jungle Door
+DESCRIPTION=South (right)
+
+[ITEMDEF 09ada]
+//jungle door (south)(right)(opened)
+
+[ITEMDEF 09adb]
+DEFNAME=i_door_jungle_north_left
+NAME=jungle door
+TYPE=t_door
+TDATA1=00ed00f4
+TDATA2=09adc
+TDATA3=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Jungle Door
+DESCRIPTION=North (left)
+
+[ITEMDEF 09adc]
+//jungle door (north)(left)(opened)
+
+[ITEMDEF 09add]
+DEFNAME=i_door_jungle_north_right
+NAME=jungle door
+TYPE=t_door
+TDATA1=00ed00f4
+TDATA2=09ade
+TDATA3=1
+TDATA4=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Jungle Door
+DESCRIPTION=North (right)
+
+[ITEMDEF 09ade]
+//jungle door (north)(right)(opened)
+
+[ITEMDEF 09adf]
+DEFNAME=i_door_jungle_east_left
+NAME=jungle door
+TYPE=t_door
+TDATA1=00ed00f4
+TDATA2=09ae0
+TDATA3=1
+TDATA4=1
+CATEGORY=Buildings - Doors
+SUBSECTION=Jungle Door
+DESCRIPTION=East (left)
+
+[ITEMDEF 09ae0]
+//jungle door (east)(left)(opened)
+
+[ITEMDEF 09ae1]
+DEFNAME=i_door_jungle_east_right
+NAME=jungle door
+TYPE=t_door
+TDATA1=00ed00f4
+TDATA2=09ae2
+TDATA3=1
+TDATA4=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Jungle Door
+DESCRIPTION=East (right)
+
+[ITEMDEF 09ae2]
+//jungle door (east)(right)(opened)
+
+[ITEMDEF 09ae3]
+DEFNAME=i_door_jungle_west_left
+NAME=jungle door
+TYPE=t_door
+TDATA1=00ed00f4
+TDATA2=09ae4
+CATEGORY=Buildings - Doors
+SUBSECTION=Jungle Door
+DESCRIPTION=West (left)
+
+[ITEMDEF 09ae4]
+//jungle door (west)(left)(opened)
+
+[ITEMDEF 09ae5]
+DEFNAME=i_door_jungle_west_right
+NAME=jungle door
+TYPE=t_door
+TDATA1=00ed00f4
+TDATA2=09ae6
+TDATA4=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Jungle Door
+DESCRIPTION=West (right)
+
+[ITEMDEF 09ae6]
+//jungle door (west)(right)(opened)
+
+
+[ITEMDEF 09b3c]
+DEFNAME=i_door_shadowguard_south_left
+NAME=shadowguard door
+TYPE=t_door
+TDATA1=00ed00f4
+TDATA2=09b3d
+TDATA3=-1
+TDATA4=1
+CATEGORY=Buildings - Doors
+SUBSECTION=Shadowguard Door
+DESCRIPTION=South (left)
+
+[ITEMDEF 09b3d]
+//shadowguard door (south)(left)(opened)
+
+[ITEMDEF 09b3e]
+DEFNAME=i_door_shadowguard_south_right
+NAME=shadowguard door
+TYPE=t_door
+TDATA1=00ed00f4
+TDATA2=09b3f
+TDATA3=1
+TDATA4=1
+CATEGORY=Buildings - Doors
+SUBSECTION=Shadowguard Door
+DESCRIPTION=South (right)
+
+[ITEMDEF 09b3f]
+//shadowguard door (south)(right)(opened)
+
+[ITEMDEF 09b40]
+DEFNAME=i_door_shadowguard_north_left
+NAME=shadowguard door
+TYPE=t_door
+TDATA1=00ed00f4
+TDATA2=09b41
+TDATA3=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Shadowguard Door
+DESCRIPTION=North (left)
+
+[ITEMDEF 09b41]
+//shadowguard door (north)(left)(opened)
+
+[ITEMDEF 09b42]
+DEFNAME=i_door_shadowguard_north_right
+NAME=shadowguard door
+TYPE=t_door
+TDATA1=00ed00f4
+TDATA2=09b43
+TDATA3=1
+TDATA4=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Shadowguard Door
+DESCRIPTION=North (right)
+
+[ITEMDEF 09b43]
+//shadowguard door (north)(right)(opened)
+
+[ITEMDEF 09b44]
+DEFNAME=i_door_shadowguard_east_left
+NAME=shadowguard door
+TYPE=t_door
+TDATA1=00ed00f4
+TDATA2=09b45
+TDATA3=1
+TDATA4=1
+CATEGORY=Buildings - Doors
+SUBSECTION=Shadowguard Door
+DESCRIPTION=East (left)
+
+[ITEMDEF 09b45]
+//shadowguard door (east)(left)(opened)
+
+[ITEMDEF 09b46]
+DEFNAME=i_door_shadowguard_east_right
+NAME=shadowguard door
+TYPE=t_door
+TDATA1=00ed00f4
+TDATA2=09b47
+TDATA3=1
+TDATA4=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Shadowguard Door
+DESCRIPTION=East (right)
+
+[ITEMDEF 09b47]
+//shadowguard door (east)(right)(opened)
+
+[ITEMDEF 09b48]
+DEFNAME=i_door_shadowguard_west_left
+NAME=shadowguard door
+TYPE=t_door
+TDATA1=00ed00f4
+TDATA2=09b49
+CATEGORY=Buildings - Doors
+SUBSECTION=Shadowguard Door
+DESCRIPTION=West (left)
+
+[ITEMDEF 09b49]
+//shadowguard door (west)(left)(opened)
+
+[ITEMDEF 09b4a]
+DEFNAME=i_door_shadowguard_west_right
+NAME=shadowguard door
+TYPE=t_door
+TDATA1=00ed00f4
+TDATA2=09b4b
+TDATA4=-1
+CATEGORY=Buildings - Doors
+SUBSECTION=Shadowguard Door
+DESCRIPTION=West (right)
+
+[ITEMDEF 09b4b]
+//shadowguard door (west)(right)(opened)
+
+[EOF]

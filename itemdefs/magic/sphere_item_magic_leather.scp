@@ -1,0 +1,253 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2017
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Saturday, May 6, 2017
+//
+VERSION=0.56d
+
+
+[ITEMDEF i_leather_sleeves_invulnerability]
+ID=i_leather_sleeves
+NAME=Leather Sleeves of Invulnerability
+
+CATEGORY=Provisions - Armor - Magic
+SUBSECTION=Leather
+DESCRIPTION=Leather Sleeves of Invulnerability
+
+ON=@Create
+	MOREY=120.0
+	ATTR=attr_magic
+	HITPOINTS={31 37}
+	COLOR=color_magic_invulnerability
+
+[ITEMDEF i_leather_gorget_invulnerability]
+ID=i_leather_gorget
+NAME=Leather Gorget of Invulnerability
+
+CATEGORY=Provisions - Armor - Magic
+SUBSECTION=Leather
+DESCRIPTION=Leather Gorget of Invulnerability
+
+ON=@Create
+	MOREY=120.0
+	ATTR=attr_magic
+	HITPOINTS={31 37}
+	COLOR=color_magic_invulnerability
+
+[ITEMDEF i_leather_leggings_invulnerability]
+ID=i_leather_leggings
+NAME=Leather Leggings of Invulnerability
+
+CATEGORY=Provisions - Armor - Magic
+SUBSECTION=Leather
+DESCRIPTION=Leather Leggings of Invulnerability
+
+ON=@Create
+	MOREY=120.0
+	ATTR=attr_magic
+	HITPOINTS={31 37}
+	COLOR=color_magic_invulnerability
+
+[ITEMDEF i_leather_tunic_invulnerability]
+ID=i_leather_tunic
+NAME=Leather Tunic of Invulnerability
+
+CATEGORY=Provisions - Armor - Magic
+SUBSECTION=Leather
+DESCRIPTION=Leather Tunic of Invulnerability
+
+ON=@Create
+	MOREY=120.0
+	ATTR=attr_magic
+	HITPOINTS={31 37}
+	COLOR=color_magic_invulnerability
+
+[ITEMDEF i_leather_gloves_invulnerability]
+ID=i_leather_gloves
+NAME=Leather Gloves of Invulnerability
+
+CATEGORY=Provisions - Armor - Magic
+SUBSECTION=Leather
+DESCRIPTION=Leather Gloves of Invulnerability
+
+ON=@Create
+	MOREY=120.0
+	ATTR=attr_magic
+	HITPOINTS={31 37}
+	COLOR=color_magic_invulnerability
+
+[ITEMDEF i_leather_cap_invulnerability]
+ID=i_leather_cap
+NAME=Leather Cap of Invulnerability
+
+CATEGORY=Provisions - Armor - Magic
+SUBSECTION=Leather
+DESCRIPTION=Leather Cap of Invulnerability
+
+ON=@Create
+	MOREY=120.0
+	ATTR=attr_magic
+	HITPOINTS={31 37}
+	COLOR=color_magic_invulnerability
+
+[ITEMDEF i_leather_shorts_invulnerability]
+ID=i_armor_female_shorts
+NAME=Leather Shorts of Invulnerability
+
+CATEGORY=Provisions - Armor - Magic
+SUBSECTION=Leather
+DESCRIPTION=Leather Shorts of Invulnerability
+
+ON=@Create
+	MOREY=120.0
+	ATTR=attr_magic
+	HITPOINTS={31 37}
+	COLOR=color_magic_invulnerability
+
+[ITEMDEF i_leather_armor_invulnerability_female]
+ID=i_armor_female_leather
+NAME=Leather Armor of Invulnerability
+
+CATEGORY=Provisions - Armor - Magic
+SUBSECTION=Leather
+DESCRIPTION=Leather Armor of Invulnerability
+
+ON=@Create
+	MOREY=120.0
+	ATTR=attr_magic
+	HITPOINTS={31 37}
+	COLOR=color_magic_invulnerability
+
+[ITEMDEF i_leather_skirt_invulnerability]
+ID=i_armor_female_skirt
+NAME=Leather Skirt of Invulnerability
+
+CATEGORY=Provisions - Armor - Magic
+SUBSECTION=Leather
+DESCRIPTION=Leather Skirt of Invulnerability
+
+ON=@Create
+	MOREY=120.0
+	ATTR=attr_magic
+	HITPOINTS={31 37}
+	COLOR=color_magic_invulnerability
+
+[ITEMDEF i_leather_bustier_invulnerability]
+ID=i_armor_female_bustier
+NAME=Leather Bustier of Invulnerability
+
+CATEGORY=Provisions - Armor - Magic
+SUBSECTION=Leather
+DESCRIPTION=Leather Bustier of Invulnerability
+
+ON=@Create
+	MOREY=120.0
+	ATTR=attr_magic
+	HITPOINTS={31 37}
+	COLOR=color_magic_invulnerability
+
+[ITEMDEF i_studded_sleeves_invulnerability]
+ID=i_studded_sleeves
+NAME=Studded Sleeves of Invulnerability
+
+CATEGORY=Provisions - Armor - Magic
+SUBSECTION=Studded
+DESCRIPTION=Studded Sleeves of Invulnerability
+
+ON=@Create
+	MOREY=120.0
+	ATTR=attr_magic
+	HITPOINTS={36 44}
+	COLOR=color_magic_invulnerability
+
+[ITEMDEF i_studded_gloves_invulnerability]
+ID=i_studded_gloves
+NAME=Studded Gloves of Invulnerability
+
+CATEGORY=Provisions - Armor - Magic
+SUBSECTION=Studded
+DESCRIPTION=Studded Gloves of Invulnerability
+
+ON=@Create
+	MOREY=120.0
+	ATTR=attr_magic
+	HITPOINTS={36 44}
+	COLOR=color_magic_invulnerability
+
+[ITEMDEF i_studded_gorget_invulnerability]
+ID=i_studded_gorget
+NAME=Studded Gorget of Invulnerability
+
+CATEGORY=Provisions - Armor - Magic
+SUBSECTION=Studded
+DESCRIPTION=Studded Gorget of Invulnerability
+
+ON=@Create
+	MOREY=120.0
+	ATTR=attr_magic
+	HITPOINTS={36 44}
+	COLOR=color_magic_invulnerability
+
+[ITEMDEF i_studded_leggings_invulnerability]
+ID=i_studded_leggings
+NAME=Studded Leggings of Invulnerability
+
+CATEGORY=Provisions - Armor - Magic
+SUBSECTION=Studded
+DESCRIPTION=Studded Leggings of Invulnerability
+
+ON=@Create
+	MOREY=120.0
+	ATTR=attr_magic
+	HITPOINTS={36 44}
+	COLOR=color_magic_invulnerability
+
+[ITEMDEF i_studded_tunic_invulnerability]
+ID=i_studded_tunic
+NAME=Studded Tunic of Invulnerability
+
+CATEGORY=Provisions - Armor - Magic
+SUBSECTION=Studded
+DESCRIPTION=Studded Tunic of Invulnerability
+
+ON=@Create
+	MOREY=120.0
+	ATTR=attr_magic
+	HITPOINTS={36 44}
+	COLOR=color_magic_invulnerability
+
+[ITEMDEF i_studded_armor_invulnerability]
+ID=i_armor_female_studded
+NAME=Studded Armor of Invulnerability
+
+CATEGORY=Provisions - Armor - Magic
+SUBSECTION=Studded
+DESCRIPTION=Studded Armor of Invulnerability
+
+ON=@Create
+	MOREY=120.0
+	ATTR=attr_magic
+	HITPOINTS={36 44}
+	COLOR=color_magic_invulnerability
+
+[ITEMDEF i_studded_bustier_invulnerability]
+ID=i_armor_female_bustier_studded
+NAME=Studded Bustier of Invulnerability
+
+CATEGORY=Provisions - Armor - Magic
+SUBSECTION=Studded
+DESCRIPTION=Studded Bustier of Invulnerability
+
+ON=@Create
+	MOREY=120.0
+	ATTR=attr_magic
+	HITPOINTS={36 44}
+	COLOR=color_magic_invulnerability
+
+[EOF]

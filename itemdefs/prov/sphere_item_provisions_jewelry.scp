@@ -1,0 +1,494 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2018
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Saturday, Oct 20, 2018
+//
+VERSION=0.56d
+
+
+[ITEMDEF 01085]
+DEFNAME=i_necklace_metal_beads
+NAME=bead necklace
+TYPE=t_jewelry
+FLIP=1
+VALUE=72
+WEIGHT=0.1
+RESOURCES=1 i_ingot_iron,1 i_beads
+SKILLMAKE=Tinkering 61.0,t_tinker_tools
+CATEGORY=Provisions - Jewels and Jewelry
+SUBSECTION=Jewelry
+DESCRIPTION=Necklace
+TEVENTS=t_equipitem
+DUPELIST=01f05
+
+[ITEMDEF 01086]
+DEFNAME=i_bracelet_gold
+NAME=gold bracelet
+TYPE=t_jewelry
+VALUE=34
+WEIGHT=0.1
+RESOURCES=3 i_ingot_gold
+SKILLMAKE=Tinkering 63.5,t_tinker_tools
+CATEGORY=Provisions - Jewels and Jewelry
+SUBSECTION=Jewelry
+DESCRIPTION=Bracelet (Gold)
+TEVENTS=t_equipitem
+
+[ITEMDEF 01087]
+DEFNAME=i_earrings_gold
+NAME=gold earrings
+TYPE=t_jewelry
+VALUE=12
+WEIGHT=0.1
+RESOURCES=1 i_ingot_gold
+SKILLMAKE=Tinkering 62.5,t_tinker_tools
+CATEGORY=Provisions - Jewels and Jewelry
+SUBSECTION=Jewelry
+DESCRIPTION=Earrings (Gold)
+TEVENTS=t_equipitem
+
+[ITEMDEF 01088]
+DEFNAME=i_necklace_gold
+NAME=gold necklace
+TYPE=t_jewelry
+VALUE=11
+WEIGHT=0.1
+RESOURCES=1 i_ingot_gold
+SKILLMAKE=Tinkering 61.0,t_tinker_tools
+CATEGORY=Provisions - Jewels and Jewelry
+SUBSECTION=Jewelry
+DESCRIPTION=Necklace
+TEVENTS=t_equipitem
+
+[ITEMDEF 01089]
+DEFNAME=i_necklace_gold_beads
+NAME=gold bead necklace
+TYPE=t_jewelry
+VALUE=77
+WEIGHT=0.1
+RESOURCES=1 i_ingot_gold,1 i_beads
+SKILLMAKE=Tinkering 62.0,t_tinker_tools
+CATEGORY=Provisions - Jewels and Jewelry
+SUBSECTION=Jewelry
+DESCRIPTION=Necklace (Gold Bead)
+TEVENTS=t_equipitem
+
+[ITEMDEF 0108a]
+DEFNAME=i_ring_gold
+NAME=gold ring
+TYPE=t_jewelry
+VALUE=13
+WEIGHT=0.1
+RESOURCES=1 i_ingot_gold
+SKILLMAKE=Tinkering 63.0,t_tinker_tools
+CATEGORY=Provisions - Jewels and Jewelry
+SUBSECTION=Jewelry
+DESCRIPTION=Ring (Gold)
+TEVENTS=t_equipitem
+
+[ITEMDEF 0108b]
+DEFNAME=i_beads
+TYPE=t_jewelry
+VALUE=41
+CATEGORY=Provisions - Jewels and Jewelry
+SUBSECTION=Jewels
+DESCRIPTION=Beads
+
+
+
+
+[ITEMDEF 01096]
+DEFNAME=i_talisman
+TYPE=t_jewelry
+//ARMOR=20
+LAYER=layer_talisman
+WEIGHT=0.1
+RESOURCES=1 i_ingot_iron,1 i_wire_iron,1 i_scroll_protection
+CATEGORY=Provisions - Talismans
+SUBSECTION=Talismans
+DESCRIPTION=Talisman
+
+
+[ITEMDEF 01f05]
+//beaded necklace
+DUPEITEM=01085
+
+[ITEMDEF 01f06]
+DEFNAME=i_bracelet_silver
+NAME=silver bracelet
+TYPE=t_jewelry
+VALUE=30
+WEIGHT=1.0
+RESOURCES=3 i_ingot_silver
+SKILLMAKE=Tinkering 62.0,t_tinker_tools
+CATEGORY=Provisions - Jewels and Jewelry
+SUBSECTION=Jewelry
+DESCRIPTION=Silver Bracelet
+TEVENTS=t_equipitem
+
+[ITEMDEF 01f07]
+DEFNAME=i_earrings_silver
+NAME=silver earrings
+TYPE=t_jewelry
+VALUE=15
+WEIGHT=1.0
+RESOURCES=1 i_ingot_silver
+SKILLMAKE=Tinkering 62.0,t_tinker_tools
+CATEGORY=Provisions - Jewels and Jewelry
+SUBSECTION=Jewelry
+DESCRIPTION=Silver Earrings
+TEVENTS=t_equipitem
+
+[ITEMDEF 01f08]
+DEFNAME=i_necklace_silver
+NAME=silver necklace
+TYPE=t_jewelry
+VALUE=22
+WEIGHT=2.0
+RESOURCES=2 i_ingot_silver
+SKILLMAKE=Tinkering 62.0,t_tinker_tools
+CATEGORY=Provisions - Jewels and Jewelry
+SUBSECTION=Jewelry
+DESCRIPTION=Silver Necklace
+TEVENTS=t_equipitem
+
+[ITEMDEF 01f09]
+DEFNAME=i_ring_silver
+NAME=silver ring
+TYPE=t_jewelry
+VALUE=15
+WEIGHT=1.0
+RESOURCES=1 i_ingot_silver
+SKILLMAKE=Tinkering 62.0,t_tinker_tools
+CATEGORY=Provisions - Jewels and Jewelry
+SUBSECTION=Jewelry
+DESCRIPTION=Silver Ring
+TEVENTS=t_equipitem
+
+[ITEMDEF 01f0a]
+DEFNAME=i_necklace_silver_beads
+NAME=silver bead necklace
+TYPE=t_jewelry
+VALUE=63
+WEIGHT=2.1
+RESOURCES=2 i_ingot_silver,1 i_beads
+SKILLMAKE=Tinkering 62.0,t_tinker_tools
+CATEGORY=Provisions - Jewels and Jewelry
+SUBSECTION=Jewelry
+DESCRIPTION=Silver Beads
+TEVENTS=t_equipitem
+
+
+[ITEMDEF 02f58]
+DEFNAME=i_talisman1
+NAME=talisman
+TYPE=t_jewelry
+//ARMOR=20
+LAYER=layer_talisman
+WEIGHT=0.1
+RESOURCES=1 i_ingot_iron,1 i_wire_iron,1 i_scroll_protection
+CATEGORY=Provisions - Talismans
+SUBSECTION=Talismans
+DESCRIPTION=Talisman 1
+
+[ITEMDEF 02f59]
+DEFNAME=i_talisman2
+NAME=talisman
+TYPE=t_jewelry
+//ARMOR=20
+LAYER=layer_talisman
+WEIGHT=0.1
+RESOURCES=1 i_ingot_iron,1 i_wire_iron,1 i_scroll_protection
+CATEGORY=Provisions - Talismans
+SUBSECTION=Talismans
+DESCRIPTION=Talisman 2
+
+[ITEMDEF 02f5a]
+DEFNAME=i_talisman3
+NAME=talisman
+TYPE=t_jewelry
+//ARMOR=20
+LAYER=layer_talisman
+WEIGHT=0.1
+RESOURCES=1 i_ingot_iron,1 i_wire_iron,1 i_scroll_protection
+CATEGORY=Provisions - Talismans
+SUBSECTION=Talismans
+DESCRIPTION=Talisman 3
+
+[ITEMDEF 02f5b]
+DEFNAME=i_talisman4
+NAME=Talisman
+TYPE=t_jewelry
+//ARMOR=20
+LAYER=layer_talisman
+WEIGHT=0.1
+RESOURCES=1 i_ingot_iron,1 i_wire_iron,1 i_scroll_protection
+CATEGORY=Provisions - Talismans
+SUBSECTION=Talismans
+DESCRIPTION=Talisman 4
+
+
+[ITEMDEF 02fb8]
+DEFNAME=i_elven_glasses
+NAME=elven glasses
+TYPE=t_jewelry
+FLIP=1
+RESPHYSICAL=2
+RESFIRE=4
+RESCOLD=4
+RESPOISON=3
+RESENERGY=2
+CATEGORY=Provisions - Jewels and Jewelry
+SUBSECTION=Glasses
+DESCRIPTION=Elven Glasses
+REQSTR=45
+DUPELIST=03172
+ON=@Create
+   HITPOINTS={36 48}
+
+
+[ITEMDEF 03172]
+//elven glasses
+DUPEITEM=02fb8
+
+
+[ITEMDEF 03bb5]
+DEFNAME=i_pendant_ankh
+NAME=ankh pendant
+TYPE=t_jewelry
+VALUE=72
+WEIGHT=0.1
+RESOURCES=1 i_ingot_silver
+SKILLMAKE=Tinkering 91.0,t_tinker_tools
+CATEGORY=Provisions - Jewels and Jewelry
+SUBSECTION=Jewelry
+DESCRIPTION=Ankh Pendant
+
+
+[ITEMDEF 04210]
+DEFNAME=i_necklace_gargoyle
+NAME=Gargish necklace
+TYPE=t_armor
+RESPHYSICAL=1
+RESFIRE=2
+RESCOLD=2
+RESPOISON=2
+RESENERGY=3
+RESOURCES=3 i_ingot_gold
+SKILLMAKE=Tinkering 60.0,t_tinker_tools
+CATEGORY=Provisions - Jewels and Jewelry
+SUBSECTION=Jewelry
+DESCRIPTION=Gargish Necklace
+canuse=can_u_gargoyle
+TEVENTS=t_equipitem
+ON=@Create
+   HITPOINTS={30 40}
+
+[ITEMDEF 04211]
+DEFNAME=i_bracelet_gargoyle
+NAME=Gargish bracelet
+TYPE=t_jewelry
+RESOURCES=3 i_ingot_gold
+SKILLMAKE=Tinkering 55.0,t_tinker_tools
+CATEGORY=Provisions - Jewels and Jewelry
+SUBSECTION=Jewelry
+DESCRIPTION=Gargish Bracelet
+canuse=can_u_gargoyle
+TEVENTS=t_equipitem
+
+[ITEMDEF 04212]
+DEFNAME=i_ring_gargoyle
+NAME=Gargish ring
+TYPE=t_jewelry
+RESOURCES=3 i_ingot_gold
+SKILLMAKE=Tinkering 65.0,t_tinker_tools
+CATEGORY=Provisions - Jewels and Jewelry
+SUBSECTION=Jewelry
+DESCRIPTION=Gargoyle Ring
+canuse=can_u_gargoyle
+TEVENTS=t_equipitem
+
+[ITEMDEF 04213]
+DEFNAME=i_earrings_gargoyle
+NAME=Gargish earrings
+TYPE=t_armor
+RESPHYSICAL=1
+RESFIRE=2
+RESCOLD=2
+RESPOISON=2
+RESENERGY=3
+RESOURCES=3 i_ingot_gold
+SKILLMAKE=Tinkering 55.0,t_tinker_tools
+CATEGORY=Provisions - Jewels and Jewelry
+SUBSECTION=Jewelry
+DESCRIPTION=Gargish Earrings
+canuse=can_u_gargoyle
+TEVENTS=t_equipitem
+ON=@Create
+   HITPOINTS={30 40}
+
+
+[ITEMDEF 045b1]
+DEFNAME=i_gargish_glasses_female
+NAME=Gargish female glasses
+TYPE=t_jewelry
+FLIP=1
+RESPHYSICAL=2
+RESFIRE=4
+RESCOLD=4
+RESPOISON=3
+RESENERGY=2
+CATEGORY=Provisions - Jewels and Jewelry
+SUBSECTION=Glasses
+DESCRIPTION=Gargish Female Glasses
+canuse=can_u_gargoyle|can_u_female
+REQSTR=45
+TEVENTS=t_equipitem
+DUPELIST=045b3
+ON=@Create
+   HITPOINTS={36 48}
+
+
+[ITEMDEF 045b3]
+//Gargish female glasses
+DUPEITEM=045b1
+
+
+[ITEMDEF 04644]
+DEFNAME=i_gargish_glasses
+NAME=Gargish glasses
+TYPE=t_jewelry
+FLIP=1
+RESPHYSICAL=2
+RESFIRE=4
+RESCOLD=4
+RESPOISON=3
+RESENERGY=2
+CATEGORY=Provisions - Jewels and Jewelry
+SUBSECTION=Glasses
+DESCRIPTION=Gargish Glasses
+canuse=can_u_gargoyle
+//TAG.MaleOnly=1
+REQSTR=45
+TEVENTS=t_equipitem
+DUPELIST=04645
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 04645]
+//gargish glasses
+DUPEITEM=04644
+
+
+[ITEMDEF 04d0a]
+DEFNAME=i_gargish_stone_amulet
+NAME=gargish stone amulet
+TYPE=t_armor
+RESPHYSICAL=1
+RESFIRE=2
+RESCOLD=2
+RESPOISON=2
+RESENERGY=3
+REQSTR=40
+RESOURCES=3 i_rock_granite
+SKILLMAKE=Carpentry 60.0,t_masonry_tool
+CATEGORY=Provisions - Jewels and Jewelry
+SUBSECTION=Jewelry
+DESCRIPTION=Gargish Stone Amulet
+canuse=can_u_gargoyle
+TEVENTS=t_equipitem
+ON=@Create
+   COLOR=09c4
+   HITPOINTS={30 40}
+
+[ITEMDEF 04d0b]
+DEFNAME=i_gargish_amulet
+NAME=gargish amulet
+TYPE=t_armor
+RESPHYSICAL=1
+RESFIRE=2
+RESCOLD=2
+RESPOISON=2
+RESENERGY=3
+RESOURCES=3 i_ingot_iron
+SKILLMAKE=Blacksmithing 60.0
+CATEGORY=Provisions - Jewels and Jewelry
+SUBSECTION=Jewelry
+DESCRIPTION=Gargish Amulet
+canuse=can_u_gargoyle
+TEVENTS=t_equipitem
+ON=@Create
+   HITPOINTS={30 40}
+
+
+[ITEMDEF 09e25]
+DEFNAME=i_talisman_craftsman_tailoring
+NAME=Master Craftsman Talisman
+TYPE=t_jewelry
+CATEGORY=Provisions - Talismans
+SUBSECTION=Talismans
+DESCRIPTION=Master Craftsman Talisman (Tailoring)
+
+[ITEMDEF 09e26]
+DEFNAME=i_talisman_craftsman_alchemy
+NAME=Master Craftsman Talisman
+TYPE=t_jewelry
+CATEGORY=Provisions - Talismans
+SUBSECTION=Talismans
+DESCRIPTION=Master Craftsman Talisman (Alchemy)
+
+[ITEMDEF 09e27]
+DEFNAME=i_talisman_craftsman_cooking
+NAME=Master Craftsman Talisman
+TYPE=t_jewelry
+CATEGORY=Provisions - Talismans
+SUBSECTION=Talismans
+DESCRIPTION=Master Craftsman Talisman (Cooking)
+
+[ITEMDEF 09e28]
+DEFNAME=i_talisman_craftsman_inscription
+NAME=Master Craftsman Talisman
+TYPE=t_jewelry
+CATEGORY=Provisions - Talismans
+SUBSECTION=Talismans
+DESCRIPTION=Master Craftsman Talisman (Inscription)
+
+[ITEMDEF 09e29]
+DEFNAME=i_talisman_craftsman_fletching
+NAME=Master Craftsman Talisman
+TYPE=t_jewelry
+CATEGORY=Provisions - Talismans
+SUBSECTION=Talismans
+DESCRIPTION=Master Craftsman Talisman (Fletching)
+
+[ITEMDEF 09e2a]
+DEFNAME=i_talisman_craftsman_blacksmithing
+NAME=Master Craftsman Talisman
+TYPE=t_jewelry
+CATEGORY=Provisions - Talismans
+SUBSECTION=Talismans
+DESCRIPTION=Master Craftsman Talisman (Blacksmithing)
+
+[ITEMDEF 09e2b]
+DEFNAME=i_talisman_craftsman_tinkering
+NAME=Master Craftsman Talisman
+TYPE=t_jewelry
+CATEGORY=Provisions - Talismans
+SUBSECTION=Talismans
+DESCRIPTION=Master Craftsman Talisman (Tinkering)
+
+[ITEMDEF 09e2c]
+DEFNAME=i_talisman_craftsman_carpentry
+NAME=Master Craftsman Talisman
+TYPE=t_jewelry
+CATEGORY=Provisions - Talismans
+SUBSECTION=Talismans
+DESCRIPTION=Master Craftsman Talisman (Carpentry)
+
+[EOF]

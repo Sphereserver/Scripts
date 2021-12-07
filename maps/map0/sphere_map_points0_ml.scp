@@ -1,0 +1,139 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2017
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Wednesday, April 12, 2017
+//
+VERSION=0.56d
+
+[Teleporters]
+535,992,0,0=6985,340,0,0=tp_Yew_Heartwood	//add i_fx_field_paralyze here
+6984,338,0,0=535,994,0,0=tp_Heartwood_Yew	//add i_fx_field_paralyze here
+
+1714,2997,0,0=6309,892,-1,0=tp_TrinsicTerritory_PaintedCaves1
+1714,2996,0,0=6309,891,-1,0=tp_TrinsicTerritory_PaintedCaves2
+6310,890,0,0=1715,2996,0,0=tp_PaintedCaves_TrinsicTerritory1
+6310,891,0,0=1715,2996,0,0=tp_PaintedCaves_TrinsicTerritory2
+6310,892,0,0=1715,2997,0,0=tp_PaintedCaves_TrinsicTerritory3
+6310,893,0,0=1715,2997,0,0=tp_PaintedCaves_TrinsicTerritory4
+
+587,1638,0,0=6478,863,11,0=tp_YewTerritory_BlightedGrove1
+588,1638,0,0=6478,863,11,0=tp_YewTerritory_BlightedGrove2
+589,1638,0,0=6478,863,11,0=tp_YewTerritory_BlightedGrove3
+6477,862,10,0=587,1641,-1,0=tp_BlightedGrove_YewTerritory	//add i_fx_field_paralyze here
+
+6472,869,20,0=6574,888,0,0=tp_BlightedGrove_BlightedGroveCave1
+6473,869,20,0=6575,888,0,0=tp_BlightedGrove_BlightedGroveCave2
+6574,889,0,0=6472,870,20,0=tp_BlightedGroveCave_BlightedGrove1
+6575,889,0,0=6473,870,20,0=tp_BlightedGroveCave_BlightedGrove2
+
+6488,849,40,0=6587,867,0,0=tp_BlightedGrove_BlightedGroveCave1
+6488,850,41,0=6587,868,0,0=tp_BlightedGrove_BlightedGroveCave2
+6588,867,0,0=6489,849,40,0=tp_BlightedGroveCave_BlightedGrove1
+6588,868,0,0=6489,850,40,0=tp_BlightedGroveCave_BlightedGrove2
+
+3784,1098,12,0=6471,188,5,0=tp_NujelmTerritory_PrismOfLight1
+3785,1098,12,0=6472,188,5,0=tp_NujelmTerritory_PrismOfLight2
+6471,187,20,0=3784,1097,15,0=tp_PrismOfLight_NujelmTerritory1
+6472,187,20,0=3785,1097,15,0=tp_PrismOfLight_NujelmTerritory2
+
+6506,89,-4,0=6502,87,0,0=tp_PrismOfLight_TeleportTrap1
+6508,84,-4,0=6502,87,0,0=tp_PrismOfLight_TeleportTrap2
+6509,86,-4,0=6502,87,0,0=tp_PrismOfLight_TeleportTrap3
+6510,87,-4,0=6502,87,0,0=tp_PrismOfLight_TeleportTrap4
+6512,87,-4,0=6502,87,0,0=tp_PrismOfLight_TeleportTrap5
+6512,83,-4,0=6502,87,0,0=tp_PrismOfLight_TeleportTrap6
+6513,88,-4,0=6502,87,0,0=tp_PrismOfLight_TeleportTrap7
+
+6469,97,-50,0=6503,87,0,0=tp_PrismOfLight_Teleport1
+6568,77,-10,0=6576,72,0,0=tp_PrismOfLight_Teleport2
+6554,104,0,0=6555,115,0,0=tp_PrismOfLight_Teleport3
+6582,109,0,0=6552,142,0,0=tp_PrismOfLight_Teleport4
+
+6537,175,0,0=6515,184,0,0=tp_PrismOfLight_PrismOfLightKeyRoom		//add i_moongate_blue here (color=0481)
+6515,184,0,0=6537,175,0,0=tp_PrismOfLightKeyRoom_PrismOfLight		//add i_moongate_blue here (color=0481)
+
+6477,94,-49,0=6476,76,-35,0=tp_PrismOfLight_PrismOfLightSnakePit
+6471,75,-23,0=6477,94,-49,0=tp_PrismOfLightSnakePit_PrismOfLight
+
+6578,160,12,0=6577,177,30,0=tp_PrismOfLight_PrismOfLightCamp
+6577,176,30,0=6578,159,13,0=tp_PrismOfLightCamp_PrismOfLight
+
+6541,117,-15,0=6523,136,-20,0=tp_PrismOfLight_PrismOfLightBossRoom	//add i_moongate_red here
+6523,136,-20,0=6541,117,-15,0=tp_PrismOfLightBossRoom_PrismOfLight	//add i_moongate_red here
+
+5577,3018,25,0=6222,335,60,0=tp_LostLands_PalaceOfParoxysmus1
+5578,3019,25,0=6222,335,60,0=tp_LostLands_PalaceOfParoxysmus2
+5578,3018,25,0=6222,335,60,0=tp_LostLands_PalaceOfParoxysmus3
+5578,3017,25,0=6222,335,60,0=tp_LostLands_PalaceOfParoxysmus4
+5578,3016,25,0=6222,335,60,0=tp_LostLands_PalaceOfParoxysmus5
+5579,3017,25,0=6222,335,60,0=tp_LostLands_PalaceOfParoxysmus6
+5579,3018,25,0=6222,335,60,0=tp_LostLands_PalaceOfParoxysmus7
+5579,3019,25,0=6222,335,60,0=tp_LostLands_PalaceOfParoxysmus8
+
+6303,328,65,0=5623,3038,15,0=tp_PalaceOfParoxysmus_LostLands1
+6304,328,65,0=5623,3038,15,0=tp_PalaceOfParoxysmus_LostLands2
+
+766,1646,0,0=6173,22,0,0=tp_YewTerritory_SanctuaryLevel1_1
+766,1647,0,0=6173,23,0,0=tp_YewTerritory_SanctuaryLevel1_2
+6172,22,0,0=765,1646,0,0=tp_SanctuaryLevel1_YewTerritory1
+6172,23,0,0=765,1647,0,0=tp_SanctuaryLevel1_YewTerritory2
+
+6373,49,-20,0=801,1682,0,0=tp_SanctuaryLevel3_YewTerritory1
+6374,49,-20,0=801,1682,0,0=tp_SanctuaryLevel3_YewTerritory2
+6375,49,-20,0=801,1682,0,0=tp_SanctuaryLevel3_YewTerritory3
+6376,49,-20,0=801,1682,0,0=tp_SanctuaryLevel3_YewTerritory4
+6377,49,-20,0=801,1682,0,0=tp_SanctuaryLevel3_YewTerritory5
+
+6159,130,0,0=6316,63,-15,0=tp_SanctuaryLevel1_SanctuaryLevel3
+6316,62,-5,0=6159,130,0,0=tp_SanctuaryLevel3_SanctuaryLevel1
+
+6276,40,-10,0=6375,124,-20,0=tp_SanctuaryLevel2_SanctuaryLevel3
+6375,124,-20,0=6276,40,-10,0=tp_SanctuaryLevel3_SanctuaryLevel2
+
+6319,18,-7,0=6164,73,0,0=tp_SanctuaryLevel3_SanctuaryLevel1
+6164,73,0,0=6319,19,-20,0=tp_SanctuaryLevel1_SanctuaryLevel3
+
+6356,32,-5,0=6211,106,0,0=tp_SanctuaryLevel3_SanctuaryLevel2
+6211,106,0,0=6356,33,-20,0=tp_SanctuaryLevel2_SanctuaryLevel3
+
+6262,95,-10,0=6262,99,-10,0=tp_SanctuaryLevel2_SanctuaryElvenArea
+6256,97,-4,0=6257,95,-10,0=tp_SanctuaryElvenArea_SanctuaryLevel2_1
+6260,97,-4,0=6260,95,-10,0=tp_SanctuaryElvenArea_SanctuaryLevel2_2
+6263,97,-4,0=6263,95,-10,0=tp_SanctuaryElvenArea_SanctuaryLevel2_3
+6269,97,-4,0=6269,95,-10,0=tp_SanctuaryElvenArea_SanctuaryLevel2_4
+6273,97,-4,0=6272,95,-10,0=tp_SanctuaryElvenArea_SanctuaryLevel2_5
+
+6260,87,-10,0=6257,87,-8,0=tp_SanctuaryLevel2_SanctuaryDebrisArea1
+6260,88,-10,0=6257,88,-8,0=tp_SanctuaryLevel2_SanctuaryDebrisArea2
+6244,56,-10,0=6244,59,-10,0=tp_SanctuaryLevel2_SanctuaryDebrisArea3
+6253,54,-10,0=6253,57,-10,0=tp_SanctuaryLevel2_SanctuaryDebrisArea4
+6257,87,-8,0=6260,87,-10,0=tp_SanctuaryDebrisArea_SanctuaryLevel2_1
+6257,88,-8,0=6260,88,-10,0=tp_SanctuaryDebrisArea_SanctuaryLevel2_2
+6244,59,-10,0=6244,56,-10,0=tp_SanctuaryDebrisArea_SanctuaryLevel2_3
+6253,57,-10,0=6253,54,-10,0=tp_SanctuaryDebrisArea_SanctuaryLevel2_4
+
+6244,40,-10,0=6242,41,-1,0=tp_SanctuaryLevel2_SanctuarySzavetraArea1
+6244,41,-9,0=6242,42,-2,0=tp_SanctuaryLevel2_SanctuarySzavetraArea2
+6239,33,-10,0=6238,36,0,0=tp_SanctuaryLevel2_SanctuarySzavetraArea3
+6242,41,-1,0=6244,41,-7,0=tp_SanctuarySzavetraArea_SanctuaryLevel2_1
+6238,36,0,0=6239,33,-10,0=tp_SanctuarySzavetraArea_SanctuaryLevel2_2
+
+6180,59,0,0=6178,61,0,0=tp_SanctuaryLevel1_SanctuaryMougGuurArea1
+6178,97,0,0=6174,93,0,0=tp_SanctuaryLevel1_SanctuaryMougGuurArea2
+6178,61,0,0=6180,59,0,0=tp_SanctuaryMougGuurArea_SanctuaryLevel1_1
+6174,93,0,0=6178,97,0,0=tp_SanctuaryMougGuurArea_SanctuaryLevel1_2
+
+6196,125,-10,0=6196,127,-10,0=tp_SanctuaryLevel1_SanctuaryGraveyard1
+6197,125,-10,0=6197,127,-10,0=tp_SanctuaryLevel1_SanctuaryGraveyard2
+6187,131,-10,0=6190,131,-10,0=tp_SanctuaryLevel1_SanctuaryGraveyard3
+6196,127,-10,0=6196,125,-10,0=tp_SanctuaryGraveyard_SanctuaryLevel1_1
+6197,127,-10,0=6197,125,-10,0=tp_SanctuaryGraveyard_SanctuaryLevel1_2
+6190,131,-10,0=6187,131,-10,0=tp_SanctuaryGraveyard_SanctuaryLevel1_3
+
+[EOF]

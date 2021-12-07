@@ -1,0 +1,1238 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2018
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Thursday, Nov 1, 2018
+//
+VERSION=0.56d
+
+
+[ITEMDEF 0dfc]
+DEFNAME=i_scissors_barber
+TYPE=t_scissors
+FLIP=1
+CATEGORY=Items by Professions
+SUBSECTION=Hairstylist
+DESCRIPTION=Barber Scissors
+DUPELIST=0dfd
+
+[ITEMDEF 0dfd]
+//barber scissors
+DUPEITEM=0dfc
+
+[ITEMDEF 0dfe]
+DEFNAME=i_hair_cut
+CATEGORY=Items by Professions
+SUBSECTION=Hairstylist
+DESCRIPTION=Cut Hair
+
+[ITEMDEF 0dff]
+DEFNAME=i_wig
+FLIP=1
+CATEGORY=Items by Professions
+SUBSECTION=Hairstylist
+DESCRIPTION=Wig
+DUPELIST=0e00
+
+[ITEMDEF 0e00]
+//wig
+DUPEITEM=0dff
+
+[ITEMDEF 0e01]
+DEFNAME=i_wig_2
+FLIP=1
+CATEGORY=Items by Professions
+SUBSECTION=Hairstylist
+DESCRIPTION=Wig
+DUPELIST=0e02
+
+[ITEMDEF 0e02]
+//wig
+DUPEITEM=0e01
+
+[ITEMDEF 0e03]
+DEFNAME=i_wig_3
+FLIP=1
+CATEGORY=Items by Professions
+SUBSECTION=Hairstylist
+DESCRIPTION=Wig
+DUPELIST=0e04
+
+[ITEMDEF 0e04]
+//wig
+DUPEITEM=0e03
+
+[ITEMDEF 0e05]
+DEFNAME=i_wig_stand
+FLIP=1
+CATEGORY=Items by Professions
+SUBSECTION=Hairstylist
+DESCRIPTION=Wig Stand
+DUPELIST=0e06
+
+[ITEMDEF 0e06]
+//wig stand
+DUPEITEM=0e05
+
+[ITEMDEF 0e07]
+DEFNAME=i_wig_stand_2
+FLIP=1
+CATEGORY=Items by Professions
+SUBSECTION=Hairstylist
+DESCRIPTION=Wig Stand
+DUPELIST=0e08
+
+[ITEMDEF 0e08]
+//wig stand
+DUPEITEM=0e07
+
+[ITEMDEF 0e09]
+DEFNAME=i_wig_4
+FLIP=1
+CATEGORY=Items by Professions
+SUBSECTION=Hairstylist
+DESCRIPTION=Wig
+DUPELIST=0e0a
+
+[ITEMDEF 0e0a]
+//wig
+DUPEITEM=0e09
+
+[ITEMDEF 0e0b]
+DEFNAME=i_wig_5
+FLIP=1
+CATEGORY=Items by Professions
+SUBSECTION=Hairstylist
+DESCRIPTION=Wig
+DUPELIST=0e0c
+
+[ITEMDEF 0e0c]
+//wig
+DUPEITEM=0e0b
+
+[ITEMDEF 0e0d]
+DEFNAME=i_wig_6
+FLIP=1
+CATEGORY=Items by Professions
+SUBSECTION=Hairstylist
+DESCRIPTION=Wig
+DUPELIST=0e0e
+
+[ITEMDEF 0e0e]
+//wig
+DUPEITEM=0e0d
+
+
+[ITEMDEF 0203b]
+DEFNAME=i_hair_short
+NAME=Short Hair
+TYPE=t_hair
+CanUse=can_u_human
+CATEGORY=Hairs, Horns and Faces
+CATEGORY=Human Hair
+DESCRIPTION=Short
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0203c]
+DEFNAME=i_hair_long
+NAME=Long Hair
+TYPE=t_hair
+CanUse=can_u_human
+CATEGORY=Hairs, Horns and Faces
+CATEGORY=Human Hair
+DESCRIPTION=Long
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0203d]
+DEFNAME=i_hair_ponytail
+NAME=Ponytail Hair
+TYPE=t_hair
+CanUse=can_u_human
+CATEGORY=Hairs, Horns and Faces
+CATEGORY=Human Hair
+DESCRIPTION=Ponytail
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0203e]
+DEFNAME=i_beard_long
+NAME=Long Beard
+TYPE=t_beard
+CanUse=can_u_human|can_u_male
+CATEGORY=Hairs, Horns and Faces
+CATEGORY=Human Beard
+DESCRIPTION=Long
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0203f]
+DEFNAME=i_beard_short
+NAME=Short Beard
+TYPE=t_beard
+CanUse=can_u_human|can_u_male
+CATEGORY=Hairs, Horns and Faces
+CATEGORY=Human Beard
+DESCRIPTION=Short
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 02040]
+DEFNAME=i_beard_goatee
+NAME=Goatee
+TYPE=t_beard
+CanUse=can_u_human|can_u_male
+CATEGORY=Hairs, Horns and Faces
+CATEGORY=Human Beard
+DESCRIPTION=Goatee
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 02041]
+DEFNAME=i_beard_mustache
+NAME=Mustache
+TYPE=t_beard
+CanUse=can_u_human|can_u_male
+CATEGORY=Hairs, Horns and Faces
+CATEGORY=Human Beard
+DESCRIPTION=Mustache
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 02044]
+DEFNAME=i_hair_mohawk
+NAME=Mohawk Hair
+TYPE=t_hair
+CanUse=can_u_human
+CATEGORY=Hairs, Horns and Faces
+CATEGORY=Human Hair
+DESCRIPTION=Mohawk
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 02045]
+DEFNAME=i_hair_pageboy
+NAME=Pageboy Hair
+TYPE=t_hair
+CanUse=can_u_human
+CATEGORY=Hairs, Horns and Faces
+CATEGORY=Human Hair
+DESCRIPTION=Pageboy
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 02046]
+DEFNAME=i_hair_buns
+NAME=Buns Hair
+TYPE=t_hair
+CanUse=can_u_human|can_u_female
+CATEGORY=Hairs, Horns and Faces
+CATEGORY=Human Hair
+DESCRIPTION=Buns
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 02047]
+DEFNAME=i_hair_curly
+NAME=Curly Hair
+TYPE=t_hair
+CanUse=can_u_human
+CATEGORY=Hairs, Horns and Faces
+CATEGORY=Human Hair
+DESCRIPTION=Curly
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 02048]
+DEFNAME=i_hair_receding
+NAME=Receding Hair
+TYPE=t_hair
+CanUse=can_u_human|can_u_male
+CATEGORY=Hairs, Horns and Faces
+CATEGORY=Human Hair
+DESCRIPTION=Receding
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 02049]
+DEFNAME=i_hair_2_pigtails
+NAME=2-tails Hair
+TYPE=t_hair
+CanUse=can_u_human
+CATEGORY=Hairs, Horns and Faces
+CATEGORY=Human Hair
+DESCRIPTION=2-tails
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0204a]
+DEFNAME=i_hair_topknot
+NAME=Topknot Hair
+TYPE=t_hair
+CanUse=can_u_human
+CATEGORY=Hairs, Horns and Faces
+CATEGORY=Human Hair
+DESCRIPTION=Topknot
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0204b]
+DEFNAME=i_beard_short_med
+NAME=Short Beard & Mustache
+TYPE=t_beard
+CanUse=can_u_human|can_u_male
+CATEGORY=Hairs, Horns and Faces
+CATEGORY=Human Beard
+DESCRIPTION=Short Beard & Mustache
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0204c]
+DEFNAME=i_beard_long_med
+NAME=Long Beard & Mustache
+TYPE=t_beard
+CanUse=can_u_human|can_u_male
+CATEGORY=Hairs, Horns and Faces
+CATEGORY=Human Beard
+DESCRIPTION=Long Beard & Mustache
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0204d]
+DEFNAME=i_beard_vandyke
+NAME=Vandyke
+TYPE=t_beard
+CanUse=can_u_human|can_u_male
+CATEGORY=Hairs, Horns and Faces
+CATEGORY=Human Beard
+DESCRIPTION=Vandyke
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 02fbf]
+DEFNAME=i_hair_elven_ml
+NAME=Mid Long Hair
+TYPE=t_hair
+CanUse=can_u_elf|can_u_male
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Elven Hair
+DESCRIPTION=Mid Long
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 02fc0]
+DEFNAME=i_hair_long_feather
+NAME=Long Feather Hair
+TYPE=t_hair
+CanUse=can_u_elf
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Elven Hair
+DESCRIPTION=Long Feather
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 02fc1]
+DEFNAME=i_hair_short1
+NAME=Short Hair
+TYPE=t_hair
+CanUse=can_u_elf
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Elven Hair
+DESCRIPTION=Short
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 02fc2]
+DEFNAME=i_hair_elven_mullet
+NAME=Mullet Hair
+TYPE=t_hair
+CanUse=can_u_elf
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Elven Hair
+DESCRIPTION=Mullet
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 02fcc]
+DEFNAME=i_hair_elven_flower
+NAME=Flower Hair
+TYPE=t_hair
+CanUse=can_u_elf|can_u_female
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Elven Hair
+DESCRIPTION=Flower
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 02fcd]
+DEFNAME=i_hair_elven_long
+NAME=Long Hair
+TYPE=t_hair
+CanUse=can_u_elf
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Elven Hair
+DESCRIPTION=Long
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 02fce]
+DEFNAME=i_hair_elven_topknot
+NAME=Topknot Hair
+TYPE=t_hair
+CanUse=can_u_elf
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Elven Hair
+DESCRIPTION=Topknot
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 02fcf]
+DEFNAME=i_hair_elven_braid
+NAME=Long Braid Hair
+TYPE=t_hair
+CanUse=can_u_elf
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Elven Hair
+DESCRIPTION=Long Braid
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 02fd0]
+DEFNAME=i_hair_elven_buns
+NAME=Buns Hair
+TYPE=t_hair
+CanUse=can_u_elf
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Elven Hair
+DESCRIPTION=Buns
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 02fd1]
+DEFNAME=i_hair_elven_spike
+NAME=Spiked Hair
+TYPE=t_hair
+CanUse=can_u_elf
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Elven Hair
+DESCRIPTION=Spiked
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 03b44]
+DEFNAME=i_face_1
+NAME=Face 1
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Face 1
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 03b45]
+DEFNAME=i_face_2
+NAME=Face 2
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Face 2
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 03b46]
+DEFNAME=i_face_3
+NAME=Face 3
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Face 3
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 03b47]
+DEFNAME=i_face_4
+NAME=Face 4
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Face 4
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 03b48]
+DEFNAME=i_face_5
+NAME=Face 5
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Face 5
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 03b49]
+DEFNAME=i_face_6
+NAME=Face 6
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Face 6
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 03b4a]
+DEFNAME=i_face_7
+NAME=Face 7
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Face 7
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 03b4b]
+DEFNAME=i_face_8
+NAME=Face 8
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Face 8
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 03b4c]
+DEFNAME=i_face_9
+NAME=Face 9
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Face 9
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 03b4d]
+DEFNAME=i_face_10
+NAME=Face 10
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Face 10
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 03b4e]
+DEFNAME=i_face_anime
+NAME=Face (Anime)
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Anime
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 03b4f]
+DEFNAME=i_face_hellian
+NAME=Face (Hellian)
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Hellian
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 03b50]
+DEFNAME=i_face_juka
+NAME=Face (Juka)
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Juka
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 03b51]
+DEFNAME=i_face_undead
+NAME=Face (Undead)
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Undead
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 03b52]
+DEFNAME=i_face_meer
+NAME=Face (Meer)
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Meer
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 03b53]
+DEFNAME=i_face_elder
+NAME=Face (Elder)
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Elder
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 03b54]
+DEFNAME=i_face_orc
+NAME=Face (Orc)
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Orc
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 03b55]
+DEFNAME=i_face_pirate
+NAME=Face (Pirate)
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Pirate
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 03b56]
+DEFNAME=i_face_native_papuan
+NAME=Face (Native Papuan)
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Native Papuan
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 03b57]
+DEFNAME=i_face_vampire
+NAME=Face (Vampire)
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Faces
+DESCRIPTION=Vampire
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 04258]
+DEFNAME=i_horn_gargoyle_male_1
+NAME=Male Horn 1
+TYPE=t_hair
+CanUse=can_u_gargoyle|can_u_male
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Horns
+DESCRIPTION=Male Horn 1
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 04259]
+DEFNAME=i_horn_gargoyle_male_2
+NAME=Male Horn 2
+TYPE=t_hair
+CanUse=can_u_gargoyle|can_u_male
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Horns
+DESCRIPTION=Male Horn 2
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0425a]
+DEFNAME=i_horn_gargoyle_male_3
+NAME=Male Horn 3
+TYPE=t_hair
+CanUse=can_u_gargoyle|can_u_male
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Horns
+DESCRIPTION=Male Horn 3
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0425b]
+DEFNAME=i_horn_gargoyle_male_4
+NAME=Male Horn 4
+TYPE=t_hair
+CanUse=can_u_gargoyle|can_u_male
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Horns
+DESCRIPTION=Male Horn 4
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0425c]
+DEFNAME=i_horn_gargoyle_male_5
+NAME=Male Horn 5
+TYPE=t_hair
+CanUse=can_u_gargoyle|can_u_male
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Horns
+DESCRIPTION=Male Horn 5
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0425d]
+DEFNAME=i_horn_gargoyle_male_6
+NAME=Male Horn 6
+TYPE=t_hair
+CanUse=can_u_gargoyle|can_u_male
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Horns
+DESCRIPTION=Male Horn 6
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0425e]
+DEFNAME=i_horn_gargoyle_male_7
+NAME=Male Horn 7
+TYPE=t_hair
+CanUse=can_u_gargoyle|can_u_male
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Horns
+DESCRIPTION=Male Horn 7
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0425f]
+DEFNAME=i_horn_gargoyle_male_8
+NAME=Male Horn 8
+TYPE=t_hair
+CanUse=can_u_gargoyle|can_u_male
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Horns
+DESCRIPTION=Male Horn 8
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 04260]
+//FIXME: what is this?
+
+[ITEMDEF 04261]
+DEFNAME=i_horn_gargoyle_female_1
+NAME=Female Horn 1
+TYPE=t_hair
+CanUse=can_u_gargoyle|can_u_female
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Horns
+DESCRIPTION=Female Horn 1
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 04262]
+DEFNAME=i_horn_gargoyle_female_2
+NAME=Female Horn 2
+TYPE=t_hair
+CanUse=can_u_gargoyle|can_u_female
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Horns
+DESCRIPTION=Female Horn 2
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 04273]
+DEFNAME=i_horn_gargoyle_female_3
+NAME=Female Horn 3
+TYPE=t_hair
+CanUse=can_u_gargoyle|can_u_female
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Horns
+DESCRIPTION=Female Horn 3
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 04274]
+DEFNAME=i_horn_gargoyle_female_4
+NAME=Female Horn 4
+TYPE=t_hair
+CanUse=can_u_gargoyle|can_u_female
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Horns
+DESCRIPTION=Female Horn 4
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 04275]
+DEFNAME=i_horn_gargoyle_female_5
+NAME=Female Horn 5
+TYPE=t_hair
+CanUse=can_u_gargoyle|can_u_female
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Horns
+DESCRIPTION=Female Horn 5
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 042aa]
+DEFNAME=i_horn_gargoyle_female_6
+NAME=Female Horn 6
+TYPE=t_hair
+CanUse=can_u_gargoyle|can_u_female
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Horns
+DESCRIPTION=Female Horn 6
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 042ab]
+DEFNAME=i_horn_gargoyle_female_7
+NAME=Female Horn 7
+TYPE=t_hair
+CanUse=can_u_gargoyle|can_u_female
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Horns
+DESCRIPTION=Female Horn 7
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 042ad]
+DEFNAME=i_horn_gargoyle_facial_1
+NAME=Male Facial Horn 1
+TYPE=t_beard
+CanUse=can_u_gargoyle|can_u_male
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Facial Horns
+DESCRIPTION=Male Facial Horn 1
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 042ae]
+DEFNAME=i_horn_gargoyle_facial_2
+NAME=Male Facial Horn 2
+TYPE=t_beard
+CanUse=can_u_gargoyle|can_u_male
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Facial Horns
+DESCRIPTION=Male Facial Horn 2
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 042af]
+DEFNAME=i_horn_gargoyle_facial_3
+NAME=Male Facial Horn 3
+TYPE=t_beard
+CanUse=can_u_gargoyle|can_u_male
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Facial Horns
+DESCRIPTION=Male Facial Horn 3
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 042b0]
+DEFNAME=i_horn_gargoyle_facial_4
+NAME=Male Facial Horn 4
+TYPE=t_beard
+CanUse=can_u_gargoyle|can_u_male
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Facial Horns
+DESCRIPTION=Male Facial Horn 4
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 042b1]
+DEFNAME=i_horn_gargoyle_female_8
+NAME=Female Horn 8
+TYPE=t_hair
+CanUse=can_u_gargoyle|can_u_female
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Horns
+DESCRIPTION=Female Horn 8
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 05679]
+DEFNAME=i_face_gargoyle_1
+NAME=Gargoyle Face 1
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Faces
+DESCRIPTION=Face 1
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0567a]
+DEFNAME=i_face_gargoyle_2
+NAME=Gargoyle Face 2
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Faces
+DESCRIPTION=Face 2
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0567b]
+DEFNAME=i_face_gargoyle_3
+NAME=Gargoyle Face 3
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Faces
+DESCRIPTION=Face 3
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0567c]
+DEFNAME=i_face_gargoyle_4
+NAME=Gargoyle Face 4
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Faces
+DESCRIPTION=Face 4
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0567d]
+DEFNAME=i_face_gargoyle_5
+NAME=Gargoyle Face 5
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Faces
+DESCRIPTION=Face 5
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0567e]
+DEFNAME=i_face_gargoyle_6
+NAME=Gargoyle Face 6
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Faces
+DESCRIPTION=Face 6
+ON=@Create
+   ATTR=attr_newbie
+
+
+[ITEMDEF 0a1a4]
+DEFNAME=i_hair_hobo
+NAME=Hobo Hair
+TYPE=t_hair
+CanUse=can_u_human|can_u_male
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Human Hair
+DESCRIPTION=Hobo
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0a1a5]
+DEFNAME=i_hair_afro
+NAME=Afro Hair
+TYPE=t_hair
+CanUse=can_u_human|can_u_male
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Human Hair
+DESCRIPTION=Afro
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0a1a6]
+DEFNAME=i_hair_monk
+NAME=Monk Hair
+TYPE=t_hair
+CanUse=can_u_human|can_u_male
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Human Hair
+DESCRIPTION=Monk
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0a1a7]
+DEFNAME=i_hair_swoop
+NAME=Swoop Hair
+TYPE=t_hair
+CanUse=can_u_human|can_u_male
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Human Hair
+DESCRIPTION=Swoop
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0a1a8]
+DEFNAME=i_beard_braid
+NAME=Braid Beard
+TYPE=t_beard
+CanUse=can_u_human|can_u_male
+CATEGORY=Hairs, Horns and Faces
+CATEGORY=Human Beard
+DESCRIPTION=Braid
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0a1a9]
+DEFNAME=i_beard_handlebar
+NAME=Handlebar Beard
+TYPE=t_beard
+CanUse=can_u_human|can_u_male
+CATEGORY=Hairs, Horns and Faces
+CATEGORY=Human Beard
+DESCRIPTION=Handlebar
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0a1aa]
+DEFNAME=i_beard_viking
+NAME=Viking Beard
+TYPE=t_beard
+CanUse=can_u_human|can_u_male
+CATEGORY=Hairs, Horns and Faces
+CATEGORY=Human Beard
+DESCRIPTION=Viking
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0a1ab]
+DEFNAME=i_beard_mutton_chop
+NAME=Mutton Chop Beard
+TYPE=t_beard
+CanUse=can_u_human|can_u_male
+CATEGORY=Hairs, Horns and Faces
+CATEGORY=Human Beard
+DESCRIPTION=Mutton Chop
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0a1ac]
+DEFNAME=i_hair_long_braid
+NAME=Long Braid Hair
+TYPE=t_hair
+CanUse=can_u_human|can_u_female
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Human Hair
+DESCRIPTION=Long Braid
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0a1ad]
+DEFNAME=i_hair_dread
+NAME=Dread Hair
+TYPE=t_hair
+CanUse=can_u_human|can_u_female
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Human Hair
+DESCRIPTION=Dread
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0a1ae]
+DEFNAME=i_hair_pigtail
+NAME=Pigtail Hair
+TYPE=t_hair
+CanUse=can_u_human|can_u_female
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Human Hair
+DESCRIPTION=Pigtail
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0a1af]
+DEFNAME=i_hair_buns
+NAME=Buns Hair
+TYPE=t_hair
+CanUse=can_u_human|can_u_female
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Human Hair
+DESCRIPTION=Buns
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0a1b0]
+DEFNAME=i_hair_clay_spike
+NAME=Clay Spike Hair
+TYPE=t_hair
+CanUse=can_u_elf|can_u_male
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Elf Hair
+DESCRIPTION=Clay Spike
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0a1b1]
+DEFNAME=i_hair_long_spike
+NAME=Long Spike Hair
+TYPE=t_hair
+CanUse=can_u_elf|can_u_male
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Elf Hair
+DESCRIPTION=Long Spike
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0a1b2]
+DEFNAME=i_hair_long_bangs
+NAME=Long Bangs Hair
+TYPE=t_hair
+CanUse=can_u_elf|can_u_male
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Elf Hair
+DESCRIPTION=Long Bangs
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0a1b3]
+DEFNAME=i_hair_elven_mullet
+NAME=Elven Mullet Hair
+TYPE=t_hair
+CanUse=can_u_elf|can_u_male
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Elf Hair
+DESCRIPTION=Elven Mullet
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0a1b4]
+DEFNAME=i_hair_side_wave
+NAME=Side Wave Hair
+TYPE=t_hair
+CanUse=can_u_elf|can_u_female
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Elf Hair
+DESCRIPTION=Side Wave
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0a1b5]
+DEFNAME=i_hair_messy_topknot
+NAME=Messy Topknot Hair
+TYPE=t_hair
+CanUse=can_u_elf|can_u_female
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Elf Hair
+DESCRIPTION=Messy Topknot
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0a1b6]
+DEFNAME=i_hair_long_curls
+NAME=Long Curls Hair
+TYPE=t_hair
+CanUse=can_u_elf|can_u_female
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Elf Hair
+DESCRIPTION=Long Curls
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0a1b7]
+DEFNAME=i_hair_neck_wrap
+NAME=Neck Wrap Hair
+TYPE=t_hair
+CanUse=can_u_elf|can_u_female
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Elf Hair
+DESCRIPTION=Neck Wrap
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0a1b8]
+DEFNAME=i_horn_gargoyle_nyala
+NAME=Nyala Horn
+TYPE=t_hair
+CanUse=can_u_gargoyle|can_u_male
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Horns
+DESCRIPTION=Nyala
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0a1b9]
+DEFNAME=i_horn_gargoyle_broken_left
+NAME=Broken Left Horn
+TYPE=t_hair
+CanUse=can_u_gargoyle|can_u_male
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Horns
+DESCRIPTION=Broken Left
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0a1ba]
+DEFNAME=i_horn_gargoyle_bull
+NAME=Bull Horn
+TYPE=t_hair
+CanUse=can_u_gargoyle|can_u_male
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Horns
+DESCRIPTION=Bull
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0a1bb]
+DEFNAME=i_horn_gargoyle_rhino
+NAME=Rhino Horn
+TYPE=t_hair
+CanUse=can_u_gargoyle|can_u_male
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Horns
+DESCRIPTION=Rhino
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0a1bc]
+DEFNAME=i_horn_gargoyle_facial_warthog_tusks
+NAME=Warthog Tusks Facial Horn
+TYPE=t_beard
+CanUse=can_u_gargoyle|can_u_male
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Facial Horns
+DESCRIPTION=Warthog Tusks
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0a1bd]
+DEFNAME=i_horn_gargoyle_facial_mandibles
+NAME=Mandibles Facial Horn
+TYPE=t_beard
+CanUse=can_u_gargoyle|can_u_male
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Facial Horns
+DESCRIPTION=Mandibles
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0a1be]
+DEFNAME=i_horn_gargoyle_facial_goatee
+NAME=Goatee Facial Horn
+TYPE=t_beard
+CanUse=can_u_gargoyle|can_u_male
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Facial Horns
+DESCRIPTION=Goatee
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0a1bf]
+DEFNAME=i_horn_gargoyle_facial_spiral_tusk
+NAME=Spiral Tusk Facial Horn
+TYPE=t_beard
+CanUse=can_u_gargoyle|can_u_male
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Facial Horns
+DESCRIPTION=Spiral Tusk
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0a1c0]
+DEFNAME=i_horn_gargoyle_antlers
+NAME=Antlers Horn
+TYPE=t_hair
+CanUse=can_u_gargoyle|can_u_female
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Horns
+DESCRIPTION=Antlers
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0a1c1]
+DEFNAME=i_horn_gargoyle_corkscrew
+NAME=Corkscrew Horn
+TYPE=t_hair
+CanUse=can_u_gargoyle|can_u_female
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Horns
+DESCRIPTION=Corkscrew
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0a1c2]
+DEFNAME=i_horn_gargoyle_broken_right
+NAME=Broken Right Horn
+TYPE=t_hair
+CanUse=can_u_gargoyle|can_u_female
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Horns
+DESCRIPTION=Broken Right
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0a1c3]
+DEFNAME=i_horn_gargoyle_topi
+NAME=Topi Horn
+TYPE=t_hair
+CanUse=can_u_gargoyle|can_u_female
+CATEGORY=Hairs, Horns and Faces
+SUBSECTION=Gargoyle Horns
+DESCRIPTION=Topi
+ON=@Create
+   ATTR=attr_newbie
+
+[EOF]

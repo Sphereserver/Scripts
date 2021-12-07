@@ -1,0 +1,676 @@
+﻿//****************************************************************************
+// SPHERE by : Menasoft ©1997-2020
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Sunday, Apr 20, 2020
+//
+VERSION=0.56d
+
+
+[ITEMDEF 02]
+DEFNAME=i_ankh
+RESOURCES=100 i_rock_plain
+CATEGORY=Decoration - Virtues
+SUBSECTION=Ankhs
+DESCRIPTION=Ankh (w) 1/2
+DUPELIST=03,04,05
+
+[ITEMDEF 03]
+DUPEITEM=02
+DESCRIPTION=Ankh (w) 2/2
+
+[ITEMDEF 04]
+DUPEITEM=02
+DESCRIPTION=Ankh (n) 1/2
+
+[ITEMDEF 05]
+DUPEITEM=02
+DESCRIPTION=Ankh (n) 2/2
+
+
+[ITEMDEF 0149f]
+DEFNAME=i_shrine_honesty_1
+RESOURCES=20 i_rock_marble,4 i_ingot_gold,6 i_rock_plain
+WEIGHT=32
+CATEGORY=Decoration - Virtues
+SUBSECTION=Honesty
+DESCRIPTION=Honesty (01/04) (W)
+DUPELIST=014a0,014a1,014a2
+
+[ITEMDEF 014a0]
+//SHRINE_HONESTY_1 PART 2
+DUPEITEM=0149F
+CATEGORY=Decoration - Virtues
+SUBSECTION=Honesty
+DESCRIPTION=Honesty (02/04) (W)
+
+[ITEMDEF 014a1]
+//SHRINE_HONESTY_1 PART 3
+DUPEITEM=0149F
+CATEGORY=Decoration - Virtues
+SUBSECTION=Honesty
+DESCRIPTION=Honesty (03/04) (W)
+
+[ITEMDEF 014a2]
+//SHRINE_HONESTY_1 PART 4
+DUPEITEM=0149F
+CATEGORY=Decoration - Virtues
+SUBSECTION=Honesty
+DESCRIPTION=Honesty (04/04) (W)
+
+[ITEMDEF 014a3]
+DEFNAME=i_shrine_honesty_2
+RESOURCES=20 i_rock_marble,4 i_ingot_gold,6 i_rock_plain
+WEIGHT=32
+CATEGORY=Decoration - Virtues
+SUBSECTION=Honesty
+DESCRIPTION=Honesty (01/04) (N)
+DUPELIST=014a4,014a5,014a6
+
+[ITEMDEF 014a4]
+//SHRINE_HONESTY_2 PART 2
+DUPEITEM=014A3
+CATEGORY=Decoration - Virtues
+SUBSECTION=Honesty
+DESCRIPTION=Honesty (02/04) (N)
+
+[ITEMDEF 014a5]
+//SHRINE_HONESTY_2 PART 3
+DUPEITEM=014A3
+CATEGORY=Decoration - Virtues
+SUBSECTION=Honesty
+DESCRIPTION=Honesty (03/04) (N)
+
+[ITEMDEF 014a6]
+//SHRINE_HONESTY_2 PART 4
+DUPEITEM=014A3
+CATEGORY=Decoration - Virtues
+SUBSECTION=Honesty
+DESCRIPTION=Honesty (04/04) (N)
+
+[ITEMDEF 014a7]
+DEFNAME=i_shrine_compassion_1
+RESOURCES=20 i_rock_marble,4 i_ingot_gold,6 i_rock_plain
+WEIGHT=32
+CATEGORY=Decoration - Virtues
+SUBSECTION=Compassion
+DESCRIPTION=Compassion (01/04) (W)
+DUPELIST=014a8,014a9,014aa
+
+[ITEMDEF 014a8]
+//SHRINE_COMPASSION_1 PART 2
+DUPEITEM=014A7
+CATEGORY=Decoration - Virtues
+SUBSECTION=Compassion
+DESCRIPTION=Compassion (02/04) (W)
+
+[ITEMDEF 014a9]
+//SHRINE_COMPASSION_1 PART 3
+DUPEITEM=014A7
+CATEGORY=Decoration - Virtues
+SUBSECTION=Compassion
+DESCRIPTION=Compassion (03/04) (W)
+
+[ITEMDEF 014aa]
+//SHRINE_COMPASSION_1 PART 4
+DUPEITEM=014A7
+CATEGORY=Decoration - Virtues
+SUBSECTION=Compassion
+DESCRIPTION=Compassion (04/04) (W)
+
+[ITEMDEF 014ab]
+DEFNAME=i_shrine_compassion_2
+RESOURCES=20 i_rock_marble,4 i_ingot_gold,6 i_rock_plain
+WEIGHT=32
+CATEGORY=Decoration - Virtues
+SUBSECTION=Compassion
+DESCRIPTION=Compassion (01/04) (N)
+DUPELIST=014ac,014ad,014ae
+
+[ITEMDEF 014ac]
+//SHRINE_COMPASSION_2 PART 2
+DUPEITEM=014AB
+CATEGORY=Decoration - Virtues
+SUBSECTION=Compassion
+DESCRIPTION=Compassion (02/04) (N)
+
+[ITEMDEF 014ad]
+//SHRINE_COMPASSION_2 PART 3
+DUPEITEM=014AB
+CATEGORY=Decoration - Virtues
+SUBSECTION=Compassion
+DESCRIPTION=Compassion (03/04) (N)
+
+[ITEMDEF 014ae]
+//SHRINE_COMPASSION_2 PART 4
+DUPEITEM=014AB
+CATEGORY=Decoration - Virtues
+SUBSECTION=Compassion
+DESCRIPTION=Compassion (04/04) (N)
+
+[ITEMDEF 014af]
+DEFNAME=i_shrine_justice_1
+RESOURCES=20 i_rock_marble,4 i_ingot_gold,6 i_rock_plain
+WEIGHT=32
+CATEGORY=Decoration - Virtues
+SUBSECTION=Justice
+DESCRIPTION=Justice (01/04) (W)
+DUPELIST=014b0,014b1,014b2
+
+[ITEMDEF 014b0]
+//SHRINE_JUSTICE_1 PART 2
+DUPEITEM=014AF
+CATEGORY=Decoration - Virtues
+SUBSECTION=Justice
+DESCRIPTION=Justice (02/04) (W)
+
+[ITEMDEF 014b1]
+//SHRINE_JUSTICE_1 PART 3
+DUPEITEM=014AF
+CATEGORY=Decoration - Virtues
+SUBSECTION=Justice
+DESCRIPTION=Justice (03/04) (W)
+
+[ITEMDEF 014b2]
+//SHRINE_JUSTICE_1 PART 4
+DUPEITEM=014AF
+CATEGORY=Decoration - Virtues
+SUBSECTION=Justice
+DESCRIPTION=Justice (04/04) (W)
+
+[ITEMDEF 014b3]
+DEFNAME=i_shrine_justice_2
+RESOURCES=20 i_rock_marble,4 i_ingot_gold,6 i_rock_plain
+WEIGHT=32
+CATEGORY=Decoration - Virtues
+SUBSECTION=Justice
+DESCRIPTION=Justice (01/04) (N)
+DUPELIST=014b4,014b5,014b6
+
+[ITEMDEF 014b4]
+//SHRINE_JUSTICE_2 PART 2
+DUPEITEM=014B3
+CATEGORY=Decoration - Virtues
+SUBSECTION=Justice
+DESCRIPTION=Justice (02/04) (N)
+
+[ITEMDEF 014b5]
+//SHRINE_JUSTICE_2 PART 3
+DUPEITEM=014B3
+CATEGORY=Decoration - Virtues
+SUBSECTION=Justice
+DESCRIPTION=Justice (03/04) (N)
+
+[ITEMDEF 014b6]
+//SHRINE_JUSTICE_2 PART 4
+DUPEITEM=014B3
+CATEGORY=Decoration - Virtues
+SUBSECTION=Justice
+DESCRIPTION=Justice (04/04) (N)
+
+[ITEMDEF 014b7]
+DEFNAME=i_shrine_valor_1
+RESOURCES=20 i_rock_marble,4 i_ingot_gold,6 i_rock_plain
+WEIGHT=32
+CATEGORY=Decoration - Virtues
+SUBSECTION=Valor
+DESCRIPTION=Valor (01/04) (W)
+DUPELIST=014b8,014b9,014ba
+
+[ITEMDEF 014b8]
+//SHRINE_VALOR_1 PART 2
+DUPEITEM=014B7
+CATEGORY=Decoration - Virtues
+SUBSECTION=Valor
+DESCRIPTION=Valor (02/04) (W)
+
+[ITEMDEF 014b9]
+//SHRINE_VALOR_1 PART 3
+DUPEITEM=014B7
+CATEGORY=Decoration - Virtues
+SUBSECTION=Valor
+DESCRIPTION=Valor (03/04) (W)
+
+[ITEMDEF 014ba]
+//SHRINE_VALOR_1 PART 4
+DUPEITEM=014B7
+CATEGORY=Decoration - Virtues
+SUBSECTION=Valor
+DESCRIPTION=Valor (04/04) (W)
+
+[ITEMDEF 014bb]
+DEFNAME=i_shrine_valor_2
+RESOURCES=20 i_rock_marble,4 i_ingot_gold,6 i_rock_plain
+WEIGHT=32
+CATEGORY=Decoration - Virtues
+SUBSECTION=Valor
+DESCRIPTION=Valor (01/04) (N)
+DUPELIST=014bc,014bd,014be
+
+[ITEMDEF 014bc]
+//SHRINE_VALOR_2 PART 2
+DUPEITEM=014BB
+CATEGORY=Decoration - Virtues
+SUBSECTION=Valor
+DESCRIPTION=Valor (02/04) (N)
+
+[ITEMDEF 014bd]
+//SHRINE_VALOR_2 PART 3
+DUPEITEM=014BB
+CATEGORY=Decoration - Virtues
+SUBSECTION=Valor
+DESCRIPTION=Valor (03/04) (N)
+
+[ITEMDEF 014be]
+//SHRINE_VALOR_2 PART 4
+DUPEITEM=014BB
+CATEGORY=Decoration - Virtues
+SUBSECTION=Valor
+DESCRIPTION=Valor (04/04) (N)
+
+[ITEMDEF 014bf]
+DEFNAME=i_shrine_spirituality_1
+RESOURCES=20 i_rock_marble,4 i_ingot_gold,6 i_rock_plain
+WEIGHT=32
+CATEGORY=Decoration - Virtues
+SUBSECTION=Spirituality
+DESCRIPTION=Spirituality (01/04) (W)
+DUPELIST=014c0,014c1,014c2
+
+[ITEMDEF 014c0]
+//SHRINE_SPIRITUALITY_1 PART 2
+DUPEITEM=014BF
+CATEGORY=Decoration - Virtues
+SUBSECTION=Spirituality
+DESCRIPTION=Spirituality (02/04) (W)
+
+[ITEMDEF 014c1]
+//SHRINE_SPIRITUALITY_1 PART 3
+DUPEITEM=014BF
+CATEGORY=Decoration - Virtues
+SUBSECTION=Spirituality
+DESCRIPTION=Spirituality (03/04) (W)
+
+[ITEMDEF 014c2]
+//SHRINE_SPIRITUALITY_1 PART 4
+DUPEITEM=014BF
+CATEGORY=Decoration - Virtues
+SUBSECTION=Spirituality
+DESCRIPTION=Spirituality (04/04) (W)
+
+[ITEMDEF 014c3]
+DEFNAME=i_shrine_spirituality_2
+RESOURCES=20 i_rock_marble,4 i_ingot_gold,6 i_rock_plain
+WEIGHT=32
+CATEGORY=Decoration - Virtues
+SUBSECTION=Spirituality
+DESCRIPTION=Spirituality (01/04) (N)
+DUPELIST=014c4,014c5,014c6
+
+[ITEMDEF 014c4]
+//SHRINE_SPIRITUALITY_2 PART 2
+DUPEITEM=014C3
+CATEGORY=Decoration - Virtues
+SUBSECTION=Spirituality
+DESCRIPTION=Spirituality (02/04) (N)
+
+[ITEMDEF 014c5]
+//SHRINE_SPIRITUALITY_2 PART 3
+DUPEITEM=014C3
+CATEGORY=Decoration - Virtues
+SUBSECTION=Spirituality
+DESCRIPTION=Spirituality (03/04) (N)
+
+[ITEMDEF 014c6]
+//SHRINE_SPIRITUALITY_2 PART 4
+DUPEITEM=014C3
+CATEGORY=Decoration - Virtues
+SUBSECTION=Spirituality
+DESCRIPTION=Spirituality (04/04) (N)
+
+[ITEMDEF 014c7]
+DEFNAME=i_shrine_honor_1
+RESOURCES=20 i_rock_marble,4 i_ingot_gold,6 i_rock_plain
+WEIGHT=32
+CATEGORY=Decoration - Virtues
+SUBSECTION=Honor
+DESCRIPTION=Honor (01/04) (W)
+DUPELIST=014c8,014c9,014ca
+
+[ITEMDEF 014c8]
+//SHRINE_HONOR_1 PART 2
+DUPEITEM=014C7
+CATEGORY=Decoration - Virtues
+SUBSECTION=Honor
+DESCRIPTION=Honor (02/04) (W)
+
+[ITEMDEF 014c9]
+//SHRINE_HONOR_1 PART 3
+DUPEITEM=014C7
+CATEGORY=Decoration - Virtues
+SUBSECTION=Honor
+DESCRIPTION=Honor (03/04) (W)
+
+[ITEMDEF 014ca]
+//SHRINE_HONOR_1 PART 4
+DUPEITEM=014C7
+CATEGORY=Decoration - Virtues
+SUBSECTION=Honor
+DESCRIPTION=Honor (04/04) (W)
+
+[ITEMDEF 014cb]
+DEFNAME=i_shrine_honor_2
+RESOURCES=20 i_rock_marble,4 i_ingot_gold,6 i_rock_plain
+WEIGHT=32
+CATEGORY=Decoration - Virtues
+SUBSECTION=Honor
+DESCRIPTION=Honor (01/04) (N)
+DUPELIST=014cc,014cd,014ce
+
+[ITEMDEF 014cc]
+//SHRINE_HONOR_2 PART 2
+DUPEITEM=014CB
+CATEGORY=Decoration - Virtues
+SUBSECTION=Honor
+DESCRIPTION=Honor (02/04) (N)
+
+[ITEMDEF 014cd]
+//SHRINE_HONOR_2 PART 3
+DUPEITEM=014CB
+CATEGORY=Decoration - Virtues
+SUBSECTION=Honor
+DESCRIPTION=Honor (03/04) (N)
+
+[ITEMDEF 014ce]
+//SHRINE_HONOR_2 PART 4
+DUPEITEM=014CB
+CATEGORY=Decoration - Virtues
+SUBSECTION=Honor
+DESCRIPTION=Honor (04/04) (N)
+
+[ITEMDEF 014cf]
+DEFNAME=i_shrine_humility_1
+RESOURCES=20 i_rock_marble,4 i_ingot_gold,6 i_rock_plain
+WEIGHT=32
+CATEGORY=Decoration - Virtues
+SUBSECTION=Humility
+DESCRIPTION=Humility (01/04) (W)
+DUPELIST=014d0,014d1,014d2
+
+[ITEMDEF 014d0]
+//SHRINE_HONOR_1 PART 2
+DUPEITEM=014CF
+CATEGORY=Decoration - Virtues
+SUBSECTION=Humility
+DESCRIPTION=Humility (02/04) (W)
+
+[ITEMDEF 014d1]
+//SHRINE_HONOR_1 PART 3
+DUPEITEM=014CF
+CATEGORY=Decoration - Virtues
+SUBSECTION=Humility
+DESCRIPTION=Humility (03/04) (W)
+
+[ITEMDEF 014d2]
+//SHRINE_HONOR_1 PART 4
+DUPEITEM=014CF
+CATEGORY=Decoration - Virtues
+SUBSECTION=Humility
+DESCRIPTION=Humility (04/04) (W)
+
+[ITEMDEF 014d3]
+DEFNAME=i_shrine_humility_2
+RESOURCES=20 i_rock_marble,4 i_ingot_gold,6 i_rock_plain
+WEIGHT=32
+CATEGORY=Decoration - Virtues
+SUBSECTION=Humility
+DESCRIPTION=Humility (01/04) (N)
+DUPELIST=014d4,014d5,014d6
+
+[ITEMDEF 014d4]
+//SHRINE_HONOR_2 PART 2
+DUPEITEM=014D3
+CATEGORY=Decoration - Virtues
+SUBSECTION=Humility
+DESCRIPTION=Humility (02/04) (N)
+
+[ITEMDEF 014d5]
+//SHRINE_HONOR_2 PART 3
+DUPEITEM=014D3
+CATEGORY=Decoration - Virtues
+SUBSECTION=Humility
+DESCRIPTION=Humility (03/04) (N)
+
+[ITEMDEF 014d6]
+//SHRINE_HONOR_2 PART 4
+DUPEITEM=014D3
+CATEGORY=Decoration - Virtues
+SUBSECTION=Humility
+DESCRIPTION=Humility (04/04) (N)
+
+[ITEMDEF 014e3]
+DEFNAME=i_shrine_chaos_1
+RESOURCES=20 i_rock_marble,2 i_ingot_bloodrock,2 i_rock_plain
+WEIGHT=32
+CATEGORY=Decoration - Virtues
+SUBSECTION=Chaos
+DESCRIPTION=Chaos (01/04) (W)
+DUPELIST=014e4,014e5,014e6
+
+[ITEMDEF 014e4]
+//SHRINE_CHAOS_1 PART 2
+DUPEITEM=014E3
+CATEGORY=Decoration - Virtues
+SUBSECTION=Chaos
+DESCRIPTION=Chaos (02/04) (W)
+
+[ITEMDEF 014e5]
+//SHRINE_CHAOS_1 PART 3
+DUPEITEM=014E3
+CATEGORY=Decoration - Virtues
+SUBSECTION=Chaos
+DESCRIPTION=Chaos (03/04) (W)
+
+[ITEMDEF 014e6]
+//SHRINE_CHAOS_1 PART 4
+DUPEITEM=014E3
+CATEGORY=Decoration - Virtues
+SUBSECTION=Chaos
+DESCRIPTION=Chaos (04/04) (W)
+
+[ITEMDEF 0150a]
+DEFNAME=i_shrine_sacrifice_1
+RESOURCES=20 i_rock_marble,4 i_ingot_gold,6 i_rock_plain
+WEIGHT=32
+CATEGORY=Decoration - Virtues
+SUBSECTION=Sacrifice
+DESCRIPTION=Sacrifice (01/04) (W)
+DUPELIST=0150b,0150c,0150d
+
+[ITEMDEF 0150b]
+//SHRINE_SACRIFICE_1 PART 2
+DUPEITEM=0150A
+CATEGORY=Decoration - Virtues
+SUBSECTION=Sacrifice
+DESCRIPTION=Sacrifice (02/04) (W)
+
+[ITEMDEF 0150c]
+//SHRINE_SACRIFICE_1 PART 3
+DUPEITEM=0150A
+CATEGORY=Decoration - Virtues
+SUBSECTION=Sacrifice
+DESCRIPTION=Sacrifice (03/04) (W)
+
+[ITEMDEF 0150d]
+//SHRINE_SACRIFICE_1 PART 4
+DUPEITEM=0150A
+CATEGORY=Decoration - Virtues
+SUBSECTION=Sacrifice
+DESCRIPTION=Sacrifice (04/04) (W)
+
+[ITEMDEF 0150e]
+DEFNAME=i_shrine_sacrifice_2
+RESOURCES=20 i_rock_marble,4 i_ingot_gold,6 i_rock_plain
+WEIGHT=32
+CATEGORY=Decoration - Virtues
+SUBSECTION=Sacrifice
+DESCRIPTION=Sacrifice (01/04) (N)
+DUPELIST=0150f,01510,01511
+
+[ITEMDEF 0150f]
+//SHRINE_SACRIFICE_2 PART 2
+DUPEITEM=0150E
+CATEGORY=Decoration - Virtues
+SUBSECTION=Sacrifice
+DESCRIPTION=Sacrifice (02/04) (N)
+
+[ITEMDEF 01510]
+//SHRINE_SACRIFICE_2 PART 3
+DUPEITEM=0150E
+CATEGORY=Decoration - Virtues
+SUBSECTION=Sacrifice
+DESCRIPTION=Sacrifice (03/04) (N)
+
+[ITEMDEF 01511]
+//SHRINE_SACRIFICE_2 PART 4
+DUPEITEM=0150E
+CATEGORY=Decoration - Virtues
+SUBSECTION=Sacrifice
+DESCRIPTION=Sacrifice (04/04) (N)
+
+
+[ITEMDEF 01869]
+DEFNAME=i_virtstone_1
+DEFNAME2=I_VIRTUESTONE_BLACK
+WEIGHT=1
+CATEGORY=Miscellaneous
+SUBSECTION=Virtue Stones
+DESCRIPTION=Virtue Stone (Black)
+
+[ITEMDEF 0186a]
+DEFNAME=i_virtstone_2
+DEFNAME2=I_VIRTUESTONE_BLUE
+WEIGHT=1
+CATEGORY=Miscellaneous
+SUBSECTION=Virtue Stones
+DESCRIPTION=Virtue Stone (Blue)
+
+[ITEMDEF 0186b]
+DEFNAME=i_virtstone_3
+DEFNAME2=I_VIRTUESTONE_GREEN
+WEIGHT=1
+CATEGORY=Miscellaneous
+SUBSECTION=Virtue Stones
+DESCRIPTION=Virtue Stone (Green)
+
+[ITEMDEF 0186c]
+DEFNAME=i_virtstone_4
+DEFNAME2=I_VIRTUESTONE_ORANGE
+WEIGHT=1
+CATEGORY=Miscellaneous
+SUBSECTION=Virtue Stones
+DESCRIPTION=Virtue Stone (Orange)
+
+[ITEMDEF 0186d]
+DEFNAME=i_virtstone_5
+DEFNAME2=I_VIRTUESTONE_PURPLE
+WEIGHT=1
+CATEGORY=Miscellaneous
+SUBSECTION=Virtue Stones
+DESCRIPTION=Virtue Stone (Purple)
+
+[ITEMDEF 0186e]
+DEFNAME=i_virtstone_6
+DEFNAME2=I_VIRTUESTONE_RED
+WEIGHT=1
+CATEGORY=Miscellaneous
+SUBSECTION=Virtue Stones
+DESCRIPTION=Virtue Stone (Red)
+
+[ITEMDEF 0186f]
+DEFNAME=i_virtstone_7
+DEFNAME2=I_VIRTUESTONE_AQUA
+WEIGHT=1
+CATEGORY=Miscellaneous
+SUBSECTION=Virtue Stones
+DESCRIPTION=Virtue Stone (Aqua)
+
+[ITEMDEF 01870]
+DEFNAME=i_virtstone_8
+DEFNAME2=I_VIRTUESTONE_YELLOW
+WEIGHT=1
+CATEGORY=Miscellaneous
+SUBSECTION=Virtue Stones
+DESCRIPTION=Virtue Stone (Yellow)
+
+
+[ITEMDEF 01c12]
+DEFNAME=i_bell_of_courage
+RESOURCES=2 i_ingot_gold,1 i_wire_gold,1 i_gem_diamond
+WEIGHT=5
+CATEGORY=Decoration - Virtues
+SUBSECTION=Virtue Items
+DESCRIPTION=Bell of Courage
+
+[ITEMDEF 01c13]
+DEFNAME=i_book_of_truth
+RESOURCES=1 i_book_sm
+WEIGHT=5
+VALUE=500
+CATEGORY=Decoration - Virtues
+SUBSECTION=Virtue Items
+DESCRIPTION=Book of Truth
+
+[ITEMDEF 01c14]
+DEFNAME=i_candle_of_love_lit
+TYPE=t_light_lit
+TDATA3=i_candle_of_love
+CATEGORY=Decoration - Virtues
+SUBSECTION=Virtue Items
+DESCRIPTION=Candle of Love (lit)
+ON=@Create
+   MOREZ=2
+
+[ITEMDEF 01c15]
+//candle of love (anim)
+DUPEITEM=01c14
+
+[ITEMDEF 01c16]
+DEFNAME=i_candle_of_love
+TYPE=t_light_out
+TDATA3=i_candle_of_love_lit
+CATEGORY=Decoration - Virtues
+SUBSECTION=Virtue Items
+DESCRIPTION=Candle of Love
+ON=@Create
+   MOREZ=2
+
+
+[ITEMDEF 01d97]
+DEFNAME=i_ankh_sacrifice
+TYPE=t_light_lit
+RESOURCES=10 i_rock_plain
+WEIGHT=30
+CATEGORY=Decoration - Virtues
+SUBSECTION=Ankhs
+DESCRIPTION=Ankh of Sacrifice
+DUPELIST=01d98,01e5c,01e5d
+
+[ITEMDEF 01d98]
+//ankh of sacrifice
+DUPEITEM=01d97
+
+[ITEMDEF 01e5c]
+DEFNAME=i_ankh_sacrifice_2
+DUPEITEM=01d97
+
+[ITEMDEF 01e5d]
+//ankh of sacrifice
+DUPEITEM=01d97
+
+[EOF]

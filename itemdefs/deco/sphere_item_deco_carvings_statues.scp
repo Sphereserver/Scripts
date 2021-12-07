@@ -1,0 +1,673 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2017
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Wednesday, Dec 20, 2017
+//
+VERSION=0.56d
+
+
+[ITEMDEF 0121d]
+DEFNAME=i_wall_carving
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Wall Carvings
+DESCRIPTION=Wall Carving
+DUPELIST=0121e,0121f
+
+[ITEMDEF 0121e]
+//wall carving
+DUPEITEM=0121d
+
+[ITEMDEF 0121f]
+//wall carving
+DUPEITEM=0121d
+
+[ITEMDEF 01220]
+DEFNAME=i_wall_carving_2
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Wall Carvings
+DESCRIPTION=Wall Carving (2)
+DUPELIST=01221,01222
+
+[ITEMDEF 01221]
+//wall carving 2
+DUPEITEM=01220
+
+[ITEMDEF 01222]
+//wall carving 2
+DUPEITEM=01220
+
+[ITEMDEF 01223]
+DEFNAME=i_pedestal_marble
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Pedestals
+DESCRIPTION=Pedestal
+
+[ITEMDEF 01224]
+DEFNAME=i_statue_stone_sm
+FLIP=1
+RESOURCES=3 i_rock_granite
+SKILLMAKE=Carpentry 80.0,t_masonry_tool
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Statues
+DESCRIPTION=Small Statue
+DUPELIST=0139a
+
+[ITEMDEF 01225]
+DEFNAME=i_statue_stone_sm_2
+RESOURCES=3 i_rock_granite
+SKILLMAKE=Carpentry 80.0,t_masonry_tool
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Statues
+DESCRIPTION=Small Statue (2)
+
+[ITEMDEF 01226]
+DEFNAME=i_statue_stone_sm_3
+FLIP=1
+RESOURCES=3 i_rock_granite
+SKILLMAKE=Carpentry 80.0,t_masonry_tool
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Statues
+DESCRIPTION=Small Statue (3)
+DUPELIST=0139b
+
+[ITEMDEF 01227]
+DEFNAME=i_statue_stone_sm_4
+FLIP=1
+RESOURCES=3 i_rock_granite
+SKILLMAKE=Carpentry 80.0,t_masonry_tool
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Statues
+DESCRIPTION=Small Statue (4)
+DUPELIST=0139c
+
+[ITEMDEF 01228]
+DEFNAME=i_statue_pegasus
+NAME=pegasus statuette
+FLIP=1
+RESOURCES=4 i_rock_granite
+SKILLMAKE=Carpentry 60.0,t_masonry_tool
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Statues
+DESCRIPTION=Pegasus Statuette
+DUPELIST=0139d
+
+
+[ITEMDEF 01231]
+DEFNAME=i_wall_carving_3
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Wall Carvings
+DESCRIPTION=Wall Carving (3)
+DUPELIST=01232,01233
+
+[ITEMDEF 01232]
+//wall carving 3
+DUPEITEM=01231
+
+[ITEMDEF 01233]
+//wall carving 3
+DUPEITEM=01231
+
+[ITEMDEF 01234]
+DEFNAME=i_wall_carving_4
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Wall Carvings
+DESCRIPTION=Wall Carving (4)
+DUPELIST=01235,0123d,0123e
+
+[ITEMDEF 01235]
+//wall carving 4
+DUPEITEM=01234
+
+
+[ITEMDEF 0123d]
+//wall carving 4
+DUPEITEM=01234
+
+[ITEMDEF 0123e]
+//wall carving 4
+DUPEITEM=01234
+
+
+[ITEMDEF 01240]
+DEFNAME=i_wall_carving_5
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Wall Carvings
+DESCRIPTION=Wall Carving (5)
+DUPELIST=01241,01242
+
+[ITEMDEF 01241]
+//wall carving 5
+DUPEITEM=01240
+
+[ITEMDEF 01242]
+//wall carving 5
+DUPEITEM=01240
+
+
+[ITEMDEF 01265]
+DEFNAME=i_wall_carving_6
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Wall Carvings
+DESCRIPTION=Wall Carving (6)
+DUPELIST=01266,01267
+
+[ITEMDEF 01266]
+//wall carving 6
+DUPEITEM=01265
+
+[ITEMDEF 01267]
+//wall carving 6
+DUPEITEM=01265
+
+
+[ITEMDEF 0129f]
+DEFNAME=i_statue_stone_lg
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Statues
+DESCRIPTION=Large Statue (multi-part)
+DUPELIST=012a0,012a1,0139e,0139f,013a0
+
+[ITEMDEF 012a0]
+//large statue (multi-part)
+DUPEITEM=0129f
+
+[ITEMDEF 012a1]
+//large statue (multi-part)
+DUPEITEM=0129f
+
+[ITEMDEF 012a2]
+DEFNAME=i_statue_stone_lg_2
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Statues
+DESCRIPTION=Large Statue 2 (multi-part)
+DUPELIST=012a3,012a4,013a1,013a2,013a3
+
+[ITEMDEF 012a3]
+//large statue 2 (multi-part)
+DUPEITEM=012a2
+
+[ITEMDEF 012a4]
+//large statue 2 (multi-part)
+DUPEITEM=012a2
+
+
+[ITEMDEF 012ae]
+DEFNAME=i_statue_stone_lg_3
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Statues
+DESCRIPTION=Large Statue 3 (multi-part)
+DUPELIST=012af,012b0
+
+[ITEMDEF 012af]
+//large statue 3 (multi-part)
+DUPEITEM=012ae
+
+[ITEMDEF 012b0]
+//large statue 3 (multi-part)
+DUPEITEM=012ae
+
+
+[ITEMDEF 012ca]
+DEFNAME=i_statue_bust
+FLIP=1
+WEIGHT=10.0
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Statues
+DESCRIPTION=Bust
+DUPELIST=012cb
+
+[ITEMDEF 012cb]
+//bust
+DUPEITEM=012ca
+
+[ITEMDEF 012cc]
+DEFNAME=i_wall_carving_7
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Wall Carvings
+DESCRIPTION=Wall Carving (7)
+DUPELIST=012cd,012ce,012cf,012d0,012d2,012d3,012d4
+
+[ITEMDEF 012cd]
+//wall carving 7 (south)
+DUPEITEM=012cc
+
+[ITEMDEF 012ce]
+//wall carving 7 (south)
+DUPEITEM=012cc
+
+[ITEMDEF 012cf]
+//wall carving 7 (south)
+DUPEITEM=012cc
+
+[ITEMDEF 012d0]
+//wall carving 7 (south)
+DUPEITEM=012cc
+
+[ITEMDEF 012d1]
+//wall carving 7 (east)
+DUPEITEM=012cc
+
+[ITEMDEF 012d2]
+//wall carving 7 (east)
+DUPEITEM=012cc
+
+[ITEMDEF 012d3]
+//wall carving 7 (east)
+DUPEITEM=012cc
+
+[ITEMDEF 012d4]
+//wall carving 7 (east)
+DUPEITEM=012cc
+
+[ITEMDEF 012d5]
+DEFNAME=i_statue_stone_lg_4
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Statues
+DESCRIPTION=Large Statue 3 (multi-part)
+DUPELIST=012d6,012d7
+
+[ITEMDEF 012d6]
+//large statue 4 (multi-part)
+DUPEITEM=012d5
+
+[ITEMDEF 012d7]
+//large statue 4 (multi-part)
+DUPEITEM=012d5
+
+[ITEMDEF 012d8]
+DEFNAME=i_statue_tall
+FLIP=1
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Statues
+DESCRIPTION=Tall Statue
+DUPELIST=012d9
+
+[ITEMDEF 012d9]
+//tall statue
+DUPEITEM=012d8
+
+
+[ITEMDEF 0139a]
+//small statue 1
+DUPEITEM=01224
+
+[ITEMDEF 0139b]
+//small statue 3
+DUPEITEM=01226
+
+[ITEMDEF 0139c]
+//small statue 4
+DUPEITEM=01227
+
+[ITEMDEF 0139d]
+//pegasus statuette
+DUPEITEM=01228
+
+[ITEMDEF 0139e]
+//large statue (multi-part)
+DUPEITEM=0129f
+
+[ITEMDEF 0139f]
+//large statue (multi-part)
+DUPEITEM=0129f
+
+[ITEMDEF 013a0]
+//large statue (multi-part)
+DUPEITEM=0129f
+
+[ITEMDEF 013a1]
+//large statue 2 (multi-part)
+DUPEITEM=012a2
+
+[ITEMDEF 013a2]
+//large statue 2 (multi-part)
+DUPEITEM=012a2
+
+[ITEMDEF 013a3]
+//large statue 2 (multi-part)
+DUPEITEM=012a2
+
+
+[ITEMDEF 01f18]
+DEFNAME=i_statue_evil_idol
+NAME=evil idol
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Statues
+DESCRIPTION=Statue (evil idol)
+
+
+[ITEMDEF 01f2a]
+DEFNAME=i_pedestal
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Pedestals
+DESCRIPTION=Pedestal (small)
+
+
+[ITEMDEF 02419]
+DEFNAME=i_sculpture_lantern
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Sculptures
+DESCRIPTION=Lantern
+
+[ITEMDEF 0241a]
+DEFNAME=i_sculpture_tower
+RESOURCES=3 i_rock_granite
+SKILLMAKE=Carpentry 36.0,t_masonry_tool
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Sculptures
+DESCRIPTION=Tower
+
+[ITEMDEF 0241b]
+DEFNAME=i_sculpture_tower_2
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Sculptures
+DESCRIPTION=Tower (2)
+
+
+[ITEMDEF 02846]
+DEFNAME=i_sculpture_fish
+FLIP=1
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Sculptures
+DESCRIPTION=Fish
+DUPELIST=02847
+
+[ITEMDEF 02847]
+//sculpture (fish)
+DUPEITEM=02846
+
+[ITEMDEF 02848]
+DEFNAME=i_sculpture_monk
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Sculptures
+DESCRIPTION=Monk
+DUPELIST=02849
+
+[ITEMDEF 02849]
+//sculpture (monk)
+DUPEITEM=02848
+
+
+//[ITEMDEF 02a9e]	//duplicated from 012d5
+//[ITEMDEF 02a9f]	//duplicated from 012d6
+//[ITEMDEF 02aa0]	//duplicated from 012d7
+
+
+[ITEMDEF 02d0e]
+DEFNAME=i_statue_arcanist
+NAME=arcanist statue
+FLIP=1
+RESOURCES=250 i_board
+SKILLMAKE=Carpentry 0.0,t_carpentry
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Statues
+DESCRIPTION=Arcanist Statue
+DUPELIST=02d0f
+
+[ITEMDEF 02d0f]
+//arcanist statue
+DUPEITEM=02d0e
+
+[ITEMDEF 02d10]
+DEFNAME=i_statue_squirrel
+NAME=squirrel statue
+FLIP=1
+RESOURCES=250 i_board
+SKILLMAKE=Carpentry 0.0,t_carpentry
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Statues
+DESCRIPTION=Squirrel Statue
+DUPELIST=02d11
+
+[ITEMDEF 02d11]
+//squirrel statue
+DUPEITEM=02d10
+
+[ITEMDEF 02d12]
+DEFNAME=i_statue_warrior
+NAME=warrior statue
+FLIP=1
+RESOURCES=250 i_board
+SKILLMAKE=Carpentry 0.0,t_carpentry
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Statues
+DESCRIPTION=Warrior Statue
+DUPELIST=02d13
+
+[ITEMDEF 02d13]
+//warrior statue
+DUPEITEM=02d12
+
+
+[ITEMDEF 02d4a]
+DEFNAME=i_giant_replica_acorn
+NAME=giant replica acorn
+RESOURCES=35 i_board
+SKILLMAKE=Carpentry 80.0,t_carpentry
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Statues
+DESCRIPTION=Giant Replica Acorn
+
+
+[ITEMDEF 02fd4]
+DEFNAME=i_pedestal_crystal
+NAME=pedestal with crystal
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Pedestals
+DESCRIPTION=Pedestal with Crystal
+
+[ITEMDEF 02fd5]
+DEFNAME=i_pedestal_crystal_empty
+NAME=pedestal with crystal
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Pedestals
+DESCRIPTION=Pedestal with Crystal (empty)
+
+
+[ITEMDEF 02ff6]
+DEFNAME=i_statue_contribution
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Statues
+DESCRIPTION=Contribution Statue
+
+
+[ITEMDEF 0305a]
+//horse statue (multi-part)
+NAME=horse statue
+
+[ITEMDEF 0305b]
+//horse statue (multi-part)
+NAME=horse statue
+
+[ITEMDEF 0305c]
+//horse statue (multi-part)
+NAME=horse statue
+
+[ITEMDEF 0305d]
+//horse statue (multi-part)(mounted)
+NAME=horse statue
+
+[ITEMDEF 0305e]
+//horse statue (multi-part)(mounted)
+NAME=horse statue
+
+[ITEMDEF 0305f]
+//horse statue (multi-part)(mounted)
+NAME=horse statue
+
+
+[ITEMDEF 0306c]
+//minotaur statue (multi-part)(attack south)
+
+[ITEMDEF 0306d]
+//minotaur statue (multi-part)(attack south)
+
+[ITEMDEF 0306e]
+//minotaur statue (multi-part)(attack south)
+
+[ITEMDEF 0306f]
+//minotaur statue (multi-part)(defend east)
+
+[ITEMDEF 03070]
+//minotaur statue (multi-part)(defend east)
+
+[ITEMDEF 03071]
+//minotaur statue (multi-part)(defend east)
+
+[ITEMDEF 03072]
+//minotaur statue (multi-part)(defend south)
+
+[ITEMDEF 03073]
+//minotaur statue (multi-part)(defend south)
+
+[ITEMDEF 03074]
+//minotaur statue (multi-part)(attack east)
+
+[ITEMDEF 03075]
+//minotaur statue (multi-part)(attack east)
+
+[ITEMDEF 03076]
+//minotaur statue (multi-part)(attack east)
+
+
+[ITEMDEF 0403f]
+DEFNAME=i_sculpture_gargoyle
+NAME=gargoyle sculpture
+RESOURCES=4 i_rock_granite
+SKILLMAKE=Carpentry 36.0,t_masonry_tool
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Sculptures
+DESCRIPTION=Gargoyle Sculpture
+DUPELIST=04040
+
+[ITEMDEF 04040]
+//gargoyle sculpture
+DUPEITEM=0403f
+
+
+[ITEMDEF 040bc]
+DEFNAME=i_statue_medusa
+NAME=Medusa
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Statues
+DESCRIPTION=Medusa
+
+[ITEMDEF 040bd]
+DEFNAME=i_statue_pushme_pullyu
+NAME=pushme pullyu
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Statues
+DESCRIPTION=Pushme Pullyu
+
+
+[ITEMDEF 042bb]
+DEFNAME=i_gargish_protective_totem
+NAME=gargish protective totem
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Statues
+DESCRIPTION=Gargish Protective Totem
+
+[ITEMDEF 042bc]
+DEFNAME=i_gargish_vigilance_totem
+NAME=gargish vigilance totem
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Statues
+DESCRIPTION=Gargish Vigilance Totem
+
+
+[ITEMDEF 042c0]
+DEFNAME=i_gargish_luck_totem
+NAME=gargish luck totem
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Statues
+DESCRIPTION=Gargish Luck Totem
+
+[ITEMDEF 042c1]
+DEFNAME=i_gargish_knowledge_totem
+NAME=gargish knowledge totem
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Statues
+DESCRIPTION=Gargish Knowledge Totem
+
+[ITEMDEF 042c2]
+DEFNAME=i_statue_gargish_warrior
+NAME=gargish warrior statue
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Statues
+DESCRIPTION=Gargish Warrior Statue
+
+[ITEMDEF 042c3]
+DEFNAME=i_statue_gargish_memorial
+NAME=gargish memorial statue
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Statues
+DESCRIPTION=Gargish Memorial Statue
+
+
+[ITEMDEF 042c5]
+DEFNAME=i_statue_gargish
+NAME=gargoyle statue
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Statues
+DESCRIPTION=Gargoyle Statue
+
+
+[ITEMDEF 04960]
+DEFNAME=i_topiary_goblin_posed
+NAME=posed goblin topiary
+FLIP=1
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Topiaries
+DESCRIPTION=Posed Goblin Topiary
+DUPELIST=04966
+
+[ITEMDEF 04966]
+//posed goblin topiary
+DUPEITEM=04960
+
+
+[ITEMDEF 0497d]
+DEFNAME=i_topiary_ostard
+NAME=ostard topiary
+FLIP=1
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Topiaries
+DESCRIPTION=Ostard Topiary
+DUPELIST=0497e
+
+[ITEMDEF 0497e]
+//ostard topiary
+DUPEITEM=0497d
+
+
+[ITEMDEF 0a095]
+//Cliloc texts suggests that this statuette polymorph the player into c_goblin_green when activated,
+//but since this item is not implemented on OSI yet, there's no way to know how it works officially
+DEFNAME=i_statue_goblin_green
+NAME=green goblin statuette
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Statues
+DESCRIPTION=Green Goblin Statuette
+
+[ITEMDEF 0a096]
+//green goblin statuette
+
+[ITEMDEF 0a097]
+//Cliloc texts suggests that this statuette polymorph the player into c_goblin_gray when activated,
+//but since this item is not implemented on OSI yet, there's no way to know how it works officially
+DEFNAME=i_statue_goblin_grey
+NAME=grey goblin statuette
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Statues
+DESCRIPTION=Grey Goblin Statuette
+
+[ITEMDEF 0a098]
+//grey goblin statuette
+
+[EOF]

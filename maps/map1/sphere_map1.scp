@@ -1,0 +1,111 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2017
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Sunday, Oct 8, 2017
+//
+VERSION=0.56d
+
+[COMMENT sphere_map1]
+Trammel is basically a copy of Felucca, but pvp-safe.
+To enable Haven Island region, uncomment the lines below
+choosing between old Haven (AOS/SE) or New Haven (ML+).
+Do not enable both, just choose the one that will best
+match your server.
+
+
+////////////////////////////////////////
+// Facet
+////////////////////////////////////////
+
+[AREADEF a_facet_trammel]
+NAME=Trammel
+GROUP=ALLMAP
+P=1323,1624,55,1
+RECT=0,0,7168,4096,1
+FLAGS=region_flag_no_pvp
+EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
+
+////////////////////////////////////////
+// Dungeons
+////////////////////////////////////////
+
+[AREADEF a_solen_hive_map1]
+NAME=Solen Hive
+GROUP=Dungeons
+P=5803,1920,0,1
+RECT=5640,1777,5935,2039,1
+FLAGS=region_flag_nobuilding|region_flag_underground|region_antimagic_recall_in|region_antimagic_gate
+EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
+TAG.MUSIC=midi_dungeon9
+
+////////////////////////////////////////
+// Misc
+////////////////////////////////////////
+
+//[AREADEF a_haven_island]
+//NAME=Haven Island
+//GROUP=Haven
+//P=3627,2606,0,1
+//RECT=3314,2345,3814,3095,1
+//FLAGS=region_flag_no_pvp|region_flag_nobuilding|region_antimagic_recall_in|region_antimagic_gate
+//EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
+
+//[AREADEF a_haven_town]
+//NAME=Haven
+//GROUP=Haven
+//P=3618,2587,0,1
+//RECT=3590,2460,3708,2686,1
+//RECT=3568,2552,3590,2631,1
+//RECT=3708,2558,3761,2712,1
+//RECT=3695,2686,3708,2712,1
+//RECT=3664,2608,3680,2624,1
+//RECT=3664,2640,3672,2656,1
+//RECT=3672,2648,3680,2656,1
+//FLAGS=region_flag_no_pvp|region_flag_nobuilding|region_antimagic_recall_in|region_antimagic_gate|region_flag_guarded
+//EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
+//TAG.MUSIC=midi_ocllo
+
+
+//[AREADEF a_new_haven_island]
+//NAME=Haven Island
+//GROUP=New Haven
+//P=3581,2530,0,1
+//RECT=3333,2355,3810,2845,1
+//FLAGS=region_flag_no_pvp|region_flag_nobuilding|region_antimagic_recall_in|region_antimagic_gate
+//EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
+
+//[AREADEF a_new_haven_town]
+//NAME=New Haven
+//GROUP=New Haven
+//P=3498,2572,14,1
+//RECT=3423,2480,3534,2623,1
+//FLAGS=region_flag_no_pvp|region_flag_nobuilding|region_antimagic_recall_in|region_antimagic_gate|region_flag_guarded
+//EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
+//TAG.MUSIC=midi_intown01
+
+//[ROOMDEF a_new_haven_inn]
+//NAME=Gentle Rest Inn
+//GROUP=New Haven
+//P=3506,2516,47,1
+//RECT=3492,2512,3503,2523,1
+//RECT=3502,2512,3510,2530,1
+//FLAGS=region_flag_no_pvp|region_flag_nobuilding|region_antimagic_recall_in|region_antimagic_gate|region_flag_insta_logout
+//EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
+//TAG.MUSIC=midi_intown01
+
+//[AREADEF a_new_haven_mine]
+//NAME=New Haven Mine
+//GROUP=New Haven
+//P=5914,355,0,1
+//RECT=5890,271,6013,367,1
+//FLAGS=region_flag_no_pvp|region_flag_nobuilding|region_antimagic_recall_in|region_antimagic_gate
+//EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
+//TAG.MUSIC=midi_dungeon9
+
+[EOF]

@@ -1,0 +1,624 @@
+﻿//****************************************************************************
+// SPHERE by : Menasoft ©1997-2018
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Monday, Dec 31, 2018
+//
+VERSION=0.56d
+
+
+[ITEMDEF i_ancient_urn]
+ID=i_urn_2
+NAME=Ancient Urn
+CATEGORY=Artifacts
+SUBSECTION=Lesser Treasures of Tokuno
+DESCRIPTION=Ancient Urn
+ON=@Create
+   DORAND 35
+      ARGS=Akira
+      ARGS=Avaniaga
+      ARGS=Aya
+      ARGS=Chie
+      ARGS=Emiko
+      ARGS=Fumiyo
+      ARGS=Gennai
+      ARGS=Gennosuke
+      ARGS=Genjo
+      ARGS=Hamato
+      ARGS=Harumi
+      ARGS=Ikuyo
+      ARGS=Juri
+      ARGS=Kaori
+      ARGS=Kaoru
+      ARGS=Kiyomori
+      ARGS=Mayako
+      ARGS=Motoki
+      ARGS=Musashi
+      ARGS=Nami
+      ARGS=Nobukazu
+      ARGS=Roku
+      ARGS=Romi
+      ARGS=Ryo
+      ARGS=Sanzo
+      ARGS=Sakamae
+      ARGS=Satoshi
+      ARGS=Takamori
+      ARGS=Takuro
+      ARGS=Teruyo
+      ARGS=Toshiro
+      ARGS=Yago
+      ARGS=Yeijiro
+      ARGS=Yoshi
+      ARGS=Zeshin
+   ENDDO
+   NAME .= " of <ARGS>"
+
+[ITEMDEF i_chest_of_heirlooms]
+ID=i_wooden_foot_locker
+NAME=Chest of Heirlooms
+TYPE=t_container
+TDATA1=010b
+CATEGORY=Artifacts
+SUBSECTION=Lesser Treasures of Tokuno
+DESCRIPTION=Chest of Heirlooms
+
+[ITEMDEF i_honorable_swords]
+ID=i_display_swords_black
+NAME=Honorable Swords
+CATEGORY=Artifacts
+SUBSECTION=Lesser Treasures of Tokuno
+DESCRIPTION=Honorable Swords
+
+[ITEMDEF i_lesser_pigments_of_tokuno]
+ID=0eff
+NAME=Pigments of Tokuno
+CATEGORY=Artifacts
+SUBSECTION=Lesser Treasures of Tokuno
+DESCRIPTION=Pigments of Tokuno (Lesser)
+ON=@ClientTooltip
+   SRC.ADDCLILOC 1060584,<dMORE1>	//uses remaining: ~1_val~
+ON=@Create
+   MORE1=1
+   DORAND 10
+      COLOR=05		//Chaos Blue
+      COLOR=02e		//Pale Orange
+      COLOR=0145	//Fresh Plum
+      COLOR=01c8	//Light Green
+      COLOR=0227	//Noble Gold
+      COLOR=024f	//Pale Blue
+      COLOR=041a	//Burnt Brown
+      COLOR=03e9	//Silver
+      COLOR=03f0	//Deep Brown
+      COLOR=04b9	//Fresh Rose
+   ENDDO
+ON=@DClick
+   SYSMESSAGELOC color_text,1070929	//Select the artifact or enhanced magic item to dye.
+   TARGET
+   RETURN 1
+ON=@TargOn_Item
+   IF (<ARGO.TOPOBJ>==<SRC>)
+      IF (<ARGO.ATTR> & attr_magic)
+         ARGO.COLOR=<COLOR>
+         SOUND snd_z_end_carpntry
+         MORE1 --
+         IF (<MORE1> <= 0)
+            REMOVE
+         ENDIF
+      ELSE
+         SRC.SYSMESSAGELOC color_text,1070931	//You can only dye artifacts and enhanced magic items with this tub.
+      ENDIF
+   ELSE
+      SRC.SYSMESSAGE That is not accessible.
+   ENDIF
+   RETURN 1
+ON=@TargOn_Char
+   SRC.SYSMESSAGE You cannot dye that.
+   RETURN 1
+
+[ITEMDEF i_greater_pigments_of_tokuno]
+ID=0eff
+NAME=Pigments of Tokuno
+CATEGORY=Artifacts
+SUBSECTION=Greater Treasures of Tokuno
+DESCRIPTION=Pigments of Tokuno (Greater)
+ON=@ClientTooltip
+   SRC.ADDCLILOC 1060584,<dMORE1>	//uses remaining: ~1_val~
+ON=@Create
+   MORE1=1
+   DORAND 19
+      COLOR=021		//Berserker Red
+      COLOR=0455	//Shadow Dancer Black
+      COLOR=047e	//Luna White
+      COLOR=0486	//VioletCourage Purple
+      COLOR=048f	//Dryad Green
+      COLOR=04f2	//Invulnerability Blue
+      COLOR=0501	//Paragon Gold
+      COLOR=054f	//Fire Orange
+      COLOR=058c	//Nox Green
+      COLOR=066c	//Rum Red
+      COLOR=096a	//Faded Coal
+      COLOR=096b	//Coal
+      COLOR=096c	//Midnight Coal
+      COLOR=0972	//Faded Gold
+      COLOR=0975	//Faded Bronze
+      COLOR=0977	//Storm Bronze
+      COLOR=097b	//Faded Rose
+      COLOR=097c	//Rose
+      COLOR=097e	//Deep Rose
+   ENDDO
+ON=@DClick
+   SYSMESSAGELOC color_text,1070929	//Select the artifact or enhanced magic item to dye.
+   TARGET
+   RETURN 1
+ON=@TargOn_Item
+   IF (<ARGO.TOPOBJ>==<SRC>)
+      IF (<ARGO.ATTR> & attr_magic)
+         ARGO.COLOR=<COLOR>
+         SOUND snd_z_end_carpntry
+         MORE1 --
+         IF (<MORE1> <= 0)
+            REMOVE
+         ENDIF
+      ELSE
+         SRC.SYSMESSAGELOC color_text,1070931	//You can only dye artifacts and enhanced magic items with this tub.
+      ENDIF
+   ELSE
+      SRC.SYSMESSAGE That is not accessible.
+   ENDIF
+   RETURN 1
+ON=@TargOn_Char
+   SRC.SYSMESSAGE You cannot dye that.
+   RETURN 1
+
+[ITEMDEF i_ancient_farmer_kasa]
+ID=i_hat_kasa
+NAME=Ancient Farmer Kasa
+RESFIRE=5
+RESCOLD=19
+RESPOISON=5
+RESENERGY=5
+BonusStr=5
+BonusStam=5
+RegenStam=5
+BonusSkill1=AnimalLore
+BonusSkill1Amt=5.0
+TEVENTS=t_equipitem
+CATEGORY=Artifacts
+SUBSECTION=Lesser Treasures of Tokuno
+DESCRIPTION=Ancient Farmer Kasa
+ON=@Create
+   HITPOINTS=255
+
+[ITEMDEF i_ancient_samurai_do]
+ID=i_platemail_do
+NAME=Ancient Samurai Do
+RESFIRE=12
+RESCOLD=10
+RESPOISON=11
+RESENERGY=8
+RESPHYSICAL=15
+MageArmor=1
+BonusSkill1=Parrying
+BonusSkill1Amt=10.0
+TEVENTS=t_equipitem
+CATEGORY=Artifacts
+SUBSECTION=Lesser Treasures of Tokuno
+DESCRIPTION=Ancient Samurai Do
+ON=@Create
+   HITPOINTS=255
+
+[ITEMDEF i_arms_of_tactical_excellence]
+ID=i_leather_hiro_sode
+NAME=Arms of Tactical Excellence
+RESFIRE=9
+RESCOLD=13
+RESPOISON=8
+RESENERGY=3
+RESPHYSICAL=2
+BonusDex=5
+BonusSkill1=Tactics
+BonusSkill1Amt=12.0
+TEVENTS=t_equipitem
+CATEGORY=Artifacts
+SUBSECTION=Lesser Treasures of Tokuno
+DESCRIPTION=Arms of Tactical Excellence
+ON=@Create
+   HITPOINTS=255
+
+[ITEMDEF i_black_lotus_hood]
+ID=i_hood_ninja_leather
+NAME=Black Lotus Hood
+SelfRepair=5
+RESFIRE=11
+RESCOLD=15
+RESPOISON=11
+RESENERGY=11
+IncreaseHitChance=6
+LowerManaCost=6
+TEVENTS=t_equipitem
+CATEGORY=Artifacts
+SUBSECTION=Lesser Treasures of Tokuno
+DESCRIPTION=Black Lotus Hood
+ON=@Create
+   HITPOINTS=255
+
+[ITEMDEF i_daimyo_helm]
+ID=i_helm_kabuto
+NAME=Daimyo's Helm
+RESPHYSICAL=6
+RESFIRE=2
+RESCOLD=10
+RESPOISON=2
+RESENERGY=3
+IncreaseSwingSpeed=10
+SelfRepair=3
+MageArmor=1
+TEVENTS=t_equipitem
+CATEGORY=Artifacts
+SUBSECTION=Lesser Treasures of Tokuno
+DESCRIPTION=Daimyo's Helm
+ON=@Create
+   HITPOINTS=255
+
+[ITEMDEF i_darkened_sky]
+ID=i_kama
+NAME=Darkened Sky
+HitLightning=60
+IncreaseSwingSpeed=25
+IncreaseDam=50
+DamCold=50
+DamEnergy=50
+TEVENTS=t_equipitem
+CATEGORY=Artifacts
+SUBSECTION=Greater Treasures of Tokuno
+DESCRIPTION=Darkened Sky
+ON=@Create
+   HITPOINTS=255
+
+[ITEMDEF i_demon_forks]
+ID=i_sai
+NAME=Demon Forks
+ReflectPhysicalDam=10
+IncreaseDefChance=10
+IncreaseDam=35
+RESFIRE=10
+RESPOISON=10
+DamPhysical=100
+TEVENTS=t_equipitem
+CATEGORY=Artifacts
+SUBSECTION=Lesser Treasures of Tokuno
+DESCRIPTION=Demon Forks
+ON=@Create
+   HITPOINTS=255
+
+[ITEMDEF i_dragon_nunchaku]
+ID=i_nunchaku
+NAME=Dragon Nunchaku
+SelfRepair=3
+HitFireball=50
+IncreaseSwingSpeed=20
+IncreaseDam=40
+RESFIRE=5
+DamPhysical=100
+TEVENTS=t_equipitem
+CATEGORY=Artifacts
+SUBSECTION=Lesser Treasures of Tokuno
+DESCRIPTION=Dragon Nunchaku
+ON=@Create
+   HITPOINTS=255
+
+[ITEMDEF i_exiler]
+ID=i_tetsubo
+NAME=Exiler
+TAG.SlayerGroup=DEMON
+HitDispel=33
+IncreaseSwingSpeed=20
+IncreaseDam=40
+DamEnergy=100
+TEVENTS=t_equipitem
+CATEGORY=Artifacts
+SUBSECTION=Lesser Treasures of Tokuno
+DESCRIPTION=Exiler
+ON=@Create
+   HITPOINTS=255
+
+[ITEMDEF i_flute_renewal]
+ID=i_flute_bamboo
+NAME=Flute of Renewal
+CATEGORY=Artifacts
+SUBSECTION=Lesser Treasures of Tokuno
+DESCRIPTION=Flute of Renewal
+ON=@Create
+   DORAND 24
+      TAG.SlayerGroup=REPOND
+      TAG.SlayerGroup=OGRE
+      TAG.SlayerGroup=ORC
+      TAG.SlayerGroup=TROLL
+      TAG.SlayerGroup=UNDEAD
+      TAG.SlayerGroup=ELEMENTAL
+      TAG.SlayerGroup=AIRELEM
+      TAG.SlayerGroup=BLOODELEM
+      TAG.SlayerGroup=EARTHELEM
+      TAG.SlayerGroup=FIREELEM
+      TAG.SlayerGroup=POISONELEM
+      TAG.SlayerGroup=SNOWELEM
+      TAG.SlayerGroup=WATERELEM
+      TAG.SlayerGroup=DEMON
+      TAG.SlayerGroup=GARGOYLE
+      TAG.SlayerGroup=ARACHNID
+      TAG.SlayerGroup=SCORPION
+      TAG.SlayerGroup=SPIDER
+      TAG.SlayerGroup=TERATHAN
+      TAG.SlayerGroup=REPTILE
+      TAG.SlayerGroup=DRAGON
+      TAG.SlayerGroup=LIZARDMAN
+      TAG.SlayerGroup=OPHIDIAN
+      TAG.SlayerGroup=SNAKE
+   ENDDO
+   TAG.Charges=300
+ON=@ClientTooltip
+   SRC.ADDCLILOC 1060584,<dTAG0.Charges>	//uses remaining: ~1_val~
+
+[ITEMDEF i_gloves_of_the_sun]
+ID=i_leather_gloves
+NAME=Gloves of the Sun
+RegenHits=2
+NightSight=1
+LowerManaCost=5
+LowerReagentCost=18
+RESPHYSICAL=2
+RESFIRE=24
+RESCOLD=3
+RESPOISON=3
+RESENERGY=3
+TEVENTS=t_equipitem
+CATEGORY=Artifacts
+SUBSECTION=Lesser Treasures of Tokuno
+DESCRIPTION=Gloves of the Sun
+ON=@Create
+   HITPOINTS=255
+
+[ITEMDEF i_hanzos_bow]
+ID=i_yumi
+NAME=Hanzo's Bow
+SelfRepair=3
+HitLeechLife=40
+IncreaseDam=50
+DamPhysical=100
+BonusSkill1=Ninjitsu
+BonusSkill1Amt=10.0
+TEVENTS=t_equipitem
+CATEGORY=Artifacts
+SUBSECTION=Lesser Treasures of Tokuno
+DESCRIPTION=Hanzo's Bow
+ON=@Create
+   HITPOINTS=255
+
+[ITEMDEF i_kasa_of_the_rajin]
+ID=i_hat_kasa
+NAME=Kasa of the Raj-In
+IncreaseSpellDam=12
+RESPHYSICAL=12
+RESFIRE=17
+RESCOLD=21
+RESPOISON=17
+RESENERGY=17
+TEVENTS=t_equipitem
+CATEGORY=Artifacts
+SUBSECTION=Greater Treasures of Tokuno
+DESCRIPTION=Kasa of the Raj-In
+ON=@Create
+   HITPOINTS=255
+
+[ITEMDEF i_legs_of_stability]
+ID=i_platemail_suneate
+NAME=Legs of Stability
+SelfRepair=3
+BonusStam=5
+RESPHYSICAL=20
+RESFIRE=3
+RESCOLD=2
+RESPOISON=18
+RESENERGY=2
+LowerReq=100
+MageArmor=1
+TEVENTS=t_equipitem
+CATEGORY=Artifacts
+SUBSECTION=Lesser Treasures of Tokuno
+DESCRIPTION=Legs of Stability
+ON=@Create
+   HITPOINTS=255
+
+[ITEMDEF i_peasant_bokuto]
+ID=i_bokuto
+NAME=Peasant's Bokuto
+SelfRepair=3
+TAG.SlayerGroup=SNAKE
+//HitLowerDef=30
+IncreaseSwingSpeed=10
+IncreaseDam=35
+DamPhysical=100
+TEVENTS=t_equipitem
+CATEGORY=Artifacts
+SUBSECTION=Lesser Treasures of Tokuno
+DESCRIPTION=Peasant's Bokuto
+ON=@Create
+   HITPOINTS=255
+
+[ITEMDEF i_pilfered_dancer_fans]
+ID=i_tessen
+NAME=Pilfered Dancer Fans
+SKILL=Macefighting
+SpellChanneling=1
+IncreaseDefChance=5
+FasterCastRecovery=2
+IncreaseSwingSpeed=20
+IncreaseDam=20
+DamPhysical=100
+TEVENTS=t_equipitem
+CATEGORY=Artifacts
+SUBSECTION=Lesser Treasures of Tokuno
+DESCRIPTION=Pilfered Dancer Fans
+ON=@Create
+   HITPOINTS=255
+
+[ITEMDEF i_rune_beetle_carapace]
+ID=i_platemail_hiro_sode
+NAME=Rune Beetle Carapace
+BonusMana=10
+RegenMana=3
+LowerManaCost=15
+RESPHYSICAL=5
+RESFIRE=3
+RESCOLD=14
+RESPOISON=3
+RESENERGY=14
+LowerReq=100
+MageArmor=1
+TEVENTS=t_equipitem
+CATEGORY=Artifacts
+SUBSECTION=Greater Treasures of Tokuno
+DESCRIPTION=Rune Beetle Carapace
+ON=@Create
+   HITPOINTS=255
+
+[ITEMDEF i_stormgrip]
+ID=i_ringmail_gloves
+NAME=Stormgrip
+BonusInt=8
+LUCK=125
+IncreaseDam=25
+RESPHYSICAL=10
+RESFIRE=4
+RESCOLD=18
+RESPOISON=3
+RESENERGY=18
+TEVENTS=t_equipitem
+CATEGORY=Artifacts
+SUBSECTION=Greater Treasures of Tokuno
+DESCRIPTION=Stormgrip
+ON=@Create
+   HITPOINTS=255
+
+[ITEMDEF i_sword_of_the_stampede]
+ID=i_no_dachi
+NAME=Sword of the Stampede
+HitHarm=100
+IncreaseHitChance=10
+IncreaseDam=60
+DamCold=100
+TEVENTS=t_equipitem
+CATEGORY=Artifacts
+SUBSECTION=Greater Treasures of Tokuno
+DESCRIPTION=Sword of the Stampede
+ON=@Create
+   HITPOINTS=255
+
+[ITEMDEF i_swords_of_prosperity]
+ID=i_daisho
+NAME=Swords of Prosperity
+SpellChanneling=1
+LUCK=200
+FasterCasting=1
+DamFire=100
+TEVENTS=t_equipitem
+CATEGORY=Artifacts
+SUBSECTION=Greater Treasures of Tokuno
+DESCRIPTION=Swords of Prosperity
+ON=@Create
+   HITPOINTS=255
+   DORAND 3
+      BEGIN
+         MageWeapon=<FVAL <R150,300>> Magery
+         TAG.OVERRIDE_SKILL=26	//Magic Resistance
+      END
+      BEGIN
+         MageWeapon=<FVAL <R150,300>> Necromancy
+         TAG.OVERRIDE_SKILL=50	//Focus
+      END
+      BEGIN
+         MageWeapon=<FVAL <R150,300>> Spellweaving
+         TAG.OVERRIDE_SKILL=55	//Mysticism
+      END
+   ENDDO
+
+[ITEMDEF i_the_destroyer]
+ID=i_no_dachi
+NAME=The Destroyer
+HitLeechStam=40
+BonusStr=6
+IncreaseHitChance=10
+IncreaseDam=50
+DamPhysical=100
+TEVENTS=t_equipitem
+CATEGORY=Artifacts
+SUBSECTION=Lesser Treasures of Tokuno
+DESCRIPTION=The Destroyer
+ON=@Create
+   HITPOINTS=255
+
+[ITEMDEF i_the_horselord]
+ID=i_yumi
+NAME=The Horselord
+TAG.SlayerGroup=ELEMENTAL,REPTILE
+BonusDex=5
+RegenMana=1
+LUCK=125
+IncreaseDam=50
+DamPhysical=100
+TEVENTS=t_equipitem
+CATEGORY=Artifacts
+SUBSECTION=Greater Treasures of Tokuno
+DESCRIPTION=The Horselord
+ON=@Create
+   HITPOINTS=255
+
+[ITEMDEF i_tome_enlightenment]
+ID=i_spellbook
+NAME=Tome of Enlightenment
+BonusInt=5
+IncreaseSpellDam=10
+FasterCasting=1
+TEVENTS=t_equipitem
+CATEGORY=Artifacts
+SUBSECTION=Lesser Treasures of Tokuno
+DESCRIPTION=Tome of Enlightenment
+ON=@Create
+   COLOR=0455
+
+[ITEMDEF i_tome_of_lost_knowledge]
+ID=i_spellbook
+NAME=Tome of Lost Knowledge
+BonusInt=8
+IncreaseSpellDam=15
+LowerManaCost=15
+BonusSkill1=Magery
+BonusSkill1Amt=15.0
+TEVENTS=t_equipitem
+CATEGORY=Artifacts
+SUBSECTION=Greater Treasures of Tokuno
+DESCRIPTION=Tome of Lost Knowledge
+ON=@Create
+   COLOR=0530
+
+[ITEMDEF i_winds_edge]
+ID=i_tessen
+NAME=Wind's Edge
+HitLeechMana=40
+IncreaseDefChance=10
+IncreaseSwingSpeed=50
+IncreaseDam=50
+DamEnergy=100
+TEVENTS=t_equipitem
+CATEGORY=Artifacts
+SUBSECTION=Greater Treasures of Tokuno
+DESCRIPTION=Wind's Edge
+ON=@Create
+   HITPOINTS=255
+
+[EOF]

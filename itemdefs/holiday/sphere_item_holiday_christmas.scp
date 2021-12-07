@@ -1,0 +1,2600 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2019
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Tuesday, Dec 10, 2019
+//
+VERSION=0.56d
+
+
+[ITEMDEF 02328]
+DEFNAME=i_snowman
+DYE=1
+FLIP=1
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Snowman
+DUPELIST=02329
+ON=@Create
+   COLOR=colors_all
+
+[ITEMDEF 02329]
+//snowman
+DUPEITEM=02328
+
+[ITEMDEF 0232a]
+DEFNAME=i_giftbox
+TYPE=t_container
+TDATA2=0102
+TDATA3=190,95
+FLIP=1
+CATEGORY=Christmas
+SUBSECTION=Containers
+DESCRIPTION=Gift Box
+DUPELIST=0232b
+ON=@Create
+   COLOR=colors_all
+
+[ITEMDEF 0232b]
+//gift box
+DUPEITEM=0232a
+
+[ITEMDEF 0232c]
+DEFNAME=i_wreath
+DYE=1
+FLIP=1
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Wreath
+DUPELIST=0232d
+ON=@Create
+   COLOR=colors_all
+
+[ITEMDEF 0232d]
+//wreath
+DUPEITEM=0232c
+
+[ITEMDEF 0232e]
+DEFNAME=i_snowflake1
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Snowflake
+
+[ITEMDEF 0232f]
+DEFNAME=i_snowflake2
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Snowflake
+
+[ITEMDEF 02330]
+DEFNAME=i_poinsettia_red
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Poinsettia (red)
+
+[ITEMDEF 02331]
+DEFNAME=i_poinsettia_white
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Poinsettia (white)
+
+[ITEMDEF 02332]
+DEFNAME=i_holiday_fireflies_east
+NAME=holiday fireflies
+TYPE=t_light_lit
+FLIP=1
+CATEGORY=Christmas
+SUBSECTION=Lightsources
+DESCRIPTION=Holiday Fireflies (east)
+DUPELIST=02333,02334,02335
+ON=@Create
+   MOREZ=29
+
+[ITEMDEF 02333]
+//holiday fireflies
+DUPEITEM=02332
+
+[ITEMDEF 02334]
+//holiday fireflies
+DUPEITEM=02332
+
+[ITEMDEF 02335]
+//holiday fireflies
+DUPEITEM=02332
+
+[ITEMDEF 02336]
+DEFNAME=i_holiday_fireflies_south
+NAME=holiday fireflies
+TYPE=t_light_lit
+FLIP=1
+CATEGORY=Christmas
+SUBSECTION=Lightsources
+DESCRIPTION=Holiday Fireflies (south)
+DUPELIST=02337,02338,02339
+ON=@Create
+   MOREZ=29
+
+[ITEMDEF 02337]
+//holiday fireflies
+DUPEITEM=02336
+
+[ITEMDEF 02338]
+//holiday fireflies
+DUPEITEM=02336
+
+[ITEMDEF 02339]
+//holiday fireflies
+DUPEITEM=02336
+
+
+[ITEMDEF 0236e]
+DEFNAME=i_candle_holiday_east
+TYPE=t_light_lit
+DYE=1
+CATEGORY=Christmas
+SUBSECTION=Lightsources
+DESCRIPTION=Holiday Candle (east)
+DUPELIST=02371
+ON=@Create
+   COLOR=colors_all
+   MOREZ=2
+
+[ITEMDEF 0236f]
+//holiday candle (east)
+
+[ITEMDEF 02370]
+//holiday candle (east)
+
+[ITEMDEF 02371]
+DEFNAME=i_candle_holiday_south
+TYPE=t_light_lit
+DYE=1
+CATEGORY=Christmas
+SUBSECTION=Lightsources
+DESCRIPTION=Holiday Candle (south)
+DUPEITEM=0236e
+ON=@Create
+   COLOR=colors_all
+   MOREZ=2
+
+[ITEMDEF 02372]
+//holiday candle (south)
+
+[ITEMDEF 02373]
+//holiday candle (south)
+
+[ITEMDEF 02374]
+DEFNAME=i_mistletoe
+DYE=1
+FLIP=1
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Mistletoe
+DUPELIST=02375
+ON=@Create
+   COLOR=colors_all
+
+[ITEMDEF 02375]
+//mistletoe
+DUPEITEM=02374
+
+[ITEMDEF 02376]
+DEFNAME=i_cactus_festive
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Festive Cactus
+
+[ITEMDEF 02377]
+DEFNAME=i_tree_snowy
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Snowy Tree
+
+[ITEMDEF 02378]
+DEFNAME=i_decorative_topiary
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Decorative Topiary
+
+
+[ITEMDEF 02bd9]
+DEFNAME=i_stocking_green
+NAME=green stocking
+TYPE=t_container
+TDATA2=0103
+CATEGORY=Christmas
+SUBSECTION=Containers
+DESCRIPTION=Green Stocking
+DUPELIST=02bda
+
+[ITEMDEF 02bda]
+//green stocking
+DUPEITEM=02bd9
+
+[ITEMDEF 02bdb]
+DEFNAME=i_stocking_red
+NAME=red stocking
+TYPE=t_container
+TDATA2=0103
+CATEGORY=Christmas
+SUBSECTION=Containers
+DESCRIPTION=Red Stocking
+DUPELIST=02bdc
+
+[ITEMDEF 02bdc]
+//red stocking
+DUPEITEM=02bdb
+
+[ITEMDEF 02bdd]
+DEFNAME=i_candycane_red
+NAME=red candy cane
+TYPE=t_food
+CATEGORY=Christmas
+SUBSECTION=Candies
+DESCRIPTION=Candy Cane (red)
+DUPELIST=02bde
+ON=@Create
+   MOREM=1
+
+[ITEMDEF 02bde]
+//red candy cane
+DUPEITEM=02bdd
+
+[ITEMDEF 02bdf]
+DEFNAME=i_candycane_green
+NAME=green candy cane
+TYPE=t_food
+CATEGORY=Christmas
+SUBSECTION=Candies
+DESCRIPTION=Candy Cane (green)
+DUPELIST=02be0
+ON=@Create
+   MOREM=1
+
+[ITEMDEF 02be0]
+//green candy cane
+DUPEITEM=02bdf
+
+[ITEMDEF 02be1]
+DEFNAME=i_gingerbread_cookie
+NAME=gingerbread cookie
+TYPE=t_food
+RESOURCES=1 i_cookie_mix,1 i_fresh_ginger
+SKILLMAKE=Cooking 35.0,t_cooking
+CATEGORY=Christmas
+SUBSECTION=Candies
+DESCRIPTION=Gingerbread Cookie
+DUPELIST=02be2
+ON=@Create
+   MOREM=1
+ON=@DClick
+   IF !(<MORE2>)
+      MESSAGE Noooo!
+      MESSAGE Please don't eat me... *whimper*
+      MESSAGE Not the face!
+      MESSAGE Ahhhhhh! My foot’s gone!
+      MESSAGE Please. No! I have gingerkids!
+      MESSAGE No, no! I’m really made of poison. Really.
+      MESSAGE Run, run as fast as you can! You can't catch me! I'm the gingerbread man!
+      MORE2=1
+      return 1
+   ENDIF
+
+[ITEMDEF 02be2]
+//gingerbread cookie
+DUPEITEM=02be1
+
+[ITEMDEF 02be3]
+DEFNAME=i_fresh_ginger
+NAME=fresh ginger
+TYPE=t_food_raw
+PILE=1
+CATEGORY=Christmas
+SUBSECTION=Candies
+DESCRIPTION=Ginger
+DUPELIST=02be4
+ON=@Create
+   MOREM=1
+
+[ITEMDEF 02be4]
+//fresh ginger
+DUPEITEM=02be3
+
+[ITEMDEF 02be5]
+//gingerbread house (multi-part)
+
+[ITEMDEF 02be6]
+//gingerbread house (multi-part)
+
+[ITEMDEF 02be7]
+//gingerbread house (multi-part)
+
+
+[ITEMDEF 03a55]
+DEFNAME=i_reindeer_prancing_s
+NAME=reindeer
+FLIP=1
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Reindeer (prancing)(S)
+DUPELIST=03a56,03a57,03a58,03a59,03a5a
+
+[ITEMDEF 03a56]
+DEFNAME=i_reindeer_prancing_e
+NAME=reindeer
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Reindeer (prancing)(E)
+DUPEITEM=03a55
+
+[ITEMDEF 03a57]
+DEFNAME=i_reindeer_prancing_sw
+NAME=reindeer
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Reindeer (prancing)(SW)
+DUPEITEM=03a55
+
+[ITEMDEF 03a58]
+DEFNAME=i_reindeer_prancing_ne
+NAME=reindeer
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Reindeer (prancing)(NE)
+DUPEITEM=03a55
+
+[ITEMDEF 03a59]
+DEFNAME=i_reindeer_prancing_w
+NAME=reindeer
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Reindeer (prancing)(W)
+DUPEITEM=03a55
+
+[ITEMDEF 03a5a]
+DEFNAME=i_reindeer_prancing_n
+NAME=reindeer
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Reindeer (prancing)(N)
+DUPEITEM=03a55
+
+[ITEMDEF 03a5b]
+DEFNAME=i_reindeer_blinking_w
+NAME=reindeer
+FLIP=1
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Reindeer (blinking)(W)
+DUPELIST=03a5d,03a5f,03a61,03a63,03a65
+
+
+[ITEMDEF 03a5d]
+DEFNAME=i_reindeer_blinking_sw
+NAME=reindeer
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Reindeer (blinking)(SW)
+DUPEITEM=03a5b
+
+
+[ITEMDEF 03a5f]
+DEFNAME=i_reindeer_blinking_s
+NAME=reindeer
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Reindeer (blinking)(S)
+DUPEITEM=03a5b
+
+
+[ITEMDEF 03a61]
+DEFNAME=i_reindeer_blinking_n
+NAME=reindeer
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Reindeer (blinking)(N)
+DUPEITEM=03a5b
+
+
+[ITEMDEF 03a63]
+DEFNAME=i_reindeer_blinking_ne
+NAME=reindeer
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Reindeer (blinking)(NE)
+DUPEITEM=03a5b
+
+
+[ITEMDEF 03a65]
+DEFNAME=i_reindeer_blinking_e
+NAME=reindeer
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Reindeer (blinking)(E)
+DUPEITEM=03a5b
+
+
+[ITEMDEF 03a67]
+DEFNAME=i_reindeer_running_s
+NAME=reindeer
+FLIP=1
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Reindeer (running)(S)
+DUPELIST=03a68,03a69,03a6a,03a6b,03a6c
+
+[ITEMDEF 03a68]
+DEFNAME=i_reindeer_running_e
+NAME=reindeer
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Reindeer (running)(E)
+DUPEITEM=03a67
+
+[ITEMDEF 03a69]
+DEFNAME=i_reindeer_running_w
+NAME=reindeer
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Reindeer (running)(W)
+DUPEITEM=03a67
+
+[ITEMDEF 03a6a]
+DEFNAME=i_reindeer_running_n
+NAME=reindeer
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Reindeer (running)(N)
+DUPEITEM=03a67
+
+[ITEMDEF 03a6b]
+DEFNAME=i_reindeer_running_sw
+NAME=reindeer
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Reindeer (running)(SW)
+DUPEITEM=03a67
+
+[ITEMDEF 03a6c]
+DEFNAME=i_reindeer_running_ne
+NAME=reindeer
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Reindeer (running)(NE)
+DUPEITEM=03a67
+
+[ITEMDEF 03a6d]
+DEFNAME=i_reindeer_standing_w
+NAME=reindeer
+FLIP=1
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Reindeer (standing)(W)
+DUPELIST=03a6e,03a6f,03a70,03a71,03a72
+
+[ITEMDEF 03a6e]
+DEFNAME=i_reindeer_standing_sw
+NAME=reindeer
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Reindeer (standing)(SW)
+DUPEITEM=03a6d
+
+[ITEMDEF 03a6f]
+DEFNAME=i_reindeer_standing_s
+NAME=reindeer
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Reindeer (standing)(S)
+DUPEITEM=03a6d
+
+[ITEMDEF 03a70]
+DEFNAME=i_reindeer_standing_n
+NAME=reindeer
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Reindeer (standing)(N)
+DUPEITEM=03a6d
+
+[ITEMDEF 03a71]
+DEFNAME=i_reindeer_standing_ne
+NAME=reindeer
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Reindeer (standing)(NE)
+DUPEITEM=03a6d
+
+[ITEMDEF 03a72]
+DEFNAME=i_reindeer_standing_e
+NAME=reindeer
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Reindeer (standing)(E)
+DUPEITEM=03a6d
+
+[ITEMDEF 03a73]
+//sleigh (multi-part)(E)
+
+[ITEMDEF 03a74]
+//sleigh (multi-part)(E)
+
+
+[ITEMDEF 03a76]
+//sleigh (multi-part)(E)
+
+[ITEMDEF 03a77]
+//sleigh (multi-part)(E)
+
+
+[ITEMDEF 03a7a]
+//sleigh (multi-part)(SW)
+
+
+[ITEMDEF 03a7c]
+//sleigh (multi-part)(SW)
+
+[ITEMDEF 03a7d]
+//sleigh (multi-part)(N)
+
+[ITEMDEF 03a7e]
+//sleigh (multi-part)(N)
+
+
+[ITEMDEF 03a80]
+//sleigh (multi-part)(N)
+
+[ITEMDEF 03a81]
+//sleigh (multi-part)(N)
+
+
+[ITEMDEF 03a84]
+//sleigh (multi-part)(NE)
+
+
+[ITEMDEF 03a86]
+//sleigh (multi-part)(NE)
+
+[ITEMDEF 03a87]
+//sleigh (multi-part)(S)
+
+[ITEMDEF 03a88]
+//sleigh (multi-part)(S)
+
+
+[ITEMDEF 03a8a]
+//sleigh (multi-part)(S)
+
+[ITEMDEF 03a8b]
+//sleigh (multi-part)(S)
+
+
+[ITEMDEF 03a8d]
+//sleigh (multi-part)(W)
+
+[ITEMDEF 03a8e]
+//sleigh (multi-part)(W)
+
+
+[ITEMDEF 03a90]
+//sleigh (multi-part)(W)
+
+[ITEMDEF 03a91]
+//sleigh (multi-part)(W)
+
+
+[ITEMDEF 03bb8]
+DEFNAME=i_eggnog_pot
+NAME=pot of eggnog
+FLIP=1
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Pot of Eggnog
+DUPELIST=03bb9,03bba
+
+[ITEMDEF 03bb9]
+//pot of eggnog
+DUPEITEM=03bb8
+
+[ITEMDEF 03bba]
+//pot of eggnog
+DUPEITEM=03bb8
+
+[ITEMDEF 03bbb]
+DEFNAME=i_holiday_garland
+NAME=holiday garland
+FLIP=1
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Holiday Garland
+DUPELIST=03bbc
+
+[ITEMDEF 03bbc]
+//holiday garland
+DUPEITEM=03bbb
+
+
+[ITEMDEF 04214]
+DEFNAME=i_toy_rockinghorse
+NAME=rocking horse
+FLIP=1
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Rocking Horse
+DUPELIST=04215
+
+[ITEMDEF 04215]
+//rocking horse
+DUPEITEM=04214
+
+
+[ITEMDEF 0456e]
+DEFNAME=i_statue_snow_pegasus
+NAME=snow statue
+FLIP=1
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Snow Statue (pegasus)
+DUPELIST=0456f
+
+[ITEMDEF 0456f]
+//snow statue (pegasus)
+DUPEITEM=0456e
+
+
+[ITEMDEF 04578]
+DEFNAME=i_statue_snow_seahorse
+NAME=snow statue
+FLIP=1
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Snow Statue (seahorse)
+DUPELIST=04579
+
+[ITEMDEF 04579]
+//snow statue (seahorse)
+DUPEITEM=04578
+
+[ITEMDEF 0457a]
+DEFNAME=i_statue_snow_mermaid
+NAME=snow statue
+FLIP=1
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Snow Statue (mermaid)
+DUPELIST=0457b
+
+[ITEMDEF 0457b]
+//snow statue (mermaid)
+DUPEITEM=0457a
+
+[ITEMDEF 0457c]
+DEFNAME=i_statue_snow_gryphon
+NAME=snow statue
+FLIP=1
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Snow Statue (gryphon)
+DUPELIST=0457d
+
+[ITEMDEF 0457d]
+//snow statue (gryphon)
+DUPEITEM=0457c
+
+
+[ITEMDEF 04572]
+DEFNAME=i_icicles_south
+NAME=icicles
+FLIP=1
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Icicles (south)
+DUPELIST=04573,04574
+
+[ITEMDEF 04573]
+//icicles (south)
+DUPEITEM=04572
+
+[ITEMDEF 04574]
+//icicles (south)
+DUPEITEM=04572
+
+[ITEMDEF 04575]
+DEFNAME=i_icicles_east
+NAME=icicles
+FLIP=1
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Icicles (east)
+DUPELIST=04576,04577
+
+[ITEMDEF 04576]
+//icicles (east)
+DUPEITEM=04575
+
+[ITEMDEF 04577]
+//icicles (east)
+DUPEITEM=04575
+
+
+[ITEMDEF 046a2]
+DEFNAME=i_giftbox_cube
+NAME=gift box
+TYPE=t_container
+TDATA2=011b
+TDATA3=163,151
+CATEGORY=Christmas
+SUBSECTION=Containers
+DESCRIPTION=Gift Box (cube)
+ON=@Create
+   COLOR={0454 1 0491 1 0493 1 0494 1 0495 1 04a8 1 04aa 1 04ab 1 04ac 1 0503 1 0504 1 0507 1 0672 1 084b 1 084f 1 0851 1 097c 1 0b8b 1 0b8c 1}
+
+[ITEMDEF 046a3]
+DEFNAME=i_giftbox_cylinder
+NAME=gift box
+TYPE=t_container
+TDATA2=011c
+TDATA3=156,166
+CATEGORY=Christmas
+SUBSECTION=Containers
+DESCRIPTION=Gift Box (cylinder)
+ON=@Create
+   COLOR={0454 1 0491 1 0493 1 0494 1 0495 1 04a8 1 04aa 1 04ab 1 04ac 1 0503 1 0504 1 0507 1 0672 1 084b 1 084f 1 0851 1 097c 1 0b8b 1 0b8c 1}
+
+[ITEMDEF 046a4]
+DEFNAME=i_giftbox_octogon
+NAME=gift box
+TYPE=t_container
+TDATA2=011d
+TDATA3=165,166
+CATEGORY=Christmas
+SUBSECTION=Containers
+DESCRIPTION=Gift Box (octogon)
+ON=@Create
+   COLOR={0454 1 0491 1 0493 1 0494 1 0495 1 04a8 1 04aa 1 04ab 1 04ac 1 0503 1 0504 1 0507 1 0672 1 084b 1 084f 1 0851 1 097c 1 0b8b 1 0b8c 1}
+
+[ITEMDEF 046a5]
+DEFNAME=i_giftbox_rectangle
+NAME=gift box
+TYPE=t_container
+FLIP=1
+TDATA2=011e
+TDATA3=156,151
+CATEGORY=Christmas
+SUBSECTION=Containers
+DESCRIPTION=Gift Box (rectangle)
+DUPELIST=046a6
+ON=@Create
+   COLOR={0454 1 0491 1 0493 1 0494 1 0495 1 04a8 1 04aa 1 04ab 1 04ac 1 0503 1 0504 1 0507 1 0672 1 084b 1 084f 1 0851 1 097c 1 0b8b 1 0b8c 1}
+
+[ITEMDEF 046a6]
+//gift box (rectangle)
+DUPEITEM=046a5
+
+[ITEMDEF 046a7]
+DEFNAME=i_giftbox_angel
+NAME=gift box
+TYPE=t_container
+TDATA2=011f
+TDATA3=161,151
+CATEGORY=Christmas
+SUBSECTION=Containers
+DESCRIPTION=Gift Box (angel)
+ON=@Create
+   COLOR={0454 1 0491 1 0493 1 0494 1 0495 1 04a8 1 04aa 1 04ab 1 04ac 1 0503 1 0504 1 0507 1 0672 1 084b 1 084f 1 0851 1 097c 1 0b8b 1 0b8c 1}
+
+
+[ITEMDEF 046ec]
+DEFNAME=i_nutcracker_small_east
+NAME=nutcracker
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Nutcracker (small)(east)
+DUPELIST=046ed,046ee
+
+[ITEMDEF 046ed]
+//nutcracker (small)(east)
+DUPEITEM=046ec
+
+[ITEMDEF 046ee]
+//nutcracker (small)(east)
+DUPEITEM=046ec
+
+[ITEMDEF 046ef]
+DEFNAME=i_nutcracker_small_south
+NAME=nutcracker
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Nutcracker (small)(south)
+DUPELIST=046f0,046f1
+
+[ITEMDEF 046f0]
+//nutcracker (small)(south)
+DUPEITEM=046ef
+
+[ITEMDEF 046f1]
+//nutcracker (small)(south)
+DUPEITEM=046ef
+
+[ITEMDEF 046f2]
+DEFNAME=i_nutcracker_large_east
+NAME=nutcracker
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Nutcracker (large)(east)
+DUPELIST=046f3,046f4
+
+[ITEMDEF 046f3]
+//nutcracker (large)(east)
+DUPEITEM=046f2
+
+[ITEMDEF 046f4]
+//nutcracker (large)(east)
+DUPEITEM=046f2
+
+[ITEMDEF 046f5]
+DEFNAME=i_nutcracker_large_south
+NAME=nutcracker
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Nutcracker (large)(south)
+DUPELIST=046f6,046f7
+
+[ITEMDEF 046f6]
+//nutcracker (large)(south)
+DUPEITEM=046f5
+
+[ITEMDEF 046f7]
+//nutcracker (large)(south)
+DUPEITEM=046f5
+
+
+[ITEMDEF 046fa]
+DEFNAME=i_angel_decoration
+NAME=angel decoration
+FLIP=1
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Angel Decoration
+DUPELIST=046fb
+
+[ITEMDEF 046fb]
+//angel decoration
+DUPEITEM=046fa
+
+
+[ITEMDEF 04790]
+DEFNAME=i_door_mat_rounded
+NAME=door mat
+FLIP=1
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Door mat (rounded)
+DUPELIST=04791
+
+[ITEMDEF 04791]
+//door mat (rounded)
+DUPEITEM=04790
+
+
+[ITEMDEF 047da]
+DEFNAME=i_door_mat_squared
+NAME=door mat
+FLIP=1
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Door mat (squared)
+DUPELIST=047db
+
+[ITEMDEF 047db]
+//door mat (squared)
+DUPEITEM=047da
+
+
+[ITEMDEF 04a98]
+DEFNAME=i_statue_santa_east
+NAME=santa statue
+TYPE=t_light_out
+TDATA3=i_statue_santa_east_lit
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Santa Statue (unlit)
+ON=@Create
+   MOREZ=29
+ON=@ClientTooltip
+   SRC.ADDCLILOC 502696	//turned off
+
+[ITEMDEF 04a99]
+DEFNAME=i_statue_santa_south
+NAME=santa statue
+TYPE=t_light_out
+TDATA3=i_statue_santa_south_lit
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Santa Statue (unlit)
+ON=@Create
+   MOREZ=29
+ON=@ClientTooltip
+   SRC.ADDCLILOC 502696	//turned off
+
+[ITEMDEF 04a9a]
+DEFNAME=i_statue_santa_east_lit
+NAME=santa statue
+TYPE=t_light_lit
+TDATA3=i_statue_santa_east
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Santa Statue (lit)
+ON=@Create
+   MOREZ=29
+ON=@ClientTooltip
+   SRC.ADDCLILOC 502695	//turned on
+
+[ITEMDEF 04a9b]
+DEFNAME=i_statue_santa_south_lit
+NAME=santa statue
+TYPE=t_light_lit
+TDATA3=i_statue_santa_south
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Santa Statue (lit)
+ON=@Create
+   MOREZ=29
+ON=@ClientTooltip
+   SRC.ADDCLILOC 502695	//turned on
+
+
+[ITEMDEF 04b20]
+DEFNAME=i_sign_customizable
+NAME=sign
+TYPE=t_sign_gump
+TDATA2=024f4
+FLIP=1
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Customizable Sign
+DUPELIST=04b21
+
+[ITEMDEF 04b21]
+//customizable sign
+DUPEITEM=04b20
+
+
+[ITEMDEF 04ba9]
+DEFNAME=i_tree_infested
+NAME=infested tree
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Infested Tree
+DUPELIST=04baa,04bad,04bae,04baf,04bb0,04bb1,04bb2,04bb3
+
+[ITEMDEF 04baa]
+//infested tree
+DUPEITEM=04ba9
+
+
+[ITEMDEF 04bad]
+//infested tree
+DUPEITEM=04ba9
+
+[ITEMDEF 04bae]
+//infested tree
+DUPEITEM=04ba9
+
+[ITEMDEF 04baf]
+//infested tree
+DUPEITEM=04ba9
+
+[ITEMDEF 04bb0]
+//infested tree
+DUPEITEM=04ba9
+
+[ITEMDEF 04bb1]
+//infested tree
+DUPEITEM=04ba9
+
+[ITEMDEF 04bb2]
+//infested tree
+DUPEITEM=04ba9
+
+[ITEMDEF 04bb3]
+//infested tree
+DUPEITEM=04ba9
+
+
+[ITEMDEF 04c0a]
+DEFNAME=i_tree_winter
+NAME=winter tree
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Winter Tree
+
+
+[ITEMDEF 04c17]
+DEFNAME=i_tree_festive
+NAME=festive tree
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Festive Tree
+
+[ITEMDEF 04c18]
+DEFNAME=i_tree_decorative
+NAME=decorative tree
+FLIP=1
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Decorative Tree
+DUPELIST=04c19
+ON=@Create
+   COLOR=colors_all
+
+[ITEMDEF 04c19]
+//decorative tree
+DUPEITEM=04c18
+
+
+[ITEMDEF 0577e]
+DEFNAME=i_book_scroll_transcendence
+NAME=scrolls of transcendence book
+FLIP=1
+CATEGORY=Christmas
+SUBSECTION=Misc
+DESCRIPTION=Scrolls of Transcendence Book
+DUPELIST=0577f
+
+[ITEMDEF 0577f]
+//scrolls of transcendence book
+DUPEITEM=0577e
+
+
+[ITEMDEF 0983a]
+DEFNAME=i_candle_tray_east
+NAME=candle tray
+TYPE=t_light_out
+TDATA3=i_candle_tray_east_lit
+FLIP=1
+CATEGORY=Christmas
+SUBSECTION=Lightsources
+DESCRIPTION=Candle Tray (east)(unlit)
+ON=@Create
+   MOREZ=2
+
+[ITEMDEF 0983b]
+DEFNAME=i_candle_tray_east_lit
+NAME=candle tray
+TYPE=t_light_lit
+TDATA3=i_candle_tray_east
+FLIP=1
+CATEGORY=Christmas
+SUBSECTION=Lightsources
+DESCRIPTION=Candle Tray (east)(lit)
+DUPELIST=0983c,0983d
+ON=@Create
+   MOREZ=2
+
+[ITEMDEF 0983c]
+//candle tray (east)
+DUPEITEM=0983b
+
+[ITEMDEF 0983d]
+//candle tray (east)
+DUPEITEM=0983b
+
+[ITEMDEF 0983e]
+DEFNAME=i_candle_tray_south
+NAME=candle tray
+TYPE=t_light_out
+TDATA3=i_candle_tray_south_lit
+FLIP=1
+CATEGORY=Christmas
+SUBSECTION=Lightsources
+DESCRIPTION=Candle Tray (south)(unlit)
+ON=@Create
+   MOREZ=2
+
+[ITEMDEF 0983f]
+DEFNAME=i_candle_tray_south_lit
+NAME=candle tray
+TYPE=t_light_lit
+TDATA3=i_candle_tray_south
+FLIP=1
+CATEGORY=Christmas
+SUBSECTION=Lightsources
+DESCRIPTION=Candle Tray (south)(lit)
+DUPELIST=09840,09841
+ON=@Create
+   MOREZ=2
+
+[ITEMDEF 09840]
+//candle tray (south)
+DUPEITEM=0983f
+
+[ITEMDEF 09841]
+//candle tray (south)
+DUPEITEM=0983f
+
+[ITEMDEF 09842]
+DEFNAME=i_lobster_dinner
+NAME=lobster dinner
+FLIP=1
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Lobster Dinner
+DUPELIST=09843
+
+[ITEMDEF 09843]
+//lobster dinner
+DUPEITEM=09842
+
+
+[ITEMDEF 0996b]
+//claw foot tub (multi-part)(south)
+NAME=claw foot tub
+
+[ITEMDEF 0996c]
+//claw foot tub (multi-part)(south)
+NAME=claw foot tub
+
+[ITEMDEF 0996d]
+//claw foot tub (multi-part)(south)
+NAME=claw foot tub
+
+[ITEMDEF 0996e]
+//claw foot tub (multi-part)(south)(anim)
+NAME=claw foot tub
+
+[ITEMDEF 0996f]
+//claw foot tub (multi-part)(south)(anim)
+NAME=claw foot tub
+
+[ITEMDEF 09970]
+//claw foot tub (multi-part)(south)(anim)
+NAME=claw foot tub
+
+[ITEMDEF 09971]
+//claw foot tub (multi-part)(south)(anim)
+NAME=claw foot tub
+
+[ITEMDEF 09972]
+//claw foot tub (multi-part)(south)(anim)
+NAME=claw foot tub
+
+[ITEMDEF 09973]
+//claw foot tub (multi-part)(south)(anim)
+NAME=claw foot tub
+
+[ITEMDEF 09974]
+//claw foot tub (multi-part)(south)(anim)
+NAME=claw foot tub
+
+[ITEMDEF 09975]
+//claw foot tub (multi-part)(south)(anim)
+NAME=claw foot tub
+
+[ITEMDEF 09976]
+//claw foot tub (multi-part)(east)
+NAME=claw foot tub
+
+[ITEMDEF 09977]
+//claw foot tub (multi-part)(east)
+NAME=claw foot tub
+
+[ITEMDEF 09978]
+//claw foot tub (multi-part)(east)
+NAME=claw foot tub
+
+[ITEMDEF 09979]
+//claw foot tub (multi-part)(east)(anim)
+NAME=claw foot tub
+
+[ITEMDEF 0997a]
+//claw foot tub (multi-part)(east)(anim)
+NAME=claw foot tub
+
+[ITEMDEF 0997b]
+//claw foot tub (multi-part)(east)(anim)
+NAME=claw foot tub
+
+[ITEMDEF 0997c]
+//claw foot tub (multi-part)(east)(anim)
+NAME=claw foot tub
+
+[ITEMDEF 0997d]
+//claw foot tub (multi-part)(east)(anim)
+NAME=claw foot tub
+
+[ITEMDEF 0997e]
+//claw foot tub (multi-part)(east)(anim)
+NAME=claw foot tub
+
+[ITEMDEF 0997f]
+//claw foot tub (multi-part)(east)(anim)
+NAME=claw foot tub
+
+[ITEMDEF 09980]
+//claw foot tub (multi-part)(east)(anim)
+NAME=claw foot tub
+
+[ITEMDEF 09881]
+DEFNAME=i_book_scroll_alacrity
+NAME=scrolls of alacrity book
+FLIP=1
+CATEGORY=Christmas
+SUBSECTION=Misc
+DESCRIPTION=Scrolls of Alacrity Book
+DUPELIST=09882
+
+[ITEMDEF 09882]
+//scrolls of alacrity book
+DUPEITEM=09881
+
+
+[ITEMDEF 09a4b]
+//fireplace (marble gold)(east)(multi-part)
+NAME=fireplace
+
+[ITEMDEF 09a4c]
+//fireplace (marble gold)(east)(multi-part)
+NAME=fireplace
+
+[ITEMDEF 09a4d]
+//fireplace (marble gold)(east)(multi-part)
+NAME=fireplace
+
+[ITEMDEF 09a4e]
+//fireplace (marble gold)(south)(multi-part)
+NAME=fireplace
+
+[ITEMDEF 09a4f]
+//fireplace (marble gold)(south)(multi-part)
+NAME=fireplace
+
+[ITEMDEF 09a50]
+//fireplace (marble gold)(south)(multi-part)
+NAME=fireplace
+
+[ITEMDEF 09a51]
+//fireplace (marble blue)(east)(multi-part)
+NAME=fireplace
+
+[ITEMDEF 09a52]
+//fireplace (marble blue)(east)(multi-part)
+NAME=fireplace
+
+[ITEMDEF 09a53]
+//fireplace (marble blue)(east)(multi-part)
+NAME=fireplace
+
+[ITEMDEF 09a54]
+//fireplace (marble blue)(south)(multi-part)
+NAME=fireplace
+
+[ITEMDEF 09a55]
+//fireplace (marble blue)(south)(multi-part)
+NAME=fireplace
+
+[ITEMDEF 09a56]
+//fireplace (marble blue)(south)(multi-part)
+NAME=fireplace
+
+[ITEMDEF 09a57]
+//fireplace (marble green)(east)(multi-part)
+NAME=fireplace
+
+[ITEMDEF 09a58]
+//fireplace (marble green)(east)(multi-part)
+NAME=fireplace
+
+[ITEMDEF 09a59]
+//fireplace (marble green)(east)(multi-part)
+NAME=fireplace
+
+[ITEMDEF 09a5a]
+//fireplace (marble green)(south)(multi-part)
+NAME=fireplace
+
+[ITEMDEF 09a5b]
+//fireplace (marble green)(south)(multi-part)
+NAME=fireplace
+
+[ITEMDEF 09a5c]
+//fireplace (marble green)(south)(multi-part)
+NAME=fireplace
+
+[ITEMDEF 09a5d]
+//fireplace (marble gold)(east)(multi-part)(anim)
+NAME=fireplace
+DUPELIST=09a5e,09a5f,09a60,09a61,09a62
+
+[ITEMDEF 09a5e]
+//fireplace (marble gold)(east)(multi-part)(anim)
+NAME=fireplace
+DUPEITEM=09a5d
+
+[ITEMDEF 09a5f]
+//fireplace (marble gold)(east)(multi-part)(anim)
+NAME=fireplace
+DUPEITEM=09a5d
+
+[ITEMDEF 09a60]
+//fireplace (marble gold)(east)(multi-part)(anim)
+NAME=fireplace
+DUPEITEM=09a5d
+
+[ITEMDEF 09a61]
+//fireplace (marble gold)(east)(multi-part)(anim)
+NAME=fireplace
+DUPEITEM=09a5d
+
+[ITEMDEF 09a62]
+//fireplace (marble gold)(east)(multi-part)(anim)
+NAME=fireplace
+DUPEITEM=09a5d
+
+[ITEMDEF 09a63]
+//fireplace (marble gold)(south)(multi-part)(anim)
+NAME=fireplace
+DUPELIST=09a64,09a65,09a66,09a67,09a68
+
+[ITEMDEF 09a64]
+//fireplace (marble gold)(south)(multi-part)(anim)
+NAME=fireplace
+DUPEITEM=09a63
+
+[ITEMDEF 09a65]
+//fireplace (marble gold)(south)(multi-part)(anim)
+NAME=fireplace
+DUPEITEM=09a63
+
+[ITEMDEF 09a66]
+//fireplace (marble gold)(south)(multi-part)(anim)
+NAME=fireplace
+DUPEITEM=09a63
+
+[ITEMDEF 09a67]
+//fireplace (marble gold)(south)(multi-part)(anim)
+NAME=fireplace
+DUPEITEM=09a63
+
+[ITEMDEF 09a68]
+//fireplace (marble gold)(south)(multi-part)(anim)
+NAME=fireplace
+DUPEITEM=09a63
+
+[ITEMDEF 09a69]
+//fireplace (marble blue)(east)(multi-part)(anim)
+NAME=fireplace
+DUPELIST=09a6a,09a6b,09a6c,09a6d,09a6e
+
+[ITEMDEF 09a6a]
+//fireplace (marble blue)(east)(multi-part)(anim)
+NAME=fireplace
+DUPEITEM=09a69
+
+[ITEMDEF 09a6b]
+//fireplace (marble blue)(east)(multi-part)(anim)
+NAME=fireplace
+DUPEITEM=09a69
+
+[ITEMDEF 09a6c]
+//fireplace (marble blue)(east)(multi-part)(anim)
+NAME=fireplace
+DUPEITEM=09a69
+
+[ITEMDEF 09a6d]
+//fireplace (marble blue)(east)(multi-part)(anim)
+NAME=fireplace
+DUPEITEM=09a69
+
+[ITEMDEF 09a6e]
+//fireplace (marble blue)(east)(multi-part)(anim)
+NAME=fireplace
+DUPEITEM=09a69
+
+[ITEMDEF 09a6f]
+//fireplace (marble blue)(south)(multi-part)(anim)
+NAME=fireplace
+DUPELIST=09a70,09a71,09a72,09a73,09a74
+
+[ITEMDEF 09a70]
+//fireplace (marble blue)(south)(multi-part)(anim)
+NAME=fireplace
+DUPEITEM=09a6f
+
+[ITEMDEF 09a71]
+//fireplace (marble blue)(south)(multi-part)(anim)
+NAME=fireplace
+DUPEITEM=09a6f
+
+[ITEMDEF 09a72]
+//fireplace (marble blue)(south)(multi-part)(anim)
+NAME=fireplace
+DUPEITEM=09a6f
+
+[ITEMDEF 09a73]
+//fireplace (marble blue)(south)(multi-part)(anim)
+NAME=fireplace
+DUPEITEM=09a6f
+
+[ITEMDEF 09a74]
+//fireplace (marble blue)(south)(multi-part)(anim)
+NAME=fireplace
+DUPEITEM=09a6f
+
+[ITEMDEF 09a75]
+//fireplace (marble green)(east)(multi-part)(anim)
+NAME=fireplace
+DUPELIST=09a76,09a77,09a78,09a79,09a7a
+
+[ITEMDEF 09a76]
+//fireplace (marble green)(east)(multi-part)(anim)
+NAME=fireplace
+DUPEITEM=09a75
+
+[ITEMDEF 09a77]
+//fireplace (marble green)(east)(multi-part)(anim)
+NAME=fireplace
+DUPEITEM=09a75
+
+[ITEMDEF 09a78]
+//fireplace (marble green)(east)(multi-part)(anim)
+NAME=fireplace
+DUPEITEM=09a75
+
+[ITEMDEF 09a79]
+//fireplace (marble green)(east)(multi-part)(anim)
+NAME=fireplace
+DUPEITEM=09a75
+
+[ITEMDEF 09a7a]
+//fireplace (marble green)(east)(multi-part)(anim)
+NAME=fireplace
+DUPEITEM=09a75
+
+[ITEMDEF 09a7b]
+//fireplace (marble green)(south)(multi-part)(anim)
+NAME=fireplace
+DUPELIST=09a7c,09a7d,09a7e,09a7f,09a80
+
+[ITEMDEF 09a7c]
+//fireplace (marble green)(south)(multi-part)(anim)
+NAME=fireplace
+DUPEITEM=09a7b
+
+[ITEMDEF 09a7d]
+//fireplace (marble green)(south)(multi-part)(anim)
+NAME=fireplace
+DUPEITEM=09a7b
+
+[ITEMDEF 09a7e]
+//fireplace (marble green)(south)(multi-part)(anim)
+NAME=fireplace
+DUPEITEM=09a7b
+
+[ITEMDEF 09a7f]
+//fireplace (marble green)(south)(multi-part)(anim)
+NAME=fireplace
+DUPEITEM=09a7b
+
+[ITEMDEF 09a80]
+//fireplace (marble green)(south)(multi-part)(anim)
+NAME=fireplace
+DUPEITEM=09a7b
+
+
+[ITEMDEF 09a92]
+DEFNAME=i_giftbox_swirly
+NAME=gift box
+TYPE=t_container
+TDATA2=0777a
+CATEGORY=Christmas
+SUBSECTION=Containers
+DESCRIPTION=Gift Box (swirly)
+ON=@Create
+   COLOR={{2 101} 92 077e 1 081b 1 0a50 1 0a93 1 0a9b 1 0aa2 1 0aa6 1 0aa8 1}
+
+[ITEMDEF 09a93]
+DEFNAME=i_giftbox_diamond
+NAME=gift box
+TYPE=t_container
+TDATA2=0777a
+CATEGORY=Christmas
+SUBSECTION=Containers
+DESCRIPTION=Gift Box (diamond)
+ON=@Create
+   COLOR={{2 101} 92 077e 1 081b 1 0a50 1 0a93 1 0a9b 1 0aa2 1 0aa6 1 0aa8 1}
+
+[ITEMDEF 09a94]
+DEFNAME=i_giftbox_checker
+NAME=gift box
+TYPE=t_container
+TDATA2=0777a
+CATEGORY=Christmas
+SUBSECTION=Containers
+DESCRIPTION=Gift Box (checker)
+ON=@Create
+   COLOR={{2 101} 92 077e 1 081b 1 0a50 1 0a93 1 0a9b 1 0aa2 1 0aa6 1 0aa8 1}
+
+[ITEMDEF 09a95]
+DEFNAME=i_book_power_scroll
+NAME=power scroll book
+FLIP=1
+CATEGORY=Christmas
+SUBSECTION=Misc
+DESCRIPTION=Power Scroll Book
+DUPELIST=09aa7
+
+[ITEMDEF 09a96]
+DEFNAME=i_steam_powered_beverage_maker
+NAME=steam powered beverage maker
+CATEGORY=Christmas
+SUBSECTION=Tools
+DESCRIPTION=Steam Powered Beverage Maker
+
+[ITEMDEF 09a97]
+DEFNAME=i_grinder
+NAME=grinder
+FLIP=1
+CATEGORY=Christmas
+SUBSECTION=Tools
+DESCRIPTION=Grinder
+DUPELIST=09a98
+
+[ITEMDEF 09a98]
+//grinder
+DUPEITEM=09a97
+
+
+[ITEMDEF 09aa7]
+//power scroll book
+DUPEITEM=09a95
+
+
+[ITEMDEF 09b0f]
+DEFNAME=i_tree_potted_snowfluff
+NAME=potted snowfluff tree
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Potted Snowfluff Tree
+ON=@Create
+   COLOR={0 92 048e 1 0507 1 0652 1 0776 1 077a 1 07b0 1 0a26 1 0aa9 1}
+
+
+[ITEMDEF 09c10]
+DEFNAME=i_nutcracker_chocolate_wrapped
+NAME=chocolate nutcracker wrapped in gold foil
+FLIP=1
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Chocolate Nutcracker (wrapped)
+DUPELIST=09c11
+ON=@DClick
+   IF (<TOPOBJ> != <SRC>)
+      SRC.SYSMESSAGE You must have the object in your backpack to use it.
+      return 1
+   ENDIF
+   SRC.EMOTE carefully peel back the wrapper...
+   SERV.NEWITEM <eval <DISPIDDEC>+2>
+   NEW.CONT=<CONT>
+   NEW.CONTP=<CONTP>
+   REMOVE
+   return 1
+
+[ITEMDEF 09c11]
+//chocolate nutcracker (wrapped)
+DUPEITEM=09c10
+
+[ITEMDEF 09c12]
+DEFNAME=i_nutcracker_chocolate
+NAME=chocolate nutcracker
+TYPE=t_food
+FLIP=1
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Chocolate Nutcracker
+DUPELIST=09c13
+
+[ITEMDEF 09c13]
+//chocolate nutcracker
+DUPEITEM=09c12
+
+[ITEMDEF 09c14]
+//card of semidar
+FLIP=1
+DUPELIST=09c15
+
+[ITEMDEF 09c15]
+//card of semidar
+DUPEITEM=09c14
+
+
+[ITEMDEF 09db5]
+DEFNAME=i_bag_of_presents
+NAME=bag of presents
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Bag of Presents
+
+
+[ITEMDEF 09db7]
+DEFNAME=i_town_holiday_tree
+NAME=holiday tree
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Town Holiday Tree
+
+[ITEMDEF 09db8]
+DEFNAME=i_town_holiday_tree_ornament
+NAME=holiday tree
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Town Holiday Tree (ornament)
+
+
+[ITEMDEF 09dbb]
+DEFNAME=i_town_holiday_tree_ornament_anim
+NAME=holiday tree
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Town Holiday Tree (ornament anim)
+DUPELIST=09dbc,09dbd,09dbe
+
+[ITEMDEF 09dbc]
+//holiday tree (anim)
+DUPEITEM=09dbb
+
+[ITEMDEF 09dbd]
+//holiday tree (anim)
+DUPEITEM=09dbb
+
+[ITEMDEF 09dbe]
+//holiday tree (anim)
+DUPEITEM=09dbb
+
+[ITEMDEF 09dbf]
+DEFNAME=i_holiday_bells
+NAME=holiday bells
+FLIP=1
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Holiday Bells
+DUPELIST=09dc0
+
+[ITEMDEF 09dc0]
+//holiday bells
+DUPEITEM=09dbf
+
+[ITEMDEF 09dc1]
+DEFNAME=i_holiday_ribbon
+NAME=holiday ribbon
+FLIP=1
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Holiday Ribbon
+DUPELIST=09dc2
+
+[ITEMDEF 09dc2]
+//holiday ribbon
+DUPEITEM=09dc1
+
+[ITEMDEF 09dc3]
+DEFNAME=i_candycane_giant_green
+NAME=candy cane
+FLIP=1
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Candy Cane (giant)(green)
+DUPELIST=09dc4
+
+[ITEMDEF 09dc4]
+//candy cane (giant)(green)
+DUPEITEM=09dc3
+
+[ITEMDEF 09dc5]
+//decorative sleigh & reindeer (multi-part)(north)
+NAME=decorative sleigh & reindeer
+
+[ITEMDEF 09dc6]
+//decorative sleigh & reindeer (multi-part)(north)
+NAME=decorative sleigh & reindeer
+
+[ITEMDEF 09dc7]
+//decorative sleigh & reindeer (multi-part)(north)
+NAME=decorative sleigh & reindeer
+
+[ITEMDEF 09dc8]
+//decorative sleigh & reindeer (multi-part)(west)
+NAME=decorative sleigh & reindeer
+
+[ITEMDEF 09dc9]
+//decorative sleigh & reindeer (multi-part)(west)
+NAME=decorative sleigh & reindeer
+
+[ITEMDEF 09dca]
+//decorative sleigh & reindeer (multi-part)(west)
+NAME=decorative sleigh & reindeer
+
+[ITEMDEF 09dcb]
+//snowy holiday tree (multi-part)
+NAME=snowy holiday tree
+
+[ITEMDEF 09dcc]
+//snowy holiday tree (multi-part)
+NAME=snowy holiday tree
+
+[ITEMDEF 09dcd]
+//snowy holiday tree (multi-part)
+NAME=snowy holiday tree
+
+[ITEMDEF 09dce]
+//snowy holiday tree (multi-part)
+NAME=snowy holiday tree
+
+[ITEMDEF 09dcf]
+//snowy holiday tree (multi-part)
+NAME=snowy holiday tree
+
+[ITEMDEF 09dd0]
+//snowy holiday tree (multi-part)
+NAME=snowy holiday tree
+
+[ITEMDEF 09dd1]
+//snowy holiday tree (multi-part)
+NAME=snowy holiday tree
+
+[ITEMDEF 09dd2]
+//snowy holiday tree (multi-part)(anim)
+NAME=snowy holiday tree
+
+[ITEMDEF 09dd3]
+//snowy holiday tree (multi-part)(anim)
+NAME=snowy holiday tree
+
+[ITEMDEF 09dd4]
+//snowy holiday tree (multi-part)(anim)
+NAME=snowy holiday tree
+
+[ITEMDEF 09dd5]
+//snowy holiday tree (multi-part)(anim)
+NAME=snowy holiday tree
+
+
+[ITEMDEF 09e1a]
+DEFNAME=i_giftbox_bell
+NAME=gift box
+TYPE=t_container
+TDATA2=0122
+TDATA3=156,166
+CATEGORY=Christmas
+SUBSECTION=Containers
+DESCRIPTION=Gift Box (bell)
+
+[ITEMDEF 09e1b]
+DEFNAME=i_candycane_giant_red
+NAME=candy cane
+FLIP=1
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Candy Cane (giant)(red)
+DUPELIST=09e1c
+
+[ITEMDEF 09e1c]
+//candy cane (giant)(red)
+DUPEITEM=09e1b
+
+
+[ITEMDEF 09e97]
+DEFNAME=i_snowflake3
+NAME=snowflake
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Snowflake
+
+
+[ITEMDEF 09f1c]
+DEFNAME=i_box_jewelry
+NAME=jewelry box
+FLIP=1
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Jewelry Box
+DUPELIST=09f1d
+
+[ITEMDEF 09f1d]
+//jewelry box
+DUPEITEM=09f1c
+
+
+[ITEMDEF 09ffa]
+DEFNAME=i_garland_firefly_south
+NAME=firefly garland
+TYPE=t_light_out
+TDATA3=i_garland_firefly_south_lit
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Firefly Garland (unlit)
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 09ffb]
+DEFNAME=i_garland_firefly_south_lit
+NAME=firefly garland
+TYPE=t_light_lit
+TDATA3=i_garland_firefly_south
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Firefly Garland (lit)
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 09ffc]
+//firefly garland (anim)
+
+[ITEMDEF 09ffd]
+//firefly garland (anim)
+
+[ITEMDEF 09ffe]
+//firefly garland (anim)
+
+[ITEMDEF 09fff]
+DEFNAME=i_garland_firefly_east
+NAME=firefly garland
+TYPE=t_light_out
+TDATA3=i_garland_firefly_east_lit
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Firefly Garland (unlit)
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 0a000]
+DEFNAME=i_garland_firefly_east_lit
+NAME=firefly garland
+TYPE=t_light_lit
+TDATA3=i_garland_firefly_east
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Firefly Garland (lit)
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 0a001]
+//firefly garland (anim)
+
+[ITEMDEF 0a002]
+//firefly garland (anim)
+
+[ITEMDEF 0a003]
+//firefly garland (anim)
+
+
+[ITEMDEF 0a094]
+DEFNAME=i_holiday_gift_token
+NAME=holiday gift token
+CATEGORY=Christmas
+SUBSECTION=Misc
+DESCRIPTION=Holiday Gift Token
+
+
+[ITEMDEF 0a12e]
+DEFNAME=i_wreath2
+NAME=wreath
+DYE=1
+FLIP=1
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Wreath (2)
+DUPELIST=0a12f
+ON=@Create
+   COLOR=colors_all
+
+[ITEMDEF 0a12f]
+//wreath
+DUPEITEM=0a12e
+
+[ITEMDEF 0a130]
+DEFNAME=i_candlelit_holiday_sign_east
+NAME=candlelit holiday sign
+TYPE=t_light_out
+TEVENTS=e_candlelit_holiday_sign
+DYE=1
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Candlelit Holiday Sign (east)(unlit)
+
+[ITEMDEF 0a131]
+DEFNAME=i_candlelit_holiday_sign_east_lit
+NAME=candlelit holiday sign
+TYPE=t_light_lit
+TEVENTS=e_candlelit_holiday_sign
+DYE=1
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Candlelit Holiday Sign (east)(lit)
+
+[ITEMDEF 0a132]
+//candlelit holiday sign (east)(anim)
+
+[ITEMDEF 0a133]
+//candlelit holiday sign (east)(anim)
+
+[ITEMDEF 0a134]
+DEFNAME=i_candlelit_holiday_sign_south
+NAME=candlelit holiday sign
+TYPE=t_light_out
+TEVENTS=e_candlelit_holiday_sign
+DYE=1
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Candlelit Holiday Sign (south)(unlit)
+
+[ITEMDEF 0a135]
+DEFNAME=i_candlelit_holiday_sign_south_lit
+NAME=candlelit holiday sign
+TYPE=t_light_lit
+TEVENTS=e_candlelit_holiday_sign
+DYE=1
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Candlelit Holiday Sign (south)(lit)
+
+[ITEMDEF 0a136]
+//candlelit holiday sign (south)(anim)
+
+[ITEMDEF 0a137]
+//candlelit holiday sign (south)(anim)
+
+[TYPEDEF e_candlelit_holiday_sign]
+ON=@Create
+   TAG.GumpID=0689
+   MOREZ=1
+ON=@ContextMenuRequest
+   SRC.AddContextEntry 101,1158829	//Change Sign Text
+   SRC.AddContextEntry 102,1155742	//Toggle: On/Off
+ON=@ContextMenuSelect
+   IF (<ARGN> == 101)
+      TAG0.GumpID ++
+      IF (<TAG0.GumpID> > 068c)
+         TAG.GumpID=0689
+      ENDIF
+      IF (<TAG0.GumpID> == 0689)
+         ARGS="Happy Holidays"
+      ELIF (<TAG0.GumpID> == 068a)
+         ARGS="Merry Christmas"
+      ELIF (<TAG0.GumpID> == 068b)
+         ARGS="Season's Greetings"
+      ELIF (<TAG0.GumpID> == 068c)
+         ARGS="Happy Hanukkah"
+      ENDIF
+      SRC.SYSMESSAGE The sign text has been set to: <ARGS>
+   ELIF (<ARGN> == 102)
+      IF (<DISPID> == i_candlelit_holiday_sign_east)
+         DISPID=i_candlelit_holiday_sign_east_lit
+      ELIF (<DISPID> == i_candlelit_holiday_sign_east_lit)
+         DISPID=i_candlelit_holiday_sign_east
+      ELIF (<DISPID> == i_candlelit_holiday_sign_south)
+         DISPID=i_candlelit_holiday_sign_south_lit
+      ELIF (<DISPID> == i_candlelit_holiday_sign_south_lit)
+         DISPID=i_candlelit_holiday_sign_south
+      ENDIF
+      UPDATE
+   ENDIF
+ON=@DClick
+   // This packet just open an generic gump, exactly the same as t_sign_gump. But t_sign_gump can only send
+   // static TDATA2 gump set on ITEMDEF, so to deal with dynamic values the packet must be sent manually
+   SRC.SENDPACKET 08b W13 D<UID> W<TAG0.GumpID> W0 W0
+   return 1
+
+
+[ITEMDEF 0a266]
+DEFNAME=i_book_recipe
+NAME=recipe book
+FLIP=1
+CATEGORY=Christmas
+SUBSECTION=Misc
+DESCRIPTION=Recipe Book
+DUPELIST=0a267
+
+[ITEMDEF 0a267]
+//recipe book
+DUPEITEM=0a266
+
+
+[ITEMDEF 0a4ad]
+DEFNAME=i_glass_tree_1_s
+NAME=glass tree
+TYPE=t_light_out
+TDATA3=i_glass_tree_1_s_lit
+WEIGHT=1.0
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Glass Tree 1 (south)(unlit)
+ON=@Create
+   MOREZ=240
+
+[ITEMDEF 0a4ae]
+DEFNAME=i_glass_tree_1_s_lit
+NAME=glass tree
+TYPE=t_light_out
+TDATA3=i_glass_tree_1_s
+WEIGHT=1.0
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Glass Tree 1 (south)(lit)
+ON=@Create
+   MOREZ=240
+
+[ITEMDEF 0a4af]
+DEFNAME=i_glass_tree_1_e
+NAME=glass tree
+TYPE=t_light_out
+TDATA3=i_glass_tree_1_e_lit
+WEIGHT=1.0
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Glass Tree 1 (east)(unlit)
+ON=@Create
+   MOREZ=240
+
+[ITEMDEF 0a4b0]
+DEFNAME=i_glass_tree_1_e_lit
+NAME=glass tree
+TYPE=t_light_out
+TDATA3=i_glass_tree_1_e
+WEIGHT=1.0
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Glass Tree 1 (east)(lit)
+ON=@Create
+   MOREZ=240
+
+[ITEMDEF 0a4b1]
+DEFNAME=i_dove_cage
+NAME=cage
+DYE=1
+WEIGHT=1.0
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Cage
+DUPELIST=0a4b2
+ON=@DClick
+   SOUND 067f
+
+[ITEMDEF 0a4b2]
+//cage
+DUPEITEM=0a4b1
+
+[ITEMDEF 0a4b3]
+DEFNAME=i_glass_tree_2_s
+NAME=glass tree
+TYPE=t_light_out
+TDATA3=i_glass_tree_2_s_lit
+WEIGHT=1.0
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Glass Tree 2 (south)(unlit)
+ON=@Create
+   MOREZ=210
+
+[ITEMDEF 0a4b4]
+DEFNAME=i_glass_tree_2_s_lit
+NAME=glass tree
+TYPE=t_light_out
+TDATA3=i_glass_tree_2_s
+WEIGHT=1.0
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Glass Tree 2 (south)(lit)
+ON=@Create
+   MOREZ=210
+
+[ITEMDEF 0a4b5]
+DEFNAME=i_glass_tree_2_e
+NAME=glass tree
+TYPE=t_light_out
+TDATA3=i_glass_tree_2_e_lit
+WEIGHT=1.0
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Glass Tree 2 (east)(unlit)
+ON=@Create
+   MOREZ=210
+
+[ITEMDEF 0a4b6]
+DEFNAME=i_glass_tree_2_e_lit
+NAME=glass tree
+TYPE=t_light_out
+TDATA3=i_glass_tree_2_e
+WEIGHT=1.0
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Glass Tree 2 (east)(lit)
+ON=@Create
+   MOREZ=210
+
+[ITEMDEF 0a4b7]
+DEFNAME=i_glass_tree_3_s
+NAME=glass tree
+TYPE=t_light_out
+TDATA3=i_glass_tree_3_s_lit
+WEIGHT=1.0
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Glass Tree 3 (south)(unlit)
+ON=@Create
+   MOREZ=210
+
+[ITEMDEF 0a4b8]
+DEFNAME=i_glass_tree_3_s_lit
+NAME=glass tree
+TYPE=t_light_out
+TDATA3=i_glass_tree_3_s
+WEIGHT=1.0
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Glass Tree 3 (south)(lit)
+ON=@Create
+   MOREZ=210
+
+[ITEMDEF 0a4b9]
+DEFNAME=i_glass_tree_3_e
+NAME=glass tree
+TYPE=t_light_out
+TDATA3=i_glass_tree_3_e_lit
+WEIGHT=1.0
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Glass Tree 3 (east)(unlit)
+ON=@Create
+   MOREZ=210
+
+[ITEMDEF 0a4ba]
+DEFNAME=i_glass_tree_3_e_lit
+NAME=glass tree
+TYPE=t_light_out
+TDATA3=i_glass_tree_3_e
+WEIGHT=1.0
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Glass Tree 3 (east)(lit)
+ON=@Create
+   MOREZ=210
+
+
+[ITEMDEF 0a4cf]
+DEFNAME=i_holiday_tree_jolly
+NAME=Holiday Tree
+DYE=1
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Jolly Holiday Tree
+ON=@DClick
+   IF (<DISPID> == i_holiday_tree_jolly)
+      DISPID=0a4d0
+   ELSE
+      DISPID=i_holiday_tree_jolly
+   ENDIF
+   UPDATE
+   return 1
+
+[ITEMDEF 0a4d0]
+//holiday tree (anim)
+
+[ITEMDEF 0a4d1]
+//holiday tree (anim)
+
+[ITEMDEF 0a4d2]
+//holiday tree (anim)
+
+[ITEMDEF 0a4d3]
+//holiday tree (anim)
+
+[ITEMDEF 0a4d4]
+//holiday tree (anim)
+
+[ITEMDEF 0a4d5]
+//holiday tree (anim)
+
+[ITEMDEF 0a4d6]
+//holiday tree (anim)
+
+[ITEMDEF 0a4d7]
+//holiday tree (anim)
+
+[ITEMDEF 0a4d8]
+//holiday tree (anim)
+
+[ITEMDEF 0a4d9]
+//holiday tree (anim)
+
+
+//////////////////
+// Custom Items //
+//////////////////
+
+[ITEMDEF m_holiday_tree_classic]
+ID=0cd6
+NAME=Holiday Tree
+TYPE=t_multi
+CATEGORY=Christmas
+SUBSECTION=Multis
+DESCRIPTION=Holiday Tree (Classic)
+MULTIREGION=0,0,0,0
+COMPONENT=0cd7,0,0,0
+COMPONENT=0f22,0,0,2
+COMPONENT=0f16,0,1,7
+COMPONENT=0f1e,0,1,7
+COMPONENT=0f18,0,0,9
+COMPONENT=0f0f,0,1,12
+COMPONENT=0f10,1,0,13
+COMPONENT=0f13,0,1,13
+COMPONENT=0f1c,1,0,14
+COMPONENT=0f20,0,0,15
+COMPONENT=0f14,1,0,16
+COMPONENT=0f26,1,0,17
+COMPONENT=0f12,0,1,18
+COMPONENT=0f15,0,1,19
+COMPONENT=0f17,0,0,19
+COMPONENT=0f19,0,0,20
+COMPONENT=0f1f,0,0,20
+COMPONENT=0f24,0,0,20
+COMPONENT=0f1b,0,0,21
+COMPONENT=0f27,1,0,22
+COMPONENT=0f28,0,1,25
+COMPONENT=0f2f,0,0,28
+COMPONENT=0f1a,0,1,29
+COMPONENT=0f23,0,0,30
+COMPONENT=0f2a,0,0,32
+COMPONENT=0f30,0,0,33
+COMPONENT=0f29,0,0,34
+COMPONENT=0f2b,0,1,37
+
+[ITEMDEF m_holiday_tree_classic_bare]
+ID=0cd6
+NAME=Holiday Tree
+TYPE=t_multi
+CATEGORY=Christmas
+SUBSECTION=Multis
+DESCRIPTION=Holiday Tree (Classic Bare)
+MULTIREGION=0,0,0,0
+COMPONENT=0cd7,0,0,0
+
+[ITEMDEF m_holiday_tree_modern]
+ID=01b7e
+NAME=Holiday Tree
+TYPE=t_multi
+CATEGORY=Christmas
+SUBSECTION=Multis
+DESCRIPTION=Holiday Tree (Modern)
+MULTIREGION=0,0,0,0
+COMPONENT=0f20,0,0,2
+COMPONENT=0f22,0,0,2
+COMPONENT=0f2f,0,0,2
+COMPONENT=0f15,0,0,5
+COMPONENT=0f1f,0,0,5
+COMPONENT=0f2b,0,0,5
+COMPONENT=0f30,0,0,5
+COMPONENT=0f0f,0,0,6
+COMPONENT=0f16,0,1,7
+COMPONENT=0f1e,0,0,7
+COMPONENT=0f24,0,0,7
+COMPONENT=0f29,0,0,8
+COMPONENT=0f18,0,0,9
+COMPONENT=0f1c,0,0,14
+COMPONENT=0f13,0,0,15
+COMPONENT=0f20,0,0,15
+COMPONENT=0f26,0,0,16
+COMPONENT=0f12,0,0,17
+COMPONENT=0f17,0,0,18
+COMPONENT=0f1b,0,0,20
+COMPONENT=0f28,0,0,23
+COMPONENT=0f18,0,0,25
+COMPONENT=0f2a,0,0,25
+
+[ITEMDEF m_holiday_tree_modern_bare]
+ID=01b7e
+NAME=Holiday Tree
+TYPE=t_multi
+CATEGORY=Christmas
+SUBSECTION=Multis
+DESCRIPTION=Holiday Tree (Modern Bare)
+MULTIREGION=0,0,0,0
+
+[ITEMDEF m_gingerbread_house]
+ID=02be6
+NAME=Gingerbread House
+TYPE=t_multi
+CAN=can_i_light
+CATEGORY=Christmas
+SUBSECTION=Multis
+DESCRIPTION=Gingerbread House
+MULTIREGION=0,0,0,0
+COMPONENT=02be5,-1,0
+COMPONENT=02be7,0,-1
+ON=@Create
+   MOREZ=29
+
+[ITEMDEF m_sleigh_e]
+ID=03a73
+NAME=Sleigh
+TYPE=t_multi
+CATEGORY=Christmas
+SUBSECTION=Multis
+DESCRIPTION=Sleigh (E)
+MULTIREGION=0,0,0,0
+COMPONENT=03a74,-1,0
+
+[ITEMDEF m_sleigh_sw]
+ID=03a7a
+NAME=Sleigh
+TYPE=t_multi
+CATEGORY=Christmas
+SUBSECTION=Multis
+DESCRIPTION=Sleigh (SW)
+MULTIREGION=0,0,0,0
+
+[ITEMDEF m_sleigh_n]
+ID=03a7d
+NAME=Sleigh
+TYPE=t_multi
+CATEGORY=Christmas
+SUBSECTION=Multis
+DESCRIPTION=Sleigh (N)
+MULTIREGION=0,0,0,0
+COMPONENT=03a7e,0,-1
+
+[ITEMDEF m_sleigh_ne]
+ID=03a84
+NAME=Sleigh
+TYPE=t_multi
+CATEGORY=Christmas
+SUBSECTION=Multis
+DESCRIPTION=Sleigh (NE)
+MULTIREGION=0,0,0,0
+
+[ITEMDEF m_sleigh_s]
+ID=03a87
+NAME=Sleigh
+TYPE=t_multi
+CATEGORY=Christmas
+SUBSECTION=Multis
+DESCRIPTION=Sleigh (S)
+MULTIREGION=0,0,0,0
+COMPONENT=03a88,0,-1
+
+[ITEMDEF m_sleigh_w]
+ID=03a8d
+NAME=Sleigh
+TYPE=t_multi
+CATEGORY=Christmas
+SUBSECTION=Multis
+DESCRIPTION=Sleigh (W)
+MULTIREGION=0,0,0,0
+COMPONENT=03a8e,-1,0
+
+[ITEMDEF m_claw_foot_tub_south]
+ID=0996c
+NAME=Claw Foot Tub
+TYPE=t_multi
+CATEGORY=Christmas
+SUBSECTION=Multis
+DESCRIPTION=Claw Foot Tub (south)
+MULTIREGION=0,0,0,0
+COMPONENT=0996b,0,1
+COMPONENT=0996d,0,-1
+
+[ITEMDEF m_claw_foot_tub_east]
+ID=09977
+NAME=Claw Foot Tub
+TYPE=t_multi
+CATEGORY=Christmas
+SUBSECTION=Multis
+DESCRIPTION=Claw Foot Tub (east)
+MULTIREGION=0,0,0,0
+COMPONENT=09976,1,0
+COMPONENT=09978,-1,0
+
+[ITEMDEF m_fireplace_marble_gold_east]
+ID=09a5d
+NAME=Fireplace
+TYPE=t_multi
+CAN=can_i_light
+CATEGORY=Christmas
+SUBSECTION=Multis
+DESCRIPTION=Fireplace (marble gold)(east)
+MULTIREGION=0,0,0,0
+COMPONENT=09a4b,0,1
+COMPONENT=09a4d,0,-1
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF m_fireplace_marble_gold_south]
+ID=09a63
+NAME=Fireplace
+TYPE=t_multi
+CAN=can_i_light
+CATEGORY=Christmas
+SUBSECTION=Multis
+DESCRIPTION=Fireplace (marble gold)(south)
+MULTIREGION=0,0,0,0
+COMPONENT=09a4e,1,0
+COMPONENT=09a50,-1,0
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF m_fireplace_marble_blue_east]
+ID=09a69
+NAME=Fireplace
+TYPE=t_multi
+CAN=can_i_light
+CATEGORY=Christmas
+SUBSECTION=Multis
+DESCRIPTION=Fireplace (marble blue)(east)
+MULTIREGION=0,0,0,0
+COMPONENT=09a51,0,1
+COMPONENT=09a53,0,-1
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF m_fireplace_marble_blue_south]
+ID=09a6f
+NAME=Fireplace
+TYPE=t_multi
+CAN=can_i_light
+CATEGORY=Christmas
+SUBSECTION=Multis
+DESCRIPTION=Fireplace (marble blue)(south)
+MULTIREGION=0,0,0,0
+COMPONENT=09a54,1,0
+COMPONENT=09a56,-1,0
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF m_fireplace_marble_green_east]
+ID=09a75
+NAME=Fireplace
+TYPE=t_multi
+CAN=can_i_light
+CATEGORY=Christmas
+SUBSECTION=Multis
+DESCRIPTION=Fireplace (marble green)(east)
+MULTIREGION=0,0,0,0
+COMPONENT=09a57,0,1
+COMPONENT=09a59,0,-1
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF m_fireplace_marble_green_south]
+ID=09a7b
+NAME=Fireplace
+TYPE=t_multi
+CAN=can_i_light
+CATEGORY=Christmas
+SUBSECTION=Multis
+DESCRIPTION=Fireplace (marble green)(south)
+MULTIREGION=0,0,0,0
+COMPONENT=09a5a,1,0
+COMPONENT=09a5c,-1,0
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF i_card_semidar_dupre]
+ID=09c14
+NAME=Card of Semidar
+TYPE=t_sign_gump
+TDATA2=09be0
+CATEGORY=Christmas
+SUBSECTION=Misc
+DESCRIPTION=Card of Semidar (Dupre the Paladin)
+ON=@ClientTooltip
+   SRC.ADDCLILOC 1156396	//Dupre the Paladin
+
+[ITEMDEF i_card_semidar_nystul]
+ID=09c14
+NAME=Card of Semidar
+TYPE=t_sign_gump
+TDATA2=09be1
+CATEGORY=Christmas
+SUBSECTION=Misc
+DESCRIPTION=Card of Semidar (Nystul the Mage)
+ON=@ClientTooltip
+   SRC.ADDCLILOC 1156397	//Nystul the Mage
+
+[ITEMDEF i_card_semidar_shamino]
+ID=09c14
+NAME=Card of Semidar
+TYPE=t_sign_gump
+TDATA2=09be2
+CATEGORY=Christmas
+SUBSECTION=Misc
+DESCRIPTION=Card of Semidar (Shamino Sallé Dacil)
+ON=@ClientTooltip
+   SRC.ADDCLILOC 1156398	//Shamino Sallé Dacil
+
+[ITEMDEF i_card_semidar_juonar]
+ID=09c14
+NAME=Card of Semidar
+TYPE=t_sign_gump
+TDATA2=09be3
+CATEGORY=Christmas
+SUBSECTION=Misc
+DESCRIPTION=Card of Semidar (Juo'nar the Lich)
+ON=@ClientTooltip
+   SRC.ADDCLILOC 1156399	//Juo'nar the Lich
+
+[ITEMDEF i_card_semidar_professor_rafkin]
+ID=09c14
+NAME=Card of Semidar
+TYPE=t_sign_gump
+TDATA2=09be4
+CATEGORY=Christmas
+SUBSECTION=Misc
+DESCRIPTION=Card of Semidar (Professor Ellie Rafkin)
+ON=@ClientTooltip
+   SRC.ADDCLILOC 1156562	//Professor Ellie Rafkin
+
+[ITEMDEF i_card_semidar_minax]
+ID=09c14
+NAME=Card of Semidar
+TYPE=t_sign_gump
+TDATA2=09be5
+CATEGORY=Christmas
+SUBSECTION=Misc
+DESCRIPTION=Card of Semidar (Minax the Enchantress)
+ON=@ClientTooltip
+   SRC.ADDCLILOC 1156981	//Minax the Enchantress
+
+[ITEMDEF i_card_semidar_krampus]
+ID=09c14
+NAME=Card of Semidar
+TYPE=t_sign_gump
+TDATA2=09bea
+CATEGORY=Christmas
+SUBSECTION=Misc
+DESCRIPTION=Card of Semidar (Krampus)
+ON=@ClientTooltip
+   SRC.ADDCLILOC 1158799	//Krampus
+
+[ITEMDEF m_sleigh_reindeer_n]
+ID=09dc6
+NAME=Decorative Sleigh & Reindeer
+TYPE=t_multi
+CATEGORY=Christmas
+SUBSECTION=Multis
+DESCRIPTION=Decorative Sleigh & Reindeer (N)
+MULTIREGION=0,0,0,0
+COMPONENT=09dc5,0,1
+COMPONENT=09dc7,0,-1
+
+[ITEMDEF m_sleigh_reindeer_w]
+ID=09dc9
+NAME=Decorative Sleigh & Reindeer
+TYPE=t_multi
+CATEGORY=Christmas
+SUBSECTION=Multis
+DESCRIPTION=Decorative Sleigh & Reindeer (W)
+MULTIREGION=0,0,0,0
+COMPONENT=09dc8,1,0
+COMPONENT=09dca,-1,0
+
+[ITEMDEF m_snowy_holiday_tree]
+ID=09dd2
+NAME=Snowy Holiday Tree
+TYPE=t_multi
+CATEGORY=Christmas
+SUBSECTION=Multis
+DESCRIPTION=Snowy Holiday Tree
+MULTIREGION=0,0,0,0
+COMPONENT=09dcb,0,1
+COMPONENT=09dcc,-1,1
+COMPONENT=09dcd,-1,0
+COMPONENT=09dce,0,-1
+COMPONENT=09dcf,1,-1
+COMPONENT=09dd0,1,0
+COMPONENT=09dd1,1,1
+
+[EOF]

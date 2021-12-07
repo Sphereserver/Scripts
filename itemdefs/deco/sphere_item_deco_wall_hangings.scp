@@ -1,0 +1,3717 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2018
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Saturday, Oct 20, 2018
+//
+VERSION=0.56d
+
+
+[COMMENT sphere_item_deco_walls]
+
+This file contains stuff that you would hand on a wall, such as:
+
+* curtains
+* banners
+* tapestries
+* paintings
+* trophies
+* decorative weapons
+* decorative armor
+* decorative shields
+* flags
+* masks
+* dart board
+* bulletin board
+
+
+[ITEMDEF 041f]
+DEFNAME=i_GRUESOMESTANDARD
+RESOURCES=10 i_log,10 i_bone
+CATEGORY=Miscellaneous
+SUBSECTION=Orc Camp Decor
+DESCRIPTION=Gruesome Standard
+DUPELIST=0428
+
+[ITEMDEF 0420]
+//gruesome standard
+DEFNAME=i_GRUESOMESTANDARD_2
+RESOURCES=10 i_log,10 i_bone
+CATEGORY=Miscellaneous
+SUBSECTION=Orc Camp Decor
+DESCRIPTION=Gruesome Standard 2
+
+[ITEMDEF 0426]
+DEFNAME=i_BANNER_TATTERED
+RESOURCES=1 i_log,5 i_cloth
+CATEGORY=Miscellaneous
+SUBSECTION=Orc Camp Decor
+DESCRIPTION=Tattered Banner
+DUPELIST=0427,0429,042a,042b,042c,042d,042e,042f
+
+[ITEMDEF 0427]
+//tattered banner
+DUPEITEM=0426
+
+[ITEMDEF 0428]
+//gruesome standard
+DUPEITEM=041f
+
+[ITEMDEF 0429]
+//gruesome standard
+DUPEITEM=0426
+
+[ITEMDEF 042a]
+//tattered banner
+DUPEITEM=0426
+
+[ITEMDEF 042b]
+//tattered banner
+DUPEITEM=0426
+
+[ITEMDEF 042c]
+//tattered banner
+DUPEITEM=0426
+
+[ITEMDEF 042d]
+//tattered banner
+DUPEITEM=0426
+
+[ITEMDEF 042e]
+//tattered banner
+DUPEITEM=0426
+
+[ITEMDEF 042f]
+//tattered banner
+DUPEITEM=0426
+
+
+[ITEMDEF 0980]
+DEFNAME=i_curtain_2
+RESOURCES=10 i_cloth,1 i_ingot_gold
+DYE=1
+CATEGORY=Decoration - Curtains
+SUBSECTION=Curtain 01
+DESCRIPTION=@
+DUPELIST=0981,0982,0983,0984,0985,0986,0987,0988,0989,098b
+
+[ITEMDEF 0981]
+//CURTAIN=Red, straight against NE wall
+DUPEITEM=0980
+
+[ITEMDEF 0982]
+//CURTAIN=Red. ruffled against NE wall
+DUPEITEM=0980
+
+[ITEMDEF 0983]
+//CURTAIN=Reg, gathered to right bottom with black cord against NE wall
+DUPEITEM=0980
+
+[ITEMDEF 0984]
+//curtains skinny red NE wall
+DUPEITEM=0980
+
+[ITEMDEF 0985]
+//curtains Red, str. slight wafting bottom left crnr against NE wall
+DUPEITEM=0980
+
+[ITEMDEF 0986]
+//curtains
+DUPEITEM=0980
+
+[ITEMDEF 0987]
+//curtains skinny red NE wall, slight wafting at bottom
+DUPEITEM=0980
+
+[ITEMDEF 0988]
+//CURTAIN=Red, straight against Nw wall
+DUPEITEM=0980
+
+[ITEMDEF 0989]
+//curtains red looks like 1/4th a curtain panel
+//Diagonal brown sashed curtain on NW wall
+DUPEITEM=0980
+
+[ITEMDEF 098b]
+//curtains
+DUPEITEM=0980
+
+
+[ITEMDEF 0e9f]
+DEFNAME=i_portrait_1
+RESOURCES=4 i_board,5 i_dyes
+SKILLMAKE=Carpentry 80.0,t_carpentry,Tailoring 65.0,i_palette
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Paintings
+DESCRIPTION=Portrait
+
+[ITEMDEF 0ea0]
+DEFNAME=i_portrait_big
+RESOURCES=4 i_board,5 i_dyes
+SKILLMAKE=Carpentry 90.0,i_palette
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Paintings
+DESCRIPTION=Painting
+
+[ITEMDEF 0ea1]
+DEFNAME=i_portrait_2
+FLIP=1
+RESOURCES=4 i_board,5 i_dyes
+SKILLMAKE=Carpentry 85.0,i_palette
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Paintings
+DESCRIPTION=Painting
+DUPELIST=0ea2
+
+[ITEMDEF 0ea2]
+//painting
+DUPEITEM=0ea1
+
+[ITEMDEF 0ea3]
+DEFNAME=i_portrait_3
+FLIP=1
+RESOURCES=4 i_board,5 i_dyes
+SKILLMAKE=Carpentry 80.0,i_palette
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Paintings
+DESCRIPTION=Painting
+DUPELIST=0ea4
+
+[ITEMDEF 0ea4]
+//painting
+DUPEITEM=0ea3
+
+[ITEMDEF 0ea5]
+DEFNAME=i_portrait_4
+FLIP=1
+RESOURCES=4 i_board,5 i_dyes
+SKILLMAKE=Carpentry 80.0,i_palette
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Paintings
+DESCRIPTION=Portrait
+DUPELIST=0ea6
+
+[ITEMDEF 0ea6]
+//portrait
+DUPEITEM=0ea5
+
+[ITEMDEF 0ea7]
+DEFNAME=i_portrait_5
+FLIP=1
+RESOURCES=4 i_board,5 i_dyes
+SKILLMAKE=Carpentry 80.0,i_palette
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Paintings
+DESCRIPTION=Portrait
+DUPELIST=0ea8
+
+[ITEMDEF 0ea8]
+//portrait
+DUPEITEM=0ea7
+
+
+[ITEMDEF 0eaa]
+DEFNAME=i_tapestry
+FLIP=1
+WEIGHT=54.0
+RESOURCES=1 i_cloth_bolt,2 i_dyes,1 i_board,1 i_rope
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Tapestries (multi-part)
+DESCRIPTION=Tapestry 01
+DUPELIST=0eab
+
+[ITEMDEF 0eab]
+//tapestry
+DUPEITEM=0eaa
+
+[ITEMDEF 0eac]
+DEFNAME=i_tapestry_2
+FLIP=1
+WEIGHT=54.0
+RESOURCES=1 i_cloth_bolt,2 i_dyes,1 i_board,1 i_rope
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Tapestries (multi-part)
+DESCRIPTION=Tapestry 02
+DUPELIST=0ead
+
+[ITEMDEF 0ead]
+//tapestry
+DUPEITEM=0eac
+
+[ITEMDEF 0eae]
+DEFNAME=i_tapestry_3
+FLIP=1
+WEIGHT=54.0
+RESOURCES=1 i_cloth_bolt,2 i_dyes,1 i_board,1 i_rope
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Tapestries (multi-part)
+DESCRIPTION=Tapestry 03
+DUPELIST=0eaf
+
+[ITEMDEF 0eaf]
+//tapestry
+DUPEITEM=0eae
+
+
+[ITEMDEF 0ec8]
+DEFNAME=i_portrait_6
+FLIP=1
+VALUE=253
+WEIGHT=14.5
+RESOURCES=4 i_log,10 i_cloth,5 i_dyes
+SKILLMAKE=Carpentry 80.0,i_palette
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Paintings
+DESCRIPTION=Portrait
+DUPELIST=0ec9,0ee7
+
+[ITEMDEF 0ec9]
+//painting
+DUPEITEM=0ec8
+
+
+[ITEMDEF 0ee7]
+//painting
+DUPEITEM=0ec8
+
+
+[ITEMDEF 0fd5]
+DEFNAME=i_tapestry_4_n
+FLIP=1
+WEIGHT=54.0
+RESOURCES=1 i_cloth_bolt,2 i_dyes,1 i_board,1 i_rope
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Tapestries (multi-part)
+DESCRIPTION=Tapestry 04
+DUPELIST=0fd6,0fd7,0fd8
+
+[ITEMDEF 0fd6]
+//tapestry 4
+DUPEITEM=0fd5
+
+[ITEMDEF 0fd7]
+//tapestry 4
+DUPEITEM=0fd5
+
+[ITEMDEF 0fd8]
+//tapestry 4
+DUPEITEM=0fd5
+
+[ITEMDEF 0fd9]
+DEFNAME=i_tapestry_5_n
+FLIP=1
+WEIGHT=54.0
+RESOURCES=1 i_cloth_bolt,2 i_dyes,1 i_board,1 i_rope
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Tapestries (multi-part)
+DESCRIPTION=Tapestry 05
+DUPELIST=0fda,0fdb,0fdc
+
+[ITEMDEF 0fda]
+//tapestry 5
+DUPEITEM=0fd9
+
+[ITEMDEF 0fdb]
+//tapestry 5
+DUPEITEM=0fd9
+
+[ITEMDEF 0fdc]
+//tapestry 5
+DUPEITEM=0fd9
+
+[ITEMDEF 0fdd]
+DEFNAME=i_tapestry_6_n
+FLIP=1
+WEIGHT=54.0
+RESOURCES=1 i_cloth_bolt,2 i_dyes,1 i_board,1 i_rope
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Tapestries (multi-part)
+DESCRIPTION=Tapestry 06
+DUPELIST=0fde,0fdf,0fe0
+
+[ITEMDEF 0fde]
+//tapestry 6
+DUPEITEM=0fdd
+
+[ITEMDEF 0fdf]
+//tapestry 6
+DUPEITEM=0fdd
+
+[ITEMDEF 0fe0]
+//tapestry 6
+DUPEITEM=0fdd
+
+[ITEMDEF 0fe1]
+DEFNAME=i_tapestry_7_n
+FLIP=1
+WEIGHT=54.0
+RESOURCES=1 i_cloth_bolt,2 i_dyes,1 i_board,1 i_rope
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Tapestries (multi-part)
+DESCRIPTION=Tapestry 07
+DUPELIST=0fe2,0fe3,0fe4
+
+[ITEMDEF 0fe2]
+//tapestry 7
+DUPEITEM=0fe1
+
+[ITEMDEF 0fe3]
+//tapestry 7
+DUPEITEM=0fe1
+
+[ITEMDEF 0fe4]
+//tapestry 7
+DUPEITEM=0fe1
+
+
+[ITEMDEF 012da]
+DEFNAME=i_curtain_long_animated
+DYE=1
+FLIP=1
+WEIGHT=10.0
+RESOURCES=10 i_cloth
+CATEGORY=Decoration - Curtains
+SUBSECTION=Curtain
+DESCRIPTION=Long Curtain (animated)
+DUPELIST=012db,012dc,012dd,012de,012df,012e0,012e1,012e5,012e6,012e7,012e8,012e9,012ea,012eb,012ec
+
+[ITEMDEF 012db]
+DUPEITEM=012da
+DESCRIPTION=Long Curtain (animation frame)
+
+[ITEMDEF 012dc]
+DUPEITEM=012da
+DESCRIPTION=Long Curtain (animation frame)
+
+[ITEMDEF 012dd]
+DUPEITEM=012da
+DESCRIPTION=Long Curtain (animation frame)
+
+[ITEMDEF 012de]
+DUPEITEM=012da
+DESCRIPTION=Long Curtain (animated)
+
+[ITEMDEF 012df]
+DUPEITEM=012da
+DESCRIPTION=Long Curtain (animation frame)
+
+[ITEMDEF 012e0]
+DUPEITEM=012da
+DESCRIPTION=Long Curtain (animation frame)
+
+[ITEMDEF 012e1]
+DUPEITEM=012da
+DESCRIPTION=Long Curtain (animation frame)
+
+[ITEMDEF 012e2]
+DEFNAME=i_curtain_sash
+DYE=1
+FLIP=1
+WEIGHT=10.0
+RESOURCES=10 i_cloth
+CATEGORY=Decoration - Curtains
+SUBSECTION=Curtain
+DESCRIPTION=Curtain Sash
+DUPELIST=012e3,012e4,012e3,012ed
+
+[ITEMDEF 012e3]
+//Curtain Sash
+DUPEITEM=012e2
+
+[ITEMDEF 012e4]
+//Curtain Sash
+DUPEITEM=012e2
+
+[ITEMDEF 012e5]
+DUPEITEM=012da
+DESCRIPTION=Long Curtain (animated)
+
+[ITEMDEF 012e6]
+DUPEITEM=012da
+DESCRIPTION=Long Curtain (animation frame)
+
+[ITEMDEF 012e7]
+DUPEITEM=012da
+DESCRIPTION=Long Curtain (animation frame)
+
+[ITEMDEF 012e8]
+DUPEITEM=012da
+DESCRIPTION=Long Curtain (animation frame)
+
+[ITEMDEF 012e9]
+DUPEITEM=012da
+DESCRIPTION=Long Curtain (animated)
+
+[ITEMDEF 012ea]
+DUPEITEM=012da
+DESCRIPTION=Long Curtain (animation frame)
+
+[ITEMDEF 012eb]
+DUPEITEM=012da
+DESCRIPTION=Long Curtain (animation frame)
+
+[ITEMDEF 012ec]
+DUPEITEM=012da
+DESCRIPTION=Long Curtain (animation frame)
+
+[ITEMDEF 012ed]
+//Curtain Sash
+DUPEITEM=012e2
+
+
+[ITEMDEF 0154e]
+DEFNAME=i_curtain_freestanding
+FLIP=1
+WEIGHT=11.0
+RESOURCES=3 i_ingot_iron,8 i_cloth
+CATEGORY=Decoration - Curtains
+SUBSECTION=Single Red
+DESCRIPTION=Single Red
+DUPELIST=0154f,01557
+
+[ITEMDEF 0154f]
+//curtains
+DUPEITEM=0154e
+
+[ITEMDEF 01557]
+//curtain
+DUPEITEM=0154e
+
+
+[ITEMDEF 0155c]
+DEFNAME=i_decorative_weapons_1
+FLIP=1
+VALUE=63
+WEIGHT=10.6
+RESOURCES=2 i_bow,3 i_arrow,1 i_nails,1 i_log
+SKILLMAKE=Carpentry 31.4,t_carpentry
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Bow
+DESCRIPTION=Bow
+DUPELIST=0155d,0155e,0155f
+
+[ITEMDEF 0155d]
+//decorative weapons
+DUPEITEM=0155c
+
+[ITEMDEF 0155e]
+//decorative weapons
+DUPEITEM=0155c
+
+[ITEMDEF 0155f]
+//decorative weapons
+DUPEITEM=0155c
+
+[ITEMDEF 01560]
+DEFNAME=i_decorative_weapons_2
+FLIP=1
+VALUE=144
+WEIGHT=21.3
+RESOURCES=1 i_halberd,1 i_board,1 i_nails
+SKILLMAKE=Carpentry 31.4,t_carpentry
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Axe
+DESCRIPTION=Axe
+DUPELIST=01561,01562,01563
+
+[ITEMDEF 01561]
+//decorative weapons
+DUPEITEM=01560
+
+[ITEMDEF 01562]
+//decorative weapons
+DUPEITEM=01560
+
+[ITEMDEF 01563]
+//decorative weapons
+DUPEITEM=01560
+
+[ITEMDEF 01564]
+DEFNAME=i_decorative_weapons_3
+FLIP=1
+VALUE=240
+WEIGHT=40.1
+RESOURCES=2 i_sword_viking,2 i_log,1 i_nails
+SKILLMAKE=Carpentry 31.4,t_carpentry
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Swords
+DESCRIPTION=Swords
+DUPELIST=01565,01566,01567
+
+[ITEMDEF 01565]
+//decorative weapons
+DUPEITEM=01564
+
+[ITEMDEF 01566]
+//decorative weapons
+DUPEITEM=01564
+
+[ITEMDEF 01567]
+//decorative weapons
+DUPEITEM=01564
+
+[ITEMDEF 01568]
+DEFNAME=i_decorative_weapons_4
+FLIP=1
+VALUE=230
+WEIGHT=62.1
+RESOURCES=2 i_spear,1 i_halberd,3 i_log,1 i_nails
+SKILLMAKE=Carpentry 31.4,t_carpentry
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Axe & Spear
+DESCRIPTION=Axe & Spear
+DUPELIST=01569,0156a,0156b
+
+[ITEMDEF 01569]
+//decorative weapons
+DUPEITEM=01568
+
+[ITEMDEF 0156a]
+//decorative weapons
+DUPEITEM=01568
+
+[ITEMDEF 0156b]
+//decorative weapons
+DUPEITEM=01568
+
+[ITEMDEF 0156c]
+DEFNAME=i_decorative_shield
+FLIP=1
+VALUE=90
+WEIGHT=13.0
+RESOURCES=7 i_ingot_copper,6 i_ingot_iron
+SKILLMAKE=Carpentry 31.4,t_carpentry
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shields
+DESCRIPTION=Shield
+DUPELIST=0156d
+
+[ITEMDEF 0156d]
+//decorative shield
+DUPEITEM=0156c
+
+[ITEMDEF 0156e]
+DEFNAME=i_decorative_shield_2
+FLIP=1
+VALUE=55
+WEIGHT=13.0
+RESOURCES=13 i_ingot_iron
+SKILLMAKE=Carpentry 31.4,t_carpentry
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shields
+DESCRIPTION=Shield
+DUPELIST=0156f
+
+[ITEMDEF 0156f]
+//decorative shield
+DUPEITEM=0156e
+
+[ITEMDEF 01570]
+DEFNAME=i_decorative_shield_3
+FLIP=1
+VALUE=120
+WEIGHT=13.0
+RESOURCES=13 i_ingot_copper
+SKILLMAKE=Carpentry 31.4,t_carpentry
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shields
+DESCRIPTION=Shield
+DUPELIST=01571
+
+[ITEMDEF 01571]
+//decorative shield
+DUPEITEM=01570
+
+[ITEMDEF 01572]
+DEFNAME=i_decorative_shield_4
+FLIP=1
+VALUE=55
+WEIGHT=13.0
+RESOURCES=13 i_ingot_iron
+SKILLMAKE=Carpentry 31.4,t_carpentry
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shields
+DESCRIPTION=Shield
+DUPELIST=01573
+
+[ITEMDEF 01573]
+//decorative shield
+DUPEITEM=01572
+
+[ITEMDEF 01574]
+DEFNAME=i_decorative_shield_5
+FLIP=1
+VALUE=120
+WEIGHT=13.0
+RESOURCES=13 i_ingot_copper
+SKILLMAKE=Carpentry 31.4,t_carpentry
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shields
+DESCRIPTION=Shield
+DUPELIST=01575
+
+[ITEMDEF 01575]
+//decorative shield
+DUPEITEM=01574
+
+[ITEMDEF 01576]
+DEFNAME=i_decorative_shield_6
+FLIP=1
+VALUE=55
+WEIGHT=13.0
+RESOURCES=13 i_ingot_iron
+SKILLMAKE=Carpentry 31.4,t_carpentry
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shields
+DESCRIPTION=Shield
+DUPELIST=01577
+
+[ITEMDEF 01577]
+//decorative shield
+DUPEITEM=01576
+
+[ITEMDEF 01578]
+DEFNAME=i_decorative_shield_7
+FLIP=1
+VALUE=120
+WEIGHT=13.0
+RESOURCES=13 i_ingot_copper
+SKILLMAKE=Carpentry 31.4,t_carpentry
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shields
+DESCRIPTION=Shield
+DUPELIST=01579
+
+[ITEMDEF 01579]
+//decorative shield
+DUPEITEM=01578
+
+[ITEMDEF 0157a]
+DEFNAME=i_decorative_shield_8
+FLIP=1
+VALUE=55
+WEIGHT=13.0
+RESOURCES=13 i_ingot_iron
+SKILLMAKE=Carpentry 31.4,t_carpentry
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shields
+DESCRIPTION=Shield
+DUPELIST=0157b
+
+[ITEMDEF 0157b]
+//decorative shield
+DUPEITEM=0157a
+
+[ITEMDEF 0157c]
+DEFNAME=i_decorative_shield_9
+FLIP=1
+VALUE=120
+WEIGHT=13.0
+RESOURCES=13 i_ingot_copper
+SKILLMAKE=Carpentry 31.4,t_carpentry
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shields
+DESCRIPTION=Shield
+DUPELIST=0157d
+
+[ITEMDEF 0157d]
+//decorative shield
+DUPEITEM=0157c
+
+[ITEMDEF 0157e]
+DEFNAME=i_decorative_shield_10
+FLIP=1
+VALUE=55
+WEIGHT=13.0
+RESOURCES=13 i_ingot_iron
+SKILLMAKE=Carpentry 31.4,t_carpentry
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shields
+DESCRIPTION=Shield
+DUPELIST=0157f
+
+[ITEMDEF 0157f]
+//decorative shield
+DUPEITEM=0157e
+
+[ITEMDEF 01580]
+DEFNAME=i_decorative_shield_11
+FLIP=1
+VALUE=120
+WEIGHT=13.0
+RESOURCES=13 i_ingot_copper
+SKILLMAKE=Carpentry 31.4,t_carpentry
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shields
+DESCRIPTION=Shield
+DUPELIST=01581
+
+[ITEMDEF 01581]
+//decorative shield
+DUPEITEM=01580
+
+[ITEMDEF 01582]
+DEFNAME=i_decorative_shield_and_sword_1
+FLIP=1
+VALUE=103
+WEIGHT=23.1
+RESOURCES=1 i_scimitar,13 i_ingot_iron,1 i_log,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shield & Sword
+DESCRIPTION=Shield and sword
+DUPELIST=01634
+
+[ITEMDEF 01583]
+DEFNAME=i_decorative_shield_and_sword_2
+FLIP=1
+VALUE=102
+WEIGHT=23.1
+RESOURCES=1 i_scimitar,13 i_ingot_iron,1 i_log,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shield & Sword
+DESCRIPTION=Shield and sword
+DUPELIST=01635
+
+[ITEMDEF 01584]
+DEFNAME=i_decorative_shield_and_sword_3
+FLIP=1
+VALUE=121
+WEIGHT=27.1
+RESOURCES=1 i_katana,6 i_ingot_gold,4 i_ingot_iron,1 i_board,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shield & Sword
+DESCRIPTION=Shield and Sword
+DUPELIST=01636
+
+[ITEMDEF 01585]
+DEFNAME=i_decorative_shield_and_sword_4
+FLIP=1
+VALUE=121
+WEIGHT=27.1
+RESOURCES=1 i_katana,6 i_ingot_gold,4 i_ingot_iron,1 i_board,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shield & Sword
+DESCRIPTION=Shield and Sword
+DUPELIST=01637
+
+[ITEMDEF 01586]
+DEFNAME=i_banner_1_part_1
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (multi-part)
+DESCRIPTION=Banner 01
+
+[ITEMDEF 01587]
+DEFNAME=i_banner_1_part_2
+WEIGHT=4.2
+RESOURCES=1 i_log,2 i_cloth,1 i_thread
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (multi-part)
+DESCRIPTION=Banner 01
+
+[ITEMDEF 01588]
+DEFNAME=i_banner_1_part_3
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (multi-part)
+DESCRIPTION=Banner 01
+
+[ITEMDEF 01589]
+DEFNAME=i_banner_2_part_1
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (multi-part)
+DESCRIPTION=Banner 02
+
+[ITEMDEF 0158a]
+DEFNAME=i_banner_2_part_2
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,2 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (multi-part)
+DESCRIPTION=Banner 02
+
+[ITEMDEF 0158b]
+DEFNAME=i_banner_2_part_3
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (multi-part)
+DESCRIPTION=Banner 02
+
+[ITEMDEF 0158c]
+DEFNAME=i_banner_3_part_1
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (multi-part)
+DESCRIPTION=Banner 03
+
+[ITEMDEF 0158d]
+DEFNAME=i_banner_3_part_2
+WEIGHT=4.2
+RESOURCES=1 i_log,2 i_cloth,1 i_thread
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (multi-part)
+DESCRIPTION=Banner 03
+
+[ITEMDEF 0158e]
+DEFNAME=i_banner_3_part_3
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (multi-part)
+DESCRIPTION=Banner 03
+
+[ITEMDEF 0158f]
+DEFNAME=i_banner_hanger_ne
+WEIGHT=1.1
+RESOURCES=1 i_board,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Banner Hanger
+
+[ITEMDEF 01590]
+DEFNAME=i_banner_4_part_1
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (multi-part)
+DESCRIPTION=Banner 04
+
+[ITEMDEF 01591]
+DEFNAME=i_banner_4_part_2
+WEIGHT=4.2
+RESOURCES=1 i_log,2 i_cloth,1 i_thread
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (multi-part)
+DESCRIPTION=Banner 04
+
+[ITEMDEF 01592]
+DEFNAME=i_banner_5_part_1
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (multi-part)
+DESCRIPTION=Banner 05
+
+[ITEMDEF 01593]
+DEFNAME=i_banner_5_part_2
+WEIGHT=4.2
+RESOURCES=1 i_log,2 i_cloth,1 i_thread
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (multi-part)
+DESCRIPTION=Banner 05
+
+[ITEMDEF 01594]
+DEFNAME=i_banner_6_part_1
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (multi-part)
+DESCRIPTION=Banner 06
+
+[ITEMDEF 01595]
+DEFNAME=i_banner_6_part_2
+WEIGHT=4.2
+RESOURCES=1 i_log,2 i_cloth,1 i_thread
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (multi-part)
+DESCRIPTION=Banner 06
+
+[ITEMDEF 01596]
+DEFNAME=i_banner_6_part_3
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (multi-part)
+DESCRIPTION=Banner 06
+
+[ITEMDEF 01597]
+DEFNAME=i_banner_6_part_4
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (multi-part)
+DESCRIPTION=Banner 06
+
+[ITEMDEF 01598]
+DEFNAME=i_banner_7_part_1
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (multi-part)
+DESCRIPTION=Banner 07
+
+[ITEMDEF 01599]
+DEFNAME=i_banner_8_part_1
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (multi-part)
+DESCRIPTION=Banner 08
+
+[ITEMDEF 0159a]
+DEFNAME=i_banner_8_part_2
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_cloth,1 i_thread
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (multi-part)
+DESCRIPTION=Banner 08
+
+[ITEMDEF 0159b]
+DEFNAME=i_banner_7_part_2
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_cloth,1 i_thread
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (multi-part)
+DESCRIPTION=Banner 07
+
+[ITEMDEF 0159c]
+DEFNAME=i_banner_7_part_3
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (multi-part)
+DESCRIPTION=Banner 07
+
+[ITEMDEF 0159d]
+DEFNAME=i_banner_8_part_3
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (multi-part)
+DESCRIPTION=Banner 08
+
+[ITEMDEF 0159e]
+DEFNAME=i_curtain_banner_nw
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Curtains
+SUBSECTION=Single White
+DESCRIPTION=Single White
+DUPELIST=0159f
+
+[ITEMDEF 0159f]
+DEFNAME=i_curtain_banner_ne
+DUPEITEM=0159e
+
+[ITEMDEF 015a0]
+DEFNAME=i_banner_9_part_1
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (multi-part)
+DESCRIPTION=Banner 09
+
+[ITEMDEF 015a1]
+DEFNAME=i_banner_9_part_2
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (multi-part)
+DESCRIPTION=Banner 09
+
+[ITEMDEF 015a2]
+DEFNAME=i_banner_10_part_1
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (multi-part)
+DESCRIPTION=Banner 10
+
+[ITEMDEF 015a3]
+DEFNAME=i_banner_10_part_2
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (multi-part)
+DESCRIPTION=Banner 10
+
+[ITEMDEF 015a4]
+DEFNAME=i_banner_11_part_1
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (multi-part)
+DESCRIPTION=Banner 11
+
+[ITEMDEF 015a5]
+DEFNAME=i_banner_11_part_2
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (multi-part)
+DESCRIPTION=Banner 11
+
+[ITEMDEF 015a6]
+DEFNAME=i_banner_12_part_1
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (multi-part)
+DESCRIPTION=Banner 12
+
+[ITEMDEF 015a7]
+DEFNAME=i_banner_12_part_2
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (multi-part)
+DESCRIPTION=Banner 12
+
+[ITEMDEF 015a8]
+DEFNAME=i_banner_13_part_1
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (multi-part)
+DESCRIPTION=Banner 13
+
+[ITEMDEF 015a9]
+DEFNAME=i_banner_13_part_2
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (multi-part)
+DESCRIPTION=Banner 13
+
+[ITEMDEF 015aa]
+DEFNAME=i_banner_14_part_1
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (multi-part)
+DESCRIPTION=Banner 14
+
+[ITEMDEF 015ab]
+DEFNAME=i_banner_14_part_2
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (multi-part)
+DESCRIPTION=Banner 14
+
+[ITEMDEF 015ac]
+DEFNAME=i_banner_15_part_1
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (multi-part)
+DESCRIPTION=Banner 15
+
+[ITEMDEF 015ad]
+DEFNAME=i_banner_15_part_2
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (multi-part)
+DESCRIPTION=Banner 15
+
+[ITEMDEF 015ae]
+DEFNAME=i_banner_post_1_ne
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 01
+
+[ITEMDEF 015af]
+DEFNAME=i_banner_post_1_nw
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 01
+
+[ITEMDEF 015b0]
+DEFNAME=i_banner_post_2_ne
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 02
+
+[ITEMDEF 015b1]
+DEFNAME=i_banner_post_2_nw
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 02
+
+[ITEMDEF 015b2]
+DEFNAME=i_banner_post_3_ne
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 03
+
+[ITEMDEF 015b3]
+DEFNAME=i_banner_post_3_nw
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 03
+
+[ITEMDEF 015b4]
+DEFNAME=i_banner_post_4_ne
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 04
+
+[ITEMDEF 015b5]
+DEFNAME=i_banner_post_4_nw
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 04
+
+[ITEMDEF 015b6]
+DEFNAME=i_banner_post_5_ne
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 05
+
+[ITEMDEF 015b7]
+DEFNAME=i_banner_post_5_nw
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 05
+
+[ITEMDEF 015b8]
+DEFNAME=i_banner_post_6_ne
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 06
+
+[ITEMDEF 015b9]
+DEFNAME=i_banner_post_6_nw
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 06
+
+[ITEMDEF 015ba]
+DEFNAME=i_banner_post_7_ne
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 07
+
+[ITEMDEF 015bb]
+DEFNAME=i_banner_post_7_nw
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 07
+
+[ITEMDEF 015bc]
+DEFNAME=i_banner_post_8_ne
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 08
+
+[ITEMDEF 015bd]
+DEFNAME=i_banner_post_8_nw
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 08
+
+[ITEMDEF 015be]
+DEFNAME=i_banner_post_9_ne
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 09
+
+[ITEMDEF 015bf]
+DEFNAME=i_banner_post_9_nw
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 09
+
+[ITEMDEF 015c0]
+DEFNAME=i_banner_post_10_ne
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 10
+
+[ITEMDEF 015c1]
+DEFNAME=i_banner_post_10_nw
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 10
+
+[ITEMDEF 015c2]
+DEFNAME=i_banner_post_11_ne
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 11
+
+[ITEMDEF 015c3]
+DEFNAME=i_banner_post_11_nw
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 11
+
+[ITEMDEF 015c4]
+DEFNAME=i_banner_post_12_ne
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 12
+
+[ITEMDEF 015c5]
+DEFNAME=i_banner_post_12_nw
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 12
+
+[ITEMDEF 015c6]
+DEFNAME=i_banner_post_13_ne
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 13
+
+[ITEMDEF 015c7]
+DEFNAME=i_banner_post_13_nw
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 13
+
+[ITEMDEF 015c8]
+DEFNAME=i_banner_post_14_ne
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 14
+
+[ITEMDEF 015c9]
+DEFNAME=i_banner_post_14_nw
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 14
+
+[ITEMDEF 015ca]
+DEFNAME=i_banner_post_15_ne
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 15
+
+[ITEMDEF 015cb]
+DEFNAME=i_banner_post_15_nw
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 15
+
+[ITEMDEF 015cc]
+DEFNAME=i_banner_post_16_ne
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 16
+
+[ITEMDEF 015cd]
+DEFNAME=i_banner_post_16_nw
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 16
+
+[ITEMDEF 015ce]
+DEFNAME=i_banner_post_17_ne
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 17
+
+[ITEMDEF 015cf]
+DEFNAME=i_banner_post_17_nw
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 17
+
+[ITEMDEF 015d0]
+DEFNAME=i_banner_post_18_ne
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 18
+
+[ITEMDEF 015d1]
+DEFNAME=i_banner_post_18_nw
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 18
+
+[ITEMDEF 015d2]
+DEFNAME=i_banner_post_19_ne
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 19
+
+[ITEMDEF 015d3]
+DEFNAME=i_banner_post_19_nw
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 19
+
+[ITEMDEF 015d4]
+DEFNAME=i_banner_post_20_ne
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 20
+
+[ITEMDEF 015d5]
+DEFNAME=i_banner_post_20_nw
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 20
+
+[ITEMDEF 015d6]
+DEFNAME=i_banner_post_21_ne
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 21
+
+[ITEMDEF 015d7]
+DEFNAME=i_banner_post_21_nw
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 21
+
+[ITEMDEF 015d8]
+DEFNAME=i_banner_post_22_ne
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 22
+
+[ITEMDEF 015d9]
+DEFNAME=i_banner_post_22_nw
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 22
+
+[ITEMDEF 015da]
+DEFNAME=i_banner_post_23_ne
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 23
+
+[ITEMDEF 015db]
+DEFNAME=i_banner_post_23_nw
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 23
+
+[ITEMDEF 015dc]
+DEFNAME=i_banner_post_24_ne
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 24
+
+[ITEMDEF 015dd]
+DEFNAME=i_banner_post_24_nw
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 24
+
+[ITEMDEF 015de]
+DEFNAME=i_banner_post_25_ne
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 25
+
+[ITEMDEF 015df]
+DEFNAME=i_banner_post_25_nw
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 25
+
+[ITEMDEF 015e0]
+DEFNAME=i_banner_post_26_ne
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 26
+
+[ITEMDEF 015e1]
+DEFNAME=i_banner_post_26_nw
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 26
+
+[ITEMDEF 015e2]
+DEFNAME=i_banner_post_27_ne
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 27
+
+[ITEMDEF 015e3]
+DEFNAME=i_banner_post_27_nw
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 27
+
+[ITEMDEF 015e4]
+DEFNAME=i_banner_post_28_ne
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 28
+
+[ITEMDEF 015e5]
+DEFNAME=i_banner_post_28_nw
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 28
+
+[ITEMDEF 015e6]
+DEFNAME=i_banner_post_29_ne
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 29
+
+[ITEMDEF 015e7]
+DEFNAME=i_banner_post_29_nw
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 29
+
+[ITEMDEF 015e8]
+DEFNAME=i_banner_post_30_ne
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 30
+
+[ITEMDEF 015e9]
+DEFNAME=i_banner_post_30_nw
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 30
+
+[ITEMDEF 015ea]
+DEFNAME=i_banner_post_31_ne
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 31
+
+[ITEMDEF 015eb]
+DEFNAME=i_banner_post_31_nw
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 31
+
+[ITEMDEF 015ec]
+DEFNAME=i_banner_post_32_ne
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 32
+
+[ITEMDEF 015ed]
+DEFNAME=i_banner_post_32_nw
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 32
+
+[ITEMDEF 015ee]
+DEFNAME=i_banner_post_33_ne
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 33
+
+[ITEMDEF 015ef]
+DEFNAME=i_banner_post_33_nw
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 33
+
+[ITEMDEF 015f0]
+DEFNAME=i_banner_post_34_ne
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 34
+
+[ITEMDEF 015f1]
+DEFNAME=i_banner_post_34_nw
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 34
+
+[ITEMDEF 015f2]
+DEFNAME=i_banner_post_35_ne
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 35
+
+[ITEMDEF 015f3]
+DEFNAME=i_banner_post_35_nw
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 35
+
+[ITEMDEF 015f4]
+DEFNAME=i_banner_post_36_ne
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 36
+
+[ITEMDEF 015f5]
+DEFNAME=i_banner_post_36_nw
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_ingot_iron,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 36
+
+[ITEMDEF 015f6]
+DEFNAME=i_plain_white_curtain
+FLIP=1
+WEIGHT=1.1
+RESOURCES=1 i_cloth,1 i_thread
+CATEGORY=Decoration - Curtains
+SUBSECTION=Small White
+DESCRIPTION=Single White
+DUPELIST=015f7
+
+[ITEMDEF 015f7]
+//curtain
+DUPEITEM=015f6
+
+
+[ITEMDEF 0160d]
+DEFNAME=i_single_red_curtain
+FLIP=1
+WEIGHT=2.1
+RESOURCES=2 i_cloth,1 i_thread
+CATEGORY=Decoration - Curtains
+SUBSECTION=Single Red
+DESCRIPTION=Single Red
+DUPELIST=0160e
+
+[ITEMDEF 0160e]
+//curtain
+DUPEITEM=0160d
+
+[ITEMDEF 0160f]
+DEFNAME=i_banner_16_part_1
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Banner 16
+
+[ITEMDEF 01610]
+DEFNAME=i_banner_16_part_2
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Banner 16
+
+[ITEMDEF 01611]
+DEFNAME=i_banner_17_part_1
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Banner 17
+
+[ITEMDEF 01612]
+DEFNAME=i_banner_17_part_2
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Banner 17
+
+[ITEMDEF 01613]
+DEFNAME=i_banner_18_part_1
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Banner 18
+
+[ITEMDEF 01614]
+DEFNAME=i_banner_18_part_2
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Banner 18
+
+[ITEMDEF 01615]
+DEFNAME=i_banner_19_part_1
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Banner 19
+
+[ITEMDEF 01616]
+DEFNAME=i_banner_19_part_2
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Banner 19
+
+[ITEMDEF 01617]
+DEFNAME=i_banner_20_part_1
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Banner 20
+
+[ITEMDEF 01618]
+DEFNAME=i_banner_20_part_2
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Banner 20
+
+[ITEMDEF 01619]
+DEFNAME=i_banner_21_part_1
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Banner 21
+
+[ITEMDEF 0161a]
+DEFNAME=i_banner_21_part_2
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Banner 21
+
+[ITEMDEF 0161b]
+DEFNAME=i_banner_22_part_1
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Banner 22
+
+[ITEMDEF 0161c]
+DEFNAME=i_banner_22_part_2
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Banner 22
+
+[ITEMDEF 0161d]
+DEFNAME=i_banner_23_part_1
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Banner 23
+
+[ITEMDEF 0161e]
+DEFNAME=i_banner_23_part_2
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_cloth,1 i_thread
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Banner 23
+
+[ITEMDEF 0161f]
+DEFNAME=i_banner_23_part_3
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Banner 23
+
+[ITEMDEF 01620]
+DEFNAME=i_banner_24_part_1
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Banner 24
+
+[ITEMDEF 01621]
+DEFNAME=i_banner_24_part_2
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_cloth,1 i_thread
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Banner 24
+
+[ITEMDEF 01622]
+DEFNAME=i_banner_24_part_3
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Banner 24
+
+[ITEMDEF 01623]
+DEFNAME=i_banner_25_part_1
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Banner 25
+
+[ITEMDEF 01624]
+DEFNAME=i_banner_25_part_2
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_cloth,1 i_thread
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Banner 25
+
+[ITEMDEF 01625]
+DEFNAME=i_banner_25_part_3
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Banner 25
+
+[ITEMDEF 01626]
+DEFNAME=i_banner_hanger_nw
+WEIGHT=1.1
+RESOURCES=1 i_board,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Banner Hanger
+
+[ITEMDEF 01627]
+DEFNAME=i_banner_26_part_1
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_cloth,1 i_thread
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Banner 26
+
+[ITEMDEF 01628]
+DEFNAME=i_banner_26_part_2
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Banner 26
+
+[ITEMDEF 01629]
+DEFNAME=i_banner_27_part_1
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_cloth,1 i_thread
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Banner 27
+
+[ITEMDEF 0162a]
+DEFNAME=i_banner_27_part_2
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Banner 27
+
+[ITEMDEF 0162b]
+DEFNAME=i_banner_28_part_1
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Banner 28
+
+[ITEMDEF 0162c]
+DEFNAME=i_banner_28_part_2
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_cloth,1 i_thread
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Banner 28
+
+[ITEMDEF 0162d]
+DEFNAME=i_banner_28_part_3
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Banner 28
+
+[ITEMDEF 0162e]
+DEFNAME=i_banner_29_part_1
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Banner 29
+
+[ITEMDEF 0162f]
+DEFNAME=i_banner_30_part_1
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Banner 30
+
+[ITEMDEF 01630]
+DEFNAME=i_banner_30_part_2
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_cloth,1 i_thread
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Banner 30
+
+[ITEMDEF 01631]
+DEFNAME=i_banner_29_part_2
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_cloth,1 i_thread
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Banner 29
+
+[ITEMDEF 01632]
+DEFNAME=i_banner_29_part_3
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Banner 29
+
+[ITEMDEF 01633]
+DEFNAME=i_banner_30_part_3
+WEIGHT=4.2
+RESOURCES=1 i_log,1 i_board,1 i_cloth,1 i_thread,1 i_nails
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Banner 30
+
+[ITEMDEF 01634]
+//decorative shield and sword
+DUPEITEM=01582
+
+[ITEMDEF 01635]
+//decorative shield and sword
+DUPEITEM=01583
+
+[ITEMDEF 01636]
+//decorative shield and sword
+DUPEITEM=01584
+
+[ITEMDEF 01637]
+//decorative shield and sword
+DUPEITEM=01585
+
+[ITEMDEF 01638]
+DEFNAME=i_curtain_plain_red
+FLIP=1
+WEIGHT=1.0
+RESOURCES=1 i_cloth
+CATEGORY=Decoration - Curtains
+SUBSECTION=Small Red
+DESCRIPTION=Single Red
+DUPELIST=01639
+
+[ITEMDEF 01639]
+//curtain
+DUPEITEM=01638
+
+
+[ITEMDEF 01e5e]
+DEFNAME=i_bulletin_board
+TYPE=t_bboard
+TDATA2=0866
+FLIP=1
+VALUE=80
+WEIGHT=25.3
+RESOURCES=50 i_board
+SKILLMAKE=Carpentry 85.0,t_carpentry
+CATEGORY=Miscellaneous
+SUBSECTION=Bulletin Board
+DESCRIPTION=Bulletin Board 1
+DUPELIST=01e5f
+
+[ITEMDEF 01e5f]
+//bulletin board 1
+DUPEITEM=01e5e
+
+[ITEMDEF 01e60]
+DEFNAME=i_trophy_bearhead
+NAME=bear trophy
+FLIP=1
+VALUE=53
+WEIGHT=8.2
+RESOURCES=2 i_board,1 i_nails,1 i_wool
+SKILLMAKE=Carpentry 72.0,Tailoring 60.0,t_carpentry,t_sewing_kit
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Bear
+DUPELIST=01e67
+
+[ITEMDEF 01e61]
+DEFNAME=i_trophy_deerhead
+NAME=deer trophy
+FLIP=1
+VALUE=53
+WEIGHT=8.2
+RESOURCES=2 i_log,1 i_nails,1 i_wool
+SKILLMAKE=Carpentry 72.0,Tailoring 60.0,t_carpentry,t_sewing_kit
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Deer
+DUPELIST=01e68
+
+[ITEMDEF 01e62]
+DEFNAME=i_trophy_fish
+NAME=fish trophy
+FLIP=1
+VALUE=53
+WEIGHT=8.2
+RESOURCES=2 i_board,1 i_fish_big_1,1 i_nails,1 i_wool
+SKILLMAKE=Carpentry 72.0,Tailoring 60.0,t_carpentry,t_sewing_kit
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Fish
+DUPELIST=01e69
+
+[ITEMDEF 01e63]
+DEFNAME=i_trophy_gorillahead
+NAME=gorilla trophy
+FLIP=1
+VALUE=53
+WEIGHT=8.2
+RESOURCES=2 i_board,5 i_fur_light,1 i_nails,1 i_wool
+SKILLMAKE=Carpentry 72.0,Tailoring 60.0,t_carpentry,t_sewing_kit
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Gorilla
+DUPELIST=01e6a
+
+[ITEMDEF 01e64]
+DEFNAME=i_trophy_orchead
+NAME=orc trophy
+FLIP=1
+VALUE=53
+WEIGHT=8.2
+RESOURCES=2 i_board,5 i_fur_light,1 i_nails,1 i_wool
+SKILLMAKE=Carpentry 72.0,Tailoring 60.0,t_carpentry,t_sewing_kit
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Orc
+DUPELIST=01e6b
+
+[ITEMDEF 01e65]
+DEFNAME=i_trophy_polarbearhead
+NAME=polarbear trophy
+FLIP=1
+VALUE=53
+WEIGHT=8.2
+RESOURCES=2 i_board,1 i_nails,1 i_wool
+SKILLMAKE=Carpentry 72.0,Tailoring 60.0,t_carpentry,t_sewing_kit
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Polar Bear
+DUPELIST=01e6c
+
+[ITEMDEF 01e66]
+DEFNAME=i_trophy_trollhead
+NAME=troll trophy
+FLIP=1
+VALUE=75
+WEIGHT=8.2
+RESOURCES=2 i_board,15 i_fur_light,1 i_nails,1 i_wool
+SKILLMAKE=Carpentry 72.0,Tailoring 60.0,t_carpentry,t_sewing_kit
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Troll
+DUPELIST=01e6d
+
+[ITEMDEF 01e67]
+//trophy bear
+DUPEITEM=01e60
+
+[ITEMDEF 01e68]
+//trophy deer
+DUPEITEM=01e61
+
+[ITEMDEF 01e69]
+//trophy fish
+DUPEITEM=01e62
+
+[ITEMDEF 01e6a]
+//trophy gorilla
+DUPEITEM=01e63
+
+[ITEMDEF 01e6b]
+//trophy orc
+DUPEITEM=01e64
+
+[ITEMDEF 01e6c]
+//trophy polarbear
+DUPEITEM=01e65
+
+[ITEMDEF 01e6d]
+//trophy troll
+DUPEITEM=01e66
+
+
+[ITEMDEF 01ed3]
+DEFNAME=i_target
+RESOURCES=1 i_board,1 i_cloth
+WEIGHT=2
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Target
+DESCRIPTION=@
+DUPELIST=01ed4,01ed5,01ed6,01ed7,01ed8
+
+[ITEMDEF 01ed4]
+//target
+DUPEITEM=01ed3
+
+[ITEMDEF 01ed5]
+//target
+DUPEITEM=01ed3
+
+[ITEMDEF 01ed6]
+//target
+DUPEITEM=01ed3
+
+[ITEMDEF 01ed7]
+//target
+DUPEITEM=01ed3
+
+[ITEMDEF 01ed8]
+//target
+DUPEITEM=01ed3
+
+
+
+[ITEMDEF 02234]
+DEFNAME=i_trophy_dragonhead
+NAME=dragon trophy
+FLIP=1
+VALUE=48
+WEIGHT=11.1
+RESOURCES=2 i_board,5 i_fur_light,1 i_nails,1 i_wool
+SKILLMAKE=Carpentry 72.0,Tailoring 60.0,t_carpentry,t_sewing_kit
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Dragon
+DUPELIST=02235
+
+[ITEMDEF 02235]
+//trophy dragonhead
+DUPEITEM=02234
+
+[ITEMDEF 02236]
+DEFNAME=i_lance_light
+NAME=light lance
+FLIP=1
+VALUE=77
+WEIGHT=18.0
+RESOURCES=18 i_ingot_iron
+SKILLMAKE=Blacksmithing 48.0
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Lance
+DESCRIPTION=Light Lance
+DUPELIST=02238
+
+[ITEMDEF 02237]
+DEFNAME=i_lance_heavy
+NAME=heavy lance
+FLIP=1
+VALUE=77
+WEIGHT=18.0
+RESOURCES=18 i_ingot_iron
+SKILLMAKE=Blacksmithing 48.0
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Lance
+DESCRIPTION=Heavy Lance
+DUPELIST=02238
+
+[ITEMDEF 02238]
+//light lance
+DUPEITEM=02236
+
+[ITEMDEF 02239]
+//heavy lance
+DUPEITEM=02237
+
+
+[ITEMDEF 02311]
+//FIXME: This does not work?
+DEFNAME=i_bulletin_board_2
+TYPE=t_bboard
+TDATA2=0866
+FLIP=1
+VALUE=80
+WEIGHT=25.3
+RESOURCES=50 i_board
+SKILLMAKE=Carpentry 85.0,t_carpentry
+CATEGORY=Miscellaneous
+SUBSECTION=Bulletin Board
+DESCRIPTION=Bulletin Board 2 (broken)
+DUPELIST=02312
+
+[ITEMDEF 02312]
+//bulletin board 2
+DUPEITEM=02311
+
+
+[ITEMDEF 02409]
+DEFNAME=i_fan_small
+TYPE=t_normal
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Japanese
+DESCRIPTION=Fan (small)
+DUPELIST=0240a
+
+[ITEMDEF 0240a]
+//fan (small)
+DUPEITEM=02409
+
+[ITEMDEF 0240b]
+DEFNAME=i_fan_large
+TYPE=t_normal
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Japanese
+DESCRIPTION=Fan (large)
+DUPELIST=0240c
+
+[ITEMDEF 0240c]
+//fan (large)
+DUPEITEM=0240b
+
+[ITEMDEF 0240d]
+DEFNAME=i_painting_japan1
+TYPE=t_normal
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Paintings
+DESCRIPTION=Painting
+DUPELIST=0240e
+
+[ITEMDEF 0240e]
+//Painting 1
+DUPEITEM=0240d
+
+[ITEMDEF 0240f]
+DEFNAME=i_painting_japan2
+TYPE=t_normal
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Paintings
+DESCRIPTION=Painting
+DUPELIST=02410
+
+[ITEMDEF 02410]
+//Painting 2
+DUPEITEM=0240f
+
+[ITEMDEF 02411]
+DEFNAME=i_painting_japan3
+TYPE=t_normal
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Paintings
+DESCRIPTION=Painting
+DUPELIST=02412
+
+[ITEMDEF 02412]
+//Painting 3
+DUPEITEM=02411
+
+[ITEMDEF 02413]
+DEFNAME=i_painting_japan4
+TYPE=t_normal
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Paintings
+DESCRIPTION=Painting
+DUPELIST=02414
+
+[ITEMDEF 02414]
+//Painting 4
+DUPEITEM=02413
+
+[ITEMDEF 02415]
+DEFNAME=i_painting_japan5
+TYPE=t_normal
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Paintings
+DESCRIPTION=Painting
+DUPELIST=02416
+
+[ITEMDEF 02416]
+//Painting 5
+DUPEITEM=02415
+
+[ITEMDEF 02417]
+DEFNAME=i_painting_japan6
+TYPE=t_normal
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Paintings
+DESCRIPTION=Painting
+DUPELIST=02418
+
+[ITEMDEF 02418]
+//Painting 6
+DUPEITEM=02417
+
+
+[ITEMDEF 02886]
+DEFNAME=i_wall_panel
+TYPE=t_normal
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Japanese
+DESCRIPTION=Wall Panel
+DUPELIST=02887
+
+[ITEMDEF 02887]
+//wall panel
+DUPEITEM=02886
+
+
+[ITEMDEF 02d6f]
+DEFNAME=i_tapestry_elven_sophisticated
+NAME=sophisticated elven tapestry
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Tapestries
+DESCRIPTION=Sophisticated Elven Tapestry
+DUPELIST=02d70
+
+[ITEMDEF 02d70]
+//sophisticated elven tapestry
+DUPEITEM=02d6f
+
+[ITEMDEF 02d71]
+DEFNAME=i_tapestry_elven_ornate
+NAME=ornate elven tapestry
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Tapestries
+DESCRIPTION=Ornate Elven Tapestry
+DUPELIST=02d72
+
+[ITEMDEF 02d72]
+//ornate elven tapestry
+DUPEITEM=02d71
+
+
+[ITEMDEF 02ff2]
+DEFNAME=i_tapestry_colorful
+FLIP=1
+WEIGHT=54.0
+RESOURCES=1 i_cloth_bolt,2 i_dyes,1 i_board,1 i_rope
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Tapestries
+DESCRIPTION=Colorful Tapestry
+DUPELIST=02ff3
+
+[ITEMDEF 02ff3]
+//colorful tapestry
+DUPEITEM=02ff2
+
+
+[ITEMDEF 02fff]
+DEFNAME=i_banner_tattered_dark
+NAME=tattered banner
+WEIGHT=25.0
+FLIP=1
+RESOURCES=1 i_log,25 i_cloth
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Tattered
+DESCRIPTION=Large Tattered Banner (dark)
+DUPELIST=03000
+
+[ITEMDEF 03000]
+//Large Tattered Banner (dark)
+DUPEITEM=02fff
+
+
+[ITEMDEF 03bb6]
+DEFNAME=i_tapestry_known_world
+NAME=map of the known world
+TYPE=t_sign_gump
+TDATA2=012b
+FLIP=1
+WEIGHT=1.0
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Tapestries
+DESCRIPTION=Map of the Known World
+DUPELIST=03bb7
+
+[ITEMDEF 03bb7]
+//map of the known world
+DUPEITEM=03bb6
+
+
+[ITEMDEF 03ed8]
+CATEGORY=Decoration - Curtains
+SUBSECTION=Curtain 01
+DESCRIPTION=@
+DUPELIST=03ed9,03eda
+
+[ITEMDEF 03ed9]
+//curtains
+DUPEITEM=03ed8
+
+[ITEMDEF 03eda]
+//curtains
+DUPEITEM=03ed8
+
+[ITEMDEF 03edb]
+//curtains
+//DUPEITEM=03ed8
+
+
+[ITEMDEF 04037]
+DEFNAME=i_gargish_banner_hanging
+NAME=gargish banner
+FLIP=1
+RESOURCES=50 i_board,50 i_cloth
+SKILLMAKE=Carpentry 94.7,Tailoring 75.0,t_carpentry
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Gargish Banner
+DUPELIST=04038
+
+[ITEMDEF 04038]
+//gargish banner
+DUPEITEM=04037
+
+
+[ITEMDEF 0403d]
+DEFNAME=i_painting_gargoyle
+NAME=gargish painting
+FLIP=1
+RESOURCES=3 i_rock_granite
+SKILLMAKE=Carpentry 34.0,t_masonry_tool
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Paintings
+DESCRIPTION=Gargish Painting
+DUPELIST=0403e
+
+[ITEMDEF 0403e]
+//gargish painting
+DUPEITEM=0403d
+
+
+[ITEMDEF 042b6]
+DEFNAME=i_portrait_gargish
+NAME=gargish portrait
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Paintings
+DESCRIPTION=Gargish Portrait
+
+
+[ITEMDEF 042c4]
+DEFNAME=i_tapestry_colorful_2
+NAME=colorful tapestry
+TYPE=t_normal
+WEIGHT=54.0
+RESOURCES=1 i_cloth_bolt,2 i_dyes,1 i_board,1 i_rope
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Tapestries
+DESCRIPTION=Colorful Tapestry 2
+
+
+[ITEMDEF 044e7]
+DEFNAME=i_trophy_dragonfish
+NAME=dragonfish trophy
+FLIP=1
+VALUE=53
+WEIGHT=8.2
+RESOURCES=1 i_trophy_mountboard_lg,1 i_fish_dragon
+SKILLMAKE=Carpentry 72.0,Tailoring 60.0,t_carpentry,t_sewing_kit
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Dragonfish
+DUPELIST=044e8
+
+[ITEMDEF 044e8]
+//trophy dragonfish
+DUPEITEM=044e7
+
+[ITEMDEF 044e9]
+DEFNAME=i_trophy_marlin
+NAME=marlin trophy
+FLIP=1
+VALUE=53
+WEIGHT=8.2
+RESOURCES=2 i_board,1 i_fish_marlin,1 i_nails,1 i_wool
+SKILLMAKE=Carpentry 72.0,Tailoring 60.0,t_carpentry,t_sewing_kit
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Marlin (multi-part)
+DUPELIST=044ea,044eb,044ec,044ed,044ee
+
+[ITEMDEF 044ea]
+//trophy marlin
+DUPEITEM=044e9
+
+[ITEMDEF 044eb]
+//trophy marlin
+DUPEITEM=044e9
+
+[ITEMDEF 044ec]
+//trophy marlin
+DUPEITEM=044e9
+
+[ITEMDEF 044ed]
+//trophy marlin
+DUPEITEM=044e9
+
+[ITEMDEF 044ee]
+//trophy marlin
+DUPEITEM=044e9
+
+
+[ITEMDEF 046ba]
+DEFNAME=i_trophy_crab
+NAME=crab trophy
+FLIP=1
+VALUE=53
+WEIGHT=8.2
+RESOURCES=1 i_trophy_mountboard_lg,1 i_fish_crab
+SKILLMAKE=Carpentry 72.0,Tailoring 60.0,t_carpentry,t_sewing_kit
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Crab
+DUPELIST=046bb
+
+[ITEMDEF 046bb]
+//crab trophy
+DUPEITEM=046ba
+
+[ITEMDEF 046bc]
+DEFNAME=i_trophy_lobster
+NAME=lobster trophy
+FLIP=1
+VALUE=53
+WEIGHT=8.2
+RESOURCES=2 i_trophy_mountboard,1 i_fish_lobster
+SKILLMAKE=Carpentry 72.0,Tailoring 60.0,t_carpentry,t_sewing_kit
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Lobster
+DUPELIST=046bd
+
+[ITEMDEF 046bd]
+//lobster trophy
+DUPEITEM=046bc
+
+
+[ITEMDEF 04a9e]
+//Machine Wall 2
+[ITEMDEF 04a9f]
+//Machine Wall 2
+
+
+[ITEMDEF 04b50]
+DEFNAME=i_trophy_mountboard_lg
+NAME=large trophy mount board
+FLIP=1
+VALUE=25
+WEIGHT=3.1
+RESOURCES=3 i_board,1 i_nails
+SKILLMAKE=Carpentry 22.0,t_carpentry
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Trophy Mount Board (large)
+DUPELIST=04b51
+
+[ITEMDEF 04b51]
+//Trophy Mount Board 1
+DUPEITEM=04b50
+
+[ITEMDEF 04b52]
+DEFNAME=i_trophy_mountboard
+NAME=trophy mount board
+FLIP=1
+VALUE=20
+WEIGHT=2.1
+RESOURCES=2 i_board,1 i_nails
+SKILLMAKE=Carpentry 18.0,t_carpentry
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Trophy Mount Board
+DUPELIST=04b53
+
+[ITEMDEF 04b53]
+//Trophy Mount Board 2
+DUPEITEM=04b52
+
+[ITEMDEF 04b54]
+DEFNAME=i_trophyfish_grouper
+NAME=trophy grouper
+TYPE=t_normal
+FLIP=1
+VALUE=3
+WEIGHT=5.0
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Trophyfish (grouper)
+DUPELIST=04b55
+
+[ITEMDEF 04b55]
+//Trophyfish (grouper)
+DUPEITEM=04b54
+
+[ITEMDEF 04b56]
+DEFNAME=i_trophyfish_mahi
+NAME=trophy mahi
+TYPE=t_normal
+FLIP=1
+VALUE=3
+WEIGHT=5.0
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Trophyfish (mahi)
+DUPELIST=04b57
+
+[ITEMDEF 04b57]
+//Trophyfish (mahi)
+DUPEITEM=04b56
+
+
+[ITEMDEF 04b62]
+DEFNAME=i_banner_city_trinsic
+NAME=Banner of Trinsic
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (cities)
+DESCRIPTION=Trinsic
+DUPELIST=04b6b
+
+[ITEMDEF 04b63]
+DEFNAME=i_banner_city_moonglow
+NAME=Banner of Moonglow
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (cities)
+DESCRIPTION=Moonglow
+DUPELIST=04b6c
+
+[ITEMDEF 04b64]
+DEFNAME=i_banner_city_britain
+NAME=Banner of Britain
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (cities)
+DESCRIPTION=Britain
+DUPELIST=04b6d
+
+[ITEMDEF 04b65]
+DEFNAME=i_banner_city_jhelom
+NAME=Banner of Jhelom
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (cities)
+DESCRIPTION=Jhelom
+DUPELIST=04b6e
+
+[ITEMDEF 04b66]
+DEFNAME=i_banner_city_yew
+NAME=Banner of Yew
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (cities)
+DESCRIPTION=Yew
+DUPELIST=04b6f
+
+[ITEMDEF 04b67]
+DEFNAME=i_banner_city_minoc
+NAME=Banner of Minoc
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (cities)
+DESCRIPTION=Minoc
+DUPELIST=04b70
+
+[ITEMDEF 04b68]
+DEFNAME=i_banner_city_vesper
+NAME=Banner of Vesper
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (cities)
+DESCRIPTION=Vesper
+DUPELIST=04b71
+
+[ITEMDEF 04b69]
+DEFNAME=i_banner_city_newmagincia
+NAME=Banner of New Magincia
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (cities)
+DESCRIPTION=New Magincia
+DUPELIST=04b72
+
+[ITEMDEF 04b6a]
+DEFNAME=i_banner_city_skarabrae
+NAME=Banner of Skara Brae
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (cities)
+DESCRIPTION=Skara Brae
+DUPELIST=04b73
+
+[ITEMDEF 04b6b]
+//Banner of Trinsic
+DUPEITEM=04b62
+
+[ITEMDEF 04b6c]
+//Banner of Moonglow
+DUPEITEM=04b63
+
+[ITEMDEF 04b6d]
+//Banner of Britain
+DUPEITEM=04b64
+
+[ITEMDEF 04b6e]
+//Banner of Jhelom
+DUPEITEM=04b65
+
+[ITEMDEF 04b6f]
+//Banner of Yew
+DUPEITEM=04b66
+
+[ITEMDEF 04b70]
+//Banner of Minoc
+DUPEITEM=04b67
+
+[ITEMDEF 04b71]
+//Banner of Vesper
+DUPEITEM=04b68
+
+[ITEMDEF 04b72]
+//Banner of New Magincia
+DUPEITEM=04b69
+
+[ITEMDEF 04b73]
+//Banner of Skara Brae
+DUPEITEM=04b6a
+
+
+[ITEMDEF 04b88]
+//Machine Wall 4
+[ITEMDEF 04b89]
+//Machine Wall 4
+
+
+[ITEMDEF 04b8d]
+DEFNAME=i_banner_plague
+NAME=plague banner
+FLIP=1
+WEIGHT=5.0
+RESOURCES=1 i_log,5 i_cloth
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners
+DESCRIPTION=Plague Banner
+DUPELIST=04b8e
+
+[ITEMDEF 04b8e]
+//Plague Banner
+DUPEITEM=04b8d
+
+
+[ITEMDEF 04c60]
+DEFNAME=i_painting_landscape_1
+NAME=landscape
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Paintings
+DESCRIPTION=Landscape (1)
+DUPELIST=04c61
+
+[ITEMDEF 04c61]
+//landscape
+DUPEITEM=04c60
+
+[ITEMDEF 04c62]
+DEFNAME=i_painting_landscape_2
+NAME=landscape
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Paintings
+DESCRIPTION=Landscape (2)
+DUPELIST=04c63
+
+[ITEMDEF 04c63]
+//landscape
+DUPEITEM=04c62
+
+[ITEMDEF 04c64]
+DEFNAME=i_painting_landscape_3
+NAME=landscape
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Paintings
+DESCRIPTION=Landscape (3)
+DUPELIST=04c65
+
+[ITEMDEF 04c65]
+//landscape
+DUPEITEM=04c64
+
+[ITEMDEF 04c66]
+DEFNAME=i_painting_landscape_4
+NAME=landscape
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Paintings
+DESCRIPTION=Landscape (4)
+DUPELIST=04c67
+
+[ITEMDEF 04c67]
+//landscape
+DUPEITEM=04c66
+
+
+[ITEMDEF 06380]
+DEFNAME=i_shard_symbol_legends
+NAME=Legends Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Legends
+DUPELIST=0639b
+
+[ITEMDEF 06381]
+DEFNAME=i_shard_symbol_arirang
+NAME=Arirang Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Arirang
+DUPELIST=0639c
+
+[ITEMDEF 06382]
+DEFNAME=i_shard_symbol_asuka
+NAME=Asuka Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Asuka
+DUPELIST=0639d
+
+[ITEMDEF 06383]
+DEFNAME=i_shard_symbol_atlantic
+NAME=Atlantic Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Atlantic
+DUPELIST=0639e
+
+[ITEMDEF 06384]
+DEFNAME=i_shard_symbol_baja
+NAME=Baja Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Baja
+DUPELIST=0639f
+
+[ITEMDEF 06385]
+DEFNAME=i_shard_symbol_balhae
+NAME=Balhae Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Balhae
+DUPELIST=063a0
+
+[ITEMDEF 06386]
+DEFNAME=i_shard_symbol_catskills
+NAME=Catskills Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Catskills
+DUPELIST=063a1
+
+[ITEMDEF 06387]
+DEFNAME=i_shard_symbol_chesapeake
+NAME=Chesapeake Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Chesapeake
+DUPELIST=063a2
+
+[ITEMDEF 06388]
+DEFNAME=i_shard_symbol_drachenfels
+NAME=Drachenfels Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Drachenfels
+DUPELIST=063a3
+
+[ITEMDEF 06389]
+DEFNAME=i_shard_symbol_europa
+NAME=Europa Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Europa
+DUPELIST=063a4
+
+[ITEMDEF 0638a]
+DEFNAME=i_shard_symbol_formosa
+NAME=Formosa Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Formosa
+DUPELIST=063a5
+
+[ITEMDEF 0638b]
+DEFNAME=i_shard_symbol_greatlakes
+NAME=Great Lakes Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Great Lakes
+DUPELIST=063a6
+
+[ITEMDEF 0638c]
+DEFNAME=i_shard_symbol_hokuto
+NAME=Hokuto Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Hokuto
+DUPELIST=063a7
+
+[ITEMDEF 0638d]
+DEFNAME=i_shard_symbol_izumo
+NAME=Izumo Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Izumo
+DUPELIST=063a8
+
+[ITEMDEF 0638e]
+DEFNAME=i_shard_symbol_lakeaustin
+NAME=Lake Austin Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Lake Austin
+DUPELIST=063a9
+
+[ITEMDEF 0638f]
+DEFNAME=i_shard_symbol_lakesuperior
+NAME=Lake Superior Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Lake Superior
+DUPELIST=063aa
+
+[ITEMDEF 06390]
+DEFNAME=i_shard_symbol_mizuho
+NAME=Mizuho Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Mizuho
+DUPELIST=063ab
+
+[ITEMDEF 06391]
+DEFNAME=i_shard_symbol_mugen
+NAME=Mugen Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Mugen
+DUPELIST=063ac
+
+[ITEMDEF 06392]
+DEFNAME=i_shard_symbol_napavalley
+NAME=Napa Valley Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Napa Valley
+DUPELIST=063ad
+
+[ITEMDEF 06393]
+DEFNAME=i_shard_symbol_oceania
+NAME=Oceania Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Oceania
+DUPELIST=063ae
+
+[ITEMDEF 06394]
+DEFNAME=i_shard_symbol_origin
+NAME=Origin Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Origin
+DUPELIST=063af
+
+[ITEMDEF 06395]
+DEFNAME=i_shard_symbol_pacific
+NAME=Pacific Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Pacific
+DUPELIST=063b0
+
+[ITEMDEF 06396]
+DEFNAME=i_shard_symbol_sakura
+NAME=Sakura Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Sakura
+DUPELIST=063b1
+
+[ITEMDEF 06397]
+DEFNAME=i_shard_symbol_siegeperilous
+NAME=Siege Perilous Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Siege Perilous
+DUPELIST=063b2
+
+[ITEMDEF 06398]
+DEFNAME=i_shard_symbol_sonoma
+NAME=Sonoma Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Sonoma
+DUPELIST=063b3
+
+[ITEMDEF 06399]
+DEFNAME=i_shard_symbol_wakoku
+NAME=Wakoku Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Wakoku
+DUPELIST=063b4
+
+[ITEMDEF 0639a]
+DEFNAME=i_shard_symbol_yamato
+NAME=Yamato Shard Symbol
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Shard Symbols
+DESCRIPTION=Yamato
+DUPELIST=063b5
+
+[ITEMDEF 0639b]
+//Legends Shard Symbol
+DUPEITEM=06380
+
+[ITEMDEF 0639c]
+//Arirang Shard Symbol
+DUPEITEM=06381
+
+[ITEMDEF 0639d]
+//Asuka Shard Symbol
+DUPEITEM=06382
+
+[ITEMDEF 0639e]
+//Atlantic Shard Symbol
+DUPEITEM=06383
+
+[ITEMDEF 0639f]
+//Baja Shard Symbol
+DUPEITEM=06384
+
+[ITEMDEF 063a0]
+//Balhae Shard Symbol
+DUPEITEM=06385
+
+[ITEMDEF 063a1]
+//Catskills Shard Symbol
+DUPEITEM=06386
+
+[ITEMDEF 063a2]
+//Chesapeake Shard Symbol
+DUPEITEM=06387
+
+[ITEMDEF 063a3]
+//Drachenfels Shard Symbol
+DUPEITEM=06388
+
+[ITEMDEF 063a4]
+//Europa Shard Symbol
+DUPEITEM=06389
+
+[ITEMDEF 063a5]
+//Formosa Shard Symbol
+DUPEITEM=0638a
+
+[ITEMDEF 063a6]
+//Great Lakes Shard Symbol
+DUPEITEM=0638b
+
+[ITEMDEF 063a7]
+//Hokuto Shard Symbol
+DUPEITEM=0638c
+
+[ITEMDEF 063a8]
+//Izumo Shard Symbol
+DUPEITEM=0638d
+
+[ITEMDEF 063a9]
+//Lake Austin Shard Symbol
+DUPEITEM=0638e
+
+[ITEMDEF 063aa]
+//Lake Superior Shard Symbol
+DUPEITEM=0638f
+
+[ITEMDEF 063ab]
+//Mizuho Shard Symbol
+DUPEITEM=06390
+
+[ITEMDEF 063ac]
+//Mugen Shard Symbol
+DUPEITEM=06391
+
+[ITEMDEF 063ad]
+//Napa Valley Shard Symbol
+DUPEITEM=06392
+
+[ITEMDEF 063ae]
+//Oceania Shard Symbol
+DUPEITEM=06393
+
+[ITEMDEF 063af]
+//Origin Shard Symbol
+DUPEITEM=06394
+
+[ITEMDEF 063b0]
+//Pacific Shard Symbol
+DUPEITEM=06395
+
+[ITEMDEF 063b1]
+//Sakura Shard Symbol
+DUPEITEM=06396
+
+[ITEMDEF 063b2]
+//Siege Perilous Shard Symbol
+DUPEITEM=06397
+
+[ITEMDEF 063b3]
+//Sonoma Shard Symbol
+DUPEITEM=06398
+
+[ITEMDEF 063b4]
+//Wakoku Shard Symbol
+DUPEITEM=06399
+
+[ITEMDEF 063b5]
+//Yamato Shard Symbol
+DUPEITEM=0639a
+
+
+[ITEMDEF 08b8f]
+DEFNAME=i_currency_wall_safe
+NAME=Currency Wall Safe
+FLIP=1
+RESOURCES=20 i_ingot_iron
+SKILLMAKE=Tinkering 0.0,t_tinker_tools
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Misc
+DESCRIPTION=Currency Wall Safe
+DUPELIST=08b90
+
+[ITEMDEF 08b90]
+//currency wall safe
+DUPEITEM=08b8f
+
+
+[ITEMDEF 09704]
+//Machine Wall 1
+[ITEMDEF 09705]
+//Machine Wall 1
+
+
+[ITEMDEF 09a26]
+DEFNAME=i_trophy_bear
+NAME=bear trophy
+FLIP=1
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Bear
+DUPELIST=09a27
+
+[ITEMDEF 09a27]
+//trophy bear
+DUPEITEM=09a26
+
+[ITEMDEF 09a28]
+DEFNAME=i_trophy_graywolf
+NAME=gray wolf trophy
+FLIP=1
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Gray Wolf
+DUPELIST=09a29
+
+[ITEMDEF 09a29]
+//trophy gray wolf
+DUPEITEM=09a28
+
+[ITEMDEF 09a2a]
+DEFNAME=i_trophy_cougar
+NAME=cougar trophy
+FLIP=1
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Cougar
+DUPELIST=09a2b
+
+[ITEMDEF 09a2b]
+//trophy cougar
+DUPEITEM=09a2a
+
+[ITEMDEF 09a2c]
+DEFNAME=i_trophy_turkey
+NAME=turkey trophy
+FLIP=1
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Turkey
+DUPELIST=09a2d
+
+[ITEMDEF 09a2d]
+//trophy turkey
+DUPEITEM=09a2c
+
+[ITEMDEF 09a2e]
+DEFNAME=i_trophy_bullhead
+NAME=bull trophy
+FLIP=1
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Bull
+DUPELIST=09a2f
+
+[ITEMDEF 09a2f]
+//trophy bullhead
+DUPEITEM=09a2e
+
+[ITEMDEF 09a30]
+DEFNAME=i_trophy_boarhead
+NAME=boar trophy
+FLIP=1
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Boar
+DUPELIST=09a31
+
+[ITEMDEF 09a31]
+//trophy boarhead
+DUPEITEM=09a30
+
+[ITEMDEF 09a32]
+DEFNAME=i_trophy_walrushead
+NAME=walrus trophy
+FLIP=1
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Walrus
+DUPELIST=09a33
+
+[ITEMDEF 09a33]
+//trophy walrushead
+DUPEITEM=09a32
+
+[ITEMDEF 09a34]
+DEFNAME=i_trophy_alligatorhead
+NAME=alligator trophy
+FLIP=1
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Alligator
+DUPELIST=09a35
+
+[ITEMDEF 09a35]
+//trophy alligatorhead
+DUPEITEM=09a34
+
+[ITEMDEF 09a36]
+DEFNAME=i_trophy_eagle
+NAME=eagle trophy
+FLIP=1
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Eagle
+DUPELIST=09a37
+
+[ITEMDEF 09a37]
+//trophy eagle
+DUPEITEM=09a36
+
+
+[ITEMDEF 09c08]
+DEFNAME=i_trophy_anchisaurhead
+NAME=anchisaur trophy
+FLIP=1
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Anchisaur
+DUPELIST=09c09
+
+[ITEMDEF 09c09]
+//trophy anchisaurhead
+DUPEITEM=09c08
+
+[ITEMDEF 09c0a]
+DEFNAME=i_trophy_allosaurushead
+NAME=allosaurus trophy
+FLIP=1
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Allosaurus
+DUPELIST=09c0b
+
+[ITEMDEF 09c0b]
+//trophy allosaurushead
+DUPEITEM=09c0a
+
+[ITEMDEF 09c0c]
+DEFNAME=i_trophy_dimetrosaurhead
+NAME=dimetrosaur trophy
+FLIP=1
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Dimetrosaur
+DUPELIST=09c0d
+
+[ITEMDEF 09c0d]
+//trophy dimetrosaurhead
+DUPEITEM=09c0c
+
+[ITEMDEF 09c0c]
+DEFNAME=i_trophy_saurosaurushead
+NAME=saurosaurus trophy
+FLIP=1
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Saurosaurus
+DUPELIST=09c0d
+
+[ITEMDEF 09c0d]
+//trophy saurosaurushead
+DUPEITEM=09c0c
+
+
+[ITEMDEF 09cb9]
+DEFNAME=i_banner_fireworks_south
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (multi-part)
+DESCRIPTION=Fireworks Banner (south)
+DUPELIST=09cba
+
+[ITEMDEF 09cba]
+//fireworks banner (south)
+DUPEITEM=09cb9
+
+[ITEMDEF 09ccc]
+DEFNAME=i_banner_fireworks_east
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (multi-part)
+DESCRIPTION=Fireworks Banner (east)
+DUPELIST=09ccd
+
+[ITEMDEF 09ccd]
+//fireworks banner (east)
+DUPEITEM=09ccc
+
+
+[ITEMDEF 09d53]
+DEFNAME=i_banner_tribal_jukari
+NAME=jukari tribal banner
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (tribal)
+DESCRIPTION=Jukari Tribal Banner
+DUPELIST=09d54
+
+[ITEMDEF 09d54]
+//jukari tribal banner
+DUPEITEM=09d53
+
+[ITEMDEF 09d55]
+DEFNAME=i_banner_tribal_kurak
+NAME=kurak tribal banner
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (tribal)
+DESCRIPTION=Kurak Tribal Banner
+DUPELIST=09d56
+
+[ITEMDEF 09d56]
+//kurak tribal banner
+DUPEITEM=09d55
+
+[ITEMDEF 09d57]
+DEFNAME=i_banner_tribal_barako
+NAME=barako tribal banner
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (tribal)
+DESCRIPTION=Barako Tribal Banner
+DUPELIST=09d58
+
+[ITEMDEF 09d58]
+//barako tribal banner
+DUPEITEM=09d57
+
+[ITEMDEF 09d59]
+DEFNAME=i_banner_tribal_sakkhra
+NAME=sakkhra tribal banner
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (tribal)
+DESCRIPTION=Sakkhra Tribal Banner
+DUPELIST=09d5a
+
+[ITEMDEF 09d5a]
+//sakkhra tribal banner
+DUPEITEM=09d59
+
+[ITEMDEF 09d5b]
+DEFNAME=i_banner_tribal_barrab
+NAME=barrab tribal banner
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (tribal)
+DESCRIPTION=Barrab Tribal Banner
+DUPELIST=09d5c
+
+[ITEMDEF 09d5c]
+//barrab tribal banner
+DUPEITEM=09d5b
+
+[ITEMDEF 09d5d]
+DEFNAME=i_banner_tribal_urali
+NAME=urali tribal banner
+FLIP=1
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Banners (tribal)
+DESCRIPTION=Urali Tribal Banner
+DUPELIST=09d5e
+
+[ITEMDEF 09d5e]
+//urali tribal banner
+DUPEITEM=09d5d
+
+
+[ITEMDEF 09da4]
+DEFNAME=i_trophy_wild_tigerhead
+NAME=wild tiger trophy
+FLIP=1
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Wild Tiger
+DUPELIST=09da5
+
+[ITEMDEF 09da5]
+//trophy wild tigerhead
+DUPEITEM=09da4
+
+[ITEMDEF 09da6]
+DEFNAME=i_trophy_myrmidex_dronehead
+NAME=myrmidex drone trophy
+FLIP=1
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Myrmidex Drone
+DUPELIST=09da7
+
+[ITEMDEF 09da7]
+//trophy myrmidex dronehead
+DUPEITEM=09da6
+
+[ITEMDEF 09da8]
+//decorative black widow trophy (multi-part)
+NAME=decorative black widow trophy
+
+[ITEMDEF 09da9]
+//decorative black widow trophy (multi-part)
+NAME=decorative black widow trophy
+
+[ITEMDEF 09daa]
+//decorative black widow trophy (multi-part)
+NAME=decorative black widow trophy
+
+[ITEMDEF 09dab]
+//decorative black widow trophy (multi-part)
+NAME=decorative black widow trophy
+
+
+[ITEMDEF 09f2b]
+DEFNAME=i_trophy_triceratopshead
+NAME=triceratops trophy
+FLIP=1
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Triceratops
+DUPELIST=09f2c
+
+[ITEMDEF 09f2c]
+//trophy triceratopshead
+DUPEITEM=09f2b
+
+[ITEMDEF 09f2d]
+DEFNAME=i_trophy_lionhead
+NAME=lion trophy
+FLIP=1
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Lion
+DUPELIST=09f2e
+
+[ITEMDEF 09f2e]
+//trophy lionhead
+DUPEITEM=09f2d
+
+[ITEMDEF 09f2f]
+DEFNAME=i_trophy_whitetigerhead
+NAME=tiger trophy
+FLIP=1
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Tiger (white)
+DUPELIST=09f30
+
+[ITEMDEF 09f30]
+//trophy whitetigerhead
+DUPEITEM=09f2f
+
+[ITEMDEF 09f31]
+DEFNAME=i_trophy_tigerhead
+NAME=tiger trophy
+FLIP=1
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Tiger
+DUPELIST=09f32
+
+[ITEMDEF 09f32]
+//trophy tigerhead
+DUPEITEM=09f31
+
+
+[ITEMDEF 0a1a0]
+DEFNAME=i_trophy_barracuda
+NAME=fish
+FLIP=1
+RESOURCES=1 i_trophy_mountboard_lg,1 i_fish_barracuda
+SKILLMAKE=Carpentry 72.0,Tailoring 60.0,t_carpentry,t_sewing_kit
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Barracuda
+DUPELIST=0a1a1
+
+[ITEMDEF 0a1a1]
+//fish
+DUPEITEM=0a1a0
+
+[ITEMDEF 0a1a2]
+DEFNAME=i_trophy_salmon
+NAME=fish
+FLIP=1
+RESOURCES=1 i_trophy_mountboard_lg,1 i_fish_salmon
+SKILLMAKE=Carpentry 72.0,Tailoring 60.0,t_carpentry,t_sewing_kit
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Salmon
+DUPELIST=0a1a3
+
+[ITEMDEF 0a1a3]
+//fish
+DUPEITEM=0a1a2
+
+
+[ITEMDEF 0a20c]
+DEFNAME=i_trophy_sea_serpent
+NAME=sea serpent trophy
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Sea Serpent Trophy
+
+[ITEMDEF 0a20d]
+DEFNAME=i_trophy_raptor
+NAME=raptor trophy
+FLIP=1
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Raptor
+DUPELIST=0a20e
+
+[ITEMDEF 0a20e]
+//trophy raptor
+DUPEITEM=0a20d
+
+[ITEMDEF 0a20f]
+DEFNAME=i_trophy_scorpion
+NAME=scorpion trophy
+FLIP=1
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Scorpion
+DUPELIST=0a210
+
+[ITEMDEF 0a210]
+//trophy scorpion
+DUPEITEM=0a20f
+
+[EOF]

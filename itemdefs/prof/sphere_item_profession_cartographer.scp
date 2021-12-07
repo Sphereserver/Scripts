@@ -1,0 +1,190 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2018
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Monday, Apr 9, 2018
+//
+VERSION=0.56d
+
+
+[ITEMDEF 01047]
+DEFNAME=i_globe
+FLIP=1
+WEIGHT=3.0
+RESOURCES=4 i_ingot_iron
+SKILLMAKE=Tinkering 55.0, t_tinker_tools
+CATEGORY=Items by Professions
+SUBSECTION=Cartographer
+DESCRIPTION=Globe
+DUPELIST=01048
+
+[ITEMDEF 01048]
+//globe
+DUPEITEM=01047
+
+
+[ITEMDEF 014eb]
+DEFNAME=i_map_blank
+NAME=blank map
+TYPE=t_map_blank
+FLIP=1
+VALUE=3
+WEIGHT=1.0
+CATEGORY=Items by Professions
+SUBSECTION=Cartographer
+DESCRIPTION=Map (Blank)
+DUPELIST=014ec
+
+[ITEMDEF 014ec]
+//map
+DUPEITEM=014eb
+
+[ITEMDEF 014ed]
+DEFNAME=i_map_rolled
+FLIP=1
+VALUE=3
+WEIGHT=1.0
+CATEGORY=Items by Professions
+SUBSECTION=Cartographer
+DESCRIPTION=Map (Rolled)
+DUPELIST=014ee
+
+[ITEMDEF 014ee]
+//rolled map
+DUPEITEM=014ed
+
+
+[ITEMDEF 02d73]
+DEFNAME=i_tattered_wall_map
+NAME=tattered wall map
+FLIP=1
+RESOURCES=10 i_ttm_l1, 5 i_ttm_l3, 3 i_ttm_l4, 1 i_ttm_l5
+SKILLMAKE=Cartography 90.0, t_cartography
+CATEGORY=Items by Professions
+SUBSECTION=Cartographer
+DESCRIPTION=Tattered Wall Map
+DUPELIST=02d74
+
+[ITEMDEF 02d74]
+//tattered wall map
+DUPEITEM=02d73
+
+
+[ITEMDEF 09d3c]
+DEFNAME=i_wall_map_eodon
+NAME=wall map of eodon
+TYPE=t_sign_gump
+TDATA2=0c34f
+FLIP=1
+RESOURCES=50 i_map_blank, 1 i_unabridged_atlas_eodon
+SKILLMAKE=Cartography 65.0, t_cartography
+CATEGORY=Items by Professions
+SUBSECTION=Cartographer
+DESCRIPTION=Wall Map of Eodon
+DUPELIST=09d3d
+
+[ITEMDEF 09d3d]
+//wall map of eodon
+DUPEITEM=09d3c
+
+
+[ITEMDEF i_mapmakers_pen]
+ID=i_pen_and_ink
+NAME=mapmaker's pen
+TYPE=t_cartography
+VALUE=7
+RESOURCES=1 i_ingot_iron
+SKILLMAKE=Tinkering 25.0, t_tinker_tools
+CATEGORY=Items by Professions
+SUBSECTION=Cartographer
+DESCRIPTION=Mapmaker's Pen
+ON=@Create
+   UsesMax={25 75}
+
+
+[ITEMDEF i_map_local]
+ID=i_map_blank
+NAME=local map
+TYPE=t_map
+VALUE=3
+RESOURCES=1 i_map_blank
+SKILLMAKE=Cartography 0.0, t_cartography
+CATEGORY=Items by Professions
+SUBSECTION=Cartographer
+DESCRIPTION=Local Map
+
+ON=@Create
+IF (<SRC>)
+ LOCAL.Radius=<eval 64+((<SRC.CARTOGRAPHY>*2)/10)>
+ MORE1=<eval ((<SRC.P.X>-<LOCAL.Radius>)*010000)+(<SRC.P.Y>-<LOCAL.Radius>)>
+ MORE2=<eval ((<SRC.P.X>+<LOCAL.Radius>)*010000)+(<SRC.P.Y>+<LOCAL.Radius>)>
+ENDIF
+
+
+[ITEMDEF i_map_city]
+ID=i_map_blank
+NAME=city map
+TYPE=t_map
+VALUE=3
+RESOURCES=1 i_map_blank
+SKILLMAKE=Cartography 25.0, t_cartography
+CATEGORY=Items by Professions
+SUBSECTION=Cartographer
+DESCRIPTION=City Map
+
+ON=@Create
+IF (<SRC>)
+ LOCAL.Radius=<eval 64+((<SRC.CARTOGRAPHY>*4)/10)>
+ IF (<LOCAL.Radius> < 200)
+  LOCAL.Radius=200
+ ENDIF
+ MORE1=<eval ((<SRC.P.X>-<LOCAL.Radius>)*010000)+(<SRC.P.Y>-<LOCAL.Radius>)>
+ MORE2=<eval ((<SRC.P.X>+<LOCAL.Radius>)*010000)+(<SRC.P.Y>+<LOCAL.Radius>)>
+ENDIF
+
+
+[ITEMDEF i_map_sea_chart]
+ID=i_map_blank
+NAME=sea chart map
+TYPE=t_map
+VALUE=3
+RESOURCES=1 i_map_blank
+SKILLMAKE=Cartography 35.0, t_cartography
+CATEGORY=Items by Professions
+SUBSECTION=Cartographer
+DESCRIPTION=Sea Chart Map
+
+ON=@Create
+IF (<SRC>)
+ LOCAL.Radius=<eval 64+<SRC.CARTOGRAPHY>>
+ IF (<LOCAL.Radius> < 200)
+  LOCAL.Radius=200
+ ENDIF
+ MORE1=<eval ((<SRC.P.X>-<LOCAL.Radius>)*010000)+(<SRC.P.Y>-<LOCAL.Radius>)>
+ MORE2=<eval ((<SRC.P.X>+<LOCAL.Radius>)*010000)+(<SRC.P.Y>+<LOCAL.Radius>)>
+ENDIF
+
+
+[ITEMDEF i_map_world]
+ID=i_map_blank
+NAME=world map
+TYPE=t_map
+VALUE=3
+RESOURCES=1 i_map_blank
+SKILLMAKE=Cartography 50.0, t_cartography
+CATEGORY=Items by Professions
+SUBSECTION=Cartographer
+DESCRIPTION=World Map
+
+ON=@Create
+IF (<SRC>)
+ LOCAL.Radius=<eval (<SRC.CARTOGRAPHY>*20)/10>
+ MORE2=<eval ((<SRC.P.X>+<LOCAL.Radius>)*010000)+(<SRC.P.Y>+<LOCAL.Radius>)>
+ENDIF
+
+[EOF]
