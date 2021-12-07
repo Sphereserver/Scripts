@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2017
+// SPHERE by : Menasoft ï¿½1997-2017
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -178,7 +178,7 @@ RECT=1397,1743,1410,1766,0
 RECT=1399,1622,1410,1629,0
 RECT=1377,1743,1397,1756,0	//West Bridge
 FLAGS=region_flag_nobuilding|region_flag_guarded
-EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
+EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass,r_townBritain
 TAG.GUARDOWNER=the city
 TAG.MUSIC=midi_britain1
 
@@ -252,7 +252,7 @@ RECT=2580,592,2628,646,0	//South houses
 RECT=2498,627,2567,690,0	//South camp
 RECT=2530,477,2620,550,0	//East mining camp
 FLAGS=region_flag_nobuilding|region_flag_guarded
-EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
+EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass,r_townMinoc
 TAG.GUARDOWNER=the town
 TAG.MUSIC=midi_minoc
 
@@ -698,7 +698,7 @@ RECT=4379,1176,4399,1181,0
 RECT=4439,1142,4489,1176,0
 RECT=4459,1176,4485,1184,0
 FLAGS=region_flag_nobuilding|region_flag_guarded
-EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
+EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass,r_townMoonglow
 TAG.GUARDOWNER=the town
 TAG.MUSIC=midi_moonglow
 

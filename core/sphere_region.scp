@@ -388,6 +388,10 @@ ENDIF
 
 // Cities regiontypes (a_townXXX)
 
+[REGIONTYPE r_townBritain]
+[REGIONTYPE r_townMinoc]
+[REGIONTYPE r_townMoonglow]
+
 
 
 [EOF]
