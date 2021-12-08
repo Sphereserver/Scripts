@@ -67,7 +67,7 @@ elseIf (<local.listtype>==<def0.GUILDDLG_LISTTYPE_ADMINCANDIDATES>)
   local.privtolist=<def.STONEPRIV_CANDIDATE>
   dhtmlgump 20 10 400 35 0 0 Accept or Refuse candidates for membership
   button 20 400 4005 4007 1 0 1
-  dhtmlgump 55 400 245 30 0 0 Accept
+  dhtmlgump 55 400 100 30 0 0 Accept
   button 300 400 4005 4007 1 0 2
   dhtmlgump 335 400 100 35 0 0 Refuse
 endif

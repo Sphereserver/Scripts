@@ -174,9 +174,11 @@ DESCRIPTION=Chaos Shield
 ReqStr=95
 CanUse=can_u_human|can_u_elf
 TEVENTS=t_equipitem
+
 ON=@Create
    ATTR=attr_magic
    HITPOINTS={128 154}
+
 //ON=@EquipTest
 //   IF (<SRC.ISGM>) || (<SRC.MEMORYFINDTYPE.memory_guild.link.align>==2)
 //      RETURN 0
@@ -210,9 +212,11 @@ ReqStr=95
 CanUse=can_u_human|can_u_elf
 TEVENTS=t_equipitem
 DUPELIST=01bc5
+
 ON=@Create
    ATTR=attr_magic
    HITPOINTS={128 154}
+
 //ON=@EquipTest
 //   IF (<src.isgm>) || (<src.memoryfindtype.memory_guild.link.align>==1)
 //      RETURN 0

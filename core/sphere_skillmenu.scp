@@ -9,7 +9,10 @@
 //****************************************************************************
 // FILE LAST UPDATED: Sunday, May 7, 2017
 //
-VERSION=0.56d
+VERSION=0.56x
+
+[DEFNAMES sphere_skillmenu]
+sm_cooking
 
 
 [COMMENT sphere_skillmenu]

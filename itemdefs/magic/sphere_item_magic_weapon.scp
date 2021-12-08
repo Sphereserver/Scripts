@@ -2331,4 +2331,172 @@ ATTR=attr_magic
 HITPOINTS={31 100}
 COLOR=color_magic_weap
 
+
+// i_staff_black
+
+[ITEMDEF i_staff_black_ruin]
+ID=i_staff_black
+NAME=Black Staff of Ruin
+RESOURCES=10 i_log, i_staff_black
+//INCREASEDAM=15
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Black Staff
+DESCRIPTION=Black Staff of Ruin
+
+ON=@Create
+MOREY=1.0
+ATTR=attr_magic
+HITPOINTS={31 100}
+COLOR=color_magic_weap
+
+[ITEMDEF i_staff_black_might]
+ID=i_staff_black
+NAME=Black Staff of Might
+RESOURCES=10 i_log, i_staff_black
+//INCREASEDAM=20
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Black Staff
+DESCRIPTION=Black Staff of Might
+
+ON=@Create
+MOREY=25.0
+ATTR=attr_magic
+HITPOINTS={31 100}
+COLOR=color_magic_weap
+
+[ITEMDEF i_staff_black_force]
+ID=i_staff_black
+NAME=Black Staff of Force
+RESOURCES=10 i_log, i_staff_black
+//INCREASEDAM=25
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Black Staff
+DESCRIPTION=Black Staff of Force
+
+ON=@Create
+MOREY=50.0
+ATTR=attr_magic
+HITPOINTS={31 100}
+COLOR=color_magic_weap
+
+[ITEMDEF i_staff_black_power]
+ID=i_staff_black
+NAME=Black Staff of Power
+RESOURCES=10 i_log, i_staff_black
+//INCREASEDAM=30
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Black Staff
+DESCRIPTION=Black Staff of Power
+
+ON=@Create
+MOREY=75.0
+ATTR=attr_magic
+HITPOINTS={31 100}
+COLOR=color_magic_weap
+
+[ITEMDEF i_staff_black_vanq]
+ID=i_staff_black
+NAME=Black Staff of Vanquishing
+RESOURCES=10 i_log, i_staff_black
+//INCREASEDAM=35
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Black Staff
+DESCRIPTION=Black Staff of Vanquishing
+
+ON=@Create
+MOREY=100.0
+ATTR=attr_magic
+HITPOINTS={31 100}
+COLOR=color_magic_weap
+
+
+
+
+// i_scythe
+
+[ITEMDEF i_scythe_ruin]
+ID=i_scythe
+NAME=Scythe of Ruin
+RESOURCES=10 i_log, i_scythe
+//INCREASEDAM=15
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Scythe
+DESCRIPTION=Scythe of Ruin
+
+ON=@Create
+MOREY=1.0
+ATTR=attr_magic
+HITPOINTS={31 100}
+COLOR=color_magic_weap
+
+[ITEMDEF i_scythe_might]
+ID=i_scythe
+NAME=Scythe of Might
+RESOURCES=10 i_log, i_scythe
+//INCREASEDAM=20
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Scythe
+DESCRIPTION=Scythe of Might
+
+ON=@Create
+MOREY=25.0
+ATTR=attr_magic
+HITPOINTS={31 100}
+COLOR=color_magic_weap
+
+[ITEMDEF i_scythe_force]
+ID=i_scythe
+NAME=Scythe of Force
+RESOURCES=10 i_log, i_scythe
+//INCREASEDAM=25
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Scythe
+DESCRIPTION=Scythe of Force
+
+ON=@Create
+MOREY=50.0
+ATTR=attr_magic
+HITPOINTS={31 100}
+COLOR=color_magic_weap
+
+[ITEMDEF i_scythe_power]
+ID=i_scythe
+NAME=Scythe of Power
+RESOURCES=10 i_log, i_scythe
+//INCREASEDAM=30
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Scythe
+DESCRIPTION=Scythe of Power
+
+ON=@Create
+MOREY=75.0
+ATTR=attr_magic
+HITPOINTS={31 100}
+COLOR=color_magic_weap
+
+[ITEMDEF i_scythe_vanq]
+ID=i_scythe
+NAME=Scythe of Vanquishing
+RESOURCES=10 i_log, i_scythe
+//INCREASEDAM=35
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Scythe
+DESCRIPTION=Scythe of Vanquishing
+
+ON=@Create
+MOREY=100.0
+ATTR=attr_magic
+HITPOINTS={31 100}
+COLOR=color_magic_weap
+
 [EOF]

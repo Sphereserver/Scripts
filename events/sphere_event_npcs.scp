@@ -14,12 +14,23 @@ VERSION=0.56d
 // All Monsters Event
 [EVENTS e_monsters]
 
+
 // All Animals Event
 [EVENTS e_animals]
 
+
+// All Mountable Animals Event
+[EVENTS e_mountables]
+ON=@CLICK
+IF (<OWNER>)
+MESSAGE (<OWNER.NAME>)
+ENDIF
+
 // All Vendors Event
 [EVENTS e_vendors]
-
+ON=@CLICK
+MESSAGE <JOB> <NAME>
+RETURN 1
 
 [EVENTS e_Undead]
 ON=@EnvironChange

@@ -12,3 +12,7 @@
 VERSION=0.56x
 
 [EVENTS ei_items]
+ON=@CLICK
+IF (<ACT.ATTR>&ATTR_NEWBIE)
+ACT.MESSAGE [newbified]
+ENDIF
