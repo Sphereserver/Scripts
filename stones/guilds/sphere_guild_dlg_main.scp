@@ -70,7 +70,7 @@ else
   dhtmlgump 55 310 240 30 0 0 Reserved for guildmaster.
 endif
 
-dhtmlgump 55 360 470 30 0 0 EXIT
+dhtmlgump 55 360 80 30 0 0 EXIT
   button 20 360 4005 4007 1 0 0
 
 

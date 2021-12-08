@@ -47,9 +47,9 @@ elif ( <local.listtype>==<def0.GUILDDLG_LISTTYPE_G_REJECTWAR> )
   dhtmlgump 55 400 245 30 0 0 Reject war invitations.
 elif ( <local.listtype>==<def0.GUILDDLG_LISTTYPE_G_RESCIND> )
   local.privtolist=<def0.STONEPRIV_WEDECLARED>
-  dhtmlgump 20 10 400 25 0 0 Select the guild to rescind our invitations: 
+  dhtmlgump 20 10 200 25 0 0 Select the guild to rescind our invitations: 
   button 20 400 4005 4007 1 0 1
-  dhtmlgump 55 400 245 30 0 0 Rescind your war declarations.
+  dhtmlgump 55 400 150 30 0 0 Rescind your war declarations.
 endif
   
 button 300 400 4005 4007 1 0 0

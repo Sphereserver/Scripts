@@ -1,0 +1,4553 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2019
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Thursday, Sept 26, 2019
+//
+VERSION=0.56d
+
+
+[ITEMDEF 0459]
+DEFNAME=i_bench_marble
+FLIP=1
+VALUE=60
+WEIGHT=100.0
+RESOURCES=10 i_rock_marble
+SKILLMAKE=Carpentry 25.0,t_masonry_tool
+CATEGORY=Decoration - Furniture
+SUBSECTION=Chairs
+DESCRIPTION=Bench (Marble)
+DUPELIST=045a
+
+[ITEMDEF 045a]
+//Bench (Marble)
+DUPEITEM=0459
+
+[ITEMDEF 045b]
+DEFNAME=i_bench_sandstone
+FLIP=1
+VALUE=60
+WEIGHT=100.0
+RESOURCES=10 i_rock_sandstone
+SKILLMAKE=Carpentry 25.0,t_masonry_tool
+CATEGORY=Decoration - Furniture
+SUBSECTION=Chairs
+DESCRIPTION=Bench (Sandstone)
+DUPELIST=045c
+
+[ITEMDEF 045c]
+//Bench (Sandstone)
+DUPEITEM=045b
+
+
+[ITEMDEF 0a2a]
+DEFNAME=i_chair_stool_bar
+VALUE=13
+WEIGHT=9.1
+RESOURCES=9 i_board,1 i_nails
+SKILLMAKE=Carpentry 11.0,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Chairs
+DESCRIPTION=Barstool (Cross Bars)
+
+[ITEMDEF 0a2b]
+DEFNAME=i_chair_stool
+FLIP=1
+VALUE=11
+WEIGHT=7.1
+RESOURCES=7 i_board,1 i_nails
+SKILLMAKE=Carpentry 11.0,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Chairs
+DESCRIPTION=Barstool
+DUPELIST=0b5e
+
+[ITEMDEF 0a2c]
+DEFNAME=i_bureau
+TYPE=t_container
+TDATA2=051
+FLIP=1
+VALUE=102
+WEIGHT=21.6
+RESOURCES=5 i_board,10 i_nails,3 i_drawer
+SKILLMAKE=Carpentry 76.3,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Chest of Drawers (Light Wood)
+DUPELIST=0a34
+
+[ITEMDEF 0a2d]
+DEFNAME=i_drawer
+NAME=bureau drawer
+TYPE=t_container
+//TDATA2=051
+TDATA2=0106
+FLIP=1
+VALUE=20
+WEIGHT=5.2
+RESOURCES=5 i_board,2 i_nails
+SKILLMAKE=Carpentry 68.9,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Drawer (Light Wood)
+DUPELIST=0a2e,0a2f,0a35,0a36,0a37
+
+[ITEMDEF 0a2e]
+//drawer
+DUPEITEM=0a2d
+
+[ITEMDEF 0a2f]
+//drawer
+DUPEITEM=0a2d
+
+[ITEMDEF 0a30]
+DEFNAME=i_bureau_2
+TYPE=t_container
+TDATA2=048
+FLIP=1
+VALUE=105
+WEIGHT=26.6
+RESOURCES=25 i_log
+SKILLMAKE=Carpentry 85.0,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Chest of Drawers (Dark Wood) (SW)
+DUPELIST=0a38
+
+[ITEMDEF 0a31]
+DEFNAME=i_drawer_2
+NAME=cherry bureau drawer
+TYPE=t_container
+//TDATA2=048
+TDATA2=0105
+FLIP=1
+VALUE=21
+WEIGHT=5.2
+RESOURCES=5 i_board,2 i_nails
+SKILLMAKE=Carpentry 81.2,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Drawer (Dark Wood)
+DUPELIST=0a32,0a33,0a39,0a3a,0a3b
+
+[ITEMDEF 0a32]
+//drawer 2
+DUPEITEM=0a31
+
+[ITEMDEF 0a33]
+//drawer 2
+DUPEITEM=0a31
+
+[ITEMDEF 0a34]
+//bureau
+DUPEITEM=0a2c
+
+[ITEMDEF 0a35]
+//drawer
+DUPEITEM=0a2d
+
+[ITEMDEF 0a36]
+//drawer
+DUPEITEM=0a2d
+
+[ITEMDEF 0a37]
+//drawer
+DUPEITEM=0a2d
+
+[ITEMDEF 0a38]
+//bureau 2
+DUPEITEM=0a30
+
+[ITEMDEF 0a39]
+//drawer 2
+DUPEITEM=0a31
+
+[ITEMDEF 0a3a]
+//drawer 2
+DUPEITEM=0a31
+
+[ITEMDEF 0a3b]
+//drawer 2
+DUPEITEM=0a31
+
+[ITEMDEF 0a3c]
+DEFNAME=i_dresser
+NAME=vanity dresser
+TYPE=t_container
+TDATA2=051
+FLIP=1
+VALUE=193
+WEIGHT=28.9
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Dresser (Vanity)
+DUPELIST=0a3d,0a44,0a45
+
+[ITEMDEF 0a3d]
+//vanity dresser
+DUPEITEM=0a3c
+
+[ITEMDEF 0a3e]
+DEFNAME=i_dresser_drawer
+NAME=vanity dresser drawer
+TYPE=t_container
+TDATA2=051
+FLIP=1
+VALUE=20
+WEIGHT=2.2
+RESOURCES=2 i_board,2 i_nails
+SKILLMAKE=Carpentry 71.6,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Drawer (Vanity)
+DUPELIST=0a3f,0a40,0a41,0a42,0a43,0a46,0a47,0a48,0a49,0a4a,0a4b
+
+[ITEMDEF 0a3f]
+//vanity dresser drawer
+DUPEITEM=0a3e
+
+[ITEMDEF 0a40]
+//vanity dresser drawer
+DUPEITEM=0a3e
+
+[ITEMDEF 0a41]
+//vanity dresser drawer
+DUPEITEM=0a3e
+
+[ITEMDEF 0a42]
+//vanity dresser drawer
+DUPEITEM=0a3e
+
+[ITEMDEF 0a43]
+//vanity dresser drawer
+DUPEITEM=0a3e
+
+[ITEMDEF 0a44]
+//vanity dresser
+DUPEITEM=0a3c
+
+[ITEMDEF 0a45]
+//vanity dresser
+DUPEITEM=0a3c
+
+[ITEMDEF 0a46]
+//vanity dresser drawer
+DUPEITEM=0a3e
+
+[ITEMDEF 0a47]
+//vanity dresser drawer
+DUPEITEM=0a3e
+
+[ITEMDEF 0a48]
+//vanity dresser drawer
+DUPEITEM=0a3e
+
+[ITEMDEF 0a49]
+//vanity dresser drawer
+DUPEITEM=0a3e
+
+[ITEMDEF 0a4a]
+//vanity dresser drawer
+DUPEITEM=0a3e
+
+[ITEMDEF 0a4b]
+//vanity dresser drawer
+DUPEITEM=0a3e
+
+[ITEMDEF 0a4c]
+//dark armoire (open)
+DUPELIST=0a50
+
+[ITEMDEF 0a4d]
+//dark armoire (closed)
+DEFNAME=i_armoir_lt
+TYPE=t_container
+TDATA2=04e
+FLIP=1
+VALUE=128
+WEIGHT=36.0
+RESOURCES=35 i_board,6 i_nails,4 i_hinge
+SKILLMAKE=Carpentry 84.2,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Cabinetry
+DESCRIPTION=Dark Armoire
+DUPELIST=0a51
+//to-do: change to DISPID=0a4c when opened
+
+[ITEMDEF 0a4e]
+//armoire (open)
+DUPELIST=0a52
+
+[ITEMDEF 0a4f]
+//armoire (closed)
+DEFNAME=i_armoir_dk
+TYPE=t_container
+TDATA2=04f
+FLIP=1
+WEIGHT=25
+RESOURCES=35 i_log
+SKILLMAKE=CARPENTRY 84.2, t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Cabinetry
+DESCRIPTION=Armoire
+DUPELIST=0a53
+//to-do: change to DISPID=0a4e when opened
+
+[ITEMDEF 0a50]
+//dark armoire (open)
+DUPELIST=0a4c
+
+[ITEMDEF 0a51]
+//dark armoire (closed)
+DUPEITEM=0a4d
+//to-do: change to DISPID=0a50 when opened
+
+[ITEMDEF 0a52]
+//armoire (open)
+DUPEITEM=0a4e
+
+[ITEMDEF 0a53]
+//armoire (closed)
+DUPEITEM=0a4f
+//to-do: change to DISPID=0a52 when opened
+
+[ITEMDEF 0a55]
+DEFNAME=i_bedroll
+TYPE=t_bedroll
+FLIP=1
+VALUE=95
+WEIGHT=12.5
+CATEGORY=Decoration - Furniture
+SUBSECTION=Beds
+DESCRIPTION=Bed Roll (Unrolled)
+DUPELIST=0a56
+
+[ITEMDEF 0a56]
+//bedroll
+DUPEITEM=0a55
+
+[ITEMDEF 0a57]
+DEFNAME=i_bedroll_2
+TYPE=t_bedroll
+FLIP=1
+WEIGHT=12.5
+RESOURCES=1 i_bedroll
+CATEGORY=Decoration - Furniture
+SUBSECTION=Beds
+DESCRIPTION=Bedroll (Rolled Up)
+DUPELIST=0a58,0a59
+
+[ITEMDEF 0a58]
+//bedroll
+DUPEITEM=0a57
+
+[ITEMDEF 0a59]
+//bedroll
+DUPEITEM=0a57
+
+[ITEMDEF 0a5a]
+DEFNAME=i_bed_small_unmade
+NAME=small unmade bed
+TDATA1=0
+FLIP=1
+VALUE=183
+WEIGHT=43.5
+RESOURCES=30 i_board,10 i_nails,1 i_bedroll
+SKILLMAKE=Carpentry 81.3,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Beds
+DESCRIPTION=Small Bed (unmade)
+DUPELIST=0a5b
+
+[ITEMDEF 0a5b]
+//small bed (unmade)
+DUPEITEM=0a5a
+
+[ITEMDEF 0a5c]
+DEFNAME=i_bed_small_made
+NAME=small bed
+TDATA1=0
+FLIP=1
+VALUE=301
+WEIGHT=64.0
+RESOURCES=1 i_bed_small_sheet,1 i_blanket,1 i_pillow_11
+SKILLMAKE=Carpentry 81.3,Tailoring 35.0,t_carpentry,t_sewing_kit
+CATEGORY=Decoration - Furniture
+SUBSECTION=Beds
+DESCRIPTION=Small Bed (made)
+DUPELIST=0a5d,0a62,0a63,0a66,0a67,0a68,0a69,0a6a,0a6b
+
+[ITEMDEF 0a5d]
+//small bed (made)
+DUPEITEM=0a5c
+
+[ITEMDEF 0a5e]
+DEFNAME=i_bed_small_sheet
+NAME=small bed with sheets
+TDATA1=0
+FLIP=1
+VALUE=223
+WEIGHT=48.5
+RESOURCES=1 i_bed_small_unmade,1 i_sheet
+SKILLMAKE=Carpentry 81.3,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Beds
+DESCRIPTION=Small Bed (sheet only)
+DUPELIST=0a5f,0a60,0a61
+
+[ITEMDEF 0a5f]
+//small bed (sheet only)
+DUPEITEM=0a5e
+
+[ITEMDEF 0a60]
+//small bed (sheet only)
+DUPEITEM=0a5e
+
+[ITEMDEF 0a61]
+//small bed (sheet only)
+DUPEITEM=0a5e
+
+[ITEMDEF 0a62]
+//small bed (made)
+DUPEITEM=0a5c
+
+[ITEMDEF 0a63]
+//small bed (made)
+DUPEITEM=0a5c
+
+[ITEMDEF 0a64]
+//brown bed (duplicate of 0a5a)
+DEFNAME=i_bed_small_unmade_2
+NAME=small unmade bed
+TDATA1=0
+FLIP=1
+VALUE=183
+WEIGHT=37.1
+RESOURCES=30 i_board,1 i_bedroll,10 i_nails,1 i_cloth
+SKILLMAKE=Carpentry 81.3,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Beds
+DESCRIPTION=Small Bed (unmade duplicate)
+DUPELIST=0a65
+
+[ITEMDEF 0a65]
+//small bed (unmade duplicate)
+DUPEITEM=0a64
+
+[ITEMDEF 0a66]
+//small bed (made)
+DUPEITEM=0a5c
+
+[ITEMDEF 0a67]
+//small bed (made)
+DUPEITEM=0a5c
+
+[ITEMDEF 0a68]
+//small bed (made)
+DUPEITEM=0a5c
+
+[ITEMDEF 0a69]
+//small bed (made)
+DUPEITEM=0a5c
+
+[ITEMDEF 0a6a]
+//small bed (made)
+DUPEITEM=0a5c
+
+[ITEMDEF 0a6b]
+//small bed (made)
+DUPEITEM=0a5c
+
+[ITEMDEF 0a6c]
+DEFNAME=i_blanket
+NAME=folded blanket
+DYE=1
+FLIP=1
+VALUE=50
+WEIGHT=12.5
+RESOURCES=10 i_cloth,2 i_wool,5 i_thread
+SKILLMAKE=Tailoring 35.0,t_sewing_kit
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedding
+DESCRIPTION=Folded Blanket
+DUPELIST=0a6d,0a6e,0a6f
+
+[ITEMDEF 0a6d]
+//folded blanket
+DUPEITEM=0a6c
+
+[ITEMDEF 0a6e]
+//folded blanket
+DUPEITEM=0a6c
+
+[ITEMDEF 0a6f]
+//folded blanket
+DUPEITEM=0a6c
+
+[ITEMDEF 0a70]
+DEFNAME=i_bed_large_unmade
+NAME=large unmade bed
+TDATA1=0
+DYE=1
+FLIP=1
+VALUE=560
+WEIGHT=149.5
+RESOURCES=120 i_board,15 i_cloth,20 i_nails,2 i_bedroll
+SKILLMAKE=Carpentry 94.7,Tailoring 75.0,t_carpentry,t_sewing_kit
+CATEGORY=Decoration - Furniture
+SUBSECTION=Beds
+DESCRIPTION=Large Bed (unmade)
+DUPELIST=0a71,0a72,0a73,0a74,0a75,0a76,0a77
+
+[ITEMDEF 0a71]
+//large unmade bed
+DUPEITEM=0a70
+
+[ITEMDEF 0a72]
+//large unmade bed
+DUPEITEM=0a70
+
+[ITEMDEF 0a73]
+//large unmade bed
+DUPEITEM=0a70
+
+[ITEMDEF 0a74]
+//large unmade bed
+DUPEITEM=0a70
+
+[ITEMDEF 0a75]
+//large unmade bed
+DUPEITEM=0a70
+
+[ITEMDEF 0a76]
+//large unmade bed
+DUPEITEM=0a70
+
+[ITEMDEF 0a77]
+//large unmade bed
+DUPEITEM=0a70
+
+[ITEMDEF 0a78]
+DEFNAME=i_bed_large_made
+NAME=large bed
+TDATA1=0
+DYE=1
+FLIP=1
+VALUE=650
+WEIGHT=191.0
+RESOURCES=1 i_bed_large_sheet,2 i_blanket,2 i_pillow_11
+SKILLMAKE=Carpentry 94.7,Tailoring 75.0,t_carpentry,t_sewing_kit
+CATEGORY=Decoration - Furniture
+SUBSECTION=Beds
+DESCRIPTION=Large Bed (made)
+DUPELIST=0a79,0a7a,0a7b,0a7c,0a7d,0a7e,0a7f,0a80,0a81,0a82,0a83,0a8c,0a8d,0a8e,0a8f,0a90,0a91,0db0,0db1,0db2,0db3,0db4,0db5
+
+[ITEMDEF 0a79]
+//large made bed
+DUPEITEM=0a78
+
+[ITEMDEF 0a7a]
+//large made bed
+DUPEITEM=0a78
+
+[ITEMDEF 0a7b]
+//large made bed
+DUPEITEM=0a78
+
+[ITEMDEF 0a7c]
+//large made bed
+DUPEITEM=0a78
+
+[ITEMDEF 0a7d]
+//large made bed
+DUPEITEM=0a78
+
+[ITEMDEF 0a7e]
+//large made bed
+DUPEITEM=0a78
+
+[ITEMDEF 0a7f]
+//large made bed
+DUPEITEM=0a78
+
+[ITEMDEF 0a80]
+//large made bed
+DUPEITEM=0a78
+
+[ITEMDEF 0a81]
+//large made bed
+DUPEITEM=0a78
+
+[ITEMDEF 0a82]
+//large made bed
+DUPEITEM=0a78
+
+[ITEMDEF 0a83]
+//large made bed
+DUPEITEM=0a78
+
+[ITEMDEF 0a84]
+DEFNAME=i_bed_large_sheet
+NAME=large bed with sheets
+TDATA1=0
+DYE=1
+FLIP=1
+VALUE=600
+WEIGHT=160.0
+RESOURCES=1 i_bed_large_unmade,2 i_sheet
+SKILLMAKE=Carpentry 94.7,Tailoring 75.0,t_carpentry,t_sewing_kit
+CATEGORY=Decoration - Furniture
+SUBSECTION=Beds
+DESCRIPTION=Large Bed (sheet only)
+DUPELIST=0a85,0a86,0a87,0a88,0a89,0a8a,0a8b
+
+[ITEMDEF 0a85]
+//large bed (sheet only)
+DUPEITEM=0a84
+
+[ITEMDEF 0a86]
+//large bed (sheet only)
+DUPEITEM=0a84
+
+[ITEMDEF 0a87]
+//large bed (sheet only)
+DUPEITEM=0a84
+
+[ITEMDEF 0a88]
+//large bed (sheet only)
+DUPEITEM=0a84
+
+[ITEMDEF 0a89]
+//large bed (sheet only)
+DUPEITEM=0a84
+
+[ITEMDEF 0a8a]
+//large bed (sheet only)
+DUPEITEM=0a84
+
+[ITEMDEF 0a8b]
+//large bed (sheet only)
+DUPEITEM=0a84
+
+[ITEMDEF 0a8c]
+//large made bed
+DUPEITEM=0a78
+
+[ITEMDEF 0a8d]
+//large made bed
+DUPEITEM=0a78
+
+[ITEMDEF 0a8e]
+//large made bed
+DUPEITEM=0a78
+
+[ITEMDEF 0a8f]
+//large made bed
+DUPEITEM=0a78
+
+[ITEMDEF 0a90]
+//large made bed
+DUPEITEM=0a78
+
+[ITEMDEF 0a91]
+//large made bed
+DUPEITEM=0a78
+
+[ITEMDEF 0a92]
+DEFNAME=i_sheet
+NAME=folded sheet
+DYE=1
+FLIP=1
+VALUE=32
+WEIGHT=5.5
+RESOURCES=5 i_cloth,5 i_thread
+SKILLMAKE=Tailoring 35.0,t_sewing_kit
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedding
+DESCRIPTION=Folded Sheet
+DUPELIST=0a93,0a94,0a95
+
+[ITEMDEF 0a93]
+//folded sheet
+DUPEITEM=0a92
+
+[ITEMDEF 0a94]
+//folded sheet
+DUPEITEM=0a92
+
+[ITEMDEF 0a95]
+//folded sheet
+DUPEITEM=0a92
+
+[ITEMDEF 0a97]
+DEFNAME=i_bookcase_full
+TYPE=t_container
+TDATA2=04d
+FLIP=1
+VALUE=140
+WEIGHT=94.2
+RESOURCES=25 i_log, 20 i_book_sm
+SKILLMAKE=Carpentry 31.5,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bookcases
+DESCRIPTION=Bookcase (Dark Wood) (Full)
+DUPELIST=0a98,0a99,0a9a,0a9b,0a9c
+
+[ITEMDEF 0a98]
+//bookcase
+DUPEITEM=0a97
+
+[ITEMDEF 0a99]
+//bookcase
+DUPEITEM=0a97
+
+[ITEMDEF 0a9a]
+//bookcase
+DUPEITEM=0a97
+
+[ITEMDEF 0a9b]
+//bookcase
+DUPEITEM=0a97
+
+[ITEMDEF 0a9c]
+//bookcase
+DUPEITEM=0a97
+
+[ITEMDEF 0a9d]
+DEFNAME=i_bookcase
+TYPE=t_container
+TDATA2=04d
+FLIP=1
+VALUE=35
+WEIGHT=24.2
+RESOURCES=25 i_log
+SKILLMAKE=Carpentry 31.5, t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bookcases
+DESCRIPTION=Bookcase (Dark Wood) (Empty)
+DUPELIST=0a9e
+
+[ITEMDEF 0a9e]
+//bookcase
+DUPEITEM=0a9d
+
+[ITEMDEF 0a9f]
+DEFNAME=i_displaycase_rail_custom_edge
+CATEGORY=Decoration - Furniture
+SUBSECTION=Display Case
+DESCRIPTION=Display Case
+DUPELIST=0aa0,0aa1,0aa2
+
+[ITEMDEF 0aa0]
+//displaycase
+DUPEITEM=0a9f
+
+[ITEMDEF 0aa1]
+//displaycase
+DUPEITEM=0a9f
+
+[ITEMDEF 0aa2]
+//displaycase
+DUPEITEM=0a9f
+
+[ITEMDEF 0aa3]
+DEFNAME=i_displaycase_rail_custom_corner
+CATEGORY=Decoration - Furniture
+SUBSECTION=Display Case
+DESCRIPTION=Display Case
+DUPELIST=0aa4,0aa5,0b18
+
+[ITEMDEF 0aa4]
+//displaycase
+DUPEITEM=0aa3
+
+[ITEMDEF 0aa5]
+//displaycase
+DUPEITEM=0aa3
+
+[ITEMDEF 0afd]
+DEFNAME=i_displaycase_rail_long_end
+CATEGORY=Decoration - Furniture
+SUBSECTION=Display Case
+DESCRIPTION=Display Case
+DUPELIST=0aff,0b03,0b05
+
+[ITEMDEF 0afe]
+DEFNAME=i_displaycase_rail_long_center
+CATEGORY=Decoration - Furniture
+SUBSECTION=Display Case
+DESCRIPTION=Display Case
+DUPELIST=0b04
+
+[ITEMDEF 0aff]
+//displaycase
+DUPEITEM=0afd
+
+[ITEMDEF 0b00]
+DEFNAME=i_displaycase_base_long_end
+WEIGHT=27.2
+RESOURCES=25 i_board,2 i_nails,2 i_cloth
+CATEGORY=Decoration - Furniture
+SUBSECTION=Display Case
+DESCRIPTION=Display Case
+DUPELIST=0b02,0b06,0b08
+
+[ITEMDEF 0b01]
+DEFNAME=i_displaycase_base_long_center
+WEIGHT=27.2
+RESOURCES=25 i_board,2 i_nails,2 i_cloth
+CATEGORY=Decoration - Furniture
+SUBSECTION=Display Case
+DESCRIPTION=Display Case
+DUPELIST=0b07
+
+[ITEMDEF 0b02]
+//displaycase
+DUPEITEM=0b00
+
+[ITEMDEF 0b03]
+//displaycase
+DUPEITEM=0afd
+
+[ITEMDEF 0b04]
+//displaycase
+DUPEITEM=0afe
+
+[ITEMDEF 0b05]
+//displaycase
+DUPEITEM=0afd
+
+[ITEMDEF 0b06]
+//displaycase
+DUPEITEM=0b00
+
+[ITEMDEF 0b07]
+//displaycase
+DUPEITEM=0b01
+
+[ITEMDEF 0b08]
+//displaycase
+DUPEITEM=0b00
+
+[ITEMDEF 0b09]
+DEFNAME=i_displaycase_1_base
+WEIGHT=27.2
+RESOURCES=25 i_board,2 i_nails,2 i_cloth
+CATEGORY=Decoration - Furniture
+SUBSECTION=Display Case
+DESCRIPTION=Display Case
+DUPELIST=0b0a
+
+[ITEMDEF 0b0a]
+//displaycase
+DUPEITEM=0b09
+
+[ITEMDEF 0b0b]
+DEFNAME=i_displaycase_1_rail
+CATEGORY=Decoration - Furniture
+SUBSECTION=Display Case
+DESCRIPTION=Display Case
+DUPELIST=0b0c
+
+[ITEMDEF 0b0c]
+//displaycase
+DUPEITEM=0b0b
+
+[ITEMDEF 0b0d]
+DEFNAME=i_displaycase_2_base
+WEIGHT=27.2
+RESOURCES=25 i_board,2 i_nails,2 i_cloth
+CATEGORY=Decoration - Furniture
+SUBSECTION=Display Case
+DESCRIPTION=Display Case
+DUPELIST=0b0e
+
+[ITEMDEF 0b0e]
+//displaycase
+DUPEITEM=0b0d
+
+[ITEMDEF 0b0f]
+DEFNAME=i_displaycase_base_custom_block
+WEIGHT=27.2
+RESOURCES=25 i_board,2 i_nails,2 i_cloth
+CATEGORY=Decoration - Furniture
+SUBSECTION=Display Case
+DESCRIPTION=Display Case
+
+[ITEMDEF 0b10]
+DEFNAME=i_displaycase_base_custom_corner
+WEIGHT=27.2
+RESOURCES=25 i_board,2 i_nails,2 i_cloth
+CATEGORY=Decoration - Furniture
+SUBSECTION=Display Case
+DESCRIPTION=Display Case
+DUPELIST=0b11,0b12,0b13
+
+[ITEMDEF 0b11]
+//displaycase
+DUPEITEM=0b10
+
+[ITEMDEF 0b12]
+//displaycase
+DUPEITEM=0b10
+
+[ITEMDEF 0b13]
+//displaycase
+DUPEITEM=0b10
+
+[ITEMDEF 0b14]
+DEFNAME=i_displaycase_base_custom_edge
+WEIGHT=27.2
+RESOURCES=25 i_board,2 i_nails,2 i_cloth
+CATEGORY=Decoration - Furniture
+SUBSECTION=Display Case
+DESCRIPTION=Display Case
+DUPELIST=0b15,0b16,0b17
+
+[ITEMDEF 0b15]
+//displaycase
+DUPEITEM=0b14
+
+[ITEMDEF 0b16]
+//displaycase
+DUPEITEM=0b14
+
+[ITEMDEF 0b17]
+//displaycase
+DUPEITEM=0b14
+
+[ITEMDEF 0b18]
+//displaycase
+DUPEITEM=0aa3
+
+[ITEMDEF 0b2c]
+DEFNAME=i_bench_wood_dark
+FLIP=1
+VALUE=32
+WEIGHT=17.4
+RESOURCES=17 i_board,4 i_nails
+SKILLMAKE=Carpentry 52.6,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Chairs
+DESCRIPTION=Bench (Dark Wood)
+DUPELIST=0b2d
+
+[ITEMDEF 0b2d]
+//Bench (Dark Wood)
+DUPEITEM=0b2c
+
+[ITEMDEF 0b2e]
+DEFNAME=i_chair_wood_rough_dark
+FLIP=1
+VALUE=28
+WEIGHT=17.4
+RESOURCES=17 i_board,4 i_nails
+SKILLMAKE=Carpentry 25.0,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Chairs
+DESCRIPTION=Wooden Chair (Dark)
+DUPELIST=0b2f,0b30,0b31
+
+[ITEMDEF 0b2f]
+//Wooden Chair (Dark)
+DUPEITEM=0b2e
+
+[ITEMDEF 0b30]
+//Wooden Chair (Dark)
+DUPEITEM=0b2e
+
+[ITEMDEF 0b31]
+//Wooden Chair (Dark)
+DUPEITEM=0b2e
+
+[ITEMDEF 0b32]
+DEFNAME=i_chair_throne
+FLIP=1
+VALUE=79
+WEIGHT=48.5
+RESOURCES=20 i_board,4 i_cloth,4 i_cotton,1 i_nails,4 i_ingot_gold
+SKILLMAKE=Carpentry 52.6,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Chairs
+DESCRIPTION=Throne
+DUPELIST=0b33
+
+[ITEMDEF 0b33]
+// chair - throne - W
+DUPEITEM=0b32
+
+[ITEMDEF 0b34]
+DEFNAME=i_table_nightstand
+FLIP=1
+VALUE=29
+WEIGHT=17.4
+RESOURCES=17 i_board,4 i_nails
+SKILLMAKE=Carpentry 42.1,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Tables
+DESCRIPTION=Nightstand (end piece)
+DUPELIST=0b35,0b36,0b37,0b38,0b39,0b3a,0b3c
+
+[ITEMDEF 0b35]
+//nightstand
+DUPEITEM=0b34
+
+[ITEMDEF 0b36]
+//nightstand
+DUPEITEM=0b34
+
+[ITEMDEF 0b37]
+//nightstand
+DUPEITEM=0b34
+
+[ITEMDEF 0b38]
+//nightstand
+DUPEITEM=0b34
+
+[ITEMDEF 0b39]
+//nightstand
+DUPEITEM=0b34
+
+[ITEMDEF 0b3a]
+//nightstand
+DUPEITEM=0b34
+
+[ITEMDEF 0b3c]
+//nightstand
+DUPEITEM=0b34
+
+[ITEMDEF 0b3d]
+DEFNAME=i_table_counter
+FLIP=1
+VALUE=32
+WEIGHT=10.4
+RESOURCES=10 i_board,4 i_nails
+SKILLMAKE=Carpentry 41.1,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Tables
+DESCRIPTION=Counter
+DUPELIST=0b3e,0b3f,0b40
+
+[ITEMDEF 0b3e]
+//counter
+DUPEITEM=0b3d
+
+[ITEMDEF 0b3f]
+//counter
+DUPEITEM=0b3d
+
+[ITEMDEF 0b40]
+//counter
+DUPEITEM=0b3d
+
+[ITEMDEF 0b49]
+DEFNAME=i_table_writing
+FLIP=1
+VALUE=60
+WEIGHT=26.2
+RESOURCES=26 i_board,2 i_nails
+SKILLMAKE=Carpentry 63.1,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Tables
+DESCRIPTION=Writing Table
+DUPELIST=0b4a,0b4b,0b4c
+
+[ITEMDEF 0b4a]
+//writing table
+DUPEITEM=0b49
+
+[ITEMDEF 0b4b]
+//writing table
+DUPEITEM=0b49
+
+[ITEMDEF 0b4c]
+//writing table
+DUPEITEM=0b49
+
+[ITEMDEF 0b4e]
+DEFNAME=i_chair_wood_fancy_cushion
+DYE=1
+FLIP=1
+VALUE=52
+WEIGHT=27.2
+RESOURCES=20 i_board,3 i_cloth,4 i_cotton,2 i_nails
+SKILLMAKE=Carpentry 72.8,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Chairs
+DESCRIPTION=Chair (Gray Cushion)
+DUPELIST=0b4f,0b50,0b51
+
+[ITEMDEF 0b4f]
+//Chair (Gray Cushion)
+DUPEITEM=0b4e
+
+[ITEMDEF 0b50]
+//Chair (Gray Cushion)
+DUPEITEM=0b4e
+
+[ITEMDEF 0b51]
+//Chair (Gray Cushion)
+DUPEITEM=0b4e
+
+[ITEMDEF 0b52]
+DEFNAME=i_chair_wood_cushion
+DYE=1
+FLIP=1
+VALUE=49
+WEIGHT=27.2
+RESOURCES=20 i_board,3 i_cloth,4 i_cotton,2 i_nails
+SKILLMAKE=Carpentry 42.1,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Chairs
+DESCRIPTION=Chair (Gray Cushion)
+DUPELIST=0b53,0b54,0b55
+
+[ITEMDEF 0b53]
+// chair - Wood chair with gray cushion, dyeable - N
+DUPEITEM=0b52
+
+[ITEMDEF 0b54]
+// chair - Wood chair with gray cushion, dyeable - S
+DUPEITEM=0b52
+
+[ITEMDEF 0b55]
+// chair - Wood chair with gray cushion, dyeable - E
+DUPEITEM=0b52
+
+[ITEMDEF 0b56]
+DEFNAME=i_chair_wood
+FLIP=1
+VALUE=20
+WEIGHT=13.2
+RESOURCES=13 i_board,2 i_nails
+SKILLMAKE=Carpentry 29.3,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Chairs
+DESCRIPTION=Chair (Light Wood)
+DUPELIST=0b57,0b58,0b59
+
+[ITEMDEF 0b57]
+// chair - light wood chair - N
+DUPEITEM=0b56
+
+[ITEMDEF 0b58]
+// chair - light wood chair - E
+DUPEITEM=0b56
+
+[ITEMDEF 0b59]
+// chair - light wood chair - S
+DUPEITEM=0b56
+
+[ITEMDEF 0b5a]
+DEFNAME=i_chair_wood_2
+FLIP=1
+VALUE=34
+WEIGHT=14.2
+RESOURCES=13 i_board
+SKILLMAKE=Carpentry 21.0,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Chairs
+DESCRIPTION=Chair (wicker seat)
+DUPELIST=0b5b,0b5c,0b5d
+
+[ITEMDEF 0b5b]
+// chair wood bamboo
+DUPEITEM=0b5a
+
+[ITEMDEF 0b5c]
+// chair wood bamboo
+DUPEITEM=0b5a
+
+[ITEMDEF 0b5d]
+// chair wood bamboo
+DUPEITEM=0b5a
+
+[ITEMDEF 0b5e]
+// chair - light stool
+DUPEITEM=0a2b
+
+[ITEMDEF 0b5f]
+DEFNAME=i_bench_board_rough_end
+FLIP=1
+VALUE=14
+WEIGHT=4.2
+RESOURCES=4 i_board,2 i_nails
+SKILLMAKE=Carpentry 21.0,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Chairs
+DESCRIPTION=Bench (rough wood)
+DUPELIST=0b60,0b61,0b65,0b66,0b67
+
+[ITEMDEF 0b60]
+// bench board rough
+DUPEITEM=0b5f
+
+[ITEMDEF 0b61]
+// bench board rough
+DUPEITEM=0b5f
+
+[ITEMDEF 0b62]
+DEFNAME=i_bench_wood_smooth
+FLIP=1
+VALUE=14
+WEIGHT=4.2
+RESOURCES=4 i_board,2 i_nails
+SKILLMAKE=Carpentry 44.3,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Chairs
+DESCRIPTION=Bench (smooth wood)
+DUPELIST=0b63,0b64,0b68,0b69,0b6a
+
+[ITEMDEF 0b63]
+// bench wood smooth
+DUPEITEM=0b62
+
+[ITEMDEF 0b64]
+// bench wood smooth
+DUPEITEM=0b62
+
+[ITEMDEF 0b65]
+// bench board rough
+DUPEITEM=0b5f
+
+[ITEMDEF 0b66]
+// bench board rough
+DUPEITEM=0b5f
+
+[ITEMDEF 0b67]
+// bench board rough
+DUPEITEM=0b5f
+
+[ITEMDEF 0b68]
+// bench wood smooth
+DUPEITEM=0b62
+
+[ITEMDEF 0b69]
+// bench wood smooth
+DUPEITEM=0b62
+
+[ITEMDEF 0b6a]
+// bench wood smooth
+DUPEITEM=0b62
+
+[ITEMDEF 0b6b]
+DEFNAME=i_table_wood_smooth_narrow_end
+FLIP=1
+VALUE=45
+WEIGHT=16.3
+RESOURCES=16 i_board,3 i_nails
+SKILLMAKE=Carpentry 73.1,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Tables
+DESCRIPTION=Table (smooth wood narrow)
+DUPELIST=0b6c,0b6d,0b7e,0b7f,0b80
+
+[ITEMDEF 0b6c]
+// table narrow smooth
+DUPEITEM=0b6b
+
+[ITEMDEF 0b6d]
+// table narrow smooth
+DUPEITEM=0b6b
+
+[ITEMDEF 0b6e]
+DEFNAME=i_table_wood_solid_narrow_end
+FLIP=1
+VALUE=43
+WEIGHT=16.3
+RESOURCES=16 i_board,3 i_nails
+SKILLMAKE=Carpentry 47.3,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Tables
+DESCRIPTION=Table (solid wood narrow)
+DUPELIST=0b6f,0b81,0b82
+
+[ITEMDEF 0b6f]
+// table solid wood
+DUPEITEM=0b6e
+
+[ITEMDEF 0b70]
+DEFNAME=i_table_wood_smooth_large
+FLIP=1
+VALUE=42
+WEIGHT=14.3
+RESOURCES=14 i_board,3 i_nails
+SKILLMAKE=Carpentry 81.9,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Tables
+DESCRIPTION=Table (smooth large)
+DUPELIST=0b71,0b72,0b73,0b74,0b83,0b84,0b85,0b86,0b87
+
+[ITEMDEF 0b71]
+//table (smooth large)
+DUPEITEM=0b70
+
+[ITEMDEF 0b72]
+//table (smooth large)
+DUPEITEM=0b70
+
+[ITEMDEF 0b73]
+//table (smooth large)
+DUPEITEM=0b70
+
+[ITEMDEF 0b74]
+//table (smooth large)
+DUPEITEM=0b70
+
+[ITEMDEF 0b75]
+DEFNAME=i_table_board_rough_end
+FLIP=1
+VALUE=36
+WEIGHT=12.3
+RESOURCES=12 i_board,3 i_nails
+SKILLMAKE=Carpentry 63.1,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Tables
+DESCRIPTION=Table (picnic)
+DUPELIST=0b76,0b88,0b89
+
+[ITEMDEF 0b76]
+//table (picnic)
+DUPEITEM=0b75
+
+[ITEMDEF 0b77]
+DEFNAME=i_table_board_rough_large
+FLIP=1
+VALUE=38
+WEIGHT=12.3
+RESOURCES=12 i_board,3 i_nails
+SKILLMAKE=Carpentry 78.5,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Tables
+DESCRIPTION=Table (rough large)
+DUPELIST=0b78,0b79,0b7a,0b77,0b8a,0b8b,0b8c,0b8d,0b8e
+
+[ITEMDEF 0b78]
+//table (rough large)
+DUPEITEM=0b77
+
+[ITEMDEF 0b79]
+//table (rough large)
+DUPEITEM=0b77
+
+[ITEMDEF 0b7a]
+//table (rough large)
+DUPEITEM=0b77
+
+[ITEMDEF 0b7b]
+//table (rough large)
+DUPEITEM=0b77
+
+[ITEMDEF 0b7c]
+DEFNAME=i_table_wood_rough_small
+FLIP=1
+VALUE=16
+WEIGHT=16.2
+RESOURCES=8 i_board,2 i_nails
+SKILLMAKE=Carpentry 43.1,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Tables
+DESCRIPTION=Table (rough small)
+DUPELIST=0b8f
+
+[ITEMDEF 0b7d]
+DEFNAME=i_table_wood_rough_board
+FLIP=1
+VALUE=19
+WEIGHT=22.2
+RESOURCES=11 i_board,2 i_nails
+SKILLMAKE=Carpentry 40.0,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Tables
+DESCRIPTION=Table (rough board)
+DUPELIST=0b90
+
+[ITEMDEF 0b7e]
+// table narrow smooth
+DUPEITEM=0b6b
+
+[ITEMDEF 0b7f]
+// table narrow smooth
+DUPEITEM=0b6b
+
+[ITEMDEF 0b80]
+// table narrow smooth
+DUPEITEM=0b6b
+
+[ITEMDEF 0b81]
+// table solid wood
+DUPEITEM=0b6e
+
+[ITEMDEF 0b82]
+// table solid wood
+DUPEITEM=0b6e
+
+[ITEMDEF 0b83]
+//table (smooth large)
+DUPEITEM=0b70
+
+[ITEMDEF 0b84]
+//table (smooth large)
+DUPEITEM=0b70
+
+[ITEMDEF 0b85]
+//table (smooth large)
+DUPEITEM=0b70
+
+[ITEMDEF 0b86]
+//table (smooth large)
+DUPEITEM=0b70
+
+[ITEMDEF 0b87]
+//table (smooth large)
+DUPEITEM=0b70
+
+[ITEMDEF 0b88]
+//table (picnic)
+DUPEITEM=0b75
+
+[ITEMDEF 0b89]
+//table (picnic)
+DUPEITEM=0b75
+
+[ITEMDEF 0b8a]
+//table (rough large)
+DUPEITEM=0b77
+
+[ITEMDEF 0b8b]
+//table (rough large)
+DUPEITEM=0b77
+
+[ITEMDEF 0b8c]
+//table (rough large)
+DUPEITEM=0b77
+
+[ITEMDEF 0b8d]
+//table (rough large)
+DUPEITEM=0b77
+
+[ITEMDEF 0b8e]
+//table (rough large)
+DUPEITEM=0b77
+
+[ITEMDEF 0b8f]
+// table (rough small)
+DUPEITEM=0b7c
+
+[ITEMDEF 0b90]
+// table (rough board)
+DUPEITEM=0b7d
+
+[ITEMDEF 0b91]
+DEFNAME=i_bench_wood_highback
+FLIP=1
+VALUE=57
+WEIGHT=20.6
+RESOURCES=20 i_board,6 i_nails
+SKILLMAKE=Carpentry 47.2,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Chairs
+DESCRIPTION=Bench (High Back)
+DUPELIST=0b92,0b93,0b94
+
+[ITEMDEF 0b92]
+// bench wood highback
+DUPEITEM=0b91
+
+[ITEMDEF 0b93]
+// bench wood highback
+DUPEITEM=0b91
+
+[ITEMDEF 0b94]
+// bench wood highback
+DUPEITEM=0b91
+
+
+[ITEMDEF 0c10]
+DEFNAME=i_chair_wood_bamboo_broken
+FLIP=1
+CATEGORY=Decoration - Furniture
+SUBSECTION=Broken Furniture
+DESCRIPTION=Chair
+DUPELIST=0c11
+
+[ITEMDEF 0c11]
+//chair broken
+DUPEITEM=0c10
+
+[ITEMDEF 0c12]
+//broken armoire
+DEFNAME=i_armoire_broken
+FLIP=1
+WEIGHT=36.0
+RESOURCES=35 i_board,6 i_nails,4 i_hinge
+CATEGORY=Decoration - Furniture
+SUBSECTION=Broken Furniture
+DESCRIPTION=Armoire
+DUPELIST=0c13
+
+[ITEMDEF 0c13]
+//broken armoire
+DUPEITEM=0c12
+
+[ITEMDEF 0c14]
+DEFNAME=i_bookcase_ruined
+FLIP=1
+WEIGHT=94.2
+RESOURCES=1 i_bookcase,20 i_book_sm
+CATEGORY=Decoration - Furniture
+SUBSECTION=Broken Furniture
+DESCRIPTION=Bookcase
+DUPELIST=0c15
+
+[ITEMDEF 0c15]
+//ruined bookcase
+DUPEITEM=0c14
+
+[ITEMDEF 0c16]
+DEFNAME=i_book_damaged
+CATEGORY=Decoration - Furniture
+SUBSECTION=Broken Furniture
+DESCRIPTION=Books
+
+[ITEMDEF 0c17]
+DEFNAME=i_chair_covered
+FLIP=1
+WEIGHT=18.2
+RESOURCES=1 i_chair_wood,1 i_sheet
+CATEGORY=Decoration - Furniture
+SUBSECTION=Chairs
+DESCRIPTION=Chair (Covered)
+DUPELIST=0c18
+
+[ITEMDEF 0c18]
+//chair covered
+DUPEITEM=0c17
+
+[ITEMDEF 0c19]
+DEFNAME=i_chair_wood_bamboo_broken_noseat
+FLIP=1
+WEIGHT=13.2
+RESOURCES=13 i_log,2 i_nails
+CATEGORY=Decoration - Furniture
+SUBSECTION=Broken Furniture
+DESCRIPTION=Chair
+DUPELIST=0c1a
+
+[ITEMDEF 0c1a]
+//chair broken seat
+DUPEITEM=0c19
+
+[ITEMDEF 0c1b]
+DEFNAME=i_chair_wood_fancy_cushion_broken
+FLIP=1
+WEIGHT=27.2
+RESOURCES=20 i_log,3 i_cloth,4 i_cotton,2 i_nails
+CATEGORY=Decoration - Furniture
+SUBSECTION=Broken Furniture
+DESCRIPTION=Chair
+DUPELIST=0c1c,0c1d,0c1e
+
+[ITEMDEF 0c1c]
+//broken fancy wooden chair
+DUPEITEM=0c1b
+
+[ITEMDEF 0c1d]
+//broken fancy wooden chair
+DUPEITEM=0c1b
+
+[ITEMDEF 0c1e]
+//broken fancy wooden chair
+DUPEITEM=0c1b
+
+[ITEMDEF 0c1f]
+DEFNAME=i_clock_broken
+CATEGORY=Decoration - Furniture
+SUBSECTION=Broken Furniture
+DESCRIPTION=Clock
+
+[ITEMDEF 0c20]
+DEFNAME=i_dresser_broken
+FLIP=1
+CATEGORY=Decoration - Furniture
+SUBSECTION=Broken Furniture
+DESCRIPTION=Dresser (Vanity)
+DUPELIST=0c21,0c22,0c23
+
+[ITEMDEF 0c21]
+//broken dresser
+DUPEITEM=0c20
+
+[ITEMDEF 0c22]
+//broken dresser
+DUPEITEM=0c20
+
+[ITEMDEF 0c23]
+//broken dresser
+DUPEITEM=0c20
+
+[ITEMDEF 0c24]
+DEFNAME=i_dresser_broken_2
+FLIP=1
+WEIGHT=11.2
+RESOURCES=5 i_board,10 i_nails,1 i_drawer_2
+CATEGORY=Decoration - Furniture
+SUBSECTION=Broken Furniture
+DESCRIPTION=Dresser
+DUPELIST=0c25
+
+[ITEMDEF 0c25]
+//broken furniture
+DUPEITEM=0c24
+
+[ITEMDEF 0c26]
+DEFNAME=i_bed_large_ruined
+CATEGORY=Decoration - Furniture
+SUBSECTION=Broken Furniture
+DESCRIPTION=Ruined Bed (large)
+DUPELIST=0c27,0c28,0c29,0c2a,0c2b
+
+[ITEMDEF 0c27]
+//ruined bed (east)
+DUPEITEM=0c26
+
+[ITEMDEF 0c28]
+//ruined bed (east)
+DUPEITEM=0c26
+
+[ITEMDEF 0c29]
+//ruined bed (south)
+DUPEITEM=0c26
+
+[ITEMDEF 0c2a]
+//ruined bed (south)
+DUPEITEM=0c26
+
+[ITEMDEF 0c2b]
+//ruined bed (south)
+DUPEITEM=0c26
+
+[ITEMDEF 0c2c]
+DEFNAME=i_painting_ruined
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Paintings
+DESCRIPTION=Ruined Painting
+
+[ITEMDEF 0c2d]
+DEFNAME=i_debris
+RESOURCES=3 i_board,1 i_nails,2 i_dirt
+CATEGORY=Decoration - Furniture
+SUBSECTION=Broken Furniture
+DESCRIPTION=Debris
+
+[ITEMDEF 0c2e]
+DEFNAME=i_debris_2
+RESOURCES=3 i_board,1 i_nails,2 i_dirt
+CATEGORY=Decoration - Furniture
+SUBSECTION=Broken Furniture
+DESCRIPTION=Debris
+
+[ITEMDEF 0c2f]
+DEFNAME=i_debris_3
+RESOURCES=3 i_board,1 i_nails,2 i_dirt
+CATEGORY=Decoration - Furniture
+SUBSECTION=Broken Furniture
+DESCRIPTION=Debris
+
+[ITEMDEF 0c30]
+DEFNAME=i_debris_4
+RESOURCES=3 i_board,1 i_nails,2 i_dirt
+CATEGORY=Decoration - Furniture
+SUBSECTION=Broken Furniture
+DESCRIPTION=Debris
+
+[ITEMDEF 0c31]
+DEFNAME=i_table_covered
+NAME=covered table
+DYE=1
+FLIP=1
+WEIGHT=18.2
+RESOURCES=1 i_table_nightstand,1 i_cloth
+CATEGORY=Decoration - Furniture
+SUBSECTION=Broken Furniture
+DESCRIPTION=Covered Table
+DUPELIST=0c32,0c33,0c34,0c35,0c36
+
+[ITEMDEF 0c32]
+//covered table
+DUPEITEM=0c31
+
+[ITEMDEF 0c33]
+//covered table
+DUPEITEM=0c31
+
+[ITEMDEF 0c34]
+//covered table
+DUPEITEM=0c31
+
+[ITEMDEF 0c35]
+//covered table
+DUPEITEM=0c31
+
+[ITEMDEF 0c36]
+//covered table
+DUPEITEM=0c31
+
+[ITEMDEF 0c39]
+DEFNAME=i_pegboard
+WEIGHT=2.0
+RESOURCES=2 i_board
+CATEGORY=Decoration - Furniture
+SUBSECTION=Hangers
+DESCRIPTION=Peg Board
+DUPELIST=0c3a
+
+[ITEMDEF 0c3a]
+//pegboard
+DUPEITEM=0c39
+
+[ITEMDEF 0db0]
+//large made bed
+DUPEITEM=0a78
+
+[ITEMDEF 0db1]
+//large made bed
+DUPEITEM=0a78
+
+[ITEMDEF 0db2]
+//large made bed
+DUPEITEM=0a78
+
+[ITEMDEF 0db3]
+//large made bed
+DUPEITEM=0a78
+
+[ITEMDEF 0db4]
+//large made bed
+DUPEITEM=0a78
+
+[ITEMDEF 0db5]
+//large made bed
+DUPEITEM=0a78
+
+
+[ITEMDEF 0118b]
+DEFNAME=i_table_runner_purple
+NAME=table with purple runner
+FLIP=1
+VALUE=139
+WEIGHT=47.2
+RESOURCES=27 i_board,20 i_cloth,2 i_nails
+SKILLMAKE=Carpentry 89.0,Tailoring 60.0,t_carpentry,t_sewing_kit
+CATEGORY=Decoration - Furniture
+SUBSECTION=Tables
+DESCRIPTION=Table (Purple Runner)
+DUPELIST=0118c
+
+[ITEMDEF 0118c]
+// table - purple runner
+DUPEITEM=0118b
+
+[ITEMDEF 0118d]
+DEFNAME=i_table_runner_red
+NAME=table with red runner
+FLIP=1
+VALUE=139
+WEIGHT=47.2
+RESOURCES=27 i_board,20 i_cloth,2 i_nails
+SKILLMAKE=Carpentry 89.0,Tailoring 60.0,t_carpentry,t_sewing_kit
+CATEGORY=Decoration - Furniture
+SUBSECTION=Tables
+DESCRIPTION=Table (Red Runner)
+DUPELIST=0118e
+
+[ITEMDEF 0118e]
+// table - red runner
+DUPEITEM=0118d
+
+[ITEMDEF 0118f]
+DEFNAME=i_table_runner_blue
+NAME=table with blue runner
+FLIP=1
+VALUE=136
+WEIGHT=47.2
+RESOURCES=26 i_board,20 i_cloth,2 i_nails
+SKILLMAKE=Carpentry 83.0,Tailoring 60.0,t_carpentry,t_sewing_kit
+CATEGORY=Decoration - Furniture
+SUBSECTION=Tables
+DESCRIPTION=Table (Blue Runner)
+DUPELIST=01190,01191,01192
+
+[ITEMDEF 01190]
+// table - blue runner
+DUPEITEM=0118f
+
+[ITEMDEF 01191]
+// table - blue runner
+DUPEITEM=0118f
+
+[ITEMDEF 01192]
+// table - blue runner
+DUPEITEM=0118f
+
+[ITEMDEF 011ce]
+DEFNAME=i_bed_double_1
+TDATA1=0
+FLIP=1
+WEIGHT=200.0
+RESOURCES=150 i_board,20 i_cloth,25 i_nails,3 i_bedroll
+CATEGORY=Decoration - Furniture
+SUBSECTION=Beds
+DESCRIPTION=King Sized Bed
+DUPELIST=011cf,011d0,011d1,011d2,011d3,011d4,011d5
+
+[ITEMDEF 011cf]
+//king sized bed
+DUPEITEM=011ce
+
+[ITEMDEF 011d0]
+//king sized bed
+DUPEITEM=011ce
+
+[ITEMDEF 011d1]
+//king sized bed
+DUPEITEM=011ce
+
+[ITEMDEF 011d2]
+//king sized bed
+DUPEITEM=011ce
+
+[ITEMDEF 011d3]
+//king sized bed
+DUPEITEM=011ce
+
+[ITEMDEF 011d4]
+//king sized bed
+DUPEITEM=011ce
+
+[ITEMDEF 011d5]
+//king sized bed
+DUPEITEM=011ce
+
+[ITEMDEF 011d6]
+DEFNAME=i_table_bamboo
+FLIP=1
+CATEGORY=Decoration - Furniture
+SUBSECTION=Tables
+DESCRIPTION=Table (Bamboo)
+DUPELIST=011d7,011d8,011d9,011da,011db
+
+[ITEMDEF 011d7]
+//bamboo table
+DUPEITEM=011d6
+
+[ITEMDEF 011d8]
+//bamboo table
+DUPEITEM=011d6
+
+[ITEMDEF 011d9]
+//bamboo table
+DUPEITEM=011d6
+
+[ITEMDEF 011da]
+//bamboo table
+DUPEITEM=011d6
+
+[ITEMDEF 011db]
+//bamboo table
+DUPEITEM=011d6
+
+[ITEMDEF 011dc]
+DEFNAME=i_table_log_end
+FLIP=1
+VALUE=42
+WEIGHT=30.4
+RESOURCES=15 i_log,4 i_nails
+SKILLMAKE=Carpentry 39.4,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Tables
+DESCRIPTION=Log Table
+DUPELIST=011dd,011de,011df,011e0,011e1
+
+[ITEMDEF 011dd]
+//log table
+DUPEITEM=011dc
+
+[ITEMDEF 011de]
+//log table
+DUPEITEM=011dc
+
+[ITEMDEF 011df]
+//log table
+DUPEITEM=011dc
+
+[ITEMDEF 011e0]
+//log table
+DUPEITEM=011dc
+
+[ITEMDEF 011e1]
+//log table
+DUPEITEM=011dc
+
+[ITEMDEF 011ea]
+DEFNAME=i_pillow_straw
+FLIP=1
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedding
+DESCRIPTION=Straw Pillow
+DUPELIST=011eb
+
+[ITEMDEF 011eb]
+//straw pillow
+DUPEITEM=011ea
+
+
+[ITEMDEF 011f0]
+DEFNAME=i_hammock
+FLIP=1
+CATEGORY=Decoration - Furniture
+SUBSECTION=Beds
+DESCRIPTION=Hammock
+DUPELIST=011f1,011f2,011f3
+
+[ITEMDEF 011f1]
+//hammock
+DUPEITEM=011f0
+
+[ITEMDEF 011f2]
+//hammock
+DUPEITEM=011f0
+
+[ITEMDEF 011f3]
+//hammock
+DUPEITEM=011f0
+
+[ITEMDEF 011fc]
+DEFNAME=i_chair_stool_bamboo
+VALUE=61
+WEIGHT=17.1
+RESOURCES=9 i_board
+SKILLMAKE=Carpentry 11.0,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Chairs
+DESCRIPTION=Bamboo Stool
+
+[ITEMDEF 011fd]
+DEFNAME=i_cot
+TDATA1=2
+FLIP=1
+WEIGHT=17.0
+CATEGORY=Decoration - Furniture
+SUBSECTION=Beds
+DESCRIPTION=Cot
+DUPELIST=011fe,011ff,01200
+
+[ITEMDEF 011fe]
+//cot
+DUPEITEM=011fd
+
+[ITEMDEF 011ff]
+//cot
+DUPEITEM=011fd
+
+[ITEMDEF 01200]
+//cot
+DUPEITEM=011fd
+
+[ITEMDEF 01201]
+DEFNAME=i_table_stone_end
+FLIP=1
+VALUE=100
+WEIGHT=300.0
+RESOURCES=30 i_rock_plain
+CATEGORY=Decoration - Furniture
+SUBSECTION=Tables
+DESCRIPTION=Table (Stone)
+DUPELIST=01202,01203,01204,01205,01206
+
+[ITEMDEF 01202]
+// table - stone
+DUPEITEM=01201
+
+[ITEMDEF 01203]
+// table - stone
+DUPEITEM=01201
+
+[ITEMDEF 01204]
+// table - stone
+DUPEITEM=01201
+
+[ITEMDEF 01205]
+// table - stone
+DUPEITEM=01201
+
+[ITEMDEF 01206]
+// table - stone
+DUPEITEM=01201
+
+[ITEMDEF 01207]
+DEFNAME=i_bench_stone_1
+FLIP=1
+VALUE=30
+WEIGHT=40.0
+RESOURCES=4 i_rock_plain
+CATEGORY=Decoration - Furniture
+SUBSECTION=Chairs
+DESCRIPTION=Stone Bench (cannot sit or walk over)
+DUPELIST=01208,01209,0120a,0120b,0120c
+
+[ITEMDEF 01208]
+//stone bench
+DUPEITEM=01207
+
+[ITEMDEF 01209]
+//stone bench
+DUPEITEM=01207
+
+[ITEMDEF 0120a]
+//stone bench
+DUPEITEM=01207
+
+[ITEMDEF 0120b]
+//stone bench
+DUPEITEM=01207
+
+[ITEMDEF 0120c]
+//stone bench
+DUPEITEM=01207
+
+
+[ITEMDEF 01218]
+DEFNAME=i_chair_stone
+FLIP=1
+VALUE=55
+WEIGHT=100.0
+RESOURCES=10 i_rock_plain
+SKILLMAKE=Carpentry 45.0,t_masonry_tool
+CATEGORY=Decoration - Furniture
+SUBSECTION=Chairs
+DESCRIPTION=Chair (Stone)
+DUPELIST=01219,0121a,0121b
+
+[ITEMDEF 01219]
+//gray stone chair
+DUPEITEM=01218
+
+[ITEMDEF 0121a]
+//gray stone chair
+DUPEITEM=01218
+
+[ITEMDEF 0121b]
+//gray stone chair
+DUPEITEM=01218
+
+
+[ITEMDEF 01397]
+DEFNAME=i_pillow
+FLIP=1
+VALUE=24
+WEIGHT=6.1
+RESOURCES=4 i_cloth,2 i_wool,1 i_thread
+SKILLMAKE=Tailoring 39.0,t_sewing_kit
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedding
+DESCRIPTION=Pillow
+DUPELIST=013a6
+
+[ITEMDEF 013a4]
+DEFNAME=i_pillow_2
+NAME=bed pillow
+DYE=1
+FLIP=1
+VALUE=24
+WEIGHT=6.1
+RESOURCES=4 i_cloth,2 i_wool,1 i_thread
+SKILLMAKE=Tailoring 39.0,t_sewing_kit
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedding
+DESCRIPTION=Bed Pillow
+DUPELIST=013a5
+
+[ITEMDEF 013a5]
+//pillow
+DUPEITEM=013a4
+
+[ITEMDEF 013a6]
+//pillow
+DUPEITEM=01397
+
+[ITEMDEF 013a7]
+DEFNAME=i_pillow_3
+NAME=small round pillow
+DYE=1
+VALUE=24
+WEIGHT=6.1
+RESOURCES=4 i_cloth,2 i_wool,1 i_thread
+SKILLMAKE=Tailoring 39.0,t_sewing_kit
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedding
+DESCRIPTION=Pillow
+
+[ITEMDEF 013a8]
+DEFNAME=i_pillow_4
+NAME=round pillow
+DYE=1
+VALUE=24
+WEIGHT=6.1
+RESOURCES=4 i_cloth,2 i_wool,1 i_thread
+SKILLMAKE=Tailoring 39.0,t_sewing_kit
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedding
+DESCRIPTION=Pillow
+
+[ITEMDEF 013a9]
+DEFNAME=i_pillow_5
+NAME=fluffy pillow
+DYE=1
+FLIP=1
+VALUE=33
+WEIGHT=6.1
+RESOURCES=6 i_cloth,3 i_wool,1 i_thread
+SKILLMAKE=Tailoring 39.0,t_sewing_kit
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedding
+DESCRIPTION=Pillow
+DUPELIST=013aa
+
+[ITEMDEF 013aa]
+//pillow
+DUPEITEM=013a9
+
+[ITEMDEF 013ab]
+DEFNAME=i_pillow_6
+NAME=square pillow
+DYE=1
+VALUE=24
+WEIGHT=6.1
+RESOURCES=4 i_cloth,2 i_wool,1 i_thread
+SKILLMAKE=Tailoring 39.0,t_sewing_kit
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedding
+DESCRIPTION=Pillow
+
+[ITEMDEF 013ac]
+DEFNAME=i_pillow_7
+NAME=pillow with tassles
+DYE=1
+VALUE=24
+WEIGHT=6.1
+RESOURCES=4 i_cloth,2 i_wool,1 i_thread
+SKILLMAKE=Tailoring 39.0,t_sewing_kit
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedding
+DESCRIPTION=Pillow
+
+[ITEMDEF 013ad]
+DEFNAME=i_pillow_8
+NAME=soft pillow
+DYE=1
+FLIP=1
+VALUE=33
+WEIGHT=6.1
+RESOURCES=6 i_cloth,3 i_wool,1 i_thread
+SKILLMAKE=Tailoring 39.0,t_sewing_kit
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedding
+DESCRIPTION=Pillow
+DUPELIST=013ae
+
+[ITEMDEF 013ae]
+//pillow
+DUPEITEM=013ad
+
+
+[ITEMDEF 01941]
+DEFNAME=i_mugs_glass_bartop
+WEIGHT=39.2
+RESOURCES=9 i_mug,1 i_bar_piece
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bar
+DESCRIPTION=Mugs (Glass)
+
+[ITEMDEF 01942]
+DEFNAME=i_goblets_pewter_bartop
+WEIGHT=39.2
+RESOURCES=9 i_goblet,1 i_bar_piece
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bar
+DESCRIPTION=Goblets
+
+[ITEMDEF 01943]
+DEFNAME=i_tankards_pewter_bartop
+WEIGHT=42.2
+RESOURCES=12 i_mug_pewter,1 i_bar_piece
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bar
+DESCRIPTION=Tankards
+
+
+[ITEMDEF 01526]
+DEFNAME=i_chair_throne_lb
+FLIP=1
+VALUE=204
+WEIGHT=120.0
+RESOURCES=10 i_rock_plain,5 i_ingot_gold,5 i_velvet,100 i_feather
+//SKILLMAKE=Carpentry 89.4,t_carpentry,t_masonry_tool
+CATEGORY=Decoration - Furniture
+SUBSECTION=Chairs
+DESCRIPTION=Throne
+DUPELIST=01527
+
+[ITEMDEF 01527]
+//chair throne lb
+DUPEITEM=01526
+
+[ITEMDEF 0163a]
+DEFNAME=i_pillow_large
+NAME=large diamond pillow
+VALUE=39
+WEIGHT=10.2
+RESOURCES=6 i_cloth,4 i_wool,2 i_thread
+SKILLMAKE=Tailoring 49.0,t_sewing_kit
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedding
+DESCRIPTION=Pillow
+
+[ITEMDEF 0163b]
+DEFNAME=i_pillow_9
+NAME=large square pillow
+VALUE=30
+WEIGHT=10.2
+RESOURCES=4 i_cloth,2 i_wool,4 i_thread
+SKILLMAKE=Tailoring 39.0,t_sewing_kit
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedding
+DESCRIPTION=Pillow
+
+[ITEMDEF 0163c]
+DEFNAME=i_pillow_10
+NAME=small diamond pillow
+VALUE=30
+WEIGHT=6.4
+RESOURCES=4 i_cloth,2 i_wool,4 i_thread
+SKILLMAKE=Tailoring 39.0,t_sewing_kit
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedding
+DESCRIPTION=Pillow
+
+
+[ITEMDEF 01667]
+DEFNAME=i_table_runner_checkered
+NAME=table with checkered runner
+FLIP=1
+VALUE=150
+WEIGHT=52.2
+RESOURCES=26 i_board,2 i_nails,26 i_cloth
+SKILLMAKE=Carpentry 61.3,Tailoring 43.1,t_carpentry,t_sewing_kit
+CATEGORY=Decoration - Furniture
+SUBSECTION=Tables
+DESCRIPTION=Table (checkered runner)
+DUPELIST=01668,01669,0166a,0166b,0166c
+
+[ITEMDEF 01668]
+//table (checkered runner)
+DUPEITEM=01667
+
+[ITEMDEF 01669]
+//table (checkered runner)
+DUPEITEM=01667
+
+[ITEMDEF 0166a]
+//table (checkered runner)
+DUPEITEM=01667
+
+[ITEMDEF 0166b]
+//table (checkered runner)
+DUPEITEM=01667
+
+[ITEMDEF 0166c]
+//table (checkered runner)
+DUPEITEM=01667
+
+
+[ITEMDEF 01894]
+//ruined bed (east)(duplicated from 0c26, but uses 4 tiles instead 3)
+NAME=ruined bed
+
+[ITEMDEF 01895]
+//ruined bed (east)(duplicated from 0c26, but uses 4 tiles instead 3)
+NAME=ruined bed
+
+[ITEMDEF 01896]
+//ruined bed (east)(duplicated from 0c26, but uses 4 tiles instead 3)
+NAME=ruined bed
+
+[ITEMDEF 01897]
+//ruined bed (east)(duplicated from 0c26, but uses 4 tiles instead 3)
+NAME=ruined bed
+
+[ITEMDEF 01898]
+//ruined bed (south)(duplicated from 0c26, but uses 4 tiles instead 3)
+NAME=ruined bed
+
+[ITEMDEF 01899]
+//ruined bed (south)(duplicated from 0c26, but uses 4 tiles instead 3)
+NAME=ruined bed
+
+[ITEMDEF 0189a]
+//ruined bed (south)(duplicated from 0c26, but uses 4 tiles instead 3)
+NAME=ruined bed
+
+[ITEMDEF 0189b]
+//ruined bed (south)(duplicated from 0c26, but uses 4 tiles instead 3)
+NAME=ruined bed
+
+
+[ITEMDEF 0190e]
+// Not really a door.
+DEFNAME=i_bar_door_ne
+TYPE=t_normal
+FLIP=1
+VALUE=78
+WEIGHT=30.2
+RESOURCES=30 i_board,1 i_nails,1 i_hinge
+SKILLMAKE=Carpentry 80.0,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bar
+DESCRIPTION=Bar Door
+DUPELIST=0190f
+
+[ITEMDEF 0190f]
+DEFNAME=i_bar_door_nw
+DUPEITEM=0190e
+
+[ITEMDEF 01910]
+DEFNAME=i_bar_piece
+FLIP=1
+VALUE=73
+WEIGHT=30.2
+RESOURCES=30 i_board,1 i_nails
+SKILLMAKE=Carpentry 80.0,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bar
+DESCRIPTION=Bar
+DUPELIST=01911,01912,01913,01918,01919,0191a,0191b,0191c,0191d,0191e,0191f
+
+[ITEMDEF 01911]
+//bar
+DUPEITEM=01910
+
+[ITEMDEF 01912]
+//bar
+DUPEITEM=01910
+
+[ITEMDEF 01913]
+//bar
+DUPEITEM=01910
+
+[ITEMDEF 01914]
+DEFNAME=i_towel
+VALUE=14
+WEIGHT=3.1
+RESOURCES=3 i_cloth,1 i_thread
+SKILLMAKE=Tailoring 33.0,t_sewing_kit
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedding
+DESCRIPTION=Towel
+
+[ITEMDEF 01915]
+DEFNAME=i_pillow_11
+NAME=small bedding pillow
+VALUE=15
+WEIGHT=3.1
+RESOURCES=2 i_cloth,1 i_wool,1 i_thread
+SKILLMAKE=Tailoring 39.0,t_sewing_kit
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedding
+DESCRIPTION=Pillow
+
+[ITEMDEF 01916]
+DEFNAME=i_table_massage_end
+FLIP=1
+CATEGORY=Decoration - Furniture
+SUBSECTION=Massage Table
+DESCRIPTION=Massage Table
+DUPELIST=01917
+
+[ITEMDEF 01917]
+//massage table
+DUPEITEM=01916
+
+[ITEMDEF 01918]
+//bar
+DUPEITEM=01910
+
+[ITEMDEF 01919]
+//bar
+DUPEITEM=01910
+
+[ITEMDEF 0191a]
+//bar
+DUPEITEM=01910
+
+[ITEMDEF 0191b]
+//bar
+DUPEITEM=01910
+
+[ITEMDEF 0191c]
+//bar
+DUPEITEM=01910
+
+[ITEMDEF 0191d]
+//bar
+DUPEITEM=01910
+
+[ITEMDEF 0191e]
+//bar
+DUPEITEM=01910
+
+[ITEMDEF 0191f]
+//bar
+DUPEITEM=01910
+
+
+[ITEMDEF 01da5]
+DEFNAME=i_table_wood_rough_small_end
+FLIP=1
+VALUE=24
+WEIGHT=16.2
+RESOURCES=8 i_board,2 i_nails
+SKILLMAKE=Carpentry 56.3,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Tables
+DESCRIPTION=Table (rough small)
+DUPELIST=01da6,01da9,01daa
+
+[ITEMDEF 01da6]
+// table - Small rough
+DUPEITEM=01da5
+
+[ITEMDEF 01da7]
+DEFNAME=i_table_board_rough_small_end
+FLIP=1
+VALUE=26
+WEIGHT=22.2
+RESOURCES=11 i_board,2 i_nails
+SKILLMAKE=Carpentry 46.3,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Tables
+DESCRIPTION=Table (rough board)
+DUPELIST=01da8,01dab,01dac
+
+[ITEMDEF 01da8]
+// table - Small rough board
+DUPEITEM=01da7
+
+[ITEMDEF 01da9]
+// table - Small rough
+DUPEITEM=01da5
+
+[ITEMDEF 01daa]
+// table - Small rough
+DUPEITEM=01da5
+
+[ITEMDEF 01dab]
+// table - Small rough board
+DUPEITEM=01da7
+
+[ITEMDEF 01dac]
+// table - Small rough board
+DUPEITEM=01da7
+
+[ITEMDEF 01dbb]
+DEFNAME=i_table_sandstone_end
+FLIP=1
+VALUE=160
+WEIGHT=300.0
+RESOURCES=30 i_rock_sandstone
+CATEGORY=Decoration - Furniture
+SUBSECTION=Tables
+DESCRIPTION=Table (Sandstone)
+DUPELIST=01dbc,01dbd,01dbe,01dbf,01dc0
+
+[ITEMDEF 01dbc]
+// table - sandstone table end - N
+DUPEITEM=01dbb
+
+[ITEMDEF 01dbd]
+// table - sandstone table extention n-s
+DEFNAME=i_table_sandstone_ext
+DUPEITEM=01dbb
+
+[ITEMDEF 01dbe]
+// table - sandstone table end - E
+DUPEITEM=01dbb
+
+[ITEMDEF 01dbf]
+// table - sandstone table end - W
+DUPEITEM=01dbb
+
+[ITEMDEF 01dc0]
+// table - sandstone table extention e-w
+DUPEITEM=01dbb
+
+[ITEMDEF 01dc1]
+DEFNAME=i_table_marble_end
+FLIP=1
+VALUE=160
+WEIGHT=300.0
+RESOURCES=30 i_rock_marble
+CATEGORY=Decoration - Furniture
+SUBSECTION=Tables
+DESCRIPTION=Table (Marble)
+DUPELIST=01dc2,01dc3,01dc4,01dc5,01dc6
+
+[ITEMDEF 01dc2]
+// table - marble table end - N
+DUPEITEM=01dc1
+
+[ITEMDEF 01dc3]
+DEFNAME=i_table_marble_ext
+// table - marble table extention n-s
+DUPEITEM=01dc1
+
+[ITEMDEF 01dc4]
+// table - marble table end - E
+DUPEITEM=01dc1
+
+[ITEMDEF 01dc5]
+// table - marble table end - W
+DUPEITEM=01dc1
+
+[ITEMDEF 01dc6]
+// table - marble table extention e-w
+DUPEITEM=01dc1
+
+[ITEMDEF 01dc7]
+DEFNAME=i_bench_sandstone_end
+FLIP=1
+VALUE=35
+WEIGHT=60.0
+RESOURCES=6 i_rock_sandstone
+SKILLMAKE=Carpentry 35.0,t_masonry_tool
+CATEGORY=Decoration - Furniture
+SUBSECTION=Chairs
+DESCRIPTION=Bench (Sandstone - Long)
+DUPELIST=01dc8,01dc9,01dca,01dcb,01dcc
+
+[ITEMDEF 01dc8]
+//sandstone bench
+DUPEITEM=01dc7
+
+[ITEMDEF 01dc9]
+//sandstone bench
+DEFNAME=i_bench_sandstone_ext
+DUPEITEM=01dc7
+
+[ITEMDEF 01dca]
+//sandstone bench
+DUPEITEM=01dc7
+
+[ITEMDEF 01dcb]
+//sandstone bench
+DUPEITEM=01dc7
+
+[ITEMDEF 01dcc]
+//sandstone bench
+DUPEITEM=01dc7
+
+[ITEMDEF 01dcd]
+DEFNAME=i_bench_marble_end
+FLIP=1
+VALUE=35
+WEIGHT=60.0
+RESOURCES=6 i_rock_marble
+SKILLMAKE=Carpentry 55.0,t_masonry_tool
+CATEGORY=Decoration - Furniture
+SUBSECTION=Chairs
+DESCRIPTION=Marble Bench
+DUPELIST=01dce,01dcf,01dd0,01dd1,01dd2
+
+[ITEMDEF 01dce]
+//Marble Bench
+DUPEITEM=01dcd
+
+[ITEMDEF 01dcf]
+//Marble Bench
+DEFNAME=i_bench_marble_ext
+DUPEITEM=01dcd
+
+[ITEMDEF 01dd0]
+//Marble Bench
+DUPEITEM=01dcd
+
+[ITEMDEF 01dd1]
+//Marble Bench
+DUPEITEM=01dcd
+
+[ITEMDEF 01dd2]
+//Marble Bench
+DUPEITEM=01dcd
+
+
+[ITEMDEF 0207e]
+DEFNAME=i_table_keyed
+WEIGHT=17.4
+RESOURCES=17 i_log,4 i_nails
+CATEGORY=Quest
+SUBSECTION=Citadel
+DESCRIPTION=Keyed Table
+
+[ITEMDEF 0207f]
+DEFNAME=i_bookstand_elven
+NAME=elven bookstand
+TYPE=t_normal
+VALUE=16
+WEIGHT=4.1
+RESOURCES=4 i_board,1 i_nails
+SKILLMAKE=Carpentry 32.1,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bookstands
+DESCRIPTION=Elven Bookstand
+
+
+[ITEMDEF 024cb]
+DEFNAME=i_screen_paper1
+TYPE=t_normal
+FLIP=1
+CATEGORY=Decoration - Furniture
+SUBSECTION=Screens
+DESCRIPTION=Paper Screen 1
+DUPELIST=024cc
+
+[ITEMDEF 024cc]
+//paper screen
+DUPEITEM=024cb
+
+[ITEMDEF 024cd]
+DEFNAME=i_screen_paper2
+TYPE=t_normal
+FLIP=1
+CATEGORY=Decoration - Furniture
+SUBSECTION=Screens
+DESCRIPTION=Paper Screen 2
+DUPELIST=024ce,024cf
+
+[ITEMDEF 024ce]
+//paper screen
+DUPEITEM=024cd
+
+[ITEMDEF 024cf]
+//paper screen
+DUPEITEM=024cd
+
+[ITEMDEF 024d0]
+DEFNAME=i_screen_bamboo1
+TYPE=t_normal
+FLIP=1
+VALUE=130
+RESOURCES=75 i_board,60 i_cloth
+SKILLMAKE=Carpentry 80.0,Tailoring 50.0,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Screens
+DESCRIPTION=Bamboo Screen 1
+DUPELIST=024d1
+
+[ITEMDEF 024d1]
+//bamboo screen 1
+DUPEITEM=024d0
+
+[ITEMDEF 024d2]
+DEFNAME=i_screen_bamboo2
+TYPE=t_normal
+FLIP=1
+VALUE=130
+RESOURCES=75 i_board,60 i_cloth
+SKILLMAKE=Carpentry 80.0,Tailoring 50.0,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Screens
+DESCRIPTION=Bamboo Screen 2
+DUPELIST=024d3,024d4
+
+[ITEMDEF 024d3]
+//bamboo screen 2
+DUPEITEM=024d2
+
+[ITEMDEF 024d4]
+//bamboo screen 2
+DUPEITEM=024d2
+
+
+[ITEMDEF 024ec]
+DEFNAME=i_stair_cabinet
+TYPE=t_container
+TDATA2=0107
+RESOURCES=50 i_board
+CATEGORY=Decoration - Furniture
+SUBSECTION=Cabinetry
+DESCRIPTION=Stair Cabinet
+DUPELIST=024ed,024ee,024ef,024f0,024f1,024f2,024f3
+
+[ITEMDEF 024ed]
+//stair with cabinet
+DUPEITEM=024ec
+
+[ITEMDEF 024ee]
+//stair with cabinet
+DUPEITEM=024ec
+
+[ITEMDEF 024ef]
+//stair with cabinet
+DUPEITEM=024ec
+
+[ITEMDEF 024f0]
+//stair with cabinet
+DUPEITEM=024ec
+
+[ITEMDEF 024f1]
+//stair with cabinet
+DUPEITEM=024ec
+
+[ITEMDEF 024f2]
+//stair with cabinet
+DUPEITEM=024ec
+
+[ITEMDEF 024f3]
+//stair with cabinet
+DUPEITEM=024ec
+
+
+[ITEMDEF 0280b]
+DEFNAME=i_wooden_chest_plain
+NAME=plain wooden chest
+TYPE=t_container
+TDATA2=0109
+FLIP=1
+VALUE=175
+WEIGHT=15.0
+RESOURCES=30 i_board
+SKILLMAKE=Carpentry 90.0,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Cabinetry
+DESCRIPTION=Plain Wooden Chest
+DUPELIST=0280c
+
+[ITEMDEF 0280c]
+//plain wooden chest
+DUPEITEM=0280b
+
+[ITEMDEF 0280d]
+DEFNAME=i_wooden_chest_ornate
+NAME=ornate wooden chest
+TYPE=t_container
+TDATA2=010b
+FLIP=1
+VALUE=185
+WEIGHT=15.0
+RESOURCES=30 i_board
+SKILLMAKE=Carpentry 90.0,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Cabinetry
+DESCRIPTION=Ornate Wooden Chest
+DUPELIST=0280e
+
+[ITEMDEF 0280e]
+//ornate wooden chest
+DUPEITEM=0280d
+
+[ITEMDEF 0280f]
+DEFNAME=i_wooden_chest_gilded
+NAME=gilded wooden chest
+TYPE=t_container
+TDATA2=010a
+FLIP=1
+VALUE=195
+WEIGHT=15.0
+RESOURCES=20 i_board,2 i_hinge,2 i_wire_gold,10 i_nails
+SKILLMAKE=Carpentry 85.3,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Cabinetry
+DESCRIPTION=Gilded Wooden Chest
+DUPELIST=02810
+
+[ITEMDEF 02810]
+//gilded wooden chest
+DUPEITEM=0280f
+
+[ITEMDEF 02811]
+DEFNAME=i_wooden_foot_locker
+NAME=wooden footlocker
+TYPE=t_container
+TDATA2=010c
+FLIP=1
+VALUE=155
+WEIGHT=15.0
+RESOURCES=15 i_board,2 i_hinge,1 i_wire_iron,6 i_nails
+SKILLMAKE=Carpentry 85.3,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Cabinetry
+DESCRIPTION=Wooden Footlocker
+DUPELIST=02812
+
+[ITEMDEF 02812]
+//wooden footlocker
+DUPEITEM=02811
+
+[ITEMDEF 02813]
+DEFNAME=i_wooden_chest_finished
+NAME=finished wooden chest
+TYPE=t_container
+TDATA2=010d
+FLIP=1
+VALUE=175
+WEIGHT=15.0
+RESOURCES=20 i_board,2 i_hinge,10 i_nails
+SKILLMAKE=Carpentry 85.3,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Cabinetry
+DESCRIPTION=Finished Wooden Chest
+DUPELIST=02814
+
+[ITEMDEF 02814]
+//finished wooden chest
+DUPEITEM=02813
+
+[ITEMDEF 02815]
+DEFNAME=i_cabinet_tall
+NAME=tall cabinet
+TYPE=t_container
+TDATA2=010c
+FLIP=1
+VALUE=180
+WEIGHT=41.2
+RESOURCES=35 i_board
+SKILLMAKE=Carpentry 90.0,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Cabinetry
+DESCRIPTION=Tall Cabinet
+DUPELIST=02816
+
+[ITEMDEF 02816]
+//tall cabinet
+DUPEITEM=02815
+
+[ITEMDEF 02817]
+DEFNAME=i_cabinet_short
+NAME=short cabinet
+TYPE=t_container
+TDATA2=010c
+FLIP=1
+VALUE=170
+WEIGHT=30.8
+RESOURCES=35 i_board
+SKILLMAKE=Carpentry 90.0,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Cabinetry
+DESCRIPTION=Short Cabinet
+DUPELIST=02818
+
+[ITEMDEF 02818]
+//short cabinet
+DUPEITEM=02817
+
+[ITEMDEF 02819]
+DEFNAME=i_table_low1
+VALUE=75
+WEIGHT=28.2
+RESOURCES=14 i_board,2 i_nails
+SKILLMAKE=Carpentry 92.4,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Tables
+DESCRIPTION=Table 1
+
+[ITEMDEF 0281a]
+DEFNAME=i_table_low2
+VALUE=75
+WEIGHT=28.2
+RESOURCES=14 i_board,2 i_nails
+SKILLMAKE=Carpentry 92.4,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Tables
+DESCRIPTION=Table 2
+
+[ITEMDEF 02857]
+DEFNAME=i_armoire_red
+NAME=red armoire
+TYPE=t_container
+TDATA2=0105
+FLIP=1
+VALUE=175
+WEIGHT=31.0
+RESOURCES=15 i_board,6 i_nails,4 i_hinge
+SKILLMAKE=Carpentry 84.2,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Cabinetry
+DESCRIPTION=Red Armoire
+DUPELIST=02858
+
+[ITEMDEF 02858]
+//red armoire
+DUPEITEM=02857
+
+[ITEMDEF 02859]
+DEFNAME=i_armoire_elegant
+NAME=elegant armoire
+TYPE=t_container
+TDATA2=0107
+FLIP=1
+VALUE=175
+WEIGHT=31.0
+RESOURCES=15 i_board,6 i_nails,4 i_hinge
+SKILLMAKE=Carpentry 84.2,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Cabinetry
+DESCRIPTION=Elegant Armoire
+DUPELIST=0285a
+
+[ITEMDEF 0285a]
+//elegant armoire
+DUPEITEM=02859
+
+[ITEMDEF 0285b]
+DEFNAME=i_armoire_maple
+NAME=maple armoire
+TYPE=t_container
+TDATA2=0106
+FLIP=1
+VALUE=175
+WEIGHT=31.0
+RESOURCES=15 i_board,6 i_nails,4 i_hinge
+SKILLMAKE=Carpentry 84.2,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Cabinetry
+DESCRIPTION=Maple Armoire
+DUPELIST=0285c
+
+[ITEMDEF 0285c]
+//maple armoire
+DUPEITEM=0285b
+
+[ITEMDEF 0285d]
+DEFNAME=i_armoire_cherry
+NAME=cherry armoire
+TYPE=t_container
+TDATA2=0107
+FLIP=1
+VALUE=175
+WEIGHT=31.0
+RESOURCES=15 i_board,6 i_nails,4 i_hinge
+SKILLMAKE=Carpentry 84.2,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Cabinetry
+DESCRIPTION=Cherry Armoire
+DUPELIST=0285e
+
+[ITEMDEF 0285e]
+//cherry armoire
+DUPEITEM=0285d
+
+[ITEMDEF 0295c]
+DEFNAME=i_futon
+TYPE=t_normal
+FLIP=1
+CATEGORY=Decoration - Furniture
+SUBSECTION=Beds
+DESCRIPTION=Futon
+DUPELIST=0295d
+
+[ITEMDEF 0295d]
+//futon
+DUPEITEM=0295c
+
+[ITEMDEF 0295e]
+DEFNAME=i_futon2
+TYPE=t_normal
+FLIP=1
+CATEGORY=Decoration - Furniture
+SUBSECTION=Beds
+DESCRIPTION=Futon 2
+DUPELIST=0295f
+
+[ITEMDEF 0295f]
+//futon 2
+DUPEITEM=0295e
+
+
+[ITEMDEF 02bd1]
+DEFNAME=i_dresser_drawer_2
+TYPE=t_container
+TDATA2=051
+FLIP=1
+VALUE=21
+WEIGHT=2.2
+RESOURCES=2 i_board,2 i_nails
+SKILLMAKE=Carpentry 71.6,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Drawer (Vanity 2)
+DUPELIST=02bd2,02bd3,02bd4,02bd5,02bd6
+
+[ITEMDEF 02bd2]
+//drawer 2
+DUPEITEM=02bd1
+
+[ITEMDEF 02bd3]
+//drawer 2
+DUPEITEM=02bd1
+
+[ITEMDEF 02bd4]
+//drawer 2
+DUPEITEM=02bd1
+
+[ITEMDEF 02bd5]
+//drawer 2
+DUPEITEM=02bd1
+
+[ITEMDEF 02bd6]
+//drawer 2
+DUPEITEM=02bd1
+
+[ITEMDEF 02bd7]
+DEFNAME=i_dresser_2
+TYPE=t_container
+TDATA2=051
+FLIP=1
+VALUE=272
+WEIGHT=28.9
+RESOURCES=8 i_board,20 i_nails,6 i_dresser_drawer,1 i_wire_silver
+SKILLMAKE=Carpentry 87.3,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Dresser (Vanity 2)
+DUPELIST=02bd8
+
+[ITEMDEF 02bd8]
+//dresser
+DUPEITEM=02bd7
+
+
+[ITEMDEF 02d05]
+DEFNAME=i_elven_armoire_simple
+NAME=simple elven armoir
+TYPE=t_container
+TDATA2=04f
+FLIP=1
+VALUE=136
+WEIGHT=51.0
+RESOURCES=25 i_board,6 i_nails,4 i_hinge
+SKILLMAKE=Carpentry 84.2,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Cabinetry
+DESCRIPTION=Simple Elven Armoir
+DUPELIST=02d06
+
+[ITEMDEF 02d06]
+//simple elven armoir
+DUPEITEM=02d05
+
+[ITEMDEF 02d07]
+DEFNAME=i_elven_armoire_fancy
+NAME=fancy elven armoir
+TYPE=t_container
+TDATA2=04e
+FLIP=1
+VALUE=178
+WEIGHT=51.4
+RESOURCES=25 i_board,6 i_nails,4 i_hinge,4 i_wire_silver
+SKILLMAKE=Carpentry 84.2,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Cabinetry
+DESCRIPTION=Fancy Elven Armoir
+DUPELIST=02d08
+
+[ITEMDEF 02d08]
+//fancy elven armoir
+DUPEITEM=02d07
+
+[ITEMDEF 02d09]
+DEFNAME=i_elven_dresser
+NAME=elven dresser
+TYPE=t_container
+TDATA2=010e
+FLIP=1
+VALUE=272
+WEIGHT=28.8
+RESOURCES=9 i_board,20 i_nails,6 i_dresser_drawer
+SKILLMAKE=Carpentry 87.3,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Elven Dresser
+DUPELIST=02d0a
+
+[ITEMDEF 02d0a]
+//elven dresser
+DUPEITEM=02d09
+
+[ITEMDEF 02d0b]
+DEFNAME=i_elven_washbasin
+NAME=elven wash basin
+TYPE=t_water
+TDATA2=051
+FLIP=1
+VALUE=154
+WEIGHT=38.0
+RESOURCES=40 i_board
+SKILLMAKE=Carpentry 70.0,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Elven Wash Basin
+DUPELIST=02d0c
+
+[ITEMDEF 02d0c]
+//elven wash basin
+DUPEITEM=02d0b
+
+
+[ITEMDEF 02ddd]
+DEFNAME=i_podium
+NAME=elven podium
+TYPE=t_normal
+FLIP=1
+VALUE=56
+WEIGHT=20.0
+RESOURCES=20 i_board
+SKILLMAKE=Carpentry 80.0,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bookstands
+DESCRIPTION=Elven Podium
+DUPELIST=02dde
+
+[ITEMDEF 02dde]
+//elven podium
+DUPEITEM=02ddd
+
+[ITEMDEF 02ddf]
+DEFNAME=i_loveseat
+NAME=elven loveseat
+FLIP=1
+VALUE=92
+WEIGHT=33.5
+RESOURCES=15 i_board,2 i_cloth,1 i_wire_gold
+SKILLMAKE=Carpentry 80.0,Tailoring 40.0,t_carpentry,t_sewing_kit
+CATEGORY=Decoration - Furniture
+SUBSECTION=Chairs
+DESCRIPTION=Elven Loveseat
+DUPELIST=02de0,03088,03089,0308a,0308b
+
+[ITEMDEF 02de0]
+//elven loveseat
+DUPEITEM=02ddf
+
+[ITEMDEF 02de1]
+DEFNAME=i_table_elven_ornate
+NAME=ornate elven table
+TYPE=t_normal
+FLIP=1
+VALUE=98
+WEIGHT=50.6
+RESOURCES=60 i_board
+SKILLMAKE=Carpentry 85.0,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Tables
+DESCRIPTION=Ornate Elven Table
+DUPELIST=02de2,0308c,0308d,0308e,0308f,03090,03091
+
+[ITEMDEF 02de2]
+//ornate elven table
+DUPEITEM=02de1
+
+[ITEMDEF 02de3]
+DEFNAME=i_chair_elven_ornate
+NAME=ornate elven chair
+FLIP=1
+VALUE=85
+WEIGHT=33.4
+RESOURCES=30 i_board
+SKILLMAKE=Carpentry 80.0,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Chairs
+DESCRIPTION=Ornate Elven Chair
+DUPELIST=02de4,02de5,02de6
+
+[ITEMDEF 02de4]
+//ornate elven chair
+DUPEITEM=02de3
+
+[ITEMDEF 02de5]
+//ornate elven chair
+DUPEITEM=02de3
+
+[ITEMDEF 02de6]
+//ornate elven chair
+DUPEITEM=02de3
+
+[ITEMDEF 02de7]
+DEFNAME=i_table_hardwood
+NAME=hardwood table
+FLIP=1
+VALUE=108
+WEIGHT=40.6
+RESOURCES=50 i_board
+SKILLMAKE=Carpentry 80.0,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Tables
+DESCRIPTION=Hardwood Table
+DUPELIST=02de8,03092,03093,03094,03095,03096,03097
+
+[ITEMDEF 02de8]
+//hardwood table
+DUPEITEM=02de7
+
+[ITEMDEF 02de9]
+DEFNAME=i_chest_ornate_elven
+NAME=ornate elven chest
+TYPE=t_container
+TDATA2=0107
+FLIP=1
+VALUE=94
+WEIGHT=60.0
+RESOURCES=40 i_board
+SKILLMAKE=Carpentry 94.7,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Tables
+DESCRIPTION=Ornate Elven Chest
+DUPELIST=02dea,03098,03099,0309a,0309b
+
+[ITEMDEF 02dea]
+//ornate elven chest
+DUPEITEM=02de9
+
+[ITEMDEF 02deb]
+DEFNAME=i_chair_elven_big
+NAME=big elven chair
+FLIP=1
+VALUE=79
+WEIGHT=42.4
+RESOURCES=16 i_board,8 i_cloth,2 i_wool,4 i_nails
+SKILLMAKE=Carpentry 85.0,Tailoring 40.0,t_carpentry,t_sewing_kit
+CATEGORY=Decoration - Furniture
+SUBSECTION=Chairs
+DESCRIPTION=Big Elven Chair
+DUPELIST=02dec,02ded,02dee
+
+[ITEMDEF 02dec]
+//elven chair
+DUPEITEM=02deb
+
+[ITEMDEF 02ded]
+//elven chair
+DUPEITEM=02deb
+
+[ITEMDEF 02dee]
+//elven chair
+DUPEITEM=02deb
+
+[ITEMDEF 02def]
+DEFNAME=i_bookshelf_elven
+NAME=elven bookshelf
+TYPE=t_container
+TDATA2=04d
+FLIP=1
+VALUE=119
+WEIGHT=51.0
+RESOURCES=25 i_board,10 i_nails
+SKILLMAKE=Carpentry 94.2,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bookcases
+DESCRIPTION=Elven Bookshelf
+DUPELIST=02df0,03084,03085,03086,03087
+
+[ITEMDEF 02df0]
+//elven bookshelf
+DUPEITEM=02def
+
+[ITEMDEF 02df5]
+DEFNAME=i_elven_chair_reading
+NAME=elven reading chair
+FLIP=1
+WEIGHT=1.0
+RESOURCES=30 i_board
+SKILLMAKE=Carpentry 80.0,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Chairs
+DESCRIPTION=Elven Reading Chair
+DUPELIST=02df6
+
+[ITEMDEF 02df6]
+//elven reading chair
+DUPEITEM=02df5
+
+[ITEMDEF 02fea]
+DEFNAME=i_displaycase_elven
+NAME=elven displaycase
+FLIP=1
+WEIGHT=8.1
+RESOURCES=2 i_board,1 i_nails
+CATEGORY=Decoration - Furniture
+SUBSECTION=Display Case
+DESCRIPTION=Elven Display Case
+DUPELIST=02feb
+
+[ITEMDEF 02feb]
+//elven displaycase
+DUPEITEM=02fea
+
+[ITEMDEF 0304c]
+DEFNAME=i_bed_small_elven
+NAME=small elven bed
+TDATA1=0
+FLIP=1
+VALUE=178
+WEIGHT=73.7
+RESOURCES=30 i_board,10 i_nails,1 i_bedroll,2 i_wire_silver
+SKILLMAKE=Carpentry 89.8,Tailoring 65.0,t_carpentry,t_sewing_kit
+CATEGORY=Decoration - Furniture
+SUBSECTION=Beds
+DESCRIPTION=Small Bed (elven)
+DUPELIST=0304d,03050,03051
+
+[ITEMDEF 0304d]
+//small bed (elven)
+DUPEITEM=0304c
+
+[ITEMDEF 0304e]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Elven Bed Assets 0304e
+
+[ITEMDEF 0304f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Elven Bed Assets 0304f
+
+[ITEMDEF 03050]
+//small bed (elven)
+DUPEITEM=0304c
+
+[ITEMDEF 03051]
+//small bed (elven)
+DUPEITEM=0304c
+
+[ITEMDEF 03052]
+DEFNAME=i_bed_large_elven_made
+NAME=large elven bed
+TDATA1=0
+DYE=1
+FLIP=1
+VALUE=775
+WEIGHT=191.0
+RESOURCES=1 i_bed_large_sheet,2 i_blanket,2 i_pillow_11
+SKILLMAKE=Carpentry 100.1,Tailoring 75.0,t_carpentry,t_sewing_kit
+CATEGORY=Decoration - Furniture
+SUBSECTION=Beds
+DESCRIPTION=Large Elven Bed (made)
+DUPELIST=03053,03054,03055,03056,03057,03058,03059
+
+[ITEMDEF 03053]
+//large elven bed (made)
+DUPEITEM=03052
+
+[ITEMDEF 03054]
+//large elven bed (made)
+DUPEITEM=03052
+
+[ITEMDEF 03055]
+//large elven bed (made)
+DUPEITEM=03052
+
+[ITEMDEF 03056]
+//large elven bed (made)
+DUPEITEM=03052
+
+[ITEMDEF 03057]
+//large elven bed (made)
+DUPEITEM=03052
+
+[ITEMDEF 03058]
+//large elven bed (made)
+DUPEITEM=03052
+
+[ITEMDEF 03059]
+//large elven bed (made)
+DUPEITEM=03052
+
+
+[ITEMDEF 03066]
+DEFNAME=i_displaycase_monster
+NAME=monster displaycase
+FLIP=1
+CATEGORY=Decoration - Furniture
+SUBSECTION=Display Case
+DESCRIPTION=Monster Display Case
+DUPELIST=03067,03068,03069,0306a,0306b
+
+[ITEMDEF 03067]
+//monster displaycase
+DUPEITEM=03066
+
+[ITEMDEF 03068]
+//monster displaycase
+DUPEITEM=03066
+
+[ITEMDEF 03069]
+//monster displaycase
+DUPEITEM=03066
+
+[ITEMDEF 0306a]
+//monster displaycase
+DUPEITEM=03066
+
+[ITEMDEF 0306b]
+//monster displaycase
+DUPEITEM=03066
+
+
+[ITEMDEF 03084]
+//elven bookshelf
+DUPEITEM=02def
+
+[ITEMDEF 03085]
+//elven bookshelf
+DUPEITEM=02def
+
+[ITEMDEF 03086]
+//elven bookshelf
+DUPEITEM=02def
+
+[ITEMDEF 03087]
+//elven bookshelf
+DUPEITEM=02def
+
+[ITEMDEF 03088]
+//elven loveseat
+DUPEITEM=02ddf
+
+[ITEMDEF 03089]
+//elven loveseat
+DUPEITEM=02ddf
+
+[ITEMDEF 0308a]
+//elven loveseat
+DUPEITEM=02ddf
+
+[ITEMDEF 0308b]
+//elven loveseat
+DUPEITEM=02ddf
+
+[ITEMDEF 0308c]
+//ornate elven table
+DUPEITEM=02de1
+
+[ITEMDEF 0308d]
+//ornate elven table
+DUPEITEM=02de1
+
+[ITEMDEF 0308e]
+//ornate elven table
+DUPEITEM=02de1
+
+[ITEMDEF 0308f]
+//ornate elven table
+DUPEITEM=02de1
+
+[ITEMDEF 03090]
+//ornate elven table
+DUPEITEM=02de1
+
+[ITEMDEF 03091]
+//ornate elven table
+DUPEITEM=02de1
+
+[ITEMDEF 03092]
+//ornate elven table
+DUPEITEM=02de7
+
+[ITEMDEF 03093]
+//ornate elven table
+DUPEITEM=02de7
+
+[ITEMDEF 03094]
+//ornate elven table
+DUPEITEM=02de7
+
+[ITEMDEF 03095]
+//ornate elven table
+DUPEITEM=02de7
+
+[ITEMDEF 03096]
+//ornate elven table
+DUPEITEM=02de7
+
+[ITEMDEF 03097]
+//ornate elven table
+DUPEITEM=02de7
+
+[ITEMDEF 03098]
+//elven storage table
+DUPEITEM=02de9
+
+[ITEMDEF 03099]
+//elven storage table
+DUPEITEM=02de9
+
+[ITEMDEF 0309a]
+//elven storage table
+DUPEITEM=02de9
+
+[ITEMDEF 0309b]
+//elven storage table
+DUPEITEM=02de9
+
+[ITEMDEF 030df]
+DEFNAME=i_elven_washbasin_parts
+TYPE=t_water
+FLIP=1
+WEIGHT=48.0
+RESOURCES=40 i_board
+SKILLMAKE=Carpentry 70.0,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Elven Wash Basin Parts
+DUPELIST=030e0,030e1,030e2
+
+[ITEMDEF 030e0]
+//elven washbasin
+DUPEITEM=030df
+
+[ITEMDEF 030e1]
+//elven washbasin
+DUPEITEM=030df
+
+[ITEMDEF 030e2]
+//elven washbasin
+DUPEITEM=030df
+
+[ITEMDEF 030e3]
+DEFNAME=i_elven_dresser_parts
+TYPE=t_container
+TDATA2=010e
+FLIP=1
+RESOURCES=45 i_board
+SKILLMAKE=Carpentry 75.0,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Elven Dresser (multi-part)
+DUPELIST=030e4,030e5,030e6
+
+[ITEMDEF 030e4]
+//elven dresser
+DUPEITEM=030e3
+
+[ITEMDEF 030e5]
+//elven dresser
+DUPEITEM=030e3
+
+[ITEMDEF 030e6]
+//elven dresser
+DUPEITEM=030e3
+
+
+[ITEMDEF 03d8a]
+//ruined bed (east)(duplicated from 0c26, but uses 4 tiles instead 3)
+NAME=ruined bed
+
+[ITEMDEF 03d8b]
+//ruined bed (east)(duplicated from 0c26, but uses 4 tiles instead 3)
+NAME=ruined bed
+
+[ITEMDEF 03d8c]
+//ruined bed (east)(duplicated from 0c26, but uses 4 tiles instead 3)
+NAME=ruined bed
+
+[ITEMDEF 03d8d]
+//ruined bed (east)(duplicated from 0c26, but uses 4 tiles instead 3)
+NAME=ruined bed
+
+
+[ITEMDEF 03d90]
+//ruined bed (south)(duplicated from 0c29, but uses 4 tiles instead 3)
+NAME=ruined bed
+
+[ITEMDEF 03d91]
+//ruined bed (south)(duplicated from 0c29, but uses 4 tiles instead 3)
+NAME=ruined bed
+
+[ITEMDEF 03d92]
+//ruined bed (south)(duplicated from 0c29, but uses 4 tiles instead 3)
+NAME=ruined bed
+
+[ITEMDEF 03d93]
+//ruined bed (south)(duplicated from 0c29, but uses 4 tiles instead 3)
+NAME=ruined bed
+
+
+[ITEMDEF 03dff]
+DEFNAME=i_bench_stone
+FLIP=1
+CATEGORY=Decoration - Furniture
+SUBSECTION=Chairs
+DESCRIPTION=Bench (Dark Stone)
+DUPELIST=03e00
+
+[ITEMDEF 03e00]
+//bench (dark stone)
+DUPEITEM=03dff
+
+
+[ITEMDEF 0400c]
+DEFNAME=i_bed_small_gargish
+NAME=gargish cot
+FLIP=1
+RESOURCES=100 i_rock_granite,100 i_cloth
+SKILLMAKE=Carpentry 60.6,Tailoring 75.0,t_masonry_tool
+CATEGORY=Decoration - Furniture
+SUBSECTION=Beds
+DESCRIPTION=Gargish Cot
+DUPELIST=0400d,0400e,0400f
+
+[ITEMDEF 0400d]
+//gargish cot (south)
+NAME=gargish cot
+DUPEITEM=0400c
+
+[ITEMDEF 0400e]
+//gargish cot (east)
+NAME=gargish cot
+DUPEITEM=0400c
+
+[ITEMDEF 0400f]
+//gargish cot (east)
+NAME=gargish cot
+DUPEITEM=0400c
+
+[ITEMDEF 04010]
+DEFNAME=i_bed_large_gargish
+NAME=large gargish bed
+FLIP=1
+RESOURCES=100 i_rock_granite,100 i_cloth
+SKILLMAKE=Carpentry 60.6,Tailoring 75.0,t_masonry_tool
+CATEGORY=Decoration - Furniture
+SUBSECTION=Beds
+DESCRIPTION=Large Gargish Bed
+DUPELIST=04011,04012,04013,04014,04015,04016,04017,04018,04019,0401a,0401b,0401c,0401d,0401e,0401f,04020,04021
+
+[ITEMDEF 04011]
+//large gargish bed (south)
+NAME=large gargish bed
+DUPEITEM=04010
+
+[ITEMDEF 04012]
+//large gargish bed (south)
+NAME=large gargish bed
+DUPEITEM=04010
+
+[ITEMDEF 04013]
+//large gargish bed (south)
+NAME=large gargish bed
+DUPEITEM=04010
+
+[ITEMDEF 04014]
+//large gargish bed (south)
+NAME=large gargish bed
+DUPEITEM=04010
+
+[ITEMDEF 04015]
+//large gargish bed (south)
+NAME=large gargish bed
+DUPEITEM=04010
+
+[ITEMDEF 04016]
+//large gargish bed (south)
+NAME=large gargish bed
+DUPEITEM=04010
+
+[ITEMDEF 04017]
+//large gargish bed (south)
+NAME=large gargish bed
+DUPEITEM=04010
+
+[ITEMDEF 04018]
+//large gargish bed (south)
+NAME=large gargish bed
+DUPEITEM=04010
+
+[ITEMDEF 04019]
+//large gargish bed (east)
+NAME=large gargish bed
+DUPEITEM=04010
+
+[ITEMDEF 0401a]
+//large gargish bed (east)
+NAME=large gargish bed
+DUPEITEM=04010
+
+[ITEMDEF 0401b]
+//large gargish bed (east)
+NAME=large gargish bed
+DUPEITEM=04010
+
+[ITEMDEF 0401c]
+//large gargish bed (east)
+NAME=large gargish bed
+DUPEITEM=04010
+
+[ITEMDEF 0401d]
+//large gargish bed (east)
+NAME=large gargish bed
+DUPEITEM=04010
+
+[ITEMDEF 0401e]
+//large gargish bed (east)
+NAME=large gargish bed
+DUPEITEM=04010
+
+[ITEMDEF 0401f]
+//large gargish bed (east)
+NAME=large gargish bed
+DUPEITEM=04010
+
+[ITEMDEF 04020]
+//large gargish bed (east)
+NAME=large gargish bed
+DUPEITEM=04010
+
+[ITEMDEF 04021]
+//large gargish bed (east)
+NAME=large gargish bed
+DUPEITEM=04010
+
+
+[ITEMDEF 04023]
+DEFNAME=i_chair_ter_mur
+NAME=Ter-Mur style chair
+FLIP=1
+VALUE=79
+WEIGHT=48.5
+RESOURCES=20 i_board,4 i_cloth,4 i_cotton,1 i_nails,4 i_ingot_gold
+SKILLMAKE=Carpentry 85.6,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Chairs
+DESCRIPTION=Ter-Mur Style Chair
+DUPELIST=04024
+
+[ITEMDEF 04024]
+//Ter-Mur style Chair
+NAME=Ter-Mur style chair
+DUPEITEM=04023
+
+[ITEMDEF 04025]
+DEFNAME=i_chest_gargish
+NAME=gargish chest
+TYPE=t_container
+TDATA2=042
+FLIP=1
+VALUE=79
+WEIGHT=2.0
+RESOURCES=30 i_board
+SKILLMAKE=Carpentry 80.0,t_carpentry
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Containers
+DESCRIPTION=Gargish Chest
+DUPELIST=04026
+
+[ITEMDEF 04026]
+//gargish chest
+NAME=gargish chest
+DUPEITEM=04025
+
+[ITEMDEF 04027]
+DEFNAME=i_gargish_couch
+NAME=gargish couch
+FLIP=1
+WEIGHT=50
+RESOURCES=75 i_board
+SKILLMAKE=Carpentry 90.0,t_masonry_tool
+CATEGORY=Decoration - Furniture
+SUBSECTION=Chairs
+DESCRIPTION=Gargish Couch
+DUPELIST=04028,04029,0402a
+
+[ITEMDEF 04028]
+//gargish couch (south)
+NAME=gargish couch
+DUPEITEM=04027
+
+[ITEMDEF 04029]
+//gargish couch (east)
+NAME=gargish couch
+DUPEITEM=04027
+
+[ITEMDEF 0402a]
+//gargish couch (east)
+NAME=gargish couch
+DUPEITEM=04027
+
+[ITEMDEF 0402b]
+DEFNAME=i_dresser_termur
+NAME=Ter-Mur style dresser
+TYPE=t_container
+TDATA2=010d
+FLIP=1
+RESOURCES=60 i_board
+SKILLMAKE=Carpentry 90.0,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Ter-Mur style dresser
+DUPELIST=0402c,0402d,0402e
+
+[ITEMDEF 0402c]
+//Ter-Mur style dresser
+NAME=Ter-Mur style dresser
+DUPEITEM=0402b
+
+[ITEMDEF 0402d]
+//Ter-Mur style dresser
+NAME=Ter-Mur style dresser
+DUPEITEM=0402b
+
+[ITEMDEF 0402e]
+//Ter-Mur style dresser
+NAME=Ter-Mur style dresser
+DUPEITEM=0402b
+
+[ITEMDEF 0402f]
+DEFNAME=i_table_long
+NAME=long table
+RESOURCES=80 i_board
+SKILLMAKE=Carpentry 90.0,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Tables
+DESCRIPTION=Long Table
+DUPELIST=04030,04031,04032
+
+[ITEMDEF 04030]
+//long table
+DUPEITEM=0402f
+
+[ITEMDEF 04031]
+//long table
+DUPEITEM=0402f
+
+[ITEMDEF 04032]
+//long table
+DUPEITEM=0402f
+
+[ITEMDEF 04033]
+DEFNAME=i_table_short
+NAME=short table
+RESOURCES=60 i_board
+SKILLMAKE=Carpentry 80.0,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Tables
+DESCRIPTION=Short Table
+DUPELIST=04034,04035,04036
+
+[ITEMDEF 04034]
+//short table
+DUPEITEM=04033
+
+[ITEMDEF 04035]
+//short table
+DUPEITEM=04033
+
+[ITEMDEF 04036]
+//short table
+DUPEITEM=04033
+
+
+[ITEMDEF 0403a]
+DEFNAME=i_mirror_floor_termur
+NAME=Ter-Mur style floor mirror
+FLIP=1
+RESOURCES=20 i_sand
+SKILLMAKE=Carpentry 50.0,t_masonry_tool
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Ter-Mur Style Floor Mirror
+DUPELIST=04046
+
+
+[ITEMDEF 04041]
+DEFNAME=i_table_termur
+NAME=Ter-Mur style table
+RESOURCES=50 i_board
+SKILLMAKE=Carpentry 75.0,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Tables
+DESCRIPTION=Ter-Mur Style Table
+
+
+[ITEMDEF 04044]
+DEFNAME=i_mirror_wall_termur
+NAME=Ter-Mur style wall mirror
+FLIP=1
+RESOURCES=10 i_sand
+SKILLMAKE=Carpentry 60.0,t_masonry_tool
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Ter-Mur Style Wall Mirror
+DUPELIST=04045
+
+[ITEMDEF 04045]
+//Ter-Mur style wall mirror
+NAME=Ter-Mur style wall mirror
+DUPEITEM=04044
+
+[ITEMDEF 04046]
+//Ter-Mur style floor mirror
+NAME=Ter-Mur style floor mirror
+DUPEITEM=0403a
+
+
+[ITEMDEF 04bdb]
+//Lord Blackthorn's Throne (south)(bottles)
+NAME=Lord Blackthorn's Throne
+
+[ITEMDEF 04bdc]
+//Lord Blackthorn's Throne (south)(bottles)
+NAME=Lord Blackthorn's Throne
+
+[ITEMDEF 04bdd]
+//Lord Blackthorn's Throne (south)(bottles)
+NAME=Lord Blackthorn's Throne
+
+
+[ITEMDEF 04c1a]
+//Lord Blackthorn's Throne (south)
+NAME=Lord Blackthorn's Throne
+
+[ITEMDEF 04c1b]
+//Lord Blackthorn's Throne (south)
+NAME=Lord Blackthorn's Throne
+
+[ITEMDEF 04c1c]
+//Lord Blackthorn's Throne (south)
+NAME=Lord Blackthorn's Throne
+
+[ITEMDEF i_throne_lord_blackthorn_south]
+ID=04c1b
+NAME=Lord Blackthorn's Throne
+TYPE=t_multi
+CATEGORY=Multis
+SUBSECTION=Furniture
+DESCRIPTION=Lord Blackthorn's Throne (south)
+MULTIREGION=0,0,0,0
+COMPONENT=04c1a,-1,0
+COMPONENT=04c1c,1,0
+
+[ITEMDEF 04c1d]
+//Lord Blackthorn's Throne (east)
+NAME=Lord Blackthorn's Throne
+
+[ITEMDEF 04c1e]
+//Lord Blackthorn's Throne (east)
+NAME=Lord Blackthorn's Throne
+
+[ITEMDEF 04c1f]
+//Lord Blackthorn's Throne (east)
+NAME=Lord Blackthorn's Throne
+
+[ITEMDEF i_throne_lord_blackthorn_east]
+ID=04c1e
+NAME=Lord Blackthorn's Throne
+TYPE=t_multi
+CATEGORY=Multis
+SUBSECTION=Furniture
+DESCRIPTION=Lord Blackthorn's Throne (east)
+MULTIREGION=0,0,0,0
+COMPONENT=04c1d,0,-1
+COMPONENT=04c1f,0,1
+
+
+[ITEMDEF 0a1f5]
+//mailbox (barrel)(south)
+
+
+[ITEMDEF 0a1f7]
+DEFNAME=i_mailbox_barrel_s
+NAME=mailbox
+TYPE=t_container
+TDATA2=06d5
+CATEGORY=Decoration - Furniture
+SUBSECTION=Mailboxes
+DESCRIPTION=Mailbox (barrel)(south)
+ON=@DropOn_Self
+   IF (<DISPID> != 0a1f5)
+    DISPID=0a1f5
+    UPDATE
+   ENDIF
+ON=@PickUp_Self
+   IF (<DISPID> != 0a1f7) && (<RESCOUNT> < 2)
+    DISPID=0a1f7
+    UPDATE
+   ENDIF
+
+[ITEMDEF 0a1f8]
+//mailbox (barrel)(east)
+
+[ITEMDEF 0a1f9]
+DEFNAME=i_mailbox_barrel_e
+NAME=mailbox
+TYPE=t_container
+TDATA2=06d5
+CATEGORY=Decoration - Furniture
+SUBSECTION=Mailboxes
+DESCRIPTION=Mailbox (barrel)(east)
+ON=@DropOn_Self
+   IF (<DISPID> != 0a1f8)
+    DISPID=0a1f8
+    UPDATE
+   ENDIF
+ON=@PickUp_Self
+   IF (<DISPID> != 0a1f9) && (<RESCOUNT> < 2)
+    DISPID=0a1f9
+    UPDATE
+   ENDIF
+
+
+[ITEMDEF 0a202]
+//mailbox (dolphin)(south)
+
+[ITEMDEF 0a203]
+DEFNAME=i_mailbox_dolphin_s
+NAME=mailbox
+TYPE=t_container
+TDATA2=06d3
+CATEGORY=Decoration - Furniture
+SUBSECTION=Mailboxes
+DESCRIPTION=Mailbox (dolphin)(south)
+ON=@DropOn_Self
+   IF (<DISPID> != 0a202)
+    DISPID=0a202
+    UPDATE
+   ENDIF
+ON=@PickUp_Self
+   IF (<DISPID> != 0a203) && (<RESCOUNT> < 2)
+    DISPID=0a203
+    UPDATE
+   ENDIF
+
+[ITEMDEF 0a204]
+//mailbox (dolphin)(east)
+
+[ITEMDEF 0a205]
+DEFNAME=i_mailbox_dolphin_e
+NAME=mailbox
+TYPE=t_container
+TDATA2=06d3
+CATEGORY=Decoration - Furniture
+SUBSECTION=Mailboxes
+DESCRIPTION=Mailbox (dolphin)(east)
+ON=@DropOn_Self
+   IF (<DISPID> != 0a204)
+    DISPID=0a204
+    UPDATE
+   ENDIF
+ON=@PickUp_Self
+   IF (<DISPID> != 0a205) && (<RESCOUNT> < 2)
+    DISPID=0a205
+    UPDATE
+   ENDIF
+
+[ITEMDEF 0a206]
+//mailbox (squirrel)(south)
+
+[ITEMDEF 0a207]
+DEFNAME=i_mailbox_squirrel_s
+NAME=mailbox
+TYPE=t_container
+TDATA2=06d4
+CATEGORY=Decoration - Furniture
+SUBSECTION=Mailboxes
+DESCRIPTION=Mailbox (squirrel)(south)
+ON=@DropOn_Self
+   IF (<DISPID> != 0a206)
+    DISPID=0a206
+    UPDATE
+   ENDIF
+ON=@PickUp_Self
+   IF (<DISPID> != 0a207) && (<RESCOUNT> < 2)
+    DISPID=0a207
+    UPDATE
+   ENDIF
+
+[ITEMDEF 0a208]
+//mailbox (squirrel)(east)
+
+[ITEMDEF 0a209]
+DEFNAME=i_mailbox_squirrel_e
+NAME=mailbox
+TYPE=t_container
+TDATA2=06d4
+CATEGORY=Decoration - Furniture
+SUBSECTION=Mailboxes
+DESCRIPTION=Mailbox (squirrel)(east)
+ON=@DropOn_Self
+   IF (<DISPID> != 0a208)
+    DISPID=0a208
+    UPDATE
+   ENDIF
+ON=@PickUp_Self
+   IF (<DISPID> != 0a209) && (<RESCOUNT> < 2)
+    DISPID=0a209
+    UPDATE
+   ENDIF
+
+
+[ITEMDEF 0a268]
+DEFNAME=i_mailbox_lantern_s
+NAME=mailbox
+TYPE=t_container
+TDATA2=06d6
+CAN=can_i_light
+CATEGORY=Decoration - Furniture
+SUBSECTION=Mailboxes
+DESCRIPTION=Mailbox (lantern)(south)
+ON=@Create
+   MOREZ=29
+ON=@DropOn_Self
+   IF (<DISPID> != 0a269)
+    DISPID=0a269
+    UPDATE
+   ENDIF
+ON=@PickUp_Self
+   IF (<DISPID> != 0a268) && (<RESCOUNT> < 2)
+    DISPID=0a268
+    UPDATE
+   ENDIF
+
+[ITEMDEF 0a269]
+//mailbox (lantern)(south)
+CAN=can_i_light
+ON=@Create
+   MOREZ=29
+
+[ITEMDEF 0a26a]
+//mailbox (lantern)(south)(anim)
+
+[ITEMDEF 0a26b]
+//mailbox (lantern)(south)(anim)
+
+[ITEMDEF 0a26c]
+DEFNAME=i_mailbox_lantern_e
+NAME=mailbox
+TYPE=t_container
+TDATA2=06d6
+CAN=can_i_light
+CATEGORY=Decoration - Furniture
+SUBSECTION=Mailboxes
+DESCRIPTION=Mailbox (lantern)(east)
+ON=@Create
+   MOREZ=29
+ON=@DropOn_Self
+   IF (<DISPID> != 0a26d)
+    DISPID=0a26d
+    UPDATE
+   ENDIF
+ON=@PickUp_Self
+   IF (<DISPID> != 0a26c) && (<RESCOUNT> < 2)
+    DISPID=0a26c
+    UPDATE
+   ENDIF
+
+[ITEMDEF 0a26d]
+//mailbox (lantern)(east)
+CAN=can_i_light
+ON=@Create
+   MOREZ=29
+
+[ITEMDEF 0a26e]
+//mailbox (lantern)(east)(anim)
+
+[ITEMDEF 0a26f]
+//mailbox (lantern)(east)(anim)
+
+
+[ITEMDEF 0a29b]
+DEFNAME=i_pie_safe
+NAME=pie safe
+TYPE=t_container
+TDATA2=04f
+FLIP=1
+CATEGORY=Decoration - Furniture
+SUBSECTION=Kitchen Set
+DESCRIPTION=Pie Safe
+DUPELIST=0a29d
+ON=@Create
+   COLOR=01c0
+ON=@DClick
+   IF (<DISPID> == i_pie_safe)
+      DISPID=0a29c
+   ELIF (<DISPID> == 0a29c)
+      DISPID=i_pie_safe
+   ELIF (<DISPID> == 0a29d)
+      DISPID=0a29e
+   ELIF (<DISPID> == 0a29e)
+      DISPID=0a29d
+   ENDIF
+   UPDATE
+
+[ITEMDEF 0a29c]
+//pie safe (south)(open)
+
+[ITEMDEF 0a29d]
+//pie safe (east)
+DUPEITEM=0a29b
+
+[ITEMDEF 0a29e]
+//pie safe (east)(open)
+
+[ITEMDEF 0a29f]
+DEFNAME=i_china_cabinet
+NAME=china cabinet
+TYPE=t_container
+TDATA2=04f
+FLIP=1
+CATEGORY=Decoration - Furniture
+SUBSECTION=Kitchen Set
+DESCRIPTION=China Cabinet
+DUPELIST=0a2a1
+ON=@Create
+   COLOR=01c0
+ON=@DClick
+   IF (<DISPID> == i_china_cabinet)
+      DISPID=0a2a0
+   ELIF (<DISPID> == 0a2a0)
+      DISPID=i_china_cabinet
+   ELIF (<DISPID> == 0a2a1)
+      DISPID=0a2a2
+   ELIF (<DISPID> == 0a2a2)
+      DISPID=0a2a1
+   ENDIF
+   UPDATE
+
+[ITEMDEF 0a2a0]
+//china cabinet (south)(open)
+
+[ITEMDEF 0a2a1]
+//china cabinet (east)
+DUPEITEM=0a29f
+
+[ITEMDEF 0a2a2]
+//china cabinet (east)(open)
+
+[ITEMDEF 0a2a3]
+DEFNAME=i_butcher_block
+NAME=butcher block
+CATEGORY=Decoration - Furniture
+SUBSECTION=Kitchen Set
+DESCRIPTION=Butcher Block
+
+[ITEMDEF 0a2a4]
+DEFNAME=i_wood_stove_east
+NAME=wood stove
+TYPE=t_fire
+CAN=can_i_light
+CATEGORY=Decoration - Furniture
+SUBSECTION=Kitchen Set
+DESCRIPTION=Wood Stove (east)
+ON=@Create
+   MOREZ=2
+ON=@DClick
+   SOUND 03be
+   DISPID=<QVAL (<DISPID> == i_wood_stove_east)? 0a2a5 : i_wood_stove_east>
+   UPDATE
+   return 1
+
+[ITEMDEF 0a2a5]
+//wood stove (east)(lit)
+
+[ITEMDEF 0a2a6]
+//wood stove (east)(lit)(anim)
+
+[ITEMDEF 0a2a7]
+//wood stove (east)(lit)(anim)
+
+[ITEMDEF 0a2a8]
+DEFNAME=i_wood_stove_south
+NAME=wood stove
+TYPE=t_fire
+CAN=can_i_light
+CATEGORY=Decoration - Furniture
+SUBSECTION=Kitchen Set
+DESCRIPTION=Wood Stove (south)
+ON=@Create
+   MOREZ=2
+ON=@DClick
+   SOUND 03be
+   DISPID=<QVAL (<DISPID> == i_wood_stove_south)? 0a2a9 : i_wood_stove_south>
+   UPDATE
+   return 1
+
+[ITEMDEF 0a2a9]
+//wood stove (south)(lit)
+
+[ITEMDEF 0a2aa]
+//wood stove (south)(lit)(anim)
+
+[ITEMDEF 0a2ab]
+//wood stove (south)(lit)(anim)
+
+[ITEMDEF 0a2ac]
+//wash basin (multi-part)(south)
+NAME=wash basin
+
+[ITEMDEF 0a2ad]
+//wash basin (multi-part)(south)
+NAME=wash basin
+
+[ITEMDEF 0a2ae]
+//wash basin (multi-part)(south)
+NAME=wash basin
+
+[ITEMDEF 0a2af]
+//wash basin (multi-part)(south)
+NAME=wash basin
+
+[ITEMDEF 0a2b0]
+//wash basin (multi-part)(south)(anim)
+
+[ITEMDEF 0a2b1]
+//wash basin (multi-part)(south)(anim)
+
+[ITEMDEF 0a2b2]
+//wash basin (multi-part)(south)(anim)
+
+[MULTIDEF m_wash_basin_south]
+ID=0a2ad
+NAME=wash basin
+TYPE=t_multi
+CATEGORY=Decoration - Furniture
+SUBSECTION=Kitchen Set
+DESCRIPTION=Wash Basin (multi)(south)
+MULTIREGION=0,0,0,0
+COMPONENT=0a2ac,-1,0
+COMPONENT=0a2ae,1,0
+
+[ITEMDEF 0a2b3]
+//wash basin (multi-part)(east)
+NAME=wash basin
+
+[ITEMDEF 0a2b4]
+//wash basin (multi-part)(east)
+NAME=wash basin
+
+[ITEMDEF 0a2b5]
+//wash basin (multi-part)(east)
+NAME=wash basin
+
+[ITEMDEF 0a2b6]
+//wash basin (multi-part)(east)
+NAME=wash basin
+
+[ITEMDEF 0a2b7]
+//wash basin (multi-part)(east)(anim)
+
+[ITEMDEF 0a2b8]
+//wash basin (multi-part)(east)(anim)
+
+[ITEMDEF 0a2b9]
+//wash basin (multi-part)(east)(anim)
+
+[MULTIDEF m_wash_basin_east]
+ID=0a2b4
+NAME=wash basin
+TYPE=t_multi
+CATEGORY=Decoration - Furniture
+SUBSECTION=Kitchen Set
+DESCRIPTION=Wash Basin (multi)(east)
+MULTIREGION=0,0,0,0
+COMPONENT=0a2b5,0,-1
+COMPONENT=0a2b3,0,1
+
+
+[ITEMDEF 0a2da]
+DEFNAME=i_wash_basin_countertop
+NAME=countertop
+CATEGORY=Decoration - Furniture
+SUBSECTION=Kitchen Set
+DESCRIPTION=Wash Basin (countertop)
+
+
+[ITEMDEF 0a3eb]
+DEFNAME=i_mailbox_sitting_kitten_s
+NAME=mailbox
+TYPE=t_container
+TDATA2=09d37
+CATEGORY=Decoration - Furniture
+SUBSECTION=Mailboxes
+DESCRIPTION=Mailbox (sitting kitten)(south)
+ON=@DropOn_Self
+   IF (<DISPID> != 0a3ec)
+    DISPID=0a3ec
+    UPDATE
+   ENDIF
+ON=@PickUp_Self
+   IF (<DISPID> != 0a3eb) && (<RESCOUNT> < 2)
+    DISPID=0a3eb
+    UPDATE
+   ENDIF
+
+[ITEMDEF 0a3ec]
+//mailbox (sitting kitten)(south)
+
+[ITEMDEF 0a3ed]
+DEFNAME=i_mailbox_sitting_kitten_e
+NAME=mailbox
+TYPE=t_container
+TDATA2=09d37
+CATEGORY=Decoration - Furniture
+SUBSECTION=Mailboxes
+DESCRIPTION=Mailbox (sitting kitten)(east)
+ON=@DropOn_Self
+   IF (<DISPID> != 0a3ee)
+    DISPID=0a3ee
+    UPDATE
+   ENDIF
+ON=@PickUp_Self
+   IF (<DISPID> != 0a3ed) && (<RESCOUNT> < 2)
+    DISPID=0a3ed
+    UPDATE
+   ENDIF
+
+[ITEMDEF 0a3ee]
+//mailbox (sitting kitten)(east)
+
+[ITEMDEF 0a3ef]
+DEFNAME=i_mailbox_standing_kitten_s
+NAME=mailbox
+TYPE=t_container
+TDATA2=09d38
+CATEGORY=Decoration - Furniture
+SUBSECTION=Mailboxes
+DESCRIPTION=Mailbox (standing kitten)(south)
+ON=@DropOn_Self
+   IF (<DISPID> != 0a3f0)
+    DISPID=0a3f0
+    UPDATE
+   ENDIF
+ON=@PickUp_Self
+   IF (<DISPID> != 0a3ef) && (<RESCOUNT> < 2)
+    DISPID=0a3ef
+    UPDATE
+   ENDIF
+
+[ITEMDEF 0a3f0]
+//mailbox (standing kitten)(south)
+
+[ITEMDEF 0a3f1]
+DEFNAME=i_mailbox_standing_kitten_e
+NAME=mailbox
+TYPE=t_container
+TDATA2=09d38
+CATEGORY=Decoration - Furniture
+SUBSECTION=Mailboxes
+DESCRIPTION=Mailbox (standing kitten)(east)
+ON=@DropOn_Self
+   IF (<DISPID> != 0a3f2)
+    DISPID=0a3f2
+    UPDATE
+   ENDIF
+ON=@PickUp_Self
+   IF (<DISPID> != 0a3f1) && (<RESCOUNT> < 2)
+    DISPID=0a3f1
+    UPDATE
+   ENDIF
+
+[ITEMDEF 0a3f2]
+//mailbox (standing kitten)(east)
+
+[ITEMDEF 0a3f3]
+DEFNAME=i_mailbox_scarecrow_s
+NAME=mailbox
+TYPE=t_container
+TDATA2=09d39
+CATEGORY=Decoration - Furniture
+SUBSECTION=Mailboxes
+DESCRIPTION=Mailbox (scarecrow)(south)
+ON=@DropOn_Self
+   IF (<DISPID> != 0a3f4)
+    DISPID=0a3f4
+    UPDATE
+   ENDIF
+ON=@PickUp_Self
+   IF (<DISPID> != 0a3f3) && (<RESCOUNT> < 2)
+    DISPID=0a3f3
+    UPDATE
+   ENDIF
+
+[ITEMDEF 0a3f4]
+//mailbox (scarecrow)(south)
+
+[ITEMDEF 0a3f5]
+DEFNAME=i_mailbox_scarecrow_e
+NAME=mailbox
+TYPE=t_container
+TDATA2=09d39
+CATEGORY=Decoration - Furniture
+SUBSECTION=Mailboxes
+DESCRIPTION=Mailbox (scarecrow)(east)
+ON=@DropOn_Self
+   IF (<DISPID> != 0a3f6)
+    DISPID=0a3f6
+    UPDATE
+   ENDIF
+ON=@PickUp_Self
+   IF (<DISPID> != 0a3f5) && (<RESCOUNT> < 2)
+    DISPID=0a3f5
+    UPDATE
+   ENDIF
+
+[ITEMDEF 0a3f6]
+//mailbox (scarecrow)(east)
+
+[ITEMDEF 0a3f7]
+DEFNAME=i_mailbox_lion_s
+NAME=mailbox
+TYPE=t_container
+TDATA2=09d3a
+CATEGORY=Decoration - Furniture
+SUBSECTION=Mailboxes
+DESCRIPTION=Mailbox (lion)(south)
+ON=@DropOn_Self
+   IF (<DISPID> != 0a3f8)
+    DISPID=0a3f8
+    UPDATE
+   ENDIF
+ON=@PickUp_Self
+   IF (<DISPID> != 0a3f7) && (<RESCOUNT> < 2)
+    DISPID=0a3f7
+    UPDATE
+   ENDIF
+
+[ITEMDEF 0a3f8]
+//mailbox (lion)(south)
+
+[ITEMDEF 0a3f9]
+DEFNAME=i_mailbox_lion_e
+NAME=mailbox
+TYPE=t_container
+TDATA2=09d3a
+CATEGORY=Decoration - Furniture
+SUBSECTION=Mailboxes
+DESCRIPTION=Mailbox (lion)(east)
+ON=@DropOn_Self
+   IF (<DISPID> != 0a3fa)
+    DISPID=0a3fa
+    UPDATE
+   ENDIF
+ON=@PickUp_Self
+   IF (<DISPID> != 0a3f9) && (<RESCOUNT> < 2)
+    DISPID=0a3f9
+    UPDATE
+   ENDIF
+
+[ITEMDEF 0a3fa]
+//mailbox (lion)(east)
+
+[EOF]

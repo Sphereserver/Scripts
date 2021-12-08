@@ -1,0 +1,82 @@
+
+
+///////////////////////////
+// Some Useful Functions //
+///////////////////////////
+
+[FUNCTION f_isHuman]
+IF ( (<OBODY>==c_man) || (<OBODY>==c_woman) )
+   RETURN 1
+ENDIF
+RETURN 0
+
+[FUNCTION f_isElf]
+IF ( (<OBODY>==c_elf_male) || (<OBODY>==c_elf_female) )
+   RETURN 1
+ENDIF
+RETURN 0
+
+[FUNCTION f_isGarg]
+IF ( (<OBODY>==c_gargoyle_male) || (<OBODY>==c_gargoyle_female) )
+   RETURN 1
+ENDIF
+RETURN 0
+
+[FUNCTION f_isFemale]
+if (<serv.chardef.<obody>.can>&mt_female)	//Checking on chardef directly here because if you change your body your Can flags won't be updated since they are now stored in the char itself when it creates.
+	return 1
+endif
+return 0
+
+[FUNCTION f_isCursed]
+FORCHARLAYER 32
+   IF (<BASEID>==i_rune_curse)
+      RETURN 1
+   ENDIF
+ENDFOR
+RETURN 0
+
+
+[FUNCTION MODMAXHITS]
+LOCAL.Result=<EVAL <ARGS>>
+IF (<ISEMPTY <ARGS>>)
+   RETURN <EVAL <TAG0.MODMAXHITS>>
+ELSE
+   TAG.MODMAXHITS=<EVAL <TAG0.MODMAXHITS>+<LOCAL.Result>>
+   IF !(<TAG0.MODMAXHITS>)
+      TAG.MODMAXHITS=
+      MAXHITS=
+   ELSE
+      MAXHITS=<EVAL <MAXHITS>+<LOCAL.Result>>
+   ENDIF
+ENDIF
+
+[FUNCTION MODMAXSTAM]
+LOCAL.Result=<EVAL <ARGS>>
+IF (<ISEMPTY <ARGS>>)
+   RETURN <EVAL <TAG0.MODMAXSTAM>>
+ELSE
+   TAG.MODMAXSTAM=<EVAL <TAG0.MODMAXSTAM>+<LOCAL.Result>>
+   IF !(<TAG0.MODMAXSTAM>)
+      TAG.MODMAXSTAM=
+      MAXSTAM=
+   ELSE
+      MAXSTAM=<EVAL <MAXSTAM>+<LOCAL.Result>>
+   ENDIF
+ENDIF
+
+[FUNCTION MODMAXMANA]
+LOCAL.Result=<EVAL <ARGS>>
+IF (<ISEMPTY <ARGS>>)
+   RETURN <EVAL <TAG0.MODMAXMANA>>
+ELSE
+   TAG.MODMAXMANA=<EVAL <TAG0.MODMAXMANA>+<LOCAL.Result>>
+   IF !(<TAG0.MODMAXMANA>)
+      TAG.MODMAXMANA=
+      MAXMANA=
+   ELSE
+      MAXMANA=<EVAL <MAXMANA>+<LOCAL.Result>>
+   ENDIF
+ENDIF
+
+[EOF]

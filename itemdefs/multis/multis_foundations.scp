@@ -1,0 +1,1609 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2019
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Saturday, Feb 23, 2019
+//
+VERSION=0.56d
+
+[TYPEDEF t_multi_custom]
+ON=@Create
+   // Add external stairs
+   IF (<ID> >= 010000|013ec) && (<ID> <= 010000|0147d)
+      ARGS=<MULTIREGION>
+      FOR <eval <ARGV0>+1> <ARGV2>
+         ADDITEM 0751,<LOCAL._FOR>,<ARGV3>,0
+      ENDFOR
+      COMMIT
+   ENDIF
+
+// 7x* foundations
+
+[MULTIDEF 013ec]
+DEFNAME=m_foundation_7x7
+TYPE=t_multi_custom
+NAME=7x7 2-Story Customizable House
+VALUE=33000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=7x7 2-Story Customizable House
+MULTIREGION=-3,-3,3,4
+COMPONENT=09,-3,3,7		//wooden wall
+COMPONENT=0b98,-3,4,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-3,4,7
+
+[MULTIDEF 013ed]
+DEFNAME=m_foundation_7x8
+TYPE=t_multi_custom
+NAME=7x8 2-Story Customizable House
+VALUE=37000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=7x8 2-Story Customizable House
+MULTIREGION=-3,-3,3,5
+COMPONENT=09,-3,4,7		//wooden wall
+COMPONENT=0b98,-3,5,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-3,5,7
+
+[MULTIDEF 013ee]
+DEFNAME=m_foundation_7x9
+TYPE=t_multi_custom
+NAME=7x9 2-Story Customizable House
+VALUE=41000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=7x9 2-Story Customizable House
+MULTIREGION=-3,-4,3,5
+COMPONENT=09,-3,4,7		//wooden wall
+COMPONENT=0b98,-3,5,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-3,5,7
+
+[MULTIDEF 013ef]
+DEFNAME=m_foundation_7x10
+TYPE=t_multi_custom
+NAME=7x10 2-Story Customizable House
+VALUE=45000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=7x10 2-Story Customizable House
+MULTIREGION=-3,-4,3,6
+COMPONENT=09,-3,5,7		//wooden wall
+COMPONENT=0b98,-3,6,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-3,6,7
+
+[MULTIDEF 013f0]
+DEFNAME=m_foundation_7x11
+TYPE=t_multi_custom
+NAME=7x11 2-Story Customizable House
+VALUE=49000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=7x11 2-Story Customizable House
+MULTIREGION=-3,-5,3,6
+COMPONENT=09,-3,5,7		//wooden wall
+COMPONENT=0b98,-3,6,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-3,6,7
+
+[MULTIDEF 013f1]
+DEFNAME=m_foundation_7x12
+TYPE=t_multi_custom
+NAME=7x12 2-Story Customizable House
+VALUE=53000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=7x12 2-Story Customizable House
+MULTIREGION=-3,-5,3,7
+COMPONENT=09,-3,6,7		//wooden wall
+COMPONENT=0b98,-3,7,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-3,7,7
+
+// 8x* foundations
+
+[MULTIDEF 013f8]
+DEFNAME=m_foundation_8x7
+TYPE=t_multi_custom
+NAME=8x7 2-Story Customizable House
+VALUE=37500
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=8x7 2-Story Customizable House
+MULTIREGION=-3,-3,4,3
+COMPONENT=09,-3,3,7		//wooden wall
+COMPONENT=0b98,-3,4,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-3,4,7
+
+[MULTIDEF 013f9]
+DEFNAME=m_foundation_8x8
+TYPE=t_multi_custom
+NAME=8x8 2-Story Customizable House
+VALUE=42000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=8x8 2-Story Customizable House
+MULTIREGION=-3,-3,4,4
+COMPONENT=09,-3,4,7		//wooden wall
+COMPONENT=0b98,-3,5,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-3,5,7
+
+[MULTIDEF 013fa]
+DEFNAME=m_foundation_8x9
+TYPE=t_multi_custom
+NAME=8x9 2-Story Customizable House
+VALUE=46500
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=8x9 2-Story Customizable House
+MULTIREGION=-3,-4,4,4
+COMPONENT=09,-3,4,7		//wooden wall
+COMPONENT=0b98,-3,5,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-3,5,7
+
+[MULTIDEF 013fb]
+DEFNAME=m_foundation_8x10
+TYPE=t_multi_custom
+NAME=8x10 2-Story Customizable House
+VALUE=51000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=8x10 2-Story Customizable House
+MULTIREGION=-3,-4,4,5
+COMPONENT=09,-3,5,7		//wooden wall
+COMPONENT=0b98,-3,6,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-3,6,7
+
+[MULTIDEF 013fc]
+DEFNAME=m_foundation_8x11
+TYPE=t_multi_custom
+NAME=8x11 2-Story Customizable House
+VALUE=55500
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=8x11 2-Story Customizable House
+MULTIREGION=-3,-5,4,5
+COMPONENT=09,-3,5,7		//wooden wall
+COMPONENT=0b98,-3,6,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-3,6,7
+
+[MULTIDEF 013fd]
+DEFNAME=m_foundation_8x12
+TYPE=t_multi_custom
+NAME=8x12 2-Story Customizable House
+VALUE=60000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=8x12 2-Story Customizable House
+MULTIREGION=-3,-5,4,6
+COMPONENT=09,-3,6,7		//wooden wall
+COMPONENT=0b98,-3,7,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-3,7,7
+
+[MULTIDEF 013fe]
+DEFNAME=m_foundation_8x13
+TYPE=t_multi_custom
+NAME=8x13 2-Story Customizable House
+VALUE=64500
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=8x13 2-Story Customizable House
+MULTIREGION=-3,-6,4,7
+COMPONENT=09,-3,6,7		//wooden wall
+COMPONENT=0b98,-3,7,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-3,7,7
+
+// 9x* foundations
+
+[MULTIDEF 01404]
+DEFNAME=m_foundation_9x7
+TYPE=t_multi_custom
+NAME=9x7 2-Story Customizable House
+VALUE=42000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=9x7 2-Story Customizable House
+MULTIREGION=-4,-3,4,3
+COMPONENT=09,-4,3,7		//wooden wall
+COMPONENT=0b98,-4,4,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-4,4,7
+
+[MULTIDEF 01405]
+DEFNAME=m_foundation_9x8
+TYPE=t_multi_custom
+NAME=9x8 2-Story Customizable House
+VALUE=47000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=9x8 2-Story Customizable House
+MULTIREGION=-4,-3,4,4
+COMPONENT=09,-4,4,7		//wooden wall
+COMPONENT=0b98,-4,5,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-4,5,7
+
+[MULTIDEF 01406]
+DEFNAME=m_foundation_9x9
+TYPE=t_multi_custom
+NAME=9x9 2-Story Customizable House
+VALUE=52000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=9x9 2-Story Customizable House
+MULTIREGION=-4,-4,4,4
+COMPONENT=09,-4,4,7		//wooden wall
+COMPONENT=0b98,-4,5,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-4,5,7
+
+[MULTIDEF 01407]
+DEFNAME=m_foundation_9x10
+TYPE=t_multi_custom
+NAME=9x10 2-Story Customizable House
+VALUE=57000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=9x10 2-Story Customizable House
+MULTIREGION=-4,-4,4,5
+COMPONENT=09,-4,5,7		//wooden wall
+COMPONENT=0b98,-4,6,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-4,6,7
+
+[MULTIDEF 01408]
+DEFNAME=m_foundation_9x11
+TYPE=t_multi_custom
+NAME=9x11 2-Story Customizable House
+VALUE=62000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=9x11 2-Story Customizable House
+MULTIREGION=-4,-5,4,5
+COMPONENT=09,-4,5,7		//wooden wall
+COMPONENT=0b98,-4,6,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-4,6,7
+
+[MULTIDEF 01409]
+DEFNAME=m_foundation_9x12
+TYPE=t_multi_custom
+NAME=9x12 2-Story Customizable House
+VALUE=67000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=9x12 2-Story Customizable House
+MULTIREGION=-4,-5,4,6
+COMPONENT=09,-4,6,7		//wooden wall
+COMPONENT=0b98,-4,7,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-4,7,7
+
+[MULTIDEF 0140a]
+DEFNAME=m_foundation_9x13
+TYPE=t_multi_custom
+NAME=9x13 2-Story Customizable House
+VALUE=72000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=9x13 2-Story Customizable House
+MULTIREGION=-4,-6,4,6
+COMPONENT=09,-4,6,7		//wooden wall
+COMPONENT=0b98,-4,7,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-4,7,7
+
+[MULTIDEF 0140b]
+DEFNAME=m_foundation_9x14
+TYPE=t_multi_custom
+NAME=9x14 3-Story Customizable House
+VALUE=77000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=9x14 3-Story Customizable House
+MULTIREGION=-4,-6,4,7
+COMPONENT=09,-4,7,7		//wooden wall
+COMPONENT=0b98,-4,8,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-4,8,7
+
+// 10x* foundations
+
+[MULTIDEF 01410]
+DEFNAME=m_foundation_10x7
+TYPE=t_multi_custom
+NAME=10x7 2-Story Customizable House
+VALUE=46500
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=10x7 2-Story Customizable House
+MULTIREGION=-4,-3,5,3
+COMPONENT=09,-4,3,7		//wooden wall
+COMPONENT=0b98,-4,4,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-4,4,7
+
+[MULTIDEF 01411]
+DEFNAME=m_foundation_10x8
+TYPE=t_multi_custom
+NAME=10x8 2-Story Customizable House
+VALUE=52000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=10x8 2-Story Customizable House
+MULTIREGION=-4,-3,5,4
+COMPONENT=09,-4,4,7		//wooden wall
+COMPONENT=0b98,-4,5,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-4,5,7
+
+[MULTIDEF 01412]
+DEFNAME=m_foundation_10x9
+TYPE=t_multi_custom
+NAME=10x9 2-Story Customizable House
+VALUE=57500
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=10x9 2-Story Customizable House
+MULTIREGION=-4,-4,5,4
+COMPONENT=09,-4,4,7		//wooden wall
+COMPONENT=0b98,-4,5,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-4,5,7
+
+[MULTIDEF 01413]
+DEFNAME=m_foundation_10x10
+TYPE=t_multi_custom
+NAME=10x10 2-Story Customizable House
+VALUE=63000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=10x10 2-Story Customizable House
+MULTIREGION=-4,-4,5,5
+COMPONENT=09,-4,5,7		//wooden wall
+COMPONENT=0b98,-4,6,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-4,6,7
+
+[MULTIDEF 01414]
+DEFNAME=m_foundation_10x11
+TYPE=t_multi_custom
+NAME=10x11 2-Story Customizable House
+VALUE=68500
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=10x11 2-Story Customizable House
+MULTIREGION=-4,-5,5,5
+COMPONENT=09,-4,5,7		//wooden wall
+COMPONENT=0b98,-4,6,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-4,6,7
+
+[MULTIDEF 01415]
+DEFNAME=m_foundation_10x12
+TYPE=t_multi_custom
+NAME=10x12 2-Story Customizable House
+VALUE=74000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=10x12 2-Story Customizable House
+MULTIREGION=-4,-5,5,6
+COMPONENT=09,-4,6,7		//wooden wall
+COMPONENT=0b98,-4,7,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-4,7,7
+
+[MULTIDEF 01416]
+DEFNAME=m_foundation_10x13
+TYPE=t_multi_custom
+NAME=10x13 2-Story Customizable House
+VALUE=79500
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=10x13 2-Story Customizable House
+MULTIREGION=-4,-6,5,6
+COMPONENT=09,-4,6,7		//wooden wall
+COMPONENT=0b98,-4,7,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-4,7,7
+
+[MULTIDEF 01417]
+DEFNAME=m_foundation_10x14
+TYPE=t_multi_custom
+NAME=10x14 3-Story Customizable House
+VALUE=85000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=10x14 3-Story Customizable House
+MULTIREGION=-4,-6,5,7
+COMPONENT=09,-4,7,7		//wooden wall
+COMPONENT=0b98,-4,8,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-4,8,7
+
+[MULTIDEF 01418]
+DEFNAME=m_foundation_10x15
+TYPE=t_multi_custom
+NAME=10x15 3-Story Customizable House
+VALUE=90500
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=10x15 3-Story Customizable House
+MULTIREGION=-4,-7,5,8
+COMPONENT=09,-4,7,7		//wooden wall
+COMPONENT=0b98,-4,8,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-4,8,7
+
+// 11x* foundations
+
+[MULTIDEF 0141c]
+DEFNAME=m_foundation_11x7
+TYPE=t_multi_custom
+NAME=11x7 2-Story Customizable House
+VALUE=51000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=11x7 2-Story Customizable House
+MULTIREGION=-5,-3,5,3
+COMPONENT=09,-5,3,7		//wooden wall
+COMPONENT=0b98,-5,4,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-5,4,7
+
+[MULTIDEF 0141d]
+DEFNAME=m_foundation_11x8
+TYPE=t_multi_custom
+NAME=11x8 2-Story Customizable House
+VALUE=57000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=11x8 2-Story Customizable House
+MULTIREGION=-5,-3,5,4
+COMPONENT=09,-5,4,7		//wooden wall
+COMPONENT=0b98,-5,5,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-5,5,7
+
+[MULTIDEF 0141e]
+DEFNAME=m_foundation_11x9
+TYPE=t_multi_custom
+NAME=11x9 2-Story Customizable House
+VALUE=63000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=11x9 2-Story Customizable House
+MULTIREGION=-5,-4,5,4
+COMPONENT=09,-5,4,7		//wooden wall
+COMPONENT=0b98,-5,5,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-5,5,7
+
+[MULTIDEF 0141f]
+DEFNAME=m_foundation_11x10
+TYPE=t_multi_custom
+NAME=11x10 2-Story Customizable House
+VALUE=69000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=11x10 2-Story Customizable House
+MULTIREGION=-5,-4,5,5
+COMPONENT=09,-5,5,7		//wooden wall
+COMPONENT=0b98,-5,6,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-5,6,7
+
+[MULTIDEF 01420]
+DEFNAME=m_foundation_11x11
+TYPE=t_multi_custom
+NAME=11x11 2-Story Customizable House
+VALUE=75000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=11x11 2-Story Customizable House
+MULTIREGION=-5,-5,5,5
+COMPONENT=09,-5,5,7		//wooden wall
+COMPONENT=0b98,-5,6,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-5,6,7
+
+[MULTIDEF 01421]
+DEFNAME=m_foundation_11x12
+TYPE=t_multi_custom
+NAME=11x12 2-Story Customizable House
+VALUE=81000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=11x12 2-Story Customizable House
+MULTIREGION=-5,-5,5,6
+COMPONENT=09,-5,6,7		//wooden wall
+COMPONENT=0b98,-5,7,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-5,7,7
+
+[MULTIDEF 01422]
+DEFNAME=m_foundation_11x13
+TYPE=t_multi_custom
+NAME=11x13 2-Story Customizable House
+VALUE=87000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=11x13 2-Story Customizable House
+MULTIREGION=-5,-6,5,6
+COMPONENT=09,-5,6,7		//wooden wall
+COMPONENT=0b98,-5,7,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-5,7,7
+
+[MULTIDEF 01423]
+DEFNAME=m_foundation_11x14
+TYPE=t_multi_custom
+NAME=11x14 3-Story Customizable House
+VALUE=93000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=11x14 3-Story Customizable House
+MULTIREGION=-5,-6,5,7
+COMPONENT=09,-5,7,7		//wooden wall
+COMPONENT=0b98,-5,8,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-5,8,7
+
+[MULTIDEF 01424]
+DEFNAME=m_foundation_11x15
+TYPE=t_multi_custom
+NAME=11x15 3-Story Customizable House
+VALUE=99000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=11x15 3-Story Customizable House
+MULTIREGION=-5,-7,5,7
+COMPONENT=09,-5,7,7		//wooden wall
+COMPONENT=0b98,-5,8,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-5,8,7
+
+[MULTIDEF 01425]
+DEFNAME=m_foundation_11x16
+TYPE=t_multi_custom
+NAME=11x16 3-Story Customizable House
+VALUE=105000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=11x16 3-Story Customizable House
+MULTIREGION=-5,-7,5,8
+COMPONENT=09,-5,8,7		//wooden wall
+COMPONENT=0b98,-5,9,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-5,9,7
+
+// 12x* foundations
+
+[MULTIDEF 01428]
+DEFNAME=m_foundation_12x7
+TYPE=t_multi_custom
+NAME=12x7 2-Story Customizable House
+VALUE=55500
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=12x7 2-Story Customizable House
+MULTIREGION=-5,-3,6,3
+COMPONENT=09,-5,3,7		//wooden wall
+COMPONENT=0b98,-5,4,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-5,4,7
+
+[MULTIDEF 01429]
+DEFNAME=m_foundation_12x8
+TYPE=t_multi_custom
+NAME=12x8 2-Story Customizable House
+VALUE=62000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=12x8 2-Story Customizable House
+MULTIREGION=-5,-3,6,4
+COMPONENT=09,-5,4,7		//wooden wall
+COMPONENT=0b98,-5,5,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-5,5,7
+
+[MULTIDEF 0142a]
+DEFNAME=m_foundation_12x9
+TYPE=t_multi_custom
+NAME=12x9 2-Story Customizable House
+VALUE=68500
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=12x9 2-Story Customizable House
+MULTIREGION=-5,-4,6,4
+COMPONENT=09,-5,4,7		//wooden wall
+COMPONENT=0b98,-5,5,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-5,5,7
+
+[MULTIDEF 0142b]
+DEFNAME=m_foundation_12x10
+TYPE=t_multi_custom
+NAME=12x10 2-Story Customizable House
+VALUE=75000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=12x10 2-Story Customizable House
+MULTIREGION=-5,-4,6,5
+COMPONENT=09,-5,5,7		//wooden wall
+COMPONENT=0b98,-5,6,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-5,6,7
+
+[MULTIDEF 0142c]
+DEFNAME=m_foundation_12x11
+TYPE=t_multi_custom
+NAME=12x11 2-Story Customizable House
+VALUE=81500
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=12x11 2-Story Customizable House
+MULTIREGION=-5,-5,6,5
+COMPONENT=09,-5,5,7		//wooden wall
+COMPONENT=0b98,-5,6,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-5,6,7
+
+[MULTIDEF 0142d]
+DEFNAME=m_foundation_12x12
+TYPE=t_multi_custom
+NAME=12x12 2-Story Customizable House
+VALUE=88000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=12x12 2-Story Customizable House
+MULTIREGION=-5,-5,6,6
+COMPONENT=09,-5,6,7		//wooden wall
+COMPONENT=0b98,-5,7,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-5,7,7
+
+[MULTIDEF 0142e]
+DEFNAME=m_foundation_12x13
+TYPE=t_multi_custom
+NAME=12x13 2-Story Customizable House
+VALUE=94500
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=12x13 2-Story Customizable House
+MULTIREGION=-5,-6,6,6
+COMPONENT=09,-5,6,7		//wooden wall
+COMPONENT=0b98,-5,7,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-5,7,7
+
+[MULTIDEF 0142f]
+DEFNAME=m_foundation_12x14
+TYPE=t_multi_custom
+NAME=12x14 3-Story Customizable House
+VALUE=101000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=12x14 3-Story Customizable House
+MULTIREGION=-5,-6,6,7
+COMPONENT=09,-5,7,7		//wooden wall
+COMPONENT=0b98,-5,8,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-5,8,7
+
+[MULTIDEF 01430]
+DEFNAME=m_foundation_12x15
+TYPE=t_multi_custom
+NAME=12x15 3-Story Customizable House
+VALUE=107500
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=12x15 3-Story Customizable House
+MULTIREGION=-5,-7,6,7
+COMPONENT=09,-5,7,7		//wooden wall
+COMPONENT=0b98,-5,8,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-5,8,7
+
+[MULTIDEF 01431]
+DEFNAME=m_foundation_12x16
+TYPE=t_multi_custom
+NAME=12x16 3-Story Customizable House
+VALUE=114000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=12x16 3-Story Customizable House
+MULTIREGION=-5,-7,6,8
+COMPONENT=09,-5,8,7		//wooden wall
+COMPONENT=0b98,-5,9,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-5,9,7
+
+[MULTIDEF 01432]
+DEFNAME=m_foundation_12x17
+TYPE=t_multi_custom
+NAME=12x17 3-Story Customizable House
+VALUE=120500
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=12x17 3-Story Customizable House
+MULTIREGION=-5,-8,6,8
+COMPONENT=09,-5,8,7		//wooden wall
+COMPONENT=0b98,-5,9,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-5,9,7
+
+// 13x* foundations
+
+[MULTIDEF 01435]
+DEFNAME=m_foundation_13x8
+TYPE=t_multi_custom
+NAME=13x8 2-Story Customizable House
+VALUE=67000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=13x8 2-Story Customizable House
+MULTIREGION=-6,-3,6,4
+COMPONENT=09,-6,4,7		//wooden wall
+COMPONENT=0b98,-6,5,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-6,5,7
+
+[MULTIDEF 01436]
+DEFNAME=m_foundation_13x9
+TYPE=t_multi_custom
+NAME=13x9 2-Story Customizable House
+VALUE=74000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=13x9 2-Story Customizable House
+MULTIREGION=-6,-4,6,4
+COMPONENT=09,-6,4,7		//wooden wall
+COMPONENT=0b98,-6,5,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-6,5,7
+
+[MULTIDEF 01437]
+DEFNAME=m_foundation_13x10
+TYPE=t_multi_custom
+NAME=13x10 2-Story Customizable House
+VALUE=81000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=13x10 2-Story Customizable House
+MULTIREGION=-6,-4,6,5
+COMPONENT=09,-6,5,7		//wooden wall
+COMPONENT=0b98,-6,6,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-6,6,7
+
+[MULTIDEF 01438]
+DEFNAME=m_foundation_13x11
+TYPE=t_multi_custom
+NAME=13x11 2-Story Customizable House
+VALUE=88000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=13x11 2-Story Customizable House
+MULTIREGION=-6,-5,6,5
+COMPONENT=09,-6,5,7		//wooden wall
+COMPONENT=0b98,-6,6,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-6,6,7
+
+[MULTIDEF 01439]
+DEFNAME=m_foundation_13x12
+TYPE=t_multi_custom
+NAME=13x12 2-Story Customizable House
+VALUE=95000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=13x12 2-Story Customizable House
+MULTIREGION=-6,-5,6,6
+COMPONENT=09,-6,6,7		//wooden wall
+COMPONENT=0b98,-6,7,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-6,7,7
+
+[MULTIDEF 0143a]
+DEFNAME=m_foundation_13x13
+TYPE=t_multi_custom
+NAME=13x13 2-Story Customizable House
+VALUE=102000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=13x13 2-Story Customizable House
+MULTIREGION=-6,-6,6,6
+COMPONENT=09,-6,6,7		//wooden wall
+COMPONENT=0b98,-6,7,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-6,7,7
+
+[MULTIDEF 0143b]
+DEFNAME=m_foundation_13x14
+TYPE=t_multi_custom
+NAME=13x14 3-Story Customizable House
+VALUE=109000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=13x14 3-Story Customizable House
+MULTIREGION=-6,-6,6,7
+COMPONENT=09,-6,7,7		//wooden wall
+COMPONENT=0b98,-6,8,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-6,8,7
+
+[MULTIDEF 0143c]
+DEFNAME=m_foundation_13x15
+TYPE=t_multi_custom
+NAME=13x15 3-Story Customizable House
+VALUE=116000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=13x15 3-Story Customizable House
+MULTIREGION=-6,-7,6,7
+COMPONENT=09,-6,7,7		//wooden wall
+COMPONENT=0b98,-6,8,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-6,8,7
+
+[MULTIDEF 0143d]
+DEFNAME=m_foundation_13x16
+TYPE=t_multi_custom
+NAME=13x16 3-Story Customizable House
+VALUE=123000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=13x16 3-Story Customizable House
+MULTIREGION=-6,-7,6,8
+COMPONENT=09,-6,8,7		//wooden wall
+COMPONENT=0b98,-6,9,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-6,9,7
+
+[MULTIDEF 0143e]
+DEFNAME=m_foundation_13x17
+TYPE=t_multi_custom
+NAME=13x17 3-Story Customizable House
+VALUE=130000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=13x17 3-Story Customizable House
+MULTIREGION=-6,-8,6,8
+COMPONENT=09,-6,8,7		//wooden wall
+COMPONENT=0b98,-6,9,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-6,9,7
+
+[MULTIDEF 0143f]
+DEFNAME=m_foundation_13x18
+TYPE=t_multi_custom
+NAME=13x18 3-Story Customizable House
+VALUE=137000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=13x18 3-Story Customizable House
+MULTIREGION=-6,-8,6,9
+COMPONENT=09,-6,9,7		//wooden wall
+COMPONENT=0b98,-6,10,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-6,10,7
+
+// 14x* foundations
+
+[MULTIDEF 01442]
+DEFNAME=m_foundation_14x9
+TYPE=t_multi_custom
+NAME=14x9 3-Story Customizable House
+VALUE=79500
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=14x9 3-Story Customizable House
+MULTIREGION=-6,-4,7,4
+COMPONENT=09,-6,4,7		//wooden wall
+COMPONENT=0b98,-6,5,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-6,5,7
+
+[MULTIDEF 01443]
+DEFNAME=m_foundation_14x10
+TYPE=t_multi_custom
+NAME=14x10 3-Story Customizable House
+VALUE=87000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=14x10 3-Story Customizable House
+MULTIREGION=-6,-4,7,5
+COMPONENT=09,-6,5,7		//wooden wall
+COMPONENT=0b98,-6,6,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-6,6,7
+
+[MULTIDEF 01444]
+DEFNAME=m_foundation_14x11
+TYPE=t_multi_custom
+NAME=14x11 3-Story Customizable House
+VALUE=94500
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=14x11 3-Story Customizable House
+MULTIREGION=-6,-5,7,5
+COMPONENT=09,-6,5,7		//wooden wall
+COMPONENT=0b98,-6,6,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-6,6,7
+
+[MULTIDEF 01445]
+DEFNAME=m_foundation_14x12
+TYPE=t_multi_custom
+NAME=14x12 3-Story Customizable House
+VALUE=102000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=14x12 3-Story Customizable House
+MULTIREGION=-6,-5,7,6
+COMPONENT=09,-6,6,7		//wooden wall
+COMPONENT=0b98,-6,7,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-6,7,7
+
+[MULTIDEF 01446]
+DEFNAME=m_foundation_14x13
+TYPE=t_multi_custom
+NAME=14x13 3-Story Customizable House
+VALUE=109500
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=14x13 3-Story Customizable House
+MULTIREGION=-6,-6,7,6
+COMPONENT=09,-6,6,7		//wooden wall
+COMPONENT=0b98,-6,7,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-6,7,7
+
+[MULTIDEF 01447]
+DEFNAME=m_foundation_14x14
+TYPE=t_multi_custom
+NAME=14x14 3-Story Customizable House
+VALUE=117000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=14x14 3-Story Customizable House
+MULTIREGION=-6,-6,7,7
+COMPONENT=09,-6,7,7		//wooden wall
+COMPONENT=0b98,-6,8,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-6,8,7
+
+[MULTIDEF 01448]
+DEFNAME=m_foundation_14x15
+TYPE=t_multi_custom
+NAME=14x15 3-Story Customizable House
+VALUE=124500
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=14x15 3-Story Customizable House
+MULTIREGION=-6,-7,7,7
+COMPONENT=09,-6,7,7		//wooden wall
+COMPONENT=0b98,-6,8,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-6,8,7
+
+[MULTIDEF 01449]
+DEFNAME=m_foundation_14x16
+TYPE=t_multi_custom
+NAME=14x16 3-Story Customizable House
+VALUE=132000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=14x16 3-Story Customizable House
+MULTIREGION=-6,-7,7,8
+COMPONENT=09,-6,8,7		//wooden wall
+COMPONENT=0b98,-6,9,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-6,9,7
+
+[MULTIDEF 0144a]
+DEFNAME=m_foundation_14x17
+TYPE=t_multi_custom
+NAME=14x17 3-Story Customizable House
+VALUE=139500
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=14x17 3-Story Customizable House
+MULTIREGION=-6,-8,7,8
+COMPONENT=09,-6,8,7		//wooden wall
+COMPONENT=0b98,-6,9,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-6,9,7
+
+[MULTIDEF 0144b]
+DEFNAME=m_foundation_14x18
+TYPE=t_multi_custom
+NAME=14x18 3-Story Customizable House
+VALUE=147000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=14x18 3-Story Customizable House
+MULTIREGION=-6,-8,7,9
+COMPONENT=09,-6,9,7		//wooden wall
+COMPONENT=0b98,-6,10,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-6,10,7
+
+// 15x* foundations  
+
+[MULTIDEF 0144f]
+DEFNAME=m_foundation_15x10
+TYPE=t_multi_custom
+NAME=15x10 3-Story Customizable House
+VALUE=93000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=15x10 3-Story Customizable House
+MULTIREGION=-7,-4,7,5
+COMPONENT=09,-7,5,7		//wooden wall
+COMPONENT=0b98,-7,6,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-7,6,7
+
+[MULTIDEF 01450]
+DEFNAME=m_foundation_15x11
+TYPE=t_multi_custom
+NAME=15x11 3-Story Customizable House
+VALUE=101000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=15x11 3-Story Customizable House
+MULTIREGION=-7,-5,7,5
+COMPONENT=09,-7,5,7		//wooden wall
+COMPONENT=0b98,-7,6,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-7,6,7
+
+[MULTIDEF 01451]
+DEFNAME=m_foundation_15x12
+TYPE=t_multi_custom
+NAME=15x12 3-Story Customizable House
+VALUE=109000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=15x12 3-Story Customizable House
+MULTIREGION=-7,-5,7,6
+COMPONENT=09,-7,6,7		//wooden wall
+COMPONENT=0b98,-7,7,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-7,7,7
+
+[MULTIDEF 01452]
+DEFNAME=m_foundation_15x13
+TYPE=t_multi_custom
+NAME=15x13 3-Story Customizable House
+VALUE=117000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=15x13 3-Story Customizable House
+MULTIREGION=-7,-6,7,6
+COMPONENT=09,-7,6,7		//wooden wall
+COMPONENT=0b98,-7,7,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-7,7,7
+
+[MULTIDEF 01453]
+DEFNAME=m_foundation_15x14
+TYPE=t_multi_custom
+NAME=15x14 3-Story Customizable House
+VALUE=125000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=15x14 3-Story Customizable House
+MULTIREGION=-7,-6,7,7
+COMPONENT=09,-7,7,7		//wooden wall
+COMPONENT=0b98,-7,8,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-7,8,7
+
+[MULTIDEF 01454]
+DEFNAME=m_foundation_15x15
+TYPE=t_multi_custom
+NAME=15x15 3-Story Customizable House
+VALUE=133000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=15x15 3-Story Customizable House
+MULTIREGION=-7,-7,7,7
+COMPONENT=09,-7,7,7		//wooden wall
+COMPONENT=0b98,-7,8,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-7,8,7
+
+[MULTIDEF 01455]
+DEFNAME=m_foundation_15x16
+TYPE=t_multi_custom
+NAME=15x16 3-Story Customizable House
+VALUE=141000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=15x16 3-Story Customizable House
+MULTIREGION=-7,-7,7,8
+COMPONENT=09,-7,8,7		//wooden wall
+COMPONENT=0b98,-7,9,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-7,9,7
+
+[MULTIDEF 01456]
+DEFNAME=m_foundation_15x17
+TYPE=t_multi_custom
+NAME=15x17 3-Story Customizable House
+VALUE=149000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=15x17 3-Story Customizable House
+MULTIREGION=-7,-8,7,8
+COMPONENT=09,-7,8,7		//wooden wall
+COMPONENT=0b98,-7,9,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-7,9,7
+
+[MULTIDEF 01457]
+DEFNAME=m_foundation_15x18
+TYPE=t_multi_custom
+NAME=15x18 3-Story Customizable House
+VALUE=157000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=15x18 3-Story Customizable House
+MULTIREGION=-7,-8,7,9
+COMPONENT=09,-7,9,7		//wooden wall
+COMPONENT=0b98,-7,10,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-7,10,7
+
+// 16x* foundations
+
+[MULTIDEF 0145c]
+DEFNAME=m_foundation_16x11
+TYPE=t_multi_custom
+NAME=16x11 3-Story Customizable House
+VALUE=107500
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=16x11 3-Story Customizable House
+MULTIREGION=-7,-5,8,5
+COMPONENT=09,-7,5,7		//wooden wall
+COMPONENT=0b98,-7,6,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-7,6,7
+
+[MULTIDEF 0145d]
+DEFNAME=m_foundation_16x12
+TYPE=t_multi_custom
+NAME=16x12 3-Story Customizable House
+VALUE=116000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=16x12 3-Story Customizable House
+MULTIREGION=-7,-5,8,6
+COMPONENT=09,-7,6,7		//wooden wall
+COMPONENT=0b98,-7,7,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-7,7,7
+
+[MULTIDEF 0145e]
+DEFNAME=m_foundation_16x13
+TYPE=t_multi_custom
+NAME=16x13 3-Story Customizable House
+VALUE=124500
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=16x13 3-Story Customizable House
+MULTIREGION=-7,-6,8,6
+COMPONENT=09,-7,6,7		//wooden wall
+COMPONENT=0b98,-7,7,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-7,7,7
+
+[MULTIDEF 0145f]
+DEFNAME=m_foundation_16x14
+TYPE=t_multi_custom
+NAME=16x14 3-Story Customizable House
+VALUE=133000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=16x14 3-Story Customizable House
+MULTIREGION=-7,-6,8,7
+COMPONENT=09,-7,7,7		//wooden wall
+COMPONENT=0b98,-7,8,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-7,8,7
+
+[MULTIDEF 01460]
+DEFNAME=m_foundation_16x15
+TYPE=t_multi_custom
+NAME=16x15 3-Story Customizable House
+VALUE=141500
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=16x15 3-Story Customizable House
+MULTIREGION=-7,-7,8,7
+COMPONENT=09,-7,7,7		//wooden wall
+COMPONENT=0b98,-7,8,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-7,8,7
+
+[MULTIDEF 01461]
+DEFNAME=m_foundation_16x16
+TYPE=t_multi_custom
+NAME=16x16 3-Story Customizable House
+VALUE=150000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=16x16 3-Story Customizable House
+MULTIREGION=-7,-7,8,8
+COMPONENT=09,-7,8,7		//wooden wall
+COMPONENT=0b98,-7,9,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-7,9,7
+
+[MULTIDEF 01462]
+DEFNAME=m_foundation_16x17
+TYPE=t_multi_custom
+NAME=16x17 3-Story Customizable House
+VALUE=158500
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=16x17 3-Story Customizable House
+MULTIREGION=-7,-8,8,8
+COMPONENT=09,-7,8,7		//wooden wall
+COMPONENT=0b98,-7,9,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-7,9,7
+
+[MULTIDEF 01463]
+DEFNAME=m_foundation_16x18
+TYPE=t_multi_custom
+NAME=16x18 3-Story Customizable House
+VALUE=167000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=16x18 3-Story Customizable House
+MULTIREGION=-7,-8,8,9
+COMPONENT=09,-7,9,7		//wooden wall
+COMPONENT=0b98,-7,10,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-7,10,7
+
+// 17x* foundations
+
+[MULTIDEF 01469]
+DEFNAME=m_foundation_17x12
+TYPE=t_multi_custom
+NAME=17x12 3-Story Customizable House
+VALUE=123000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=17x12 3-Story Customizable House
+MULTIREGION=-8,-5,8,6
+COMPONENT=09,-8,6,7		//wooden wall
+COMPONENT=0b98,-8,7,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-8,7,7
+
+[MULTIDEF 0146a]
+DEFNAME=m_foundation_17x13
+TYPE=t_multi_custom
+NAME=17x13 3-Story Customizable House
+VALUE=132000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=17x13 3-Story Customizable House
+MULTIREGION=-8,-6,8,6
+COMPONENT=09,-8,6,7		//wooden wall
+COMPONENT=0b98,-8,7,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-8,7,7
+
+[MULTIDEF 0146b]
+DEFNAME=m_foundation_17x14
+TYPE=t_multi_custom
+NAME=17x14 3-Story Customizable House
+VALUE=141000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=17x14 3-Story Customizable House
+MULTIREGION=-8,-6,8,7
+COMPONENT=09,-8,7,7		//wooden wall
+COMPONENT=0b98,-8,8,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-8,8,7
+
+[MULTIDEF 0146c]
+DEFNAME=m_foundation_17x15
+TYPE=t_multi_custom
+NAME=17x15 3-Story Customizable House
+VALUE=150000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=17x15 3-Story Customizable House
+MULTIREGION=-8,-7,8,7
+COMPONENT=09,-8,7,7		//wooden wall
+COMPONENT=0b98,-8,8,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-8,8,7
+
+[MULTIDEF 0146d]
+DEFNAME=m_foundation_17x16
+TYPE=t_multi_custom
+NAME=17x16 3-Story Customizable House
+VALUE=159000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=17x16 3-Story Customizable House
+MULTIREGION=-8,-7,8,8
+COMPONENT=09,-8,8,7		//wooden wall
+COMPONENT=0b98,-8,9,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-8,9,7
+
+[MULTIDEF 0146e]
+DEFNAME=m_foundation_17x17
+TYPE=t_multi_custom
+NAME=17x17 3-Story Customizable House
+VALUE=168000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=17x17 3-Story Customizable House
+MULTIREGION=-8,-8,8,8
+COMPONENT=09,-8,8,7		//wooden wall
+COMPONENT=0b98,-8,9,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-8,9,7
+
+[MULTIDEF 0146f]
+DEFNAME=m_foundation_17x18
+TYPE=t_multi_custom
+NAME=17x18 3-Story Customizable House
+VALUE=177000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=17x18 3-Story Customizable House
+MULTIREGION=-8,-8,8,9
+COMPONENT=09,-8,9,7		//wooden wall
+COMPONENT=0b98,-8,10,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-8,10,7
+
+// 18x* foundations
+
+[MULTIDEF 01476]
+DEFNAME=m_foundation_18x13
+TYPE=t_multi_custom
+NAME=18x13 3-Story Customizable House
+VALUE=139500
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=18x13 3-Story Customizable House
+MULTIREGION=-8,-6,9,6
+COMPONENT=09,-8,6,7		//wooden wall
+COMPONENT=0b98,-8,7,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-8,7,7
+
+[MULTIDEF 01477]
+DEFNAME=m_foundation_18x14
+TYPE=t_multi_custom
+NAME=18x14 3-Story Customizable House
+VALUE=149000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=18x14 3-Story Customizable House
+MULTIREGION=-8,-6,9,7
+COMPONENT=09,-8,7,7		//wooden wall
+COMPONENT=0b98,-8,8,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-8,8,7
+
+[MULTIDEF 01478]
+DEFNAME=m_foundation_18x15
+TYPE=t_multi_custom
+NAME=18x15 3-Story Customizable House
+VALUE=158500
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=18x15 3-Story Customizable House
+MULTIREGION=-8,-7,9,7
+COMPONENT=09,-8,7,7		//wooden wall
+COMPONENT=0b98,-8,8,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-8,8,7
+
+[MULTIDEF 01479]
+DEFNAME=m_foundation_18x16
+TYPE=t_multi_custom
+NAME=18x16 3-Story Customizable House
+VALUE=168000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=18x16 3-Story Customizable House
+MULTIREGION=-8,-7,9,8
+COMPONENT=09,-8,8,7		//wooden wall
+COMPONENT=0b98,-8,9,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-8,9,7
+
+[MULTIDEF 0147a]
+DEFNAME=m_foundation_18x17
+TYPE=t_multi_custom
+NAME=18x17 3-Story Customizable House
+VALUE=177500
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=18x17 3-Story Customizable House
+MULTIREGION=-8,-8,9,8
+COMPONENT=09,-8,8,7		//wooden wall
+COMPONENT=0b98,-8,9,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-8,9,7
+
+[MULTIDEF 0147b]
+DEFNAME=m_foundation_18x18
+TYPE=t_multi_custom
+NAME=18x18 3-Story Customizable House
+VALUE=187000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=18x18 3-Story Customizable House
+MULTIREGION=-8,-8,9,9
+COMPONENT=09,-8,9,7		//wooden wall
+COMPONENT=0b98,-8,10,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-8,10,7
+
+[MULTIDEF 0147c]
+DEFNAME=m_foundation_keep
+TYPE=t_multi_custom
+NAME=3-Story Customizable Keep
+VALUE=322000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=3-Story Customizable Keep
+MULTIREGION=-11,-11,12,12
+COMPONENT=09,-11,12,7		//wooden wall
+COMPONENT=0b98,-11,13,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-11,13,7
+
+[MULTIDEF 0147d]
+DEFNAME=m_foundation_castle
+TYPE=t_multi_custom
+NAME=3-Story Customizable Castle
+VALUE=525000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=3-Story Customizable Castle
+MULTIREGION=-15,-15,15,16
+COMPONENT=09,-15,15,7		//wooden wall
+COMPONENT=0b98,-15,16,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-15,16,7
+
+[EOF]

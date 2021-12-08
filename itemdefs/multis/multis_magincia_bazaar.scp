@@ -1,0 +1,171 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2019
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Saturday, Feb 23, 2019
+//
+VERSION=0.56d
+
+[MULTIDEF 01770]
+DEFNAME=m_magincia_unknown_stall_1
+//NAME=
+TYPE=t_multi
+CATEGORY=Multis
+SUBSECTION=Magincia Bazaar
+DESCRIPTION=Unknown Stall 1
+MULTIREGION=-1,-2,2,2
+COMPONENT=02a58,1,0		//bone throne
+COMPONENT=0a20,1,-2		//lantern post
+COMPONENT=0b97,2,-2		//wooden signpost
+COMPONENT=i_sign_brass,2,-2
+
+[MULTIDEF 01771]
+DEFNAME=m_magincia_unknown_stall_2
+//NAME=
+TYPE=t_multi
+CATEGORY=Multis
+SUBSECTION=Magincia Bazaar
+DESCRIPTION=Unknown Stall 2
+MULTIREGION=-1,-2,2,2
+COMPONENT=0afa,1,1		//carpet
+COMPONENT=0b26,-1,-1		//candelabra
+COMPONENT=0b26,-1,2		//candelabra
+COMPONENT=09a8,-1,0,7		//metal box
+COMPONENT=0a20,1,-2		//lantern post
+COMPONENT=0b97,2,-2		//wooden signpost
+COMPONENT=i_sign_brass,2,-2
+
+[MULTIDEF 01772]
+DEFNAME=m_magincia_commodity_stall_1
+NAME=Commodity Stall
+TYPE=t_multi
+CATEGORY=Multis
+SUBSECTION=Magincia Bazaar
+DESCRIPTION=Commodity Stall 1
+MULTIREGION=-1,-2,2,2
+COMPONENT=0709,1,1		//marble stairs
+COMPONENT=0a20,1,-2		//lantern post
+COMPONENT=0b97,2,-2		//wooden signpost
+COMPONENT=i_sign_brass,2,-2
+
+[MULTIDEF 01773]
+DEFNAME=m_magincia_commodity_stall_2
+NAME=Commodity Stall
+TYPE=t_multi
+CATEGORY=Multis
+SUBSECTION=Magincia Bazaar
+DESCRIPTION=Commodity Stall 2
+MULTIREGION=-1,-2,2,2
+COMPONENT=02438,1,0		//wood floor
+COMPONENT=0a20,1,-2		//lantern post
+COMPONENT=0b97,2,-2		//wooden signpost
+COMPONENT=i_sign_brass,2,-2
+
+[MULTIDEF 01774]
+DEFNAME=m_magincia_commodity_stall_3
+NAME=Commodity Stall
+TYPE=t_multi
+CATEGORY=Multis
+SUBSECTION=Magincia Bazaar
+DESCRIPTION=Commodity Stall 3
+MULTIREGION=-1,-2,2,2
+COMPONENT=0408f,0,0		//decorative paver
+COMPONENT=0a20,1,-2		//lantern post
+COMPONENT=0b97,2,-2		//wooden signpost
+COMPONENT=i_sign_brass,2,-2
+
+[MULTIDEF 01775]
+DEFNAME=m_magincia_animal_stall_1
+NAME=Animal Stall
+TYPE=t_multi
+CATEGORY=Multis
+SUBSECTION=Magincia Bazaar
+DESCRIPTION=Animal Stall 1
+MULTIREGION=-2,-2,2,2
+COMPONENT=031f8,0,1		//dirt
+COMPONENT=040c,-1,0		//dirt
+COMPONENT=0870,2,0		//wooden gate
+COMPONENT=0a20,1,-2		//lantern post
+COMPONENT=0b97,2,-2		//wooden signpost
+COMPONENT=i_sign_brass,2,-2
+
+[MULTIDEF 01776]
+DEFNAME=m_magincia_unknown_stall_3
+//NAME=
+TYPE=t_multi
+CATEGORY=Multis
+SUBSECTION=Magincia Bazaar
+DESCRIPTION=Unknown Stall 3
+MULTIREGION=-2,-2,2,2
+COMPONENT=031f4,0,0		//dirt
+COMPONENT=031f4,-1,1		//dirt
+COMPONENT=0854,2,1		//iron gate
+COMPONENT=0a20,1,-2		//lantern post
+COMPONENT=0b97,2,-2		//wooden signpost
+COMPONENT=i_sign_brass,2,-2
+
+[MULTIDEF 01777]
+DEFNAME=m_magincia_animal_stall_2
+NAME=Animal Stall
+TYPE=t_multi
+CATEGORY=Multis
+SUBSECTION=Magincia Bazaar
+DESCRIPTION=Animal Stall 2
+MULTIREGION=-2,-2,2,2
+COMPONENT=0177d,0,-1		//grass
+COMPONENT=0177d,0,1		//grass
+COMPONENT=0870,2,0		//wooden gate
+COMPONENT=0a20,1,-2		//lantern post
+COMPONENT=0b97,2,-2		//wooden signpost
+COMPONENT=i_sign_brass,2,-2
+
+[MULTIDEF 01778]
+DEFNAME=m_magincia_unknown_stall_4
+//NAME=
+TYPE=t_multi
+CATEGORY=Multis
+SUBSECTION=Magincia Bazaar
+DESCRIPTION=Unknown Stall 4
+MULTIREGION=-1,-2,2,2
+COMPONENT=0512,1,0		//marble floor
+COMPONENT=0a20,1,-2		//lantern post
+COMPONENT=0b97,2,-2		//wooden signpost
+COMPONENT=i_sign_brass,2,-2
+
+//[MULTIDEF 01779]
+//[MULTIDEF 0177a]
+
+[MULTIDEF 0177b]
+DEFNAME=m_magincia_animal_stall_3
+NAME=Animal Stall
+TYPE=t_multi
+CATEGORY=Multis
+SUBSECTION=Magincia Bazaar
+DESCRIPTION=Animal Stall 3
+MULTIREGION=-2,-2,2,2
+COMPONENT=0914,-1,0		//dirt patch
+COMPONENT=0914,1,1		//dirt patch
+COMPONENT=0870,2,1		//wooden gate
+COMPONENT=0a20,1,-2		//lantern post
+COMPONENT=0b97,2,-2		//wooden signpost
+COMPONENT=i_sign_brass,2,-2
+
+[MULTIDEF 0177c]
+DEFNAME=m_magincia_unknown_stall_5
+//NAME=
+TYPE=t_multi
+CATEGORY=Multis
+SUBSECTION=Magincia Bazaar
+DESCRIPTION=Unknown Stall 5
+MULTIREGION=-2,-2,1,1
+COMPONENT=04b8,2,2		//wooden boards
+COMPONENT=0a20,2,-1		//lantern post
+COMPONENT=0b97,3,-1		//wooden signpost
+COMPONENT=i_sign_brass,3,-1
+
+[EOF]

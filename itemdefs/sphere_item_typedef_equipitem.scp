@@ -1,0 +1,205 @@
+﻿//****************************************************************************
+// SPHERE by : Menasoft ©1997-2018
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Wednesday, Dec 26, 2018
+//
+VERSION=0.56d
+
+
+[COMMENT sphere_item_typedef_equipitem]
+The t_equipitem TYPEDEF is typically applied on every equipable item.
+For example:
+  t_clothing
+  t_armor*
+  t_weapon*
+  t_wand
+  t_jewelry
+  t_container (just quivers)
+  t_light_lit (just lights that could be equipped like candles, lanterns)
+  t_spellbook
+  t_fishing_pole
+
+When an item with t_equipitem is equipped by a char, the item properties are
+usually added to the char wearing it.  That way multiple items with the same
+properties can be equipped at the same time, stacking the effect.
+
+Properties being handled inside this TYPEDEF currently include:
+
+CANUSE
+ - Purpose: flag to control what race/gender can equip the item
+ - Values:  can_u_human
+            can_u_elf
+            can_u_gargoyle
+            can_u_female
+            can_u_all
+            can_u_none
+
+BONUSSKILL1[AMT]
+BONUSSKILL2[AMT]
+BONUSSKILL3[AMT]
+BONUSSKILL4[AMT]
+BONUSSKILL5[AMT]
+ - Purpose: increase/decrease up to 5 char skills when equipped
+ - Values:  BONUSSKILL[x]:     skill name (eg: Alchemy, Fencing, ...)
+            BONUSSKILL[x]AMT:  decimal value to increase/decrease (eg: 100 = +10.0)
+
+TAG.SlayerGroup (NOT IMPLEMENTED YET)
+ - Purpose: weapons with slayer property set will deal double damage when hit monsters of the opposite slayer group
+
+
+[TYPEDEF t_equipitem]
+ON=@ClientTooltip
+IF (<CANUSE> & can_u_elf) && !(<CANUSE> & can_u_human|can_u_gargoyle)
+   SRC.ADDCLILOC 1075086	//Elves Only
+ELIF (<CANUSE> & can_u_gargoyle) && !(<CANUSE> & can_u_human|can_u_elf)
+   SRC.ADDCLILOC 1111709	//Gargoyles Only
+ENDIF
+FOR 1 5
+   IF !(<isempty <BONUSSKILL<dLOCAL._FOR>>>)
+      SRC.ADDCLILOC <eval 1060450 + <LOCAL._FOR>>,<SERV.SKILL.<BONUSSKILL<dLOCAL._FOR>>.KEY>,<fval <BONUSSKILL<dLOCAL._FOR>AMT>>
+   ENDIF
+ENDFOR
+//IF !(<isempty <TAG.SlayerGroup>>)
+//   IF (!STRCMPI("<TAG.SlayerGroup>", "AirElem"))
+//      SRC.ADDCLILOC 1060457	//air elemental slayer
+//   ELIF (!STRCMPI("<TAG.SlayerGroup>", "Arachnid"))
+//      SRC.ADDCLILOC 1060458	//arachnid slayer
+//   ELIF (!STRCMPI("<TAG.SlayerGroup>", "BloodElem"))
+//      SRC.ADDCLILOC 1060459	//blood elemental slayer
+//   ELIF (!STRCMPI("<TAG.SlayerGroup>", "Demon"))
+//      SRC.ADDCLILOC 1060460	//demon slayer
+//   ELIF (!STRCMPI("<TAG.SlayerGroup>", "EarthElem"))
+//      SRC.ADDCLILOC 1060463	//earth elemental slayer
+//   ELIF (!STRCMPI("<TAG.SlayerGroup>", "Elemental"))
+//      SRC.ADDCLILOC 1060464	//elemental slayer
+//   ELIF (!STRCMPI("<TAG.SlayerGroup>", "FireElem"))
+//      SRC.ADDCLILOC 1060465	//fire elemental slayer
+//   ELIF (!STRCMPI("<TAG.SlayerGroup>", "Gargoyle"))
+//      SRC.ADDCLILOC 1060466	//gargoyle slayer
+//   ELIF (!STRCMPI("<TAG.SlayerGroup>", "Lizardman"))
+//      SRC.ADDCLILOC 1060467	//lizardman slayer
+//   ELIF (!STRCMPI("<TAG.SlayerGroup>", "Ogre"))
+//      SRC.ADDCLILOC 1060468	//ogre slayer
+//   ELIF (!STRCMPI("<TAG.SlayerGroup>", "Ophidian"))
+//      SRC.ADDCLILOC 1060469	//ophidian slayer
+//   ELIF (!STRCMPI("<TAG.SlayerGroup>", "Orc"))
+//      SRC.ADDCLILOC 1060470	//orc slayer
+//   ELIF (!STRCMPI("<TAG.SlayerGroup>", "PoisonElem"))
+//      SRC.ADDCLILOC 1060471	//poison elemental slayer
+//   ELIF (!STRCMPI("<TAG.SlayerGroup>", "Repond"))
+//      SRC.ADDCLILOC 1060472	//repond slayer
+//   ELIF (!STRCMPI("<TAG.SlayerGroup>", "Reptile"))
+//      SRC.ADDCLILOC 1060473	//reptile slayer
+//   ELIF (!STRCMPI("<TAG.SlayerGroup>", "Scorpion"))
+//      SRC.ADDCLILOC 1060474	//scorpion slayer
+//   ELIF (!STRCMPI("<TAG.SlayerGroup>", "Snake"))
+//      SRC.ADDCLILOC 1060475	//snake slayer
+//   ELIF (!STRCMPI("<TAG.SlayerGroup>", "SnowElem"))
+//      SRC.ADDCLILOC 1060476	//snow elemental slayer
+//   ELIF (!STRCMPI("<TAG.SlayerGroup>", "Spider"))
+//      SRC.ADDCLILOC 1060477	//spider slayer
+//   ELIF (!STRCMPI("<TAG.SlayerGroup>", "Terathan"))
+//      SRC.ADDCLILOC 1060478	//terathan slayer
+//   ELIF (!STRCMPI("<TAG.SlayerGroup>", "Undead"))
+//      SRC.ADDCLILOC 1060479	//undead slayer
+//   ELIF (!STRCMPI("<TAG.SlayerGroup>", "Troll"))
+//      SRC.ADDCLILOC 1060480	//troll slayer
+//   ELIF (!STRCMPI("<TAG.SlayerGroup>", "WaterElem"))
+//      SRC.ADDCLILOC 1060481	//water elemental slayer
+//   ELIF (!STRCMPI("<TAG.SlayerGroup>", "Dragon"))
+//      SRC.ADDCLILOC 1061284	//Dragon Slayer
+//   ELIF (!STRCMPI("<TAG.SlayerGroup>", "Fey"))
+//      SRC.ADDCLILOC 1070855	//fey slayer
+//   ELIF (!STRCMPI("<TAG.SlayerGroup>", "Bear"))
+//      SRC.ADDCLILOC 1072504	//Bear Slayer
+//   ELIF (!STRCMPI("<TAG.SlayerGroup>", "Vermin"))
+//      SRC.ADDCLILOC 1072505	//Vermin Slayer
+//   ELIF (!STRCMPI("<TAG.SlayerGroup>", "Bat"))
+//      SRC.ADDCLILOC 1072506	//Bat Slayer
+//   ELIF (!STRCMPI("<TAG.SlayerGroup>", "Mage"))
+//      SRC.ADDCLILOC 1072507	//Mage Slayer
+//   ELIF (!STRCMPI("<TAG.SlayerGroup>", "Beetle"))
+//      SRC.ADDCLILOC 1072508	//Beetle Slayer
+//   ELIF (!STRCMPI("<TAG.SlayerGroup>", "Bird"))
+//      SRC.ADDCLILOC 1072509	//Bird Slayer
+//   ELIF (!STRCMPI("<TAG.SlayerGroup>", "Ice"))
+//      SRC.ADDCLILOC 1072510	//Ice Slayer
+//   ELIF (!STRCMPI("<TAG.SlayerGroup>", "Flame"))
+//      SRC.ADDCLILOC 1072511	//Flame Slayer
+//   ELIF (!STRCMPI("<TAG.SlayerGroup>", "Bovine"))
+//      SRC.ADDCLILOC 1072512	//Bovine Slayer
+//   ELIF (!STRCMPI("<TAG.SlayerGroup>", "Wolf"))
+//      SRC.ADDCLILOC 1075462	//Wolf Slayer
+//   ELIF (!STRCMPI("<TAG.SlayerGroup>", "Goblin"))
+//      SRC.ADDCLILOC 1095010	//Goblin Slayer
+//   ELIF (!STRCMPI("<TAG.SlayerGroup>", "Eodon"))
+//      SRC.ADDCLILOC 1156126	//Eodon Slayer
+//   ELIF (!STRCMPI("<TAG.SlayerGroup>", "Dinosaur"))
+//      SRC.ADDCLILOC 1156345	//Dinosaur Slayer
+//   ELIF (!STRCMPI("<TAG.SlayerGroup>", "Myrmidex"))
+//      SRC.ADDCLILOC 1156346	//Myrmidex Slayer
+//   ELIF (!STRCMPI("<TAG.SlayerGroup>", "EodonTribe"))
+//      SRC.ADDCLILOC 1156347	//Eodon Tribe Slayer
+//   ELIF (!STRCMPI("<TAG.SlayerGroup>", "PaganTitan"))
+//      SRC.ADDCLILOC 1157920	//Pagan Titan Slayer
+//   ENDIF
+//ENDIF
+
+ON=@EquipTest
+IF (<CANUSE> & can_u_all) || !(<SRC.ISPLAYER>)
+   return 0
+ELIF (<CANUSE> & can_u_none)
+   return 1
+ELIF (<CANUSE> & can_u_human) && !(<CANUSE> & can_u_elf|can_u_gargoyle)
+   IF !(<SRC.f_isHuman>)
+      SRC.SYSMESSAGELOC color_text,1071936	//You cannot equip that.
+      return 1
+   ENDIF
+ELIF (<CANUSE> & can_u_elf) && !(<CANUSE> & can_u_human|can_u_gargoyle)
+   IF !(<SRC.f_isElf>)
+      SRC.SYSMESSAGELOC color_text,1072203	//Only Elves may use this.
+      return 1
+   ENDIF
+ELIF (<CANUSE> & can_u_gargoyle) && !(<CANUSE> & can_u_human|can_u_elf)
+   IF !(<SRC.f_isGarg>)
+      SRC.SYSMESSAGELOC color_text,1111707	//Only gargoyles can wear this.
+      return 1
+   ENDIF
+ELIF !(<CANUSE> & can_u_all)
+   IF (<SRC.f_isGarg>)
+      SRC.SYSMESSAGELOC color_text,1111708	//Gargoyles can't wear this.
+      return 1
+   ENDIF
+ELIF ((<CANUSE> & can_u_male) && !(<CANUSE> & can_u_female))
+   IF (<SRC.f_isFemale>)
+      SRC.SYSMESSAGELOC color_text,1063343	//Only males can wear this.
+      return 1
+   ENDIF
+ELIF ((<CANUSE> & can_u_female) && !(<CANUSE> & can_u_male))
+   IF !(<SRC.f_isFemale>)
+      SRC.SYSMESSAGELOC color_text,1010388	//Only females can wear this.
+      return 1
+   ENDIF
+ENDIF
+
+ON=@Equip
+FOR 1 5
+   IF !(<isempty <BONUSSKILL<dLOCAL._FOR>>>)
+      SRC.<BONUSSKILL<dLOCAL._FOR>> += <BONUSSKILL<dLOCAL._FOR>AMT>
+   ENDIF
+ENDFOR
+
+ON=@Unequip
+FOR 1 5
+   IF !(<isempty <BONUSSKILL<dLOCAL._FOR>>>)
+      SRC.<BONUSSKILL<dLOCAL._FOR>> -= <BONUSSKILL<dLOCAL._FOR>AMT>
+   ENDIF
+ENDFOR
+
+[EOF]

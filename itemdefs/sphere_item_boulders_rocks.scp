@@ -1,0 +1,665 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2017
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Wednesday, Dec 20, 2017
+//
+VERSION=0.56d
+
+
+[ITEMDEF 0134f]
+DEFNAME=i_boulder
+TYPE=t_arock
+CATEGORY=Boulders, Rocks, and Crystals
+SUBSECTION=Boulders
+DESCRIPTION=Boulder (multi-part)
+DUPELIST=01350,01351,01352,01353,01354,01355,01356,01357,01358,01359,0135a,0135b,0135c,0135d,0135e,0135f,01360,01361,01362
+
+[ITEMDEF 01350]
+//boulder (multi-part)
+DUPEITEM=0134f
+
+[ITEMDEF 01351]
+//boulder (multi-part)
+DUPEITEM=0134f
+
+[ITEMDEF 01352]
+//boulder (multi-part)
+DUPEITEM=0134f
+
+[ITEMDEF 01353]
+//boulder (multi-part)
+DUPEITEM=0134f
+
+[ITEMDEF 01354]
+//boulder (multi-part)
+DUPEITEM=0134f
+
+[ITEMDEF 01355]
+//boulder (multi-part)
+DUPEITEM=0134f
+
+[ITEMDEF 01356]
+//boulder (multi-part)
+DUPEITEM=0134f
+
+[ITEMDEF 01357]
+//boulder (multi-part)
+DUPEITEM=0134f
+
+[ITEMDEF 01358]
+//boulder (multi-part)
+DUPEITEM=0134f
+
+[ITEMDEF 01359]
+//boulder (multi-part)
+DUPEITEM=0134f
+
+[ITEMDEF 0135a]
+//boulder (multi-part)
+DUPEITEM=0134f
+
+[ITEMDEF 0135b]
+//boulder (multi-part)
+DUPEITEM=0134f
+
+[ITEMDEF 0135c]
+//boulder (multi-part)
+DUPEITEM=0134f
+
+[ITEMDEF 0135d]
+//boulder (multi-part)
+DUPEITEM=0134f
+
+[ITEMDEF 0135e]
+//boulder (multi-part)
+DUPEITEM=0134f
+
+[ITEMDEF 0135f]
+//boulder (multi-part)
+DUPEITEM=0134f
+
+[ITEMDEF 01360]
+//boulder (multi-part)
+DUPEITEM=0134f
+
+[ITEMDEF 01361]
+//boulder (multi-part)
+DUPEITEM=0134f
+
+[ITEMDEF 01362]
+//boulder (multi-part)
+DUPEITEM=0134f
+
+[ITEMDEF 01363]
+DEFNAME=i_rock_plain
+TYPE=t_arock
+CATEGORY=Boulders, Rocks, and Crystals
+SUBSECTION=Rocks
+DESCRIPTION=Rock
+DUPELIST=01364,01365,01366,01367,01368,01369,0136a,0136b,0136c,0136d
+
+[ITEMDEF 01364]
+//rock
+DUPEITEM=01363
+
+[ITEMDEF 01365]
+//rock
+DUPEITEM=01363
+
+[ITEMDEF 01366]
+//rock
+DUPEITEM=01363
+
+[ITEMDEF 01367]
+//rocks
+DUPEITEM=01363
+
+[ITEMDEF 01368]
+//rock
+DUPEITEM=01363
+
+[ITEMDEF 01369]
+//rock
+DUPEITEM=01363
+
+[ITEMDEF 0136a]
+//rocks
+DUPEITEM=01363
+
+[ITEMDEF 0136b]
+//rock
+DUPEITEM=01363
+
+[ITEMDEF 0136c]
+//rock
+DUPEITEM=01363
+
+[ITEMDEF 0136d]
+//rocks
+DUPEITEM=01363
+
+
+[ITEMDEF 01771]
+CATEGORY=Boulders, Rocks, and Crystals
+SUBSECTION=Rocks
+DESCRIPTION=Rock
+DUPELIST=01772,01773,01774,01775,01776,01777,01778,01779,0177a,0177b,0177c
+
+[ITEMDEF 01772]
+//rock
+DUPEITEM=01771
+
+[ITEMDEF 01773]
+//rock
+DUPEITEM=01771
+
+[ITEMDEF 01774]
+//rock
+DUPEITEM=01771
+
+[ITEMDEF 01775]
+//rock
+DUPEITEM=01771
+
+[ITEMDEF 01776]
+//rock
+DUPEITEM=01771
+
+[ITEMDEF 01777]
+//rock
+DUPEITEM=01771
+
+[ITEMDEF 01778]
+//rock
+DUPEITEM=01771
+
+[ITEMDEF 01779]
+//rock
+DUPEITEM=01771
+
+[ITEMDEF 0177a]
+//rock
+DUPEITEM=01771
+
+[ITEMDEF 0177b]
+//rock
+DUPEITEM=01771
+
+[ITEMDEF 0177c]
+//rock
+DUPEITEM=01771
+
+
+[ITEMDEF 02206]
+DEFNAME=i_crystal_1
+CATEGORY=Boulders, Rocks, and Crystals
+SUBSECTION=Crystals
+DESCRIPTION=Crystal (1)
+DUPELIST=02207,02208,02209,0220a,0220b,0220c,0220d,0220e
+
+[ITEMDEF 02207]
+//crystal
+DUPEITEM=02206
+
+[ITEMDEF 02208]
+//crystal
+DUPEITEM=02206
+
+[ITEMDEF 02209]
+//crystal
+DUPEITEM=02206
+
+[ITEMDEF 0220a]
+//crystal
+DUPEITEM=02206
+
+[ITEMDEF 0220b]
+//crystal
+DUPEITEM=02206
+
+[ITEMDEF 0220c]
+//crystal
+DUPEITEM=02206
+
+[ITEMDEF 0220d]
+//crystal
+DUPEITEM=02206
+
+[ITEMDEF 0220e]
+//crystal
+DUPEITEM=02206
+
+
+[ITEMDEF 02210]
+DEFNAME=i_crystal_2
+DUPELIST=02211,02212,02213,02214,02215,02216,02217,02218
+CATEGORY=Boulders, Rocks, and Crystals
+SUBSECTION=Crystals
+DESCRIPTION=Crystal (2)
+
+[ITEMDEF 02211]
+//crystal
+DUPEITEM=02210
+
+[ITEMDEF 02212]
+//crystal
+DUPEITEM=02210
+
+[ITEMDEF 02213]
+//crystal
+DUPEITEM=02210
+
+[ITEMDEF 02214]
+//crystal
+DUPEITEM=02210
+
+[ITEMDEF 02215]
+//crystal
+DUPEITEM=02210
+
+[ITEMDEF 02216]
+//crystal
+DUPEITEM=02210
+
+[ITEMDEF 02217]
+//crystal
+DUPEITEM=02210
+
+[ITEMDEF 02218]
+//crystal
+DUPEITEM=02210
+
+
+[ITEMDEF 0221a]
+DEFNAME=i_crystal_3
+DUPELIST=0221b,0221c,0221d,0221e,0221f,02220,02221,02222
+CATEGORY=Boulders, Rocks, and Crystals
+SUBSECTION=Crystals
+DESCRIPTION=Crystal (3)
+
+[ITEMDEF 0221b]
+//crystal
+DUPEITEM=0221a
+
+[ITEMDEF 0221c]
+//crystal
+DUPEITEM=0221a
+
+[ITEMDEF 0221d]
+//crystal
+DUPEITEM=0221a
+
+[ITEMDEF 0221e]
+//crystal
+DUPEITEM=0221a
+
+[ITEMDEF 0221f]
+//crystal
+DUPEITEM=0221a
+
+[ITEMDEF 02220]
+//crystal
+DUPEITEM=0221a
+
+[ITEMDEF 02221]
+//crystal
+DUPEITEM=0221a
+
+[ITEMDEF 02222]
+//crystal
+DUPEITEM=0221a
+
+
+[ITEMDEF 02224]
+DEFNAME=i_crystal_4
+DUPELIST=02225,02226,02227,02228,02229,0222a,0222b,0222c
+CATEGORY=Boulders, Rocks, and Crystals
+SUBSECTION=Crystals
+DESCRIPTION=Crystal (4)
+
+[ITEMDEF 02225]
+//crystal
+DUPEITEM=02224
+
+[ITEMDEF 02226]
+//crystal
+DUPEITEM=02224
+
+[ITEMDEF 02227]
+//crystal
+DUPEITEM=02224
+
+[ITEMDEF 02228]
+//crystal
+DUPEITEM=02224
+
+[ITEMDEF 02229]
+//crystal
+DUPEITEM=02224
+
+[ITEMDEF 0222a]
+//crystal
+DUPEITEM=02224
+
+[ITEMDEF 0222b]
+//crystal
+DUPEITEM=02224
+
+[ITEMDEF 0222c]
+//crystal
+DUPEITEM=02224
+
+
+[ITEMDEF 02fdc]
+DEFNAME=i_crystal_tall_1
+NAME=tall crystal
+CATEGORY=Boulders, Rocks, and Crystals
+SUBSECTION=Crystals
+DESCRIPTION=Tall Crystal (1)
+
+[ITEMDEF 02fdd]
+DEFNAME=i_crystal_tall_2
+NAME=tall crystal
+CATEGORY=Boulders, Rocks, and Crystals
+SUBSECTION=Crystals
+DESCRIPTION=Tall Crystal (2)
+
+
+[ITEMDEF 02fe6]
+DEFNAME=i_crystal_tall_3
+NAME=tall crystal
+CATEGORY=Boulders, Rocks, and Crystals
+SUBSECTION=Crystals
+DESCRIPTION=Tall Crystal (3)
+
+[ITEMDEF 02fe7]
+DEFNAME=i_crystal_tall_4
+NAME=tall crystal
+CATEGORY=Boulders, Rocks, and Crystals
+SUBSECTION=Crystals
+DESCRIPTION=Tall Crystal (4)
+
+
+[ITEMDEF 04b48]
+DEFNAME=i_geode_shard
+NAME=geode shard
+FLIP=1
+CATEGORY=Boulders, Rocks, and Crystals
+SUBSECTION=Geodes
+DESCRIPTION=Geode Shard
+DUPELIST=04b4c
+ON=@Create
+   COLOR={0a5e 1 0a62 1 0a63 1 0a64 1}
+
+[ITEMDEF 04b49]
+DEFNAME=i_geode
+NAME=geode
+FLIP=1
+CATEGORY=Boulders, Rocks, and Crystals
+SUBSECTION=Geodes
+DESCRIPTION=Geode
+DUPELIST=04b4d
+ON=@Create
+   COLOR={0a5e 1 0a62 1 0a63 1 0a64 1}
+
+[ITEMDEF 04b4a]
+DEFNAME=i_geode_large
+NAME=geode
+FLIP=1
+CATEGORY=Boulders, Rocks, and Crystals
+SUBSECTION=Geodes
+DESCRIPTION=Geode (large)
+DUPELIST=04b4e
+ON=@Create
+   COLOR={0a5e 1 0a62 1 0a63 1 0a64 1}
+
+[ITEMDEF 04b4b]
+DEFNAME=i_cracked_lava_rock
+NAME=cracked lava rock
+FLIP=1
+CATEGORY=Boulders, Rocks, and Crystals
+SUBSECTION=Geodes
+DESCRIPTION=Cracked Lava Rock
+DUPELIST=04b4f
+ON=@Damage
+   IF (<TOPOBJ> != <SRC>) && !(<SRC.ISGM>)
+    SRC.SYSMESSAGE That must be in your backpack for you to use it.
+    return 1
+   ENDIF
+   SRC.SOUND 03b3
+   SERV.NEWITEM {i_geode 1 i_geode_large 1 i_geode_shard 1}
+   NEW.BOUNCE
+   REMOVE
+
+[ITEMDEF 04b4c]
+//geode shard
+NAME=geode shard
+DUPEITEM=04b48
+
+[ITEMDEF 04b4d]
+//geode
+NAME=geode
+DUPEITEM=04b49
+
+[ITEMDEF 04b4e]
+//geode (large)
+NAME=geode
+DUPEITEM=04b4a
+
+[ITEMDEF 04b4f]
+//cracked lava rock
+NAME=cracked lava rock
+DUPEITEM=04b4b
+
+
+[ITEMDEF 09caa]
+DEFNAME=i_moonstone_raw
+NAME=raw moonstone
+CATEGORY=Boulders, Rocks, and Crystals
+SUBSECTION=Moonstones
+DESCRIPTION=Raw Moonstone
+DUPELIST=09cab,09cac,09cad,09cae,09caf,09cb0,09cb1,09cb2,09cb3,09cb4
+
+[ITEMDEF 09cab]
+NAME=raw moonstone
+DUPEITEM=09caa
+
+[ITEMDEF 09cac]
+NAME=raw moonstone
+DUPEITEM=09caa
+
+[ITEMDEF 09cad]
+NAME=raw moonstone
+DUPEITEM=09caa
+
+[ITEMDEF 09cae]
+NAME=raw moonstone
+DUPEITEM=09caa
+
+[ITEMDEF 09caf]
+NAME=raw moonstone
+DUPEITEM=09caa
+
+[ITEMDEF 09cb0]
+NAME=raw moonstone
+DUPEITEM=09caa
+
+[ITEMDEF 09cb1]
+NAME=raw moonstone
+DUPEITEM=09caa
+
+[ITEMDEF 09cb2]
+NAME=raw moonstone
+DUPEITEM=09caa
+
+[ITEMDEF 09cb3]
+NAME=raw moonstone
+DUPEITEM=09caa
+
+[ITEMDEF 09cb4]
+NAME=raw moonstone
+DUPEITEM=09caa
+
+[ITEMDEF 09cb5]
+DEFNAME=i_moonstone_crystal_tall
+NAME=tall moonstone crystal
+CATEGORY=Boulders, Rocks, and Crystals
+SUBSECTION=Moonstones
+DESCRIPTION=Tall Moonstone Crystal
+
+[ITEMDEF 09cb6]
+DEFNAME=i_moonstone_crystal_shards
+NAME=moonstone crystal shards
+CATEGORY=Boulders, Rocks, and Crystals
+SUBSECTION=Moonstones
+DESCRIPTION=Moonstone Crystal Shards
+
+[ITEMDEF 09cb7]
+DEFNAME=i_moonstone_crystal_1
+NAME=moonstone crystal
+CATEGORY=Boulders, Rocks, and Crystals
+SUBSECTION=Moonstones
+DESCRIPTION=Moonstone Crystal (1)
+
+[ITEMDEF 09cb8]
+DEFNAME=i_moonstone_crystal_2
+NAME=moonstone crystal
+CATEGORY=Boulders, Rocks, and Crystals
+SUBSECTION=Moonstones
+DESCRIPTION=Moonstone Crystal (2)
+
+
+[ITEMDEF 09cbb]
+DEFNAME=i_moonstone_crystal_teleporter
+NAME=moonstone crystal
+CATEGORY=Boulders, Rocks, and Crystals
+SUBSECTION=Moonstones
+DESCRIPTION=Moonstone Crystal (teleporter)
+ON=@DClick
+   IF !(<ATTR> & attr_move_never|attr_static)
+    SRC.SYSMESSAGE This must be locked down or secured in order to use it.
+   ELSE
+    SDIALOG d_moonstone_crystal
+   ENDIF
+   return 1
+
+[DIALOG d_moonstone_crystal]
+75,75
+resizepic 0 0 01400 370 300
+dhtmlgump 115 10 400 16 0 0 <DEF.BFONT_LSLATEBLUE>Select your destination:
+FOR 12
+ xmfhtmlgumpcolor 50 <eval 20+(<LOCAL._FOR>*20)> 250 16 <eval 1156704+<LOCAL._FOR>> 0 0 16777215
+ button 10 <eval 20+(<LOCAL._FOR>*20)> 04b9 04ba 1 0 <LOCAL._FOR>
+ENDFOR
+
+[DIALOG d_moonstone_crystal BUTTON]
+ON=1 12
+IF !(<ATTR> & attr_move_never|attr_static)
+ SRC.SYSMESSAGE This must be locked down or secured in order to use it.
+ return 1
+ELIF (<DISTANCE> > 1)
+ SRC.SYSMESSAGE You are too far away to use the gate.
+ return 1
+ELIF (<ARGN> == 1)
+ SRC.GO 719,1863,0,5 	//Eodon Moongate
+ELIF (<ARGN> == 2)
+ SRC.GO 642,1721,40,5	//Barako Village
+ELIF (<ARGN> == 3)
+ SRC.GO 701,2106,40,5	//Jukari Village
+ELIF (<ARGN> == 4)
+ SRC.GO 355,1873,0,5	//Kurak Village
+ELIF (<ARGN> == 5)
+ SRC.GO 552,1471,40,5	//Sakkhra Village
+ELIF (<ARGN> == 6)
+ SRC.GO 412,1595,40,5	//Urali Village
+ELIF (<ARGN> == 7)
+ SRC.GO 167,1800,80,5	//Barrab Village
+ELIF (<ARGN> == 8)
+ SRC.GO 929,2016,50,5	//Shadowguard
+ELIF (<ARGN> == 9)
+ SRC.GO 731,1603,40,5	//The great ape cave
+ELIF (<ARGN> == 10)
+ SRC.GO 878,2105,40,5	//The Volcano
+ELIF (<ARGN> == 11)
+ SRC.GO 390,1690,40,5	//Dragon Turtle Habitat
+ELIF (<ARGN> == 12)
+ SRC.GO 269,1726,80,5	//Britannian Encampment
+ENDIF
+
+[ITEMDEF 09cbc]
+//moonstone crystal (teleporter)(animation frame)
+NAME=moonstone crystal
+
+[ITEMDEF 09cbd]
+//moonstone crystal (teleporter)(animation frame)
+NAME=moonstone crystal
+
+[ITEMDEF 09cbe]
+//moonstone crystal (teleporter)(animation frame)
+NAME=moonstone crystal
+
+[ITEMDEF 09cbf]
+//moonstone crystal (teleporter)(animation frame)
+NAME=moonstone crystal
+
+[ITEMDEF 09cc0]
+//moonstone crystal (teleporter)(animation frame)
+NAME=moonstone crystal
+
+[ITEMDEF 09cc1]
+DEFNAME=i_moonstone_raw_tall
+NAME=raw moonstone
+CATEGORY=Boulders, Rocks, and Crystals
+SUBSECTION=Moonstones
+DESCRIPTION=Raw Moonstone (tall)
+
+[ITEMDEF 09cc2]
+//raw moonstone (tall)(animation frame)
+NAME=raw moonstone
+
+[ITEMDEF 09cc3]
+//raw moonstone (tall)(animation frame)
+NAME=raw moonstone
+
+[ITEMDEF 09cc4]
+//raw moonstone (tall)(animation frame)
+NAME=raw moonstone
+
+[ITEMDEF 09cc5]
+//raw moonstone (tall)(animation frame)
+NAME=raw moonstone
+
+[ITEMDEF 09cc6]
+//raw moonstone (tall)(animation frame)
+NAME=raw moonstone
+
+[ITEMDEF 09cc7]
+//raw moonstone (tall)(animation frame)
+NAME=raw moonstone
+
+[ITEMDEF 09cc8]
+DEFNAME=i_moonstone_raw_short
+NAME=raw moonstone
+CATEGORY=Boulders, Rocks, and Crystals
+SUBSECTION=Moonstones
+DESCRIPTION=Raw Moonstone (short)
+
+[ITEMDEF 09cc9]
+//raw moonstone (short)(animation frame)
+NAME=raw moonstone
+
+[ITEMDEF 09cca]
+//raw moonstone (short)(animation frame)
+NAME=raw moonstone
+
+[ITEMDEF 09ccb]
+//raw moonstone (short)(animation frame)
+NAME=raw moonstone
+
+[EOF]

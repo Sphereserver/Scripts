@@ -1,0 +1,802 @@
+//****************************************************************************
+// SPHERE by : Menasoft �1997-2020
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Wednesday, Jan 8, 2020
+//
+VERSION=0.56d
+
+
+[DEFNAME backward_compatibility_defs]
+// Chardefs
+c_h_mageshop                    c_mageshop
+c_h_mageshop_f                   c_mageshop_f
+
+
+// Ships (multis)
+i_multi_ship_small_n				m_small_ship_n
+i_multi_ship_small_e				m_small_ship_e
+i_multi_ship_small_s				m_small_ship_s
+i_multi_ship_small_w				m_small_ship_w
+i_multi_ship_dragon_small_n			m_small_dragon_ship_n
+i_multi_ship_dragon_small_e			m_small_dragon_ship_e
+i_multi_ship_dragon_small_s			m_small_dragon_ship_s
+i_multi_ship_dragon_small_w			m_small_dragon_ship_w
+i_multi_ship_medium_n				m_medium_ship_n
+i_multi_ship_medium_e				m_medium_ship_s
+i_multi_ship_medium_s				m_medium_ship_e
+i_multi_ship_medium_w				m_medium_ship_w
+i_multi_ship_dragon_medium_n			m_medium_dragon_ship_n
+i_multi_ship_dragon_medium_e			m_medium_dragon_ship_e
+i_multi_ship_dragon_medium_s			m_medium_dragon_ship_s
+i_multi_ship_dragon_medium_w			m_medium_dragon_ship_w
+i_multi_ship_long_n				m_large_ship_n
+i_multi_ship_long_e				m_large_ship_e
+i_multi_ship_long_s				m_large_ship_s
+i_multi_ship_long_w				m_large_ship_w
+i_multi_ship_dragon_long_n			m_large_dragon_ship_n
+i_multi_ship_dragon_long_e			m_large_dragon_ship_e
+i_multi_ship_dragon_long_s			m_large_dragon_ship_s
+i_multi_ship_dragon_long_w			m_large_dragon_ship_w
+i_multi_ship_orc_n				m_orc_ship_n
+i_multi_ship_orc_e				m_orc_ship_e
+i_multi_ship_orc_s				m_orc_ship_s
+i_multi_ship_orc_w				m_orc_ship_w
+i_multi_ship_orc_d1_n				m_orc_ship_damaged_n
+i_multi_ship_orc_d1_e				m_orc_ship_damaged_e
+i_multi_ship_orc_d1_s				m_orc_ship_damaged_s
+i_multi_ship_orc_d1_w				m_orc_ship_damaged_w
+i_multi_ship_orc_d2_n				m_orc_ship_destroyed_n
+i_multi_ship_orc_d2_e				m_orc_ship_destroyed_e
+i_multi_ship_orc_d2_s				m_orc_ship_destroyed_s
+i_multi_ship_orc_d2_w				m_orc_ship_destroyed_w
+i_multi_ship_gargish_n				m_gargoyle_ship_n
+i_multi_ship_gargish_e				m_gargoyle_ship_e
+i_multi_ship_gargish_s				m_gargoyle_ship_s
+i_multi_ship_gargish_w				m_gargoyle_ship_w
+i_multi_ship_gargish_d1_n			m_gargoyle_ship_damaged_n
+i_multi_ship_gargish_d1_e			m_gargoyle_ship_damaged_e
+i_multi_ship_gargish_d1_s			m_gargoyle_ship_damaged_s
+i_multi_ship_gargish_d1_w			m_gargoyle_ship_damaged_w
+i_multi_ship_gargish_d2_n			m_gargoyle_ship_destroyed_n
+i_multi_ship_gargish_d2_e			m_gargoyle_ship_destroyed_e
+i_multi_ship_gargish_d2_s			m_gargoyle_ship_destroyed_s
+i_multi_ship_gargish_d2_w			m_tokuno_ship_destroyed_w
+i_multi_ship_tokuno_n				m_tokuno_ship_n
+i_multi_ship_tokuno_e				m_tokuno_ship_e
+i_multi_ship_tokuno_s				m_tokuno_ship_s
+i_multi_ship_tokuno_w				m_tokuno_ship_w
+i_multi_ship_tokuno_d1_n			m_tokuno_ship_damaged_n
+i_multi_ship_tokuno_d1_e			m_tokuno_ship_damaged_e
+i_multi_ship_tokuno_d1_s			m_tokuno_ship_damaged_s
+i_multi_ship_tokuno_d1_w			m_tokuno_ship_damaged_w
+i_multi_ship_tokuno_d2_n			m_tokuno_ship_destroyed_n
+i_multi_ship_tokuno_d2_e			m_tokuno_ship_destroyed_e
+i_multi_ship_tokuno_d2_s			m_tokuno_ship_destroyed_s
+i_multi_ship_tokuno_d2_w			m_tokuno_ship_destroyed_w
+i_multi_ship_rowboat_n				m_rowboat_n
+i_multi_ship_rowboat_e				m_rowboat_e
+i_multi_ship_rowboat_s				m_rowboat_s
+i_multi_ship_rowboat_w				m_rowboat_w
+i_multi_ship_britannian_n			m_britannian_ship_n
+i_multi_ship_britannian_e			m_britannian_ship_e
+i_multi_ship_britannian_s			m_britannian_ship_s
+i_multi_ship_britannian_w			m_britannian_ship_w
+i_multi_ship_britannian_d1_n			m_britannian_ship_damaged_n
+i_multi_ship_britannian_d1_e			m_britannian_ship_damaged_e
+i_multi_ship_britannian_d1_s			m_britannian_ship_damaged_s
+i_multi_ship_britannian_d1_w			m_britannian_ship_damaged_w
+
+// Housing (multis)
+i_multi_house_stone_plaster_small		m_stone_and_plaster_house
+i_multi_house_stone_small			m_field_stone_house
+i_multi_house_stone_brick_small			m_small_brick_house
+i_multi_house_stone_wood_small			m_wooden_house
+i_multi_house_wood_plaster_small		m_wood_and_plaster_house
+i_multi_house_wood_thatched_small		m_thatched_roof_cottage
+i_multi_tent_blue				m_blue_tent
+i_multi_tent_green				m_green_tent
+i_multi_house_3room				m_brick_house
+i_multi_house_wood_plaster_2story		m_two_story_wood_and_plaster_house
+i_multi_house_stone_plaster_2story		m_two_story_stone_and_plaster_house
+i_multi_tower					m_tower
+i_multi_keep					m_small_stone_keep
+i_multi_castle					m_castle
+i_multi_shop_blacksmithy_large_2		m_large_house_with_patio
+i_multi_shop_blacksmithy_large			m_large_house_with_patio
+i_multi_house_patio_marble			m_marble_house_with_patio
+i_multi_tower_wizard				m_small_stone_tower
+i_multi_cabin_log_2story			m_two_story_log_cabin
+i_multi_house_patio_sand			m_sandstone_house_with_patio
+i_multi_villa_2story				m_two_story_villa
+i_multi_shop_stone_small			m_small_stone_workshop
+i_multi_shop_marble_small			m_small_marble_workshop
+i_mullti_house_wheat_cottage			m_wheat_cottage
+
+// Stairs (multis)
+i_multi_stairs_wood_sn				m_wooden_stairs_sn
+i_multi_stairs_wood_we				m_wooden_stairs_we
+i_multi_stairs_wood_ns				m_wooden_stairs_ns
+i_multi_stairs_wood_ew				m_wooden_stairs_ew
+i_multi_stairs_stone_sn				m_stone_stairs_sn
+i_multi_stairs_stone_we				m_stone_stairs_we
+i_multi_stairs_stone_ns				m_stone_stairs_ns
+i_multi_stairs_stone_ew				m_stone_stairs_ew
+i_multi_stairs_stone_2_sn			m_stone_stairs_1_sn
+i_multi_stairs_stone_2_we			m_stone_stairs_1_we
+i_multi_stairs_stone_2_ns			m_stone_stairs_1_ns
+i_multi_stairs_stone_2_ew			m_stone_stairs_1_ew
+i_multi_stairs_wood_2_sn			m_wooden_stairs_1_sn
+i_multi_stairs_wood_2_we			m_wooden_stairs_1_we
+i_multi_stairs_wood_2_ns			m_wooden_stairs_1_ns
+i_multi_stairs_wood_2_ew			m_wooden_stairs_1_ew
+i_multi_stairs_stone_3_sn			m_stone_stairs_2_sn
+i_multi_stairs_stone_3_we			m_stone_stairs_2_we
+i_multi_stairs_stone_3_ns			m_stone_stairs_2_ns
+i_multi_stairs_stone_3_ew			m_stone_stairs_2_ew
+i_multi_stairs_marble_sn			m_marble_stairs_sn
+i_multi_stairs_marble_we			m_marble_stairs_we
+i_multi_stairs_marble_ns			m_marble_stairs_ns
+i_multi_stairs_marble_ew			m_marble_stairs_ew
+i_multi_stairs_stone_4_sn			m_stone_stairs_3_sn
+i_multi_stairs_stone_4_we			m_stone_stairs_3_we
+i_multi_stairs_stone_4_ns			m_stone_stairs_3_ns
+i_multi_stairs_stone_4_ew			m_stone_stairs_3_ew
+i_multi_stairs_sandstone_sn			m_sandstone_stairs_sn
+i_multi_stairs_sandstone_we			m_sandstone_stairs_we
+i_multi_stairs_sandstone_ns			m_sandstone_stairs_ns
+i_multi_stairs_sandstone_ew			m_sandstone_stairs_ew
+i_multi_stairs_stone_5_sn			m_stone_stairs_4_sn
+i_multi_stairs_stone_5_we			m_stone_stairs_4_we
+i_multi_stairs_stone_5_ns			m_stone_stairs_4_ns
+i_multi_stairs_stone_5_ew			m_stone_stairs_4_ew
+i_multi_stairs_carpet_sn			m_carpeted_stairs_sn
+i_multi_stairs_carpet_we			m_carpeted_stairs_we
+i_multi_stairs_carpet_ns			m_carpeted_stairs_ns
+i_multi_stairs_carpet_ew			m_carpeted_stairs_ew
+i_multi_stairs_crystal_sn			m_crystal_stairs_sn
+i_multi_stairs_crystal_we			m_crystal_stairs_we
+i_multi_stairs_crystal_ns			m_crystal_stairs_ns
+i_multi_stairs_crystal_ew			m_crystal_stairs_ew
+i_multi_stairs_shadow_sn			m_shadow_stairs_sn
+i_multi_stairs_shadow_we			m_shadow_stairs_we
+i_multi_stairs_shadow_ns			m_shadow_stairs_ns
+i_multi_stairs_shadow_ew			m_shadow_stairs_ew
+i_multi_stairs_gothic_sn			m_gothic_stairs_sn
+i_multi_stairs_gothic_we			m_gothic_stairs_we
+i_multi_stairs_gothic_ns			m_gothic_stairs_ns
+i_multi_stairs_gothic_ew			m_gothic_stairs_ew
+i_multi_stairs_batten_sn			m_batten_stairs_sn
+i_multi_stairs_batten_we			m_batten_stairs_we
+i_multi_stairs_batten_ns			m_batten_stairs_ns
+i_multi_stairs_batten_ew			m_batten_stairs_ew
+
+// Foundations (multis)
+i_multi_foundation_7x7				m_foundation_7x7
+i_multi_foundation_7x8				m_foundation_7x8
+i_multi_foundation_7x9				m_foundation_7x9
+i_multi_foundation_7x10				m_foundation_7x10
+i_multi_foundation_7x11				m_foundation_7x11
+i_multi_foundation_7x12				m_foundation_7x12
+i_multi_foundation_8x7				m_foundation_8x7
+i_multi_foundation_8x8				m_foundation_8x8
+i_multi_foundation_8x9				m_foundation_8x9
+i_multi_foundation_8x10				m_foundation_8x10
+i_multi_foundation_8x11				m_foundation_8x11
+i_multi_foundation_8x12				m_foundation_8x12
+i_multi_foundation_8x13				m_foundation_8x13
+i_multi_foundation_9x7				m_foundation_9x7
+i_multi_foundation_9x8				m_foundation_9x8
+i_multi_foundation_9x9				m_foundation_9x9
+i_multi_foundation_9x10				m_foundation_9x10
+i_multi_foundation_9x11				m_foundation_9x11
+i_multi_foundation_9x12				m_foundation_9x12
+i_multi_foundation_9x13				m_foundation_9x13
+i_multi_foundation_9x14				m_foundation_9x14
+i_multi_foundation_10x7				m_foundation_10x7
+i_multi_foundation_10x8				m_foundation_10x8
+i_multi_foundation_10x9				m_foundation_10x9
+i_multi_foundation_10x10			m_foundation_10x10
+i_multi_foundation_10x11			m_foundation_10x11
+i_multi_foundation_10x12			m_foundation_10x12
+i_multi_foundation_10x13			m_foundation_10x13
+i_multi_foundation_10x14			m_foundation_10x14
+i_multi_foundation_10x15			m_foundation_10x15
+i_multi_foundation_11x7				m_foundation_11x7
+i_multi_foundation_11x8				m_foundation_11x8
+i_multi_foundation_11x9				m_foundation_11x9
+i_multi_foundation_11x10			m_foundation_11x10
+i_multi_foundation_11x11			m_foundation_11x11
+i_multi_foundation_11x12			m_foundation_11x12
+i_multi_foundation_11x13			m_foundation_11x13
+i_multi_foundation_11x14			m_foundation_11x14
+i_multi_foundation_11x15			m_foundation_11x15
+i_multi_foundation_11x16			m_foundation_11x16
+i_multi_foundation_12x7				m_foundation_12x7
+i_multi_foundation_12x8				m_foundation_12x8
+i_multi_foundation_12x9				m_foundation_12x9
+i_multi_foundation_12x10			m_foundation_12x10
+i_multi_foundation_12x11			m_foundation_12x11
+i_multi_foundation_12x12			m_foundation_12x12
+i_multi_foundation_12x13			m_foundation_12x13
+i_multi_foundation_12x14			m_foundation_12x14
+i_multi_foundation_12x15			m_foundation_12x15
+i_multi_foundation_12x16			m_foundation_12x16
+i_multi_foundation_12x17			m_foundation_12x17
+i_multi_foundation_13x8				m_foundation_13x8
+i_multi_foundation_13x9				m_foundation_13x9
+i_multi_foundation_13x10			m_foundation_13x10
+i_multi_foundation_13x11			m_foundation_13x11
+i_multi_foundation_13x12			m_foundation_13x12
+i_multi_foundation_13x13			m_foundation_13x13
+i_multi_foundation_13x14			m_foundation_13x14
+i_multi_foundation_13x15			m_foundation_13x15
+i_multi_foundation_13x16			m_foundation_13x16
+i_multi_foundation_13x17			m_foundation_13x17
+i_multi_foundation_13x18			m_foundation_13x18
+i_multi_foundation_13x8				m_foundation_13x8
+i_multi_foundation_14x9				m_foundation_14x9
+i_multi_foundation_14x10			m_foundation_14x10
+i_multi_foundation_14x11			m_foundation_14x11
+i_multi_foundation_14x12			m_foundation_14x12
+i_multi_foundation_14x13			m_foundation_14x13
+i_multi_foundation_14x14			m_foundation_14x14
+i_multi_foundation_14x15			m_foundation_14x15
+i_multi_foundation_14x16			m_foundation_14x16
+i_multi_foundation_14x17			m_foundation_14x17
+i_multi_foundation_14x18			m_foundation_14x18
+i_multi_foundation_15x10			m_foundation_15x10
+i_multi_foundation_15x11			m_foundation_15x11
+i_multi_foundation_15x12			m_foundation_15x12
+i_multi_foundation_15x13			m_foundation_15x13
+i_multi_foundation_15x14			m_foundation_15x14
+i_multi_foundation_15x15			m_foundation_15x15
+i_multi_foundation_15x16			m_foundation_15x16
+i_multi_foundation_15x17			m_foundation_15x17
+i_multi_foundation_15x18			m_foundation_15x18
+i_multi_foundation_16x11			m_foundation_16x11
+i_multi_foundation_16x12			m_foundation_16x12
+i_multi_foundation_16x13			m_foundation_16x13
+i_multi_foundation_16x14			m_foundation_16x14
+i_multi_foundation_16x15			m_foundation_16x15
+i_multi_foundation_16x16			m_foundation_16x16
+i_multi_foundation_16x17			m_foundation_16x17
+i_multi_foundation_16x18			m_foundation_16x18
+i_multi_foundation_17x12			m_foundation_17x12
+i_multi_foundation_17x13			m_foundation_17x13
+i_multi_foundation_17x14			m_foundation_17x14
+i_multi_foundation_17x15			m_foundation_17x15
+i_multi_foundation_17x16			m_foundation_17x16
+i_multi_foundation_17x17			m_foundation_17x17
+i_multi_foundation_17x18			m_foundation_17x18
+i_multi_foundation_18x13			m_foundation_18x13
+i_multi_foundation_18x14			m_foundation_18x14
+i_multi_foundation_18x15			m_foundation_18x15
+i_multi_foundation_18x16			m_foundation_18x16
+i_multi_foundation_18x17			m_foundation_18x17
+i_multi_foundation_18x18			m_foundation_18x18
+
+// Miscellaneous (multis)
+i_multi_treasure				m_treasure
+i_multi_treasure2				m_treasure_1
+i_multi_treasure3				m_treasure_2
+i_multi_treasure4				m_treasure_3
+i_multi_lattice					m_lattice
+i_multi_lattice_7				m_lattice_1
+i_multi_house_tower_nystul_1	m_nystuls_tower
+i_multi_house_tower_nystul_2	m_nystuls_tower_1
+i_multi_house_tower_nystul_3	m_nystuls_tower_2
+i_multi_house_tower_nystul_4	m_nystuls_tower_3
+i_multi_house_tower_nystul_5	m_nystuls_tower_4
+i_multi_house_tower_nystul_6	m_nystuls_tower_5
+i_multi_evil_compound			m_evil_compound
+i_multi_carpet_magic_n			m_magic_carpet_n
+i_multi_carpet_magic_e			m_magic_carpet_e
+i_multi_carpet_magic_s			m_magic_carpet_s
+i_multi_carpet_magic_w			m_magic_carpet_w
+i_multi_cage					m_cage
+i_multi_fount_brown				m_fountain_brown
+i_multi_fount_white				m_fountain_white
+i_multi_pentagram				m_pentagram
+i_multi_blood_pent				m_blood_pentagram
+i_multi_catapult_s				m_catapult_s
+i_multi_serp_pillar				m_serpent_pillar
+i_multi_light_house				m_light_house
+i_multi_tree_pine				m_pine_tree
+i_multi_statue					m_statue
+i_multi_tree_yew				m_yew_tree
+i_multi_altar					m_altar
+i_multi_telescope				m_telescope
+i_multi_skull_pile				m_skull_pile
+i_multi_coffin1					m_closed_coffin_e
+i_multi_coffin1_open			m_open_coffin_e
+i_multi_coffin2					m_closed_coffin_1_e
+i_multi_coffin2_open			m_open_coffin_1_e
+i_multi_coffin2n				m_closed_coffin_1_s
+i_exodus_generator_1			m_exodus_generator
+i_exodus_generator_2			m_exodus_generator_1
+i_exodus_control_pylon			m_exodus_control_pylon
+i_exodus_energy_tower			m_exodus_energy_tower
+i_exodus_barrier				m_exodus_barrier
+i_exodus_control_device			m_exodus_control_device
+i_wandering_healer_camp			m_wandering_healer_camp
+i_wandering_mage_camp			m_wandering_mage_camp
+i_wandering_bank_camp			m_wandering_bank_camp
+i_scaffold_and_trailer			m_scaffold_and_trailer
+i_prisoner_camp					m_prisoner_camp
+
+// Doors
+i_door_crystal					i_door_crystal_south_left
+i_door_elven_bark				i_door_tanglewood_east_right
+i_door_elven_ornate				i_door_heartwood_east_left
+i_door_elven_plain				i_door_kiawood_east_left
+i_door_elven_simple				i_door_whitewood_east_left
+i_door_jungle					i_door_jungle_south_left
+i_door_moon						i_door_moon_east_left
+i_door_portculis				i_door_portcullis
+i_door_shadow					i_door_shadow_south_left
+i_door_shadowguard				i_door_shadowguard_south_left
+i_door_sliding					i_door_sliding_latticed_south_left
+i_door_sliding_wide				i_door_sliding_latticed_revolver_south
+i_door_sliding_2				i_door_sliding_cloth_south_left
+i_door_sliding_2_wide			i_door_sliding_cloth_revolver_south
+i_door_sliding_3				i_door_sliding_wooden_south_left
+i_door_sliding_3_wide			i_door_sliding_wooden_revolver_south
+i_door_wooden_dark				i_door_wooden_dark_east
+i_sa_door_barred				i_door_gargish_folsom_south_left
+i_sa_door_gd					i_door_gargish_south_left
+i_sa_door_m1					i_door_gargish_renaissance_south_left
+i_sa_door_m2					i_door_gargish_draxinusom_south_left
+i_sa_door_m3					i_door_gargish_queen_south_left
+i_sa_door_m4					i_door_gargish_bentas_south_left
+i_sa_door_qd					i_door_queen_south_left
+i_sa_door_qdh					i_door_gargish_queen_tall_south_left
+i_sa_door_rd					i_door_gargish_hovel_south_left
+i_sa_door_ws1					i_door_gargish_progressive_south_left
+i_sa_door_ws2					i_door_gargish_celestial_south_left
+i_sa_door_ws3					i_door_gargish_traditional_south_left
+
+// Floors
+i_floor_flagstone_sandstone				i_floor_sandstone
+i_floor_flagstone_sandstone_small		i_floor_sandstone_2
+i_floor_flagstone_sandstone_small_dark	i_floor_sandstone_3
+i_floor_log_gray						i_floor_wood_log
+i_floor_log_green						i_floor_wood_primitive
+i_floor_tile_green						i_floor_marble_3
+i_floor_tile_grey						i_floor_slate_grey
+i_floor_tile_marble						i_floor_marble_4
+i_floor_tile_marble_yellow				i_floor_marble_2
+i_floor_tile_red						i_floor_stone_red
+i_floor_wood_dark						i_floor_wood
+i_floor_wood_light						i_wood_plank
+i_paver_marble							i_floor_marble
+i_sa_floor_m1							i_floor_mosaic_medusa
+i_sa_floor_m2							i_floor_mosaic_medusa_large
+i_sa_floor_rune							i_floor_gargish_rune
+i_sa_floor_sd							i_floor_mosaic_serpent
+
+// Miscellaneous
+i_gate_wood_2					i_fence_wood_3
+i_bow_ruin_o					i_bow_ruin
+i_kryss_ruin_o					i_kryss_ruin
+i_axe_war_vanquishing			i_axe_war_vanq
+i_reag_worm_heart				i_reag_wyrm_heart
+i_candleabra					i_candelabra
+i_candleabra_lit				i_candelabra_lit
+i_candleabra2					i_candelabra2
+i_candleabra2_lit				i_candelabra2_lit
+i_dragon_lamp					i_lamp_table
+i_dragon_lamp_lit				i_lamp_table_lit
+i_dragon_lamp_2s				i_lantern_dragon_s
+i_dragon_lamp_2s_lit			i_lantern_dragon_s_lit
+i_dragon_lamp_2e				i_lantern_dragon_e
+i_dragon_lamp_2e_lit			i_lantern_dragon_e_lit
+i_stork_lamp_s					i_lamp_bird_s
+i_stork_lamp_s_lit				i_lamp_bird_s_lit
+i_stork_lamp_e					i_lamp_bird_e
+i_stork_lamp_e_lit				i_lamp_bird_e_lit
+i_dragon_egg_lamp_s				i_lamp_dragon_s
+i_dragon_egg_lamp_s_lit			i_lamp_dragon_s_lit
+i_dragon_egg_lamp_e				i_lamp_dragon_e
+i_dragon_egg_lamp_e_lit			i_lamp_dragon_e_lit
+i_classic_standing_lamp_s		i_lamp_tall_s
+i_classic_standing_lamp_s_lit	i_lamp_tall_s_lit
+i_classic_standing_lamp_e		i_lamp_tall_e
+i_classic_standing_lamp_e_lit	i_lamp_tall_e_lit
+i_standing_bell_lamp_s			i_lamp_tall_double_s
+i_standing_bell_lamp_s_lit		i_lamp_tall_double_s_lit
+i_standing_bell_lamp_e			i_lamp_tall_double_e
+i_standing_bell_lamp_e_lit		i_lamp_tall_double_e_lit
+i_painting_firemaiden			i_painting_fire
+i_painting_abstract				i_lithograph_15th_anniversary
+i_spellbook_paladin				i_spellbook_chivalry
+i_spellbook_arcanist			i_spellbook_spellweaving
+i_scroll_blood_oat				i_scroll_blood_oath
+i_scroll_lich_transformation	i_scroll_lich_form
+i_scroll_pain_strike			i_scroll_pain_spike
+i_scroll_strangulation			i_scroll_strangle
+i_axel_and_gears				i_axle_and_gears
+i_axel							i_axle
+i_reag_volcanic_ash				i_reag_grave_dust
+i_reag_serpent_scale			i_reag_nox_crystal
+i_marble						i_rock_marble
+i_tile_sandstone				01383
+i_wall_wood						i_wall_darkwood
+i_wall_stone_2					i_wall_stone_window
+i_wall_brick					i_wall_smallbrick
+i_wall_brick_2					i_wall_smallbrick_window
+i_wall_stone_4					i_wall_largebrick
+i_wall_stone_5					i_wall_largebrick_window
+i_wall_stone_med_4				i_wall_largebrick
+i_wall_stone_sm_4				i_wall_largebrick
+i_wall_stone_7					i_wall_hugebrick
+i_wall_log_2					i_wall_log_window
+i_wall_wood_2					i_wall_lightwood
+i_wall_wood_3					i_wall_lightwood_window
+i_wall_stone_8					i_wall_hugestone
+i_wall_marble_2					i_wall_marble_window
+i_wall_marble_4					i_wall_marble_window
+i_wall_marble_6					i_wall_marble_window
+i_wall_marble_window_2			i_wall_marble_window
+i_wall_marble_window_3			i_wall_marble_window
+i_wall_stone_2_window			i_wall_largebrick_window
+i_wall_plaster_2				i_wall_plaster_window
+i_wall_plaster_4				i_wall_plaster
+i_wall_sandstone_2				i_wall_sandstone_window
+i_wall_sandstone_4				i_wall_sandstone_window
+i_wall_hide_2					i_wall_hide_window
+i_wall_hide_4					i_wall_hide_window
+i_wall_stone_9					i_wall_hugebrownstone
+i_wall_plaster_9				i_wall_plaster_sandstone
+i_wall_plaster_10				i_wall_plaster_sandstone_window
+i_wall_wood_7					i_wall_pallisade
+i_wall_tent_10					i_wall_tent_darkblue
+i_wall_tent						i_wall_tent_darkgreen
+i_wall_sandstone_1				i_wall_sandstone_fancy
+i_wall_sandstone_6				i_wall_cave
+i_wall_sandstone_7				i_wall_stone_ruined
+i_wall_marble_1					i_wall_whitemarble
+i_wall_marble_8					i_wall_whitemarble_window
+i_wall_marble_10				i_wall_whitemarble_window
+i_wall_marble_12				i_wall_whitemarble_window
+i_wall_stone_11					i_wall_hugebrick
+i_wall_tent_2					i_wall_tent_darkgray
+i_wall_tent_3					i_wall_tent_darkgray
+i_wall_tent_4					i_wall_tent_patches
+i_wall_tent_5					i_wall_tent_lightgray
+i_wall_plaster_14				i_wall_plaster
+i_stone_ruin					i_wall_sandstone_ruined
+i_wall_stone_12					i_wall_stone_sandstone
+i_wall_stone_13					i_wall_stone_sandstone
+i_wall_stone_14					i_wall_stone_sandstone
+i_pylon_stone					i_wall_hugebrownstone
+i_pylon_stone_light				i_wall_hugebrick
+i_pylon_stone_sand				i_wall_sandstone
+i_window_skull					i_wall_largebrick_window
+i_latticed_wall_1				i_wall_lattice_1
+i_latticed_wall_brown			i_wall_lattice_2
+i_wall_latticed_plaster			i_wall_cloth_framed
+i_fruit_cantelope				i_fruit_cantaloupe
+i_fruit_gourd1					i_fruit_gourd_yellow
+i_fruit_gourd2					i_fruit_gourd_green
+i_hair_krisna					i_hair_topknot
+i_hair_lf						i_hair_long_feather
+i_hair_elven_long2				i_hair_elven_long
+i_hair_elven_long3				i_hair_elven_topknot
+i_hair_elven_long4				i_hair_elven_buns
+i_chest_japanese1				i_wooden_chest_plain
+i_chest_japanese2				i_wooden_chest_ornate
+i_chest_japanese3				i_wooden_chest_gilded
+i_chest_japanese4				i_wooden_foot_locker
+i_chest_japanese5				i_wooden_chest_finished
+i_cabinet_japanese1				i_cabinet_tall
+i_cabinet_japanese2				i_cabinet_short
+i_armoire_japanese1				i_armoire_red
+i_armoire_japanese2				i_armoire_elegant
+i_armoire_japanese3				i_armoire_maple
+i_armoire_japanese4				i_armoire_cherry
+i_table_elven_ornate_2			i_table_hardwood
+i_table_elven_storage			i_chest_ornate_elven
+i_chest_combination				i_chest_secret
+i_chest_ornate_elven_2			i_box_decorative
+i_chest_gargoyle				i_chest_gargish
+i_fx_bee_swarm					i_bee_swar
+i_fx_magical_sparkles			i_magical_sparkles
+i_fx_moongate_red				i_moongate_red_fx
+i_fx_moongate_blue				i_moongate_blue_fx
+i_fx_moongate_black				i_moongate_black_fx
+i_fx_moongate_gray				i_moongate_gray_fx
+i_fx_lavafire_3					02ea4
+i_fx_lavafire					01a75
+i_lavafire_2					01a7c
+i_fx_falling_coins				01ec6
+i_fx_magicblueface_s			01ed9
+i_fx_magicstoneface_s			i_door_magical
+i_fx_magicblueface_e			01eeb
+i_fx_magicstoneface_e			01ef4
+i_fx_heal						i_fx_heal_effect
+i_fx_poison_field_EW			i_fx_poison_field_ALT
+fx_fireball_yellow				i_fx_fireball_yellow
+i_rug_worn_2					i_rug_2_worn
+i_grave_dirt					0ed3
+i_gravestone_damaged			i_grave_stone_damaged
+i_memorial						i_gravestone_19
+i_trap_spike_floor_2			i_trap_spike_4
+i_pole_shackles_broken			i_pole_single_shackles
+i_floorswitch_stone				01bbf
+i_body_shrouded_2				i_body_shrouded_parts
+i_bed_1							i_bed_small_unmade
+i_bed_3							i_bed_small_sheet
+i_bed_4							0a60
+i_bed_6							i_bed_small_unmade_2
+i_bed_7							0a66
+i_bed_8							0a68
+i_bed_9							0a69
+i_bed_10						0a6a
+i_bed_11						0a6b
+i_bed_12						i_bed_large_unmade
+i_bed_13						0a71
+i_bed_14						0a72
+i_bed_15						0a73
+i_bed_16						0a74
+i_bed_17						0a75
+i_bed_18						0a76
+i_bed_19						0a77
+i_bed_22						0a7a
+i_bed_23						0a7b
+i_bed_28						0a80
+i_bed_29						0a81
+i_bed_30						i_bed_large_sheet
+i_bed_31						0db0
+i_sheet_rich					0a94
+i_bed_double_2					011d2
+i_cot_sw						i_cot
+i_map							i_map_blank
+i_banner_serpent				i_banner_order
+i_portrait_horror				i_portrait_gargish
+i_tapestry_elven_1				i_tapestry_elven_sophisticated
+i_tapestry_elven_2				i_tapestry_elven_ornate
+i_tapestry_elven_3				i_tattered_wall_map
+i_tray_sushi					i_sushi_rolls
+i_tray_sushi2					i_sushi_platter
+i_bonsai_1						i_bonsai_common_green
+i_bonsai_2						i_bonsai_uncommon_green
+i_bonsai_3						i_bonsai_rare_green
+i_bonsai_4						i_bonsai_common_pink
+i_bonsai_5						i_bonsai_uncommon_pink
+i_bonsai_6						i_bonsai_rare_pink
+i_bonsai_7						i_bonsai_exceptional
+i_bonsai_8						i_bonsai_exotic
+i_bonsai_9						i_bonsai_ancient_oak
+i_lantern_paper1				i_lantern_shoji
+i_lantern_paper1_lit			i_lantern_shoji_lit
+i_lantern_paper2				i_lantern_paper
+i_lantern_paper2_lit			i_lantern_paper_lit
+i_lantern_paper3				i_lantern_tower
+i_lantern_paper3_lit			i_lantern_tower_lit
+i_lantern_paper4				i_lantern_red_hanging_south
+i_lantern_paper4_lit			i_lantern_red_handing_south_lit
+i_lantern_paper4b				i_lantern_red_hanging_east
+i_lantern_paper4b_lit			i_lantern_red_handing_east_lit
+i_lantern_paper5				i_lantern_white_hanging_south
+i_lantern_paper5_lit			i_lantern_white_handing_south_lit
+i_lantern_paper5b				i_lantern_white_hanging_east
+i_lantern_paper5b_lit			i_lantern_white_handing_east_lit
+i_lantern_paper6				i_lantern_round_paper
+i_lantern_paper6_lit			i_lantern_round_paper_lit
+i_lollypop_red					i_lollipop_cherry
+i_lollypop_yellow				i_lollipop_orange
+i_lollypop_green				i_lollipop_lime
+i_candy_nougat					i_nougat_swirl
+i_candy_taffy					i_taffy
+i_candy_wrapped					i_wrapped_candy
+i_cake_2						i_cake_12th_anniversary
+i_ginger						i_fresh_ginger
+i_gingerbreadman				i_gingerbread_cookie
+
+// Definitions
+brain_beserk					brain_berserk
+brain_towncrier					brain_human
+brain_beggar					brain_human
+brain_thief						brain_human
+brain_vendor_offduty			brain_vendor
+brain_undead					brain_monster
+loot_orge_lord					loot_ogre_lord
+snd_rune_beetle					snd_monster_rune_beetle
+snd_yomotsu						snd_monster_yomotsu
+snd_kappa						snd_monster_kappa
+snd_gaman						snd_monster_gaman
+snd_tsuki_wolf					snd_monster_tsuki_wolf
+snd_rav_lion					snd_monster_rav_lion
+snd_oni							snd_monster_oni
+snd_pixie						snd_monster_pixie
+snd_centaur						snd_monster_centaur
+snd_crane						snd_animal_crane
+snd_kirin						snd_animal_kirin
+snd_hiryu						snd_animal_hiryu
+
+//bufficons changed to passiveicon
+
+bufficon_deathstrike			debufficon_deathstrike
+bufficon_evilomen				debufficon_evilomen
+bufficon_healingthrottle		debufficon_healingthrottle
+bufficon_staminathrottle		debufficon_staminathrottle
+bufficon_bloodoathcurse			debufficon_bloodoathcurse
+bufficon_corpseskin				debufficon_corpseskin
+bufficon_mindrot				debufficon_mindrot
+bufficon_painspike				debufficon_painspike
+bufficon_strangle				debufficon_strangle
+bufficon_thunderstorm			debufficon_thunderstorm
+bufficon_essenceofwind			debufficon_essenceofwind	
+bufficon_mortalstrike			debufficon_mortalstrike
+bufficon_paralyze				debufficon_paralyze
+bufficon_poison					debufficon_poison	
+bufficon_bleed					debufficon_bleed
+bufficon_clumsy					debufficon_clumsy	
+bufficon_feeblemind				debufficon_feeblemind
+bufficon_weaken					debufficon_weaken
+bufficon_curse					debufficon_curse
+bufficon_masscurse				debufficon_masscurse
+bufficon_sleep					debufficon_sleep
+bufficon_spellplague			debufficon_spellplague
+bufficon_dismountprevention		debufficon_dismount
+bufficon_tribulation			debufficon_tribulation
+bufficon_hidingandorstealth		passivebufficon_hidingandorstealth
+bufficon_activemeditation		passivebufficon_activemeditation
+bufficon_incognito				passivebufficon_incognito
+bufficon_disguised				passivebufficon_disguised
+bufficon_polymorph				passivebufficon_polymorph
+bufficon_gargoylefly			passivebufficon_gargoylefly
+
+
+[FUNCTION addnpc]
+LOCAL.ID=<STRARG <ARGS>>
+LOCAL.Amount=<STREAT <ARGS>>
+IF (<ISNUM <LOCAL.ID>>)
+ LOCAL.ID |= 08c000000
+ELIF !(<DEF0.<LOCAL.ID>>)
+ LOCAL.ID=0
+ENDIF
+IF (<LOCAL.Amount> < 1)
+ LOCAL.Amount=1
+ENDIF
+IF (<SERV.CHARDEF.<LOCAL.ID>>)
+ ADD <LOCAL.ID> <LOCAL.Amount>
+ELSE
+ SYSMESSAGE <DEFMSG.cmd_invalid>
+ENDIF
+
+[FUNCTION tweak]
+INFO
+
+[FUNCTION brain]	//by Darkandus
+IF (<ARGN>)
+ NPC=<ARGN>
+ELSE
+ return <NPC>
+ENDIF
+
+[FUNCTION m]
+MOVE <ARGS>
+
+[FUNCTION invulnerable]
+INVUL <ARGS>
+
+[FUNCTION invisible]
+INVIS <ARGS>
+
+[FUNCTION static]
+LOCAL.ID=<STRARG <ARGS>>
+LOCAL.Amount=<STREAT <ARGS>>
+IF (<ISNUM <LOCAL.ID>>)
+ LOCAL.ID |= 09c000000
+ELIF !(<DEF0.<LOCAL.ID>>)
+ LOCAL.ID=0
+ENDIF
+IF (<LOCAL.Amount> < 1)
+ LOCAL.Amount=1
+ENDIF
+IF (<SERV.ITEMDEF.<LOCAL.ID>>)
+ TARGETFG static_callback <LOCAL.ID>,<LOCAL.Amount>
+ SYSMESSAGE <DEFMSG.where_to_place> <SERV.ITEMDEF.<LOCAL.ID>.NAME>?
+ELSE
+ SYSMESSAGE <DEFMSG.cmd_invalid>
+ENDIF
+
+[FUNCTION static_callback]
+SERV.NEWITEM <ARGS>
+NEW.ATTR |= attr_move_never
+NEW.TIMER=-1
+NEW.P=<SRC.TARGP>
+ACT=<NEW>
+
+[FUNCTION sfx]
+SOUND <ARGS>
+
+[FUNCTION music]
+IF (<ISPLAYER>)
+ MIDILIST <ARGS>
+ENDIF
+
+[FUNCTION cliver]
+return <CLIENTVERSION>
+
+[FUNCTION clientver]
+return <CLIENTVERSION>
+
+[FUNCTION follow]
+SERV.NEWITEM i_eq_followSrc
+NEW.LINK=<QVAL (<dARGS>)? <ARGS>:<UID>>
+NEW.TIMER=2
+NEW.EQUIP
+SRC.SYSMESSAGE Following: <NEW.LINK.NAME> - Use war mode to stop following
+
+[ITEMDEF i_eq_followSrc]
+ID=i_handr_1
+NAME=Follower
+TYPE=t_eq_script
+LAYER=layer_special
+
+ON=@TargOn_Char
+LINK=<ARGO>
+
+ON=@TargOn_Item
+LINK=<ARGO>
+
+ON=@Timer
+IF !(<LINK.UID>) || (<CONT.FLAGS> & statf_war)
+ CONT.SYSMESSAGE Follow: off
+ REMOVE
+ return 0
+ELIF STRCMP("'<CONT.P>'","'<LINK.P>'")
+ CONT.FACE <LINK>
+ CONT.P=<LINK.P>
+ CONT.UPDATE
+ENDIF
+TIMER=2
+return 1
+
+[FUNCTION npccast]
+// This function can be used to force a character to cast a specific
+// spell. Works on both players and NPCs. Two arguments can be given:
+//
+// "NpcCast <spell>, <target>"
+// spell  -->  spell id to cast
+// target -->  target (optional, default: previous action's target)
+//             - can be a uid or map location
+//
+// Determine spell and skill used to cast
+LOCAL.SPELL = <EVAL <ARGV[0]> &~ 0ff000000>
+LOCAL.SKILL = <EVAL (<STREAT <SERV.SPELL.<LOCAL.SPELL>.SKILLREQ>>) &~ 0ff000000>
+IF !(<LOCAL.SKILL>)
+ LOCAL.SKILL = 25
+ENDIF
+
+// Set spell target
+IF (<ARGV> > 2)
+ ACT = 0
+ ACTP = <ARGV[1]>,<ARGV[2]>,<ARGV[3]>,<ARGV[4]>
+ELSE
+ REF1 = <ARGV[1]>
+ IF !(<REF1>)
+  REF1 = <ACT>
+  IF !(<REF1>)
+   REF1 = <UID>
+  ENDIF
+ ENDIF
+ ACT = <REF1>
+ ACTP = <REF1.P>
+ENDIF
+
+// Set character action
+ACTPRV = <UID>
+ACTARG1 = <LOCAL.SPELL>
+ACTION = <LOCAL.SKILL>
+return 1
+
+[EOF]

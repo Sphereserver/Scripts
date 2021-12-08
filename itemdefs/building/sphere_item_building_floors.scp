@@ -1,0 +1,6563 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2018
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Monday, May 21, 2018
+//
+VERSION=0.56d
+
+
+[ITEMDEF 0491]
+DEFNAME=i_floor_blue
+CATEGORY=Buildings - Floors
+SUBSECTION=Tile Floor (blue)
+DESCRIPTION=Tile
+DUPELIST=0492,0493,0494,049b,04ea,04eb,04ec,04ed,04ee,04ef,04f0,04f1,04f2
+
+[ITEMDEF 0492]
+//Tile Floor (blue)
+DUPEITEM=0491
+
+[ITEMDEF 0493]
+//Tile Floor (blue)
+DUPEITEM=0491
+
+[ITEMDEF 0494]
+//Tile Floor (blue)
+DUPEITEM=0491
+
+[ITEMDEF 0495]
+DEFNAME=i_floor_marble
+CATEGORY=Buildings - Floors
+SUBSECTION=Pavers (marble)
+DESCRIPTION=Paver
+DUPELIST=0496,0497,0498
+
+[ITEMDEF 0496]
+//Pavers (marble)
+DUPEITEM=0495
+
+[ITEMDEF 0497]
+//Pavers (marble)
+DUPEITEM=0495
+
+[ITEMDEF 0498]
+//Pavers (marble)
+DUPEITEM=0495
+
+[ITEMDEF 049b]
+//Tile Floor (blue)
+DUPEITEM=0491
+
+[ITEMDEF 049c]
+DEFNAME=i_floor_slate_grey
+CATEGORY=Buildings - Floors
+SUBSECTION=Tile Floor (gray slate)
+DESCRIPTION=Tile
+
+[ITEMDEF 049d]
+DEFNAME=i_paver_sandstone
+CATEGORY=Buildings - Floors
+SUBSECTION=Pavers (sandstone)
+DESCRIPTION=Paver
+DUPELIST=049e,049f,04a0
+
+[ITEMDEF 049e]
+//Pavers (sandstone)
+DUPEITEM=049d
+
+[ITEMDEF 049f]
+//Pavers (sandstone)
+DUPEITEM=049d
+
+[ITEMDEF 04a0]
+//Pavers (sandstone)
+DUPEITEM=049d
+
+[ITEMDEF 04a1]
+DEFNAME=i_wood_plank
+CATEGORY=Buildings - Floors
+SUBSECTION=Wooden Planks (light)
+DESCRIPTION=Planks
+DUPELIST=04a2,04a3,04a4,04c6,04c7,04c8,04c9,04ca,04cb,04cc,04cd,04ce,04cf,04d0,04d1,04d2,04d3,04d4,04d5,04d6,04d7,04d8,04d9,04da,04db,04dc,04dd,04de,04df,04e0,04e1
+
+[ITEMDEF 04a2]
+//wooden planks (light)
+DUPEITEM=04a1
+
+[ITEMDEF 04a3]
+//wooden planks (light)
+DUPEITEM=04a1
+
+[ITEMDEF 04a4]
+//wooden planks (light)
+DUPEITEM=04a1
+
+[ITEMDEF 04a5]
+DEFNAME=i_floor_wood
+CATEGORY=Buildings - Floors
+SUBSECTION=Wooden Boards
+DESCRIPTION=Boards
+DUPELIST=04a6,04a7,04a8,04a9,04aa,04ab,04ac,04ad,04ae,04af,04b0,04b1,04b2,04b3,04b4,04b5,04b6,04b7,04b8,04b9,04ba,04bb,04bc,04bd,04be,04bf,04c0
+
+[ITEMDEF 04a6]
+//wooden boards
+DUPEITEM=04a5
+
+[ITEMDEF 04a7]
+//wooden boards
+DUPEITEM=04a5
+
+[ITEMDEF 04a8]
+//wooden boards
+DUPEITEM=04a5
+
+[ITEMDEF 04a9]
+//wooden boards
+DUPEITEM=04a5
+
+[ITEMDEF 04aa]
+//wooden boards
+DUPEITEM=04a5
+
+[ITEMDEF 04ab]
+//wooden boards
+DUPEITEM=04a5
+
+[ITEMDEF 04ac]
+//wooden boards
+DUPEITEM=04a5
+
+[ITEMDEF 04ad]
+//wooden boards
+DUPEITEM=04a5
+
+[ITEMDEF 04ae]
+//wooden boards
+DUPEITEM=04a5
+
+[ITEMDEF 04af]
+//wooden boards
+DUPEITEM=04a5
+
+[ITEMDEF 04b0]
+//wooden boards
+DUPEITEM=04a5
+
+[ITEMDEF 04b1]
+//wooden boards
+DUPEITEM=04a5
+
+[ITEMDEF 04b2]
+//wooden boards
+DUPEITEM=04a5
+
+[ITEMDEF 04b3]
+//wooden boards
+DUPEITEM=04a5
+
+[ITEMDEF 04b4]
+//wooden boards
+DUPEITEM=04a5
+
+[ITEMDEF 04b5]
+//wooden boards
+DUPEITEM=04a5
+
+[ITEMDEF 04b6]
+//wooden boards
+DUPEITEM=04a5
+
+[ITEMDEF 04b7]
+//wooden boards
+DUPEITEM=04a5
+
+[ITEMDEF 04b8]
+//wooden boards
+DUPEITEM=04a5
+
+[ITEMDEF 04b9]
+//wooden boards
+DUPEITEM=04a5
+
+[ITEMDEF 04ba]
+//wooden boards
+DUPEITEM=04a5
+
+[ITEMDEF 04bb]
+//wooden boards
+DUPEITEM=04a5
+
+[ITEMDEF 04bc]
+//wooden boards
+DUPEITEM=04a5
+
+[ITEMDEF 04bd]
+//wooden boards
+DUPEITEM=04a5
+
+[ITEMDEF 04be]
+//wooden boards
+DUPEITEM=04a5
+
+[ITEMDEF 04bf]
+//wooden boards
+DUPEITEM=04a5
+
+[ITEMDEF 04c0]
+//wooden boards
+DUPEITEM=04a5
+
+[ITEMDEF 04c1]
+DEFNAME=i_floor_wood_primitive
+CATEGORY=Buildings - Floors
+SUBSECTION=Primitive Logs (green)
+DESCRIPTION=Primitive Log
+DUPELIST=04c2,04c3,04c4,04c5,0504,0505,0506,0507,0508,0509,050a
+
+[ITEMDEF 04c2]
+//Primitive Logs (green)
+DUPEITEM=04c1
+
+[ITEMDEF 04c3]
+//Primitive Logs (green)
+DUPEITEM=04c1
+
+[ITEMDEF 04c4]
+//Primitive Logs (green)
+DUPEITEM=04c1
+
+[ITEMDEF 04c5]
+//Primitive Logs (green)
+DUPEITEM=04c1
+
+[ITEMDEF 04c6]
+//wooden planks (light)
+DUPEITEM=04a1
+
+[ITEMDEF 04c7]
+//wooden planks (light)
+DUPEITEM=04a1
+
+[ITEMDEF 04c8]
+//wooden planks (light)
+DUPEITEM=04a1
+
+[ITEMDEF 04c9]
+//wooden planks (light)
+DUPEITEM=04a1
+
+[ITEMDEF 04ca]
+//wooden planks (light)
+DUPEITEM=04a1
+
+[ITEMDEF 04cb]
+//wooden planks (light)
+DUPEITEM=04a1
+
+[ITEMDEF 04cc]
+//wooden planks (light)
+DUPEITEM=04a1
+
+[ITEMDEF 04cd]
+//wooden planks (light)
+DUPEITEM=04a1
+
+[ITEMDEF 04ce]
+//wooden planks (light)
+DUPEITEM=04a1
+
+[ITEMDEF 04cf]
+//wooden planks (light)
+DUPEITEM=04a1
+
+[ITEMDEF 04d0]
+//wooden planks (light)
+DUPEITEM=04a1
+
+[ITEMDEF 04d1]
+//wooden planks (light)
+DUPEITEM=04a1
+
+[ITEMDEF 04d2]
+//wooden planks (light)
+DUPEITEM=04a1
+
+[ITEMDEF 04d3]
+//wooden planks (light)
+DUPEITEM=04a1
+
+[ITEMDEF 04d4]
+//wooden planks (light)
+DUPEITEM=04a1
+
+[ITEMDEF 04d5]
+//wooden planks (light)
+DUPEITEM=04a1
+
+[ITEMDEF 04d6]
+//wooden planks (light)
+DUPEITEM=04a1
+
+[ITEMDEF 04d7]
+//wooden planks (light)
+DUPEITEM=04a1
+
+[ITEMDEF 04d8]
+//wooden planks (light)
+DUPEITEM=04a1
+
+[ITEMDEF 04d9]
+//wooden planks (light)
+DUPEITEM=04a1
+
+[ITEMDEF 04da]
+//wooden planks (light)
+DUPEITEM=04a1
+
+[ITEMDEF 04db]
+//wooden planks (light)
+DUPEITEM=04a1
+
+[ITEMDEF 04dc]
+//wooden planks (light)
+DUPEITEM=04a1
+
+[ITEMDEF 04dd]
+//wooden planks (light)
+DUPEITEM=04a1
+
+[ITEMDEF 04de]
+//wooden planks (light)
+DUPEITEM=04a1
+
+[ITEMDEF 04df]
+//wooden planks (light)
+DUPEITEM=04a1
+
+[ITEMDEF 04e0]
+//wooden planks (light)
+DUPEITEM=04a1
+
+[ITEMDEF 04e1]
+//wooden planks (light)
+DUPEITEM=04a1
+
+[ITEMDEF 04e2]
+DEFNAME=i_floor_flagstone_red
+CATEGORY=Buildings - Floors
+SUBSECTION=Flagstones (dark red)
+DESCRIPTION=Flagstone
+DUPELIST=04e3,04e4,04e5,04e6,04e7,04e8,04e9,0537,0538,0539,053a
+
+[ITEMDEF 04e3]
+//Flagstones (dark red)
+DUPEITEM=04e2
+
+[ITEMDEF 04e4]
+//Flagstones (dark red)
+DUPEITEM=04e2
+
+[ITEMDEF 04e5]
+//Flagstones (dark red)
+DUPEITEM=04e2
+
+[ITEMDEF 04e6]
+//Flagstones (dark red)
+DUPEITEM=04e2
+
+[ITEMDEF 04e7]
+//Flagstones (dark red)
+DUPEITEM=04e2
+
+[ITEMDEF 04e8]
+//Flagstones (dark red)
+DUPEITEM=04e2
+
+[ITEMDEF 04e9]
+//Flagstones (dark red)
+DUPEITEM=04e2
+
+[ITEMDEF 04ea]
+//Tile Floor (blue)
+DUPEITEM=0491
+
+[ITEMDEF 04eb]
+//Tile Floor (blue)
+DUPEITEM=0491
+
+[ITEMDEF 04ec]
+//Tile Floor (blue)
+DUPEITEM=0491
+
+[ITEMDEF 04ed]
+//Tile Floor (blue)
+DUPEITEM=0491
+
+[ITEMDEF 04ee]
+//Tile Floor (blue)
+DUPEITEM=0491
+
+[ITEMDEF 04ef]
+//Tile Floor (blue)
+DUPEITEM=0491
+
+[ITEMDEF 04f0]
+//Tile Floor (blue)
+DUPEITEM=0491
+
+[ITEMDEF 04f1]
+//Tile Floor (blue)
+DUPEITEM=0491
+
+[ITEMDEF 04f2]
+//Tile Floor (blue)
+DUPEITEM=0491
+
+[ITEMDEF 04f3]
+DEFNAME=i_floor_stone_red
+CATEGORY=Buildings - Floors
+SUBSECTION=Tile Floor (red)
+DESCRIPTION=Tile
+DUPELIST=04f4,04f5,04f6,04f7,04f8,04f9,04fa,04fb
+
+[ITEMDEF 04f4]
+//Tile Floor (red)
+DUPEITEM=04f3
+
+[ITEMDEF 04f5]
+//Tile Floor (red)
+DUPEITEM=04f3
+
+[ITEMDEF 04f6]
+//Tile Floor (red)
+DUPEITEM=04f3
+
+[ITEMDEF 04f7]
+//Tile Floor (red)
+DUPEITEM=04f3
+
+[ITEMDEF 04f8]
+//Tile Floor (red)
+DUPEITEM=04f3
+
+[ITEMDEF 04f9]
+//Tile Floor (red)
+DUPEITEM=04f3
+
+[ITEMDEF 04fa]
+//Tile Floor (red)
+DUPEITEM=04f3
+
+[ITEMDEF 04fb]
+//Tile Floor (red)
+DUPEITEM=04f3
+
+[ITEMDEF 04fc]
+DEFNAME=i_floor_flagstone_gray
+CATEGORY=Buildings - Floors
+SUBSECTION=Flagstones (gray)
+DESCRIPTION=Flagstone
+DUPELIST=04fd,04fe,04ff
+
+[ITEMDEF 04fd]
+//Flagstones (gray)
+DUPEITEM=04fc
+
+[ITEMDEF 04fe]
+//Flagstones (gray)
+DUPEITEM=04fc
+
+[ITEMDEF 04ff]
+//Flagstones (gray)
+DUPEITEM=04fc
+
+[ITEMDEF 0500]
+DEFNAME=i_floor_sandstone
+CATEGORY=Buildings - Floors
+SUBSECTION=Flagstones (sandstone)
+DESCRIPTION=@
+DUPELIST=0501,0502,0503
+
+[ITEMDEF 0501]
+//Flagstones (sandstone)
+DUPEITEM=0500
+
+[ITEMDEF 0502]
+//Flagstones (sandstone)
+DUPEITEM=0500
+
+[ITEMDEF 0503]
+//Flagstones (sandstone)
+DUPEITEM=0500
+
+[ITEMDEF 0504]
+//Primitive Logs (green)
+DUPEITEM=04c1
+
+[ITEMDEF 0505]
+//Primitive Logs (green)
+DUPEITEM=04c1
+
+[ITEMDEF 0506]
+//Primitive Logs (green)
+DUPEITEM=04c1
+
+[ITEMDEF 0507]
+//Primitive Logs (green)
+DUPEITEM=04c1
+
+[ITEMDEF 0508]
+//Primitive Logs (green)
+DUPEITEM=04c1
+
+[ITEMDEF 0509]
+//Primitive Logs (green)
+DUPEITEM=04c1
+
+[ITEMDEF 050a]
+//Primitive Logs (green)
+DUPEITEM=04c1
+
+[ITEMDEF 050b]
+DEFNAME=i_floor_wood_log
+CATEGORY=Buildings - Floors
+SUBSECTION=Primitive Logs (gray)
+DESCRIPTION=Primitive Log
+DUPELIST=050c
+
+[ITEMDEF 050c]
+//Primitive Logs (gray)
+DUPEITEM=050b
+
+[ITEMDEF 050d]
+DEFNAME=i_floor_marble_2
+CATEGORY=Buildings - Floors
+SUBSECTION=Tile Floor (yellow marble)
+DESCRIPTION=Tile
+DUPELIST=050e
+
+[ITEMDEF 050e]
+//Tile Floor (yellow marble)
+DUPEITEM=050d
+
+[ITEMDEF 050f]
+DEFNAME=i_floor_marble_3
+CATEGORY=Buildings - Floors
+SUBSECTION=Tile Floor (green)
+DESCRIPTION=Tile
+DUPELIST=0510
+
+[ITEMDEF 0510]
+//Tile Floor (green)
+DUPEITEM=050f
+
+[ITEMDEF 0511]
+DEFNAME=i_floor_marble_4
+CATEGORY=Buildings - Floors
+SUBSECTION=Tile Floor (white marble)
+DESCRIPTION=Tile
+DUPELIST=0512,0513,0514
+
+[ITEMDEF 0512]
+//Tile Floor (white marble)
+DUPEITEM=0511
+
+[ITEMDEF 0513]
+//Tile Floor (white marble)
+DUPELIST=0511
+
+[ITEMDEF 0514]
+//Tile Floor (white marble)
+DUPEITEM=0511
+
+[ITEMDEF 0515]
+DEFNAME=i_floor_cobblestone
+CATEGORY=Buildings - Floors
+SUBSECTION=Cobblestones
+DESCRIPTION=Cobblestone
+DUPELIST=0516,0517,0518
+
+[ITEMDEF 0516]
+//cobblestones
+DUPEITEM=0515
+
+[ITEMDEF 0517]
+//cobblestones
+DUPEITEM=0515
+
+[ITEMDEF 0518]
+//cobblestones
+DUPEITEM=0515
+
+[ITEMDEF 0519]
+DEFNAME=i_paver_stone
+CATEGORY=Buildings - Floors
+SUBSECTION=Pavers (stone)
+DESCRIPTION=Paver
+DUPELIST=051a,051b,051c,051d,051e,051f,0520,0521,0522,0523,0524
+
+[ITEMDEF 051a]
+//Pavers (stone)
+DUPEITEM=0519
+
+[ITEMDEF 051b]
+//Pavers (stone)
+DUPEITEM=0519
+
+[ITEMDEF 051c]
+//Pavers (stone)
+DUPEITEM=0519
+
+[ITEMDEF 051d]
+//Pavers (stone)
+DUPEITEM=0519
+
+[ITEMDEF 051e]
+//Pavers (stone)
+DUPEITEM=0519
+
+[ITEMDEF 051f]
+//Pavers (stone)
+DUPEITEM=0519
+
+[ITEMDEF 0520]
+//Pavers (stone)
+DUPEITEM=0519
+
+[ITEMDEF 0521]
+//Pavers (stone)
+DUPEITEM=0519
+
+[ITEMDEF 0522]
+//Pavers (stone)
+DUPEITEM=0519
+
+[ITEMDEF 0523]
+//Pavers (stone)
+DUPEITEM=0519
+
+[ITEMDEF 0524]
+//Pavers (stone)
+DUPEITEM=0519
+
+[ITEMDEF 0525]
+DEFNAME=i_floor_sandstone_2
+CATEGORY=Buildings - Floors
+SUBSECTION=Cobblestone Floor (light sandstone)
+DESCRIPTION=Cobblestone
+DUPELIST=0526,0527,0528,0529,052a,052b,052c,081d
+
+[ITEMDEF 0526]
+//Cobblestone Floor (light sandstone)
+DUPEITEM=0525
+
+[ITEMDEF 0527]
+//Cobblestone Floor (light sandstone)
+DUPEITEM=0525
+
+[ITEMDEF 0528]
+//Cobblestone Floor (light sandstone)
+DUPEITEM=0525
+
+[ITEMDEF 0529]
+//Cobblestone Floor (light sandstone)
+DUPEITEM=0525
+
+[ITEMDEF 052a]
+//Cobblestone Floor (light sandstone)
+DUPEITEM=0525
+
+[ITEMDEF 052b]
+//Cobblestone Floor (light sandstone)
+DUPEITEM=0525
+
+[ITEMDEF 052c]
+//Cobblestone Floor (light sandstone)
+DUPEITEM=0525
+
+[ITEMDEF 052f]
+DEFNAME=i_floor_sandstone_3
+CATEGORY=Buildings - Floors
+SUBSECTION=Cobblestone Floor (dark sandstone)
+DESCRIPTION=Cobblestone
+DUPELIST=0530,0531,0532,0533,0534,0535,0536
+
+[ITEMDEF 0530]
+//Cobblestone Floor (dark sandstone)
+DUPEITEM=052f
+
+[ITEMDEF 0531]
+//Cobblestone Floor (dark sandstone)
+DUPEITEM=052f
+
+[ITEMDEF 0532]
+//Cobblestone Floor (dark sandstone)
+DUPEITEM=052f
+
+[ITEMDEF 0533]
+//Cobblestone Floor (dark sandstone)
+DUPEITEM=052f
+
+[ITEMDEF 0534]
+//Cobblestone Floor (dark sandstone)
+DUPEITEM=052f
+
+[ITEMDEF 0535]
+//Cobblestone Floor (dark sandstone)
+DUPEITEM=052f
+
+[ITEMDEF 0536]
+//Cobblestone Floor (dark sandstone)
+DUPEITEM=052f
+
+[ITEMDEF 0537]
+//Flagstones (dark red)
+DUPEITEM=04e2
+
+[ITEMDEF 0538]
+//Flagstones (dark red)
+DUPEITEM=04e2
+
+[ITEMDEF 0539]
+//Flagstones (dark red)
+DUPEITEM=04e2
+
+[ITEMDEF 053a]
+//Flagstones (dark red)
+DUPEITEM=04e2
+
+[ITEMDEF 081d]
+//Cobblestone Floor (light sandstone)
+DUPEITEM=0525
+
+
+[ITEMDEF 01383]
+DEFNAME=i_tile_stone_sand
+TYPE=t_floor
+CATEGORY=Buildings - Floors
+SUBSECTION=Cobblestones (sandstone)
+DESCRIPTION=Cobblestone
+DUPELIST=01384,01385,01386
+
+[ITEMDEF 01384]
+//Cobblestones (sandstone)
+DUPEITEM=01383
+
+[ITEMDEF 01385]
+//Cobblestones (sandstone)
+DUPEITEM=01383
+
+[ITEMDEF 01386]
+//Cobblestones (sandstone)
+DUPEITEM=01383
+
+
+[ITEMDEF 02425]
+TYPE=t_floor
+CATEGORY=Buildings - Floors
+SUBSECTION=Wood Floor (light pattern)
+DESCRIPTION=Wood Floor (light pattern)
+DUPELIST=02426,02427,02428,02429,0242a,0242b,0242c,0242d,0242e,0242f,02430,02431,02432,02433,02434,02435,02436,02437,02438
+
+[ITEMDEF 02426]
+//wood floor (light pattern)
+DUPEITEM=02425
+
+[ITEMDEF 02427]
+//wood floor (light pattern)
+DUPEITEM=02425
+
+[ITEMDEF 02428]
+//wood floor (light pattern)
+DUPEITEM=02425
+
+[ITEMDEF 02429]
+//wood floor (light pattern)
+DUPEITEM=02425
+
+[ITEMDEF 0242a]
+//wood floor (light pattern)
+DUPEITEM=02425
+
+[ITEMDEF 0242b]
+//wood floor (light pattern)
+DUPEITEM=02425
+
+[ITEMDEF 0242c]
+//wood floor (light pattern)
+DUPEITEM=02425
+
+[ITEMDEF 0242d]
+//wood floor (light pattern)
+DUPEITEM=02425
+
+[ITEMDEF 0242e]
+//wood floor (light pattern)
+DUPEITEM=02425
+
+[ITEMDEF 0242f]
+//wood floor (light pattern)
+DUPEITEM=02425
+
+[ITEMDEF 02430]
+//wood floor (light pattern)
+DUPEITEM=02425
+
+[ITEMDEF 02431]
+//wood floor (light pattern)
+DUPEITEM=02425
+
+[ITEMDEF 02432]
+//wood floor (light pattern)
+DUPEITEM=02425
+
+[ITEMDEF 02433]
+//wood floor (light pattern)
+DUPEITEM=02425
+
+[ITEMDEF 02434]
+//wood floor (light pattern)
+DUPEITEM=02425
+
+[ITEMDEF 02435]
+//wood floor (light pattern)
+DUPEITEM=02425
+
+[ITEMDEF 02436]
+//wood floor (light pattern)
+DUPEITEM=02425
+
+[ITEMDEF 02437]
+//wood floor (light pattern)
+DUPEITEM=02425
+
+[ITEMDEF 02438]
+//wood floor (light pattern)
+DUPEITEM=02425
+
+[ITEMDEF 02439]
+TYPE=t_floor
+CATEGORY=Buildings - Floors
+SUBSECTION=Wood Floor (large panel)
+DESCRIPTION=Wood Floor (large panel)
+DUPELIST=0243a
+
+[ITEMDEF 0243a]
+//wood floor (large panel)
+DUPEITEM=02439
+
+[ITEMDEF 0243b]
+TYPE=t_floor
+CATEGORY=Buildings - Floors
+SUBSECTION=Wood Floor (dark)
+DESCRIPTION=Wood Floor (dark)
+DUPELIST=0243c,0243d,0243e,0243f,02440,02441,02442,02443,02444,02445,02446,02447,02448,02449,0244a,0244b,0244c,0244d,0244e,0244f,02450,02451,02452
+
+[ITEMDEF 0243c]
+//wood floor (dark)
+DUPEITEM=0243b
+
+[ITEMDEF 0243d]
+//wood floor (dark)
+DUPEITEM=0243b
+
+[ITEMDEF 0243e]
+//wood floor (dark)
+DUPEITEM=0243b
+
+[ITEMDEF 0243f]
+//wood floor (dark)
+DUPEITEM=0243b
+
+[ITEMDEF 02440]
+//wood floor (dark)
+DUPEITEM=0243b
+
+[ITEMDEF 02441]
+//wood floor (dark)
+DUPEITEM=0243b
+
+[ITEMDEF 02442]
+//wood floor (dark)
+DUPEITEM=0243b
+
+[ITEMDEF 02443]
+//wood floor (dark)
+DUPEITEM=0243b
+
+[ITEMDEF 02444]
+//wood floor (dark)
+DUPEITEM=0243b
+
+[ITEMDEF 02445]
+//wood floor (dark)
+DUPEITEM=0243b
+
+[ITEMDEF 02446]
+//wood floor (dark)
+DUPEITEM=0243b
+
+[ITEMDEF 02447]
+//wood floor (dark)
+DUPEITEM=0243b
+
+[ITEMDEF 02448]
+//wood floor (dark)
+DUPEITEM=0243b
+
+[ITEMDEF 02449]
+//wood floor (dark)
+DUPEITEM=0243b
+
+[ITEMDEF 0244a]
+//wood floor (dark)
+DUPEITEM=0243b
+
+[ITEMDEF 0244b]
+//wood floor (dark)
+DUPEITEM=0243b
+
+[ITEMDEF 0244c]
+//wood floor (dark)
+DUPEITEM=0243b
+
+[ITEMDEF 0244d]
+//wood floor (dark)
+DUPEITEM=0243b
+
+[ITEMDEF 0244e]
+//wood floor (dark)
+DUPEITEM=0243b
+
+[ITEMDEF 0244f]
+//wood floor (dark)
+DUPEITEM=0243b
+
+[ITEMDEF 02450]
+//wood floor (dark)
+DUPEITEM=0243b
+
+[ITEMDEF 02451]
+//wood floor (dark)
+DUPEITEM=0243b
+
+[ITEMDEF 02452]
+//wood floor (dark)
+DUPEITEM=0243b
+
+[ITEMDEF 02453]
+DEFNAME=i_pond
+NAME=pond
+TYPE=t_floor
+CATEGORY=Buildings - Floors
+SUBSECTION=Pond
+DESCRIPTION=Pond
+DUPELIST=02454,02455,02456,02457,02458,02459,0245a,0245b,0245c,0245d
+
+[ITEMDEF 02454]
+//pond
+DUPEITEM=02453
+
+[ITEMDEF 02455]
+//pond
+DUPEITEM=02453
+
+[ITEMDEF 02456]
+//pond
+DUPEITEM=02453
+
+[ITEMDEF 02457]
+//pond
+DUPEITEM=02453
+
+[ITEMDEF 02458]
+//pond
+DUPEITEM=02453
+
+[ITEMDEF 02459]
+//pond
+DUPEITEM=02453
+
+[ITEMDEF 0245a]
+//pond
+DUPEITEM=02453
+
+[ITEMDEF 0245b]
+//pond
+DUPEITEM=02453
+
+[ITEMDEF 0245c]
+//pond
+DUPEITEM=02453
+
+[ITEMDEF 0245d]
+//pond
+DUPEITEM=02453
+
+[ITEMDEF 0245e]
+DEFNAME=i_sand_raked
+NAME=sand garden
+TYPE=t_floor
+CATEGORY=Buildings - Floors
+SUBSECTION=Sand Garden
+DESCRIPTION=Sand
+DUPELIST=0245f,02460,02461,02462,02463,02468,02469,0246a,0246b
+
+[ITEMDEF 0245f]
+//sand garden
+DUPEITEM=0245e
+
+[ITEMDEF 02460]
+//sand garden
+DUPEITEM=0245e
+
+[ITEMDEF 02461]
+//sand garden
+DUPEITEM=0245e
+
+[ITEMDEF 02462]
+//sand garden
+DUPEITEM=0245e
+
+[ITEMDEF 02463]
+//sand garden
+DUPEITEM=0245e
+
+[ITEMDEF 02464]
+DEFNAME=i_sand_with_rock_raked
+NAME=sand garden
+TYPE=t_floor
+CATEGORY=Buildings - Floors
+SUBSECTION=Sand Garden
+DESCRIPTION=Sand with Rock
+DUPELIST=02465,02466,02467
+
+[ITEMDEF 02465]
+//sand and rock garden
+DUPEITEM=02464
+
+[ITEMDEF 02466]
+//sand and rock garden
+DUPEITEM=02464
+
+[ITEMDEF 02467]
+//sand and rock garden
+DUPEITEM=02464
+
+[ITEMDEF 02468]
+//sand garden
+DUPEITEM=0245e
+
+[ITEMDEF 02469]
+//sand garden
+DUPEITEM=0245e
+
+[ITEMDEF 0246a]
+//sand garden
+DUPEITEM=0245e
+
+[ITEMDEF 0246b]
+//sand garden
+DUPEITEM=0245e
+
+[ITEMDEF 02720]
+//Not a tile you normally place inside the game since it is offset
+TYPE=t_floor
+CATEGORY=Buildings - Floors
+SUBSECTION=Floor Patterns
+DESCRIPTION=Floor Pattern 1
+
+[ITEMDEF 02721]
+//Not a tile you normally place inside the game since it is offset
+TYPE=t_floor
+CATEGORY=Buildings - Floors
+SUBSECTION=Floor Patterns
+DESCRIPTION=Floor Pattern 2
+
+[ITEMDEF 02722]
+TYPE=t_floor
+CATEGORY=Buildings - Floors
+SUBSECTION=Wood Floor 2
+DESCRIPTION=Wood Floor 2
+DUPELIST=02723,02724,02725,02726,02727,02728,02729,0272a,0272b,0272c,0272d,0272e,0272f,02730,02731,02732,02733,02734,02735,02736,02737,02738,02739
+
+[ITEMDEF 02723]
+//wood floor 2
+DUPEITEM=02722
+
+[ITEMDEF 02724]
+//wood floor 2
+DUPEITEM=02722
+
+[ITEMDEF 02725]
+//wood floor 2
+DUPEITEM=02722
+
+[ITEMDEF 02726]
+//wood floor 2
+DUPEITEM=02722
+
+[ITEMDEF 02727]
+//wood floor 2
+DUPEITEM=02722
+
+[ITEMDEF 02728]
+//wood floor 2
+DUPEITEM=02722
+
+[ITEMDEF 02729]
+//wood floor 2
+DUPEITEM=02722
+
+[ITEMDEF 0272a]
+//wood floor 2
+DUPEITEM=02722
+
+[ITEMDEF 0272b]
+//wood floor 2
+DUPEITEM=02722
+
+[ITEMDEF 0272c]
+//wood floor 2
+DUPEITEM=02722
+
+[ITEMDEF 0272d]
+//wood floor 2
+DUPEITEM=02722
+
+[ITEMDEF 0272e]
+//wood floor 2
+DUPEITEM=02722
+
+[ITEMDEF 0272f]
+//wood floor 2
+DUPEITEM=02722
+
+[ITEMDEF 02730]
+//wood floor 2
+DUPEITEM=02722
+
+[ITEMDEF 02731]
+//wood floor 2
+DUPEITEM=02722
+
+[ITEMDEF 02732]
+//wood floor 2
+DUPEITEM=02722
+
+[ITEMDEF 02733]
+//wood floor 2
+DUPEITEM=02722
+
+[ITEMDEF 02734]
+//wood floor 2
+DUPEITEM=02722
+
+[ITEMDEF 02735]
+//wood floor 2
+DUPEITEM=02722
+
+[ITEMDEF 02736]
+//wood floor 2
+DUPEITEM=02722
+
+[ITEMDEF 02737]
+//wood floor 2
+DUPEITEM=02722
+
+[ITEMDEF 02738]
+//wood floor 2
+DUPEITEM=02722
+
+[ITEMDEF 02739]
+//wood floor 2
+DUPEITEM=02722
+
+[ITEMDEF 0273a]
+TYPE=t_floor
+CATEGORY=Buildings - Floors
+SUBSECTION=Wood Floor 3
+DESCRIPTION=Wood Floor 3
+DUPELIST=0273b,0273c,0273d,0273e,0273f,02740,02741,02742,02743,02744,02745,02746,02747,02748,02749,0274a,0274b,0274c,0274d,0274e,0274f,02750,02751
+
+[ITEMDEF 0273b]
+//wood floor 3
+DUPEITEM=0273a
+
+[ITEMDEF 0273c]
+//wood floor 3
+DUPEITEM=0273a
+
+[ITEMDEF 0273d]
+//wood floor 3
+DUPEITEM=0273a
+
+[ITEMDEF 0273e]
+//wood floor 3
+DUPEITEM=0273a
+
+[ITEMDEF 0273f]
+//wood floor 3
+DUPEITEM=0273a
+
+[ITEMDEF 02740]
+//wood floor 3
+DUPEITEM=0273a
+
+[ITEMDEF 02741]
+//wood floor 3
+DUPEITEM=0273a
+
+[ITEMDEF 02742]
+//wood floor 3
+DUPEITEM=0273a
+
+[ITEMDEF 02743]
+//wood floor 3
+DUPEITEM=0273a
+
+[ITEMDEF 02744]
+//wood floor 3
+DUPEITEM=0273a
+
+[ITEMDEF 02745]
+//wood floor 3
+DUPEITEM=0273a
+
+[ITEMDEF 02746]
+//wood floor 3
+DUPEITEM=0273a
+
+[ITEMDEF 02747]
+//wood floor 3
+DUPEITEM=0273a
+
+[ITEMDEF 02748]
+//wood floor 3
+DUPEITEM=0273a
+
+[ITEMDEF 02749]
+//wood floor 3
+DUPEITEM=0273a
+
+[ITEMDEF 0274a]
+//wood floor 3
+DUPEITEM=0273a
+
+[ITEMDEF 0274b]
+//wood floor 3
+DUPEITEM=0273a
+
+[ITEMDEF 0274c]
+//wood floor 3
+DUPEITEM=0273a
+
+[ITEMDEF 0274d]
+//wood floor 3
+DUPEITEM=0273a
+
+[ITEMDEF 0274e]
+//wood floor 3
+DUPEITEM=0273a
+
+[ITEMDEF 0274f]
+//wood floor 3
+DUPEITEM=0273a
+
+[ITEMDEF 02750]
+//wood floor 3
+DUPEITEM=0273a
+
+[ITEMDEF 02751]
+//wood floor 3
+DUPEITEM=0273a
+
+[ITEMDEF 0286e]
+TYPE=t_normal
+CATEGORY=Buildings - Floors
+SUBSECTION=Wood Floor 4
+DESCRIPTION=Wood Floor 4
+DUPELIST=0286f,02870,02871,02872,02873,02874,02875,02876,02877,02878,02879,0287a,0287b,0287c,0287d,0287e,0287f,02880,02881,02882,02883,02884,02885
+
+[ITEMDEF 0286f]
+//wood floor 4
+DUPEITEM=0286e
+
+[ITEMDEF 02870]
+//wood floor 4
+DUPEITEM=0286e
+
+[ITEMDEF 02871]
+//wood floor 4
+DUPEITEM=0286e
+
+[ITEMDEF 02872]
+//wood floor 4
+DUPEITEM=0286e
+
+[ITEMDEF 02873]
+//wood floor 4
+DUPEITEM=0286e
+
+[ITEMDEF 02874]
+//wood floor 4
+DUPEITEM=0286e
+
+[ITEMDEF 02875]
+//wood floor 4
+DUPEITEM=0286e
+
+[ITEMDEF 02876]
+//wood floor 4
+DUPEITEM=0286e
+
+[ITEMDEF 02877]
+//wood floor 4
+DUPEITEM=0286e
+
+[ITEMDEF 02878]
+//wood floor 4
+DUPEITEM=0286e
+
+[ITEMDEF 02879]
+//wood floor 4
+DUPEITEM=0286e
+
+[ITEMDEF 0287a]
+//wood floor 4
+DUPEITEM=0286e
+
+[ITEMDEF 0287b]
+//wood floor 4
+DUPEITEM=0286e
+
+[ITEMDEF 0287c]
+//wood floor 4
+DUPEITEM=0286e
+
+[ITEMDEF 0287d]
+//wood floor 4
+DUPEITEM=0286e
+
+[ITEMDEF 0287e]
+//wood floor 4
+DUPEITEM=0286e
+
+[ITEMDEF 0287f]
+//wood floor 4
+DUPEITEM=0286e
+
+[ITEMDEF 02880]
+//wood floor 4
+DUPEITEM=0286e
+
+[ITEMDEF 02881]
+//wood floor 4
+DUPEITEM=0286e
+
+[ITEMDEF 02882]
+//wood floor 4
+DUPEITEM=0286e
+
+[ITEMDEF 02883]
+//wood floor 4
+DUPEITEM=0286e
+
+[ITEMDEF 02884]
+//wood floor 4
+DUPEITEM=0286e
+
+[ITEMDEF 02885]
+//wood floor 4
+DUPEITEM=0286e
+
+[ITEMDEF 02960]
+TYPE=t_normal
+CATEGORY=Buildings - Floors
+SUBSECTION=Wood Floor 5
+DESCRIPTION=Wood Floor 5
+DUPELIST=02961,02962,02963,02964,02965,02966,02967,02968,02969,0296a,0296b,0296c,0296d,0296e,0296f,02970,02971,02972,02973,02974,02975,02976,02977
+
+[ITEMDEF 02961]
+//wood floor 5
+DUPEITEM=02960
+
+[ITEMDEF 02962]
+//wood floor 5
+DUPEITEM=02960
+
+[ITEMDEF 02963]
+//wood floor 5
+DUPEITEM=02960
+
+[ITEMDEF 02964]
+//wood floor 5
+DUPEITEM=02960
+
+[ITEMDEF 02965]
+//wood floor 5
+DUPEITEM=02960
+
+[ITEMDEF 02966]
+//wood floor 5
+DUPEITEM=02960
+
+[ITEMDEF 02967]
+//wood floor 5
+DUPEITEM=02960
+
+[ITEMDEF 02968]
+//wood floor 5
+DUPEITEM=02960
+
+[ITEMDEF 02969]
+//wood floor 5
+DUPEITEM=02960
+
+[ITEMDEF 0296a]
+//wood floor 5
+DUPEITEM=02960
+
+[ITEMDEF 0296b]
+//wood floor 5
+DUPEITEM=02960
+
+[ITEMDEF 0296c]
+//wood floor 5
+DUPEITEM=02960
+
+[ITEMDEF 0296d]
+//wood floor 5
+DUPEITEM=02960
+
+[ITEMDEF 0296e]
+//wood floor 5
+DUPEITEM=02960
+
+[ITEMDEF 0296f]
+//wood floor 5
+DUPEITEM=02960
+
+[ITEMDEF 02970]
+//wood floor 5
+DUPEITEM=02960
+
+[ITEMDEF 02971]
+//wood floor 5
+DUPEITEM=02960
+
+[ITEMDEF 02972]
+//wood floor 5
+DUPEITEM=02960
+
+[ITEMDEF 02973]
+//wood floor 5
+DUPEITEM=02960
+
+[ITEMDEF 02974]
+//wood floor 5
+DUPEITEM=02960
+
+[ITEMDEF 02975]
+//wood floor 5
+DUPEITEM=02960
+
+[ITEMDEF 02976]
+//wood floor 5
+DUPEITEM=02960
+
+[ITEMDEF 02977]
+//wood floor 5
+DUPEITEM=02960
+
+[ITEMDEF 02978]
+TYPE=t_normal
+CATEGORY=Buildings - Floors
+SUBSECTION=Wood Floor 6
+DESCRIPTION=Wood Floor 6
+DUPELIST=02979,0297a,0297b,0297c,0297d,0297e,0297f,02980,02981,02982,02983,02984,02985,02986,02987,02988,02989,0298a,0298b,0298c,0298d,0298e,0298f
+
+[ITEMDEF 02979]
+//wood floor 6
+DUPEITEM=02978
+
+[ITEMDEF 0297a]
+//wood floor 6
+DUPEITEM=02978
+
+[ITEMDEF 0297b]
+//wood floor 6
+DUPEITEM=02978
+
+[ITEMDEF 0297c]
+//wood floor 6
+DUPEITEM=02978
+
+[ITEMDEF 0297d]
+//wood floor 6
+DUPEITEM=02978
+
+[ITEMDEF 0297e]
+//wood floor 6
+DUPEITEM=02978
+
+[ITEMDEF 0297f]
+//wood floor 6
+DUPEITEM=02978
+
+[ITEMDEF 02980]
+//wood floor 6
+DUPEITEM=02978
+
+[ITEMDEF 02981]
+//wood floor 6
+DUPEITEM=02978
+
+[ITEMDEF 02982]
+//wood floor 6
+DUPEITEM=02978
+
+[ITEMDEF 02983]
+//wood floor 6
+DUPEITEM=02978
+
+[ITEMDEF 02984]
+//wood floor 6
+DUPEITEM=02978
+
+[ITEMDEF 02985]
+//wood floor 6
+DUPEITEM=02978
+
+[ITEMDEF 02986]
+//wood floor 6
+DUPEITEM=02978
+
+[ITEMDEF 02987]
+//wood floor 6
+DUPEITEM=02978
+
+[ITEMDEF 02988]
+//wood floor 6
+DUPEITEM=02978
+
+[ITEMDEF 02989]
+//wood floor 6
+DUPEITEM=02978
+
+[ITEMDEF 0298a]
+//wood floor 6
+DUPEITEM=02978
+
+[ITEMDEF 0298b]
+//wood floor 6
+DUPEITEM=02978
+
+[ITEMDEF 0298c]
+//wood floor 6
+DUPEITEM=02978
+
+[ITEMDEF 0298d]
+//wood floor 6
+DUPEITEM=02978
+
+[ITEMDEF 0298e]
+//wood floor 6
+DUPEITEM=02978
+
+[ITEMDEF 0298f]
+//wood floor 6
+DUPEITEM=02978
+
+
+[ITEMDEF 02bb5]
+DEFNAME=i_floor_tile_ornate
+CATEGORY=Buildings - Floors
+SUBSECTION=Elven Floor Tile (ornate)
+DESCRIPTION=Floor
+DUPELIST=02bb6,02bb7,02bb8
+
+[ITEMDEF 02bb6]
+//Elven Floor Tile (ornate)
+DUPEITEM=02bb5
+
+[ITEMDEF 02bb7]
+//Elven Floor Tile (ornate)
+DUPEITEM=02bb5
+
+[ITEMDEF 02bb8]
+//Elven Floor Tile (ornate)
+DUPEITEM=02bb5
+
+
+[ITEMDEF 02bcf]
+DEFNAME=i_floor_tile_simple
+CATEGORY=Buildings - Floors
+SUBSECTION=Elven Floor Tile (simple)
+DESCRIPTION=Floor
+DUPELIST=02cec,02ced,02cee,02dcb,02dcc,02dcd,02dce
+
+[ITEMDEF 02cec]
+//Elven Floor Tile (simple)
+DUPEITEM=02bcf
+
+[ITEMDEF 02ced]
+//Elven Floor Tile (simple)
+DUPEITEM=02bcf
+
+[ITEMDEF 02cee]
+//Elven Floor Tile (simple)
+DUPEITEM=02bcf
+
+[ITEMDEF 02d38]
+DEFNAME=i_floor_bark
+CATEGORY=Buildings - Floors
+SUBSECTION=Bark Floor
+DESCRIPTION=Floor
+DUPELIST=02d39,02d3a,02d3b
+
+[ITEMDEF 02d39]
+//Bark Floor
+DUPEITEM=02d38
+
+[ITEMDEF 02d3a]
+//Bark Floor
+DUPEITEM=02d38
+
+[ITEMDEF 02d3b]
+//Bark Floor
+DUPEITEM=02d38
+
+[ITEMDEF 02dcb]
+//Elven Floor Tile (simple)
+DUPEITEM=02bcf
+
+[ITEMDEF 02dcc]
+//Elven Floor Tile (simple)
+DUPEITEM=02bcf
+
+[ITEMDEF 02dcd]
+//Elven Floor Tile (simple)
+DUPEITEM=02bcf
+
+[ITEMDEF 02dce]
+//Elven Floor Tile (simple)
+DUPEITEM=02bcf
+
+[ITEMDEF 02e01]
+NAME=thorn floor
+TYPE=t_floor
+CATEGORY=Buildings - Floors
+SUBSECTION=Thorn Floor
+DESCRIPTION=Thorn Floor
+
+
+[ITEMDEF 03004]
+DEFNAME=i_floor_black
+TYPE=t_floor
+CATEGORY=Buildings - Floors
+SUBSECTION=Tile Floor (black)
+DESCRIPTION=Tile
+DUPELIST=03005,03006,03007
+
+[ITEMDEF 03005]
+//tile floor (black)
+DUPEITEM=03004
+
+[ITEMDEF 03006]
+//tile floor (black)
+DUPEITEM=03004
+
+[ITEMDEF 03007]
+//tile floor (black)
+DUPEITEM=03004
+
+
+[ITEMDEF 0407e]
+DEFNAME=i_sa_floor_green_paver
+TYPE=t_floor
+CATEGORY=Buildings - Floors
+SUBSECTION=Patterned Floor (green)
+DESCRIPTION=Floor
+DUPELIST=0407f,04080,04081,04082,04083,04084,04085,04086,04087,04088,04089,0408a,0408b,0408c,0408d,0408e,0408f,04090,04091,04092,04093,04094,04095,04096,04097,04098,04099,0409a
+
+[ITEMDEF 0407f]
+//Patterned Floor (green)
+DUPEITEM=0407e
+
+[ITEMDEF 04080]
+//Patterned Floor (green)
+DUPEITEM=0407e
+
+[ITEMDEF 04081]
+//Patterned Floor (green)
+DUPEITEM=0407e
+
+[ITEMDEF 04082]
+//Patterned Floor (green)
+DUPEITEM=0407e
+
+[ITEMDEF 04083]
+//Patterned Floor (green)
+DUPEITEM=0407e
+
+[ITEMDEF 04084]
+//Patterned Floor (green)
+DUPEITEM=0407e
+
+[ITEMDEF 04085]
+//Patterned Floor (green)
+DUPEITEM=0407e
+
+[ITEMDEF 04086]
+//Patterned Floor (green)
+DUPEITEM=0407e
+
+[ITEMDEF 04087]
+//Patterned Floor (green)
+DUPEITEM=0407e
+
+[ITEMDEF 04088]
+//Patterned Floor (green)
+DUPEITEM=0407e
+
+[ITEMDEF 04089]
+//Patterned Floor (green)
+DUPEITEM=0407e
+
+[ITEMDEF 0408a]
+//Patterned Floor (green)
+DUPEITEM=0407e
+
+[ITEMDEF 0408b]
+//Patterned Floor (green)
+DUPEITEM=0407e
+
+[ITEMDEF 0408c]
+//Patterned Floor (green)
+DUPEITEM=0407e
+
+[ITEMDEF 0408d]
+//Patterned Floor (green)
+DUPEITEM=0407e
+
+[ITEMDEF 0408e]
+//Patterned Floor (green)
+DUPEITEM=0407e
+
+[ITEMDEF 0408f]
+//Patterned Floor (green)
+DUPEITEM=0407e
+
+[ITEMDEF 04090]
+//Patterned Floor (green)
+DUPEITEM=0407e
+
+[ITEMDEF 04091]
+//Patterned Floor (green)
+DUPEITEM=0407e
+
+[ITEMDEF 04092]
+//Patterned Floor (green)
+DUPEITEM=0407e
+
+[ITEMDEF 04093]
+//Patterned Floor (green)
+DUPEITEM=0407e
+
+[ITEMDEF 04094]
+//Patterned Floor (green)
+DUPEITEM=0407e
+
+[ITEMDEF 04095]
+//Patterned Floor (green)
+DUPEITEM=0407e
+
+[ITEMDEF 04096]
+//Patterned Floor (green)
+DUPEITEM=0407e
+
+[ITEMDEF 04097]
+//Patterned Floor (green)
+DUPEITEM=0407e
+
+[ITEMDEF 04098]
+//Patterned Floor (green)
+DUPEITEM=0407e
+
+[ITEMDEF 04099]
+//Patterned Floor (green)
+DUPEITEM=0407e
+
+[ITEMDEF 0409a]
+//Patterned Floor (green)
+DUPEITEM=0407e
+
+
+[ITEMDEF 040a3]
+DEFNAME=i_floor_gargish_rune
+NAME=gargish rune
+CATEGORY=Buildings - Floors
+SUBSECTION=Gargish Rune
+DESCRIPTION=Floor
+DUPELIST=040a4,040a5,040a6,040a7,040a8,040a9,040aa,040ab,040ac,040ad,040ae,040af,040b0,040b1,040b2,040b3,040b4,040b5,040b6,040b7,040b8,040b9,040ba,040bb
+
+[ITEMDEF 040a4]
+NAME=gargish rune
+DUPEITEM=040a3
+
+[ITEMDEF 040a5]
+NAME=gargish rune
+DUPEITEM=040a3
+
+[ITEMDEF 040a6]
+NAME=gargish rune
+DUPEITEM=040a3
+
+[ITEMDEF 040a7]
+NAME=gargish rune
+DUPEITEM=040a3
+
+[ITEMDEF 040a8]
+NAME=gargish rune
+DUPEITEM=040a3
+
+[ITEMDEF 040a9]
+NAME=gargish rune
+DUPEITEM=040a3
+
+[ITEMDEF 040aa]
+NAME=gargish rune
+DUPEITEM=040a3
+
+[ITEMDEF 040ab]
+NAME=gargish rune
+DUPEITEM=040a3
+
+[ITEMDEF 040ac]
+NAME=gargish rune
+DUPEITEM=040a3
+
+[ITEMDEF 040ad]
+NAME=gargish rune
+DUPEITEM=040a3
+
+[ITEMDEF 040ae]
+NAME=gargish rune
+DUPEITEM=040a3
+
+[ITEMDEF 040af]
+NAME=gargish rune
+DUPEITEM=040a3
+
+[ITEMDEF 040b0]
+NAME=gargish rune
+DUPEITEM=040a3
+
+[ITEMDEF 040b1]
+NAME=gargish rune
+DUPEITEM=040a3
+
+[ITEMDEF 040b2]
+NAME=gargish rune
+DUPEITEM=040a3
+
+[ITEMDEF 040b3]
+NAME=gargish rune
+DUPEITEM=040a3
+
+[ITEMDEF 040b4]
+NAME=gargish rune
+DUPEITEM=040a3
+
+[ITEMDEF 040b5]
+NAME=gargish rune
+DUPEITEM=040a3
+
+[ITEMDEF 040b6]
+NAME=gargish rune
+DUPEITEM=040a3
+
+[ITEMDEF 040b7]
+NAME=gargish rune
+DUPEITEM=040a3
+
+[ITEMDEF 040b8]
+NAME=gargish rune
+DUPEITEM=040a3
+
+[ITEMDEF 040b9]
+NAME=gargish rune
+DUPEITEM=040a3
+
+[ITEMDEF 040ba]
+NAME=gargish rune
+DUPEITEM=040a3
+
+[ITEMDEF 040bb]
+NAME=gargish rune
+DUPEITEM=040a3
+
+
+[ITEMDEF 040c1]
+DEFNAME=i_floor_mosaic_medusa
+NAME=carved stone floor
+CATEGORY=Buildings - Floors
+SUBSECTION=Mosaic (Medusa)
+DESCRIPTION=Floor
+DUPELIST=040c2,040c3,040c4,040c5,040c6,040c7,040c8,040c9,040ca,040cb,040cc,040cd,040ce,040cf,040d0,040d1,040d2,040d3,040d4,040d5,040d6,040d7,040d8,040d9
+
+[ITEMDEF 040c2]
+NAME=carved stone floor
+DUPEITEM=040c1
+
+[ITEMDEF 040c3]
+NAME=carved stone floor
+DUPEITEM=040c1
+
+[ITEMDEF 040c4]
+NAME=carved stone floor
+DUPEITEM=040c1
+
+[ITEMDEF 040c5]
+NAME=carved stone floor
+DUPEITEM=040c1
+
+[ITEMDEF 040c6]
+NAME=carved stone floor
+DUPEITEM=040c1
+
+[ITEMDEF 040c7]
+NAME=carved stone floor
+DUPEITEM=040c1
+
+[ITEMDEF 040c8]
+NAME=carved stone floor
+DUPEITEM=040c1
+
+[ITEMDEF 040c9]
+NAME=carved stone floor
+DUPEITEM=040c1
+
+[ITEMDEF 040ca]
+NAME=carved stone floor
+DUPEITEM=040c1
+
+[ITEMDEF 040cb]
+NAME=carved stone floor
+DUPEITEM=040c1
+
+[ITEMDEF 040cc]
+NAME=carved stone floor
+DUPEITEM=040c1
+
+[ITEMDEF 040cd]
+NAME=carved stone floor
+DUPEITEM=040c1
+
+[ITEMDEF 040ce]
+NAME=carved stone floor
+DUPEITEM=040c1
+
+[ITEMDEF 040cf]
+NAME=carved stone floor
+DUPEITEM=040c1
+
+[ITEMDEF 040d0]
+NAME=carved stone floor
+DUPEITEM=040c1
+
+[ITEMDEF 040d1]
+NAME=carved stone floor
+DUPEITEM=040c1
+
+[ITEMDEF 040d2]
+NAME=carved stone floor
+DUPEITEM=040c1
+
+[ITEMDEF 040d3]
+NAME=carved stone floor
+DUPEITEM=040c1
+
+[ITEMDEF 040d4]
+NAME=carved stone floor
+DUPEITEM=040c1
+
+[ITEMDEF 040d5]
+NAME=carved stone floor
+DUPEITEM=040c1
+
+[ITEMDEF 040d6]
+NAME=carved stone floor
+DUPEITEM=040c1
+
+[ITEMDEF 040d7]
+NAME=carved stone floor
+DUPEITEM=040c1
+
+[ITEMDEF 040d8]
+NAME=carved stone floor
+DUPEITEM=040c1
+
+[ITEMDEF 040d9]
+NAME=carved stone floor
+DUPEITEM=040c1
+
+
+[ITEMDEF 04186]
+DEFNAME=i_sa_floor_gold
+NAME=floor
+CATEGORY=Buildings - Floors
+SUBSECTION=Patterned Floor (gold)
+DESCRIPTION=Floor
+DUPELIST=04187,04188,04189,0418a,0418b,0418c,0418d,0418e
+
+[ITEMDEF 04187]
+//Patterned Floor (gold)
+DUPEITEM=04186
+
+[ITEMDEF 04188]
+//Patterned Floor (gold)
+DUPEITEM=04186
+
+[ITEMDEF 04189]
+//Patterned Floor (gold)
+DUPEITEM=04186
+
+[ITEMDEF 0418a]
+//Patterned Floor (gold)
+DUPEITEM=04186
+
+[ITEMDEF 0418b]
+//Patterned Floor (gold)
+DUPEITEM=04186
+
+[ITEMDEF 0418c]
+//Patterned Floor (gold)
+DUPEITEM=04186
+
+[ITEMDEF 0418d]
+//Patterned Floor (gold)
+DUPEITEM=04186
+
+[ITEMDEF 0418e]
+//Patterned Floor (gold)
+DUPEITEM=04186
+
+
+[ITEMDEF 041af]
+DEFNAME=i_sa_floor_green_marble
+NAME=marble floor
+CATEGORY=Buildings - Floors
+SUBSECTION=Patterned Floor (green marble)
+DESCRIPTION=Floor
+DUPELIST=041b0,041b1,041b2,041b5,041b6,041b7,041b8,041b9,041ba,041bb,041bc,041ca,041cb,041cc,041d7
+
+[ITEMDEF 041b0]
+//Patterned Floor (green marble)
+DUPEITEM=041af
+
+[ITEMDEF 041b1]
+//Patterned Floor (green marble)
+DUPEITEM=041af
+
+[ITEMDEF 041b2]
+//Patterned Floor (green marble)
+DUPEITEM=041af
+
+[ITEMDEF 041b5]
+//Patterned Floor (green marble)
+DUPEITEM=041af
+
+[ITEMDEF 041b6]
+//Patterned Floor (green marble)
+DUPEITEM=041af
+
+[ITEMDEF 041b7]
+//Patterned Floor (green marble)
+DUPEITEM=041af
+
+[ITEMDEF 041b8]
+//Patterned Floor (green marble)
+DUPEITEM=041af
+
+[ITEMDEF 041b9]
+//Patterned Floor (green marble)
+DUPEITEM=041af
+
+[ITEMDEF 041ba]
+//Patterned Floor (green marble)
+DUPEITEM=041af
+
+[ITEMDEF 041bb]
+//Patterned Floor (green marble)
+DUPEITEM=041af
+
+[ITEMDEF 041bc]
+//Patterned Floor (green marble)
+DUPEITEM=041af
+
+[ITEMDEF 041ca]
+//Patterned Floor (green marble)
+DUPEITEM=041af
+
+[ITEMDEF 041cb]
+//Patterned Floor (green marble)
+DUPEITEM=041af
+
+[ITEMDEF 041cc]
+//Patterned Floor (green marble)
+DUPEITEM=041af
+
+
+[ITEMDEF 041d7]
+//Patterned Floor (green marble)
+DUPEITEM=041af
+
+
+[ITEMDEF 041dc]
+DEFNAME=i_sa_floor_ws1
+NAME=floor
+CATEGORY=Buildings - Floors
+SUBSECTION=Patterned Floor (SA Set 1)
+DESCRIPTION=Floor
+DUPELIST=041dd,041de,041df,041e0,041e1,041e2,041e3,041e4,041e8,041e9,041ea,041eb,041ec,041ed,041ee,041ef,041f0,041f1,041f2,041f3,041f4,041f5,041f6,041f7,041f8,041f9,041fa,041fb
+
+[ITEMDEF 041dd]
+//Patterned Floor (SA Set 1)
+DUPEITEM=041dc
+
+[ITEMDEF 041de]
+//Patterned Floor (SA Set 1)
+DUPEITEM=041dc
+
+[ITEMDEF 041df]
+//Patterned Floor (SA Set 1)
+DUPEITEM=041dc
+
+[ITEMDEF 041e0]
+//Patterned Floor (SA Set 1)
+DUPEITEM=041dc
+
+[ITEMDEF 041e1]
+//Patterned Floor (SA Set 1)
+DUPEITEM=041dc
+
+[ITEMDEF 041e2]
+//Patterned Floor (SA Set 1)
+DUPEITEM=041dc
+
+[ITEMDEF 041e3]
+//Patterned Floor (SA Set 1)
+DUPEITEM=041dc
+
+[ITEMDEF 041e4]
+//Patterned Floor (SA Set 1)
+DUPEITEM=041dc
+
+[ITEMDEF 041e8]
+//Patterned Floor (SA Set 1)
+DUPEITEM=041dc
+
+[ITEMDEF 041e9]
+//Patterned Floor (SA Set 1)
+DUPEITEM=041dc
+
+[ITEMDEF 041ea]
+//Patterned Floor (SA Set 1)
+DUPEITEM=041dc
+
+[ITEMDEF 041eb]
+//Patterned Floor (SA Set 1)
+DUPEITEM=041dc
+
+[ITEMDEF 041ec]
+//Patterned Floor (SA Set 1)
+DUPEITEM=041dc
+
+[ITEMDEF 041ed]
+//Patterned Floor (SA Set 1)
+DUPEITEM=041dc
+
+[ITEMDEF 041ee]
+//Patterned Floor (SA Set 1)
+DUPEITEM=041dc
+
+[ITEMDEF 041ef]
+//Patterned Floor (SA Set 1)
+DUPEITEM=041dc
+
+[ITEMDEF 041f0]
+//Patterned Floor (SA Set 1)
+DUPEITEM=041dc
+
+[ITEMDEF 041f1]
+//Patterned Floor (SA Set 1)
+DUPEITEM=041dc
+
+[ITEMDEF 041f2]
+//Patterned Floor (SA Set 1)
+DUPEITEM=041dc
+
+[ITEMDEF 041f3]
+//Patterned Floor (SA Set 1)
+DUPEITEM=041dc
+
+[ITEMDEF 041f4]
+//Patterned Floor (SA Set 1)
+DUPEITEM=041dc
+
+[ITEMDEF 041f5]
+//Patterned Floor (SA Set 1)
+DUPEITEM=041dc
+
+[ITEMDEF 041f6]
+//Patterned Floor (SA Set 1)
+DUPEITEM=041dc
+
+[ITEMDEF 041f7]
+//Patterned Floor (SA Set 1)
+DUPEITEM=041dc
+
+[ITEMDEF 041f8]
+//Patterned Floor (SA Set 1)
+DUPEITEM=041dc
+
+[ITEMDEF 041f9]
+//Patterned Floor (SA Set 1)
+DUPEITEM=041dc
+
+[ITEMDEF 041fa]
+//Patterned Floor (SA Set 1)
+DUPEITEM=041dc
+
+[ITEMDEF 041fb]
+//Patterned Floor (SA Set 1)
+DUPEITEM=041dc
+
+
+[ITEMDEF 04328]
+DEFNAME=i_sa_floor_misc1
+NAME=floor
+CATEGORY=Buildings - Floors
+SUBSECTION=Patterned Floor (SA Misc 1)
+DESCRIPTION=Floor
+DUPELIST=04329,0432a,0432b,0432c,0432d,0432e,0432f,04330,04331,04332,04333,04334,04335,04336,04337,04338,04339,0433a,0433b
+
+[ITEMDEF 04329]
+//Patterned Floor (SA Misc 1)
+DUPEITEM=04328
+
+[ITEMDEF 0432a]
+//Patterned Floor (SA Misc 1)
+DUPEITEM=04328
+
+[ITEMDEF 0432b]
+//Patterned Floor (SA Misc 1)
+DUPEITEM=04328
+
+[ITEMDEF 0432c]
+//Patterned Floor (SA Misc 1)
+DUPEITEM=04328
+
+[ITEMDEF 0432d]
+//Patterned Floor (SA Misc 1)
+DUPEITEM=04328
+
+[ITEMDEF 0432e]
+//Patterned Floor (SA Misc 1)
+DUPEITEM=04328
+
+[ITEMDEF 0432f]
+//Patterned Floor (SA Misc 1)
+DUPEITEM=04328
+
+[ITEMDEF 04330]
+//Patterned Floor (SA Misc 1)
+DUPEITEM=04328
+
+[ITEMDEF 04331]
+//Patterned Floor (SA Misc 1)
+DUPEITEM=04328
+
+[ITEMDEF 04332]
+//Patterned Floor (SA Misc 1)
+DUPEITEM=04328
+
+[ITEMDEF 04333]
+//Patterned Floor (SA Misc 1)
+DUPEITEM=04328
+
+[ITEMDEF 04334]
+//Patterned Floor (SA Misc 1)
+DUPEITEM=04328
+
+[ITEMDEF 04335]
+//Patterned Floor (SA Misc 1)
+DUPEITEM=04328
+
+[ITEMDEF 04336]
+//Patterned Floor (SA Misc 1)
+DUPEITEM=04328
+
+[ITEMDEF 04337]
+//Patterned Floor (SA Misc 1)
+DUPEITEM=04328
+
+[ITEMDEF 04338]
+//Patterned Floor (SA Misc 1)
+DUPEITEM=04328
+
+[ITEMDEF 04339]
+//Patterned Floor (SA Misc 1)
+DUPEITEM=04328
+
+[ITEMDEF 0433a]
+//Patterned Floor (SA Misc 1)
+DUPEITEM=04328
+
+[ITEMDEF 0433b]
+//Patterned Floor (SA Misc 1)
+DUPEITEM=04328
+
+
+[ITEMDEF 043e0]
+DEFNAME=i_sa_floor_virtue_2
+CATEGORY=Buildings - Floors
+SUBSECTION=SA Virtue Floor 2
+DESCRIPTION=Floor
+DUPELIST=043e1,043e2,043e3,043e4,043e5,043e6,043e7,043e8,043e9,043ea,043eb,043ec,043ed,043ee,043ef,043f0,043f1,043f2,043f3,043f4,043f5,043f6,043f7,043f,043f,043fa,043fb,043fc,043fd,043fe,043ff,04400,04401,04402,04403,04404,04405,04406,04407,04408,04409,0440a,0440b,0440c,0440d,0440e,0440f,04410,04411,04412,04413,04414,04415,04416,04417,04418,04419,0441a,0441b,0441c,0441d,0441e,0441f,04420,04421,04422,04423,04424,04425,04426,04427,04428,04429,0442a,0442b,0442c,0442d,0442e,0442f,04430,04431,04432,04433,0443,04435,04436,04437,04438,04439,0443a,0443b,0443c,0443d,0443e,0443f,04440,04441,04442,04443,04444,04445,04446,04447,04448,04449,0444a,0444b,0444c,0444d,0444e,0444f,04450,04451,04452,04453,04454,04455,04456,04457,04458,04459,0445a,0445b,0445c,0445d,0445e,0445f,04460,04461,04462,04463,04464,04465,04466,04467,04468,04469,0446a,0446b,0446c,0446d,0446e,0446f,04470,04471,04472,04473,04474,04475,04476,04477,04478,04479,0447a,0447b,0447c,0447d,0447e,0447f,04480,04481,04482,04483,04484,04485,04486,04487,04488,04489,0448a,0448b,0448c,0448d,0448e,0448f,04490,04491,04492,04493,04494,04495,04496,04497,04498,04499,0449a,0449b,0449c,0449d,0449e,0449f,044a0,044a1,044a2,044a3,044a4,044a5,044a6,044a7,044a8,044a9,044aa,044ab,044ac,044ad,044ae,044af,044b0,044b1,044b2,044b3,044b4,044b5,044b6,044b7,044b8,044b9,044ba,044bb,044bc,044bd,044be,044bf,044c0
+
+[ITEMDEF 043e1]
+DUPEITEM=043e0
+
+[ITEMDEF 043e2]
+DUPEITEM=043e0
+
+[ITEMDEF 043e3]
+DUPEITEM=043e0
+
+[ITEMDEF 043e4]
+DUPEITEM=043e0
+
+[ITEMDEF 043e5]
+DUPEITEM=043e0
+
+[ITEMDEF 043e6]
+DUPEITEM=043e0
+
+[ITEMDEF 043e7]
+DUPEITEM=043e0
+
+[ITEMDEF 043e8]
+DUPEITEM=043e0
+
+[ITEMDEF 043e9]
+DUPEITEM=043e0
+
+[ITEMDEF 043ea]
+DUPEITEM=043e0
+
+[ITEMDEF 043eb]
+DUPEITEM=043e0
+
+[ITEMDEF 043ec]
+DUPEITEM=043e0
+
+[ITEMDEF 043ed]
+DUPEITEM=043e0
+
+[ITEMDEF 043ee]
+DUPEITEM=043e0
+
+[ITEMDEF 043ef]
+DUPEITEM=043e0
+
+[ITEMDEF 043f0]
+DUPEITEM=043e0
+
+[ITEMDEF 043f1]
+DUPEITEM=043e0
+
+[ITEMDEF 043f2]
+DUPEITEM=043e0
+
+[ITEMDEF 043f3]
+DUPEITEM=043e0
+
+[ITEMDEF 043f4]
+DUPEITEM=043e0
+
+[ITEMDEF 043f5]
+DUPEITEM=043e0
+
+[ITEMDEF 043f6]
+DUPEITEM=043e0
+
+[ITEMDEF 043f7]
+DUPEITEM=043e0
+
+[ITEMDEF 043f8]
+DUPEITEM=043e0
+
+[ITEMDEF 043f9]
+DUPEITEM=043e0
+
+[ITEMDEF 043fa]
+DUPEITEM=043e0
+
+[ITEMDEF 043fb]
+DUPEITEM=043e0
+
+[ITEMDEF 043fc]
+DUPEITEM=043e0
+
+[ITEMDEF 043fd]
+DUPEITEM=043e0
+
+[ITEMDEF 043fe]
+DUPEITEM=043e0
+
+[ITEMDEF 043ff]
+DUPEITEM=043e0
+
+[ITEMDEF 04400]
+DUPEITEM=043e0
+
+[ITEMDEF 04401]
+DUPEITEM=043e0
+
+[ITEMDEF 04402]
+DUPEITEM=043e0
+
+[ITEMDEF 04403]
+DUPEITEM=043e0
+
+[ITEMDEF 04404]
+DUPEITEM=043e0
+
+[ITEMDEF 04405]
+DUPEITEM=043e0
+
+[ITEMDEF 04406]
+DUPEITEM=043e0
+
+[ITEMDEF 04407]
+DUPEITEM=043e0
+
+[ITEMDEF 04408]
+DUPEITEM=043e0
+
+[ITEMDEF 04409]
+DUPEITEM=043e0
+
+[ITEMDEF 0440a]
+DUPEITEM=043e0
+
+[ITEMDEF 0440b]
+DUPEITEM=043e0
+
+[ITEMDEF 0440c]
+DUPEITEM=043e0
+
+[ITEMDEF 0440d]
+DUPEITEM=043e0
+
+[ITEMDEF 0440e]
+DUPEITEM=043e0
+
+[ITEMDEF 0440f]
+DUPEITEM=043e0
+
+[ITEMDEF 04410]
+DUPEITEM=043e0
+
+[ITEMDEF 04411]
+DUPEITEM=043e0
+
+[ITEMDEF 04412]
+DUPEITEM=043e0
+
+[ITEMDEF 04413]
+DUPEITEM=043e0
+
+[ITEMDEF 04414]
+DUPEITEM=043e0
+
+[ITEMDEF 04415]
+DUPEITEM=043e0
+
+[ITEMDEF 04416]
+DUPEITEM=043e0
+
+[ITEMDEF 04417]
+DUPEITEM=043e0
+
+[ITEMDEF 04418]
+DUPEITEM=043e0
+
+[ITEMDEF 04419]
+DUPEITEM=043e0
+
+[ITEMDEF 0441a]
+DUPEITEM=043e0
+
+[ITEMDEF 0441b]
+DUPEITEM=043e0
+
+[ITEMDEF 0441c]
+DUPEITEM=043e0
+
+[ITEMDEF 0441d]
+DUPEITEM=043e0
+
+[ITEMDEF 0441e]
+DUPEITEM=043e0
+
+[ITEMDEF 0441f]
+DUPEITEM=043e0
+
+[ITEMDEF 04420]
+DUPEITEM=043e0
+
+[ITEMDEF 04421]
+DUPEITEM=043e0
+
+[ITEMDEF 04422]
+DUPEITEM=043e0
+
+[ITEMDEF 04423]
+DUPEITEM=043e0
+
+[ITEMDEF 04424]
+DUPEITEM=043e0
+
+[ITEMDEF 04425]
+DUPEITEM=043e0
+
+[ITEMDEF 04426]
+DUPEITEM=043e0
+
+[ITEMDEF 04427]
+DUPEITEM=043e0
+
+[ITEMDEF 04428]
+DUPEITEM=043e0
+
+[ITEMDEF 04429]
+DUPEITEM=043e0
+
+[ITEMDEF 0442a]
+DUPEITEM=043e0
+
+[ITEMDEF 0442b]
+DUPEITEM=043e0
+
+[ITEMDEF 0442c]
+DUPEITEM=043e0
+
+[ITEMDEF 0442d]
+DUPEITEM=043e0
+
+[ITEMDEF 0442e]
+DUPEITEM=043e0
+
+[ITEMDEF 0442f]
+DUPEITEM=043e0
+
+[ITEMDEF 04430]
+DUPEITEM=043e0
+
+[ITEMDEF 04431]
+DUPEITEM=043e0
+
+[ITEMDEF 04432]
+DUPEITEM=043e0
+
+[ITEMDEF 04433]
+DUPEITEM=043e0
+
+[ITEMDEF 04434]
+DUPEITEM=043e0
+
+[ITEMDEF 04435]
+DUPEITEM=043e0
+
+[ITEMDEF 04436]
+DUPEITEM=043e0
+
+[ITEMDEF 04437]
+DUPEITEM=043e0
+
+[ITEMDEF 04438]
+DUPEITEM=043e0
+
+[ITEMDEF 04439]
+DUPEITEM=043e0
+
+[ITEMDEF 0443a]
+DUPEITEM=043e0
+
+[ITEMDEF 0443b]
+DUPEITEM=043e0
+
+[ITEMDEF 0443c]
+DUPEITEM=043e0
+
+[ITEMDEF 0443d]
+DUPEITEM=043e0
+
+[ITEMDEF 0443e]
+DUPEITEM=043e0
+
+[ITEMDEF 0443f]
+DUPEITEM=043e0
+
+[ITEMDEF 04440]
+DUPEITEM=043e0
+
+[ITEMDEF 04441]
+DUPEITEM=043e0
+
+[ITEMDEF 04442]
+DUPEITEM=043e0
+
+[ITEMDEF 04443]
+DUPEITEM=043e0
+
+[ITEMDEF 04444]
+DUPEITEM=043e0
+
+[ITEMDEF 04445]
+DUPEITEM=043e0
+
+[ITEMDEF 04446]
+DUPEITEM=043e0
+
+[ITEMDEF 04447]
+DUPEITEM=043e0
+
+[ITEMDEF 04448]
+DUPEITEM=043e0
+
+[ITEMDEF 04449]
+DUPEITEM=043e0
+
+[ITEMDEF 0444a]
+DUPEITEM=043e0
+
+[ITEMDEF 0444b]
+DUPEITEM=043e0
+
+[ITEMDEF 0444c]
+DUPEITEM=043e0
+
+[ITEMDEF 0444d]
+DUPEITEM=043e0
+
+[ITEMDEF 0444e]
+DUPEITEM=043e0
+
+[ITEMDEF 0444f]
+DUPEITEM=043e0
+
+[ITEMDEF 04450]
+DUPEITEM=043e0
+
+[ITEMDEF 04451]
+DUPEITEM=043e0
+
+[ITEMDEF 04452]
+DUPEITEM=043e0
+
+[ITEMDEF 04453]
+DUPEITEM=043e0
+
+[ITEMDEF 04454]
+DUPEITEM=043e0
+
+[ITEMDEF 04455]
+DUPEITEM=043e0
+
+[ITEMDEF 04456]
+DUPEITEM=043e0
+
+[ITEMDEF 04457]
+DUPEITEM=043e0
+
+[ITEMDEF 04458]
+DUPEITEM=043e0
+
+[ITEMDEF 04459]
+DUPEITEM=043e0
+
+[ITEMDEF 0445a]
+DUPEITEM=043e0
+
+[ITEMDEF 0445b]
+DUPEITEM=043e0
+
+[ITEMDEF 0445c]
+DUPEITEM=043e0
+
+[ITEMDEF 0445d]
+DUPEITEM=043e0
+
+[ITEMDEF 0445e]
+DUPEITEM=043e0
+
+[ITEMDEF 0445f]
+DUPEITEM=043e0
+
+[ITEMDEF 04460]
+DUPEITEM=043e0
+
+[ITEMDEF 04461]
+DUPEITEM=043e0
+
+[ITEMDEF 04462]
+DUPEITEM=043e0
+
+[ITEMDEF 04463]
+DUPEITEM=043e0
+
+[ITEMDEF 04464]
+DUPEITEM=043e0
+
+[ITEMDEF 04465]
+DUPEITEM=043e0
+
+[ITEMDEF 04466]
+DUPEITEM=043e0
+
+[ITEMDEF 04467]
+DUPEITEM=043e0
+
+[ITEMDEF 04468]
+DUPEITEM=043e0
+
+[ITEMDEF 04469]
+DUPEITEM=043e0
+
+[ITEMDEF 0446a]
+DUPEITEM=043e0
+
+[ITEMDEF 0446b]
+DUPEITEM=043e0
+
+[ITEMDEF 0446c]
+DUPEITEM=043e0
+
+[ITEMDEF 0446d]
+DUPEITEM=043e0
+
+[ITEMDEF 0446e]
+DUPEITEM=043e0
+
+[ITEMDEF 0446f]
+DUPEITEM=043e0
+
+[ITEMDEF 04470]
+DUPEITEM=043e0
+
+[ITEMDEF 04471]
+DUPEITEM=043e0
+
+[ITEMDEF 04472]
+DUPEITEM=043e0
+
+[ITEMDEF 04473]
+DUPEITEM=043e0
+
+[ITEMDEF 04474]
+DUPEITEM=043e0
+
+[ITEMDEF 04475]
+DUPEITEM=043e0
+
+[ITEMDEF 04476]
+DUPEITEM=043e0
+
+[ITEMDEF 04477]
+DUPEITEM=043e0
+
+[ITEMDEF 04478]
+DUPEITEM=043e0
+
+[ITEMDEF 04479]
+DUPEITEM=043e0
+
+[ITEMDEF 0447a]
+DUPEITEM=043e0
+
+[ITEMDEF 0447b]
+DUPEITEM=043e0
+
+[ITEMDEF 0447c]
+DUPEITEM=043e0
+
+[ITEMDEF 0447d]
+DUPEITEM=043e0
+
+[ITEMDEF 0447e]
+DUPEITEM=043e0
+
+[ITEMDEF 0447f]
+DUPEITEM=043e0
+
+[ITEMDEF 04480]
+DUPEITEM=043e0
+
+[ITEMDEF 04481]
+DUPEITEM=043e0
+
+[ITEMDEF 04482]
+DUPEITEM=043e0
+
+[ITEMDEF 04483]
+DUPEITEM=043e0
+
+[ITEMDEF 04484]
+DUPEITEM=043e0
+
+[ITEMDEF 04485]
+DUPEITEM=043e0
+
+[ITEMDEF 04486]
+DUPEITEM=043e0
+
+[ITEMDEF 04487]
+DUPEITEM=043e0
+
+[ITEMDEF 04488]
+DUPEITEM=043e0
+
+[ITEMDEF 04489]
+DUPEITEM=043e0
+
+[ITEMDEF 0448a]
+DUPEITEM=043e0
+
+[ITEMDEF 0448b]
+DUPEITEM=043e0
+
+[ITEMDEF 0448c]
+DUPEITEM=043e0
+
+[ITEMDEF 0448d]
+DUPEITEM=043e0
+
+[ITEMDEF 0448e]
+DUPEITEM=043e0
+
+[ITEMDEF 0448f]
+DUPEITEM=043e0
+
+[ITEMDEF 04490]
+DUPEITEM=043e0
+
+[ITEMDEF 04491]
+DUPEITEM=043e0
+
+[ITEMDEF 04492]
+DUPEITEM=043e0
+
+[ITEMDEF 04493]
+DUPEITEM=043e0
+
+[ITEMDEF 04494]
+DUPEITEM=043e0
+
+[ITEMDEF 04495]
+DUPEITEM=043e0
+
+[ITEMDEF 04496]
+DUPEITEM=043e0
+
+[ITEMDEF 04497]
+DUPEITEM=043e0
+
+[ITEMDEF 04498]
+DUPEITEM=043e0
+
+[ITEMDEF 04499]
+DUPEITEM=043e0
+
+[ITEMDEF 0449a]
+DUPEITEM=043e0
+
+[ITEMDEF 0449b]
+DUPEITEM=043e0
+
+[ITEMDEF 0449c]
+DUPEITEM=043e0
+
+[ITEMDEF 0449d]
+DUPEITEM=043e0
+
+[ITEMDEF 0449e]
+DUPEITEM=043e0
+
+[ITEMDEF 0449f]
+DUPEITEM=043e0
+
+[ITEMDEF 044a0]
+DUPEITEM=043e0
+
+[ITEMDEF 044a1]
+DUPEITEM=043e0
+
+[ITEMDEF 044a2]
+DUPEITEM=043e0
+
+[ITEMDEF 044a3]
+DUPEITEM=043e0
+
+[ITEMDEF 044a4]
+DUPEITEM=043e0
+
+[ITEMDEF 044a5]
+DUPEITEM=043e0
+
+[ITEMDEF 044a6]
+DUPEITEM=043e0
+
+[ITEMDEF 044a7]
+DUPEITEM=043e0
+
+[ITEMDEF 044a8]
+DUPEITEM=043e0
+
+[ITEMDEF 044a9]
+DUPEITEM=043e0
+
+[ITEMDEF 044aa]
+DUPEITEM=043e0
+
+[ITEMDEF 044ab]
+DUPEITEM=043e0
+
+[ITEMDEF 044ac]
+DUPEITEM=043e0
+
+[ITEMDEF 044ad]
+DUPEITEM=043e0
+
+[ITEMDEF 044ae]
+DUPEITEM=043e0
+
+[ITEMDEF 044af]
+DUPEITEM=043e0
+
+[ITEMDEF 044b0]
+DUPEITEM=043e0
+
+[ITEMDEF 044b1]
+DUPEITEM=043e0
+
+[ITEMDEF 044b2]
+DUPEITEM=043e0
+
+[ITEMDEF 044b3]
+DUPEITEM=043e0
+
+[ITEMDEF 044b4]
+DUPEITEM=043e0
+
+[ITEMDEF 044b5]
+DUPEITEM=043e0
+
+[ITEMDEF 044b6]
+DUPEITEM=043e0
+
+[ITEMDEF 044b7]
+DUPEITEM=043e0
+
+[ITEMDEF 044b8]
+DUPEITEM=043e0
+
+[ITEMDEF 044b9]
+DUPEITEM=043e0
+
+[ITEMDEF 044ba]
+DUPEITEM=043e0
+
+[ITEMDEF 044bb]
+DUPEITEM=043e0
+
+[ITEMDEF 044bc]
+DUPEITEM=043e0
+
+[ITEMDEF 044bd]
+DUPEITEM=043e0
+
+[ITEMDEF 044be]
+DUPEITEM=043e0
+
+[ITEMDEF 044bf]
+DUPEITEM=043e0
+
+[ITEMDEF 044c0]
+DUPEITEM=043e0
+
+
+[ITEMDEF 046cc]
+DEFNAME=i_sa_floor_ruins
+NAME=floor
+FLIP=1
+CATEGORY=Buildings - Floors
+SUBSECTION=SA Ruins
+DESCRIPTION=Floor Ruins
+DUPELIST=046cd,046ce,046cf,04796,04797,04798,04799
+
+[ITEMDEF 046cd]
+//Floor Ruins
+DUPEITEM=046cc
+
+[ITEMDEF 046ce]
+//Floor Ruins
+DUPEITEM=046cc
+
+[ITEMDEF 046cf]
+//Floor Ruins
+DUPEITEM=046cc
+
+[ITEMDEF 04796]
+//Floor Ruins
+DUPEITEM=046cc
+
+[ITEMDEF 04797]
+//Floor Ruins
+DUPEITEM=046cc
+
+[ITEMDEF 04798]
+//Floor Ruins
+DUPEITEM=046cc
+
+[ITEMDEF 04799]
+//Floor Ruins
+DUPEITEM=046cc
+
+
+[ITEMDEF 047dc]
+DEFNAME=i_paver_natural
+NAME=natural paver
+CATEGORY=Buildings - Floors
+SUBSECTION=Natural Pavers
+DESCRIPTION=Paver
+DUPELIST=047dd,047de,047df,047e0,047e5,048dc,048dd,048de,048df
+
+[ITEMDEF 047dd]
+//Natural Paver
+DUPEITEM=047dc
+
+[ITEMDEF 047de]
+//Natural Paver
+DUPEITEM=047dc
+
+[ITEMDEF 047df]
+//Natural Paver
+DUPEITEM=047dc
+
+[ITEMDEF 047e0]
+//Natural Paver
+DUPEITEM=047dc
+
+[ITEMDEF 047e5]
+//Natural Paver
+DUPEITEM=047dc
+
+
+[ITEMDEF 047ea]
+DEFNAME=i_floor_mosaic_medusa_large
+NAME=carved stone floor
+CATEGORY=Buildings - Floors
+SUBSECTION=Mosaic (Medusa)(large)
+DESCRIPTION=Floor
+DUPELIST=047eb,047ec,047ed,047ee,047ef,047f0,047f1,047f2,047f3,047f4,047f5,047f6,047f7,047f8,047f9,047fa,047fb,047fc,047fd,047fe,047ff,04800,04801,04802,04803,04804,04805,04806,04807,04808,04809,0480a,0480b,0480c,0480d,0480e,0480f,04810,04811,04812,04813,04814,04815,04816,04817,04818,04819,0481a,0481b,0481c,0481d,0481e,0481f,04820,04821,04822,04823,04824,04825,04826,04827,04828,04829,0482a,0482b,0482c,0482d,0482e,0482f,04830,04831,04832,04833,04834,04835,04836,04837,04838,04839,0483a
+
+[ITEMDEF 047eb]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 047ec]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 047ed]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 047ee]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 047ef]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 047f0]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 047f1]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 047f2]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 047f3]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 047f4]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 047f5]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 047f6]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 047f7]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 047f8]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 047f9]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 047fa]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 047fb]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 047fc]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 047fd]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 047fe]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 047ff]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 04800]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 04801]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 04802]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 04803]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 04804]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 04805]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 04806]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 04807]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 04808]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 04809]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 0480a]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 0480b]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 0480c]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 0480d]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 0480e]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 0480f]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 04810]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 04811]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 04812]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 04813]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 04814]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 04815]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 04816]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 04817]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 04818]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 04819]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 0481a]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 0481b]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 0481c]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 0481d]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 0481e]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 0481f]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 04820]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 04821]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 04822]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 04823]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 04824]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 04825]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 04826]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 04827]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 04828]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 04829]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 0482a]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 0482b]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 0482c]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 0482d]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 0482e]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 0482f]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 04830]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 04831]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 04832]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 04833]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 04834]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 04835]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 04836]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 04837]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 04838]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 04839]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+[ITEMDEF 0483a]
+NAME=carved stone floor
+DUPEITEM=047ea
+
+
+[ITEMDEF 0483b]
+DEFNAME=i_glowing_rune_1
+NAME=glowing rune
+CATEGORY=Buildings - Floors
+SUBSECTION=Glowing Rune
+DESCRIPTION=Glowing Rune 1
+
+[ITEMDEF 0483c]
+//glowing rune 1 (animation frame)
+
+[ITEMDEF 0483d]
+//glowing rune 1 (animation frame)
+
+[ITEMDEF 0483e]
+DEFNAME=i_glowing_rune_2
+NAME=glowing rune
+CATEGORY=Buildings - Floors
+SUBSECTION=Glowing Rune
+DESCRIPTION=Glowing Rune 2
+
+[ITEMDEF 0483f]
+//glowing rune 2 (animation frame)
+
+[ITEMDEF 04840]
+//glowing rune 2 (animation frame)
+
+[ITEMDEF 04841]
+DEFNAME=i_glowing_rune_3
+NAME=glowing rune
+CATEGORY=Buildings - Floors
+SUBSECTION=Glowing Rune
+DESCRIPTION=Glowing Rune 3
+
+[ITEMDEF 04842]
+//glowing rune 3 (animation frame)
+
+[ITEMDEF 04843]
+//glowing rune 3 (animation frame)
+
+[ITEMDEF 04844]
+DEFNAME=i_glowing_rune_4
+NAME=glowing rune
+CATEGORY=Buildings - Floors
+SUBSECTION=Glowing Rune
+DESCRIPTION=Glowing Rune 4
+
+[ITEMDEF 04845]
+//glowing rune 4 (animation frame)
+
+[ITEMDEF 04846]
+//glowing rune 4 (animation frame)
+
+[ITEMDEF 04847]
+DEFNAME=i_glowing_rune_5
+NAME=glowing rune
+CATEGORY=Buildings - Floors
+SUBSECTION=Glowing Rune
+DESCRIPTION=Glowing Rune 5
+
+[ITEMDEF 04848]
+//glowing rune 5 (animation frame)
+
+[ITEMDEF 04849]
+//glowing rune 5 (animation frame)
+
+[ITEMDEF 0484a]
+DEFNAME=i_glowing_rune_6
+NAME=glowing rune
+CATEGORY=Buildings - Floors
+SUBSECTION=Glowing Rune
+DESCRIPTION=Glowing Rune 6
+
+[ITEMDEF 0484b]
+//glowing rune 6 (animation frame)
+
+[ITEMDEF 0484c]
+//glowing rune 6 (animation frame)
+
+[ITEMDEF 0484d]
+DEFNAME=i_glowing_rune_7
+NAME=glowing rune
+CATEGORY=Buildings - Floors
+SUBSECTION=Glowing Rune
+DESCRIPTION=Glowing Rune 7
+
+[ITEMDEF 0484e]
+//glowing rune 7 (animation frame)
+
+[ITEMDEF 0484f]
+//glowing rune 7 (animation frame)
+
+[ITEMDEF 04850]
+DEFNAME=i_glowing_rune_8
+NAME=glowing rune
+CATEGORY=Buildings - Floors
+SUBSECTION=Glowing Rune
+DESCRIPTION=Glowing Rune 8
+
+[ITEMDEF 04851]
+//glowing rune 8 (animation frame)
+
+[ITEMDEF 04852]
+//glowing rune 8 (animation frame)
+
+[ITEMDEF 04853]
+DEFNAME=i_glowing_rune_9
+NAME=glowing rune
+CATEGORY=Buildings - Floors
+SUBSECTION=Glowing Rune
+DESCRIPTION=Glowing Rune 9
+
+[ITEMDEF 04854]
+//glowing rune 9 (animation frame)
+
+[ITEMDEF 04855]
+//glowing rune 9 (animation frame)
+
+[ITEMDEF 04856]
+DEFNAME=i_glowing_rune_10
+NAME=glowing rune
+CATEGORY=Buildings - Floors
+SUBSECTION=Glowing Rune
+DESCRIPTION=Glowing Rune 10
+
+[ITEMDEF 04857]
+//glowing rune 10 (animation frame)
+
+[ITEMDEF 04858]
+//glowing rune 10 (animation frame)
+
+[ITEMDEF 04859]
+DEFNAME=i_glowing_rune_11
+NAME=glowing rune
+CATEGORY=Buildings - Floors
+SUBSECTION=Glowing Rune
+DESCRIPTION=Glowing Rune 11
+
+[ITEMDEF 0485a]
+//glowing rune 11 (animation frame)
+
+[ITEMDEF 0485b]
+//glowing rune 11 (animation frame)
+
+[ITEMDEF 0485c]
+DEFNAME=i_glowing_rune_12
+NAME=glowing rune
+CATEGORY=Buildings - Floors
+SUBSECTION=Glowing Rune
+DESCRIPTION=Glowing Rune 12
+
+[ITEMDEF 0485d]
+//glowing rune 12 (animation frame)
+
+[ITEMDEF 0485e]
+//glowing rune 12 (animation frame)
+
+[ITEMDEF 0485f]
+DEFNAME=i_glowing_rune_13
+NAME=glowing rune
+CATEGORY=Buildings - Floors
+SUBSECTION=Glowing Rune
+DESCRIPTION=Glowing Rune 13
+
+[ITEMDEF 04860]
+//glowing rune 13 (animation frame)
+
+[ITEMDEF 04861]
+//glowing rune 13 (animation frame)
+
+[ITEMDEF 04862]
+DEFNAME=i_glowing_rune_14
+NAME=glowing rune
+CATEGORY=Buildings - Floors
+SUBSECTION=Glowing Rune
+DESCRIPTION=Glowing Rune 14
+
+[ITEMDEF 04863]
+//glowing rune 14 (animation frame)
+
+[ITEMDEF 04864]
+//glowing rune 14 (animation frame)
+
+[ITEMDEF 04865]
+DEFNAME=i_glowing_rune_15
+NAME=glowing rune
+CATEGORY=Buildings - Floors
+SUBSECTION=Glowing Rune
+DESCRIPTION=Glowing Rune 15
+
+[ITEMDEF 04866]
+//glowing rune 15 (animation frame)
+
+[ITEMDEF 04867]
+//glowing rune 15 (animation frame)
+
+[ITEMDEF 04868]
+DEFNAME=i_glowing_rune_16
+NAME=glowing rune
+CATEGORY=Buildings - Floors
+SUBSECTION=Glowing Rune
+DESCRIPTION=Glowing Rune 16
+
+[ITEMDEF 04869]
+//glowing rune 16 (animation frame)
+
+[ITEMDEF 0486a]
+//glowing rune 16 (animation frame)
+
+[ITEMDEF 0486b]
+DEFNAME=i_glowing_rune_17
+NAME=glowing rune
+CATEGORY=Buildings - Floors
+SUBSECTION=Glowing Rune
+DESCRIPTION=Glowing Rune 17
+
+[ITEMDEF 0486c]
+//glowing rune 17 (animation frame)
+
+[ITEMDEF 0486d]
+//glowing rune 17 (animation frame)
+
+[ITEMDEF 0486e]
+DEFNAME=i_glowing_rune_18
+NAME=glowing rune
+CATEGORY=Buildings - Floors
+SUBSECTION=Glowing Rune
+DESCRIPTION=Glowing Rune 18
+
+[ITEMDEF 0486f]
+//glowing rune 18 (animation frame)
+
+[ITEMDEF 04870]
+//glowing rune 18 (animation frame)
+
+[ITEMDEF 04871]
+DEFNAME=i_glowing_rune_19
+NAME=glowing rune
+CATEGORY=Buildings - Floors
+SUBSECTION=Glowing Rune
+DESCRIPTION=Glowing Rune 19
+
+[ITEMDEF 04872]
+//glowing rune 19 (animation frame)
+
+[ITEMDEF 04873]
+//glowing rune 19 (animation frame)
+
+[ITEMDEF 04874]
+DEFNAME=i_glowing_rune_20
+NAME=glowing rune
+CATEGORY=Buildings - Floors
+SUBSECTION=Glowing Rune
+DESCRIPTION=Glowing Rune 20
+
+[ITEMDEF 04875]
+//glowing rune 20 (animation frame)
+
+[ITEMDEF 04876]
+//glowing rune 20 (animation frame)
+
+[ITEMDEF 04877]
+DEFNAME=i_glowing_rune_21
+NAME=glowing rune
+CATEGORY=Buildings - Floors
+SUBSECTION=Glowing Rune
+DESCRIPTION=Glowing Rune 21
+
+[ITEMDEF 04878]
+//glowing rune 21 (animation frame)
+
+[ITEMDEF 04879]
+//glowing rune 21 (animation frame)
+
+[ITEMDEF 0487a]
+DEFNAME=i_glowing_rune_22
+NAME=glowing rune
+CATEGORY=Buildings - Floors
+SUBSECTION=Glowing Rune
+DESCRIPTION=Glowing Rune 22
+
+[ITEMDEF 0487b]
+//glowing rune 22 (animation frame)
+
+[ITEMDEF 0487c]
+//glowing rune 22 (animation frame)
+
+[ITEMDEF 0487d]
+DEFNAME=i_glowing_rune_23
+NAME=glowing rune
+CATEGORY=Buildings - Floors
+SUBSECTION=Glowing Rune
+DESCRIPTION=Glowing Rune 23
+
+[ITEMDEF 0487e]
+//glowing rune 23 (animation frame)
+
+[ITEMDEF 0487f]
+//glowing rune 23 (animation frame)
+
+[ITEMDEF 04880]
+DEFNAME=i_glowing_rune_24
+NAME=glowing rune
+CATEGORY=Buildings - Floors
+SUBSECTION=Glowing Rune
+DESCRIPTION=Glowing Rune 24
+
+[ITEMDEF 04881]
+//glowing rune 24 (animation frame)
+
+[ITEMDEF 04882]
+//glowing rune 24 (animation frame)
+
+[ITEMDEF 04883]
+DEFNAME=i_glowing_rune_25
+NAME=glowing rune
+CATEGORY=Buildings - Floors
+SUBSECTION=Glowing Rune
+DESCRIPTION=Glowing Rune 25
+
+[ITEMDEF 04884]
+//glowing rune 25 (animation frame)
+
+[ITEMDEF 04885]
+//glowing rune 25 (animation frame)
+
+
+[ITEMDEF 048dc]
+//Natural Paver
+DUPEITEM=047dc
+
+[ITEMDEF 048dd]
+//Natural Paver
+DUPEITEM=047dc
+
+[ITEMDEF 048de]
+//Natural Paver
+DUPEITEM=047dc
+
+[ITEMDEF 048df]
+//Natural Paver
+DUPEITEM=047dc
+
+
+[ITEMDEF 048f6]
+DEFNAME=i_floor_mosaic_serpent
+NAME=floor
+CATEGORY=Buildings - Floors
+SUBSECTION=Mosaic (serpent)
+DESCRIPTION=Floor
+DUPELIST=048f7,04900,04901,04902,0490a,0490b,0490c,0490d,04912,04914,04915,04916,04917,04918,0491c,0491d,0491e,0491f,04920,04921,04926,04927,04928,04932,04933,04934,04935,04936,04937,04938,04939,0493a,0493e,0493f,04940,04941,04942,04943,04944,04945,04946,04947,04948,04949,0494a,0494b,0494c,0494f,04950,04951,04952,04953,04954,04955,04956,04957,04958,04959,0495a,0495b,0495c,0495d,04961,04962,04963,04964,04965,04967,04968,04969,0496a,0496b,0496c,0496d,0496e,0496f,04970,04973,04974,04975,04976,04977,04978,04979,0497a,0497b,0497c,0497f,04980,04981,04986,04987,04989,0498a,0498b,0498c,0498d,0498e,04990,04991,04992,04993,04994,04995,04996,04997,04998,04999,0499a,0499b,0499c,0499e,0499f,049a4,049a5,049a9,049aa,049ab,049ac,049ad,049ae,049af,049b0,049b1,049b6,049b7,049b8,049bc,049bd,049c4,049c5,049c6,049c7
+
+[ITEMDEF 048f7]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+
+[ITEMDEF 04900]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04901]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04902]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+
+[ITEMDEF 0490a]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 0490b]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 0490c]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 0490d]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+
+[ITEMDEF 04912]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04913]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04914]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04915]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04916]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04917]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04918]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+
+[ITEMDEF 0491c]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 0491d]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 0491e]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 0491f]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04920]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04921]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+
+[ITEMDEF 04926]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04927]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04928]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+
+//[ITEMDEF 04931]	//unused
+
+[ITEMDEF 04932]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04933]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04934]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04935]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04936]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04937]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04938]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04939]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 0493a]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+
+//[ITEMDEF 0493d]	//unused
+
+[ITEMDEF 0493e]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 0493f]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04940]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04941]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04942]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04943]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04944]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04945]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04946]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04947]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04948]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04949]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 0494a]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 0494b]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 0494c]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+
+[ITEMDEF 0494f]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04950]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04951]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04952]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04953]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04954]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04955]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04956]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04957]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04958]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04959]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 0495a]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 0495b]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 0495c]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 0495d]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+
+[ITEMDEF 04961]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04962]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04963]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04964]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04965]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+
+[ITEMDEF 04967]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04968]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04969]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 0496a]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 0496b]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 0496c]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 0496d]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 0496e]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 0496f]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04970]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+
+//[ITEMDEF 04972]	//unused
+
+[ITEMDEF 04973]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04974]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04975]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04976]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04977]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04978]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04979]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 0497a]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 0497b]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 0497c]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+
+[ITEMDEF 0497f]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04980]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04981]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+
+[ITEMDEF 04986]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04987]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+
+[ITEMDEF 04989]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 0498a]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 0498b]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 0498c]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 0498d]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 0498e]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+
+[ITEMDEF 04990]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04991]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04992]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04993]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04994]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04995]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04996]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04997]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04998]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 04999]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 0499a]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 0499b]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 0499c]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+
+[ITEMDEF 0499e]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 0499f]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+
+[ITEMDEF 049a4]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 049a5]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+//[ITEMDEF 049a6]	//unused
+
+
+[ITEMDEF 049a9]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 049aa]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 049ab]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 049ac]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 049ad]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 049ae]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 049af]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 049b0]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 049b1]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+
+[ITEMDEF 049b6]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 049b7]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 049b8]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+
+[ITEMDEF 049bc]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 049bd]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+
+[ITEMDEF 049c4]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 049c5]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 049c6]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+[ITEMDEF 049c7]
+//Mosaic (serpent)
+DUPEITEM=048f6
+
+
+[ITEMDEF 04d2b]
+DEFNAME=i_sa_floor_misc3
+NAME=floor
+CATEGORY=Buildings - Floors
+SUBSECTION=Tile Floor (SA Misc 3)
+DESCRIPTION=Floor
+DUPELIST=04d2c,04d2d,04d2e,04de6,04de7,04de8,04de9,04dea,04deb,04dec,04ded,04dee,04def,04df0,04df1,04df2
+
+[ITEMDEF 04d2c]
+//Tile Floor (SA Misc 3)
+DUPEITEM=04d2b
+
+[ITEMDEF 04d2d]
+//Tile Floor (SA Misc 3)
+DUPEITEM=04d2b
+
+[ITEMDEF 04d2e]
+//Tile Floor (SA Misc 3)
+DUPEITEM=04d2b
+
+[ITEMDEF 04de6]
+//Tile Floor (SA Misc 3)
+DUPEITEM=04d2b
+
+[ITEMDEF 04de7]
+//Tile Floor (SA Misc 3)
+DUPEITEM=04d2b
+
+[ITEMDEF 04de8]
+//Tile Floor (SA Misc 3)
+DUPEITEM=04d2b
+
+[ITEMDEF 04de9]
+//Tile Floor (SA Misc 3)
+DUPEITEM=04d2b
+
+[ITEMDEF 04dea]
+//Tile Floor (SA Misc 3)
+DUPEITEM=04d2b
+
+[ITEMDEF 04deb]
+//Tile Floor (SA Misc 3)
+DUPEITEM=04d2b
+
+[ITEMDEF 04dec]
+//Tile Floor (SA Misc 3)
+DUPEITEM=04d2b
+
+[ITEMDEF 04ded]
+//Tile Floor (SA Misc 3)
+DUPEITEM=04d2b
+
+[ITEMDEF 04dee]
+//Tile Floor (SA Misc 3)
+DUPEITEM=04d2b
+
+[ITEMDEF 04def]
+//Tile Floor (SA Misc 3)
+DUPEITEM=04d2b
+
+[ITEMDEF 04df0]
+//Tile Floor (SA Misc 3)
+DUPEITEM=04d2b
+
+[ITEMDEF 04df1]
+//Tile Floor (SA Misc 3)
+DUPEITEM=04d2b
+
+[ITEMDEF 04df2]
+//Tile Floor (SA Misc 3)
+DUPEITEM=04d2b
+
+
+[ITEMDEF 04f68]
+DEFNAME=i_sa_floor_misc4
+CATEGORY=Buildings - Floors
+SUBSECTION=Tile Floor (SA Misc 4)
+DESCRIPTION=Floor
+DUPELIST=04f69,04f6a,04f6b,04f6c,04f6d,04f6e,04f6f,04f70,04f71,04f72,04f73,04f74,04f75,04f76,04f77,04f78,04f79
+
+[ITEMDEF 04f69]
+//Tile Floor (SA Misc 4)
+DUPEITEM=04f68
+
+[ITEMDEF 04f6a]
+//Tile Floor (SA Misc 4)
+DUPEITEM=04f68
+
+[ITEMDEF 04f6b]
+//Tile Floor (SA Misc 4)
+DUPEITEM=04f68
+
+[ITEMDEF 04f6c]
+//Tile Floor (SA Misc 4)
+DUPEITEM=04f68
+
+[ITEMDEF 04f6d]
+//Tile Floor (SA Misc 4)
+DUPEITEM=04f68
+
+[ITEMDEF 04f6e]
+//Tile Floor (SA Misc 4)
+DUPEITEM=04f68
+
+[ITEMDEF 04f6f]
+//Tile Floor (SA Misc 4)
+DUPEITEM=04f68
+
+[ITEMDEF 04f70]
+//Tile Floor (SA Misc 4)
+DUPEITEM=04f68
+
+[ITEMDEF 04f71]
+//Tile Floor (SA Misc 4)
+DUPEITEM=04f68
+
+[ITEMDEF 04f72]
+//Tile Floor (SA Misc 4)
+DUPEITEM=04f68
+
+[ITEMDEF 04f73]
+//Tile Floor (SA Misc 4)
+DUPEITEM=04f68
+
+[ITEMDEF 04f74]
+//Tile Floor (SA Misc 4)
+DUPEITEM=04f68
+
+[ITEMDEF 04f75]
+//Tile Floor (SA Misc 4)
+DUPEITEM=04f68
+
+[ITEMDEF 04f76]
+//Tile Floor (SA Misc 4)
+DUPEITEM=04f68
+
+[ITEMDEF 04f77]
+//Tile Floor (SA Misc 4)
+DUPEITEM=04f68
+
+[ITEMDEF 04f78]
+//Tile Floor (SA Misc 4)
+DUPEITEM=04f68
+
+[ITEMDEF 04f79]
+//Tile Floor (SA Misc 4)
+DUPEITEM=04f68
+
+
+[ITEMDEF 050de]
+DEFNAME=i_sa_floor_misc5
+CATEGORY=Buildings - Floors
+SUBSECTION=Patterned Floor (SA Misc 5)
+DESCRIPTION=Floor
+DUPELIST=050df,050e0,050e1,050e2,050e3,050e4,050e5,050e6,050e7,050e8,050e9,050ea,050eb,050ec,050ed,050ee
+
+[ITEMDEF 050df]
+//Patterned Floor (SA Misc 5)
+DUPEITEM=050de
+
+[ITEMDEF 050e0]
+//Patterned Floor (SA Misc 5)
+DUPEITEM=050de
+
+[ITEMDEF 050e1]
+//Patterned Floor (SA Misc 5)
+DUPEITEM=050de
+
+[ITEMDEF 050e2]
+//Patterned Floor (SA Misc 5)
+DUPEITEM=050de
+
+[ITEMDEF 050e3]
+//Patterned Floor (SA Misc 5)
+DUPEITEM=050de
+
+[ITEMDEF 050e4]
+//Patterned Floor (SA Misc 5)
+DUPEITEM=050de
+
+[ITEMDEF 050e5]
+//Patterned Floor (SA Misc 5)
+DUPEITEM=050de
+
+[ITEMDEF 050e6]
+//Patterned Floor (SA Misc 5)
+DUPEITEM=050de
+
+[ITEMDEF 050e7]
+//Patterned Floor (SA Misc 5)
+DUPEITEM=050de
+
+[ITEMDEF 050e8]
+//Patterned Floor (SA Misc 5)
+DUPEITEM=050de
+
+[ITEMDEF 050e9]
+//Patterned Floor (SA Misc 5)
+DUPEITEM=050de
+
+[ITEMDEF 050ea]
+//Patterned Floor (SA Misc 5)
+DUPEITEM=050de
+
+[ITEMDEF 050eb]
+//Patterned Floor (SA Misc 5)
+DUPEITEM=050de
+
+[ITEMDEF 050ec]
+//Patterned Floor (SA Misc 5)
+DUPEITEM=050de
+
+[ITEMDEF 050ed]
+//Patterned Floor (SA Misc 5)
+DUPEITEM=050de
+
+[ITEMDEF 050ee]
+//Patterned Floor (SA Misc 5)
+DUPEITEM=050de
+
+[ITEMDEF 050ef]
+DEFNAME=i_sa_floor_misc6
+CATEGORY=Buildings - Floors
+SUBSECTION=Patterned Floor (SA Misc 6)
+DESCRIPTION=Floor
+DUPELIST=050f0,050f1,050f2,050f3,050f4,050f5,050f6,050f7
+
+[ITEMDEF 050f0]
+//Patterned Floor (SA Misc 6)
+DUPEITEM=050ef
+
+[ITEMDEF 050f1]
+//Patterned Floor (SA Misc 6)
+DUPEITEM=050ef
+
+[ITEMDEF 050f2]
+//Patterned Floor (SA Misc 6)
+DUPEITEM=050ef
+
+[ITEMDEF 050f3]
+//Patterned Floor (SA Misc 6)
+DUPEITEM=050ef
+
+[ITEMDEF 050f4]
+//Patterned Floor (SA Misc 6)
+DUPEITEM=050ef
+
+[ITEMDEF 050f5]
+//Patterned Floor (SA Misc 6)
+DUPEITEM=050ef
+
+[ITEMDEF 050f6]
+//Patterned Floor (SA Misc 6)
+DUPEITEM=050ef
+
+[ITEMDEF 050f7]
+//Patterned Floor (SA Misc 6)
+DUPEITEM=050ef
+
+
+//[ITEMDEF 0514a]	//unused
+//[ITEMDEF 0514b]	//unused
+//[ITEMDEF 0514c]	//unused
+//[ITEMDEF 0514d]	//unused
+//[ITEMDEF 0514e]	//unused
+//[ITEMDEF 0514f]	//unused
+
+[ITEMDEF 05150]
+DEFNAME=i_sa_floor_virtue_3
+CATEGORY=Buildings - Floors
+SUBSECTION=SA Virtue Floor 3
+DESCRIPTION=Floor Tile
+DUPELIST=05151,05152,05153,05154,05155,05156,05157,05162,05163,05164,05165,05166,05167,05168,05169,0516a,0516b,0516c,0516d,05175,05176,05177,05178,05179,0517a,0517b,0517c,0517d,0517e,0517f,05180,05181,05182,05188,05189,0518a,0518b,0518c,0518d,0518e,0518f,05190,05191,05192,05193,05194,05195,05196,05197,0519b,0519c,0519d,0519e,0519f,051a0,051a1,051a2,051a3,051a4,051a5,051a6,051a7,051a8,051a9,051aa,051ab,051ac,051af,051b0,051b1,051b2,051b3,051b4,051b5,051b6,051b7,051b8,051b9,051ba,051bb,051bc,051bd,051be,051bf,051c0,051c2,051c3,051c4,051c5,051c6,051c7,051c8,051c9,051ca,051cb,051cc,051cd,051ce,051cf,051d0,051d1,051d2,051d3,051d4,051d5,051d6,051d7,051d8,051d9,051da,051db,051dc,051dd,051de,051df,051e0,051e1,051e2,051e3,051e4,051e5,051e6,051e7,051e8,051e9,051ea,051eb,051ec,051ed,051ee,051ef,051f0,051f1,051f2,051f3,051f4,051f5,051f6,051f7,051f8,051f9,051fa,051fb,051fc,051fd,051fe,051ff,05200,05201,05202,05203,05204,05205,05206,05207,05208,05209,0520a,0520b,0520c,0520d,0520e,0520f,05210,05211,05212,05213,05214,5215,05216,05217,05218,05219,0521a,0521b,0521c,0521d,0521e,0521f,05220,05221,05222,05223,05224,05225,05226,05227,05228,05229,0522a,0522b,0522c,0522d,0522e,0522f,05230,05231,05232,05233,05234,05235,05236,05237,05238,05239,0523a,0523b,0523c,0523d,0523e,0523f,05240,05241,05242,05243,05244,05245,05246,05247,05248,05249,0524a,0524b,0524c,0524d,0524f,05250,05251,05252,05253,05254,05255,05256,05257,05258,05259,0525a,0525b,0525c,0525d,0525e,0525f,05260,05263,05264,05265,05266,05267,05268,05269,0526a,0526b,0526c,0526d,0526e,0526f,05270,05271,05272,05273,05274,05277,05278,05279,0527a,0527b,0527c,0527d,0527e,0527f,05280,05281,05282,05283,05284,05285,05286,05287,0528c,0528d,0528e,0528f,05290,05291,05292,05293,05294,05295,05296,05297,05298,05299,0529a,052a2,052a3,052a4,052a5,052a6,052a7,052a8,052a9,052aa,052ab,052ac,052ad,052b8,052b9,052ba,052bb,052bc,052bd,052be
+
+[ITEMDEF 05151]
+DUPEITEM=0514a
+
+[ITEMDEF 05152]
+DUPEITEM=0514a
+
+[ITEMDEF 05153]
+DUPEITEM=0514a
+
+[ITEMDEF 05154]
+DUPEITEM=0514a
+
+[ITEMDEF 05155]
+DUPEITEM=0514a
+
+[ITEMDEF 05156]
+DUPEITEM=0514a
+
+[ITEMDEF 05157]
+DUPEITEM=0514a
+
+//[ITEMDEF 05158]	//unused
+//[ITEMDEF 05159]	//unused
+//[ITEMDEF 0515a]	//unused
+//[ITEMDEF 0515b]	//unused
+//[ITEMDEF 0515c]	//unused
+//[ITEMDEF 0515d]	//unused
+//[ITEMDEF 0515e]	//unused
+//[ITEMDEF 0515f]	//unused
+//[ITEMDEF 05160]	//unused
+//[ITEMDEF 05161]	//unused
+
+[ITEMDEF 05162]
+DUPEITEM=0514a
+
+[ITEMDEF 05163]
+DUPEITEM=0514a
+
+[ITEMDEF 05164]
+DUPEITEM=0514a
+
+[ITEMDEF 05165]
+DUPEITEM=0514a
+
+[ITEMDEF 05166]
+DUPEITEM=0514a
+
+[ITEMDEF 05167]
+DUPEITEM=0514a
+
+[ITEMDEF 05168]
+DUPEITEM=0514a
+
+[ITEMDEF 05169]
+DUPEITEM=0514a
+
+[ITEMDEF 0516a]
+DUPEITEM=0514a
+
+[ITEMDEF 0516b]
+DUPEITEM=0514a
+
+[ITEMDEF 0516c]
+DUPEITEM=0514a
+
+[ITEMDEF 0516d]
+DUPEITEM=0514a
+
+//[ITEMDEF 0516e]	//unused
+//[ITEMDEF 05174]	//unused
+
+[ITEMDEF 05175]
+DUPEITEM=0514a
+
+[ITEMDEF 05176]
+DUPEITEM=0514a
+
+[ITEMDEF 05177]
+DUPEITEM=0514a
+
+[ITEMDEF 05178]
+DUPEITEM=0514a
+
+[ITEMDEF 05179]
+DUPEITEM=0514a
+
+[ITEMDEF 0517a]
+DUPEITEM=0514a
+
+[ITEMDEF 0517b]
+DUPEITEM=0514a
+
+[ITEMDEF 0517c]
+DUPEITEM=0514a
+
+[ITEMDEF 0517d]
+DUPEITEM=0514a
+
+[ITEMDEF 0517e]
+DUPEITEM=0514a
+
+[ITEMDEF 0517f]
+DUPEITEM=0514a
+
+[ITEMDEF 05180]
+DUPEITEM=0514a
+
+[ITEMDEF 05181]
+DUPEITEM=0514a
+
+[ITEMDEF 05182]
+DUPEITEM=0514a
+
+//[ITEMDEF 05183]	//unused
+//[ITEMDEF 05187]	//unused
+
+[ITEMDEF 05188]
+DUPEITEM=0514a
+
+[ITEMDEF 05189]
+DUPEITEM=0514a
+
+[ITEMDEF 0518a]
+DUPEITEM=0514a
+
+[ITEMDEF 0518b]
+DUPEITEM=0514a
+
+[ITEMDEF 0518c]
+DUPEITEM=0514a
+
+[ITEMDEF 0518d]
+DUPEITEM=0514a
+
+[ITEMDEF 0518e]
+DUPEITEM=0514a
+
+[ITEMDEF 0518f]
+DUPEITEM=0514a
+
+[ITEMDEF 05190]
+DUPEITEM=0514a
+
+[ITEMDEF 05191]
+DUPEITEM=0514a
+
+[ITEMDEF 05192]
+DUPEITEM=0514a
+
+[ITEMDEF 05193]
+DUPEITEM=0514a
+
+[ITEMDEF 05194]
+DUPEITEM=0514a
+
+[ITEMDEF 05195]
+DUPEITEM=0514a
+
+[ITEMDEF 05196]
+DUPEITEM=0514a
+
+[ITEMDEF 05197]
+DUPEITEM=0514a
+
+//[ITEMDEF 05198]	//unused
+//[ITEMDEF 0519a]	//unused
+
+[ITEMDEF 0519b]
+DUPEITEM=0514a
+
+[ITEMDEF 0519c]
+DUPEITEM=0514a
+
+[ITEMDEF 0519d]
+DUPEITEM=0514a
+
+[ITEMDEF 0519e]
+DUPEITEM=0514a
+
+[ITEMDEF 0519f]
+DUPEITEM=0514a
+
+[ITEMDEF 051a0]
+DUPEITEM=0514a
+
+[ITEMDEF 051a1]
+DUPEITEM=0514a
+
+[ITEMDEF 051a2]
+DUPEITEM=0514a
+
+[ITEMDEF 051a3]
+DUPEITEM=0514a
+
+[ITEMDEF 051a4]
+DUPEITEM=0514a
+
+[ITEMDEF 051a5]
+DUPEITEM=0514a
+
+[ITEMDEF 051a6]
+DUPEITEM=0514a
+
+[ITEMDEF 051a7]
+DUPEITEM=0514a
+
+[ITEMDEF 051a8]
+DUPEITEM=0514a
+
+[ITEMDEF 051a9]
+DUPEITEM=0514a
+
+[ITEMDEF 051aa]
+DUPEITEM=0514a
+
+[ITEMDEF 051ab]
+DUPEITEM=0514a
+
+[ITEMDEF 051ac]
+DUPEITEM=0514a
+
+//[ITEMDEF 051ad]	//unused
+//[ITEMDEF 051ae]	//unused
+
+[ITEMDEF 051af]
+DUPEITEM=0514a
+
+[ITEMDEF 051b0]
+DUPEITEM=0514a
+
+[ITEMDEF 051b1]
+DUPEITEM=0514a
+
+[ITEMDEF 051b2]
+DUPEITEM=0514a
+
+[ITEMDEF 051b3]
+DUPEITEM=0514a
+
+[ITEMDEF 051b4]
+DUPEITEM=0514a
+
+[ITEMDEF 051b5]
+DUPEITEM=0514a
+
+[ITEMDEF 051b6]
+DUPEITEM=0514a
+
+[ITEMDEF 051b7]
+DUPEITEM=0514a
+
+[ITEMDEF 051b8]
+DUPEITEM=0514a
+
+[ITEMDEF 051b9]
+DUPEITEM=0514a
+
+[ITEMDEF 051ba]
+DUPEITEM=0514a
+
+[ITEMDEF 051bb]
+DUPEITEM=0514a
+
+[ITEMDEF 051bc]
+DUPEITEM=0514a
+
+[ITEMDEF 051bd]
+DUPEITEM=0514a
+
+[ITEMDEF 051be]
+DUPEITEM=0514a
+
+[ITEMDEF 051bf]
+DUPEITEM=0514a
+
+[ITEMDEF 051c0]
+DUPEITEM=0514a
+
+//[ITEMDEF 051c1]	//unused
+
+[ITEMDEF 051c2]
+DUPEITEM=0514a
+
+[ITEMDEF 051c3]
+DUPEITEM=0514a
+
+[ITEMDEF 051c4]
+DUPEITEM=0514a
+
+[ITEMDEF 051c5]
+DUPEITEM=0514a
+
+[ITEMDEF 051c6]
+DUPEITEM=0514a
+
+[ITEMDEF 051c7]
+DUPEITEM=0514a
+
+[ITEMDEF 051c8]
+DUPEITEM=0514a
+
+[ITEMDEF 051c9]
+DUPEITEM=0514a
+
+[ITEMDEF 051ca]
+DUPEITEM=0514a
+
+[ITEMDEF 051cb]
+DUPEITEM=0514a
+
+[ITEMDEF 051cc]
+DUPEITEM=0514a
+
+[ITEMDEF 051cd]
+DUPEITEM=0514a
+
+[ITEMDEF 051ce]
+DUPEITEM=0514a
+
+[ITEMDEF 051cf]
+DUPEITEM=0514a
+
+[ITEMDEF 051d0]
+DUPEITEM=0514a
+
+[ITEMDEF 051d1]
+DUPEITEM=0514a
+
+[ITEMDEF 051d2]
+DUPEITEM=0514a
+
+[ITEMDEF 051d3]
+DUPEITEM=0514a
+
+[ITEMDEF 051d4]
+DUPEITEM=0514a
+
+[ITEMDEF 051d5]
+DUPEITEM=0514a
+
+[ITEMDEF 051d6]
+DUPEITEM=0514a
+
+[ITEMDEF 051d7]
+DUPEITEM=0514a
+
+[ITEMDEF 051d8]
+DUPEITEM=0514a
+
+[ITEMDEF 051d9]
+DUPEITEM=0514a
+
+[ITEMDEF 051da]
+DUPEITEM=0514a
+
+[ITEMDEF 051db]
+DUPEITEM=0514a
+
+[ITEMDEF 051dc]
+DUPEITEM=0514a
+
+[ITEMDEF 051dd]
+DUPEITEM=0514a
+
+[ITEMDEF 051de]
+DUPEITEM=0514a
+
+[ITEMDEF 051df]
+DUPEITEM=0514a
+
+[ITEMDEF 051e0]
+DUPEITEM=0514a
+
+[ITEMDEF 051e1]
+DUPEITEM=0514a
+
+[ITEMDEF 051e2]
+DUPEITEM=0514a
+
+[ITEMDEF 051e3]
+DUPEITEM=0514a
+
+[ITEMDEF 051e4]
+DUPEITEM=0514a
+
+[ITEMDEF 051e5]
+DUPEITEM=0514a
+
+[ITEMDEF 051e6]
+DUPEITEM=0514a
+
+[ITEMDEF 051e7]
+DUPEITEM=0514a
+
+[ITEMDEF 051e8]
+DUPEITEM=0514a
+
+[ITEMDEF 051e9]
+DUPEITEM=0514a
+
+[ITEMDEF 051ea]
+DUPEITEM=0514a
+
+[ITEMDEF 051eb]
+DUPEITEM=0514a
+
+[ITEMDEF 051ec]
+DUPEITEM=0514a
+
+[ITEMDEF 051ed]
+DUPEITEM=0514a
+
+[ITEMDEF 051ee]
+DUPEITEM=0514a
+
+[ITEMDEF 051ef]
+DUPEITEM=0514a
+
+[ITEMDEF 051f0]
+DUPEITEM=0514a
+
+[ITEMDEF 051f1]
+DUPEITEM=0514a
+
+[ITEMDEF 051f2]
+DUPEITEM=0514a
+
+[ITEMDEF 051f3]
+DUPEITEM=0514a
+
+[ITEMDEF 051f4]
+DUPEITEM=0514a
+
+[ITEMDEF 051f5]
+DUPEITEM=0514a
+
+[ITEMDEF 051f6]
+DUPEITEM=0514a
+
+[ITEMDEF 051f7]
+DUPEITEM=0514a
+
+[ITEMDEF 051f8]
+DUPEITEM=0514a
+
+[ITEMDEF 051f9]
+DUPEITEM=0514a
+
+[ITEMDEF 051fa]
+DUPEITEM=0514a
+
+[ITEMDEF 051fb]
+DUPEITEM=0514a
+
+[ITEMDEF 051fc]
+DUPEITEM=0514a
+
+[ITEMDEF 051fd]
+DUPEITEM=0514a
+
+[ITEMDEF 051fe]
+DUPEITEM=0514a
+
+[ITEMDEF 051ff]
+DUPEITEM=0514a
+
+[ITEMDEF 05200]
+DUPEITEM=0514a
+
+[ITEMDEF 05201]
+DUPEITEM=0514a
+
+[ITEMDEF 05202]
+DUPEITEM=0514a
+
+[ITEMDEF 05203]
+DUPEITEM=0514a
+
+[ITEMDEF 05204]
+DUPEITEM=0514a
+
+[ITEMDEF 05205]
+DUPEITEM=0514a
+
+[ITEMDEF 05206]
+DUPEITEM=0514a
+
+[ITEMDEF 05207]
+DUPEITEM=0514a
+
+[ITEMDEF 05208]
+DUPEITEM=0514a
+
+[ITEMDEF 05209]
+DUPEITEM=0514a
+
+[ITEMDEF 0520a]
+DUPEITEM=0514a
+
+[ITEMDEF 0520b]
+DUPEITEM=0514a
+
+[ITEMDEF 0520c]
+DUPEITEM=0514a
+
+[ITEMDEF 0520d]
+DUPEITEM=0514a
+
+[ITEMDEF 0520e]
+DUPEITEM=0514a
+
+[ITEMDEF 0520f]
+DUPEITEM=0514a
+
+[ITEMDEF 05210]
+DUPEITEM=0514a
+
+[ITEMDEF 05211]
+DUPEITEM=0514a
+
+[ITEMDEF 05212]
+DUPEITEM=0514a
+
+[ITEMDEF 05213]
+DUPEITEM=0514a
+
+[ITEMDEF 05214]
+DUPEITEM=0514a
+
+[ITEMDEF 05215]
+DUPEITEM=0514a
+
+[ITEMDEF 05216]
+DUPEITEM=0514a
+
+[ITEMDEF 05217]
+DUPEITEM=0514a
+
+[ITEMDEF 05218]
+DUPEITEM=0514a
+
+[ITEMDEF 05219]
+DUPEITEM=0514a
+
+[ITEMDEF 0521a]
+DUPEITEM=0514a
+
+[ITEMDEF 0521b]
+DUPEITEM=0514a
+
+[ITEMDEF 0521c]
+DUPEITEM=0514a
+
+[ITEMDEF 0521d]
+DUPEITEM=0514a
+
+[ITEMDEF 0521e]
+DUPEITEM=0514a
+
+[ITEMDEF 0521f]
+DUPEITEM=0514a
+
+[ITEMDEF 05220]
+DUPEITEM=0514a
+
+[ITEMDEF 05221]
+DUPEITEM=0514a
+
+[ITEMDEF 05222]
+DUPEITEM=0514a
+
+[ITEMDEF 05223]
+DUPEITEM=0514a
+
+[ITEMDEF 05224]
+DUPEITEM=0514a
+
+[ITEMDEF 05225]
+DUPEITEM=0514a
+
+[ITEMDEF 05226]
+DUPEITEM=0514a
+
+[ITEMDEF 05227]
+DUPEITEM=0514a
+
+[ITEMDEF 05228]
+DUPEITEM=0514a
+
+[ITEMDEF 05229]
+DUPEITEM=0514a
+
+[ITEMDEF 0522a]
+DUPEITEM=0514a
+
+[ITEMDEF 0522b]
+DUPEITEM=0514a
+
+[ITEMDEF 0522c]
+DUPEITEM=0514a
+
+[ITEMDEF 0522d]
+DUPEITEM=0514a
+
+[ITEMDEF 0522e]
+DUPEITEM=0514a
+
+[ITEMDEF 0522f]
+DUPEITEM=0514a
+
+[ITEMDEF 05230]
+DUPEITEM=0514a
+
+[ITEMDEF 05231]
+DUPEITEM=0514a
+
+[ITEMDEF 05232]
+DUPEITEM=0514a
+
+[ITEMDEF 05233]
+DUPEITEM=0514a
+
+[ITEMDEF 05234]
+DUPEITEM=0514a
+
+[ITEMDEF 05235]
+DUPEITEM=0514a
+
+[ITEMDEF 05236]
+DUPEITEM=0514a
+
+[ITEMDEF 05237]
+DUPEITEM=0514a
+
+[ITEMDEF 05238]
+DUPEITEM=0514a
+
+[ITEMDEF 05239]
+DUPEITEM=0514a
+
+[ITEMDEF 0523a]
+DUPEITEM=0514a
+
+[ITEMDEF 0523b]
+DUPEITEM=0514a
+
+[ITEMDEF 0523c]
+DUPEITEM=0514a
+
+[ITEMDEF 0523d]
+DUPEITEM=0514a
+
+[ITEMDEF 0523e]
+DUPEITEM=0514a
+
+[ITEMDEF 0523f]
+DUPEITEM=0514a
+
+[ITEMDEF 05240]
+DUPEITEM=0514a
+
+[ITEMDEF 05241]
+DUPEITEM=0514a
+
+[ITEMDEF 05242]
+DUPEITEM=0514a
+
+[ITEMDEF 05243]
+DUPEITEM=0514a
+
+[ITEMDEF 05244]
+DUPEITEM=0514a
+
+[ITEMDEF 05245]
+DUPEITEM=0514a
+
+[ITEMDEF 05246]
+DUPEITEM=0514a
+
+[ITEMDEF 05247]
+DUPEITEM=0514a
+
+[ITEMDEF 05248]
+DUPEITEM=0514a
+
+[ITEMDEF 05249]
+DUPEITEM=0514a
+
+[ITEMDEF 0524a]
+DUPEITEM=0514a
+
+[ITEMDEF 0524b]
+DUPEITEM=0514a
+
+[ITEMDEF 0524c]
+DUPEITEM=0514a
+
+[ITEMDEF 0524d]
+DUPEITEM=0514a
+
+//[ITEMDEF 0524e]	//unused
+
+[ITEMDEF 0524f]
+DUPEITEM=0514a
+
+[ITEMDEF 05250]
+DUPEITEM=0514a
+
+[ITEMDEF 05251]
+DUPEITEM=0514a
+
+[ITEMDEF 05252]
+DUPEITEM=0514a
+
+[ITEMDEF 05253]
+DUPEITEM=0514a
+
+[ITEMDEF 05254]
+DUPEITEM=0514a
+
+[ITEMDEF 05255]
+DUPEITEM=0514a
+
+[ITEMDEF 05256]
+DUPEITEM=0514a
+
+[ITEMDEF 05257]
+DUPEITEM=0514a
+
+[ITEMDEF 05258]
+DUPEITEM=0514a
+
+[ITEMDEF 05259]
+DUPEITEM=0514a
+
+[ITEMDEF 0525a]
+DUPEITEM=0514a
+
+[ITEMDEF 0525b]
+DUPEITEM=0514a
+
+[ITEMDEF 0525c]
+DUPEITEM=0514a
+
+[ITEMDEF 0525d]
+DUPEITEM=0514a
+
+[ITEMDEF 0525e]
+DUPEITEM=0514a
+
+[ITEMDEF 0525f]
+DUPEITEM=0514a
+
+[ITEMDEF 05260]
+DUPEITEM=0514a
+
+//[ITEMDEF 05261]	//unused
+//[ITEMDEF 05262]	//unused
+
+[ITEMDEF 05263]
+DUPEITEM=0514a
+
+[ITEMDEF 05264]
+DUPEITEM=0514a
+
+[ITEMDEF 05265]
+DUPEITEM=0514a
+
+[ITEMDEF 05266]
+DUPEITEM=0514a
+
+[ITEMDEF 05267]
+DUPEITEM=0514a
+
+[ITEMDEF 05268]
+DUPEITEM=0514a
+
+[ITEMDEF 05269]
+DUPEITEM=0514a
+
+[ITEMDEF 0526a]
+DUPEITEM=0514a
+
+[ITEMDEF 0526b]
+DUPEITEM=0514a
+
+[ITEMDEF 0526c]
+DUPEITEM=0514a
+
+[ITEMDEF 0526d]
+DUPEITEM=0514a
+
+[ITEMDEF 0526e]
+DUPEITEM=0514a
+
+[ITEMDEF 0526f]
+DUPEITEM=0514a
+
+[ITEMDEF 05270]
+DUPEITEM=0514a
+
+[ITEMDEF 05271]
+DUPEITEM=0514a
+
+[ITEMDEF 05272]
+DUPEITEM=0514a
+
+[ITEMDEF 05273]
+DUPEITEM=0514a
+
+[ITEMDEF 05274]
+DUPEITEM=0514a
+
+//[ITEMDEF 05275]	//unused
+//[ITEMDEF 05276]	//unused
+
+[ITEMDEF 05277]
+DUPEITEM=0514a
+
+[ITEMDEF 05278]
+DUPEITEM=0514a
+
+[ITEMDEF 05279]
+DUPEITEM=0514a
+
+[ITEMDEF 0527a]
+DUPEITEM=0514a
+
+[ITEMDEF 0527b]
+DUPEITEM=0514a
+
+[ITEMDEF 0527c]
+DUPEITEM=0514a
+
+[ITEMDEF 0527d]
+DUPEITEM=0514a
+
+[ITEMDEF 0527e]
+DUPEITEM=0514a
+
+[ITEMDEF 0527f]
+DUPEITEM=0514a
+
+[ITEMDEF 05280]
+DUPEITEM=0514a
+
+[ITEMDEF 05281]
+DUPEITEM=0514a
+
+[ITEMDEF 05282]
+DUPEITEM=0514a
+
+[ITEMDEF 05283]
+DUPEITEM=0514a
+
+[ITEMDEF 05284]
+DUPEITEM=0514a
+
+[ITEMDEF 05285]
+DUPEITEM=0514a
+
+[ITEMDEF 05286]
+DUPEITEM=0514a
+
+[ITEMDEF 05287]
+DUPEITEM=0514a
+
+//[ITEMDEF 05288]	//unused
+//[ITEMDEF 05289]	//unused
+//[ITEMDEF 0528b]	//unused
+
+[ITEMDEF 0528c]
+DUPEITEM=0514a
+
+[ITEMDEF 0528d]
+DUPEITEM=0514a
+
+[ITEMDEF 0528e]
+DUPEITEM=0514a
+
+[ITEMDEF 0528f]
+DUPEITEM=0514a
+
+[ITEMDEF 05290]
+DUPEITEM=0514a
+
+[ITEMDEF 05291]
+DUPEITEM=0514a
+
+[ITEMDEF 05292]
+DUPEITEM=0514a
+
+[ITEMDEF 05293]
+DUPEITEM=0514a
+
+[ITEMDEF 05294]
+DUPEITEM=0514a
+
+[ITEMDEF 05295]
+DUPEITEM=0514a
+
+[ITEMDEF 05296]
+DUPEITEM=0514a
+
+[ITEMDEF 05297]
+DUPEITEM=0514a
+
+[ITEMDEF 05298]
+DUPEITEM=0514a
+
+[ITEMDEF 05299]
+DUPEITEM=0514a
+
+[ITEMDEF 0529a]
+DUPEITEM=0514a
+
+//[ITEMDEF 0529b]	//unused
+//[ITEMDEF 0529c]	//unused
+//[ITEMDEF 052a0]	//unused
+//[ITEMDEF 052a1]	//unused
+
+[ITEMDEF 052a2]
+DUPEITEM=0514a
+
+[ITEMDEF 052a3]
+DUPEITEM=0514a
+
+[ITEMDEF 052a4]
+DUPEITEM=0514a
+
+[ITEMDEF 052a5]
+DUPEITEM=0514a
+
+[ITEMDEF 052a6]
+DUPEITEM=0514a
+
+[ITEMDEF 052a7]
+DUPEITEM=0514a
+
+[ITEMDEF 052a8]
+DUPEITEM=0514a
+
+[ITEMDEF 052a9]
+DUPEITEM=0514a
+
+[ITEMDEF 052aa]
+DUPEITEM=0514a
+
+[ITEMDEF 052ab]
+DUPEITEM=0514a
+
+[ITEMDEF 052ac]
+DUPEITEM=0514a
+
+[ITEMDEF 052ad]
+DUPEITEM=0514a
+
+//[ITEMDEF 052ae]	//unused
+//[ITEMDEF 052af]	//unused
+//[ITEMDEF 052b5]	//unused
+//[ITEMDEF 052b6]	//unused
+//[ITEMDEF 052b7]	//unused
+
+[ITEMDEF 052b8]
+DUPEITEM=0514a
+
+[ITEMDEF 052b9]
+DUPEITEM=0514a
+
+[ITEMDEF 052ba]
+DUPEITEM=0514a
+
+[ITEMDEF 052bb]
+DUPEITEM=0514a
+
+[ITEMDEF 052bc]
+DUPEITEM=0514a
+
+[ITEMDEF 052bd]
+DUPEITEM=0514a
+
+[ITEMDEF 052be]
+DUPEITEM=0514a
+
+//[ITEMDEF 052bf]	//unused
+//[ITEMDEF 052c0]	//unused
+//[ITEMDEF 052c1]	//unused
+//[ITEMDEF 052c2]	//unused
+//[ITEMDEF 052ca]	//unused
+//[ITEMDEF 052cb]	//unused
+//[ITEMDEF 052cc]	//unused
+//[ITEMDEF 052cd]	//unused
+//[ITEMDEF 052ce]	//unused
+//[ITEMDEF 052cf]	//unused
+//[ITEMDEF 052d0]	//unused
+//[ITEMDEF 052d1]	//unused
+//[ITEMDEF 052d2]	//unused
+//[ITEMDEF 052d3]	//unused
+//[ITEMDEF 052d4]	//unused
+//[ITEMDEF 052d5]	//unused
+
+[ITEMDEF 09acb]
+DEFNAME=i_floor_jungle
+CATEGORY=Buildings - Floors
+SUBSECTION=TOL Jungle Floor
+DESCRIPTION=Jungle Floor
+DUPELIST=09acc,09acd,09ace,09acf,09ad0,09ad1,09ad2,09ad3,09ad4,09ad5,09ad6,09b89,09b8a
+
+[ITEMDEF 09acc]
+//Jungle Floor
+DUPEITEM=09acb
+
+[ITEMDEF 09acd]
+//Jungle Floor
+DUPEITEM=09acb
+
+[ITEMDEF 09ace]
+//Jungle Floor
+DUPEITEM=09acb
+
+[ITEMDEF 09acf]
+//Jungle Floor
+DUPEITEM=09acb
+
+[ITEMDEF 09ad0]
+//Jungle Floor
+DUPEITEM=09acb
+
+[ITEMDEF 09ad1]
+//Jungle Floor
+DUPEITEM=09acb
+
+[ITEMDEF 09ad2]
+//Jungle Floor
+DUPEITEM=09acb
+
+[ITEMDEF 09ad3]
+//Jungle Floor
+DUPEITEM=09acb
+
+[ITEMDEF 09ad4]
+//Jungle Floor
+DUPEITEM=09acb
+
+[ITEMDEF 09ad5]
+//Jungle Floor
+DUPEITEM=09acb
+
+[ITEMDEF 09ad6]
+//Jungle Floor
+DUPEITEM=09acb
+
+[ITEMDEF 09b30]
+DEFNAME=i_floor_shadowguard
+CATEGORY=Buildings - Floors
+SUBSECTION=TOL Shadowguard Floor
+DESCRIPTION=Shadowguard Floor
+DUPELIST=09b31,09b32,09b33,09b34,09b35,09b36,09b37,09b38,09b39,09b3a,09b3b,09bd9,09bda,09bdb,09bdc
+
+[ITEMDEF 09b31]
+//Shadowguard Floor
+DUPEITEM=09b30
+
+[ITEMDEF 09b32]
+//Shadowguard Floor
+DUPEITEM=09b30
+
+[ITEMDEF 09b33]
+//Shadowguard Floor
+DUPEITEM=09b30
+
+[ITEMDEF 09b34]
+//Shadowguard Floor
+DUPEITEM=09b30
+
+[ITEMDEF 09b35]
+//Shadowguard Floor
+DUPEITEM=09b30
+
+[ITEMDEF 09b36]
+//Shadowguard Floor
+DUPEITEM=09b30
+
+[ITEMDEF 09b37]
+//Shadowguard Floor
+DUPEITEM=09b30
+
+[ITEMDEF 09b38]
+//Shadowguard Floor
+DUPEITEM=09b30
+
+[ITEMDEF 09b39]
+//Shadowguard Floor
+DUPEITEM=09b30
+
+[ITEMDEF 09b3a]
+//Shadowguard Floor
+DUPEITEM=09b30
+
+[ITEMDEF 09b3b]
+//Shadowguard Floor
+DUPEITEM=09b30
+
+[ITEMDEF 09b89]
+//Jungle Floor
+DUPEITEM=09acb
+
+[ITEMDEF 09b8a]
+//Jungle Floor
+DUPEITEM=09acb
+
+[ITEMDEF 09bd9]
+//Shadowguard Floor
+DUPEITEM=09b30
+
+[ITEMDEF 09bda]
+//Shadowguard Floor
+DUPEITEM=09b30
+
+[ITEMDEF 09bdb]
+//Shadowguard Floor
+DUPEITEM=09b30
+
+[ITEMDEF 09bdc]
+//Shadowguard Floor
+DUPEITEM=09b30
+
+
+////////////
+// Multis //
+////////////
+
+[MULTIDEF m_mosaic_medusa]
+ID=040cd
+NAME=Carved Stone Floor
+TYPE=t_multi
+CATEGORY=Multis
+SUBSECTION=Mosaics
+DESCRIPTION=Medusa (small)
+MULTIREGION=0,0,0,0
+COMPONENT=040c1,-2,-2
+COMPONENT=040c2,-1,-2
+COMPONENT=040c3,0,-2
+COMPONENT=040c4,1,-2
+COMPONENT=040c5,2,-2
+COMPONENT=040c6,-2,-1
+COMPONENT=040c7,-1,-1
+COMPONENT=040c8,0,-1
+COMPONENT=040c9,1,-1
+COMPONENT=040ca,2,-1
+COMPONENT=040cb,-2,0
+COMPONENT=040cc,-1,0
+COMPONENT=040ce,1,0
+COMPONENT=040cf,2,0
+COMPONENT=040d0,-2,1
+COMPONENT=040d1,-1,1
+COMPONENT=040d2,0,1
+COMPONENT=040d3,1,1
+COMPONENT=040d4,2,1
+COMPONENT=040d5,-2,2
+COMPONENT=040d6,-1,2
+COMPONENT=040d7,0,2
+COMPONENT=040d8,1,2
+COMPONENT=040d9,2,2
+
+//[MULTIDEF m_floor_patterned_gold]
+//ID=0418a
+//NAME=Patterned Floor
+//TYPE=t_multi
+//CATEGORY=Multis
+//SUBSECTION=Floors
+//DESCRIPTION=Patterned Floor (gold)(multi)
+//MULTIREGION=0,0,0,0
+//COMPONENT=04186,-1,-1
+//COMPONENT=04187,0,-1
+//COMPONENT=04188,1,-1
+//COMPONENT=04189,-1,0
+//COMPONENT=0418b,1,0
+//COMPONENT=0418c,-1,1
+//COMPONENT=0418d,0,1
+//COMPONENT=0418e,1,1
+
+[MULTIDEF m_mosaic_tomb_of_kings_symbol]
+ID=04450
+NAME=Floor
+TYPE=t_multi
+CATEGORY=Multis
+SUBSECTION=Mosaics
+DESCRIPTION=Tomb of Kings - Symbol
+MULTIREGION=0,0,0,0
+COMPONENT=043e0,-7,-7
+COMPONENT=043e1,-6,-7
+COMPONENT=043e2,-5,-7
+COMPONENT=043e3,-4,-7
+COMPONENT=043e4,-3,-7
+COMPONENT=043e5,-2,-7
+COMPONENT=043e6,-1,-7
+COMPONENT=043e7,0,-7
+COMPONENT=043e8,1,-7
+COMPONENT=043e9,2,-7
+COMPONENT=043ea,3,-7
+COMPONENT=043eb,4,-7
+COMPONENT=043ec,5,-7
+COMPONENT=043ed,6,-7
+COMPONENT=043ee,7,-7
+COMPONENT=043ef,-7,-6
+COMPONENT=043f0,-6,-6
+COMPONENT=043f1,-5,-6
+COMPONENT=043f2,-4,-6
+COMPONENT=043f3,-3,-6
+COMPONENT=043f4,-2,-6
+COMPONENT=043f5,-1,-6
+COMPONENT=043f6,0,-6
+COMPONENT=043f7,1,-6
+COMPONENT=043f8,2,-6
+COMPONENT=043f9,3,-6
+COMPONENT=043fa,4,-6
+COMPONENT=043fb,5,-6
+COMPONENT=043fc,6,-6
+COMPONENT=043fd,7,-6
+COMPONENT=043fe,-7,-5
+COMPONENT=043ff,-6,-5
+COMPONENT=04400,-5,-5
+COMPONENT=04401,-4,-5
+COMPONENT=04402,-3,-5
+COMPONENT=04403,-2,-5
+COMPONENT=04404,-1,-5
+COMPONENT=04405,0,-5
+COMPONENT=04406,1,-5
+COMPONENT=04407,2,-5
+COMPONENT=04408,3,-5
+COMPONENT=04409,4,-5
+COMPONENT=0440a,5,-5
+COMPONENT=0440b,6,-5
+COMPONENT=0440c,7,-5
+COMPONENT=0440d,-7,-4
+COMPONENT=0440e,-6,-4
+COMPONENT=0440f,-5,-4
+COMPONENT=04410,-4,-4
+COMPONENT=04411,-3,-4
+COMPONENT=04412,-2,-4
+COMPONENT=04413,-1,-4
+COMPONENT=04414,0,-4
+COMPONENT=04415,1,-4
+COMPONENT=04416,2,-4
+COMPONENT=04417,3,-4
+COMPONENT=04418,4,-4
+COMPONENT=04419,5,-4
+COMPONENT=0441a,6,-4
+COMPONENT=0441b,7,-4
+COMPONENT=0441c,-7,-3
+COMPONENT=0441d,-6,-3
+COMPONENT=0441e,-5,-3
+COMPONENT=0441f,-4,-3
+COMPONENT=04420,-3,-3
+COMPONENT=04421,-2,-3
+COMPONENT=04422,-1,-3
+COMPONENT=04423,0,-3
+COMPONENT=04424,1,-3
+COMPONENT=04425,2,-3
+COMPONENT=04426,3,-3
+COMPONENT=04427,4,-3
+COMPONENT=04428,5,-3
+COMPONENT=04429,6,-3
+COMPONENT=0442a,7,-3
+COMPONENT=0442b,-7,-2
+COMPONENT=0442c,-6,-2
+COMPONENT=0442d,-5,-2
+COMPONENT=0442e,-4,-2
+COMPONENT=0442f,-3,-2
+COMPONENT=04430,-2,-2
+COMPONENT=04431,-1,-2
+COMPONENT=04432,0,-2
+COMPONENT=04433,1,-2
+COMPONENT=04434,2,-2
+COMPONENT=04435,3,-2
+COMPONENT=04436,4,-2
+COMPONENT=04437,5,-2
+COMPONENT=04438,6,-2
+COMPONENT=04439,7,-2
+COMPONENT=0443a,-7,-1
+COMPONENT=0443b,-6,-1
+COMPONENT=0443c,-5,-1
+COMPONENT=0443d,-4,-1
+COMPONENT=0443e,-3,-1
+COMPONENT=0443f,-2,-1
+COMPONENT=04440,-1,-1
+COMPONENT=04441,0,-1
+COMPONENT=04442,1,-1
+COMPONENT=04443,2,-1
+COMPONENT=04444,3,-1
+COMPONENT=04445,4,-1
+COMPONENT=04446,5,-1
+COMPONENT=04447,6,-1
+COMPONENT=04448,7,-1
+COMPONENT=04449,-7,0
+COMPONENT=0444a,-6,0
+COMPONENT=0444b,-5,0
+COMPONENT=0444c,-4,0
+COMPONENT=0444d,-3,0
+COMPONENT=0444e,-2,0
+COMPONENT=0444f,-1,0
+COMPONENT=04451,1,0
+COMPONENT=04452,2,0
+COMPONENT=04453,3,0
+COMPONENT=04454,4,0
+COMPONENT=04455,5,0
+COMPONENT=04456,6,0
+COMPONENT=04457,7,0
+COMPONENT=04458,-7,1
+COMPONENT=04459,-6,1
+COMPONENT=0445a,-5,1
+COMPONENT=0445b,-4,1
+COMPONENT=0445c,-3,1
+COMPONENT=0445d,-2,1
+COMPONENT=0445e,-1,1
+COMPONENT=0445f,0,1
+COMPONENT=04460,1,1
+COMPONENT=04461,2,1
+COMPONENT=04462,3,1
+COMPONENT=04463,4,1
+COMPONENT=04464,5,1
+COMPONENT=04465,6,1
+COMPONENT=04466,7,1
+COMPONENT=04467,-7,2
+COMPONENT=04468,-6,2
+COMPONENT=04469,-5,2
+COMPONENT=0446a,-4,2
+COMPONENT=0446b,-3,2
+COMPONENT=0446c,-2,2
+COMPONENT=0446d,-1,2
+COMPONENT=0446e,0,2
+COMPONENT=0446f,1,2
+COMPONENT=04470,2,2
+COMPONENT=04471,3,2
+COMPONENT=04472,4,2
+COMPONENT=04473,5,2
+COMPONENT=04474,6,2
+COMPONENT=04475,7,2
+COMPONENT=04476,-7,3
+COMPONENT=04477,-6,3
+COMPONENT=04478,-5,3
+COMPONENT=04479,-4,3
+COMPONENT=0447a,-3,3
+COMPONENT=0447b,-2,3
+COMPONENT=0447c,-1,3
+COMPONENT=0447d,0,3
+COMPONENT=0447e,1,3
+COMPONENT=0447f,2,3
+COMPONENT=04480,3,3
+COMPONENT=04481,4,3
+COMPONENT=04482,5,3
+COMPONENT=04483,6,3
+COMPONENT=04484,7,3
+COMPONENT=04485,-7,4
+COMPONENT=04486,-6,4
+COMPONENT=04487,-5,4
+COMPONENT=04488,-4,4
+COMPONENT=04489,-3,4
+COMPONENT=0448a,-2,4
+COMPONENT=0448b,-1,4
+COMPONENT=0448c,0,4
+COMPONENT=0448d,1,4
+COMPONENT=0448e,2,4
+COMPONENT=0448f,3,4
+COMPONENT=04490,4,4
+COMPONENT=04491,5,4
+COMPONENT=04492,6,4
+COMPONENT=04493,7,4
+COMPONENT=04494,-7,5
+COMPONENT=04495,-6,5
+COMPONENT=04496,-5,5
+COMPONENT=04497,-4,5
+COMPONENT=04498,-3,5
+COMPONENT=04499,-2,5
+COMPONENT=0449a,-1,5
+COMPONENT=0449b,0,5
+COMPONENT=0449c,1,5
+COMPONENT=0449d,2,5
+COMPONENT=0449e,3,5
+COMPONENT=0449f,4,5
+COMPONENT=044a0,5,5
+COMPONENT=044a1,6,5
+COMPONENT=044a2,7,5
+COMPONENT=044a3,-7,6
+COMPONENT=044a4,-6,6
+COMPONENT=044a5,-5,6
+COMPONENT=044a6,-4,6
+COMPONENT=044a7,-3,6
+COMPONENT=044a8,-2,6
+COMPONENT=044a9,-1,6
+COMPONENT=044aa,0,6
+COMPONENT=044ab,1,6
+COMPONENT=044ac,2,6
+COMPONENT=044ad,3,6
+COMPONENT=044ae,4,6
+COMPONENT=044af,5,6
+COMPONENT=044b0,6,6
+COMPONENT=044b1,7,6
+COMPONENT=044b2,-7,7
+COMPONENT=044b3,-6,7
+COMPONENT=044b4,-5,7
+COMPONENT=044b5,-4,7
+COMPONENT=044b6,-3,7
+COMPONENT=044b7,-2,7
+COMPONENT=044b8,-1,7
+COMPONENT=044b9,0,7
+COMPONENT=044ba,1,7
+COMPONENT=044bb,2,7
+COMPONENT=044bc,3,7
+COMPONENT=044bd,4,7
+COMPONENT=044be,5,7
+COMPONENT=044bf,6,7
+COMPONENT=044c0,7,7
+
+[MULTIDEF m_mosaic_medusa_large]
+ID=04812
+NAME=Carved Stone Floor
+TYPE=t_multi
+CATEGORY=Multis
+SUBSECTION=Mosaics
+DESCRIPTION=Medusa (large)
+MULTIREGION=0,0,0,0
+COMPONENT=047ea,-4,-4
+COMPONENT=047eb,-3,-4
+COMPONENT=047ec,-2,-4
+COMPONENT=047ed,-1,-4
+COMPONENT=047ee,0,-4
+COMPONENT=047ef,1,-4
+COMPONENT=047f0,2,-4
+COMPONENT=047f1,3,-4
+COMPONENT=047f2,4,-4
+COMPONENT=047f3,-4,-3
+COMPONENT=047f4,-3,-3
+COMPONENT=047f5,-2,-3
+COMPONENT=047f6,-1,-3
+COMPONENT=047f7,0,-3
+COMPONENT=047f8,1,-3
+COMPONENT=047f9,2,-3
+COMPONENT=047fa,3,-3
+COMPONENT=047fb,4,-3
+COMPONENT=047fc,-4,-2
+COMPONENT=047fd,-3,-2
+COMPONENT=047fe,-2,-2
+COMPONENT=047ff,-1,-2
+COMPONENT=04800,0,-2
+COMPONENT=04801,1,-2
+COMPONENT=04802,2,-2
+COMPONENT=04803,3,-2
+COMPONENT=04804,4,-2
+COMPONENT=04805,-4,-1
+COMPONENT=04806,-3,-1
+COMPONENT=04807,-2,-1
+COMPONENT=04808,-1,-1
+COMPONENT=04809,0,-1
+COMPONENT=0480a,1,-1
+COMPONENT=0480b,2,-1
+COMPONENT=0480c,3,-1
+COMPONENT=0480d,4,-1
+COMPONENT=0480e,-4,0
+COMPONENT=0480f,-3,0
+COMPONENT=04810,-2,0
+COMPONENT=04811,-1,0
+COMPONENT=04813,1,0
+COMPONENT=04814,2,0
+COMPONENT=04815,3,0
+COMPONENT=04816,4,0
+COMPONENT=04817,-4,1
+COMPONENT=04818,-3,1
+COMPONENT=04819,-2,1
+COMPONENT=0481a,-1,1
+COMPONENT=0481b,0,1
+COMPONENT=0481c,1,1
+COMPONENT=0481d,2,1
+COMPONENT=0481e,3,1
+COMPONENT=0481f,4,1
+COMPONENT=04820,-4,2
+COMPONENT=04821,-3,2
+COMPONENT=04822,-2,2
+COMPONENT=04823,-1,2
+COMPONENT=04824,0,2
+COMPONENT=04825,1,2
+COMPONENT=04826,2,2
+COMPONENT=04827,3,2
+COMPONENT=04828,4,2
+COMPONENT=04829,-4,3
+COMPONENT=0482a,-3,3
+COMPONENT=0482b,-2,3
+COMPONENT=0482c,-1,3
+COMPONENT=0482d,0,3
+COMPONENT=0482e,1,3
+COMPONENT=0482f,2,3
+COMPONENT=04830,3,3
+COMPONENT=04831,4,3
+COMPONENT=04832,-4,4
+COMPONENT=04833,-3,4
+COMPONENT=04834,-2,4
+COMPONENT=04835,-1,4
+COMPONENT=04836,0,4
+COMPONENT=04837,1,4
+COMPONENT=04838,2,4
+COMPONENT=04839,3,4
+COMPONENT=0483a,4,4
+
+[MULTIDEF m_mosaic_tomb_of_kings_serpent]
+ID=04956
+NAME=Floor
+TYPE=t_multi
+CATEGORY=Multis
+SUBSECTION=Mosaics
+DESCRIPTION=Tomb of Kings - Serpent
+MULTIREGION=0,0,0,0
+COMPONENT=048f6,3,-9
+COMPONENT=048f7,4,-9
+COMPONENT=04900,2,-8
+COMPONENT=04901,3,-8
+COMPONENT=04902,4,-8
+COMPONENT=0490b,2,-7
+COMPONENT=0490c,3,-7
+COMPONENT=0490d,4,-7
+COMPONENT=04912,-2,-6
+COMPONENT=04913,-1,-6
+COMPONENT=04914,0,-6
+COMPONENT=04915,1,-6
+COMPONENT=04916,2,-6
+COMPONENT=04917,3,-6
+COMPONENT=04918,4,-6
+COMPONENT=0491c,-3,-5
+COMPONENT=0491d,-2,-5
+COMPONENT=0491e,-1,-5
+COMPONENT=0491f,0,-5
+COMPONENT=04920,1,-5
+COMPONENT=04921,2,-5
+COMPONENT=04926,-4,-4
+COMPONENT=04927,-3,-4
+COMPONENT=04928,-2,-4
+COMPONENT=04932,-3,-3
+COMPONENT=04933,-2,-3
+COMPONENT=04934,-1,-3
+COMPONENT=04935,0,-3
+COMPONENT=04936,1,-3
+COMPONENT=04937,2,-3
+COMPONENT=04938,3,-3
+COMPONENT=04939,4,-3
+COMPONENT=0493a,5,-3
+COMPONENT=0493e,-2,-2
+COMPONENT=0493f,-1,-2
+COMPONENT=04940,0,-2
+COMPONENT=04941,1,-2
+COMPONENT=04942,2,-2
+COMPONENT=04943,3,-2
+COMPONENT=04944,4,-2
+COMPONENT=04945,5,-2
+COMPONENT=04946,-5,-1
+COMPONENT=04947,-4,-1
+COMPONENT=04948,-3,-1
+COMPONENT=04949,-2,-1
+COMPONENT=0494a,-1,-1
+COMPONENT=0494b,0,-1
+COMPONENT=0494c,1,-1
+COMPONENT=0494f,4,-1
+COMPONENT=04950,5,-1
+COMPONENT=04951,-5,0
+COMPONENT=04952,-4,0
+COMPONENT=04953,-3,0
+COMPONENT=04954,-2,0
+COMPONENT=04955,-1,0
+COMPONENT=04957,1,0
+COMPONENT=04958,2,0
+COMPONENT=04959,3,0
+COMPONENT=0495a,4,0
+COMPONENT=0495b,5,0
+COMPONENT=0495c,-5,1
+COMPONENT=0495d,-4,1
+COMPONENT=04961,0,1
+COMPONENT=04962,1,1
+COMPONENT=04963,2,1
+COMPONENT=04964,3,1
+COMPONENT=04965,4,1
+COMPONENT=04967,-5,2
+COMPONENT=04968,-4,2
+COMPONENT=04969,-3,2
+COMPONENT=0496a,-2,2
+COMPONENT=0496b,-1,2
+COMPONENT=0496c,0,2
+COMPONENT=0496d,1,2
+COMPONENT=0496e,2,2
+COMPONENT=0496f,3,2
+COMPONENT=04970,4,2
+COMPONENT=04973,-4,3
+COMPONENT=04974,-3,3
+COMPONENT=04975,-2,3
+COMPONENT=04976,-1,3
+COMPONENT=04977,0,3
+COMPONENT=04978,1,3
+COMPONENT=04979,2,3
+COMPONENT=0497a,3,3
+COMPONENT=0497b,4,3
+COMPONENT=0497c,5,3
+COMPONENT=0497f,-3,4
+COMPONENT=04980,-2,4
+COMPONENT=04981,-1,4
+COMPONENT=04986,4,4
+COMPONENT=04987,5,4
+COMPONENT=04989,-4,5
+COMPONENT=0498a,-3,5
+COMPONENT=0498b,-2,5
+COMPONENT=0498c,-1,5
+COMPONENT=0498d,0,5
+COMPONENT=0498e,1,5
+COMPONENT=04990,3,5
+COMPONENT=04991,4,5
+COMPONENT=04992,5,5
+COMPONENT=04993,-5,6
+COMPONENT=04994,-4,6
+COMPONENT=04995,-3,6
+COMPONENT=04996,-2,6
+COMPONENT=04997,-1,6
+COMPONENT=04998,0,6
+COMPONENT=04999,1,6
+COMPONENT=0499a,2,6
+COMPONENT=0499b,3,6
+COMPONENT=0499c,4,6
+COMPONENT=0499e,-5,7
+COMPONENT=0499f,-4,7
+COMPONENT=049a4,1,7
+COMPONENT=049a5,2,7
+COMPONENT=049a9,-5,8
+COMPONENT=049aa,-4,8
+COMPONENT=049ab,-3,8
+COMPONENT=049ac,-2,8
+COMPONENT=049ad,-1,8
+COMPONENT=049ae,0,8
+COMPONENT=049af,1,8
+COMPONENT=049b0,2,8
+COMPONENT=049b1,3,8
+COMPONENT=049b6,-3,9
+COMPONENT=049b7,-2,9
+COMPONENT=049b8,-1,9
+COMPONENT=049bc,3,9
+COMPONENT=049c4,0,10
+COMPONENT=049c5,1,10
+COMPONENT=049c6,2,10
+COMPONENT=049c7,3,10
+
+[MULTIDEF m_mosaic_codex_virtue]
+ID=05207
+NAME=Floor
+TYPE=t_multi
+CATEGORY=Multis
+SUBSECTION=Mosaics
+DESCRIPTION=Codex of Virtue
+MULTIREGION=0,0,0,0
+COMPONENT=05150,-3,-9
+COMPONENT=05151,-2,-9
+COMPONENT=05152,-1,-9
+COMPONENT=05153,0,-9
+COMPONENT=05154,1,-9
+COMPONENT=05155,2,-9
+COMPONENT=05156,3,-9
+COMPONENT=05157,4,-9
+COMPONENT=05162,-5,-8
+COMPONENT=05163,-4,-8
+COMPONENT=05164,-3,-8
+COMPONENT=05165,-2,-8
+COMPONENT=05166,-1,-8
+COMPONENT=05167,0,-8
+COMPONENT=05168,1,-8
+COMPONENT=05169,2,-8
+COMPONENT=0516a,3,-8
+COMPONENT=0516b,4,-8
+COMPONENT=0516c,5,-8
+COMPONENT=0516d,6,-8
+COMPONENT=05175,-6,-7
+COMPONENT=05176,-5,-7
+COMPONENT=05177,-4,-7
+COMPONENT=05178,-3,-7
+COMPONENT=05179,-2,-7
+COMPONENT=0517a,-1,-7
+COMPONENT=0517b,0,-7
+COMPONENT=0517c,1,-7
+COMPONENT=0517d,2,-7
+COMPONENT=0517e,3,-7
+COMPONENT=0517f,4,-7
+COMPONENT=05180,5,-7
+COMPONENT=05181,6,-7
+COMPONENT=05182,7,-7
+COMPONENT=05188,-7,-6
+COMPONENT=05189,-6,-6
+COMPONENT=0518a,-5,-6
+COMPONENT=0518b,-4,-6
+COMPONENT=0518c,-3,-6
+COMPONENT=0518d,-2,-6
+COMPONENT=0518e,-1,-6
+COMPONENT=0518f,0,-6
+COMPONENT=05190,1,-6
+COMPONENT=05191,2,-6
+COMPONENT=05192,3,-6
+COMPONENT=05193,4,-6
+COMPONENT=05194,5,-6
+COMPONENT=05195,6,-6
+COMPONENT=05196,7,-6
+COMPONENT=05197,8,-6
+COMPONENT=0519b,-8,-5
+COMPONENT=0519c,-7,-5
+COMPONENT=0519d,-6,-5
+COMPONENT=0519e,-5,-5
+COMPONENT=0519f,-4,-5
+COMPONENT=051a0,-3,-5
+COMPONENT=051a1,-2,-5
+COMPONENT=051a2,-1,-5
+COMPONENT=051a3,0,-5
+COMPONENT=051a4,1,-5
+COMPONENT=051a5,2,-5
+COMPONENT=051a6,3,-5
+COMPONENT=051a7,4,-5
+COMPONENT=051a8,5,-5
+COMPONENT=051a9,6,-5
+COMPONENT=051aa,7,-5
+COMPONENT=051ab,8,-5
+COMPONENT=051ac,9,-5
+COMPONENT=051af,-8,-4
+COMPONENT=051b0,-7,-4
+COMPONENT=051b1,-6,-4
+COMPONENT=051b2,-5,-4
+COMPONENT=051b3,-4,-4
+COMPONENT=051b4,-3,-4
+COMPONENT=051b5,-2,-4
+COMPONENT=051b6,-1,-4
+COMPONENT=051b7,0,-4
+COMPONENT=051b8,1,-4
+COMPONENT=051b9,2,-4
+COMPONENT=051ba,3,-4
+COMPONENT=051bb,4,-4
+COMPONENT=051bc,5,-4
+COMPONENT=051bd,6,-4
+COMPONENT=051be,7,-4
+COMPONENT=051bf,8,-4
+COMPONENT=051c0,9,-4
+COMPONENT=051c2,-9,-3
+COMPONENT=051c3,-8,-3
+COMPONENT=051c4,-7,-3
+COMPONENT=051c5,-6,-3
+COMPONENT=051c6,-5,-3
+COMPONENT=051c7,-4,-3
+COMPONENT=051c8,-3,-3
+COMPONENT=051c9,-2,-3
+COMPONENT=051ca,-1,-3
+COMPONENT=051cb,0,-3
+COMPONENT=051cc,1,-3
+COMPONENT=051cd,2,-3
+COMPONENT=051ce,3,-3
+COMPONENT=051cf,4,-3
+COMPONENT=051d0,5,-3
+COMPONENT=051d1,6,-3
+COMPONENT=051d2,7,-3
+COMPONENT=051d3,8,-3
+COMPONENT=051d4,9,-3
+COMPONENT=051d5,10,-3
+COMPONENT=051d6,-9,-2
+COMPONENT=051d7,-8,-2
+COMPONENT=051d8,-7,-2
+COMPONENT=051d9,-6,-2
+COMPONENT=051da,-5,-2
+COMPONENT=051db,-4,-2
+COMPONENT=051dc,-3,-2
+COMPONENT=051dd,-2,-2
+COMPONENT=051de,-1,-2
+COMPONENT=051df,0,-2
+COMPONENT=051e0,1,-2
+COMPONENT=051e1,2,-2
+COMPONENT=051e2,3,-2
+COMPONENT=051e3,4,-2
+COMPONENT=051e4,5,-2
+COMPONENT=051e5,6,-2
+COMPONENT=051e6,7,-2
+COMPONENT=051e7,8,-2
+COMPONENT=051e8,9,-2
+COMPONENT=051e9,10,-2
+COMPONENT=051ea,-9,-1
+COMPONENT=051eb,-8,-1
+COMPONENT=051ec,-7,-1
+COMPONENT=051ed,-6,-1
+COMPONENT=051ee,-5,-1
+COMPONENT=051ef,-4,-1
+COMPONENT=051f0,-3,-1
+COMPONENT=051f1,-2,-1
+COMPONENT=051f2,-1,-1
+COMPONENT=051f3,0,-1
+COMPONENT=051f4,1,-1
+COMPONENT=051f5,2,-1
+COMPONENT=051f6,3,-1
+COMPONENT=051f7,4,-1
+COMPONENT=051f8,5,-1
+COMPONENT=051f9,6,-1
+COMPONENT=051fa,7,-1
+COMPONENT=051fb,8,-1
+COMPONENT=051fc,9,-1
+COMPONENT=051fd,10,-1
+COMPONENT=051fe,-9,0
+COMPONENT=051ff,-8,0
+COMPONENT=05200,-7,0
+COMPONENT=05201,-6,0
+COMPONENT=05202,-5,0
+COMPONENT=05203,-4,0
+COMPONENT=05204,-3,0
+COMPONENT=05205,-2,0
+COMPONENT=05206,-1,0
+COMPONENT=05208,1,0
+COMPONENT=05209,2,0
+COMPONENT=0520a,3,0
+COMPONENT=0520b,4,0
+COMPONENT=0520c,5,0
+COMPONENT=0520d,6,0
+COMPONENT=0520e,7,0
+COMPONENT=0520f,8,0
+COMPONENT=05210,9,0
+COMPONENT=05211,10,0
+COMPONENT=05212,-9,1
+COMPONENT=05213,-8,1
+COMPONENT=05214,-7,1
+COMPONENT=05215,-6,1
+COMPONENT=05216,-5,1
+COMPONENT=05217,-4,1
+COMPONENT=05218,-3,1
+COMPONENT=05219,-2,1
+COMPONENT=0521a,-1,1
+COMPONENT=0521b,0,1
+COMPONENT=0521c,1,1
+COMPONENT=0521d,2,1
+COMPONENT=0521e,3,1
+COMPONENT=0521f,4,1
+COMPONENT=05220,5,1
+COMPONENT=05221,6,1
+COMPONENT=05222,7,1
+COMPONENT=05223,8,1
+COMPONENT=05224,9,1
+COMPONENT=05225,10,1
+COMPONENT=05226,-9,2
+COMPONENT=05227,-8,2
+COMPONENT=05228,-7,2
+COMPONENT=05229,-6,2
+COMPONENT=0522a,-5,2
+COMPONENT=0522b,-4,2
+COMPONENT=0522c,-3,2
+COMPONENT=0522d,-2,2
+COMPONENT=0522e,-1,2
+COMPONENT=0522f,0,2
+COMPONENT=05230,1,2
+COMPONENT=05231,2,2
+COMPONENT=05232,3,2
+COMPONENT=05233,4,2
+COMPONENT=05234,5,2
+COMPONENT=05235,6,2
+COMPONENT=05236,7,2
+COMPONENT=05237,8,2
+COMPONENT=05238,9,2
+COMPONENT=05239,10,2
+COMPONENT=0523a,-9,3
+COMPONENT=0523b,-8,3
+COMPONENT=0523c,-7,3
+COMPONENT=0523d,-6,3
+COMPONENT=0523e,-5,3
+COMPONENT=0523f,-4,3
+COMPONENT=05240,-3,3
+COMPONENT=05241,-2,3
+COMPONENT=05242,-1,3
+COMPONENT=05243,0,3
+COMPONENT=05244,1,3
+COMPONENT=05245,2,3
+COMPONENT=05246,3,3
+COMPONENT=05247,4,3
+COMPONENT=05248,5,3
+COMPONENT=05249,6,3
+COMPONENT=0524a,7,3
+COMPONENT=0524b,8,3
+COMPONENT=0524c,9,3
+COMPONENT=0524d,10,3
+COMPONENT=0524f,-8,4
+COMPONENT=05250,-7,4
+COMPONENT=05251,-6,4
+COMPONENT=05252,-5,4
+COMPONENT=05253,-4,4
+COMPONENT=05254,-3,4
+COMPONENT=05255,-2,4
+COMPONENT=05256,-1,4
+COMPONENT=05257,0,4
+COMPONENT=05258,1,4
+COMPONENT=05259,2,4
+COMPONENT=0525a,3,4
+COMPONENT=0525b,4,4
+COMPONENT=0525c,5,4
+COMPONENT=0525d,6,4
+COMPONENT=0525e,7,4
+COMPONENT=0525f,8,4
+COMPONENT=05260,9,4
+COMPONENT=05263,-8,5
+COMPONENT=05264,-7,5
+COMPONENT=05265,-6,5
+COMPONENT=05266,-5,5
+COMPONENT=05267,-4,5
+COMPONENT=05268,-3,5
+COMPONENT=05269,-2,5
+COMPONENT=0526a,-1,5
+COMPONENT=0526b,0,5
+COMPONENT=0526c,1,5
+COMPONENT=0526d,2,5
+COMPONENT=0526e,3,5
+COMPONENT=0526f,4,5
+COMPONENT=05270,5,5
+COMPONENT=05271,6,5
+COMPONENT=05272,7,5
+COMPONENT=05273,8,5
+COMPONENT=05274,9,5
+COMPONENT=05277,-8,6
+COMPONENT=05278,-7,6
+COMPONENT=05279,-6,6
+COMPONENT=0527a,-5,6
+COMPONENT=0527b,-4,6
+COMPONENT=0527c,-3,6
+COMPONENT=0527d,-2,6
+COMPONENT=0527e,-1,6
+COMPONENT=0527f,0,6
+COMPONENT=05280,1,6
+COMPONENT=05281,2,6
+COMPONENT=05282,3,6
+COMPONENT=05283,4,6
+COMPONENT=05284,5,6
+COMPONENT=05285,6,6
+COMPONENT=05286,7,6
+COMPONENT=05287,8,6
+COMPONENT=0528c,-7,7
+COMPONENT=0528d,-6,7
+COMPONENT=0528e,-5,7
+COMPONENT=0528f,-4,7
+COMPONENT=05290,-3,7
+COMPONENT=05291,-2,7
+COMPONENT=05292,-1,7
+COMPONENT=05293,0,7
+COMPONENT=05294,1,7
+COMPONENT=05295,2,7
+COMPONENT=05296,3,7
+COMPONENT=05297,4,7
+COMPONENT=05298,5,7
+COMPONENT=05299,6,7
+COMPONENT=0529a,7,7
+COMPONENT=052a2,-5,8
+COMPONENT=052a3,-4,8
+COMPONENT=052a4,-3,8
+COMPONENT=052a5,-2,8
+COMPONENT=052a6,-1,8
+COMPONENT=052a7,0,8
+COMPONENT=052a8,1,8
+COMPONENT=052a9,2,8
+COMPONENT=052aa,3,8
+COMPONENT=052ab,4,8
+COMPONENT=052ac,5,8
+COMPONENT=052ad,6,8
+COMPONENT=052b8,-3,9
+COMPONENT=052b9,-2,9
+COMPONENT=052ba,-1,9
+COMPONENT=052bb,0,9
+COMPONENT=052bc,1,9
+COMPONENT=052bd,2,9
+COMPONENT=052be,3,9
+
+[EOF]
