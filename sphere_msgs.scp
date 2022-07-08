@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2021
+// SPHERE by : Menasoft ©1997-2022
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Thursday, Mar 4, 2021
+// FILE LAST UPDATED: Friday, Jul 8, 2022
 //
 VERSION=0.56d
 
@@ -128,7 +128,6 @@ EMOTE_DEF_UNICODE	0
 //axis_denied					"Access to Axis' database has been denied!"
 //axis_file_error				"ERROR: Unable to open Axis' database file"
 //axis_info_error				"ERROR: Unable to retrieve Axis' database info"
-//axis_not_priv					"This account does not exist or is not privileged to access Axis' database."
 //begging_start					"You grovel at %s's feet"
 //blacksmithing_noskill			"You have no idea how to work this metal."
 //bvbox_deposited				"%d gold was deposited in your account."
@@ -900,7 +899,6 @@ EMOTE_DEF_UNICODE	0
 //where_to_summon				"Where would you like to summon the"
 //where_to_place				"Where would you like to place the"
 //console_welcome_2				"Welcome to the Remote Admin Console"
-//console_not_priv				"This account does not exist or is not privileged to log in via telnet."
 //map_is_blank					"This map is blank."
 //gainradius_not_met			"This action was so easy that it will not improve your skill."
 //drink_full					"You are way too stuffed to drink this now."

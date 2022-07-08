@@ -1,5 +1,5 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2019
+// SPHERE by : Menasoft ©1997-2022
 // www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -7,7 +7,7 @@
 // Menasoft & Partners.  All donations and contributions
 // become the property of Menasoft & Partners.
 //****************************************************************************
-// FILE LAST UPDATED: Tuesday, Dec 10, 2019
+// FILE LAST UPDATED: Friday, Jul 8, 2022
 //
 VERSION=0.56d
 
@@ -1183,5 +1183,120 @@ COMPONENT=02a07,11,8,47		//sliding door
 COMPONENT=09,-11,12,7		//wooden post
 COMPONENT=0b98,-11,13,7		//wooden signpost
 COMPONENT=i_sign_brass_2,-11,13,7
+
+[MULTIDEF 0149f]
+DEFNAME=m_heorot
+NAME=The Heorot
+NAMELOC=1159882	//The Heorot
+TYPE=t_multi
+VALUE=1500500	//33761250
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=Contest Houses
+DESCRIPTION=The Heorot
+MULTIREGION=-15,-15,15,16
+COMPONENT=0181e,14,-13,7	//alchemical symbol
+COMPONENT=01822,4,5,7		//alchemical symbol
+COMPONENT=0181d,5,5,7		//alchemical symbol
+COMPONENT=032a,7,6,7		//stone wall (secret door)
+COMPONENT=0330,1,7,7		//stone wall (secret door)
+COMPONENT=032a,-12,8,7		//stone wall (secret door)
+COMPONENT=032a,-9,8,7		//stone wall (secret door)
+COMPONENT=0330,8,9,7		//stone wall (secret door)
+COMPONENT=06eb,5,14,7		//wooden door
+COMPONENT=0181e,13,-12,27	//alchemical symbol
+COMPONENT=0181d,2,3,27		//alchemical symbol
+COMPONENT=050d0,-5,4,27		//gargish bentas door
+COMPONENT=050d2,-4,4,27		//gargish bentas door
+COMPONENT=01822,-1,3,47		//alchemical symbol
+COMPONENT=050d2,-4,4,47		//gargish bentas door
+COMPONENT=0b98,-15,16,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-15,16,7
+
+[MULTIDEF 014a0]
+DEFNAME=m_township
+NAME=The Township
+NAMELOC=1159883	//The Township
+TYPE=t_multi
+VALUE=1837000	//41332500
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=Contest Houses
+DESCRIPTION=The Township
+MULTIREGION=-15,-15,15,16
+COMPONENT=0868,-7,-11,7		//wooden gate
+COMPONENT=0868,-4,-11,7		//wooden gate
+COMPONENT=06e3,-9,-6,7		//wooden door
+COMPONENT=06e1,-9,-5,7		//wooden door
+COMPONENT=06f3,13,3,7		//wooden door
+COMPONENT=06e5,10,4,7		//wooden door
+COMPONENT=06e7,11,4,7		//wooden door
+COMPONENT=06e1,13,-12,27	//wooden door
+COMPONENT=050d0,-8,-7,27	//gargish bentas door
+COMPONENT=050d2,-7,-7,27	//gargish bentas door
+COMPONENT=06ab,9,-7,27		//wooden door
+COMPONENT=050d6,-4,5,27		//gargish bentas door
+COMPONENT=050d4,-4,6,27		//gargish bentas door
+COMPONENT=050d0,7,9,27		//gargish bentas door
+COMPONENT=050d2,8,9,27		//gargish bentas door
+COMPONENT=06b3,13,-13,47	//wooden door
+COMPONENT=050d0,-10,10,47	//gargish bentas door
+COMPONENT=050d2,-9,10,47	//gargish bentas door
+COMPONENT=09,-15,15,7		//wooden post
+COMPONENT=0b98,-15,16,7		//wooden signpost
+COMPONENT=i_sign_brass_2,-15,16,7
+
+[MULTIDEF 014a1]
+DEFNAME=m_castle_of_the_resistance
+NAME=The Castle of the Resistance
+NAMELOC=1159884	//The Castle of the Resistance
+TYPE=t_multi
+VALUE=2031000	//45697500
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+CATEGORY=Multis
+SUBSECTION=Contest Houses
+DESCRIPTION=The Castle of the Resistance
+MULTIREGION=-15,-15,15,16
+COMPONENT=01ffb,-2,-3,7		//barred metal door
+COMPONENT=01ff1,8,-1,7		//barred metal door
+COMPONENT=0181d,2,0,7		//alchemical symbol
+COMPONENT=0181e,2,1,7		//alchemical symbol
+COMPONENT=01822,-7,2,7		//alchemical symbol
+COMPONENT=0181f,2,2,7		//alchemical symbol
+COMPONENT=01ff1,-8,3,7		//barred metal door
+COMPONENT=01822,-7,4,7		//alchemical symbol
+COMPONENT=01821,12,9,7		//alchemical symbol
+COMPONENT=0328,-14,10,7		//stone wall (secret door)
+COMPONENT=01ff1,-10,10,7	//barred metal door
+COMPONENT=01ff3,-9,10,7		//barred metal door
+COMPONENT=0328,-5,10,7		//stone wall (secret door)
+COMPONENT=01ff1,-1,10,7		//barred metal door
+COMPONENT=01ff3,0,10,7		//barred metal door
+COMPONENT=0328,5,10,7		//stone wall (secret door)
+COMPONENT=01ff1,9,10,7		//barred metal door
+COMPONENT=01ff3,10,10,7		//barred metal door
+COMPONENT=0328,14,10,7		//stone wall (secret door)
+COMPONENT=0181d,-12,11,7	//alchemical symbol
+COMPONENT=01821,12,11,7		//alchemical symbol
+COMPONENT=01ff9,-2,-10,27	//barred metal door
+COMPONENT=01ff9,-2,-2,27	//barred metal door
+COMPONENT=01ff1,-8,4,27		//barred metal door
+COMPONENT=01ff3,-7,4,27		//barred metal door
+COMPONENT=0328,-14,10,27	//stone wall (secret door)
+COMPONENT=0328,-5,10,27		//stone wall (secret door)
+COMPONENT=0328,5,10,27		//stone wall (secret door)
+COMPONENT=0328,14,10,27		//stone wall (secret door)
+COMPONENT=0181e,6,-14,47	//alchemical symbol
+COMPONENT=0328,-14,9,47		//stone wall (secret door)
+COMPONENT=0328,-5,9,47		//stone wall (secret door)
+COMPONENT=0328,5,9,47		//stone wall (secret door)
+COMPONENT=0328,14,9,47		//stone wall (secret door)
+COMPONENT=0181f,-14,8,67	//alchemical symbol
+COMPONENT=01d2,-15,15,7		//stone post
+COMPONENT=0b9e,-15,16,7		//metal signpost
+COMPONENT=i_sign_brass_2,-15,16,7
 
 [EOF]
